@@ -270,30 +270,9 @@ export default function CorinaPage() {
   const [traductionsTextes, setTraductionsTextes] = useState<number[]>([])
   const [explicationsTextes, setExplicationsTextes] = useState<number[]>([])
   const [detailsTitres, setDetailsTitres] = useState<string[]>([])
-  const [temps, setTemps] = useState(90 * 60)
 
-  useEffect(() => {
-    if (corrige || temps <= 0) return
-
-    const interval = setInterval(() => {
-      setTemps(prev => Math.max(0, prev - 1))
-    }, 1000)
-
-    return () => clearInterval(interval)
-  }, [corrige, temps <= 0])
-
-  useEffect(() => {
-    if (temps === 0) {
-      setCorrige(true)
-      setSelection(null)
-    }
-  }, [temps])
-
-  const formatTemps = (secondes: number) => {
-    const minutes = Math.floor(secondes / 60)
-    const secs = secondes % 60
-    return `${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`
-  }
+  
+  
 
   const choisir = (texteId: number, titreId: string) => {
     if (corrige || einzelPruefung[texteId]) return
@@ -339,7 +318,6 @@ export default function CorinaPage() {
     setSelection(null)
     setCorrige(false)
     setEinzelPruefung({})
-    setTemps(90 * 60)
     setTraductionsTextes([])
     setExplicationsTextes([])
     setDetailsTitres([])
@@ -377,18 +355,13 @@ export default function CorinaPage() {
             <strong>Erfolg</strong>
           </span>
         </Link>
-
-        <div className="paul-header-right">
-          <div className={`paul-timer ${temps < 300 ? 'paul-timer-warning' : ''}`}>
-            <Clock size={17} />
-            <strong>{formatTemps(temps)}</strong>
-          </div>
-
-          <Link href="/espace-etudiant/examens/b1/lesen" className="paul-back">
-            <ArrowLeft size={18} />
-            Zurück zu Lesen B1
-          </Link>
-        </div>
+ <Link
+          href="/espace-etudiant/examens/b1/lesen"
+          className="back-link"
+        >
+          <ArrowLeft size={18} />
+          Zurück zu Lesen B1
+        </Link>
       </header>
 
       <div className="paul-content">
@@ -746,6 +719,19 @@ export default function CorinaPage() {
           color: #D6B56D;
         }
 
+        .back-link {
+          color: white;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          gap: 9px;
+          font-size: 13px;
+        }
+
+        .back-link svg {
+          color: #D6B56D;
+        }
+          
         .paul-header-right {
           display: flex;
           align-items: center;
