@@ -1,0 +1,57 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Netlify
+.netlify/
+
+# System files
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local source materials - keep outside GitHub
+/extraction_partie_1/
+/extraction_partie_2/
+/source_manuel/
+
+# macOS
+.DS_Store
+
+# Archived and unrelated source projects
+/source-page-par-page/
+/sauvegarde-avant-mise-a-jour/
+
+# Temporary and backup files
+*.backup.tsx
+*.before-original.tsx
+*-backup.tsx
+*-original.tsx
+*.tsbuildinfo
+-p
+/app/administration/etudiants/page.tsxmkdir
+/regrouper_exercices.pycode
+# Local Python extraction and analysis scripts
+/*.py
+
+# Local OCR and test files
+/ocr_page_11.txt
+/test_ocr_page_11.png
+/test_page_11.png
+/lesson.personalpronomen.jpg
+
+# Accidental temporary files
+/app/administration/etudiants/page.tsxmkdir
+/regrouper_exercices.pycode
+
+/app/globals-backup.css

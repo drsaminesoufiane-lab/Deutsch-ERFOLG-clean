@@ -1,0 +1,837 @@
+
+
+.chapter-demo .book-shell { min-height: 100vh; color: var(--ink); background: radial-gradient(circle at 10% 0%, #fff 0, var(--paper) 45%, #f7fbfa 100%); }
+.chapter-demo .topbar { width: min(1120px, calc(100% - 40px)); margin: 0 auto; height: 76px; display: flex; align-items: center; justify-content: space-between; }
+.chapter-demo .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 800; letter-spacing: -0.02em; text-decoration: none; }
+.chapter-demo .brand-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 11px 11px 11px 3px; background: var(--pink); color: white; font-size: 14px; }
+.chapter-demo .topbar-note, .chapter-demo .back-link { color: var(--muted-ink); font-size: 0.86rem; }
+.chapter-demo .back-link { display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
+.chapter-demo .home-hero, .chapter-demo .chapter-heading, .chapter-demo .lesson-layout, .chapter-demo .practice-layout, .chapter-demo .chapter-grid { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+.chapter-demo .home-hero { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 72px; align-items: center; padding: 86px 0 74px; }
+.chapter-demo .hero-copy h1 { max-width: 680px; margin: 18px 0; font-size: clamp(2.8rem, 6vw, 5.2rem); line-height: 0.98; letter-spacing: -0.07em; }
+.chapter-demo .hero-copy p { max-width: 570px; margin: 0 0 30px; color: var(--muted-ink); font-size: 1.08rem; line-height: 1.7; }
+.chapter-demo .eyebrow { display: inline-flex; align-items: center; gap: 7px; color: var(--teal-dark); font-size: 0.74rem; font-weight: 800; letter-spacing: 0.11em; text-transform: uppercase; }
+.chapter-demo .primary-button, .chapter-demo .secondary-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: 13px; padding: 12px 17px; font-size: 0.9rem; font-weight: 800; text-decoration: none; transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease; }
+.chapter-demo .primary-button { background: var(--teal); color: white; box-shadow: 0 9px 22px rgba(21, 158, 170, 0.23); }
+.chapter-demo .primary-button:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(21, 158, 170, 0.3); }
+.chapter-demo .secondary-button { border: 1px solid var(--line); background: white; color: var(--ink); }
+.chapter-demo .secondary-button:hover { border-color: var(--teal); color: var(--teal-dark); }
+.chapter-demo .hero-card { min-height: 260px; padding: 32px; border-radius: 28px; background: linear-gradient(155deg, #e6f7f5, #fff2f7); box-shadow: var(--shadow); display: flex; flex-direction: column; justify-content: center; gap: 8px; transform: rotate(2.5deg); }
+.chapter-demo .hero-card-kicker { display: flex; align-items: center; gap: 7px; color: var(--teal-dark); font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .08em; }
+.chapter-demo .hero-card strong { margin-top: 22px; font-size: 3.2rem; line-height: .9; letter-spacing: -.07em; }
+.chapter-demo .hero-card span { color: var(--pink); font-size: 1.15rem; font-weight: 800; }
+.chapter-demo .hero-card small { margin-top: 12px; color: var(--muted-ink); }
+.chapter-demo .hero-card-rule { display: flex; gap: 7px; margin: 14px 0 0; }
+.chapter-demo .hero-card-rule i { display: block; width: 40px; height: 6px; border-radius: 20px; background: var(--teal); }
+.chapter-demo .hero-card-rule i:nth-child(2) { background: var(--pink); width: 26px; }
+.chapter-demo .hero-card-rule i:nth-child(3) { background: #f5c85d; width: 16px; }
+.chapter-demo .chapter-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; padding-bottom: 80px; }
+.chapter-demo .chapter-card { display: flex; gap: 20px; padding: 25px; border: 1px solid var(--line); border-radius: 20px; background: rgba(255,255,255,.76); }
+.chapter-demo .chapter-card-active { border-color: #bce5e0; box-shadow: var(--shadow); }
+.chapter-demo .chapter-card-muted { opacity: .66; }
+.chapter-demo .chapter-number { color: var(--pink); font-size: 1.8rem; font-weight: 900; letter-spacing: -.08em; }
+.chapter-demo .card-label { color: var(--teal-dark); font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.chapter-demo .chapter-card h2 { margin: 7px 0 5px; font-size: 1.35rem; }
+.chapter-demo .chapter-card p { margin: 0 0 12px; color: var(--muted-ink); line-height: 1.5; }
+.chapter-demo .text-link { display: inline-flex; align-items: center; gap: 5px; color: var(--teal-dark); font-size: .88rem; font-weight: 800; text-decoration: none; }
+.chapter-demo .coming-soon { color: var(--muted-ink); font-size: .85rem; }
+.chapter-demo .chapter-heading { display: flex; align-items: end; justify-content: space-between; gap: 30px; padding: 38px 0 26px; }
+.chapter-demo .chapter-heading h1 { margin: 10px 0 5px; font-size: clamp(2.5rem, 5vw, 4.8rem); letter-spacing: -.07em; line-height: .95; }
+.chapter-demo .chapter-heading p { margin: 0; color: var(--muted-ink); font-size: 1.05rem; }
+.chapter-demo .progress-card { min-width: 180px; padding: 17px; border: 1px solid var(--line); border-radius: 17px; background: rgba(255,255,255,.72); }
+.chapter-demo .progress-card span { color: var(--muted-ink); font-size: .77rem; }
+.chapter-demo .progress-card strong { display: block; margin: 5px 0 10px; font-size: 1.6rem; }
+.chapter-demo .progress-track { height: 6px; overflow: hidden; border-radius: 9px; background: #eaf0ef; }
+.chapter-demo .progress-track i { display: block; height: 100%; border-radius: inherit; background: var(--pink); transition: width 240ms ease; }
+.chapter-demo .chapter-tabs { width: min(1120px, calc(100% - 40px)); margin: 0 auto 28px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--line); }
+.chapter-demo .chapter-tabs button { border: 0; border-bottom: 3px solid transparent; padding: 13px 12px; background: transparent; color: var(--muted-ink); font-size: .82rem; font-weight: 800; }
+.chapter-demo .chapter-tabs button span { margin-left: 4px; }
+.chapter-demo .chapter-tabs button.active { border-color: var(--teal); color: var(--teal-dark); }
+.chapter-demo .chapter-tabs .reset-tab { display: inline-flex; align-items: center; gap: 6px; margin-left: auto; color: var(--muted-ink); font-weight: 700; }
+.chapter-demo .lesson-layout { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(290px, .75fr); gap: 24px; align-items: start; padding-bottom: 70px; }
+.chapter-demo .lesson-image-wrap { padding: 12px; border: 1px solid var(--line); border-radius: 23px; background: white; box-shadow: var(--shadow); }
+.chapter-demo .lesson-image-wrap img { display: block; width: 100%; height: auto; border-radius: 15px; }
+.chapter-demo .lesson-side { display: grid; gap: 14px; }
+.chapter-demo .side-card { padding: 19px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.76); }
+.chapter-demo .side-card-teal { background: var(--teal-soft); border-color: #b9e7e2; }
+.chapter-demo .side-label { display: block; margin-bottom: 10px; color: var(--teal-dark); font-size: .73rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; }
+.chapter-demo .side-card p { margin: 0; line-height: 1.55; }
+.chapter-demo .rule-table { overflow: hidden; border: 1px solid var(--line); border-radius: 11px; font-size: .78rem; }
+.chapter-demo .rule-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 7px; padding: 9px 10px; border-top: 1px solid var(--line); }
+.chapter-demo .rule-row:first-child { border-top: 0; }
+.chapter-demo .rule-head { background: var(--pink-soft); color: var(--muted-ink); font-weight: 800; }
+.chapter-demo .rule-row .pink { color: var(--pink); font-weight: 800; }
+.chapter-demo .rule-row .teal { color: var(--teal-dark); font-weight: 800; }
+.chapter-demo .thing-list { display: grid; gap: 9px; }
+.chapter-demo .thing-list div { display: flex; justify-content: space-between; gap: 10px; padding-bottom: 8px; border-bottom: 1px dashed var(--line); font-size: .86rem; }
+.chapter-demo .thing-list div:last-child { padding-bottom: 0; border-bottom: 0; }
+.chapter-demo .thing-list strong { color: var(--pink); }
+.chapter-demo .full-width { width: 100%; }
+.chapter-demo .practice-layout { padding-bottom: 70px; }
+.chapter-demo .practice-intro { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 22px; }
+.chapter-demo .practice-intro h2 { margin: 8px 0 4px; font-size: 2.3rem; letter-spacing: -.05em; }
+.chapter-demo .practice-intro p { margin: 0; color: var(--muted-ink); }
+.chapter-demo .score-pill { display: flex; align-items: baseline; gap: 5px; padding: 11px 16px; border-radius: 13px; background: var(--pink-soft); color: var(--pink); }
+.chapter-demo .score-pill strong { font-size: 1.8rem; }
+.chapter-demo .score-pill span { font-size: .85rem; font-weight: 800; }
+.chapter-demo .exercise-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.chapter-demo .exercise-card { min-height: 270px; padding: 21px; border: 1px solid var(--line); border-radius: 19px; background: white; transition: border-color 160ms ease, box-shadow 160ms ease; }
+.chapter-demo .exercise-card:hover { border-color: #b9deda; box-shadow: 0 10px 28px rgba(36, 67, 70, .06); }
+.chapter-demo .exercise-card.is-correct { border-color: #9ddbd1; background: #fbfffe; }
+.chapter-demo .exercise-card.is-wrong { border-color: #f1b6cb; background: #fffafd; }
+.chapter-demo .exercise-meta { display: flex; align-items: center; gap: 9px; min-height: 25px; }
+.chapter-demo .exercise-number { color: var(--pink); font-size: .82rem; font-weight: 900; }
+.chapter-demo .exercise-label { color: var(--muted-ink); font-size: .72rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
+.chapter-demo .result-badge { display: inline-flex; align-items: center; gap: 4px; margin-left: auto; color: var(--teal-dark); font-size: .75rem; font-weight: 800; }
+.chapter-demo .is-wrong .result-badge { color: var(--pink); }
+.chapter-demo .exercise-card h3 { margin: 15px 0 12px; font-size: 1.02rem; }
+.chapter-demo .exercise-sentence { margin: 0 0 15px; padding: 11px 12px; border-radius: 11px; background: var(--paper-deep); font-size: .94rem; line-height: 1.5; }
+.chapter-demo .option-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.chapter-demo .option-button { border: 1px solid var(--line); border-radius: 11px; padding: 10px 8px; background: white; color: var(--ink); font-weight: 800; }
+.chapter-demo .option-button:hover, .chapter-demo .option-button.selected { border-color: var(--teal); background: var(--teal-soft); color: var(--teal-dark); }
+.chapter-demo .fill-exercise { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.chapter-demo .fill-line { display: flex; flex: 1 1 100%; gap: 8px; }
+.chapter-demo .fill-line input { width: 94px; border: 0; border-bottom: 2px solid var(--teal); padding: 8px 5px; outline: 0; background: transparent; color: var(--ink); font-weight: 800; text-align: center; }
+.chapter-demo .fill-line input:focus { border-color: var(--pink); }
+.chapter-demo .hint { color: var(--muted-ink); font-size: .77rem; }
+.chapter-demo .drag-exercise { display: grid; gap: 12px; }
+.chapter-demo .drag-bank { display: flex; gap: 7px; flex-wrap: wrap; }
+.chapter-demo .drag-chip { display: inline-flex; align-items: center; gap: 4px; border: 1px solid #b9e5e0; border-radius: 9px; padding: 7px 9px; background: var(--teal-soft); color: var(--teal-dark); font-size: .85rem; font-weight: 800; }
+.chapter-demo .drag-chip.dragging { background: var(--pink-soft); border-color: #f2b5cd; color: var(--pink); }
+.chapter-demo .drop-list { display: grid; gap: 7px; }
+.chapter-demo .drop-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-size: .83rem; }
+.chapter-demo .drop-target { min-width: 78px; border: 1px dashed #a6d8d3; border-radius: 9px; padding: 7px 8px; background: #fbfffe; color: var(--muted-ink); text-align: center; }
+.chapter-demo .drop-target.filled { border-style: solid; background: var(--teal-soft); color: var(--teal-dark); font-weight: 800; }
+.chapter-demo .explanation { display: grid; gap: 4px; margin-top: 16px; padding-top: 12px; border-top: 1px dashed var(--line); font-size: .8rem; line-height: 1.45; }
+.chapter-demo .explanation strong { color: var(--teal-dark); }
+.chapter-demo .is-wrong .explanation strong { color: var(--pink); }
+.chapter-demo .practice-footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 23px; padding: 15px 0; border-top: 1px solid var(--line); color: var(--muted-ink); font-size: .8rem; }
+.chapter-demo .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 800px) {
+  .chapter-demo .home-hero { grid-template-columns: 1fr; gap: 30px; padding-top: 55px; }
+  .chapter-demo .hero-card { max-width: 460px; transform: rotate(0); }
+  .chapter-demo .chapter-heading { align-items: start; flex-direction: column; }
+  .chapter-demo .lesson-layout { grid-template-columns: 1fr; }
+  .chapter-demo .lesson-side { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .chapter-demo .lesson-side .full-width { grid-column: 1 / -1; }
+  .chapter-demo .exercise-list { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .chapter-demo .topbar, .chapter-demo .home-hero, .chapter-demo .chapter-heading, .chapter-demo .lesson-layout, .chapter-demo .practice-layout, .chapter-demo .chapter-grid, .chapter-demo .chapter-tabs { width: min(100% - 28px, 1120px); }
+  .chapter-demo .topbar { height: 64px; }
+  .chapter-demo .topbar-note { display: none; }
+  .chapter-demo .hero-copy h1 { font-size: 3.2rem; }
+  .chapter-demo .chapter-grid, .chapter-demo .lesson-side { grid-template-columns: 1fr; }
+  .chapter-demo .chapter-tabs { overflow-x: auto; }
+  .chapter-demo .chapter-tabs button { white-space: nowrap; }
+  .chapter-demo .practice-intro { align-items: start; flex-direction: column; }
+  .chapter-demo .practice-footer { align-items: stretch; flex-wrap: wrap; }
+  .chapter-demo .practice-footer span { width: 100%; order: -1; text-align: center; }
+  .chapter-demo .exercise-card { padding: 17px; }
+  .chapter-demo .option-grid { grid-template-columns: 1fr; }
+}
+
+/* =========================================
+   DEUTSCH ERFOLG — PREMIUM EDITION
+========================================= */
+
+.chapter-demo {
+  --premium-navy: #172b4d;
+  --premium-gold: #c6a568;
+  --premium-text: #263449;
+  --premium-muted: #778296;
+  --premium-bg: #f8f7f4;
+  --premium-white: #ffffff;
+  --premium-line: #e9e7e1;
+  --premium-soft: #f1eee7;
+
+  color: var(--premium-text);
+  background: var(--premium-bg);
+  font-family: "Inter", "Avenir Next", sans-serif;
+}
+
+.chapter-demo .book-shell {
+  background: var(--premium-bg);
+}
+
+.chapter-demo .topbar {
+  height: 76px;
+  border-bottom: 1px solid var(--premium-line);
+}
+
+.chapter-demo .brand {
+  color: var(--premium-navy);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.chapter-demo .brand-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: var(--premium-navy);
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.chapter-demo .back-link {
+  color: var(--premium-muted);
+  transition: color 0.2s ease;
+}
+
+.chapter-demo .back-link:hover {
+  color: var(--premium-navy);
+}
+
+.chapter-demo .chapter-heading {
+  padding-top: 64px;
+  padding-bottom: 38px;
+  align-items: center;
+}
+
+.chapter-demo .eyebrow {
+  color: var(--premium-gold);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+}
+
+.chapter-demo .chapter-heading h1 {
+  color: var(--premium-navy);
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  font-weight: 750;
+  letter-spacing: -0.065em;
+  line-height: 1.04;
+}
+
+.chapter-demo .chapter-heading p {
+  color: var(--premium-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.chapter-demo .progress-card {
+  min-width: 190px;
+  border: 1px solid var(--premium-line);
+  border-radius: 12px;
+  background: var(--premium-white);
+  padding: 19px;
+  box-shadow: 0 5px 20px rgba(23, 43, 77, 0.035);
+}
+
+.chapter-demo .progress-card span {
+  color: var(--premium-muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.chapter-demo .progress-card strong {
+  color: var(--premium-navy);
+  font-size: 1.8rem;
+  font-weight: 750;
+}
+
+.chapter-demo .progress-track {
+  height: 4px;
+  background: #eeece6;
+}
+
+.chapter-demo .progress-track i {
+  background: var(--premium-gold);
+}
+
+.chapter-demo .chapter-tabs {
+  gap: 24px;
+  margin-bottom: 36px;
+  border-bottom: 1px solid var(--premium-line);
+}
+
+.chapter-demo .chapter-tabs button {
+  padding: 16px 5px;
+  border-bottom-width: 2px;
+  color: var(--premium-muted);
+  font-size: 0.82rem;
+  transition: color 0.2s ease;
+}
+
+.chapter-demo .chapter-tabs button.active {
+  border-color: var(--premium-gold);
+  color: var(--premium-navy);
+}
+
+.chapter-demo .chapter-tabs .reset-tab {
+  color: var(--premium-muted);
+}
+
+.chapter-demo .lesson-layout {
+  grid-template-columns: minmax(0, 1.35fr) minmax(290px, 0.75fr);
+  gap: 28px;
+}
+
+.chapter-demo .lesson-image-wrap {
+  padding: 10px;
+  border: 1px solid var(--premium-line);
+  border-radius: 14px;
+  background: white;
+  box-shadow: 0 8px 30px rgba(23, 43, 77, 0.045);
+}
+
+.chapter-demo .lesson-image-wrap img {
+  border-radius: 8px;
+}
+
+.chapter-demo .lesson-side {
+  gap: 16px;
+}
+
+.chapter-demo .side-card {
+  padding: 22px;
+  border: 1px solid var(--premium-line);
+  border-radius: 12px;
+  background: white;
+}
+
+.chapter-demo .side-card-teal {
+  border-color: #e5dfd1;
+  background: #f3f0e9;
+}
+
+.chapter-demo .side-label {
+  color: var(--premium-gold);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+}
+
+.chapter-demo .side-card p {
+  color: var(--premium-text);
+  font-size: 0.91rem;
+  line-height: 1.7;
+}
+
+.chapter-demo .rule-table {
+  border-color: var(--premium-line);
+  border-radius: 8px;
+}
+
+.chapter-demo .rule-head {
+  background: #f5f3ee;
+  color: var(--premium-muted);
+}
+
+.chapter-demo .rule-row .pink,
+.chapter-demo .rule-row .teal {
+  color: var(--premium-navy);
+}
+
+.chapter-demo .thing-list div {
+  border-color: var(--premium-line);
+  color: var(--premium-text);
+}
+
+.chapter-demo .thing-list strong {
+  color: var(--premium-gold);
+}
+
+.chapter-demo .primary-button {
+  border-radius: 8px;
+  padding: 13px 19px;
+  background: var(--premium-navy);
+  color: white;
+  box-shadow: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.chapter-demo .primary-button:hover {
+  transform: translateY(-1px);
+  background: #233d66;
+  box-shadow: none;
+}
+
+.chapter-demo .secondary-button {
+  border: 1px solid var(--premium-line);
+  border-radius: 8px;
+  background: white;
+  color: var(--premium-navy);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.chapter-demo .secondary-button:hover {
+  border-color: var(--premium-gold);
+  color: var(--premium-navy);
+}
+
+.chapter-demo .practice-intro h2 {
+  color: var(--premium-navy);
+  font-size: 2.25rem;
+  font-weight: 750;
+  letter-spacing: -0.055em;
+}
+
+.chapter-demo .practice-intro p {
+  color: var(--premium-muted);
+  font-size: 0.9rem;
+}
+
+.chapter-demo .score-pill {
+  border: 1px solid #e9e1d2;
+  border-radius: 9px;
+  background: #f3f0e9;
+  color: var(--premium-navy);
+}
+
+.chapter-demo .score-pill strong {
+  color: var(--premium-gold);
+}
+
+.chapter-demo .exercise-card {
+  min-height: 270px;
+  padding: 24px;
+  border: 1px solid var(--premium-line);
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 18px rgba(23, 43, 77, 0.025);
+}
+
+.chapter-demo .exercise-card:hover {
+  border-color: #d8c7a5;
+  box-shadow: 0 9px 25px rgba(23, 43, 77, 0.055);
+}
+
+.chapter-demo .exercise-card.is-correct {
+  border-color: #b8d4c5;
+  background: #fbfdfb;
+}
+
+.chapter-demo .exercise-card.is-wrong {
+  border-color: #e5c5c5;
+  background: #fffdfd;
+}
+
+.chapter-demo .exercise-number {
+  color: var(--premium-gold);
+}
+
+.chapter-demo .exercise-label {
+  color: var(--premium-muted);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+}
+
+.chapter-demo .exercise-card h3 {
+  color: var(--premium-navy);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.chapter-demo .exercise-sentence {
+  border: 1px solid #efede7;
+  border-radius: 8px;
+  background: #f8f7f4;
+  color: var(--premium-text);
+  line-height: 1.65;
+}
+
+.chapter-demo .option-button {
+  border: 1px solid var(--premium-line);
+  border-radius: 8px;
+  background: white;
+  color: var(--premium-text);
+  transition: all 0.2s ease;
+}
+
+.chapter-demo .option-button:hover,
+.chapter-demo .option-button.selected {
+  border-color: var(--premium-gold);
+  background: #f5f1e8;
+  color: var(--premium-navy);
+}
+
+.chapter-demo .fill-line input {
+  border-color: var(--premium-gold);
+  color: var(--premium-navy);
+}
+
+.chapter-demo .drag-chip {
+  border: 1px solid #e7dfd0;
+  border-radius: 8px;
+  background: #f5f1e8;
+  color: var(--premium-navy);
+}
+
+.chapter-demo .drag-chip.dragging {
+  border-color: var(--premium-gold);
+  background: #eee5d4;
+  color: var(--premium-navy);
+}
+
+.chapter-demo .drop-target {
+  border-color: #d8c7a5;
+  border-radius: 8px;
+  background: #fbfaf7;
+  color: var(--premium-muted);
+}
+
+.chapter-demo .drop-target.filled {
+  border-color: var(--premium-gold);
+  background: #f5f1e8;
+  color: var(--premium-navy);
+}
+
+.chapter-demo .explanation {
+  border-color: var(--premium-line);
+  color: var(--premium-muted);
+  line-height: 1.6;
+}
+
+.chapter-demo .explanation strong,
+.chapter-demo .is-wrong .explanation strong {
+  color: var(--premium-navy);
+}
+
+.chapter-demo .result-badge,
+.chapter-demo .is-wrong .result-badge {
+  color: var(--premium-navy);
+}
+
+.chapter-demo .hint {
+  color: var(--premium-muted);
+}
+
+.chapter-demo .practice-footer {
+  border-color: var(--premium-line);
+  color: var(--premium-muted);
+}
+
+@media (max-width: 800px) {
+  .chapter-demo .chapter-heading {
+    padding-top: 42px;
+  }
+
+  .chapter-demo .lesson-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-demo .lesson-side {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .chapter-demo .topbar {
+    height: 64px;
+  }
+
+  .chapter-demo .chapter-heading h1 {
+    font-size: 2.8rem;
+  }
+
+  .chapter-demo .chapter-tabs {
+    gap: 12px;
+  }
+
+  .chapter-demo .lesson-side {
+    grid-template-columns: 1fr;
+  }
+
+  .chapter-demo .exercise-card {
+    padding: 18px;
+  }
+}
+
+/* =========================================
+   ÜBUNGEN — DESIGN COMPACT & ÉLÉGANT
+========================================= */
+
+.chapter-demo .practice-layout {
+  gap: 22px;
+}
+
+.chapter-demo .practice-intro {
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.chapter-demo .practice-intro h2 {
+  font-size: clamp(23px, 3vw, 30px);
+  letter-spacing: -0.8px;
+  margin: 5px 0;
+}
+
+.chapter-demo .practice-intro p {
+  font-size: 13px;
+  color: #7b8492;
+}
+
+.chapter-demo .exercise-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
+.chapter-demo .exercise-card {
+  padding: 18px 19px;
+  border: 1px solid #e9e7e1;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(23, 43, 77, 0.025);
+  min-width: 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chapter-demo .exercise-card:hover {
+  border-color: #d5c49f;
+  box-shadow: 0 5px 16px rgba(23, 43, 77, 0.055);
+}
+
+.chapter-demo .exercise-meta {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 13px;
+  flex-wrap: wrap;
+}
+
+.chapter-demo .exercise-number {
+  width: 25px;
+  height: 25px;
+  min-width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  background: #f2eee5;
+  color: #947643;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.chapter-demo .exercise-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #858d99;
+  letter-spacing: 0.2px;
+}
+
+.chapter-demo .exercise-card h3 {
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 650;
+  color: #263449;
+  margin: 0 0 10px;
+}
+
+.chapter-demo .exercise-sentence {
+  padding: 11px 12px;
+  margin: 10px 0 13px;
+  border-radius: 8px;
+  background: #f8f7f4;
+  color: #34445a;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.chapter-demo .option-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.chapter-demo .option-button {
+  min-height: 36px;
+  padding: 7px 13px;
+  border-radius: 8px;
+  border: 1px solid #e7e8eb;
+  background: #fff;
+  color: #34445a;
+  font-size: 12px;
+  font-weight: 550;
+  transition: all 0.18s ease;
+}
+
+.chapter-demo .option-button:hover {
+  border-color: #c6a568;
+  background: #faf8f3;
+}
+
+.chapter-demo .option-button.selected {
+  border-color: #c6a568;
+  background: #f5f0e5;
+  color: #735b32;
+}
+
+.chapter-demo .fill-exercise {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.chapter-demo .fill-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chapter-demo .fill-line input {
+  width: 85px;
+  height: 36px;
+  padding: 6px 10px;
+  border: 1px solid #e3e5e9;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 13px;
+  color: #263449;
+  outline: none;
+}
+
+.chapter-demo .fill-line input:focus {
+  border-color: #c6a568;
+  box-shadow: 0 0 0 3px rgba(198, 165, 104, 0.12);
+}
+
+.chapter-demo .hint {
+  color: #9299a4;
+  font-size: 11px;
+}
+
+.chapter-demo .drag-exercise {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chapter-demo .drag-bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.chapter-demo .drag-chip {
+  padding: 7px 10px;
+  border: 1px solid #e7e4dc;
+  border-radius: 7px;
+  background: #f8f7f4;
+  color: #34445a;
+  font-size: 12px;
+}
+
+.chapter-demo .drop-list {
+  display: grid;
+  gap: 7px;
+}
+
+.chapter-demo .drop-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 12px;
+  color: #34445a;
+}
+
+.chapter-demo .drop-target {
+  min-width: 75px;
+  min-height: 32px;
+  padding: 6px 10px;
+  border: 1px dashed #d7d6d1;
+  border-radius: 7px;
+  background: #faf9f7;
+  text-align: center;
+  font-size: 12px;
+}
+
+.chapter-demo .explanation {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 13px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: #f6f7f5;
+  color: #526052;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.chapter-demo .explanation strong {
+  font-size: 12px;
+  color: #405b45;
+}
+
+.chapter-demo .result-badge {
+  margin-left: auto;
+  font-size: 10px;
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+
+.chapter-demo .practice-footer {
+  padding: 13px 0;
+  border-top: 1px solid #eceae5;
+}
+
+.chapter-demo .exercise-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.chapter-demo .secondary-button,
+.chapter-demo .primary-button {
+  min-height: 36px;
+  padding: 8px 13px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.chapter-demo .exercise-choice {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.chapter-demo .exercise-choice h3 {
+  font-size: 16px;
+}
+
+.chapter-demo .exercise-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  color: #947643;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+@media (max-width: 700px) {
+  .chapter-demo .exercise-list {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+
+  .chapter-demo .exercise-card {
+    padding: 15px;
+  }
+
+  .chapter-demo .exercise-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .chapter-demo .exercise-actions button {
+    width: 100%;
+    justify-content: center;
+  }
+}
