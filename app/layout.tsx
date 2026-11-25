@@ -4,11 +4,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Deutsch-Erfolg | Apprenez et réussissez en allemand",
+    default: "Deutsch-Erfolg | Deutsch lernen. Erfolgreich sein!",
     template: "%s | Deutsch-Erfolg",
   },
   description:
-    "Deutsch-Erfolg : votre plateforme pour apprendre l'allemand et réussir les examens TELC B1 et B2.",
+    "Deutsch-Erfolg : Ihre Plattform zum Deutschlernen und zum erfolgreichen Bestehen der Deutschprüfungen.",
   applicationName: "Deutsch-Erfolg",
 };
 
