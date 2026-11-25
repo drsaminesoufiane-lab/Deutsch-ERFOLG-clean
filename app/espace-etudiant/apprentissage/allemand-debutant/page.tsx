@@ -2,6 +2,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useLanguage, type Language } from '@/contexts/LanguageContext'
 import {
   BookOpen,
   Volume2,
@@ -16,17 +17,16 @@ import {
   Lightbulb,
 } from 'lucide-react'
 
-type Lang = 'fr' | 'de' | 'en' | 'ar'
-type Tab = 'alphabet' | 'syllables' | 'words' | 'quiz'
+type Tab = 'alphabet' | 'syllables' | 'combinations' | 'words' | 'quiz'
 
 const alphabet = [
   { letter: 'A', name: 'Ah', example: 'Apfel', fr: 'Pomme', de: 'Apfel', en: 'Apple', ar: 'تفاحة', pronunciation: { fr: 'Comme le A dans papa', de: 'Wie das A in Vater', en: 'Like the A in father', ar: 'مثل الألف في بابا' } },
   { letter: 'B', name: 'Beh', example: 'Ball', fr: 'Ballon', de: 'Ball', en: 'Ball', ar: 'كرة', pronunciation: { fr: 'Comme le B français', de: 'Wie B im Deutschen', en: 'Like B in boy', ar: 'مثل حرف ب' } },
-  { letter: 'C', name: 'Tseh', example: 'Computer', fr: 'Ordinateur', de: 'Computer', en: 'Computer', ar: 'حاسوب', pronunciation: { fr: 'Comme TS dans tsar', de: 'Wie TS in « Pizza »', en: 'Like TS in cats', ar: 'مثل تس' } },
+  { letter: 'C', name: 'Tseh', example: 'Computer', fr: 'Ordinateur', de: 'Computer', en: 'Computer', ar: 'حاسوب', pronunciation: { fr: 'Comme TS dans tsar', de: 'Wie TS in „Pizza“', en: 'Like TS in cats', ar: 'مثل تس' } },
   { letter: 'D', name: 'Deh', example: 'Danke', fr: 'Merci', de: 'Danke', en: 'Thank you', ar: 'شكراً', pronunciation: { fr: 'Comme le D français', de: 'Wie D in Danke', en: 'Like D in dog', ar: 'مثل حرف د' } },
   { letter: 'E', name: 'Eh', example: 'Elefant', fr: 'Éléphant', de: 'Elefant', en: 'Elephant', ar: 'فيل', pronunciation: { fr: 'Un é fermé ou è selon le mot', de: 'Ein klares E', en: 'A clear E sound', ar: 'صوت قريب من إيه' } },
   { letter: 'F', name: 'Eff', example: 'Fisch', fr: 'Poisson', de: 'Fisch', en: 'Fish', ar: 'سمكة', pronunciation: { fr: 'Comme le F français', de: 'Wie F in Fisch', en: 'Like F in fish', ar: 'مثل حرف ف' } },
-  { letter: 'G', name: 'Geh', example: 'Garten', fr: 'Jardin', de: 'Garden', en: 'Garden', ar: 'حديقة', pronunciation: { fr: 'Comme G dans gare', de: 'Wie G in Garten', en: 'Like G in go', ar: 'مثل گ أو ج قاسية' } },
+  { letter: 'G', name: 'Geh', example: 'Garten', fr: 'Jardin', de: 'Garten', en: 'Garden', ar: 'حديقة', pronunciation: { fr: 'Comme G dans gare', de: 'Wie G in Garten', en: 'Like G in go', ar: 'مثل گ أو ج قاسية' } },
   { letter: 'H', name: 'Hah', example: 'Haus', fr: 'Maison', de: 'Haus', en: 'House', ar: 'منزل', pronunciation: { fr: 'H aspiré, avec un souffle', de: 'Ein hörbarer Hauchlaut', en: 'Like H in house', ar: 'مثل حرف ه مع نفَس' } },
   { letter: 'I', name: 'Ih', example: 'Igel', fr: 'Hérisson', de: 'Igel', en: 'Hedgehog', ar: 'قنفذ', pronunciation: { fr: 'Comme I dans ici', de: 'Wie das lange I', en: 'Like EE in see', ar: 'مثل ي طويلة' } },
   { letter: 'J', name: 'Yott', example: 'Ja', fr: 'Oui', de: 'Ja', en: 'Yes', ar: 'نعم', pronunciation: { fr: 'Comme Y dans yaourt', de: 'Wie J in Ja', en: 'Like Y in yes', ar: 'مثل ي' } },
@@ -67,6 +67,82 @@ const syllableRows = [
   { consonant: 'T', values: ['ta', 'te', 'ti', 'to', 'tu'], note: { fr: 'T est prononcé avec une petite aspiration.', de: 'T wird mit einer leichten Behauchung gesprochen.', en: 'T is pronounced with a small puff of air.', ar: 'ينطق T مع نفَس خفيف.' } },
   { consonant: 'W', values: ['wa', 'we', 'wi', 'wo', 'wu'], note: { fr: 'W allemand se prononce comme V en français.', de: 'W wird wie ein deutsches W ausgesprochen.', en: 'German W sounds like English V.', ar: 'W الألمانية تنطق مثل ڤ.' } },
 ]
+
+const combinations = [
+  {
+    category: 'vowels',
+    items: [
+      { value: 'ei', sound: 'aï', example: 'mein', meaning: { fr: 'mon / ma', de: 'mein', en: 'my', ar: 'لي' }, description: { fr: 'Se prononce comme « aï » dans ail.', de: 'Klingt wie „ai“.', en: 'Sounds like the vowel in “eye”.', ar: 'تنطق مثل آي.' } },
+      { value: 'ai', sound: 'aï', example: 'Mai', meaning: { fr: 'mai', de: 'Mai', en: 'May', ar: 'ماي' }, description: { fr: 'Même son que ei. Cette combinaison est moins fréquente.', de: 'Gleicher Klang wie ei. Diese Kombination ist seltener.', en: 'Same sound as ei. This spelling is less common.', ar: 'نفس صوت ei وتستعمل بشكل أقل.' } },
+      { value: 'au', sound: 'a-ou', example: 'Haus', meaning: { fr: 'maison', de: 'Haus', en: 'house', ar: 'منزل' }, description: { fr: 'Se prononce comme « aou » en une seule syllabe.', de: 'Wird als Doppellaut gesprochen.', en: 'Sounds like “ow” in “house”.', ar: 'تنطق مثل آو.' } },
+      { value: 'eu', sound: 'oï', example: 'heute', meaning: { fr: 'aujourd’hui', de: 'heute', en: 'today', ar: 'اليوم' }, description: { fr: 'Se prononce approximativement « oï ».', de: 'Klingt wie „oy“.', en: 'Sounds like “oy” in “boy”.', ar: 'تنطق تقريباً أوي.' } },
+      { value: 'äu', sound: 'oï', example: 'Häuser', meaning: { fr: 'maisons', de: 'Häuser', en: 'houses', ar: 'منازل' }, description: { fr: 'Se prononce comme eu.', de: 'Klingt genauso wie eu.', en: 'Sounds the same as eu.', ar: 'تنطق مثل eu.' } },
+      { value: 'ie', sound: 'ii long', example: 'Liebe', meaning: { fr: 'amour', de: 'Liebe', en: 'love', ar: 'حب' }, description: { fr: 'Le i est long : « iii ».', de: 'Das i wird lang ausgesprochen.', en: 'The i is long, like “ee” in “see”.', ar: 'تنطق ي طويلة.' } },
+    ],
+  },
+  {
+    category: 'consonants',
+    items: [
+      { value: 'sch', sound: 'ch', example: 'Schule', meaning: { fr: 'école', de: 'Schule', en: 'school', ar: 'مدرسة' }, description: { fr: 'Se prononce comme « ch » dans chat.', de: 'Wie „sch“ in Schule.', en: 'Like “sh” in “shoe”.', ar: 'مثل ش.' } },
+      { value: 'ch', sound: 'kh / ç', example: 'ich', meaning: { fr: 'je', de: 'ich', en: 'I', ar: 'أنا' }, description: { fr: 'Deux sons importants : doux dans ich, guttural dans Buch.', de: 'Zwei wichtige Laute: weich in ich, rau in Buch.', en: 'Two common sounds: soft in ich, guttural in Buch.', ar: 'له صوتان: ناعم في ich وحلقي في Buch.' } },
+      { value: 'sp', sound: 'chp', example: 'Sport', meaning: { fr: 'sport', de: 'Sport', en: 'sport', ar: 'رياضة' }, description: { fr: 'Au début d’un mot ou d’une syllabe, se prononce « chp ».', de: 'Am Wort- oder Silbenanfang klingt es wie „schp“.', en: 'At the beginning of a word or syllable, it sounds like “shp”.', ar: 'في بداية الكلمة أو المقطع تنطق شب.' } },
+      { value: 'st', sound: 'cht', example: 'Straße', meaning: { fr: 'rue', de: 'Straße', en: 'street', ar: 'شارع' }, description: { fr: 'Au début d’un mot ou d’une syllabe, se prononce « cht ».', de: 'Am Wort- oder Silbenanfang klingt es wie „scht“.', en: 'At the beginning of a word or syllable, it sounds like “sht”.', ar: 'في بداية الكلمة أو المقطع تنطق شت.' } },
+      { value: 'ck', sound: 'k', example: 'Jacke', meaning: { fr: 'veste', de: 'Jacke', en: 'jacket', ar: 'سترة' }, description: { fr: 'Se prononce comme un seul K.', de: 'Wird wie ein K ausgesprochen.', en: 'Pronounced like a single K.', ar: 'تنطق مثل ك واحدة.' } },
+      { value: 'tz', sound: 'ts', example: 'Katze', meaning: { fr: 'chat', de: 'Katze', en: 'cat', ar: 'قط' }, description: { fr: 'Se prononce « ts ».', de: 'Wird wie „ts“ ausgesprochen.', en: 'Sounds like “ts”.', ar: 'تنطق تس.' } },
+      { value: 'pf', sound: 'p + f', example: 'Pferd', meaning: { fr: 'cheval', de: 'Pferd', en: 'horse', ar: 'حصان' }, description: { fr: 'Prononce les deux sons P puis F.', de: 'Beide Laute werden gesprochen: P und F.', en: 'Pronounce both sounds: P followed by F.', ar: 'ننطق الصوتين معاً: پ ثم ف.' } },
+      { value: 'qu', sound: 'kv', example: 'Quelle', meaning: { fr: 'source', de: 'Quelle', en: 'source', ar: 'مصدر' }, description: { fr: 'Se prononce généralement « kv ».', de: 'Wird normalerweise wie „kv“ ausgesprochen.', en: 'Usually sounds like “kv”.', ar: 'تنطق غالباً كف.' } },
+      { value: 'ng', sound: 'ng', example: 'singen', meaning: { fr: 'chanter', de: 'singen', en: 'to sing', ar: 'يغني' }, description: { fr: 'Le son nasal ng : le g final ne se prononce pas séparément.', de: 'Der Laut ng wird zusammen gesprochen.', en: 'The ng is pronounced as one nasal sound.', ar: 'صوت أنفي واحد، ولا ننطق g بشكل منفصل.' } },
+      { value: 'nk', sound: 'nk', example: 'danke', meaning: { fr: 'merci', de: 'danke', en: 'thank you', ar: 'شكراً' }, description: { fr: 'Le N est suivi d’un K clairement prononcé.', de: 'Auf n folgt ein deutliches k.', en: 'The N is followed by a clear K sound.', ar: 'حرف N يتبعه صوت K واضح.' } },
+    ],
+  },
+]
+
+const combinationTranslations = {
+  fr: {
+    title: 'Les combinaisons de lettres',
+    intro: 'En allemand, plusieurs lettres peuvent former ensemble un nouveau son. Apprends à les reconnaître et à les prononcer.',
+    vowels: 'Combinaisons de voyelles',
+    consonants: 'Combinaisons de consonnes',
+    listen: 'Écouter',
+    example: 'Exemple',
+    pronunciation: 'Prononciation approximative',
+    explanation: 'Explication',
+    tip: 'Conseil : écoute plusieurs fois le mot entier. La prononciation écrite reste une approximation.',
+  },
+  de: {
+    title: 'Buchstabenkombinationen',
+    intro: 'Im Deutschen können mehrere Buchstaben zusammen einen neuen Laut bilden. Lerne, sie zu erkennen und auszusprechen.',
+    vowels: 'Vokalkombinationen',
+    consonants: 'Konsonantenkombinationen',
+    listen: 'Anhören',
+    example: 'Beispiel',
+    pronunciation: 'Ungefähre Aussprache',
+    explanation: 'Erklärung',
+    tip: 'Tipp: Höre dir das ganze Wort mehrmals an. Die schriftliche Aussprache ist nur eine Annäherung.',
+  },
+  en: {
+    title: 'Letter combinations',
+    intro: 'In German, several letters can work together to create a new sound. Learn to recognize and pronounce them.',
+    vowels: 'Vowel combinations',
+    consonants: 'Consonant combinations',
+    listen: 'Listen',
+    example: 'Example',
+    pronunciation: 'Approximate pronunciation',
+    explanation: 'Explanation',
+    tip: 'Tip: Listen to the whole word several times. Written pronunciation is only an approximation.',
+  },
+  ar: {
+    title: 'تركيبات الحروف',
+    intro: 'في اللغة الألمانية، يمكن لعدة حروف أن تجتمع لتكوين صوت جديد. تعلم التعرف عليها ونطقها.',
+    vowels: 'تركيبات حروف العلة',
+    consonants: 'تركيبات الحروف الساكنة',
+    listen: 'استمع',
+    example: 'مثال',
+    pronunciation: 'النطق التقريبي',
+    explanation: 'الشرح',
+    tip: 'نصيحة: استمع إلى الكلمة كاملة عدة مرات. النطق المكتوب تقريبي فقط.',
+  },
+}
 
 const firstWords = [
   { de: 'Hallo', sound: 'ha-lo', fr: 'Bonjour / Salut', deMeaning: 'Hallo', en: 'Hello', ar: 'مرحباً' },
@@ -210,7 +286,9 @@ const translations = {
 }
 
 export default function AllemandDebutantPage() {
-  const [language, setLanguage] = useState<Lang>('fr')
+  // Utilise la langue globale partagée avec le sélecteur du bas
+  const { language, setLanguage } = useLanguage()
+
   const [tab, setTab] = useState<Tab>('alphabet')
   const [selectedLetter, setSelectedLetter] = useState(0)
   const [selectedQuiz, setSelectedQuiz] = useState(0)
@@ -223,24 +301,22 @@ export default function AllemandDebutantPage() {
   const current = alphabet[selectedLetter]
   const direction = language === 'ar' ? 'rtl' : 'ltr'
 
-  
-const speak = (text: string) => {
-  if (typeof window === 'undefined') return
+  const speak = (text: string) => {
+    if (typeof window === 'undefined') return
 
-  if (!('speechSynthesis' in window)) {
-    console.warn(tr.noAudio)
-    return
+    if (!('speechSynthesis' in window)) {
+      console.warn(tr.noAudio)
+      return
+    }
+
+    window.speechSynthesis.cancel()
+
+    const utterance = new SpeechSynthesisUtterance(text)
+    utterance.lang = 'de-DE'
+    utterance.rate = 0.78
+
+    window.speechSynthesis.speak(utterance)
   }
-
-  window.speechSynthesis.cancel()
-
-  const utterance = new SpeechSynthesisUtterance(text)
-  utterance.lang = 'de-DE'
-  utterance.rate = 0.78
-
-  window.speechSynthesis.speak(utterance)
-}
-
 
   const markCompleted = (index: number) => {
     setCompleted(prev => prev.includes(index) ? prev : [...prev, index])
@@ -290,7 +366,7 @@ const speak = (text: string) => {
 
               <select
                 value={language}
-                onChange={e => setLanguage(e.target.value as Lang)}
+                onChange={e => setLanguage(e.target.value as Language)}
                 className="rounded-xl border border-white/20 bg-[#263B5C] px-3 py-2 text-sm text-white outline-none"
                 aria-label="Select language"
               >
@@ -351,10 +427,11 @@ const speak = (text: string) => {
         </section>
 
         {/* NAVIGATION */}
-        <nav className="mb-6 grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <nav className="mb-6 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
           {([
             ['alphabet', BookOpen, tr.alphabet],
             ['syllables', Languages, tr.syllables],
+            ['combinations', Volume2, 'Kombinationen'],
             ['words', GraduationCap, tr.words],
             ['quiz', CheckCircle2, tr.quiz],
           ] as const).map(([id, Icon, label]) => (
@@ -586,6 +663,100 @@ const speak = (text: string) => {
                     {item} <Volume2 className="mx-1 inline" size={15} />
                   </button>
                 ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {/* COMBINATIONS */}
+        {tab === 'combinations' && (
+          <section className="space-y-6">
+            <div>
+              <h2 className="text-2xl font-bold">
+                {combinationTranslations[language].title}
+              </h2>
+              <p className="mt-2 text-sm leading-6 text-gray-500">
+                {combinationTranslations[language].intro}
+              </p>
+            </div>
+
+            {combinations.map(group => (
+              <div key={group.category} className="space-y-4">
+                <h3 className="text-xl font-bold">
+                  {group.category === 'vowels'
+                    ? combinationTranslations[language].vowels
+                    : combinationTranslations[language].consonants}
+                </h3>
+
+                <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+                  {group.items.map(item => (
+                    <article
+                      key={item.value}
+                      className="rounded-2xl border border-[#E5E8EF] bg-white p-5"
+                    >
+                      <div className="flex items-center justify-between gap-3">
+                        <span className="text-4xl font-extrabold text-[#172B4D]" dir="ltr">
+                          {item.value}
+                        </span>
+                        <button
+                          onClick={() => speak(item.value)}
+                          className="rounded-full bg-[#F6F7FA] p-3 hover:bg-[#F4E8CE]"
+                          aria-label={combinationTranslations[language].listen}
+                        >
+                          <Volume2 size={20} />
+                        </button>
+                      </div>
+
+                      <div className="mt-4 rounded-xl bg-[#F6F7FA] p-3">
+                        <p className="text-xs font-bold uppercase text-gray-400">
+                          {combinationTranslations[language].pronunciation}
+                        </p>
+                        <p className="mt-1 font-semibold" dir="ltr">
+                          {item.sound}
+                        </p>
+                      </div>
+
+                      <div className="mt-3">
+                        <p className="text-xs font-bold uppercase text-[#B18B3E]">
+                          {combinationTranslations[language].explanation}
+                        </p>
+                        <p className="mt-1 text-sm leading-6 text-gray-600">
+                          {item.description[language]}
+                        </p>
+                      </div>
+
+                      <div className="mt-4 flex items-center justify-between gap-3 border-t border-[#EDF0F5] pt-4">
+                        <div>
+                          <p className="text-xs font-bold text-gray-400">
+                            {combinationTranslations[language].example}
+                          </p>
+                          <p className="mt-1 text-xl font-bold" dir="ltr">
+                            {item.example}
+                          </p>
+                          <p className="text-sm text-gray-500">
+                            {item.meaning[language]}
+                          </p>
+                        </div>
+                        <button
+                          onClick={() => speak(item.example)}
+                          className="rounded-full bg-[#FBF6EA] p-3 text-[#172B4D] hover:bg-[#F4E8CE]"
+                          aria-label={`${combinationTranslations[language].listen}: ${item.example}`}
+                        >
+                          <Headphones size={20} />
+                        </button>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            ))}
+
+            <div className="rounded-2xl border border-[#E9D9B4] bg-[#FBF6EA] p-5">
+              <div className="flex gap-3">
+                <Lightbulb className="shrink-0 text-[#B18B3E]" />
+                <p className="text-sm leading-6 text-gray-700">
+                  {combinationTranslations[language].tip}
+                </p>
               </div>
             </div>
           </section>
