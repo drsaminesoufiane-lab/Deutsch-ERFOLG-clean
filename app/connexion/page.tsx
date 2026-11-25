@@ -40,6 +40,7 @@ const traductions = {
     password: 'Mot de passe',
     passwordPlaceholder: 'Votre mot de passe',
     afficher: 'Afficher ou masquer le mot de passe',
+    seSouvenir: 'Se souvenir de moi',
     connecter: 'Se connecter',
     connexion: 'Connexion en cours...',
     pasCompte: "Vous n'avez pas encore de compte ?",
@@ -71,6 +72,7 @@ const traductions = {
     password: 'Passwort',
     passwordPlaceholder: 'Dein Passwort',
     afficher: 'Passwort anzeigen oder verbergen',
+    seSouvenir: 'Angemeldet bleiben',
     connecter: 'Anmelden',
     connexion: 'Anmeldung läuft...',
     pasCompte: 'Du hast noch kein Konto?',
@@ -102,6 +104,7 @@ const traductions = {
     password: 'كلمة المرور',
     passwordPlaceholder: 'كلمة المرور الخاصة بك',
     afficher: 'إظهار أو إخفاء كلمة المرور',
+    seSouvenir: 'تذكرني',
     connecter: 'تسجيل الدخول',
     connexion: 'جارٍ تسجيل الدخول...',
     pasCompte: 'ليس لديك حساب بعد؟',
@@ -133,6 +136,7 @@ const traductions = {
     password: 'Password',
     passwordPlaceholder: 'Your password',
     afficher: 'Show or hide password',
+    seSouvenir: 'Remember me',
     connecter: 'Log in',
     connexion: 'Logging in...',
     pasCompte: "Don't have an account yet?",
@@ -154,6 +158,7 @@ export default function ConnexionPage() {
   const [message, setMessage] = useState('')
   const [loading, setLoading] = useState(false)
   const [showPassword, setShowPassword] = useState(false)
+  const [rememberMe, setRememberMe] = useState(true)
   const [lang, setLang] = useState<Lang>('de')
 
   const t = traductions[lang]
@@ -162,6 +167,18 @@ export default function ConnexionPage() {
     e.preventDefault()
     setLoading(true)
     setMessage('')
+
+    // Définit le mode de stockage de la session avant la connexion
+    try {
+      sessionStorage.setItem(
+        'deutsch_erfolg_remember_me',
+        rememberMe ? 'true' : 'false'
+      )
+    } catch {
+      setMessage(t.erreurIdentification)
+      setLoading(false)
+      return
+    }
 
     const { error } = await supabase.auth.signInWithPassword({
       email,
@@ -208,7 +225,6 @@ export default function ConnexionPage() {
 
         const deviceName = navigator.userAgent.slice(0, 180)
 
-        // Le nouvel appareil remplace l'ancien dans Supabase
         const { error: deviceError } = await supabase.rpc(
           'register_student_device',
           {
@@ -224,7 +240,6 @@ export default function ConnexionPage() {
           return
         }
 
-        // Cookie utilisé ensuite par le middleware
         const secure =
           window.location.protocol === 'https:' ? '; Secure' : ''
 
@@ -374,6 +389,15 @@ export default function ConnexionPage() {
               </button>
             </div>
 
+            <label className="login-remember">
+              <input
+                type="checkbox"
+                checked={rememberMe}
+                onChange={e => setRememberMe(e.target.checked)}
+              />
+              <span>{t.seSouvenir}</span>
+            </label>
+
             {message && (
               <p role="alert" className="login-error">
                 {message}
@@ -473,6 +497,29 @@ export default function ConnexionPage() {
         .login-page[dir="rtl"] .login-language-arrow {
           right: auto;
           left: 13px;
+        }
+
+        .login-remember {
+          display: flex;
+          align-items: center;
+          gap: 9px;
+          margin: 16px 0 4px;
+          color: #475569;
+          font-size: 13px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+
+        .login-remember input {
+          width: 16px;
+          height: 16px;
+          accent-color: #2563eb;
+          cursor: pointer;
+        }
+
+        .login-page[dir="rtl"] .login-remember {
+          flex-direction: row-reverse;
+          justify-content: flex-end;
         }
       `}</style>
     </main>
