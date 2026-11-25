@@ -8,7 +8,6 @@ import {
   Check,
   ShieldCheck,
   MessageCircle,
-  Clock,
   ArrowLeft,
   LoaderCircle,
   Sparkles,
@@ -16,17 +15,14 @@ import {
   Headphones,
   PenLine,
   Mic,
-  Languages,
   CalendarDays,
 } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 
 type Plan = {
   id: string
-  name: string
   duration: number
   price: number
-  description: string
   popular?: boolean
 }
 
@@ -40,74 +36,394 @@ type Profile = {
   pro_until: string | null
 }
 
+type WhatsAppTranslation = {
+  greeting: string
+  wish: string
+  month: string
+  price: string
+  payment: string
+  thanks: string
+}
+
+type TranslationValue = string | WhatsAppTranslation
+
 const WHATSAPP_NUMBER = '212775737443'
 
 const plans: Plan[] = [
   {
     id: '1-month',
-    name: '1 mois',
     duration: 1,
     price: 59,
-    description: 'Pour commencer',
   },
   {
     id: '3-months',
-    name: '3 mois',
     duration: 3,
     price: 129,
-    description: 'Pour progresser régulièrement',
     popular: true,
   },
   {
     id: '12-months',
-    name: '12 mois',
     duration: 12,
     price: 499,
-    description: 'Pour préparer vos examens sereinement',
   },
 ]
 
-const languageNames: Record<Language, string> = {
-  fr: 'Français',
-  ar: 'العربية',
-  de: 'Deutsch',
-  en: 'English',
-}
+const translations = {
+  fr: {
+    back: 'Retour à mon espace',
+    eyebrow: 'DEUTSCH-ERFOLG PREMIUM',
+    heroTitle: 'Passez au niveau',
+    heroDescription:
+      "Débloquez tout le potentiel de Deutsch-Erfolg et préparez vos examens d'allemand avec un accès complet aux exercices.",
+    point1: 'Accès aux exercices PRO',
+    point2: 'Préparation B1 et B2',
+    point3: 'Progression sans limites',
+    loading: 'Chargement de votre abonnement...',
+    errorAccount:
+      'Impossible de récupérer votre compte. Veuillez vous reconnecter.',
+    errorProfile:
+      'Impossible de charger les informations de votre abonnement.',
+    subscription: 'VOTRE ABONNEMENT',
+    active: 'Vous êtes membre PRO',
+    expired: 'Votre abonnement a expiré',
+    free: 'Vous utilisez la version gratuite',
+    validUntil: 'Votre abonnement est valable jusqu’au',
+    chooseAgain:
+      'Choisissez une formule pour retrouver tous vos accès PRO.',
+    choosePlan: 'Choisissez une formule pour débloquer tous les exercices.',
+    daysRemaining: 'jours restants',
+    benefits: 'LES AVANTAGES',
+    preparation: 'Une préparation plus complète',
+    benefitsDescription:
+      'Accédez à davantage de contenu pour progresser à votre rythme.',
+    lesenTitle: 'Lesen',
+    horenTitle: 'Hören',
+    grammarTitle: 'Sprachbausteine',
+    productionTitle: 'Schreiben & Sprechen',
+    lesenDescription:
+      'Compréhension écrite et exercices supplémentaires.',
+    horenDescription: 'Entraînement à la compréhension orale.',
+    grammarDescription: 'Grammaire et vocabulaire en contexte.',
+    productionDescription:
+      'Entraînement aux compétences de production.',
+    pricing: 'NOS FORMULES',
+    chooseSubscription: 'Choisissez votre abonnement',
+    pricingDescription:
+      'Un paiement par virement bancaire, avec validation manuelle.',
+    oneMonth: '1 mois',
+    threeMonths: '3 mois',
+    twelveMonths: '12 mois',
+    start: 'Pour commencer',
+    progress: 'Pour progresser régulièrement',
+    exam: 'Pour préparer vos examens sereinement',
+    popular: 'LE PLUS CHOISI',
+    selected: 'Formule sélectionnée',
+    chooseThis: 'Choisir cette formule',
+    contact: 'CONTACT & PAIEMENT',
+    contactTitle: 'Contactez-nous sur WhatsApp',
+    contactDescription:
+      'Nous vous communiquerons les informations nécessaires au virement.',
+    summaryPlan: 'Formule choisie',
+    amount: 'Montant à payer',
+    whatsappButton: 'Contacter sur WhatsApp',
+    paymentNote:
+      "Votre abonnement PRO sera activé après vérification du virement par l’administration.",
+    currentSubscription: 'Votre abonnement actuel',
+    startDate: 'Début :',
+    expiration: 'Expiration :',
+    notProvided: 'Non renseigné',
+    notProvidedF: 'Non renseignée',
+    footer: 'Apprenez. Entraînez-vous. Réussissez.',
+    month: 'mois',
+    months: 'mois',
+    whatsapp: {
+      greeting: 'Bonjour !',
+      wish: 'Je souhaite souscrire à Deutsch-Erfolg PRO pour',
+      month: 'mois',
+      price: 'au prix de',
+      payment:
+        "Merci de m'indiquer les modalités de paiement par virement bancaire.",
+      thanks: 'Merci !',
+    },
+  },
+
+  de: {
+    back: 'Zurück zu meinem Bereich',
+    eyebrow: 'DEUTSCH-ERFOLG PREMIUM',
+    heroTitle: 'Erreichen Sie das nächste Niveau',
+    heroDescription:
+      'Entdecken Sie das volle Potenzial von Deutsch-Erfolg und bereiten Sie sich mit uneingeschränktem Zugang zu den Übungen auf Ihre Deutschprüfungen vor.',
+    point1: 'Zugang zu PRO-Übungen',
+    point2: 'Vorbereitung auf B1 und B2',
+    point3: 'Lernen ohne Grenzen',
+    loading: 'Ihr Abonnement wird geladen...',
+    errorAccount:
+      'Ihr Konto konnte nicht abgerufen werden. Bitte melden Sie sich erneut an.',
+    errorProfile:
+      'Ihre Abonnementinformationen konnten nicht geladen werden.',
+    subscription: 'IHR ABONNEMENT',
+    active: 'Sie sind PRO-Mitglied',
+    expired: 'Ihr Abonnement ist abgelaufen',
+    free: 'Sie nutzen die kostenlose Version',
+    validUntil: 'Ihr Abonnement ist gültig bis zum',
+    chooseAgain:
+      'Wählen Sie ein Abonnement, um Ihren PRO-Zugang wiederherzustellen.',
+    choosePlan:
+      'Wählen Sie ein Abonnement, um alle Übungen freizuschalten.',
+    daysRemaining: 'Tage verbleibend',
+    benefits: 'IHRE VORTEILE',
+    preparation: 'Eine umfassendere Vorbereitung',
+    benefitsDescription:
+      'Greifen Sie auf weitere Inhalte zu und lernen Sie in Ihrem eigenen Tempo.',
+    lesenTitle: 'Leseverstehen',
+    horenTitle: 'Hörverstehen',
+    grammarTitle: 'Sprachbausteine',
+    productionTitle: 'Schreiben & Sprechen',
+    lesenDescription:
+      'Leseverständnis und zusätzliche Übungen.',
+    horenDescription: 'Training des Hörverständnisses.',
+    grammarDescription: 'Grammatik und Wortschatz im Kontext.',
+    productionDescription:
+      'Training der schriftlichen und mündlichen Ausdrucksfähigkeit.',
+    pricing: 'UNSERE ANGEBOTE',
+    chooseSubscription: 'Wählen Sie Ihr Abonnement',
+    pricingDescription:
+      'Zahlung per Banküberweisung mit manueller Bestätigung.',
+    oneMonth: '1 Monat',
+    threeMonths: '3 Monate',
+    twelveMonths: '12 Monate',
+    start: 'Zum Einstieg',
+    progress: 'Für regelmäßige Fortschritte',
+    exam: 'Für eine entspannte Prüfungsvorbereitung',
+    popular: 'AM BELIEBTESTEN',
+    selected: 'Ausgewählt',
+    chooseThis: 'Dieses Angebot wählen',
+    contact: 'KONTAKT & ZAHLUNG',
+    contactTitle: 'Kontaktieren Sie uns über WhatsApp',
+    contactDescription:
+      'Wir senden Ihnen die notwendigen Informationen zur Banküberweisung.',
+    summaryPlan: 'Ausgewähltes Angebot',
+    amount: 'Zu zahlender Betrag',
+    whatsappButton: 'Über WhatsApp kontaktieren',
+    paymentNote:
+      'Ihr PRO-Abonnement wird nach Überprüfung der Überweisung durch die Administration aktiviert.',
+    currentSubscription: 'Ihr aktuelles Abonnement',
+    startDate: 'Beginn:',
+    expiration: 'Ablaufdatum:',
+    notProvided: 'Nicht angegeben',
+    notProvidedF: 'Nicht angegeben',
+    footer: 'Lernen. Üben. Erfolg haben.',
+    month: 'Monat',
+    months: 'Monate',
+    whatsapp: {
+      greeting: 'Guten Tag!',
+      wish: 'Ich möchte das Deutsch-Erfolg PRO-Abonnement für',
+      month: 'Monat',
+      price: 'zum Preis von',
+      payment:
+        'Bitte teilen Sie mir die Zahlungsinformationen für die Banküberweisung mit.',
+      thanks: 'Vielen Dank!',
+    },
+  },
+
+  en: {
+    back: 'Back to my dashboard',
+    eyebrow: 'DEUTSCH-ERFOLG PREMIUM',
+    heroTitle: 'Take your learning to the next level',
+    heroDescription:
+      'Unlock the full potential of Deutsch-Erfolg and prepare for your German exams with complete access to the exercises.',
+    point1: 'Access to PRO exercises',
+    point2: 'B1 and B2 preparation',
+    point3: 'Unlimited progress',
+    loading: 'Loading your subscription...',
+    errorAccount:
+      'Unable to retrieve your account. Please log in again.',
+    errorProfile:
+      'Unable to load your subscription information.',
+    subscription: 'YOUR SUBSCRIPTION',
+    active: 'You are a PRO member',
+    expired: 'Your subscription has expired',
+    free: 'You are using the free version',
+    validUntil: 'Your subscription is valid until',
+    chooseAgain: 'Choose a plan to restore your PRO access.',
+    choosePlan: 'Choose a plan to unlock all exercises.',
+    daysRemaining: 'days remaining',
+    benefits: 'THE BENEFITS',
+    preparation: 'A more complete preparation',
+    benefitsDescription:
+      'Access more content and make progress at your own pace.',
+    lesenTitle: 'Reading',
+    horenTitle: 'Listening',
+    grammarTitle: 'Grammar & Vocabulary',
+    productionTitle: 'Writing & Speaking',
+    lesenDescription:
+      'Reading comprehension and additional exercises.',
+    horenDescription: 'Listening comprehension training.',
+    grammarDescription: 'Grammar and vocabulary in context.',
+    productionDescription:
+      'Practice your writing and speaking skills.',
+    pricing: 'OUR PLANS',
+    chooseSubscription: 'Choose your subscription',
+    pricingDescription:
+      'Payment by bank transfer, with manual confirmation.',
+    oneMonth: '1 month',
+    threeMonths: '3 months',
+    twelveMonths: '12 months',
+    start: 'A great way to start',
+    progress: 'For regular progress',
+    exam: 'For confident exam preparation',
+    popular: 'MOST POPULAR',
+    selected: 'Selected plan',
+    chooseThis: 'Choose this plan',
+    contact: 'CONTACT & PAYMENT',
+    contactTitle: 'Contact us on WhatsApp',
+    contactDescription:
+      'We will send you the necessary bank transfer information.',
+    summaryPlan: 'Selected plan',
+    amount: 'Amount to pay',
+    whatsappButton: 'Contact us on WhatsApp',
+    paymentNote:
+      'Your PRO subscription will be activated after the administration verifies your bank transfer.',
+    currentSubscription: 'Your current subscription',
+    startDate: 'Start:',
+    expiration: 'Expiration:',
+    notProvided: 'Not provided',
+    notProvidedF: 'Not provided',
+    footer: 'Learn. Practice. Succeed.',
+    month: 'month',
+    months: 'months',
+    whatsapp: {
+      greeting: 'Hello!',
+      wish: 'I would like to subscribe to Deutsch-Erfolg PRO for',
+      month: 'month(s)',
+      price: 'at a price of',
+      payment:
+        'Please send me the bank transfer payment details.',
+      thanks: 'Thank you!',
+    },
+  },
+
+  ar: {
+    back: 'العودة إلى فضائي',
+    eyebrow: 'DEUTSCH-ERFOLG PREMIUM',
+    heroTitle: 'انتقل إلى المستوى',
+    heroDescription:
+      'اكتشف الإمكانيات الكاملة لمنصة Deutsch-Erfolg واستعد لامتحانات اللغة الألمانية مع إمكانية الوصول الكامل إلى التمارين.',
+    point1: 'الوصول إلى تمارين PRO',
+    point2: 'التحضير لمستويي B1 وB2',
+    point3: 'تقدم بلا حدود',
+    loading: 'جارٍ تحميل اشتراكك...',
+    errorAccount:
+      'تعذر الوصول إلى حسابك. يرجى تسجيل الدخول مجدداً.',
+    errorProfile:
+      'تعذر تحميل معلومات اشتراكك.',
+    subscription: 'اشتراكك',
+    active: 'أنت عضو PRO',
+    expired: 'انتهت صلاحية اشتراكك',
+    free: 'أنت تستخدم النسخة المجانية',
+    validUntil: 'اشتراكك صالح إلى غاية',
+    chooseAgain: 'اختر إحدى الباقات لاستعادة جميع مزايا PRO.',
+    choosePlan: 'اختر إحدى الباقات لفتح جميع التمارين.',
+    daysRemaining: 'أيام متبقية',
+    benefits: 'المميزات',
+    preparation: 'تحضير أكثر شمولاً',
+    benefitsDescription:
+      'استفد من محتوى إضافي وتقدم حسب وتيرتك الخاصة.',
+    lesenTitle: 'فهم المقروء',
+    horenTitle: 'فهم المسموع',
+    grammarTitle: 'القواعد والمفردات',
+    productionTitle: 'الكتابة والتحدث',
+    lesenDescription: 'فهم المقروء وتمارين إضافية.',
+    horenDescription: 'التدرب على فهم المسموع.',
+    grammarDescription: 'القواعد والمفردات في سياقها.',
+    productionDescription:
+      'التدرب على مهارات الكتابة والتحدث.',
+    pricing: 'باقات الاشتراك',
+    chooseSubscription: 'اختر اشتراكك',
+    pricingDescription:
+      'الدفع عن طريق التحويل البنكي مع تأكيد يدوي.',
+    oneMonth: 'شهر واحد',
+    threeMonths: '3 أشهر',
+    twelveMonths: '12 شهراً',
+    start: 'للبداية',
+    progress: 'للتقدم بانتظام',
+    exam: 'للاستعداد للامتحانات بثقة',
+    popular: 'الأكثر اختياراً',
+    selected: 'الباقة المختارة',
+    chooseThis: 'اختر هذه الباقة',
+    contact: 'التواصل والدفع',
+    contactTitle: 'تواصل معنا عبر واتساب',
+    contactDescription:
+      'سنرسل إليك المعلومات اللازمة لإجراء التحويل البنكي.',
+    summaryPlan: 'الباقة المختارة',
+    amount: 'المبلغ المطلوب',
+    whatsappButton: 'تواصل معنا عبر واتساب',
+    paymentNote:
+      'سيتم تفعيل اشتراك PRO بعد أن تقوم الإدارة بالتحقق من التحويل البنكي.',
+    currentSubscription: 'اشتراكك الحالي',
+    startDate: 'تاريخ البداية:',
+    expiration: 'تاريخ الانتهاء:',
+    notProvided: 'غير محدد',
+    notProvidedF: 'غير محددة',
+    footer: 'تعلم. تدرب. وحقق النجاح.',
+    month: 'شهر',
+    months: 'أشهر',
+    whatsapp: {
+      greeting: 'السلام عليكم!',
+      wish: 'أرغب في الاشتراك في Deutsch-Erfolg PRO لمدة',
+      month: 'أشهر',
+      price: 'بمبلغ',
+      payment:
+        'يرجى إرسال معلومات الدفع عن طريق التحويل البنكي.',
+      thanks: 'شكراً لكم!',
+    },
+  },
+} satisfies Record<Language, Record<string, TranslationValue>>
 
 function createWhatsAppMessage(
   language: Language,
   plan: Plan,
   studentName: string
 ) {
+  const t = translations[language]
   const name = studentName.trim()
 
-  const messages: Record<Language, string> = {
-    fr:
-      `Bonjour !${name ? ` Je suis ${name}.` : ''}\n\n` +
-      `Je souhaite souscrire à Deutsch-Erfolg PRO pour ${plan.duration} ${plan.duration > 1 ? 'mois' : 'mois'} (${plan.price} DH).\n\n` +
-      `Merci de m'indiquer les modalités de paiement par virement bancaire.\n\n` +
-      `Merci !`,
-
-    ar:
-      `السلام عليكم!${name ? ` أنا ${name}.` : ''}\n\n` +
-      `أرغب في الاشتراك في Deutsch-Erfolg PRO لمدة ${plan.duration} ${plan.duration === 1 ? 'شهر' : 'أشهر'}، بمبلغ ${plan.price} درهم.\n\n` +
-      `يرجى إرسال معلومات الدفع عن طريق التحويل البنكي.\n\n` +
-      `شكراً لكم!`,
-
-    de:
-      `Guten Tag!${name ? ` Mein Name ist ${name}.` : ''}\n\n` +
-      `Ich möchte das Deutsch-Erfolg PRO-Abonnement für ${plan.duration} ${plan.duration === 1 ? 'Monat' : 'Monate'} zum Preis von ${plan.price} DH abschließen.\n\n` +
-      `Bitte teilen Sie mir die Zahlungsinformationen für die Banküberweisung mit.\n\n` +
-      `Vielen Dank!`,
-
-    en:
-      `Hello!${name ? ` My name is ${name}.` : ''}\n\n` +
-      `I would like to subscribe to Deutsch-Erfolg PRO for ${plan.duration} month(s) at ${plan.price} DH.\n\n` +
-      `Please send me the bank transfer payment details.\n\n` +
-      `Thank you!`,
+  if (language === 'ar') {
+    return (
+      `${t.whatsapp.greeting}${name ? ` أنا ${name}.` : ''}\n\n` +
+      `${t.whatsapp.wish} ${plan.duration} ${
+        plan.duration === 1 ? 'شهر' : t.whatsapp.month
+      }، ` +
+      `${t.whatsapp.price} ${plan.price} درهم.\n\n` +
+      `${t.whatsapp.payment}\n\n${t.whatsapp.thanks}`
+    )
   }
 
-  return messages[language]
+  if (language === 'de') {
+    return (
+      `${t.whatsapp.greeting}${name ? ` Mein Name ist ${name}.` : ''}\n\n` +
+      `${t.whatsapp.wish} ${plan.duration} ${
+        plan.duration === 1 ? 'Monat' : 'Monate'
+      } ` +
+      `${t.whatsapp.price} ${plan.price} DH abschließen.\n\n` +
+      `${t.whatsapp.payment}\n\n${t.whatsapp.thanks}`
+    )
+  }
+
+  if (language === 'en') {
+    return (
+      `${t.whatsapp.greeting}${name ? ` My name is ${name}.` : ''}\n\n` +
+      `${t.whatsapp.wish} ${plan.duration} ${t.whatsapp.month} ` +
+      `${t.whatsapp.price} ${plan.price} DH.\n\n` +
+      `${t.whatsapp.payment}\n\n${t.whatsapp.thanks}`
+    )
+  }
+
+  return (
+    `${t.whatsapp.greeting}${name ? ` Je suis ${name}.` : ''}\n\n` +
+    `${t.whatsapp.wish} ${plan.duration} ${t.whatsapp.month} (${plan.price} DH).\n\n` +
+    `${t.whatsapp.payment}\n\n${t.whatsapp.thanks}`
+  )
 }
 
 export default function ProPage() {
@@ -115,9 +431,38 @@ export default function ProPage() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
   const [selectedPlan, setSelectedPlan] = useState<string>('3-months')
-  const [language, setLanguage] = useState<Language>('fr')
+  const [language, setLanguage] = useState<Language>('de')
 
   useEffect(() => {
+    function updateLanguage() {
+      const savedLanguage = localStorage.getItem(
+        'deutsch_erfolg_language'
+      )
+
+      if (
+        savedLanguage === 'fr' ||
+        savedLanguage === 'ar' ||
+        savedLanguage === 'de' ||
+        savedLanguage === 'en'
+      ) {
+        setLanguage(savedLanguage)
+      }
+    }
+
+    updateLanguage()
+
+    window.addEventListener('storage', updateLanguage)
+    const interval = window.setInterval(updateLanguage, 1000)
+
+    return () => {
+      window.removeEventListener('storage', updateLanguage)
+      window.clearInterval(interval)
+    }
+  }, [])
+
+  useEffect(() => {
+    let cancelled = false
+
     async function loadProfile() {
       setLoading(true)
       setError('')
@@ -127,21 +472,27 @@ export default function ProPage() {
         error: authError,
       } = await supabase.auth.getUser()
 
+      if (cancelled) return
+
       if (authError || !user) {
-        setError('Impossible de récupérer votre compte. Veuillez vous reconnecter.')
+        setError(translations[language].errorAccount)
         setLoading(false)
         return
       }
 
       const { data, error: profileError } = await supabase
         .from('profiles')
-        .select('full_name, is_pro, pro_type, pro_started_at, pro_until')
+        .select(
+          'full_name, is_pro, pro_type, pro_started_at, pro_until'
+        )
         .eq('id', user.id)
         .maybeSingle()
 
+      if (cancelled) return
+
       if (profileError) {
         console.error('Erreur chargement profil PRO :', profileError)
-        setError('Impossible de charger les informations de votre abonnement.')
+        setError(translations[language].errorProfile)
       } else {
         setProfile(data as Profile | null)
       }
@@ -150,9 +501,17 @@ export default function ProPage() {
     }
 
     loadProfile()
-  }, [])
 
-  const selected = plans.find((plan) => plan.id === selectedPlan)
+    return () => {
+      cancelled = true
+    }
+  }, [language])
+
+  const t = translations[language]
+
+  const selected = plans.find(
+    (plan) => plan.id === selectedPlan
+  )
 
   const isProActive =
     profile?.is_pro === true &&
@@ -186,36 +545,52 @@ export default function ProPage() {
         )}`
       : ''
 
-  return (
-    <main className="pro-page">
-      <div className="pro-container">
+  const formatDate = (date: string) =>
+    new Date(date).toLocaleDateString(
+      language === 'ar'
+        ? 'ar-MA'
+        : language === 'de'
+          ? 'de-DE'
+          : language === 'en'
+            ? 'en-GB'
+            : 'fr-FR'
+    )
 
+  return (
+    <main
+      className="pro-page"
+      dir={language === 'ar' ? 'rtl' : 'ltr'}
+    >
+      <div className="pro-container">
         <Link href="/espace-etudiant" className="pro-back">
           <ArrowLeft size={17} />
-          Retour à mon espace
+          {t.back}
         </Link>
 
         <section className="pro-hero">
           <div className="pro-hero-content">
             <div className="pro-eyebrow">
               <Sparkles size={15} />
-              DEUTSCH-ERFOLG PREMIUM
+              {t.eyebrow}
             </div>
 
             <h1>
-              Passez au niveau
+              {t.heroTitle}
               <span> PRO.</span>
             </h1>
 
-            <p>
-              Débloquez tout le potentiel de Deutsch-Erfolg et préparez
-              vos examens d'allemand avec un accès complet aux exercices.
-            </p>
+            <p>{t.heroDescription}</p>
 
             <div className="pro-hero-points">
-              <span><Check size={16} /> Accès aux exercices PRO</span>
-              <span><Check size={16} /> Préparation B1 et B2</span>
-              <span><Check size={16} /> Progression sans limites</span>
+              <span>
+                <Check size={16} /> {t.point1}
+              </span>
+              <span>
+                <Check size={16} /> {t.point2}
+              </span>
+              <span>
+                <Check size={16} /> {t.point3}
+              </span>
             </div>
           </div>
 
@@ -228,7 +603,7 @@ export default function ProPage() {
         {loading ? (
           <div className="pro-loading">
             <LoaderCircle size={25} className="pro-spinner" />
-            Chargement de votre abonnement...
+            {t.loading}
           </div>
         ) : error ? (
           <div className="pro-error">
@@ -239,82 +614,105 @@ export default function ProPage() {
           <>
             <section className="pro-status">
               <div className="pro-status-icon">
-                {isProActive ? <Crown size={25} /> : <ShieldCheck size={25} />}
+                {isProActive ? (
+                  <Crown size={25} />
+                ) : (
+                  <ShieldCheck size={25} />
+                )}
               </div>
 
               <div className="pro-status-info">
-                <span className="pro-label">VOTRE ABONNEMENT</span>
+                <span className="pro-label">
+                  {t.subscription}
+                </span>
+
                 <h2>
                   {isProActive
-                    ? 'Vous êtes membre PRO'
+                    ? t.active
                     : expired
-                      ? 'Votre abonnement a expiré'
-                      : 'Vous utilisez la version gratuite'}
+                      ? t.expired
+                      : t.free}
                 </h2>
 
                 <p>
                   {isProActive && profile?.pro_until
-                    ? `Votre abonnement est valable jusqu'au ${new Date(
-                        profile.pro_until
-                      ).toLocaleDateString('fr-FR')}.`
+                    ? `${t.validUntil} ${formatDate(profile.pro_until)}.`
                     : expired
-                      ? 'Choisissez une formule pour retrouver tous vos accès PRO.'
-                      : 'Choisissez une formule pour débloquer tous les exercices.'}
+                      ? t.chooseAgain
+                      : t.choosePlan}
                 </p>
               </div>
 
               {isProActive && (
                 <div className="pro-days">
                   <strong>{remainingDays}</strong>
-                  <span>jours restants</span>
+                  <span>{t.daysRemaining}</span>
                 </div>
               )}
             </section>
 
             <section className="pro-benefits">
               <div className="pro-section-heading">
-                <span className="pro-label">LES AVANTAGES</span>
-                <h2>Une préparation plus complète</h2>
-                <p>Accédez à davantage de contenu pour progresser à votre rythme.</p>
+                <span className="pro-label">
+                  {t.benefits}
+                </span>
+                <h2>{t.preparation}</h2>
+                <p>{t.benefitsDescription}</p>
               </div>
 
               <div className="pro-benefit-grid">
                 <article className="pro-benefit">
                   <BookOpen size={25} />
-                  <strong>Lesen</strong>
-                  <span>Compréhension écrite et exercices supplémentaires.</span>
+                  <strong>{t.lesenTitle}</strong>
+                  <span>{t.lesenDescription}</span>
                 </article>
 
                 <article className="pro-benefit">
                   <Headphones size={25} />
-                  <strong>Hören</strong>
-                  <span>Entraînement à la compréhension orale.</span>
+                  <strong>{t.horenTitle}</strong>
+                  <span>{t.horenDescription}</span>
                 </article>
 
                 <article className="pro-benefit">
                   <PenLine size={25} />
-                  <strong>Sprachbausteine</strong>
-                  <span>Grammaire et vocabulaire en contexte.</span>
+                  <strong>{t.grammarTitle}</strong>
+                  <span>{t.grammarDescription}</span>
                 </article>
 
                 <article className="pro-benefit">
                   <Mic size={25} />
-                  <strong>Schreiben & Sprechen</strong>
-                  <span>Entraînement aux compétences de production.</span>
+                  <strong>{t.productionTitle}</strong>
+                  <span>{t.productionDescription}</span>
                 </article>
               </div>
             </section>
 
             <section className="pro-pricing">
               <div className="pro-section-heading">
-                <span className="pro-label">NOS FORMULES</span>
-                <h2>Choisissez votre abonnement</h2>
-                <p>Un paiement par virement bancaire, avec validation manuelle.</p>
+                <span className="pro-label">
+                  {t.pricing}
+                </span>
+                <h2>{t.chooseSubscription}</h2>
+                <p>{t.pricingDescription}</p>
               </div>
 
               <div className="pro-plans">
                 {plans.map((plan) => {
                   const active = selectedPlan === plan.id
+
+                  const planName =
+                    plan.duration === 1
+                      ? t.oneMonth
+                      : plan.duration === 3
+                        ? t.threeMonths
+                        : t.twelveMonths
+
+                  const description =
+                    plan.duration === 1
+                      ? t.start
+                      : plan.duration === 3
+                        ? t.progress
+                        : t.exam
 
                   return (
                     <button
@@ -326,25 +724,31 @@ export default function ProPage() {
                       }`}
                     >
                       {plan.popular && (
-                        <span className="pro-popular">LE PLUS CHOISI</span>
+                        <span className="pro-popular">
+                          {t.popular}
+                        </span>
                       )}
 
-                      <span className="pro-plan-name">{plan.name}</span>
+                      <span className="pro-plan-name">
+                        {planName}
+                      </span>
+
                       <span className="pro-plan-price">
                         {plan.price}
                         <small> DH</small>
                       </span>
+
                       <span className="pro-plan-description">
-                        {plan.description}
+                        {description}
                       </span>
 
                       <span className="pro-plan-selection">
                         {active ? (
                           <>
-                            <Check size={15} /> Formule sélectionnée
+                            <Check size={15} /> {t.selected}
                           </>
                         ) : (
-                          'Choisir cette formule'
+                          t.chooseThis
                         )}
                       </span>
                     </button>
@@ -355,45 +759,32 @@ export default function ProPage() {
               <div className="pro-contact-box">
                 <div className="pro-contact-heading">
                   <div>
-                    <span className="pro-label">CONTACT & PAIEMENT</span>
-                    <h2>Contactez-nous sur WhatsApp</h2>
-                    <p>
-                      Choisissez la langue de votre message. Nous vous
-                      communiquerons les informations nécessaires au virement.
-                    </p>
+                    <span className="pro-label">
+                      {t.contact}
+                    </span>
+                    <h2>{t.contactTitle}</h2>
+                    <p>{t.contactDescription}</p>
                   </div>
+
                   <div className="pro-whatsapp-icon">
                     <MessageCircle size={28} />
                   </div>
                 </div>
 
-                <div className="pro-language">
-                  <label htmlFor="pro-language">
-                    <Languages size={17} />
-                    Langue du message WhatsApp
-                  </label>
-
-                  <select
-                    id="pro-language"
-                    value={language}
-                    onChange={(e) =>
-                      setLanguage(e.target.value as Language)
-                    }
-                  >
-                    <option value="fr">🇫🇷 Français</option>
-                    <option value="ar">🇲🇦 العربية</option>
-                    <option value="de">🇩🇪 Deutsch</option>
-                    <option value="en">🇬🇧 English</option>
-                  </select>
-                </div>
-
                 <div className="pro-order-summary">
                   <div>
-                    <span>Formule choisie</span>
-                    <strong>{selected?.name}</strong>
+                    <span>{t.summaryPlan}</span>
+                    <strong>
+                      {selected?.duration === 1
+                        ? t.oneMonth
+                        : selected?.duration === 3
+                          ? t.threeMonths
+                          : t.twelveMonths}
+                    </strong>
                   </div>
+
                   <div>
-                    <span>Montant à payer</span>
+                    <span>{t.amount}</span>
                     <strong className="pro-order-price">
                       {selected?.price} DH
                     </strong>
@@ -408,16 +799,13 @@ export default function ProPage() {
                     className="pro-whatsapp-button"
                   >
                     <MessageCircle size={21} />
-                    Contacter sur WhatsApp
+                    {t.whatsappButton}
                   </a>
                 )}
 
                 <div className="pro-payment-note">
                   <ShieldCheck size={17} />
-                  <span>
-                    Votre abonnement PRO sera activé après vérification
-                    du virement par l'administration.
-                  </span>
+                  <span>{t.paymentNote}</span>
                 </div>
               </div>
             </section>
@@ -426,17 +814,17 @@ export default function ProPage() {
               <section className="pro-current-subscription">
                 <CalendarDays size={20} />
                 <div>
-                  <strong>Votre abonnement actuel</strong>
+                  <strong>{t.currentSubscription}</strong>
                   <p>
-                    Début :{' '}
+                    {t.startDate}{' '}
                     {profile?.pro_started_at
-                      ? new Date(profile.pro_started_at).toLocaleDateString('fr-FR')
-                      : 'Non renseigné'}
+                      ? formatDate(profile.pro_started_at)
+                      : t.notProvided}
                     {' · '}
-                    Expiration :{' '}
+                    {t.expiration}{' '}
                     {profile?.pro_until
-                      ? new Date(profile.pro_until).toLocaleDateString('fr-FR')
-                      : 'Non renseignée'}
+                      ? formatDate(profile.pro_until)
+                      : t.notProvidedF}
                   </p>
                 </div>
               </section>
@@ -446,7 +834,7 @@ export default function ProPage() {
 
         <footer className="pro-footer">
           <Crown size={17} />
-          Deutsch-Erfolg PRO · Apprenez. Entraînez-vous. Réussissez.
+          Deutsch-Erfolg PRO · {t.footer}
         </footer>
       </div>
 
@@ -636,8 +1024,8 @@ export default function ProPage() {
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding-left: 24px;
-          border-left: 1px solid #e8edf4;
+          padding-inline-start: 24px;
+          border-inline-start: 1px solid #e8edf4;
         }
 
         .pro-days strong {
@@ -716,7 +1104,7 @@ export default function ProPage() {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
-          text-align: left;
+          text-align: start;
           min-width: 0;
           padding: 28px 24px 22px;
           border: 2px solid #e5eaf1;
@@ -744,7 +1132,7 @@ export default function ProPage() {
         .pro-popular {
           position: absolute;
           top: -12px;
-          left: 20px;
+          inset-inline-start: 20px;
           padding: 5px 11px;
           border-radius: 20px;
           background: #b8893e;
@@ -829,40 +1217,6 @@ export default function ProPage() {
           color: #168b57;
           background: #eaf8f0;
           border-radius: 16px;
-        }
-
-        .pro-language {
-          margin-top: 25px;
-        }
-
-        .pro-language label {
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          color: #34445c;
-          font-size: 13px;
-          font-weight: 700;
-          margin-bottom: 9px;
-        }
-
-        .pro-language label svg {
-          color: #b8893e;
-        }
-
-        .pro-language select {
-          width: 100%;
-          max-width: 380px;
-          padding: 12px 14px;
-          color: #17233c;
-          background: #f8fafc;
-          border: 1px solid #dce3ed;
-          border-radius: 10px;
-          font-size: 14px;
-          outline: none;
-        }
-
-        .pro-language select:focus {
-          border-color: #bd954b;
         }
 
         .pro-order-summary {
@@ -979,7 +1333,9 @@ export default function ProPage() {
         }
 
         @keyframes pro-spin {
-          to { transform: rotate(360deg); }
+          to {
+            transform: rotate(360deg);
+          }
         }
 
         .pro-footer {
@@ -1043,7 +1399,7 @@ export default function ProPage() {
           }
 
           .pro-days {
-            padding-left: 13px;
+            padding-inline-start: 13px;
           }
 
           .pro-days strong {
@@ -1110,6 +1466,38 @@ export default function ProPage() {
             text-align: center;
             line-height: 1.6;
           }
+        }
+
+        [dir="rtl"] .pro-hero {
+          text-align: right;
+        }
+
+        [dir="rtl"] .pro-hero-points {
+          justify-content: flex-start;
+        }
+
+        [dir="rtl"] .pro-contact-heading {
+          text-align: right;
+        }
+
+        [dir="rtl"] .pro-status-info {
+          text-align: right;
+        }
+
+        [dir="rtl"] .pro-section-heading {
+          direction: rtl;
+        }
+
+        [dir="rtl"] .pro-benefit {
+          text-align: right;
+        }
+
+        [dir="rtl"] .pro-current-subscription {
+          text-align: right;
+        }
+
+        [dir="rtl"] .pro-payment-note {
+          text-align: right;
         }
       `}</style>
     </main>
