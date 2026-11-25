@@ -6,7 +6,6 @@ import StudentSidebar from '@/components/student/StudentSidebar'
 import { useEffect, type ReactNode } from 'react'
 import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
-import { LanguageProvider } from '@/contexts/LanguageContext'
 
 export default function StudentLayout({
   children,
@@ -35,7 +34,9 @@ export default function StudentLayout({
           return
         }
 
-        const { data: { user } } = await supabase.auth.getUser()
+        const {
+          data: { user },
+        } = await supabase.auth.getUser()
 
         if (!user) {
           router.replace('/connexion')
@@ -71,7 +72,10 @@ export default function StudentLayout({
           router.refresh()
         }
       } catch (error) {
-        console.error('Erreur de contrôle de session :', error)
+        console.error(
+          'Erreur de contrôle de session :',
+          error
+        )
       } finally {
         verificationEnCours = false
       }
@@ -91,7 +95,7 @@ export default function StudentLayout({
   }, [router])
 
   return (
-    <LanguageProvider>
+    <>
       <div className="student-global-layout">
         <StudentSidebar />
 
@@ -131,6 +135,6 @@ export default function StudentLayout({
           }
         }
       `}</style>
-    </LanguageProvider>
+    </>
   )
 }
