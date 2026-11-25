@@ -3,9 +3,19 @@
 
 import LanguageSwitcher from '@/components/student/LanguageSwitcher'
 import StudentSidebar from '@/components/student/StudentSidebar'
-import { useEffect, type ReactNode } from 'react'
-import { useRouter } from 'next/navigation'
+import { useEffect, useState, type ReactNode } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
+import Link from 'next/link'
+import { Crown } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
+
+type ProProfile = {
+  is_pro: boolean | null
+  pro_type: string | null
+  pro_until: string | null
+}
+
+type Language = 'fr' | 'de' | 'en' | 'ar'
 
 export default function StudentLayout({
   children,
@@ -13,7 +23,108 @@ export default function StudentLayout({
   children: ReactNode
 }) {
   const router = useRouter()
+  const pathname = usePathname()
 
+  const [showProCrown, setShowProCrown] = useState(false)
+  const [language, setLanguage] = useState<Language>('de')
+
+  // Lire et suivre la langue choisie
+  useEffect(() => {
+    function updateLanguage() {
+      const savedLanguage = localStorage.getItem(
+        'deutsch_erfolg_language'
+      )
+
+      if (
+        savedLanguage === 'fr' ||
+        savedLanguage === 'de' ||
+        savedLanguage === 'en' ||
+        savedLanguage === 'ar'
+      ) {
+        setLanguage(savedLanguage)
+      }
+    }
+
+    updateLanguage()
+
+    window.addEventListener('storage', updateLanguage)
+
+    const interval = window.setInterval(updateLanguage, 1000)
+
+    return () => {
+      window.removeEventListener('storage', updateLanguage)
+      window.clearInterval(interval)
+    }
+  }, [])
+
+  const proTooltip =
+    language === 'fr'
+      ? 'Passer Pro'
+      : language === 'de'
+        ? 'Pro werden'
+        : language === 'en'
+          ? 'Go Pro'
+          : 'الترقية إلى Pro'
+
+  // Vérifier si l'étudiant possède un abonnement PRO payant actif
+  useEffect(() => {
+    let actif = true
+
+    async function verifierAbonnement() {
+      try {
+        const {
+          data: { user },
+          error: authError,
+        } = await supabase.auth.getUser()
+
+        if (authError || !user) {
+          if (actif) setShowProCrown(false)
+          return
+        }
+
+        const { data, error } = await supabase
+          .from('profiles')
+          .select('is_pro, pro_type, pro_until')
+          .eq('id', user.id)
+          .maybeSingle()
+
+        if (error) {
+          console.error('Erreur vérification PRO :', error)
+          if (actif) setShowProCrown(false)
+          return
+        }
+
+        const profile = data as ProProfile | null
+
+        const abonnementPayantActif =
+          profile?.is_pro === true &&
+          profile?.pro_type === 'paid' &&
+          !!profile?.pro_until &&
+          new Date(profile.pro_until).getTime() > Date.now()
+
+        if (actif) {
+          setShowProCrown(!abonnementPayantActif)
+        }
+      } catch (error) {
+        console.error('Erreur vérification abonnement :', error)
+        if (actif) setShowProCrown(false)
+      }
+    }
+
+    verifierAbonnement()
+
+    const interval = window.setInterval(
+      verifierAbonnement,
+      60000
+    )
+
+    return () => {
+      actif = false
+      window.clearInterval(interval)
+    }
+  }, [])
+
+  // Vérification de l'appareil autorisé
   useEffect(() => {
     let actif = true
     let verificationEnCours = false
@@ -25,7 +136,6 @@ export default function StudentLayout({
     const COOKIE_NAME = 'deutsch_erfolg_device_id'
     const STORAGE_NAME = 'deutsch_erfolg_device_id'
 
-    // Lire l'identifiant enregistré dans le cookie
     function lireCookieDeviceId(): string | null {
       const cookie = document.cookie
         .split('; ')
@@ -42,7 +152,6 @@ export default function StudentLayout({
       }
     }
 
-    // Enregistrer l'identifiant dans le cookie
     function definirCookieDeviceId(deviceId: string) {
       const secure =
         window.location.protocol === 'https:'
@@ -53,7 +162,6 @@ export default function StudentLayout({
         `${COOKIE_NAME}=${encodeURIComponent(deviceId)}; Path=/; Max-Age=31536000; SameSite=Lax${secure}`
     }
 
-    // Synchroniser le cookie et le localStorage
     function obtenirDeviceId(): string | null {
       const cookieId = lireCookieDeviceId()
 
@@ -61,8 +169,6 @@ export default function StudentLayout({
         STORAGE_NAME
       )
 
-      // Le cookie est prioritaire car le middleware
-      // utilise également cet identifiant.
       if (cookieId) {
         if (localId !== cookieId) {
           localStorage.setItem(STORAGE_NAME, cookieId)
@@ -71,8 +177,6 @@ export default function StudentLayout({
         return cookieId
       }
 
-      // Si le cookie manque mais que le localStorage
-      // contient l'identifiant, on recrée le cookie.
       if (localId) {
         definirCookieDeviceId(localId)
         return localId
@@ -89,16 +193,12 @@ export default function StudentLayout({
       try {
         const deviceId = obtenirDeviceId()
 
-        // Aucun identifiant disponible :
-        // demander une nouvelle connexion sans détruire
-        // immédiatement la session Supabase.
         if (!deviceId) {
           actif = false
           router.replace('/connexion')
           return
         }
 
-        // Vérifier la session utilisateur
         const {
           data: authData,
           error: authError,
@@ -106,8 +206,6 @@ export default function StudentLayout({
 
         if (!actif) return
 
-        // Une erreur réseau ou temporaire ne doit
-        // pas provoquer une déconnexion.
         if (authError) {
           console.error(
             'Erreur de vérification de session :',
@@ -124,7 +222,6 @@ export default function StudentLayout({
           return
         }
 
-        // Vérifier que cet appareil est toujours autorisé
         const {
           data,
           error,
@@ -137,8 +234,6 @@ export default function StudentLayout({
 
         if (!actif) return
 
-        // Une erreur RPC n'est pas une preuve
-        // que l'appareil n'est plus autorisé.
         if (error) {
           console.error(
             'Erreur de vérification de l’appareil :',
@@ -149,20 +244,16 @@ export default function StudentLayout({
           return
         }
 
-        // Appareil autorisé
         if (data === true) {
           refusConsecutifs = 0
           return
         }
 
-        // Réponse indéterminée
         if (data !== false) {
           refusConsecutifs = 0
           return
         }
 
-        // Vérifier que l'identifiant n'a pas changé
-        // pendant la requête.
         const deviceIdActuel = obtenirDeviceId()
 
         if (deviceIdActuel !== deviceId) {
@@ -176,13 +267,10 @@ export default function StudentLayout({
           `Appareil non autorisé : vérification ${refusConsecutifs}/${REFUS_MAX}`
         )
 
-        // Attendre une deuxième confirmation
         if (refusConsecutifs < REFUS_MAX) {
           return
         }
 
-        // Deux refus consécutifs :
-        // l'appareil n'est plus autorisé.
         actif = false
 
         localStorage.removeItem(STORAGE_NAME)
@@ -203,7 +291,6 @@ export default function StudentLayout({
           error
         )
 
-        // Ne pas déconnecter sur une erreur inattendue.
         refusConsecutifs = 0
 
       } finally {
@@ -211,10 +298,8 @@ export default function StudentLayout({
       }
     }
 
-    // Première vérification
     verifierAppareil()
 
-    // Vérifications périodiques
     const interval = window.setInterval(
       verifierAppareil,
       INTERVALLE_VERIFICATION
@@ -225,6 +310,8 @@ export default function StudentLayout({
       window.clearInterval(interval)
     }
   }, [router])
+
+  const isProPage = pathname === '/espace-etudiant/pro'
 
   return (
     <>
@@ -239,6 +326,22 @@ export default function StudentLayout({
       <div className="student-language-global">
         <LanguageSwitcher />
       </div>
+
+      {showProCrown && !isProPage && (
+        <Link
+          href="/espace-etudiant/pro"
+          className="floating-pro-crown"
+          aria-label={proTooltip}
+        >
+          <span className="crown-shine-effect" />
+
+          <Crown size={32} strokeWidth={2.1} />
+
+          <span className="crown-tooltip">
+            {proTooltip}
+          </span>
+        </Link>
+      )}
 
       <style jsx global>{`
         .student-global-layout {
@@ -255,17 +358,228 @@ export default function StudentLayout({
           margin-right: 255px;
         }
 
-        @media (max-width: 700px) {
-          .student-global-content {
-            margin-left: 0;
-            margin-right: 0;
-          }
+        /* COURONNE PRO : CENTRÉE EN HAUT */
+        .floating-pro-crown {
+          position: fixed;
+          left: 50%;
+          top: 20px;
+          transform: translateX(-50%);
+          z-index: 10000;
 
-          [dir="rtl"] .student-global-content {
-            margin-left: 0;
-            margin-right: 0;
-          }
+          width: 52px;
+          height: 52px;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          border-radius: 50%;
+          isolation: isolate;
+
+          color: #a8792e;
+
+          background: linear-gradient(
+            145deg,
+            #fff8df,
+            #f2d28b,
+            #d6a94e
+          );
+
+          border: 1px solid rgba(184, 137, 62, 0.7);
+
+          box-shadow:
+            0 0 9px rgba(218, 177, 91, 0.5),
+            0 0 18px rgba(218, 177, 91, 0.3);
+
+          text-decoration: none;
+
+          animation: pro-crown-glow 3s ease-in-out infinite;
+
+          transition: transform 0.2s ease;
+          overflow: visible;
         }
+
+        /* REFLET ANIMÉ À L'INTÉRIEUR DU CERCLE */
+        .crown-shine-effect {
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          overflow: hidden;
+          pointer-events: none;
+          z-index: 1;
+        }
+
+        .crown-shine-effect::after {
+          content: "";
+          position: absolute;
+
+          top: -30%;
+          left: -70%;
+
+          width: 35%;
+          height: 160%;
+
+          background: linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(255, 255, 255, 0.2) 20%,
+            rgba(255, 255, 255, 0.95) 50%,
+            rgba(255, 255, 255, 0.2) 80%,
+            transparent 100%
+          );
+
+          transform: rotate(35deg);
+
+          animation: crown-shine 2.5s ease-in-out infinite;
+        }
+
+        /* ICÔNE COURONNE */
+        .floating-pro-crown > svg {
+          width: 32px;
+          height: 32px;
+          position: relative;
+          z-index: 2;
+        }
+
+        /* INFOBULLE TRADUITE */
+        .crown-tooltip {
+          position: absolute;
+          left: 62px;
+          top: 50%;
+
+          transform: translateY(-50%) translateX(-5px);
+
+          background: #252525;
+          color: white;
+
+          padding: 8px 13px;
+          border-radius: 8px;
+
+          font-size: 13px;
+          font-weight: 600;
+          white-space: nowrap;
+
+          opacity: 0;
+          visibility: hidden;
+
+          transition: all 0.2s ease;
+          pointer-events: none;
+          z-index: 5;
+        }
+
+        .floating-pro-crown {
+  position: fixed;
+  left: calc(255px + (100% - 255px) / 2);
+  top: 20px;
+  transform: translateX(-50%);
+  z-index: 10000;
+}
+
+/* Arabe : sidebar à droite */
+[dir="rtl"] .floating-pro-crown {
+  left: auto;
+  right: calc(255px + (100% - 255px) / 2);
+  transform: translateX(50%);
+}
+
+/* Survol en français, allemand et anglais */
+.floating-pro-crown:hover {
+  transform: translateX(-50%) scale(1.12);
+}
+
+/* Survol en arabe */
+[dir="rtl"] .floating-pro-crown:hover {
+  transform: translateX(50%) scale(1.12);
+}
+  /* Reflet animé */
+.crown-shine-effect {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.crown-shine-effect::after {
+  content: "";
+  position: absolute;
+  top: -30%;
+  left: -70%;
+  width: 35%;
+  height: 160%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.95),
+    transparent
+  );
+
+  transform: rotate(35deg);
+  animation: crown-shine 2.5s ease-in-out infinite;
+}
+
+/* Icône */
+.floating-pro-crown > svg {
+  position: relative;
+  z-index: 2;
+  width: 32px;
+  height: 32px;
+}
+
+/* Infobulle */
+.crown-tooltip {
+  position: absolute;
+  left: 62px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #252525;
+  color: white;
+  padding: 8px 13px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.floating-pro-crown:hover .crown-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Lueur dorée */
+.floating-pro-crown {
+  animation: pro-crown-glow 3s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+
+@keyframes crown-shine {
+  0% {
+    left: -70%;
+  }
+  70%, 100% {
+    left: 150%;
+  }
+}
+
+@keyframes pro-crown-glow {
+  0%, 100% {
+    box-shadow:
+      0 0 9px rgba(218, 177, 91, 0.5),
+      0 0 18px rgba(218, 177, 91, 0.3);
+  }
+  50% {
+    box-shadow:
+      0 0 13px rgba(218, 177, 91, 0.8),
+      0 0 25px rgba(218, 177, 91, 0.5);
+  }
+}
       `}</style>
     </>
   )
