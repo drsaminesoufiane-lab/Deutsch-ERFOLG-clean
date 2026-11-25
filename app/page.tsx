@@ -203,6 +203,108 @@ export default function HomePage() {
         <div className="hero-bottom-line" />
       </section>
 
+
+      
+      {/* ESPACE DÉBUTANT */}
+      <section className="beginner-section" id="debutant">
+        <div className="beginner-container">
+          <div className="beginner-content">
+            <span className="beginner-badge">
+              <Star size={15} />
+              {language === 'ar' ? 'المبتدئون • المستوى A1' :
+               language === 'de' ? 'ANFÄNGER • NIVEAU A1' :
+               language === 'en' ? 'BEGINNER • LEVEL A1' :
+               'DÉBUTANT • NIVEAU A1'}
+            </span>
+
+            <span className="beginner-eyebrow">
+              {language === 'ar' ? 'خطوتك الأولى' :
+               language === 'de' ? 'DEIN ERSTER SCHRITT' :
+               language === 'en' ? 'YOUR FIRST STEP' :
+               'VOTRE PREMIER PAS'}
+            </span>
+
+            <h2>
+              {language === 'ar' ? 'لم تتعلم الألمانية من قبل؟' :
+               language === 'de' ? 'Du bist Anfänger in Deutsch?' :
+               language === 'en' ? 'New to learning German?' :
+               'Vous débutez en allemand ?'}
+              <span>
+                {language === 'ar' ? ' ابدأ من الصفر معنا !' :
+                 language === 'de' ? ' Starte ganz von vorne!' :
+                 language === 'en' ? ' Start from zero with us!' :
+                 ' Commencez de zéro avec nous !'}
+              </span>
+            </h2>
+
+            <p className="beginner-description">
+              {language === 'ar'
+                ? 'تعلم أساسيات اللغة الألمانية خطوة بخطوة، من الأبجدية والنطق إلى الكلمات الأولى والتمارين. أنشئ حسابك للبدء في رحلة التعلم.'
+                : language === 'de'
+                ? 'Lerne die Grundlagen der deutschen Sprache Schritt für Schritt: vom Alphabet und der Aussprache bis zu deinen ersten Wörtern und Übungen. Erstelle ein Konto und beginne deinen Lernweg.'
+                : language === 'en'
+                ? 'Learn the basics of German step by step, from the alphabet and pronunciation to your first words and exercises. Create an account to start your learning journey.'
+                : 'Découvrez les bases de la langue allemande étape par étape : alphabet, prononciation, premiers mots et exercices simples. Créez votre compte pour commencer votre parcours d’apprentissage.'}
+            </p>
+
+            <div className="beginner-features">
+              <span>🔤 {language === 'ar' ? 'الأبجدية' : 'Alphabet'}</span>
+              <span>🗣️ {language === 'ar' ? 'النطق' : language === 'de' ? 'Aussprache' : language === 'en' ? 'Pronunciation' : 'Prononciation'}</span>
+              <span>📚 {language === 'ar' ? 'الكلمات الأولى' : language === 'de' ? 'Erste Wörter' : language === 'en' ? 'First words' : 'Premiers mots'}</span>
+              <span>✏️ {language === 'ar' ? 'تمارين' : language === 'de' ? 'Übungen' : language === 'en' ? 'Exercises' : 'Exercices'}</span>
+            </div>
+
+            <Link
+              href="/inscription"
+              className="beginner-button"
+            >
+              {language === 'ar' ? 'أنشئ حسابك وابدأ التعلم' :
+               language === 'de' ? 'Konto erstellen und starten' :
+               language === 'en' ? 'Create an account and start' :
+               'Créer mon compte et commencer'}
+              <ArrowRight size={19} />
+            </Link>
+
+            <div className="beginner-no-account">
+              <CheckCircle2 size={17} />
+              {language === 'ar' ? 'أنشئ حسابك لبدء التعلم' :
+               language === 'de' ? 'Erstelle dein Konto, um loszulegen' :
+               language === 'en' ? 'Create your account to get started' :
+               'Créez votre compte pour commencer votre parcours'}
+            </div>
+          </div>
+
+          <div className="beginner-visual">
+            <div className="beginner-photo-main">
+              <img
+                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=900&q=85"
+                alt="Étudiants qui apprennent ensemble"
+              />
+            </div>
+            <div className="beginner-photo-small">
+              <img
+                src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=85"
+                alt="Apprentissage et prise de notes"
+              />
+            </div>
+            <div className="beginner-floating-card">
+              <span>🇩🇪</span>
+              <div>
+                <strong>Hallo!</strong>
+                <small>
+                  {language === 'ar' ? 'مرحباً بالألمانية' :
+                   language === 'de' ? 'Dein erstes deutsches Wort' :
+                   language === 'en' ? 'Your first German word' :
+                   'Votre premier mot allemand'}
+                </small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
       {/* LES TROIS PILIERS - MIS EN AVANT JUSTE APRÈS LE HERO */}
       <section className="method-section" id="methode">
         <div className="section-container">
@@ -483,6 +585,202 @@ export default function HomePage() {
         .floating-note strong { font-size:11px; }
         .floating-note span { color:#8B96A5; font-size:9px; margin-top:4px; }
         .hero-bottom-line { position:absolute; bottom:0; left:0; right:0; height:4px; background:linear-gradient(90deg,#172B4D 0%,#B38D49 100%); }
+
+
+        /* ESPACE DÉBUTANT */
+        .beginner-section {
+          position:relative;
+          overflow:hidden;
+          padding:85px 28px;
+          background:linear-gradient(125deg,#142540 0%,#1D3B63 58%,#284B73 100%);
+          color:white;
+        }
+        .beginner-section:before {
+          content:"";
+          position:absolute;
+          width:500px;
+          height:500px;
+          border-radius:50%;
+          border:1px solid rgba(255,255,255,.08);
+          top:-280px;
+          right:-100px;
+        }
+        .beginner-container {
+          max-width:1180px;
+          margin:auto;
+          display:grid;
+          grid-template-columns:1.05fr .95fr;
+          align-items:center;
+          gap:65px;
+          position:relative;
+          z-index:1;
+        }
+        .beginner-content { max-width:590px; }
+        .beginner-badge {
+          display:inline-flex;
+          align-items:center;
+          gap:8px;
+          background:rgba(214,181,109,.15);
+          color:#F0D99E;
+          border:1px solid rgba(214,181,109,.35);
+          padding:9px 13px;
+          border-radius:30px;
+          font-size:10px;
+          font-weight:800;
+          letter-spacing:.5px;
+          margin-bottom:27px;
+        }
+        .beginner-eyebrow {
+          display:block;
+          color:#D6B56D;
+          font-size:10px;
+          font-weight:800;
+          letter-spacing:2px;
+          margin-bottom:13px;
+        }
+        .beginner-content h2 {
+          color:white;
+          font-size:clamp(32px,4vw,48px);
+          line-height:1.2;
+          letter-spacing:-1.5px;
+          margin:0 0 20px;
+        }
+        .beginner-content h2 span {
+          color:#E2C47E;
+        }
+        .beginner-description {
+          color:#D0D9E5;
+          font-size:14px;
+          line-height:1.9;
+          max-width:530px;
+          margin:0;
+        }
+        .beginner-features {
+          display:flex;
+          flex-wrap:wrap;
+          gap:11px;
+          margin:25px 0 30px;
+        }
+        .beginner-features span {
+          color:#EDF2F8;
+          background:rgba(255,255,255,.09);
+          border:1px solid rgba(255,255,255,.13);
+          border-radius:7px;
+          padding:9px 12px;
+          font-size:11px;
+          font-weight:600;
+        }
+        .beginner-button {
+          display:inline-flex;
+          align-items:center;
+          justify-content:center;
+          gap:12px;
+          background:#D6B56D;
+          color:#172B4D;
+          text-decoration:none;
+          padding:16px 23px;
+          border-radius:8px;
+          font-size:13px;
+          font-weight:800;
+          transition:.25s;
+        }
+        .beginner-button:hover {
+          background:#E9CD8D;
+          transform:translateY(-3px);
+          box-shadow:0 12px 25px rgba(0,0,0,.2);
+        }
+        .beginner-no-account {
+          display:flex;
+          align-items:center;
+          gap:8px;
+          color:#C5D3E3;
+          font-size:11px;
+          margin-top:19px;
+        }
+        .beginner-no-account svg { color:#D6B56D; }
+        .beginner-visual {
+          position:relative;
+          min-height:390px;
+        }
+        .beginner-photo-main {
+          position:absolute;
+          width:78%;
+          height:330px;
+          right:0;
+          top:10px;
+          overflow:hidden;
+          border-radius:18px;
+          border:5px solid rgba(255,255,255,.13);
+          box-shadow:0 25px 55px rgba(0,0,0,.25);
+        }
+        .beginner-photo-main img,
+        .beginner-photo-small img {
+          width:100%;
+          height:100%;
+          object-fit:cover;
+          display:block;
+        }
+        .beginner-photo-small {
+          position:absolute;
+          width:43%;
+          height:165px;
+          left:0;
+          bottom:0;
+          overflow:hidden;
+          border:5px solid #1D3B63;
+          border-radius:15px;
+          box-shadow:0 15px 35px rgba(0,0,0,.25);
+        }
+        .beginner-floating-card {
+          position:absolute;
+          right:-5px;
+          bottom:27px;
+          display:flex;
+          align-items:center;
+          gap:12px;
+          background:white;
+          color:#172B4D;
+          padding:13px 17px;
+          border-radius:12px;
+          box-shadow:0 12px 30px rgba(0,0,0,.2);
+        }
+        .beginner-floating-card > span { font-size:27px; }
+        .beginner-floating-card strong,
+        .beginner-floating-card small { display:block; }
+        .beginner-floating-card strong { font-size:15px; }
+        .beginner-floating-card small {
+          color:#778498;
+          font-size:9px;
+          margin-top:4px;
+        }
+
+        @media(max-width:900px) {
+          .beginner-container { gap:30px; }
+          .beginner-visual { min-height:330px; }
+          .beginner-photo-main { height:285px; }
+        }
+        @media(max-width:650px) {
+          .beginner-section { padding:65px 18px 75px; }
+          .beginner-container { grid-template-columns:1fr; gap:35px; }
+          .beginner-content h2 { font-size:34px; }
+          .beginner-description { font-size:13px; }
+          .beginner-visual { min-height:320px; margin:0 5px; }
+          .beginner-photo-main { width:83%; height:275px; }
+          .beginner-photo-small { width:46%; height:135px; }
+          .beginner-floating-card { right:-4px; bottom:13px; }
+          .beginner-features { gap:8px; }
+        }
+
+        /* RTL - ESPACE DÉBUTANT */
+        html[dir="rtl"] .beginner-content { text-align:right; }
+        html[dir="rtl"] .beginner-photo-main { right:auto; left:0; }
+        html[dir="rtl"] .beginner-photo-small { left:auto; right:0; }
+        html[dir="rtl"] .beginner-floating-card { right:auto; left:-5px; }
+        html[dir="rtl"] .beginner-button svg { transform:rotate(180deg); }
+        @media(max-width:650px) {
+          html[dir="rtl"] .beginner-floating-card { left:-4px; }
+        }
+
 
         .section-container { max-width:1180px; margin:auto; padding-left:28px; padding-right:28px; }
         .levels-section,.skills-section { padding:85px 0; }
