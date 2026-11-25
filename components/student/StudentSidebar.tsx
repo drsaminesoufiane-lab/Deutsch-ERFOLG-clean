@@ -14,6 +14,7 @@ import {
   GraduationCap,
   Menu,
   X,
+  BookOpen,
 } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { supabase } from '@/lib/supabase'
@@ -25,11 +26,32 @@ export default function StudentSidebar() {
 
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const beginnerLabel = {
+    fr: 'Allemand débutant A1',
+    de: 'Deutsch für Anfänger A1',
+    en: 'German for Beginners A1',
+    ar: 'الألمانية للمبتدئين A1',
+  }
+
+  const currentLanguage =
+    typeof window !== 'undefined'
+      ? localStorage.getItem('deutsch_erfolg_language')
+      : 'de'
+
+  const beginnerText =
+    beginnerLabel[currentLanguage as keyof typeof beginnerLabel] ||
+    beginnerLabel.de
+
   const menu = [
     {
       label: t.sidebar.dashboard,
       Icon: LayoutDashboard,
       href: '/espace-etudiant',
+    },
+    {
+      label: beginnerText,
+      Icon: BookOpen,
+      href: '/espace-etudiant/apprentissage/allemand-debutant',
     },
     {
       label: t.sidebar.grammar,
