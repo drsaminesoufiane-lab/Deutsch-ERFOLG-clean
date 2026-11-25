@@ -1761,9 +1761,11 @@ footer a:hover {
   z-index: 1000;
 }
 
+/* Comportement par défaut : ouverture vers le bas */
 .language-switcher-menu {
   position: absolute;
-  bottom: calc(100% + 9px);
+  top: calc(100% + 9px);
+  bottom: auto;
   right: 0;
   z-index: 1001;
   width: 175px;
@@ -1773,6 +1775,12 @@ footer a:hover {
   border-radius: 14px;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.14);
   animation: languageMenuIn 0.18s ease;
+}
+
+/* Espace étudiant : sélecteur en bas, ouverture vers le haut */
+.student-language-global .language-switcher-menu {
+  top: auto;
+  bottom: calc(100% + 9px);
 }
 
 .language-switcher-option {
