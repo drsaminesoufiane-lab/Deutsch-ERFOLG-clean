@@ -12,6 +12,8 @@ import {
   Headphones,
   PenTool,
   Mic,
+  Mail,
+  CheckCircle2,
 } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 
@@ -38,7 +40,13 @@ const traductions = {
     deja: 'Tu as déjà un compte ?',
     connexion: 'Se connecter',
     bas: 'En créant un compte, tu rejoins la communauté Deutsch Erfolg.',
-    succes: 'Inscription réussie ! Vérifie ta boîte mail pour confirmer ton compte.',
+    succes: 'Inscription réussie !',
+    emailTitle: 'Vérifie ta boîte e-mail !',
+    emailDescription: 'Nous venons de t’envoyer un e-mail de confirmation à cette adresse :',
+    emailInstructions: 'Ouvre cet e-mail et clique sur le lien de confirmation pour valider ton adresse et poursuivre l’activation de ton compte.',
+    emailSpam: 'Tu ne trouves pas notre e-mail ? Pense à vérifier le dossier Spam ou Courrier indésirable.',
+    emailWait: 'La réception du message peut prendre quelques minutes.',
+    emailBack: 'Retour à la connexion',
     erreur: 'Une erreur est survenue lors de l’inscription.',
     afficher: 'Afficher ou masquer le mot de passe',
     slogan: "Ton succès à l'examen TELC commence ici.",
@@ -73,7 +81,13 @@ const traductions = {
     deja: 'Du hast bereits ein Konto?',
     connexion: 'Anmelden',
     bas: 'Mit der Kontoerstellung wirst du Teil der Deutsch-Erfolg-Community.',
-    succes: 'Registrierung erfolgreich! Bitte überprüfe deine E-Mails, um dein Konto zu bestätigen.',
+    succes: 'Registrierung erfolgreich!',
+    emailTitle: 'Bitte überprüfe dein E-Mail-Postfach!',
+    emailDescription: 'Wir haben gerade eine Bestätigungs-E-Mail an diese Adresse gesendet:',
+    emailInstructions: 'Öffne die E-Mail und klicke auf den Bestätigungslink, um deine E-Mail-Adresse zu bestätigen und die Aktivierung deines Kontos fortzusetzen.',
+    emailSpam: 'Du findest unsere E-Mail nicht? Bitte überprüfe auch deinen Spam-Ordner.',
+    emailWait: 'Es kann einige Minuten dauern, bis die E-Mail ankommt.',
+    emailBack: 'Zur Anmeldung',
     erreur: 'Bei der Registrierung ist ein Fehler aufgetreten.',
     afficher: 'Passwort anzeigen oder verbergen',
     slogan: 'Dein Erfolg bei der TELC-Prüfung beginnt hier.',
@@ -108,7 +122,13 @@ const traductions = {
     deja: 'لديك حساب بالفعل؟',
     connexion: 'تسجيل الدخول',
     bas: 'بإنشاء حساب، تنضم إلى مجتمع Deutsch Erfolg.',
-    succes: 'تم التسجيل بنجاح! تحقق من بريدك الإلكتروني لتأكيد حسابك.',
+    succes: 'تم التسجيل بنجاح!',
+    emailTitle: 'تحقق من بريدك الإلكتروني!',
+    emailDescription: 'لقد أرسلنا للتو رسالة تأكيد إلى هذا العنوان:',
+    emailInstructions: 'افتح الرسالة واضغط على رابط التأكيد للتحقق من بريدك الإلكتروني ومتابعة تفعيل حسابك.',
+    emailSpam: 'لم تجد الرسالة؟ تحقق أيضاً من مجلد الرسائل غير المرغوب فيها (Spam).',
+    emailWait: 'قد يستغرق وصول الرسالة بضع دقائق.',
+    emailBack: 'العودة إلى تسجيل الدخول',
     erreur: 'حدث خطأ أثناء إنشاء الحساب.',
     afficher: 'إظهار أو إخفاء كلمة المرور',
     slogan: 'نجاحك في امتحان TELC يبدأ من هنا.',
@@ -143,7 +163,13 @@ const traductions = {
     deja: 'Already have an account?',
     connexion: 'Log in',
     bas: 'By creating an account, you join the Deutsch Erfolg community.',
-    succes: 'Registration successful! Check your email to confirm your account.',
+    succes: 'Registration successful!',
+    emailTitle: 'Check your inbox!',
+    emailDescription: 'We have just sent a confirmation email to:',
+    emailInstructions: 'Open the email and click the confirmation link to verify your email address and continue activating your account.',
+    emailSpam: 'Can’t find our email? Please check your Spam or Junk folder.',
+    emailWait: 'It may take a few minutes for the email to arrive.',
+    emailBack: 'Back to login',
     erreur: 'An error occurred during registration.',
     afficher: 'Show or hide password',
     slogan: 'Your success in the TELC exam starts here.',
@@ -181,7 +207,7 @@ const paysDisponibles = [
   { value: 'Côte d’Ivoire', label: '🇨🇮 Côte d’Ivoire' },
   { value: 'Égypte', label: '🇪🇬 مصر / Égypte' },
   { value: 'Arabie saoudite', label: '🇸🇦 السعودية / Arabie saoudite' },
-  { value: 'Émirats arabes unis', label: '🇦🇪 الإمارات / Émirats arabes unis' },
+  { value: 'Émirats arabes unis', label: '🇦🇪 الإمارات / Émirats arabes المتحدة' },
   { value: 'Autre', label: '🌍 Autre' },
 ]
 
@@ -210,21 +236,22 @@ export default function InscriptionPage() {
 
     try {
       const { error } = await supabase.auth.signUp({
-        email,
+        email: email.trim(),
         password: motDePasse,
         options: {
+          emailRedirectTo: `${window.location.origin}/auth/confirm`,
           data: {
-            full_name: nom,
-            telephone: telephone,
-            niveau: niveau,
-            pays: pays,
-            ville: ville,
+            full_name: nom.trim(),
+            telephone: telephone.trim(),
+            niveau,
+            pays,
+            ville: ville.trim(),
           },
         },
       })
 
       if (error) {
-        setMessage(t.erreur)
+        setMessage(error.message || t.erreur)
       } else {
         setSucces(true)
         setMessage(t.succes)
@@ -322,121 +349,157 @@ export default function InscriptionPage() {
             <p>{t.intro}</p>
           </div>
 
-          <form onSubmit={inscrire} className="register-form">
-            <label htmlFor="nom">{t.nom}</label>
-            <input
-              id="nom"
-              type="text"
-              placeholder={t.nomPlaceholder}
-              value={nom}
-              onChange={e => setNom(e.target.value)}
-              required
-            />
+          {succes ? (
+            <div className="register-confirmation" role="status">
+              <div className="register-confirmation-icon">
+                <Mail size={32} />
+              </div>
 
-            <label htmlFor="telephone">{t.telephone}</label>
-            <input
-              id="telephone"
-              type="tel"
-              placeholder={t.telephonePlaceholder}
-              value={telephone}
-              onChange={e => setTelephone(e.target.value)}
-              required
-            />
+              <h2>{t.emailTitle}</h2>
 
-            <label htmlFor="pays">{t.pays}</label>
-            <select
-              id="pays"
-              value={pays}
-              onChange={e => setPays(e.target.value)}
-              required
-            >
-              {paysDisponibles.map(option => (
-                <option key={option.value} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
+              <p>{t.emailDescription}</p>
 
-            <label htmlFor="ville">{t.ville}</label>
-            <input
-              id="ville"
-              type="text"
-              placeholder={t.villePlaceholder}
-              value={ville}
-              onChange={e => setVille(e.target.value)}
-              required
-            />
+              <strong className="register-confirmation-email">
+                {email}
+              </strong>
 
-            <label htmlFor="email">{t.email}</label>
-            <input
-              id="email"
-              type="email"
-              placeholder="exemple@email.com"
-              value={email}
-              onChange={e => setEmail(e.target.value)}
-              required
-            />
+              <div className="register-confirmation-instructions">
+                <CheckCircle2 size={20} />
+                <p>{t.emailInstructions}</p>
+              </div>
 
-            <label htmlFor="niveau">{t.niveau}</label>
-            <select
-              id="niveau"
-              value={niveau}
-              onChange={e => setNiveau(e.target.value)}
-              required
-            >
-              <option value="B1">TELC B1</option>
-              <option value="B2">TELC B2</option>
-            </select>
+              <p className="register-confirmation-spam">
+                {t.emailSpam}
+              </p>
 
-            <label htmlFor="password">{t.password}</label>
+              <p className="register-confirmation-wait">
+                {t.emailWait}
+              </p>
 
-            <div className="register-password">
+              <Link href="/connexion" className="register-submit register-confirmation-link">
+                {t.emailBack}
+                <ArrowRight size={19} />
+              </Link>
+            </div>
+          ) : (
+            <form onSubmit={inscrire} className="register-form">
+              <label htmlFor="nom">{t.nom}</label>
               <input
-                id="password"
-                type={voirMotDePasse ? 'text' : 'password'}
-                placeholder={t.passwordPlaceholder}
-                value={motDePasse}
-                onChange={e => setMotDePasse(e.target.value)}
-                minLength={6}
+                id="nom"
+                type="text"
+                placeholder={t.nomPlaceholder}
+                value={nom}
+                onChange={e => setNom(e.target.value)}
                 required
               />
 
+              <label htmlFor="telephone">{t.telephone}</label>
+              <input
+                id="telephone"
+                type="tel"
+                placeholder={t.telephonePlaceholder}
+                value={telephone}
+                onChange={e => setTelephone(e.target.value)}
+                required
+              />
+
+              <label htmlFor="pays">{t.pays}</label>
+              <select
+                id="pays"
+                value={pays}
+                onChange={e => setPays(e.target.value)}
+                required
+              >
+                {paysDisponibles.map(option => (
+                  <option key={option.value} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+
+              <label htmlFor="ville">{t.ville}</label>
+              <input
+                id="ville"
+                type="text"
+                placeholder={t.villePlaceholder}
+                value={ville}
+                onChange={e => setVille(e.target.value)}
+                required
+              />
+
+              <label htmlFor="email">{t.email}</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="exemple@email.com"
+                value={email}
+                onChange={e => setEmail(e.target.value)}
+                required
+              />
+
+              <label htmlFor="niveau">{t.niveau}</label>
+              <select
+                id="niveau"
+                value={niveau}
+                onChange={e => setNiveau(e.target.value)}
+                required
+              >
+                <option value="B1">TELC B1</option>
+                <option value="B2">TELC B2</option>
+              </select>
+
+              <label htmlFor="password">{t.password}</label>
+
+              <div className="register-password">
+                <input
+                  id="password"
+                  type={voirMotDePasse ? 'text' : 'password'}
+                  placeholder={t.passwordPlaceholder}
+                  value={motDePasse}
+                  onChange={e => setMotDePasse(e.target.value)}
+                  minLength={6}
+                  required
+                />
+
+                <button
+                  type="button"
+                  onClick={() => setVoirMotDePasse(!voirMotDePasse)}
+                  aria-label={t.afficher}
+                >
+                  {voirMotDePasse ? (
+                    <EyeOff size={19} />
+                  ) : (
+                    <Eye size={19} />
+                  )}
+                </button>
+              </div>
+
               <button
-                type="button"
-                onClick={() => setVoirMotDePasse(!voirMotDePasse)}
-                aria-label={t.afficher}
+                type="submit"
+                disabled={chargement}
+                className="register-submit"
               >
-                {voirMotDePasse ? (
-                  <EyeOff size={19} />
-                ) : (
-                  <Eye size={19} />
-                )}
+                {chargement ? t.creation : t.creer}
+                {!chargement && <ArrowRight size={19} />}
               </button>
+
+              {message && (
+                <p
+                  className="register-error"
+                  role="alert"
+                >
+                  {message}
+                </p>
+              )}
+            </form>
+          )}
+
+          {!succes && (
+            <div className="register-login">
+              {t.deja}
+              <Link href="/connexion"> {t.connexion}</Link>
             </div>
-
-            <button
-              type="submit"
-              disabled={chargement}
-              className="register-submit"
-            >
-              {chargement ? t.creation : t.creer}
-              {!chargement && <ArrowRight size={19} />}
-            </button>
-
-            {message && (
-              <p
-                className={succes ? 'register-success' : 'register-error'}
-                role="status"
-              >
-                {message}
-              </p>
-            )}
-          </form>
-
-          <div className="register-login">
-            {t.deja}
-            <Link href="/connexion"> {t.connexion}</Link>
-          </div>
+          )}
 
           <div className="register-bottom">
             {t.bas}
@@ -517,6 +580,102 @@ export default function InscriptionPage() {
         .register-page[dir="rtl"] .register-language-arrow {
           right: auto;
           left: 14px;
+        }
+
+        .register-confirmation {
+          padding: 30px 24px;
+          margin-top: 28px;
+          border: 1px solid #dbeafe;
+          border-radius: 18px;
+          background: #f8fbff;
+          text-align: center;
+        }
+
+        .register-confirmation-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 66px;
+          height: 66px;
+          margin: 0 auto 20px;
+          border-radius: 50%;
+          background: #dbeafe;
+          color: #2563eb;
+        }
+
+        .register-confirmation h2 {
+          margin: 0 0 14px;
+          color: #1e293b;
+          font-size: 23px;
+          font-weight: 750;
+        }
+
+        .register-confirmation > p {
+          color: #475569;
+          font-size: 14px;
+          line-height: 1.7;
+        }
+
+        .register-confirmation-email {
+          display: block;
+          margin: 12px 0 22px;
+          color: #1d4ed8;
+          font-size: 15px;
+          overflow-wrap: anywhere;
+        }
+
+        .register-confirmation-instructions {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          padding: 15px;
+          border-radius: 12px;
+          background: #eff6ff;
+          color: #1e40af;
+          text-align: left;
+        }
+
+        .register-confirmation-instructions svg {
+          flex-shrink: 0;
+          margin-top: 2px;
+        }
+
+        .register-confirmation-instructions p {
+          margin: 0;
+          font-size: 13px;
+          line-height: 1.7;
+        }
+
+        .register-confirmation .register-confirmation-spam {
+          margin-top: 20px;
+          color: #475569;
+          font-size: 13px;
+        }
+
+        .register-confirmation .register-confirmation-wait {
+          margin-top: 8px;
+          color: #64748b;
+          font-size: 12px;
+        }
+
+        .register-confirmation-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          width: 100%;
+          margin-top: 24px;
+          text-decoration: none;
+        }
+
+        @media (max-width: 480px) {
+          .register-confirmation {
+            padding: 24px 16px;
+          }
+
+          .register-confirmation h2 {
+            font-size: 20px;
+          }
         }
       `}</style>
     </main>
