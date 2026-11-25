@@ -19,17 +19,19 @@ import {
   GraduationCap,
   Trophy,
   FileText,
-  Languages,
   ChevronRight,
   Star,
+  Languages,
 } from 'lucide-react'
 
 export default function StudentPage() {
   const router = useRouter()
   const { t, isRTL } = useLanguage()
 
-  const [nom, setNom] = useState('Étudiant')
+  const [nom, setNom] = useState('')
   const [niveau, setNiveau] = useState('B1')
+
+  const nomAffiche = nom || t.dashboard.studentFallback
 
   useEffect(() => {
     let actif = true
@@ -59,7 +61,7 @@ export default function StudentPage() {
           data?.full_name ||
           user.user_metadata?.full_name ||
           user.email?.split('@')[0] ||
-          'Étudiant'
+          ''
         )
 
         setNiveau(
@@ -84,49 +86,44 @@ export default function StudentPage() {
 
   const modules = [
     {
-      title: 'Lesen',
+      title: t.dashboard.readingShort,
       slug: 'lesen',
       subtitle: t.dashboard.reading,
       description: t.dashboard.readingDescription,
       Icon: BookOpen,
       color: 'blue',
-      detail: 'Leseverstehen',
     },
     {
-      title: 'Hören',
+      title: t.dashboard.listeningShort,
       slug: 'hoeren',
       subtitle: t.dashboard.listening,
       description: t.dashboard.listeningDescription,
       Icon: Headphones,
       color: 'purple',
-      detail: 'Hörverstehen',
     },
     {
-      title: 'Schreiben',
+      title: t.dashboard.writingShort,
       slug: 'schreiben',
       subtitle: t.dashboard.writing,
       description: t.dashboard.writingDescription,
       Icon: PenLine,
       color: 'orange',
-      detail: 'Schriftlicher Ausdruck',
     },
     {
-      title: 'Sprechen',
+      title: t.dashboard.speakingShort,
       slug: 'sprechen',
       subtitle: t.dashboard.speaking,
       description: t.dashboard.speakingDescription,
       Icon: Mic,
       color: 'green',
-      detail: 'Mündlicher Ausdruck',
     },
     {
-      title: 'Sprachbausteine',
+      title: t.dashboard.grammarVocabulary,
       slug: 'sprachbausteine',
-      subtitle: 'Grammatik & Wortschatz',
-      description: 'Trainiere Grammatik und Wortschatz für die TELC-Prüfung.',
-      Icon: Languages,
+      subtitle: t.dashboard.languageStructure,
+      description: t.dashboard.grammarVocabularyDescription,
+      Icon: BookOpen,
       color: 'gold',
-      detail: 'Sprache und Struktur',
     },
   ]
 
@@ -154,7 +151,7 @@ export default function StudentPage() {
             </div>
 
             <div className="profile-infos">
-              <strong>{nom}</strong>
+              <strong>{nomAffiche}</strong>
               <span>
                 {t.header.student} · TELC {niveau}
               </span>
@@ -184,7 +181,7 @@ export default function StudentPage() {
               </span>
 
               <h1>
-                {t.dashboard.hello}, <span>{nom}</span> !
+                {t.dashboard.hello}, <span>{nomAffiche}</span> !
               </h1>
 
               <p>{t.dashboard.welcomeDescription}</p>
@@ -218,8 +215,8 @@ export default function StudentPage() {
           <section className="student-section" id="niveaux">
             <div className="section-heading">
               <div>
-                <h2>Mes niveaux TELC</h2>
-                <p>Choisissez votre niveau de préparation.</p>
+                <h2>{t.dashboard.myLevels}</h2>
+                <p>{t.dashboard.chooseLevelDescription}</p>
               </div>
 
               <div className="section-decoration">
@@ -248,7 +245,9 @@ export default function StudentPage() {
 
                 <div className="level-main">
                   <div className="level-info">
-                    <span className="level-kicker">TELC ZERTIFIKAT</span>
+                    <span className="level-kicker">
+                      {t.dashboard.telcCertificate}
+                    </span>
                     <h3>B1</h3>
                     <p>{t.dashboard.levelB1Description}</p>
                   </div>
@@ -283,7 +282,9 @@ export default function StudentPage() {
 
                 <div className="level-main">
                   <div className="level-info">
-                    <span className="level-kicker">TELC ZERTIFIKAT</span>
+                    <span className="level-kicker">
+                      {t.dashboard.telcCertificate}
+                    </span>
                     <h3>B2</h3>
                     <p>{t.dashboard.levelB2Description}</p>
                   </div>
@@ -307,8 +308,8 @@ export default function StudentPage() {
           <section className="student-section">
             <div className="section-heading">
               <div>
-                <h2>Les cinq compétences</h2>
-                <p>Choisissez une compétence pour vous entraîner.</p>
+                <h2>{t.dashboard.skills}</h2>
+                <p>{t.dashboard.skillsDescription}</p>
               </div>
 
               <span className="skills-level-badge">
@@ -319,7 +320,7 @@ export default function StudentPage() {
 
             <div className="student-skills">
               {modules.map(
-                ({ title, slug, subtitle, description, Icon, color, detail }, index) => (
+                ({ title, slug, subtitle, description, Icon, color }, index) => (
                   <Link
                     href={`/espace-etudiant/examens/${niveauRoute}/${slug}`}
                     className={`student-skill-card skill-${color}`}
@@ -335,7 +336,9 @@ export default function StudentPage() {
                       </span>
                     </div>
 
-                    <span className="skill-detail">{detail}</span>
+                    <span className="skill-detail">
+                      {t.dashboard.skillAreaLabel}
+                    </span>
 
                     <span className="skill-level">
                       <span className="skill-level-dot" />
@@ -349,7 +352,7 @@ export default function StudentPage() {
                     <p>{description}</p>
 
                     <div className="skill-card-footer">
-                      <span>Jetzt lernen</span>
+                      <span>{t.dashboard.startLearning}</span>
                       <span className="skill-arrow">
                         <ArrowRight size={15} />
                       </span>
@@ -370,15 +373,51 @@ export default function StudentPage() {
               </div>
 
               <div className="grammar-access-content">
-                <span className="grammar-access-label">LERNBEREICH</span>
-                <h3>Deutsche Grammatik</h3>
-                <p>
-                  Grammatik lernen, Regeln verstehen und Übungen machen.
-                </p>
+                <span className="grammar-access-label">
+                  {t.grammar.library}
+                </span>
+                <h3>{t.grammar.title}</h3>
+                <p>{t.grammar.welcomeDescription}</p>
               </div>
 
               <div className="grammar-access-button">
-                <span>Jetzt lernen</span>
+                <span>{t.dashboard.startLearning}</span>
+                <ArrowRight size={17} />
+              </div>
+            </Link>
+
+            {/* WÖRTERBUCH B1 */}
+
+            <Link
+              href="/espace-etudiant/apprentissage/woerterbuch-b1"
+              className="dictionary-access-card"
+            >
+              <div className="dictionary-access-icon">
+                <Languages size={27} />
+              </div>
+
+              <div className="dictionary-access-content">
+                <span className="dictionary-access-label">
+                  DEUTSCH · B1
+                </span>
+
+                <h3>Wörterbuch B1</h3>
+
+                <p>
+                  Découvre le vocabulaire B1 avec les traductions
+                  en français et en anglais, des exemples et des
+                  explications grammaticales.
+                </p>
+
+                <div className="dictionary-languages">
+                  <span>🇩🇪 Deutsch</span>
+                  <span>🇫🇷 Français</span>
+                  <span>🇬🇧 English</span>
+                </div>
+              </div>
+
+              <div className="dictionary-access-button">
+                <span>Explorer le dictionnaire</span>
                 <ArrowRight size={17} />
               </div>
             </Link>
@@ -389,7 +428,7 @@ export default function StudentPage() {
           <section className="student-section">
             <div className="section-heading">
               <div>
-                <h2>Mon espace de travail</h2>
+                <h2>{t.dashboard.workspace}</h2>
               </div>
             </div>
 
@@ -1104,8 +1143,6 @@ export default function StudentPage() {
           text-align: left;
         }
 
-        /* BADGE NIVEAU SUR CHAQUE CARTE */
-
         .skill-level {
           display: inline-flex;
           align-items: center;
@@ -1281,6 +1318,103 @@ export default function StudentPage() {
           transform: translateX(3px);
         }
 
+        /* WÖRTERBUCH B1 */
+
+        .dictionary-access-card {
+          margin-top: 17px;
+          padding: 21px 24px;
+          background: linear-gradient(110deg, #172B4D, #29486D);
+          border: 1px solid rgba(214,181,109,.35);
+          border-radius: 15px;
+          display: flex;
+          align-items: center;
+          gap: 18px;
+          text-decoration: none;
+          color: white;
+          transition: all .25s ease;
+          box-shadow: 0 8px 20px rgba(23,43,77,.10);
+          position: relative;
+          overflow: hidden;
+          text-align: left;
+        }
+
+        .dictionary-access-card:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 13px 27px rgba(23,43,77,.16);
+          border-color: #D6B56D;
+        }
+
+        .dictionary-access-icon {
+          width: 53px;
+          height: 53px;
+          flex-shrink: 0;
+          border-radius: 14px;
+          display: grid;
+          place-items: center;
+          background: rgba(214,181,109,.16);
+          color: #E6C77F;
+        }
+
+        .dictionary-access-content {
+          flex: 1;
+          min-width: 0;
+        }
+
+        .dictionary-access-label {
+          color: #E6C77F;
+          font-size: 9px;
+          font-weight: 800;
+          letter-spacing: 1.5px;
+        }
+
+        .dictionary-access-content h3 {
+          font-size: 19px;
+          margin: 6px 0;
+          color: white;
+        }
+
+        .dictionary-access-content p {
+          color: #D2DCE9;
+          font-size: 11px;
+          margin: 0;
+          line-height: 1.7;
+        }
+
+        .dictionary-languages {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          margin-top: 12px;
+        }
+
+        .dictionary-languages span {
+          padding: 5px 9px;
+          background: rgba(255,255,255,.09);
+          border: 1px solid rgba(255,255,255,.12);
+          border-radius: 6px;
+          font-size: 10px;
+          color: #F5E8C8;
+        }
+
+        .dictionary-access-button {
+          display: inline-flex;
+          align-items: center;
+          gap: 9px;
+          padding: 11px 15px;
+          border-radius: 8px;
+          background: #D6B56D;
+          color: #172B4D;
+          font-size: 11px;
+          font-weight: 800;
+          flex-shrink: 0;
+          transition: all .2s ease;
+        }
+
+        .dictionary-access-card:hover .dictionary-access-button {
+          background: #E9D092;
+          transform: translateX(3px);
+        }
+
         /* ESPACE DE TRAVAIL */
 
         .student-tools {
@@ -1419,6 +1553,14 @@ export default function StudentPage() {
         .student-layout[dir="rtl"] .student-level-card:hover .level-arrow,
         .student-layout[dir="rtl"] .student-skill-card:hover .skill-arrow,
         .student-layout[dir="rtl"] .grammar-access-card:hover .grammar-access-button {
+          transform: translateX(-3px);
+        }
+
+        .student-layout[dir="rtl"] .dictionary-access-card {
+          text-align: right;
+        }
+
+        .student-layout[dir="rtl"] .dictionary-access-card:hover .dictionary-access-button {
           transform: translateX(-3px);
         }
 
@@ -1606,6 +1748,30 @@ export default function StudentPage() {
           }
 
           .grammar-access-button {
+            width: 100%;
+            justify-content: center;
+          }
+
+          .dictionary-access-card {
+            padding: 16px;
+            gap: 12px;
+            flex-wrap: wrap;
+          }
+
+          .dictionary-access-icon {
+            width: 45px;
+            height: 45px;
+          }
+
+          .dictionary-access-content {
+            flex: 1;
+          }
+
+          .dictionary-access-content h3 {
+            font-size: 16px;
+          }
+
+          .dictionary-access-button {
             width: 100%;
             justify-content: center;
           }
