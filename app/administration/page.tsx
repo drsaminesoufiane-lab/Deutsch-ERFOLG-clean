@@ -34,6 +34,15 @@ type DashboardStats = {
   paiements: number | null
 }
 
+type EtudiantPresence = {
+  id: string
+  full_name: string | null
+  email: string | null
+  last_seen_at: string | null
+}
+
+type PresenceStatus = 'online' | 'inactive' | 'offline' | 'never'
+
 const raccourcis = [
   {
     titre: 'Gestion des étudiants',
@@ -79,15 +88,98 @@ const raccourcis = [
   },
 ]
 
+function obtenirStatut(
+  lastSeen: string | null,
+  maintenant: number
+): PresenceStatus {
+  if (!lastSeen) return 'never'
+
+  const difference =
+    maintenant - new Date(lastSeen).getTime()
+
+  if (!Number.isFinite(difference)) return 'never'
+
+  const minutes = difference / 60000
+
+  if (minutes < 2) return 'online'
+  if (minutes < 10) return 'inactive'
+
+  return 'offline'
+}
+
+function afficherDerniereActivite(
+  lastSeen: string | null,
+  maintenant: number
+) {
+  if (!lastSeen) return 'Jamais connecté'
+
+  const date = new Date(lastSeen)
+
+  if (Number.isNaN(date.getTime())) {
+    return 'Date inconnue'
+  }
+
+  const minutes = Math.max(
+    0,
+    Math.floor((maintenant - date.getTime()) / 60000)
+  )
+
+  if (minutes < 1) return "À l'instant"
+  if (minutes === 1) return 'Il y a 1 minute'
+  if (minutes < 60) return `Il y a ${minutes} minutes`
+
+  const heures = Math.floor(minutes / 60)
+
+  if (heures === 1) return 'Il y a 1 heure'
+  if (heures < 24) return `Il y a ${heures} heures`
+
+  const jours = Math.floor(heures / 24)
+
+  if (jours === 1) return 'Il y a 1 jour'
+  if (jours < 7) return `Il y a ${jours} jours`
+
+  return date.toLocaleDateString('fr-FR', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  })
+}
+
+function afficherStatut(status: PresenceStatus) {
+  switch (status) {
+    case 'online':
+      return 'En ligne'
+    case 'inactive':
+      return 'Inactif'
+    case 'offline':
+      return 'Hors ligne'
+    default:
+      return 'Jamais connecté'
+  }
+}
+
 export default function AdministrationPage() {
   const [chargement, setChargement] = useState(true)
   const [erreur, setErreur] = useState('')
+
   const [stats, setStats] = useState<DashboardStats>({
     etudiants: null,
     chapitres: null,
     exercices: null,
     paiements: null,
   })
+
+  const [etudiantsPresence, setEtudiantsPresence] =
+    useState<EtudiantPresence[]>([])
+
+  const [chargementPresence, setChargementPresence] =
+    useState(true)
+
+  const [erreurPresence, setErreurPresence] = useState('')
+
+  const [maintenant, setMaintenant] = useState(Date.now())
 
   const chargerStats = useCallback(async () => {
     setChargement(true)
@@ -137,15 +229,150 @@ export default function AdministrationPage() {
     setChargement(false)
   }, [])
 
+  // Charger les étudiants et leur dernière présence
+  const chargerPresence = useCallback(async () => {
+    setErreurPresence('')
+
+    const [profils, presences] = await Promise.all([
+      supabase
+        .from('profiles')
+        .select('id, full_name, email')
+        .eq('role', 'student')
+        .order('full_name', { ascending: true }),
+
+      supabase
+        .from('student_presence')
+        .select('user_id, last_seen_at'),
+    ])
+
+    if (profils.error) {
+      console.error(
+        'Erreur chargement étudiants :',
+        profils.error
+      )
+
+      setErreurPresence(
+        'Impossible de charger la liste des étudiants. Vérifiez les autorisations Supabase.'
+      )
+
+      return
+    }
+
+    if (presences.error) {
+      console.error(
+        'Erreur chargement présences :',
+        presences.error
+      )
+
+      setErreurPresence(
+        'Impossible de récupérer les présences. Vérifiez la table student_presence et ses politiques RLS.'
+      )
+
+      return
+    }
+
+    const presenceMap = new Map<string, string>()
+
+    for (const presence of presences.data ?? []) {
+      presenceMap.set(
+        presence.user_id,
+        presence.last_seen_at
+      )
+    }
+
+    const liste: EtudiantPresence[] = (
+      profils.data ?? []
+    ).map((profil) => ({
+      id: profil.id,
+      full_name: profil.full_name,
+      email: profil.email,
+      last_seen_at: presenceMap.get(profil.id) ?? null,
+    }))
+
+    // Trier : en ligne, inactifs, hors ligne, jamais connectés
+    const ordre: Record<PresenceStatus, number> = {
+      online: 0,
+      inactive: 1,
+      offline: 2,
+      never: 3,
+    }
+
+    const dateActuelle = Date.now()
+
+    liste.sort((a, b) => {
+      const statutA = obtenirStatut(
+        a.last_seen_at,
+        dateActuelle
+      )
+
+      const statutB = obtenirStatut(
+        b.last_seen_at,
+        dateActuelle
+      )
+
+      if (ordre[statutA] !== ordre[statutB]) {
+        return ordre[statutA] - ordre[statutB]
+      }
+
+      return (
+        new Date(b.last_seen_at ?? 0).getTime() -
+        new Date(a.last_seen_at ?? 0).getTime()
+      )
+    })
+
+    setEtudiantsPresence(liste)
+    setMaintenant(dateActuelle)
+  }, [])
+
+  // Chargement initial
   useEffect(() => {
     chargerStats()
-  }, [chargerStats])
+    chargerPresence()
+  }, [chargerStats, chargerPresence])
+
+  // Actualisation automatique de la présence toutes les 30 secondes
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      chargerPresence()
+    }, 30000)
+
+    return () => window.clearInterval(interval)
+  }, [chargerPresence])
+
+  // Actualiser les statuts même entre deux chargements
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setMaintenant(Date.now())
+    }, 10000)
+
+    return () => window.clearInterval(interval)
+  }, [])
 
   function afficherNombre(value: number | null) {
     if (chargement && value === null) return '...'
     if (value === null) return '—'
     return value.toLocaleString('fr-FR')
   }
+
+  const nombreEnLigne = etudiantsPresence.filter(
+    (etudiant) =>
+      obtenirStatut(etudiant.last_seen_at, maintenant) === 'online'
+  ).length
+
+  const nombreInactifs = etudiantsPresence.filter(
+    (etudiant) =>
+      obtenirStatut(etudiant.last_seen_at, maintenant) === 'inactive'
+  ).length
+
+  const nombreHorsLigne = etudiantsPresence.filter(
+    (etudiant) =>
+      obtenirStatut(etudiant.last_seen_at, maintenant) === 'offline'
+  ).length
+
+  const nombreJamaisConnectes = etudiantsPresence.filter(
+    (etudiant) =>
+      obtenirStatut(etudiant.last_seen_at, maintenant) === 'never'
+  ).length
 
   return (
     <main className="admin-layout dashboard-page">
@@ -284,7 +511,10 @@ export default function AdministrationPage() {
 
             <button
               className="dashboard-refresh"
-              onClick={chargerStats}
+              onClick={() => {
+                chargerStats()
+                chargerPresence()
+              }}
               disabled={chargement}
             >
               <RefreshCw
@@ -397,6 +627,191 @@ export default function AdministrationPage() {
                   Transactions validées
                 </small>
               </article>
+            </div>
+          </section>
+
+          {/* SUIVI DES ÉTUDIANTS EN TEMPS RÉEL */}
+          <section className="dashboard-section">
+            <div className="dashboard-section-heading">
+              <div>
+                <h2>Présence des étudiants</h2>
+                <p>
+                  Suivi des connexions à l'espace étudiant.
+                </p>
+              </div>
+
+              <button
+                className="presence-refresh"
+                onClick={chargerPresence}
+                disabled={chargementPresence}
+                title="Actualiser les présences"
+              >
+                <RefreshCw
+                  size={15}
+                  className={
+                    chargementPresence
+                      ? 'dashboard-spinning'
+                      : ''
+                  }
+                />
+                Actualiser
+              </button>
+            </div>
+
+            <div className="presence-stats">
+              <div className="presence-stat online">
+                <span className="presence-stat-dot" />
+                <div>
+                  <strong>{nombreEnLigne}</strong>
+                  <span>En ligne</span>
+                </div>
+              </div>
+
+              <div className="presence-stat inactive">
+                <span className="presence-stat-dot" />
+                <div>
+                  <strong>{nombreInactifs}</strong>
+                  <span>Inactifs</span>
+                </div>
+              </div>
+
+              <div className="presence-stat offline">
+                <span className="presence-stat-dot" />
+                <div>
+                  <strong>{nombreHorsLigne}</strong>
+                  <span>Hors ligne</span>
+                </div>
+              </div>
+
+              <div className="presence-stat never">
+                <span className="presence-stat-dot" />
+                <div>
+                  <strong>{nombreJamaisConnectes}</strong>
+                  <span>Jamais connectés</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="presence-list-panel">
+              <div className="presence-list-heading">
+                <div>
+                  <h3>Liste des étudiants</h3>
+                  <p>
+                    {etudiantsPresence.length} compte(s) étudiant(s)
+                  </p>
+                </div>
+
+                <span className="presence-auto-refresh">
+                  <span />
+                  Actualisation automatique
+                </span>
+              </div>
+
+              {erreurPresence && (
+                <div className="presence-error">
+                  <Activity size={17} />
+                  {erreurPresence}
+                </div>
+              )}
+
+              {chargementPresence &&
+              etudiantsPresence.length === 0 &&
+              !erreurPresence ? (
+                <div className="presence-empty">
+                  <RefreshCw
+                    size={23}
+                    className="dashboard-spinning"
+                  />
+                  <p>Chargement des étudiants...</p>
+                </div>
+              ) : !erreurPresence &&
+                etudiantsPresence.length === 0 ? (
+                <div className="presence-empty">
+                  <Users size={25} />
+                  <strong>Aucun étudiant trouvé</strong>
+                  <p>Les comptes étudiants apparaîtront ici.</p>
+                </div>
+              ) : !erreurPresence ? (
+                <div className="presence-table-wrapper">
+                  <table className="presence-table">
+                    <thead>
+                      <tr>
+                        <th>ÉTUDIANT</th>
+                        <th>STATUT</th>
+                        <th>DERNIÈRE ACTIVITÉ</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      {etudiantsPresence.map((etudiant) => {
+                        const statut = obtenirStatut(
+                          etudiant.last_seen_at,
+                          maintenant
+                        )
+
+                        return (
+                          <tr key={etudiant.id}>
+                            <td>
+                              <div className="presence-student">
+                                <div className="presence-avatar">
+                                  {(etudiant.full_name ||
+                                    etudiant.email ||
+                                    '?')
+                                    .trim()
+                                    .charAt(0)
+                                    .toUpperCase()}
+                                </div>
+
+                                <div className="presence-student-info">
+                                  <strong>
+                                    {etudiant.full_name ||
+                                      'Nom non renseigné'}
+                                  </strong>
+                                  <span>
+                                    {etudiant.email ||
+                                      'E-mail non renseigné'}
+                                  </span>
+                                </div>
+                              </div>
+                            </td>
+
+                            <td>
+                              <span
+                                className={`presence-badge ${statut}`}
+                              >
+                                <span />
+                                {afficherStatut(statut)}
+                              </span>
+                            </td>
+
+                            <td className="presence-last-seen">
+                              {afficherDerniereActivite(
+                                etudiant.last_seen_at,
+                                maintenant
+                              )}
+                            </td>
+                          </tr>
+                        )
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              ) : null}
+
+              <div className="presence-legend">
+                <span>
+                  <i className="legend-dot online" />
+                  En ligne : moins de 2 min
+                </span>
+                <span>
+                  <i className="legend-dot inactive" />
+                  Inactif : 2 à 10 min
+                </span>
+                <span>
+                  <i className="legend-dot offline" />
+                  Hors ligne : plus de 10 min
+                </span>
+              </div>
             </div>
           </section>
 
@@ -868,6 +1283,308 @@ export default function AdministrationPage() {
           flex-shrink: 0;
         }
 
+        /* PRÉSENCE DES ÉTUDIANTS */
+
+        .presence-refresh {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          padding: 9px 12px;
+          border: 1px solid #e5e9f2;
+          background: white;
+          color: #536075;
+          border-radius: 9px;
+          font-size: 11px;
+          font-weight: 650;
+          cursor: pointer;
+        }
+
+        .presence-refresh:disabled {
+          opacity: 0.6;
+          cursor: wait;
+        }
+
+        .presence-stats {
+          display: grid;
+          grid-template-columns: repeat(4, minmax(0, 1fr));
+          gap: 13px;
+          margin-bottom: 15px;
+        }
+
+        .presence-stat {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          min-width: 0;
+          padding: 16px;
+          background: white;
+          border: 1px solid #edf0f5;
+          border-radius: 12px;
+        }
+
+        .presence-stat-dot {
+          width: 11px;
+          height: 11px;
+          flex-shrink: 0;
+          border-radius: 50%;
+        }
+
+        .presence-stat.online .presence-stat-dot,
+        .legend-dot.online {
+          background: #20a477;
+        }
+
+        .presence-stat.inactive .presence-stat-dot,
+        .legend-dot.inactive {
+          background: #e5a33d;
+        }
+
+        .presence-stat.offline .presence-stat-dot,
+        .legend-dot.offline {
+          background: #a0a8b6;
+        }
+
+        .presence-stat.never .presence-stat-dot {
+          background: #c4b5fd;
+        }
+
+        .presence-stat strong {
+          display: block;
+          color: #172033;
+          font-size: 22px;
+          font-weight: 800;
+        }
+
+        .presence-stat span:last-child {
+          display: block;
+          margin-top: 3px;
+          color: #8994a6;
+          font-size: 10px;
+        }
+
+        .presence-list-panel {
+          overflow: hidden;
+          background: white;
+          border: 1px solid #edf0f5;
+          border-radius: 14px;
+        }
+
+        .presence-list-heading {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 12px;
+          padding: 17px 19px;
+          border-bottom: 1px solid #f0f2f6;
+        }
+
+        .presence-list-heading h3 {
+          margin: 0;
+          color: #273348;
+          font-size: 13px;
+          font-weight: 750;
+        }
+
+        .presence-list-heading p {
+          margin: 5px 0 0;
+          color: #9aa4b4;
+          font-size: 10px;
+        }
+
+        .presence-auto-refresh {
+          display: inline-flex;
+          align-items: center;
+          gap: 7px;
+          color: #8994a6;
+          font-size: 10px;
+        }
+
+        .presence-auto-refresh > span {
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: #20a477;
+          box-shadow: 0 0 0 3px rgba(32, 164, 119, 0.12);
+        }
+
+        .presence-table-wrapper {
+          width: 100%;
+          overflow-x: auto;
+        }
+
+        .presence-table {
+          width: 100%;
+          border-collapse: collapse;
+          text-align: left;
+        }
+
+        .presence-table th {
+          padding: 12px 19px;
+          background: #fafbfe;
+          color: #9aa4b4;
+          font-size: 9px;
+          font-weight: 750;
+          letter-spacing: 0.6px;
+          white-space: nowrap;
+        }
+
+        .presence-table td {
+          padding: 12px 19px;
+          border-top: 1px solid #f0f2f6;
+          color: #536075;
+          font-size: 11px;
+          white-space: nowrap;
+        }
+
+        .presence-student {
+          display: flex;
+          align-items: center;
+          gap: 11px;
+          min-width: 210px;
+        }
+
+        .presence-avatar {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 35px;
+          height: 35px;
+          flex-shrink: 0;
+          border-radius: 10px;
+          background: #f0edff;
+          color: #7661d9;
+          font-size: 13px;
+          font-weight: 800;
+        }
+
+        .presence-student-info {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+          min-width: 0;
+        }
+
+        .presence-student-info strong {
+          color: #344054;
+          font-size: 11px;
+          font-weight: 700;
+        }
+
+        .presence-student-info span {
+          color: #9aa4b4;
+          font-size: 10px;
+        }
+
+        .presence-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 7px;
+          padding: 6px 9px;
+          border-radius: 20px;
+          font-size: 10px;
+          font-weight: 650;
+        }
+
+        .presence-badge > span {
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+        }
+
+        .presence-badge.online {
+          background: #e9f8f0;
+          color: #21865f;
+        }
+
+        .presence-badge.online > span {
+          background: #20a477;
+        }
+
+        .presence-badge.inactive {
+          background: #fff5e7;
+          color: #b47b27;
+        }
+
+        .presence-badge.inactive > span {
+          background: #e5a33d;
+        }
+
+        .presence-badge.offline {
+          background: #f0f2f6;
+          color: #778194;
+        }
+
+        .presence-badge.offline > span {
+          background: #a0a8b6;
+        }
+
+        .presence-badge.never {
+          background: #f3f0ff;
+          color: #7964c6;
+        }
+
+        .presence-badge.never > span {
+          background: #a78bfa;
+        }
+
+        .presence-last-seen {
+          color: #8994a6 !important;
+        }
+
+        .presence-empty {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 9px;
+          min-height: 150px;
+          color: #9aa4b4;
+          font-size: 11px;
+        }
+
+        .presence-empty strong {
+          color: #344054;
+        }
+
+        .presence-empty p {
+          margin: 0;
+          color: #9aa4b4;
+        }
+
+        .presence-error {
+          display: flex;
+          align-items: center;
+          gap: 9px;
+          padding: 15px;
+          color: #b94d4d;
+          background: #fff7f7;
+          font-size: 11px;
+        }
+
+        .presence-legend {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 15px;
+          padding: 13px 19px;
+          border-top: 1px solid #f0f2f6;
+          background: #fafbfe;
+        }
+
+        .presence-legend > span {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          color: #8994a6;
+          font-size: 9px;
+        }
+
+        .legend-dot {
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+        }
+
         .dashboard-bottom-grid {
           display: grid;
           grid-template-columns: 1.35fr 1fr;
@@ -982,7 +1699,8 @@ export default function AdministrationPage() {
         }
 
         @media (max-width: 1100px) {
-          .dashboard-stats {
+          .dashboard-stats,
+          .presence-stats {
             grid-template-columns: repeat(2, minmax(0, 1fr));
           }
 
@@ -1047,10 +1765,20 @@ export default function AdministrationPage() {
           .dashboard-section-heading {
             align-items: flex-start;
           }
+
+          .presence-list-heading {
+            align-items: flex-start;
+            flex-direction: column;
+          }
+
+          .presence-legend {
+            gap: 9px;
+          }
         }
 
         @media (max-width: 380px) {
-          .dashboard-stats {
+          .dashboard-stats,
+          .presence-stats {
             grid-template-columns: 1fr;
           }
 
