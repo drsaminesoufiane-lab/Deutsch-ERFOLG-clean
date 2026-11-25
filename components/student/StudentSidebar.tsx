@@ -15,6 +15,7 @@ import {
   Menu,
   X,
   BookOpen,
+  Languages,
 } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { supabase } from '@/lib/supabase'
@@ -33,6 +34,13 @@ export default function StudentSidebar() {
     ar: 'الألمانية للمبتدئين A1',
   }
 
+  const dictionaryLabel = {
+    fr: 'Dictionnaire B1',
+    de: 'Wörterbuch B1',
+    en: 'B1 Dictionary',
+    ar: 'قاموس B1',
+  }
+
   const currentLanguage =
     typeof window !== 'undefined'
       ? localStorage.getItem('deutsch_erfolg_language')
@@ -41,6 +49,10 @@ export default function StudentSidebar() {
   const beginnerText =
     beginnerLabel[currentLanguage as keyof typeof beginnerLabel] ||
     beginnerLabel.de
+
+  const dictionaryText =
+    dictionaryLabel[currentLanguage as keyof typeof dictionaryLabel] ||
+    dictionaryLabel.de
 
   const menu = [
     {
@@ -57,6 +69,11 @@ export default function StudentSidebar() {
       label: t.sidebar.grammar,
       Icon: GraduationCap,
       href: '/espace-etudiant/apprentissage/grammaire',
+    },
+    {
+      label: dictionaryText,
+      Icon: Languages,
+      href: '/espace-etudiant/apprentissage/woerterbuch-b1',
     },
     {
       label: t.sidebar.exams,
