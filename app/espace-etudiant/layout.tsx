@@ -66,6 +66,144 @@ export default function StudentLayout({
           ? 'Go Pro'
           : 'الترقية إلى Pro'
 
+  // SUIVI AUTOMATIQUE DE LA PRÉSENCE DE L'ÉTUDIANT
+  useEffect(() => {
+    let actif = true
+    let userId: string | null = null
+    let presenceEnCours = false
+
+    const INTERVALLE_PRESENCE = 30000
+
+    async function envoyerPresence() {
+      if (
+        !actif ||
+        !userId ||
+        presenceEnCours ||
+        document.visibilityState !== 'visible'
+      ) {
+        return
+      }
+
+      presenceEnCours = true
+
+      try {
+        const { error } = await supabase
+          .from('student_presence')
+          .upsert(
+            {
+              user_id: userId,
+              last_seen_at: new Date().toISOString(),
+            },
+            {
+              onConflict: 'user_id',
+            }
+          )
+
+        if (error) {
+          console.error(
+            'Erreur enregistrement présence :',
+            error.message
+          )
+        }
+      } catch (error) {
+        console.error(
+          'Erreur suivi présence étudiant :',
+          error
+        )
+      } finally {
+        presenceEnCours = false
+      }
+    }
+
+    async function initialiserPresence() {
+      try {
+        const {
+          data: { user },
+          error,
+        } = await supabase.auth.getUser()
+
+        if (!actif) return
+
+        if (error) {
+          console.error(
+            'Erreur récupération utilisateur pour présence :',
+            error.message
+          )
+          return
+        }
+
+        if (user) {
+          userId = user.id
+          envoyerPresence()
+        }
+      } catch (error) {
+        console.error(
+          'Erreur initialisation présence :',
+          error
+        )
+      }
+    }
+
+    // Suivre également les changements de session
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange(
+      (event, session) => {
+        if (!actif) return
+
+        if (
+          event === 'SIGNED_IN' ||
+          event === 'TOKEN_REFRESHED' ||
+          event === 'USER_UPDATED'
+        ) {
+          userId = session?.user?.id ?? null
+
+          if (userId) {
+            setTimeout(() => {
+              if (actif) envoyerPresence()
+            }, 0)
+          }
+        }
+
+        if (event === 'SIGNED_OUT') {
+          userId = null
+        }
+      }
+    )
+
+    function handleVisibilityChange() {
+      if (document.visibilityState === 'visible') {
+        envoyerPresence()
+      }
+    }
+
+    document.addEventListener(
+      'visibilitychange',
+      handleVisibilityChange
+    )
+
+    initialiserPresence()
+
+    const interval = window.setInterval(
+      envoyerPresence,
+      INTERVALLE_PRESENCE
+    )
+
+    return () => {
+      actif = false
+      userId = null
+
+      window.clearInterval(interval)
+
+      document.removeEventListener(
+        'visibilitychange',
+        handleVisibilityChange
+      )
+
+      subscription.unsubscribe()
+    }
+  }, [])
+
   // Vérifier si l'étudiant possède un abonnement PRO payant actif
   useEffect(() => {
     let actif = true
@@ -358,10 +496,9 @@ export default function StudentLayout({
           margin-right: 255px;
         }
 
-        /* COURONNE PRO : CENTRÉE EN HAUT */
         .floating-pro-crown {
           position: fixed;
-          left: 50%;
+          left: calc(255px + (100% - 255px) / 2);
           top: 20px;
           transform: translateX(-50%);
           z-index: 10000;
@@ -399,7 +536,20 @@ export default function StudentLayout({
           overflow: visible;
         }
 
-        /* REFLET ANIMÉ À L'INTÉRIEUR DU CERCLE */
+        [dir="rtl"] .floating-pro-crown {
+          left: auto;
+          right: calc(255px + (100% - 255px) / 2);
+          transform: translateX(50%);
+        }
+
+        .floating-pro-crown:hover {
+          transform: translateX(-50%) scale(1.12);
+        }
+
+        [dir="rtl"] .floating-pro-crown:hover {
+          transform: translateX(50%) scale(1.12);
+        }
+
         .crown-shine-effect {
           position: absolute;
           inset: 0;
@@ -412,42 +562,34 @@ export default function StudentLayout({
         .crown-shine-effect::after {
           content: "";
           position: absolute;
-
           top: -30%;
           left: -70%;
-
           width: 35%;
           height: 160%;
 
           background: linear-gradient(
             90deg,
-            transparent 0%,
-            rgba(255, 255, 255, 0.2) 20%,
-            rgba(255, 255, 255, 0.95) 50%,
-            rgba(255, 255, 255, 0.2) 80%,
-            transparent 100%
+            transparent,
+            rgba(255, 255, 255, 0.95),
+            transparent
           );
 
           transform: rotate(35deg);
-
           animation: crown-shine 2.5s ease-in-out infinite;
         }
 
-        /* ICÔNE COURONNE */
         .floating-pro-crown > svg {
-          width: 32px;
-          height: 32px;
           position: relative;
           z-index: 2;
+          width: 32px;
+          height: 32px;
         }
 
-        /* INFOBULLE TRADUITE */
         .crown-tooltip {
           position: absolute;
           left: 62px;
           top: 50%;
-
-          transform: translateY(-50%) translateX(-5px);
+          transform: translateY(-50%);
 
           background: #252525;
           color: white;
@@ -467,119 +609,32 @@ export default function StudentLayout({
           z-index: 5;
         }
 
-        .floating-pro-crown {
-  position: fixed;
-  left: calc(255px + (100% - 255px) / 2);
-  top: 20px;
-  transform: translateX(-50%);
-  z-index: 10000;
-}
+        .floating-pro-crown:hover .crown-tooltip {
+          opacity: 1;
+          visibility: visible;
+        }
 
-/* Arabe : sidebar à droite */
-[dir="rtl"] .floating-pro-crown {
-  left: auto;
-  right: calc(255px + (100% - 255px) / 2);
-  transform: translateX(50%);
-}
+        @keyframes crown-shine {
+          0% {
+            left: -70%;
+          }
+          70%, 100% {
+            left: 150%;
+          }
+        }
 
-/* Survol en français, allemand et anglais */
-.floating-pro-crown:hover {
-  transform: translateX(-50%) scale(1.12);
-}
-
-/* Survol en arabe */
-[dir="rtl"] .floating-pro-crown:hover {
-  transform: translateX(50%) scale(1.12);
-}
-  /* Reflet animé */
-.crown-shine-effect {
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 1;
-}
-
-.crown-shine-effect::after {
-  content: "";
-  position: absolute;
-  top: -30%;
-  left: -70%;
-  width: 35%;
-  height: 160%;
-
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.95),
-    transparent
-  );
-
-  transform: rotate(35deg);
-  animation: crown-shine 2.5s ease-in-out infinite;
-}
-
-/* Icône */
-.floating-pro-crown > svg {
-  position: relative;
-  z-index: 2;
-  width: 32px;
-  height: 32px;
-}
-
-/* Infobulle */
-.crown-tooltip {
-  position: absolute;
-  left: 62px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #252525;
-  color: white;
-  padding: 8px 13px;
-  border-radius: 8px;
-  font-size: 13px;
-  font-weight: 600;
-  white-space: nowrap;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s ease;
-  pointer-events: none;
-  z-index: 5;
-}
-
-.floating-pro-crown:hover .crown-tooltip {
-  opacity: 1;
-  visibility: visible;
-}
-
-/* Lueur dorée */
-.floating-pro-crown {
-  animation: pro-crown-glow 3s ease-in-out infinite;
-  transition: transform 0.2s ease;
-}
-
-@keyframes crown-shine {
-  0% {
-    left: -70%;
-  }
-  70%, 100% {
-    left: 150%;
-  }
-}
-
-@keyframes pro-crown-glow {
-  0%, 100% {
-    box-shadow:
-      0 0 9px rgba(218, 177, 91, 0.5),
-      0 0 18px rgba(218, 177, 91, 0.3);
-  }
-  50% {
-    box-shadow:
-      0 0 13px rgba(218, 177, 91, 0.8),
-      0 0 25px rgba(218, 177, 91, 0.5);
-  }
-}
+        @keyframes pro-crown-glow {
+          0%, 100% {
+            box-shadow:
+              0 0 9px rgba(218, 177, 91, 0.5),
+              0 0 18px rgba(218, 177, 91, 0.3);
+          }
+          50% {
+            box-shadow:
+              0 0 13px rgba(218, 177, 91, 0.8),
+              0 0 25px rgba(218, 177, 91, 0.5);
+          }
+        }
       `}</style>
     </>
   )
