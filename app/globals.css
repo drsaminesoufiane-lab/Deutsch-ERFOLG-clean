@@ -2405,3 +2405,55 @@ html[dir="rtl"] .de-floating-tools .language-switcher .language-switcher-menu { 
   -webkit-backdrop-filter: blur(8px);
 }
 
+/* DE_TYPOGRAPHIE_GLOBALE_V1 */
+:root {
+  --de-typography-latin: 'Plus Jakarta Sans', Arial, sans-serif;
+  --de-typography-arabic: 'Tajawal', Arial, sans-serif;
+  --de-typography-serif: Georgia, 'Times New Roman', serif;
+  --de-typography-ui: var(--de-typography-latin);
+  --de-typography-heading: var(--de-typography-serif);
+  --de-typography-heading-weight: 400;
+  --de-typography-heading-tracking: -.025em;
+}
+html[dir="rtl"], html[lang|="ar"],
+html body :is([dir="rtl"],[lang|="ar"]) {
+  --de-typography-ui: var(--de-typography-arabic);
+  --de-typography-heading: var(--de-typography-arabic);
+  --de-typography-heading-weight: 500;
+  --de-typography-heading-tracking: 0;
+}
+html body :is(.home-page,.login-page,.register-page,.de-shared-student-header,.de-floating-tools)[dir="ltr"],
+html body :is([lang|="de"],[lang|="fr"],[lang|="en"]) {
+  --de-typography-ui: var(--de-typography-latin);
+  --de-typography-heading: var(--de-typography-serif);
+  --de-typography-heading-weight: 400;
+  --de-typography-heading-tracking: -.025em;
+}
+
+html:root body :is(.home-page,.login-page,.register-page,.student-global-layout,.de-floating-tools),
+html:root body :is(.home-page,.login-page,.register-page,.student-global-layout,.de-floating-tools) :not(:where(svg,svg *,math,math *,pre,pre *,code,code *,kbd,samp,.katex,.katex *,.MathJax,.MathJax *,mjx-container,mjx-container *,[class^="fa-"],[class*=" fa-"],.material-icons,.material-symbols-outlined)) {
+  font-family: var(--de-typography-current, var(--de-typography-ui)) !important;
+}
+
+html:root body :is(.home-page,.login-page,.register-page,.student-global-layout,.de-floating-tools) :is(h1,h2,h3):not(:where(.student-header *, .de-shared-student-header *, nav *, aside *, .home-header *, .student-sidebar *, .de-floating-tools *, form *, [role="dialog"] *, .katex *, pre *, code *)) {
+  --de-typography-current: var(--de-typography-heading);
+  font-weight: var(--de-typography-heading-weight) !important;
+  letter-spacing: var(--de-typography-heading-tracking) !important;
+}
+
+html:root body :is(.home-page,.login-page,.register-page,.student-global-layout,.de-floating-tools) :is(.wb-word,.wb-stat .text-2xl,.da-letter,.da-word-row strong,.da-special-letter,.da-german-word,.da-v4-progress-number,.quote-mark) {
+  --de-typography-current: var(--de-typography-serif);
+  font-weight: 400 !important;
+}
+html:root body :is(.home-page,.login-page,.register-page,.student-global-layout,.de-floating-tools) .wb-heading {
+  --de-typography-current: var(--de-typography-heading);
+  font-weight: var(--de-typography-heading-weight) !important;
+}
+html:root body :is(.home-page,.login-page,.register-page,.student-global-layout,.de-floating-tools) :is(button,input,select,textarea,label,nav,aside,.student-header,.de-shared-student-header,.home-header,.student-sidebar) {
+  --de-typography-current: var(--de-typography-ui);
+}
+
+html:root body :is(.home-page,.login-page,.register-page,.student-global-layout,.de-floating-tools) :is([lang|="ar"],[lang|="de"],[lang|="en"],[lang|="fr"]):not(:where(h1,h2,h3,.wb-word,.da-german-word)) {
+  --de-typography-current: var(--de-typography-ui);
+}
+/* FIN_DE_TYPOGRAPHIE_GLOBALE_V1 */
