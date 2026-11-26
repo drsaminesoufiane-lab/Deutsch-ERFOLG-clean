@@ -658,14 +658,14 @@ export default function SportIstGesundPage() {
       <style jsx global>{`
         .exercise-page {
           min-height: 100vh;
-          background: #F5F6F8;
-          color: #172B4D;
+          background: #f7f5f0;
+          color: #192b43;
           font-family: Arial, sans-serif;
         }
 
         .exercise-header {
           height: 68px;
-          background: #172B4D;
+          background: #192b43;
           padding: 0 7%;
           display: flex;
           justify-content: space-between;
@@ -692,7 +692,7 @@ export default function SportIstGesundPage() {
         }
 
         .header-brand svg {
-          color: #D6B56D;
+          color: #b49760;
           flex-shrink: 0;
         }
 
@@ -702,7 +702,7 @@ export default function SportIstGesundPage() {
         }
 
         .header-brand > span span:last-child {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .exercise-content {
@@ -713,17 +713,17 @@ export default function SportIstGesundPage() {
 
         .breadcrumb {
           font-size: 12px;
-          color: #8B96A6;
+          color: #626a75;
           margin-bottom: 18px;
         }
 
         .breadcrumb span {
           margin: 0 8px;
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .exercise-hero {
-          background: linear-gradient(120deg, #172B4D, #294B78);
+          background: #192b43;
           border-radius: 17px;
           color: white;
           padding: 25px 30px;
@@ -731,7 +731,7 @@ export default function SportIstGesundPage() {
         }
 
         .hero-label {
-          color: #D6B56D;
+          color: #b49760;
           font-size: 11px;
           font-weight: 700;
           letter-spacing: 1.5px;
@@ -761,7 +761,7 @@ export default function SportIstGesundPage() {
         }
 
         .progress-label strong {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .progress-track {
@@ -773,7 +773,7 @@ export default function SportIstGesundPage() {
 
         .progress-fill {
           height: 100%;
-          background: #D6B56D;
+          background: #b49760;
           border-radius: 10px;
           transition: width .2s;
         }
@@ -784,7 +784,7 @@ export default function SportIstGesundPage() {
           gap: 14px;
           flex-wrap: wrap;
           background: white;
-          border: 1px solid #E5E9EF;
+          border: 1px solid #e3ded3;
           border-radius: 12px;
           padding: 11px 16px;
           margin-bottom: 14px;
@@ -799,7 +799,7 @@ export default function SportIstGesundPage() {
         }
 
         .language-label svg {
-          color: #A18142;
+          color: #806337;
         }
 
         .language-bar select,
@@ -808,7 +808,7 @@ export default function SportIstGesundPage() {
           border-radius: 8px;
           padding: 9px 11px;
           background: #F9FAFC;
-          color: #172B4D;
+          color: #192b43;
           font-size: 13px;
           max-width: 100%;
         }
@@ -816,13 +816,13 @@ export default function SportIstGesundPage() {
         .language-hint,
         .section-hint {
           font-size: 12px;
-          color: #8792A2;
+          color: #626a75;
         }
 
         .instructions {
           padding: 12px 16px;
           background: #FFF8EA;
-          border-left: 4px solid #D6B56D;
+          border-left: 4px solid #b49760;
           border-radius: 8px;
           font-size: 12px;
           line-height: 1.7;
@@ -839,7 +839,7 @@ export default function SportIstGesundPage() {
 
         .layout-description {
           font-size: 12px;
-          color: #8792A2;
+          color: #626a75;
         }
 
         .sidebar-toggle {
@@ -848,7 +848,7 @@ export default function SportIstGesundPage() {
           justify-content: center;
           gap: 8px;
           padding: 10px 15px;
-          border: 1px solid #D6B56D;
+          border: 1px solid #b49760;
           border-radius: 8px;
           background: #fff;
           color: #765C2B;
@@ -894,7 +894,7 @@ export default function SportIstGesundPage() {
 
         .section-title span {
           font-size: 11px;
-          color: #A18142;
+          color: #806337;
           background: #F8F1E3;
           padding: 6px 10px;
           border-radius: 20px;
@@ -909,7 +909,7 @@ export default function SportIstGesundPage() {
           overflow-x: hidden;
           padding: 3px 9px 3px 2px;
           scrollbar-width: thin;
-          scrollbar-color: #C5CEDA #EDF0F4;
+          scrollbar-color: #C5CEDA #e3ded3;
         }
 
         .ads-scroll::-webkit-scrollbar {
@@ -917,7 +917,7 @@ export default function SportIstGesundPage() {
         }
 
         .ads-scroll::-webkit-scrollbar-track {
-          background: #EDF0F4;
+          background: #e3ded3;
           border-radius: 10px;
         }
 
@@ -935,7 +935,7 @@ export default function SportIstGesundPage() {
 
         .ad-card {
           background: #fff;
-          border: 1px solid #E1E6ED;
+          border: 1px solid #e3ded3;
           border-radius: 12px;
           padding: 17px 18px;
           margin: 0;
@@ -963,8 +963,8 @@ export default function SportIstGesundPage() {
           display: grid;
           place-items: center;
           flex-shrink: 0;
-          background: #172B4D;
-          color: #D6B56D;
+          background: #192b43;
+          color: #b49760;
           border-radius: 8px;
           font-weight: 700;
         }
@@ -978,7 +978,7 @@ export default function SportIstGesundPage() {
 
         .situations-section {
           background: #EEF1F5;
-          border: 1px solid #E1E6ED;
+          border: 1px solid #e3ded3;
           border-radius: 13px;
           padding: 13px;
           min-width: 0;
@@ -1059,7 +1059,7 @@ export default function SportIstGesundPage() {
           padding: 7px 9px;
           border: 0;
           border-radius: 7px;
-          background: #172B4D;
+          background: #192b43;
           color: #fff;
           font-size: 11px;
           font-weight: 700;
@@ -1112,7 +1112,7 @@ export default function SportIstGesundPage() {
           padding: 6px 8px;
           border: 1px solid #E0E5ED;
           border-radius: 7px;
-          background: #F8FAFC;
+          background: #f7f5f0;
           color: #53647A;
           font-size: 10px;
           cursor: pointer;
@@ -1120,7 +1120,7 @@ export default function SportIstGesundPage() {
 
         .help-button:hover,
         .help-button.active {
-          border-color: #D6B56D;
+          border-color: #b49760;
           background: #FFFCF5;
           color: #8B6C31;
         }
@@ -1142,7 +1142,7 @@ export default function SportIstGesundPage() {
 
         .explanation-panel {
           background: #FFF8EA;
-          border-left: 3px solid #D6B56D;
+          border-left: 3px solid #b49760;
           color: #6D572D;
         }
 
@@ -1172,7 +1172,7 @@ export default function SportIstGesundPage() {
         }
 
         .check-button {
-          background: #172B4D;
+          background: #192b43;
           color: white;
         }
 
@@ -1197,7 +1197,7 @@ export default function SportIstGesundPage() {
         }
 
         .score-result strong {
-          color: #A18142;
+          color: #806337;
           font-size: 22px;
         }
 
@@ -1321,6 +1321,19 @@ export default function SportIstGesundPage() {
           .answer-row select {
             min-width: 0;
           }
+        }
+      
+        /* Deutsch Erfolg — Premium exams */
+        .exercise-page { background: #f7f5f0; font-family: 'Plus Jakarta Sans', Arial, sans-serif; }
+        [dir="rtl"] .exercise-page, .exercise-page[dir="rtl"] { font-family: 'Tajawal', Arial, sans-serif; }
+        .exercise-page .exercise-hero { background: #192b43; border: 1px solid #314359; border-radius: 12px; box-shadow: none; text-align: start; }
+        .exercise-page .exercise-hero h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.025em; line-height: 1.24; overflow-wrap: anywhere; }
+        [dir="rtl"] .exercise-page .exercise-hero h1, .exercise-page[dir="rtl"] .exercise-hero h1 { font-family: 'Tajawal', Arial, sans-serif; }
+        .exercise-page a:focus-visible, .exercise-page button:focus-visible, .exercise-page select:focus-visible { outline: 2px solid #b49760; outline-offset: 3px; }
+        .exercise-page .ad-card,
+        .exercise-page .situation-card { border-radius: 10px; box-shadow: none; }
+        @media (prefers-reduced-motion: reduce) {
+          .exercise-page *, .exercise-page *::before, .exercise-page *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
         }
       `}</style>
     </main>

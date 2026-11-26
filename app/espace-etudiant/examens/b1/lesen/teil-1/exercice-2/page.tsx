@@ -625,13 +625,13 @@ export default function Exercice2() {
       <style jsx global>{`
         .exercise-page {
           min-height:100vh;
-          background:#F5F6F8;
-          color:#172B4D;
+          background:#f7f5f0;
+          color:#192b43;
           font-family:Arial,sans-serif;
         }
         .exercise-header {
           height:68px;
-          background:#172B4D;
+          background:#192b43;
           padding:0 7%;
           display:flex;
           justify-content:space-between;
@@ -656,7 +656,7 @@ export default function Exercice2() {
 }
 
 .header-brand svg {
-  color: #D6B56D !important;
+  color: #b49760 !important;
   transform: translateY(-3px);
   flex-shrink: 0;
 }
@@ -671,53 +671,53 @@ export default function Exercice2() {
 }
 
 .header-brand > span > span:last-child {
-  color: #D6B56D !important;
+  color: #b49760 !important;
 }
 
 .back-link {
   color: #FFFFFF !important;
 }
         .exercise-content { max-width:1400px;margin:auto;padding:30px 24px 60px; }
-        .breadcrumb { font-size:12px;color:#8B96A6;margin-bottom:22px; }
-        .breadcrumb span { margin:0 8px;color:#D6B56D; }
+        .breadcrumb { font-size:12px;color:#626a75;margin-bottom:22px; }
+        .breadcrumb span { margin:0 8px;color:#b49760; }
         .exercise-hero {
-          background:linear-gradient(120deg,#172B4D,#294B78);
+          background:#192b43;
           border-radius:17px;
           color:white;
           padding:30px 34px;
           margin-bottom:22px;
         }
-        .hero-label { color:#D6B56D;font-size:11px;font-weight:700;letter-spacing:1.5px; }
+        .hero-label { color:#b49760;font-size:11px;font-weight:700;letter-spacing:1.5px; }
         .exercise-hero h1 { font-size:29px;margin:12px 0 8px; }
         .exercise-hero p { color:#D2DAE5;font-size:14px;line-height:1.6; }
         .progress-area { max-width:400px;margin-top:24px; }
         .progress-label { display:flex;justify-content:space-between;font-size:12px;margin-bottom:9px; }
-        .progress-label strong { color:#D6B56D; }
+        .progress-label strong { color:#b49760; }
         .progress-track { height:7px;background:#ffffff30;border-radius:10px;overflow:hidden; }
-        .progress-fill { height:100%;background:#D6B56D;border-radius:10px;transition:width .2s; }
+        .progress-fill { height:100%;background:#b49760;border-radius:10px;transition:width .2s; }
 
         .language-bar {
           display:flex;align-items:center;gap:16px;flex-wrap:wrap;
-          background:white;border:1px solid #E5E9EF;border-radius:12px;
+          background:white;border:1px solid #e3ded3;border-radius:12px;
           padding:14px 18px;margin-bottom:24px;
         }
-        .language-label { display:flex;align-items:center;gap:9px;color:#172B4D;font-size:13px;font-weight:700; }
-        .language-label svg { color:#A18142; }
+        .language-label { display:flex;align-items:center;gap:9px;color:#192b43;font-size:13px;font-weight:700; }
+        .language-label svg { color:#806337; }
         .language-bar select {
           border:1px solid #D9DFE8;border-radius:8px;padding:9px 13px;
-          background:#F9FAFC;color:#172B4D;font-size:13px;cursor:pointer;
+          background:#F9FAFC;color:#192b43;font-size:13px;cursor:pointer;
         }
-        .language-hint { font-size:11px;color:#8792A2; }
+        .language-hint { font-size:11px;color:#626a75; }
 
         .exercise-layout { display:grid;grid-template-columns:minmax(0,1.65fr) minmax(340px,1fr);gap:25px;align-items:start; }
-        .texts-column h2,.titles-column h2 { font-size:19px;margin:0 0 8px;color:#172B4D; }
+        .texts-column h2,.titles-column h2 { font-size:19px;margin:0 0 8px;color:#192b43; }
         .section-hint { color:#7C8797;font-size:12px;line-height:1.7;margin:0 0 17px; }
 
         .text-card {
-          background:white;border:1px solid #E5E9EF;border-radius:13px;
+          background:white;border:1px solid #e3ded3;border-radius:13px;
           padding:22px;margin-bottom:18px;transition:.2s;
         }
-        .text-card.target { border:2px dashed #D6B56D;background:#FFFCF5;cursor:pointer; }
+        .text-card.target { border:2px dashed #b49760;background:#FFFCF5;cursor:pointer; }
         .text-card.selectable { cursor:pointer; }
         .text-card-top {
           display:flex;align-items:center;gap:12px;flex-wrap:wrap;
@@ -725,14 +725,14 @@ export default function Exercice2() {
         }
         .text-number {
           width:36px;height:36px;flex-shrink:0;display:grid;place-items:center;
-          background:#172B4D;color:#D6B56D;border-radius:9px;font-weight:700;
+          background:#192b43;color:#b49760;border-radius:9px;font-weight:700;
         }
         .empty-slot {
           display:flex;align-items:center;min-height:58px;flex:1;
-          font-size:13px;color:#8B96A6;background:#F5F6F8;
+          font-size:13px;color:#626a75;background:#f7f5f0;
           border:2px dashed #D5DCE6;padding:12px 16px;border-radius:9px;
         }
-        .text-card.target .empty-slot { border-color:#D6B56D;background:#FFF8E9;color:#92733A; }
+        .text-card.target .empty-slot { border-color:#b49760;background:#FFF8E9;color:#92733A; }
         .assigned-title {
           flex:1;min-height:54px;border:1px solid #C9D9EA;background:#EAF2FA;
           color:#244D78;border-radius:9px;padding:12px 15px;text-align:left;
@@ -744,7 +744,7 @@ export default function Exercice2() {
         .individual-check { margin:12px 0 17px; }
         .individual-check-button {
           display:inline-flex;align-items:center;justify-content:center;gap:8px;
-          padding:11px 20px;border:0;border-radius:8px;background:#172B4D;
+          padding:11px 20px;border:0;border-radius:8px;background:#192b43;
           color:white;font-size:13px;font-weight:700;cursor:pointer;transition:.2s;
         }
         .individual-check-button:hover { background:#294B78; }
@@ -763,16 +763,16 @@ export default function Exercice2() {
         .help-actions { display:flex;gap:9px;flex-wrap:wrap;margin-top:14px; }
         .help-button {
           display:flex;align-items:center;gap:7px;padding:9px 12px;
-          border:1px solid #E0E5ED;border-radius:8px;background:#F8FAFC;
+          border:1px solid #E0E5ED;border-radius:8px;background:#f7f5f0;
           color:#53647A;font-size:12px;cursor:pointer;
         }
-        .help-button:hover,.help-button.active { border-color:#D6B56D;background:#FFFCF5;color:#8B6C31; }
+        .help-button:hover,.help-button.active { border-color:#b49760;background:#FFFCF5;color:#8B6C31; }
         .translation-panel,.explanation-panel {
           margin-top:12px;padding:15px 17px;border-radius:9px;
           font-size:13px;line-height:1.85;
         }
         .translation-panel { background:#EEF5FC;border-left:3px solid #628DB9;color:#294B70; }
-        .explanation-panel { background:#FFF8EA;border-left:3px solid #D6B56D;color:#6D572D; }
+        .explanation-panel { background:#FFF8EA;border-left:3px solid #b49760;color:#6D572D; }
         .translation-panel strong,.explanation-panel strong {
           display:flex;align-items:center;gap:7px;font-size:12px;
         }
@@ -781,14 +781,14 @@ export default function Exercice2() {
         .arabic strong { justify-content:flex-start; }
 
         .titles-column {
-          background:white;border:1px solid #E5E9EF;border-radius:13px;
+          background:white;border:1px solid #e3ded3;border-radius:13px;
           padding:20px;position:sticky;top:15px;
         }
         .titles-heading { display:flex;align-items:center;justify-content:space-between; }
-        .titles-heading span { font-size:11px;color:#A18142;background:#F8F1E3;padding:6px 9px;border-radius:20px; }
+        .titles-heading span { font-size:11px;color:#806337;background:#F8F1E3;padding:6px 9px;border-radius:20px; }
         .titles-list { display:flex;flex-direction:column;gap:12px; }
-        .title-item { border:1px solid #E5E9EF;border-radius:10px;padding:9px;background:#fff; }
-        .title-item.chosen { border-color:#D6B56D;background:#FFFCF5; }
+        .title-item { border:1px solid #e3ded3;border-radius:10px;padding:9px;background:#fff; }
+        .title-item.chosen { border-color:#b49760;background:#FFFCF5; }
         .title-option {
           width:100%;min-height:62px;display:flex;align-items:center;gap:11px;
           text-align:left;padding:10px;border:1px solid transparent;border-radius:8px;
@@ -798,9 +798,9 @@ export default function Exercice2() {
           flex-shrink:0;width:32px;height:32px;display:grid;place-items:center;
           background:#F2EBDD;color:#92733A;border-radius:7px;font-size:14px;
         }
-        .title-option:hover:not(:disabled) { border-color:#D6B56D;background:#FFFCF5; }
-        .title-option.selected { border:2px solid #D6B56D;background:#FFFCF5; }
-        .title-option.used { opacity:.55;cursor:default;background:#F5F6F8; }
+        .title-option:hover:not(:disabled) { border-color:#b49760;background:#FFFCF5; }
+        .title-option.selected { border:2px solid #b49760;background:#FFFCF5; }
+        .title-option.used { opacity:.55;cursor:default;background:#f7f5f0; }
         .title-option:disabled { cursor:default; }
         .title-option svg { flex-shrink:0;color:#25945C;margin-left:auto; }
         .title-help {
@@ -808,13 +808,13 @@ export default function Exercice2() {
           border:0;background:transparent;color:#8B713D;font-size:11px;
           cursor:pointer;padding:6px;
         }
-        .title-help:hover { color:#172B4D; }
+        .title-help:hover { color:#192b43; }
         .title-detail {
-          margin-top:7px;padding:12px;background:#F8FAFC;border-radius:8px;
+          margin-top:7px;padding:12px;background:#f7f5f0;border-radius:8px;
           color:#45556B;font-size:12px;line-height:1.7;
         }
         .title-detail p { margin:5px 0 0; }
-        .title-translation { padding-bottom:10px;border-bottom:1px solid #E1E6ED; }
+        .title-translation { padding-bottom:10px;border-bottom:1px solid #e3ded3; }
         .title-explanation { padding-top:10px; }
         .title-translation strong,.title-explanation strong {
           display:flex;align-items:center;gap:6px;color:#8B713D;
@@ -828,11 +828,11 @@ export default function Exercice2() {
           border:0;border-radius:9px;padding:15px 27px;
           font-weight:700;font-size:13px;cursor:pointer;
         }
-        .check-button { background:#172B4D;color:white; }
+        .check-button { background:#192b43;color:white; }
         .check-button:disabled { opacity:.4;cursor:not-allowed; }
         .restart-button { display:flex;align-items:center;gap:8px;background:#F2EBDD;color:#765C2B; }
         .score-result { display:flex;align-items:center;gap:10px;font-size:16px; }
-        .score-result strong { color:#A18142;font-size:22px; }
+        .score-result strong { color:#806337;font-size:22px; }
         .score-result span { color:#64748B;font-size:13px; }
 
         @media(max-width:900px) {
@@ -854,6 +854,17 @@ export default function Exercice2() {
           .assigned-title { min-height:58px; }
         }
 
+      
+        /* Deutsch Erfolg — Premium exams */
+        .exercise-page { background: #f7f5f0; font-family: 'Plus Jakarta Sans', Arial, sans-serif; }
+        [dir="rtl"] .exercise-page, .exercise-page[dir="rtl"] { font-family: 'Tajawal', Arial, sans-serif; }
+        .exercise-page .exercise-hero { background: #192b43; border: 1px solid #314359; border-radius: 12px; box-shadow: none; text-align: start; }
+        .exercise-page .exercise-hero h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.025em; line-height: 1.24; overflow-wrap: anywhere; }
+        [dir="rtl"] .exercise-page .exercise-hero h1, .exercise-page[dir="rtl"] .exercise-hero h1 { font-family: 'Tajawal', Arial, sans-serif; }
+        .exercise-page a:focus-visible, .exercise-page button:focus-visible, .exercise-page select:focus-visible { outline: 2px solid #b49760; outline-offset: 3px; }
+        @media (prefers-reduced-motion: reduce) {
+          .exercise-page *, .exercise-page *::before, .exercise-page *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+        }
       `}</style>
     </main>
   )

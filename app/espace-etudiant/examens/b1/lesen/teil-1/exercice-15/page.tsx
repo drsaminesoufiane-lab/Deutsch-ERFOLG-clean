@@ -720,14 +720,14 @@ export default function ViktorPage() {
       <style jsx global>{`
         .paul-page {
           min-height: 100vh;
-          background: #F5F6F8;
-          color: #172B4D;
+          background: #f7f5f0;
+          color: #192b43;
           font-family: Arial, sans-serif;
         }
 
         .paul-header {
           height: 68px;
-          background: #172B4D;
+          background: #192b43;
           padding: 0 7%;
           display: flex;
           justify-content: space-between;
@@ -745,7 +745,7 @@ export default function ViktorPage() {
         }
 
         .paul-brand svg {
-          color: #D6B56D;
+          color: #b49760;
           transform: translateY(-3px);
         }
 
@@ -755,7 +755,7 @@ export default function ViktorPage() {
         }
 
         .paul-brand strong {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .paul-back {
@@ -768,7 +768,7 @@ export default function ViktorPage() {
         }
 
         .paul-back svg {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .paul-content {
@@ -779,17 +779,17 @@ export default function ViktorPage() {
 
         .paul-breadcrumb {
           font-size: 12px;
-          color: #8B96A6;
+          color: #626a75;
           margin-bottom: 22px;
         }
 
         .paul-breadcrumb span {
           margin: 0 8px;
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .paul-hero {
-          background: linear-gradient(120deg, #172B4D, #294B78);
+          background: #192b43;
           border-radius: 17px;
           color: white;
           padding: 30px 34px;
@@ -797,7 +797,7 @@ export default function ViktorPage() {
         }
 
         .paul-hero-label {
-          color: #D6B56D;
+          color: #b49760;
           font-size: 11px;
           font-weight: 700;
           letter-spacing: 1.5px;
@@ -827,7 +827,7 @@ export default function ViktorPage() {
         }
 
         .paul-progress-label strong {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .paul-progress-track {
@@ -839,7 +839,7 @@ export default function ViktorPage() {
 
         .paul-progress-fill {
           height: 100%;
-          background: #D6B56D;
+          background: #b49760;
           border-radius: 10px;
           transition: width .2s;
         }
@@ -850,7 +850,7 @@ export default function ViktorPage() {
           gap: 16px;
           flex-wrap: wrap;
           background: white;
-          border: 1px solid #E5E9EF;
+          border: 1px solid #e3ded3;
           border-radius: 12px;
           padding: 14px 18px;
           margin-bottom: 24px;
@@ -860,13 +860,13 @@ export default function ViktorPage() {
           display: flex;
           align-items: center;
           gap: 9px;
-          color: #172B4D;
+          color: #192b43;
           font-size: 13px;
           font-weight: 700;
         }
 
         .paul-language-label svg {
-          color: #A18142;
+          color: #806337;
         }
 
         .paul-language-bar select {
@@ -874,14 +874,14 @@ export default function ViktorPage() {
           border-radius: 8px;
           padding: 9px 13px;
           background: #F9FAFC;
-          color: #172B4D;
+          color: #192b43;
           font-size: 13px;
           cursor: pointer;
         }
 
         .paul-language-hint {
           font-size: 11px;
-          color: #8792A2;
+          color: #626a75;
         }
 
         .paul-layout {
@@ -895,7 +895,7 @@ export default function ViktorPage() {
         .paul-titles h2 {
           font-size: 19px;
           margin: 0 0 8px;
-          color: #172B4D;
+          color: #192b43;
         }
 
         .paul-section-hint {
@@ -907,7 +907,7 @@ export default function ViktorPage() {
 
         .paul-text-card {
           background: white;
-          border: 1px solid #E5E9EF;
+          border: 1px solid #e3ded3;
           border-radius: 13px;
           padding: 22px;
           margin-bottom: 18px;
@@ -915,7 +915,7 @@ export default function ViktorPage() {
         }
 
         .paul-text-card.paul-target {
-          border: 2px dashed #D6B56D;
+          border: 2px dashed #b49760;
           background: #FFFCF5;
           cursor: pointer;
         }
@@ -939,8 +939,8 @@ export default function ViktorPage() {
           flex-shrink: 0;
           display: grid;
           place-items: center;
-          background: #172B4D;
-          color: #D6B56D;
+          background: #192b43;
+          color: #b49760;
           border-radius: 9px;
           font-weight: 700;
         }
@@ -951,15 +951,15 @@ export default function ViktorPage() {
           min-height: 58px;
           flex: 1;
           font-size: 13px;
-          color: #8B96A6;
-          background: #F5F6F8;
+          color: #626a75;
+          background: #f7f5f0;
           border: 2px dashed #D5DCE6;
           padding: 12px 16px;
           border-radius: 9px;
         }
 
         .paul-text-card.paul-target .paul-empty-slot {
-          border-color: #D6B56D;
+          border-color: #b49760;
           background: #FFF8E9;
           color: #92733A;
         }
@@ -1002,7 +1002,7 @@ export default function ViktorPage() {
           padding: 11px 20px;
           border: 0;
           border-radius: 8px;
-          background: #172B4D;
+          background: #192b43;
           color: white;
           font-size: 13px;
           font-weight: 700;
@@ -1072,7 +1072,7 @@ export default function ViktorPage() {
           padding: 9px 12px;
           border: 1px solid #E0E5ED;
           border-radius: 8px;
-          background: #F8FAFC;
+          background: #f7f5f0;
           color: #53647A;
           font-size: 12px;
           cursor: pointer;
@@ -1080,7 +1080,7 @@ export default function ViktorPage() {
 
         .paul-help-button:hover,
         .paul-help-button.paul-active {
-          border-color: #D6B56D;
+          border-color: #b49760;
           background: #FFFCF5;
           color: #8B6C31;
         }
@@ -1102,7 +1102,7 @@ export default function ViktorPage() {
 
         .paul-explanation {
           background: #FFF8EA;
-          border-left: 3px solid #D6B56D;
+          border-left: 3px solid #b49760;
           color: #6D572D;
         }
 
@@ -1131,7 +1131,7 @@ export default function ViktorPage() {
 
         .paul-titles {
           background: white;
-          border: 1px solid #E5E9EF;
+          border: 1px solid #e3ded3;
           border-radius: 13px;
           padding: 20px;
           position: sticky;
@@ -1146,7 +1146,7 @@ export default function ViktorPage() {
 
         .paul-titles-heading span {
           font-size: 11px;
-          color: #A18142;
+          color: #806337;
           background: #F8F1E3;
           padding: 6px 9px;
           border-radius: 20px;
@@ -1159,14 +1159,14 @@ export default function ViktorPage() {
         }
 
         .paul-title-item {
-          border: 1px solid #E5E9EF;
+          border: 1px solid #e3ded3;
           border-radius: 10px;
           padding: 9px;
           background: #fff;
         }
 
         .paul-title-item.paul-chosen {
-          border-color: #D6B56D;
+          border-color: #b49760;
           background: #FFFCF5;
         }
 
@@ -1200,19 +1200,19 @@ export default function ViktorPage() {
         }
 
         .paul-title-option:hover:not(:disabled) {
-          border-color: #D6B56D;
+          border-color: #b49760;
           background: #FFFCF5;
         }
 
         .paul-title-option.paul-selected {
-          border: 2px solid #D6B56D;
+          border: 2px solid #b49760;
           background: #FFFCF5;
         }
 
         .paul-title-option.paul-used {
           opacity: .55;
           cursor: default;
-          background: #F5F6F8;
+          background: #f7f5f0;
         }
 
         .paul-title-option:disabled {
@@ -1239,13 +1239,13 @@ export default function ViktorPage() {
         }
 
         .paul-title-help:hover {
-          color: #172B4D;
+          color: #192b43;
         }
 
         .paul-title-detail {
           margin-top: 7px;
           padding: 12px;
-          background: #F8FAFC;
+          background: #f7f5f0;
           border-radius: 8px;
           color: #45556B;
           font-size: 12px;
@@ -1258,7 +1258,7 @@ export default function ViktorPage() {
 
         .paul-title-translation {
           padding-bottom: 10px;
-          border-bottom: 1px solid #E1E6ED;
+          border-bottom: 1px solid #e3ded3;
         }
 
         .paul-title-explanation {
@@ -1293,7 +1293,7 @@ export default function ViktorPage() {
         }
 
         .paul-check-button {
-          background: #172B4D;
+          background: #192b43;
           color: white;
         }
 
@@ -1318,7 +1318,7 @@ export default function ViktorPage() {
         }
 
         .paul-score strong {
-          color: #A18142;
+          color: #806337;
           font-size: 22px;
         }
 
@@ -1389,6 +1389,19 @@ export default function ViktorPage() {
           .paul-assigned-title {
             min-height: 58px;
           }
+        }
+      
+        /* Deutsch Erfolg — Premium exams */
+        .paul-page { background: #f7f5f0; font-family: 'Plus Jakarta Sans', Arial, sans-serif; }
+        [dir="rtl"] .paul-page, .paul-page[dir="rtl"] { font-family: 'Tajawal', Arial, sans-serif; }
+        .paul-page .paul-hero { background: #192b43; border: 1px solid #314359; border-radius: 12px; box-shadow: none; text-align: start; }
+        .paul-page .paul-hero h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.025em; line-height: 1.24; overflow-wrap: anywhere; }
+        [dir="rtl"] .paul-page .paul-hero h1, .paul-page[dir="rtl"] .paul-hero h1 { font-family: 'Tajawal', Arial, sans-serif; }
+        .paul-page a:focus-visible, .paul-page button:focus-visible, .paul-page select:focus-visible { outline: 2px solid #b49760; outline-offset: 3px; }
+        .paul-page .paul-text-card,
+        .paul-page .paul-titles { border-radius: 10px; box-shadow: none; }
+        @media (prefers-reduced-motion: reduce) {
+          .paul-page *, .paul-page *::before, .paul-page *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
         }
       `}</style>
     </main>

@@ -670,14 +670,14 @@ export default function AlexUndCoraPage() {
         .exercise-page {
           min-height: 100vh;
           padding: 0 32px 40px;
-          background: #F5F6F8;
-          color: #172B4D;
+          background: #f7f5f0;
+          color: #192b43;
           font-family: Arial, Helvetica, sans-serif;
         }
 
         .exercise-header {
           height: 68px;
-          background: #172B4D;
+          background: #192b43;
           padding: 0 7%;
           margin: 0 -32px 28px;
           display: flex;
@@ -696,11 +696,11 @@ export default function AlexUndCoraPage() {
         }
 
         .header-brand :global(svg) {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .header-brand strong {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .back-link {
@@ -713,11 +713,11 @@ export default function AlexUndCoraPage() {
         }
 
         .back-link :global(svg) {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .back-link:hover {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .hero {
@@ -725,7 +725,7 @@ export default function AlexUndCoraPage() {
           margin: 0 auto 24px;
           padding: 22px 28px;
           border-radius: 12px;
-          background: linear-gradient(110deg, #172B4D, #294B78);
+          background: #192b43;
           color: #FFFFFF;
         }
 
@@ -744,7 +744,7 @@ export default function AlexUndCoraPage() {
           display: flex;
           align-items: center;
           gap: 9px;
-          color: #D6B56D;
+          color: #b49760;
           font-size: 10px;
           font-weight: 800;
           letter-spacing: 1.3px;
@@ -753,8 +753,8 @@ export default function AlexUndCoraPage() {
         .level-badge {
           padding: 4px 8px;
           border-radius: 4px;
-          background: #D6B56D;
-          color: #172B4D;
+          background: #b49760;
+          color: #192b43;
           font-size: 11px;
           font-weight: 900;
         }
@@ -793,7 +793,7 @@ export default function AlexUndCoraPage() {
         }
 
         .hero-info :global(svg) {
-          color: #D6B56D;
+          color: #b49760;
           flex-shrink: 0;
         }
 
@@ -867,14 +867,14 @@ export default function AlexUndCoraPage() {
 
         .section-heading h2 {
           margin: 0;
-          color: #172B4D;
+          color: #192b43;
           font-size: 20px;
           font-weight: 800;
         }
 
         .section-heading p {
           margin: 5px 0 0;
-          color: #8993A2;
+          color: #626a75;
           font-size: 11px;
         }
 
@@ -903,7 +903,7 @@ export default function AlexUndCoraPage() {
 
         .paragraphs-document {
           padding: 22px 24px;
-          border: 1px solid #E5E9EF;
+          border: 1px solid #e3ded3;
           border-radius: 12px;
           background: #FFFFFF;
           box-shadow: 0 3px 14px rgba(23, 43, 77, .035);
@@ -971,7 +971,7 @@ export default function AlexUndCoraPage() {
           display: inline-flex;
           align-items: center;
           gap: 5px;
-          color: #8993A2;
+          color: #626a75;
           font-size: 10px;
           font-weight: 700;
         }
@@ -987,7 +987,7 @@ export default function AlexUndCoraPage() {
           align-items: center;
           gap: 6px;
           padding: 8px 11px;
-          border: 1px solid #E2E7EF;
+          border: 1px solid #e3ded3;
           border-radius: 20px;
           background: #FFFFFF;
           color: #66758B;
@@ -1005,7 +1005,7 @@ export default function AlexUndCoraPage() {
 
         .language-button.active {
           border-color: #B99758;
-          background: #172B4D;
+          background: #192b43;
           color: #FFFFFF;
           box-shadow: 0 3px 8px rgba(23, 43, 77, .16);
         }
@@ -1021,7 +1021,7 @@ export default function AlexUndCoraPage() {
           align-items: center;
           gap: 6px;
           padding: 8px 11px;
-          border: 1px solid #E2E7EF;
+          border: 1px solid #e3ded3;
           border-radius: 20px;
           background: #FFFFFF;
           color: #66758B;
@@ -1039,7 +1039,7 @@ export default function AlexUndCoraPage() {
 
         .paragraphs-document :global(.language-button.active) {
           border-color: #B99758;
-          background: #172B4D;
+          background: #192b43;
           color: #FFFFFF;
           box-shadow: 0 3px 8px rgba(23, 43, 77, .16);
         }
@@ -1058,7 +1058,7 @@ export default function AlexUndCoraPage() {
           justify-content: center;
           gap: 6px;
           padding: 8px 11px;
-          border: 1px solid #E2E7EF;
+          border: 1px solid #e3ded3;
           border-radius: 20px;
           background: #FFFFFF;
           color: #66758B;
@@ -1078,7 +1078,7 @@ export default function AlexUndCoraPage() {
 
         .questions-section :global(.language-button.active) {
           border-color: #B99758;
-          background: #172B4D;
+          background: #192b43;
           color: #FFFFFF;
           box-shadow: 0 3px 8px rgba(23, 43, 77, .16);
         }
@@ -1087,7 +1087,7 @@ export default function AlexUndCoraPage() {
           position: relative;
           margin-top: 13px;
           padding: 17px 18px;
-          border: 1px solid #E4E9F1;
+          border: 1px solid #e3ded3;
           border-left: 4px solid #B99758;
           border-radius: 10px;
           background: linear-gradient(135deg, #F8FAFD 0%, #F1F4F9 100%);
@@ -1103,7 +1103,7 @@ export default function AlexUndCoraPage() {
           margin-bottom: 11px;
           padding-bottom: 9px;
           border-bottom: 1px solid #E1E6EE;
-          color: #172B4D;
+          color: #192b43;
           font-size: 11px;
           font-weight: 800;
         }
@@ -1122,7 +1122,7 @@ export default function AlexUndCoraPage() {
         }
 
         .translation-box.arabic {
-          border-left: 1px solid #E4E9F1;
+          border-left: 1px solid #e3ded3;
           border-right: 4px solid #B99758;
         }
 
@@ -1169,7 +1169,7 @@ export default function AlexUndCoraPage() {
         .explain-button:hover,
         .understand-button.opened,
         .explain-button.opened {
-          border-color: #D6B56D;
+          border-color: #b49760;
           background: #F8F1E3;
         }
 
@@ -1350,14 +1350,14 @@ export default function AlexUndCoraPage() {
           margin-top: 5px;
           padding: 6px 9px;
           border-radius: 6px;
-          background: #F4F6F9;
+          background: #f7f5f0;
           color: #66758B;
           font-size: 11px;
           line-height: 1.8;
         }
 
         .option-translation.arabic-text {
-          background: #F4F6F9;
+          background: #f7f5f0;
           color: #52627A;
         }
 
@@ -1453,8 +1453,8 @@ export default function AlexUndCoraPage() {
         }
 
         .correct-button {
-          border: 1px solid #172B4D;
-          background: #172B4D;
+          border: 1px solid #192b43;
+          background: #192b43;
           color: white;
         }
 
@@ -1659,6 +1659,22 @@ export default function AlexUndCoraPage() {
           .questions-section :global(.language-button span:last-child) {
             font-size: 9px;
           }
+        }
+      
+        /* Deutsch Erfolg — Premium exams */
+        .exercise-page { background: #f7f5f0; font-family: 'Plus Jakarta Sans', Arial, sans-serif; }
+        [dir="rtl"] .exercise-page, .exercise-page[dir="rtl"] { font-family: 'Tajawal', Arial, sans-serif; }
+        .exercise-page .hero { background: #192b43; border: 1px solid #314359; border-radius: 12px; box-shadow: none; text-align: start; }
+        .exercise-page .hero h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.025em; line-height: 1.24; overflow-wrap: anywhere; }
+        [dir="rtl"] .exercise-page .hero h1, .exercise-page[dir="rtl"] .hero h1 { font-family: 'Tajawal', Arial, sans-serif; }
+        .exercise-page a:focus-visible, .exercise-page button:focus-visible, .exercise-page select:focus-visible { outline: 2px solid #b49760; outline-offset: 3px; }
+        .exercise-page .question-card,
+        .exercise-page .paragraphs-document,
+        .exercise-page .questions-section { border-radius: 10px; box-shadow: none; }
+        .exercise-page .section-heading h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+        [dir="rtl"] .exercise-page .section-heading h2 { font-family: 'Tajawal', Arial, sans-serif; }
+        @media (prefers-reduced-motion: reduce) {
+          .exercise-page *, .exercise-page *::before, .exercise-page *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
         }
       `}</style>
     </main>

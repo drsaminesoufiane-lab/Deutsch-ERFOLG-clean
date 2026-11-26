@@ -417,8 +417,8 @@ export default function ExamensPage() {
 
         .exams-page {
           min-height: 100vh;
-          background: #F5F7FA;
-          color: #172B4D;
+          background: #f7f5f0;
+          color: #192b43;
           font-family: Arial, sans-serif;
         }
 
@@ -432,7 +432,7 @@ export default function ExamensPage() {
           min-height: 82px;
           padding: 12px 42px;
           background: rgba(255,255,255,.96);
-          border-bottom: 1px solid #E8ECF1;
+          border-bottom: 1px solid #e3ded3;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -450,7 +450,7 @@ export default function ExamensPage() {
         }
 
         .exams-page .header-small {
-          color: #A18142;
+          color: #806337;
           font-size: 10px;
           font-weight: 700;
           letter-spacing: 1.5px;
@@ -460,7 +460,7 @@ export default function ExamensPage() {
         .exams-page .student-header .header-title h2 {
           font-size: 19px;
           margin: 0;
-          color: #172B4D;
+          color: #192b43;
           font-weight: 700;
         }
 
@@ -474,8 +474,8 @@ export default function ExamensPage() {
           width: 41px;
           height: 41px;
           border-radius: 50%;
-          background: #F5EEDC;
-          color: #A18142;
+          background: #f1ece2;
+          color: #806337;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -489,13 +489,13 @@ export default function ExamensPage() {
         }
 
         .exams-page .profile-infos strong {
-          color: #172B4D;
+          color: #192b43;
           font-size: 13px;
           font-weight: 700;
         }
 
         .exams-page .profile-infos span {
-          color: #8994A3;
+          color: #626a75;
           font-size: 11px;
         }
 
@@ -519,7 +519,7 @@ export default function ExamensPage() {
           justify-content: space-between;
           align-items: center;
           border-radius: 17px;
-          background: linear-gradient(115deg, #172B4D, #243F66 70%, #31547D);
+          background: #192b43;
           color: white;
           box-shadow: 0 12px 28px rgba(23,43,77,.12);
         }
@@ -534,7 +534,7 @@ export default function ExamensPage() {
           display: inline-flex;
           align-items: center;
           gap: 8px;
-          color: #E6C77F;
+          color: #e3cb96;
           font-size: 10px;
           font-weight: 700;
           letter-spacing: 1.5px;
@@ -568,7 +568,7 @@ export default function ExamensPage() {
           display: inline-flex;
           align-items: center;
           gap: 7px;
-          color: #E6C77F;
+          color: #e3cb96;
           font-size: 10px;
           font-weight: 700;
         }
@@ -581,7 +581,7 @@ export default function ExamensPage() {
           align-items: center;
           justify-content: center;
           position: relative;
-          color: #E6C77F;
+          color: #e3cb96;
           opacity: .9;
         }
 
@@ -613,7 +613,7 @@ export default function ExamensPage() {
           font-size: 8px;
           font-weight: 700;
           letter-spacing: 3px;
-          color: #E6C77F;
+          color: #e3cb96;
         }
 
         /* SECTIONS */
@@ -632,7 +632,7 @@ export default function ExamensPage() {
         }
 
         .eyebrow {
-          color: #A18142;
+          color: #806337;
           font-size: 10px;
           letter-spacing: 1.5px;
           font-weight: 700;
@@ -642,13 +642,13 @@ export default function ExamensPage() {
         .section-heading h2 {
           font-size: 21px;
           margin: 7px 0 0;
-          color: #172B4D;
+          color: #192b43;
           font-weight: 700;
           letter-spacing: -.3px;
         }
 
         .section-description {
-          color: #8792A1;
+          color: #626a75;
           font-size: 12px;
           margin: 7px 0 0;
           line-height: 1.6;
@@ -669,7 +669,7 @@ export default function ExamensPage() {
 
         .mode-card {
           background: white;
-          border: 1px solid #E8ECF1;
+          border: 1px solid #e3ded3;
           border-radius: 13px;
           padding: 21px;
           min-height: 225px;
@@ -697,8 +697,8 @@ export default function ExamensPage() {
           width: 43px;
           height: 43px;
           border-radius: 11px;
-          background: #F5EEDC;
-          color: #A18142;
+          background: #f1ece2;
+          color: #806337;
           display: grid;
           place-items: center;
         }
@@ -714,14 +714,14 @@ export default function ExamensPage() {
           font-size: 9px;
           letter-spacing: 1.3px;
           font-weight: 700;
-          color: #A18142;
+          color: #806337;
           text-transform: uppercase;
         }
 
         .mode-card h3 {
           font-size: 17px;
           margin: 8px 0;
-          color: #172B4D;
+          color: #192b43;
         }
 
         .mode-card p {
@@ -739,17 +739,17 @@ export default function ExamensPage() {
           margin-top: auto;
           font-size: 11px;
           font-weight: 700;
-          color: #A18142;
+          color: #806337;
         }
 
         .mode-simulation {
-          background: linear-gradient(145deg, #172B4D, #243F66);
-          border-color: #172B4D;
+          background: #192b43;
+          border-color: #192b43;
         }
 
         .mode-simulation .mode-icon {
           background: rgba(230,199,127,.15);
-          color: #E6C77F;
+          color: #e3cb96;
         }
 
         .mode-simulation .mode-index {
@@ -758,7 +758,7 @@ export default function ExamensPage() {
 
         .mode-simulation .mode-tag,
         .mode-simulation .mode-action {
-          color: #E6C77F;
+          color: #e3cb96;
         }
 
         .mode-simulation h3 {
@@ -780,7 +780,7 @@ export default function ExamensPage() {
 
         .level-card {
           background: white;
-          border: 1px solid #E7EBF0;
+          border: 1px solid #e3ded3;
           border-radius: 15px;
           padding: 23px;
           transition: all .22s ease;
@@ -804,7 +804,7 @@ export default function ExamensPage() {
         }
 
         .level-label {
-          color: #A18142;
+          color: #806337;
           font-size: 9px;
           font-weight: 700;
           letter-spacing: 1.5px;
@@ -813,7 +813,7 @@ export default function ExamensPage() {
         .level-card h3 {
           font-size: 22px;
           margin: 8px 0 0;
-          color: #172B4D;
+          color: #192b43;
         }
 
         .level-number {
@@ -836,7 +836,7 @@ export default function ExamensPage() {
           gap: 7px;
           padding: 6px 9px;
           border-radius: 5px;
-          background: #F8F2E4;
+          background: #f1ece2;
           color: #98783B;
           font-size: 9px;
           font-weight: 700;
@@ -854,7 +854,7 @@ export default function ExamensPage() {
           display: flex;
           align-items: center;
           justify-content: space-between;
-          border-top: 1px solid #EDF0F3;
+          border-top: 1px solid #e3ded3;
           padding-top: 15px;
           margin-top: 12px;
           margin-bottom: 12px;
@@ -863,13 +863,13 @@ export default function ExamensPage() {
         .competences-heading > span:first-child {
           font-size: 9px;
           font-weight: 700;
-          color: #8994A3;
+          color: #626a75;
           letter-spacing: 1.1px;
         }
 
         .competence-count {
-          color: #A18142;
-          background: #F8F2E4;
+          color: #806337;
+          background: #f1ece2;
           padding: 5px 8px;
           border-radius: 5px;
           font-size: 9px;
@@ -892,10 +892,10 @@ export default function ExamensPage() {
           padding: 11px 10px;
           min-width: 0;
           min-height: 66px;
-          background: #F8F9FB;
+          background: #f7f5f0;
           border: 1px solid #F0F2F5;
           border-radius: 9px;
-          color: #172B4D;
+          color: #192b43;
           text-decoration: none;
           transition: all .2s ease;
         }
@@ -945,7 +945,7 @@ export default function ExamensPage() {
 
         .skill-gold .skill-icon {
           background: #F8F0DE;
-          color: #A18142;
+          color: #806337;
         }
 
         .skill-text {
@@ -964,7 +964,7 @@ export default function ExamensPage() {
         }
 
         .skill-text small {
-          color: #929CAB;
+          color: #626a75;
           font-size: 9px;
           font-weight: 400;
           line-height: 1.35;
@@ -992,7 +992,7 @@ export default function ExamensPage() {
           align-items: center;
           gap: 10px;
           padding: 13px 15px;
-          background: #172B4D;
+          background: #192b43;
           color: white;
           text-decoration: none;
           border-radius: 8px;
@@ -1009,10 +1009,10 @@ export default function ExamensPage() {
         /* FOOTER */
 
         .exams-footer {
-          border-top: 1px solid #E7EBF0;
+          border-top: 1px solid #e3ded3;
           padding: 20px 0;
           margin-top: 40px;
-          color: #929CAB;
+          color: #626a75;
           font-size: 10px;
           display: flex;
           justify-content: space-between;
@@ -1250,6 +1250,25 @@ export default function ExamensPage() {
 .exams-page .level-link span {
   color: #FFFFFF !important;
 }
+      
+        /* Deutsch Erfolg — Premium exams */
+        .exams-page { background: #f7f5f0; font-family: 'Plus Jakarta Sans', Arial, sans-serif; }
+        [dir="rtl"] .exams-page, .exams-page[dir="rtl"] { font-family: 'Tajawal', Arial, sans-serif; }
+        .exams-page .exams-hero { background: #192b43; border: 1px solid #314359; border-radius: 12px; box-shadow: none; text-align: start; }
+        .exams-page .exams-hero h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.025em; line-height: 1.24; overflow-wrap: anywhere; }
+        [dir="rtl"] .exams-page .exams-hero h1, .exams-page[dir="rtl"] .exams-hero h1 { font-family: 'Tajawal', Arial, sans-serif; }
+        .exams-page a:focus-visible, .exams-page button:focus-visible, .exams-page select:focus-visible { outline: 2px solid #b49760; outline-offset: 3px; }
+        .exams-page .mode-card,
+        .exams-page .level-card { border-radius: 10px; box-shadow: none; }
+        .exams-page .section-heading h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+        [dir="rtl"] .exams-page .section-heading h2 { font-family: 'Tajawal', Arial, sans-serif; }
+        .exams-page .hero-decoration-circle { display: none; }
+        .exams-page .hero-decoration > svg { opacity: .65; }
+        .exams-page .hero-decoration-label { opacity: .65; }
+        .exams-page .mode-card:hover, .exams-page .level-card:hover { transform: none; box-shadow: 0 4px 14px rgba(25,43,67,.06); }
+        @media (prefers-reduced-motion: reduce) {
+          .exams-page *, .exams-page *::before, .exams-page *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+        }
       `}</style>
 
     </main>

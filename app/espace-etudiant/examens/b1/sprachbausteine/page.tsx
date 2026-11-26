@@ -322,14 +322,14 @@ export default function SprachbausteineB1Page() {
 
         .sprach-page {
           min-height: 100vh;
-          background: #F5F6F8;
-          color: #172B4D;
+          background: #f7f5f0;
+          color: #192b43;
           font-family: Arial, sans-serif;
         }
 
         .sprach-header {
           height: 76px;
-          background: #172B4D;
+          background: #192b43;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -347,11 +347,11 @@ export default function SprachbausteineB1Page() {
         }
 
         .sprach-brand svg {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .sprach-brand strong {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .sprach-back {
@@ -373,28 +373,23 @@ export default function SprachbausteineB1Page() {
           display: flex;
           gap: 10px;
           font-size: 12px;
-          color: #9AA4B2;
+          color: #626a75;
           margin-bottom: 25px;
         }
 
         .sprach-breadcrumb a {
-          color: #9AA4B2;
+          color: #626a75;
           text-decoration: none;
         }
 
         .sprach-breadcrumb strong {
-          color: #A18142;
+          color: #806337;
         }
 
         /* HERO */
 
         .sprach-hero {
-          background: linear-gradient(
-            120deg,
-            #172B4D 0%,
-            #203D68 65%,
-            #294B78 100%
-          );
+          background: #192b43;
           color: white;
           padding: 38px;
           border-radius: 18px;
@@ -419,11 +414,11 @@ export default function SprachbausteineB1Page() {
           background: rgba(214,181,109,.13);
           border: 1px solid rgba(214,181,109,.35);
           border-radius: 14px;
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .sprach-hero-badge {
-          color: #D6B56D;
+          color: #b49760;
           border: 1px solid rgba(214,181,109,.45);
           background: rgba(214,181,109,.10);
           padding: 8px 13px;
@@ -493,7 +488,7 @@ export default function SprachbausteineB1Page() {
         }
 
         .sprach-stats strong {
-          color: #D6B56D;
+          color: #b49760;
           font-size: 23px;
         }
 
@@ -519,7 +514,7 @@ export default function SprachbausteineB1Page() {
           font-size: 30px;
           font-weight: 800;
           letter-spacing: -.7px;
-          color: #172B4D;
+          color: #192b43;
           margin: 10px 0 0;
           line-height: 1.2;
         }
@@ -537,10 +532,10 @@ export default function SprachbausteineB1Page() {
           gap: 14px;
           min-height: 112px;
           padding: 20px;
-          border: 1px solid #E6EAF0;
+          border: 1px solid #e3ded3;
           border-radius: 14px;
           background: #FFFFFF;
-          color: #172B4D;
+          color: #192b43;
           text-align: left;
           cursor: pointer;
           transition: all .25s ease;
@@ -548,14 +543,14 @@ export default function SprachbausteineB1Page() {
         }
 
         .sprach-tab:hover {
-          border-color: #D6B56D;
+          border-color: #b49760;
           transform: translateY(-4px);
           box-shadow: 0 10px 22px rgba(23,43,77,.09);
         }
 
         .sprach-tab.active {
-          background: #172B4D;
-          border-color: #172B4D;
+          background: #192b43;
+          border-color: #192b43;
           color: white;
           box-shadow: 0 9px 22px rgba(23,43,77,.18);
         }
@@ -566,15 +561,15 @@ export default function SprachbausteineB1Page() {
           min-width: 46px;
           height: 46px;
           border-radius: 11px;
-          background: #F5EEDC;
-          color: #A18142;
+          background: #f1ece2;
+          color: #806337;
           font-size: 18px;
           font-weight: 800;
         }
 
         .sprach-tab.active .sprach-tab-number {
-          background: #D6B56D;
-          color: #172B4D;
+          background: #b49760;
+          color: #192b43;
         }
 
         .sprach-tab-content {
@@ -587,7 +582,7 @@ export default function SprachbausteineB1Page() {
         .sprach-tab-content strong {
           font-size: 19px;
           font-weight: 800;
-          color: #172B4D;
+          color: #192b43;
         }
 
         .sprach-tab.active .sprach-tab-content strong {
@@ -596,22 +591,22 @@ export default function SprachbausteineB1Page() {
 
         .sprach-tab-content small {
           font-size: 11px;
-          color: #A18142;
+          color: #806337;
           font-weight: 600;
         }
 
         .sprach-tab.active .sprach-tab-content small {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .sprach-tab-arrow {
           font-size: 22px;
-          color: #A18142;
+          color: #806337;
           transition: transform .2s ease;
         }
 
         .sprach-tab.active .sprach-tab-arrow {
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .sprach-tab:hover .sprach-tab-arrow {
@@ -622,7 +617,7 @@ export default function SprachbausteineB1Page() {
 
         .sprach-exercises {
           background: white;
-          border: 1px solid #E6EAF0;
+          border: 1px solid #e3ded3;
           border-radius: 13px;
           padding: 23px;
           margin-bottom: 22px;
@@ -639,12 +634,12 @@ export default function SprachbausteineB1Page() {
         .sprach-list-heading h2 {
           font-size: 22px;
           font-weight: 800;
-          color: #172B4D;
+          color: #192b43;
           margin: 9px 0 0;
         }
 
         .sprach-total {
-          color: #A18142;
+          color: #806337;
           font-size: 11px;
           font-weight: 700;
           white-space: nowrap;
@@ -657,7 +652,7 @@ export default function SprachbausteineB1Page() {
         }
 
         .sprach-exercise-card {
-          border: 1px solid #E8ECF2;
+          border: 1px solid #e3ded3;
           border-radius: 12px;
           padding: 17px;
           display: grid;
@@ -666,13 +661,13 @@ export default function SprachbausteineB1Page() {
           align-items: center;
           background: #FFFFFF;
           text-decoration: none;
-          color: #172B4D;
+          color: #192b43;
           transition: all .22s ease;
           min-width: 0;
         }
 
         .sprach-exercise-card:hover {
-          border-color: #D6B56D;
+          border-color: #b49760;
           transform: translateY(-3px);
           box-shadow: 0 8px 20px rgba(23,43,77,.07);
         }
@@ -682,8 +677,8 @@ export default function SprachbausteineB1Page() {
           height: 40px;
           display: grid;
           place-items: center;
-          background: #172B4D;
-          color: #D6B56D;
+          background: #192b43;
+          color: #b49760;
           border-radius: 11px;
           font-size: 13px;
           font-weight: 800;
@@ -700,7 +695,7 @@ export default function SprachbausteineB1Page() {
 
         .sprach-exercise-info h3 {
           margin: 0;
-          color: #172B4D;
+          color: #192b43;
           font-size: 14px;
           font-weight: 750;
           line-height: 1.5;
@@ -720,8 +715,8 @@ export default function SprachbausteineB1Page() {
           justify-content: center;
           min-width: 38px;
           padding: 5px 10px;
-          background: #F5EEDC;
-          color: #172B4D;
+          background: #f1ece2;
+          color: #192b43;
           border: 1px solid #E5D4A9;
           border-radius: 20px;
           font-size: 10px;
@@ -743,7 +738,7 @@ export default function SprachbausteineB1Page() {
         }
 
         .sprach-card-arrow {
-          color: #A18142;
+          color: #806337;
           transition: transform .2s ease;
         }
 
@@ -754,9 +749,9 @@ export default function SprachbausteineB1Page() {
         /* FOOTER */
 
         .sprach-footer {
-          border-top: 1px solid #E7EBF0;
+          border-top: 1px solid #e3ded3;
           padding-top: 20px;
-          color: #929CAB;
+          color: #626a75;
           font-size: 11px;
           margin-top: 35px;
           display: flex;
@@ -765,7 +760,7 @@ export default function SprachbausteineB1Page() {
         }
 
         .sprach-footer a {
-          color: #A18142;
+          color: #806337;
           text-decoration: none;
         }
 
@@ -849,6 +844,23 @@ export default function SprachbausteineB1Page() {
           }
         }
 
+      
+        /* Deutsch Erfolg — Premium exams */
+        .sprach-page { background: #f7f5f0; font-family: 'Plus Jakarta Sans', Arial, sans-serif; }
+        [dir="rtl"] .sprach-page, .sprach-page[dir="rtl"] { font-family: 'Tajawal', Arial, sans-serif; }
+        .sprach-page .sprach-hero { background: #192b43; border: 1px solid #314359; border-radius: 12px; box-shadow: none; text-align: start; }
+        .sprach-page .sprach-hero-main h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.025em; line-height: 1.24; overflow-wrap: anywhere; }
+        [dir="rtl"] .sprach-page .sprach-hero-main h1, .sprach-page[dir="rtl"] .sprach-hero h1 { font-family: 'Tajawal', Arial, sans-serif; }
+        .sprach-page a:focus-visible, .sprach-page button:focus-visible, .sprach-page select:focus-visible { outline: 2px solid #b49760; outline-offset: 3px; }
+        .sprach-page .sprach-exercise-card { border-radius: 10px; box-shadow: none; }
+        .sprach-page .sprach-section-title h2,
+        .sprach-page .sprach-list-heading h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+        [dir="rtl"] .sprach-page .sprach-section-title h2,
+        [dir="rtl"] .sprach-page .sprach-list-heading h2 { font-family: 'Tajawal', Arial, sans-serif; }
+        .sprach-page .sprach-hero-decoration { opacity: .065; pointer-events: none; }
+        @media (prefers-reduced-motion: reduce) {
+          .sprach-page *, .sprach-page *::before, .sprach-page *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+        }
       `}</style>
 
     </main>

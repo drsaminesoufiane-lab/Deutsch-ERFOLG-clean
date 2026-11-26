@@ -629,14 +629,14 @@ export default function Exercice4() {
       <style jsx global>{`
         .exercise-page {
           min-height: 100vh;
-          background: #F5F6F8;
-          color: #172B4D;
+          background: #f7f5f0;
+          color: #192b43;
           font-family: Arial, sans-serif;
         }
 
         .exercise-header {
           height: 68px;
-          background: #172B4D;
+          background: #192b43;
           padding: 0 7%;
           display: flex;
           justify-content: space-between;
@@ -654,12 +654,12 @@ export default function Exercice4() {
         }
 
         .header-brand svg {
-          color: #D6B56D;
+          color: #b49760;
           transform: translateY(-3px);
         }
 
         .brand-white { color: #FFFFFF; }
-        .brand-gold { color: #D6B56D; }
+        .brand-gold { color: #b49760; }
 
         .back-link {
           color: white;
@@ -670,7 +670,7 @@ export default function Exercice4() {
           font-size: 13px;
         }
 
-        .back-link svg { color: #D6B56D; }
+        .back-link svg { color: #b49760; }
 
         .exercise-content {
           max-width: 1400px;
@@ -680,17 +680,17 @@ export default function Exercice4() {
 
         .breadcrumb {
           font-size: 12px;
-          color: #8B96A6;
+          color: #626a75;
           margin-bottom: 22px;
         }
 
         .breadcrumb span {
           margin: 0 8px;
-          color: #D6B56D;
+          color: #b49760;
         }
 
         .exercise-hero {
-          background: linear-gradient(120deg, #172B4D, #294B78);
+          background: #192b43;
           border-radius: 17px;
           color: white;
           padding: 30px 34px;
@@ -698,7 +698,7 @@ export default function Exercice4() {
         }
 
         .hero-label {
-          color: #D6B56D;
+          color: #b49760;
           font-size: 11px;
           font-weight: 700;
           letter-spacing: 1.5px;
@@ -727,7 +727,7 @@ export default function Exercice4() {
           margin-bottom: 9px;
         }
 
-        .progress-label strong { color: #D6B56D; }
+        .progress-label strong { color: #b49760; }
 
         .progress-track {
           height: 7px;
@@ -738,7 +738,7 @@ export default function Exercice4() {
 
         .progress-fill {
           height: 100%;
-          background: #D6B56D;
+          background: #b49760;
           border-radius: 10px;
           transition: width .2s;
         }
@@ -749,7 +749,7 @@ export default function Exercice4() {
           gap: 16px;
           flex-wrap: wrap;
           background: white;
-          border: 1px solid #E5E9EF;
+          border: 1px solid #e3ded3;
           border-radius: 12px;
           padding: 14px 18px;
           margin-bottom: 24px;
@@ -759,26 +759,26 @@ export default function Exercice4() {
           display: flex;
           align-items: center;
           gap: 9px;
-          color: #172B4D;
+          color: #192b43;
           font-size: 13px;
           font-weight: 700;
         }
 
-        .language-label svg { color: #A18142; }
+        .language-label svg { color: #806337; }
 
         .language-bar select {
           border: 1px solid #D9DFE8;
           border-radius: 8px;
           padding: 9px 13px;
           background: #F9FAFC;
-          color: #172B4D;
+          color: #192b43;
           font-size: 13px;
           cursor: pointer;
         }
 
         .language-hint {
           font-size: 11px;
-          color: #8792A2;
+          color: #626a75;
         }
 
         .exercise-layout {
@@ -792,7 +792,7 @@ export default function Exercice4() {
         .titles-column h2 {
           font-size: 19px;
           margin: 0 0 8px;
-          color: #172B4D;
+          color: #192b43;
         }
 
         .section-hint {
@@ -804,7 +804,7 @@ export default function Exercice4() {
 
         .text-card {
           background: white;
-          border: 1px solid #E5E9EF;
+          border: 1px solid #e3ded3;
           border-radius: 13px;
           padding: 22px;
           margin-bottom: 18px;
@@ -812,7 +812,7 @@ export default function Exercice4() {
         }
 
         .text-card.target {
-          border: 2px dashed #D6B56D;
+          border: 2px dashed #b49760;
           background: #FFFCF5;
           cursor: pointer;
         }
@@ -834,8 +834,8 @@ export default function Exercice4() {
           flex-shrink: 0;
           display: grid;
           place-items: center;
-          background: #172B4D;
-          color: #D6B56D;
+          background: #192b43;
+          color: #b49760;
           border-radius: 9px;
           font-weight: 700;
         }
@@ -846,15 +846,15 @@ export default function Exercice4() {
           min-height: 58px;
           flex: 1;
           font-size: 13px;
-          color: #8B96A6;
-          background: #F5F6F8;
+          color: #626a75;
+          background: #f7f5f0;
           border: 2px dashed #D5DCE6;
           padding: 12px 16px;
           border-radius: 9px;
         }
 
         .text-card.target .empty-slot {
-          border-color: #D6B56D;
+          border-color: #b49760;
           background: #FFF8E9;
           color: #92733A;
         }
@@ -895,7 +895,7 @@ export default function Exercice4() {
           padding: 11px 20px;
           border: 0;
           border-radius: 8px;
-          background: #172B4D;
+          background: #192b43;
           color: white;
           font-size: 13px;
           font-weight: 700;
@@ -963,7 +963,7 @@ export default function Exercice4() {
           padding: 9px 12px;
           border: 1px solid #E0E5ED;
           border-radius: 8px;
-          background: #F8FAFC;
+          background: #f7f5f0;
           color: #53647A;
           font-size: 12px;
           cursor: pointer;
@@ -971,7 +971,7 @@ export default function Exercice4() {
 
         .help-button:hover,
         .help-button.active {
-          border-color: #D6B56D;
+          border-color: #b49760;
           background: #FFFCF5;
           color: #8B6C31;
         }
@@ -993,7 +993,7 @@ export default function Exercice4() {
 
         .explanation-panel {
           background: #FFF8EA;
-          border-left: 3px solid #D6B56D;
+          border-left: 3px solid #b49760;
           color: #6D572D;
         }
 
@@ -1018,7 +1018,7 @@ export default function Exercice4() {
 
         .titles-column {
           background: white;
-          border: 1px solid #E5E9EF;
+          border: 1px solid #e3ded3;
           border-radius: 13px;
           padding: 20px;
           position: sticky;
@@ -1033,7 +1033,7 @@ export default function Exercice4() {
 
         .titles-heading span {
           font-size: 11px;
-          color: #A18142;
+          color: #806337;
           background: #F8F1E3;
           padding: 6px 9px;
           border-radius: 20px;
@@ -1046,14 +1046,14 @@ export default function Exercice4() {
         }
 
         .title-item {
-          border: 1px solid #E5E9EF;
+          border: 1px solid #e3ded3;
           border-radius: 10px;
           padding: 9px;
           background: #fff;
         }
 
         .title-item.chosen {
-          border-color: #D6B56D;
+          border-color: #b49760;
           background: #FFFCF5;
         }
 
@@ -1087,19 +1087,19 @@ export default function Exercice4() {
         }
 
         .title-option:hover:not(:disabled) {
-          border-color: #D6B56D;
+          border-color: #b49760;
           background: #FFFCF5;
         }
 
         .title-option.selected {
-          border: 2px solid #D6B56D;
+          border: 2px solid #b49760;
           background: #FFFCF5;
         }
 
         .title-option.used {
           opacity: .55;
           cursor: default;
-          background: #F5F6F8;
+          background: #f7f5f0;
         }
 
         .title-option:disabled { cursor: default; }
@@ -1123,12 +1123,12 @@ export default function Exercice4() {
           padding: 6px;
         }
 
-        .title-help:hover { color: #172B4D; }
+        .title-help:hover { color: #192b43; }
 
         .title-detail {
           margin-top: 7px;
           padding: 12px;
-          background: #F8FAFC;
+          background: #f7f5f0;
           border-radius: 8px;
           color: #45556B;
           font-size: 12px;
@@ -1139,7 +1139,7 @@ export default function Exercice4() {
 
         .title-translation {
           padding-bottom: 10px;
-          border-bottom: 1px solid #E1E6ED;
+          border-bottom: 1px solid #e3ded3;
         }
 
         .title-explanation { padding-top: 10px; }
@@ -1172,7 +1172,7 @@ export default function Exercice4() {
         }
 
         .check-button {
-          background: #172B4D;
+          background: #192b43;
           color: white;
         }
 
@@ -1197,7 +1197,7 @@ export default function Exercice4() {
         }
 
         .score-result strong {
-          color: #A18142;
+          color: #806337;
           font-size: 22px;
         }
 
@@ -1224,6 +1224,17 @@ export default function Exercice4() {
           .title-option { min-height: 58px; font-size: 12px; }
           .empty-slot { min-height: 62px; }
           .assigned-title { min-height: 58px; }
+        }
+      
+        /* Deutsch Erfolg — Premium exams */
+        .exercise-page { background: #f7f5f0; font-family: 'Plus Jakarta Sans', Arial, sans-serif; }
+        [dir="rtl"] .exercise-page, .exercise-page[dir="rtl"] { font-family: 'Tajawal', Arial, sans-serif; }
+        .exercise-page .exercise-hero { background: #192b43; border: 1px solid #314359; border-radius: 12px; box-shadow: none; text-align: start; }
+        .exercise-page .exercise-hero h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.025em; line-height: 1.24; overflow-wrap: anywhere; }
+        [dir="rtl"] .exercise-page .exercise-hero h1, .exercise-page[dir="rtl"] .exercise-hero h1 { font-family: 'Tajawal', Arial, sans-serif; }
+        .exercise-page a:focus-visible, .exercise-page button:focus-visible, .exercise-page select:focus-visible { outline: 2px solid #b49760; outline-offset: 3px; }
+        @media (prefers-reduced-motion: reduce) {
+          .exercise-page *, .exercise-page *::before, .exercise-page *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
         }
       `}</style>
     </main>

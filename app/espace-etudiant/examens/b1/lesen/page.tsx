@@ -329,14 +329,14 @@ export default function LesenB1Page() {
       <style jsx global>{`
         .lesen-page {
           min-height: 100vh;
-          background: #f5f6f8;
-          color: #172b4d;
+          background: #f7f5f0;
+          color: #192b43;
           font-family: Arial, sans-serif;
         }
 
         .lesen-header {
           height: 76px;
-          background: #172b4d;
+          background: #192b43;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -355,7 +355,7 @@ export default function LesenB1Page() {
 
         .lesen-brand svg,
         .lesen-brand strong {
-          color: #d6b56d;
+          color: #b49760;
         }
 
         .lesen-back {
@@ -377,21 +377,21 @@ export default function LesenB1Page() {
           display: flex;
           gap: 10px;
           font-size: 12px;
-          color: #9aa4b2;
+          color: #626a75;
           margin-bottom: 25px;
         }
 
         .lesen-breadcrumb a {
-          color: #9aa4b2;
+          color: #626a75;
           text-decoration: none;
         }
 
         .lesen-breadcrumb strong {
-          color: #a18142;
+          color: #806337;
         }
 
         .lesen-hero {
-          background: linear-gradient(120deg, #172b4d 0%, #203d68 65%, #294b78 100%);
+          background: #192b43;
           color: white;
           padding: 38px;
           border-radius: 18px;
@@ -416,11 +416,11 @@ export default function LesenB1Page() {
           background: rgba(214, 181, 109, 0.13);
           border: 1px solid rgba(214, 181, 109, 0.35);
           border-radius: 14px;
-          color: #d6b56d;
+          color: #b49760;
         }
 
         .lesen-hero-badge {
-          color: #d6b56d;
+          color: #b49760;
           border: 1px solid rgba(214, 181, 109, 0.45);
           background: rgba(214, 181, 109, 0.1);
           padding: 8px 13px;
@@ -489,7 +489,7 @@ export default function LesenB1Page() {
         }
 
         .lesen-stats strong {
-          color: #d6b56d;
+          color: #b49760;
           font-size: 23px;
         }
 
@@ -509,7 +509,7 @@ export default function LesenB1Page() {
           font-size: 30px;
           font-weight: 800;
           letter-spacing: -0.7px;
-          color: #172b4d;
+          color: #192b43;
           margin: 10px 0 0;
           line-height: 1.2;
         }
@@ -531,23 +531,23 @@ export default function LesenB1Page() {
           gap: 14px;
           min-height: 105px;
           padding: 18px;
-          border: 1px solid #e1e6ed;
+          border: 1px solid #e3ded3;
           border-radius: 13px;
           background: white;
-          color: #172b4d;
+          color: #192b43;
           text-align: left;
           cursor: pointer;
           transition: all 0.2s ease;
         }
 
         .lesen-tab:hover {
-          border-color: #d6b56d;
+          border-color: #b49760;
           transform: translateY(-3px);
         }
 
         .lesen-tab.active {
-          background: #172b4d;
-          border-color: #172b4d;
+          background: #192b43;
+          border-color: #192b43;
           color: white;
           box-shadow: 0 7px 18px rgba(23, 43, 77, 0.16);
         }
@@ -558,15 +558,15 @@ export default function LesenB1Page() {
           min-width: 43px;
           height: 43px;
           border-radius: 9px;
-          background: #f5eedc;
-          color: #a18142;
+          background: #f1ece2;
+          color: #806337;
           font-size: 17px;
           font-weight: 800;
         }
 
         .lesen-tab.active .lesen-tab-number {
-          background: #d6b56d;
-          color: #172b4d;
+          background: #b49760;
+          color: #192b43;
         }
 
         .lesen-tab-content {
@@ -592,7 +592,7 @@ export default function LesenB1Page() {
         }
 
         .lesen-tab.active .lesen-tab-content small {
-          color: #d6b56d;
+          color: #b49760;
         }
 
         .lesen-tab-arrow {
@@ -601,12 +601,12 @@ export default function LesenB1Page() {
         }
 
         .lesen-tab.active .lesen-tab-arrow {
-          color: #d6b56d;
+          color: #b49760;
         }
 
         .lesen-exercises {
           background: white;
-          border: 1px solid #e6eaf0;
+          border: 1px solid #e3ded3;
           border-radius: 13px;
           padding: 23px;
           margin-bottom: 22px;
@@ -619,7 +619,7 @@ export default function LesenB1Page() {
         }
 
         .lesen-exercise-card {
-          border: 1px solid #e8ecf2;
+          border: 1px solid #e3ded3;
           border-radius: 12px;
           padding: 17px;
           display: grid;
@@ -634,20 +634,20 @@ export default function LesenB1Page() {
         }
 
         a.lesen-exercise-card:hover {
-          border-color: #d6b56d;
+          border-color: #b49760;
           transform: translateY(-3px);
           box-shadow: 0 8px 20px rgba(23, 43, 77, 0.07);
         }
 
         .lesen-exercise-card.locked {
-          background: #f8f9fb;
+          background: #f7f5f0;
           border-color: #e5e8ed;
           opacity: 0.9;
         }
 
         .lesen-exercise-card.locked:hover {
-          border-color: #d6b56d;
-          background: #f5eedc;
+          border-color: #b49760;
+          background: #f1ece2;
         }
 
         .lesen-exercise-number {
@@ -655,8 +655,8 @@ export default function LesenB1Page() {
           height: 40px;
           display: grid;
           place-items: center;
-          background: #172b4d;
-          color: #d6b56d;
+          background: #192b43;
+          color: #b49760;
           border-radius: 11px;
           font-size: 13px;
           font-weight: 800;
@@ -673,7 +673,7 @@ export default function LesenB1Page() {
 
         .lesen-exercise-info h3 {
           margin: 0;
-          color: #172b4d;
+          color: #192b43;
           font-size: 14px;
           font-weight: 750;
           line-height: 1.5;
@@ -693,8 +693,8 @@ export default function LesenB1Page() {
           justify-content: center;
           min-width: 38px;
           padding: 5px 10px;
-          background: #f5eedc;
-          color: #172b4d;
+          background: #f1ece2;
+          color: #192b43;
           border: 1px solid #e5d4a9;
           border-radius: 20px;
           font-size: 10px;
@@ -720,8 +720,8 @@ export default function LesenB1Page() {
           align-items: center;
           gap: 4px;
           padding: 5px 9px;
-          background: #172b4d;
-          color: #d6b56d;
+          background: #192b43;
+          color: #b49760;
           border-radius: 20px;
           font-size: 10px;
           font-weight: 800;
@@ -733,13 +733,13 @@ export default function LesenB1Page() {
           align-items: center;
           gap: 12px;
           min-height: 180px;
-          color: #8792a1;
+          color: #626a75;
           font-size: 13px;
         }
 
         .lesen-spinner {
           animation: lesen-spin 1s linear infinite;
-          color: #a18142;
+          color: #806337;
         }
 
         @keyframes lesen-spin {
@@ -753,7 +753,7 @@ export default function LesenB1Page() {
           align-items: center;
           gap: 10px;
           padding: 15px 18px;
-          background: #f5eedc;
+          background: #f1ece2;
           border: 1px solid #e5d4a9;
           border-radius: 10px;
           color: #705c32;
@@ -828,6 +828,21 @@ export default function LesenB1Page() {
             grid-template-columns: 1fr;
             gap: 12px;
           }
+        }
+      
+        /* Deutsch Erfolg — Premium exams */
+        .lesen-page { background: #f7f5f0; font-family: 'Plus Jakarta Sans', Arial, sans-serif; }
+        [dir="rtl"] .lesen-page, .lesen-page[dir="rtl"] { font-family: 'Tajawal', Arial, sans-serif; }
+        .lesen-page .lesen-hero { background: #192b43; border: 1px solid #314359; border-radius: 12px; box-shadow: none; text-align: start; }
+        .lesen-page .lesen-hero-main h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.025em; line-height: 1.24; overflow-wrap: anywhere; }
+        [dir="rtl"] .lesen-page .lesen-hero-main h1, .lesen-page[dir="rtl"] .lesen-hero h1 { font-family: 'Tajawal', Arial, sans-serif; }
+        .lesen-page a:focus-visible, .lesen-page button:focus-visible, .lesen-page select:focus-visible { outline: 2px solid #b49760; outline-offset: 3px; }
+        .lesen-page .lesen-exercise-card { border-radius: 10px; box-shadow: none; }
+        .lesen-page .lesen-section-title h2 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+        [dir="rtl"] .lesen-page .lesen-section-title h2 { font-family: 'Tajawal', Arial, sans-serif; }
+        .lesen-page .lesen-hero-decoration { opacity: .065; pointer-events: none; }
+        @media (prefers-reduced-motion: reduce) {
+          .lesen-page *, .lesen-page *::before, .lesen-page *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
         }
       `}</style>
     </main>

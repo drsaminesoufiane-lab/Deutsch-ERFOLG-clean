@@ -868,14 +868,14 @@ export default function PaulPage() {
       <style jsx global>{`
         .paul-page {
           min-height: 100vh;
-          background: #f5f7fb;
-          color: #172b4d;
+          background: #f7f5f0;
+          color: #192b43;
           font-family: inherit;
           padding-bottom: 50px;
         }
 
         .paul-header {
-          background: #172b4d;
+          background: #192b43;
           color: white;
           height: 68px;
           display: flex;
@@ -904,7 +904,7 @@ export default function PaulPage() {
         }
 
         .paul-brand-icon {
-          color: #d6b56d;
+          color: #b49760;
           display: flex;
           align-items: center;
         }
@@ -920,7 +920,7 @@ export default function PaulPage() {
         }
 
         .paul-back:hover {
-          color: #d6b56d;
+          color: #b49760;
         }
 
         .paul-content {
@@ -941,7 +941,7 @@ export default function PaulPage() {
         }
 
         .paul-breadcrumb strong {
-          color: #172b4d;
+          color: #192b43;
         }
 
         .paul-hero {
@@ -950,7 +950,7 @@ export default function PaulPage() {
           border-radius: 19px;
           padding: 30px 34px 27px;
           color: white;
-          background: linear-gradient(120deg, #172b4d 0%, #263f67 65%, #344f77 100%);
+          background: #192b43;
           box-shadow: 0 8px 24px rgba(23, 43, 77, 0.12);
         }
 
@@ -983,13 +983,13 @@ export default function PaulPage() {
         }
 
         .paul-eyebrow {
-          color: #d6b56d;
+          color: #b49760;
         }
 
         .paul-level {
           background: rgba(214, 181, 109, 0.16);
           border: 1px solid rgba(214, 181, 109, 0.45);
-          color: #f0d69e;
+          color: #e3cb96;
           padding: 6px 13px;
           border-radius: 30px;
           font-size: 11px;
@@ -1024,7 +1024,7 @@ export default function PaulPage() {
         }
 
         .paul-progress-labels strong {
-          color: #f0d69e;
+          color: #e3cb96;
         }
 
         .paul-progress-track,
@@ -1038,7 +1038,7 @@ export default function PaulPage() {
 
         .paul-progress-fill {
           height: 100%;
-          background: #d6b56d;
+          background: #b49760;
           border-radius: 20px;
           transition: width 0.3s ease;
         }
@@ -1089,7 +1089,7 @@ export default function PaulPage() {
         }
 
         .paul-language-button.active {
-          background: #172b4d;
+          background: #192b43;
           color: white;
           box-shadow: 0 2px 5px rgba(23, 43, 77, 0.16);
         }
@@ -1137,7 +1137,7 @@ export default function PaulPage() {
         .paul-section-heading h2,
         .paul-results-top h2 {
           font-size: 19px;
-          color: #172b4d;
+          color: #192b43;
           font-weight: 800;
           margin: 0;
           letter-spacing: -0.3px;
@@ -1161,7 +1161,7 @@ export default function PaulPage() {
 
         .paul-text-card {
           background: white;
-          border: 1px solid #e5eaf1;
+          border: 1px solid #e3ded3;
           border-radius: 14px;
           padding: 19px;
           box-shadow: 0 3px 10px rgba(23, 43, 77, 0.035);
@@ -1197,7 +1197,7 @@ export default function PaulPage() {
           width: 29px;
           height: 29px;
           border-radius: 8px;
-          background: #172b4d;
+          background: #192b43;
           color: white;
           font-weight: 800;
           font-size: 13px;
@@ -1206,7 +1206,7 @@ export default function PaulPage() {
         .paul-text-label {
           font-size: 10px;
           font-weight: 800;
-          color: #8995a7;
+          color: #626a75;
           letter-spacing: 1.1px;
         }
 
@@ -1230,8 +1230,8 @@ export default function PaulPage() {
           min-height: 42px;
           border: 1px dashed #cbd4e0;
           border-radius: 8px;
-          background: #f8fafc;
-          color: #8995a7;
+          background: #f7f5f0;
+          color: #626a75;
           display: flex;
           align-items: center;
           gap: 10px;
@@ -1256,8 +1256,8 @@ export default function PaulPage() {
         }
 
         .paul-answer-slot.filled strong {
-          background: #d6b56d;
-          color: #172b4d;
+          background: #b49760;
+          color: #192b43;
           width: 23px;
           height: 23px;
           border-radius: 6px;
@@ -1328,7 +1328,7 @@ export default function PaulPage() {
           gap: 8px;
           margin-top: 15px;
           padding-top: 12px;
-          border-top: 1px solid #edf0f4;
+          border-top: 1px solid #e3ded3;
         }
 
         .paul-small-action,
@@ -1351,14 +1351,14 @@ export default function PaulPage() {
         .paul-small-action:hover,
         .paul-small-action.active {
           background: #f1f5fb;
-          color: #172b4d;
+          color: #192b43;
           border-color: #cbd7e6;
         }
 
         .paul-check-one {
           margin-left: auto;
-          background: #172b4d;
-          border-color: #172b4d;
+          background: #192b43;
+          border-color: #192b43;
           color: white;
         }
 
@@ -1422,7 +1422,7 @@ export default function PaulPage() {
 
         .paul-title-wrapper {
           background: white;
-          border: 1px solid #e5eaf1;
+          border: 1px solid #e3ded3;
           border-radius: 10px;
           overflow: hidden;
           transition: all 0.2s;
@@ -1436,7 +1436,7 @@ export default function PaulPage() {
 
         .paul-title-wrapper.used {
           background: #f2f5f8;
-          border-color: #e1e6ed;
+          border-color: #e3ded3;
         }
 
         .paul-title-button {
@@ -1475,8 +1475,8 @@ export default function PaulPage() {
         }
 
         .paul-title-wrapper.selected .paul-title-letter {
-          background: #d6b56d;
-          color: #172b4d;
+          background: #b49760;
+          color: #192b43;
         }
 
         .paul-title-wrapper.used .paul-title-letter {
@@ -1500,7 +1500,7 @@ export default function PaulPage() {
           gap: 6px;
           width: 100%;
           border: 0;
-          border-top: 1px solid #edf0f4;
+          border-top: 1px solid #e3ded3;
           background: rgba(245, 247, 250, 0.7);
           padding: 7px 12px;
           color: #8290a2;
@@ -1510,13 +1510,13 @@ export default function PaulPage() {
         }
 
         .paul-title-info:hover {
-          color: #172b4d;
+          color: #192b43;
           background: #f0f4f9;
         }
 
         .paul-title-detail {
           padding: 11px 13px;
-          border-top: 1px solid #edf0f4;
+          border-top: 1px solid #e3ded3;
           background: #fafbfd;
           color: #52647d;
           font-size: 11px;
@@ -1530,7 +1530,7 @@ export default function PaulPage() {
         }
 
         .paul-title-detail strong {
-          color: #172b4d;
+          color: #192b43;
           font-size: 10px;
         }
 
@@ -1565,7 +1565,7 @@ export default function PaulPage() {
         }
 
         .legend-dot.selected-dot {
-          background: #d6b56d;
+          background: #b49760;
         }
 
         .legend-dot.used-dot {
@@ -1574,7 +1574,7 @@ export default function PaulPage() {
 
         .paul-final-area {
           background: white;
-          border: 1px solid #e5eaf1;
+          border: 1px solid #e3ded3;
           border-radius: 15px;
           padding: 22px;
           margin-top: 27px;
@@ -1602,7 +1602,7 @@ export default function PaulPage() {
 
         .paul-final-info strong {
           font-size: 13px;
-          color: #172b4d;
+          color: #192b43;
         }
 
         .paul-final-info p {
@@ -1617,7 +1617,7 @@ export default function PaulPage() {
           min-height: 46px;
           border: 0;
           border-radius: 9px;
-          background: #172b4d;
+          background: #192b43;
           color: white;
           display: flex;
           align-items: center;
@@ -1679,13 +1679,13 @@ export default function PaulPage() {
         }
 
         .paul-score-track {
-          background: #edf0f4;
+          background: #e3ded3;
           height: 9px;
         }
 
         .paul-score-fill {
           height: 100%;
-          background: #d6b56d;
+          background: #b49760;
           border-radius: 20px;
           transition: width 0.5s ease;
         }
@@ -1710,7 +1710,7 @@ export default function PaulPage() {
           gap: 11px;
           padding: 10px 12px;
           border-radius: 8px;
-          background: #f5f7fa;
+          background: #f7f5f0;
         }
 
         .paul-result-row.correct {
@@ -1756,7 +1756,7 @@ export default function PaulPage() {
 
         .paul-restart-button {
           background: #f1f4f8;
-          color: #172b4d;
+          color: #192b43;
           border: 1px solid #dfe5ed;
         }
 
@@ -1902,6 +1902,18 @@ export default function PaulPage() {
             margin-left: 0;
             justify-content: center;
           }
+        }
+      
+        /* Deutsch Erfolg — Premium exams */
+        .paul-page { background: #f7f5f0; font-family: 'Plus Jakarta Sans', Arial, sans-serif; }
+        [dir="rtl"] .paul-page, .paul-page[dir="rtl"] { font-family: 'Tajawal', Arial, sans-serif; }
+        .paul-page .paul-hero { background: #192b43; border: 1px solid #314359; border-radius: 12px; box-shadow: none; text-align: start; }
+        .paul-page .paul-hero h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.025em; line-height: 1.24; overflow-wrap: anywhere; }
+        [dir="rtl"] .paul-page .paul-hero h1, .paul-page[dir="rtl"] .paul-hero h1 { font-family: 'Tajawal', Arial, sans-serif; }
+        .paul-page a:focus-visible, .paul-page button:focus-visible, .paul-page select:focus-visible { outline: 2px solid #b49760; outline-offset: 3px; }
+        .paul-page .paul-text-card { border-radius: 10px; box-shadow: none; }
+        @media (prefers-reduced-motion: reduce) {
+          .paul-page *, .paul-page *::before, .paul-page *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
         }
       `}</style>
     </div>

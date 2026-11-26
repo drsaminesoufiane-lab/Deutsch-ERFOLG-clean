@@ -427,8 +427,8 @@ export default function AlexUndCoraSprachbausteineTeil2() {
 
         .exercise-page {
           min-height: 100vh;
-          background: #f5f7fb;
-          color: #17243b;
+          background: #f7f5f0;
+          color: #192b43;
           padding: 28px 22px 60px;
           font-family: Arial, Helvetica, sans-serif;
         }
@@ -452,7 +452,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
         .back-link:hover { color: #bd913e; }
 
         .hero {
-          background: linear-gradient(120deg, #14243e, #243c5d);
+          background: #192b43;
           color: white;
           border-radius: 18px;
           padding: 28px 32px;
@@ -465,7 +465,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
         }
 
         .hero-kicker {
-          color: #e7c47d;
+          color: #e3cb96;
           font-size: 11px;
           font-weight: 800;
           letter-spacing: 1.5px;
@@ -507,12 +507,12 @@ export default function AlexUndCoraSprachbausteineTeil2() {
 
         .language-switch button.active {
           background: #e6c17a;
-          color: #17243b;
+          color: #192b43;
         }
 
         .instruction {
           background: white;
-          border: 1px solid #e6eaf0;
+          border: 1px solid #e3ded3;
           border-radius: 12px;
           padding: 17px 20px;
           margin-bottom: 20px;
@@ -530,7 +530,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
 
         .panel {
           background: white;
-          border: 1px solid #e6eaf0;
+          border: 1px solid #e3ded3;
           border-radius: 15px;
           padding: 22px;
           box-shadow: 0 4px 16px rgba(20,36,62,.035);
@@ -554,7 +554,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
 
         .panel-tag {
           color: #a77b2d;
-          background: #fbf5e9;
+          background: #f1ece2;
           border-radius: 20px;
           padding: 6px 10px;
           font-size: 10px;
@@ -597,7 +597,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
         }
 
         .blank:hover:not(:disabled) {
-          background: #fbf5e9;
+          background: #f1ece2;
           border-color: #bd913e;
         }
 
@@ -634,7 +634,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
           width: 19px;
           height: 19px;
           border-radius: 5px;
-          background: #edf0f5;
+          background: #e3ded3;
           color: #607087;
           font-size: 10px;
           flex-shrink: 0;
@@ -647,7 +647,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          border: 1px solid #e6eaf0;
+          border: 1px solid #e3ded3;
           background: #fafbfd;
           color: #43536b;
           border-radius: 9px;
@@ -661,9 +661,9 @@ export default function AlexUndCoraSprachbausteineTeil2() {
         .translation-content {
           margin-top: 18px;
           padding: 20px;
-          background: #f8f9fc;
+          background: #f7f5f0;
           border-radius: 10px;
-          border-left: 3px solid #d6ad62;
+          border-left: 3px solid #b49760;
           white-space: pre-line;
           color: #56647a;
           line-height: 1.9;
@@ -706,7 +706,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
           gap: 9px;
           min-height: 43px;
           padding: 8px 10px;
-          border: 1px solid #e2e7ef;
+          border: 1px solid #e3ded3;
           border-radius: 9px;
           background: white;
           color: #43536b;
@@ -753,7 +753,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
         .word-used-label {
           margin-left: auto;
           font-size: 9px;
-          color: #8792a2;
+          color: #626a75;
           font-weight: 700;
         }
 
@@ -763,7 +763,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
           gap: 10px;
           margin-top: 17px;
           padding-top: 14px;
-          border-top: 1px solid #edf0f4;
+          border-top: 1px solid #e3ded3;
           color: #7b8798;
           font-size: 11px;
         }
@@ -780,7 +780,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
 
         .progress-track {
           height: 6px;
-          background: #edf0f5;
+          background: #e3ded3;
           border-radius: 10px;
           overflow: hidden;
         }
@@ -865,7 +865,7 @@ export default function AlexUndCoraSprachbausteineTeil2() {
         }
 
         .explanation-card {
-          border: 1px solid #e8ecf2;
+          border: 1px solid #e3ded3;
           border-radius: 10px;
           padding: 13px;
           margin-top: 11px;
@@ -906,8 +906,8 @@ export default function AlexUndCoraSprachbausteineTeil2() {
         }
 
         .explanation-box {
-          background: #f8f9fc;
-          border-left: 3px solid #d6ad62;
+          background: #f7f5f0;
+          border-left: 3px solid #b49760;
           padding: 11px 13px;
           border-radius: 5px;
           margin-top: 9px;
@@ -938,6 +938,18 @@ export default function AlexUndCoraSprachbausteineTeil2() {
             min-width: 110px;
             font-size: 12px;
           }
+        }
+      
+        /* Deutsch Erfolg — Premium exams */
+        .exercise-page { background: #f7f5f0; font-family: 'Plus Jakarta Sans', Arial, sans-serif; }
+        [dir="rtl"] .exercise-page, .exercise-page[dir="rtl"] { font-family: 'Tajawal', Arial, sans-serif; }
+        .exercise-page .hero { background: #192b43; border: 1px solid #314359; border-radius: 12px; box-shadow: none; text-align: start; }
+        .exercise-page .hero h1 { font-family: Georgia, 'Times New Roman', serif; font-weight: 400; letter-spacing: -.025em; line-height: 1.24; overflow-wrap: anywhere; }
+        [dir="rtl"] .exercise-page .hero h1, .exercise-page[dir="rtl"] .hero h1 { font-family: 'Tajawal', Arial, sans-serif; }
+        .exercise-page a:focus-visible, .exercise-page button:focus-visible, .exercise-page select:focus-visible { outline: 2px solid #b49760; outline-offset: 3px; }
+        .exercise-page .panel { border-radius: 10px; box-shadow: none; }
+        @media (prefers-reduced-motion: reduce) {
+          .exercise-page *, .exercise-page *::before, .exercise-page *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
         }
       `}</style>
 
