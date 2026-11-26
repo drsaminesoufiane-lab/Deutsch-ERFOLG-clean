@@ -330,13 +330,7 @@ async function annulerAbonnement(item: HistoriqueAbonnement) {
     setMessage('')
     setChargementAction(etudiant.id)
 
-    const { error } = await supabase
-      .from('profiles')
-      .update({
-        is_pro: false,
-        pro_until: new Date().toISOString(),
-      })
-      .eq('id', etudiant.id)
+    const { error } = await supabase.rpc('admin_revoke_pro', { p_student_id: etudiant.id })
 
     if (error) {
       setErreur(error.message)
@@ -904,7 +898,7 @@ const nombrePaiements = paiementsValides.length
                       <div className="student-card-actions">
                         <button
                           className="student-action-secondary"
-                          onClick={() => afficherHistorique(etudiant)}
+                          data-admin-permission="finance" onClick={() => afficherHistorique(etudiant)}
                         >
                           <History size={16} />
                           Historique
@@ -913,11 +907,11 @@ const nombrePaiements = paiementsValides.length
                         {etudiant.is_pro && (
                           <button
                             className="student-action-danger"
-                            onClick={() => revoquerPro(etudiant)}
+                            data-admin-permission="revoke_pro" onClick={() => revoquerPro(etudiant)}
                             disabled={enAction}
                           >
                             <XCircle size={15} />
-                            Révoquer
+                            Révoquer PRO
                           </button>
                         )}
                       </div>
@@ -1062,7 +1056,7 @@ const nombrePaiements = paiementsValides.length
       ) : peutAnnuler ? (
         <button
           type="button"
-          onClick={() => annulerAbonnement(item)}
+          data-admin-permission="cancel_pro" onClick={() => annulerAbonnement(item)}
           style={{
             marginTop: '12px',
             padding: '9px 14px',
@@ -1097,6 +1091,15 @@ const nombrePaiements = paiementsValides.length
 
       {/* DESIGN */}
       <style jsx global>{`
+        .student-card-actions .student-delete-account {
+          margin-left: 0;
+          flex: 1 0 100%;
+          color: #a1273e;
+          border: 1px solid #c77c8a !important;
+          background: #fff;
+        }
+        .student-card-actions .student-delete-account:hover:not(:disabled) { background: #fff0f2; }
+
 
         .admin-loading {
           min-height: 100vh;
@@ -1105,7 +1108,7 @@ const nombrePaiements = paiementsValides.length
           align-items: center;
           justify-content: center;
           gap: 15px;
-          background: #f5f7fb;
+          background: #f8f4f5;
           color: #64748b;
           font-size: 14px;
         }
@@ -1114,7 +1117,7 @@ const nombrePaiements = paiementsValides.length
           width: 30px;
           height: 30px;
           border: 3px solid #e2e8f0;
-          border-top-color: #172b4d;
+          border-top-color: #391021;
           border-radius: 50%;
           animation: students-spin 0.8s linear infinite;
         }
@@ -1131,7 +1134,7 @@ const nombrePaiements = paiementsValides.length
           margin-bottom: 27px;
           padding: 28px 30px;
           border-radius: 18px;
-          background: linear-gradient(120deg, #172b4d, #263f68);
+          background: linear-gradient(120deg, #391021, #542039);
           color: white;
           box-shadow: 0 10px 30px rgba(23,43,77,0.12);
         }
@@ -1220,7 +1223,7 @@ const nombrePaiements = paiementsValides.length
         .students-stat-card {
           min-width: 0;
           padding: 19px;
-          border: 1px solid #e8edf4;
+          border: 1px solid #e9dfe3;
           border-radius: 14px;
           background: white;
           box-shadow: 0 3px 12px rgba(23,43,77,0.025);
@@ -1242,8 +1245,8 @@ const nombrePaiements = paiementsValides.length
         }
 
         .stat-icon.navy {
-          color: #263f68;
-          background: #edf2fa;
+          color: #542039;
+          background: #f7eef1;
         }
 
         .stat-icon.green {
@@ -1269,7 +1272,7 @@ const nombrePaiements = paiementsValides.length
         }
 
         .stat-number {
-          color: #172b4d;
+          color: #391021;
           font-size: 27px;
           font-weight: 800;
           letter-spacing: -0.7px;
@@ -1284,7 +1287,7 @@ const nombrePaiements = paiementsValides.length
         .financial-section {
           padding: 22px;
           margin-bottom: 24px;
-          border: 1px solid #e8edf4;
+          border: 1px solid #e9dfe3;
           border-radius: 15px;
           background: white;
         }
@@ -1305,7 +1308,7 @@ const nombrePaiements = paiementsValides.length
 
         .financial-heading h2 {
           margin: 5px 0 0;
-          color: #172b4d;
+          color: #391021;
           font-size: 16px;
           font-weight: 750;
         }
@@ -1344,8 +1347,8 @@ const nombrePaiements = paiementsValides.length
           display: grid;
           place-items: center;
           border-radius: 10px;
-          color: #263f68;
-          background: #edf2fa;
+          color: #542039;
+          background: #f7eef1;
         }
 
         .financial-card span {
@@ -1357,7 +1360,7 @@ const nombrePaiements = paiementsValides.length
 
         .financial-card strong {
           display: block;
-          color: #172b4d;
+          color: #391021;
           font-size: 15px;
           font-weight: 800;
           overflow-wrap: anywhere;
@@ -1365,7 +1368,7 @@ const nombrePaiements = paiementsValides.length
 
         .students-management {
           padding: 23px;
-          border: 1px solid #e8edf4;
+          border: 1px solid #e9dfe3;
           border-radius: 16px;
           background: white;
         }
@@ -1385,7 +1388,7 @@ const nombrePaiements = paiementsValides.length
 
         .list-title-line h2 {
           margin: 0;
-          color: #172b4d;
+          color: #391021;
           font-size: 18px;
           font-weight: 800;
         }
@@ -1398,8 +1401,8 @@ const nombrePaiements = paiementsValides.length
           align-items: center;
           justify-content: center;
           border-radius: 8px;
-          color: #263f68;
-          background: #edf2fa;
+          color: #542039;
+          background: #f7eef1;
           font-size: 11px;
           font-weight: 800;
         }
@@ -1419,14 +1422,14 @@ const nombrePaiements = paiementsValides.length
           border: 1px solid #e4e9f0;
           border-radius: 9px;
           background: #f8fafc;
-          color: #263f68;
+          color: #542039;
           font-size: 12px;
           font-weight: 700;
           cursor: pointer;
         }
 
         .students-refresh:hover {
-          background: #edf2fa;
+          background: #f7eef1;
         }
 
         .students-refresh:disabled {
@@ -1459,7 +1462,7 @@ const nombrePaiements = paiementsValides.length
           border: 0;
           outline: 0;
           background: transparent;
-          color: #172b4d;
+          color: #391021;
           font: inherit;
           font-size: 13px;
         }
@@ -1501,8 +1504,8 @@ const nombrePaiements = paiementsValides.length
         }
 
         .students-filter:hover {
-          border-color: #263f68;
-          color: #263f68;
+          border-color: #542039;
+          color: #542039;
         }
 
         .students-filter span {
@@ -1520,12 +1523,12 @@ const nombrePaiements = paiementsValides.length
 
         .students-filter.active {
           color: white;
-          border-color: #172b4d;
-          background: #172b4d;
+          border-color: #391021;
+          background: #391021;
         }
 
         .students-filter.active span {
-          color: #172b4d;
+          color: #391021;
           background: #e2c47f;
         }
 
@@ -1537,7 +1540,7 @@ const nombrePaiements = paiementsValides.length
 
         .student-management-card {
           padding: 19px;
-          border: 1px solid #e8edf4;
+          border: 1px solid #e9dfe3;
           border-radius: 13px;
           background: white;
           transition: border-color 0.2s, box-shadow 0.2s;
@@ -1569,8 +1572,8 @@ const nombrePaiements = paiementsValides.length
           display: grid;
           place-items: center;
           border-radius: 14px;
-          color: #263f68;
-          background: #edf2fa;
+          color: #542039;
+          background: #f7eef1;
           font-size: 18px;
           font-weight: 800;
         }
@@ -1590,7 +1593,7 @@ const nombrePaiements = paiementsValides.length
           flex-wrap: wrap;
           gap: 8px;
           margin: 0 0 7px;
-          color: #172b4d;
+          color: #391021;
           font-size: 14px;
           font-weight: 800;
         }
@@ -1832,7 +1835,7 @@ const nombrePaiements = paiementsValides.length
 
         .student-action-primary {
           color: white;
-          background: #172b4d;
+          background: #391021;
         }
 
         .student-action-primary:hover:not(:disabled) {
@@ -1852,7 +1855,7 @@ const nombrePaiements = paiementsValides.length
         }
 
         .student-action-secondary:hover {
-          background: #edf2fa;
+          background: #f7eef1;
         }
 
         .student-action-danger {
@@ -1900,7 +1903,7 @@ const nombrePaiements = paiementsValides.length
 
         .students-empty h3 {
           margin: 15px 0 6px;
-          color: #263f68;
+          color: #542039;
           font-size: 15px;
         }
 
@@ -1915,7 +1918,7 @@ const nombrePaiements = paiementsValides.length
           border: 0;
           border-radius: 8px;
           color: white;
-          background: #172b4d;
+          background: #391021;
           font-size: 11px;
           font-weight: 700;
           cursor: pointer;
@@ -1962,8 +1965,8 @@ const nombrePaiements = paiementsValides.length
           display: grid;
           place-items: center;
           border-radius: 12px;
-          color: #263f68;
-          background: #edf2fa;
+          color: #542039;
+          background: #f7eef1;
         }
 
         .history-heading-text {
@@ -1973,7 +1976,7 @@ const nombrePaiements = paiementsValides.length
 
         .history-heading-text h2 {
           margin: 0 0 5px;
-          color: #172b4d;
+          color: #391021;
           font-size: 16px;
         }
 
@@ -2004,7 +2007,7 @@ const nombrePaiements = paiementsValides.length
 
         .history-item {
           padding: 15px;
-          border: 1px solid #e8edf4;
+          border: 1px solid #e9dfe3;
           border-radius: 11px;
           background: #fbfcfe;
         }
@@ -2018,7 +2021,7 @@ const nombrePaiements = paiementsValides.length
         }
 
         .history-item-top strong {
-          color: #263f68;
+          color: #542039;
           font-size: 13px;
         }
 

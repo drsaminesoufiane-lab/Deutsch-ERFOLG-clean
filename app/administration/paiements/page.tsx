@@ -673,7 +673,7 @@ export default function PaiementsPage() {
 
       <style jsx global>{`
         .payments-page {
-          background: #f7f8fc;
+          background: #f8f4f5;
           min-height: calc(100vh - 70px);
         }
 
@@ -687,7 +687,7 @@ export default function PaiementsPage() {
 
         .payments-heading h1 {
           margin: 8px 0 7px;
-          color: #172033;
+          color: #321e28;
           font-size: 28px;
           font-weight: 750;
           letter-spacing: -0.8px;
@@ -787,7 +787,7 @@ export default function PaiementsPage() {
 
         .payment-stat-card > strong {
           display: block;
-          color: #172033;
+          color: #321e28;
           font-size: clamp(19px, 2vw, 25px);
           font-weight: 750;
           letter-spacing: -0.5px;
@@ -847,7 +847,7 @@ export default function PaiementsPage() {
         }
 
         .payments-summary-card strong {
-          color: #172033;
+          color: #321e28;
           font-size: 19px;
           font-weight: 750;
         }
@@ -875,7 +875,7 @@ export default function PaiementsPage() {
 
         .payments-section-title h2 {
           margin: 0;
-          color: #172033;
+          color: #321e28;
           font-size: 17px;
           font-weight: 750;
         }
@@ -1036,7 +1036,7 @@ export default function PaiementsPage() {
 
         .payment-student strong {
           display: block;
-          color: #273348;
+          color: #4e2939;
           font-size: 12px;
           font-weight: 700;
           margin-bottom: 4px;
@@ -1198,7 +1198,7 @@ export default function PaiementsPage() {
         }
 
         .payments-empty strong {
-          color: #273348;
+          color: #4e2939;
           font-size: 14px;
         }
 

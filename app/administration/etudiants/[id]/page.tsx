@@ -2,7 +2,8 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { useParams } from 'next/navigation'
+import { useParams, useRouter } from 'next/navigation'
+import {useAdmin,translate} from '../../admin-context'
 import Link from 'next/link'
 import { supabase } from '@/lib/supabase'
 import {
@@ -48,6 +49,10 @@ type Tache = {
   completed: boolean
 }
 export default function FicheEtudiantPage() {
+  const {owner,language}=useAdmin()
+  const t=(fr:string,de:string,ar:string)=>translate(language,fr,de,ar)
+  const router=useRouter()
+  const [deleting,setDeleting]=useState(false),[deleteError,setDeleteError]=useState('')
   const params = useParams()
   const id = params.id as string
 
@@ -187,6 +192,14 @@ async function enregistrerTelephone() {
   setEnregistrement(false)
 }
 
+  async function deleteStudent(){
+    if(!owner||deleting||!etudiant||etudiant.role!=='student')return
+    const confirmation=window.prompt(t('Supprimer définitivement ce compte et son historique d’apprentissage ? Les historiques financiers sont protégés. Saisissez SUPPRIMER pour confirmer.','Dieses Konto und den Lernverlauf endgültig löschen? Finanzdaten sind geschützt. Geben Sie SUPPRIMER zur Bestätigung ein.','هل تريد حذف الحساب وسجل التعلم نهائياً؟ السجلات المالية محمية. اكتب SUPPRIMER للتأكيد.'))
+    if(confirmation!=='SUPPRIMER')return
+    setDeleting(true);setDeleteError('')
+    try{const {error}=await supabase.rpc('admin_delete_student',{p_target_id:id});if(error)throw error;setEtudiant(null);router.replace('/administration/etudiants')}
+    catch(e){setDeleteError((e as {message?:string})?.message||t('Suppression refusée.','Löschung verweigert.','تم رفض الحذف.'))}finally{setDeleting(false)}
+  }
   useEffect(() => {
     if (id) chargerEtudiant()
   }, [id])
@@ -415,7 +428,7 @@ async function enregistrerTelephone() {
 
         <button
           type="button"
-          onClick={() => setModifierTelephone(true)}
+          data-admin-permission="edit_students" onClick={() => setModifierTelephone(true)}
           style={{
             border: 'none',
             background: 'transparent',
@@ -452,7 +465,7 @@ async function enregistrerTelephone() {
         }}>
           <button
             type="button"
-            onClick={enregistrerTelephone}
+            data-admin-permission="edit_students" onClick={enregistrerTelephone}
             disabled={enregistrement}
             className="refresh-button"
           >
@@ -483,7 +496,7 @@ async function enregistrerTelephone() {
               
 
               
-<section className="admin-section">
+<section className="admin-section" data-admin-permission="finance">
   <div className="admin-section-heading">
     <div>
       <h2>Paiements</h2>
@@ -537,7 +550,7 @@ async function enregistrerTelephone() {
 </section>
 
 
-              <section className="admin-section">
+              <section className="admin-section" data-admin-permission="tasks">
   <div className="admin-section-heading">
     <div>
       <h2>Rappels</h2>
@@ -629,6 +642,7 @@ color: '#b91c1c',
     </div>
   )}
 </section>
+              {owner&&<section className="admin-delete-student-detail"><h2>{t('Suppression du compte','Konto löschen','حذف الحساب')}</h2><p>{t('Action irréversible, réservée au propriétaire. Les historiques financiers sont protégés.','Unwiderruflich, nur für den Eigentümer. Finanzdaten sind geschützt.','إجراء لا رجعة فيه، خاص بالمالك. السجلات المالية محمية.')}</p>{deleteError&&<p role="alert">{deleteError}</p>}<button type="button" disabled={deleting} onClick={()=>void deleteStudent()}>{t('Supprimer le compte','Konto löschen','حذف الحساب')}</button></section>}
               </>
          ) : null}
         </div>

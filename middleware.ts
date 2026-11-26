@@ -1,6 +1,7 @@
 
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
+import { allowedPath, parseAccess } from "./lib/adminAccess";
 
 export async function middleware(request: NextRequest) {
   let response = NextResponse.next({
@@ -95,6 +96,15 @@ export async function middleware(request: NextRequest) {
   if (profileError) {
     console.error("Erreur récupération profil :", profileError.message);
     return temporaryError();
+  }
+
+  if (profile?.role === "admin") {
+    const {data,error}=await supabase.rpc("admin_my_access");
+    if(error) return temporaryError();
+    const access=parseAccess(data);
+    if(!access) return redirectWithCookies(new URL("/connexion",request.url));
+    if(pathname.startsWith("/administration")&&!allowedPath(access,pathname)) return redirectWithCookies(new URL("/administration",request.url));
+    if(pathname.startsWith("/espace-etudiant")&&!access.owner) return redirectWithCookies(new URL("/administration",request.url));
   }
 
   // Protection de l'administration

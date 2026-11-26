@@ -3,6 +3,7 @@
 
 import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
+import AdminDashboardBanner from './AdminDashboardBanner'
 import { supabase } from '@/lib/supabase'
 import {
   GraduationCap,
@@ -29,8 +30,6 @@ import {
 
 type DashboardStats = {
   etudiants: number | null
-  chapitres: number | null
-  exercices: number | null
   paiements: number | null
 }
 
@@ -50,13 +49,6 @@ const raccourcis = [
     icon: Users,
     href: '/administration/etudiants',
     color: 'blue',
-  },
-  {
-    titre: 'Gestion des cours',
-    description: 'Gérer les chapitres, les leçons et les Übungen.',
-    icon: BookOpen,
-    href: '/administration/cours',
-    color: 'purple',
   },
   {
     titre: 'Gestion des paiements',
@@ -166,8 +158,6 @@ export default function AdministrationPage() {
 
   const [stats, setStats] = useState<DashboardStats>({
     etudiants: null,
-    chapitres: null,
-    exercices: null,
     paiements: null,
   })
 
@@ -185,20 +175,12 @@ export default function AdministrationPage() {
     setChargement(true)
     setErreur('')
 
-    const [etudiants, chapitres, exercices, paiements] =
+    const [etudiants, paiements] =
       await Promise.all([
         supabase
           .from('profiles')
           .select('id', { count: 'exact', head: true })
           .eq('role', 'student'),
-
-        supabase
-          .from('grammar_chapters')
-          .select('id', { count: 'exact', head: true }),
-
-        supabase
-          .from('grammar_exercises')
-          .select('id', { count: 'exact', head: true }),
 
         supabase
           .from('pro_payments')
@@ -208,15 +190,11 @@ export default function AdministrationPage() {
 
     setStats({
       etudiants: etudiants.error ? null : etudiants.count ?? 0,
-      chapitres: chapitres.error ? null : chapitres.count ?? 0,
-      exercices: exercices.error ? null : exercices.count ?? 0,
       paiements: paiements.error ? null : paiements.count ?? 0,
     })
 
     const errors = [
       etudiants.error,
-      chapitres.error,
-      exercices.error,
       paiements.error,
     ].filter(Boolean)
 
@@ -497,52 +475,10 @@ export default function AdministrationPage() {
         </header>
 
         <div className="admin-content dashboard-content">
-          <section className="dashboard-heading">
-            <div>
-              <div className="admin-eyebrow">
-                ESPACE DE GESTION
-              </div>
-              <h1>Tableau de bord</h1>
-              <p>
-                Bienvenue dans votre espace d'administration Deutsch Erfolg.
-                Gérez votre plateforme depuis un seul endroit.
-              </p>
-            </div>
-
-            <button
-              className="dashboard-refresh"
-              onClick={() => {
-                chargerStats()
-                chargerPresence()
-              }}
-              disabled={chargement}
-            >
-              <RefreshCw
-                size={16}
-                className={chargement ? 'dashboard-spinning' : ''}
-              />
-              Actualiser
-            </button>
-          </section>
-
-          <section className="dashboard-welcome">
-            <div className="dashboard-welcome-content">
-              <span>DEUTSCH ERFOLG · ADMINISTRATION</span>
-              <h2>Votre plateforme, en un seul endroit.</h2>
-              <p>
-                Pilotez les cours, accompagnez vos étudiants et
-                suivez l'activité de votre plateforme TELC B1 & B2.
-              </p>
-              <Link href="/administration/cours">
-                Gérer les cours
-                <ArrowUpRight size={17} />
-              </Link>
-            </div>
-
-            <div className="dashboard-welcome-decoration">
-              <GraduationCap size={92} strokeWidth={1.1} />
-            </div>
-          </section>
+          <AdminDashboardBanner busy={chargement} onRefresh={() => {
+            void chargerStats()
+            void chargerPresence()
+          }} />
 
           {erreur && (
             <div className="dashboard-error">
@@ -580,37 +516,7 @@ export default function AdministrationPage() {
                 </small>
               </article>
 
-              <article className="dashboard-stat-card">
-                <div className="dashboard-stat-top">
-                  <div className="dashboard-stat-icon blue">
-                    <BookOpen size={21} />
-                  </div>
-                  <span className="dashboard-stat-label">
-                    CHAPITRES
-                  </span>
-                </div>
-                <strong>{afficherNombre(stats.chapitres)}</strong>
-                <small>
-                  <BookOpen size={14} />
-                  Contenus pédagogiques
-                </small>
-              </article>
 
-              <article className="dashboard-stat-card">
-                <div className="dashboard-stat-top">
-                  <div className="dashboard-stat-icon orange">
-                    <FileText size={21} />
-                  </div>
-                  <span className="dashboard-stat-label">
-                    EXERCICES
-                  </span>
-                </div>
-                <strong>{afficherNombre(stats.exercices)}</strong>
-                <small>
-                  <CheckCircle2 size={14} />
-                  Questions enregistrées
-                </small>
-              </article>
 
               <article className="dashboard-stat-card">
                 <div className="dashboard-stat-top">
@@ -891,13 +797,6 @@ export default function AdministrationPage() {
                 <ArrowUpRight size={16} />
               </Link>
 
-              <Link href="/administration/cours">
-                <span className="quick-link-icon">
-                  <BookOpen size={17} />
-                </span>
-                <span>Gérer les cours</span>
-                <ArrowUpRight size={16} />
-              </Link>
 
               <Link href="/administration/paiements">
                 <span className="quick-link-icon">
@@ -930,7 +829,7 @@ export default function AdministrationPage() {
 
       <style jsx global>{`
         .dashboard-content {
-          background: #f7f8fc;
+          background: #f8f4f5;
           min-height: calc(100vh - 70px);
         }
 
@@ -944,7 +843,7 @@ export default function AdministrationPage() {
 
         .dashboard-heading h1 {
           margin: 8px 0 7px;
-          color: #172033;
+          color: #321e28;
           font-size: 28px;
           font-weight: 750;
           letter-spacing: -0.8px;
@@ -996,7 +895,7 @@ export default function AdministrationPage() {
           padding: 28px 34px;
           margin-bottom: 28px;
           border-radius: 17px;
-          background: linear-gradient(115deg, #172b4d 0%, #243e68 65%, #344d76 100%);
+          background: linear-gradient(115deg, #391021 0%, #542039 65%, #344d76 100%);
           color: white;
         }
 
@@ -1036,7 +935,7 @@ export default function AdministrationPage() {
           padding: 10px 14px;
           border-radius: 8px;
           background: #d6b56d;
-          color: #172b4d;
+          color: #391021;
           text-decoration: none;
           font-size: 11px;
           font-weight: 750;
@@ -1090,7 +989,7 @@ export default function AdministrationPage() {
         .dashboard-section-heading h2,
         .dashboard-panel-heading h2 {
           margin: 0;
-          color: #172033;
+          color: #321e28;
           font-size: 17px;
           font-weight: 750;
         }
@@ -1179,7 +1078,7 @@ export default function AdministrationPage() {
 
         .dashboard-stat-card > strong {
           display: block;
-          color: #172033;
+          color: #321e28;
           font-size: 27px;
           font-weight: 800;
           letter-spacing: -0.7px;
@@ -1266,7 +1165,7 @@ export default function AdministrationPage() {
 
         .dashboard-tool-text h3 {
           margin: 0 0 5px;
-          color: #273348;
+          color: #4e2939;
           font-size: 12px;
           font-weight: 750;
         }
@@ -1350,7 +1249,7 @@ export default function AdministrationPage() {
 
         .presence-stat strong {
           display: block;
-          color: #172033;
+          color: #321e28;
           font-size: 22px;
           font-weight: 800;
         }
@@ -1380,7 +1279,7 @@ export default function AdministrationPage() {
 
         .presence-list-heading h3 {
           margin: 0;
-          color: #273348;
+          color: #4e2939;
           font-size: 13px;
           font-weight: 750;
         }

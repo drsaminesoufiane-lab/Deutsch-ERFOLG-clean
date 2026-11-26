@@ -769,7 +769,7 @@ export default function TachesPage() {
 
       <style jsx global>{`
         .task-page {
-          background: #f6f8fc;
+          background: #f8f4f5;
         }
 
         .task-topbar-title {
@@ -792,7 +792,7 @@ export default function TachesPage() {
           margin-bottom: 24px;
           border-radius: 20px;
           color: white;
-          background: linear-gradient(115deg, #172b4d 0%, #233e67 65%, #31527b 100%);
+          background: linear-gradient(115deg, #391021 0%, #542039 65%, #642a43 100%);
           box-shadow: 0 12px 30px rgba(23, 43, 77, 0.12);
         }
 
@@ -860,7 +860,7 @@ export default function TachesPage() {
           display: flex;
           align-items: center;
           gap: 7px;
-          color: #edf2f8;
+          color: #f7eef1;
           font-size: 12px;
           font-weight: 600;
         }
@@ -892,7 +892,7 @@ export default function TachesPage() {
           min-width: 29px;
           height: 29px;
           padding: 0 7px;
-          border: 3px solid #233e67;
+          border: 3px solid #542039;
           border-radius: 30px;
           color: white;
           background: #dc5555;
@@ -913,7 +913,7 @@ export default function TachesPage() {
           gap: 15px;
           min-width: 0;
           padding: 21px 18px;
-          border: 1px solid #e8edf4;
+          border: 1px solid #e9dfe3;
           border-radius: 15px;
           background: white;
           box-shadow: 0 3px 12px rgba(23,43,77,0.025);
@@ -947,7 +947,7 @@ export default function TachesPage() {
 
         .task-stat-card strong {
           margin: 3px 0;
-          color: #172b4d;
+          color: #391021;
           font-size: 26px;
           line-height: 1.2;
           font-weight: 800;
@@ -969,7 +969,7 @@ export default function TachesPage() {
         .task-list-panel {
           min-width: 0;
           padding: 25px;
-          border: 1px solid #e8edf4;
+          border: 1px solid #e9dfe3;
           border-radius: 17px;
           background: white;
           box-shadow: 0 4px 16px rgba(23,43,77,0.025);
@@ -991,13 +991,13 @@ export default function TachesPage() {
           height: 42px;
           border-radius: 12px;
           color: white;
-          background: #172b4d;
+          background: #391021;
         }
 
         .task-panel-heading h2,
         .task-list-heading h2 {
           margin: 0 0 5px;
-          color: #172b4d;
+          color: #391021;
           font-size: 17px;
           font-weight: 800;
         }
@@ -1040,7 +1040,7 @@ export default function TachesPage() {
           border: 1px solid #e1e6ee;
           border-radius: 10px;
           outline: none;
-          color: #172b4d;
+          color: #391021;
           background: #fbfcfe;
           font-family: inherit;
           font-size: 12px;
@@ -1090,7 +1090,7 @@ export default function TachesPage() {
           padding: 12px 0;
           border: none;
           outline: none;
-          color: #172b4d;
+          color: #391021;
           background: transparent;
           font-family: inherit;
           font-size: 12px;
@@ -1123,13 +1123,13 @@ export default function TachesPage() {
           border: 0;
           border-bottom: 1px solid #f0f2f6;
           text-align: left;
-          color: #172b4d;
+          color: #391021;
           background: white;
           cursor: pointer;
         }
 
         .task-student-results button:hover {
-          background: #f5f7fb;
+          background: #f8f4f5;
         }
 
         .task-student-results button > span:nth-child(2) {
@@ -1212,7 +1212,7 @@ export default function TachesPage() {
           border: 0;
           border-radius: 10px;
           color: white;
-          background: #172b4d;
+          background: #391021;
           font-family: inherit;
           font-size: 12px;
           font-weight: 700;
@@ -1295,9 +1295,9 @@ export default function TachesPage() {
         }
 
         .task-filter-tabs button.selected {
-          border-color: #172b4d;
+          border-color: #391021;
           color: white;
-          background: #172b4d;
+          background: #391021;
         }
 
         .task-filter-tabs button span {
@@ -1313,7 +1313,7 @@ export default function TachesPage() {
         }
 
         .task-filter-tabs button.selected span {
-          color: #172b4d;
+          color: #391021;
           background: #e4c783;
         }
 
@@ -1377,7 +1377,7 @@ export default function TachesPage() {
 
         .task-item-title-row h3 {
           margin: 0;
-          color: #172b4d;
+          color: #391021;
           font-size: 13px;
           font-weight: 800;
           overflow-wrap: anywhere;

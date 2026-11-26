@@ -1001,7 +1001,7 @@ export default function StatistiquesPage() {
           font-size: 29px;
           letter-spacing: -1px;
           margin: 7px 0;
-          color: #172033;
+          color: #321e28;
           font-weight: 750;
         }
 
@@ -1144,7 +1144,7 @@ export default function StatistiquesPage() {
 
         .stats-kpi-card > strong {
           display: block;
-          color: #172033;
+          color: #321e28;
           font-size: 27px;
           font-weight: 750;
           letter-spacing: -0.8px;
@@ -1251,7 +1251,7 @@ export default function StatistiquesPage() {
 
         .stats-legend strong {
           margin-left: auto;
-          color: #263247;
+          color: #4e2939;
           font-size: 13px;
         }
 
@@ -1382,7 +1382,7 @@ export default function StatistiquesPage() {
         .stats-activity-item > b {
           margin-left: auto;
           font-size: 17px;
-          color: #263247;
+          color: #4e2939;
         }
 
         .stats-financial-list {
@@ -1405,7 +1405,7 @@ export default function StatistiquesPage() {
         }
 
         .stats-financial-list strong {
-          color: #263247;
+          color: #4e2939;
           font-size: 13px;
           white-space: nowrap;
         }
@@ -1470,7 +1470,7 @@ export default function StatistiquesPage() {
           align-items: center;
           gap: 10px;
           font-weight: 650;
-          color: #263247;
+          color: #4e2939;
         }
 
         .stats-mobile-icon {
