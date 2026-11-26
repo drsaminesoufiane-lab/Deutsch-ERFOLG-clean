@@ -204,14 +204,7 @@ export default function StudentSidebar({ isAdmin = false }: { isAdmin?: boolean 
               <span>{administrationText}</span>
             </Link>
           )}
-          <div className="sidebar-help">
-            <div className="help-icon">
-              <GraduationCap size={23} />
-            </div>
-
-            <strong>{t.sidebar.helpTitle}</strong>
-            <p>{t.sidebar.helpDescription}</p>
-          </div>
+          
 
           <button
             className="logout-button"
