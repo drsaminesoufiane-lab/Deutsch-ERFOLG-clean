@@ -33,6 +33,11 @@ export async function POST(request: Request) {
 
     const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY
 
+    console.log('[GRAMMAR CONFIG]', {
+      url: !!supabaseUrl,
+      publishable: !!supabaseKey,
+      service: !!serviceKey
+    })
     if (!supabaseUrl || !supabaseKey || !serviceKey) {
       return jsonError('Configuration Supabase manquante sur le serveur.', 500)
     }
