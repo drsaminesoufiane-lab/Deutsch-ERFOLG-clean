@@ -23,6 +23,7 @@ type Plan = {
   id: string
   duration: number
   price: number
+  originalPrice?: number
   popular?: boolean
 }
 
@@ -508,6 +509,13 @@ export default function ProPage() {
   }, [language])
 
   const t = translations[language]
+  const priceLabels = {
+    fr: { monthly: 'Au tarif mensuel', original: 'Ancien prix', saving: 'Économie' },
+    de: { monthly: 'Zum Monatstarif', original: 'Früherer Preis', saving: 'Ersparnis' },
+    en: { monthly: 'At the monthly rate', original: 'Previous price', saving: 'Savings' },
+    ar: { monthly: 'حسب السعر الشهري', original: 'السعر السابق', saving: 'التوفير' },
+  }[language]
+  const monthlyPrice = plans.find(plan => plan.duration === 1)?.price ?? 59
 
   const selected = plans.find(
     (plan) => plan.id === selectedPlan
@@ -699,6 +707,8 @@ export default function ProPage() {
               <div className="pro-plans">
                 {plans.map((plan) => {
                   const active = selectedPlan === plan.id
+                  const referencePrice = plan.originalPrice ?? monthlyPrice * plan.duration
+                  const saving = referencePrice - plan.price
 
                   const planName =
                     plan.duration === 1
@@ -719,6 +729,7 @@ export default function ProPage() {
                       type="button"
                       key={plan.id}
                       onClick={() => setSelectedPlan(plan.id)}
+                      aria-pressed={active}
                       className={`pro-plan ${active ? 'selected' : ''} ${
                         plan.popular ? 'popular' : ''
                       }`}
@@ -733,11 +744,20 @@ export default function ProPage() {
                         {planName}
                       </span>
 
-                      <span className="pro-plan-price">
+                      <span className="pro-reference" >
+                        {saving > 0 && <>
+                          <s dir="ltr">{referencePrice} DH</s>
+                          <span>{plan.originalPrice ? priceLabels.original : priceLabels.monthly}</span>
+                        </>}
+                      </span>
+                      <span className="pro-plan-price" dir="ltr">
                         {plan.price}
                         <small> DH</small>
                       </span>
 
+                      {saving > 0 && <span className="pro-saving">
+                        {priceLabels.saving} : <bdi>{saving} DH</bdi>
+                      </span>}
                       <span className="pro-plan-description">
                         {description}
                       </span>
@@ -1499,6 +1519,80 @@ export default function ProPage() {
         [dir="rtl"] .pro-payment-note {
           text-align: right;
         }
+
+        /* DE_PRO_PREMIUM_V1 */
+        .pro-page {
+          --p-navy: var(--de-navy, #192b43);
+          --p-gold: var(--de-gold, #b49760);
+          --p-gold-text: var(--de-gold-text, #806337);
+          --p-ivory: var(--de-ivory, #f7f5f0);
+          --p-border: var(--de-border, #e3ded3);
+          --p-muted: var(--de-muted, #626a75);
+          --p-tint: var(--de-tint, #f1ece2);
+          background: var(--p-ivory); color: var(--p-navy);
+          font-family: var(--de-sans, 'Plus Jakarta Sans', Arial, sans-serif);
+          padding: 28px clamp(16px, 3vw, 36px) 48px;
+          box-sizing: border-box;
+        }
+        .pro-page *, .pro-page *::before, .pro-page *::after { box-sizing: border-box; }
+        .pro-page .pro-container { max-width: 1120px; }
+        .pro-page .pro-back { color: var(--p-muted); margin-bottom: 18px; }
+        .pro-page .pro-back:hover { color: var(--p-gold-text); }
+        .pro-page .pro-hero { background: var(--p-navy); border-radius: 12px; padding: clamp(24px, 4vw, 42px); box-shadow: none; }
+        .pro-page .pro-hero::after { display: none; }
+        .pro-page .pro-hero h1 { font-family: var(--de-serif, Georgia, serif); font-weight: 400; font-size: clamp(29px, 3.5vw, 43px); letter-spacing: -.5px; line-height: 1.2; color: white; }
+        .pro-page .pro-hero h1 span, .pro-page .pro-eyebrow, .pro-page .pro-hero-points svg, .pro-page .pro-hero-icon { color: #e3cb96; }
+        .pro-page .pro-hero-icon { width: 112px; height: 112px; border: 1px solid #b49760; background: transparent; border-radius: 10px; }
+        .pro-page .pro-hero-icon svg { width: 48px; height: 48px; }
+        .pro-page .pro-hero-icon span { font-weight: 600; letter-spacing: 2px; }
+        .pro-page .pro-hero-content > p { font-size: 14px; margin: 14px 0 18px; }
+        .pro-page .pro-label { color: var(--p-gold-text); letter-spacing: 1.1px; font-weight: 700; }
+        .pro-page .pro-status, .pro-page .pro-benefit, .pro-page .pro-contact-box, .pro-page .pro-current-subscription, .pro-page .pro-loading, .pro-page .pro-error { border: 1px solid var(--p-border); border-radius: 10px; box-shadow: none; }
+        .pro-page .pro-status-icon { color: var(--p-gold-text); background: var(--p-tint); border-radius: 9px; }
+        .pro-page .pro-status h2, .pro-page .pro-benefit strong, .pro-page .pro-contact-heading h2, .pro-page .pro-order-summary strong { color: var(--p-navy); }
+        .pro-page .pro-status p, .pro-page .pro-days span, .pro-page .pro-section-heading p, .pro-page .pro-benefit span, .pro-page .pro-contact-heading p, .pro-page .pro-payment-note, .pro-page .pro-current-subscription p { color: var(--p-muted); }
+        .pro-page .pro-days { border-color: var(--p-border); }
+        .pro-page .pro-days strong, .pro-page .pro-benefit svg, .pro-page .pro-payment-note svg, .pro-page .pro-footer svg { color: var(--p-gold-text); }
+        .pro-page .pro-benefits, .pro-page .pro-pricing { margin-top: 36px; }
+        .pro-page .pro-section-heading { text-align: start; margin-bottom: 20px; }
+        .pro-page .pro-section-heading h2, .pro-page .pro-contact-heading h2 { font-family: var(--de-serif, Georgia, serif); font-weight: 400; color: var(--p-navy); letter-spacing: 0; }
+        .pro-page .pro-benefit-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 155px), 1fr)); gap: 12px; }
+        .pro-page .pro-benefit { padding: 18px 16px; }
+        .pro-page .pro-plans { grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); gap: 16px; }
+        .pro-page .pro-plan { border: 1px solid var(--p-border); border-radius: 10px; padding: 26px 20px 20px; min-height: 238px; transition: border-color .18s, box-shadow .18s; color: var(--p-navy); font: inherit; }
+        .pro-page .pro-plan.popular { border-color: var(--p-border); }
+        .pro-page .pro-plan:hover { transform: none; border-color: var(--p-gold); }
+        .pro-page .pro-plan.selected { border-color: var(--p-gold-text); box-shadow: inset 0 0 0 1px var(--p-gold-text); }
+        .pro-page .pro-popular { background: var(--p-navy); color: white; border-radius: 4px; letter-spacing: .4px; font-weight: 600; }
+        .pro-page .pro-plan-name { color: var(--p-muted); font-size: 14px; }
+        .pro-page .pro-reference { display: flex; flex-direction: column; align-items: flex-start; gap: 3px; min-height: 44px; margin-top: 12px; color: var(--p-muted); font-size: 11px; line-height: 1.4; }
+        .pro-page .pro-reference s { font-size: 15px; text-decoration-thickness: 1px; font-weight: 500; }
+        .pro-page .pro-plan-price { color: var(--p-navy); font-family: var(--de-serif, Georgia, serif); font-size: clamp(32px, 3.6vw, 43px); font-weight: 400; letter-spacing: -.5px; margin: 4px 0 10px; line-height: 1.15; }
+        .pro-page .pro-plan-price small { font-family: var(--de-sans, Arial, sans-serif); font-size: 13px; font-weight: 600; }
+        .pro-page .pro-saving { display: block; margin-bottom: 12px; font-size: 12px; color: var(--p-gold-text); font-weight: 700; }
+        .pro-page .pro-plan-description { color: var(--p-muted); font-size: 13px; line-height: 1.5; flex: 1; }
+        .pro-page .pro-plan-selection { align-self: stretch; justify-content: center; text-align: center; background: var(--p-tint); color: var(--p-navy); border-radius: 7px; padding: 12px 8px; margin-top: 18px; font-weight: 700; }
+        .pro-page .pro-plan.selected .pro-plan-selection { background: var(--p-navy); color: white; }
+        .pro-page .pro-contact-box { padding: clamp(18px, 3vw, 28px); }
+        .pro-page .pro-order-summary { background: var(--p-ivory); border: 1px solid var(--p-border); border-radius: 8px; }
+        .pro-page .pro-order-summary span { color: var(--p-muted); }
+        .pro-page .pro-order-summary .pro-order-price { color: var(--p-navy); }
+        .pro-page .pro-whatsapp-button { border-radius: 8px; background: #137a4c; }
+        .pro-page .pro-current-subscription { background: var(--p-tint); color: var(--p-gold-text); }
+        .pro-page .pro-footer { color: var(--p-muted); }
+        .pro-page :is(button, a):focus-visible { outline: 2px solid var(--p-gold-text); outline-offset: 3px; }
+        .pro-page[dir="rtl"] .pro-back svg { transform: scaleX(-1); }
+        .pro-page[dir="rtl"] .pro-hero h1, .pro-page[dir="rtl"] .pro-section-heading h2, .pro-page[dir="rtl"] .pro-contact-heading h2 { font-family: 'Tajawal', Arial, sans-serif; }
+        @media (max-width: 700px) {
+          .pro-page .pro-hero-icon { display: none; }
+          .pro-page .pro-status { flex-wrap: wrap; }
+          .pro-page .pro-days { margin-inline-start: auto; }
+          .pro-page .pro-plans { grid-template-columns: 1fr; }
+          .pro-page .pro-plan { min-height: 0; }
+          .pro-page .pro-reference:empty { min-height: 0; margin-top: 0; }
+        }
+        @media (prefers-reduced-motion: reduce) { .pro-page *, .pro-page *::before, .pro-page *::after { transition: none !important; } }
+
       `}</style>
     </main>
   )
