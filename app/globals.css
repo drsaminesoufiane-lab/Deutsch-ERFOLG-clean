@@ -2008,3 +2008,149 @@ html[dir="rtl"] body h5,
 html[dir="rtl"] body h6 {
   font-family: 'Cairo', sans-serif;
 }
+
+
+/* ===== DEUTSCH-ERFOLG / DESIGN SYSTEM V1 — BEGIN ===== */
+:root {
+  --de-navy: #192b43;
+  --de-navy-hover: #30465f;
+  --de-gold: #b49760;
+  --de-gold-text: #806337;
+  --de-gold-light: #e3cb96;
+  --de-ivory: #f7f5f0;
+  --de-white: #ffffff;
+  --de-border: #e3ded3;
+  --de-muted: #626a75;
+  --de-tint: #f1ece2;
+  --de-radius: 10px;
+  --de-shadow: 0 3px 12px rgba(25,43,67,.045);
+  --de-sans: 'Plus Jakarta Sans', Arial, sans-serif;
+  --de-serif: Georgia, 'Times New Roman', serif;
+  --ink: var(--de-navy);
+  --blue: var(--de-navy);
+  --gold: var(--de-gold);
+  --muted: var(--de-muted);
+  --line: var(--de-border);
+  --paper: var(--de-white);
+  --soft: var(--de-ivory);
+}
+body { background: var(--de-ivory); color: var(--de-navy); }
+
+/* Editorial headings only; keep lesson and exercise typography untouched. */
+html:not([dir="rtl"]) body :is(.hero h1, .section-heading h2, .cta h2, .dash-title h2,
+.login-visual-content h1, .login-form-heading h2, .register-visual-content h1,
+.register-heading h2, .student-hero h1, .admin-heading h1) {
+  font-family: var(--de-serif);
+  font-weight: 400;
+  letter-spacing: -.035em;
+  line-height: 1.16;
+}
+html:not([dir="rtl"]) body :is(.level-card h3, .admin-stat-value, .student-overview-card strong) {
+  font-family: var(--de-serif);
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+/* Preserve Arabic headings and avoid exaggerated tracking in RTL. */
+html[dir="rtl"] body :is(.hero h1,.section-heading h2,.cta h2,.login-kicker,.login-form-eyebrow,
+.register-eyebrow,.register-tag,.admin-eyebrow,.student-eyebrow,.eyebrow) { letter-spacing: 0; }
+
+/* Shared navigation and public sections */
+.nav, .dash-nav { background: var(--de-white); border-color: var(--de-border); box-shadow: none; }
+.brand-mark { background: var(--de-navy) !important; color: var(--de-gold-light) !important; border-radius: 9px; }
+.brand-mark svg { stroke: var(--de-gold-light) !important; }
+.nav nav a:hover, footer a:hover { color: var(--de-gold-text); }
+.hero { background: var(--de-ivory); }
+.hero h1 { color: var(--de-navy); }
+.hero h1 span { color: var(--de-gold-text); }
+.hero .eyebrow, .section-heading .eyebrow { color: var(--de-gold-text); }
+.skills-section, .dashboard-shell { background: var(--de-ivory); }
+.level-card, .skill-card, .quick-grid article, .admin-card {
+  background: var(--de-white); border: 1px solid var(--de-border);
+  border-radius: var(--de-radius); box-shadow: var(--de-shadow);
+}
+.level-card:hover, .skill-card:hover, .admin-action-card:hover {
+  transform: none; border-color: var(--de-gold); box-shadow: var(--de-shadow);
+}
+.level-card.dark, .cta { background: var(--de-navy); color: var(--de-white); border-color: var(--de-navy); }
+.cta { border-radius: var(--de-radius); box-shadow: none; }
+.cta .eyebrow, .dark .level-label { color: var(--de-gold-light); }
+.skill-card .skill-icon, .skill-card .skill-icon.blue, .skill-card .skill-icon.green,
+.skill-card .skill-icon.orange, .skill-card .skill-icon.purple {
+  background: var(--de-tint) !important; color: var(--de-gold-text) !important;
+  border: 1px solid var(--de-border); border-radius: 9px; box-shadow: none;
+}
+.skill-card .skill-icon svg { color: var(--de-gold-text) !important; stroke: var(--de-gold-text) !important; }
+footer { border-color: var(--de-border); }
+
+/* Buttons: preserve disabled states and secondary variants. */
+.button, .login-submit, .register-submit {
+  background: var(--de-navy); color: var(--de-white); border: 1px solid var(--de-navy);
+  border-radius: 8px; box-shadow: none;
+  transition: background .18s ease, border-color .18s ease, color .18s ease;
+}
+.button:hover:not(.disabled):not(:disabled), .login-submit:hover:not(:disabled), .register-submit:hover:not(:disabled) {
+  background: var(--de-navy-hover); color: var(--de-white); border-color: var(--de-navy-hover);
+  transform: none; box-shadow: none;
+}
+.button.light { background: var(--de-white); color: var(--de-navy); border-color: var(--de-border); }
+.button.light:hover:not(.disabled):not(:disabled) { background: var(--de-tint); color: var(--de-navy); border-color: var(--de-gold); }
+.button.disabled, .button:disabled { background: #eeeae4; color: #77766f; border-color: var(--de-border); box-shadow: none; }
+.button:focus-visible, .login-submit:focus-visible, .register-submit:focus-visible,
+.language-switcher-trigger:focus-visible, .language-switcher-option:focus-visible,
+.admin-menu-link:focus-visible { outline: 2px solid var(--de-gold-text); outline-offset: 3px; }
+
+/* Login and registration */
+.login-page, .register-page { background: var(--de-white); color: var(--de-navy); }
+.login-visual, .register-visual { background: var(--de-navy); }
+.login-visual-content h1 span, .login-kicker, .register-eyebrow { color: var(--de-gold-light); }
+.login-form-side, .register-form-side { background: var(--de-ivory); }
+.login-form-heading h2, .register-heading h2 { color: var(--de-navy); }
+.login-form-heading p, .register-heading p, .login-register, .register-login { color: var(--de-muted); }
+.login-form-eyebrow, .register-tag, .login-register a { color: var(--de-gold-text); }
+.login-input-wrap, .register-form input, .register-form select {
+  background: var(--de-white); border-color: var(--de-border); color: var(--de-navy); border-radius: 8px;
+}
+.login-input-wrap:focus-within, .register-form input:focus, .register-form select:focus {
+  border-color: var(--de-gold-text); box-shadow: 0 0 0 3px rgba(180,151,96,.15);
+}
+.login-input-wrap input::placeholder, .register-form input::placeholder { color: #73777a; }
+.login-form-footer { border-color: var(--de-border); color: var(--de-muted); }
+
+/* Admin dashboard and student record (existing shared classes only). */
+.admin-layout { background: var(--de-ivory); color: var(--de-navy); }
+.admin-sidebar { background: var(--de-navy); }
+.admin-brand b, .admin-mobile-brand b { color: var(--de-gold-light); }
+.admin-menu-link:hover, .admin-menu-link.active { background: #ffffff0e; color: var(--de-gold-light); }
+.admin-menu-link.active { border-left: 0; border-inline-start: 3px solid var(--de-gold); }
+.admin-topbar { border-color: var(--de-border); box-shadow: none; }
+.admin-search { background: var(--de-ivory); color: var(--de-muted); }
+.admin-heading h1, .admin-section-heading h2, .admin-stat-value, .admin-action-text h3,
+.student-hero h1, .student-panel-heading h2, .student-overview-card strong { color: var(--de-navy); }
+.admin-eyebrow, .student-eyebrow, .admin-action-arrow { color: var(--de-gold-text); }
+.admin-heading p, .admin-section-heading p, .admin-stat-top, .admin-stat-card small,
+.admin-action-text p, .student-hero p, .student-panel-heading p,
+.student-overview-card span, .student-info-item span, .student-task p { color: var(--de-muted); }
+.admin-stat-card, .admin-action-card, .student-hero, .student-panel, .student-overview-card {
+  border-color: var(--de-border); border-radius: var(--de-radius); background: var(--de-white); box-shadow: var(--de-shadow);
+}
+.admin-stat-icon, .admin-action-icon, .admin-icon, .student-overview-card .admin-stat-icon {
+  background: var(--de-tint); color: var(--de-gold-text); border-color: var(--de-border); border-radius: 8px;
+}
+.admin-date, .admin-notification { border-color: var(--de-border); border-radius: 8px; }
+.student-table th { background: var(--de-ivory); color: var(--de-muted); }
+.student-table td, .student-task, .admin-footer { border-color: var(--de-border); }
+
+/* Language selector: appearance only, keep positioning and menu behaviour. */
+.language-switcher-trigger, .language-switcher-menu { border-color: var(--de-border); border-radius: 9px; color: var(--de-navy); }
+.language-switcher-trigger { box-shadow: var(--de-shadow); }
+.language-switcher-trigger:hover { border-color: var(--de-gold); transform: none; box-shadow: var(--de-shadow); }
+.language-switcher-option { border-radius: 6px; color: var(--de-navy); }
+.language-switcher-option:hover { background: var(--de-ivory); }
+.language-switcher-option.active { background: var(--de-tint); color: var(--de-gold-text); }
+
+@media (prefers-reduced-motion: reduce) {
+  .button, .login-submit, .register-submit, .level-card, .skill-card,
+  .admin-action-card, .language-switcher-trigger, .language-switcher-option { transition: none; }
+  .language-switcher-menu { animation: none; }
+}
+/* ===== DEUTSCH-ERFOLG / DESIGN SYSTEM V1 — END ===== */

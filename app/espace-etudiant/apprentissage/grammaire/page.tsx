@@ -13,6 +13,7 @@ import {
   ChevronRight,
   Loader2,
   LibraryBig,
+  Lock,
 } from 'lucide-react'
 import type { ChapterDefinition } from '@/lib/grammar/types'
 import { supabase } from '@/lib/supabase'
@@ -166,7 +167,7 @@ export default function GrammairePage() {
               {t.header.learningSpace}
             </span>
 
-            <h2>{g.title}</h2>
+            <h2 lang="de" dir="ltr">Deutsche Grammatik</h2>
           </div>
 
           <div className="student-header-profile">
@@ -197,7 +198,7 @@ export default function GrammairePage() {
                 {g.welcomeTag}
               </span>
 
-              <h1>{g.welcomeTitle}</h1>
+              <h1 lang="de" dir="ltr">Deutsche Grammatik</h1>
 
               <p>{g.welcomeDescription}</p>
 
@@ -325,13 +326,13 @@ export default function GrammairePage() {
                   { value: 'A1', label: 'A1' },
                   { value: 'A2', label: 'A2' },
                   { value: 'B1', label: 'B1' },
-                  { value: 'B2', label: 'B2' },
                 ].map(n => (
                   <button
                     key={n.value}
                     className={`grammar-filter ${
                       niveauFiltre === n.value ? 'active' : ''
                     }`}
+                    aria-pressed={niveauFiltre === n.value}
                     onClick={() => setNiveauFiltre(n.value)}
                   >
                     {n.label}
@@ -360,52 +361,43 @@ export default function GrammairePage() {
 
             ) : filtres.length > 0 ? (
 
-              <div className="grammar-chapter-grid">
-
-                {filtres.map(chapitre => (
-
-                  <Link
-                    key={chapitre.id}
-                    id={chapitre.id}
-                    href={`/espace-etudiant/apprentissage/grammaire/${chapitre.id}`}
-                    className="grammar-chapter-card"
-                  >
-
-                    <div className="grammar-card-top">
-
-                      <div className="grammar-chapter-number">
-                        {String(chapitre.numero).padStart(2, '0')}
+              <div className="grammar-editorial-groups">
+                {Array.from(new Set(filtres.map(c => c.level))).map(level => {
+                  const items = filtres.filter(c => c.level === level)
+                  return (
+                    <section key={level} className="grammar-editorial-level">
+                      <div className="grammar-level-heading">
+                        <h3 lang="de" dir="ltr">{level}</h3>
+                        <span className="grammar-level-rule" aria-hidden="true" />
+                        <span>{items.length} {g.chapters}</span>
                       </div>
-
-                      <span className="grammar-level">
-                        {chapitre.level}{chapitre.locked ? ' · 🔒 PRO' : ''}
-                      </span>
-
-                    </div>
-
-                    <div className="grammar-card-info">
-
-                      <span className="grammar-chapter-label">
-                        {g.chapter} {String(chapitre.numero).padStart(2, '0')}
-                      </span>
-
-                      <h3 lang="de" dir="ltr">
-                        {chapitre.titre || `${g.chapter} ${chapitre.numero}`}
-                      </h3>
-
-                      <p>{chapitre.theme}</p>
-
-                    </div>
-
-                    <div className="grammar-card-footer">
-                      <span>{g.startChapter}</span>
-                      <ChevronRight size={19} />
-                    </div>
-
-                  </Link>
-
-                ))}
-
+                      <div className="grammar-chapter-grid">
+                        {items.map(chapitre => (
+                          <Link
+                            key={chapitre.id}
+                            id={chapitre.id}
+                            href={`/espace-etudiant/apprentissage/grammaire/${chapitre.id}`}
+                            className={`grammar-chapter-card${chapitre.locked ? ' grammar-chapter-locked' : ''}`}
+                          >
+                            <div className="grammar-card-top">
+                              <div className="grammar-chapter-number" aria-hidden="true">
+                                {String(chapitre.numero).padStart(2, '0')}
+                              </div>
+                            </div>
+                            <div className="grammar-card-info">
+                              <span className="grammar-chapter-label" lang="de" dir="ltr">Kapitel {String(chapitre.numero).padStart(2, '0')}</span>
+                              <h4 lang="de" dir="ltr">{chapitre.titre || `${g.chapter} ${chapitre.numero}`}</h4>
+                              <p>{chapitre.theme}</p>
+                            </div>
+                            <div className="grammar-card-footer">
+                              {chapitre.locked ? <span className="grammar-pro-mark"><Lock size={13} aria-hidden="true" /> PRO</span> : <ChevronRight size={19} aria-hidden="true" />}
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </section>
+                  )
+                })}
               </div>
 
             ) : (
@@ -1188,6 +1180,71 @@ export default function GrammairePage() {
   color: #172B4D;
   font-weight: 700;
 }
+
+        /* Deutsche Grammatik — editorial refinement v1 */
+        .grammar-layout { --ink:#192b43; --gold:#94713c; --line:#e3ded3; --paper:#f7f5f0; background:var(--paper); color:var(--ink); font-family:inherit; }
+        .grammar-layout .student-header { height:72px; border-color:var(--line); padding-inline:clamp(18px,4vw,48px); }
+        .grammar-layout .header-small { color:var(--gold); font-size:10px; letter-spacing:.12em; }
+        .grammar-layout .student-header h2 { font-size:17px; font-weight:600; color:var(--ink); }
+        .grammar-layout .profile-avatar { background:#f1eadb; color:var(--gold); }
+        .grammar-layout .student-content { max-width:1320px; padding:34px clamp(18px,4vw,48px) 24px; }
+        .grammar-layout .grammar-welcome { position:relative; isolation:isolate; min-height:0; padding:42px 44px; border-radius:12px; background:#192b43; align-items:center; gap:20px; }
+        .grammar-layout .grammar-welcome-content { max-width:760px; position:relative; z-index:1; }
+        .grammar-layout .welcome-tag { font-size:10px; letter-spacing:.16em; color:#e2c78e; }
+        .grammar-layout .welcome-tag svg { display:none; }
+        .grammar-layout .grammar-welcome h1 { color:#fffdf7; font:400 clamp(36px,5vw,60px)/1.08 Georgia, 'Times New Roman', serif; letter-spacing:-.045em; margin:15px 0; }
+        .grammar-layout .grammar-welcome p { max-width:600px; color:#d4dbe3; font-size:14px; line-height:1.8; }
+        .grammar-layout .grammar-welcome-bottom { margin-top:25px; padding-top:17px; border-top:1px solid #ffffff24; }
+        .grammar-layout .grammar-welcome-bottom span { color:#e3c892; font-size:12px; }
+        .grammar-layout .grammar-decoration { display:block; flex-shrink:0; opacity:1; padding:0; margin-inline-end:10px; color:#d4bc86; }
+        .grammar-layout .grammar-decoration svg { display:none; }
+        .grammar-layout .grammar-decoration::after { content:'A1 — B1'; display:block; direction:ltr; white-space:nowrap; font:400 clamp(22px,4vw,42px)/1 Georgia,serif; letter-spacing:-.04em; border-block:1px solid #d4bc8660; padding:21px 8px; }
+        .grammar-layout .grammar-stats { grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; margin-top:22px; border-block:1px solid var(--line); }
+        .grammar-layout .grammar-stat-card { background:transparent; border:0; border-radius:0; padding:16px 20px; min-width:0; }
+        .grammar-layout .grammar-stat-card + .grammar-stat-card { border-inline-start:1px solid var(--line); }
+        .grammar-layout .grammar-stat-icon { display:none; }
+        .grammar-layout .grammar-stat-card span { color:#6b6b68; letter-spacing:.035em; font-size:11px; line-height:1.4; }
+        .grammar-layout .grammar-stat-card strong { color:var(--ink); font:400 30px/1.15 Georgia,serif; margin:7px 0; }
+        .grammar-layout .grammar-stat-card p { color:#6f736f; font-size:11px; line-height:1.4; }
+        .grammar-layout .grammar-section { margin-top:42px; }
+        .grammar-layout .section-eyebrow { color:var(--gold); font-size:10px; letter-spacing:.13em; }
+        .grammar-layout .section-eyebrow svg { display:none; }
+        .grammar-layout .grammar-section-heading h2 { color:var(--ink); font:400 clamp(25px,3vw,35px)/1.2 Georgia,serif; margin:9px 0; }
+        .grammar-layout .grammar-section-heading p { color:#686e75; font-size:13px; line-height:1.6; }
+        .grammar-layout .grammar-count { background:transparent; border:0; padding:0 0 4px; color:#686e75; font-size:12px; font-weight:500; }
+        .grammar-layout .grammar-toolbar { gap:16px; padding:0 0 22px; border-bottom:1px solid var(--line); margin-bottom:27px; }
+        .grammar-layout .grammar-search { border-color:var(--line); border-radius:7px; height:48px; color:#777a7c; }
+        .grammar-layout .grammar-search input { font-size:14px; color:var(--ink); }
+        .grammar-layout .grammar-search input::placeholder { color:#73777a; }
+        .grammar-layout .grammar-filter { border-radius:6px; min-height:40px; min-width:45px; border-color:var(--line); color:var(--ink); font-size:12px; font-weight:600; }
+        .grammar-layout .grammar-filter.active { background:var(--ink); color:#fffdf7; border-color:var(--ink); box-shadow:none; }
+        .grammar-layout .filter-label { color:#706c65; font-size:10px; }
+        .grammar-layout .grammar-editorial-groups { display:grid; gap:35px; }
+        .grammar-layout .grammar-level-heading { display:flex; align-items:center; gap:16px; margin:0 0 13px; }
+        .grammar-layout .grammar-level-heading h3 { color:var(--ink); font:400 29px/1 Georgia,serif; margin:0; }
+        .grammar-layout .grammar-level-rule { height:1px; flex:1; background:var(--line); }
+        .grammar-layout .grammar-level-heading > span:last-child { color:#686e75; font-size:12px; white-space:nowrap; }
+        .grammar-layout .grammar-chapter-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+        .grammar-layout .grammar-chapter-card { display:grid; grid-template-columns:52px minmax(0,1fr) auto; align-items:center; gap:15px; min-height:112px; padding:16px 18px; background:#fff; border:1px solid var(--line); border-radius:8px; scroll-margin-top:95px; transition:border-color .18s,background .18s,box-shadow .18s; }
+        .grammar-layout .grammar-chapter-card:hover { transform:none; border-color:#b89d68; background:#fffdf8; box-shadow:0 4px 13px #192b4308; }
+        .grammar-layout .grammar-chapter-card:focus-visible,.grammar-layout .grammar-filter:focus-visible { outline:2px solid #94713c; outline-offset:3px; }
+        .grammar-layout .grammar-chapter-card:target { border-color:#a18450; outline:2px solid #b89d68; outline-offset:2px; background:#fdf9ef; }
+        .grammar-layout .grammar-card-top { align-self:center; }
+        .grammar-layout .grammar-chapter-number { width:52px; height:auto; min-height:46px; border-radius:0; background:transparent; color:var(--gold); font:400 30px/1 Georgia,serif; border-inline-end:1px solid var(--line); padding-inline-end:12px; font-variant-numeric:tabular-nums; }
+        .grammar-layout .grammar-card-info { margin:0; min-width:0; }
+        .grammar-layout .grammar-chapter-label { display:block; margin-bottom:5px; text-transform:uppercase; font-size:9px; color:var(--gold); letter-spacing:.1em; }
+        .grammar-layout .grammar-card-info h4 { margin:0 0 5px; font-size:16px; font-weight:600; color:var(--ink); line-height:1.35; overflow-wrap:anywhere; text-align:start; }
+        .grammar-layout[dir="rtl"] .grammar-card-info h4,.grammar-layout[dir="rtl"] .grammar-chapter-label { text-align:right; }
+        .grammar-layout .grammar-card-info p { white-space:normal; overflow:visible; color:#686e75; font-size:12px; line-height:1.55; overflow-wrap:anywhere; }
+        .grammar-layout .grammar-card-footer { margin:0; padding:0; border:0; color:var(--gold); justify-content:flex-end; }
+        .grammar-layout .grammar-pro-mark { display:inline-flex; gap:4px; align-items:center; font-size:10px; letter-spacing:.05em; color:#806b47; }
+        .grammar-layout .grammar-chapter-locked { background:#fcfbf8; }
+        .grammar-layout[dir="rtl"] .grammar-pro-mark svg { transform:none; }
+        .grammar-layout .student-footer { border-color:var(--line); color:#686e75; font-size:11px; }
+        .grammar-layout .grammar-loading,.grammar-layout .grammar-empty { border-color:var(--line); border-radius:8px; }
+        @media(max-width:1050px) { .grammar-layout .grammar-chapter-grid { grid-template-columns:1fr; } }
+        @media(max-width:700px) { .grammar-layout .student-content { padding-top:22px; } .grammar-layout .grammar-welcome { padding:29px 23px; } .grammar-layout .grammar-decoration { display:none; } .grammar-layout .grammar-stats { grid-template-columns:repeat(3,minmax(0,1fr)); } .grammar-layout .grammar-stat-card { padding:12px 9px; } .grammar-layout .grammar-stat-card strong { font-size:24px; } .grammar-layout .grammar-stat-card span,.grammar-layout .grammar-stat-card p { font-size:10px; overflow-wrap:anywhere; } .grammar-layout .grammar-section { margin-top:29px; } .grammar-layout .grammar-toolbar { gap:9px; } .grammar-layout .grammar-filter { flex:0 0 auto; } .grammar-layout .grammar-chapter-card { min-height:98px; grid-template-columns:43px minmax(0,1fr) auto; gap:11px; padding:14px 12px; } .grammar-layout .grammar-chapter-number { width:43px; font-size:25px; padding-inline-end:8px; } .grammar-layout .grammar-card-info h4 { font-size:15px; } }
+        @media(prefers-reduced-motion:reduce) { .grammar-layout .grammar-chapter-card,.grammar-layout .grammar-card-footer svg,.grammar-layout .grammar-filter { transition:none; } }
       `}</style>
     </div>
   )
