@@ -104,7 +104,7 @@ export async function middleware(request: NextRequest) {
     const access=parseAccess(data);
     if(!access) return redirectWithCookies(new URL("/connexion",request.url));
     if(pathname.startsWith("/administration")&&!allowedPath(access,pathname)) return redirectWithCookies(new URL("/administration",request.url));
-    if(pathname.startsWith("/espace-etudiant")&&!access.owner) return redirectWithCookies(new URL("/administration",request.url));
+    // DE_ADMIN_LEARNING_V1: confirmed delegated admins can access learning pages.
   }
 
   // Protection de l'administration

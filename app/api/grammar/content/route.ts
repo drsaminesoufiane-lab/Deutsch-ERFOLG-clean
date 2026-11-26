@@ -19,8 +19,15 @@ export async function GET(request: Request) {
     if (rateError) return reply({ error: 'Service temporairement indisponible.' }, 503)
     if (rateAllowed !== true) return NextResponse.json({ error: 'Trop de requêtes. Réessayez dans une minute.' }, { status: 429, headers: { 'Retry-After': '60', 'Cache-Control': 'private, no-store' } })
     const {data:profile,error:profileError} = await db.from('profiles').select('role,is_pro,pro_until').eq('id',auth.user.id).maybeSingle()
-    if (profileError || profile?.role !== 'student') return reply({error:'Accès étudiant requis.'},403)
-    const pro = profile.is_pro === true && Date.parse(profile.pro_until || '') > Date.now()
+    if (profileError || !profile || (profile.role !== 'student' && profile.role !== 'admin')) return reply({error:'Accès étudiant requis.'},403)
+    // DE_ADMIN_LEARNING_V1
+    if (profile.role === 'admin') {
+      const { data: adminLearningAccess, error: adminLearningError } = await db.rpc('admin_my_access')
+      if (adminLearningError || !adminLearningAccess || typeof adminLearningAccess.owner !== 'boolean' || !Array.isArray(adminLearningAccess.permissions)) {
+        return reply({error:'Administration access denied.'},403)
+      }
+    }
+    const pro = profile.role === 'admin' || profile.is_pro === true && Date.parse(profile.pro_until || '') > Date.now()
     const allowed = pro ? grammarChapters : grammarChapters.slice(0,5)
     const id = new URL(request.url).searchParams.get('chapterId')
     if (!id) return reply({chapters:grammarChapters.map(({id,number,level,title,subtitle})=>({id,number,level,title,subtitle,locked:!allowed.some(c=>c.id===id)}))})

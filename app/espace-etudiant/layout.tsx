@@ -443,10 +443,10 @@ export default function StudentLayout({
         <StudentSidebar isAdmin={isAdmin} />
 
         <SubscriptionContext.Provider value={subscriptionStatus}>
-          <div className={`student-global-content ${!isProPage && (subscriptionStatus === 'trial' || subscriptionStatus === 'free') ? 'de-has-offer' : ''}`}><StudentGlobalHeader />
+          <div className={`student-global-content ${!isProPage && !isAdmin && (subscriptionStatus === 'trial' || subscriptionStatus === 'free') ? 'de-has-offer' : ''}`}><StudentGlobalHeader />
           <ExerciseCelebration />
           {children}</div>
-          <FloatingPageTools showOffer={!isProPage} />
+          <FloatingPageTools showOffer={/* DE_ADMIN_LEARNING_V1 */ !isProPage && !isAdmin} />
         </SubscriptionContext.Provider>
       </div>
 

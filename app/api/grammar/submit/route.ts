@@ -57,11 +57,18 @@ export async function POST(request: Request) {
       .eq('id', user.id)
       .maybeSingle()
 
-    if (profileError || profile?.role !== 'student') {
+    if (profileError || !profile || (profile.role !== 'student' && profile.role !== 'admin')) {
       return jsonError('Seuls les comptes étudiants peuvent envoyer une tentative.', 403)
     }
+    // DE_ADMIN_LEARNING_V1
+    if (profile.role === 'admin') {
+      const { data: adminLearningAccess, error: adminLearningError } = await supabase.rpc('admin_my_access')
+      if (adminLearningError || !adminLearningAccess || typeof adminLearningAccess.owner !== 'boolean' || !Array.isArray(adminLearningAccess.permissions)) {
+        return NextResponse.json({ error: 'Administration access denied.' }, { status: 403 })
+      }
+    }
 
-    const isPro = profile.is_pro === true &&
+    const isPro = profile.role === 'admin' || profile.is_pro === true &&
       typeof profile.pro_until === 'string' &&
       Date.parse(profile.pro_until) > Date.now()
 
