@@ -1,5 +1,7 @@
 'use client'
 
+import FloatingPageTools from '@/components/student/FloatingPageTools'
+
 import { useEffect, useState } from 'react'
 import type { User } from '@supabase/supabase-js'
 import Link from 'next/link'
@@ -10,7 +12,6 @@ import {
 } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 import { useLanguage } from '@/contexts/LanguageContext'
-import LanguageSwitcher from '@/components/student/LanguageSwitcher'
 import homeTranslations from '@/translations/home'
 import GrammarShowcase from '@/components/home/GrammarShowcase'
 import type { PublicGrammarStats } from '@/lib/grammar/publicShowcase'
@@ -107,17 +108,17 @@ export default function HomePageClient({ grammarStats }: { grammarStats: PublicG
           </nav>
 
           <div className="nav-actions">
-            <div className="home-language-switcher"><LanguageSwitcher /></div>
+            
             {authLoading ? (
               <span className="auth-loading">{t.nav.loading}</span>
             ) : isLoggedIn ? (
               <>
-                <Link href="/espace-etudiant" className="student-welcome">
-                  <span className="student-avatar"><UserRound size={17} /></span>
-                  <span className="student-name">{studentName}</span>
-                </Link>
-                <Link href="/espace-etudiant" className="nav-cta">
-                  {t.nav.mySpace}<ArrowRight size={16} />
+                <Link href="/espace-etudiant" className="de-home-account">
+                  <span className="student-avatar"><UserRound size={21} aria-hidden="true" /></span>
+                  <span className="de-account-copy">
+                    <span className="student-name">{studentName}</span>
+                    <span className="de-account-space">{t.nav.mySpace}<ArrowRight size={15} aria-hidden="true" /></span>
+                  </span>
                 </Link>
                 <button type="button" className="logout-button" onClick={handleSignOut} disabled={signingOut} title={t.nav.logoutTitle}>
                   <LogOut size={17} />
@@ -135,6 +136,7 @@ export default function HomePageClient({ grammarStats }: { grammarStats: PublicG
           </div>
         </div>
       </header>
+      <FloatingPageTools />
 
       {/* HERO */}
       <section className="hero-section" id="accueil">

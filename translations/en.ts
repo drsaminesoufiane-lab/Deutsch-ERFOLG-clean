@@ -18,8 +18,8 @@ const en = {
     documents: 'My Documents',
     settings: 'Settings',
     logout: 'Log Out',
-    helpTitle: 'Ready to make progress?',
-    helpDescription: 'Continue your TELC preparation with Deutsch Erfolg.',
+    helpTitle: 'Learn. Progress. Succeed.',
+    helpDescription: 'Build your future with Deutsch Erfolg.',
   },
 
   header: {

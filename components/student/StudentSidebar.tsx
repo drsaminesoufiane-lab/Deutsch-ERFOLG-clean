@@ -3,6 +3,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import StudentXP from '@/components/student/StudentXP'
 import { usePathname, useRouter } from 'next/navigation'
 import {
   LayoutDashboard,
@@ -16,14 +17,16 @@ import {
   X,
   BookOpen,
   Languages,
+  ShieldCheck,
 } from 'lucide-react'
+import { House } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { supabase } from '@/lib/supabase'
 
-export default function StudentSidebar() {
+export default function StudentSidebar({ isAdmin = false }: { isAdmin?: boolean }) {
   const router = useRouter()
   const pathname = usePathname()
-  const { t } = useLanguage()
+  const { t, language } = useLanguage()
 
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -45,6 +48,16 @@ export default function StudentSidebar() {
     typeof window !== 'undefined'
       ? localStorage.getItem('deutsch_erfolg_language')
       : 'de'
+
+  const administrationLabel = {
+    fr: 'Administration',
+    de: 'Verwaltung',
+    en: 'Administration',
+    ar: 'الإدارة',
+  }
+  const administrationText =
+    administrationLabel[currentLanguage as keyof typeof administrationLabel] ||
+    administrationLabel.de
 
   const beginnerText =
     beginnerLabel[currentLanguage as keyof typeof beginnerLabel] ||
@@ -84,6 +97,12 @@ export default function StudentSidebar() {
       label: t.sidebar.results,
       Icon: Trophy,
       href: '/espace-etudiant/resultats',
+    },
+
+    {
+      label: ({ fr: 'Classement', de: 'Rangliste', en: 'Leaderboard', ar: 'الترتيب' } as const)[language],
+      Icon: Trophy,
+      href: '/espace-etudiant/classement',
     },
     {
       label: t.sidebar.documents,
@@ -144,6 +163,8 @@ export default function StudentSidebar() {
           </button>
         </div>
 
+        <StudentXP />
+
         <div className="sidebar-label">
           {t.sidebar.mainMenu}
         </div>
@@ -169,6 +190,20 @@ export default function StudentSidebar() {
         </nav>
 
         <div className="sidebar-bottom">
+          <Link href="/" className="student-menu-item de-return-home" onClick={() => setMenuOpen(false)}>
+            <House size={19} strokeWidth={1.7} aria-hidden="true" />
+            <span>{{fr:'Accueil du site', de:'Zur Startseite', en:'Website home', ar:'الصفحة الرئيسية'}[language]}</span>
+          </Link>
+          {isAdmin && (
+            <Link
+              href="/administration"
+              className="student-menu-item student-switch-admin"
+              onClick={() => setMenuOpen(false)}
+            >
+              <ShieldCheck size={18} strokeWidth={1.65} aria-hidden="true" />
+              <span>{administrationText}</span>
+            </Link>
+          )}
           <div className="sidebar-help">
             <div className="help-icon">
               <GraduationCap size={23} />
@@ -263,6 +298,14 @@ export default function StudentSidebar() {
         .student-sidebar .student-menu-item.active > svg { color: var(--de-gold-light, #e3cb96); }
         .student-sidebar .menu-active-dot { width: 5px; height: 5px; flex-shrink: 0; border-radius: 50%; background: var(--de-gold-light, #e3cb96); margin-inline-start: auto; }
         .student-sidebar .sidebar-bottom { margin-top: auto; padding-top: 25px; flex-shrink: 0; }
+        .student-sidebar .student-switch-admin {
+          margin-bottom: 14px;
+          border: 1px solid rgba(227,203,150,.45);
+          border-radius: 6px;
+          color: var(--de-gold-light, #e3cb96);
+        }
+        .student-sidebar .student-switch-admin > svg { color: var(--de-gold-light, #e3cb96); }
+        .student-sidebar .student-switch-admin:hover { background: rgba(227,203,150,.12); color: var(--de-gold-light, #e3cb96); }
         .student-sidebar .sidebar-help { padding: 14px 12px; border-top: 1px solid rgba(255,255,255,.12); border-bottom: 1px solid rgba(255,255,255,.12); color: var(--de-gold-light, #e3cb96); }
         .student-sidebar .help-icon { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; }
         .student-sidebar .sidebar-help strong { display: block; margin-top: 7px; color: #f8f6f1; font-size: 12px; font-weight: 600; }

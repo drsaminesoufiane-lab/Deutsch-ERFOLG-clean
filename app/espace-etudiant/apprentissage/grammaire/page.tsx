@@ -178,7 +178,7 @@ export default function GrammairePage() {
 
             <div className="profile-infos">
               <strong>{nom}</strong>
-              <span>{g.student} · TELC {niveau}</span>
+              <span>{g.student} · {niveau}</span>
             </div>
 
           </div>

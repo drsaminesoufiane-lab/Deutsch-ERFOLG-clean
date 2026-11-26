@@ -18,8 +18,8 @@ const fr = {
     documents: 'Mes documents',
     settings: 'Paramètres',
     logout: 'Déconnexion',
-    helpTitle: 'Prêt à progresser ?',
-    helpDescription: 'Continuez votre préparation TELC avec Deutsch Erfolg.',
+    helpTitle: 'Apprendre. Progresser. Réussir.',
+    helpDescription: 'Construisez votre avenir avec Deutsch Erfolg.',
   },
 
   header: {

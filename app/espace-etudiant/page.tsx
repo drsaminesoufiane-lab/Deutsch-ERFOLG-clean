@@ -1,6 +1,8 @@
 
 'use client'
 
+import { ProNameBadge } from '@/components/student/FloatingPageTools'
+
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -64,11 +66,8 @@ export default function StudentPage() {
           ''
         )
 
-        setNiveau(
-          data?.level ||
-          user.user_metadata?.niveau ||
-          'B1'
-        )
+        const niveauBrut = String(data?.level || user.user_metadata?.niveau || 'B1').trim().toUpperCase().replace(/^TELC\s*/, '')
+        setNiveau(['A1', 'A2', 'B1', 'B2'].includes(niveauBrut) ? niveauBrut : 'B1')
       } catch (error) {
         console.error('Erreur de chargement du profil :', error)
       }
@@ -145,20 +144,18 @@ export default function StudentPage() {
             </div>
           </div>
 
-          <div className="student-header-profile">
+          <div className="student-header-profile de-profile-card">
             <div className="profile-avatar">
               <UserRound size={20} />
             </div>
 
             <div className="profile-infos">
               <strong>{nomAffiche}</strong>
-              <span>
-                {t.header.student} · TELC {niveau}
-              </span>
-            </div>
-
-            <div className="profile-level-indicator">
-              {niveauRoute.toUpperCase()}
+              <div className="de-profile-meta">
+                <span className="de-profile-role">{t.header.student}</span>
+                <span className="de-current-level">{niveau}</span>
+              </div>
+              <ProNameBadge />
             </div>
           </div>
         </header>
@@ -202,7 +199,6 @@ export default function StudentPage() {
               </div>
 
               <div className="welcome-floating-label">
-                <span>TELC</span>
                 <strong>{niveau}</strong>
               </div>
             </div>
@@ -228,14 +224,14 @@ export default function StudentPage() {
 
               <Link
                 href="/espace-etudiant/examens/b1"
-                className={`student-level-card level-b1 ${niveauRoute === 'b1' ? 'selected' : ''}`}
+                className={`student-level-card level-b1 ${niveau === 'B1' ? 'selected' : ''}`}
               >
                 <div className="level-top">
                   <span className="level-chip">
                     {t.dashboard.intermediate}
                   </span>
 
-                  {niveauRoute === 'b1' && (
+                  {niveau === 'B1' && (
                     <span className="current-chip">
                       <span className="current-dot" />
                       {t.dashboard.myLevel}
@@ -265,14 +261,14 @@ export default function StudentPage() {
 
               <Link
                 href="/espace-etudiant/examens/b2"
-                className={`student-level-card level-b2 ${niveauRoute === 'b2' ? 'selected' : ''}`}
+                className={`student-level-card level-b2 ${niveau === 'B2' ? 'selected' : ''}`}
               >
                 <div className="level-top">
                   <span className="level-chip">
                     {t.dashboard.advanced}
                   </span>
 
-                  {niveauRoute === 'b2' && (
+                  {niveau === 'B2' && (
                     <span className="current-chip">
                       <span className="current-dot" />
                       {t.dashboard.myLevel}

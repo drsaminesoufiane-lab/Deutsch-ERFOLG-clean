@@ -142,7 +142,7 @@ export default function ExamensPage() {
           <div className="profile-infos">
             <strong>{nom}</strong>
             <span>
-              {t.header.student} · TELC {niveau}
+              {t.header.student} · {niveau}
             </span>
           </div>
         </div>

@@ -185,6 +185,42 @@ const traductions = {
   },
 }
 
+// LEAGUE_SIGNUP_ALIAS_V1
+const pseudoTranslations = {
+  fr: {
+    label: 'Pseudonyme (facultatif)',
+    hint: '3 à 20 caractères : lettres latines, chiffres, tirets ou underscores. Pour le classement uniquement. Évite ton vrai nom.',
+    invalid: 'Pseudonyme invalide. Utilise 3 à 20 caractères autorisés.',
+    taken: 'Ce pseudonyme est déjà utilisé. Choisis-en un autre.',
+    checkError: 'Impossible de vérifier le pseudonyme. Réessaie ou laisse le champ vide.',
+    later: 'Si ton pseudonyme a été pris entre-temps, tu pourras en choisir un autre dans le classement.',
+  },
+  de: {
+    label: 'Pseudonym (optional)',
+    hint: '3 bis 20 Zeichen: lateinische Buchstaben, Ziffern, Bindestriche oder Unterstriche. Nur für die Rangliste. Verwende nicht deinen echten Namen.',
+    invalid: 'Ungültiges Pseudonym. Verwende 3 bis 20 erlaubte Zeichen.',
+    taken: 'Dieses Pseudonym ist bereits vergeben. Wähle ein anderes.',
+    checkError: 'Das Pseudonym konnte nicht geprüft werden. Versuche es erneut oder lass das Feld leer.',
+    later: 'Falls dein Pseudonym inzwischen vergeben wurde, kannst du in der Rangliste ein anderes wählen.',
+  },
+  en: {
+    label: 'Nickname (optional)',
+    hint: '3–20 characters: Latin letters, numbers, hyphens or underscores. For the leaderboard only. Avoid your real name.',
+    invalid: 'Invalid nickname. Use 3–20 allowed characters.',
+    taken: 'This nickname is already taken. Choose another.',
+    checkError: 'Could not check the nickname. Try again or leave the field blank.',
+    later: 'If your nickname was taken in the meantime, you can choose another in the leaderboard.',
+  },
+  ar: {
+    label: 'الاسم المستعار (اختياري)',
+    hint: 'من 3 إلى 20 رمزاً: حروف لاتينية أو أرقام أو شرطات أو شرطات سفلية. خاص بالترتيب فقط. تجنب اسمك الحقيقي.',
+    invalid: 'اسم مستعار غير صالح. استخدم من 3 إلى 20 رمزاً مسموحاً.',
+    taken: 'هذا الاسم المستعار مستخدم بالفعل. اختر اسماً آخر.',
+    checkError: 'تعذر التحقق من الاسم المستعار. أعد المحاولة أو اترك الحقل فارغاً.',
+    later: 'إذا تم حجز اسمك المستعار في هذه الأثناء، يمكنك اختيار اسم آخر في الترتيب.',
+  },
+}
+
 const paysDisponibles = [
   { value: 'Maroc', label: '🇲🇦 Maroc' },
   { value: 'Allemagne', label: '🇩🇪 Deutschland / Allemagne' },
@@ -213,6 +249,8 @@ const paysDisponibles = [
 
 export default function InscriptionPage() {
   const [nom, setNom] = useState('')
+  const [pseudo, setPseudo] = useState('')
+  const [pseudoError, setPseudoError] = useState<'invalid' | 'taken' | 'checkError' | ''>('')
   const [telephone, setTelephone] = useState('')
   const [email, setEmail] = useState('')
   const [pays, setPays] = useState('Maroc')
@@ -226,15 +264,38 @@ export default function InscriptionPage() {
   const [lang, setLang] = useState<Lang>('de')
 
   const t = traductions[lang]
+  const pt = pseudoTranslations[lang]
 
   async function inscrire(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
+    if (chargement) return
+    const pseudoChoisi = pseudo.trim()
+    setPseudoError('')
+    setMessage('')
+    if (pseudoChoisi && !/^[A-Za-z0-9_-]{3,20}$/.test(pseudoChoisi)) {
+      setPseudoError('invalid')
+      return
+    }
 
     setChargement(true)
     setMessage('')
     setSucces(false)
 
     try {
+      if (pseudoChoisi) {
+        const { data: disponible, error: verificationError } = await supabase.rpc(
+          'league_pseudonym_available',
+          { p_pseudonym: pseudoChoisi }
+        )
+        if (verificationError || typeof disponible !== 'boolean') {
+          setPseudoError('checkError')
+          return
+        }
+        if (!disponible) {
+          setPseudoError('taken')
+          return
+        }
+      }
       const { error } = await supabase.auth.signUp({
         email: email.trim(),
         password: motDePasse,
@@ -242,6 +303,7 @@ export default function InscriptionPage() {
           emailRedirectTo: `${window.location.origin}/auth/confirm`,
           data: {
             full_name: nom.trim(),
+            ...(pseudoChoisi ? { league_pseudonym: pseudoChoisi } : {}),
             telephone: telephone.trim(),
             niveau,
             pays,
@@ -376,6 +438,8 @@ export default function InscriptionPage() {
                 {t.emailWait}
               </p>
 
+              {pseudo.trim() && <p className="register-pseudo-note">{pt.later}</p>}
+
               <Link href="/connexion" className="register-submit register-confirmation-link">
                 {t.emailBack}
                 <ArrowRight size={19} />
@@ -392,6 +456,30 @@ export default function InscriptionPage() {
                 onChange={e => setNom(e.target.value)}
                 required
               />
+
+              <label htmlFor="league-pseudonym">{pt.label}</label>
+              <input
+                id="league-pseudonym"
+                type="text"
+                dir="ltr"
+                placeholder="DeutschMaster"
+                value={pseudo}
+                maxLength={20}
+                autoComplete="off"
+                autoCapitalize="none"
+                spellCheck={false}
+                disabled={chargement}
+                aria-describedby={pseudoError ? 'league-pseudo-hint league-pseudo-error' : 'league-pseudo-hint'}
+                aria-invalid={!!pseudoError}
+                onChange={e => {
+                  setPseudo(e.target.value)
+                  setPseudoError('')
+                }}
+              />
+              <p id="league-pseudo-hint" className="register-pseudo-hint">{pt.hint}</p>
+              {pseudoError && (
+                <p id="league-pseudo-error" className="register-pseudo-error" role="alert">{pt[pseudoError]}</p>
+              )}
 
               <label htmlFor="telephone">{t.telephone}</label>
               <input
@@ -444,9 +532,11 @@ export default function InscriptionPage() {
                 onChange={e => setNiveau(e.target.value)}
                 required
               >
-                <option value="B1">TELC B1</option>
-                <option value="B2">TELC B2</option>
-              </select>
+                <option value="A1">A1</option>
+                  <option value="A2">A2</option>
+                  <option value="B1">B1</option>
+                  <option value="B2">B2</option>
+                  </select>
 
               <label htmlFor="password">{t.password}</label>
 
@@ -509,6 +599,17 @@ export default function InscriptionPage() {
       </section>
 
       <style jsx>{`
+        .register-form #league-pseudonym { margin-bottom: 6px; }
+        .register-form #league-pseudonym[aria-invalid="true"] { border-color: #b44d4d; }
+        .register-pseudo-hint, .register-pseudo-error {
+          margin: 0 0 16px;
+          font-size: 12px;
+          line-height: 1.55;
+          text-align: start;
+        }
+        .register-pseudo-hint { color: #64748b; }
+        .register-pseudo-error { color: #a52e35; font-weight: 600; }
+        .register-pseudo-note { font-size: 12px; }
         .register-language {
           display: flex;
           align-items: center;

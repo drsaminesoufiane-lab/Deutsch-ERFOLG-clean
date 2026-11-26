@@ -5,7 +5,7 @@ import type { ReactNode } from 'react'
 import Link from 'next/link'
 import {usePathname} from 'next/navigation'
 import {allowedPath,has,links,parseAccess,permissions,type Access} from '@/lib/adminAccess'
-import { Bell, ShieldCheck, UserRound, RefreshCw, LayoutDashboard, Users, ClipboardList, Wallet, BarChart3, Menu, X, ArrowLeft, History, Settings } from 'lucide-react'
+import { Bell, ShieldCheck, UserRound, RefreshCw, LayoutDashboard, Users, ClipboardList, Wallet, BarChart3, Menu, X, ArrowLeft, History, Settings, GraduationCap } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 import './admin-premium.css'
 import AdminDashboardBanner from './AdminDashboardBanner'
@@ -126,7 +126,9 @@ export default function AdministrationLayout({ children }: { children: ReactNode
     <aside id="de-admin-sidebar" className={`de-admin-sidebar-v2 ${menuOpen?'is-open':''}`}>
       <div className="de-admin-sidebar-heading"><Link href="/administration" className="de-admin-brand-v2" onClick={()=>setMenuOpen(false)}><ShieldCheck size={28}/><span>Deutsch <b>Erfolg</b><small>{t('ADMINISTRATION','VERWALTUNG','الإدارة')}</small></span></Link><button className="de-admin-close-menu" aria-label={t('Fermer le menu','Menü schließen','إغلاق القائمة')} onClick={()=>setMenuOpen(false)}><X size={22}/></button></div>
       <div className="de-admin-sidebar-role"><span className="de-admin-role-dot"/>{positionLabel(position,language,!!access?.owner)}</div>
-      <nav aria-label={t('Navigation administration','Verwaltungsnavigation','قائمة الإدارة')} className="de-admin-sidebar-links"><small>{t('ESPACE DE GESTION','VERWALTUNGSBEREICH','مساحة الإدارة')}</small>{visible.map(({url,label})=>{const Icon=icons[url]||ShieldCheck;const active=isActive(url);return <Link href={url} key={url} className={active?'active':''} aria-current={active?'page':undefined} onClick={()=>setMenuOpen(false)}><Icon size={19} strokeWidth={1.7}/><span>{navLabel(url,language,label)}</span></Link>})}</nav>
+      <nav aria-label={t('Navigation administration','Verwaltungsnavigation','قائمة الإدارة')} className="de-admin-sidebar-links"><small>{t('ESPACE DE GESTION','VERWALTUNGSBEREICH','مساحة الإدارة')}</small>{visible.map(({url,label})=>{const Icon=icons[url]||ShieldCheck;const active=isActive(url);return <Link href={url} key={url} className={active?'active':''} aria-current={active?'page':undefined} onClick={()=>setMenuOpen(false)}><Icon size={19} strokeWidth={1.7}/><span>{navLabel(url,language,label)}</span></Link>})}
+        <Link href="/espace-etudiant" className="de-admin-switch-student" onClick={()=>setMenuOpen(false)} style={{marginTop:12,border:'1px solid rgba(214,181,109,.55)',borderRadius:6,color:'#e3cb96',flexShrink:0}}><GraduationCap size={19} strokeWidth={1.7}/><span>{t('Espace étudiant','Lernbereich','فضاء الطالب')}</span></Link>
+      </nav>
       <Link className="de-admin-sidebar-home" href="/"><ArrowLeft size={18}/> {t('Retour au site','Zur Website','العودة إلى الموقع')}</Link>
     </aside>
     <div className="de-admin-workspace-main">

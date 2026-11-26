@@ -18,8 +18,8 @@ const de = {
     documents: 'Meine Dokumente',
     settings: 'Einstellungen',
     logout: 'Abmelden',
-    helpTitle: 'Bereit, Fortschritte zu machen?',
-    helpDescription: 'Setzen Sie Ihre TELC-Vorbereitung mit Deutsch Erfolg fort.',
+    helpTitle: 'Lernen. Wachsen. Erfolg haben.',
+    helpDescription: 'Gestalten Sie Ihre Zukunft mit Deutsch Erfolg.',
   },
 
   header: {

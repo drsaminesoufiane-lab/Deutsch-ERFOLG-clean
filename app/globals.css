@@ -2205,3 +2205,165 @@ footer { border-color: var(--de-border); }
   .login-page .login-skills { margin-top: 16px; }
 }
 /* FIN DEUTSCH-ERFOLG AUTH PANNEAU FIXE V1 */
+
+/* DE_INTERFACE_V3 — navigation, outils flottants, abonnement */
+.home-page .home-header { z-index: 5; }
+.home-page .home-nav { max-width: 1680px; width:100%; box-sizing:border-box; min-height:86px; margin-inline:auto; padding:12px clamp(16px,2vw,34px); display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); align-items:center; gap:18px; }
+.home-page .home-nav > .home-brand { justify-self:start; }
+.home-page .home-nav > .desktop-nav { display:flex; align-items:center; justify-content:center; justify-self:center; flex-wrap:wrap; gap:clamp(12px,1.6vw,25px); }
+.home-page .home-nav > .desktop-nav a { font-size:15px; line-height:1.5; font-weight:650; white-space:nowrap; }
+.home-page .home-nav > .nav-actions { display:flex; align-items:center; justify-content:flex-end; justify-self:stretch; gap:9px; min-width:0; flex-wrap:wrap; }
+.home-page .home-nav .student-welcome { display:inline-flex; align-items:center; gap:8px; max-width:100%; min-width:0; font-size:14px; }
+.home-page .home-nav .student-name { font-size:14px; line-height:1.35; white-space:normal; overflow-wrap:anywhere; }
+.home-page .home-nav .nav-cta, .home-page .home-nav .login-button { font-size:13px; }
+.home-page .home-nav .logout-button { width:auto; height:auto; min-height:38px; padding:9px 11px; font-size:13px; display:inline-flex; align-items:center; gap:6px; }
+.home-page .home-nav .logout-button span { display:inline; }
+.home-page .home-nav .student-avatar { flex-shrink:0; }
+@media(max-width:1250px) {
+  .home-page .home-nav { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:12px; }
+  .home-page .home-nav > .desktop-nav { grid-column:1/-1; grid-row:2; padding:8px 0; }
+  .home-page .home-nav > .nav-actions { grid-column:2; grid-row:1; }
+}
+@media(max-width:650px) {
+  .home-page .home-nav { grid-template-columns:minmax(0,1fr); gap:10px; }
+  .home-page .home-nav > .home-brand { justify-self:center; }
+  .home-page .home-nav > .desktop-nav { grid-column:1; grid-row:3; gap:8px 16px; }
+  .home-page .home-nav > .desktop-nav a { font-size:13px; }
+  .home-page .home-nav > .nav-actions { grid-column:1; grid-row:2; justify-content:flex-end; }
+}
+.de-floating-tools { position:fixed; inset:auto max(20px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) auto; z-index:1100; display:flex; flex-direction:column; align-items:flex-end; gap:10px; max-width:calc(100vw - 32px); font-family:var(--de-sans,Arial,sans-serif); }
+.de-floating-tools[dir="rtl"] { align-items:flex-start; }
+.de-floating-tools .de-floating-controls { display:flex; align-items:center; gap:8px; direction:ltr; }
+.de-floating-tools .de-scroll-top { width:43px; height:43px; display:grid; place-items:center; background:#172B4D; color:#fff; border:1px solid #172B4D; border-radius:11px; cursor:pointer; box-shadow:0 3px 12px #172b4d22; flex-shrink:0; }
+.de-floating-tools .de-scroll-top:hover { background:#28466f; }
+.de-floating-tools .language-switcher { position:relative; }
+.de-floating-tools .language-switcher .language-switcher-trigger { min-height:43px; }
+.de-floating-tools .language-switcher .language-switcher-menu { top:auto; bottom:calc(100% + 9px); left:auto; right:0; }
+html[dir="rtl"] .de-floating-tools .language-switcher .language-switcher-menu { left:auto; right:0; }
+.de-floating-tools .language-chevron { transform:rotate(180deg); }
+.de-floating-tools .language-chevron.open { transform:rotate(0deg); }
+.de-floating-tools .de-subscription-offer { display:flex; flex-direction:column; gap:8px; width:196px; padding:14px; background:rgba(255,253,246,.97); color:#172b4d; border:1px solid #d6b56d; border-radius:9px; box-shadow:0 5px 20px #172b4d15; text-decoration:none; box-sizing:border-box; }
+.de-floating-tools .de-offer-heading { display:flex; align-items:center; gap:8px; font-size:13px; line-height:1.4; }
+.de-floating-tools .de-offer-heading svg { color:#a8792e; flex-shrink:0; }
+.de-floating-tools .de-offer-desc { font-size:12px; line-height:1.5; color:#58677b; }
+.de-floating-tools .de-offer-action { display:flex; align-items:center; justify-content:space-between; gap:5px; font-size:12px; font-weight:700; color:#172b4d; background:#e8d3a3; border-radius:5px; padding:8px 9px; }
+.de-floating-tools .de-subscription-offer:hover .de-offer-action { background:#d6b56d; }
+.student-global-layout .student-header-profile .profile-infos strong { display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+.student-global-layout .student-header-profile .profile-infos strong .de-pro-name-badge { display:inline-flex; gap:4px; align-items:center; color:#936a23; font-size:10px; font-weight:700; white-space:nowrap; background:transparent; border:1px solid #d6b56d; border-radius:5px; padding:3px 5px; line-height:1.25; }
+.de-floating-tools button:focus-visible,.de-floating-tools a:focus-visible { outline:2px solid #a8792e; outline-offset:3px; }
+.student-global-layout .student-global-content { padding-bottom:70px; }
+.student-global-layout .student-global-content.de-has-offer { padding-bottom:185px; }
+@media(max-width:700px) {
+  .de-floating-tools { right:max(12px,env(safe-area-inset-right)); bottom:max(12px,env(safe-area-inset-bottom)); z-index:80; }
+  .de-floating-tools .de-subscription-offer { width:168px; padding:10px; gap:5px; }
+  .de-floating-tools .de-offer-desc { font-size:11px; }
+}
+
+/* DE_PROFILE_V4 */
+.home-page .home-nav > .nav-actions { gap:18px; flex-wrap:nowrap; }
+.home-page .home-nav .de-home-account { display:flex; align-items:center; gap:12px; min-width:0; max-width:none; color:#172b4d; text-decoration:none; padding:5px 0; }
+.home-page .home-nav .de-home-account .student-avatar { width:45px; height:45px; }
+.home-page .home-nav .de-account-copy { display:flex; flex-direction:column; align-items:flex-start; gap:5px; min-width:0; }
+.home-page .home-nav .de-account-copy .student-name { font-size:15px; font-weight:700; line-height:1.4; white-space:normal; overflow-wrap:anywhere; }
+.home-page .home-nav .de-account-space { display:inline-flex; align-items:center; gap:7px; font-size:13px; color:#64748b; line-height:1.4; }
+.home-page .home-nav .de-home-account:hover .de-account-space { color:#a18142; }
+.home-page .home-nav .logout-button { flex-shrink:0; gap:9px; padding:11px 15px; min-height:43px; font-size:13px; color:#a34d4d; }
+.home-page .home-nav .logout-button span { display:inline; }
+@media(min-width:1451px) {
+ .home-page .home-nav { grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); }
+}
+@media(min-width:651px) and (max-width:1450px) {
+ .home-page .home-nav { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:12px 24px; }
+ .home-page .home-nav > .desktop-nav { grid-column:1/-1; grid-row:2; padding:8px 0; }
+ .home-page .home-nav > .nav-actions { grid-column:2; grid-row:1; }
+}
+@media(max-width:650px) {
+ .home-page .home-nav > .nav-actions { justify-content:center; gap:12px; flex-wrap:wrap; }
+ .home-page .home-nav .de-home-account .student-avatar { width:38px; height:38px; }
+ .home-page .home-nav .de-account-copy .student-name { font-size:14px; }
+ .home-page .home-nav .logout-button { padding:9px 12px; }
+}
+.student-global-layout .student-header .de-profile-card { display:flex; align-items:center; gap:16px; padding:14px 18px; max-width:100%; border:1px solid #e7e2d8; background:#fff; border-radius:12px; }
+.student-global-layout .de-profile-card .profile-avatar { width:48px; height:48px; flex-shrink:0; }
+.student-global-layout .de-profile-card .profile-infos { display:flex; flex-direction:column; align-items:flex-start; gap:8px; min-width:0; }
+.student-global-layout .de-profile-card .profile-infos > strong { display:block; font-size:16px; font-weight:700; line-height:1.4; white-space:normal; overflow-wrap:anywhere; }
+.student-global-layout .de-profile-card .de-profile-meta { display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.student-global-layout .de-profile-card .de-profile-role { font-size:13px; color:#64748b; line-height:1.4; }
+.student-global-layout .de-profile-card .de-current-level { display:inline-flex; align-items:center; justify-content:center; min-width:38px; padding:4px 9px; border:1px solid #e3ded3; border-radius:6px; background:#f8f6f1; color:#192b43; font-size:13px; font-weight:700; line-height:1.35; }
+.student-global-layout .de-profile-card .profile-infos .de-pro-name-badge { display:inline-flex; align-items:center; gap:7px; border:0; padding:0; font-size:13px; color:#936a23; font-weight:650; line-height:1.5; }
+.student-global-layout .de-profile-card .de-pro-name-badge svg { width:19px; height:19px; flex-shrink:0; }
+.student-sidebar .de-return-home { margin-bottom:10px; border:1px solid rgba(227,203,150,.55); border-radius:7px; color:#e3cb96; }
+.student-sidebar .de-return-home > svg { color:#e3cb96; }
+@media(max-width:700px) {
+ .student-global-layout .student-header .de-profile-card { padding:10px 12px; gap:10px; }
+ .student-global-layout .de-profile-card .profile-avatar { width:38px; height:38px; }
+ .student-global-layout .de-profile-card .profile-infos > strong { font-size:14px; }
+}
+
+/* DE_PROFILE_V7 - Profil horizontal compact */
+.student-global-layout .student-header .de-profile-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 14px;
+  min-width: 0;
+  max-width: 100%;
+  border-radius: 9px;
+}
+.student-global-layout .de-profile-card .profile-avatar {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+.student-global-layout .de-profile-card .profile-infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  min-width: 0;
+}
+.student-global-layout .de-profile-card .profile-infos > strong {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+  max-width: none;
+}
+.student-global-layout .de-profile-card .de-profile-meta {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding-inline-start: 14px;
+  border-inline-start: 1px solid #e3ded3;
+}
+.student-global-layout .de-profile-card .de-current-level {
+  min-width: 32px;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+.student-global-layout .de-profile-card .profile-infos .de-pro-name-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0;
+  padding-inline-start: 14px;
+  border: 0;
+  border-inline-start: 1px solid #e3ded3;
+  border-radius: 0;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.student-global-layout .de-profile-card .de-pro-name-badge svg {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+@media (max-width: 1000px) {
+  .student-global-layout .de-profile-card .profile-infos { gap: 8px; }
+  .student-global-layout .de-profile-card .de-profile-meta,
+  .student-global-layout .de-profile-card .profile-infos .de-pro-name-badge {
+    border: 0;
+    padding-inline-start: 0;
+  }
+}

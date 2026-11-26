@@ -18,8 +18,8 @@ const ar = {
     documents: 'مستنداتي',
     settings: 'الإعدادات',
     logout: 'تسجيل الخروج',
-    helpTitle: 'هل أنت مستعد للتقدم؟',
-    helpDescription: 'واصل التحضير لامتحان TELC مع Deutsch Erfolg.',
+    helpTitle: 'تعلّم. تطوّر. انجح.',
+    helpDescription: 'ابنِ مستقبلك مع Deutsch Erfolg.',
   },
 
   header: {
