@@ -66,7 +66,7 @@ export default function StudentSidebar() {
       href: '/espace-etudiant/apprentissage/allemand-debutant',
     },
     {
-      label: t.sidebar.grammar,
+      label: 'Deutsche Grammatik',
       Icon: GraduationCap,
       href: '/espace-etudiant/apprentissage/grammaire',
     },
@@ -116,11 +116,13 @@ export default function StudentSidebar() {
         className="student-sidebar-mobile-button"
         onClick={() => setMenuOpen(true)}
         aria-label="Ouvrir le menu"
+        aria-expanded={menuOpen}
+        aria-controls="student-navigation"
       >
         <Menu size={23} />
       </button>
 
-      <aside className={`student-sidebar ${menuOpen ? 'open' : ''}`}>
+      <aside id="student-navigation" className={`student-sidebar ${menuOpen ? 'open' : ''}`}>
         <div className="student-brand">
           <div className="student-brand-icon">
             <GraduationCap size={25} strokeWidth={2.2} />
@@ -154,10 +156,11 @@ export default function StudentSidebar() {
               <Link
                 href={href}
                 key={href}
+                aria-current={active ? "page" : undefined}
                 className={`student-menu-item ${active ? 'active' : ''}`}
                 onClick={() => setMenuOpen(false)}
               >
-                <Icon size={19} strokeWidth={1.9} />
+                <Icon size={18} strokeWidth={1.65} aria-hidden="true" />
                 <span>{label}</span>
                 {active && <span className="menu-active-dot" />}
               </Link>
@@ -193,249 +196,102 @@ export default function StudentSidebar() {
       )}
 
       <style jsx global>{`
+        /* Deutsch-Erfolg / Sidebar premium V1 */
         .student-sidebar {
           width: 255px;
-          background: linear-gradient(180deg, #172B4D 0%, #142640 100%);
-          color: white;
           position: fixed;
           inset: 0 auto 0 0;
           z-index: 100;
           display: flex;
           flex-direction: column;
-          padding: 27px 19px 20px;
-          box-shadow: 5px 0 25px rgba(20, 38, 64, .08);
+          padding: 26px 17px 18px;
+          background: var(--de-navy, #192b43);
+          color: #f8f6f1;
+          border-inline-end: 1px solid rgba(255,255,255,.09);
+          overflow-y: auto;
+          overscroll-behavior: contain;
+          scrollbar-width: thin;
+          scrollbar-color: #516076 transparent;
+          box-shadow: none;
+          font-family: var(--de-sans, 'Plus Jakarta Sans', Arial, sans-serif);
         }
-
-        .student-brand {
+        .student-sidebar .student-brand {
           display: flex;
           align-items: center;
-          gap: 11px;
-          padding: 0 8px 34px;
-        }
-
-        .student-brand-icon {
-          width: 43px;
-          height: 43px;
-          border-radius: 12px;
-          display: grid;
-          place-items: center;
-          background: rgba(214,181,109,.13);
-          color: #D6B56D;
-          border: 1px solid rgba(214,181,109,.2);
+          gap: 10px;
+          padding: 2px 3px 23px;
+          border-bottom: 1px solid rgba(255,255,255,.12);
+          margin-bottom: 24px;
           flex-shrink: 0;
         }
-
-        .brand-name {
-          display: flex;
-          flex-direction: column;
-          gap: 4px;
-          white-space: nowrap;
-        }
-
-        .brand-title {
-          white-space: nowrap;
-          font-size: 19px;
-          font-weight: 700;
-        }
-
-        .brand-title strong {
-          color: #D6B56D;
-        }
-
-        .brand-name > span {
-          color: #8292AA;
-          font-size: 7px;
-          letter-spacing: 1.1px;
-          font-weight: 500;
-        }
-
-        .sidebar-label {
-          padding: 0 12px 13px;
-          font-size: 10px;
-          font-weight: 700;
-          letter-spacing: 1.4px;
-          color: #9BAAC0;
-          text-transform: uppercase;
-        }
-
-        .student-menu {
-          display: flex;
-          flex-direction: column;
-          gap: 6px;
-        }
-
-        .student-menu-item {
-          display: flex;
-          align-items: center;
-          gap: 13px;
-          padding: 13px 12px;
-          border-radius: 9px;
-          color: #C5D0DF;
-          text-decoration: none;
-          font-size: 13px;
-          transition: all .2s ease;
-          position: relative;
-        }
-
-        .student-menu-item:hover {
-          background: rgba(255,255,255,.07);
-          color: white;
-          transform: translateX(2px);
-        }
-
-        .student-menu-item.active {
-          background: rgba(214,181,109,.14);
-          color: #E5C987;
-          font-weight: 700;
-          border-left: 3px solid #D6B56D;
-        }
-
-        .menu-active-dot {
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background: #D6B56D;
-          margin-left: auto;
-        }
-
-        .sidebar-bottom {
-          margin-top: auto;
-        }
-
-        .sidebar-help {
-          background: linear-gradient(
-            145deg,
-            rgba(255,255,255,.09),
-            rgba(255,255,255,.035)
-          );
-          border: 1px solid rgba(255,255,255,.1);
-          border-radius: 13px;
-          padding: 17px;
-          color: #D6B56D;
-        }
-
-        .help-icon {
-          width: 39px;
-          height: 39px;
+        .student-sidebar .student-brand-icon {
           display: grid;
           place-items: center;
-          border-radius: 10px;
-          background: rgba(214,181,109,.13);
+          width: 39px;
+          height: 39px;
+          flex-shrink: 0;
+          border: 1px solid rgba(227,203,150,.35);
+          border-radius: 8px;
+          background: transparent;
+          color: var(--de-gold-light, #e3cb96);
         }
-
-        .sidebar-help strong {
-          display: block;
-          color: white;
-          font-size: 13px;
-          margin-top: 12px;
-        }
-
-        .sidebar-help p {
-          color: #B9C6D7;
-          font-size: 11px;
-          line-height: 1.65;
-          margin-bottom: 0;
-        }
-
-        .logout-button {
+        .student-sidebar .brand-name { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+        .student-sidebar .brand-title { font-family: var(--de-serif, Georgia, serif); font-size: 21px; font-weight: 400; line-height: 1.1; white-space: nowrap; letter-spacing: -.5px; }
+        .student-sidebar .brand-title strong { color: var(--de-gold-light, #e3cb96); font-weight: 400; }
+        .student-sidebar .brand-name > span { color: #b0bdcc; font-size: 7px; line-height: 1.5; letter-spacing: .65px; font-weight: 500; }
+        .student-sidebar .sidebar-label { padding: 0 10px 12px; color: #aebdce; font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; }
+        .student-sidebar .student-menu { display: flex; flex-direction: column; gap: 5px; flex-shrink: 0; }
+        .student-sidebar .student-menu-item {
           display: flex;
           align-items: center;
-          gap: 12px;
-          color: #C5D0DF;
-          background: none;
-          border: 0;
-          padding: 18px 10px 5px;
-          cursor: pointer;
-          font-size: 13px;
-          transition: color .2s;
+          gap: 10px;
+          min-height: 46px;
+          padding: 11px 10px;
+          border-inline-start: 2px solid transparent;
+          border-radius: 5px;
+          color: #d1dae5;
+          text-decoration: none;
+          font-size: 12px;
+          line-height: 1.5;
+          font-weight: 500;
+          transition: background .18s ease, color .18s ease, border-color .18s ease;
         }
-
-        .logout-button:hover {
-          color: #F0B6B6;
-        }
-
-        .close-menu,
-        .student-sidebar-mobile-button,
-        .student-overlay {
-          display: none;
-        }
-
-        /* ARABE / RTL */
-
-        [dir="rtl"] .student-sidebar {
-          left: auto;
-          right: 0;
-        }
-
-        [dir="rtl"] .student-menu-item.active {
-          border-left: none;
-          border-right: 3px solid #D6B56D;
-        }
-
-        [dir="rtl"] .menu-active-dot {
-          margin-left: 0;
-          margin-right: auto;
-        }
-
-        /* MOBILE */
-
+        .student-sidebar .student-menu-item > svg { flex-shrink: 0; color: #adbacb; }
+        .student-sidebar .student-menu-item > span:not(.menu-active-dot) { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+        .student-sidebar .student-menu-item:hover { background: rgba(255,255,255,.055); color: #fff; }
+        .student-sidebar .student-menu-item.active { background: #ffffff0d; color: var(--de-gold-light, #e3cb96); border-inline-start-color: var(--de-gold, #b49760); font-weight: 650; }
+        .student-sidebar .student-menu-item.active > svg { color: var(--de-gold-light, #e3cb96); }
+        .student-sidebar .menu-active-dot { width: 5px; height: 5px; flex-shrink: 0; border-radius: 50%; background: var(--de-gold-light, #e3cb96); margin-inline-start: auto; }
+        .student-sidebar .sidebar-bottom { margin-top: auto; padding-top: 25px; flex-shrink: 0; }
+        .student-sidebar .sidebar-help { padding: 14px 12px; border-top: 1px solid rgba(255,255,255,.12); border-bottom: 1px solid rgba(255,255,255,.12); color: var(--de-gold-light, #e3cb96); }
+        .student-sidebar .help-icon { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px; }
+        .student-sidebar .sidebar-help strong { display: block; margin-top: 7px; color: #f8f6f1; font-size: 12px; font-weight: 600; }
+        .student-sidebar .sidebar-help p { margin: 5px 0 0; color: #b8c4d2; font-size: 11px; line-height: 1.65; }
+        .student-sidebar .logout-button { display: flex; align-items: center; gap: 10px; width: 100%; min-height: 44px; padding: 12px 10px 0; background: none; border: 0; color: #d1dae5; font-size: 12px; text-align: start; cursor: pointer; transition: color .18s ease; }
+        .student-sidebar .logout-button:hover { color: #f4bdbd; }
+        .student-sidebar :is(a,button):focus-visible, .student-sidebar-mobile-button:focus-visible { outline: 2px solid var(--de-gold-light, #e3cb96); outline-offset: 2px; }
+        .student-sidebar .close-menu, .student-sidebar-mobile-button, .student-overlay { display: none; }
+        [dir="rtl"] .student-sidebar { left: auto; right: 0; font-family: 'Tajawal', Arial, sans-serif; }
+        [dir="rtl"] .student-sidebar .brand-name { direction: ltr; }
+        [dir="rtl"] .student-sidebar .sidebar-label { letter-spacing: 0; }
         @media (max-width: 700px) {
-          .student-sidebar {
-            transform: translateX(-100%);
-            transition: transform .25s ease;
-            box-shadow: 10px 0 35px rgba(0,0,0,.2);
-          }
-
-          .student-sidebar.open {
-            transform: translateX(0);
-          }
-
-          .close-menu {
-            display: block;
-            margin-left: auto;
-            background: none;
-            border: 0;
-            color: white;
-            cursor: pointer;
-          }
-
-          .student-sidebar-mobile-button {
-            display: grid;
-            place-items: center;
-            position: fixed;
-            top: 16px;
-            left: 15px;
-            z-index: 50;
-            background: #F4F6F9;
-            border: 0;
-            width: 39px;
-            height: 39px;
-            border-radius: 9px;
-            color: #172B4D;
-            cursor: pointer;
-          }
-
-          .student-overlay {
-            display: block;
-            position: fixed;
-            inset: 0;
-            background: rgba(10,20,35,.48);
-            backdrop-filter: blur(2px);
-            z-index: 90;
-          }
-
-          [dir="rtl"] .student-sidebar {
-            transform: translateX(100%);
-          }
-
-          [dir="rtl"] .student-sidebar.open {
-            transform: translateX(0);
-          }
-
-          [dir="rtl"] .student-sidebar-mobile-button {
-            left: auto;
-            right: 15px;
-          }
+          .student-sidebar { width: min(255px, 90vw); transform: translateX(-100%); visibility: hidden; transition: transform .22s ease, visibility .22s; box-shadow: none; }
+          .student-sidebar.open { transform: translateX(0); visibility: visible; box-shadow: 8px 0 28px rgba(0,0,0,.16); }
+          .student-sidebar .close-menu { display: grid; place-items: center; flex-shrink: 0; width: 26px; height: 36px; margin-inline-start: auto; padding: 0; border: 0; background: transparent; color: #e3cb96; cursor: pointer; }
+          .student-sidebar .student-brand { gap: 7px; }
+          .student-sidebar .brand-title { font-size: 18px; }
+          .student-sidebar .brand-name > span { font-size: 6px; letter-spacing: .35px; }
+          .student-sidebar-mobile-button { display: grid; place-items: center; position: fixed; top: 16px; left: 15px; z-index: 50; width: 42px; height: 42px; border: 1px solid var(--de-border, #e3ded3); border-radius: 8px; background: var(--de-white, #fff); color: var(--de-navy, #192b43); cursor: pointer; }
+          .student-overlay { display: block; position: fixed; inset: 0; background: rgba(10,20,35,.48); z-index: 90; }
+          [dir="rtl"] .student-sidebar { transform: translateX(100%); }
+          [dir="rtl"] .student-sidebar.open { transform: translateX(0); }
+          [dir="rtl"] .student-sidebar-mobile-button { left: auto; right: 15px; }
+          /* No desktop sidebar reservation when the drawer is hidden. */
+          .student-global-layout .student-global-content,
+          [dir="rtl"] .student-global-layout .student-global-content { margin-left: 0; margin-right: 0; min-width: 0; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+          .student-sidebar, .student-sidebar .student-menu-item, .student-sidebar .logout-button { transition: none; }
         }
       `}</style>
     </>
