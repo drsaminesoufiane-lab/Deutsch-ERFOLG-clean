@@ -192,6 +192,56 @@ export default function DocumentsPage() {
           .documents-grid { grid-template-columns: 1fr; }
           .documents-info { align-items: flex-start; }
         }
+
+        /* DE_STUDENT_ACCOUNT_PREMIUM_V1 */
+
+.documents-page {
+  --pe-navy: var(--de-navy, #192b43);
+  --pe-ivory: var(--de-ivory, #f7f5f0);
+  --pe-border: var(--de-border, #e3ded3);
+  --pe-muted: var(--de-muted, #626a75);
+  --pe-gold: var(--de-gold-text, #806337);
+  --pe-tint: var(--de-tint, #f1ece2);
+  background: var(--pe-ivory); color: var(--pe-navy);
+  font-family: var(--de-sans, Arial, sans-serif); text-align: start;
+}
+.documents-page :is(h1,h2) { font-family: var(--de-serif, Georgia, serif); font-weight: 400; color: var(--pe-navy); letter-spacing: 0; }
+[dir="rtl"] .documents-page :is(h1,h2), .documents-page[dir="rtl"] :is(h1,h2) { font-family: 'Tajawal', Arial, sans-serif; }
+.documents-page h1 { font-size: clamp(28px, 3vw, 38px); line-height: 1.2; }
+.documents-page :is(a,button,input,select):focus-visible { outline: 2px solid var(--pe-gold); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) { .documents-page * { transition: none !important; } }
+
+.documents-page .documents-header { min-height: 76px; height: auto; padding: 15px clamp(18px, 4vw, 42px); gap: 16px; background: #fff; border-bottom: 1px solid var(--pe-border); color: var(--pe-navy); flex-wrap: wrap; }
+.documents-page .documents-logo { color: var(--pe-navy); font-family: var(--de-serif, Georgia, serif); font-size: 21px; gap: 9px; }
+.documents-page .documents-logo :is(b,svg) { color: var(--pe-gold); }
+.documents-page .documents-back { color: var(--pe-muted); font-size: 13px; }
+.documents-page .documents-back:hover { color: var(--pe-gold); }
+.documents-page .documents-content { margin: 0 auto; padding: 34px clamp(16px, 4vw, 40px) 48px; }
+.documents-page .documents-eyebrow { color: var(--pe-gold); font-size: 10px; letter-spacing: 1.3px; font-weight: 700; }
+[dir="rtl"] .documents-page .documents-back svg { transform: scaleX(-1); }
+@media(max-width:700px) {
+  .documents-page .documents-header { padding: 78px 16px 14px; min-height: 0; }
+  .documents-page .documents-content { padding: 24px 16px 36px; }
+  .documents-page .documents-logo { font-size: 18px; }
+  .documents-page .documents-back { font-size: 12px; }
+}
+
+.documents-page .documents-heading { gap: 16px; margin-bottom: 24px; }
+.documents-page .documents-heading p { color: var(--pe-muted); font-size: 14px; line-height: 1.65; }
+.documents-page .documents-heading-icon, .documents-page .document-icon { background: var(--pe-tint); color: var(--pe-gold); border: 1px solid var(--pe-border); border-radius: 9px; flex-shrink: 0; }
+.documents-page .documents-heading-icon { width: 60px; height: 60px; }
+.documents-page .documents-info { border: 1px solid var(--pe-border); background: var(--pe-tint); color: var(--pe-navy); border-radius: 9px; font-size: 13px; line-height: 1.6; }
+.documents-page .documents-info svg { color: var(--pe-gold); }
+.documents-page .documents-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 16px; }
+.documents-page .document-card { padding: 23px; border: 1px solid var(--pe-border); border-radius: 10px; box-shadow: var(--de-shadow, 0 3px 12px rgba(25,43,67,.045)); display: flex; flex-direction: column; min-width: 0; }
+.documents-page .document-icon { width: 48px; height: 48px; margin-bottom: 16px; }
+.documents-page .document-level { color: var(--pe-gold); font-size: 11px; font-weight: 600; }
+.documents-page .document-card h2 { font-size: 24px; }
+.documents-page .document-card p { min-height: 0; color: var(--pe-muted); margin: 0 0 18px; flex: 1; }
+.documents-page .document-footer { border-color: var(--pe-border); color: var(--pe-muted); margin-top: auto; gap: 10px; flex-wrap: wrap; }
+.documents-page .document-coming { background: var(--pe-tint); color: var(--pe-gold); border: 1px solid var(--pe-border); border-radius: 5px; }
+@media(max-width:700px) { .documents-page .documents-heading-icon { display: none; } }
+
       `}</style>
     </main>
   )
