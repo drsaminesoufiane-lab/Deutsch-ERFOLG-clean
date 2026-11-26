@@ -2398,3 +2398,10 @@ html[dir="rtl"] .de-floating-tools .language-switcher .language-switcher-menu { 
   }
 }
 /* END DE_OFFER_TRANSPARENT_V2 */
+
+.de-floating-tools .de-subscription-offer {
+  background: rgba(247,245,240,0.85) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
