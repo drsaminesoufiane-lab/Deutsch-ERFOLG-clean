@@ -39,7 +39,10 @@ export async function POST(request: Request) {
       service: !!serviceKey
     })
     if (!supabaseUrl || !supabaseKey || !serviceKey) {
-      return jsonError('Configuration Supabase manquante sur le serveur.', 500)
+      return jsonError(
+  `Configuration manquante : URL=${!!supabaseUrl}, PUBLIC=${!!supabaseKey}, SERVICE=${!!serviceKey}`,
+  500
+)
     }
 
     // Le token de la session étudiante est transmis par le navigateur.
