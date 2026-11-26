@@ -2,7 +2,7 @@
 'use client'
 
 import { useState } from 'react'
-import { useLanguage, type Language } from '@/contexts/LanguageContext'
+import { useLanguage } from '@/contexts/LanguageContext'
 import {
   BookOpen,
   Volume2,
@@ -287,7 +287,7 @@ const translations = {
 
 export default function AllemandDebutantPage() {
   // Utilise la langue globale partagée avec le sélecteur du bas
-  const { language, setLanguage } = useLanguage()
+  const { language } = useLanguage()
 
   const [tab, setTab] = useState<Tab>('alphabet')
   const [selectedLetter, setSelectedLetter] = useState(0)
@@ -349,271 +349,137 @@ export default function AllemandDebutantPage() {
   }
 
   return (
-    <main className="min-h-screen bg-[#F6F7FA] text-[#172B4D]" dir={direction}>
-      <div className="mx-auto max-w-6xl px-4 py-6 md:px-8 md:py-10">
+    <main className="de-beginner-v3 de-beginner-v4 de-beginner-premium" dir={direction}>
+      <div className="de-beginner-inner">
 
-        {/* HERO */}
-        <section className="relative overflow-hidden rounded-3xl bg-[#172B4D] p-6 text-white shadow-lg md:p-10">
-          <div className="absolute -right-10 -top-10 h-48 w-48 rounded-full bg-[#D6B56D]/10" />
-          <div className="absolute -bottom-20 right-1/3 h-56 w-56 rounded-full bg-white/5" />
-
-          <div className="relative z-10">
-            <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-2 text-sm">
-                <GraduationCap size={17} />
-                {tr.beginner}
-              </span>
-
-              <select
-                value={language}
-                onChange={e => setLanguage(e.target.value as Language)}
-                className="rounded-xl border border-white/20 bg-[#263B5C] px-3 py-2 text-sm text-white outline-none"
-                aria-label="Select language"
-              >
-                <option value="fr">🇫🇷 Français</option>
-                <option value="de">🇩🇪 Deutsch</option>
-                <option value="en">🇬🇧 English</option>
-                <option value="ar">🇲🇦 العربية</option>
-              </select>
-            </div>
-
-            <div className="max-w-2xl">
-              <p className="mb-2 text-sm font-semibold uppercase tracking-[0.2em] text-[#D6B56D]">
-                DEUTSCH ERFOLG
-              </p>
-              <h1 className="mb-4 text-3xl font-bold leading-tight md:text-5xl">
-                Hallo! 👋<br />
-                {tr.welcome}
-              </h1>
-              <p className="max-w-xl text-base leading-7 text-white/80 md:text-lg">
-                {tr.intro}
-              </p>
-
-              <div className="mt-6 flex flex-wrap gap-3">
-                <button
-                  onClick={() => setTab('alphabet')}
-                  className="rounded-xl bg-[#D6B56D] px-5 py-3 font-bold text-[#172B4D] transition hover:bg-[#e5c985]"
-                >
-                  {tr.start}
-                  <ChevronRight className="mx-1 inline" size={18} />
-                </button>
-                <span className="flex items-center gap-2 rounded-xl border border-white/20 px-4 py-3 text-sm text-white/80">
-                  <Headphones size={17} />
-                  {tr.audio}
-                </span>
-              </div>
-            </div>
+        {/* DE_BEGINNER_V4 — En-tête compact et progression intégrée */}
+        <header className="da-v4-header">
+          <div className="da-v4-intro">
+            <span className="da-v4-eyebrow"><GraduationCap size={16} /> A1 · {tr.beginner}</span>
+            <h1>{tr.welcome}</h1>
+            <p>{tr.intro}</p>
+            <span className="da-v4-audio"><Headphones size={15} /> {tr.audio}</span>
           </div>
-        </section>
-
-        {/* PROGRESS */}
-        <section className="my-6 rounded-2xl border border-[#E5E8EF] bg-white p-4 md:p-5">
-          <div className="mb-3 flex items-center justify-between gap-3">
-            <div className="flex items-center gap-2 font-semibold">
-              <Star className="text-[#D6B56D]" size={19} />
-              {tr.progress}
+          <div className="da-v4-progress">
+            <div className="da-v4-progress-label"><Star size={18} /> {tr.progress}</div>
+            <div className="da-v4-progress-number" dir="ltr">{completed.length}<small> / {alphabet.length}</small></div>
+            <div className="da-progress-track" role="progressbar" aria-label={tr.progress} aria-valuemin={0} aria-valuemax={alphabet.length} aria-valuenow={completed.length}>
+              <div style={{ width: `${completed.length / alphabet.length * 100}%` }} />
             </div>
-            <span className="text-sm font-bold text-[#172B4D]">
-              {completed.length} / 26 {tr.letters}
-            </span>
+            <p>{tr.progressHint}</p>
           </div>
-          <div className="h-2.5 overflow-hidden rounded-full bg-[#EDF0F5]">
-            <div
-              className="h-full rounded-full bg-[#D6B56D] transition-all"
-              style={{ width: `${(completed.length / 26) * 100}%` }}
-            />
-          </div>
-          <p className="mt-2 text-xs text-gray-500">{tr.progressHint}</p>
-        </section>
-
-        {/* NAVIGATION */}
-        <nav className="mb-6 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-5">
+        </header>
+        <nav className="da-v4-tabs" aria-label={tr.beginner}>
           {([
             ['alphabet', BookOpen, tr.alphabet],
             ['syllables', Languages, tr.syllables],
-            ['combinations', Volume2, 'Kombinationen'],
+            ['combinations', Volume2, {fr: 'Combinaisons', de: 'Kombinationen', en: 'Combinations', ar: 'التركيبات'}[language]],
             ['words', GraduationCap, tr.words],
             ['quiz', CheckCircle2, tr.quiz],
           ] as const).map(([id, Icon, label]) => (
-            <button
-              key={id}
-              onClick={() => setTab(id)}
-              className={`flex items-center justify-center gap-2 rounded-xl px-3 py-4 text-sm font-semibold transition ${
-                tab === id
-                  ? 'bg-[#172B4D] text-white shadow-md'
-                  : 'border border-[#E5E8EF] bg-white text-[#53617A] hover:border-[#D6B56D]'
-              }`}
-            >
-              <Icon size={18} /> {label}
+            <button type="button" key={id} onClick={() => setTab(id)} aria-pressed={tab === id}>
+              <Icon size={18} /> <span>{label}</span>
             </button>
           ))}
         </nav>
 
         {/* ALPHABET */}
         {tab === 'alphabet' && (
-          <section className="space-y-6">
-            <div>
-              <div className="mb-4">
-                <h2 className="text-2xl font-bold">{tr.alphabetTitle}</h2>
-                <p className="mt-1 text-sm text-gray-500">{tr.alphabetIntro}</p>
-              </div>
-
-              <div className="grid grid-cols-5 gap-2 sm:grid-cols-7 md:grid-cols-13">
-                {alphabet.map((item, index) => (
-                  <button
-                    key={item.letter}
-                    onClick={() => changeLetter(index)}
-                    className={`relative flex aspect-square flex-col items-center justify-center rounded-xl border text-xl font-bold transition ${
-                      selectedLetter === index
-                        ? 'border-[#172B4D] bg-[#172B4D] text-white shadow-md'
-                        : completed.includes(index)
-                          ? 'border-[#D6B56D] bg-[#FBF6EA] text-[#172B4D]'
-                          : 'border-[#E5E8EF] bg-white text-[#172B4D] hover:border-[#D6B56D]'
-                    }`}
-                  >
-                    {item.letter}
-                    {completed.includes(index) && (
-                      <span className="absolute right-1 top-1 text-[#B18B3E]">
-                        <CheckCircle2 size={12} />
-                      </span>
-                    )}
+          <section className="de-alpha-v3">
+            <header className="da-heading">
+              <h2>{tr.alphabetTitle}</h2>
+              <p>{tr.alphabetIntro}</p>
+            </header>
+            <div className="da-lesson">
+              <div className="da-letter-panel">
+                <div className="da-letter-content">
+                  <span className="da-label">{tr.selected}</span>
+                  <div className="da-letter" dir="ltr">{current.letter}</div>
+                  <div className="da-name">{current.name}</div>
+                  <button type="button" className="da-listen" onClick={() => speak(current.letter)}>
+                    <Volume2 size={19} /> {tr.listen}
                   </button>
-                ))}
-              </div>
-            </div>
-
-            <div className="grid gap-5 md:grid-cols-[1fr_1.4fr]">
-              <div className="flex flex-col items-center justify-center rounded-3xl bg-[#172B4D] p-8 text-white">
-                <span className="text-sm text-white/60">{tr.selected}</span>
-                <div className="my-3 text-8xl font-bold text-[#D6B56D]" dir="ltr">
-                  {current.letter}
                 </div>
-                <div className="text-xl font-semibold">{current.name}</div>
-                <button
-                  onClick={() => speak(current.letter)}
-                  className="mt-6 flex items-center gap-2 rounded-xl bg-[#D6B56D] px-5 py-3 font-semibold text-[#172B4D] hover:bg-[#e5c985]"
-                >
-                  <Volume2 size={19} /> {tr.listen}
-                </button>
-              </div>
-
-              <div className="rounded-3xl border border-[#E5E8EF] bg-white p-5 md:p-7">
-                <h3 className="mb-4 text-lg font-bold">{tr.pronunciation}</h3>
-
-                <div className="rounded-xl bg-[#F6F7FA] p-4">
-                  <p className="text-xs font-bold uppercase text-gray-400">
-                    🇩🇪 Deutsch
-                  </p>
-                  <p className="mt-1 font-medium">{current.pronunciation.de}</p>
-                </div>
-
-                <div className="mt-3 rounded-xl bg-[#F6F7FA] p-4">
-                  <p className="text-xs font-bold uppercase text-gray-400">
-                    {language === 'fr' ? '🇫🇷 Français' : language === 'de' ? '🇩🇪 Deutsch' : language === 'en' ? '🇬🇧 English' : '🇲🇦 العربية'}
-                  </p>
-                  <p className="mt-1 text-lg font-medium">
-                    {current.pronunciation[language]}
-                  </p>
-                </div>
-
-                <div className="mt-5 rounded-xl border border-[#E9D9B4] bg-[#FBF6EA] p-4">
-                  <p className="mb-2 text-xs font-bold uppercase text-[#9B7834]">
-                    {tr.example}
-                  </p>
-                  <div className="flex items-center justify-between gap-3">
-                    <div>
-                      <p className="text-xl font-bold" dir="ltr">{current.example}</p>
-                      <p className="mt-1 text-sm text-gray-600">
-                        {current[language]}
-                      </p>
-                    </div>
-                    <button
-                      onClick={() => speak(current.example)}
-                      className="rounded-full bg-white p-3 text-[#172B4D] shadow-sm hover:bg-[#F4E8CE]"
-                      aria-label={tr.listen}
-                    >
-                      <Volume2 size={21} />
+                <div className="da-navigation">
+                  <div className="da-count" dir="ltr">{selectedLetter + 1} / {alphabet.length}</div>
+                  <div className="da-nav-buttons">
+                    <button type="button" onClick={() => changeLetter(Math.max(0, selectedLetter - 1))} disabled={selectedLetter === 0}>
+                      <ChevronLeft size={17} style={{ transform: direction === 'rtl' ? 'rotate(180deg)' : undefined }} /> {tr.previous}
+                    </button>
+                    <button type="button" onClick={() => changeLetter(Math.min(alphabet.length - 1, selectedLetter + 1))} disabled={selectedLetter === alphabet.length - 1}>
+                      {tr.next} <ChevronRight size={17} style={{ transform: direction === 'rtl' ? 'rotate(180deg)' : undefined }} />
                     </button>
                   </div>
                 </div>
-
-                <div className="mt-5 flex justify-between gap-3">
-                  <button
-                    onClick={() => changeLetter(Math.max(0, selectedLetter - 1))}
-                    disabled={selectedLetter === 0}
-                    className="flex items-center gap-1 rounded-xl border border-[#E5E8EF] px-4 py-2 text-sm font-semibold disabled:opacity-30"
-                  >
-                    <ChevronLeft size={17} /> {tr.previous}
-                  </button>
-                  <button
-                    onClick={() => changeLetter(Math.min(25, selectedLetter + 1))}
-                    disabled={selectedLetter === 25}
-                    className="flex items-center gap-1 rounded-xl bg-[#172B4D] px-4 py-2 text-sm font-semibold text-white disabled:opacity-30"
-                  >
-                    {tr.next} <ChevronRight size={17} />
-                  </button>
+              </div>
+              <div className="da-details">
+                <h3>{tr.pronunciation}</h3>
+                <div className="da-note">
+                  <span>🇩🇪 Deutsch</span>
+                  <p>{current.pronunciation.de}</p>
+                </div>
+                {language !== 'de' && (
+                  <div className="da-note">
+                    <span>{language === 'fr' ? '🇫🇷 Français' : language === 'en' ? '🇬🇧 English' : '🇲🇦 العربية'}</span>
+                    <p>{current.pronunciation[language]}</p>
+                  </div>
+                )}
+                <div className="da-example">
+                  <span>{tr.example}</span>
+                  <div className="da-word-row">
+                    <div><strong dir="ltr">{current.example}</strong><p>{current[language]}</p></div>
+                    <button type="button" onClick={() => speak(current.example)} aria-label={tr.listen}><Volume2 size={21} /></button>
+                  </div>
                 </div>
               </div>
             </div>
-
-            <div className="rounded-3xl border border-[#E5E8EF] bg-white p-5 md:p-7">
-              <h3 className="mb-4 text-xl font-bold">{tr.special}</h3>
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="da-card">
+              <h3>{tr.alphabet} · A–Z</h3>
+              <div className="da-alphabet-grid" dir="ltr">
+                {alphabet.map((item, index) => (
+                  <button type="button" key={item.letter} onClick={() => changeLetter(index)} aria-pressed={selectedLetter === index} className={completed.includes(index) ? 'da-done' : ''}>
+                    {item.letter}
+                    {completed.includes(index) && <CheckCircle2 size={12} className="da-check" />}
+                  </button>
+                ))}
+              </div>
+            </div>
+            <div className="da-card">
+              <h3>{tr.special}</h3>
+              <div className="da-special-grid">
                 {specialLetters.map(item => (
-                  <div key={item.letter} className="rounded-2xl bg-[#F6F7FA] p-4">
-                    <div className="text-3xl font-bold text-[#172B4D]" dir="ltr">
-                      {item.letter}
-                    </div>
-                    <p className="mt-2 font-semibold text-[#B18B3E]">{item.sound}</p>
-                    <p className="mt-2 text-sm text-gray-600">
-                      {item.description[language]}
-                    </p>
-                    <div className="mt-3 flex items-center justify-between border-t border-gray-200 pt-3">
-                      <div>
-                        <p className="font-bold" dir="ltr">{item.word}</p>
-                        <p className="text-xs text-gray-500">{item.meaning[language]}</p>
-                      </div>
-                      <button
-                        onClick={() => speak(item.word)}
-                        className="rounded-full bg-white p-2 shadow-sm"
-                        aria-label={tr.listen}
-                      >
-                        <Volume2 size={17} />
-                      </button>
+                  <div key={item.letter} className="da-special">
+                    <strong className="da-special-letter" dir="ltr">{item.letter}</strong>
+                    <p className="da-sound">{item.sound}</p>
+                    <p>{item.description[language]}</p>
+                    <div className="da-word-row da-special-word">
+                      <div><strong dir="ltr">{item.word}</strong><p>{item.meaning[language]}</p></div>
+                      <button type="button" onClick={() => speak(item.word)} aria-label={tr.listen}><Volume2 size={17} /></button>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-
-            <div className="rounded-2xl border border-[#E9D9B4] bg-[#FBF6EA] p-4">
-              <div className="flex gap-3">
-                <Lightbulb className="shrink-0 text-[#B18B3E]" />
-                <div>
-                  <p className="font-bold">{tr.tip}</p>
-                  <p className="mt-1 text-sm text-gray-700">{tr.tipText}</p>
-                </div>
-              </div>
-            </div>
+            <div className="da-tip"><Lightbulb size={22} /><div><strong>{tr.tip}</strong><p>{tr.tipText}</p></div></div>
           </section>
         )}
 
         {/* SYLLABLES */}
         {tab === 'syllables' && (
-          <section className="space-y-5">
+          <section className="da-module space-y-5">
             <div>
               <h2 className="text-2xl font-bold">{tr.syllableTitle}</h2>
               <p className="mt-2 text-sm leading-6 text-gray-500">{tr.syllableIntro}</p>
             </div>
 
-            <div className="rounded-2xl bg-[#172B4D] p-5 text-white">
+            <div className="rounded-2xl bg-[#192b43] p-5 text-white">
               <p className="text-sm text-white/70">{tr.rule}</p>
               <p className="mt-2 text-xl font-bold">{tr.formula}</p>
               <p className="mt-2 text-sm text-white/70">{tr.formulaExample}</p>
             </div>
 
-            <div className="overflow-hidden rounded-2xl border border-[#E5E8EF] bg-white">
-              <div className="grid grid-cols-6 border-b border-[#E5E8EF] bg-[#F6F7FA] px-3 py-3 text-center text-xs font-bold text-gray-500 sm:px-5">
+            <div className="overflow-hidden rounded-2xl border border-[#e3ded3] bg-white">
+              <div className="grid grid-cols-6 border-b border-[#e3ded3] bg-[#f7f5f0] px-3 py-3 text-center text-xs font-bold text-gray-500 sm:px-5">
                 <div>{tr.letter}</div>
                 {['A', 'E', 'I', 'O', 'U'].map(vowel => (
                   <div key={vowel}>{vowel}</div>
@@ -623,14 +489,14 @@ export default function AllemandDebutantPage() {
               {syllableRows.map(row => (
                 <div
                   key={row.consonant}
-                  className="grid grid-cols-6 items-center border-b border-[#EDF0F5] px-3 py-3 text-center last:border-0 sm:px-5"
+                  className="grid grid-cols-6 items-center border-b border-[#eeeae2] px-3 py-3 text-center last:border-0 sm:px-5"
                 >
-                  <div className="font-bold text-[#B18B3E]">{row.consonant}</div>
+                  <div className="font-bold text-[#806337]">{row.consonant}</div>
                   {row.values.map(value => (
                     <button
                       key={value}
                       onClick={() => speak(value)}
-                      className="mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-[#F6F7FA] text-base font-bold transition hover:bg-[#F4E8CE] sm:h-14 sm:w-14 sm:text-lg"
+                      className="mx-auto flex h-11 w-11 items-center justify-center rounded-xl bg-[#f7f5f0] text-base font-bold transition hover:bg-[#f3ecdd] sm:h-14 sm:w-14 sm:text-lg"
                       dir="ltr"
                     >
                       {value}
@@ -640,24 +506,24 @@ export default function AllemandDebutantPage() {
               ))}
             </div>
 
-            <div className="rounded-2xl border border-[#E5E8EF] bg-white p-5">
+            <div className="rounded-2xl border border-[#e3ded3] bg-white p-5">
               <h3 className="mb-3 font-bold">{tr.remember}</h3>
               {syllableRows.map(row => (
                 <p key={row.consonant} className="mb-2 text-sm text-gray-600">
-                  <strong className="text-[#172B4D]">{row.consonant} :</strong>{' '}
+                  <strong className="text-[#192b43]">{row.consonant} :</strong>{' '}
                   {row.note[language]}
                 </p>
               ))}
             </div>
 
-            <div className="rounded-2xl border border-[#E9D9B4] bg-[#FBF6EA] p-5">
+            <div className="rounded-2xl border border-[#e6d8b8] bg-[#f4ebd8] p-5">
               <h3 className="mb-3 font-bold">{tr.tryRead}</h3>
               <div className="flex flex-wrap gap-2">
                 {['ba-be-bi', 'ma-mi-mo', 'la-le-li', 'pa-pe-pi', 'ta-to-tu', 'na-ne-ni'].map(item => (
                   <button
                     key={item}
                     onClick={() => speak(item.replaceAll('-', ' '))}
-                    className="rounded-xl border border-[#E9D9B4] bg-white px-4 py-3 font-semibold"
+                    className="rounded-xl border border-[#e6d8b8] bg-white px-4 py-3 font-semibold"
                     dir="ltr"
                   >
                     {item} <Volume2 className="mx-1 inline" size={15} />
@@ -670,7 +536,7 @@ export default function AllemandDebutantPage() {
 
         {/* COMBINATIONS */}
         {tab === 'combinations' && (
-          <section className="space-y-6">
+          <section className="da-module space-y-6">
             <div>
               <h2 className="text-2xl font-bold">
                 {combinationTranslations[language].title}
@@ -692,22 +558,22 @@ export default function AllemandDebutantPage() {
                   {group.items.map(item => (
                     <article
                       key={item.value}
-                      className="rounded-2xl border border-[#E5E8EF] bg-white p-5"
+                      className="rounded-2xl border border-[#e3ded3] bg-white p-5"
                     >
                       <div className="flex items-center justify-between gap-3">
-                        <span className="text-4xl font-extrabold text-[#172B4D]" dir="ltr">
+                        <span className="da-german-word text-4xl font-extrabold text-[#192b43]" dir="ltr">
                           {item.value}
                         </span>
                         <button
                           onClick={() => speak(item.value)}
-                          className="rounded-full bg-[#F6F7FA] p-3 hover:bg-[#F4E8CE]"
+                          className="rounded-full bg-[#f7f5f0] p-3 hover:bg-[#f3ecdd]"
                           aria-label={combinationTranslations[language].listen}
                         >
                           <Volume2 size={20} />
                         </button>
                       </div>
 
-                      <div className="mt-4 rounded-xl bg-[#F6F7FA] p-3">
+                      <div className="mt-4 rounded-xl bg-[#f7f5f0] p-3">
                         <p className="text-xs font-bold uppercase text-gray-400">
                           {combinationTranslations[language].pronunciation}
                         </p>
@@ -717,7 +583,7 @@ export default function AllemandDebutantPage() {
                       </div>
 
                       <div className="mt-3">
-                        <p className="text-xs font-bold uppercase text-[#B18B3E]">
+                        <p className="text-xs font-bold uppercase text-[#806337]">
                           {combinationTranslations[language].explanation}
                         </p>
                         <p className="mt-1 text-sm leading-6 text-gray-600">
@@ -725,12 +591,12 @@ export default function AllemandDebutantPage() {
                         </p>
                       </div>
 
-                      <div className="mt-4 flex items-center justify-between gap-3 border-t border-[#EDF0F5] pt-4">
+                      <div className="mt-4 flex items-center justify-between gap-3 border-t border-[#eeeae2] pt-4">
                         <div>
                           <p className="text-xs font-bold text-gray-400">
                             {combinationTranslations[language].example}
                           </p>
-                          <p className="mt-1 text-xl font-bold" dir="ltr">
+                          <p className="da-german-word mt-1 text-xl font-bold" dir="ltr">
                             {item.example}
                           </p>
                           <p className="text-sm text-gray-500">
@@ -739,7 +605,7 @@ export default function AllemandDebutantPage() {
                         </div>
                         <button
                           onClick={() => speak(item.example)}
-                          className="rounded-full bg-[#FBF6EA] p-3 text-[#172B4D] hover:bg-[#F4E8CE]"
+                          className="rounded-full bg-[#f4ebd8] p-3 text-[#192b43] hover:bg-[#f3ecdd]"
                           aria-label={`${combinationTranslations[language].listen}: ${item.example}`}
                         >
                           <Headphones size={20} />
@@ -751,9 +617,9 @@ export default function AllemandDebutantPage() {
               </div>
             ))}
 
-            <div className="rounded-2xl border border-[#E9D9B4] bg-[#FBF6EA] p-5">
+            <div className="rounded-2xl border border-[#e6d8b8] bg-[#f4ebd8] p-5">
               <div className="flex gap-3">
-                <Lightbulb className="shrink-0 text-[#B18B3E]" />
+                <Lightbulb className="shrink-0 text-[#806337]" />
                 <p className="text-sm leading-6 text-gray-700">
                   {combinationTranslations[language].tip}
                 </p>
@@ -764,7 +630,7 @@ export default function AllemandDebutantPage() {
 
         {/* FIRST WORDS */}
         {tab === 'words' && (
-          <section className="space-y-5">
+          <section className="da-module space-y-5">
             <div>
               <h2 className="text-2xl font-bold">{tr.firstWordsTitle}</h2>
               <p className="mt-2 text-sm text-gray-500">{tr.firstWordsIntro}</p>
@@ -774,21 +640,21 @@ export default function AllemandDebutantPage() {
               {firstWords.map((word, index) => (
                 <div
                   key={word.de}
-                  className="flex items-center justify-between gap-3 rounded-2xl border border-[#E5E8EF] bg-white p-4"
+                  className="flex items-center justify-between gap-3 rounded-2xl border border-[#e3ded3] bg-white p-4"
                 >
                   <div className="min-w-0">
-                    <span className="text-xs font-bold text-[#B18B3E]">
+                    <span className="text-xs font-bold text-[#806337]">
                       {tr.word} {index + 1}
                     </span>
-                    <h3 className="mt-1 text-xl font-bold" dir="ltr">{word.de}</h3>
+                    <h3 className="da-german-word mt-1 text-xl font-bold" dir="ltr">{word.de}</h3>
                     <p className="text-sm text-gray-600">{word[language === 'de' ? 'deMeaning' : language]}</p>
-                    <p className="mt-2 text-xs text-[#B18B3E]">
+                    <p className="mt-2 text-xs text-[#806337]">
                       {tr.approximate}: <span dir="ltr">{word.sound}</span>
                     </p>
                   </div>
                   <button
                     onClick={() => speak(word.de)}
-                    className="shrink-0 rounded-full bg-[#F6F7FA] p-3 hover:bg-[#F4E8CE]"
+                    className="shrink-0 rounded-full bg-[#f7f5f0] p-3 hover:bg-[#f3ecdd]"
                     aria-label={`${tr.listen}: ${word.de}`}
                   >
                     <Volume2 size={21} />
@@ -797,43 +663,43 @@ export default function AllemandDebutantPage() {
               ))}
             </div>
 
-            <div className="rounded-2xl bg-[#172B4D] p-5 text-white">
+            <div className="rounded-2xl bg-[#192b43] p-5 text-white">
               <h3 className="text-lg font-bold">{tr.conversation}</h3>
               <div className="mt-4 space-y-3">
                 <div className="rounded-xl bg-white/10 p-3">
-                  <p className="font-bold text-[#D6B56D]" dir="ltr">A : Hallo!</p>
+                  <p className="font-bold text-[#b49760]" dir="ltr">A : Hallo!</p>
                   <p className="text-sm text-white/80">
                     {language === 'fr' ? 'Bonjour !' : language === 'de' ? 'Hallo!' : language === 'en' ? 'Hello!' : 'مرحباً!'}
                   </p>
                   <button
                     onClick={() => speak('Hallo!')}
-                    className="mt-2 text-sm text-[#D6B56D]"
+                    className="mt-2 text-sm text-[#b49760]"
                   >
                     <Volume2 className="mx-1 inline" size={15} /> {tr.listen}
                   </button>
                 </div>
 
                 <div className="rounded-xl bg-white/10 p-3">
-                  <p className="font-bold text-[#D6B56D]" dir="ltr">B : Hallo! Wie geht es dir?</p>
+                  <p className="font-bold text-[#b49760]" dir="ltr">B : Hallo! Wie geht es dir?</p>
                   <p className="text-sm text-white/80">
                     {language === 'fr' ? 'Salut ! Comment vas-tu ?' : language === 'de' ? 'Hallo! Wie geht es dir?' : language === 'en' ? 'Hello! How are you?' : 'مرحباً! كيف حالك؟'}
                   </p>
                   <button
                     onClick={() => speak('Hallo! Wie geht es dir?')}
-                    className="mt-2 text-sm text-[#D6B56D]"
+                    className="mt-2 text-sm text-[#b49760]"
                   >
                     <Volume2 className="mx-1 inline" size={15} /> {tr.listen}
                   </button>
                 </div>
 
                 <div className="rounded-xl bg-white/10 p-3">
-                  <p className="font-bold text-[#D6B56D]" dir="ltr">A : Gut, danke!</p>
+                  <p className="font-bold text-[#b49760]" dir="ltr">A : Gut, danke!</p>
                   <p className="text-sm text-white/80">
                     {language === 'fr' ? 'Bien, merci !' : language === 'de' ? 'Gut, danke!' : language === 'en' ? 'Fine, thanks!' : 'بخير، شكراً!'}
                   </p>
                   <button
                     onClick={() => speak('Gut, danke!')}
-                    className="mt-2 text-sm text-[#D6B56D]"
+                    className="mt-2 text-sm text-[#b49760]"
                   >
                     <Volume2 className="mx-1 inline" size={15} /> {tr.listen}
                   </button>
@@ -845,15 +711,15 @@ export default function AllemandDebutantPage() {
 
         {/* QUIZ */}
         {tab === 'quiz' && (
-          <section className="mx-auto max-w-2xl space-y-5">
+          <section className="da-module da-quiz mx-auto max-w-2xl space-y-5">
             <div>
               <h2 className="text-2xl font-bold">{tr.knowledge}</h2>
               <p className="mt-2 text-sm text-gray-500">{tr.quizIntro}</p>
             </div>
 
-            <div className="rounded-2xl border border-[#E5E8EF] bg-white p-5 md:p-7">
+            <div className="rounded-2xl border border-[#e3ded3] bg-white p-5 md:p-7">
               <div className="mb-5 flex items-center justify-between gap-3">
-                <span className="rounded-full bg-[#FBF6EA] px-3 py-2 text-xs font-bold text-[#9B7834]">
+                <span className="rounded-full bg-[#f4ebd8] px-3 py-2 text-xs font-bold text-[#806337]">
                   {tr.question} {selectedQuiz + 1} / {quizQuestions.length}
                 </span>
                 <span className="text-sm font-bold">{tr.score} : {score}</span>
@@ -869,10 +735,10 @@ export default function AllemandDebutantPage() {
                   const isCorrect = index === quizQuestions[selectedQuiz].answer
                   const isSelected = answer === index
 
-                  let style = 'border-[#E5E8EF] bg-white hover:border-[#D6B56D]'
+                  let style = 'border-[#e3ded3] bg-white hover:border-[#b49760]'
                   if (answered && isCorrect) style = 'border-green-500 bg-green-50 text-green-800'
                   else if (answered && isSelected && !isCorrect) style = 'border-red-400 bg-red-50 text-red-800'
-                  else if (isSelected) style = 'border-[#172B4D] bg-[#F1F3F7]'
+                  else if (isSelected) style = 'border-[#192b43] bg-[#f1ede4]'
 
                   return (
                     <button
@@ -889,7 +755,7 @@ export default function AllemandDebutantPage() {
               </div>
 
               {answered && (
-                <div className="mt-5 rounded-xl bg-[#F6F7FA] p-4">
+                <div className="mt-5 rounded-xl bg-[#f7f5f0] p-4">
                   <p className={`font-bold ${answer === quizQuestions[selectedQuiz].answer ? 'text-green-700' : 'text-red-700'}`}>
                     {answer === quizQuestions[selectedQuiz].answer ? tr.correct : tr.wrong}
                   </p>
@@ -904,14 +770,14 @@ export default function AllemandDebutantPage() {
                   <button
                     onClick={checkAnswer}
                     disabled={answer === null}
-                    className="w-full rounded-xl bg-[#172B4D] px-5 py-3 font-bold text-white disabled:opacity-40"
+                    className="w-full rounded-xl bg-[#192b43] px-5 py-3 font-bold text-white disabled:opacity-40"
                   >
                     {tr.validate}
                   </button>
                 ) : (
                   <button
                     onClick={nextQuestion}
-                    className="w-full rounded-xl bg-[#D6B56D] px-5 py-3 font-bold text-[#172B4D]"
+                    className="w-full rounded-xl bg-[#b49760] px-5 py-3 font-bold text-[#192b43]"
                   >
                     {tr.nextQuestion} <ChevronRight className="mx-1 inline" size={18} />
                   </button>
@@ -921,7 +787,7 @@ export default function AllemandDebutantPage() {
 
             <button
               onClick={restartQuiz}
-              className="flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-[#172B4D]"
+              className="flex items-center gap-2 text-sm font-semibold text-gray-500 hover:text-[#192b43]"
             >
               <RotateCcw size={16} /> {tr.restart}
             </button>
@@ -929,14 +795,198 @@ export default function AllemandDebutantPage() {
         )}
 
         {/* FOOTER */}
-        <footer className="mt-10 border-t border-[#E5E8EF] pt-6 text-center">
-          <div className="flex items-center justify-center gap-2 text-sm font-bold text-[#172B4D]">
-            <GraduationCap className="text-[#D6B56D]" size={20} />
+        <footer className="mt-10 border-t border-[#e3ded3] pt-6 text-center">
+          <div className="flex items-center justify-center gap-2 text-sm font-bold text-[#192b43]">
+            <GraduationCap className="text-[#b49760]" size={20} />
             DEUTSCH ERFOLG
           </div>
           <p className="mt-2 text-xs text-gray-400">{tr.footer}</p>
         </footer>
       </div>
+
+      <style jsx global>{`
+        .de-beginner-v3 { background:#f7f5f0; color:#192b43; min-height:100vh; }
+        .de-beginner-v3 .de-beginner-inner { max-width:1152px; margin:0 auto; padding:28px 24px; }
+        .de-beginner-v3 .de-beginner-hero { position:relative; overflow:hidden; border-radius:24px; background:#192b43; color:white; padding:28px; margin:0 0 20px; }
+        .de-beginner-v3 .de-beginner-hero h1 { color:white; font-size:clamp(26px,4vw,42px); line-height:1.15; margin:12px 0; }
+        .de-beginner-v3 .de-beginner-hero p { color:inherit; margin:8px 0; }
+        .de-beginner-v3 .de-beginner-hero button { background:#b49760; color:#192b43; border:0; border-radius:12px; padding:12px 18px; font-weight:700; display:inline-flex; align-items:center; gap:6px; }
+        .de-beginner-v3 .de-beginner-hero select { background:#263b5c; color:white; border:1px solid #ffffff40; padding:8px 12px; border-radius:10px; }
+        .de-beginner-v3 .de-beginner-hero .da-hero-top,.de-beginner-v3 .de-beginner-hero .da-hero-actions { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; }
+        .de-beginner-v3 .de-beginner-hero .da-hero-actions { justify-content:flex-start; margin-top:18px; }
+        .de-beginner-v3 .de-beginner-hero span { display:inline-flex; align-items:center; gap:7px; }
+        .de-beginner-v3 .de-beginner-hero .da-brand { color:#b49760; font-weight:700; letter-spacing:.16em; font-size:12px; }
+        .de-beginner-v3 .de-beginner-progress { background:white; border:1px solid #e3ded3; border-radius:16px; padding:16px; margin:0 0 20px; }
+        .de-beginner-v3 .da-progress-top { display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px; font-weight:600; }
+        .de-beginner-v3 .da-progress-top > div { display:flex; align-items:center; gap:8px; }
+        .de-beginner-v3 .da-progress-track { height:8px; border-radius:99px; background:#eeeae2; margin:10px 0; overflow:hidden; }
+        .de-beginner-v3 .da-progress-track > div { height:100%; background:#b49760; border-radius:99px; }
+        .de-beginner-v3 .de-beginner-progress p { font-size:12px; color:#626a75; margin:0; }
+        .de-beginner-v3 .de-beginner-tabs { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:8px; margin-bottom:24px; }
+        .de-beginner-v3 .de-beginner-tabs button { display:flex; align-items:center; justify-content:center; gap:7px; border:1px solid #e3ded3; border-radius:12px; background:white; color:#626a75; font:inherit; font-size:13px; font-weight:650; min-height:48px; padding:10px; cursor:pointer; }
+        .de-beginner-v3 .de-beginner-tabs button[aria-pressed=true] { background:#192b43; color:white; border-color:#192b43; }
+        .de-beginner-v3 .de-alpha-v3 { display:grid; gap:20px; }
+        .de-beginner-v3 .de-alpha-v3 * { box-sizing:border-box; }
+        .de-beginner-v3 .de-alpha-v3 h2,.de-beginner-v3 .de-alpha-v3 h3,.de-beginner-v3 .de-alpha-v3 p { margin:0; }
+        .de-beginner-v3 .da-heading h2 { font-size:25px; font-weight:750; color:#192b43; }
+        .de-beginner-v3 .da-heading p { margin-top:5px; font-size:14px; color:#626a75; }
+        .de-beginner-v3 .da-lesson { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1.35fr); gap:18px; padding:16px; border:1px solid #e3ded3; border-radius:22px; background:#fff; box-shadow:0 5px 22px #172b4d08; }
+        .de-beginner-v3 .da-letter-panel { background:#192b43; color:#fff; border-radius:17px; min-height:300px; padding:24px 18px 18px; display:flex; flex-direction:column; align-items:stretch; justify-content:space-between; gap:20px; min-width:0; }
+        .de-beginner-v3 .da-letter-content { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:10px; }
+        .de-beginner-v3 .da-label { color:#cbd5e5; font-size:12px; font-weight:600; }
+        .de-beginner-v3 .da-letter { font-size:clamp(76px,9vw,112px); line-height:1; font-weight:800; color:#b49760; }
+        .de-beginner-v3 .da-name { font-size:21px; font-weight:650; color:#fff; }
+        .de-beginner-v3 .de-alpha-v3 button { font:inherit; cursor:pointer; }
+        .de-beginner-v3 .da-listen { display:inline-flex; align-items:center; justify-content:center; gap:8px; margin-top:5px; padding:10px 20px; min-height:42px; border:0; border-radius:11px; background:#b49760; color:#192b43; font-weight:750; }
+        .de-beginner-v3 .da-navigation { border-top:1px solid #ffffff29; padding-top:12px; }
+        .de-beginner-v3 .da-count { text-align:center; color:#b49760; font-size:12px; font-weight:650; margin-bottom:8px; }
+        .de-beginner-v3 .da-nav-buttons { display:flex; gap:8px; }
+        .de-beginner-v3 .da-nav-buttons button { flex:1; min-width:0; display:flex; align-items:center; justify-content:center; gap:4px; min-height:40px; padding:8px 6px; border:1px solid #ffffff45; border-radius:10px; background:#ffffff0b; color:#fff; font-weight:650; font-size:13px; }
+        .de-beginner-v3 .da-nav-buttons button:last-child { border-color:#b49760; background:#b49760; color:#192b43; }
+        .de-beginner-v3 .da-nav-buttons button:disabled { opacity:.38; cursor:not-allowed; }
+        .de-beginner-v3 .da-details { display:flex; flex-direction:column; justify-content:center; gap:12px; padding:18px; background:#f7f5f0; border-radius:17px; min-width:0; }
+        .de-beginner-v3 .da-details h3,.de-beginner-v3 .da-card h3 { color:#192b43; font-size:18px; font-weight:750; }
+        .de-beginner-v3 .da-note { border:1px solid #e3ded3; border-radius:12px; background:#fff; padding:13px; }
+        .de-beginner-v3 .da-note span,.de-beginner-v3 .da-example > span { display:block; font-size:11px; font-weight:750; color:#69768a; text-transform:uppercase; letter-spacing:.05em; margin-bottom:5px; }
+        .de-beginner-v3 .da-note p { color:#192b43; font-size:15px; font-weight:600; }
+        .de-beginner-v3 .da-example { border:1px solid #e6d8b8; border-radius:12px; padding:14px; background:#f4ebd8; }
+        .de-beginner-v3 .da-example > span { color:#806337; }
+        .de-beginner-v3 .da-word-row { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+        .de-beginner-v3 .da-word-row strong { font-size:20px; color:#192b43; }
+        .de-beginner-v3 .da-word-row p { color:#626a75; font-size:13px; margin-top:3px; }
+        .de-beginner-v3 .da-word-row button { flex:none; display:grid; place-items:center; width:40px; height:40px; border:1px solid #e6d8b8; border-radius:50%; background:#fff; color:#192b43; }
+        .de-beginner-v3 .da-card { border:1px solid #e3ded3; border-radius:18px; background:#fff; padding:18px; }
+        .de-beginner-v3 .da-card h3 { margin-bottom:14px; }
+        .de-beginner-v3 .da-alphabet-grid { display:grid; grid-template-columns:repeat(13,minmax(0,1fr)); gap:8px; }
+        .de-beginner-v3 .da-alphabet-grid button { position:relative; display:grid; place-items:center; min-height:44px; border:1px solid #e3ded3; border-radius:10px; background:#f7f5f0; color:#192b43; font-size:19px; font-weight:750; }
+        .de-beginner-v3 .da-alphabet-grid button.da-done { border-color:#b49760; background:#f4ebd8; }
+        .de-beginner-v3 .da-alphabet-grid button[aria-pressed=true] { color:#b49760; background:#192b43; border-color:#192b43; }
+        .de-beginner-v3 .da-check { position:absolute; top:3px; right:3px; color:#806337; }
+        .de-beginner-v3 .da-special-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+        .de-beginner-v3 .da-special { border-radius:12px; background:#f7f5f0; padding:14px; }
+        .de-beginner-v3 .da-special-letter { font-size:26px; color:#192b43; }
+        .de-beginner-v3 .da-special p { font-size:13px; color:#626a75; margin-top:6px; }
+        .de-beginner-v3 .da-special .da-sound { color:#806337; font-weight:700; }
+        .de-beginner-v3 .da-special-word { border-top:1px solid #e3ded3; margin-top:10px; padding-top:10px; }
+        .de-beginner-v3 .da-special-word strong { font-size:15px; overflow-wrap:anywhere; }
+        .de-beginner-v3 .da-tip { display:flex; gap:12px; padding:16px; border-radius:14px; background:#f4ebd8; border:1px solid #e6d8b8; color:#192b43; }
+        .de-beginner-v3 .da-tip > svg { flex:none; color:#806337; }
+        .de-beginner-v3 .da-tip p { font-size:13px; line-height:1.6; margin-top:4px; }
+        .de-beginner-v3 .de-alpha-v3 button:not(:disabled):hover { filter:brightness(.96); }
+        .de-beginner-v3 .de-alpha-v3 button:focus-visible { outline:3px solid #806337; outline-offset:2px; }
+        @media(max-width:1100px) { .de-beginner-v3 .da-alphabet-grid { grid-template-columns:repeat(9,minmax(0,1fr)); } .de-beginner-v3 .da-special-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+        @media(max-width:850px) { .de-beginner-v3 .da-lesson { grid-template-columns:1fr; } .de-beginner-v3 .de-beginner-tabs { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+        @media(max-width:550px) { .de-beginner-v3 .de-beginner-inner { padding:14px 10px; } .de-beginner-v3 .da-lesson { padding:10px; gap:10px; } .de-beginner-v3 .da-details { padding:12px; } .de-beginner-v3 .da-alphabet-grid { grid-template-columns:repeat(5,minmax(0,1fr)); } .de-beginner-v3 .da-special-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .de-beginner-v3 .da-card { padding:12px; } .de-beginner-v3 .de-beginner-tabs { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+
+        /* DE_BEGINNER_V4 — compact student workspace */
+        .de-beginner-v4 .de-beginner-inner { max-width:1440px; padding:20px 24px 32px; }
+        .de-beginner-v4 .da-v4-header { display:grid; grid-template-columns:minmax(0,1fr) minmax(220px,300px); align-items:center; gap:24px; background:#fff; border:1px solid #e3ded3; border-inline-start:4px solid #b49760; border-radius:16px; padding:18px 22px; margin-bottom:16px; }
+        .de-beginner-v4 .da-v4-eyebrow { display:inline-flex; align-items:center; gap:7px; color:#806337; font-size:12px; font-weight:700; }
+        .de-beginner-v4 .da-v4-intro h1 { color:#192b43; font-size:clamp(22px,2.5vw,30px); line-height:1.18; font-weight:750; margin:8px 0 5px; }
+        .de-beginner-v4 .da-v4-intro p { color:#58677c; font-size:14px; margin:0; line-height:1.5; }
+        .de-beginner-v4 .da-v4-audio { display:inline-flex; align-items:center; gap:6px; color:#65748a; font-size:12px; margin-top:9px; }
+        .de-beginner-v4 .da-v4-progress { background:#f7f5f0; border:1px solid #e7eaf0; border-radius:12px; padding:12px 15px; min-width:0; }
+        .de-beginner-v4 .da-v4-progress-label { display:flex; gap:6px; align-items:center; color:#192b43; font-size:13px; font-weight:650; }
+        .de-beginner-v4 .da-v4-progress-label svg { color:#806337; flex-shrink:0; }
+        .de-beginner-v4 .da-v4-progress-number { color:#192b43; font-size:24px; font-weight:750; line-height:1.2; margin-top:6px; text-align:start; }
+        .de-beginner-v4 .da-v4-progress-number small { color:#748195; font-size:14px; font-weight:500; }
+        .de-beginner-v4 .da-v4-progress p { color:#65748a; margin:0; font-size:11px; line-height:1.4; }
+        .de-beginner-v4 .da-v4-tabs { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:5px; padding:5px; margin-bottom:18px; border:1px solid #e3ded3; background:#fff; border-radius:13px; }
+        .de-beginner-v4 .da-v4-tabs button { display:flex; justify-content:center; align-items:center; gap:7px; min-height:42px; padding:8px 7px; border:1px solid transparent; border-radius:9px; background:transparent; color:#626a75; font:inherit; font-size:13px; font-weight:650; cursor:pointer; }
+        .de-beginner-v4 .da-v4-tabs button svg { flex:none; }
+        .de-beginner-v4 .da-v4-tabs button[aria-pressed=true] { background:#192b43; color:#fff; }
+        .de-beginner-v4 .da-v4-tabs button[aria-pressed=true] svg { color:#b49760; }
+        .de-beginner-v4 .da-v4-tabs button:not([aria-pressed=true]):hover { background:#f7f5f0; }
+        .de-beginner-v4 .da-v4-tabs button:focus-visible { outline:2px solid #806337; outline-offset:1px; }
+        .de-beginner-v4 .de-alpha-v3 { gap:14px; }
+        .de-beginner-v4 .da-heading h2 { font-size:23px; }
+        .de-beginner-v4 .da-lesson { padding:12px; gap:12px; border-radius:18px; grid-template-columns:minmax(0,0.88fr) minmax(0,1.4fr); }
+        .de-beginner-v4 .da-letter-panel { min-height:285px; padding:16px; gap:12px; border-radius:13px; }
+        .de-beginner-v4 .da-letter-content { gap:6px; }
+        .de-beginner-v4 .da-letter { font-size:clamp(68px,7vw,96px); }
+        .de-beginner-v4 .da-navigation { padding-top:9px; }
+        .de-beginner-v4 .da-details { padding:14px; gap:9px; border-radius:13px; }
+        .de-beginner-v4 .da-note,.de-beginner-v4 .da-example { padding:11px 13px; }
+        .de-beginner-v4 .da-card { padding:14px; border-radius:15px; }
+        @media(max-width:1000px) { .de-beginner-v4 .da-v4-tabs { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+        @media(max-width:850px) { .de-beginner-v4 .da-v4-header,.de-beginner-v4 .da-lesson { grid-template-columns:1fr; } .de-beginner-v4 .da-letter-panel { min-height:270px; } }
+        @media(max-width:550px) { .de-beginner-v4 .de-beginner-inner { padding:12px 10px 24px; } .de-beginner-v4 .da-v4-header { padding:14px; gap:12px; } .de-beginner-v4 .da-v4-tabs { grid-template-columns:repeat(2,minmax(0,1fr)); } .de-beginner-v4 .da-lesson { padding:9px; gap:9px; } }
+
+        /* DE-BEGINNER-PREMIUM-V5 — same design tokens as Wörterbuch */
+        .de-beginner-premium {
+          --da-navy:#192b43; --da-gold:#b49760; --da-light-gold:#e3cb96;
+          --da-ink-gold:#806337; --da-paper:#f7f5f0; --da-line:#e3ded3; --da-muted:#626a75;
+          background:var(--da-paper); color:var(--da-navy); font-family:'Plus Jakarta Sans',Arial,sans-serif;
+          font-size:14px; line-height:1.6; min-height:100vh;
+        }
+        .de-beginner-premium[dir="rtl"] {font-family:'Tajawal',Arial,sans-serif;}
+        .de-beginner-premium *, .de-beginner-premium *::before,.de-beginner-premium *::after {box-sizing:border-box;}
+        .de-beginner-premium button,.de-beginner-premium select,.de-beginner-premium input {font-family:inherit;}
+        .de-beginner-premium h1,.de-beginner-premium h2,.de-beginner-premium h3,
+        .de-beginner-premium .da-letter,.de-beginner-premium .da-word-row strong,
+        .de-beginner-premium .da-special-letter,.de-beginner-premium .da-german-word,
+        .de-beginner-premium .da-v4-progress-number {
+          font-family:Georgia,'Times New Roman',serif; font-weight:400; letter-spacing:-.025em;
+        }
+        .de-beginner-premium[dir="rtl"] h1,.de-beginner-premium[dir="rtl"] h2,.de-beginner-premium[dir="rtl"] h3 {font-family:'Tajawal',Arial,sans-serif; font-weight:500; letter-spacing:0;}
+        .de-beginner-premium .de-beginner-inner {max-width:1280px; padding:28px 24px 48px;}
+        .de-beginner-premium .da-v4-header {background:var(--da-navy);border:1px solid #34455b;border-radius:12px;box-shadow:none;padding:24px 30px;gap:24px;margin-bottom:20px;}
+        .de-beginner-premium .da-v4-intro h1 {font-size:clamp(25px,3vw,36px);font-weight:400;line-height:1.2;margin:10px 0 6px;color:white;}
+        .de-beginner-premium .da-v4-intro p {font-size:14px;color:#ffffffb3;}
+        .de-beginner-premium .da-v4-eyebrow {color:var(--da-light-gold);font-size:12px;letter-spacing:.02em;border-radius:6px;}
+        .de-beginner-premium .da-v4-audio {color:#ffffffb3;font-size:12px;}
+        .de-beginner-premium .da-v4-progress {background:transparent;border:0;border-inline-start:1px solid #506074;border-radius:0;padding:0 0 0 0;padding-inline-start:24px;box-shadow:none;}
+        .de-beginner-premium .da-v4-progress-number {font-weight:400;color:white;font-size:30px;}
+        .de-beginner-premium .da-v4-progress-label svg {color:var(--da-light-gold);}
+        .de-beginner-premium .da-v4-tabs {border:1px solid var(--da-line);border-radius:9px;background:white;box-shadow:none;gap:4px;}
+        .de-beginner-premium .da-v4-tabs button {border-radius:7px;font-weight:600;font-size:13px;}
+        .de-beginner-premium .da-v4-tabs button[aria-pressed=true] {background:var(--da-navy);}
+        .de-beginner-premium .da-heading h2,.de-beginner-premium .da-module h2 {font-size:26px;font-weight:400;color:var(--da-navy);line-height:1.3;}
+        .de-beginner-premium .da-heading p,.de-beginner-premium .da-module > div:first-child p {color:var(--da-muted);font-size:14px;}
+        .de-beginner-premium .da-lesson {border:1px solid var(--da-line);border-radius:12px;box-shadow:none;background:white;padding:12px;gap:14px;}
+        .de-beginner-premium .da-letter-panel {background:var(--da-navy);border:1px solid #34455b;border-radius:9px;min-height:285px;}
+        .de-beginner-premium .da-letter {font-size:clamp(74px,8vw,104px);font-weight:400;color:var(--da-light-gold);}
+        .de-beginner-premium .da-name {font-weight:500;color:white;}
+        .de-beginner-premium .da-listen {border-radius:7px;background:var(--da-light-gold);color:var(--da-navy);font-weight:600;}
+        .de-beginner-premium .da-nav-buttons button {border-radius:7px;font-size:12px;font-weight:600;}
+        .de-beginner-premium .da-nav-buttons button:last-child {background:var(--da-light-gold);border-color:var(--da-light-gold);color:var(--da-navy);}
+        .de-beginner-premium .da-count {color:var(--da-light-gold);font-weight:500;}
+        .de-beginner-premium .da-details {background:var(--da-paper);border-radius:9px;}
+        .de-beginner-premium .da-details h3,.de-beginner-premium .da-card h3 {font-size:21px;font-weight:400;color:var(--da-navy);}
+        .de-beginner-premium .da-note,.de-beginner-premium .da-example {border-radius:8px;}
+        .de-beginner-premium .da-note p {font-weight:500;font-size:14px;}
+        .de-beginner-premium .da-note span,.de-beginner-premium .da-example > span {font-weight:600;}
+        .de-beginner-premium .da-word-row strong {font-size:23px;font-weight:400;}
+        .de-beginner-premium .da-word-row button {border-radius:7px;color:var(--da-ink-gold);}
+        .de-beginner-premium .da-card {border-radius:9px;box-shadow:none;border-color:var(--da-line);}
+        .de-beginner-premium .da-alphabet-grid button {border-radius:6px;min-height:37px;font-size:15px;font-weight:600;background:white;border-color:var(--da-line);}
+        .de-beginner-premium .da-alphabet-grid button.da-done {background:#f3ecdd;border-color:var(--da-gold);}
+        .de-beginner-premium .da-alphabet-grid button[aria-pressed=true] {background:var(--da-navy);color:white;border-color:var(--da-navy);}
+        .de-beginner-premium .da-special,.de-beginner-premium .da-tip {border-radius:8px;}
+        .de-beginner-premium .da-special-letter {font-weight:400;}
+        .de-beginner-premium .da-special-word strong {font-size:18px;}
+        /* Syllables, combinations, first words and quiz retain their functionality. */
+        .de-beginner-premium .da-module {font-size:14px;}
+        .de-beginner-premium .da-module h3 {font-size:21px;font-weight:400;line-height:1.35;}
+        .de-beginner-premium .da-module .rounded-2xl,.de-beginner-premium .da-module .rounded-3xl {border-radius:9px;box-shadow:none;}
+        .de-beginner-premium .da-module .rounded-xl {border-radius:8px;}
+        .de-beginner-premium .da-module button.rounded-full {border-radius:7px;}
+        .de-beginner-premium .da-module .font-bold {font-weight:600;}
+        .de-beginner-premium .da-module h2.font-bold,.de-beginner-premium .da-module h3.font-bold,.de-beginner-premium .da-module .da-german-word {font-weight:400;}
+        .de-beginner-premium .da-module .text-gray-400,.de-beginner-premium .da-module .text-gray-500,.de-beginner-premium .da-module .text-gray-600 {color:var(--da-muted);}
+        .de-beginner-premium .da-module [class~="bg-[#192b43]"] [class~="text-[#b49760]"] {color:var(--da-light-gold);}
+        .de-beginner-premium button:focus-visible,.de-beginner-premium select:focus-visible {outline:2px solid var(--da-gold);outline-offset:3px;}
+        @media(max-width:850px) {
+          .de-beginner-premium .da-v4-header {padding:20px;gap:18px;}
+          .de-beginner-premium .da-v4-progress {border-inline-start:0;border-top:1px solid #506074;padding:14px 0 0;}
+        }
+        @media(max-width:550px) {
+          .de-beginner-premium .de-beginner-inner {padding:14px 12px 32px;}
+          .de-beginner-premium .da-v4-header {padding:18px;}
+          .de-beginner-premium .da-lesson {padding:9px;gap:9px;}
+          .de-beginner-premium .da-alphabet-grid {gap:5px;}
+        }
+      `}</style>
     </main>
   )
 }
