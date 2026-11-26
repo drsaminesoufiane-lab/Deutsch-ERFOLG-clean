@@ -2367,3 +2367,34 @@ html[dir="rtl"] .de-floating-tools .language-switcher .language-switcher-menu { 
     padding-inline-start: 0;
   }
 }
+
+/* DE_OFFER_TRANSPARENT_V1 */
+.de-floating-tools .de-subscription-offer {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: 1px solid rgba(180,151,96,.45);
+}
+.de-floating-tools .de-offer-action {
+  background: transparent;
+  color: #806337;
+  border: 1px solid rgba(180,151,96,.45);
+}
+.de-floating-tools .de-subscription-offer:hover .de-offer-action {
+  background: rgba(214,181,109,.18);
+}
+.de-floating-tools[dir="rtl"] .de-subscription-offer {
+  position: fixed;
+  left: max(20px, env(safe-area-inset-left));
+  right: auto;
+  bottom: max(20px, env(safe-area-inset-bottom));
+  direction: rtl;
+  text-align: right;
+}
+@media (max-width: 700px) {
+  .de-floating-tools[dir="rtl"] .de-subscription-offer {
+    left: max(12px, env(safe-area-inset-left));
+    right: auto;
+    bottom: max(64px, calc(env(safe-area-inset-bottom) + 52px));
+  }
+}
+/* END DE_OFFER_TRANSPARENT_V2 */
