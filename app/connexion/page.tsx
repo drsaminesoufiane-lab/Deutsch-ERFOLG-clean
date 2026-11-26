@@ -150,6 +150,34 @@ const traductions = {
   },
 }
 
+/* DE_AUTH_BLUE_PANEL_V1 */
+const deAuthBlueCopy = {
+  "fr": {
+    "tag": "APPRENDRE L\u2019ALLEMAND",
+    "title": "Ton avenir commence ici.",
+    "desc": "Apprends l\u2019allemand du niveau A1 au niveau B2, avec des cours, des exercices et un suivi de ta progression.",
+    "levels": "Niveaux"
+  },
+  "de": {
+    "tag": "DEUTSCH LERNEN",
+    "title": "Deine Zukunft beginnt hier.",
+    "desc": "Lerne Deutsch von A1 bis B2 mit Kursen, \u00dcbungen und einer pers\u00f6nlichen Fortschritts\u00fcbersicht.",
+    "levels": "Niveaus"
+  },
+  "en": {
+    "tag": "LEARN GERMAN",
+    "title": "Your future starts here.",
+    "desc": "Learn German from A1 to B2 with lessons, exercises and progress tracking.",
+    "levels": "Levels"
+  },
+  "ar": {
+    "tag": "\u062a\u0639\u0644\u0645 \u0627\u0644\u0644\u063a\u0629 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a\u0629",
+    "title": "\u0645\u0633\u062a\u0642\u0628\u0644\u0643 \u064a\u0628\u062f\u0623 \u0645\u0646 \u0647\u0646\u0627.",
+    "desc": "\u062a\u0639\u0644\u0645 \u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a\u0629 \u0645\u0646 \u0627\u0644\u0645\u0633\u062a\u0648\u0649 A1 \u0625\u0644\u0649 B2 \u0645\u0639 \u0627\u0644\u062f\u0631\u0648\u0633 \u0648\u0627\u0644\u062a\u0645\u0627\u0631\u064a\u0646 \u0648\u062a\u062a\u0628\u0639 \u062a\u0642\u062f\u0645\u0643.",
+    "levels": "\u0627\u0644\u0645\u0633\u062a\u0648\u064a\u0627\u062a"
+  }
+}
+
 export default function ConnexionPage() {
   const router = useRouter()
 
@@ -278,17 +306,16 @@ export default function ConnexionPage() {
         </Link>
 
         <div className="login-visual-content">
-          <div className="login-kicker">
-            {t.accroche}
+          <div className="login-kicker">{(deAuthBlueCopy[lang as keyof typeof deAuthBlueCopy] || deAuthBlueCopy.de).tag}</div>
+
+          <h1>{(deAuthBlueCopy[lang as keyof typeof deAuthBlueCopy] || deAuthBlueCopy.de).title}</h1>
+
+          <p>{(deAuthBlueCopy[lang as keyof typeof deAuthBlueCopy] || deAuthBlueCopy.de).desc}</p>
+          <div className="de-auth-blue-levels" dir="ltr" style={{display:'flex',flexWrap:'wrap',gap:8,marginTop:24}}>
+            {['A1','A2','B1','B2'].map(level => (
+              <span key={level} style={{display:'inline-flex',alignItems:'center',justifyContent:'center',minWidth:44,padding:'8px 12px',border:'1px solid #b49760',borderRadius:7,color:'#e3cb96',fontSize:14,fontWeight:600}}>{level}</span>
+            ))}
           </div>
-
-          <h1>
-            {t.titre1}
-            <br />
-            <span>{t.titre2}</span>
-          </h1>
-
-          <p>{t.description}</p>
 
           <div className="login-skills">
             <div><BookOpen size={18} /><span>{t.lesen}</span></div>
