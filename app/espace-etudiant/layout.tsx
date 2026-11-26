@@ -1,6 +1,8 @@
 
 'use client'
 
+import StudentGlobalHeader from '@/components/student/StudentGlobalHeader'
+
 import FloatingPageTools, { SubscriptionContext, type SubscriptionStatus } from '@/components/student/FloatingPageTools'
 import StudentSidebar from '@/components/student/StudentSidebar'
 import { useEffect, useState, type ReactNode } from 'react'
@@ -439,7 +441,8 @@ export default function StudentLayout({
         <StudentSidebar isAdmin={isAdmin} />
 
         <SubscriptionContext.Provider value={subscriptionStatus}>
-          <div className={`student-global-content ${!isProPage && (subscriptionStatus === 'trial' || subscriptionStatus === 'free') ? 'de-has-offer' : ''}`}>{children}</div>
+          <div className={`student-global-content ${!isProPage && (subscriptionStatus === 'trial' || subscriptionStatus === 'free') ? 'de-has-offer' : ''}`}><StudentGlobalHeader />
+          {children}</div>
           <FloatingPageTools showOffer={!isProPage} />
         </SubscriptionContext.Provider>
       </div>
