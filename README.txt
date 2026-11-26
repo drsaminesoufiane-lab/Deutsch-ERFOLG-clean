@@ -1,0 +1,1 @@
+Copier page.tsx et vocabulary.ts ensemble dans le dossier de la page Wortschatz existante. Sauvegarder les originaux. LanguageContext inchangé. Les fichiers translations sont facultatifs (titre uniquement). Base: 871 entrées, niveaux et traductions enrichis partiellement; les champs manquants sont signalés. Aucun build Next.js exécuté. Tester npm run build dans le projet.

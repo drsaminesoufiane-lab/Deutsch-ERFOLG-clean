@@ -298,7 +298,7 @@ const de = {
     noResults: 'Keine Ergebnisse verfügbar',
     emptyDescription: 'Ihre abgeschlossenen Prüfungen und Ergebnisse werden hier angezeigt.',
     discoverExams: 'Probeprüfungen entdecken',
-        dictionaryTitle: 'Wörterbuch B1',
+        dictionaryTitle: 'Wörterbuch A1–B2',
     dictionarySubtitle: 'Ihr deutscher B1-Wortschatz',
     dictionaryDescription: 'Entdecken, suchen und lernen Sie den wichtigsten Wortschatz der Stufe B1.',
     dictionaryBadge: 'NIVEAU B1',

@@ -298,7 +298,7 @@ const en = {
     noResults: 'No results available',
     emptyDescription: 'Your completed exams and scores will be displayed in this section.',
     discoverExams: 'Explore mock exams',
-        dictionaryTitle: 'Wörterbuch B1',
+        dictionaryTitle: 'Wörterbuch A1–B2',
     dictionarySubtitle: 'Your German B1 vocabulary dictionary',
     dictionaryDescription: 'Discover, search and learn the essential vocabulary for B1 level.',
     dictionaryBadge: 'B1 LEVEL',

@@ -298,7 +298,7 @@ const ar = {
     noResults: 'لا توجد نتائج متاحة',
     emptyDescription: 'ستظهر امتحاناتك المكتملة ونقاطك في هذا القسم.',
     discoverExams: 'اكتشف الامتحانات التجريبية',
-        dictionaryTitle: 'Wörterbuch B1',
+        dictionaryTitle: 'Wörterbuch A1–B2',
     dictionarySubtitle: 'قاموس المفردات الألمانية للمستوى B1',
     dictionaryDescription: 'اكتشف وابحث واحفظ أهم مفردات اللغة الألمانية الخاصة بالمستوى B1.',
     dictionaryBadge: 'المستوى B1',

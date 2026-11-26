@@ -298,7 +298,7 @@ const fr = {
     noResults: 'Aucun résultat disponible',
     emptyDescription: 'Vos examens terminés et vos notes seront affichés dans cette section.',
     discoverExams: 'Découvrir les examens blancs',
-        dictionaryTitle: 'Wörterbuch B1',
+        dictionaryTitle: 'Wörterbuch A1–B2',
     dictionarySubtitle: 'Votre dictionnaire de vocabulaire allemand B1',
     dictionaryDescription: 'Découvrez, recherchez et mémorisez le vocabulaire essentiel du niveau B1.',
     dictionaryBadge: 'NIVEAU B1',
