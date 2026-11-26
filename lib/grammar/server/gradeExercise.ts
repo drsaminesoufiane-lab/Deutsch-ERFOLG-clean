@@ -158,34 +158,53 @@ export function validateSubmittedAnswers(
   answers: unknown,
 ): answers is SubmittedAnswers {
   if (!answers || typeof answers !== 'object' || Array.isArray(answers)) return false
-
   const submitted = answers as Record<string, unknown>
-  const validIds = new Set(exerciseSet.questions.map((question) => question.id))
+  const validIds = new Set(exerciseSet.questions.map(q => q.id))
+  if (Object.keys(submitted).some(id => !validIds.has(id))) return false
 
-  if (Object.keys(submitted).some((id) => !validIds.has(id))) return false
+  const validText = (value: unknown): value is string =>
+    typeof value === 'string' && value.trim().length > 0 && value.length <= 10000
+  const validArray = (value: unknown): value is string[] =>
+    Array.isArray(value) && value.length > 0 && value.length <= 100 &&
+    value.every(item => typeof item === 'string' && item.trim().length > 0 && item.length <= 1000)
 
   for (const question of exerciseSet.questions) {
+    if (!Object.prototype.hasOwnProperty.call(submitted, question.id)) return false
     const value = submitted[question.id]
-    if (value === undefined) return false
-
-    if (typeof value === 'string') {
-      if (!value.trim() || value.length > 10000) return false
-      if (question.type === 'writing') {
-        const wordCount = value.trim().split(/\s+/).length
-        if (question.minimumWords && wordCount < question.minimumWords) return false
-      }
-      continue
+    switch (question.type) {
+      case 'writing':
+        if (!validText(value)) return false
+        if (value.trim().split(/\s+/).length < (question.minimumWords || 0)) return false
+        break
+      case 'true_false':
+        if (value !== 'true' && value !== 'false') return false
+        break
+      case 'qcm':
+        if (question.selection === 'multiple') {
+          if (!validArray(value)) return false
+          if (new Set(value).size !== value.length) return false
+          if (!value.every(v => question.options.includes(v))) return false
+        } else {
+          if (!validText(value) || !question.options.includes(value)) return false
+        }
+        break
+      case 'fill_blank':
+        if (question.blanks === 1) {
+          if (!validText(value)) return false
+        } else {
+          if (!validArray(value) || value.length !== question.blanks) return false
+        }
+        break
+      case 'matching':
+        if (!validArray(value) || value.length !== question.items.length) return false
+        if (!value.every(v => question.options.includes(v))) return false
+        break
+      case 'reorder':
+        if (!validArray(value) || !sameUnorderedArray(value, question.tokens)) return false
+        break
+      default:
+        return false
     }
-
-    if (
-      Array.isArray(value) &&
-      value.length > 0 &&
-      value.length <= 100 &&
-      value.every((item) => typeof item === 'string' && item.trim().length > 0 && item.length <= 1000)
-    ) continue
-
-    return false
   }
-
   return true
 }

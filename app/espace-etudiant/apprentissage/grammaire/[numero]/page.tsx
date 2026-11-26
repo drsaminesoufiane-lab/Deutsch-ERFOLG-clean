@@ -9,19 +9,45 @@ import LessonRenderer from '@/components/grammar/LessonRenderer'
 import ExerciseRenderer from '@/components/grammar/ExerciseRenderer'
 
 type Attempt = { id: string; exercise_set_id: string; score: number | null; correct_answers: number; total_questions: number; created_at: string }
-function PerformanceHistory({attempts, language}: {attempts: Attempt[]; language: keyof LocalizedText}) {
-  const rows = [...attempts].sort((a,b)=>Date.parse(b.created_at)-Date.parse(a.created_at))
-  const scored = rows.filter(a=>a.score !== null)
-  const best = scored.length ? Math.max(...scored.map(a=>Number(a.score))) : null
-  const delta = scored.length > 1 ? Number(scored[0].score)-Number(scored[scored.length-1].score) : null
+type HistorySummary = { count: number; best: Attempt | null; delta: number | null; recent: Attempt[]; trend: Attempt[] }
+const emptyHistory: HistorySummary = { count: 0, best: null, delta: null, recent: [], trend: [] }
+function PerformanceHistory({stats, language, chapterId, setId}: {stats: HistorySummary; language: keyof LocalizedText; chapterId: string; setId: string}) {
+  const [older, setOlder] = useState<Attempt[]>([])
+  const [loadingMore, setLoadingMore] = useState(false)
+  const [historyError, setHistoryError] = useState('')
+  const [exhausted, setExhausted] = useState(false)
+  const rows = [...stats.recent, ...older]
+  const best = stats.best?.score ?? null
+  const delta = stats.delta
+  const moreLabels = {fr:['Afficher plus','Chargement…','Impossible de charger les anciennes tentatives.'],de:['Mehr anzeigen','Wird geladen…','Ältere Versuche konnten nicht geladen werden.'],ar:['عرض المزيد','جارٍ التحميل…','تعذر تحميل المحاولات السابقة.'],en:['Show more','Loading…','Could not load older attempts.']}[language]
+  async function loadMore() {
+    if (loadingMore || exhausted || !rows.length) return
+    setLoadingMore(true)
+    setHistoryError('')
+    try {
+      const {data} = await supabase.auth.getSession()
+      const token = data.session?.access_token
+      if (!token) throw new Error('Session')
+      const query = new URLSearchParams({chapterId, historySetId:setId, historyBefore:rows[rows.length-1].id})
+      const response = await fetch(`/api/grammar/content?${query}`, {headers:{Authorization:`Bearer ${token}`},cache:'no-store'})
+      const result = await response.json()
+      if (!response.ok || !Array.isArray(result.attempts)) throw new Error('History')
+      const page = result.attempts as Attempt[]
+      setOlder(previous => [...previous, ...page.filter(a => !stats.recent.some(r=>r.id===a.id) && !previous.some(r=>r.id===a.id))])
+      if (page.length < 20) setExhausted(true)
+    } catch { setHistoryError(moreLabels[2]) }
+    finally { setLoadingMore(false) }
+  }
   const t = {fr:['Ma performance','Meilleur résultat','Tentatives','Progression','Évolution des résultats','Historique des tentatives','Aucune tentative','Übung réussie','Tentative'],de:['Meine Leistung','Bestes Ergebnis','Versuche','Fortschritt','Ergebnisverlauf','Versuchsverlauf','Keine Versuche','Übung bestanden','Versuch'],ar:['أدائي','أفضل نتيجة','المحاولات','التقدم','تطور النتائج','سجل المحاولات','لا توجد محاولات','تمرين ناجح','محاولة'],en:['My performance','Best result','Attempts','Progress','Score trend','Attempt history','No attempts','Exercise mastered','Attempt']}[language]
-  const trend = [...scored].reverse().slice(-20)
+  const trend = stats.trend
   const points = trend.map((a,i)=>`${10+i*220/Math.max(1,trend.length-1)},${90-Number(a.score)*0.8}`).join(' ')
   return <aside className="grammar-history-sidebar performance-panel">
     <div className="performance-hero"><span>{t[0]}</span><small>{t[1]}</small><div><strong>{best ?? '—'}</strong> / 100</div><div className="performance-track"><i style={{width:`${best ?? 0}%`}}/></div>{best===100 && <small>✓ {t[7]}</small>}</div>
-    <div className="performance-stats"><div><small>{t[2]}</small><strong>{rows.length}</strong></div><div><small>{t[3]}</small><strong>{delta===null?'—':`${delta>0?'+':''}${Number(delta.toFixed(2))}`}</strong></div></div>
+    <div className="performance-stats"><div><small>{t[2]}</small><strong>{stats.count}</strong></div><div><small>{t[3]}</small><strong>{delta===null?'—':`${delta>0?'+':''}${Number(delta.toFixed(2))}`}</strong></div></div>
     {trend.length>1 && <div className="performance-trend"><h3>{t[4]}</h3><svg viewBox="0 0 240 100" role="img" aria-label={t[4]}><path d="M10 10H230 M10 50H230 M10 90H230" stroke="#e7e1d5" fill="none" strokeDasharray="4 4"/><polyline points={points} fill="none" stroke="#a18450" strokeWidth="2.5" strokeLinejoin="round"/>{trend.map((a,i)=><circle key={a.id} cx={10+i*220/Math.max(1,trend.length-1)} cy={90-Number(a.score)*0.8} r="3" fill="#a18450"/>)}</svg></div>}
-    <h3>{t[5]}</h3><div className="performance-rows">{rows.length===0?<p className="record-empty">{t[6]}</p>:rows.map((a,i)=><div className="performance-row" key={a.id}><div><b>{t[8]} {rows.length-i}</b><time dateTime={a.created_at}>{new Date(a.created_at).toLocaleString(language,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</time></div><strong className={Number(a.score)===100?'perfect':''}>{a.score ?? '—'}<small>/100</small></strong></div>)}</div>
+    <h3>{t[5]}</h3><div className="performance-rows">{rows.length===0?<p className="record-empty">{t[6]}</p>:rows.map((a,i)=><div className="performance-row" key={a.id}><div><b>{t[8]} {stats.count-i}</b><time dateTime={a.created_at}>{new Date(a.created_at).toLocaleString(language,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</time></div><strong className={Number(a.score)===100?'perfect':''}>{a.score ?? '—'}<small>/100</small></strong></div>)}</div>
+    {!exhausted && rows.length < stats.count && <button type="button" className="premium-button" style={{marginTop:12,width:'100%'}} disabled={loadingMore} onClick={()=>void loadMore()}>{loadingMore ? moreLabels[1] : moreLabels[0]}</button>}
+    {historyError && <p role="alert" className="submission-error">{historyError}</p>}
   </aside>
 }
 export default function ChapitreGrammairePage() {
@@ -29,7 +55,7 @@ export default function ChapitreGrammairePage() {
   const params = useParams()
   const id = Array.isArray(params.numero) ? params.numero[0] : params.numero
   const backHref = `/espace-etudiant/apprentissage/grammaire${id ? `#${encodeURIComponent(id)}` : ''}`
-  const [payload, setPayload] = useState<{chapter:ChapterDefinition; attempts:Attempt[]; mandatory:{id:string;total:number}[]; unlocked:boolean; lockedSets:{id:string;title:LocalizedText;category:string}[]} | null>(null)
+  const [payload, setPayload] = useState<{chapter:ChapterDefinition; history:Record<string,HistorySummary>; mandatory:{id:string;total:number}[]; unlocked:boolean; lockedSets:{id:string;title:LocalizedText;category:string}[]} | null>(null)
   const [tab, setTab] = useState('lesson')
   const [exerciseIndex, setExerciseIndex] = useState(0)
   const [error, setError] = useState('')
@@ -47,8 +73,8 @@ export default function ChapitreGrammairePage() {
   }, [id])
   useEffect(() => { setTab('lesson'); setExerciseIndex(0); setPayload(null); void refresh() }, [refresh])
   if (!payload || payload.chapter.id !== id) return <main className="p-8"><p>{error || 'Chargement…'}</p><Link href={backHref} scroll={false}>Retour</Link>{error && <button onClick={()=>void refresh()}>Réessayer</button>}</main>
-  const {chapter,attempts,mandatory,unlocked,lockedSets} = payload
-  const best = (id: string) => attempts.filter(a => a.exercise_set_id === id && a.score !== null).sort((a,b) => Number(b.score)-Number(a.score))[0]
+  const {chapter,history,mandatory,unlocked,lockedSets} = payload
+  const best = (id: string) => history[id]?.best ?? undefined
   const total = mandatory.reduce((n,s)=>n+s.total,0)
   const correct = mandatory.reduce((n,s)=>n+(best(s.id)?.correct_answers || 0),0)
   const availableSets = chapter.exerciseSets.filter(s => s.category === tab)
@@ -67,16 +93,16 @@ export default function ChapitreGrammairePage() {
         const top = ranked.filter(m=>m.attempt).sort((a,b)=>Number(b.attempt?.score)-Number(a.attempt?.score))[0]
         return <>
           <details className="studio-summary-item"><summary><small>{t[0]}</small><strong>{total ? Math.round(correct/total*100) : 0} / 100</strong><span>{t[3]} <b>⌄</b></span></summary><div className="studio-summary-detail"><p>{t[4]}</p><p>{t[5]} : {correct} / {total}</p></div></details>
-          <details className="studio-summary-item"><summary><small>{t[1]}</small><strong>{ranked.filter(m=>Number(m.attempt?.score)===100).length} / {mandatory.length}</strong><span>{t[3]} <b>⌄</b></span></summary><div className="studio-summary-detail">{ranked.map(m=><div className="studio-summary-row" key={m.id}><span>{m.title}</span><b>{m.attempt?.score ?? '—'} / 100</b></div>)}</div></details>
+          <details className="studio-summary-item"><summary><small>{t[1]}</small><strong>{ranked.filter(m=>Number(m.attempt?.score)>=80).length} / {mandatory.length}</strong><span>{t[3]} <b>⌄</b></span></summary><div className="studio-summary-detail">{ranked.map(m=><div className="studio-summary-row" key={m.id}><span>{m.title}</span><b>{m.attempt?.score ?? '—'} / 100</b></div>)}</div></details>
           <details className="studio-summary-item"><summary><small>{t[2]}</small><strong>{top?.attempt?.score ?? '—'} / 100</strong><span>{t[3]} <b>⌄</b></span></summary><div className="studio-summary-detail"><p>{t[7]}</p>{top?.attempt ? <><p>{top.title}</p><p>{t[5]} : {top.attempt.correct_answers} / {top.attempt.total_questions}</p><time>{new Date(top.attempt.created_at).toLocaleString(language)}</time></> : <p>{t[6]}</p>}</div></details>
         </>
       })()}
     </section>
     {error && <p role="alert">{error} <button onClick={() => void refresh()}>Réessayer</button></p>}
     <nav className="chapter-tabs">{[['lesson','Lektion'],['meistertraining','Meistertraining'],['extra_kick',unlocked ? 'Extra-Kick' : '🔒 Extra-Kick']].map(([key,label]) => <button key={key} className={`chapter-tab ${tab === key ? 'chapter-tab-active' : ''}`} onClick={() => { if (tab !== key) { setTab(key); setExerciseIndex(0) } }}>{label}</button>)}</nav>
-    {tab === 'lesson' ? <LessonRenderer lesson={chapter.lesson} onStart={() => { setTab('meistertraining'); setExerciseIndex(0); window.scrollTo({top:0,behavior:'smooth'}) }}/> : tab === 'extra_kick' && !unlocked ? <p className="locked-panel">Obtenez 100/100 dans chaque Übung Meistertraining.</p> : entries.length === 0 ? <p className="empty-state">{labels.empty}</p> : <div className="grammar-pager">
-      <div className="grammar-pager-heading"><strong>Übung {index + 1} / {entries.length}</strong><div className="grammar-step-list">{entries.map((entry,i)=><button type="button" key={entry.id} aria-current={i===index ? "step" : undefined} className={i===index ? "current" : ""} onClick={()=>setExerciseIndex(i)}>{i+1}{entry.locked ? " 🔒" : Number(best(entry.id)?.score)===100 ? " ✓" : ""}</button>)}</div><div className="progress-track"><div className="progress-fill" style={{width: `${(index+1)/entries.length*100}%`}}/></div></div>
-      {availableSets.map(s => <section key={s.id} className="exercise-card grammar-paged-card" hidden={active?.id !== s.id}><div className="grammar-exercise-layout"><div className="grammar-exercise-main"><ExerciseRenderer chapterId={chapter.id} exerciseSet={s} onAttempt={() => void refresh()}/></div><PerformanceHistory attempts={attempts.filter(a => a.exercise_set_id === s.id)} language={language}/></div></section>)}
+    {tab === 'lesson' ? <LessonRenderer lesson={chapter.lesson} onStart={() => { setTab('meistertraining'); setExerciseIndex(0); window.scrollTo({top:0,behavior:'smooth'}) }}/> : tab === 'extra_kick' && !unlocked ? <p className="locked-panel">Obtenez 80/100 dans chaque Übung Meistertraining.</p> : entries.length === 0 ? <p className="empty-state">{labels.empty}</p> : <div className="grammar-pager">
+      <div className="grammar-pager-heading"><strong>Übung {index + 1} / {entries.length}</strong><div className="grammar-step-list">{entries.map((entry,i)=><button type="button" key={entry.id} aria-current={i===index ? "step" : undefined} className={i===index ? "current" : ""} onClick={()=>setExerciseIndex(i)}>{i+1}{entry.locked ? " 🔒" : Number(best(entry.id)?.score)>=80 ? " ✓" : ""}</button>)}</div><div className="progress-track"><div className="progress-fill" style={{width: `${(index+1)/entries.length*100}%`}}/></div></div>
+      {availableSets.map(s => <section key={s.id} className="exercise-card grammar-paged-card" hidden={active?.id !== s.id}><div className="grammar-exercise-layout"><div className="grammar-exercise-main"><ExerciseRenderer chapterId={chapter.id} exerciseSet={s} onAttempt={() => void refresh()}/></div><PerformanceHistory key={`${chapter.id}:${s.id}:${history[s.id]?.count ?? 0}:${history[s.id]?.recent[0]?.id ?? ""}`} stats={history[s.id] ?? emptyHistory} chapterId={chapter.id} setId={s.id} language={language}/></div></section>)}
       {active?.locked && <section className="locked-panel">🔒 {active.title[language]} — <Link href="/espace-etudiant/pro">PRO</Link></section>}
       <nav className="grammar-pager-nav" aria-label="Übungen">
         <button type="button" className="premium-button" disabled={index === 0} onClick={()=>setExerciseIndex(index-1)}>{isRTL ? '→' : '←'} {labels.prev}</button>
