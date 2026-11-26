@@ -1,5 +1,7 @@
 'use client'
 
+import { celebratePerfectScore } from '@/components/student/ExerciseCelebration'
+
 import { useMemo, useState } from 'react'
 import { ArrowDown, ArrowUp, CheckCircle2, CircleAlert, Loader2, RotateCcw } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
@@ -285,6 +287,11 @@ export default function ExerciseRenderer({
       const data = await response.json()
       if (!response.ok) throw new Error(data.error || labels.error)
       setResult(data as SubmitResult)
+      // DE_PERFECT_GRAMMAR_V1
+      const perfectAttempt = (data as SubmitResult).attempt
+      if (Number(perfectAttempt.score) === 100 && perfectAttempt.manual_questions === 0) {
+        celebratePerfectScore(perfectAttempt.correct_answers, perfectAttempt.total_questions)
+      }
       onAttempt?.()
     } catch (submitError) {
       setError(submitError instanceof Error ? submitError.message : labels.error)

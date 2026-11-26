@@ -1,6 +1,8 @@
 
 'use client'
 
+import { celebratePerfectScore } from '@/components/student/ExerciseCelebration'
+
 import Link from 'next/link'
 import { useMemo, useState } from 'react'
 import {
@@ -303,7 +305,7 @@ export default function AlexUndCoraPage() {
           {!finished ? (
             <button
               className="check-button"
-              onClick={() => setFinished(true)}
+              onClick={() => { /* DE_PERFECT_LESEN_V1 */ if (!finished) celebratePerfectScore(score, situations.length); setFinished(true) }}
               disabled={Object.keys(answers).length !== 10}
             >
               Antworten überprüfen

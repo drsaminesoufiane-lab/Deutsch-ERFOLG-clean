@@ -1,6 +1,8 @@
 
 'use client'
 
+import { celebratePerfectScore } from '@/components/student/ExerciseCelebration'
+
 import { useState } from 'react'
 import Link from 'next/link'
 import {
@@ -274,6 +276,8 @@ export default function Exercice4() {
   }
 
   const verifier = () => {
+    // DE_PERFECT_LESEN_V1
+    if (!corrige) celebratePerfectScore(score, Object.keys(korrekt).length)
     setCorrige(true)
     setSelection(null)
   }

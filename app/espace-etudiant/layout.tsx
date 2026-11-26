@@ -1,6 +1,8 @@
 
 'use client'
 
+import ExerciseCelebration from '@/components/student/ExerciseCelebration'
+
 import StudentGlobalHeader from '@/components/student/StudentGlobalHeader'
 
 import FloatingPageTools, { SubscriptionContext, type SubscriptionStatus } from '@/components/student/FloatingPageTools'
@@ -442,6 +444,7 @@ export default function StudentLayout({
 
         <SubscriptionContext.Provider value={subscriptionStatus}>
           <div className={`student-global-content ${!isProPage && (subscriptionStatus === 'trial' || subscriptionStatus === 'free') ? 'de-has-offer' : ''}`}><StudentGlobalHeader />
+          <ExerciseCelebration />
           {children}</div>
           <FloatingPageTools showOffer={!isProPage} />
         </SubscriptionContext.Provider>

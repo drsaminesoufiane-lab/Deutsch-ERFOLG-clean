@@ -1,6 +1,8 @@
 
 'use client'
 
+import { celebratePerfectScore } from '@/components/student/ExerciseCelebration'
+
 import { useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import {
@@ -334,13 +336,22 @@ export default function AllemandDebutantPage() {
   const checkAnswer = () => {
     if (answer === null || answered) return
     setAnswered(true)
+    // DE_PERFECT_BEGINNER_V1
     if (answer === quizQuestions[selectedQuiz].answer) {
       setScore(prev => prev + 1)
+      if (selectedQuiz === quizQuestions.length - 1) {
+        celebratePerfectScore(score + 1, quizQuestions.length)
+      }
     }
   }
 
   const nextQuestion = () => {
-    setSelectedQuiz(prev => (prev + 1) % quizQuestions.length)
+    if (!answered) return
+    if (selectedQuiz === quizQuestions.length - 1) {
+      restartQuiz()
+      return
+    }
+    setSelectedQuiz(prev => prev + 1)
     setAnswer(null)
     setAnswered(false)
   }
@@ -783,7 +794,7 @@ export default function AllemandDebutantPage() {
                     onClick={nextQuestion}
                     className="w-full rounded-xl bg-[#b49760] px-5 py-3 font-bold text-[#192b43]"
                   >
-                    {tr.nextQuestion} <ChevronRight className="mx-1 inline" size={18} />
+                    {selectedQuiz === quizQuestions.length - 1 ? tr.restart : tr.nextQuestion} <ChevronRight className="mx-1 inline" size={18} />
                   </button>
                 )}
               </div>
