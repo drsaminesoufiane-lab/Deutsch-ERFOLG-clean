@@ -20,25 +20,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-09-ubung-01-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ heißt du? – Anna.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ heißt du? – Anna.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ heißt du? – Anna.",
+          "en": "Choose the correct answer in context. — ___ heißt du? – Anna."
         },
-        "sentence": "___ heißt du? – Anna.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wo",
+          "Was",
+          "Wie"
+        ]
       },
       {
         "id": "kapitel-09-ubung-01-q02",
         "position": 2,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez selon la consigne. — Wer · Was · Wie · Woher · Wo · Wohin",
+          "de": "Ergänzen Sie nach der Angabe. — Wer · Was · Wie · Woher · Wo · Wohin",
+          "ar": "أكمل حسب التعليمات. — Wer · Was · Wie · Woher · Wo · Wohin",
+          "en": "Complete as instructed. — Wer · Was · Wie · Woher · Wo · Wohin"
         },
         "sentence": "___ ist das? – Mein Mann.",
         "blanks": 1
@@ -46,25 +50,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-09-ubung-01-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ ist Ihr Name? – Müller.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ ist Ihr Name? – Müller.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ ist Ihr Name? – Müller.",
+          "en": "Choose the correct answer in context. — ___ ist Ihr Name? – Müller."
         },
-        "sentence": "___ ist Ihr Name? – Müller.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Was",
+          "Wie",
+          "Wo"
+        ]
       },
       {
         "id": "kapitel-09-ubung-01-q04",
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez selon la consigne. — Wer · Was · Wie · Woher · Wo · Wohin",
+          "de": "Ergänzen Sie nach der Angabe. — Wer · Was · Wie · Woher · Wo · Wohin",
+          "ar": "أكمل حسب التعليمات. — Wer · Was · Wie · Woher · Wo · Wohin",
+          "en": "Complete as instructed. — Wer · Was · Wie · Woher · Wo · Wohin"
         },
         "sentence": "___ sind Sie von Beruf? – Lehrer.",
         "blanks": 1
@@ -72,58 +80,62 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-09-ubung-01-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ ist das? – Mein Handy.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ ist das? – Mein Handy.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ ist das? – Mein Handy.",
+          "en": "Choose the correct answer in context. — ___ ist das? – Mein Handy."
         },
-        "sentence": "___ ist das? – Mein Handy.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wer",
+          "Was",
+          "Wo"
+        ]
       },
       {
         "id": "kapitel-09-ubung-01-q06",
         "position": 6,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez selon la consigne. — Wer · Was · Wie · Woher · Wo · Wohin",
+          "de": "Ergänzen Sie nach der Angabe. — Wer · Was · Wie · Woher · Wo · Wohin",
+          "ar": "أكمل حسب التعليمات. — Wer · Was · Wie · Woher · Wo · Wohin",
+          "en": "Complete as instructed. — Wer · Was · Wie · Woher · Wo · Wohin"
         },
         "sentence": "___ kommen Sie? – Aus Hangzhou.",
         "blanks": 1
       },
       {
+        "id": "kapitel-09-ubung-01-div-7",
+        "position": 7,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "… wohnst du? — In Bonn."
+            "label": "___ hat den Schlüssel gefunden? – Der Hausmeister."
           },
           {
             "id": "i1",
-            "label": "… kommst du? — Aus Bonn."
+            "label": "___ ruft der Chef an? – Die Praktikantin."
           },
           {
             "id": "i2",
-            "label": "… fährst du? — Nach Bonn."
+            "label": "___ antwortest du? – Meiner Nachbarin."
           }
         ],
         "options": [
-          "Wohin",
-          "Woher",
-          "Wo"
-        ],
-        "id": "kapitel-09-ubung-01-div-7",
-        "position": 7
+          "Wer",
+          "Wem",
+          "Wen"
+        ]
       }
     ]
   },
@@ -149,16 +161,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Wie ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Wie“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Wie ».",
+          "en": "Reorder the groups. Start with “Wie”."
         },
         "tokens": [
+          "heißen",
           "Sie",
           "?",
-          "Wie",
-          "heißen"
+          "Wie"
         ]
       },
       {
@@ -166,17 +178,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Wie ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Wie“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Wie ».",
+          "en": "Reorder the groups. Start with “Wie”."
         },
         "tokens": [
-          "Ihr",
-          "Vorname",
           "?",
+          "Vorname",
           "Wie",
-          "ist"
+          "ist",
+          "Ihr"
         ]
       },
       {
@@ -184,16 +196,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Woher ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Woher“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Woher ».",
+          "en": "Reorder the groups. Start with “Woher”."
         },
         "tokens": [
-          "Sie",
-          "?",
           "Woher",
-          "kommen"
+          "kommen",
+          "?",
+          "Sie"
         ]
       },
       {
@@ -201,15 +213,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Wo ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Wo“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Wo ».",
+          "en": "Reorder the groups. Start with “Wo”."
         },
         "tokens": [
-          "Sie",
-          "?",
           "Wo",
+          "?",
+          "Sie",
           "wohnen"
         ]
       },
@@ -218,39 +230,39 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Was ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Was“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Was ».",
+          "en": "Reorder the groups. Start with “Was”."
         },
         "tokens": [
-          "Sie",
+          "sind",
           "von",
-          "Beruf",
-          "?",
           "Was",
-          "sind"
+          "Beruf",
+          "Sie",
+          "?"
         ]
       },
       {
+        "id": "kapitel-09-ubung-02-div-6",
+        "position": 6,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "… besuchst du? — Anna. → Wen",
-          "… gehört das Buch? — Anna. → Wo",
-          "… gehört das Buch? — Anna. → Wem",
-          "… besuchst du? — Anna. → Wo",
-          "… kommt? — Anna. → Wer",
-          "… kommt? — Anna. → Wo"
-        ],
-        "id": "kapitel-09-ubung-02-div-6",
-        "position": 6
+          "___ kommt die Lieferung? – Aus Bremen. → Wo",
+          "___ liegt die Werkstatt? – Neben dem Markt. → Wohin",
+          "___ bringst du die Kisten? – In den Keller. → Wohin",
+          "___ bringst du die Kisten? – In den Keller. → Wo",
+          "___ kommt die Lieferung? – Aus Bremen. → Woher",
+          "___ liegt die Werkstatt? – Neben dem Markt. → Wo"
+        ]
       }
     ]
   },
@@ -274,79 +286,99 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-09-ubung-03-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ kommt heute? – Dennis.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ kommt heute? – Dennis.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ kommt heute? – Dennis.",
+          "en": "Choose the correct answer in context. — ___ kommt heute? – Dennis."
         },
-        "sentence": "___ kommt heute? – Dennis.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wem",
+          "Wer",
+          "Wen"
+        ]
       },
       {
         "id": "kapitel-09-ubung-03-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ kostet das? – 3,50 Euro.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ kostet das? – 3,50 Euro.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ kostet das? – 3,50 Euro.",
+          "en": "Choose the correct answer in context. — ___ kostet das? – 3,50 Euro."
         },
-        "sentence": "___ kostet das? – 3,50 Euro.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wie viele",
+          "Wie lange",
+          "Wie viel"
+        ]
       },
       {
         "id": "kapitel-09-ubung-03-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ Kinder haben Sie? – Fünf.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ Kinder haben Sie? – Fünf.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ Kinder haben Sie? – Fünf.",
+          "en": "Choose the correct answer in context. — ___ Kinder haben Sie? – Fünf."
         },
-        "sentence": "___ Kinder haben Sie? – Fünf.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wie viel",
+          "Wie lange",
+          "Wie viele"
+        ]
       },
       {
         "id": "kapitel-09-ubung-03-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ kommt er? – Um halb acht. (genaue Uhrzeit)",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ kommt er? – Um halb acht. (genaue Uhrzeit)",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ kommt er? – Um halb acht. (genaue Uhrzeit)",
+          "en": "Choose the correct answer in context. — ___ kommt er? – Um halb acht. (genaue Uhrzeit)"
         },
-        "sentence": "___ kommt er? – Um halb acht. (genaue Uhrzeit)",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wie oft",
+          "Um wie viel Uhr",
+          "Wie lange"
+        ]
       },
       {
         "id": "kapitel-09-ubung-03-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ beginnt der Film? – Heute Abend.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ beginnt der Film? – Heute Abend.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ beginnt der Film? – Heute Abend.",
+          "en": "Choose the correct answer in context. — ___ beginnt der Film? – Heute Abend."
         },
-        "sentence": "___ beginnt der Film? – Heute Abend.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wie oft",
+          "Wann",
+          "Wie lange"
+        ]
       },
       {
+        "id": "kapitel-09-ubung-03-div-6",
+        "position": 6,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "… fährst du? — Nach Bonn. → Wo",
-        "id": "kapitel-09-ubung-03-div-6",
-        "position": 6
+        "statement": "___ heißt der neue Kollege? – Herr Brandt. → Wie"
       }
     ]
   },
@@ -370,97 +402,117 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-09-ubung-04-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — Und ___ heißen Sie? – Gisela Baumann.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — Und ___ heißen Sie? – Gisela Baumann.",
+          "ar": "اختر الإجابة المناسبة للسياق. — Und ___ heißen Sie? – Gisela Baumann.",
+          "en": "Choose the correct answer in context. — Und ___ heißen Sie? – Gisela Baumann."
         },
-        "sentence": "Und ___ heißen Sie? – Gisela Baumann.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "was",
+          "wo",
+          "wie"
+        ]
       },
       {
         "id": "kapitel-09-ubung-04-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ kommen Sie? – Aus Ulm.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ kommen Sie? – Aus Ulm.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ kommen Sie? – Aus Ulm.",
+          "en": "Choose the correct answer in context. — ___ kommen Sie? – Aus Ulm."
         },
-        "sentence": "___ kommen Sie? – Aus Ulm.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wohin",
+          "Woher",
+          "Wo"
+        ]
       },
       {
         "id": "kapitel-09-ubung-04-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ wohnen Sie? – In München.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ wohnen Sie? – In München.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ wohnen Sie? – In München.",
+          "en": "Choose the correct answer in context. — ___ wohnen Sie? – In München."
         },
-        "sentence": "___ wohnen Sie? – In München.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wohin",
+          "Wo",
+          "Woher"
+        ]
       },
       {
         "id": "kapitel-09-ubung-04-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ ist das? – Mein Sohn.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ ist das? – Mein Sohn.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ ist das? – Mein Sohn.",
+          "en": "Choose the correct answer in context. — ___ ist das? – Mein Sohn."
         },
-        "sentence": "___ ist das? – Mein Sohn.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wer",
+          "Wem",
+          "Wen"
+        ]
       },
       {
         "id": "kapitel-09-ubung-04-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ ist er? – Fünf Jahre.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ ist er? – Fünf Jahre.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ ist er? – Fünf Jahre.",
+          "en": "Choose the correct answer in context. — ___ ist er? – Fünf Jahre."
         },
-        "sentence": "___ ist er? – Fünf Jahre.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wie alt",
+          "Wie oft",
+          "Wie lange"
+        ]
       },
       {
+        "id": "kapitel-09-ubung-04-div-6",
+        "position": 6,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "… kommt? — Anna."
+            "label": "___ repariert die Mechanikerin? – Das Fahrrad."
           },
           {
             "id": "i1",
-            "label": "… besuchst du? — Anna."
+            "label": "___ findet das Treffen statt? – Nächste Woche."
           },
           {
             "id": "i2",
-            "label": "… gehört das Buch? — Anna."
+            "label": "___ kostet der Eintritt? – Zwölf Euro."
           }
         ],
         "options": [
-          "Wen",
-          "Wem",
-          "Wer"
-        ],
-        "id": "kapitel-09-ubung-04-div-6",
-        "position": 6
+          "Wie viel",
+          "Was",
+          "Wann"
+        ]
       }
     ]
   },
@@ -484,74 +536,90 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-09-ubung-05-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ ist mein Handy? – Im Wohnzimmer.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ ist mein Handy? – Im Wohnzimmer.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ ist mein Handy? – Im Wohnzimmer.",
+          "en": "Choose the correct answer in context. — ___ ist mein Handy? – Im Wohnzimmer."
         },
-        "sentence": "___ ist mein Handy? – Im Wohnzimmer.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Woher",
+          "Wo",
+          "Wohin"
+        ]
       },
       {
         "id": "kapitel-09-ubung-05-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ warst du gerade? – Im Wohnzimmer.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ warst du gerade? – Im Wohnzimmer.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ warst du gerade? – Im Wohnzimmer.",
+          "en": "Choose the correct answer in context. — ___ warst du gerade? – Im Wohnzimmer."
         },
-        "sentence": "___ warst du gerade? – Im Wohnzimmer.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wo",
+          "Woher",
+          "Wohin"
+        ]
       },
       {
         "id": "kapitel-09-ubung-05-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ kommst du? – Aus der Stadt.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ kommst du? – Aus der Stadt.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ kommst du? – Aus der Stadt.",
+          "en": "Choose the correct answer in context. — ___ kommst du? – Aus der Stadt."
         },
-        "sentence": "___ kommst du? – Aus der Stadt.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wo",
+          "Woher",
+          "Wohin"
+        ]
       },
       {
         "id": "kapitel-09-ubung-05-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ willst du gehen? – Ins Kino.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ willst du gehen? – Ins Kino.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ willst du gehen? – Ins Kino.",
+          "en": "Choose the correct answer in context. — ___ willst du gehen? – Ins Kino."
         },
-        "sentence": "___ willst du gehen? – Ins Kino.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wohin",
+          "Wo",
+          "Woher"
+        ]
       },
       {
+        "id": "kapitel-09-ubung-05-div-5",
+        "position": 5,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "… kommst du? — Aus Bonn. → Woher",
-          "… fährst du? — Nach Bonn. → Wohin",
-          "… fährst du? — Nach Bonn. → Wo",
-          "… wohnst du? — In Bonn. → Woher",
-          "… wohnst du? — In Bonn. → Wo",
-          "… kommst du? — Aus Bonn. → Wo"
-        ],
-        "id": "kapitel-09-ubung-05-div-5",
-        "position": 5
+          "___ ist das Kind? – Acht Jahre alt. → Wie alt",
+          "___ ist das Kind? – Acht Jahre alt. → Wie lange",
+          "___ bleibt ihr in Wien? – Zwei Wochen. → Wie lange",
+          "___ Stühle fehlen? – Vier. → Wie viele",
+          "___ bleibt ihr in Wien? – Zwei Wochen. → Wann",
+          "___ Stühle fehlen? – Vier. → Wie viel"
+        ]
       }
     ]
   },
@@ -575,66 +643,82 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-09-ubung-06-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ kommt heute? – Der Lehrer.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ kommt heute? – Der Lehrer.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ kommt heute? – Der Lehrer.",
+          "en": "Choose the correct answer in context. — ___ kommt heute? – Der Lehrer."
         },
-        "sentence": "___ kommt heute? – Der Lehrer.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wen",
+          "Wem",
+          "Wer"
+        ]
       },
       {
         "id": "kapitel-09-ubung-06-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ gehst du ins Theater? – Mit dem Lehrer.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ gehst du ins Theater? – Mit dem Lehrer.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ gehst du ins Theater? – Mit dem Lehrer.",
+          "en": "Choose the correct answer in context. — ___ gehst du ins Theater? – Mit dem Lehrer."
         },
-        "sentence": "___ gehst du ins Theater? – Mit dem Lehrer.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Mit wem",
+          "Wen",
+          "Von wem"
+        ]
       },
       {
         "id": "kapitel-09-ubung-06-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ hast du besucht? – Den Lehrer.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ hast du besucht? – Den Lehrer.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ hast du besucht? – Den Lehrer.",
+          "en": "Choose the correct answer in context. — ___ hast du besucht? – Den Lehrer."
         },
-        "sentence": "___ hast du besucht? – Den Lehrer.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wem",
+          "Wer",
+          "Wen"
+        ]
       },
       {
         "id": "kapitel-09-ubung-06-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ gehört die Tasche? – Dem Lehrer.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ gehört die Tasche? – Dem Lehrer.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ gehört die Tasche? – Dem Lehrer.",
+          "en": "Choose the correct answer in context. — ___ gehört die Tasche? – Dem Lehrer."
         },
-        "sentence": "___ gehört die Tasche? – Dem Lehrer.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wem",
+          "Wer",
+          "Wen"
+        ]
       },
       {
+        "id": "kapitel-09-ubung-06-div-5",
+        "position": 5,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "… gehört das Buch? — Anna. → Wem",
-        "id": "kapitel-09-ubung-06-div-5",
-        "position": 5
+        "statement": "___ teilst du das Büro? – Mit meinem Bruder. → Von wem"
       }
     ]
   },
@@ -658,97 +742,117 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-09-ubung-07-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ gehört die Brille? – Mir.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ gehört die Brille? – Mir.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ gehört die Brille? – Mir.",
+          "en": "Choose the correct answer in context. — ___ gehört die Brille? – Mir."
         },
-        "sentence": "___ gehört die Brille? – Mir.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wem",
+          "Wen",
+          "Wer"
+        ]
       },
       {
         "id": "kapitel-09-ubung-07-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ hast du gesehen? – Den Nachbarn.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ hast du gesehen? – Den Nachbarn.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ hast du gesehen? – Den Nachbarn.",
+          "en": "Choose the correct answer in context. — ___ hast du gesehen? – Den Nachbarn."
         },
-        "sentence": "___ hast du gesehen? – Den Nachbarn.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wen",
+          "Wem",
+          "Wer"
+        ]
       },
       {
         "id": "kapitel-09-ubung-07-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ fahren Sie in Urlaub? – In die Alpen.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ fahren Sie in Urlaub? – In die Alpen.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ fahren Sie in Urlaub? – In die Alpen.",
+          "en": "Choose the correct answer in context. — ___ fahren Sie in Urlaub? – In die Alpen."
         },
-        "sentence": "___ fahren Sie in Urlaub? – In die Alpen.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wohin",
+          "Wo",
+          "Woher"
+        ]
       },
       {
         "id": "kapitel-09-ubung-07-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ hast du das Geschenk? – Von meinen Eltern.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ hast du das Geschenk? – Von meinen Eltern.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ hast du das Geschenk? – Von meinen Eltern.",
+          "en": "Choose the correct answer in context. — ___ hast du das Geschenk? – Von meinen Eltern."
         },
-        "sentence": "___ hast du das Geschenk? – Von meinen Eltern.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wem",
+          "Mit wem",
+          "Von wem"
+        ]
       },
       {
         "id": "kapitel-09-ubung-07-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ bist du gefahren? – Allein.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ bist du gefahren? – Allein.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ bist du gefahren? – Allein.",
+          "en": "Choose the correct answer in context. — ___ bist du gefahren? – Allein."
         },
-        "sentence": "___ bist du gefahren? – Allein.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Mit wem",
+          "Von wem",
+          "Wen"
+        ]
       },
       {
+        "id": "kapitel-09-ubung-07-div-6",
+        "position": 6,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "… wohnst du? — In Bonn."
+            "label": "___ ist die Nachricht? – Von der Schulleiterin."
           },
           {
             "id": "i1",
-            "label": "… kommst du? — Aus Bonn."
+            "label": "___ ist die Straße gesperrt? – Weil dort gebaut wird."
           },
           {
             "id": "i2",
-            "label": "… fährst du? — Nach Bonn."
+            "label": "___ Uhr öffnet der Laden? – Um neun Uhr."
           }
         ],
         "options": [
-          "Wo",
-          "Wohin",
-          "Woher"
-        ],
-        "id": "kapitel-09-ubung-07-div-6",
-        "position": 6
+          "Von wem",
+          "Warum",
+          "Um wie viel"
+        ]
       }
     ]
   },
@@ -772,74 +876,90 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-09-ubung-08-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ ist der Herr dort? – Ein Freund.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ ist der Herr dort? – Ein Freund.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ ist der Herr dort? – Ein Freund.",
+          "en": "Choose the correct answer in context. — ___ ist der Herr dort? – Ein Freund."
         },
-        "sentence": "___ ist der Herr dort? – Ein Freund.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wen",
+          "Wer",
+          "Wem"
+        ]
       },
       {
         "id": "kapitel-09-ubung-08-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ suchen Sie? – Den Lehrer.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ suchen Sie? – Den Lehrer.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ suchen Sie? – Den Lehrer.",
+          "en": "Choose the correct answer in context. — ___ suchen Sie? – Den Lehrer."
         },
-        "sentence": "___ suchen Sie? – Den Lehrer.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wer",
+          "Wem",
+          "Wen"
+        ]
       },
       {
         "id": "kapitel-09-ubung-08-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ kommt sie später? – Weil der Zug Verspätung hat.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ kommt sie später? – Weil der Zug Verspätung hat.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ kommt sie später? – Weil der Zug Verspätung hat.",
+          "en": "Choose the correct answer in context. — ___ kommt sie später? – Weil der Zug Verspätung hat."
         },
-        "sentence": "___ kommt sie später? – Weil der Zug Verspätung hat.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Warum",
+          "Woher",
+          "Wie lange"
+        ]
       },
       {
         "id": "kapitel-09-ubung-08-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ fahrt ihr nach Berlin? – Mit Freunden.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ fahrt ihr nach Berlin? – Mit Freunden.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ fahrt ihr nach Berlin? – Mit Freunden.",
+          "en": "Choose the correct answer in context. — ___ fahrt ihr nach Berlin? – Mit Freunden."
         },
-        "sentence": "___ fahrt ihr nach Berlin? – Mit Freunden.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Von wem",
+          "Mit wem",
+          "Wen"
+        ]
       },
       {
+        "id": "kapitel-09-ubung-08-div-5",
+        "position": 5,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "… besuchst du? — Anna. → Wo",
-          "… besuchst du? — Anna. → Wen",
-          "… kommt? — Anna. → Wer",
-          "… gehört das Buch? — Anna. → Wo",
-          "… gehört das Buch? — Anna. → Wem",
-          "… kommt? — Anna. → Wo"
-        ],
-        "id": "kapitel-09-ubung-08-div-5",
-        "position": 5
+          "___ gehst du schwimmen? – Zweimal pro Woche. → Wie oft",
+          "___ sucht die Polizei? – Einen Zeugen. → Wer",
+          "___ sucht die Polizei? – Einen Zeugen. → Wen",
+          "___ fehlt heute im Kurs? – Martin. → Wer",
+          "___ fehlt heute im Kurs? – Martin. → Wen",
+          "___ gehst du schwimmen? – Zweimal pro Woche. → Wie lange"
+        ]
       }
     ]
   },
@@ -863,66 +983,82 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-09-ubung-09-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ dauert der Kurs? – Drei Monate.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ dauert der Kurs? – Drei Monate.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ dauert der Kurs? – Drei Monate.",
+          "en": "Choose the correct answer in context. — ___ dauert der Kurs? – Drei Monate."
         },
-        "sentence": "___ dauert der Kurs? – Drei Monate.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wann",
+          "Wie lange",
+          "Wie oft"
+        ]
       },
       {
         "id": "kapitel-09-ubung-09-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ kostet das Brot? – Zwei Euro.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ kostet das Brot? – Zwei Euro.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ kostet das Brot? – Zwei Euro.",
+          "en": "Choose the correct answer in context. — ___ kostet das Brot? – Zwei Euro."
         },
-        "sentence": "___ kostet das Brot? – Zwei Euro.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wie viele",
+          "Wie lange",
+          "Wie viel"
+        ]
       },
       {
         "id": "kapitel-09-ubung-09-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ Bücher hast du? – Drei.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ Bücher hast du? – Drei.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ Bücher hast du? – Drei.",
+          "en": "Choose the correct answer in context. — ___ Bücher hast du? – Drei."
         },
-        "sentence": "___ Bücher hast du? – Drei.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wie viel",
+          "Wie viele",
+          "Wie lange"
+        ]
       },
       {
         "id": "kapitel-09-ubung-09-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ beginnt der Kurs? – Morgen.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ beginnt der Kurs? – Morgen.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ beginnt der Kurs? – Morgen.",
+          "en": "Choose the correct answer in context. — ___ beginnt der Kurs? – Morgen."
         },
-        "sentence": "___ beginnt der Kurs? – Morgen.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wie lange",
+          "Wie oft",
+          "Wann"
+        ]
       },
       {
+        "id": "kapitel-09-ubung-09-div-5",
+        "position": 5,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "… fährst du? — Nach Bonn. → Wo",
-        "id": "kapitel-09-ubung-09-div-5",
-        "position": 5
+        "statement": "___ dankt ihr? – Der Ärztin. → Wem"
       }
     ]
   },
@@ -946,84 +1082,100 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-09-ubung-10-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ gehört das Auto? – Meiner Schwester.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ gehört das Auto? – Meiner Schwester.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ gehört das Auto? – Meiner Schwester.",
+          "en": "Choose the correct answer in context. — ___ gehört das Auto? – Meiner Schwester."
         },
-        "sentence": "___ gehört das Auto? – Meiner Schwester.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wer",
+          "Wen",
+          "Wem"
+        ]
       },
       {
         "id": "kapitel-09-ubung-10-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ fährt der Bus? – Zum Bahnhof.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ fährt der Bus? – Zum Bahnhof.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ fährt der Bus? – Zum Bahnhof.",
+          "en": "Choose the correct answer in context. — ___ fährt der Bus? – Zum Bahnhof."
         },
-        "sentence": "___ fährt der Bus? – Zum Bahnhof.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wo",
+          "Woher",
+          "Wohin"
+        ]
       },
       {
         "id": "kapitel-09-ubung-10-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ lernst du Deutsch? – Weil ich in Deutschland arbeiten möchte.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ lernst du Deutsch? – Weil ich in Deutschland arbeiten möchte.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ lernst du Deutsch? – Weil ich in Deutschland arbeiten möchte.",
+          "en": "Choose the correct answer in context. — ___ lernst du Deutsch? – Weil ich in Deutschland arbeiten möchte."
         },
-        "sentence": "___ lernst du Deutsch? – Weil ich in Deutschland arbeiten möchte.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wie lange",
+          "Warum",
+          "Woher"
+        ]
       },
       {
         "id": "kapitel-09-ubung-10-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — ___ ist deine Mutter? – Zu Hause.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — ___ ist deine Mutter? – Zu Hause.",
+          "ar": "اختر الإجابة المناسبة للسياق. — ___ ist deine Mutter? – Zu Hause.",
+          "en": "Choose the correct answer in context. — ___ ist deine Mutter? – Zu Hause."
         },
-        "sentence": "___ ist deine Mutter? – Zu Hause.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wo",
+          "Wohin",
+          "Woher"
+        ]
       },
       {
+        "id": "kapitel-09-ubung-10-div-5",
+        "position": 5,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "… kommt? — Anna."
+            "label": "___ steht dein Koffer? – Hinter der Tür."
           },
           {
             "id": "i1",
-            "label": "… besuchst du? — Anna."
+            "label": "___ kommt der Wind? – Aus dem Norden."
           },
           {
             "id": "i2",
-            "label": "… gehört das Buch? — Anna."
+            "label": "___ läuft das Kind? – Zum Spielplatz."
           }
         ],
         "options": [
-          "Wen",
-          "Wem",
-          "Wer"
-        ],
-        "id": "kapitel-09-ubung-10-div-5",
-        "position": 5
+          "Wo",
+          "Woher",
+          "Wohin"
+        ]
       }
     ]
   }

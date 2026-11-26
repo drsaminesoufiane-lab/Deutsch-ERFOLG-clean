@@ -5,10 +5,10 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "Im Café",
+      "fr": "Au café",
       "de": "Im Café",
-      "ar": "Im Café",
-      "en": "Im Café"
+      "ar": "في المقهى",
+      "en": "At the café"
     },
     "description": {
       "fr": "Négation",
@@ -22,16 +22,17 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich möchte ___ Zucker.",
-          "de": "Ergänzen Sie. — Ich möchte ___ Zucker.",
-          "ar": "أكمل. — Ich möchte ___ Zucker.",
-          "en": "Complete. — Ich möchte ___ Zucker."
+          "fr": "Complétez avec nicht ou une forme de kein. — Der Kuchen ist ___ süß, sondern sauer.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Der Kuchen ist ___ süß, sondern sauer.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Der Kuchen ist ___ süß, sondern sauer.",
+          "en": "Complete with nicht or a form of kein. — Der Kuchen ist ___ süß, sondern sauer."
         },
         "selection": "single",
         "options": [
           "keine",
-          "nicht",
-          "keinen"
+          "kein",
+          "keiner",
+          "nicht"
         ]
       },
       {
@@ -39,34 +40,31 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich trinke ___ Milch.",
-          "de": "Ergänzen Sie. — Ich trinke ___ Milch.",
-          "ar": "أكمل. — Ich trinke ___ Milch.",
-          "en": "Complete. — Ich trinke ___ Milch."
+          "fr": "Complétez avec nicht ou une forme de kein. — Für mich bitte ___ Sahne. Ich mag sie nicht.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Für mich bitte ___ Sahne. Ich mag sie nicht.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Für mich bitte ___ Sahne. Ich mag sie nicht.",
+          "en": "Complete with nicht or a form of kein. — Für mich bitte ___ Sahne. Ich mag sie nicht."
         },
         "selection": "single",
         "options": [
+          "keinem",
           "nicht",
-          "keinen",
-          "keine"
+          "keine",
+          "kein"
         ]
       },
       {
         "id": "kapitel-15-ubung-11-q03",
         "position": 3,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Der Tee ist ___ heiß.",
-          "de": "Ergänzen Sie. — Der Tee ist ___ heiß.",
-          "ar": "أكمل. — Der Tee ist ___ heiß.",
-          "en": "Complete. — Der Tee ist ___ heiß."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
-        "selection": "single",
-        "options": [
-          "keine",
-          "keinen",
-          "nicht"
-        ]
+        "sentence": "Ich habe heute ___ Appetit auf Pizza.",
+        "blanks": 1
       }
     ]
   },
@@ -75,10 +73,10 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Bei der Arbeit",
+      "fr": "Au travail",
       "de": "Bei der Arbeit",
-      "ar": "Bei der Arbeit",
-      "en": "Bei der Arbeit"
+      "ar": "في العمل",
+      "en": "At work"
     },
     "description": {
       "fr": "Négation",
@@ -92,16 +90,17 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich habe ___ Termin.",
-          "de": "Ergänzen Sie. — Ich habe ___ Termin.",
-          "ar": "أكمل. — Ich habe ___ Termin.",
-          "en": "Complete. — Ich habe ___ Termin."
+          "fr": "Exprimez « ne…plus ». — Früher arbeitete sie hier; jetzt arbeitet sie hier ___.",
+          "de": "Drücken Sie aus, dass ein früherer Zustand beendet ist. — Früher arbeitete sie hier; jetzt arbeitet sie hier ___.",
+          "ar": "عبّر عن « لم يعد ». — Früher arbeitete sie hier; jetzt arbeitet sie hier ___.",
+          "en": "Express “no longer”. — Früher arbeitete sie hier; jetzt arbeitet sie hier ___."
         },
         "selection": "single",
         "options": [
-          "keinen",
-          "Niemand",
-          "nicht"
+          "niemand",
+          "nicht mehr",
+          "niemanden",
+          "nie"
         ]
       },
       {
@@ -109,16 +108,17 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich kann heute ___ arbeiten.",
-          "de": "Ergänzen Sie. — Ich kann heute ___ arbeiten.",
-          "ar": "أكمل. — Ich kann heute ___ arbeiten.",
-          "en": "Complete. — Ich kann heute ___ arbeiten."
+          "fr": "Exprimez « pas encore ». — Der Chef ist erst um zehn da; er ist ___ angekommen.",
+          "de": "Drücken Sie aus, dass etwas bisher nicht geschehen ist. — Der Chef ist erst um zehn da; er ist ___ angekommen.",
+          "ar": "عبّر عن « ليس بعد ». — Der Chef ist erst um zehn da; er ist ___ angekommen.",
+          "en": "Express “not yet”. — Der Chef ist erst um zehn da; er ist ___ angekommen."
         },
         "selection": "single",
         "options": [
-          "nicht",
-          "keinen",
-          "Niemand"
+          "niemanden",
+          "nie",
+          "noch nicht",
+          "ohne"
         ]
       },
       {
@@ -126,16 +126,17 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — ___ ist im Büro. (keine Person)",
-          "de": "Ergänzen Sie. — ___ ist im Büro. (keine Person)",
-          "ar": "أكمل. — ___ ist im Büro. (keine Person)",
-          "en": "Complete. — ___ ist im Büro. (keine Person)"
+          "fr": "Exprimez « personne » comme sujet. — Alle sind zu Hause. ___ ist heute im Büro.",
+          "de": "Verneinen Sie die Person als Subjekt. — Alle sind zu Hause. ___ ist heute im Büro.",
+          "ar": "عبّر عن « لا أحد » كفاعل. — Alle sind zu Hause. ___ ist heute im Büro.",
+          "en": "Express “nobody” as subject. — Alle sind zu Hause. ___ ist heute im Büro."
         },
         "selection": "single",
         "options": [
-          "nicht",
-          "keinen",
-          "Niemand"
+          "Niemanden",
+          "Niemand",
+          "Nie",
+          "Ohne"
         ]
       }
     ]
@@ -145,9 +146,9 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Challenge",
+      "fr": "Défi",
       "de": "Challenge",
-      "ar": "Challenge",
+      "ar": "تحدٍ",
       "en": "Challenge"
     },
     "description": {
@@ -162,16 +163,17 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich habe noch ___ in Berlin gewohnt.",
-          "de": "Ergänzen Sie. — Ich habe noch ___ in Berlin gewohnt.",
-          "ar": "أكمل. — Ich habe noch ___ in Berlin gewohnt.",
-          "en": "Complete. — Ich habe noch ___ in Berlin gewohnt."
+          "fr": "Exprimez « jamais ». — Ich war noch ___ in Wien. Das ist mein erster Besuch.",
+          "de": "Drücken Sie „zu keiner Zeit“ aus. — Ich war noch ___ in Wien. Das ist mein erster Besuch.",
+          "ar": "عبّر عن « أبداً ». — Ich war noch ___ in Wien. Das ist mein erster Besuch.",
+          "en": "Express “never”. — Ich war noch ___ in Wien. Das ist mein erster Besuch."
         },
         "selection": "single",
         "options": [
-          "keine",
           "nie",
-          "nichts"
+          "noch nicht",
+          "niemand",
+          "ohne"
         ]
       },
       {
@@ -179,16 +181,17 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich brauche ___ Hilfe mehr.",
-          "de": "Ergänzen Sie. — Ich brauche ___ Hilfe mehr.",
-          "ar": "أكمل. — Ich brauche ___ Hilfe mehr.",
-          "en": "Complete. — Ich brauche ___ Hilfe mehr."
+          "fr": "Exprimez « rien ». — Im leeren Kühlschrank ist ___.",
+          "de": "Verneinen Sie die Sache. — Im leeren Kühlschrank ist ___.",
+          "ar": "عبّر عن « لا شيء ». — Im leeren Kühlschrank ist ___.",
+          "en": "Express “nothing”. — Im leeren Kühlschrank ist ___."
         },
         "selection": "single",
         "options": [
-          "nie",
           "nichts",
-          "keine"
+          "nicht mehr",
+          "noch nicht",
+          "ohne"
         ]
       },
       {
@@ -196,16 +199,18 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich sehe ___. (keine Sache)",
-          "de": "Ergänzen Sie. — Ich sehe ___. (keine Sache)",
-          "ar": "أكمل. — Ich sehe ___. (keine Sache)",
-          "en": "Complete. — Ich sehe ___. (keine Sache)"
+          "fr": "Exprimez « personne » comme complément. — Alle Freunde sind im Urlaub. Ich treffe heute ___.",
+          "de": "Verneinen Sie die Person als Objekt. — Alle Freunde sind im Urlaub. Ich treffe heute ___.",
+          "ar": "عبّر عن « لا أحد » كمفعول به. — Alle Freunde sind im Urlaub. Ich treffe heute ___.",
+          "en": "Express “nobody” as object. — Alle Freunde sind im Urlaub. Ich treffe heute ___."
         },
         "selection": "single",
         "options": [
           "nie",
-          "nichts",
-          "keine"
+          "nicht mehr",
+          "niemanden",
+          "keinen",
+          "ohne"
         ]
       }
     ]

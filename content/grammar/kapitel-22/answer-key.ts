@@ -40,12 +40,15 @@ export const chapter22AnswerKey: AnswerKey = {
     }
   },
   "kapitel-22-ubung-02-q01": {
-    "acceptedAnswers": "den",
+    "acceptedAnswers": [
+      "gefällt",
+      "gefallen"
+    ],
     "explanation": {
-      "fr": "Das Haus gefällt den Leuten. (die) — den est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Das Haus gefällt den Leuten. (die) — den steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Das Haus gefällt den Leuten. (die) — الضمير den في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Das Haus gefällt den Leuten. (die) — den is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Das Haus gefällt den Leuten, aber die Zimmer gefallen ihnen nicht. (gefallen) — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Das Haus gefällt den Leuten, aber die Zimmer gefallen ihnen nicht. (gefallen) — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Das Haus gefällt den Leuten, aber die Zimmer gefallen ihnen nicht. (gefallen) — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Das Haus gefällt den Leuten, aber die Zimmer gefallen ihnen nicht. (gefallen) — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-02-q02": {
@@ -107,12 +110,15 @@ export const chapter22AnswerKey: AnswerKey = {
     }
   },
   "kapitel-22-ubung-03-q01": {
-    "acceptedAnswers": "mir",
+    "acceptedAnswers": [
+      "mir",
+      "ihn"
+    ],
     "explanation": {
-      "fr": "Ich frage den Mann. Er antwortet mir. — mir est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Ich frage den Mann. Er antwortet mir. — mir steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Ich frage den Mann. Er antwortet mir. — الضمير mir في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Ich frage den Mann. Er antwortet mir. — mir is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich frage den Mann. Er antwortet mir. Danach frage ich ihn noch einmal. (ich/der Mann) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Ich frage den Mann. Er antwortet mir. Danach frage ich ihn noch einmal. (ich/der Mann) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Ich frage den Mann. Er antwortet mir. Danach frage ich ihn noch einmal. (ich/der Mann) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Ich frage den Mann. Er antwortet mir. Danach frage ich ihn noch einmal. (ich/der Mann) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-03-q02": {
@@ -152,12 +158,14 @@ export const chapter22AnswerKey: AnswerKey = {
     }
   },
   "kapitel-22-ubung-04-q02": {
-    "acceptedAnswers": "mir",
+    "acceptedAnswers": [
+      "mir"
+    ],
     "explanation": {
-      "fr": "Mein Sohn sagt: Es tut mir leid. (ich) — mir est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Mein Sohn sagt: Es tut mir leid. (ich) — mir steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Mein Sohn sagt: Es tut mir leid. (ich) — الضمير mir في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Mein Sohn sagt: Es tut mir leid. (ich) — mir is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Mein Sohn sagt: Es tut mir leid. Seine Schwester sagt: Mir tut es auch leid. (ich) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Mein Sohn sagt: Es tut mir leid. Seine Schwester sagt: Mir tut es auch leid. (ich) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Mein Sohn sagt: Es tut mir leid. Seine Schwester sagt: Mir tut es auch leid. (ich) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Mein Sohn sagt: Es tut mir leid. Seine Schwester sagt: Mir tut es auch leid. (ich) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-04-q03": {
@@ -289,21 +297,27 @@ export const chapter22AnswerKey: AnswerKey = {
     }
   },
   "kapitel-22-ubung-06-q04": {
-    "acceptedAnswers": "ihn",
+    "acceptedAnswers": [
+      "ihn",
+      "mir"
+    ],
     "explanation": {
-      "fr": "Ich rufe ihn an. (Clemens) — ihn est la forme au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Ich rufe ihn an. (Clemens) — ihn steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Ich rufe ihn an. (Clemens) — الضمير ihn في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Ich rufe ihn an. (Clemens) — ihn is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich rufe Clemens an und frage ihn etwas. Er antwortet mir sofort. (Clemens/ich) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Ich rufe Clemens an und frage ihn etwas. Er antwortet mir sofort. (Clemens/ich) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Ich rufe Clemens an und frage ihn etwas. Er antwortet mir sofort. (Clemens/ich) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Ich rufe Clemens an und frage ihn etwas. Er antwortet mir sofort. (Clemens/ich) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-06-q05": {
-    "acceptedAnswers": "ihm",
+    "acceptedAnswers": [
+      "ihm",
+      "ihm"
+    ],
     "explanation": {
-      "fr": "Ich höre ihm zu. (Clemens) — ihm est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Ich höre ihm zu. (Clemens) — ihm steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Ich höre ihm zu. (Clemens) — الضمير ihm في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Ich höre ihm zu. (Clemens) — ihm is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Clemens erzählt eine Geschichte. Ich höre ihm zu und glaube ihm. (Clemens) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Clemens erzählt eine Geschichte. Ich höre ihm zu und glaube ihm. (Clemens) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Clemens erzählt eine Geschichte. Ich höre ihm zu und glaube ihm. (Clemens) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Clemens erzählt eine Geschichte. Ich höre ihm zu und glaube ihm. (Clemens) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-06-q06": {
@@ -328,13 +342,14 @@ export const chapter22AnswerKey: AnswerKey = {
   },
   "kapitel-22-ubung-07-q01": {
     "acceptedAnswers": [
+      "der",
       "der"
     ],
     "explanation": {
-      "fr": "Der Mann schenkt der Frau Blumen. (die) — der est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Mann schenkt der Frau Blumen. (die) — der steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Mann schenkt der Frau Blumen. (die) — الضمير der في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Mann schenkt der Frau Blumen. (die) — der is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Der Mann schenkt der Frau Blumen. Die Blumen gefallen der Frau. (bestimmt) — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Der Mann schenkt der Frau Blumen. Die Blumen gefallen der Frau. (bestimmt) — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Der Mann schenkt der Frau Blumen. Die Blumen gefallen der Frau. (bestimmt) — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Der Mann schenkt der Frau Blumen. Die Blumen gefallen der Frau. (bestimmt) — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-07-q02": {
@@ -347,12 +362,15 @@ export const chapter22AnswerKey: AnswerKey = {
     }
   },
   "kapitel-22-ubung-07-q03": {
-    "acceptedAnswers": "die",
+    "acceptedAnswers": [
+      "die",
+      "dem"
+    ],
     "explanation": {
-      "fr": "Der Chef fragt die Sekretärin. (die) — die est la forme au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Chef fragt die Sekretärin. (die) — die steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Chef fragt die Sekretärin. (die) — الضمير die في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Chef fragt die Sekretärin. (die) — die is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Der Chef fragt die Sekretärin. Sie antwortet dem Chef. (bestimmt) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Der Chef fragt die Sekretärin. Sie antwortet dem Chef. (bestimmt) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Der Chef fragt die Sekretärin. Sie antwortet dem Chef. (bestimmt) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Der Chef fragt die Sekretärin. Sie antwortet dem Chef. (bestimmt) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-07-q04": {
@@ -366,13 +384,14 @@ export const chapter22AnswerKey: AnswerKey = {
   },
   "kapitel-22-ubung-07-q05": {
     "acceptedAnswers": [
-      "den"
+      "den",
+      "dem"
     ],
     "explanation": {
-      "fr": "Der Freund liest den Brief. (der) — den est la forme au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Freund liest den Brief. (der) — den steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Freund liest den Brief. (der) — الضمير den في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Freund liest den Brief. (der) — den is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Der Freund liest den Brief und antwortet dem Mädchen. (bestimmt) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Der Freund liest den Brief und antwortet dem Mädchen. (bestimmt) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Der Freund liest den Brief und antwortet dem Mädchen. (bestimmt) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Der Freund liest den Brief und antwortet dem Mädchen. (bestimmt) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-07-q06": {
@@ -394,59 +413,75 @@ export const chapter22AnswerKey: AnswerKey = {
     }
   },
   "kapitel-22-ubung-08-q01": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "gefallen",
+      "gefällt"
+    ],
     "explanation": {
-      "fr": "Die Schuhe gefallen mir. (ich) — mir est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Schuhe gefallen mir. (ich) — mir steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Schuhe gefallen mir. (ich) — الضمير mir في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Schuhe gefallen mir. (ich) — mir is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Schuhe gefallen mir, aber die Jacke gefällt mir nicht. (gefallen) — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Die Schuhe gefallen mir, aber die Jacke gefällt mir nicht. (gefallen) — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Die Schuhe gefallen mir, aber die Jacke gefällt mir nicht. (gefallen) — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Die Schuhe gefallen mir, aber die Jacke gefällt mir nicht. (gefallen) — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-08-q02": {
-    "acceptedAnswers": "uns",
+    "acceptedAnswers": [
+      "uns",
+      "mir"
+    ],
     "explanation": {
-      "fr": "Die Suppe schmeckt uns. (wir) — uns est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Suppe schmeckt uns. (wir) — uns steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Suppe schmeckt uns. (wir) — الضمير uns في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Suppe schmeckt uns. (wir) — uns is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Suppe schmeckt uns, aber der Salat schmeckt mir nicht. (wir/ich) — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Die Suppe schmeckt uns, aber der Salat schmeckt mir nicht. (wir/ich) — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Die Suppe schmeckt uns, aber der Salat schmeckt mir nicht. (wir/ich) — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Die Suppe schmeckt uns, aber der Salat schmeckt mir nicht. (wir/ich) — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-08-q03": {
-    "acceptedAnswers": "ihm",
+    "acceptedAnswers": [
+      "ihm",
+      "ihr"
+    ],
     "explanation": {
-      "fr": "Die Bücher gehören ihm. (er) — ihm est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Bücher gehören ihm. (er) — ihm steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Bücher gehören ihm. (er) — الضمير ihm في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Bücher gehören ihm. (er) — ihm is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Das Buch gehört Paul. Die Bücher gehören Anna. Das Buch gehört ihm, die Bücher gehören ihr. — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Das Buch gehört Paul. Die Bücher gehören Anna. Das Buch gehört ihm, die Bücher gehören ihr. — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Das Buch gehört Paul. Die Bücher gehören Anna. Das Buch gehört ihm, die Bücher gehören ihr. — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Das Buch gehört Paul. Die Bücher gehören Anna. Das Buch gehört ihm, die Bücher gehören ihr. — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-08-q04": {
     "acceptedAnswers": [
-      "dir"
+      "dir",
+      "mir"
     ],
     "explanation": {
-      "fr": "Die Termine passen dir. (du) — dir est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Termine passen dir. (du) — dir steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Termine passen dir. (du) — الضمير dir في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Termine passen dir. (du) — dir is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Termine passen dir, aber der Montag passt mir nicht. (du/ich) — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Die Termine passen dir, aber der Montag passt mir nicht. (du/ich) — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Die Termine passen dir, aber der Montag passt mir nicht. (du/ich) — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Die Termine passen dir, aber der Montag passt mir nicht. (du/ich) — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-09-q01": {
-    "acceptedAnswers": "Ihnen",
+    "acceptedAnswers": [
+      "Ihnen",
+      "Sie"
+    ],
     "explanation": {
-      "fr": "Frau Klein, ich danke Ihnen. — Ihnen est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Frau Klein, ich danke Ihnen. — Ihnen steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Frau Klein, ich danke Ihnen. — الضمير Ihnen في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Frau Klein, ich danke Ihnen. — Ihnen is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Frau Klein, ich danke Ihnen für Ihre Hilfe. Ich rufe Sie morgen an. (höflich) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Frau Klein, ich danke Ihnen für Ihre Hilfe. Ich rufe Sie morgen an. (höflich) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Frau Klein, ich danke Ihnen für Ihre Hilfe. Ich rufe Sie morgen an. (höflich) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Frau Klein, ich danke Ihnen für Ihre Hilfe. Ich rufe Sie morgen an. (höflich) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-09-q02": {
-    "acceptedAnswers": "dir",
+    "acceptedAnswers": [
+      "dir",
+      "dich"
+    ],
     "explanation": {
-      "fr": "Paul, ich glaube dir. — dir est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Paul, ich glaube dir. — dir steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Paul, ich glaube dir. — الضمير dir في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Paul, ich glaube dir. — dir is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Paul, ich glaube dir, aber ich muss dich noch etwas fragen. (du) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Paul, ich glaube dir, aber ich muss dich noch etwas fragen. (du) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Paul, ich glaube dir, aber ich muss dich noch etwas fragen. (du) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Paul, ich glaube dir, aber ich muss dich noch etwas fragen. (du) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-09-q03": {
@@ -468,12 +503,15 @@ export const chapter22AnswerKey: AnswerKey = {
     }
   },
   "kapitel-22-ubung-10-q01": {
-    "acceptedAnswers": "Dem",
+    "acceptedAnswers": [
+      "Dem",
+      "Das"
+    ],
     "explanation": {
-      "fr": "Dem Mann hilft das Kind. (der) — Dem est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Dem Mann hilft das Kind. (der) — Dem steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Dem Mann hilft das Kind. (der) — الضمير Dem في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Dem Mann hilft das Kind. (der) — Dem is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Dem Mann hilft das Kind. Das Kind dankt dem Mann. (bestimmt; erste Lücke = Objekt) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Dem Mann hilft das Kind. Das Kind dankt dem Mann. (bestimmt; erste Lücke = Objekt) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Dem Mann hilft das Kind. Das Kind dankt dem Mann. (bestimmt; erste Lücke = Objekt) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Dem Mann hilft das Kind. Das Kind dankt dem Mann. (bestimmt; erste Lücke = Objekt) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-10-q02": {
@@ -497,146 +535,184 @@ export const chapter22AnswerKey: AnswerKey = {
     }
   },
   "kapitel-22-ubung-10-q04": {
-    "acceptedAnswers": "meinen",
+    "acceptedAnswers": [
+      "Ich besuche meinen Bruder.",
+      "Ich helfe meinem Bruder."
+    ],
     "explanation": {
-      "fr": "Ich besuche meinen Bruder. (mein) — meinen est la forme au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Ich besuche meinen Bruder. (mein) — meinen steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Ich besuche meinen Bruder. (mein) — الضمير meinen في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Ich besuche meinen Bruder. (mein) — meinen is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich besuche meinen Bruder. / Ich helfe meinem Bruder. — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Ich besuche meinen Bruder. / Ich helfe meinem Bruder. — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Ich besuche meinen Bruder. / Ich helfe meinem Bruder. — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Ich besuche meinen Bruder. / Ich helfe meinem Bruder. — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-11-q01": {
-    "acceptedAnswers": "Ihnen",
+    "acceptedAnswers": [
+      "passt",
+      "passen"
+    ],
     "explanation": {
-      "fr": "Herr Klein, wie geht es Ihnen? — Ihnen est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Herr Klein, wie geht es Ihnen? — Ihnen steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Herr Klein, wie geht es Ihnen? — الضمير Ihnen في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Herr Klein, wie geht es Ihnen? — Ihnen is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Beim Optiker: Die Brille passt der Kundin, aber die beiden Ersatzbrillen passen ihr nicht. (passen) — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Beim Optiker: Die Brille passt der Kundin, aber die beiden Ersatzbrillen passen ihr nicht. (passen) — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Beim Optiker: Die Brille passt der Kundin, aber die beiden Ersatzbrillen passen ihr nicht. (passen) — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Beim Optiker: Die Brille passt der Kundin, aber die beiden Ersatzbrillen passen ihr nicht. (passen) — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-11-q02": {
-    "acceptedAnswers": "ihm",
+    "acceptedAnswers": [
+      "ihm",
+      "ihr"
+    ],
     "explanation": {
-      "fr": "Der Patient hat Schmerzen. Der Rücken tut ihm weh. — ihm est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Patient hat Schmerzen. Der Rücken tut ihm weh. — ihm steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Patient hat Schmerzen. Der Rücken tut ihm weh. — الضمير ihm في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Patient hat Schmerzen. Der Rücken tut ihm weh. — ihm is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Der Optiker fragt die Kundin. Sie antwortet ihm. Er hilft ihr. (der Optiker/die Kundin) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Der Optiker fragt die Kundin. Sie antwortet ihm. Er hilft ihr. (der Optiker/die Kundin) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Der Optiker fragt die Kundin. Sie antwortet ihm. Er hilft ihr. (der Optiker/die Kundin) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Der Optiker fragt die Kundin. Sie antwortet ihm. Er hilft ihr. (der Optiker/die Kundin) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-11-q03": {
-    "acceptedAnswers": "ihr",
+    "acceptedAnswers": [
+      "Die Farbe gefällt ihr.",
+      "Die Brille steht ihr."
+    ],
     "explanation": {
-      "fr": "Die Kundin stellt eine Frage. Ich antworte ihr. — ihr est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Kundin stellt eine Frage. Ich antworte ihr. — ihr steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Kundin stellt eine Frage. Ich antworte ihr. — الضمير ihr في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Kundin stellt eine Frage. Ich antworte ihr. — ihr is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Farbe gefällt ihr. / Die Brille steht ihr. — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Die Farbe gefällt ihr. / Die Brille steht ihr. — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Die Farbe gefällt ihr. / Die Brille steht ihr. — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Die Farbe gefällt ihr. / Die Brille steht ihr. — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-11-q04": {
-    "acceptedAnswers": "ihnen",
+    "acceptedAnswers": [
+      "Die neuen Gläser",
+      "gefallen",
+      "der Kundin besonders gut."
+    ],
     "explanation": {
-      "fr": "Die Kunden brauchen Hilfe. Ich helfe ihnen. — ihnen est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Kunden brauchen Hilfe. Ich helfe ihnen. — ihnen steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Kunden brauchen Hilfe. Ich helfe ihnen. — الضمير ihnen في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Kunden brauchen Hilfe. Ich helfe ihnen. — ihnen is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die neuen Gläser gefallen der Kundin besonders gut. — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Die neuen Gläser gefallen der Kundin besonders gut. — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Die neuen Gläser gefallen der Kundin besonders gut. — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Die neuen Gläser gefallen der Kundin besonders gut. — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-12-q01": {
-    "acceptedAnswers": "ihr",
+    "acceptedAnswers": [
+      "schmeckt",
+      "schmecken"
+    ],
     "explanation": {
-      "fr": "Anna probiert Schuhe an. Die Schuhe passen ihr. — ihr est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Anna probiert Schuhe an. Die Schuhe passen ihr. — ihr steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Anna probiert Schuhe an. Die Schuhe passen ihr. — الضمير ihr في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Anna probiert Schuhe an. Die Schuhe passen ihr. — ihr is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Im Restaurant: Die Suppe schmeckt uns, aber die Nudeln schmecken den Kindern nicht. (schmecken) — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Im Restaurant: Die Suppe schmeckt uns, aber die Nudeln schmecken den Kindern nicht. (schmecken) — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Im Restaurant: Die Suppe schmeckt uns, aber die Nudeln schmecken den Kindern nicht. (schmecken) — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Im Restaurant: Die Suppe schmeckt uns, aber die Nudeln schmecken den Kindern nicht. (schmecken) — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-12-q02": {
-    "acceptedAnswers": "ihm",
+    "acceptedAnswers": [
+      "ihr",
+      "ihnen"
+    ],
     "explanation": {
-      "fr": "Paul probiert eine Jacke an. Die Farbe steht ihm. — ihm est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Paul probiert eine Jacke an. Die Farbe steht ihm. — ihm steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Paul probiert eine Jacke an. Die Farbe steht ihm. — الضمير ihm في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Paul probiert eine Jacke an. Die Farbe steht ihm. — ihm is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Kellnerin fragt die Gäste. Die Gäste antworten ihr. Sie dankt ihnen. (die Kellnerin/die Gäste) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Die Kellnerin fragt die Gäste. Die Gäste antworten ihr. Sie dankt ihnen. (die Kellnerin/die Gäste) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Die Kellnerin fragt die Gäste. Die Gäste antworten ihr. Sie dankt ihnen. (die Kellnerin/die Gäste) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Die Kellnerin fragt die Gäste. Die Gäste antworten ihr. Sie dankt ihnen. (die Kellnerin/die Gäste) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-12-q03": {
-    "acceptedAnswers": "dir",
+    "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Du magst den Mantel. Er gefällt dir. — dir est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Du magst den Mantel. Er gefällt dir. — dir steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Du magst den Mantel. Er gefällt dir. — الضمير dir في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Du magst den Mantel. Er gefällt dir. — dir is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Rechnung gehört den Gästen am Nebentisch. — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Die Rechnung gehört den Gästen am Nebentisch. — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Die Rechnung gehört den Gästen am Nebentisch. — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Die Rechnung gehört den Gästen am Nebentisch. — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-12-q04": {
-    "acceptedAnswers": "uns",
+    "acceptedAnswers": [
+      "Der",
+      "Den",
+      "Dem"
+    ],
     "explanation": {
-      "fr": "Wir kaufen die Schuhe. Sie gefallen uns. — uns est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Wir kaufen die Schuhe. Sie gefallen uns. — uns steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Wir kaufen die Schuhe. Sie gefallen uns. — الضمير uns في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Wir kaufen die Schuhe. Sie gefallen uns. — uns is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "___ Frau gehört die Tasche. → Der / ___ Kindern schmeckt die Pizza. → Den / ___ Mann passt der Termin. → Dem — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "___ Frau gehört die Tasche. → Der / ___ Kindern schmeckt die Pizza. → Den / ___ Mann passt der Termin. → Dem — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "___ Frau gehört die Tasche. → Der / ___ Kindern schmeckt die Pizza. → Den / ___ Mann passt der Termin. → Dem — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "___ Frau gehört die Tasche. → Der / ___ Kindern schmeckt die Pizza. → Den / ___ Mann passt der Termin. → Dem — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-13-q01": {
-    "acceptedAnswers": "ihm",
+    "acceptedAnswers": [
+      "dem",
+      "dem"
+    ],
     "explanation": {
-      "fr": "Der Kollege erklärt etwas. Ich höre ihm zu. — ihm est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Kollege erklärt etwas. Ich höre ihm zu. — ihm steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Kollege erklärt etwas. Ich höre ihm zu. — الضمير ihm في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Kollege erklärt etwas. Ich höre ihm zu. — ihm is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Beim Sport: Der Trainer hilft dem neuen Mitglied. Das Mitglied dankt dem Trainer. (bestimmt) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Beim Sport: Der Trainer hilft dem neuen Mitglied. Das Mitglied dankt dem Trainer. (bestimmt) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Beim Sport: Der Trainer hilft dem neuen Mitglied. Das Mitglied dankt dem Trainer. (bestimmt) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Beim Sport: Der Trainer hilft dem neuen Mitglied. Das Mitglied dankt dem Trainer. (bestimmt) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-13-q02": {
-    "acceptedAnswers": "Sie",
+    "acceptedAnswers": [
+      "sie",
+      "ihr"
+    ],
     "explanation": {
-      "fr": "Frau Weber, ich frage Sie etwas. — Sie est la forme au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Frau Weber, ich frage Sie etwas. — Sie steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Frau Weber, ich frage Sie etwas. — الضمير Sie في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Frau Weber, ich frage Sie etwas. — Sie is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Knie tun Lara weh. Der Trainer fragt sie nach den Schmerzen und hilft ihr. (Lara) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Die Knie tun Lara weh. Der Trainer fragt sie nach den Schmerzen und hilft ihr. (Lara) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Die Knie tun Lara weh. Der Trainer fragt sie nach den Schmerzen und hilft ihr. (Lara) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Die Knie tun Lara weh. Der Trainer fragt sie nach den Schmerzen und hilft ihr. (Lara) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-13-q03": {
-    "acceptedAnswers": "Ihnen",
+    "acceptedAnswers": [
+      "Die Übungen gefallen mir.",
+      "Die Schuhe passen mir nicht."
+    ],
     "explanation": {
-      "fr": "Frau Weber, ich danke Ihnen. — Ihnen est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Frau Weber, ich danke Ihnen. — Ihnen steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Frau Weber, ich danke Ihnen. — الضمير Ihnen في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Frau Weber, ich danke Ihnen. — Ihnen is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Übungen gefallen mir. / Die Schuhe passen mir nicht. — Avec gefallen, passen, schmecken, gehören et wehtun, la chose ou la partie du corps est souvent le sujet au nominatif ; la personne est au datif. Le verbe s’accorde avec le sujet.",
+      "de": "Die Übungen gefallen mir. / Die Schuhe passen mir nicht. — Bei gefallen, passen, schmecken, gehören und wehtun ist die Sache bzw. der Körperteil oft das Subjekt im Nominativ; die Person steht im Dativ. Das Verb richtet sich nach dem Subjekt.",
+      "ar": "Die Übungen gefallen mir. / Die Schuhe passen mir nicht. — مع gefallen وpassen وschmecken وgehören وwehtun يكون الشيء أو عضو الجسم غالباً الفاعل في الرفع، والشخص في الداتيف. يطابق الفعل الفاعل.",
+      "en": "Die Übungen gefallen mir. / Die Schuhe passen mir nicht. — With gefallen, passen, schmecken, gehören and wehtun, the thing or body part is often the nominative subject; the person takes dative. The verb agrees with the subject."
     }
   },
   "kapitel-22-ubung-13-q04": {
-    "acceptedAnswers": "ihnen",
+    "acceptedAnswers": [
+      "Ihnen",
+      "Sie"
+    ],
     "explanation": {
-      "fr": "Die Kolleginnen haben Geburtstag. Wir gratulieren ihnen. — ihnen est la forme au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Kolleginnen haben Geburtstag. Wir gratulieren ihnen. — ihnen steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Kolleginnen haben Geburtstag. Wir gratulieren ihnen. — الضمير ihnen في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Kolleginnen haben Geburtstag. Wir gratulieren ihnen. — ihnen is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Frau Roth, ich gratuliere Ihnen zum Erfolg und besuche Sie am Samstag. (höflich) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Frau Roth, ich gratuliere Ihnen zum Erfolg und besuche Sie am Samstag. (höflich) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Frau Roth, ich gratuliere Ihnen zum Erfolg und besuche Sie am Samstag. (höflich) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Frau Roth, ich gratuliere Ihnen zum Erfolg und besuche Sie am Samstag. (höflich) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-01-extra": {
     "acceptedAnswers": [
-      "Dativ",
-      "Akkusativ"
+      "Dativobjekt",
+      "Akkusativobjekt",
+      "kein Objekt nötig"
     ],
     "explanation": {
-      "fr": "helfen, zuhören, danken et antworten exigent le datif ; fragen exige l’accusatif.",
-      "de": "helfen, zuhören, danken und antworten verlangen Dativ; fragen verlangt Akkusativ.",
-      "ar": "helfen وzuhören وdanken وantworten تتطلب الداتيف؛ fragen يتطلب الأكوزاتيف.",
-      "en": "helfen, zuhören, danken and antworten take dative; fragen takes accusative."
+      "fr": "Helfen → Dativobjekt; fragen → Akkusativobjekt; lachen → kein Objekt nötig. Helfen régit le datif de la personne aidée ; fragen régit l’accusatif de la personne interrogée. Lachen ne nécessite pas de complément d’objet.",
+      "de": "Helfen → Dativobjekt; fragen → Akkusativobjekt; lachen → kein Objekt nötig. Helfen regiert den Dativ der unterstützten Person, fragen den Akkusativ der befragten Person. Lachen braucht kein Objekt.",
+      "ar": "Helfen → Dativobjekt; fragen → Akkusativobjekt; lachen → kein Objekt nötig. يأخذ helfen الشخص المساعد في الداتيف، وfragen الشخص المسؤول في الأكوزاتيف. ولا يحتاج lachen إلى مفعول.",
+      "en": "Helfen → Dativobjekt; fragen → Akkusativobjekt; lachen → kein Objekt nötig. Helfen governs the dative of the person helped; fragen governs the accusative of the person asked. Lachen requires no object."
     }
   },
   "kapitel-22-ubung-09-extra": {
     "acceptedAnswers": [
       "Ich",
       "höre",
-      "dir",
-      "zu."
+      "dir aufmerksam zu."
     ],
     "explanation": {
-      "fr": "helfen, zuhören, danken et antworten exigent le datif ; fragen exige l’accusatif.",
-      "de": "helfen, zuhören, danken und antworten verlangen Dativ; fragen verlangt Akkusativ.",
-      "ar": "helfen وzuhören وdanken وantworten تتطلب الداتيف؛ fragen يتطلب الأكوزاتيف.",
-      "en": "helfen, zuhören, danken and antworten take dative; fragen takes accusative."
+      "fr": "Ich höre dir aufmerksam zu. — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Ich höre dir aufmerksam zu. — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Ich höre dir aufmerksam zu. — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Ich höre dir aufmerksam zu. — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-22-ubung-10-extra": {
@@ -645,10 +721,10 @@ export const chapter22AnswerKey: AnswerKey = {
       "Ich frage ihn."
     ],
     "explanation": {
-      "fr": "helfen, zuhören, danken et antworten exigent le datif ; fragen exige l’accusatif.",
-      "de": "helfen, zuhören, danken und antworten verlangen Dativ; fragen verlangt Akkusativ.",
-      "ar": "helfen وzuhören وdanken وantworten تتطلب الداتيف؛ fragen يتطلب الأكوزاتيف.",
-      "en": "helfen, zuhören, danken and antworten take dative; fragen takes accusative."
+      "fr": "Ich helfe ihm. / Ich frage ihn. — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Ich helfe ihm. / Ich frage ihn. — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Ich helfe ihm. / Ich frage ihn. — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Ich helfe ihm. / Ich frage ihn. — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   }
 }

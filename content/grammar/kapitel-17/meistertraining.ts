@@ -29,10 +29,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
           "den"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich fahre mit ___ Auto.",
-          "de": "Wählen Sie den definit Artikel: Ich fahre mit ___ Auto.",
-          "ar": "اختر الأداة معرف: Ich fahre mit ___ Auto.",
-          "en": "Choose the definite article: Ich fahre mit ___ Auto."
+          "fr": "Ich fahre mit ___ Auto. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich fahre mit ___ Auto. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich fahre mit ___ Auto. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich fahre mit ___ Auto. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -41,15 +41,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "den",
           "dem",
-          "der"
+          "der",
+          "den"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich fahre mit ___ Zug.",
-          "de": "Wählen Sie den definit Artikel: Ich fahre mit ___ Zug.",
-          "ar": "اختر الأداة معرف: Ich fahre mit ___ Zug.",
-          "en": "Choose the definite article: Ich fahre mit ___ Zug."
+          "fr": "Ich fahre mit ___ Zug. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich fahre mit ___ Zug. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich fahre mit ___ Zug. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich fahre mit ___ Zug. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -58,16 +58,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "die",
           "den",
+          "dem",
           "der",
-          "dem"
+          "die"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich fahre mit ___ U-Bahn.",
-          "de": "Wählen Sie den definit Artikel: Ich fahre mit ___ U-Bahn.",
-          "ar": "اختر الأداة معرف: Ich fahre mit ___ U-Bahn.",
-          "en": "Choose the definite article: Ich fahre mit ___ U-Bahn."
+          "fr": "Ich fahre mit ___ U-Bahn. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich fahre mit ___ U-Bahn. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich fahre mit ___ U-Bahn. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich fahre mit ___ U-Bahn. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -77,10 +77,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich fahre mit ___ Taxi.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
+          "fr": "Complétez avec l’article défini (der/die/das).",
+          "de": "Ergänzen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "أكمل باستخدام أداة التعريف (der/die/das).",
+          "en": "Complete with the definite article (der/die/das)."
         }
       },
       {
@@ -89,33 +89,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich fahre mit dem Fahrrad.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
         "id": "kapitel-17-ubung-01-q06",
         "position": 6,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "die",
-          "dem",
-          "der",
-          "den"
-        ],
-        "prompt": {
-          "fr": "Choisissez l’article défini : Ich fahre mit ___ Straßenbahn.",
-          "de": "Wählen Sie den definit Artikel: Ich fahre mit ___ Straßenbahn.",
-          "ar": "اختر الأداة معرف: Ich fahre mit ___ Straßenbahn.",
-          "en": "Choose the definite article: Ich fahre mit ___ Straßenbahn."
-        }
-      },
-      {
-        "id": "kapitel-17-ubung-01-q07",
-        "position": 7,
         "type": "qcm",
         "selection": "single",
         "options": [
@@ -125,10 +107,28 @@ export const meistertraining: ExerciseSetDefinition[] = [
           "die"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich fahre mit ___ Rollschuhen.",
-          "de": "Wählen Sie den definit Artikel: Ich fahre mit ___ Rollschuhen.",
-          "ar": "اختر الأداة معرف: Ich fahre mit ___ Rollschuhen.",
-          "en": "Choose the definite article: Ich fahre mit ___ Rollschuhen."
+          "fr": "Ich fahre mit ___ Straßenbahn. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich fahre mit ___ Straßenbahn. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich fahre mit ___ Straßenbahn. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich fahre mit ___ Straßenbahn. — Choose the definite article (der/die/das)."
+        }
+      },
+      {
+        "id": "kapitel-17-ubung-01-q07",
+        "position": 7,
+        "type": "qcm",
+        "selection": "single",
+        "options": [
+          "der",
+          "die",
+          "den",
+          "dem"
+        ],
+        "prompt": {
+          "fr": "Ich fahre mit ___ Rollschuhen. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich fahre mit ___ Rollschuhen. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich fahre mit ___ Rollschuhen. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich fahre mit ___ Rollschuhen. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -138,14 +138,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "der",
-          "dem",
-          "den"
+          "den",
+          "dem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich fahre mit ___ Bus.",
-          "de": "Wählen Sie den definit Artikel: Ich fahre mit ___ Bus.",
-          "ar": "اختر الأداة معرف: Ich fahre mit ___ Bus.",
-          "en": "Choose the definite article: Ich fahre mit ___ Bus."
+          "fr": "Ich fahre mit ___ Bus. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich fahre mit ___ Bus. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich fahre mit ___ Bus. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich fahre mit ___ Bus. — Choose the definite article (der/die/das)."
         }
       }
     ]
@@ -173,16 +173,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "eine",
-          "einer",
           "∅",
-          "einem"
+          "eine",
+          "einem",
+          "einer"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich gehe ins Kino mit ___ Freundin.",
-          "de": "Wählen Sie den indefinit Artikel: Ich gehe ins Kino mit ___ Freundin.",
-          "ar": "اختر الأداة نكرة: Ich gehe ins Kino mit ___ Freundin.",
-          "en": "Choose the indefinite article: Ich gehe ins Kino mit ___ Freundin."
+          "fr": "Ich gehe ins Kino mit ___ Freundin. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich gehe ins Kino mit ___ Freundin. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich gehe ins Kino mit ___ Freundin. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich gehe ins Kino mit ___ Freundin. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -197,10 +197,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
           "einem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich gehe ins Kino mit ___ Freund.",
-          "de": "Wählen Sie den indefinit Artikel: Ich gehe ins Kino mit ___ Freund.",
-          "ar": "اختر الأداة نكرة: Ich gehe ins Kino mit ___ Freund.",
-          "en": "Choose the indefinite article: Ich gehe ins Kino mit ___ Freund."
+          "fr": "Ich gehe ins Kino mit ___ Freund. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich gehe ins Kino mit ___ Freund. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich gehe ins Kino mit ___ Freund. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich gehe ins Kino mit ___ Freund. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -209,27 +209,27 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "∅",
           "einer",
-          "einem",
-          "∅"
+          "einem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich gehe ins Kino mit ___ Freunden.",
-          "de": "Wählen Sie den indefinit Artikel: Ich gehe ins Kino mit ___ Freunden.",
-          "ar": "اختر الأداة نكرة: Ich gehe ins Kino mit ___ Freunden.",
-          "en": "Choose the indefinite article: Ich gehe ins Kino mit ___ Freunden."
+          "fr": "Ich gehe ins Kino mit ___ Freunden. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich gehe ins Kino mit ___ Freunden. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich gehe ins Kino mit ___ Freunden. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich gehe ins Kino mit ___ Freunden. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
         "id": "kapitel-17-ubung-02-q04",
         "position": 4,
         "type": "true_false",
-        "statement": "Ich gehe ins Kino mit  Mädchen.",
+        "statement": "Ich gehe mit ein Mädchen ins Kino.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -238,16 +238,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "∅",
           "eine",
           "einer",
+          "∅",
           "einem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich gehe ins Kino mit ___ Kollegin.",
-          "de": "Wählen Sie den indefinit Artikel: Ich gehe ins Kino mit ___ Kollegin.",
-          "ar": "اختر الأداة نكرة: Ich gehe ins Kino mit ___ Kollegin.",
-          "en": "Choose the indefinite article: Ich gehe ins Kino mit ___ Kollegin."
+          "fr": "Ich gehe ins Kino mit ___ Kollegin. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich gehe ins Kino mit ___ Kollegin. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich gehe ins Kino mit ___ Kollegin. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich gehe ins Kino mit ___ Kollegin. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -257,15 +257,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "ein",
-          "einem",
           "einer",
+          "einem",
           "einen"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich gehe ins Kino mit ___ Lehrer.",
-          "de": "Wählen Sie den indefinit Artikel: Ich gehe ins Kino mit ___ Lehrer.",
-          "ar": "اختر الأداة نكرة: Ich gehe ins Kino mit ___ Lehrer.",
-          "en": "Choose the indefinite article: Ich gehe ins Kino mit ___ Lehrer."
+          "fr": "Ich gehe ins Kino mit ___ Lehrer. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich gehe ins Kino mit ___ Lehrer. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich gehe ins Kino mit ___ Lehrer. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich gehe ins Kino mit ___ Lehrer. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -274,16 +274,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "einer",
+          "einen",
           "ein",
-          "einem",
-          "einen"
+          "einer",
+          "einem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich gehe ins Kino mit ___ Mann.",
-          "de": "Wählen Sie den indefinit Artikel: Ich gehe ins Kino mit ___ Mann.",
-          "ar": "اختر الأداة نكرة: Ich gehe ins Kino mit ___ Mann.",
-          "en": "Choose the indefinite article: Ich gehe ins Kino mit ___ Mann."
+          "fr": "Ich gehe ins Kino mit ___ Mann. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich gehe ins Kino mit ___ Mann. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich gehe ins Kino mit ___ Mann. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich gehe ins Kino mit ___ Mann. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -297,10 +297,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
           "einem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich gehe ins Kino mit ___ Gästen.",
-          "de": "Wählen Sie den indefinit Artikel: Ich gehe ins Kino mit ___ Gästen.",
-          "ar": "اختر الأداة نكرة: Ich gehe ins Kino mit ___ Gästen.",
-          "en": "Choose the indefinite article: Ich gehe ins Kino mit ___ Gästen."
+          "fr": "Ich gehe ins Kino mit ___ Gästen. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich gehe ins Kino mit ___ Gästen. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich gehe ins Kino mit ___ Gästen. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich gehe ins Kino mit ___ Gästen. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       }
     ]
@@ -328,16 +328,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ein",
           "einer",
           "einem",
+          "ein",
           "∅"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich reise mit ___ Kind.",
-          "de": "Wählen Sie den indefinit Artikel: Ich reise mit ___ Kind.",
-          "ar": "اختر الأداة نكرة: Ich reise mit ___ Kind.",
-          "en": "Choose the indefinite article: Ich reise mit ___ Kind."
+          "fr": "Ich reise mit ___ Kind. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich reise mit ___ Kind. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich reise mit ___ Kind. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich reise mit ___ Kind. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -347,10 +347,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich reise mit ___ Baby.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article indéfini.",
-          "de": "Ergänzen Sie den indefinit Artikel.",
-          "ar": "أكمل بالأداة: نكرة",
-          "en": "Complete with the indefinite article."
+          "fr": "Complétez avec l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ergänzen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "أكمل باستخدام أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Complete with the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -359,10 +359,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich reise mit einem Mann.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -371,16 +371,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ein",
-          "einer",
           "einem",
-          "einen"
+          "einer",
+          "einen",
+          "ein"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich reise mit ___ Freund.",
-          "de": "Wählen Sie den indefinit Artikel: Ich reise mit ___ Freund.",
-          "ar": "اختر الأداة نكرة: Ich reise mit ___ Freund.",
-          "en": "Choose the indefinite article: Ich reise mit ___ Freund."
+          "fr": "Ich reise mit ___ Freund. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich reise mit ___ Freund. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich reise mit ___ Freund. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich reise mit ___ Freund. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -391,14 +391,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "options": [
           "einer",
           "eine",
-          "∅",
-          "einem"
+          "einem",
+          "∅"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich reise mit ___ Kollegin.",
-          "de": "Wählen Sie den indefinit Artikel: Ich reise mit ___ Kollegin.",
-          "ar": "اختر الأداة نكرة: Ich reise mit ___ Kollegin.",
-          "en": "Choose the indefinite article: Ich reise mit ___ Kollegin."
+          "fr": "Ich reise mit ___ Kollegin. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich reise mit ___ Kollegin. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich reise mit ___ Kollegin. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich reise mit ___ Kollegin. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -408,15 +408,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "∅",
-          "einer",
+          "einem",
           "eine",
-          "einem"
+          "einer"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich reise mit ___ Frau.",
-          "de": "Wählen Sie den indefinit Artikel: Ich reise mit ___ Frau.",
-          "ar": "اختر الأداة نكرة: Ich reise mit ___ Frau.",
-          "en": "Choose the indefinite article: Ich reise mit ___ Frau."
+          "fr": "Ich reise mit ___ Frau. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich reise mit ___ Frau. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich reise mit ___ Frau. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich reise mit ___ Frau. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -426,10 +426,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich reise mit ___ Oma.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article indéfini.",
-          "de": "Ergänzen Sie den indefinit Artikel.",
-          "ar": "أكمل بالأداة: نكرة",
-          "en": "Complete with the indefinite article."
+          "fr": "Complétez avec l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ergänzen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "أكمل باستخدام أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Complete with the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -438,10 +438,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich reise mit ein Opa.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       }
     ]
@@ -470,22 +470,22 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Reinhild hilft ___ Kollegin.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article indéfini.",
-          "de": "Ergänzen Sie den indefinit Artikel.",
-          "ar": "أكمل بالأداة: نكرة",
-          "en": "Complete with the indefinite article."
+          "fr": "Complétez avec l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ergänzen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "أكمل باستخدام أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Complete with the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
         "id": "kapitel-17-ubung-04-q02",
         "position": 2,
         "type": "true_false",
-        "statement": "Sie hilft  Kind.",
+        "statement": "Sie hilft ein Kind.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -494,39 +494,21 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "den",
-          "dem",
+          "die",
           "der",
-          "die"
+          "dem",
+          "den"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Sie hilft ___ Eltern.",
-          "de": "Wählen Sie den definit Artikel: Sie hilft ___ Eltern.",
-          "ar": "اختر الأداة معرف: Sie hilft ___ Eltern.",
-          "en": "Choose the definite article: Sie hilft ___ Eltern."
+          "fr": "Sie hilft ___ Eltern. — Choisissez l’article défini (der/die/das).",
+          "de": "Sie hilft ___ Eltern. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Sie hilft ___ Eltern. — اختر أداة التعريف (der/die/das).",
+          "en": "Sie hilft ___ Eltern. — Choose the definite article (der/die/das)."
         }
       },
       {
         "id": "kapitel-17-ubung-04-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "der",
-          "die",
-          "dem",
-          "den"
-        ],
-        "prompt": {
-          "fr": "Choisissez l’article défini : Sie gratuliert ___ Freunden.",
-          "de": "Wählen Sie den definit Artikel: Sie gratuliert ___ Freunden.",
-          "ar": "اختر الأداة معرف: Sie gratuliert ___ Freunden.",
-          "en": "Choose the definite article: Sie gratuliert ___ Freunden."
-        }
-      },
-      {
-        "id": "kapitel-17-ubung-04-q05",
-        "position": 5,
         "type": "qcm",
         "selection": "single",
         "options": [
@@ -536,10 +518,28 @@ export const meistertraining: ExerciseSetDefinition[] = [
           "der"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Sie gratuliert ___ Mutter.",
-          "de": "Wählen Sie den definit Artikel: Sie gratuliert ___ Mutter.",
-          "ar": "اختر الأداة معرف: Sie gratuliert ___ Mutter.",
-          "en": "Choose the definite article: Sie gratuliert ___ Mutter."
+          "fr": "Sie gratuliert ___ Freunden. — Choisissez l’article défini (der/die/das).",
+          "de": "Sie gratuliert ___ Freunden. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Sie gratuliert ___ Freunden. — اختر أداة التعريف (der/die/das).",
+          "en": "Sie gratuliert ___ Freunden. — Choose the definite article (der/die/das)."
+        }
+      },
+      {
+        "id": "kapitel-17-ubung-04-q05",
+        "position": 5,
+        "type": "qcm",
+        "selection": "single",
+        "options": [
+          "die",
+          "der",
+          "den",
+          "dem"
+        ],
+        "prompt": {
+          "fr": "Sie gratuliert ___ Mutter. — Choisissez l’article défini (der/die/das).",
+          "de": "Sie gratuliert ___ Mutter. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Sie gratuliert ___ Mutter. — اختر أداة التعريف (der/die/das).",
+          "en": "Sie gratuliert ___ Mutter. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -549,10 +549,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Sie gibt ___ Katze einen Fisch.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
+          "fr": "Complétez avec l’article défini (der/die/das).",
+          "de": "Ergänzen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "أكمل باستخدام أداة التعريف (der/die/das).",
+          "en": "Complete with the definite article (der/die/das)."
         }
       },
       {
@@ -561,10 +561,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Sie schenkt den Kindern Schokolade.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       }
     ]
@@ -592,10 +592,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Willibald hilft keinem Kellner.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -605,15 +605,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "keinem",
-          "keinen",
           "keiner",
+          "keinen",
           "keine"
         ],
         "prompt": {
-          "fr": "Choisissez l’article négatif : Willibald hilft ___ Kellnerin.",
-          "de": "Wählen Sie den Negativartikel Artikel: Willibald hilft ___ Kellnerin.",
-          "ar": "اختر الأداة نفي: Willibald hilft ___ Kellnerin.",
-          "en": "Choose the negative article: Willibald hilft ___ Kellnerin."
+          "fr": "Willibald hilft ___ Kellnerin. — Choisissez la forme de kein.",
+          "de": "Willibald hilft ___ Kellnerin. — Wählen Sie die passende Form von kein.",
+          "ar": "Willibald hilft ___ Kellnerin. — اختر صيغة kein المناسبة.",
+          "en": "Willibald hilft ___ Kellnerin. — Choose the correct form of kein."
         }
       },
       {
@@ -622,16 +622,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "keinen",
+          "keinem",
           "keiner",
           "keine",
-          "keinem"
+          "keinen"
         ],
         "prompt": {
-          "fr": "Choisissez l’article négatif : Willibald hilft ___ Nachbarin.",
-          "de": "Wählen Sie den Negativartikel Artikel: Willibald hilft ___ Nachbarin.",
-          "ar": "اختر الأداة نفي: Willibald hilft ___ Nachbarin.",
-          "en": "Choose the negative article: Willibald hilft ___ Nachbarin."
+          "fr": "Willibald hilft ___ Nachbarin. — Choisissez la forme de kein.",
+          "de": "Willibald hilft ___ Nachbarin. — Wählen Sie die passende Form von kein.",
+          "ar": "Willibald hilft ___ Nachbarin. — اختر صيغة kein المناسبة.",
+          "en": "Willibald hilft ___ Nachbarin. — Choose the correct form of kein."
         }
       },
       {
@@ -640,16 +640,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "kein",
           "keinen",
-          "keinem",
           "keiner",
-          "kein"
+          "keinem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article négatif : Willibald hilft ___ Freund.",
-          "de": "Wählen Sie den Negativartikel Artikel: Willibald hilft ___ Freund.",
-          "ar": "اختر الأداة نفي: Willibald hilft ___ Freund.",
-          "en": "Choose the negative article: Willibald hilft ___ Freund."
+          "fr": "Willibald hilft ___ Freund. — Choisissez la forme de kein.",
+          "de": "Willibald hilft ___ Freund. — Wählen Sie die passende Form von kein.",
+          "ar": "Willibald hilft ___ Freund. — اختر صيغة kein المناسبة.",
+          "en": "Willibald hilft ___ Freund. — Choose the correct form of kein."
         }
       },
       {
@@ -659,10 +659,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Willibald hilft ___ Freundin.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article négatif.",
-          "de": "Ergänzen Sie den Negativartikel Artikel.",
-          "ar": "أكمل بالأداة: نفي",
-          "en": "Complete with the negative article."
+          "fr": "Complétez avec la forme de kein.",
+          "de": "Ergänzen Sie die passende Form von kein.",
+          "ar": "أكمل باستخدام صيغة kein المناسبة.",
+          "en": "Complete with the correct form of kein."
         }
       },
       {
@@ -671,10 +671,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Willibald hilft kein Kind.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -683,16 +683,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "keinem",
           "keinen",
+          "keine",
           "keiner",
-          "keine"
+          "keinem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article négatif : Willibald hilft ___ Lehrerin.",
-          "de": "Wählen Sie den Negativartikel Artikel: Willibald hilft ___ Lehrerin.",
-          "ar": "اختر الأداة نفي: Willibald hilft ___ Lehrerin.",
-          "en": "Choose the negative article: Willibald hilft ___ Lehrerin."
+          "fr": "Willibald hilft ___ Lehrerin. — Choisissez la forme de kein.",
+          "de": "Willibald hilft ___ Lehrerin. — Wählen Sie die passende Form von kein.",
+          "ar": "Willibald hilft ___ Lehrerin. — اختر صيغة kein المناسبة.",
+          "en": "Willibald hilft ___ Lehrerin. — Choose the correct form of kein."
         }
       },
       {
@@ -702,15 +702,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "keinen",
-          "keinem",
           "keiner",
+          "keinem",
           "kein"
         ],
         "prompt": {
-          "fr": "Choisissez l’article négatif : Willibald hilft ___ Hund.",
-          "de": "Wählen Sie den Negativartikel Artikel: Willibald hilft ___ Hund.",
-          "ar": "اختر الأداة نفي: Willibald hilft ___ Hund.",
-          "en": "Choose the negative article: Willibald hilft ___ Hund."
+          "fr": "Willibald hilft ___ Hund. — Choisissez la forme de kein.",
+          "de": "Willibald hilft ___ Hund. — Wählen Sie die passende Form von kein.",
+          "ar": "Willibald hilft ___ Hund. — اختر صيغة kein المناسبة.",
+          "en": "Willibald hilft ___ Hund. — Choose the correct form of kein."
         }
       }
     ]
@@ -738,16 +738,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "meinem",
-          "mein",
           "meinen",
+          "mein",
+          "meinem",
           "meiner"
         ],
         "prompt": {
-          "fr": "Choisissez l’article possessif mein : Ich feiere mit ___ Freund.",
-          "de": "Wählen Sie den Possessivartikel mein Artikel: Ich feiere mit ___ Freund.",
-          "ar": "اختر الأداة ملكية mein: Ich feiere mit ___ Freund.",
-          "en": "Choose the possessive mein article: Ich feiere mit ___ Freund."
+          "fr": "Ich feiere mit ___ Freund. — Choisissez la forme de mein.",
+          "de": "Ich feiere mit ___ Freund. — Wählen Sie die passende Form von mein.",
+          "ar": "Ich feiere mit ___ Freund. — اختر صيغة mein المناسبة.",
+          "en": "Ich feiere mit ___ Freund. — Choose the correct form of mein."
         }
       },
       {
@@ -756,16 +756,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "meinem",
           "meine",
-          "meiner",
-          "meinen"
+          "meinen",
+          "meinem",
+          "meiner"
         ],
         "prompt": {
-          "fr": "Choisissez l’article possessif mein : Ich feiere mit ___ Freundin.",
-          "de": "Wählen Sie den Possessivartikel mein Artikel: Ich feiere mit ___ Freundin.",
-          "ar": "اختر الأداة ملكية mein: Ich feiere mit ___ Freundin.",
-          "en": "Choose the possessive mein article: Ich feiere mit ___ Freundin."
+          "fr": "Ich feiere mit ___ Freundin. — Choisissez la forme de mein.",
+          "de": "Ich feiere mit ___ Freundin. — Wählen Sie die passende Form von mein.",
+          "ar": "Ich feiere mit ___ Freundin. — اختر صيغة mein المناسبة.",
+          "en": "Ich feiere mit ___ Freundin. — Choose the correct form of mein."
         }
       },
       {
@@ -774,16 +774,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "meinem",
           "meine",
           "meinen",
-          "meiner"
+          "meiner",
+          "meinem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article possessif mein : Ich feiere mit ___ Kindern.",
-          "de": "Wählen Sie den Possessivartikel mein Artikel: Ich feiere mit ___ Kindern.",
-          "ar": "اختر الأداة ملكية mein: Ich feiere mit ___ Kindern.",
-          "en": "Choose the possessive mein article: Ich feiere mit ___ Kindern."
+          "fr": "Ich feiere mit ___ Kindern. — Choisissez la forme de mein.",
+          "de": "Ich feiere mit ___ Kindern. — Wählen Sie die passende Form von mein.",
+          "ar": "Ich feiere mit ___ Kindern. — اختر صيغة mein المناسبة.",
+          "en": "Ich feiere mit ___ Kindern. — Choose the correct form of mein."
         }
       },
       {
@@ -793,10 +793,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich feiere mit ___ Eltern.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article possessif mein.",
-          "de": "Ergänzen Sie den Possessivartikel mein Artikel.",
-          "ar": "أكمل بالأداة: ملكية mein",
-          "en": "Complete with the possessive mein article."
+          "fr": "Complétez avec la forme de mein.",
+          "de": "Ergänzen Sie die passende Form von mein.",
+          "ar": "أكمل باستخدام صيغة mein المناسبة.",
+          "en": "Complete with the correct form of mein."
         }
       },
       {
@@ -805,10 +805,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich feiere mit meinen Babys.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       }
     ]
@@ -836,16 +836,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "dem",
           "den",
           "die",
-          "dem",
           "der"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Nach ___ Arbeit fahren wir weg.",
-          "de": "Wählen Sie den definit Artikel: Nach ___ Arbeit fahren wir weg.",
-          "ar": "اختر الأداة معرف: Nach ___ Arbeit fahren wir weg.",
-          "en": "Choose the definite article: Nach ___ Arbeit fahren wir weg."
+          "fr": "Nach ___ Arbeit fahren wir weg. — Choisissez l’article défini (der/die/das).",
+          "de": "Nach ___ Arbeit fahren wir weg. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Nach ___ Arbeit fahren wir weg. — اختر أداة التعريف (der/die/das).",
+          "en": "Nach ___ Arbeit fahren wir weg. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -855,15 +855,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "dem",
+          "der",
           "den",
-          "die",
-          "der"
+          "die"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Wir fahren mit ___ Bahn.",
-          "de": "Wählen Sie den definit Artikel: Wir fahren mit ___ Bahn.",
-          "ar": "اختر الأداة معرف: Wir fahren mit ___ Bahn.",
-          "en": "Choose the definite article: Wir fahren mit ___ Bahn."
+          "fr": "Wir fahren mit ___ Bahn. — Choisissez l’article défini (der/die/das).",
+          "de": "Wir fahren mit ___ Bahn. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Wir fahren mit ___ Bahn. — اختر أداة التعريف (der/die/das).",
+          "en": "Wir fahren mit ___ Bahn. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -873,10 +873,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Wir fahren zu ___ Freund.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article indéfini.",
-          "de": "Ergänzen Sie den indefinit Artikel.",
-          "ar": "أكمل بالأداة: نكرة",
-          "en": "Complete with the indefinite article."
+          "fr": "Complétez avec l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ergänzen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "أكمل باستخدام أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Complete with the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -885,10 +885,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Wir bleiben bei die Freunden.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -897,16 +897,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "dem",
           "den",
           "das",
-          "der"
+          "der",
+          "dem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Mit ___ Auto machen wir Ausflüge.",
-          "de": "Wählen Sie den definit Artikel: Mit ___ Auto machen wir Ausflüge.",
-          "ar": "اختر الأداة معرف: Mit ___ Auto machen wir Ausflüge.",
-          "en": "Choose the definite article: Mit ___ Auto machen wir Ausflüge."
+          "fr": "Mit ___ Auto machen wir Ausflüge. — Choisissez l’article défini (der/die/das).",
+          "de": "Mit ___ Auto machen wir Ausflüge. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Mit ___ Auto machen wir Ausflüge. — اختر أداة التعريف (der/die/das).",
+          "en": "Mit ___ Auto machen wir Ausflüge. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -915,34 +915,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ein",
           "einem",
-          "einer",
-          "∅"
+          "ein",
+          "∅",
+          "einer"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Wir fahren mit ___ Boot.",
-          "de": "Wählen Sie den indefinit Artikel: Wir fahren mit ___ Boot.",
-          "ar": "اختر الأداة نكرة: Wir fahren mit ___ Boot.",
-          "en": "Choose the indefinite article: Wir fahren mit ___ Boot."
+          "fr": "Wir fahren mit ___ Boot. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Wir fahren mit ___ Boot. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Wir fahren mit ___ Boot. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Wir fahren mit ___ Boot. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
         "id": "kapitel-17-ubung-07-q07",
         "position": 7,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "der",
-          "dem",
-          "den"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez l’article défini : Das Papier liegt bei ___ Arzt.",
-          "de": "Wählen Sie den definit Artikel: Das Papier liegt bei ___ Arzt.",
-          "ar": "اختر الأداة معرف: Das Papier liegt bei ___ Arzt.",
-          "en": "Choose the definite article: Das Papier liegt bei ___ Arzt."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Nach ___ Arbeit gehe ich zu ___ Arzt und spreche mit ___ Ärztin. (bestimmt)",
+        "blanks": 3
       }
     ]
   },
@@ -969,16 +965,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "das",
           "der",
           "dem",
-          "das",
           "den"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich sehe ___ Mann.",
-          "de": "Wählen Sie den definit Artikel: Ich sehe ___ Mann.",
-          "ar": "اختر الأداة معرف: Ich sehe ___ Mann.",
-          "en": "Choose the definite article: Ich sehe ___ Mann."
+          "fr": "Ich sehe ___ Mann. (Singular) — Choisissez l’article défini (der/die/das).",
+          "de": "Ich sehe ___ Mann. (Singular) — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich sehe ___ Mann. (Singular) — اختر أداة التعريف (der/die/das).",
+          "en": "Ich sehe ___ Mann. (Singular) — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -988,10 +984,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich helfe ___ Mann.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
+          "fr": "Complétez avec l’article défini (der/die/das).",
+          "de": "Ergänzen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "أكمل باستخدام أداة التعريف (der/die/das).",
+          "en": "Complete with the definite article (der/die/das)."
         }
       },
       {
@@ -1000,29 +996,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich besuche meine Freundin.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
         "id": "kapitel-17-ubung-08-q04",
         "position": 4,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "meinem",
-          "meiner",
-          "meine",
-          "meinen"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Choisissez l’article possessif mein : Ich gratuliere ___ Freundin.",
-          "de": "Wählen Sie den Possessivartikel mein Artikel: Ich gratuliere ___ Freundin.",
-          "ar": "اختر الأداة ملكية mein: Ich gratuliere ___ Freundin.",
-          "en": "Choose the possessive mein article: Ich gratuliere ___ Freundin."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Ich besuche meiner Freundin.",
+          "Ich gratuliere meiner Freundin.",
+          "Ich besuche meine Freundin.",
+          "Ich gratuliere meine Freundin."
+        ]
       }
     ]
   },
@@ -1050,10 +1046,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich spreche mit ___ Kindern.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
+          "fr": "Complétez avec l’article défini (der/die/das).",
+          "de": "Ergänzen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "أكمل باستخدام أداة التعريف (der/die/das).",
+          "en": "Complete with the definite article (der/die/das)."
         }
       },
       {
@@ -1062,10 +1058,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich spreche mit der Lehrern.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -1074,16 +1070,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "die",
-          "der",
           "den",
+          "der",
+          "die",
           "dem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich spreche mit ___ Ärzten.",
-          "de": "Wählen Sie den definit Artikel: Ich spreche mit ___ Ärzten.",
-          "ar": "اختر الأداة معرف: Ich spreche mit ___ Ärzten.",
-          "en": "Choose the definite article: Ich spreche mit ___ Ärzten."
+          "fr": "Ich spreche mit ___ Ärzten. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich spreche mit ___ Ärzten. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich spreche mit ___ Ärzten. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich spreche mit ___ Ärzten. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -1092,16 +1088,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "den",
           "die",
           "der",
-          "den",
           "dem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich spreche mit ___ Kolleginnen.",
-          "de": "Wählen Sie den definit Artikel: Ich spreche mit ___ Kolleginnen.",
-          "ar": "اختر الأداة معرف: Ich spreche mit ___ Kolleginnen.",
-          "en": "Choose the definite article: Ich spreche mit ___ Kolleginnen."
+          "fr": "Ich spreche mit ___ Kolleginnen. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich spreche mit ___ Kolleginnen. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich spreche mit ___ Kolleginnen. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich spreche mit ___ Kolleginnen. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -1110,30 +1106,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "dem",
-          "die",
           "der",
-          "den"
+          "den",
+          "die",
+          "dem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich spreche mit ___ Babys.",
-          "de": "Wählen Sie den definit Artikel: Ich spreche mit ___ Babys.",
-          "ar": "اختر الأداة معرف: Ich spreche mit ___ Babys.",
-          "en": "Choose the definite article: Ich spreche mit ___ Babys."
+          "fr": "Ich spreche mit ___ Babys. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich spreche mit ___ Babys. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich spreche mit ___ Babys. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich spreche mit ___ Babys. — Choose the definite article (der/die/das)."
         }
       },
       {
         "id": "kapitel-17-ubung-09-q06",
         "position": 6,
         "type": "fill_blank",
-        "sentence": "Ich spreche mit ___ Freunden.",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Wir fahren mit ___ Freunden und mit ___ Autos. (bestimmt)",
+        "blanks": 2
       }
     ]
   },
@@ -1158,12 +1154,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-17-ubung-10-q01",
         "position": 1,
         "type": "true_false",
-        "statement": "der Chef gibt dem Mitarbeiter einen Brief.",
+        "statement": "Der Chef gibt dem Mitarbeiter einen Brief.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -1177,10 +1173,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
           "den"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Der Chef gibt ___ Mitarbeiter einen Brief.",
-          "de": "Wählen Sie den definit Artikel: Der Chef gibt ___ Mitarbeiter einen Brief.",
-          "ar": "اختر الأداة معرف: Der Chef gibt ___ Mitarbeiter einen Brief.",
-          "en": "Choose the definite article: Der Chef gibt ___ Mitarbeiter einen Brief."
+          "fr": "Der Chef gibt ___ Mitarbeiter einen Brief. — Choisissez l’article défini (der/die/das).",
+          "de": "Der Chef gibt ___ Mitarbeiter einen Brief. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Der Chef gibt ___ Mitarbeiter einen Brief. — اختر أداة التعريف (der/die/das).",
+          "en": "Der Chef gibt ___ Mitarbeiter einen Brief. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -1189,35 +1185,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "einem",
           "eine",
           "ein",
-          "einen"
+          "einen",
+          "einem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Der Chef gibt dem Mitarbeiter ___ Brief.",
-          "de": "Wählen Sie den indefinit Artikel: Der Chef gibt dem Mitarbeiter ___ Brief.",
-          "ar": "اختر الأداة نكرة: Der Chef gibt dem Mitarbeiter ___ Brief.",
-          "en": "Choose the indefinite article: Der Chef gibt dem Mitarbeiter ___ Brief."
+          "fr": "Der Chef gibt dem Mitarbeiter ___ Brief. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Der Chef gibt dem Mitarbeiter ___ Brief. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Der Chef gibt dem Mitarbeiter ___ Brief. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Der Chef gibt dem Mitarbeiter ___ Brief. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
         "id": "kapitel-17-ubung-10-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "den",
-          "dem",
-          "der",
-          "das"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Mitarbeiter liest den Brief.",
-          "de": "Wählen Sie den definit Artikel: ___ Mitarbeiter liest den Brief.",
-          "ar": "اختر الأداة معرف: ___ Mitarbeiter liest den Brief.",
-          "en": "Choose the definite article: ___ Mitarbeiter liest den Brief."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Mitarbeiter liest ___ Brief. Danach zeigt er ___ Kollegin den Brief. (bestimmt)",
+        "blanks": 3
       }
     ]
   }

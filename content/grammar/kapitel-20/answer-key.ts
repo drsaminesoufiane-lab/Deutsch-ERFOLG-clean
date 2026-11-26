@@ -373,12 +373,15 @@ export const chapter20AnswerKey: AnswerKey = {
     }
   },
   "kapitel-20-ubung-07-q06": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "mir",
+      "ihn"
+    ],
     "explanation": {
-      "fr": "Ich liebe ihn und er liebt mich. (ich) — mich est la forme du pronom au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Ich liebe ihn und er liebt mich. (ich) — mich steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Ich liebe ihn und er liebt mich. (ich) — الضمير mich في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Ich liebe ihn und er liebt mich. (ich) — mich is the Akkusativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich liebe Paul und er liebt mich. Er schreibt mir jeden Tag und ich rufe ihn abends an. (ich/Paul) — Le pronom reprend le genre et le nombre du référent. À l’accusatif : mich, dich, ihn, sie, es, uns, euch, sie ; au datif : mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "de": "Ich liebe Paul und er liebt mich. Er schreibt mir jeden Tag und ich rufe ihn abends an. (ich/Paul) — Das Pronomen richtet sich nach Genus und Numerus des Bezugswortes. Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie; Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "ar": "Ich liebe Paul und er liebt mich. Er schreibt mir jeden Tag und ich rufe ihn abends an. (ich/Paul) — يتبع الضمير جنس المرجع وعدده. النصب: mich, dich, ihn, sie, es, uns, euch, sie؛ الداتيف: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "en": "Ich liebe Paul und er liebt mich. Er schreibt mir jeden Tag und ich rufe ihn abends an. (ich/Paul) — The pronoun agrees with the referent’s gender and number. Accusative: mich, dich, ihn, sie, es, uns, euch, sie; dative: mir, dir, ihm, ihr, ihm, uns, euch, ihnen."
     }
   },
   "kapitel-20-ubung-07-q07": {
@@ -438,12 +441,15 @@ export const chapter20AnswerKey: AnswerKey = {
     }
   },
   "kapitel-20-ubung-08-q06": {
-    "acceptedAnswers": "mich",
+    "acceptedAnswers": [
+      "Ich brauche dich.",
+      "Ich helfe dir."
+    ],
     "explanation": {
-      "fr": "Du brauchst mich. (ich) — mich est la forme du pronom au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Du brauchst mich. (ich) — mich steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Du brauchst mich. (ich) — الضمير mich في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Du brauchst mich. (ich) — mich is the Akkusativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich brauche dich. / Ich helfe dir. — Helfen, danken et antworten exigent le datif ; fragen, besuchen et sehen exigent l’accusatif.",
+      "de": "Ich brauche dich. / Ich helfe dir. — Helfen, danken und antworten verlangen Dativ; fragen, besuchen und sehen verlangen Akkusativ.",
+      "ar": "Ich brauche dich. / Ich helfe dir. — تتطلب helfen وdanken وantworten الداتيف، بينما تتطلب fragen وbesuchen وsehen الأكوزاتيف.",
+      "en": "Ich brauche dich. / Ich helfe dir. — Helfen, danken and antworten require dative; fragen, besuchen and sehen require accusative."
     }
   },
   "kapitel-20-ubung-09-q01": {
@@ -476,12 +482,15 @@ export const chapter20AnswerKey: AnswerKey = {
     }
   },
   "kapitel-20-ubung-09-q04": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "ihr",
+      "sie"
+    ],
     "explanation": {
-      "fr": "Das Buch liegt hier. Ich gebe es Anna. — es est la forme du pronom au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Das Buch liegt hier. Ich gebe es Anna. — es steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Das Buch liegt hier. Ich gebe es Anna. — الضمير es في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Das Buch liegt hier. Ich gebe es Anna. — es is the Akkusativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Tasche gehört Anna. Ich gebe ihr die Tasche und Anna nimmt sie sofort mit. (Anna/die Tasche) — Le destinataire de geben, zeigen ou erklären est au datif ; la chose donnée ou expliquée est à l’accusatif.",
+      "de": "Die Tasche gehört Anna. Ich gebe ihr die Tasche und Anna nimmt sie sofort mit. (Anna/die Tasche) — Bei geben, zeigen und erklären steht der Empfänger im Dativ und die Sache im Akkusativ.",
+      "ar": "Die Tasche gehört Anna. Ich gebe ihr die Tasche und Anna nimmt sie sofort mit. (Anna/die Tasche) — المتلقي مع geben وzeigen وerklären في الداتيف، والشيء المعطى أو الموضح في الأكوزاتيف.",
+      "en": "Die Tasche gehört Anna. Ich gebe ihr die Tasche und Anna nimmt sie sofort mit. (Anna/die Tasche) — With geben, zeigen and erklären the recipient is dative and the thing is accusative."
     }
   },
   "kapitel-20-ubung-10-q01": {
@@ -523,155 +532,188 @@ export const chapter20AnswerKey: AnswerKey = {
     }
   },
   "kapitel-20-ubung-10-q05": {
-    "acceptedAnswers": "ihm",
+    "acceptedAnswers": [
+      "ihm",
+      "es"
+    ],
     "explanation": {
-      "fr": "Das Kind ist müde. Ich helfe ihm. — ihm est la forme du pronom au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Das Kind ist müde. Ich helfe ihm. — ihm steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Das Kind ist müde. Ich helfe ihm. — الضمير ihm في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Das Kind ist müde. Ich helfe ihm. — ihm is the Dativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Das Kind ist müde. Ich helfe ihm und bringe es ins Bett. (das Kind) — Le pronom reprend le genre et le nombre du référent. À l’accusatif : mich, dich, ihn, sie, es, uns, euch, sie ; au datif : mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "de": "Das Kind ist müde. Ich helfe ihm und bringe es ins Bett. (das Kind) — Das Pronomen richtet sich nach Genus und Numerus des Bezugswortes. Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie; Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "ar": "Das Kind ist müde. Ich helfe ihm und bringe es ins Bett. (das Kind) — يتبع الضمير جنس المرجع وعدده. النصب: mich, dich, ihn, sie, es, uns, euch, sie؛ الداتيف: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "en": "Das Kind ist müde. Ich helfe ihm und bringe es ins Bett. (das Kind) — The pronoun agrees with the referent’s gender and number. Accusative: mich, dich, ihn, sie, es, uns, euch, sie; dative: mir, dir, ihm, ihr, ihm, uns, euch, ihnen."
     }
   },
   "kapitel-20-ubung-11-q01": {
     "acceptedAnswers": [
-      "ihn"
+      "sie",
+      "ihr"
     ],
     "explanation": {
-      "fr": "Der Patient wartet. Ich berate ihn. — ihn est la forme du pronom au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Patient wartet. Ich berate ihn. — ihn steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Patient wartet. Ich berate ihn. — الضمير ihn في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Patient wartet. Ich berate ihn. — ihn is the Akkusativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Kundin wartet. Ich begrüße sie und erkläre ihr die Anwendung. (beide: die Kundin) — Le pronom reprend le genre et le nombre du référent. À l’accusatif : mich, dich, ihn, sie, es, uns, euch, sie ; au datif : mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "de": "Die Kundin wartet. Ich begrüße sie und erkläre ihr die Anwendung. (beide: die Kundin) — Das Pronomen richtet sich nach Genus und Numerus des Bezugswortes. Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie; Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "ar": "Die Kundin wartet. Ich begrüße sie und erkläre ihr die Anwendung. (beide: die Kundin) — يتبع الضمير جنس المرجع وعدده. النصب: mich, dich, ihn, sie, es, uns, euch, sie؛ الداتيف: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "en": "Die Kundin wartet. Ich begrüße sie und erkläre ihr die Anwendung. (beide: die Kundin) — The pronoun agrees with the referent’s gender and number. Accusative: mich, dich, ihn, sie, es, uns, euch, sie; dative: mir, dir, ihm, ihr, ihm, uns, euch, ihnen."
     }
   },
   "kapitel-20-ubung-11-q02": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "Der Arzt wartet. Ich frage ihn.",
+      "Der Arzt hilft mir. Ich danke ihm."
+    ],
     "explanation": {
-      "fr": "Der Patient braucht Hilfe. Ich helfe ihm. — ihm est la forme du pronom au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Patient braucht Hilfe. Ich helfe ihm. — ihm steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Patient braucht Hilfe. Ich helfe ihm. — الضمير ihm في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Patient braucht Hilfe. Ich helfe ihm. — ihm is the Dativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Der Arzt wartet. Ich frage ihn. / Der Arzt hilft mir. Ich danke ihm. — Helfen, danken et antworten exigent le datif ; fragen, besuchen et sehen exigent l’accusatif.",
+      "de": "Der Arzt wartet. Ich frage ihn. / Der Arzt hilft mir. Ich danke ihm. — Helfen, danken und antworten verlangen Dativ; fragen, besuchen und sehen verlangen Akkusativ.",
+      "ar": "Der Arzt wartet. Ich frage ihn. / Der Arzt hilft mir. Ich danke ihm. — تتطلب helfen وdanken وantworten الداتيف، بينما تتطلب fragen وbesuchen وsehen الأكوزاتيف.",
+      "en": "Der Arzt wartet. Ich frage ihn. / Der Arzt hilft mir. Ich danke ihm. — Helfen, danken and antworten require dative; fragen, besuchen and sehen require accusative."
     }
   },
   "kapitel-20-ubung-11-q03": {
-    "acceptedAnswers": "ihr",
+    "acceptedAnswers": [
+      "ihn",
+      "ihr",
+      "ihnen"
+    ],
     "explanation": {
-      "fr": "Die Kundin hat eine Frage. Ich antworte ihr. — ihr est la forme du pronom au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Kundin hat eine Frage. Ich antworte ihr. — ihr steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Kundin hat eine Frage. Ich antworte ihr. — الضمير ihr في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Kundin hat eine Frage. Ich antworte ihr. — ihr is the Dativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich sehe den Kollegen. → Ich sehe ihn. / Ich helfe der Nachbarin. → Ich helfe ihr. / Ich antworte den Kunden. → Ich antworte ihnen. — Le pronom reprend le genre et le nombre du référent. À l’accusatif : mich, dich, ihn, sie, es, uns, euch, sie ; au datif : mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "de": "Ich sehe den Kollegen. → Ich sehe ihn. / Ich helfe der Nachbarin. → Ich helfe ihr. / Ich antworte den Kunden. → Ich antworte ihnen. — Das Pronomen richtet sich nach Genus und Numerus des Bezugswortes. Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie; Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "ar": "Ich sehe den Kollegen. → Ich sehe ihn. / Ich helfe der Nachbarin. → Ich helfe ihr. / Ich antworte den Kunden. → Ich antworte ihnen. — يتبع الضمير جنس المرجع وعدده. النصب: mich, dich, ihn, sie, es, uns, euch, sie؛ الداتيف: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "en": "Ich sehe den Kollegen. → Ich sehe ihn. / Ich helfe der Nachbarin. → Ich helfe ihr. / Ich antworte den Kunden. → Ich antworte ihnen. — The pronoun agrees with the referent’s gender and number. Accusative: mich, dich, ihn, sie, es, uns, euch, sie; dative: mir, dir, ihm, ihr, ihm, uns, euch, ihnen."
     }
   },
   "kapitel-20-ubung-11-q04": {
-    "acceptedAnswers": "sie",
-    "explanation": {
-      "fr": "Die Kundin kommt morgen. Ich erwarte sie. — sie est la forme du pronom au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Kundin kommt morgen. Ich erwarte sie. — sie steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Kundin kommt morgen. Ich erwarte sie. — الضمير sie في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Kundin kommt morgen. Ich erwarte sie. — sie is the Akkusativ pronoun. The verb or preposition determines case, and the referent determines person."
-    }
-  },
-  "kapitel-20-ubung-11-q05": {
     "acceptedAnswers": [
+      "Sie",
       "Ihnen"
     ],
     "explanation": {
-      "fr": "Herr Weber, ich erkläre Ihnen die Anwendung. — Ihnen est la forme du pronom au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Herr Weber, ich erkläre Ihnen die Anwendung. — Ihnen steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Herr Weber, ich erkläre Ihnen die Anwendung. — الضمير Ihnen في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Herr Weber, ich erkläre Ihnen die Anwendung. — Ihnen is the Dativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Frau Stein, ich habe eine Frage an Sie. Darf ich Ihnen das Formular zeigen? — Le pronom reprend le genre et le nombre du référent. À l’accusatif : mich, dich, ihn, sie, es, uns, euch, sie ; au datif : mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "de": "Frau Stein, ich habe eine Frage an Sie. Darf ich Ihnen das Formular zeigen? — Das Pronomen richtet sich nach Genus und Numerus des Bezugswortes. Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie; Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "ar": "Frau Stein, ich habe eine Frage an Sie. Darf ich Ihnen das Formular zeigen? — يتبع الضمير جنس المرجع وعدده. النصب: mich, dich, ihn, sie, es, uns, euch, sie؛ الداتيف: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "en": "Frau Stein, ich habe eine Frage an Sie. Darf ich Ihnen das Formular zeigen? — The pronoun agrees with the referent’s gender and number. Accusative: mich, dich, ihn, sie, es, uns, euch, sie; dative: mir, dir, ihm, ihr, ihm, uns, euch, ihnen."
+    }
+  },
+  "kapitel-20-ubung-11-q05": {
+    "acceptedAnswers": "true",
+    "explanation": {
+      "fr": "Die Kinder kommen. Ich gebe ihnen die Hefte. — Le pronom reprend le genre et le nombre du référent. À l’accusatif : mich, dich, ihn, sie, es, uns, euch, sie ; au datif : mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "de": "Die Kinder kommen. Ich gebe ihnen die Hefte. — Das Pronomen richtet sich nach Genus und Numerus des Bezugswortes. Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie; Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "ar": "Die Kinder kommen. Ich gebe ihnen die Hefte. — يتبع الضمير جنس المرجع وعدده. النصب: mich, dich, ihn, sie, es, uns, euch, sie؛ الداتيف: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "en": "Die Kinder kommen. Ich gebe ihnen die Hefte. — The pronoun agrees with the referent’s gender and number. Accusative: mich, dich, ihn, sie, es, uns, euch, sie; dative: mir, dir, ihm, ihr, ihm, uns, euch, ihnen."
     }
   },
   "kapitel-20-ubung-12-q01": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "sie",
+      "ihr"
+    ],
     "explanation": {
-      "fr": "Wir fahren nach Berlin. Kommt ihr mit uns? — uns est la forme du pronom au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Wir fahren nach Berlin. Kommt ihr mit uns? — uns steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Wir fahren nach Berlin. Kommt ihr mit uns? — الضمير uns في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Wir fahren nach Berlin. Kommt ihr mit uns? — uns is the Dativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Paul reist mit Lena. Er fährt nicht ohne sie. Er übernachtet mit ihr in Köln. (Lena) — Mit exige le datif, ohne l’accusatif : mit dir/ohne dich, mit ihm/ohne ihn, mit ihr/ohne sie.",
+      "de": "Paul reist mit Lena. Er fährt nicht ohne sie. Er übernachtet mit ihr in Köln. (Lena) — Mit verlangt Dativ, ohne Akkusativ: mit dir/ohne dich, mit ihm/ohne ihn, mit ihr/ohne sie.",
+      "ar": "Paul reist mit Lena. Er fährt nicht ohne sie. Er übernachtet mit ihr in Köln. (Lena) — تتطلب mit الداتيف وohne الأكوزاتيف: mit dir/ohne dich، mit ihm/ohne ihn، mit ihr/ohne sie.",
+      "en": "Paul reist mit Lena. Er fährt nicht ohne sie. Er übernachtet mit ihr in Köln. (Lena) — Mit requires dative and ohne accusative: mit dir/ohne dich, mit ihm/ohne ihn, mit ihr/ohne sie."
     }
   },
   "kapitel-20-ubung-12-q02": {
-    "acceptedAnswers": "euch",
+    "acceptedAnswers": [
+      "Ohne dich",
+      "fahre",
+      "ich nicht nach Berlin."
+    ],
     "explanation": {
-      "fr": "Ihr fahrt nach Berlin. Wir begleiten euch. — euch est la forme du pronom au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Ihr fahrt nach Berlin. Wir begleiten euch. — euch steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Ihr fahrt nach Berlin. Wir begleiten euch. — الضمير euch في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Ihr fahrt nach Berlin. Wir begleiten euch. — euch is the Akkusativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ohne dich fahre ich nicht nach Berlin. — Mit exige le datif, ohne l’accusatif : mit dir/ohne dich, mit ihm/ohne ihn, mit ihr/ohne sie. Dans une phrase déclarative, le verbe conjugué est en deuxième position ; le premier groupe forme un seul constituant. Respectez les blocs indiqués.",
+      "de": "Ohne dich fahre ich nicht nach Berlin. — Mit verlangt Dativ, ohne Akkusativ: mit dir/ohne dich, mit ihm/ohne ihn, mit ihr/ohne sie. Im Aussagesatz steht das finite Verb an zweiter Stelle; das erste Satzglied zählt als Einheit. Beachten Sie die vorgegebenen Blöcke.",
+      "ar": "Ohne dich fahre ich nicht nach Berlin. — تتطلب mit الداتيف وohne الأكوزاتيف: mit dir/ohne dich، mit ihm/ohne ihn، mit ihr/ohne sie. في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وتعد المجموعة الأولى وحدة واحدة. التزم بالمجموعات المعطاة.",
+      "en": "Ohne dich fahre ich nicht nach Berlin. — Mit requires dative and ohne accusative: mit dir/ohne dich, mit ihm/ohne ihn, mit ihr/ohne sie. In a statement the finite verb is second; the initial phrase counts as one constituent. Keep the given chunks together."
     }
   },
   "kapitel-20-ubung-12-q03": {
-    "acceptedAnswers": "ihn",
+    "acceptedAnswers": [
+      "Kommt ihr mit uns?",
+      "Wir kommen ohne euch."
+    ],
     "explanation": {
-      "fr": "Paul hat das Ticket. Ich frage ihn nach dem Preis. — ihn est la forme du pronom au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Paul hat das Ticket. Ich frage ihn nach dem Preis. — ihn steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Paul hat das Ticket. Ich frage ihn nach dem Preis. — الضمير ihn في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Paul hat das Ticket. Ich frage ihn nach dem Preis. — ihn is the Akkusativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Kommt ihr mit uns? / Wir kommen ohne euch. — Mit exige le datif, ohne l’accusatif : mit dir/ohne dich, mit ihm/ohne ihn, mit ihr/ohne sie.",
+      "de": "Kommt ihr mit uns? / Wir kommen ohne euch. — Mit verlangt Dativ, ohne Akkusativ: mit dir/ohne dich, mit ihm/ohne ihn, mit ihr/ohne sie.",
+      "ar": "Kommt ihr mit uns? / Wir kommen ohne euch. — تتطلب mit الداتيف وohne الأكوزاتيف: mit dir/ohne dich، mit ihm/ohne ihn، mit ihr/ohne sie.",
+      "en": "Kommt ihr mit uns? / Wir kommen ohne euch. — Mit requires dative and ohne accusative: mit dir/ohne dich, mit ihm/ohne ihn, mit ihr/ohne sie."
     }
   },
   "kapitel-20-ubung-12-q04": {
     "acceptedAnswers": [
-      "ihm"
+      "ihm",
+      "es"
     ],
     "explanation": {
-      "fr": "Paul hat das Ticket. Ich danke ihm. — ihm est la forme du pronom au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Paul hat das Ticket. Ich danke ihm. — ihm steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Paul hat das Ticket. Ich danke ihm. — الضمير ihm في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Paul hat das Ticket. Ich danke ihm. — ihm is the Dativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Das Ticket ist für Max. Ich gebe ihm das Ticket. Er zeigt es am Eingang. (Max/das Ticket) — Le pronom reprend le genre et le nombre du référent. À l’accusatif : mich, dich, ihn, sie, es, uns, euch, sie ; au datif : mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "de": "Das Ticket ist für Max. Ich gebe ihm das Ticket. Er zeigt es am Eingang. (Max/das Ticket) — Das Pronomen richtet sich nach Genus und Numerus des Bezugswortes. Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie; Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "ar": "Das Ticket ist für Max. Ich gebe ihm das Ticket. Er zeigt es am Eingang. (Max/das Ticket) — يتبع الضمير جنس المرجع وعدده. النصب: mich, dich, ihn, sie, es, uns, euch, sie؛ الداتيف: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "en": "Das Ticket ist für Max. Ich gebe ihm das Ticket. Er zeigt es am Eingang. (Max/das Ticket) — The pronoun agrees with the referent’s gender and number. Accusative: mich, dich, ihn, sie, es, uns, euch, sie; dative: mir, dir, ihm, ihr, ihm, uns, euch, ihnen."
     }
   },
   "kapitel-20-ubung-12-q05": {
     "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Die Freunde warten. Wir fahren nicht ohne sie. — sie est la forme du pronom au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Freunde warten. Wir fahren nicht ohne sie. — sie steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Freunde warten. Wir fahren nicht ohne sie. — الضمير sie في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Freunde warten. Wir fahren nicht ohne sie. — sie is the Akkusativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Wir danken euch für die Hilfe. — Helfen, danken et antworten exigent le datif ; fragen, besuchen et sehen exigent l’accusatif.",
+      "de": "Wir danken euch für die Hilfe. — Helfen, danken und antworten verlangen Dativ; fragen, besuchen und sehen verlangen Akkusativ.",
+      "ar": "Wir danken euch für die Hilfe. — تتطلب helfen وdanken وantworten الداتيف، بينما تتطلب fragen وbesuchen وsehen الأكوزاتيف.",
+      "en": "Wir danken euch für die Hilfe. — Helfen, danken and antworten require dative; fragen, besuchen and sehen require accusative."
     }
   },
   "kapitel-20-ubung-13-q01": {
-    "acceptedAnswers": "Sie",
+    "acceptedAnswers": [
+      "ihnen",
+      "sie"
+    ],
     "explanation": {
-      "fr": "Frau Roth, darf ich Sie etwas fragen? — Sie est la forme du pronom au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Frau Roth, darf ich Sie etwas fragen? — Sie steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Frau Roth, darf ich Sie etwas fragen? — الضمير Sie في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Frau Roth, darf ich Sie etwas fragen? — Sie is the Akkusativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Lehrerin erklärt den Schülern die Aufgabe. Sie erklärt ihnen die Aufgabe. Die Schüler verstehen sie jetzt. (den Schülern/die Aufgabe) — Le pronom reprend le genre et le nombre du référent. À l’accusatif : mich, dich, ihn, sie, es, uns, euch, sie ; au datif : mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "de": "Die Lehrerin erklärt den Schülern die Aufgabe. Sie erklärt ihnen die Aufgabe. Die Schüler verstehen sie jetzt. (den Schülern/die Aufgabe) — Das Pronomen richtet sich nach Genus und Numerus des Bezugswortes. Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie; Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "ar": "Die Lehrerin erklärt den Schülern die Aufgabe. Sie erklärt ihnen die Aufgabe. Die Schüler verstehen sie jetzt. (den Schülern/die Aufgabe) — يتبع الضمير جنس المرجع وعدده. النصب: mich, dich, ihn, sie, es, uns, euch, sie؛ الداتيف: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "en": "Die Lehrerin erklärt den Schülern die Aufgabe. Sie erklärt ihnen die Aufgabe. Die Schüler verstehen sie jetzt. (den Schülern/die Aufgabe) — The pronoun agrees with the referent’s gender and number. Accusative: mich, dich, ihn, sie, es, uns, euch, sie; dative: mir, dir, ihm, ihr, ihm, uns, euch, ihnen."
     }
   },
   "kapitel-20-ubung-13-q02": {
-    "acceptedAnswers": "Ihnen",
+    "acceptedAnswers": [
+      "Ich besuche dich morgen.",
+      "Ich antworte dir heute."
+    ],
     "explanation": {
-      "fr": "Frau Roth, darf ich Ihnen etwas erklären? — Ihnen est la forme du pronom au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Frau Roth, darf ich Ihnen etwas erklären? — Ihnen steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Frau Roth, darf ich Ihnen etwas erklären? — الضمير Ihnen في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Frau Roth, darf ich Ihnen etwas erklären? — Ihnen is the Dativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich besuche dich morgen. / Ich antworte dir heute. — Helfen, danken et antworten exigent le datif ; fragen, besuchen et sehen exigent l’accusatif.",
+      "de": "Ich besuche dich morgen. / Ich antworte dir heute. — Helfen, danken und antworten verlangen Dativ; fragen, besuchen und sehen verlangen Akkusativ.",
+      "ar": "Ich besuche dich morgen. / Ich antworte dir heute. — تتطلب helfen وdanken وantworten الداتيف، بينما تتطلب fragen وbesuchen وsehen الأكوزاتيف.",
+      "en": "Ich besuche dich morgen. / Ich antworte dir heute. — Helfen, danken and antworten require dative; fragen, besuchen and sehen require accusative."
     }
   },
   "kapitel-20-ubung-13-q03": {
-    "acceptedAnswers": [
-      "es"
-    ],
+    "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Das Mädchen kennt mich. Ich kenne es auch. — es est la forme du pronom au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Das Mädchen kennt mich. Ich kenne es auch. — es steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Das Mädchen kennt mich. Ich kenne es auch. — الضمير es في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Das Mädchen kennt mich. Ich kenne es auch. — es is the Akkusativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Frau hilft dem Kind. Sie hilft ihm. — Le pronom reprend le genre et le nombre du référent. À l’accusatif : mich, dich, ihn, sie, es, uns, euch, sie ; au datif : mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "de": "Die Frau hilft dem Kind. Sie hilft ihm. — Das Pronomen richtet sich nach Genus und Numerus des Bezugswortes. Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie; Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "ar": "Die Frau hilft dem Kind. Sie hilft ihm. — يتبع الضمير جنس المرجع وعدده. النصب: mich, dich, ihn, sie, es, uns, euch, sie؛ الداتيف: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "en": "Die Frau hilft dem Kind. Sie hilft ihm. — The pronoun agrees with the referent’s gender and number. Accusative: mich, dich, ihn, sie, es, uns, euch, sie; dative: mir, dir, ihm, ihr, ihm, uns, euch, ihnen."
     }
   },
   "kapitel-20-ubung-13-q04": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "Sie",
+      "Ihnen"
+    ],
     "explanation": {
-      "fr": "Das Mädchen braucht Hilfe. Ich helfe ihm. — ihm est la forme du pronom au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Das Mädchen braucht Hilfe. Ich helfe ihm. — ihm steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Das Mädchen braucht Hilfe. Ich helfe ihm. — الضمير ihm في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Das Mädchen braucht Hilfe. Ich helfe ihm. — ihm is the Dativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Herr Wolf, darf ich Sie anrufen? Ich möchte Ihnen den Termin bestätigen. — Le pronom reprend le genre et le nombre du référent. À l’accusatif : mich, dich, ihn, sie, es, uns, euch, sie ; au datif : mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "de": "Herr Wolf, darf ich Sie anrufen? Ich möchte Ihnen den Termin bestätigen. — Das Pronomen richtet sich nach Genus und Numerus des Bezugswortes. Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie; Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "ar": "Herr Wolf, darf ich Sie anrufen? Ich möchte Ihnen den Termin bestätigen. — يتبع الضمير جنس المرجع وعدده. النصب: mich, dich, ihn, sie, es, uns, euch, sie؛ الداتيف: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "en": "Herr Wolf, darf ich Sie anrufen? Ich möchte Ihnen den Termin bestätigen. — The pronoun agrees with the referent’s gender and number. Accusative: mich, dich, ihn, sie, es, uns, euch, sie; dative: mir, dir, ihm, ihr, ihm, uns, euch, ihnen."
     }
   },
   "kapitel-20-ubung-13-q05": {
-    "acceptedAnswers": "euch",
+    "acceptedAnswers": [
+      "ihnen",
+      "sie"
+    ],
     "explanation": {
-      "fr": "Du und Anna, ich vertraue euch. — euch est la forme du pronom au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Du und Anna, ich vertraue euch. — euch steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Du und Anna, ich vertraue euch. — الضمير euch في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Du und Anna, ich vertraue euch. — euch is the Dativ pronoun. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Freunde warten auf uns. Wir fahren zu ihnen und nehmen sie mit. (die Freunde) — Le pronom reprend le genre et le nombre du référent. À l’accusatif : mich, dich, ihn, sie, es, uns, euch, sie ; au datif : mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "de": "Die Freunde warten auf uns. Wir fahren zu ihnen und nehmen sie mit. (die Freunde) — Das Pronomen richtet sich nach Genus und Numerus des Bezugswortes. Akkusativ: mich, dich, ihn, sie, es, uns, euch, sie; Dativ: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "ar": "Die Freunde warten auf uns. Wir fahren zu ihnen und nehmen sie mit. (die Freunde) — يتبع الضمير جنس المرجع وعدده. النصب: mich, dich, ihn, sie, es, uns, euch, sie؛ الداتيف: mir, dir, ihm, ihr, ihm, uns, euch, ihnen.",
+      "en": "Die Freunde warten auf uns. Wir fahren zu ihnen und nehmen sie mit. (die Freunde) — The pronoun agrees with the referent’s gender and number. Accusative: mich, dich, ihn, sie, es, uns, euch, sie; dative: mir, dir, ihm, ihr, ihm, uns, euch, ihnen."
     }
   },
   "kapitel-20-ubung-01-extra": {
@@ -684,7 +726,7 @@ export const chapter20AnswerKey: AnswerKey = {
     "explanation": {
       "fr": "Mit et helfen exigent le datif ; sehen exige l’accusatif. Les pronoms changent selon le cas.",
       "de": "Mit und helfen verlangen Dativ; sehen verlangt Akkusativ. Pronomen ändern sich nach Kasus.",
-      "ar": "mit وhelfen يتطلبان الداتيف وsehen الأكوزاتيف.",
+      "ar": "Mit وhelfen يتطلبان الداتيف وsehen الأكوزاتيف.",
       "en": "Mit and helfen require dative; sehen requires accusative. Pronouns change with case."
     }
   },
@@ -698,7 +740,7 @@ export const chapter20AnswerKey: AnswerKey = {
     "explanation": {
       "fr": "Mit et helfen exigent le datif ; sehen exige l’accusatif. Les pronoms changent selon le cas.",
       "de": "Mit und helfen verlangen Dativ; sehen verlangt Akkusativ. Pronomen ändern sich nach Kasus.",
-      "ar": "mit وhelfen يتطلبان الداتيف وsehen الأكوزاتيف.",
+      "ar": "Mit وhelfen يتطلبان الداتيف وsehen الأكوزاتيف.",
       "en": "Mit and helfen require dative; sehen requires accusative. Pronouns change with case."
     }
   },
@@ -710,7 +752,7 @@ export const chapter20AnswerKey: AnswerKey = {
     "explanation": {
       "fr": "Mit et helfen exigent le datif ; sehen exige l’accusatif. Les pronoms changent selon le cas.",
       "de": "Mit und helfen verlangen Dativ; sehen verlangt Akkusativ. Pronomen ändern sich nach Kasus.",
-      "ar": "mit وhelfen يتطلبان الداتيف وsehen الأكوزاتيف.",
+      "ar": "Mit وhelfen يتطلبان الداتيف وsehen الأكوزاتيف.",
       "en": "Mit and helfen require dative; sehen requires accusative. Pronouns change with case."
     }
   }

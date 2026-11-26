@@ -11,87 +11,97 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "Pharmacy"
     },
     "description": {
-      "fr": "Articles interrogatifs et démonstratifs",
-      "de": "Interrogativ- und Demonstrativartikel",
-      "ar": "أدوات الاستفهام والإشارة",
-      "en": "Interrogative and demonstrative determiners"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-19-ubung-11-q01",
         "position": 1,
         "type": "fill_blank",
-        "sentence": "___ Patient braucht Hilfe?",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Apotheker arbeitet heute? Ich spreche mit ___ Apotheker dort. (welcher/dieser)",
+        "blanks": 2
       },
       {
         "id": "kapitel-19-ubung-11-q02",
         "position": 2,
-        "type": "true_false",
-        "statement": "Welchem Patienten beraten Sie? (Singular)",
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Welchen Patienten helfen Sie?",
+          "Welchen Patienten beraten Sie?",
+          "Welchem Patienten beraten Sie?",
+          "Welchem Patienten helfen Sie?"
+        ]
       },
       {
         "id": "kapitel-19-ubung-11-q03",
         "position": 3,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "Welcher",
-          "Welchem",
-          "Welche",
-          "Welches",
-          "Welchen"
-        ],
+        "type": "matching",
         "prompt": {
-          "fr": "Choisissez : ___ Patienten geben Sie das Rezept zurück? (Singular)",
-          "de": "Wählen Sie: ___ Patienten geben Sie das Rezept zurück? (Singular)",
-          "ar": "اختر: ___ Patienten geben Sie das Rezept zurück? (Singular)",
-          "en": "Choose: ___ Patienten geben Sie das Rezept zurück? (Singular)"
-        }
+          "fr": "Associez chaque phrase à la forme qui convient.",
+          "de": "Ordnen Sie jedem Satz die passende Form zu.",
+          "ar": "اربط كل جملة بالصيغة المناسبة.",
+          "en": "Match each sentence with the appropriate form."
+        },
+        "items": [
+          {
+            "id": "0",
+            "label": "___ Rezept ist gültig? (welcher)"
+          },
+          {
+            "id": "1",
+            "label": "Mit ___ Ärztin sprechen Sie? (dieser)"
+          },
+          {
+            "id": "2",
+            "label": "___ Kollegen rufen Sie an? (welcher; Singular)"
+          }
+        ],
+        "options": [
+          "dieser",
+          "Welchen",
+          "Welches"
+        ]
       },
       {
         "id": "kapitel-19-ubung-11-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "welchen",
-          "welches",
-          "welchem",
-          "welcher",
-          "welche"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Mit ___ Ärztin sprechen Sie?",
-          "de": "Wählen Sie: Mit ___ Ärztin sprechen Sie?",
-          "ar": "اختر: Mit ___ Ärztin sprechen Sie?",
-          "en": "Choose: Mit ___ Ärztin sprechen Sie?"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Packung brauchen Sie? Ich nehme ___ hier. (welcher/dieser)",
+        "blanks": 2
       },
       {
         "id": "kapitel-19-ubung-11-q05",
         "position": 5,
-        "type": "fill_blank",
-        "sentence": "Ich vertraue ___ Ärztin.",
-        "blanks": 1,
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
-        }
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
+        },
+        "statement": "Mit diesen Medikamenten bin ich zufrieden."
       }
     ]
   },
@@ -106,86 +116,83 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "Travel"
     },
     "description": {
-      "fr": "Articles interrogatifs et démonstratifs",
-      "de": "Interrogativ- und Demonstrativartikel",
-      "ar": "أدوات الاستفهام والإشارة",
-      "en": "Interrogative and demonstrative determiners"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-19-ubung-12-q01",
         "position": 1,
-        "type": "true_false",
-        "statement": "In welchem Hotel übernachten wir?",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Zug fährt nach Köln? In ___ Zug möchte ich sitzen. (welcher/dieser)",
+        "blanks": 2
       },
       {
         "id": "kapitel-19-ubung-12-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "Welchem",
-          "Welcher",
-          "Welches",
-          "Welche",
-          "Welchen"
-        ],
+        "type": "reorder",
         "prompt": {
-          "fr": "Choisissez : ___ Hotel buchen wir?",
-          "de": "Wählen Sie: ___ Hotel buchen wir?",
-          "ar": "اختر: ___ Hotel buchen wir?",
-          "en": "Choose: ___ Hotel buchen wir?"
-        }
+          "fr": "Welches Hotel … — Commencez par ce groupe et reconstituez la phrase.",
+          "de": "Welches Hotel … — Beginnen Sie mit dieser Gruppe und bilden Sie den Satz.",
+          "ar": "Welches Hotel … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Welches Hotel … — Start with this phrase and reconstruct the sentence."
+        },
+        "tokens": [
+          "wir für morgen?",
+          "Welches Hotel",
+          "buchen"
+        ]
       },
       {
         "id": "kapitel-19-ubung-12-q03",
         "position": 3,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "welches",
-          "welche",
-          "welcher",
-          "welchen",
-          "welchem"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Choisissez : Mit ___ Zügen fahren wir?",
-          "de": "Wählen Sie: Mit ___ Zügen fahren wir?",
-          "ar": "اختر: Mit ___ Zügen fahren wir?",
-          "en": "Choose: Mit ___ Zügen fahren wir?"
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Welche Busse fahren zum Bahnhof?",
+          "Mit welche Bussen fahren wir?",
+          "Mit welchen Bussen fahren wir?",
+          "Welchen Busse fahren zum Bahnhof?"
+        ]
       },
       {
         "id": "kapitel-19-ubung-12-q04",
         "position": 4,
         "type": "fill_blank",
-        "sentence": "___ Zug erreicht Berlin zuerst?",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Koffer gehört dir? Ich nehme ___ Koffer hier. (welcher/dieser)",
+        "blanks": 2
       },
       {
         "id": "kapitel-19-ubung-12-q05",
         "position": 5,
         "type": "true_false",
-        "statement": "Wir steigen in diesen Zug ein.",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
-        }
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
+        },
+        "statement": "Mit welchem Ticket darf ich fahren?"
       }
     ]
   },
@@ -200,93 +207,80 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "At the office"
     },
     "description": {
-      "fr": "Articles interrogatifs et démonstratifs",
-      "de": "Interrogativ- und Demonstrativartikel",
-      "ar": "أدوات الاستفهام والإشارة",
-      "en": "Interrogative and demonstrative determiners"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-19-ubung-13-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "Welche",
-          "Welchem",
-          "Welcher",
-          "Welchen",
-          "Welches"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : ___ Kollegen schickst du die E-Mail? (Singular)",
-          "de": "Wählen Sie: ___ Kollegen schickst du die E-Mail? (Singular)",
-          "ar": "اختر: ___ Kollegen schickst du die E-Mail? (Singular)",
-          "en": "Choose: ___ Kollegen schickst du die E-Mail? (Singular)"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Kollegin schreibst du? ___ Kollegen rufst du an? (welcher; Singular)",
+        "blanks": 2
       },
       {
         "id": "kapitel-19-ubung-13-q02",
         "position": 2,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "Welchem",
-          "Welchen",
-          "Welches",
-          "Welche",
-          "Welcher"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Choisissez : ___ Kollegen suchst du? (Singular)",
-          "de": "Wählen Sie: ___ Kollegen suchst du? (Singular)",
-          "ar": "اختر: ___ Kollegen suchst du? (Singular)",
-          "en": "Choose: ___ Kollegen suchst du? (Singular)"
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Diesem Ordner brauche ich.",
+          "Diesen Ordner brauche ich.",
+          "In diesen Ordner sind die Verträge.",
+          "In diesem Ordner sind die Verträge."
+        ]
       },
       {
         "id": "kapitel-19-ubung-13-q03",
         "position": 3,
-        "type": "fill_blank",
-        "sentence": "___ Kollegin hat angerufen?",
-        "blanks": 1,
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
-        }
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
+        },
+        "statement": "Welches Dokument fehlt noch?"
       },
       {
         "id": "kapitel-19-ubung-13-q04",
         "position": 4,
-        "type": "true_false",
-        "statement": "Mit welche Kolleginnen arbeitest du?",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Kollegen erklären wir das Programm. ___ Kollegin besucht uns morgen. (dieser; Plural/Singular)",
+        "blanks": 2
       },
       {
         "id": "kapitel-19-ubung-13-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "dieser",
-          "diesem",
-          "diese",
-          "dieses",
-          "diesen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Ich gebe ___ Kollegen den Schlüssel. (Singular)",
-          "de": "Wählen Sie: Ich gebe ___ Kollegen den Schlüssel. (Singular)",
-          "ar": "اختر: Ich gebe ___ Kollegen den Schlüssel. (Singular)",
-          "en": "Choose: Ich gebe ___ Kollegen den Schlüssel. (Singular)"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Mit ___ Computer arbeitest du? Ich benutze ___ Computer da. (welcher/dieser)",
+        "blanks": 2
       }
     ]
   }

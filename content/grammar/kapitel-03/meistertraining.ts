@@ -5,16 +5,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 1,
     "title": {
-      "fr": "Dialogue : être",
+      "fr": "Dialogue avec sein",
       "de": "Sein – Dialog",
-      "ar": "حوار sein",
-      "en": "Being – dialogue"
+      "ar": "حوار مع sein",
+      "en": "Sein dialogue"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -29,8 +29,8 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "haben",
           "sind",
+          "bin",
           "bist",
           "ist"
         ]
@@ -38,32 +38,27 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-03-ubung-01-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sein. — Mein Name ___ Misterek.",
-          "de": "Ergänzen Sie sein. — Mein Name ___ Misterek.",
-          "ar": "أكمل باستعمال sein. — Mein Name ___ Misterek.",
-          "en": "Complete with sein. — Mein Name ___ Misterek."
+          "fr": "Conjuguez sein au présent.",
+          "de": "Konjugieren Sie sein im Präsens.",
+          "ar": "صرّف sein في المضارع.",
+          "en": "Conjugate sein in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "ist",
-          "bin",
-          "tue",
-          "weiß"
-        ]
+        "sentence": "Mein Name ___ Misterek.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-01-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec sein.",
-          "de": "Ergänzen Sie sein.",
-          "ar": "أكمل باستعمال sein.",
-          "en": "Complete with sein."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
-        "statement": "sind Sie neu hier?"
+        "statement": "Sind Sie neu hier?"
       },
       {
         "id": "kapitel-03-ubung-01-q04",
@@ -104,9 +99,9 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "bin",
-          "magst",
-          "bist",
-          "möchtest"
+          "sind",
+          "ist",
+          "bist"
         ]
       }
     ]
@@ -116,16 +111,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 2,
     "title": {
-      "fr": "Construire des phrases",
+      "fr": "Phrases avec sein",
       "de": "Sätze mit sein",
       "ar": "جمل مع sein",
       "en": "Sentences with sein"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -141,38 +136,33 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "bin",
-          "habe",
-          "tut",
-          "seid"
+          "bist",
+          "ist",
+          "sind"
         ]
       },
       {
         "id": "kapitel-03-ubung-02-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sein. — Du ___ in München.",
-          "de": "Ergänzen Sie sein. — Du ___ in München.",
-          "ar": "أكمل باستعمال sein. — Du ___ in München.",
-          "en": "Complete with sein. — Du ___ in München."
+          "fr": "Conjuguez sein au présent.",
+          "de": "Konjugieren Sie sein im Präsens.",
+          "ar": "صرّف sein في المضارع.",
+          "en": "Conjugate sein in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "tut",
-          "möchtet",
-          "möchten",
-          "bist"
-        ]
+        "sentence": "Du ___ in München.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-02-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec sein.",
-          "de": "Ergänzen Sie sein.",
-          "ar": "أكمل باستعمال sein.",
-          "en": "Complete with sein."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Er ist Herr Wang."
       },
@@ -214,10 +204,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "tut",
-          "wissen",
+          "bin",
+          "bist",
           "sind",
-          "mögen"
+          "ist"
         ]
       },
       {
@@ -232,10 +222,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
+          "bist",
+          "ist",
           "seid",
-          "mögt",
-          "möchtest",
-          "weißt"
+          "bin"
         ]
       },
       {
@@ -243,12 +233,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec sein.",
-          "de": "Ergänzen Sie sein.",
-          "ar": "أكمل باستعمال sein.",
-          "en": "Complete with sein."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
-        "statement": "Frau Tannberg tue im Büro."
+        "statement": "Frau Tannberg bin im Büro."
       },
       {
         "id": "kapitel-03-ubung-02-q09",
@@ -268,29 +258,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 10,
         "type": "matching",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Associez les formes aux sujets.",
+          "de": "Ordnen Sie die Formen den Subjekten zu.",
+          "ar": "صل الصيغ بالفاعلين.",
+          "en": "Match the forms to the subjects."
         },
         "items": [
           {
             "id": "i0",
-            "label": "ich sein"
+            "label": "ich – sein"
           },
           {
             "id": "i1",
-            "label": "du sein"
+            "label": "du – sein"
           },
           {
             "id": "i2",
-            "label": "wir sein"
+            "label": "wir – sein"
           }
         ],
         "options": [
-          "bin",
+          "bist",
           "sind",
-          "bist"
+          "bin"
         ]
       }
     ]
@@ -302,14 +292,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "title": {
       "fr": "Avoir",
       "de": "Haben",
-      "ar": "فعل haben",
+      "ar": "فعل الملكية haben",
       "en": "Having"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -324,39 +314,34 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "tun",
-          "bist",
-          "magst",
-          "hast"
+          "Habe",
+          "Hat",
+          "Hast",
+          "Haben"
         ]
       },
       {
         "id": "kapitel-03-ubung-03-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec haben. — Nein, aber ich ___ Zeit.",
-          "de": "Ergänzen Sie haben. — Nein, aber ich ___ Zeit.",
-          "ar": "أكمل باستعمال haben. — Nein, aber ich ___ Zeit.",
-          "en": "Complete with haben. — Nein, aber ich ___ Zeit."
+          "fr": "Conjuguez haben au présent.",
+          "de": "Konjugieren Sie haben im Präsens.",
+          "ar": "صرّف haben في المضارع.",
+          "en": "Conjugate haben in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "möchten",
-          "tun",
-          "hast",
-          "habe"
-        ]
+        "sentence": "Nein, aber ich ___ Zeit.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-03-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec haben.",
-          "de": "Ergänzen Sie haben.",
-          "ar": "أكمل باستعمال haben.",
-          "en": "Complete with haben."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Du hast Glück."
       },
@@ -398,10 +383,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "haben",
-          "möchten",
-          "magst",
-          "tun"
+          "hat",
+          "hast",
+          "habe",
+          "haben"
         ]
       },
       {
@@ -416,10 +401,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "habt",
+          "hast",
+          "haben",
           "hat",
-          "mögen",
-          "magst"
+          "habe"
         ]
       },
       {
@@ -427,12 +412,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec haben.",
-          "de": "Ergänzen Sie haben.",
-          "ar": "أكمل باستعمال haben.",
-          "en": "Complete with haben."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
-        "statement": "Er mögt auch am Wochenende keine Freizeit."
+        "statement": "Er habe auch am Wochenende keine Freizeit."
       },
       {
         "id": "kapitel-03-ubung-03-multi",
@@ -462,14 +447,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "title": {
       "fr": "Être ou avoir",
       "de": "Sein oder haben",
-      "ar": "sein أو haben",
-      "en": "Be or have"
+      "ar": "sein أم haben",
+      "en": "Being or having"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -485,38 +470,33 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "sind",
-          "ist",
-          "tust",
-          "möchten"
+          "bist",
+          "bin",
+          "ist"
         ]
       },
       {
         "id": "kapitel-03-ubung-04-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sein. — Sie (Angela und Pascal) ___ Schüler.",
-          "de": "Ergänzen Sie sein. — Sie (Angela und Pascal) ___ Schüler.",
-          "ar": "أكمل باستعمال sein. — Sie (Angela und Pascal) ___ Schüler.",
-          "en": "Complete with sein. — Sie (Angela und Pascal) ___ Schüler."
+          "fr": "Conjuguez sein au présent.",
+          "de": "Konjugieren Sie sein im Präsens.",
+          "ar": "صرّف sein في المضارع.",
+          "en": "Conjugate sein in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "sind",
-          "mögen",
-          "hast",
-          "wissen"
-        ]
+        "sentence": "Sie (Angela und Pascal) ___ Schüler.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-04-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec haben.",
-          "de": "Ergänzen Sie haben.",
-          "ar": "أكمل باستعمال haben.",
-          "en": "Complete with haben."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Sie (Angela und Pascal) haben einen Hund."
       },
@@ -558,10 +538,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "haben",
-          "tun",
-          "bin",
-          "weiß"
+          "sind",
+          "ist",
+          "bist",
+          "bin"
         ]
       },
       {
@@ -576,10 +556,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "sind",
-          "bin",
-          "möchte",
-          "tust"
+          "Bist",
+          "Ist",
+          "Bin",
+          "Sind"
         ]
       },
       {
@@ -587,12 +567,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec sein.",
-          "de": "Ergänzen Sie sein.",
-          "ar": "أكمل باستعمال sein.",
-          "en": "Complete with sein."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
-        "statement": "Ich tut verheiratet."
+        "statement": "Ich bist verheiratet."
       },
       {
         "id": "kapitel-03-ubung-04-q09",
@@ -623,20 +603,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-03-ubung-04-q11",
         "position": 11,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec haben. — Wir ___ ein Auto.",
-          "de": "Ergänzen Sie haben. — Wir ___ ein Auto.",
-          "ar": "أكمل باستعمال haben. — Wir ___ ein Auto.",
-          "en": "Complete with haben. — Wir ___ ein Auto."
+          "fr": "Conjuguez haben au présent.",
+          "de": "Konjugieren Sie haben im Präsens.",
+          "ar": "صرّف haben في المضارع.",
+          "en": "Conjugate haben in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "weiß",
-          "seid",
-          "haben",
-          "mögt"
-        ]
+        "sentence": "Wir ___ ein Auto.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-04-q12",
@@ -650,10 +625,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "bist",
-          "mögen",
-          "mögt",
-          "hast"
+          "Hat",
+          "Hast",
+          "Habe",
+          "Haben"
         ]
       },
       {
@@ -661,10 +636,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 13,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec sein.",
-          "de": "Ergänzen Sie sein.",
-          "ar": "أكمل باستعمال sein.",
-          "en": "Complete with sein."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Meine Nummer ist 0171/1234987."
       }
@@ -675,16 +650,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 5,
     "title": {
-      "fr": "Le chat Mikunda",
+      "fr": "Mikunda",
       "de": "Mikunda",
-      "ar": "القطة ميكوندا",
-      "en": "Mikunda the cat"
+      "ar": "ميكوندا",
+      "en": "Mikunda"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -699,39 +674,34 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "möchte",
+          "bin",
+          "bist",
           "ist",
-          "weißt",
-          "tun"
+          "sind"
         ]
       },
       {
         "id": "kapitel-03-ubung-05-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sein. — Sie ___ meine Katze.",
-          "de": "Ergänzen Sie sein. — Sie ___ meine Katze.",
-          "ar": "أكمل باستعمال sein. — Sie ___ meine Katze.",
-          "en": "Complete with sein. — Sie ___ meine Katze."
+          "fr": "Conjuguez sein au présent.",
+          "de": "Konjugieren Sie sein im Präsens.",
+          "ar": "صرّف sein في المضارع.",
+          "en": "Conjugate sein in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "ist",
-          "tut",
-          "möchte",
-          "wissen"
-        ]
+        "sentence": "Sie ___ meine Katze.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-05-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec sein.",
-          "de": "Ergänzen Sie sein.",
-          "ar": "أكمل باستعمال sein.",
-          "en": "Complete with sein."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Sie ist drei Jahre alt."
       },
@@ -773,10 +743,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "habt",
-          "tust",
           "hat",
-          "bin"
+          "hast",
+          "haben",
+          "habe"
         ]
       },
       {
@@ -791,10 +761,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "mögen",
-          "tun",
+          "ist",
+          "bist",
           "sind",
-          "habe"
+          "bin"
         ]
       },
       {
@@ -802,12 +772,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec haben.",
-          "de": "Ergänzen Sie haben.",
-          "ar": "أكمل باستعمال haben.",
-          "en": "Complete with haben."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
-        "statement": "Sie (die Katzenbabys) möchten grüne Augen."
+        "statement": "Sie (die Katzenbabys) habe grüne Augen."
       },
       {
         "id": "kapitel-03-ubung-05-q09",
@@ -838,32 +808,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-03-ubung-05-association",
         "position": 11,
-        "type": "matching",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Conjuguez mögen au présent.",
+          "de": "Konjugieren Sie mögen im Präsens.",
+          "ar": "صرّف mögen في المضارع.",
+          "en": "Conjugate mögen in the present tense."
         },
-        "items": [
-          {
-            "id": "i0",
-            "label": "ich sein"
-          },
-          {
-            "id": "i1",
-            "label": "du sein"
-          },
-          {
-            "id": "i2",
-            "label": "wir sein"
-          }
-        ],
-        "options": [
-          "bist",
-          "sind",
-          "bin"
-        ]
+        "sentence": "Ich ___ Jazz. (mögen)",
+        "blanks": 1
       }
     ]
   },
@@ -872,16 +825,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 6,
     "title": {
-      "fr": "Au café",
+      "fr": "Souhaits au café",
       "de": "Möchten – im Café",
-      "ar": "في المقهى",
-      "en": "At the café"
+      "ar": "الرغبات في المقهى",
+      "en": "Wishes at the café"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -896,39 +849,34 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "weiß",
-          "mag",
-          "möchten",
-          "mögt"
+          "möchtest",
+          "möchte",
+          "möchtet",
+          "möchten"
         ]
       },
       {
         "id": "kapitel-03-ubung-06-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec möchten. — Frau Taylor ___ einen Kaffee.",
-          "de": "Ergänzen Sie möchten. — Frau Taylor ___ einen Kaffee.",
-          "ar": "أكمل باستعمال möchten. — Frau Taylor ___ einen Kaffee.",
-          "en": "Complete with möchten. — Frau Taylor ___ einen Kaffee."
+          "fr": "Conjuguez möchten au présent.",
+          "de": "Konjugieren Sie möchten im Präsens.",
+          "ar": "صرّف möchten في المضارع.",
+          "en": "Conjugate möchten in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "weißt",
-          "möchte",
-          "möchtet",
-          "bin"
-        ]
+        "sentence": "Frau Taylor ___ einen Kaffee.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-06-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec möchten.",
-          "de": "Ergänzen Sie möchten.",
-          "ar": "أكمل باستعمال möchten.",
-          "en": "Complete with möchten."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Was möchtest du, Ben?"
       },
@@ -970,10 +918,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "tut",
           "möchten",
-          "mögen",
-          "ist"
+          "möchte",
+          "möchtet",
+          "möchtest"
         ]
       },
       {
@@ -988,10 +936,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "möchtet",
-          "bin",
-          "möchte",
-          "mögen"
+          "Möchtet",
+          "Möchte",
+          "Möchten",
+          "Möchtest"
         ]
       },
       {
@@ -999,31 +947,25 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec möchten.",
-          "de": "Ergänzen Sie möchten.",
-          "ar": "أكمل باستعمال möchten.",
-          "en": "Complete with möchten."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
-        "statement": "Wir mögen bezahlen."
+        "statement": "Wir möchte bezahlen."
       },
       {
         "id": "kapitel-03-ubung-06-multi",
         "position": 9,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "wir sein → sind",
-          "du sein → bist",
-          "du sein → sind",
-          "ich sein → bin",
-          "ich sein → bist"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez toutes les associations correctes.",
-          "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
-          "en": "Select all correct pairs."
-        }
+          "fr": "Conjuguez wissen au présent.",
+          "de": "Konjugieren Sie wissen im Präsens.",
+          "ar": "صرّف wissen في المضارع.",
+          "en": "Conjugate wissen in the present tense."
+        },
+        "sentence": "___ ihr schon die Adresse? (wissen)",
+        "blanks": 1
       }
     ]
   },
@@ -1032,63 +974,53 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 7,
     "title": {
-      "fr": "Les goûts",
+      "fr": "Goûts et préférences",
       "de": "Mögen",
-      "ar": "التفضيلات",
-      "en": "Likes"
+      "ar": "الأذواق والتفضيلات",
+      "en": "Likes and preferences"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-03-ubung-07-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec mögen. — Ich ___ Kaffee.",
-          "de": "Ergänzen Sie mögen. — Ich ___ Kaffee.",
-          "ar": "أكمل باستعمال mögen. — Ich ___ Kaffee.",
-          "en": "Complete with mögen. — Ich ___ Kaffee."
+          "fr": "Conjuguez mögen au présent.",
+          "de": "Konjugieren Sie mögen im Präsens.",
+          "ar": "صرّف mögen في المضارع.",
+          "en": "Conjugate mögen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "hat",
-          "weiß",
-          "mag",
-          "möchte"
-        ]
+        "sentence": "Ich ___ Kaffee.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-07-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec mögen. — Meine Freundin ___ keine Kartoffeln.",
-          "de": "Ergänzen Sie mögen. — Meine Freundin ___ keine Kartoffeln.",
-          "ar": "أكمل باستعمال mögen. — Meine Freundin ___ keine Kartoffeln.",
-          "en": "Complete with mögen. — Meine Freundin ___ keine Kartoffeln."
+          "fr": "Conjuguez mögen au présent.",
+          "de": "Konjugieren Sie mögen im Präsens.",
+          "ar": "صرّف mögen في المضارع.",
+          "en": "Conjugate mögen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "weiß",
-          "haben",
-          "ist",
-          "mag"
-        ]
+        "sentence": "Meine Freundin ___ keine Kartoffeln.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-07-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec mögen.",
-          "de": "Ergänzen Sie mögen.",
-          "ar": "أكمل باستعمال mögen.",
-          "en": "Complete with mögen."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Mein Freund mag keinen Käse."
       },
@@ -1121,50 +1053,40 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-03-ubung-07-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec mögen. — Du ___ Tee.",
-          "de": "Ergänzen Sie mögen. — Du ___ Tee.",
-          "ar": "أكمل باستعمال mögen. — Du ___ Tee.",
-          "en": "Complete with mögen. — Du ___ Tee."
+          "fr": "Conjuguez mögen au présent.",
+          "de": "Konjugieren Sie mögen im Präsens.",
+          "ar": "صرّف mögen في المضارع.",
+          "en": "Conjugate mögen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "tut",
-          "magst",
-          "haben",
-          "weißt"
-        ]
+        "sentence": "Du ___ Tee.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-07-q07",
         "position": 7,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec mögen. — Ihr ___ Schokolade.",
-          "de": "Ergänzen Sie mögen. — Ihr ___ Schokolade.",
-          "ar": "أكمل باستعمال mögen. — Ihr ___ Schokolade.",
-          "en": "Complete with mögen. — Ihr ___ Schokolade."
+          "fr": "Conjuguez mögen au présent.",
+          "de": "Konjugieren Sie mögen im Präsens.",
+          "ar": "صرّف mögen في المضارع.",
+          "en": "Conjugate mögen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "sind",
-          "wisst",
-          "mögt",
-          "hat"
-        ]
+        "sentence": "Ihr ___ Schokolade.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-07-q08",
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec mögen.",
-          "de": "Ergänzen Sie mögen.",
-          "ar": "أكمل باستعمال mögen.",
-          "en": "Complete with mögen."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
-        "statement": "Sie (Plural) bin keinen Fisch."
+        "statement": "Sie (Plural) mag keinen Fisch."
       }
     ]
   },
@@ -1179,57 +1101,47 @@ export const meistertraining: ExerciseSetDefinition[] = [
       "en": "Knowing"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-03-ubung-08-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec wissen. — ___ Sie, wo der Bahnhof ist?",
-          "de": "Ergänzen Sie wissen. — ___ Sie, wo der Bahnhof ist?",
-          "ar": "أكمل باستعمال wissen. — ___ Sie, wo der Bahnhof ist?",
-          "en": "Complete with wissen. — ___ Sie, wo der Bahnhof ist?"
+          "fr": "Conjuguez wissen au présent.",
+          "de": "Konjugieren Sie wissen im Präsens.",
+          "ar": "صرّف wissen في المضارع.",
+          "en": "Conjugate wissen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "wissen",
-          "hast",
-          "seid",
-          "habe"
-        ]
+        "sentence": "___ Sie, wo der Bahnhof ist?",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-08-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec wissen. — Das ___ ich nicht.",
-          "de": "Ergänzen Sie wissen. — Das ___ ich nicht.",
-          "ar": "أكمل باستعمال wissen. — Das ___ ich nicht.",
-          "en": "Complete with wissen. — Das ___ ich nicht."
+          "fr": "Conjuguez wissen au présent.",
+          "de": "Konjugieren Sie wissen im Präsens.",
+          "ar": "صرّف wissen في المضارع.",
+          "en": "Conjugate wissen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "weiß",
-          "hast",
-          "mögen",
-          "haben"
-        ]
+        "sentence": "Das ___ ich nicht.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-08-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec wissen.",
-          "de": "Ergänzen Sie wissen.",
-          "ar": "أكمل باستعمال wissen.",
-          "en": "Complete with wissen."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Der Polizist weiß es bestimmt."
       },
@@ -1262,80 +1174,53 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-03-ubung-08-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec wissen. — Die Kinder ___ heute viel mehr als wir früher.",
-          "de": "Ergänzen Sie wissen. — Die Kinder ___ heute viel mehr als wir früher.",
-          "ar": "أكمل باستعمال wissen. — Die Kinder ___ heute viel mehr als wir früher.",
-          "en": "Complete with wissen. — Die Kinder ___ heute viel mehr als wir früher."
+          "fr": "Conjuguez wissen au présent.",
+          "de": "Konjugieren Sie wissen im Präsens.",
+          "ar": "صرّف wissen في المضارع.",
+          "en": "Conjugate wissen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "möchte",
-          "mögt",
-          "wissen",
-          "bin"
-        ]
+        "sentence": "Die Kinder ___ heute viel mehr als wir früher.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-08-q07",
         "position": 7,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec wissen. — ___ ihr die Antwort?",
-          "de": "Ergänzen Sie wissen. — ___ ihr die Antwort?",
-          "ar": "أكمل باستعمال wissen. — ___ ihr die Antwort?",
-          "en": "Complete with wissen. — ___ ihr die Antwort?"
+          "fr": "Conjuguez wissen au présent.",
+          "de": "Konjugieren Sie wissen im Präsens.",
+          "ar": "صرّف wissen في المضارع.",
+          "en": "Conjugate wissen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "wisst",
-          "mögt",
-          "mag",
-          "bist"
-        ]
+        "sentence": "___ ihr die Antwort?",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-08-q08",
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec wissen.",
-          "de": "Ergänzen Sie wissen.",
-          "ar": "أكمل باستعمال wissen.",
-          "en": "Complete with wissen."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Wir weiß es nicht."
       },
       {
         "id": "kapitel-03-ubung-08-association",
         "position": 9,
-        "type": "matching",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Conjuguez möchten au présent.",
+          "de": "Konjugieren Sie möchten im Präsens.",
+          "ar": "صرّف möchten في المضارع.",
+          "en": "Conjugate möchten in the present tense."
         },
-        "items": [
-          {
-            "id": "i0",
-            "label": "ich sein"
-          },
-          {
-            "id": "i1",
-            "label": "du sein"
-          },
-          {
-            "id": "i2",
-            "label": "wir sein"
-          }
-        ],
-        "options": [
-          "sind",
-          "bin",
-          "bist"
-        ]
+        "sentence": "Was ___ du bestellen? (möchten)",
+        "blanks": 1
       }
     ]
   },
@@ -1346,61 +1231,51 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "title": {
       "fr": "Faire et avoir mal",
       "de": "Tun",
-      "ar": "الفعل tun",
-      "en": "Doing and pain"
+      "ar": "الفعل tun والألم",
+      "en": "Doing and hurting"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-03-ubung-09-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec tun. — Was ___ denn weh?",
-          "de": "Ergänzen Sie tun. — Was ___ denn weh?",
-          "ar": "أكمل باستعمال tun. — Was ___ denn weh?",
-          "en": "Complete with tun. — Was ___ denn weh?"
+          "fr": "Conjuguez tun au présent.",
+          "de": "Konjugieren Sie tun im Präsens.",
+          "ar": "صرّف tun في المضارع.",
+          "en": "Conjugate tun in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "möchten",
-          "tut",
-          "mögt",
-          "weiß"
-        ]
+        "sentence": "Was ___ denn weh?",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-09-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec tun. — Meine Ohren ___ weh.",
-          "de": "Ergänzen Sie tun. — Meine Ohren ___ weh.",
-          "ar": "أكمل باستعمال tun. — Meine Ohren ___ weh.",
-          "en": "Complete with tun. — Meine Ohren ___ weh."
+          "fr": "Conjuguez tun au présent.",
+          "de": "Konjugieren Sie tun im Präsens.",
+          "ar": "صرّف tun في المضارع.",
+          "en": "Conjugate tun in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "tun",
-          "weißt",
-          "tut",
-          "mag"
-        ]
+        "sentence": "Meine Ohren ___ weh.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-09-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec tun.",
-          "de": "Ergänzen Sie tun.",
-          "ar": "أكمل باستعمال tun.",
-          "en": "Complete with tun."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Was tust du?"
       },
@@ -1433,50 +1308,40 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-03-ubung-09-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec tun. — Mein Rücken ___ weh.",
-          "de": "Ergänzen Sie tun. — Mein Rücken ___ weh.",
-          "ar": "أكمل باستعمال tun. — Mein Rücken ___ weh.",
-          "en": "Complete with tun. — Mein Rücken ___ weh."
+          "fr": "Conjuguez tun au présent.",
+          "de": "Konjugieren Sie tun im Präsens.",
+          "ar": "صرّف tun في المضارع.",
+          "en": "Conjugate tun in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "tut",
-          "habt",
-          "mögt",
-          "bist"
-        ]
+        "sentence": "Mein Rücken ___ weh.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-09-q07",
         "position": 7,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec tun. — Wir ___ unser Bestes.",
-          "de": "Ergänzen Sie tun. — Wir ___ unser Bestes.",
-          "ar": "أكمل باستعمال tun. — Wir ___ unser Bestes.",
-          "en": "Complete with tun. — Wir ___ unser Bestes."
+          "fr": "Conjuguez tun au présent.",
+          "de": "Konjugieren Sie tun im Präsens.",
+          "ar": "صرّف tun في المضارع.",
+          "en": "Conjugate tun in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "möchte",
-          "tun",
-          "wisst",
-          "tust"
-        ]
+        "sentence": "Wir ___ unser Bestes.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-09-q08",
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec tun.",
-          "de": "Ergänzen Sie tun.",
-          "ar": "أكمل باستعمال tun.",
-          "en": "Complete with tun."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
-        "statement": "Was möchtet ihr heute?"
+        "statement": "Was tue ihr heute?"
       },
       {
         "id": "kapitel-03-ubung-09-q09",
@@ -1507,21 +1372,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-03-ubung-09-multi",
         "position": 11,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "ich sein → bist",
-          "du sein → bist",
-          "du sein → sind",
-          "ich sein → bin",
-          "wir sein → sind"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez toutes les associations correctes.",
-          "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
-          "en": "Select all correct pairs."
-        }
+          "fr": "Conjuguez möchten au présent.",
+          "de": "Konjugieren Sie möchten im Präsens.",
+          "ar": "صرّف möchten في المضارع.",
+          "en": "Conjugate möchten in the present tense."
+        },
+        "sentence": "Wir ___ einen neuen Termin vereinbaren. (möchten)",
+        "blanks": 1
       }
     ]
   },
@@ -1530,63 +1389,53 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 10,
     "title": {
-      "fr": "Synthèse",
+      "fr": "Test de maîtrise",
       "de": "Abschlusstest",
-      "ar": "اختبار شامل",
-      "en": "Final review"
+      "ar": "اختبار الإتقان",
+      "en": "Mastery test"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-03-ubung-10-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sein. — Heute ___ ich krank.",
-          "de": "Ergänzen Sie sein. — Heute ___ ich krank.",
-          "ar": "أكمل باستعمال sein. — Heute ___ ich krank.",
-          "en": "Complete with sein. — Heute ___ ich krank."
+          "fr": "Conjuguez sein au présent.",
+          "de": "Konjugieren Sie sein im Präsens.",
+          "ar": "صرّف sein في المضارع.",
+          "en": "Conjugate sein in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "haben",
-          "habt",
-          "bin",
-          "mögen"
-        ]
+        "sentence": "Heute ___ ich krank.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-10-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec haben. — ___ du einen Termin?",
-          "de": "Ergänzen Sie haben. — ___ du einen Termin?",
-          "ar": "أكمل باستعمال haben. — ___ du einen Termin?",
-          "en": "Complete with haben. — ___ du einen Termin?"
+          "fr": "Conjuguez haben au présent.",
+          "de": "Konjugieren Sie haben im Präsens.",
+          "ar": "صرّف haben في المضارع.",
+          "en": "Conjugate haben in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "möchtest",
-          "wisst",
-          "wissen",
-          "hast"
-        ]
+        "sentence": "___ du einen Termin?",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-10-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec möchten.",
-          "de": "Ergänzen Sie möchten.",
-          "ar": "أكمل باستعمال möchten.",
-          "en": "Complete with möchten."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Er möchte einen Tee bestellen."
       },
@@ -1619,50 +1468,40 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-03-ubung-10-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec tun. — Meine Füße ___ weh.",
-          "de": "Ergänzen Sie tun. — Meine Füße ___ weh.",
-          "ar": "أكمل باستعمال tun. — Meine Füße ___ weh.",
-          "en": "Complete with tun. — Meine Füße ___ weh."
+          "fr": "Conjuguez tun au présent.",
+          "de": "Konjugieren Sie tun im Präsens.",
+          "ar": "صرّف tun في المضارع.",
+          "en": "Conjugate tun in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "weiß",
-          "ist",
-          "weißt",
-          "tun"
-        ]
+        "sentence": "Meine Füße ___ weh.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-10-q07",
         "position": 7,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sein. — Ihr ___ sehr nett.",
-          "de": "Ergänzen Sie sein. — Ihr ___ sehr nett.",
-          "ar": "أكمل باستعمال sein. — Ihr ___ sehr nett.",
-          "en": "Complete with sein. — Ihr ___ sehr nett."
+          "fr": "Conjuguez sein au présent.",
+          "de": "Konjugieren Sie sein im Präsens.",
+          "ar": "صرّف sein في المضارع.",
+          "en": "Conjugate sein in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "hast",
-          "habt",
-          "weiß",
-          "seid"
-        ]
+        "sentence": "Ihr ___ sehr nett.",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-10-q08",
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez avec haben.",
-          "de": "Ergänzen Sie haben.",
-          "ar": "أكمل باستعمال haben.",
-          "en": "Complete with haben."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
-        "statement": "Sie (Plural) weiß keine Zeit."
+        "statement": "Sie (Plural) habe keine Zeit."
       },
       {
         "id": "kapitel-03-ubung-10-q09",

@@ -107,21 +107,27 @@ export const chapter21AnswerKey: AnswerKey = {
     }
   },
   "kapitel-21-ubung-02-q04": {
-    "acceptedAnswers": "meinem",
+    "acceptedAnswers": [
+      "meinem",
+      "meinem"
+    ],
     "explanation": {
-      "fr": "Ich schreibe meinem Vater eine E-Mail. — meinem est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Ich schreibe meinem Vater eine E-Mail. — meinem steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Ich schreibe meinem Vater eine E-Mail. — الضمير meinem في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Ich schreibe meinem Vater eine E-Mail. — meinem is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich schreibe meinem Vater eine E-Mail und schicke meinem Bruder ein Foto. (mein) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Ich schreibe meinem Vater eine E-Mail und schicke meinem Bruder ein Foto. (mein) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Ich schreibe meinem Vater eine E-Mail und schicke meinem Bruder ein Foto. (mein) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Ich schreibe meinem Vater eine E-Mail und schicke meinem Bruder ein Foto. (mein) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-02-q05": {
-    "acceptedAnswers": "meine",
+    "acceptedAnswers": [
+      "meine",
+      "meinen"
+    ],
     "explanation": {
-      "fr": "Ich liebe meine Familie. — meine est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Ich liebe meine Familie. — meine steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Ich liebe meine Familie. — الضمير meine في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Ich liebe meine Familie. — meine is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich liebe meine Familie und kaufe meinen Kindern Süßigkeiten. (mein) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Ich liebe meine Familie und kaufe meinen Kindern Süßigkeiten. (mein) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Ich liebe meine Familie und kaufe meinen Kindern Süßigkeiten. (mein) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Ich liebe meine Familie und kaufe meinen Kindern Süßigkeiten. (mein) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-02-q06": {
@@ -137,22 +143,27 @@ export const chapter21AnswerKey: AnswerKey = {
   },
   "kapitel-21-ubung-03-q01": {
     "acceptedAnswers": [
-      "Die"
+      "Nominativ",
+      "Akkusativ",
+      "Dativ"
     ],
     "explanation": {
-      "fr": "Die Sonne scheint. (Artikel: der/die/das) — Die est la forme du complément ou du sujet au Nominativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Sonne scheint. (Artikel: der/die/das) — Die steht im Nominativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Sonne scheint. (Artikel: der/die/das) — الضمير Die في حالة Nominativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Sonne scheint. (Artikel: der/die/das) — Die is the Nominativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Der Mann in „Der Mann lacht.“ → Nominativ / den Saft in „Er trinkt den Saft.“ → Akkusativ / der Frau in „Er schenkt der Frau Blumen.“ → Dativ — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Der Mann in „Der Mann lacht.“ → Nominativ / den Saft in „Er trinkt den Saft.“ → Akkusativ / der Frau in „Er schenkt der Frau Blumen.“ → Dativ — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Der Mann in „Der Mann lacht.“ → Nominativ / den Saft in „Er trinkt den Saft.“ → Akkusativ / der Frau in „Er schenkt der Frau Blumen.“ → Dativ — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Der Mann in „Der Mann lacht.“ → Nominativ / den Saft in „Er trinkt den Saft.“ → Akkusativ / der Frau in „Er schenkt der Frau Blumen.“ → Dativ — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-03-q02": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "Das Kind lacht.",
+      "Der Kellner serviert den Gästen Getränke."
+    ],
     "explanation": {
-      "fr": "Der Mann lacht. (Artikel: der/die/das) — Der est la forme du complément ou du sujet au Nominativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Mann lacht. (Artikel: der/die/das) — Der steht im Nominativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Mann lacht. (Artikel: der/die/das) — الضمير Der في حالة Nominativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Mann lacht. (Artikel: der/die/das) — Der is the Nominativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Das Kind lacht. / Der Kellner serviert den Gästen Getränke. — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Das Kind lacht. / Der Kellner serviert den Gästen Getränke. — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Das Kind lacht. / Der Kellner serviert den Gästen Getränke. — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Das Kind lacht. / Der Kellner serviert den Gästen Getränke. — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-03-q03": {
@@ -167,10 +178,10 @@ export const chapter21AnswerKey: AnswerKey = {
   "kapitel-21-ubung-03-q04": {
     "acceptedAnswers": "den",
     "explanation": {
-      "fr": "Wir besuchen den Lehrer. (Artikel: der/die/das) — den est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Wir besuchen den Lehrer. (Artikel: der/die/das) — den steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Wir besuchen den Lehrer. (Artikel: der/die/das) — الضمير den في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Wir besuchen den Lehrer. (Artikel: der/die/das) — den is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Wir besuchen den Lehrer. (Artikel: der/die/das, Singular) — den est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
+      "de": "Wir besuchen den Lehrer. (Artikel: der/die/das, Singular) — den steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
+      "ar": "Wir besuchen den Lehrer. (Artikel: der/die/das, Singular) — الضمير den في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
+      "en": "Wir besuchen den Lehrer. (Artikel: der/die/das, Singular) — den is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
     }
   },
   "kapitel-21-ubung-03-q05": {
@@ -213,13 +224,14 @@ export const chapter21AnswerKey: AnswerKey = {
   },
   "kapitel-21-ubung-04-q04": {
     "acceptedAnswers": [
+      "der",
       "eine"
     ],
     "explanation": {
-      "fr": "Er schenkt der Mutter eine Flasche Parfüm. (Artikel: ein) — eine est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Er schenkt der Mutter eine Flasche Parfüm. (Artikel: ein) — eine steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Er schenkt der Mutter eine Flasche Parfüm. (Artikel: ein) — الضمير eine في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Er schenkt der Mutter eine Flasche Parfüm. (Artikel: ein) — eine is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Der Weihnachtsmann schenkt der Mutter eine Flasche Parfüm. (bestimmt/ein) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Der Weihnachtsmann schenkt der Mutter eine Flasche Parfüm. (bestimmt/ein) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Der Weihnachtsmann schenkt der Mutter eine Flasche Parfüm. (bestimmt/ein) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Der Weihnachtsmann schenkt der Mutter eine Flasche Parfüm. (bestimmt/ein) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-04-q05": {
@@ -232,30 +244,36 @@ export const chapter21AnswerKey: AnswerKey = {
     }
   },
   "kapitel-21-ubung-04-q06": {
-    "acceptedAnswers": "den",
+    "acceptedAnswers": [
+      "den",
+      "die"
+    ],
     "explanation": {
-      "fr": "Die Kinder zeigen den Großeltern die Geschenke. (Artikel: der/die/das) — den est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Kinder zeigen den Großeltern die Geschenke. (Artikel: der/die/das) — den steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Kinder zeigen den Großeltern die Geschenke. (Artikel: der/die/das) — الضمير den في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Kinder zeigen den Großeltern die Geschenke. (Artikel: der/die/das) — den is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Kinder zeigen den Großeltern die neuen Geschenke. (bestimmt) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Die Kinder zeigen den Großeltern die neuen Geschenke. (bestimmt) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Die Kinder zeigen den Großeltern die neuen Geschenke. (bestimmt) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Die Kinder zeigen den Großeltern die neuen Geschenke. (bestimmt) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-05-q01": {
-    "acceptedAnswers": "meinem",
+    "acceptedAnswers": [
+      "meinem",
+      "einen"
+    ],
     "explanation": {
-      "fr": "Ich schenke meinem Vater einen Fernseher. — meinem est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Ich schenke meinem Vater einen Fernseher. — meinem steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Ich schenke meinem Vater einen Fernseher. — الضمير meinem في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Ich schenke meinem Vater einen Fernseher. — meinem is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich schenke meinem Vater einen Fernseher. (mein/ein) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Ich schenke meinem Vater einen Fernseher. (mein/ein) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Ich schenke meinem Vater einen Fernseher. (mein/ein) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Ich schenke meinem Vater einen Fernseher. (mein/ein) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-05-q02": {
     "acceptedAnswers": "den",
     "explanation": {
-      "fr": "Er findet den Fernseher super. (Artikel: der/die/das) — den est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Er findet den Fernseher super. (Artikel: der/die/das) — den steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Er findet den Fernseher super. (Artikel: der/die/das) — الضمير den في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Er findet den Fernseher super. (Artikel: der/die/das) — den is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Er findet den Fernseher super. (Artikel: der/die/das, Singular) — den est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
+      "de": "Er findet den Fernseher super. (Artikel: der/die/das, Singular) — den steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
+      "ar": "Er findet den Fernseher super. (Artikel: der/die/das, Singular) — الضمير den في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
+      "en": "Er findet den Fernseher super. (Artikel: der/die/das, Singular) — den is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
     }
   },
   "kapitel-21-ubung-05-q03": {
@@ -263,10 +281,10 @@ export const chapter21AnswerKey: AnswerKey = {
       "meinem"
     ],
     "explanation": {
-      "fr": "Meine Schwester gibt meinem Vater ihr Foto. — meinem est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Meine Schwester gibt meinem Vater ihr Foto. — meinem steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Meine Schwester gibt meinem Vater ihr Foto. — الضمير meinem في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Meine Schwester gibt meinem Vater ihr Foto. — meinem is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Meine Schwester gibt meinem Vater ihr Foto. (mein) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Meine Schwester gibt meinem Vater ihr Foto. (mein) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Meine Schwester gibt meinem Vater ihr Foto. (mein) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Meine Schwester gibt meinem Vater ihr Foto. (mein) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-05-q04": {
@@ -301,10 +319,10 @@ export const chapter21AnswerKey: AnswerKey = {
       "meinen"
     ],
     "explanation": {
-      "fr": "Meine Mutter holt meinen Vater ab. — meinen est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Meine Mutter holt meinen Vater ab. — meinen steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Meine Mutter holt meinen Vater ab. — الضمير meinen في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Meine Mutter holt meinen Vater ab. — meinen is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Meine Mutter holt meinen Vater im Restaurant ab. (mein) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Meine Mutter holt meinen Vater im Restaurant ab. (mein) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Meine Mutter holt meinen Vater im Restaurant ab. (mein) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Meine Mutter holt meinen Vater im Restaurant ab. (mein) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-21-ubung-06-q01": {
@@ -339,10 +357,10 @@ export const chapter21AnswerKey: AnswerKey = {
   "kapitel-21-ubung-06-q04": {
     "acceptedAnswers": "Ihnen",
     "explanation": {
-      "fr": "Die Verkäuferin sagt zu mir: Ich zeige Ihnen die Uhren. — Ihnen est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Verkäuferin sagt zu mir: Ich zeige Ihnen die Uhren. — Ihnen steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Verkäuferin sagt zu mir: Ich zeige Ihnen die Uhren. — الضمير Ihnen في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Verkäuferin sagt zu mir: Ich zeige Ihnen die Uhren. — Ihnen is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Verkäuferin sagt zu mir: Ich zeige Ihnen die Uhren. (höflich) — Le pronom reprend le référent et son cas : ihm/ihr/ihnen au datif, ihn/sie/es à l’accusatif. Si les deux objets sont des pronoms, l’accusatif précède normalement le datif.",
+      "de": "Die Verkäuferin sagt zu mir: Ich zeige Ihnen die Uhren. (höflich) — Das Pronomen richtet sich nach Bezug und Kasus: ihm/ihr/ihnen im Dativ, ihn/sie/es im Akkusativ. Zwei Objektpronomen: normalerweise Akkusativ vor Dativ.",
+      "ar": "Die Verkäuferin sagt zu mir: Ich zeige Ihnen die Uhren. (höflich) — يتبع الضمير مرجعه وحالته: ihm/ihr/ihnen في الداتيف وihn/sie/es في الأكوزاتيف. إذا كان المفعولان ضميرين يسبق الأكوزاتيف الداتيف عادة.",
+      "en": "Die Verkäuferin sagt zu mir: Ich zeige Ihnen die Uhren. (höflich) — The pronoun agrees with its referent and case: ihm/ihr/ihnen in dative, ihn/sie/es in accusative. With two object pronouns, accusative normally comes first."
     }
   },
   "kapitel-21-ubung-06-q05": {
@@ -367,13 +385,14 @@ export const chapter21AnswerKey: AnswerKey = {
   },
   "kapitel-21-ubung-07-q01": {
     "acceptedAnswers": [
-      "einem"
+      "einem",
+      "einen"
     ],
     "explanation": {
-      "fr": "Ich gebe einem Kind einen Stift. (ein) — einem est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Ich gebe einem Kind einen Stift. (ein) — einem steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Ich gebe einem Kind einen Stift. (ein) — الضمير einem في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Ich gebe einem Kind einen Stift. (ein) — einem is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich gebe einem Kind einen Stift. (ein/ein) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Ich gebe einem Kind einen Stift. (ein/ein) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Ich gebe einem Kind einen Stift. (ein/ein) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Ich gebe einem Kind einen Stift. (ein/ein) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-07-q02": {
@@ -386,21 +405,27 @@ export const chapter21AnswerKey: AnswerKey = {
     }
   },
   "kapitel-21-ubung-07-q03": {
-    "acceptedAnswers": "seiner",
+    "acceptedAnswers": [
+      "seiner",
+      "die"
+    ],
     "explanation": {
-      "fr": "Er bringt seiner Mutter Blumen. (sein) — seiner est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Er bringt seiner Mutter Blumen. (sein) — seiner steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Er bringt seiner Mutter Blumen. (sein) — الضمير seiner في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Er bringt seiner Mutter Blumen. (sein) — seiner is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Er bringt seiner Mutter die Blumen. (sein/bestimmt) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Er bringt seiner Mutter die Blumen. (sein/bestimmt) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Er bringt seiner Mutter die Blumen. (sein/bestimmt) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Er bringt seiner Mutter die Blumen. (sein/bestimmt) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-07-q04": {
-    "acceptedAnswers": "unseren",
+    "acceptedAnswers": [
+      "unseren",
+      "die"
+    ],
     "explanation": {
-      "fr": "Wir schenken unseren Freunden Bücher. (unser) — unseren est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Wir schenken unseren Freunden Bücher. (unser) — unseren steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Wir schenken unseren Freunden Bücher. (unser) — الضمير unseren في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Wir schenken unseren Freunden Bücher. (unser) — unseren is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Wir schenken unseren Freunden die Bücher. (unser/bestimmt) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Wir schenken unseren Freunden die Bücher. (unser/bestimmt) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Wir schenken unseren Freunden die Bücher. (unser/bestimmt) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Wir schenken unseren Freunden die Bücher. (unser/bestimmt) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-07-q05": {
@@ -415,30 +440,36 @@ export const chapter21AnswerKey: AnswerKey = {
     }
   },
   "kapitel-21-ubung-08-q01": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "es",
+      "ihm"
+    ],
     "explanation": {
-      "fr": "Paul braucht das Buch. Ich gebe ihm das Buch. — ihm est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Paul braucht das Buch. Ich gebe ihm das Buch. — ihm steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Paul braucht das Buch. Ich gebe ihm das Buch. — الضمير ihm في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Paul braucht das Buch. Ich gebe ihm das Buch. — ihm is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Paul braucht das Buch. Ich gebe es ihm sofort. (das Buch/Paul; Akk. vor Dat.) — Le pronom reprend le référent et son cas : ihm/ihr/ihnen au datif, ihn/sie/es à l’accusatif. Si les deux objets sont des pronoms, l’accusatif précède normalement le datif.",
+      "de": "Paul braucht das Buch. Ich gebe es ihm sofort. (das Buch/Paul; Akk. vor Dat.) — Das Pronomen richtet sich nach Bezug und Kasus: ihm/ihr/ihnen im Dativ, ihn/sie/es im Akkusativ. Zwei Objektpronomen: normalerweise Akkusativ vor Dativ.",
+      "ar": "Paul braucht das Buch. Ich gebe es ihm sofort. (das Buch/Paul; Akk. vor Dat.) — يتبع الضمير مرجعه وحالته: ihm/ihr/ihnen في الداتيف وihn/sie/es في الأكوزاتيف. إذا كان المفعولان ضميرين يسبق الأكوزاتيف الداتيف عادة.",
+      "en": "Paul braucht das Buch. Ich gebe es ihm sofort. (das Buch/Paul; Akk. vor Dat.) — The pronoun agrees with its referent and case: ihm/ihr/ihnen in dative, ihn/sie/es in accusative. With two object pronouns, accusative normally comes first."
     }
   },
   "kapitel-21-ubung-08-q02": {
-    "acceptedAnswers": "es",
+    "acceptedAnswers": "Ich gebe es ihr.",
     "explanation": {
-      "fr": "Das Buch liegt hier. Ich gebe es Paul. — es est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Das Buch liegt hier. Ich gebe es Paul. — es steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Das Buch liegt hier. Ich gebe es Paul. — الضمير es في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Das Buch liegt hier. Ich gebe es Paul. — es is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ich gebe es ihr. — Le pronom reprend le référent et son cas : ihm/ihr/ihnen au datif, ihn/sie/es à l’accusatif. Si les deux objets sont des pronoms, l’accusatif précède normalement le datif.",
+      "de": "Ich gebe es ihr. — Das Pronomen richtet sich nach Bezug und Kasus: ihm/ihr/ihnen im Dativ, ihn/sie/es im Akkusativ. Zwei Objektpronomen: normalerweise Akkusativ vor Dativ.",
+      "ar": "Ich gebe es ihr. — يتبع الضمير مرجعه وحالته: ihm/ihr/ihnen في الداتيف وihn/sie/es في الأكوزاتيف. إذا كان المفعولان ضميرين يسبق الأكوزاتيف الداتيف عادة.",
+      "en": "Ich gebe es ihr. — The pronoun agrees with its referent and case: ihm/ihr/ihnen in dative, ihn/sie/es in accusative. With two object pronouns, accusative normally comes first."
     }
   },
   "kapitel-21-ubung-08-q03": {
-    "acceptedAnswers": "ihr",
+    "acceptedAnswers": [
+      "ihn",
+      "ihr"
+    ],
     "explanation": {
-      "fr": "Anna braucht den Stift. Ich gebe ihr den Stift. — ihr est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Anna braucht den Stift. Ich gebe ihr den Stift. — ihr steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Anna braucht den Stift. Ich gebe ihr den Stift. — الضمير ihr في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Anna braucht den Stift. Ich gebe ihr den Stift. — ihr is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Anna braucht den Stift. Ich gebe ihn ihr gleich. (den Stift/Anna; Akk. vor Dat.) — Le pronom reprend le référent et son cas : ihm/ihr/ihnen au datif, ihn/sie/es à l’accusatif. Si les deux objets sont des pronoms, l’accusatif précède normalement le datif.",
+      "de": "Anna braucht den Stift. Ich gebe ihn ihr gleich. (den Stift/Anna; Akk. vor Dat.) — Das Pronomen richtet sich nach Bezug und Kasus: ihm/ihr/ihnen im Dativ, ihn/sie/es im Akkusativ. Zwei Objektpronomen: normalerweise Akkusativ vor Dativ.",
+      "ar": "Anna braucht den Stift. Ich gebe ihn ihr gleich. (den Stift/Anna; Akk. vor Dat.) — يتبع الضمير مرجعه وحالته: ihm/ihr/ihnen في الداتيف وihn/sie/es في الأكوزاتيف. إذا كان المفعولان ضميرين يسبق الأكوزاتيف الداتيف عادة.",
+      "en": "Anna braucht den Stift. Ich gebe ihn ihr gleich. (den Stift/Anna; Akk. vor Dat.) — The pronoun agrees with its referent and case: ihm/ihr/ihnen in dative, ihn/sie/es in accusative. With two object pronouns, accusative normally comes first."
     }
   },
   "kapitel-21-ubung-08-q04": {
@@ -491,23 +522,29 @@ export const chapter21AnswerKey: AnswerKey = {
     }
   },
   "kapitel-21-ubung-10-q01": {
-    "acceptedAnswers": "Den",
+    "acceptedAnswers": [
+      "Den",
+      "der",
+      "den"
+    ],
     "explanation": {
-      "fr": "Den Gästen bringt der Kellner Tee. (Artikel: der/die/das) — Den est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Den Gästen bringt der Kellner Tee. (Artikel: der/die/das) — Den steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Den Gästen bringt der Kellner Tee. (Artikel: der/die/das) — الضمير Den في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Den Gästen bringt der Kellner Tee. (Artikel: der/die/das) — Den is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Den Gästen bringt der Kellner den Tee. (bestimmt) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Den Gästen bringt der Kellner den Tee. (bestimmt) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Den Gästen bringt der Kellner den Tee. (bestimmt) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Den Gästen bringt der Kellner den Tee. (bestimmt) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-10-q02": {
     "acceptedAnswers": [
-      "der"
+      "Den",
+      "der",
+      "den"
     ],
     "explanation": {
-      "fr": "Den Tee bringt der Kellner den Gästen. (Artikel: der/die/das) — der est la forme du complément ou du sujet au Nominativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Den Tee bringt der Kellner den Gästen. (Artikel: der/die/das) — der steht im Nominativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Den Tee bringt der Kellner den Gästen. (Artikel: der/die/das) — الضمير der في حالة Nominativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Den Tee bringt der Kellner den Gästen. (Artikel: der/die/das) — der is the Nominativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Den Tee bringt der Kellner den Gästen. (bestimmt; Tee = Objekt) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Den Tee bringt der Kellner den Gästen. (bestimmt; Tee = Objekt) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Den Tee bringt der Kellner den Gästen. (bestimmt; Tee = Objekt) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Den Tee bringt der Kellner den Gästen. (bestimmt; Tee = Objekt) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-10-q03": {
@@ -520,126 +557,158 @@ export const chapter21AnswerKey: AnswerKey = {
     }
   },
   "kapitel-21-ubung-10-q04": {
-    "acceptedAnswers": "den",
+    "acceptedAnswers": [
+      "Die Mutter zeigt den Kindern das Foto.",
+      "Die Kinder zeigen der Mutter die Fotos."
+    ],
     "explanation": {
-      "fr": "Die Mutter zeigt den Kindern das Foto. (Artikel: der/die/das) — den est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Mutter zeigt den Kindern das Foto. (Artikel: der/die/das) — den steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Mutter zeigt den Kindern das Foto. (Artikel: der/die/das) — الضمير den في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Mutter zeigt den Kindern das Foto. (Artikel: der/die/das) — den is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Mutter zeigt den Kindern das Foto. / Die Kinder zeigen der Mutter die Fotos. — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Die Mutter zeigt den Kindern das Foto. / Die Kinder zeigen der Mutter die Fotos. — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Die Mutter zeigt den Kindern das Foto. / Die Kinder zeigen der Mutter die Fotos. — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Die Mutter zeigt den Kindern das Foto. / Die Kinder zeigen der Mutter die Fotos. — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-11-q01": {
     "acceptedAnswers": [
-      "dem"
+      "dem",
+      "die"
     ],
     "explanation": {
-      "fr": "Die Apothekerin erklärt dem Patienten die Anwendung. (Artikel: der/die/das) — dem est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Apothekerin erklärt dem Patienten die Anwendung. (Artikel: der/die/das) — dem steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Apothekerin erklärt dem Patienten die Anwendung. (Artikel: der/die/das) — الضمير dem في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Apothekerin erklärt dem Patienten die Anwendung. (Artikel: der/die/das) — dem is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Im Reisebüro zeigt die Beraterin dem Paar die Angebote. (bestimmt) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Im Reisebüro zeigt die Beraterin dem Paar die Angebote. (bestimmt) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Im Reisebüro zeigt die Beraterin dem Paar die Angebote. (bestimmt) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Im Reisebüro zeigt die Beraterin dem Paar die Angebote. (bestimmt) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-11-q02": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "ihm",
+      "ein"
+    ],
     "explanation": {
-      "fr": "Sie gibt dem Patienten den Beipackzettel. (Artikel: der/die/das) — den est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Sie gibt dem Patienten den Beipackzettel. (Artikel: der/die/das) — den steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Sie gibt dem Patienten den Beipackzettel. (Artikel: der/die/das) — الضمير den في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Sie gibt dem Patienten den Beipackzettel. (Artikel: der/die/das) — den is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Das Paar wählt ein Hotel. Die Beraterin empfiehlt ihm ein Hotel am Meer. (dem Paar/ein) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Das Paar wählt ein Hotel. Die Beraterin empfiehlt ihm ein Hotel am Meer. (dem Paar/ein) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Das Paar wählt ein Hotel. Die Beraterin empfiehlt ihm ein Hotel am Meer. (dem Paar/ein) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Das Paar wählt ein Hotel. Die Beraterin empfiehlt ihm ein Hotel am Meer. (dem Paar/ein) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-11-q03": {
-    "acceptedAnswers": "ihr",
+    "acceptedAnswers": [
+      "Sie schickt dem Paar die Bestätigung.",
+      "Sie schickt sie dem Paar."
+    ],
     "explanation": {
-      "fr": "Die Kundin wartet. Sie zeigt ihr das Produkt. — ihr est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Kundin wartet. Sie zeigt ihr das Produkt. — ihr steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Kundin wartet. Sie zeigt ihr das Produkt. — الضمير ihr في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Kundin wartet. Sie zeigt ihr das Produkt. — ihr is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Sie schickt dem Paar die Bestätigung. / Sie schickt sie dem Paar. — Le pronom reprend le référent et son cas : ihm/ihr/ihnen au datif, ihn/sie/es à l’accusatif. Si les deux objets sont des pronoms, l’accusatif précède normalement le datif.",
+      "de": "Sie schickt dem Paar die Bestätigung. / Sie schickt sie dem Paar. — Das Pronomen richtet sich nach Bezug und Kasus: ihm/ihr/ihnen im Dativ, ihn/sie/es im Akkusativ. Zwei Objektpronomen: normalerweise Akkusativ vor Dativ.",
+      "ar": "Sie schickt dem Paar die Bestätigung. / Sie schickt sie dem Paar. — يتبع الضمير مرجعه وحالته: ihm/ihr/ihnen في الداتيف وihn/sie/es في الأكوزاتيف. إذا كان المفعولان ضميرين يسبق الأكوزاتيف الداتيف عادة.",
+      "en": "Sie schickt dem Paar die Bestätigung. / Sie schickt sie dem Paar. — The pronoun agrees with its referent and case: ihm/ihr/ihnen in dative, ihn/sie/es in accusative. With two object pronouns, accusative normally comes first."
     }
   },
   "kapitel-21-ubung-11-q04": {
-    "acceptedAnswers": "Ihnen",
+    "acceptedAnswers": [
+      "Am Nachmittag",
+      "schickt",
+      "sie ihnen die Tickets."
+    ],
     "explanation": {
-      "fr": "Herr Weber, ich erkläre Ihnen die Anwendung. — Ihnen est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Herr Weber, ich erkläre Ihnen die Anwendung. — Ihnen steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Herr Weber, ich erkläre Ihnen die Anwendung. — الضمير Ihnen في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Herr Weber, ich erkläre Ihnen die Anwendung. — Ihnen is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Am Nachmittag schickt sie ihnen die Tickets. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Am Nachmittag schickt sie ihnen die Tickets. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Am Nachmittag schickt sie ihnen die Tickets. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Am Nachmittag schickt sie ihnen die Tickets. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-21-ubung-12-q01": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "den",
+      "die"
+    ],
     "explanation": {
-      "fr": "Der Mitarbeiter zeigt den Gästen das Zimmer. (Artikel: der/die/das) — den est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Mitarbeiter zeigt den Gästen das Zimmer. (Artikel: der/die/das) — den steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Mitarbeiter zeigt den Gästen das Zimmer. (Artikel: der/die/das) — الضمير den في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Mitarbeiter zeigt den Gästen das Zimmer. (Artikel: der/die/das) — den is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "In der Schule leiht die Lehrerin den Schülern die Bücher. (bestimmt) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "In der Schule leiht die Lehrerin den Schülern die Bücher. (bestimmt) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "In der Schule leiht die Lehrerin den Schülern die Bücher. (bestimmt) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "In der Schule leiht die Lehrerin den Schülern die Bücher. (bestimmt) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-12-q02": {
-    "acceptedAnswers": "den",
+    "acceptedAnswers": [
+      "ihn",
+      "ihm"
+    ],
     "explanation": {
-      "fr": "Er bringt dem Gast den Schlüssel. (Artikel: der/die/das) — den est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Er bringt dem Gast den Schlüssel. (Artikel: der/die/das) — den steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Er bringt dem Gast den Schlüssel. (Artikel: der/die/das) — الضمير den في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Er bringt dem Gast den Schlüssel. (Artikel: der/die/das) — den is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Ein Schüler braucht einen Stift. Sein Nachbar leiht ihn ihm . (den Stift/dem Schüler; Akk. vor Dat.) — Le pronom reprend le référent et son cas : ihm/ihr/ihnen au datif, ihn/sie/es à l’accusatif. Si les deux objets sont des pronoms, l’accusatif précède normalement le datif.",
+      "de": "Ein Schüler braucht einen Stift. Sein Nachbar leiht ihn ihm . (den Stift/dem Schüler; Akk. vor Dat.) — Das Pronomen richtet sich nach Bezug und Kasus: ihm/ihr/ihnen im Dativ, ihn/sie/es im Akkusativ. Zwei Objektpronomen: normalerweise Akkusativ vor Dativ.",
+      "ar": "Ein Schüler braucht einen Stift. Sein Nachbar leiht ihn ihm . (den Stift/dem Schüler; Akk. vor Dat.) — يتبع الضمير مرجعه وحالته: ihm/ihr/ihnen في الداتيف وihn/sie/es في الأكوزاتيف. إذا كان المفعولان ضميرين يسبق الأكوزاتيف الداتيف عادة.",
+      "en": "Ein Schüler braucht einen Stift. Sein Nachbar leiht ihn ihm . (den Stift/dem Schüler; Akk. vor Dat.) — The pronoun agrees with its referent and case: ihm/ihr/ihnen in dative, ihn/sie/es in accusative. With two object pronouns, accusative normally comes first."
     }
   },
   "kapitel-21-ubung-12-q03": {
-    "acceptedAnswers": "ihnen",
+    "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Die Gäste warten. Er bringt ihnen Wasser. — ihnen est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Gäste warten. Er bringt ihnen Wasser. — ihnen steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Gäste warten. Er bringt ihnen Wasser. — الضمير ihnen في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Gäste warten. Er bringt ihnen Wasser. — ihnen is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Die Schülerin zeigt dem Lehrer ihre Lösung. — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Die Schülerin zeigt dem Lehrer ihre Lösung. — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Die Schülerin zeigt dem Lehrer ihre Lösung. — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Die Schülerin zeigt dem Lehrer ihre Lösung. — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-12-q04": {
     "acceptedAnswers": [
-      "es"
+      "Der",
+      "Den",
+      "Dem"
     ],
     "explanation": {
-      "fr": "Das Zimmer ist frei. Er zeigt es den Gästen. — es est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Das Zimmer ist frei. Er zeigt es den Gästen. — es steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Das Zimmer ist frei. Er zeigt es den Gästen. — الضمير es في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Das Zimmer ist frei. Er zeigt es den Gästen. — es is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "___ Klasse erklärt der Lehrer die Regel. → Der / ___ Kindern gibt er ein Blatt. → Den / ___ Schüler zeigt er den Weg. (Singular) → Dem — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "___ Klasse erklärt der Lehrer die Regel. → Der / ___ Kindern gibt er ein Blatt. → Den / ___ Schüler zeigt er den Weg. (Singular) → Dem — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "___ Klasse erklärt der Lehrer die Regel. → Der / ___ Kindern gibt er ein Blatt. → Den / ___ Schüler zeigt er den Weg. (Singular) → Dem — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "___ Klasse erklärt der Lehrer die Regel. → Der / ___ Kindern gibt er ein Blatt. → Den / ___ Schüler zeigt er den Weg. (Singular) → Dem — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-13-q01": {
-    "acceptedAnswers": "seinem",
+    "acceptedAnswers": [
+      "der",
+      "den"
+    ],
     "explanation": {
-      "fr": "Der Chef schickt seinem Mitarbeiter eine Nachricht. (sein) — seinem est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Chef schickt seinem Mitarbeiter eine Nachricht. (sein) — seinem steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Chef schickt seinem Mitarbeiter eine Nachricht. (sein) — الضمير seinem في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Chef schickt seinem Mitarbeiter eine Nachricht. (sein) — seinem is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Im Verein überreicht die Vorsitzende der Gewinnerin den Pokal. (bestimmt) — Le destinataire est au datif et la chose donnée, montrée ou envoyée à l’accusatif. Au pluriel, le datif défini prend den.",
+      "de": "Im Verein überreicht die Vorsitzende der Gewinnerin den Pokal. (bestimmt) — Der Empfänger steht im Dativ, die gegebene, gezeigte oder geschickte Sache im Akkusativ. Im Dativ Plural steht den.",
+      "ar": "Im Verein überreicht die Vorsitzende der Gewinnerin den Pokal. (bestimmt) — المتلقي في الداتيف، والشيء المعطى أو المعروض أو المرسل في الأكوزاتيف. أداة التعريف في جمع الداتيف هي den.",
+      "en": "Im Verein überreicht die Vorsitzende der Gewinnerin den Pokal. (bestimmt) — The recipient takes dative and the thing given, shown or sent takes accusative. The definite dative plural article is den."
     }
   },
   "kapitel-21-ubung-13-q02": {
-    "acceptedAnswers": "den",
+    "acceptedAnswers": [
+      "es",
+      "ihr"
+    ],
     "explanation": {
-      "fr": "Die Mitarbeiterin zeigt ihrem Chef den Bericht. (Artikel: der/die/das) — den est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Die Mitarbeiterin zeigt ihrem Chef den Bericht. (Artikel: der/die/das) — den steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Die Mitarbeiterin zeigt ihrem Chef den Bericht. (Artikel: der/die/das) — الضمير den في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Die Mitarbeiterin zeigt ihrem Chef den Bericht. (Artikel: der/die/das) — den is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Der Fotograf macht ein Foto. Er schickt es ihr später. (das Foto/der Gewinnerin; Akk. vor Dat.) — Le pronom reprend le référent et son cas : ihm/ihr/ihnen au datif, ihn/sie/es à l’accusatif. Si les deux objets sont des pronoms, l’accusatif précède normalement le datif.",
+      "de": "Der Fotograf macht ein Foto. Er schickt es ihr später. (das Foto/der Gewinnerin; Akk. vor Dat.) — Das Pronomen richtet sich nach Bezug und Kasus: ihm/ihr/ihnen im Dativ, ihn/sie/es im Akkusativ. Zwei Objektpronomen: normalerweise Akkusativ vor Dativ.",
+      "ar": "Der Fotograf macht ein Foto. Er schickt es ihr später. (das Foto/der Gewinnerin; Akk. vor Dat.) — يتبع الضمير مرجعه وحالته: ihm/ihr/ihnen في الداتيف وihn/sie/es في الأكوزاتيف. إذا كان المفعولان ضميرين يسبق الأكوزاتيف الداتيف عادة.",
+      "en": "Der Fotograf macht ein Foto. Er schickt es ihr später. (das Foto/der Gewinnerin; Akk. vor Dat.) — The pronoun agrees with its referent and case: ihm/ihr/ihnen in dative, ihn/sie/es in accusative. With two object pronouns, accusative normally comes first."
     }
   },
   "kapitel-21-ubung-13-q03": {
     "acceptedAnswers": [
-      "ihn"
+      "Er zeigt es ihr.",
+      "Er zeigt ihr das Bild."
     ],
     "explanation": {
-      "fr": "Der Bericht ist fertig. Sie schickt ihn dem Chef. — ihn est la forme du complément ou du sujet au Akkusativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Bericht ist fertig. Sie schickt ihn dem Chef. — ihn steht im Akkusativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Bericht ist fertig. Sie schickt ihn dem Chef. — الضمير ihn في حالة Akkusativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Bericht ist fertig. Sie schickt ihn dem Chef. — ihn is the Akkusativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Er zeigt es ihr. / Er zeigt ihr das Bild. — Le pronom reprend le référent et son cas : ihm/ihr/ihnen au datif, ihn/sie/es à l’accusatif. Si les deux objets sont des pronoms, l’accusatif précède normalement le datif.",
+      "de": "Er zeigt es ihr. / Er zeigt ihr das Bild. — Das Pronomen richtet sich nach Bezug und Kasus: ihm/ihr/ihnen im Dativ, ihn/sie/es im Akkusativ. Zwei Objektpronomen: normalerweise Akkusativ vor Dativ.",
+      "ar": "Er zeigt es ihr. / Er zeigt ihr das Bild. — يتبع الضمير مرجعه وحالته: ihm/ihr/ihnen في الداتيف وihn/sie/es في الأكوزاتيف. إذا كان المفعولان ضميرين يسبق الأكوزاتيف الداتيف عادة.",
+      "en": "Er zeigt es ihr. / Er zeigt ihr das Bild. — The pronoun agrees with its referent and case: ihm/ihr/ihnen in dative, ihn/sie/es in accusative. With two object pronouns, accusative normally comes first."
     }
   },
   "kapitel-21-ubung-13-q04": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "Dem",
+      "Die"
+    ],
     "explanation": {
-      "fr": "Der Chef wartet. Sie schickt ihm den Bericht. — ihm est la forme du complément ou du sujet au Dativ. Le verbe ou la préposition détermine le cas, et le référent détermine la personne.",
-      "de": "Der Chef wartet. Sie schickt ihm den Bericht. — ihm steht im Dativ. Verb oder Präposition bestimmt den Kasus, der Bezug bestimmt die Person.",
-      "ar": "Der Chef wartet. Sie schickt ihm den Bericht. — الضمير ihm في حالة Dativ. الفعل أو حرف الجر يحدد الحالة والمرجع يحدد الشخص.",
-      "en": "Der Chef wartet. Sie schickt ihm den Bericht. — ihm is the Dativ form. The verb or preposition determines case, and the referent determines person."
+      "fr": "Dem Trainer gratuliert die Vorsitzende. Die Gewinnerin erhält eine Urkunde. (bestimmt; Trainer = Objekt) — Helfen, danken, antworten et zuhören demandent le datif ; fragen, besuchen et anrufen demandent l’accusatif.",
+      "de": "Dem Trainer gratuliert die Vorsitzende. Die Gewinnerin erhält eine Urkunde. (bestimmt; Trainer = Objekt) — Helfen, danken, antworten und zuhören verlangen Dativ; fragen, besuchen und anrufen Akkusativ.",
+      "ar": "Dem Trainer gratuliert die Vorsitzende. Die Gewinnerin erhält eine Urkunde. (bestimmt; Trainer = Objekt) — تتطلب helfen وdanken وantworten وzuhören الداتيف؛ وتتطلب fragen وbesuchen وanrufen الأكوزاتيف.",
+      "en": "Dem Trainer gratuliert die Vorsitzende. Die Gewinnerin erhält eine Urkunde. (bestimmt; Trainer = Objekt) — Helfen, danken, antworten and zuhören require dative; fragen, besuchen and anrufen require accusative."
     }
   },
   "kapitel-21-ubung-01-extra": {
@@ -659,14 +728,13 @@ export const chapter21AnswerKey: AnswerKey = {
     "acceptedAnswers": [
       "Ich",
       "gebe",
-      "es",
-      "ihm."
+      "es ihm."
     ],
     "explanation": {
-      "fr": "Le destinataire est au datif, la chose à l’accusatif. Deux pronoms : accusatif avant datif.",
-      "de": "Empfänger im Dativ, Sache im Akkusativ. Zwei Pronomen: Akkusativ vor Dativ.",
-      "ar": "المتلقي في الداتيف والشيء في الأكوزاتيف. مع ضميرين يأتي الأكوزاتيف أولا.",
-      "en": "Recipient in dative, thing in accusative. Two pronouns: accusative before dative."
+      "fr": "Ich gebe es ihm. — Le pronom reprend le référent et son cas : ihm/ihr/ihnen au datif, ihn/sie/es à l’accusatif. Si les deux objets sont des pronoms, l’accusatif précède normalement le datif.",
+      "de": "Ich gebe es ihm. — Das Pronomen richtet sich nach Bezug und Kasus: ihm/ihr/ihnen im Dativ, ihn/sie/es im Akkusativ. Zwei Objektpronomen: normalerweise Akkusativ vor Dativ.",
+      "ar": "Ich gebe es ihm. — يتبع الضمير مرجعه وحالته: ihm/ihr/ihnen في الداتيف وihn/sie/es في الأكوزاتيف. إذا كان المفعولان ضميرين يسبق الأكوزاتيف الداتيف عادة.",
+      "en": "Ich gebe es ihm. — The pronoun agrees with its referent and case: ihm/ihr/ihnen in dative, ihn/sie/es in accusative. With two object pronouns, accusative normally comes first."
     }
   },
   "kapitel-21-ubung-10-extra": {
@@ -675,10 +743,10 @@ export const chapter21AnswerKey: AnswerKey = {
       "Ich gebe ihn dem Kind."
     ],
     "explanation": {
-      "fr": "Le destinataire est au datif, la chose à l’accusatif. Deux pronoms : accusatif avant datif.",
-      "de": "Empfänger im Dativ, Sache im Akkusativ. Zwei Pronomen: Akkusativ vor Dativ.",
-      "ar": "المتلقي في الداتيف والشيء في الأكوزاتيف. مع ضميرين يأتي الأكوزاتيف أولا.",
-      "en": "Recipient in dative, thing in accusative. Two pronouns: accusative before dative."
+      "fr": "Ich gebe ihm den Ball. / Ich gebe ihn dem Kind. — Le pronom reprend le référent et son cas : ihm/ihr/ihnen au datif, ihn/sie/es à l’accusatif. Si les deux objets sont des pronoms, l’accusatif précède normalement le datif.",
+      "de": "Ich gebe ihm den Ball. / Ich gebe ihn dem Kind. — Das Pronomen richtet sich nach Bezug und Kasus: ihm/ihr/ihnen im Dativ, ihn/sie/es im Akkusativ. Zwei Objektpronomen: normalerweise Akkusativ vor Dativ.",
+      "ar": "Ich gebe ihm den Ball. / Ich gebe ihn dem Kind. — يتبع الضمير مرجعه وحالته: ihm/ihr/ihnen في الداتيف وihn/sie/es في الأكوزاتيف. إذا كان المفعولان ضميرين يسبق الأكوزاتيف الداتيف عادة.",
+      "en": "Ich gebe ihm den Ball. / Ich gebe ihn dem Kind. — The pronoun agrees with its referent and case: ihm/ihr/ihnen in dative, ihn/sie/es in accusative. With two object pronouns, accusative normally comes first."
     }
   }
 }

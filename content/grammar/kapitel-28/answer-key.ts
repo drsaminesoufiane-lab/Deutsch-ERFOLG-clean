@@ -4,82 +4,82 @@ export const chapter28AnswerKey: AnswerKey = {
   "kapitel-28-ubung-01-q01": {
     "acceptedAnswers": "Präsens",
     "explanation": {
-      "fr": "habe est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "habe steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "habe في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "habe is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Präsens — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Präsens — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Präsens — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Präsens — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-01-q02": {
     "acceptedAnswers": "Präteritum",
     "explanation": {
-      "fr": "war est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "war steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "war في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "war is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Präteritum — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Präteritum — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Präteritum — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Präteritum — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-01-q03": {
     "acceptedAnswers": "Präteritum",
     "explanation": {
-      "fr": "hatte est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "hatte steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "hatte في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "hatte is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Präteritum — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Präteritum — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Präteritum — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Präteritum — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-01-q04": {
     "acceptedAnswers": "Perfekt",
     "explanation": {
-      "fr": "bin gegangen est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "bin gegangen steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "bin gegangen في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "bin gegangen is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Perfekt — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Perfekt — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Perfekt — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Perfekt — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-01-q05": {
     "acceptedAnswers": "Präteritum",
     "explanation": {
-      "fr": "konnte est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "konnte steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "konnte في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "konnte is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Präteritum — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Präteritum — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Präteritum — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Präteritum — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-01-q06": {
     "acceptedAnswers": "Perfekt",
     "explanation": {
-      "fr": "habe gelesen est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "habe gelesen steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "habe gelesen في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "habe gelesen is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Perfekt — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Perfekt — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Perfekt — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Perfekt — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-01-q07": {
-    "acceptedAnswers": "Perfekt",
+    "acceptedAnswers": "Präsens",
     "explanation": {
-      "fr": "habe gespielt est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "habe gespielt steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "habe gespielt في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "habe gespielt is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Präsens — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Präsens — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Präsens — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Präsens — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-01-q08": {
     "acceptedAnswers": "Perfekt",
     "explanation": {
-      "fr": "habe gemacht est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "habe gemacht steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "habe gemacht في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "habe gemacht is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Perfekt — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Perfekt — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Perfekt — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Perfekt — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-02-q01": {
     "acceptedAnswers": "true",
     "explanation": {
-      "fr": "wollte est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "wollte steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "wollte في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "wollte is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Ich wollte Journalistin werden. — Präteritum — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Ich wollte Journalistin werden. — Präteritum — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Ich wollte Journalistin werden. — Präteritum — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Ich wollte Journalistin werden. — Präteritum — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-02-q02": {
@@ -89,22 +89,22 @@ export const chapter28AnswerKey: AnswerKey = {
       "Perfekt"
     ],
     "explanation": {
-      "fr": "Même à l’oral, sein, haben et les modaux sont souvent au Präteritum. On peut mélanger les deux temps dans un récit : Ich war müde und habe geschlafen. Ce sont des préférences, pas des interdictions absolues.",
-      "de": "Auch mündlich stehen sein, haben und Modalverben oft im Präteritum. Beide Vergangenheitsformen können im selben Bericht stehen. Es handelt sich um Tendenzen, nicht um absolute Regeln.",
-      "ar": "حتى في الكلام نستعمل غالبا الماضي البسيط مع sein وhaben والأفعال الناقصة. يمكن الجمع بين الزمنين في سرد واحد. هذه تفضيلات وليست قواعد مطلقة.",
-      "en": "Even in speech, sein, haben and modals often take the simple past. Both past tenses can occur in one account. These are tendencies, not absolute rules."
+      "fr": "Ich arbeite. → Präsens / Ich war müde. → Präteritum / Ich habe gearbeitet. → Perfekt — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Ich arbeite. → Präsens / Ich war müde. → Präteritum / Ich habe gearbeitet. → Perfekt — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Ich arbeite. → Präsens / Ich war müde. → Präteritum / Ich habe gearbeitet. → Perfekt — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Ich arbeite. → Präsens / Ich war müde. → Präteritum / Ich habe gearbeitet. → Perfekt — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-02-q03": {
     "acceptedAnswers": [
-      "Heute bin ich Lehrerin.",
-      "Ich habe zwei Geschwister."
+      "bin",
+      "war"
     ],
     "explanation": {
-      "fr": "bin est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "bin steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "bin في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "bin is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Heute bin ich Lehrerin. Früher war ich Schülerin. (sein) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Heute bin ich Lehrerin. Früher war ich Schülerin. (sein) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Heute bin ich Lehrerin. Früher war ich Schülerin. (sein) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Heute bin ich Lehrerin. Früher war ich Schülerin. (sein) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-02-q04": {
@@ -112,124 +112,119 @@ export const chapter28AnswerKey: AnswerKey = {
       "Gestern",
       "war",
       "ich",
-      "bei",
-      "meinen",
-      "Freunden."
+      "bei meinen Freunden."
     ],
     "explanation": {
-      "fr": "war est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "war steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "war في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "war is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Gestern war ich bei meinen Freunden. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Gestern war ich bei meinen Freunden. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Gestern war ich bei meinen Freunden. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Gestern war ich bei meinen Freunden. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-28-ubung-02-q05": {
     "acceptedAnswers": "Präteritum",
     "explanation": {
-      "fr": "wollte est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "wollte steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "wollte في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "wollte is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Präteritum — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Präteritum — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Präteritum — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Präteritum — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-02-q06": {
-    "acceptedAnswers": "hatten",
+    "acceptedAnswers": [
+      "hatten"
+    ],
     "explanation": {
-      "fr": "hatten est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "hatten steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "hatten في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "hatten is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Vorher hatten meine Freunde ein kleines Haus. (haben, Präteritum) — Haben au Präteritum : hatte, hattest, hatte, hatten, hattet, hatten. Il exprime ici une possession, une disponibilité ou une situation passée.",
+      "de": "Vorher hatten meine Freunde ein kleines Haus. (haben, Präteritum) — Haben im Präteritum: hatte, hattest, hatte, hatten, hattet, hatten. Hier drückt es Besitz, Verfügbarkeit oder eine vergangene Situation aus.",
+      "ar": "Vorher hatten meine Freunde ein kleines Haus. (haben, Präteritum) — تصريف haben في الماضي البسيط: hatte, hattest, hatte, hatten, hattet, hatten. يدل هنا على الملكية أو التوفر أو وضع في الماضي.",
+      "en": "Vorher hatten meine Freunde ein kleines Haus. (haben, Präteritum) — Haben in the preterite: hatte, hattest, hatte, hatten, hattet, hatten. Here it expresses possession, availability or a past situation."
     }
   },
   "kapitel-28-ubung-02-q07": {
     "acceptedAnswers": "true",
     "explanation": {
-      "fr": "haben gekauft est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "haben gekauft steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "haben gekauft في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "haben gekauft is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Letzten Monat haben sie ein Haus gekauft. — Perfekt — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Letzten Monat haben sie ein Haus gekauft. — Perfekt — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Letzten Monat haben sie ein Haus gekauft. — Perfekt — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Letzten Monat haben sie ein Haus gekauft. — Perfekt — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-02-q08": {
     "acceptedAnswers": [
-      "Präsens",
-      "Präteritum",
-      "Perfekt"
+      "ziehen"
     ],
     "explanation": {
-      "fr": "Même à l’oral, sein, haben et les modaux sont souvent au Präteritum. On peut mélanger les deux temps dans un récit : Ich war müde und habe geschlafen. Ce sont des préférences, pas des interdictions absolues.",
-      "de": "Auch mündlich stehen sein, haben und Modalverben oft im Präteritum. Beide Vergangenheitsformen können im selben Bericht stehen. Es handelt sich um Tendenzen, nicht um absolute Regeln.",
-      "ar": "حتى في الكلام نستعمل غالبا الماضي البسيط مع sein وhaben والأفعال الناقصة. يمكن الجمع بين الزمنين في سرد واحد. هذه تفضيلات وليست قواعد مطلقة.",
-      "en": "Even in speech, sein, haben and modals often take the simple past. Both past tenses can occur in one account. These are tendencies, not absolute rules."
+      "fr": "Morgen ziehen wir in die neue Wohnung. (ziehen, Präsens) — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Morgen ziehen wir in die neue Wohnung. (ziehen, Präsens) — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Morgen ziehen wir in die neue Wohnung. (ziehen, Präsens) — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Morgen ziehen wir in die neue Wohnung. (ziehen, Präsens) — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-03-q01": {
     "acceptedAnswers": [
-      "Präsens",
-      "Präteritum",
-      "Perfekt"
+      "beginne"
     ],
     "explanation": {
-      "fr": "Même à l’oral, sein, haben et les modaux sont souvent au Präteritum. On peut mélanger les deux temps dans un récit : Ich war müde und habe geschlafen. Ce sont des préférences, pas des interdictions absolues.",
-      "de": "Auch mündlich stehen sein, haben und Modalverben oft im Präteritum. Beide Vergangenheitsformen können im selben Bericht stehen. Es handelt sich um Tendenzen, nicht um absolute Regeln.",
-      "ar": "حتى في الكلام نستعمل غالبا الماضي البسيط مع sein وhaben والأفعال الناقصة. يمكن الجمع بين الزمنين في سرد واحد. هذه تفضيلات وليست قواعد مطلقة.",
-      "en": "Even in speech, sein, haben and modals often take the simple past. Both past tenses can occur in one account. These are tendencies, not absolute rules."
+      "fr": "Nächsten Monat beginne ich einen Kurs. (beginnen, Präsens) — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Nächsten Monat beginne ich einen Kurs. (beginnen, Präsens) — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Nächsten Monat beginne ich einen Kurs. (beginnen, Präsens) — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Nächsten Monat beginne ich einen Kurs. (beginnen, Präsens) — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-03-q02": {
     "acceptedAnswers": [
-      "Heute bin ich Lehrerin.",
-      "Ich habe zwei Geschwister."
+      "Morgen besuche ich meine Tante.",
+      "Nächste Woche beginnt der Kurs."
     ],
     "explanation": {
-      "fr": "bin est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "bin steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "bin في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "bin is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Morgen besuche ich meine Tante. / Nächste Woche beginnt der Kurs. — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Morgen besuche ich meine Tante. / Nächste Woche beginnt der Kurs. — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Morgen besuche ich meine Tante. / Nächste Woche beginnt der Kurs. — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Morgen besuche ich meine Tante. / Nächste Woche beginnt der Kurs. — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-03-q03": {
     "acceptedAnswers": [
-      "Dieses",
-      "Jahr",
+      "Dieses Jahr",
       "möchten",
       "wir",
-      "nach",
-      "Kanada",
-      "reisen."
+      "nach Kanada reisen."
     ],
     "explanation": {
-      "fr": "möchten est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "möchten steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "möchten في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "möchten is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Dieses Jahr möchten wir nach Kanada reisen. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Dieses Jahr möchten wir nach Kanada reisen. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Dieses Jahr möchten wir nach Kanada reisen. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Dieses Jahr möchten wir nach Kanada reisen. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-28-ubung-03-q04": {
     "acceptedAnswers": "Präsens",
     "explanation": {
-      "fr": "haben est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "haben steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "haben في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "haben is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Präsens — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Präsens — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Präsens — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Präsens — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-03-q05": {
-    "acceptedAnswers": "müssen",
+    "acceptedAnswers": [
+      "müssen"
+    ],
     "explanation": {
-      "fr": "müssen est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "müssen steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "müssen في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "müssen is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Wir müssen kein Hotel bezahlen. (müssen, Präsens) — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Wir müssen kein Hotel bezahlen. (müssen, Präsens) — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Wir müssen kein Hotel bezahlen. (müssen, Präsens) — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Wir müssen kein Hotel bezahlen. (müssen, Präsens) — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-03-q06": {
     "acceptedAnswers": "false",
     "explanation": {
-      "fr": "kommen est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "kommen steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "kommen في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "kommen is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Am Samstag kommen wir zurück. — Präsens — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Am Samstag kommen wir zurück. — Präsens — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Am Samstag kommen wir zurück. — Präsens — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Am Samstag kommen wir zurück. — Präsens — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-04-q01": {
@@ -566,21 +561,28 @@ export const chapter28AnswerKey: AnswerKey = {
     }
   },
   "kapitel-28-ubung-07-q01": {
-    "acceptedAnswers": "wollte",
+    "acceptedAnswers": [
+      "war",
+      "habe",
+      "geschlafen"
+    ],
     "explanation": {
-      "fr": "wollte est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "wollte steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "wollte في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "wollte is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Gestern war ich müde, deshalb habe ich früh geschlafen. (sein, Präteritum; schlafen, Perfekt) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Gestern war ich müde, deshalb habe ich früh geschlafen. (sein, Präteritum; schlafen, Perfekt) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Gestern war ich müde, deshalb habe ich früh geschlafen. (sein, Präteritum; schlafen, Perfekt) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Gestern war ich müde, deshalb habe ich früh geschlafen. (sein, Präteritum; schlafen, Perfekt) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-07-q02": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "hat",
+      "hatte"
+    ],
     "explanation": {
-      "fr": "hatten est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "hatten steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "hatten في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "hatten is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Heute hat er Zeit. Gestern hatte er keine Zeit. (haben, Präsens/Präteritum) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Heute hat er Zeit. Gestern hatte er keine Zeit. (haben, Präsens/Präteritum) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Heute hat er Zeit. Gestern hatte er keine Zeit. (haben, Präsens/Präteritum) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Heute hat er Zeit. Gestern hatte er keine Zeit. (haben, Präsens/Präteritum) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-07-q03": {
@@ -590,297 +592,312 @@ export const chapter28AnswerKey: AnswerKey = {
       "Perfekt"
     ],
     "explanation": {
-      "fr": "Même à l’oral, sein, haben et les modaux sont souvent au Präteritum. On peut mélanger les deux temps dans un récit : Ich war müde und habe geschlafen. Ce sont des préférences, pas des interdictions absolues.",
-      "de": "Auch mündlich stehen sein, haben und Modalverben oft im Präteritum. Beide Vergangenheitsformen können im selben Bericht stehen. Es handelt sich um Tendenzen, nicht um absolute Regeln.",
-      "ar": "حتى في الكلام نستعمل غالبا الماضي البسيط مع sein وhaben والأفعال الناقصة. يمكن الجمع بين الزمنين في سرد واحد. هذه تفضيلات وليست قواعد مطلقة.",
-      "en": "Even in speech, sein, haben and modals often take the simple past. Both past tenses can occur in one account. These are tendencies, not absolute rules."
+      "fr": "Du bist krank. → Präsens / Du warst krank. → Präteritum / Du bist krank geworden. → Perfekt — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Du bist krank. → Präsens / Du warst krank. → Präteritum / Du bist krank geworden. → Perfekt — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Du bist krank. → Präsens / Du warst krank. → Präteritum / Du bist krank geworden. → Perfekt — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Du bist krank. → Präsens / Du warst krank. → Präteritum / Du bist krank geworden. → Perfekt — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-07-q04": {
     "acceptedAnswers": [
-      "Wir mussten viele Möbel tragen.",
-      "Ich war nie im Kindergarten."
+      "Sie musste warten.",
+      "Sie hat den Bus verpasst."
     ],
     "explanation": {
-      "fr": "mussten est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "mussten steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "mussten في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "mussten is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Sie musste warten. / Sie hat den Bus verpasst. — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Sie musste warten. / Sie hat den Bus verpasst. — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Sie musste warten. / Sie hat den Bus verpasst. — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Sie musste warten. / Sie hat den Bus verpasst. — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-07-q05": {
     "acceptedAnswers": [
-      "Am",
-      "Abend",
-      "waren",
+      "Nach dem Unterricht",
+      "haben",
       "wir",
-      "fertig."
+      "zusammen gegessen."
     ],
     "explanation": {
-      "fr": "waren est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "waren steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "waren في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "waren is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Nach dem Unterricht haben wir zusammen gegessen. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Nach dem Unterricht haben wir zusammen gegessen. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Nach dem Unterricht haben wir zusammen gegessen. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Nach dem Unterricht haben wir zusammen gegessen. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-28-ubung-07-q06": {
-    "acceptedAnswers": "Perfekt",
+    "acceptedAnswers": [
+      "sind",
+      "fahren"
+    ],
     "explanation": {
-      "fr": "haben gegessen est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "haben gegessen steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "haben gegessen في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "haben gegessen is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Heute sind wir zu Hause. Morgen fahren wir nach Bonn. (sein/fahren, Präsens) — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Heute sind wir zu Hause. Morgen fahren wir nach Bonn. (sein/fahren, Präsens) — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Heute sind wir zu Hause. Morgen fahren wir nach Bonn. (sein/fahren, Präsens) — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Heute sind wir zu Hause. Morgen fahren wir nach Bonn. (sein/fahren, Präsens) — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-07-q07": {
     "acceptedAnswers": [
+      "hatten",
       "haben",
-      "getrunken"
+      "gespielt"
     ],
     "explanation": {
-      "fr": "haben getrunken est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "haben getrunken steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "haben getrunken في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "haben getrunken is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Gestern hatten die Kinder frei und haben im Park gespielt. (haben, Präteritum; spielen, Perfekt) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Gestern hatten die Kinder frei und haben im Park gespielt. (haben, Präteritum; spielen, Perfekt) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Gestern hatten die Kinder frei und haben im Park gespielt. (haben, Präteritum; spielen, Perfekt) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Gestern hatten die Kinder frei und haben im Park gespielt. (haben, Präteritum; spielen, Perfekt) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-07-q08": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": "true",
     "explanation": {
-      "fr": "bin gefahren est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "bin gefahren steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "bin gefahren في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "bin gefahren is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Ich habe morgen einen Termin. — Präsens mit Zukunftsbedeutung — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Ich habe morgen einen Termin. — Präsens mit Zukunftsbedeutung — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Ich habe morgen einen Termin. — Präsens mit Zukunftsbedeutung — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Ich habe morgen einen Termin. — Präsens mit Zukunftsbedeutung — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-08-q01": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "sind",
+      "geflogen",
+      "geblieben"
+    ],
     "explanation": {
-      "fr": "sind geflogen est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "sind geflogen steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "sind geflogen في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "sind geflogen is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Letztes Jahr sind wir nach Toronto geflogen und dort zwei Wochen geblieben. (fliegen/bleiben, Perfekt) — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Letztes Jahr sind wir nach Toronto geflogen und dort zwei Wochen geblieben. (fliegen/bleiben, Perfekt) — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Letztes Jahr sind wir nach Toronto geflogen und dort zwei Wochen geblieben. (fliegen/bleiben, Perfekt) — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Letztes Jahr sind wir nach Toronto geflogen und dort zwei Wochen geblieben. (fliegen/bleiben, Perfekt) — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-28-ubung-08-q02": {
     "acceptedAnswers": [
-      "Präsens",
-      "Präteritum",
-      "Perfekt"
+      "hatten",
+      "konnten"
     ],
     "explanation": {
-      "fr": "Même à l’oral, sein, haben et les modaux sont souvent au Präteritum. On peut mélanger les deux temps dans un récit : Ich war müde und habe geschlafen. Ce sont des préférences, pas des interdictions absolues.",
-      "de": "Auch mündlich stehen sein, haben und Modalverben oft im Präteritum. Beide Vergangenheitsformen können im selben Bericht stehen. Es handelt sich um Tendenzen, nicht um absolute Regeln.",
-      "ar": "حتى في الكلام نستعمل غالبا الماضي البسيط مع sein وhaben والأفعال الناقصة. يمكن الجمع بين الزمنين في سرد واحد. هذه تفضيلات وليست قواعد مطلقة.",
-      "en": "Even in speech, sein, haben and modals often take the simple past. Both past tenses can occur in one account. These are tendencies, not absolute rules."
+      "fr": "Wir hatten Glück: Wir konnten bei Freunden übernachten. (haben/können, Präteritum) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Wir hatten Glück: Wir konnten bei Freunden übernachten. (haben/können, Präteritum) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Wir hatten Glück: Wir konnten bei Freunden übernachten. (haben/können, Präteritum) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Wir hatten Glück: Wir konnten bei Freunden übernachten. (haben/können, Präteritum) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-08-q03": {
     "acceptedAnswers": [
-      "Wir konnten New York besuchen.",
-      "Ich war nie im Kindergarten."
+      "mussten"
     ],
     "explanation": {
-      "fr": "konnten est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "konnten steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "konnten في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "konnten is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Deshalb mussten wir kein Hotel bezahlen. (müssen, Präteritum) — Au Präteritum, les modaux prennent -te, -test, -te, -ten, -tet, -ten. Können, müssen et dürfen perdent le tréma. L’infinitif dépendant reste à la fin de la principale.",
+      "de": "Deshalb mussten wir kein Hotel bezahlen. (müssen, Präteritum) — Im Präteritum haben Modalverben -te, -test, -te, -ten, -tet, -ten. Können, müssen und dürfen verlieren den Umlaut. Der abhängige Infinitiv steht am Hauptsatzende.",
+      "ar": "Deshalb mussten wir kein Hotel bezahlen. (müssen, Präteritum) — في الماضي البسيط تأخذ الأفعال الناقصة النهايات -te, -test, -te, -ten, -tet, -ten. تفقد können وmüssen وdürfen الأوملاوت. يأتي المصدر التابع في آخر الجملة الرئيسية.",
+      "en": "Deshalb mussten wir kein Hotel bezahlen. (müssen, Präteritum) — In the preterite, modals take -te, -test, -te, -ten, -tet, -ten. Können, müssen and dürfen lose the umlaut. The dependent infinitive ends the main clause."
     }
   },
   "kapitel-28-ubung-08-q04": {
     "acceptedAnswers": [
-      "Dieses",
-      "Jahr",
-      "möchten",
-      "wir",
-      "nach",
-      "Kanada",
-      "reisen."
+      "habe",
+      "besucht",
+      "war"
     ],
     "explanation": {
-      "fr": "möchten est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "möchten steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "möchten في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "möchten is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "In New York habe ich Museen besucht und mein Mann war gern in Kneipen. (besuchen, Perfekt; sein, Präteritum) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "In New York habe ich Museen besucht und mein Mann war gern in Kneipen. (besuchen, Perfekt; sein, Präteritum) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "In New York habe ich Museen besucht und mein Mann war gern in Kneipen. (besuchen, Perfekt; sein, Präteritum) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "In New York habe ich Museen besucht und mein Mann war gern in Kneipen. (besuchen, Perfekt; sein, Präteritum) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-08-q05": {
-    "acceptedAnswers": "Präsens",
+    "acceptedAnswers": [
+      "reisen"
+    ],
     "explanation": {
-      "fr": "haben est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "haben steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "haben في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "haben is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Dieses Jahr reisen wir wieder nach Kanada. (reisen, Präsens) — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Dieses Jahr reisen wir wieder nach Kanada. (reisen, Präsens) — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Dieses Jahr reisen wir wieder nach Kanada. (reisen, Präsens) — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Dieses Jahr reisen wir wieder nach Kanada. (reisen, Präsens) — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-08-q06": {
-    "acceptedAnswers": "müssen",
+    "acceptedAnswers": [
+      "besichtigen",
+      "gehen"
+    ],
     "explanation": {
-      "fr": "müssen est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "müssen steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "müssen في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "müssen is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Dort besichtigen wir Museen und gehen abends aus. (besichtigen/gehen, Präsens) — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Dort besichtigen wir Museen und gehen abends aus. (besichtigen/gehen, Präsens) — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Dort besichtigen wir Museen und gehen abends aus. (besichtigen/gehen, Präsens) — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Dort besichtigen wir Museen und gehen abends aus. (besichtigen/gehen, Präsens) — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-08-q07": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "kommen",
+      "muss"
+    ],
     "explanation": {
-      "fr": "kommen est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "kommen steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "kommen في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "kommen is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Am Samstag kommen wir zurück; am Montag muss ich wieder arbeiten. (kommen/müssen, Präsens) — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Am Samstag kommen wir zurück; am Montag muss ich wieder arbeiten. (kommen/müssen, Präsens) — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Am Samstag kommen wir zurück; am Montag muss ich wieder arbeiten. (kommen/müssen, Präsens) — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Am Samstag kommen wir zurück; am Montag muss ich wieder arbeiten. (kommen/müssen, Präsens) — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-09-q01": {
     "acceptedAnswers": [
-      "Präsens",
-      "Präteritum",
-      "Perfekt"
+      "Gestern",
+      "habe",
+      "ich",
+      "meine Freundin angerufen."
     ],
     "explanation": {
-      "fr": "Même à l’oral, sein, haben et les modaux sont souvent au Präteritum. On peut mélanger les deux temps dans un récit : Ich war müde und habe geschlafen. Ce sont des préférences, pas des interdictions absolues.",
-      "de": "Auch mündlich stehen sein, haben und Modalverben oft im Präteritum. Beide Vergangenheitsformen können im selben Bericht stehen. Es handelt sich um Tendenzen, nicht um absolute Regeln.",
-      "ar": "حتى في الكلام نستعمل غالبا الماضي البسيط مع sein وhaben والأفعال الناقصة. يمكن الجمع بين الزمنين في سرد واحد. هذه تفضيلات وليست قواعد مطلقة.",
-      "en": "Even in speech, sein, haben and modals often take the simple past. Both past tenses can occur in one account. These are tendencies, not absolute rules."
+      "fr": "Gestern habe ich meine Freundin angerufen. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Gestern habe ich meine Freundin angerufen. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Gestern habe ich meine Freundin angerufen. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Gestern habe ich meine Freundin angerufen. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-28-ubung-09-q02": {
     "acceptedAnswers": [
-      "Ich konnte machen, was ich wollte.",
-      "Ich war nie im Kindergarten."
+      "Am Morgen",
+      "musste",
+      "sie",
+      "früh aufstehen."
     ],
     "explanation": {
-      "fr": "konnte est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "konnte steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "konnte في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "konnte is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Am Morgen musste sie früh aufstehen. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Am Morgen musste sie früh aufstehen. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Am Morgen musste sie früh aufstehen. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Am Morgen musste sie früh aufstehen. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-28-ubung-09-q03": {
     "acceptedAnswers": [
-      "Ich",
+      "schreibe",
       "habe",
-      "meine",
-      "Freundin",
-      "angerufen."
+      "geschrieben"
     ],
     "explanation": {
-      "fr": "habe angerufen est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "habe angerufen steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "habe angerufen في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "habe angerufen is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Heute schreibe ich die E-Mail. Gestern habe ich sie nicht geschrieben. (schreiben, Präsens/Perfekt) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Heute schreibe ich die E-Mail. Gestern habe ich sie nicht geschrieben. (schreiben, Präsens/Perfekt) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Heute schreibe ich die E-Mail. Gestern habe ich sie nicht geschrieben. (schreiben, Präsens/Perfekt) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Heute schreibe ich die E-Mail. Gestern habe ich sie nicht geschrieben. (schreiben, Präsens/Perfekt) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-09-q04": {
-    "acceptedAnswers": "Perfekt",
+    "acceptedAnswers": [
+      "Am Sonntag fahren wir nach Hause.",
+      "Am Sonntag sind wir nach Hause gefahren."
+    ],
     "explanation": {
-      "fr": "hat besucht est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "hat besucht steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "hat besucht في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "hat besucht is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Am Sonntag fahren wir nach Hause. / Am Sonntag sind wir nach Hause gefahren. — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Am Sonntag fahren wir nach Hause. / Am Sonntag sind wir nach Hause gefahren. — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Am Sonntag fahren wir nach Hause. / Am Sonntag sind wir nach Hause gefahren. — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Am Sonntag fahren wir nach Hause. / Am Sonntag sind wir nach Hause gefahren. — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-09-q05": {
     "acceptedAnswers": [
-      "haben",
-      "eingekauft"
+      "war",
+      "konnte"
     ],
     "explanation": {
-      "fr": "haben eingekauft est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "haben eingekauft steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "haben eingekauft في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "haben eingekauft is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Weil ich gestern krank war, konnte ich nicht kommen. (sein/können, Präteritum) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Weil ich gestern krank war, konnte ich nicht kommen. (sein/können, Präteritum) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Weil ich gestern krank war, konnte ich nicht kommen. (sein/können, Präteritum) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Weil ich gestern krank war, konnte ich nicht kommen. (sein/können, Präteritum) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-09-q06": {
     "acceptedAnswers": "false",
     "explanation": {
-      "fr": "haben gemacht est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "haben gemacht steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "haben gemacht في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "haben gemacht is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Ich bin gestern zu Hause geblieben. — Perfekt — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Ich bin gestern zu Hause geblieben. — Perfekt — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Ich bin gestern zu Hause geblieben. — Perfekt — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Ich bin gestern zu Hause geblieben. — Perfekt — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-28-ubung-09-q07": {
     "acceptedAnswers": [
-      "Präsens",
-      "Präteritum",
-      "Perfekt"
+      "Am Abend",
+      "war",
+      "der Zug",
+      "endlich da."
     ],
     "explanation": {
-      "fr": "Même à l’oral, sein, haben et les modaux sont souvent au Präteritum. On peut mélanger les deux temps dans un récit : Ich war müde und habe geschlafen. Ce sont des préférences, pas des interdictions absolues.",
-      "de": "Auch mündlich stehen sein, haben und Modalverben oft im Präteritum. Beide Vergangenheitsformen können im selben Bericht stehen. Es handelt sich um Tendenzen, nicht um absolute Regeln.",
-      "ar": "حتى في الكلام نستعمل غالبا الماضي البسيط مع sein وhaben والأفعال الناقصة. يمكن الجمع بين الزمنين في سرد واحد. هذه تفضيلات وليست قواعد مطلقة.",
-      "en": "Even in speech, sein, haben and modals often take the simple past. Both past tenses can occur in one account. These are tendencies, not absolute rules."
+      "fr": "Am Abend war der Zug endlich da. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Am Abend war der Zug endlich da. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Am Abend war der Zug endlich da. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Am Abend war der Zug endlich da. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-28-ubung-09-q08": {
     "acceptedAnswers": [
-      "Wir haben einen Film angesehen.",
-      "Ich bin gerne in die Schule gegangen."
+      "hatte",
+      "hat",
+      "gegessen"
     ],
     "explanation": {
-      "fr": "haben angesehen est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "haben angesehen steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "haben angesehen في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "haben angesehen is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Sie hatte Hunger, deshalb hat sie eine Suppe gegessen. (haben, Präteritum; essen, Perfekt) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Sie hatte Hunger, deshalb hat sie eine Suppe gegessen. (haben, Präteritum; essen, Perfekt) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Sie hatte Hunger, deshalb hat sie eine Suppe gegessen. (haben, Präteritum; essen, Perfekt) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Sie hatte Hunger, deshalb hat sie eine Suppe gegessen. (haben, Präteritum; essen, Perfekt) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-10-q01": {
     "acceptedAnswers": [
-      "Ich habe zwei Geschwister.",
-      "Heute bin ich Lehrerin."
+      "hast",
+      "musstest"
     ],
     "explanation": {
-      "fr": "habe est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "habe steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "habe في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "habe is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Heute hast du frei, gestern musstest du arbeiten. (haben, Präsens; müssen, Präteritum) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Heute hast du frei, gestern musstest du arbeiten. (haben, Präsens; müssen, Präteritum) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Heute hast du frei, gestern musstest du arbeiten. (haben, Präsens; müssen, Präteritum) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Heute hast du frei, gestern musstest du arbeiten. (haben, Präsens; müssen, Präteritum) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-10-q02": {
     "acceptedAnswers": [
-      "Ich",
-      "war",
-      "nie",
-      "im",
-      "Kindergarten."
+      "sind",
+      "angekommen",
+      "hatte"
     ],
     "explanation": {
-      "fr": "war est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "war steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "war في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "war is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Wir sind gestern spät angekommen, weil der Bus Verspätung hatte. (ankommen, Perfekt; haben, Präteritum) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Wir sind gestern spät angekommen, weil der Bus Verspätung hatte. (ankommen, Perfekt; haben, Präteritum) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Wir sind gestern spät angekommen, weil der Bus Verspätung hatte. (ankommen, Perfekt; haben, Präteritum) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Wir sind gestern spät angekommen, weil der Bus Verspätung hatte. (ankommen, Perfekt; haben, Präteritum) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-10-q03": {
-    "acceptedAnswers": "Präteritum",
+    "acceptedAnswers": "war",
     "explanation": {
-      "fr": "hatte est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "hatte steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "hatte في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "hatte is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Welche Form passt zum mündlichen Bericht? Gestern war ich beim Arzt. (sein, Präteritum) — Sein au Präteritum : war, warst, war, waren, wart, waren. Il décrit ici un état, un lieu ou une situation passée.",
+      "de": "Welche Form passt zum mündlichen Bericht? Gestern war ich beim Arzt. (sein, Präteritum) — Sein im Präteritum: war, warst, war, waren, wart, waren. Hier beschreibt es einen vergangenen Zustand, Ort oder eine Situation.",
+      "ar": "Welche Form passt zum mündlichen Bericht? Gestern war ich beim Arzt. (sein, Präteritum) — تصريف sein في الماضي البسيط: war, warst, war, waren, wart, waren. يصف هنا حالة أو مكاناً أو وضعاً في الماضي.",
+      "en": "Welche Form passt zum mündlichen Bericht? Gestern war ich beim Arzt. (sein, Präteritum) — Sein in the preterite: war, warst, war, waren, wart, waren. Here it describes a past state, location or situation."
     }
   },
   "kapitel-28-ubung-10-q04": {
     "acceptedAnswers": [
-      "bin",
-      "gegangen"
+      "beginnt"
     ],
     "explanation": {
-      "fr": "bin gegangen est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "bin gegangen steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "bin gegangen في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "bin gegangen is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Morgen beginnt die Prüfung um neun Uhr. (beginnen, Präsens) — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Morgen beginnt die Prüfung um neun Uhr. (beginnen, Präsens) — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Morgen beginnt die Prüfung um neun Uhr. (beginnen, Präsens) — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Morgen beginnt die Prüfung um neun Uhr. (beginnen, Präsens) — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-10-q05": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "Er hat die Tür geöffnet.",
+      "Er war sehr nervös."
+    ],
     "explanation": {
-      "fr": "konnte est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "konnte steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "konnte في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "konnte is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Er hat die Tür geöffnet. / Er war sehr nervös. — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Er hat die Tür geöffnet. / Er war sehr nervös. — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Er hat die Tür geöffnet. / Er war sehr nervös. — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Er hat die Tür geöffnet. / Er war sehr nervös. — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-10-q06": {
@@ -890,181 +907,213 @@ export const chapter28AnswerKey: AnswerKey = {
       "Perfekt"
     ],
     "explanation": {
-      "fr": "Même à l’oral, sein, haben et les modaux sont souvent au Präteritum. On peut mélanger les deux temps dans un récit : Ich war müde und habe geschlafen. Ce sont des préférences, pas des interdictions absolues.",
-      "de": "Auch mündlich stehen sein, haben und Modalverben oft im Präteritum. Beide Vergangenheitsformen können im selben Bericht stehen. Es handelt sich um Tendenzen, nicht um absolute Regeln.",
-      "ar": "حتى في الكلام نستعمل غالبا الماضي البسيط مع sein وhaben والأفعال الناقصة. يمكن الجمع بين الزمنين في سرد واحد. هذه تفضيلات وليست قواعد مطلقة.",
-      "en": "Even in speech, sein, haben and modals often take the simple past. Both past tenses can occur in one account. These are tendencies, not absolute rules."
+      "fr": "Heute bin ich fit. → Präsens / Gestern war ich fit. → Präteritum / Ich bin fit geworden. → Perfekt — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Heute bin ich fit. → Präsens / Gestern war ich fit. → Präteritum / Ich bin fit geworden. → Perfekt — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Heute bin ich fit. → Präsens / Gestern war ich fit. → Präteritum / Ich bin fit geworden. → Perfekt — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Heute bin ich fit. → Präsens / Gestern war ich fit. → Präteritum / Ich bin fit geworden. → Perfekt — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-10-q07": {
     "acceptedAnswers": [
-      "Ich habe mit meinen Freunden gespielt.",
-      "Ich bin gerne in die Schule gegangen."
+      "durften",
+      "hat"
     ],
     "explanation": {
-      "fr": "habe gespielt est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "habe gespielt steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "habe gespielt في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "habe gespielt is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Die Kinder durften nicht hinausgehen, weil es geregnet hat. (dürfen, Präteritum; regnen, Perfekt) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Die Kinder durften nicht hinausgehen, weil es geregnet hat. (dürfen, Präteritum; regnen, Perfekt) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Die Kinder durften nicht hinausgehen, weil es geregnet hat. (dürfen, Präteritum; regnen, Perfekt) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Die Kinder durften nicht hinausgehen, weil es geregnet hat. (dürfen, Präteritum; regnen, Perfekt) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-10-q08": {
     "acceptedAnswers": [
-      "Ich",
-      "habe",
-      "nicht",
-      "gerne",
-      "Sport",
-      "gemacht."
+      "Nach der Reise",
+      "haben",
+      "wir",
+      "die Fotos sortiert."
     ],
     "explanation": {
-      "fr": "habe gemacht est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "habe gemacht steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "habe gemacht في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "habe gemacht is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Nach der Reise haben wir die Fotos sortiert. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Nach der Reise haben wir die Fotos sortiert. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Nach der Reise haben wir die Fotos sortiert. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Nach der Reise haben wir die Fotos sortiert. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-28-ubung-10-q09": {
-    "acceptedAnswers": "Präteritum",
+    "acceptedAnswers": [
+      "lebte",
+      "hatte"
+    ],
     "explanation": {
-      "fr": "wollte est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "wollte steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "wollte في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "wollte is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Im schriftlichen Märchen: Der König lebte im Schloss und hatte drei Kinder. (leben/haben, Präteritum) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Im schriftlichen Märchen: Der König lebte im Schloss und hatte drei Kinder. (leben/haben, Präteritum) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Im schriftlichen Märchen: Der König lebte im Schloss und hatte drei Kinder. (leben/haben, Präteritum) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Im schriftlichen Märchen: Der König lebte im Schloss und hatte drei Kinder. (leben/haben, Präteritum) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-10-q10": {
-    "acceptedAnswers": "sollte",
+    "acceptedAnswers": [
+      "hatte",
+      "esse"
+    ],
     "explanation": {
-      "fr": "sollte est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "sollte steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "sollte في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "sollte is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Gestern hatte ich keinen Hunger; heute esse ich viel. (haben, Präteritum; essen, Präsens) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Gestern hatte ich keinen Hunger; heute esse ich viel. (haben, Präteritum; essen, Präsens) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Gestern hatte ich keinen Hunger; heute esse ich viel. (haben, Präteritum; essen, Präsens) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Gestern hatte ich keinen Hunger; heute esse ich viel. (haben, Präteritum; essen, Präsens) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-11-q01": {
     "acceptedAnswers": [
-      "Morgen",
-      "öffne",
-      "ich",
-      "die",
-      "Apotheke."
+      "war",
+      "haben",
+      "gestartet"
     ],
     "explanation": {
-      "fr": "öffne est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "öffne steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "öffne في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "öffne is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Gestern war der Strom aus, deshalb haben wir die Computer neu gestartet. (sein, Präteritum; starten, Perfekt) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Gestern war der Strom aus, deshalb haben wir die Computer neu gestartet. (sein, Präteritum; starten, Perfekt) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Gestern war der Strom aus, deshalb haben wir die Computer neu gestartet. (sein, Präteritum; starten, Perfekt) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Gestern war der Strom aus, deshalb haben wir die Computer neu gestartet. (sein, Präteritum; starten, Perfekt) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-11-q02": {
-    "acceptedAnswers": "Perfekt",
+    "acceptedAnswers": [
+      "funktionieren",
+      "kommt"
+    ],
     "explanation": {
-      "fr": "habe bestellt est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "habe bestellt steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "habe bestellt في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "habe bestellt is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Heute funktionieren die Geräte wieder; morgen kommt ein Techniker. (funktionieren/kommen, Präsens) — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Heute funktionieren die Geräte wieder; morgen kommt ein Techniker. (funktionieren/kommen, Präsens) — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Heute funktionieren die Geräte wieder; morgen kommt ein Techniker. (funktionieren/kommen, Präsens) — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Heute funktionieren die Geräte wieder; morgen kommt ein Techniker. (funktionieren/kommen, Präsens) — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-11-q03": {
-    "acceptedAnswers": "hatte",
+    "acceptedAnswers": [
+      "Wir konnten keine Rechnungen drucken.",
+      "Die Technikerin hat uns geholfen."
+    ],
     "explanation": {
-      "fr": "hatte est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "hatte steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "hatte في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "hatte is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Wir konnten keine Rechnungen drucken. / Die Technikerin hat uns geholfen. — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Wir konnten keine Rechnungen drucken. / Die Technikerin hat uns geholfen. — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Wir konnten keine Rechnungen drucken. / Die Technikerin hat uns geholfen. — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Wir konnten keine Rechnungen drucken. / Die Technikerin hat uns geholfen. — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-11-q04": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "Nach der Reparatur",
+      "haben",
+      "wir",
+      "alle Daten gespeichert."
+    ],
     "explanation": {
-      "fr": "beraten est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "beraten steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "beraten في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "beraten is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Nach der Reparatur haben wir alle Daten gespeichert. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Nach der Reparatur haben wir alle Daten gespeichert. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Nach der Reparatur haben wir alle Daten gespeichert. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Nach der Reparatur haben wir alle Daten gespeichert. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-28-ubung-12-q01": {
-    "acceptedAnswers": "Perfekt",
+    "acceptedAnswers": [
+      "mussten",
+      "ist",
+      "gestartet"
+    ],
     "explanation": {
-      "fr": "ist angekommen est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "ist angekommen steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "ist angekommen في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "ist angekommen is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Am Flughafen mussten wir zwei Stunden warten; dann ist das Flugzeug endlich gestartet. (müssen, Präteritum; starten, Perfekt) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Am Flughafen mussten wir zwei Stunden warten; dann ist das Flugzeug endlich gestartet. (müssen, Präteritum; starten, Perfekt) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Am Flughafen mussten wir zwei Stunden warten; dann ist das Flugzeug endlich gestartet. (müssen, Präteritum; starten, Perfekt) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Am Flughafen mussten wir zwei Stunden warten; dann ist das Flugzeug endlich gestartet. (müssen, Präteritum; starten, Perfekt) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-12-q02": {
-    "acceptedAnswers": "mussten",
+    "acceptedAnswers": [
+      "haben",
+      "reserviert",
+      "hatte"
+    ],
     "explanation": {
-      "fr": "mussten est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "mussten steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "mussten في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "mussten is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Wir haben kein Zimmer reserviert, aber das Hotel hatte noch Platz. (reservieren, Perfekt; haben, Präteritum) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Wir haben kein Zimmer reserviert, aber das Hotel hatte noch Platz. (reservieren, Perfekt; haben, Präteritum) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Wir haben kein Zimmer reserviert, aber das Hotel hatte noch Platz. (reservieren, Perfekt; haben, Präteritum) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Wir haben kein Zimmer reserviert, aber das Hotel hatte noch Platz. (reservieren, Perfekt; haben, Präteritum) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-12-q03": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "Morgen besichtigen wir die Altstadt.",
+      "Gestern sind wir im Hotel geblieben."
+    ],
     "explanation": {
-      "fr": "fahren est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "fahren steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "fahren في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "fahren is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Morgen besichtigen wir die Altstadt. / Gestern sind wir im Hotel geblieben. — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Morgen besichtigen wir die Altstadt. / Gestern sind wir im Hotel geblieben. — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Morgen besichtigen wir die Altstadt. / Gestern sind wir im Hotel geblieben. — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Morgen besichtigen wir die Altstadt. / Gestern sind wir im Hotel geblieben. — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-12-q04": {
     "acceptedAnswers": [
-      "Präsens",
-      "Präteritum",
-      "Perfekt"
+      "Am letzten Urlaubstag",
+      "wollen",
+      "wir",
+      "eine Wanderung machen."
     ],
     "explanation": {
-      "fr": "Même à l’oral, sein, haben et les modaux sont souvent au Präteritum. On peut mélanger les deux temps dans un récit : Ich war müde und habe geschlafen. Ce sont des préférences, pas des interdictions absolues.",
-      "de": "Auch mündlich stehen sein, haben und Modalverben oft im Präteritum. Beide Vergangenheitsformen können im selben Bericht stehen. Es handelt sich um Tendenzen, nicht um absolute Regeln.",
-      "ar": "حتى في الكلام نستعمل غالبا الماضي البسيط مع sein وhaben والأفعال الناقصة. يمكن الجمع بين الزمنين في سرد واحد. هذه تفضيلات وليست قواعد مطلقة.",
-      "en": "Even in speech, sein, haben and modals often take the simple past. Both past tenses can occur in one account. These are tendencies, not absolute rules."
+      "fr": "Am letzten Urlaubstag wollen wir eine Wanderung machen. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Am letzten Urlaubstag wollen wir eine Wanderung machen. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Am letzten Urlaubstag wollen wir eine Wanderung machen. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Am letzten Urlaubstag wollen wir eine Wanderung machen. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-28-ubung-13-q01": {
-    "acceptedAnswers": "regnet",
+    "acceptedAnswers": [
+      "war",
+      "habe",
+      "eingeschaltet"
+    ],
     "explanation": {
-      "fr": "regnet est au Präsens. La forme conjuguée exprime le présent ou un futur contextualisé.",
-      "de": "regnet steht im Präsens. Die finite Form bezeichnet Gegenwart oder Zukunft.",
-      "ar": "regnet في زمن Präsens. الصيغة المصرفة تدل على الحاضر أو المستقبل حسب السياق.",
-      "en": "regnet is in the Präsens. The finite form expresses present or contextual future."
+      "fr": "Gestern war es kalt, deshalb habe ich die Heizung eingeschaltet. (sein, Präteritum; einschalten, Perfekt) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Gestern war es kalt, deshalb habe ich die Heizung eingeschaltet. (sein, Präteritum; einschalten, Perfekt) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Gestern war es kalt, deshalb habe ich die Heizung eingeschaltet. (sein, Präteritum; einschalten, Perfekt) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Gestern war es kalt, deshalb habe ich die Heizung eingeschaltet. (sein, Präteritum; einschalten, Perfekt) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-13-q02": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "öffne",
+      "putze"
+    ],
     "explanation": {
-      "fr": "war est au Präteritum. La forme simple est fréquente avec sein, haben et les modaux.",
-      "de": "war steht im Präteritum. Die einfache Vergangenheitsform ist bei sein, haben und Modalverben häufig.",
-      "ar": "war في زمن Präteritum. تشيع الصيغة البسيطة مع أفعال الكينونة والملكية والأفعال الناقصة.",
-      "en": "war is in the Präteritum. The simple past is common with sein, haben and modals."
+      "fr": "Heute öffne ich die Fenster; morgen putze ich die Wohnung. (öffnen/putzen, Präsens) — Le Präsens exprime le présent ou un projet futur si un repère tel que morgen précise le moment.",
+      "de": "Heute öffne ich die Fenster; morgen putze ich die Wohnung. (öffnen/putzen, Präsens) — Das Präsens bezeichnet Gegenwart oder mit einer Zeitangabe wie morgen auch Zukunft.",
+      "ar": "Heute öffne ich die Fenster; morgen putze ich die Wohnung. (öffnen/putzen, Präsens) — يعبر Präsens عن الحاضر أو المستقبل إذا وُجد مؤشر زمني مثل morgen.",
+      "en": "Heute öffne ich die Fenster; morgen putze ich die Wohnung. (öffnen/putzen, Präsens) — The present tense expresses the present or a future plan when a time marker such as morgen makes it clear."
     }
   },
   "kapitel-28-ubung-13-q03": {
     "acceptedAnswers": [
-      "Präsens",
-      "Präteritum",
-      "Perfekt"
+      "Sie hatte Kopfschmerzen und ist zu Hause geblieben.",
+      "Morgen kann sie wieder arbeiten."
     ],
     "explanation": {
-      "fr": "Même à l’oral, sein, haben et les modaux sont souvent au Präteritum. On peut mélanger les deux temps dans un récit : Ich war müde und habe geschlafen. Ce sont des préférences, pas des interdictions absolues.",
-      "de": "Auch mündlich stehen sein, haben und Modalverben oft im Präteritum. Beide Vergangenheitsformen können im selben Bericht stehen. Es handelt sich um Tendenzen, nicht um absolute Regeln.",
-      "ar": "حتى في الكلام نستعمل غالبا الماضي البسيط مع sein وhaben والأفعال الناقصة. يمكن الجمع بين الزمنين في سرد واحد. هذه تفضيلات وليست قواعد مطلقة.",
-      "en": "Even in speech, sein, haben and modals often take the simple past. Both past tenses can occur in one account. These are tendencies, not absolute rules."
+      "fr": "Sie hatte Kopfschmerzen und ist zu Hause geblieben. / Morgen kann sie wieder arbeiten. — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Sie hatte Kopfschmerzen und ist zu Hause geblieben. / Morgen kann sie wieder arbeiten. — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Sie hatte Kopfschmerzen und ist zu Hause geblieben. / Morgen kann sie wieder arbeiten. — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Sie hatte Kopfschmerzen und ist zu Hause geblieben. / Morgen kann sie wieder arbeiten. — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   },
   "kapitel-28-ubung-13-q04": {
     "acceptedAnswers": [
-      "Ich habe den Schlüssel verloren.",
-      "Ich bin gerne in die Schule gegangen."
+      "hat",
+      "geholfen",
+      "danken"
     ],
     "explanation": {
-      "fr": "habe verloren est au Perfekt. L’auxiliaire conjugué accompagne le participe II.",
-      "de": "habe verloren steht im Perfekt. Hilfsverb und Partizip II bilden die Zeitform.",
-      "ar": "habe verloren في زمن Perfekt. يتكون الزمن من فعل مساعد واسم المفعول.",
-      "en": "habe verloren is in the Perfekt. The auxiliary combines with the past participle."
+      "fr": "Der Nachbar hat uns gestern geholfen. Heute danken wir ihm. (helfen, Perfekt; danken, Präsens) — Dans le récit oral, les actions passées sont souvent au Perfekt ; sein, haben et les modaux sont fréquemment au Präteritum. Un récit écrit peut aussi employer le Präteritum pour les autres verbes.",
+      "de": "Der Nachbar hat uns gestern geholfen. Heute danken wir ihm. (helfen, Perfekt; danken, Präsens) — Beim mündlichen Erzählen stehen vergangene Handlungen oft im Perfekt; sein, haben und Modalverben häufig im Präteritum. Schriftliche Erzählungen können auch andere Verben im Präteritum verwenden.",
+      "ar": "Der Nachbar hat uns gestern geholfen. Heute danken wir ihm. (helfen, Perfekt; danken, Präsens) — في السرد الشفهي غالباً نستعمل Perfekt للأحداث الماضية وPräteritum مع sein وhaben والأفعال الناقصة. في السرد المكتوب يمكن استعمال Präteritum مع أفعال أخرى أيضاً.",
+      "en": "Der Nachbar hat uns gestern geholfen. Heute danken wir ihm. (helfen, Perfekt; danken, Präsens) — In spoken narratives, past actions often use the perfect; sein, haben and modals often use the preterite. Written narratives can use the preterite for other verbs as well."
     }
   }
 }

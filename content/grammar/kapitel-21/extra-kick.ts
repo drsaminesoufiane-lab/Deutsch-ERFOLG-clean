@@ -5,78 +5,77 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "Pharmacie",
-      "de": "Apotheke",
-      "ar": "الصيدلية",
-      "en": "Pharmacy"
+      "fr": "Reisebüro",
+      "de": "Reisebüro",
+      "ar": "Reisebüro",
+      "en": "Reisebüro"
     },
     "description": {
-      "fr": "Verbes à deux compléments",
-      "de": "Verben mit Akkusativ und Dativ",
-      "ar": "أفعال بمفعولين",
-      "en": "Verbs with two objects"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-21-ubung-11-q01",
         "position": 1,
         "type": "fill_blank",
-        "sentence": "Die Apothekerin erklärt ___ Patienten die Anwendung. (Artikel: der/die/das)",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Im Reisebüro zeigt die Beraterin ___ Paar ___ Angebote. (bestimmt)",
+        "blanks": 2
       },
       {
         "id": "kapitel-21-ubung-11-q02",
         "position": 2,
-        "type": "true_false",
-        "statement": "Sie gibt dem Patienten die Beipackzettel. (Artikel: der/die/das)",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the form correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Das Paar wählt ein Hotel. Die Beraterin empfiehlt ___ ___ Hotel am Meer. (dem Paar/ein)",
+        "blanks": 2
       },
       {
         "id": "kapitel-21-ubung-11-q03",
         "position": 3,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "ihr",
-          "er",
-          "ihn",
-          "ihm"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Die Kundin wartet. Sie zeigt ___ das Produkt.",
-          "de": "Die Kundin wartet. Sie zeigt ___ das Produkt.",
-          "ar": "Die Kundin wartet. Sie zeigt ___ das Produkt.",
-          "en": "Die Kundin wartet. Sie zeigt ___ das Produkt."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Sie schickt sie dem Paar.",
+          "Sie schickt sie den Paar.",
+          "Sie schickt dem Paar die Bestätigung.",
+          "Sie schickt ihnen der Bestätigung."
+        ]
       },
       {
         "id": "kapitel-21-ubung-11-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sie",
-          "Ihnen",
-          "ihnen",
-          "Sie"
-        ],
+        "type": "reorder",
         "prompt": {
-          "fr": "Herr Weber, ich erkläre ___ die Anwendung.",
-          "de": "Herr Weber, ich erkläre ___ die Anwendung.",
-          "ar": "Herr Weber, ich erkläre ___ die Anwendung.",
-          "en": "Herr Weber, ich erkläre ___ die Anwendung."
-        }
+          "fr": "Am Nachmittag … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Am Nachmittag … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Am Nachmittag … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Am Nachmittag … — Start with this chunk and reconstruct the sentence."
+        },
+        "tokens": [
+          "schickt",
+          "Am Nachmittag",
+          "sie ihnen die Tickets."
+        ]
       }
     ]
   },
@@ -85,78 +84,85 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Hôtel",
-      "de": "Hotel",
-      "ar": "الفندق",
-      "en": "Hotel"
+      "fr": "In der Schule",
+      "de": "In der Schule",
+      "ar": "In der Schule",
+      "en": "In der Schule"
     },
     "description": {
-      "fr": "Verbes à deux compléments",
-      "de": "Verben mit Akkusativ und Dativ",
-      "ar": "أفعال بمفعولين",
-      "en": "Verbs with two objects"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-21-ubung-12-q01",
         "position": 1,
-        "type": "true_false",
-        "statement": "Der Mitarbeiter zeigt den Gästen das Zimmer. (Artikel: der/die/das)",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the form correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "In der Schule leiht die Lehrerin ___ Schülern ___ Bücher. (bestimmt)",
+        "blanks": 2
       },
       {
         "id": "kapitel-21-ubung-12-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "die",
-          "den",
-          "dem",
-          "der"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Er bringt dem Gast ___ Schlüssel. (Artikel: der/die/das)",
-          "de": "Er bringt dem Gast ___ Schlüssel. (Artikel: der/die/das)",
-          "ar": "Er bringt dem Gast ___ Schlüssel. (Artikel: der/die/das)",
-          "en": "Er bringt dem Gast ___ Schlüssel. (Artikel: der/die/das)"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Ein Schüler braucht einen Stift. Sein Nachbar leiht ___ ___ . (den Stift/dem Schüler; Akk. vor Dat.)",
+        "blanks": 2
       },
       {
         "id": "kapitel-21-ubung-12-q03",
         "position": 3,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "ihr",
-          "sie",
-          "es",
-          "ihnen"
-        ],
+        "type": "true_false",
         "prompt": {
-          "fr": "Die Gäste warten. Er bringt ___ Wasser.",
-          "de": "Die Gäste warten. Er bringt ___ Wasser.",
-          "ar": "Die Gäste warten. Er bringt ___ Wasser.",
-          "en": "Die Gäste warten. Er bringt ___ Wasser."
-        }
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
+        },
+        "statement": "Die Schülerin zeigt dem Lehrer ihre Lösung."
       },
       {
         "id": "kapitel-21-ubung-12-q04",
         "position": 4,
-        "type": "fill_blank",
-        "sentence": "Das Zimmer ist frei. Er zeigt ___ den Gästen.",
-        "blanks": 1,
+        "type": "matching",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Associez chaque élément à la forme correspondante.",
+          "de": "Ordnen Sie jedem Element die passende Form zu.",
+          "ar": "اربط كل عنصر بالصيغة المناسبة.",
+          "en": "Match each item to the corresponding form."
+        },
+        "items": [
+          {
+            "id": "0",
+            "label": "___ Klasse erklärt der Lehrer die Regel."
+          },
+          {
+            "id": "1",
+            "label": "___ Kindern gibt er ein Blatt."
+          },
+          {
+            "id": "2",
+            "label": "___ Schüler zeigt er den Weg. (Singular)"
+          }
+        ],
+        "options": [
+          "Den",
+          "Dem",
+          "Der"
+        ]
       }
     ]
   },
@@ -165,78 +171,74 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Bureau",
-      "de": "Büro",
-      "ar": "المكتب",
-      "en": "Office"
+      "fr": "Im Verein",
+      "de": "Im Verein",
+      "ar": "Im Verein",
+      "en": "Im Verein"
     },
     "description": {
-      "fr": "Verbes à deux compléments",
-      "de": "Verben mit Akkusativ und Dativ",
-      "ar": "أفعال بمفعولين",
-      "en": "Verbs with two objects"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-21-ubung-13-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "seine",
-          "seinem",
-          "seinen",
-          "seiner"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Der Chef schickt ___ Mitarbeiter eine Nachricht. (sein)",
-          "de": "Der Chef schickt ___ Mitarbeiter eine Nachricht. (sein)",
-          "ar": "Der Chef schickt ___ Mitarbeiter eine Nachricht. (sein)",
-          "en": "Der Chef schickt ___ Mitarbeiter eine Nachricht. (sein)"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Im Verein überreicht die Vorsitzende ___ Gewinnerin ___ Pokal. (bestimmt)",
+        "blanks": 2
       },
       {
         "id": "kapitel-21-ubung-13-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "den",
-          "der",
-          "die",
-          "dem"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Die Mitarbeiterin zeigt ihrem Chef ___ Bericht. (Artikel: der/die/das)",
-          "de": "Die Mitarbeiterin zeigt ihrem Chef ___ Bericht. (Artikel: der/die/das)",
-          "ar": "Die Mitarbeiterin zeigt ihrem Chef ___ Bericht. (Artikel: der/die/das)",
-          "en": "Die Mitarbeiterin zeigt ihrem Chef ___ Bericht. (Artikel: der/die/das)"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Der Fotograf macht ein Foto. Er schickt ___ ___ später. (das Foto/der Gewinnerin; Akk. vor Dat.)",
+        "blanks": 2
       },
       {
         "id": "kapitel-21-ubung-13-q03",
         "position": 3,
-        "type": "fill_blank",
-        "sentence": "Der Bericht ist fertig. Sie schickt ___ dem Chef.",
-        "blanks": 1,
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Sélectionnez les phrases correctes avec l’ordre neutre des compléments.",
+          "de": "Wählen Sie die richtigen Sätze mit neutraler Objektstellung.",
+          "ar": "اختر الجمل الصحيحة ذات الترتيب المحايد للمفعولين.",
+          "en": "Select the correct sentences with neutral object order."
+        },
+        "options": [
+          "Er zeigt ihr das Bild.",
+          "Er zeigt es ihr.",
+          "Er zeigt sie das Bild.",
+          "Er zeigt ihr es."
+        ]
       },
       {
         "id": "kapitel-21-ubung-13-q04",
         "position": 4,
-        "type": "true_false",
-        "statement": "Der Chef wartet. Sie schickt er den Bericht.",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the form correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Trainer gratuliert die Vorsitzende. ___ Gewinnerin erhält eine Urkunde. (bestimmt; Trainer = Objekt)",
+        "blanks": 2
       }
     ]
   }

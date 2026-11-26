@@ -5,10 +5,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 1,
     "title": {
-      "fr": "Was ist das?",
+      "fr": "Identification",
       "de": "Was ist das?",
-      "ar": "Was ist das?",
-      "en": "Was ist das?"
+      "ar": "التعريف بالأشياء",
+      "en": "Identification"
     },
     "description": {
       "fr": "Articles",
@@ -22,16 +22,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Das ist ___ Stuhl.",
-          "de": "Ergänzen Sie. — Das ist ___ Stuhl.",
-          "ar": "أكمل. — Das ist ___ Stuhl.",
-          "en": "Complete. — Das ist ___ Stuhl."
+          "fr": "Complétez avec l’article indéfini. — Das ist ___ Stuhl.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Das ist ___ Stuhl.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Das ist ___ Stuhl.",
+          "en": "Complete with the indefinite article. — Das ist ___ Stuhl."
         },
         "selection": "single",
         "options": [
-          "eine",
-          "ein",
-          "Die"
+          "einen",
+          "einer",
+          "einem",
+          "ein"
         ]
       },
       {
@@ -39,16 +40,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Das ist ___ Bild.",
-          "de": "Ergänzen Sie. — Das ist ___ Bild.",
-          "ar": "أكمل. — Das ist ___ Bild.",
-          "en": "Complete. — Das ist ___ Bild."
+          "fr": "Complétez avec l’article indéfini. — Das ist ___ Bild.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Das ist ___ Bild.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Das ist ___ Bild.",
+          "en": "Complete with the indefinite article. — Das ist ___ Bild."
         },
         "selection": "single",
         "options": [
-          "ein",
-          "Die",
-          "eine"
+          "einen",
+          "einem",
+          "einer",
+          "ein"
         ]
       },
       {
@@ -56,15 +58,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Das ist ___ Wörterbuch.",
-          "de": "Ergänzen Sie. — Das ist ___ Wörterbuch.",
-          "ar": "أكمل. — Das ist ___ Wörterbuch.",
-          "en": "Complete. — Das ist ___ Wörterbuch."
+          "fr": "Complétez avec l’article indéfini. — Das ist ___ Wörterbuch.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Das ist ___ Wörterbuch.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Das ist ___ Wörterbuch.",
+          "en": "Complete with the indefinite article. — Das ist ___ Wörterbuch."
         },
         "selection": "single",
         "options": [
+          "einer",
+          "einem",
           "ein",
-          "Die",
           "eine"
         ]
       },
@@ -73,10 +76,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
         "sentence": "Das ist ___ Laptop.",
         "blanks": 1
@@ -86,10 +89,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
         "sentence": "Das ist ___ Vase.",
         "blanks": 1
@@ -99,16 +102,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Das ist ___ Tür.",
-          "de": "Ergänzen Sie. — Das ist ___ Tür.",
-          "ar": "أكمل. — Das ist ___ Tür.",
-          "en": "Complete. — Das ist ___ Tür."
+          "fr": "Complétez avec l’article indéfini. — Das ist ___ Tür.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Das ist ___ Tür.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Das ist ___ Tür.",
+          "en": "Complete with the indefinite article. — Das ist ___ Tür."
         },
         "selection": "single",
         "options": [
           "eine",
-          "ein",
-          "Die"
+          "einer",
+          "einen",
+          "einem"
         ]
       },
       {
@@ -116,34 +120,31 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — ___ Stifte sind neu. (bekannt)",
-          "de": "Ergänzen Sie. — ___ Stifte sind neu. (bekannt)",
-          "ar": "أكمل. — ___ Stifte sind neu. (bekannt)",
-          "en": "Complete. — ___ Stifte sind neu. (bekannt)"
+          "fr": "Complétez avec l’article défini. — ___ Stifte sind neu.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — ___ Stifte sind neu.",
+          "ar": "أكمل بأداة التعريف المناسبة. — ___ Stifte sind neu.",
+          "en": "Complete with the definite article. — ___ Stifte sind neu."
         },
         "selection": "single",
         "options": [
-          "ein",
-          "eine",
-          "Die"
+          "Die",
+          "Der",
+          "Den",
+          "Dem"
         ]
       },
       {
         "id": "kapitel-14-ubung-01-q08",
         "position": 8,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — ___ Blumen sind schön. (bekannt)",
-          "de": "Ergänzen Sie. — ___ Blumen sind schön. (bekannt)",
-          "ar": "أكمل. — ___ Blumen sind schön. (bekannt)",
-          "en": "Complete. — ___ Blumen sind schön. (bekannt)"
+          "fr": "Complétez avec l’article défini.",
+          "de": "Ergänzen Sie den bestimmten Artikel.",
+          "ar": "أكمل بأداة التعريف المناسبة.",
+          "en": "Complete with the definite article."
         },
-        "selection": "single",
-        "options": [
-          "Die",
-          "ein",
-          "eine"
-        ]
+        "sentence": "___ Blumen sind schön.",
+        "blanks": 1
       }
     ]
   },
@@ -152,10 +153,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 2,
     "title": {
-      "fr": "Akkusativ indefinit",
+      "fr": "Indéfini à l’accusatif",
       "de": "Akkusativ indefinit",
-      "ar": "Akkusativ indefinit",
-      "en": "Akkusativ indefinit"
+      "ar": "النكرة في النصب",
+      "en": "Indefinite accusative"
     },
     "description": {
       "fr": "Articles",
@@ -169,15 +170,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Hast du ___ Kuli?",
-          "de": "Ergänzen Sie. — Hast du ___ Kuli?",
-          "ar": "أكمل. — Hast du ___ Kuli?",
-          "en": "Complete. — Hast du ___ Kuli?"
+          "fr": "Complétez avec l’article indéfini. — Hast du ___ Kuli?",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Hast du ___ Kuli?",
+          "ar": "أكمل بأداة النكرة المناسبة. — Hast du ___ Kuli?",
+          "en": "Complete with the indefinite article. — Hast du ___ Kuli?"
         },
         "selection": "single",
         "options": [
-          "eine",
+          "einer",
           "ein",
+          "einem",
           "einen"
         ]
       },
@@ -186,16 +188,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Hast du ___ Auto?",
-          "de": "Ergänzen Sie. — Hast du ___ Auto?",
-          "ar": "أكمل. — Hast du ___ Auto?",
-          "en": "Complete. — Hast du ___ Auto?"
+          "fr": "Complétez avec l’article indéfini. — Hast du ___ Auto?",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Hast du ___ Auto?",
+          "ar": "أكمل بأداة النكرة المناسبة. — Hast du ___ Auto?",
+          "en": "Complete with the indefinite article. — Hast du ___ Auto?"
         },
         "selection": "single",
         "options": [
+          "einem",
+          "ein",
           "eine",
-          "einen",
-          "ein"
+          "einen"
         ]
       },
       {
@@ -203,16 +206,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Hast du ___ Uhr?",
-          "de": "Ergänzen Sie. — Hast du ___ Uhr?",
-          "ar": "أكمل. — Hast du ___ Uhr?",
-          "en": "Complete. — Hast du ___ Uhr?"
+          "fr": "Complétez avec l’article indéfini. — Hast du ___ Uhr?",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Hast du ___ Uhr?",
+          "ar": "أكمل بأداة النكرة المناسبة. — Hast du ___ Uhr?",
+          "en": "Complete with the indefinite article. — Hast du ___ Uhr?"
         },
         "selection": "single",
         "options": [
+          "einer",
+          "eine",
           "einen",
-          "ein",
-          "eine"
+          "ein"
         ]
       },
       {
@@ -220,10 +224,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
         "sentence": "Hast du ___ Schirm?",
         "blanks": 1
@@ -233,10 +237,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
         "sentence": "Hast du ___ Computer?",
         "blanks": 1
@@ -246,16 +250,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Hast du ___ Katze?",
-          "de": "Ergänzen Sie. — Hast du ___ Katze?",
-          "ar": "أكمل. — Hast du ___ Katze?",
-          "en": "Complete. — Hast du ___ Katze?"
+          "fr": "Complétez avec l’article indéfini. — Hast du ___ Katze?",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Hast du ___ Katze?",
+          "ar": "أكمل بأداة النكرة المناسبة. — Hast du ___ Katze?",
+          "en": "Complete with the indefinite article. — Hast du ___ Katze?"
         },
         "selection": "single",
         "options": [
           "einen",
-          "eine",
-          "ein"
+          "ein",
+          "einem",
+          "eine"
         ]
       },
       {
@@ -263,16 +268,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Hast du ___ Handy?",
-          "de": "Ergänzen Sie. — Hast du ___ Handy?",
-          "ar": "أكمل. — Hast du ___ Handy?",
-          "en": "Complete. — Hast du ___ Handy?"
+          "fr": "Complétez avec l’article indéfini. — Hast du ___ Handy?",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Hast du ___ Handy?",
+          "ar": "أكمل بأداة النكرة المناسبة. — Hast du ___ Handy?",
+          "en": "Complete with the indefinite article. — Hast du ___ Handy?"
         },
         "selection": "single",
         "options": [
-          "eine",
+          "ein",
+          "einem",
           "einen",
-          "ein"
+          "einer"
         ]
       }
     ]
@@ -282,10 +288,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 3,
     "title": {
-      "fr": "Akkusativ definit",
+      "fr": "Défini à l’accusatif",
       "de": "Akkusativ definit",
-      "ar": "Akkusativ definit",
-      "en": "Akkusativ definit"
+      "ar": "المعرفة في النصب",
+      "en": "Definite accusative"
     },
     "description": {
       "fr": "Articles",
@@ -299,16 +305,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Wie findest du ___ Bluse?",
-          "de": "Ergänzen Sie. — Wie findest du ___ Bluse?",
-          "ar": "أكمل. — Wie findest du ___ Bluse?",
-          "en": "Complete. — Wie findest du ___ Bluse?"
+          "fr": "Complétez avec l’article défini. — Wie findest du ___ Bluse?",
+          "de": "Ergänzen Sie den bestimmten Artikel. — Wie findest du ___ Bluse?",
+          "ar": "أكمل بأداة التعريف المناسبة. — Wie findest du ___ Bluse?",
+          "en": "Complete with the definite article. — Wie findest du ___ Bluse?"
         },
         "selection": "single",
         "options": [
           "das",
+          "den",
           "die",
-          "den"
+          "dem"
         ]
       },
       {
@@ -316,16 +323,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Wie findest du ___ Kleid?",
-          "de": "Ergänzen Sie. — Wie findest du ___ Kleid?",
-          "ar": "أكمل. — Wie findest du ___ Kleid?",
-          "en": "Complete. — Wie findest du ___ Kleid?"
+          "fr": "Complétez avec l’article défini. — Wie findest du ___ Kleid?",
+          "de": "Ergänzen Sie den bestimmten Artikel. — Wie findest du ___ Kleid?",
+          "ar": "أكمل بأداة التعريف المناسبة. — Wie findest du ___ Kleid?",
+          "en": "Complete with the definite article. — Wie findest du ___ Kleid?"
         },
         "selection": "single",
         "options": [
+          "den",
+          "der",
           "die",
-          "das",
-          "den"
+          "das"
         ]
       },
       {
@@ -333,16 +341,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Wie findest du ___ Schuhe?",
-          "de": "Ergänzen Sie. — Wie findest du ___ Schuhe?",
-          "ar": "أكمل. — Wie findest du ___ Schuhe?",
-          "en": "Complete. — Wie findest du ___ Schuhe?"
+          "fr": "Complétez avec l’article défini. — Wie findest du ___ Schuhe?",
+          "de": "Ergänzen Sie den bestimmten Artikel. — Wie findest du ___ Schuhe?",
+          "ar": "أكمل بأداة التعريف المناسبة. — Wie findest du ___ Schuhe?",
+          "en": "Complete with the definite article. — Wie findest du ___ Schuhe?"
         },
         "selection": "single",
         "options": [
+          "der",
           "die",
-          "das",
-          "den"
+          "den",
+          "dem"
         ]
       },
       {
@@ -350,10 +359,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec l’article défini.",
+          "de": "Ergänzen Sie den bestimmten Artikel.",
+          "ar": "أكمل بأداة التعريف المناسبة.",
+          "en": "Complete with the definite article."
         },
         "sentence": "Wie findest du ___ Hund?",
         "blanks": 1
@@ -365,10 +374,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 4,
     "title": {
-      "fr": "Positiv",
+      "fr": "Forme affirmative",
       "de": "Positiv",
-      "ar": "Positiv",
-      "en": "Positiv"
+      "ar": "الصيغة المثبتة",
+      "en": "Affirmative form"
     },
     "description": {
       "fr": "Articles",
@@ -380,29 +389,37 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-14-ubung-04-q01",
         "position": 1,
-        "type": "true_false",
+        "type": "qcm",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Formulez la phrase affirmative : article indéfini ou — (sans article). — Sie hat keine Zeit. → Sie hat ___ Zeit.",
+          "de": "Formulieren Sie positiv: unbestimmter Artikel oder — (kein Artikel). — Sie hat keine Zeit. → Sie hat ___ Zeit.",
+          "ar": "حوّل إلى جملة مثبتة: أداة نكرة أو — (دون أداة). — Sie hat keine Zeit. → Sie hat ___ Zeit.",
+          "en": "Make the sentence affirmative: indefinite article or — (no article). — Sie hat keine Zeit. → Sie hat ___ Zeit."
         },
-        "statement": "hat Sie Zeit ."
+        "selection": "single",
+        "options": [
+          "einen",
+          "eine",
+          "ein",
+          "—"
+        ]
       },
       {
         "id": "kapitel-14-ubung-04-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Formulez la phrase affirmative : article indéfini ou — (sans article). — Sie hat kein Geld. → Sie hat ___ Geld.",
+          "de": "Formulieren Sie positiv: unbestimmter Artikel oder — (kein Artikel). — Sie hat kein Geld. → Sie hat ___ Geld.",
+          "ar": "حوّل إلى جملة مثبتة: أداة نكرة أو — (دون أداة). — Sie hat kein Geld. → Sie hat ___ Geld.",
+          "en": "Make the sentence affirmative: indefinite article or — (no article). — Sie hat kein Geld. → Sie hat ___ Geld."
         },
         "selection": "single",
         "options": [
-          "hat Sie Geld .",
-          "Sie hat Geld ."
+          "eine",
+          "ein",
+          "—",
+          "einen"
         ]
       },
       {
@@ -410,63 +427,72 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Formulez la phrase affirmative : article indéfini ou — (sans article). — Sie hat kein Handy. → Sie hat ___ Handy.",
+          "de": "Formulieren Sie positiv: unbestimmter Artikel oder — (kein Artikel). — Sie hat kein Handy. → Sie hat ___ Handy.",
+          "ar": "حوّل إلى جملة مثبتة: أداة نكرة أو — (دون أداة). — Sie hat kein Handy. → Sie hat ___ Handy.",
+          "en": "Make the sentence affirmative: indefinite article or — (no article). — Sie hat kein Handy. → Sie hat ___ Handy."
         },
         "selection": "single",
         "options": [
-          "hat Sie ein Handy .",
-          "Sie hat ein Handy ."
+          "einen",
+          "eine",
+          "ein",
+          "—"
         ]
       },
       {
         "id": "kapitel-14-ubung-04-q04",
         "position": 4,
-        "type": "reorder",
+        "type": "qcm",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Formulez la phrase affirmative : article indéfini ou — (sans article). — Sie mag keinen Reis. → Sie mag ___ Reis.",
+          "de": "Formulieren Sie positiv: unbestimmter Artikel oder — (kein Artikel). — Sie mag keinen Reis. → Sie mag ___ Reis.",
+          "ar": "حوّل إلى جملة مثبتة: أداة نكرة أو — (دون أداة). — Sie mag keinen Reis. → Sie mag ___ Reis.",
+          "en": "Make the sentence affirmative: indefinite article or — (no article). — Sie mag keinen Reis. → Sie mag ___ Reis."
         },
-        "tokens": [
-          "mag",
-          "Sie",
-          ".",
-          "Reis"
+        "selection": "single",
+        "options": [
+          "eine",
+          "—",
+          "ein",
+          "einen"
         ]
       },
       {
         "id": "kapitel-14-ubung-04-q05",
         "position": 5,
-        "type": "reorder",
+        "type": "qcm",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Formulez la phrase affirmative : article indéfini ou — (sans article). — Sie hat kein Fahrrad. → Sie hat ___ Fahrrad.",
+          "de": "Formulieren Sie positiv: unbestimmter Artikel oder — (kein Artikel). — Sie hat kein Fahrrad. → Sie hat ___ Fahrrad.",
+          "ar": "حوّل إلى جملة مثبتة: أداة نكرة أو — (دون أداة). — Sie hat kein Fahrrad. → Sie hat ___ Fahrrad.",
+          "en": "Make the sentence affirmative: indefinite article or — (no article). — Sie hat kein Fahrrad. → Sie hat ___ Fahrrad."
         },
-        "tokens": [
-          "ein",
-          "Fahrrad",
-          "Sie",
-          ".",
-          "hat"
+        "selection": "single",
+        "options": [
+          "eine",
+          "einen",
+          "—",
+          "ein"
         ]
       },
       {
         "id": "kapitel-14-ubung-04-q06",
         "position": 6,
-        "type": "true_false",
+        "type": "qcm",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Formulez la phrase affirmative : article indéfini ou — (sans article). — Sie hat kein Glück. → Sie hat ___ Glück.",
+          "de": "Formulieren Sie positiv: unbestimmter Artikel oder — (kein Artikel). — Sie hat kein Glück. → Sie hat ___ Glück.",
+          "ar": "حوّل إلى جملة مثبتة: أداة نكرة أو — (دون أداة). — Sie hat kein Glück. → Sie hat ___ Glück.",
+          "en": "Make the sentence affirmative: indefinite article or — (no article). — Sie hat kein Glück. → Sie hat ___ Glück."
         },
-        "statement": "Sie hat Glück ."
+        "selection": "single",
+        "options": [
+          "einen",
+          "ein",
+          "—",
+          "eine"
+        ]
       }
     ]
   },
@@ -475,10 +501,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 5,
     "title": {
-      "fr": "Stadtführung",
+      "fr": "Visite de la ville",
       "de": "Stadtführung",
-      "ar": "Stadtführung",
-      "en": "Stadtführung"
+      "ar": "جولة في المدينة",
+      "en": "City tour"
     },
     "description": {
       "fr": "Articles",
@@ -492,17 +518,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Da ist ___ Stadion. (neu)",
-          "de": "Ergänzen Sie. — Da ist ___ Stadion. (neu)",
-          "ar": "أكمل. — Da ist ___ Stadion. (neu)",
-          "en": "Complete. — Da ist ___ Stadion. (neu)"
+          "fr": "Complétez avec l’article indéfini. — Da ist ___ Stadion.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Da ist ___ Stadion.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Da ist ___ Stadion.",
+          "en": "Complete with the indefinite article. — Da ist ___ Stadion."
         },
         "selection": "single",
         "options": [
-          "das",
-          "eine",
+          "einer",
           "ein",
-          "der"
+          "einen",
+          "eine"
         ]
       },
       {
@@ -510,17 +536,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Das ist ___ Olympiastadion.",
-          "de": "Ergänzen Sie. — Das ist ___ Olympiastadion.",
-          "ar": "أكمل. — Das ist ___ Olympiastadion.",
-          "en": "Complete. — Das ist ___ Olympiastadion."
+          "fr": "Complétez avec l’article défini. — Das ist ___ Olympiastadion.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — Das ist ___ Olympiastadion.",
+          "ar": "أكمل بأداة التعريف المناسبة. — Das ist ___ Olympiastadion.",
+          "en": "Complete with the definite article. — Das ist ___ Olympiastadion."
         },
         "selection": "single",
         "options": [
+          "dem",
+          "den",
           "der",
-          "ein",
-          "das",
-          "die"
+          "das"
         ]
       },
       {
@@ -528,17 +554,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Sie sehen ___ Kirche. (neu)",
-          "de": "Ergänzen Sie. — Sie sehen ___ Kirche. (neu)",
-          "ar": "أكمل. — Sie sehen ___ Kirche. (neu)",
-          "en": "Complete. — Sie sehen ___ Kirche. (neu)"
+          "fr": "Complétez avec l’article indéfini. — Sie sehen ___ Kirche.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Sie sehen ___ Kirche.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Sie sehen ___ Kirche.",
+          "en": "Complete with the indefinite article. — Sie sehen ___ Kirche."
         },
         "selection": "single",
         "options": [
-          "der",
-          "eine",
+          "einen",
           "ein",
-          "das"
+          "eine",
+          "einer"
         ]
       },
       {
@@ -546,10 +572,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec l’article défini.",
+          "de": "Ergänzen Sie den bestimmten Artikel.",
+          "ar": "أكمل بأداة التعريف المناسبة.",
+          "en": "Complete with the definite article."
         },
         "sentence": "Das ist ___ Frauenkirche.",
         "blanks": 1
@@ -559,12 +585,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
-        "sentence": "Hier ist ___ großer Platz. (neu)",
+        "sentence": "Hier ist ___ großer Platz.",
         "blanks": 1
       },
       {
@@ -572,17 +598,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Das ist ___ Marienplatz.",
-          "de": "Ergänzen Sie. — Das ist ___ Marienplatz.",
-          "ar": "أكمل. — Das ist ___ Marienplatz.",
-          "en": "Complete. — Das ist ___ Marienplatz."
+          "fr": "Complétez avec l’article défini. — Das ist ___ Marienplatz.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — Das ist ___ Marienplatz.",
+          "ar": "أكمل بأداة التعريف المناسبة. — Das ist ___ Marienplatz.",
+          "en": "Complete with the definite article. — Das ist ___ Marienplatz."
         },
         "selection": "single",
         "options": [
-          "eine",
-          "die",
+          "den",
+          "das",
           "der",
-          "ein"
+          "die"
         ]
       },
       {
@@ -590,36 +616,31 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Dort steht ___ Haus. (neu)",
-          "de": "Ergänzen Sie. — Dort steht ___ Haus. (neu)",
-          "ar": "أكمل. — Dort steht ___ Haus. (neu)",
-          "en": "Complete. — Dort steht ___ Haus. (neu)"
+          "fr": "Complétez avec l’article indéfini. — Dort steht ___ Haus.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Dort steht ___ Haus.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Dort steht ___ Haus.",
+          "en": "Complete with the indefinite article. — Dort steht ___ Haus."
         },
         "selection": "single",
         "options": [
-          "die",
+          "einer",
+          "einen",
           "ein",
-          "der",
-          "das"
+          "eine"
         ]
       },
       {
         "id": "kapitel-14-ubung-05-q08",
         "position": 8,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Das ist ___ Rathaus.",
-          "de": "Ergänzen Sie. — Das ist ___ Rathaus.",
-          "ar": "أكمل. — Das ist ___ Rathaus.",
-          "en": "Complete. — Das ist ___ Rathaus."
+          "fr": "Complétez avec l’article défini.",
+          "de": "Ergänzen Sie den bestimmten Artikel.",
+          "ar": "أكمل بأداة التعريف المناسبة.",
+          "en": "Complete with the definite article."
         },
-        "selection": "single",
-        "options": [
-          "eine",
-          "ein",
-          "der",
-          "das"
-        ]
+        "sentence": "Das ist ___ Rathaus.",
+        "blanks": 1
       }
     ]
   },
@@ -628,10 +649,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 6,
     "title": {
-      "fr": "Märchen",
+      "fr": "Conte",
       "de": "Märchen",
-      "ar": "Märchen",
-      "en": "Märchen"
+      "ar": "حكاية",
+      "en": "Fairy tale"
     },
     "description": {
       "fr": "Articles",
@@ -645,17 +666,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Es war einmal ___ König.",
-          "de": "Ergänzen Sie. — Es war einmal ___ König.",
-          "ar": "أكمل. — Es war einmal ___ König.",
-          "en": "Complete. — Es war einmal ___ König."
+          "fr": "Complétez avec l’article indéfini. — Es war einmal ___ König.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Es war einmal ___ König.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Es war einmal ___ König.",
+          "en": "Complete with the indefinite article. — Es war einmal ___ König."
         },
         "selection": "single",
         "options": [
-          "ein",
-          "die",
-          "Der",
-          "Die"
+          "eine",
+          "einen",
+          "einer",
+          "ein"
         ]
       },
       {
@@ -663,17 +684,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — ___ König war reich. (bekannt)",
-          "de": "Ergänzen Sie. — ___ König war reich. (bekannt)",
-          "ar": "أكمل. — ___ König war reich. (bekannt)",
-          "en": "Complete. — ___ König war reich. (bekannt)"
+          "fr": "Complétez avec l’article défini. — ___ König war reich.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — ___ König war reich.",
+          "ar": "أكمل بأداة التعريف المناسبة. — ___ König war reich.",
+          "en": "Complete with the definite article. — ___ König war reich."
         },
         "selection": "single",
         "options": [
-          "Der",
-          "eine",
           "Die",
-          "ein"
+          "Der",
+          "Das",
+          "Dem"
         ]
       },
       {
@@ -681,17 +702,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Er hatte ___ Tochter. (neu)",
-          "de": "Ergänzen Sie. — Er hatte ___ Tochter. (neu)",
-          "ar": "أكمل. — Er hatte ___ Tochter. (neu)",
-          "en": "Complete. — Er hatte ___ Tochter. (neu)"
+          "fr": "Complétez avec l’article indéfini. — Er hatte ___ Tochter.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Er hatte ___ Tochter.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Er hatte ___ Tochter.",
+          "en": "Complete with the indefinite article. — Er hatte ___ Tochter."
         },
         "selection": "single",
         "options": [
-          "ein",
-          "Die",
           "eine",
-          "die"
+          "einer",
+          "einen",
+          "einem"
         ]
       },
       {
@@ -699,12 +720,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec l’article défini.",
+          "de": "Ergänzen Sie den bestimmten Artikel.",
+          "ar": "أكمل بأداة التعريف المناسبة.",
+          "en": "Complete with the definite article."
         },
-        "sentence": "___ Tochter war schön. (bekannt)",
+        "sentence": "___ Tochter war schön.",
         "blanks": 1
       },
       {
@@ -712,10 +733,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
         "sentence": "Eines Tages kommt ___ Prinz.",
         "blanks": 1
@@ -725,17 +746,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — ___ Prinz möchte heiraten. (bekannt)",
-          "de": "Ergänzen Sie. — ___ Prinz möchte heiraten. (bekannt)",
-          "ar": "أكمل. — ___ Prinz möchte heiraten. (bekannt)",
-          "en": "Complete. — ___ Prinz möchte heiraten. (bekannt)"
+          "fr": "Complétez avec l’article défini. — ___ Prinz möchte heiraten.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — ___ Prinz möchte heiraten.",
+          "ar": "أكمل بأداة التعريف المناسبة. — ___ Prinz möchte heiraten.",
+          "en": "Complete with the definite article. — ___ Prinz möchte heiraten."
         },
         "selection": "single",
         "options": [
-          "ein",
-          "Der",
           "Die",
-          "die"
+          "Der",
+          "Das",
+          "Den"
         ]
       },
       {
@@ -743,36 +764,31 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Er möchte ___ Prinzessin heiraten. (bekannt)",
-          "de": "Ergänzen Sie. — Er möchte ___ Prinzessin heiraten. (bekannt)",
-          "ar": "أكمل. — Er möchte ___ Prinzessin heiraten. (bekannt)",
-          "en": "Complete. — Er möchte ___ Prinzessin heiraten. (bekannt)"
+          "fr": "Complétez avec l’article défini. — Er möchte ___ Prinzessin heiraten.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — Er möchte ___ Prinzessin heiraten.",
+          "ar": "أكمل بأداة التعريف المناسبة. — Er möchte ___ Prinzessin heiraten.",
+          "en": "Complete with the definite article. — Er möchte ___ Prinzessin heiraten."
         },
         "selection": "single",
         "options": [
           "die",
-          "eine",
-          "Die",
-          "Der"
+          "der",
+          "das",
+          "den"
         ]
       },
       {
         "id": "kapitel-14-ubung-06-q08",
         "position": 8,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Zum Schluss bekommen sie ___ Tochter.",
-          "de": "Ergänzen Sie. — Zum Schluss bekommen sie ___ Tochter.",
-          "ar": "أكمل. — Zum Schluss bekommen sie ___ Tochter.",
-          "en": "Complete. — Zum Schluss bekommen sie ___ Tochter."
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
-        "selection": "single",
-        "options": [
-          "Der",
-          "Die",
-          "eine",
-          "die"
-        ]
+        "sentence": "Zum Schluss bekommen sie ___ Tochter.",
+        "blanks": 1
       }
     ]
   },
@@ -781,10 +797,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 7,
     "title": {
-      "fr": "Dativ definit",
+      "fr": "Défini au datif",
       "de": "Dativ definit",
-      "ar": "Dativ definit",
-      "en": "Dativ definit"
+      "ar": "المعرفة في الداتيف",
+      "en": "Definite dative"
     },
     "description": {
       "fr": "Articles",
@@ -796,14 +812,27 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-14-ubung-07-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "matching",
         "prompt": {
-          "fr": "Complétez. — Ich helfe ___ Mann. (bekannt)",
-          "de": "Ergänzen Sie. — Ich helfe ___ Mann. (bekannt)",
-          "ar": "أكمل. — Ich helfe ___ Mann. (bekannt)",
-          "en": "Complete. — Ich helfe ___ Mann. (bekannt)"
+          "fr": "Associez chaque élément à sa forme correcte.",
+          "de": "Ordnen Sie jedem Element die richtige Form zu.",
+          "ar": "صل كل عنصر بصيغته الصحيحة.",
+          "en": "Match each item to its correct form."
         },
-        "selection": "single",
+        "items": [
+          {
+            "id": "kapitel-14-ubung-07-q01-m1",
+            "label": "Ich helfe ___ Mann. (definit)"
+          },
+          {
+            "id": "kapitel-14-ubung-07-q01-m2",
+            "label": "Ich helfe ___ Frau. (definit)"
+          },
+          {
+            "id": "kapitel-14-ubung-07-q01-m3",
+            "label": "Ich helfe ___ Kindern. (definit)"
+          }
+        ],
         "options": [
           "dem",
           "der",
@@ -815,15 +844,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich helfe ___ Frau. (bekannt)",
-          "de": "Ergänzen Sie. — Ich helfe ___ Frau. (bekannt)",
-          "ar": "أكمل. — Ich helfe ___ Frau. (bekannt)",
-          "en": "Complete. — Ich helfe ___ Frau. (bekannt)"
+          "fr": "Complétez avec l’article défini. — Ich helfe ___ Frau.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — Ich helfe ___ Frau.",
+          "ar": "أكمل بأداة التعريف المناسبة. — Ich helfe ___ Frau.",
+          "en": "Complete with the definite article. — Ich helfe ___ Frau."
         },
         "selection": "single",
         "options": [
+          "das",
           "der",
-          "dem",
+          "die",
           "den"
         ]
       },
@@ -832,15 +862,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich fahre mit ___ Auto. (bekannt)",
-          "de": "Ergänzen Sie. — Ich fahre mit ___ Auto. (bekannt)",
-          "ar": "أكمل. — Ich fahre mit ___ Auto. (bekannt)",
-          "en": "Complete. — Ich fahre mit ___ Auto. (bekannt)"
+          "fr": "Complétez avec l’article défini. — Ich fahre mit ___ Auto.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — Ich fahre mit ___ Auto.",
+          "ar": "أكمل بأداة التعريف المناسبة. — Ich fahre mit ___ Auto.",
+          "en": "Complete with the definite article. — Ich fahre mit ___ Auto."
         },
         "selection": "single",
         "options": [
-          "der",
           "dem",
+          "der",
+          "das",
           "den"
         ]
       },
@@ -849,12 +880,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec l’article défini.",
+          "de": "Ergänzen Sie den bestimmten Artikel.",
+          "ar": "أكمل بأداة التعريف المناسبة.",
+          "en": "Complete with the definite article."
         },
-        "sentence": "Ich spreche mit ___ Freunden. (bekannt)",
+        "sentence": "Ich spreche mit ___ Freunden.",
         "blanks": 1
       }
     ]
@@ -864,10 +895,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 8,
     "title": {
-      "fr": "Dativ indefinit",
+      "fr": "Indéfini au datif",
       "de": "Dativ indefinit",
-      "ar": "Dativ indefinit",
-      "en": "Dativ indefinit"
+      "ar": "النكرة في الداتيف",
+      "en": "Indefinite dative"
     },
     "description": {
       "fr": "Articles",
@@ -879,33 +910,32 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-14-ubung-08-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Ich helfe ___ Mann. (unbekannt)",
-          "de": "Ergänzen Sie. — Ich helfe ___ Mann. (unbekannt)",
-          "ar": "أكمل. — Ich helfe ___ Mann. (unbekannt)",
-          "en": "Complete. — Ich helfe ___ Mann. (unbekannt)"
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
-        "selection": "single",
-        "options": [
-          "einer",
-          "einem"
-        ]
+        "sentence": "Ich helfe ___ Mann.",
+        "blanks": 1
       },
       {
         "id": "kapitel-14-ubung-08-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich spreche mit ___ Freundin. (unbekannt)",
-          "de": "Ergänzen Sie. — Ich spreche mit ___ Freundin. (unbekannt)",
-          "ar": "أكمل. — Ich spreche mit ___ Freundin. (unbekannt)",
-          "en": "Complete. — Ich spreche mit ___ Freundin. (unbekannt)"
+          "fr": "Complétez avec l’article indéfini. — Ich spreche mit ___ Freundin.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Ich spreche mit ___ Freundin.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Ich spreche mit ___ Freundin.",
+          "en": "Complete with the indefinite article. — Ich spreche mit ___ Freundin."
         },
         "selection": "single",
         "options": [
           "einem",
-          "einer"
+          "ein",
+          "einer",
+          "einen"
         ]
       },
       {
@@ -913,15 +943,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich fahre mit ___ Auto. (unbekannt)",
-          "de": "Ergänzen Sie. — Ich fahre mit ___ Auto. (unbekannt)",
-          "ar": "أكمل. — Ich fahre mit ___ Auto. (unbekannt)",
-          "en": "Complete. — Ich fahre mit ___ Auto. (unbekannt)"
+          "fr": "Complétez avec l’article indéfini. — Ich fahre mit ___ Auto.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Ich fahre mit ___ Auto.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Ich fahre mit ___ Auto.",
+          "en": "Complete with the indefinite article. — Ich fahre mit ___ Auto."
         },
         "selection": "single",
         "options": [
-          "einem",
-          "einer"
+          "einer",
+          "ein",
+          "eine",
+          "einem"
         ]
       }
     ]
@@ -931,10 +963,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 9,
     "title": {
-      "fr": "Bekannt oder neu",
+      "fr": "Connu ou nouveau",
       "de": "Bekannt oder neu",
-      "ar": "Bekannt oder neu",
-      "en": "Bekannt oder neu"
+      "ar": "معروف أم جديد",
+      "en": "Known or new"
     },
     "description": {
       "fr": "Articles",
@@ -948,17 +980,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich kaufe ___ Buch. (neu)",
-          "de": "Ergänzen Sie. — Ich kaufe ___ Buch. (neu)",
-          "ar": "أكمل. — Ich kaufe ___ Buch. (neu)",
-          "en": "Complete. — Ich kaufe ___ Buch. (neu)"
+          "fr": "Un livre est mentionné pour la première fois. Choisissez toutes les phrases correctes.",
+          "de": "Ein Buch wird zum ersten Mal erwähnt. Wählen Sie alle richtigen Sätze.",
+          "ar": "يذكر الكتاب لأول مرة. اختر كل الجمل الصحيحة.",
+          "en": "A book is mentioned for the first time. Select all correct sentences."
         },
-        "selection": "single",
+        "selection": "multiple",
         "options": [
-          "ein",
-          "einen",
-          "Das",
-          "Der"
+          "Ich suche eine Buch.",
+          "Ich kaufe einen Buch.",
+          "Ich kaufe ein Buch.",
+          "Ich suche ein Buch."
         ]
       },
       {
@@ -966,16 +998,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — ___ Buch ist interessant. (bekannt)",
-          "de": "Ergänzen Sie. — ___ Buch ist interessant. (bekannt)",
-          "ar": "أكمل. — ___ Buch ist interessant. (bekannt)",
-          "en": "Complete. — ___ Buch ist interessant. (bekannt)"
+          "fr": "Complétez avec l’article défini. — ___ Buch ist interessant.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — ___ Buch ist interessant.",
+          "ar": "أكمل بأداة التعريف المناسبة. — ___ Buch ist interessant.",
+          "en": "Complete with the definite article. — ___ Buch ist interessant."
         },
         "selection": "single",
         "options": [
+          "Dem",
+          "Die",
           "Das",
-          "einen",
-          "ein",
           "Der"
         ]
       },
@@ -984,17 +1016,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich sehe ___ Hund. (neu)",
-          "de": "Ergänzen Sie. — Ich sehe ___ Hund. (neu)",
-          "ar": "أكمل. — Ich sehe ___ Hund. (neu)",
-          "en": "Complete. — Ich sehe ___ Hund. (neu)"
+          "fr": "Complétez avec l’article indéfini. — Ich sehe ___ Hund.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Ich sehe ___ Hund.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Ich sehe ___ Hund.",
+          "en": "Complete with the indefinite article. — Ich sehe ___ Hund."
         },
         "selection": "single",
         "options": [
-          "Das",
+          "ein",
           "einen",
-          "Der",
-          "ein"
+          "einem",
+          "einer"
         ]
       },
       {
@@ -1002,12 +1034,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec l’article défini.",
+          "de": "Ergänzen Sie den bestimmten Artikel.",
+          "ar": "أكمل بأداة التعريف المناسبة.",
+          "en": "Complete with the definite article."
         },
-        "sentence": "___ Hund ist klein. (bekannt)",
+        "sentence": "___ Hund ist klein.",
         "blanks": 1
       }
     ]
@@ -1017,10 +1049,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 10,
     "title": {
-      "fr": "Abschlusstest",
+      "fr": "Test final",
       "de": "Abschlusstest",
-      "ar": "Abschlusstest",
-      "en": "Abschlusstest"
+      "ar": "اختبار نهائي",
+      "en": "Final test"
     },
     "description": {
       "fr": "Articles",
@@ -1032,52 +1064,44 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-14-ubung-10-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Sie hat ___ Tasche. (neu)",
-          "de": "Ergänzen Sie. — Sie hat ___ Tasche. (neu)",
-          "ar": "أكمل. — Sie hat ___ Tasche. (neu)",
-          "en": "Complete. — Sie hat ___ Tasche. (neu)"
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
-        "selection": "single",
-        "options": [
-          "den",
-          "eine",
-          "einem"
-        ]
+        "sentence": "Sie hat ___ Tasche.",
+        "blanks": 1
       },
       {
         "id": "kapitel-14-ubung-10-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez. — Er kennt ___ Lehrer. (bekannt)",
-          "de": "Ergänzen Sie. — Er kennt ___ Lehrer. (bekannt)",
-          "ar": "أكمل. — Er kennt ___ Lehrer. (bekannt)",
-          "en": "Complete. — Er kennt ___ Lehrer. (bekannt)"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "selection": "single",
-        "options": [
-          "einem",
-          "eine",
-          "den"
-        ]
+        "statement": "Er kennt der Lehrer."
       },
       {
         "id": "kapitel-14-ubung-10-q03",
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Wir wohnen in ___ Haus. (unbekannt)",
-          "de": "Ergänzen Sie. — Wir wohnen in ___ Haus. (unbekannt)",
-          "ar": "أكمل. — Wir wohnen in ___ Haus. (unbekannt)",
-          "en": "Complete. — Wir wohnen in ___ Haus. (unbekannt)"
+          "fr": "Complétez avec l’article indéfini. — Wir wohnen in ___ Haus.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Wir wohnen in ___ Haus.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Wir wohnen in ___ Haus.",
+          "en": "Complete with the indefinite article. — Wir wohnen in ___ Haus."
         },
         "selection": "single",
         "options": [
           "eine",
-          "einem",
-          "den"
+          "ein",
+          "einer",
+          "einem"
         ]
       }
     ]

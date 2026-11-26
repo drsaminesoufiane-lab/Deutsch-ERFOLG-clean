@@ -5,77 +5,78 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "À la pharmacie",
-      "de": "In der Apotheke",
-      "ar": "في الصيدلية",
-      "en": "At the pharmacy"
+      "fr": "Stromausfall im Büro",
+      "de": "Stromausfall im Büro",
+      "ar": "Stromausfall im Büro",
+      "en": "Stromausfall im Büro"
     },
     "description": {
-      "fr": "Emploi des temps",
-      "de": "Zeitengebrauch",
-      "ar": "استعمال الأزمنة",
-      "en": "Use of tenses"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-28-ubung-11-q01",
         "position": 1,
-        "type": "reorder",
-        "tokens": [
-          "Apotheke.",
-          "die",
-          "ich",
-          "öffne",
-          "Morgen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez en commençant par « Morgen » : Demain j’ouvrirai la pharmacie.",
-          "de": "Beginnen Sie mit „Morgen“ und bilden Sie den Satz.",
-          "ar": "رتب الجملة بدءا بـ Morgen: غدا سأفتح الصيدلية.",
-          "en": "Reconstruct starting with Morgen: Tomorrow I will open the pharmacy."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Gestern ___ der Strom aus, deshalb ___ wir die Computer neu ___. (sein, Präteritum; starten, Perfekt)",
+        "blanks": 3
       },
       {
         "id": "kapitel-28-ubung-11-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "Präsens",
-          "Perfekt",
-          "Präteritum"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Identifiez le temps : Gestern habe ich Medikamente bestellt.",
-          "de": "Bestimmen Sie die Zeitform: Gestern habe ich Medikamente bestellt.",
-          "ar": "حدد الزمن: Gestern habe ich Medikamente bestellt.",
-          "en": "Identify the tense: Gestern habe ich Medikamente bestellt."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Heute ___ die Geräte wieder; morgen ___ ein Techniker. (funktionieren/kommen, Präsens)",
+        "blanks": 2
       },
       {
         "id": "kapitel-28-ubung-11-q03",
         "position": 3,
-        "type": "fill_blank",
-        "sentence": "Der Kunde ___ Fieber.",
-        "blanks": 1,
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Complétez au Präteritum : Le client avait de la fièvre.",
-          "de": "Ergänzen Sie im Präteritum.",
-          "ar": "أكمل في زمن Präteritum: كان الزبون يعاني من الحمى.",
-          "en": "Complete in the Präteritum: The customer had a fever."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Die Technikerin hat uns geholfen.",
+          "Wir konntet keine Rechnungen drucken.",
+          "Die Technikerin ist uns geholfen.",
+          "Wir konnten keine Rechnungen drucken."
+        ]
       },
       {
         "id": "kapitel-28-ubung-11-q04",
         "position": 4,
-        "type": "true_false",
-        "statement": "Heute beraten wir die Kunden. — Perfekt",
+        "type": "reorder",
         "prompt": {
-          "fr": "Le temps indiqué est-il correct ?",
-          "de": "Stimmt die angegebene Zeitform?",
-          "ar": "هل الزمن المحدد صحيح؟",
-          "en": "Is the indicated tense correct?"
-        }
+          "fr": "Nach der Reparatur … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Nach der Reparatur … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Nach der Reparatur … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Nach der Reparatur … — Start with this chunk and reconstruct the sentence."
+        },
+        "tokens": [
+          "alle Daten gespeichert.",
+          "Nach der Reparatur",
+          "wir",
+          "haben"
+        ]
       }
     ]
   },
@@ -84,89 +85,78 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Voyage en Allemagne",
-      "de": "Reise nach Deutschland",
-      "ar": "رحلة إلى ألمانيا",
-      "en": "Trip to Germany"
+      "fr": "Am Flughafen",
+      "de": "Am Flughafen",
+      "ar": "Am Flughafen",
+      "en": "Am Flughafen"
     },
     "description": {
-      "fr": "Emploi des temps",
-      "de": "Zeitengebrauch",
-      "ar": "استعمال الأزمنة",
-      "en": "Use of tenses"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-28-ubung-12-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "Präsens",
-          "Perfekt",
-          "Präteritum"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Identifiez le temps : Der Zug ist zu spät angekommen.",
-          "de": "Bestimmen Sie die Zeitform: Der Zug ist zu spät angekommen.",
-          "ar": "حدد الزمن: Der Zug ist zu spät angekommen.",
-          "en": "Identify the tense: Der Zug ist zu spät angekommen."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Am Flughafen ___ wir zwei Stunden warten; dann ___ das Flugzeug endlich ___. (müssen, Präteritum; starten, Perfekt)",
+        "blanks": 3
       },
       {
         "id": "kapitel-28-ubung-12-q02",
         "position": 2,
         "type": "fill_blank",
-        "sentence": "Wir ___ am Bahnhof warten.",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez au Präteritum : Nous devions attendre à la gare.",
-          "de": "Ergänzen Sie im Präteritum.",
-          "ar": "أكمل في زمن Präteritum: كان علينا الانتظار في المحطة.",
-          "en": "Complete in the Präteritum: We had to wait at the station."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Wir ___ kein Zimmer ___, aber das Hotel ___ noch Platz. (reservieren, Perfekt; haben, Präteritum)",
+        "blanks": 3
       },
       {
         "id": "kapitel-28-ubung-12-q03",
         "position": 3,
-        "type": "true_false",
-        "statement": "Nächste Woche fahren wir nach Berlin. — Präsens",
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Le temps indiqué est-il correct ?",
-          "de": "Stimmt die angegebene Zeitform?",
-          "ar": "هل الزمن المحدد صحيح؟",
-          "en": "Is the indicated tense correct?"
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Gestern sind wir im Hotel geblieben.",
+          "Morgen besichtigen wir die Altstadt.",
+          "Gestern haben wir im Hotel geblieben.",
+          "Morgen besichtigt wir die Altstadt."
+        ]
       },
       {
         "id": "kapitel-28-ubung-12-q04",
         "position": 4,
-        "type": "matching",
-        "items": [
-          {
-            "id": "1",
-            "label": "Ich arbeite."
-          },
-          {
-            "id": "2",
-            "label": "Ich war müde."
-          },
-          {
-            "id": "3",
-            "label": "Ich habe gearbeitet."
-          }
-        ],
-        "options": [
-          "Perfekt",
-          "Präsens",
-          "Präteritum"
-        ],
+        "type": "reorder",
         "prompt": {
-          "fr": "Associez chaque phrase à son temps.",
-          "de": "Ordnen Sie die Zeitformen zu.",
-          "ar": "طابق كل جملة مع زمنها.",
-          "en": "Match each sentence to its tense."
-        }
+          "fr": "Am letzten Urlaubstag … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Am letzten Urlaubstag … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Am letzten Urlaubstag … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Am letzten Urlaubstag … — Start with this chunk and reconstruct the sentence."
+        },
+        "tokens": [
+          "eine Wanderung machen.",
+          "wir",
+          "wollen",
+          "Am letzten Urlaubstag"
+        ]
       }
     ]
   },
@@ -175,90 +165,74 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Hier, aujourd’hui, demain",
-      "de": "Gestern, heute, morgen",
-      "ar": "أمس واليوم وغدا",
-      "en": "Yesterday, today, tomorrow"
+      "fr": "Gestern und morgen",
+      "de": "Gestern und morgen",
+      "ar": "Gestern und morgen",
+      "en": "Gestern und morgen"
     },
     "description": {
-      "fr": "Emploi des temps",
-      "de": "Zeitengebrauch",
-      "ar": "استعمال الأزمنة",
-      "en": "Use of tenses"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-28-ubung-13-q01",
         "position": 1,
         "type": "fill_blank",
-        "sentence": "Heute ___ es.",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez au Präsens : Aujourd’hui il pleut.",
-          "de": "Ergänzen Sie im Präsens.",
-          "ar": "أكمل في زمن Präsens: اليوم تمطر.",
-          "en": "Complete in the Präsens: It is raining today."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Gestern ___ es kalt, deshalb ___ ich die Heizung ___. (sein, Präteritum; einschalten, Perfekt)",
+        "blanks": 3
       },
       {
         "id": "kapitel-28-ubung-13-q02",
         "position": 2,
-        "type": "true_false",
-        "statement": "Gestern war das Wetter schön. — Perfekt",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Le temps indiqué est-il correct ?",
-          "de": "Stimmt die angegebene Zeitform?",
-          "ar": "هل الزمن المحدد صحيح؟",
-          "en": "Is the indicated tense correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Heute ___ ich die Fenster; morgen ___ ich die Wohnung. (öffnen/putzen, Präsens)",
+        "blanks": 2
       },
       {
         "id": "kapitel-28-ubung-13-q03",
         "position": 3,
-        "type": "matching",
-        "items": [
-          {
-            "id": "1",
-            "label": "Ich arbeite."
-          },
-          {
-            "id": "2",
-            "label": "Ich war müde."
-          },
-          {
-            "id": "3",
-            "label": "Ich habe gearbeitet."
-          }
-        ],
-        "options": [
-          "Perfekt",
-          "Präsens",
-          "Präteritum"
-        ],
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Associez chaque phrase à son temps.",
-          "de": "Ordnen Sie die Zeitformen zu.",
-          "ar": "طابق كل جملة مع زمنها.",
-          "en": "Match each sentence to its tense."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Sie hatte Kopfschmerzen und ist zu Hause geblieben.",
+          "Sie hatte Kopfschmerzen und hat zu Hause geblieben.",
+          "Morgen können sie wieder arbeiten. (sie = eine Frau)",
+          "Morgen kann sie wieder arbeiten."
+        ]
       },
       {
         "id": "kapitel-28-ubung-13-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "Ich habe den Schlüssel verloren.",
-          "Ich war nie im Kindergarten.",
-          "Ich bin gerne in die Schule gegangen.",
-          "Ich habe zwei Geschwister."
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez deux phrases au Perfekt",
-          "de": "Wählen Sie zwei Sätze im Perfekt",
-          "ar": "اختر جملتين في زمن Perfekt",
-          "en": "Select two sentences in the Perfekt"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Der Nachbar ___ uns gestern ___. Heute ___ wir ihm. (helfen, Perfekt; danken, Präsens)",
+        "blanks": 3
       }
     ]
   }

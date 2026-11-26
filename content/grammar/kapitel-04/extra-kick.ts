@@ -5,139 +5,158 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "En voyage",
+      "fr": "En déplacement",
       "de": "Unterwegs",
-      "ar": "في السفر",
-      "en": "Travelling"
+      "ar": "أثناء التنقل",
+      "en": "On the move"
     },
     "description": {
-      "fr": "Entraînez-vous au présent.",
-      "de": "Üben Sie das Präsens.",
-      "ar": "تدرّب على المضارع.",
-      "en": "Practise the present tense."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
         "id": "kapitel-04-ubung-11-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez : nehmen — Du ___ den Zug.",
-          "de": "Ergänzen Sie: nehmen — Du ___ den Zug.",
-          "ar": "أكمل: nehmen — Du ___ den Zug.",
-          "en": "Complete: nehmen — Du ___ den Zug."
-        },
         "type": "qcm",
+        "prompt": {
+          "fr": "Conjuguez nehmen au présent. — Ich ___ morgens den Bus. (nehmen)",
+          "de": "Konjugieren Sie nehmen im Präsens. — Ich ___ morgens den Bus. (nehmen)",
+          "ar": "صرّف nehmen في المضارع. — Ich ___ morgens den Bus. (nehmen)",
+          "en": "Conjugate nehmen in the present tense. — Ich ___ morgens den Bus. (nehmen)"
+        },
         "selection": "single",
         "options": [
-          "sehen",
+          "nehmen",
           "nimmst",
-          "machst",
-          "leben"
+          "nimmt",
+          "nehme"
         ]
       },
       {
         "id": "kapitel-04-ubung-11-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : fahren — Er ___ nach Hamburg.",
-          "de": "Ergänzen Sie: fahren — Er ___ nach Hamburg.",
-          "ar": "أكمل: fahren — Er ___ nach Hamburg.",
-          "en": "Complete: fahren — Er ___ nach Hamburg."
+          "fr": "Conjuguez sehen au présent.",
+          "de": "Konjugieren Sie sehen im Präsens.",
+          "ar": "صرّف sehen في المضارع.",
+          "en": "Conjugate sehen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "empfiehlt",
-          "fährt",
-          "empfehlen",
-          "vergesst"
-        ]
+        "sentence": "___ du das Schild? (sehen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-11-q03",
         "position": 3,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : laufen",
-          "de": "Ergänzen Sie: laufen",
-          "ar": "أكمل: laufen",
-          "en": "Complete: laufen"
+          "fr": "Conjuguez fahren au présent.",
+          "de": "Konjugieren Sie fahren im Präsens.",
+          "ar": "صرّف fahren في المضارع.",
+          "en": "Conjugate fahren in the present tense."
         },
-        "type": "true_false",
-        "statement": "Wir laufen zum Bahnhof."
+        "sentence": "Die Fahrerin ___ langsam. (fahren)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-11-q04",
         "position": 4,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez : sehen",
-          "de": "Ergänzen Sie: sehen",
-          "ar": "أكمل: sehen",
-          "en": "Complete: sehen"
+          "fr": "Conjuguez fahren au présent. — Wir ___ mit dem Zug. (fahren)",
+          "de": "Konjugieren Sie fahren im Präsens. — Wir ___ mit dem Zug. (fahren)",
+          "ar": "صرّف fahren في المضارع. — Wir ___ mit dem Zug. (fahren)",
+          "en": "Conjugate fahren in the present tense. — Wir ___ mit dem Zug. (fahren)"
         },
-        "type": "fill_blank",
-        "sentence": "Ihr ___ die Tickets.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "fahre",
+          "fährt",
+          "fahren",
+          "fährst"
+        ]
       },
       {
         "id": "kapitel-04-ubung-11-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez : lesen",
-          "de": "Ergänzen Sie: lesen",
-          "ar": "أكمل: lesen",
-          "en": "Complete: lesen"
-        },
         "type": "fill_blank",
-        "sentence": "Sie (Singular) ___ den Fahrplan.",
+        "prompt": {
+          "fr": "Conjuguez kaufen au présent.",
+          "de": "Konjugieren Sie kaufen im Präsens.",
+          "ar": "صرّف kaufen في المضارع.",
+          "en": "Conjugate kaufen in the present tense."
+        },
+        "sentence": "Ihr ___ die Fahrkarte am Automaten. (kaufen)",
         "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-11-q06",
         "position": 6,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : tragen — Du ___ den Koffer.",
-          "de": "Ergänzen Sie: tragen — Du ___ den Koffer.",
-          "ar": "أكمل: tragen — Du ___ den Koffer.",
-          "en": "Complete: tragen — Du ___ den Koffer."
+          "fr": "Conjuguez lesen au présent.",
+          "de": "Konjugieren Sie lesen im Präsens.",
+          "ar": "صرّف lesen في المضارع.",
+          "en": "Conjugate lesen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "spreche",
-          "wäschst",
-          "trägst",
-          "schläfst"
-        ]
+        "sentence": "Die Touristen ___ den Stadtplan. (lesen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-11-q07",
         "position": 7,
-        "prompt": {
-          "fr": "Complétez : helfen — Der Mann ___ uns.",
-          "de": "Ergänzen Sie: helfen — Der Mann ___ uns.",
-          "ar": "أكمل: helfen — Der Mann ___ uns.",
-          "en": "Complete: helfen — Der Mann ___ uns."
-        },
         "type": "qcm",
+        "prompt": {
+          "fr": "Conjuguez sehen au présent. — Herr Beck, ___ Sie den Ausgang? (sehen)",
+          "de": "Konjugieren Sie sehen im Präsens. — Herr Beck, ___ Sie den Ausgang? (sehen)",
+          "ar": "صرّف sehen في المضارع. — Herr Beck, ___ Sie den Ausgang? (sehen)",
+          "en": "Conjugate sehen in the present tense. — Herr Beck, ___ Sie den Ausgang? (sehen)"
+        },
         "selection": "single",
         "options": [
-          "versteht",
-          "waschen",
-          "hilft",
-          "schläft"
+          "sehe",
+          "siehst",
+          "sehen",
+          "sieht"
         ]
       },
       {
         "id": "kapitel-04-ubung-11-q08",
         "position": 8,
+        "type": "matching",
         "prompt": {
-          "fr": "Complétez : vergessen",
-          "de": "Ergänzen Sie: vergessen",
-          "ar": "أكمل: vergessen",
-          "en": "Complete: vergessen"
+          "fr": "Associez les formes aux sujets.",
+          "de": "Ordnen Sie die Formen den Subjekten zu.",
+          "ar": "صل الصيغ بالفاعلين.",
+          "en": "Match the forms to the subjects."
         },
-        "type": "true_false",
-        "statement": "Ich sehen die Adresse nicht."
+        "items": [
+          {
+            "id": "i0",
+            "label": "ich – tragen"
+          },
+          {
+            "id": "i1",
+            "label": "du – tragen"
+          },
+          {
+            "id": "i2",
+            "label": "er – tragen"
+          },
+          {
+            "id": "i3",
+            "label": "wir – tragen"
+          }
+        ],
+        "options": [
+          "tragen",
+          "trägt",
+          "trägst",
+          "trage"
+        ]
       }
     ]
   },
@@ -152,162 +171,145 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "At home"
     },
     "description": {
-      "fr": "Entraînez-vous au présent.",
-      "de": "Üben Sie das Präsens.",
-      "ar": "تدرّب على المضارع.",
-      "en": "Practise the present tense."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
         "id": "kapitel-04-ubung-12-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez : schlafen — Das Baby ___ lange.",
-          "de": "Ergänzen Sie: schlafen — Das Baby ___ lange.",
-          "ar": "أكمل: schlafen — Das Baby ___ lange.",
-          "en": "Complete: schlafen — Das Baby ___ lange."
-        },
         "type": "qcm",
+        "prompt": {
+          "fr": "Conjuguez waschen au présent. — Du ___ die Tassen. (waschen)",
+          "de": "Konjugieren Sie waschen im Präsens. — Du ___ die Tassen. (waschen)",
+          "ar": "صرّف waschen في المضارع. — Du ___ die Tassen. (waschen)",
+          "en": "Conjugate waschen in the present tense. — Du ___ die Tassen. (waschen)"
+        },
         "selection": "single",
         "options": [
-          "fahre",
-          "schläft",
-          "spricht",
-          "waschen"
+          "wäscht",
+          "waschen",
+          "wasche",
+          "wäschst"
         ]
       },
       {
         "id": "kapitel-04-ubung-12-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : waschen — Du ___ deine Hände.",
-          "de": "Ergänzen Sie: waschen — Du ___ deine Hände.",
-          "ar": "أكمل: waschen — Du ___ deine Hände.",
-          "en": "Complete: waschen — Du ___ deine Hände."
+          "fr": "Conjuguez tragen au présent.",
+          "de": "Konjugieren Sie tragen im Präsens.",
+          "ar": "صرّف tragen في المضارع.",
+          "en": "Conjugate tragen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "wäschst",
-          "lest",
-          "schlaft",
-          "lebt"
-        ]
+        "sentence": "Ich ___ die Einkaufstasche. (tragen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-12-q03",
         "position": 3,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : essen",
-          "de": "Ergänzen Sie: essen",
-          "ar": "أكمل: essen",
-          "en": "Complete: essen"
+          "fr": "Conjuguez helfen au présent.",
+          "de": "Konjugieren Sie helfen im Präsens.",
+          "ar": "صرّف helfen في المضارع.",
+          "en": "Conjugate helfen in the present tense."
         },
-        "type": "true_false",
-        "statement": "Ihr esst Obst."
+        "sentence": "Meine Mutter ___ mir beim Kochen. (helfen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-12-q04",
         "position": 4,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez : helfen",
-          "de": "Ergänzen Sie: helfen",
-          "ar": "أكمل: helfen",
-          "en": "Complete: helfen"
+          "fr": "Conjuguez essen au présent. — Wir ___ in der Küche. (essen)",
+          "de": "Konjugieren Sie essen im Präsens. — Wir ___ in der Küche. (essen)",
+          "ar": "صرّف essen في المضارع. — Wir ___ in der Küche. (essen)",
+          "en": "Conjugate essen in the present tense. — Wir ___ in der Küche. (essen)"
         },
-        "type": "fill_blank",
-        "sentence": "Er ___ seiner Mutter.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "esse",
+          "essen",
+          "isst",
+          "esst"
+        ]
       },
       {
         "id": "kapitel-04-ubung-12-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez : lesen",
-          "de": "Ergänzen Sie: lesen",
-          "ar": "أكمل: lesen",
-          "en": "Complete: lesen"
-        },
         "type": "fill_blank",
-        "sentence": "Wir ___ einen Roman.",
+        "prompt": {
+          "fr": "Conjuguez essen au présent.",
+          "de": "Konjugieren Sie essen im Präsens.",
+          "ar": "صرّف essen في المضارع.",
+          "en": "Conjugate essen in the present tense."
+        },
+        "sentence": "Ihr ___ die Suppe zuerst. (essen)",
         "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-12-q06",
         "position": 6,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : geben — Du ___ mir das Buch.",
-          "de": "Ergänzen Sie: geben — Du ___ mir das Buch.",
-          "ar": "أكمل: geben — Du ___ mir das Buch.",
-          "en": "Complete: geben — Du ___ mir das Buch."
+          "fr": "Conjuguez vergessen au présent.",
+          "de": "Konjugieren Sie vergessen im Präsens.",
+          "ar": "صرّف vergessen في المضارع.",
+          "en": "Conjugate vergessen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "lebt",
-          "lebst",
-          "gibst",
-          "essen"
-        ]
+        "sentence": "Die Kinder ___ ihre Bücher. (vergessen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-12-q07",
         "position": 7,
-        "prompt": {
-          "fr": "Complétez : sprechen — Ich ___ mit meinem Bruder.",
-          "de": "Ergänzen Sie: sprechen — Ich ___ mit meinem Bruder.",
-          "ar": "أكمل: sprechen — Ich ___ mit meinem Bruder.",
-          "en": "Complete: sprechen — Ich ___ mit meinem Bruder."
-        },
         "type": "qcm",
+        "prompt": {
+          "fr": "Conjuguez empfehlen au présent. — Der Kellner ___ den Fisch. (empfehlen)",
+          "de": "Konjugieren Sie empfehlen im Präsens. — Der Kellner ___ den Fisch. (empfehlen)",
+          "ar": "صرّف empfehlen في المضارع. — Der Kellner ___ den Fisch. (empfehlen)",
+          "en": "Conjugate empfehlen in the present tense. — Der Kellner ___ den Fisch. (empfehlen)"
+        },
         "selection": "single",
         "options": [
-          "geht",
-          "schlafe",
-          "seht",
-          "spreche"
+          "empfiehlst",
+          "empfiehlt",
+          "empfehle",
+          "empfehlen"
         ]
       },
       {
         "id": "kapitel-04-ubung-12-q08",
         "position": 8,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : sehen",
-          "de": "Ergänzen Sie: sehen",
-          "ar": "أكمل: sehen",
-          "en": "Complete: sehen"
+          "fr": "Conjuguez sprechen au présent.",
+          "de": "Konjugieren Sie sprechen im Präsens.",
+          "ar": "صرّف sprechen في المضارع.",
+          "en": "Conjugate sprechen in the present tense."
         },
-        "type": "true_false",
-        "statement": "Die Kinder gefällt den Hund."
+        "sentence": "___ du auch Französisch? (sprechen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-12-association",
         "position": 9,
-        "type": "matching",
+        "type": "reorder",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Reconstituez la phrase. Commencez par « Was ».",
+          "de": "Bilden Sie den Satz. Beginnen Sie mit „Was“.",
+          "ar": "رتّب الجملة. ابدأ بـ « Was ».",
+          "en": "Rebuild the sentence. Start with “Was”."
         },
-        "items": [
-          {
-            "id": "i0",
-            "label": "du essen"
-          },
-          {
-            "id": "i1",
-            "label": "ich essen"
-          },
-          {
-            "id": "i2",
-            "label": "wir essen"
-          }
-        ],
-        "options": [
-          "isst",
-          "essen",
-          "esse"
+        "tokens": [
+          "du?",
+          "Was",
+          "liest"
         ]
       }
     ]
@@ -317,216 +319,179 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Défi de conjugaison",
-      "de": "Konjugations-Challenge",
-      "ar": "تحدي التصريف",
-      "en": "Conjugation challenge"
+      "fr": "Au travail et au restaurant",
+      "de": "Arbeit und Restaurant",
+      "ar": "العمل والمطعم",
+      "en": "Work and restaurant"
     },
     "description": {
-      "fr": "Entraînez-vous au présent.",
-      "de": "Üben Sie das Präsens.",
-      "ar": "تدرّب على المضارع.",
-      "en": "Practise the present tense."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
         "id": "kapitel-04-ubung-13-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez : empfehlen",
-          "de": "Ergänzen Sie: empfehlen",
-          "ar": "أكمل: empfehlen",
-          "en": "Complete: empfehlen"
-        },
         "type": "qcm",
+        "prompt": {
+          "fr": "Conjuguez geben au présent. — Der Chef ___ mir einen Tipp. (geben)",
+          "de": "Konjugieren Sie geben im Präsens. — Der Chef ___ mir einen Tipp. (geben)",
+          "ar": "صرّف geben في المضارع. — Der Chef ___ mir einen Tipp. (geben)",
+          "en": "Conjugate geben in the present tense. — Der Chef ___ mir einen Tipp. (geben)"
+        },
         "selection": "single",
         "options": [
-          "empfehle",
-          "empfiehlt",
-          "empfehlen",
-          "empfiehlst"
+          "gibst",
+          "geben",
+          "gebe",
+          "gibt"
         ]
       },
       {
         "id": "kapitel-04-ubung-13-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : verstehen",
-          "de": "Ergänzen Sie: verstehen",
-          "ar": "أكمل: verstehen",
-          "en": "Complete: verstehen"
+          "fr": "Conjuguez verstehen au présent.",
+          "de": "Konjugieren Sie verstehen im Präsens.",
+          "ar": "صرّف verstehen في المضارع.",
+          "en": "Conjugate verstehen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "verstehst",
-          "verstehen",
-          "versteht",
-          "verstehe"
-        ]
+        "sentence": "Wir ___ die Nachricht. (verstehen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-13-q03",
         "position": 3,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : werden",
-          "de": "Ergänzen Sie: werden",
-          "ar": "أكمل: werden",
-          "en": "Complete: werden"
+          "fr": "Conjuguez lesen au présent.",
+          "de": "Konjugieren Sie lesen im Präsens.",
+          "ar": "صرّف lesen في المضارع.",
+          "en": "Conjugate lesen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "wird",
-          "werdet",
-          "werde",
-          "wirst"
-        ]
+        "sentence": "Ihr ___ die Zeitung. (lesen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-13-q04",
         "position": 4,
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez : nehmen",
-          "de": "Ergänzen Sie: nehmen",
-          "ar": "أكمل: nehmen",
-          "en": "Complete: nehmen"
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "nimmt",
-          "nehme",
-          "nimmst",
-          "nehmen"
-        ]
+        "statement": "Die Gäste sprechen leise miteinander."
       },
       {
         "id": "kapitel-04-ubung-13-q05",
         "position": 5,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : lesen",
-          "de": "Ergänzen Sie: lesen",
-          "ar": "أكمل: lesen",
-          "en": "Complete: lesen"
+          "fr": "Conjuguez laufen au présent.",
+          "de": "Konjugieren Sie laufen im Präsens.",
+          "ar": "صرّف laufen في المضارع.",
+          "en": "Conjugate laufen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "lese",
-          "lesen",
-          "lest",
-          "liest"
-        ]
+        "sentence": "Du ___ jeden Tag zum Park. (laufen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-13-q06",
         "position": 6,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : vergessen",
-          "de": "Ergänzen Sie: vergessen",
-          "ar": "أكمل: vergessen",
-          "en": "Complete: vergessen"
+          "fr": "Conjuguez leben au présent.",
+          "de": "Konjugieren Sie leben im Präsens.",
+          "ar": "صرّف leben في المضارع.",
+          "en": "Conjugate leben in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "vergessen",
-          "vergesst",
-          "vergisst",
-          "vergesse"
-        ]
+        "sentence": "Die Kollegin ___ in Hamburg. (leben)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-13-q07",
         "position": 7,
-        "prompt": {
-          "fr": "Complétez : laufen",
-          "de": "Ergänzen Sie: laufen",
-          "ar": "أكمل: laufen",
-          "en": "Complete: laufen"
-        },
         "type": "qcm",
+        "prompt": {
+          "fr": "Conjuguez gefallen au présent. — Das Bild ___ mir gut. (gefallen)",
+          "de": "Konjugieren Sie gefallen im Präsens. — Das Bild ___ mir gut. (gefallen)",
+          "ar": "صرّف gefallen في المضارع. — Das Bild ___ mir gut. (gefallen)",
+          "en": "Conjugate gefallen in the present tense. — Das Bild ___ mir gut. (gefallen)"
+        },
         "selection": "single",
         "options": [
-          "läuft",
-          "laufen",
-          "laufe",
-          "läufst"
+          "gefalle",
+          "gefallen",
+          "gefällst",
+          "gefällt"
         ]
       },
       {
         "id": "kapitel-04-ubung-13-q08",
         "position": 8,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : helfen",
-          "de": "Ergänzen Sie: helfen",
-          "ar": "أكمل: helfen",
-          "en": "Complete: helfen"
+          "fr": "Conjuguez werden au présent.",
+          "de": "Konjugieren Sie werden im Präsens.",
+          "ar": "صرّف werden في المضارع.",
+          "en": "Conjugate werden in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "hilfst",
-          "helfe",
-          "hilft",
-          "helfen"
-        ]
+        "sentence": "Das Wetter ___ besser. (werden)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-13-q09",
         "position": 9,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez : sehen",
-          "de": "Ergänzen Sie: sehen",
-          "ar": "أكمل: sehen",
-          "en": "Complete: sehen"
+          "fr": "Conjuguez sehen au présent.",
+          "de": "Konjugieren Sie sehen im Präsens.",
+          "ar": "صرّف sehen في المضارع.",
+          "en": "Conjugate sehen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sehe",
-          "siehst",
-          "sieht",
-          "seht"
-        ]
+        "sentence": "Ich ___ meine Freunde. (sehen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-04-ubung-13-q10",
         "position": 10,
-        "prompt": {
-          "fr": "Complétez : sprechen",
-          "de": "Ergänzen Sie: sprechen",
-          "ar": "أكمل: sprechen",
-          "en": "Complete: sprechen"
-        },
         "type": "qcm",
+        "prompt": {
+          "fr": "Conjuguez tragen au présent. — Ihr ___ die Taschen. (tragen)",
+          "de": "Konjugieren Sie tragen im Präsens. — Ihr ___ die Taschen. (tragen)",
+          "ar": "صرّف tragen في المضارع. — Ihr ___ die Taschen. (tragen)",
+          "en": "Conjugate tragen in the present tense. — Ihr ___ die Taschen. (tragen)"
+        },
         "selection": "single",
         "options": [
-          "sprichst",
-          "sprechen",
-          "spricht",
-          "spreche"
+          "trägst",
+          "trage",
+          "trägt",
+          "tragt"
         ]
       },
       {
         "id": "kapitel-04-ubung-13-multi",
         "position": 11,
         "type": "qcm",
+        "prompt": {
+          "fr": "Sélectionnez toutes les phrases correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر جميع الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
         "selection": "multiple",
         "options": [
-          "ich essen → essen",
-          "ich essen → esse",
-          "du essen → esse",
-          "wir essen → essen",
-          "du essen → isst"
-        ],
-        "prompt": {
-          "fr": "Sélectionnez toutes les associations correctes.",
-          "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
-          "en": "Select all correct pairs."
-        }
+          "Du liest den Brief.",
+          "Wir fährt nach Hause.",
+          "Ihr sprecht Deutsch.",
+          "Sie (Anna) esst Suppe."
+        ]
       }
     ]
   }

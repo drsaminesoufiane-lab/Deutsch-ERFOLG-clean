@@ -22,34 +22,34 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "matching",
         "prompt": {
-          "fr": "Associez les questions et réponses.",
-          "de": "Ordnen Sie Fragen und Antworten zu.",
-          "ar": "طابق الأسئلة والأجوبة.",
-          "en": "Match questions and answers."
+          "fr": "Associez chaque phrase à la forme qui convient.",
+          "de": "Ordnen Sie jedem Satz die passende Form zu.",
+          "ar": "اربط كل جملة بالصيغة المناسبة.",
+          "en": "Match each sentence with the appropriate form."
         },
         "items": [
           {
             "id": "0",
-            "label": "Welcher Kollege?"
+            "label": "___ Mantel ist teuer? (welcher)"
           },
           {
             "id": "1",
-            "label": "Welche Tür?"
+            "label": "___ Buch kaufst du? (welcher)"
           },
           {
             "id": "2",
-            "label": "Welches Buch?"
+            "label": "Mit ___ Kind gehst du ins Kino? (welcher)"
           },
           {
             "id": "3",
-            "label": "Welche Socken?"
+            "label": "___ Arzt rufst du an? (welcher)"
           }
         ],
         "options": [
-          "Dieser Kollege",
-          "Diese Socken",
-          "Diese Tür",
-          "Dieses Buch"
+          "Welcher",
+          "welchem",
+          "Welchen",
+          "Welches"
         ]
       }
     ]
@@ -77,17 +77,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Diesen",
-          "Diesem",
           "Dieses",
+          "Diesem",
           "Dieser",
+          "Diesen",
           "Diese"
         ],
         "prompt": {
-          "fr": "Choisissez : Welcher Mantel? ___ Mantel.",
-          "de": "Wählen Sie: Welcher Mantel? ___ Mantel.",
-          "ar": "اختر: Welcher Mantel? ___ Mantel.",
-          "en": "Choose: Welcher Mantel? ___ Mantel."
+          "fr": "Welcher Mantel? ___ Mantel. — Choisissez la forme de dieser.",
+          "de": "Welcher Mantel? ___ Mantel. — Wählen Sie die passende Form von dieser.",
+          "ar": "Welcher Mantel? ___ Mantel. — اختر صيغة dieser المناسبة.",
+          "en": "Welcher Mantel? ___ Mantel. — Choose the correct form of dieser."
         }
       },
       {
@@ -97,10 +97,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Welche Hose? ___ Hose.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de dieser.",
+          "de": "Ergänzen Sie die passende Form von dieser.",
+          "ar": "أكمل باستخدام صيغة dieser المناسبة.",
+          "en": "Complete with the correct form of dieser."
         }
       },
       {
@@ -109,10 +109,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Welche Schuhe? Diese Schuhe.",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -122,16 +122,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "Dieses",
+          "Dieser",
           "Diese",
-          "Diesem",
           "Diesen",
-          "Dieser"
+          "Diesem"
         ],
         "prompt": {
-          "fr": "Choisissez : Welches Kleid? ___ Kleid.",
-          "de": "Wählen Sie: Welches Kleid? ___ Kleid.",
-          "ar": "اختر: Welches Kleid? ___ Kleid.",
-          "en": "Choose: Welches Kleid? ___ Kleid."
+          "fr": "Welches Kleid? ___ Kleid. — Choisissez la forme de dieser.",
+          "de": "Welches Kleid? ___ Kleid. — Wählen Sie die passende Form von dieser.",
+          "ar": "Welches Kleid? ___ Kleid. — اختر صيغة dieser المناسبة.",
+          "en": "Welches Kleid? ___ Kleid. — Choose the correct form of dieser."
         }
       },
       {
@@ -140,17 +140,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Dieser",
-          "Diese",
-          "Dieses",
           "Diesen",
-          "Diesem"
+          "Dieses",
+          "Diese",
+          "Diesem",
+          "Dieser"
         ],
         "prompt": {
-          "fr": "Choisissez : Welche Jacke? ___ Jacke.",
-          "de": "Wählen Sie: Welche Jacke? ___ Jacke.",
-          "ar": "اختر: Welche Jacke? ___ Jacke.",
-          "en": "Choose: Welche Jacke? ___ Jacke."
+          "fr": "Welche Jacke? ___ Jacke. — Choisissez la forme de dieser.",
+          "de": "Welche Jacke? ___ Jacke. — Wählen Sie die passende Form von dieser.",
+          "ar": "Welche Jacke? ___ Jacke. — اختر صيغة dieser المناسبة.",
+          "en": "Welche Jacke? ___ Jacke. — Choose the correct form of dieser."
         }
       },
       {
@@ -160,10 +160,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Welches Halstuch? ___ Halstuch.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de dieser.",
+          "de": "Ergänzen Sie die passende Form von dieser.",
+          "ar": "أكمل باستخدام صيغة dieser المناسبة.",
+          "en": "Complete with the correct form of dieser."
         }
       },
       {
@@ -172,10 +172,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Welcher Schal? Dieser Schal.",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -184,17 +184,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Diese",
           "Diesen",
-          "Dieser",
+          "Diese",
           "Diesem",
-          "Dieses"
+          "Dieses",
+          "Dieser"
         ],
         "prompt": {
-          "fr": "Choisissez : Welche Stiefel? ___ Stiefel.",
-          "de": "Wählen Sie: Welche Stiefel? ___ Stiefel.",
-          "ar": "اختر: Welche Stiefel? ___ Stiefel.",
-          "en": "Choose: Welche Stiefel? ___ Stiefel."
+          "fr": "Welche Stiefel? ___ Stiefel. — Choisissez la forme de dieser.",
+          "de": "Welche Stiefel? ___ Stiefel. — Wählen Sie die passende Form von dieser.",
+          "ar": "Welche Stiefel? ___ Stiefel. — اختر صيغة dieser المناسبة.",
+          "en": "Welche Stiefel? ___ Stiefel. — Choose the correct form of dieser."
         }
       }
     ]
@@ -223,10 +223,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "___ Kinder sind Ihre Kinder?",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de welcher.",
+          "de": "Ergänzen Sie die passende Form von welcher.",
+          "ar": "أكمل باستخدام صيغة welcher المناسبة.",
+          "en": "Complete with the correct form of welcher."
         }
       },
       {
@@ -235,10 +235,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ist diesem Mädchen Ihre Tochter?",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -247,17 +247,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "welcher",
-          "welche",
           "welches",
+          "welche",
+          "welchem",
           "welchen",
-          "welchem"
+          "welcher"
         ],
         "prompt": {
-          "fr": "Choisissez : Und ___ Junge ist Ihr Sohn?",
-          "de": "Wählen Sie: Und ___ Junge ist Ihr Sohn?",
-          "ar": "اختر: Und ___ Junge ist Ihr Sohn?",
-          "en": "Choose: Und ___ Junge ist Ihr Sohn?"
+          "fr": "Und ___ Junge ist Ihr Sohn? — Choisissez la forme de welcher.",
+          "de": "Und ___ Junge ist Ihr Sohn? — Wählen Sie die passende Form von welcher.",
+          "ar": "Und ___ Junge ist Ihr Sohn? — اختر صيغة welcher المناسبة.",
+          "en": "Und ___ Junge ist Ihr Sohn? — Choose the correct form of welcher."
         }
       },
       {
@@ -266,17 +266,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Diesen",
           "Diese",
-          "Dieser",
           "Dieses",
-          "Diesem"
+          "Diesem",
+          "Dieser",
+          "Diesen"
         ],
         "prompt": {
-          "fr": "Choisissez : ___ blonde Junge ist mein Sohn.",
-          "de": "Wählen Sie: ___ blonde Junge ist mein Sohn.",
-          "ar": "اختر: ___ blonde Junge ist mein Sohn.",
-          "en": "Choose: ___ blonde Junge ist mein Sohn."
+          "fr": "___ blonde Junge ist mein Sohn. — Choisissez la forme de dieser.",
+          "de": "___ blonde Junge ist mein Sohn. — Wählen Sie die passende Form von dieser.",
+          "ar": "___ blonde Junge ist mein Sohn. — اختر صيغة dieser المناسبة.",
+          "en": "___ blonde Junge ist mein Sohn. — Choose the correct form of dieser."
         }
       },
       {
@@ -286,10 +286,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "___ Kind war heute müde.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de dieser.",
+          "de": "Ergänzen Sie die passende Form von dieser.",
+          "ar": "أكمل باستخدام صيغة dieser المناسبة.",
+          "en": "Complete with the correct form of dieser."
         }
       }
     ]
@@ -317,10 +317,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Welche Tasche findest du schöner?",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -329,17 +329,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "dieser",
-          "diese",
           "diesem",
           "diesen",
-          "dieses"
+          "dieser",
+          "dieses",
+          "diese"
         ],
         "prompt": {
-          "fr": "Choisissez : Ich finde ___ Tasche schöner.",
-          "de": "Wählen Sie: Ich finde ___ Tasche schöner.",
-          "ar": "اختر: Ich finde ___ Tasche schöner.",
-          "en": "Choose: Ich finde ___ Tasche schöner."
+          "fr": "Ich finde ___ Tasche schöner. — Choisissez la forme de dieser.",
+          "de": "Ich finde ___ Tasche schöner. — Wählen Sie die passende Form von dieser.",
+          "ar": "Ich finde ___ Tasche schöner. — اختر صيغة dieser المناسبة.",
+          "en": "Ich finde ___ Tasche schöner. — Choose the correct form of dieser."
         }
       },
       {
@@ -348,17 +348,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Welches",
-          "Welcher",
-          "Welchem",
           "Welche",
-          "Welchen"
+          "Welcher",
+          "Welches",
+          "Welchen",
+          "Welchem"
         ],
         "prompt": {
-          "fr": "Choisissez : ___ Tasche ist praktisch?",
-          "de": "Wählen Sie: ___ Tasche ist praktisch?",
-          "ar": "اختر: ___ Tasche ist praktisch?",
-          "en": "Choose: ___ Tasche ist praktisch?"
+          "fr": "___ Tasche ist praktisch? — Choisissez la forme de welcher.",
+          "de": "___ Tasche ist praktisch? — Wählen Sie die passende Form von welcher.",
+          "ar": "___ Tasche ist praktisch? — اختر صيغة welcher المناسبة.",
+          "en": "___ Tasche ist praktisch? — Choose the correct form of welcher."
         }
       },
       {
@@ -368,10 +368,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich nehme ___ Tasche.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de dieser.",
+          "de": "Ergänzen Sie die passende Form von dieser.",
+          "ar": "أكمل باستخدام صيغة dieser المناسبة.",
+          "en": "Complete with the correct form of dieser."
         }
       },
       {
@@ -380,10 +380,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Welchen Mantel kaufst du?",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       }
     ]
@@ -413,15 +413,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "options": [
           "welche",
           "welchem",
+          "welchen",
           "welches",
-          "welcher",
-          "welchen"
+          "welcher"
         ],
         "prompt": {
-          "fr": "Choisissez : Mit ___ Freundin gehst du ins Kino?",
-          "de": "Wählen Sie: Mit ___ Freundin gehst du ins Kino?",
-          "ar": "اختر: Mit ___ Freundin gehst du ins Kino?",
-          "en": "Choose: Mit ___ Freundin gehst du ins Kino?"
+          "fr": "Mit ___ Freundin gehst du ins Kino? — Choisissez la forme de welcher.",
+          "de": "Mit ___ Freundin gehst du ins Kino? — Wählen Sie die passende Form von welcher.",
+          "ar": "Mit ___ Freundin gehst du ins Kino? — اختر صيغة welcher المناسبة.",
+          "en": "Mit ___ Freundin gehst du ins Kino? — Choose the correct form of welcher."
         }
       },
       {
@@ -430,17 +430,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "welches",
-          "welcher",
-          "welche",
+          "welchen",
           "welchem",
-          "welchen"
+          "welcher",
+          "welches",
+          "welche"
         ],
         "prompt": {
-          "fr": "Choisissez : Bei ___ Lehrerin habt ihr Unterricht?",
-          "de": "Wählen Sie: Bei ___ Lehrerin habt ihr Unterricht?",
-          "ar": "اختر: Bei ___ Lehrerin habt ihr Unterricht?",
-          "en": "Choose: Bei ___ Lehrerin habt ihr Unterricht?"
+          "fr": "Bei ___ Lehrerin habt ihr Unterricht? — Choisissez la forme de welcher.",
+          "de": "Bei ___ Lehrerin habt ihr Unterricht? — Wählen Sie die passende Form von welcher.",
+          "ar": "Bei ___ Lehrerin habt ihr Unterricht? — اختر صيغة welcher المناسبة.",
+          "en": "Bei ___ Lehrerin habt ihr Unterricht? — Choose the correct form of welcher."
         }
       },
       {
@@ -450,10 +450,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Von ___ Freund hast du das Geschenk?",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de welcher.",
+          "de": "Ergänzen Sie die passende Form von welcher.",
+          "ar": "أكمل باستخدام صيغة welcher المناسبة.",
+          "en": "Complete with the correct form of welcher."
         }
       },
       {
@@ -462,10 +462,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Welches Kind hast du geholfen?",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -474,17 +474,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "diesem",
-          "dieser",
           "dieses",
+          "dieser",
+          "diesem",
           "diese",
           "diesen"
         ],
         "prompt": {
-          "fr": "Choisissez : Ich fahre mit ___ Freunden.",
-          "de": "Wählen Sie: Ich fahre mit ___ Freunden.",
-          "ar": "اختر: Ich fahre mit ___ Freunden.",
-          "en": "Choose: Ich fahre mit ___ Freunden."
+          "fr": "Ich fahre mit ___ Freunden. — Choisissez la forme de dieser.",
+          "de": "Ich fahre mit ___ Freunden. — Wählen Sie die passende Form von dieser.",
+          "ar": "Ich fahre mit ___ Freunden. — اختر صيغة dieser المناسبة.",
+          "en": "Ich fahre mit ___ Freunden. — Choose the correct form of dieser."
         }
       }
     ]
@@ -513,16 +513,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "Welchem",
-          "Welcher",
-          "Welche",
+          "Welches",
           "Welchen",
-          "Welches"
+          "Welcher",
+          "Welche"
         ],
         "prompt": {
-          "fr": "Choisissez : ___ Lehrer haben wir heute?",
-          "de": "Wählen Sie: ___ Lehrer haben wir heute?",
-          "ar": "اختر: ___ Lehrer haben wir heute?",
-          "en": "Choose: ___ Lehrer haben wir heute?"
+          "fr": "___ Lehrer haben wir heute? (Singular) — Choisissez la forme de welcher.",
+          "de": "___ Lehrer haben wir heute? (Singular) — Wählen Sie die passende Form von welcher.",
+          "ar": "___ Lehrer haben wir heute? (Singular) — اختر صيغة welcher المناسبة.",
+          "en": "___ Lehrer haben wir heute? (Singular) — Choose the correct form of welcher."
         }
       },
       {
@@ -532,10 +532,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Wir haben ___ Lehrer heute.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de dieser.",
+          "de": "Ergänzen Sie die passende Form von dieser.",
+          "ar": "أكمل باستخدام صيغة dieser المناسبة.",
+          "en": "Complete with the correct form of dieser."
         }
       },
       {
@@ -544,10 +544,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Welche Übungen waren die Hausaufgabe?",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -556,17 +556,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "welchen",
-          "welcher",
-          "welches",
           "welche",
-          "welchem"
+          "welchem",
+          "welches",
+          "welcher",
+          "welchen"
         ],
         "prompt": {
-          "fr": "Choisissez : Mit ___ Buch hast du gelernt?",
-          "de": "Wählen Sie: Mit ___ Buch hast du gelernt?",
-          "ar": "اختر: Mit ___ Buch hast du gelernt?",
-          "en": "Choose: Mit ___ Buch hast du gelernt?"
+          "fr": "Mit ___ Buch hast du gelernt? — Choisissez la forme de welcher.",
+          "de": "Mit ___ Buch hast du gelernt? — Wählen Sie die passende Form von welcher.",
+          "ar": "Mit ___ Buch hast du gelernt? — اختر صيغة welcher المناسبة.",
+          "en": "Mit ___ Buch hast du gelernt? — Choose the correct form of welcher."
         }
       },
       {
@@ -575,17 +575,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Welches",
           "Welchen",
-          "Welcher",
           "Welchem",
+          "Welches",
+          "Welcher",
           "Welche"
         ],
         "prompt": {
-          "fr": "Choisissez : ___ Buch findest du besser?",
-          "de": "Wählen Sie: ___ Buch findest du besser?",
-          "ar": "اختر: ___ Buch findest du besser?",
-          "en": "Choose: ___ Buch findest du besser?"
+          "fr": "___ Buch findest du besser? — Choisissez la forme de welcher.",
+          "de": "___ Buch findest du besser? — Wählen Sie die passende Form von welcher.",
+          "ar": "___ Buch findest du besser? — اختر صيغة welcher المناسبة.",
+          "en": "___ Buch findest du besser? — Choose the correct form of welcher."
         }
       },
       {
@@ -595,10 +595,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich hatte ___ Buch früher.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de dieser.",
+          "de": "Ergänzen Sie die passende Form von dieser.",
+          "ar": "أكمل باستخدام صيغة dieser المناسبة.",
+          "en": "Complete with the correct form of dieser."
         }
       }
     ]
@@ -627,10 +627,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "In ___ Raum lernen wir heute?",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de welcher.",
+          "de": "Ergänzen Sie die passende Form von welcher.",
+          "ar": "أكمل باستخدام صيغة welcher المناسبة.",
+          "en": "Complete with the correct form of welcher."
         }
       },
       {
@@ -639,10 +639,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Wir bleiben in dieser Raum.",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -651,17 +651,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "diesen",
+          "diesem",
           "dieser",
           "dieses",
-          "diesen",
-          "diese",
-          "diesem"
+          "diese"
         ],
         "prompt": {
-          "fr": "Choisissez : Ich mag ___ Raum nicht.",
-          "de": "Wählen Sie: Ich mag ___ Raum nicht.",
-          "ar": "اختر: Ich mag ___ Raum nicht.",
-          "en": "Choose: Ich mag ___ Raum nicht."
+          "fr": "Ich mag ___ Raum nicht. — Choisissez la forme de dieser.",
+          "de": "Ich mag ___ Raum nicht. — Wählen Sie die passende Form von dieser.",
+          "ar": "Ich mag ___ Raum nicht. — اختر صيغة dieser المناسبة.",
+          "en": "Ich mag ___ Raum nicht. — Choose the correct form of dieser."
         }
       },
       {
@@ -670,17 +670,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "dieser",
+          "diesen",
           "dieses",
           "diese",
-          "diesem",
-          "dieser",
-          "diesen"
+          "diesem"
         ],
         "prompt": {
-          "fr": "Choisissez : Ich bin gerne in ___ Raum.",
-          "de": "Wählen Sie: Ich bin gerne in ___ Raum.",
-          "ar": "اختر: Ich bin gerne in ___ Raum.",
-          "en": "Choose: Ich bin gerne in ___ Raum."
+          "fr": "Ich bin gerne in ___ Raum. — Choisissez la forme de dieser.",
+          "de": "Ich bin gerne in ___ Raum. — Wählen Sie die passende Form von dieser.",
+          "ar": "Ich bin gerne in ___ Raum. — اختر صيغة dieser المناسبة.",
+          "en": "Ich bin gerne in ___ Raum. — Choose the correct form of dieser."
         }
       },
       {
@@ -690,10 +690,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "___ Raum findest du gut?",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de welcher.",
+          "de": "Ergänzen Sie die passende Form von welcher.",
+          "ar": "أكمل باستخدام صيغة welcher المناسبة.",
+          "en": "Complete with the correct form of welcher."
         }
       }
     ]
@@ -721,10 +721,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Welcher Arzt hilft dir?",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -733,17 +733,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Welchen",
           "Welcher",
-          "Welches",
+          "Welche",
           "Welchem",
-          "Welche"
+          "Welches",
+          "Welchen"
         ],
         "prompt": {
-          "fr": "Choisissez : ___ Arzt besuchst du?",
-          "de": "Wählen Sie: ___ Arzt besuchst du?",
-          "ar": "اختر: ___ Arzt besuchst du?",
-          "en": "Choose: ___ Arzt besuchst du?"
+          "fr": "___ Arzt besuchst du? — Choisissez la forme de welcher.",
+          "de": "___ Arzt besuchst du? — Wählen Sie die passende Form von welcher.",
+          "ar": "___ Arzt besuchst du? — اختر صيغة welcher المناسبة.",
+          "en": "___ Arzt besuchst du? — Choose the correct form of welcher."
         }
       },
       {
@@ -752,17 +752,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Welches",
-          "Welcher",
-          "Welchem",
           "Welche",
-          "Welchen"
+          "Welchen",
+          "Welchem",
+          "Welcher",
+          "Welches"
         ],
         "prompt": {
-          "fr": "Choisissez : ___ Arzt vertraust du?",
-          "de": "Wählen Sie: ___ Arzt vertraust du?",
-          "ar": "اختر: ___ Arzt vertraust du?",
-          "en": "Choose: ___ Arzt vertraust du?"
+          "fr": "___ Arzt vertraust du? — Choisissez la forme de welcher.",
+          "de": "___ Arzt vertraust du? — Wählen Sie die passende Form von welcher.",
+          "ar": "___ Arzt vertraust du? — اختر صيغة welcher المناسبة.",
+          "en": "___ Arzt vertraust du? — Choose the correct form of welcher."
         }
       },
       {
@@ -772,23 +772,24 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "___ Arzt vertraue ich.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de dieser.",
+          "de": "Ergänzen Sie die passende Form von dieser.",
+          "ar": "أكمل باستخدام صيغة dieser المناسبة.",
+          "en": "Complete with the correct form of dieser."
         }
       },
       {
         "id": "kapitel-19-ubung-08-q05",
         "position": 5,
-        "type": "true_false",
-        "statement": "Diesen Arzt kenne ich.",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Arzt kenne ich, aber ___ Arzt vertraue ich nicht. (dieser; gleicher Arzt)",
+        "blanks": 2
       }
     ]
   },
@@ -815,17 +816,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "welcher",
+          "welche",
+          "welchen",
           "welches",
           "welchem",
-          "welchen",
-          "welche"
+          "welcher"
         ],
         "prompt": {
-          "fr": "Choisissez : Mit ___ Bus fahren wir?",
-          "de": "Wählen Sie: Mit ___ Bus fahren wir?",
-          "ar": "اختر: Mit ___ Bus fahren wir?",
-          "en": "Choose: Mit ___ Bus fahren wir?"
+          "fr": "Mit ___ Bus fahren wir? — Choisissez la forme de welcher.",
+          "de": "Mit ___ Bus fahren wir? — Wählen Sie die passende Form von welcher.",
+          "ar": "Mit ___ Bus fahren wir? — اختر صيغة welcher المناسبة.",
+          "en": "Mit ___ Bus fahren wir? — Choose the correct form of welcher."
         }
       },
       {
@@ -834,17 +835,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "dieser",
           "diesem",
           "diesen",
           "dieses",
-          "diese",
-          "dieser"
+          "diese"
         ],
         "prompt": {
-          "fr": "Choisissez : Wir nehmen ___ Bus.",
-          "de": "Wählen Sie: Wir nehmen ___ Bus.",
-          "ar": "اختر: Wir nehmen ___ Bus.",
-          "en": "Choose: Wir nehmen ___ Bus."
+          "fr": "Wir nehmen ___ Bus. — Choisissez la forme de dieser.",
+          "de": "Wir nehmen ___ Bus. — Wählen Sie die passende Form von dieser.",
+          "ar": "Wir nehmen ___ Bus. — اختر صيغة dieser المناسبة.",
+          "en": "Wir nehmen ___ Bus. — Choose the correct form of dieser."
         }
       },
       {
@@ -854,10 +855,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "___ Bus fährt zum Bahnhof?",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de welcher.",
+          "de": "Ergänzen Sie die passende Form von welcher.",
+          "ar": "أكمل باستخدام صيغة welcher المناسبة.",
+          "en": "Complete with the correct form of welcher."
         }
       },
       {
@@ -866,30 +867,24 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich warte auf diese Bus.",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
         "id": "kapitel-19-ubung-09-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "diese",
-          "dieses",
-          "diesen",
-          "dieser",
-          "diesem"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Wir sitzen in ___ Bus.",
-          "de": "Wählen Sie: Wir sitzen in ___ Bus.",
-          "ar": "اختر: Wir sitzen in ___ Bus.",
-          "en": "Choose: Wir sitzen in ___ Bus."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Bus fährt zum Zentrum? Mit ___ Bus fahren wir zur Arbeit. (welcher/dieser)",
+        "blanks": 2
       }
     ]
   },
@@ -916,17 +911,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Welchem",
           "Welchen",
           "Welche",
+          "Welchem",
           "Welches",
           "Welcher"
         ],
         "prompt": {
-          "fr": "Choisissez : ___ Kunden helfen Sie? (Plural)",
-          "de": "Wählen Sie: ___ Kunden helfen Sie? (Plural)",
-          "ar": "اختر: ___ Kunden helfen Sie? (Plural)",
-          "en": "Choose: ___ Kunden helfen Sie? (Plural)"
+          "fr": "___ Kunden helfen Sie? (Plural) — Choisissez la forme de welcher.",
+          "de": "___ Kunden helfen Sie? (Plural) — Wählen Sie die passende Form von welcher.",
+          "ar": "___ Kunden helfen Sie? (Plural) — اختر صيغة welcher المناسبة.",
+          "en": "___ Kunden helfen Sie? (Plural) — Choose the correct form of welcher."
         }
       },
       {
@@ -936,10 +931,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "___ Kunde wartet draußen?",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez la forme.",
-          "de": "Ergänzen Sie die Form.",
-          "ar": "أكمل الصيغة.",
-          "en": "Complete the form."
+          "fr": "Complétez avec la forme de welcher.",
+          "de": "Ergänzen Sie die passende Form von welcher.",
+          "ar": "أكمل باستخدام صيغة welcher المناسبة.",
+          "en": "Complete with the correct form of welcher."
         }
       },
       {
@@ -948,10 +943,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Welchen Kunden beraten Sie? (Singular)",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is the form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -960,37 +955,31 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "dieses",
-          "diese",
           "dieser",
+          "dieses",
+          "diesem",
           "diesen",
-          "diesem"
+          "diese"
         ],
         "prompt": {
-          "fr": "Choisissez : Ich helfe ___ Kunden. (Plural)",
-          "de": "Wählen Sie: Ich helfe ___ Kunden. (Plural)",
-          "ar": "اختر: Ich helfe ___ Kunden. (Plural)",
-          "en": "Choose: Ich helfe ___ Kunden. (Plural)"
+          "fr": "Ich helfe ___ Kunden. (Plural) — Choisissez la forme de dieser.",
+          "de": "Ich helfe ___ Kunden. (Plural) — Wählen Sie die passende Form von dieser.",
+          "ar": "Ich helfe ___ Kunden. (Plural) — اختر صيغة dieser المناسبة.",
+          "en": "Ich helfe ___ Kunden. (Plural) — Choose the correct form of dieser."
         }
       },
       {
         "id": "kapitel-19-ubung-10-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "dieser",
-          "dieses",
-          "diesem",
-          "diese",
-          "diesen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Ich berate ___ Kunden. (Singular)",
-          "de": "Wählen Sie: Ich berate ___ Kunden. (Singular)",
-          "ar": "اختر: Ich berate ___ Kunden. (Singular)",
-          "en": "Choose: Ich berate ___ Kunden. (Singular)"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Kunden beraten Sie? ___ Kunden geben Sie die Information? (welcher; jeweils Singular)",
+        "blanks": 2
       }
     ]
   }

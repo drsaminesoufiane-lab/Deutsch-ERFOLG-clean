@@ -11,10 +11,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
       "en": "Family dialogues"
     },
     "description": {
-      "fr": "Entraînez-vous aux verbes modaux.",
-      "de": "Üben Sie die Modalverben.",
-      "ar": "تدرب على الأفعال الناقصة.",
-      "en": "Practise modal verbs."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -29,40 +29,35 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "möchtest",
           "möchtet",
-          "musst",
-          "sollst",
-          "möchtest"
+          "möchte",
+          "möchten"
         ]
       },
       {
         "id": "kapitel-05-ubung-01-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec möchten — Ich ___ Spaghetti.",
-          "de": "Ergänzen Sie: möchten — Ich ___ Spaghetti.",
-          "ar": "أكمل باستعمال möchten — Ich ___ Spaghetti.",
-          "en": "Complete with möchten — Ich ___ Spaghetti."
+          "fr": "Conjuguez möchten au présent.",
+          "de": "Konjugieren Sie möchten im Präsens.",
+          "ar": "صرّف möchten في المضارع.",
+          "en": "Conjugate möchten in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sollen",
-          "darf",
-          "möchte",
-          "wollt"
-        ]
+        "sentence": "Ich ___ Spaghetti.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-01-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec möchten",
-          "de": "Ergänzen Sie: möchten",
-          "ar": "أكمل باستعمال möchten",
-          "en": "Complete with möchten"
-        },
         "type": "true_false",
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
         "statement": "Und was möchte deine Schwester?"
       },
       {
@@ -103,10 +98,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "wollt",
+          "möchtest",
+          "möchten",
           "möchtet",
-          "müssen",
-          "sollst"
+          "möchte"
         ]
       },
       {
@@ -122,22 +117,22 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "möchten",
-          "kannst",
-          "soll",
-          "sollen"
+          "möchtet",
+          "möchte",
+          "möchtest"
         ]
       },
       {
         "id": "kapitel-05-ubung-01-q08",
         "position": 8,
-        "prompt": {
-          "fr": "Complétez avec möchten",
-          "de": "Ergänzen Sie: möchten",
-          "ar": "أكمل باستعمال möchten",
-          "en": "Complete with möchten"
-        },
         "type": "true_false",
-        "statement": "Die Kinder dürfen Eis!"
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
+        "statement": "Die Kinder möchte Eis!"
       },
       {
         "id": "kapitel-05-ubung-01-q09",
@@ -168,20 +163,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-05-ubung-01-q11",
         "position": 11,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec können — Aber ich ___ besser Fußball spielen!",
-          "de": "Ergänzen Sie: können — Aber ich ___ besser Fußball spielen!",
-          "ar": "أكمل باستعمال können — Aber ich ___ besser Fußball spielen!",
-          "en": "Complete with können — Aber ich ___ besser Fußball spielen!"
+          "fr": "Conjuguez können au présent.",
+          "de": "Konjugieren Sie können im Präsens.",
+          "ar": "صرّف können في المضارع.",
+          "en": "Conjugate können in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "wollen",
-          "sollst",
-          "kann",
-          "muss"
-        ]
+        "sentence": "Aber ich ___ besser Fußball spielen!",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-01-q12",
@@ -195,22 +185,22 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "möchtest",
-          "könnt",
+          "können",
           "kannst",
-          "darfst"
+          "könnt",
+          "kann"
         ]
       },
       {
         "id": "kapitel-05-ubung-01-q13",
         "position": 13,
-        "prompt": {
-          "fr": "Complétez avec können",
-          "de": "Ergänzen Sie: können",
-          "ar": "أكمل باستعمال können",
-          "en": "Complete with können"
-        },
         "type": "true_false",
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
         "statement": "Wir können sehr gut Englisch und Deutsch und Mathematik."
       },
       {
@@ -251,41 +241,36 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "sollt",
-          "darfst",
-          "könnt",
-          "musst"
+          "müsst",
+          "müssen",
+          "musst",
+          "muss"
         ]
       },
       {
         "id": "kapitel-05-ubung-01-q17",
         "position": 17,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec müssen — Ihr, Kinder, ihr ___ putzen.",
-          "de": "Ergänzen Sie: müssen — Ihr, Kinder, ihr ___ putzen.",
-          "ar": "أكمل باستعمال müssen — Ihr, Kinder, ihr ___ putzen.",
-          "en": "Complete with müssen — Ihr, Kinder, ihr ___ putzen."
+          "fr": "Conjuguez müssen au présent.",
+          "de": "Konjugieren Sie müssen im Präsens.",
+          "ar": "صرّف müssen في المضارع.",
+          "en": "Conjugate müssen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "kannst",
-          "will",
-          "müsst",
-          "sollt"
-        ]
+        "sentence": "Ihr, Kinder, ihr ___ putzen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-01-q18",
         "position": 18,
-        "prompt": {
-          "fr": "Complétez avec müssen",
-          "de": "Ergänzen Sie: müssen",
-          "ar": "أكمل باستعمال müssen",
-          "en": "Complete with müssen"
-        },
         "type": "true_false",
-        "statement": "Wir sollt putzen!"
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
+        "statement": "Wir muss putzen!"
       },
       {
         "id": "kapitel-05-ubung-01-q19",
@@ -325,10 +310,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "kannst",
+          "will",
+          "willst",
           "wollt",
-          "sollt",
-          "musst"
+          "wollen"
         ]
       },
       {
@@ -343,22 +328,22 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "könnt",
-          "wollen",
-          "kann",
-          "möchten"
+          "will",
+          "willst",
+          "wollt",
+          "wollen"
         ]
       },
       {
         "id": "kapitel-05-ubung-01-q23",
         "position": 23,
-        "prompt": {
-          "fr": "Complétez avec wollen",
-          "de": "Ergänzen Sie: wollen",
-          "ar": "أكمل باستعمال wollen",
-          "en": "Complete with wollen"
-        },
         "type": "true_false",
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
         "statement": "Juliane, du willst nicht im Urlaub schwimmen?"
       },
       {
@@ -390,20 +375,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-05-ubung-01-q26",
         "position": 26,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec wollen — Die Kinder ___ zu Oma fahren.",
-          "de": "Ergänzen Sie: wollen — Die Kinder ___ zu Oma fahren.",
-          "ar": "أكمل باستعمال wollen — Die Kinder ___ zu Oma fahren.",
-          "en": "Complete with wollen — Die Kinder ___ zu Oma fahren."
+          "fr": "Conjuguez wollen au présent.",
+          "de": "Konjugieren Sie wollen im Präsens.",
+          "ar": "صرّف wollen في المضارع.",
+          "en": "Conjugate wollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "wollen",
-          "soll",
-          "möchtet",
-          "musst"
-        ]
+        "sentence": "Die Kinder ___ zu Oma fahren.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-01-q27",
@@ -417,23 +397,23 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "wollen",
           "darf",
           "dürfen",
+          "dürft",
           "darfst"
         ]
       },
       {
         "id": "kapitel-05-ubung-01-q28",
         "position": 28,
-        "prompt": {
-          "fr": "Complétez avec dürfen",
-          "de": "Ergänzen Sie: dürfen",
-          "ar": "أكمل باستعمال dürfen",
-          "en": "Complete with dürfen"
-        },
         "type": "true_false",
-        "statement": "Warum sollst ich nicht?"
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
+        "statement": "Warum darfst ich nicht?"
       },
       {
         "id": "kapitel-05-ubung-01-q29",
@@ -474,39 +454,34 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "darf",
-          "sollst",
-          "dürft",
-          "kann"
+          "dürfen",
+          "darfst",
+          "dürft"
         ]
       },
       {
         "id": "kapitel-05-ubung-01-q32",
         "position": 32,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec dürfen — Wir ___ nicht fernsehen?",
-          "de": "Ergänzen Sie: dürfen — Wir ___ nicht fernsehen?",
-          "ar": "أكمل باستعمال dürfen — Wir ___ nicht fernsehen?",
-          "en": "Complete with dürfen — Wir ___ nicht fernsehen?"
+          "fr": "Conjuguez dürfen au présent.",
+          "de": "Konjugieren Sie dürfen im Präsens.",
+          "ar": "صرّف dürfen في المضارع.",
+          "en": "Conjugate dürfen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "möchte",
-          "dürfen",
-          "möchten",
-          "darfst"
-        ]
+        "sentence": "Wir ___ nicht fernsehen?",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-01-q33",
         "position": 33,
-        "prompt": {
-          "fr": "Complétez avec dürfen",
-          "de": "Ergänzen Sie: dürfen",
-          "ar": "أكمل باستعمال dürfen",
-          "en": "Complete with dürfen"
-        },
         "type": "true_false",
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
         "statement": "Dann dürfen Mama und Papa auch nicht fernsehen!"
       },
       {
@@ -547,10 +522,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "könnt",
-          "möchtet",
+          "sollst",
+          "sollt",
           "soll",
-          "müssen"
+          "sollen"
         ]
       },
       {
@@ -565,10 +540,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "möchtet",
-          "sollen",
-          "darf",
-          "dürfen"
+          "Sollst",
+          "Sollen",
+          "Sollt",
+          "Soll"
         ]
       }
     ]
@@ -578,16 +553,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 2,
     "title": {
-      "fr": "Formes compatibles",
+      "fr": "Formes modales",
       "de": "Welches Verb passt?",
-      "ar": "أي صيغة تناسب؟",
-      "en": "Which form fits?"
+      "ar": "صيغ الأفعال الناقصة",
+      "en": "Modal forms"
     },
     "description": {
-      "fr": "Entraînez-vous aux verbes modaux.",
-      "de": "Üben Sie die Modalverben.",
-      "ar": "تدرب على الأفعال الناقصة.",
-      "en": "Practise modal verbs."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -700,28 +675,28 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "matching",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Associez les formes aux sujets.",
+          "de": "Ordnen Sie die Formen den Subjekten zu.",
+          "ar": "صل الصيغ بالفاعلين.",
+          "en": "Match the forms to the subjects."
         },
         "items": [
           {
             "id": "i0",
-            "label": "ich müssen"
+            "label": "ich – müssen"
           },
           {
             "id": "i1",
-            "label": "du müssen"
+            "label": "du – müssen"
           },
           {
             "id": "i2",
-            "label": "wir müssen"
+            "label": "wir – müssen"
           }
         ],
         "options": [
-          "müssen",
           "musst",
+          "müssen",
           "muss"
         ]
       }
@@ -738,20 +713,20 @@ export const meistertraining: ExerciseSetDefinition[] = [
       "en": "On Sunday"
     },
     "description": {
-      "fr": "Entraînez-vous aux verbes modaux.",
-      "de": "Üben Sie die Modalverben.",
-      "ar": "تدرب على الأفعال الناقصة.",
-      "en": "Practise modal verbs."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-05-ubung-03-q01",
         "position": 1,
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les mots dans l’ordre. Commencez par « Am ».",
+          "de": "Ordnen Sie die Wörter. Beginnen Sie mit „Am“.",
+          "ar": "رتب الكلمات وابدأ بـ « Am ».",
+          "en": "Put the words in order. Start with “Am”."
         },
         "type": "reorder",
         "tokens": [
@@ -768,10 +743,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-05-ubung-03-q02",
         "position": 2,
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les mots dans l’ordre. Commencez par « Meine ».",
+          "de": "Ordnen Sie die Wörter. Beginnen Sie mit „Meine“.",
+          "ar": "رتب الكلمات وابدأ بـ « Meine ».",
+          "en": "Put the words in order. Start with “Meine”."
         },
         "type": "reorder",
         "tokens": [
@@ -788,10 +763,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-05-ubung-03-q03",
         "position": 3,
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les mots dans l’ordre. Commencez par « Mein ».",
+          "de": "Ordnen Sie die Wörter. Beginnen Sie mit „Mein“.",
+          "ar": "رتب الكلمات وابدأ بـ « Mein ».",
+          "en": "Put the words in order. Start with “Mein”."
         },
         "type": "reorder",
         "tokens": [
@@ -807,10 +782,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-05-ubung-03-q04",
         "position": 4,
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les mots dans l’ordre. Commencez par « Am ».",
+          "de": "Ordnen Sie die Wörter. Beginnen Sie mit „Am“.",
+          "ar": "رتب الكلمات وابدأ بـ « Am ».",
+          "en": "Put the words in order. Start with “Am”."
         },
         "type": "reorder",
         "tokens": [
@@ -828,10 +803,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-05-ubung-03-q05",
         "position": 5,
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les mots dans l’ordre. Commencez par « Am ».",
+          "de": "Ordnen Sie die Wörter. Beginnen Sie mit „Am“.",
+          "ar": "رتب الكلمات وابدأ بـ « Am ».",
+          "en": "Put the words in order. Start with “Am”."
         },
         "type": "reorder",
         "tokens": [
@@ -873,24 +848,24 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "title": {
       "fr": "Au service des étrangers",
       "de": "Auf dem Ausländeramt",
-      "ar": "في مكتب الأجانب",
+      "ar": "في مكتب شؤون الأجانب",
       "en": "At the immigration office"
     },
     "description": {
-      "fr": "Entraînez-vous aux verbes modaux.",
-      "de": "Üben Sie die Modalverben.",
-      "ar": "تدرب على الأفعال الناقصة.",
-      "en": "Practise modal verbs."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-05-ubung-04-q01",
         "position": 1,
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les mots dans l’ordre. Commencez par « Ich ».",
+          "de": "Ordnen Sie die Wörter. Beginnen Sie mit „Ich“.",
+          "ar": "رتب الكلمات وابدأ بـ « Ich ».",
+          "en": "Put the words in order. Start with “Ich”."
         },
         "type": "reorder",
         "tokens": [
@@ -906,10 +881,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-05-ubung-04-q02",
         "position": 2,
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les mots dans l’ordre. Commencez par « Sie ».",
+          "de": "Ordnen Sie die Wörter. Beginnen Sie mit „Sie“.",
+          "ar": "رتب الكلمات وابدأ بـ « Sie ».",
+          "en": "Put the words in order. Start with “Sie”."
         },
         "type": "reorder",
         "tokens": [
@@ -930,10 +905,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-05-ubung-04-q03",
         "position": 3,
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les mots dans l’ordre. Commencez par « Kann ».",
+          "de": "Ordnen Sie die Wörter. Beginnen Sie mit „Kann“.",
+          "ar": "رتب الكلمات وابدأ بـ « Kann ».",
+          "en": "Put the words in order. Start with “Kann”."
         },
         "type": "reorder",
         "tokens": [
@@ -949,10 +924,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-05-ubung-04-q04",
         "position": 4,
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les mots dans l’ordre. Commencez par « Hunde ».",
+          "de": "Ordnen Sie die Wörter. Beginnen Sie mit „Hunde“.",
+          "ar": "رتب الكلمات وابدأ بـ « Hunde ».",
+          "en": "Put the words in order. Start with “Hunde”."
         },
         "type": "reorder",
         "tokens": [
@@ -969,10 +944,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-05-ubung-04-q05",
         "position": 5,
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les mots dans l’ordre. Commencez par « Wo ».",
+          "de": "Ordnen Sie die Wörter. Beginnen Sie mit „Wo“.",
+          "ar": "رتب الكلمات وابدأ بـ « Wo ».",
+          "en": "Put the words in order. Start with “Wo”."
         },
         "type": "reorder",
         "tokens": [
@@ -997,10 +972,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
       "en": "Obligation"
     },
     "description": {
-      "fr": "Entraînez-vous aux verbes modaux.",
-      "de": "Üben Sie die Modalverben.",
-      "ar": "تدرب على الأفعال الناقصة.",
-      "en": "Practise modal verbs."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -1015,40 +990,35 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "möchte",
+          "müssen",
           "muss",
-          "dürfen",
-          "sollst"
+          "müsst",
+          "musst"
         ]
       },
       {
         "id": "kapitel-05-ubung-05-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec müssen — Du ___ lernen.",
-          "de": "Ergänzen Sie: müssen — Du ___ lernen.",
-          "ar": "أكمل باستعمال müssen — Du ___ lernen.",
-          "en": "Complete with müssen — Du ___ lernen."
+          "fr": "Conjuguez müssen au présent.",
+          "de": "Konjugieren Sie müssen im Präsens.",
+          "ar": "صرّف müssen في المضارع.",
+          "en": "Conjugate müssen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "soll",
-          "willst",
-          "dürfen",
-          "musst"
-        ]
+        "sentence": "Du ___ lernen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-05-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec müssen",
-          "de": "Ergänzen Sie: müssen",
-          "ar": "أكمل باستعمال müssen",
-          "en": "Complete with müssen"
-        },
         "type": "true_false",
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
         "statement": "Er muss arbeiten."
       },
       {
@@ -1089,10 +1059,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "will",
           "müsst",
-          "möchtet",
-          "müssen"
+          "musst",
+          "müssen",
+          "muss"
         ]
       },
       {
@@ -1107,53 +1077,36 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "darfst",
-          "muss",
-          "will",
-          "willst"
+          "musst",
+          "müssen",
+          "müsst",
+          "muss"
         ]
       },
       {
         "id": "kapitel-05-ubung-05-q08",
         "position": 8,
-        "prompt": {
-          "fr": "Complétez avec müssen",
-          "de": "Ergänzen Sie: müssen",
-          "ar": "أكمل باستعمال müssen",
-          "en": "Complete with müssen"
-        },
         "type": "true_false",
-        "statement": "sollt Sie morgen arbeiten?"
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
+        "statement": "Ich willst mit dem Bus fahren. (wollen)"
       },
       {
         "id": "kapitel-05-ubung-05-association",
         "position": 9,
-        "type": "matching",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Conjuguez möchten au présent.",
+          "de": "Konjugieren Sie möchten im Präsens.",
+          "ar": "صرّف möchten في المضارع.",
+          "en": "Conjugate möchten in the present tense."
         },
-        "items": [
-          {
-            "id": "i0",
-            "label": "ich müssen"
-          },
-          {
-            "id": "i1",
-            "label": "du müssen"
-          },
-          {
-            "id": "i2",
-            "label": "wir müssen"
-          }
-        ],
-        "options": [
-          "musst",
-          "muss",
-          "müssen"
-        ]
+        "sentence": "Ihr ___ einen Platz reservieren. (möchten)",
+        "blanks": 1
       }
     ]
   },
@@ -1168,10 +1121,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
       "en": "Ability"
     },
     "description": {
-      "fr": "Entraînez-vous aux verbes modaux.",
-      "de": "Üben Sie die Modalverben.",
-      "ar": "تدرب على الأفعال الناقصة.",
-      "en": "Practise modal verbs."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -1186,29 +1139,24 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "kannst",
           "können",
-          "könnt",
-          "kann"
+          "kannst",
+          "kann",
+          "könnt"
         ]
       },
       {
         "id": "kapitel-05-ubung-06-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec können — ___ du schwimmen?",
-          "de": "Ergänzen Sie: können — ___ du schwimmen?",
-          "ar": "أكمل باستعمال können — ___ du schwimmen?",
-          "en": "Complete with können — ___ du schwimmen?"
+          "fr": "Conjuguez können au présent.",
+          "de": "Konjugieren Sie können im Präsens.",
+          "ar": "صرّف können في المضارع.",
+          "en": "Conjugate können in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "können",
-          "könnt",
-          "kannst",
-          "kann"
-        ]
+        "sentence": "___ du schwimmen?",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-06-q03",
@@ -1222,10 +1170,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "könnt",
-          "kann",
           "kannst",
-          "können"
+          "können",
+          "kann",
+          "könnt"
         ]
       },
       {
@@ -1240,29 +1188,24 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "können",
+          "könnt",
           "kann",
-          "kannst",
-          "könnt"
+          "können",
+          "kannst"
         ]
       },
       {
         "id": "kapitel-05-ubung-06-q05",
         "position": 5,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec können — ___ ihr lesen?",
-          "de": "Ergänzen Sie: können — ___ ihr lesen?",
-          "ar": "أكمل باستعمال können — ___ ihr lesen?",
-          "en": "Complete with können — ___ ihr lesen?"
+          "fr": "Conjuguez können au présent.",
+          "de": "Konjugieren Sie können im Präsens.",
+          "ar": "صرّف können في المضارع.",
+          "en": "Conjugate können in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "kann",
-          "kannst",
-          "können",
-          "könnt"
-        ]
+        "sentence": "___ ihr lesen?",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-06-q06",
@@ -1276,9 +1219,9 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "können",
           "kannst",
           "könnt",
-          "können",
           "kann"
         ]
       },
@@ -1294,48 +1237,37 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "könnt",
           "kann",
           "kannst",
-          "können"
+          "können",
+          "könnt"
         ]
       },
       {
         "id": "kapitel-05-ubung-06-q08",
         "position": 8,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec können — ___ Sie mir helfen?",
-          "de": "Ergänzen Sie: können — ___ Sie mir helfen?",
-          "ar": "أكمل باستعمال können — ___ Sie mir helfen?",
-          "en": "Complete with können — ___ Sie mir helfen?"
+          "fr": "Conjuguez können au présent.",
+          "de": "Konjugieren Sie können im Präsens.",
+          "ar": "صرّف können في المضارع.",
+          "en": "Conjugate können in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "können",
-          "kann",
-          "kannst",
-          "könnt"
-        ]
+        "sentence": "___ Sie mir helfen?",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-06-multi",
         "position": 9,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "du müssen → müssen",
-          "ich müssen → muss",
-          "ich müssen → musst",
-          "du müssen → musst",
-          "wir müssen → müssen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez toutes les associations correctes.",
-          "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
-          "en": "Select all correct pairs."
-        }
+          "fr": "Conjuguez sollen au présent.",
+          "de": "Konjugieren Sie sollen im Präsens.",
+          "ar": "صرّف sollen في المضارع.",
+          "en": "Conjugate sollen in the present tense."
+        },
+        "sentence": "Das Kind ___ früher schlafen. (sollen)",
+        "blanks": 1
       }
     ]
   },
@@ -1350,58 +1282,48 @@ export const meistertraining: ExerciseSetDefinition[] = [
       "en": "Permission"
     },
     "description": {
-      "fr": "Entraînez-vous aux verbes modaux.",
-      "de": "Üben Sie die Modalverben.",
-      "ar": "تدرب على الأفعال الناقصة.",
-      "en": "Practise modal verbs."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-05-ubung-07-q01",
         "position": 1,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec dürfen — ___ ich hier sitzen?",
-          "de": "Ergänzen Sie: dürfen — ___ ich hier sitzen?",
-          "ar": "أكمل باستعمال dürfen — ___ ich hier sitzen?",
-          "en": "Complete with dürfen — ___ ich hier sitzen?"
+          "fr": "Conjuguez dürfen au présent.",
+          "de": "Konjugieren Sie dürfen im Präsens.",
+          "ar": "صرّف dürfen في المضارع.",
+          "en": "Conjugate dürfen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "können",
-          "willst",
-          "darf",
-          "müssen"
-        ]
+        "sentence": "___ ich hier sitzen?",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-07-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec dürfen — Du ___ hier nicht rauchen.",
-          "de": "Ergänzen Sie: dürfen — Du ___ hier nicht rauchen.",
-          "ar": "أكمل باستعمال dürfen — Du ___ hier nicht rauchen.",
-          "en": "Complete with dürfen — Du ___ hier nicht rauchen."
+          "fr": "Conjuguez dürfen au présent.",
+          "de": "Konjugieren Sie dürfen im Präsens.",
+          "ar": "صرّف dürfen في المضارع.",
+          "en": "Conjugate dürfen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "musst",
-          "wollt",
-          "darfst",
-          "soll"
-        ]
+        "sentence": "Du ___ hier nicht rauchen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-07-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec dürfen",
-          "de": "Ergänzen Sie: dürfen",
-          "ar": "أكمل باستعمال dürfen",
-          "en": "Complete with dürfen"
-        },
         "type": "true_false",
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
         "statement": "Das Kind darf spielen."
       },
       {
@@ -1433,50 +1355,40 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-05-ubung-07-q06",
         "position": 6,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec dürfen — Die Gäste ___ bleiben.",
-          "de": "Ergänzen Sie: dürfen — Die Gäste ___ bleiben.",
-          "ar": "أكمل باستعمال dürfen — Die Gäste ___ bleiben.",
-          "en": "Complete with dürfen — Die Gäste ___ bleiben."
+          "fr": "Conjuguez dürfen au présent.",
+          "de": "Konjugieren Sie dürfen im Präsens.",
+          "ar": "صرّف dürfen في المضارع.",
+          "en": "Conjugate dürfen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "möchtest",
-          "musst",
-          "will",
-          "dürfen"
-        ]
+        "sentence": "Die Gäste ___ bleiben.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-07-q07",
         "position": 7,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec dürfen — Man ___ hier nicht fotografieren.",
-          "de": "Ergänzen Sie: dürfen — Man ___ hier nicht fotografieren.",
-          "ar": "أكمل باستعمال dürfen — Man ___ hier nicht fotografieren.",
-          "en": "Complete with dürfen — Man ___ hier nicht fotografieren."
+          "fr": "Conjuguez dürfen au présent.",
+          "de": "Konjugieren Sie dürfen im Präsens.",
+          "ar": "صرّف dürfen في المضارع.",
+          "en": "Conjugate dürfen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "können",
-          "dürfen",
-          "darf",
-          "könnt"
-        ]
+        "sentence": "Man ___ hier nicht fotografieren.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-07-q08",
         "position": 8,
-        "prompt": {
-          "fr": "Complétez avec dürfen",
-          "de": "Ergänzen Sie: dürfen",
-          "ar": "أكمل باستعمال dürfen",
-          "en": "Complete with dürfen"
-        },
         "type": "true_false",
-        "statement": "will Sie hier arbeiten?"
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
+        "statement": "Der Zug sollst um neun Uhr ankommen. (sollen)"
       }
     ]
   },
@@ -1491,185 +1403,128 @@ export const meistertraining: ExerciseSetDefinition[] = [
       "en": "Instructions"
     },
     "description": {
-      "fr": "Entraînez-vous aux verbes modaux.",
-      "de": "Üben Sie die Modalverben.",
-      "ar": "تدرب على الأفعال الناقصة.",
-      "en": "Practise modal verbs."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-05-ubung-08-q01",
         "position": 1,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sollen — Ich ___ mehr trinken.",
-          "de": "Ergänzen Sie: sollen — Ich ___ mehr trinken.",
-          "ar": "أكمل باستعمال sollen — Ich ___ mehr trinken.",
-          "en": "Complete with sollen — Ich ___ mehr trinken."
+          "fr": "Conjuguez sollen au présent.",
+          "de": "Konjugieren Sie sollen im Präsens.",
+          "ar": "صرّف sollen في المضارع.",
+          "en": "Conjugate sollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sollst",
-          "sollen",
-          "sollt",
-          "soll"
-        ]
+        "sentence": "Ich ___ mehr trinken.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-08-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sollen — Du ___ den Arzt anrufen.",
-          "de": "Ergänzen Sie: sollen — Du ___ den Arzt anrufen.",
-          "ar": "أكمل باستعمال sollen — Du ___ den Arzt anrufen.",
-          "en": "Complete with sollen — Du ___ den Arzt anrufen."
+          "fr": "Conjuguez sollen au présent.",
+          "de": "Konjugieren Sie sollen im Präsens.",
+          "ar": "صرّف sollen في المضارع.",
+          "en": "Conjugate sollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sollen",
-          "sollt",
-          "sollst",
-          "soll"
-        ]
+        "sentence": "Du ___ den Arzt anrufen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-08-q03",
         "position": 3,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sollen — Er ___ zu Hause bleiben.",
-          "de": "Ergänzen Sie: sollen — Er ___ zu Hause bleiben.",
-          "ar": "أكمل باستعمال sollen — Er ___ zu Hause bleiben.",
-          "en": "Complete with sollen — Er ___ zu Hause bleiben."
+          "fr": "Conjuguez sollen au présent.",
+          "de": "Konjugieren Sie sollen im Präsens.",
+          "ar": "صرّف sollen في المضارع.",
+          "en": "Conjugate sollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sollt",
-          "soll",
-          "sollst",
-          "sollen"
-        ]
+        "sentence": "Er ___ zu Hause bleiben.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-08-q04",
         "position": 4,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sollen — Wir ___ leise sein.",
-          "de": "Ergänzen Sie: sollen — Wir ___ leise sein.",
-          "ar": "أكمل باستعمال sollen — Wir ___ leise sein.",
-          "en": "Complete with sollen — Wir ___ leise sein."
+          "fr": "Conjuguez sollen au présent.",
+          "de": "Konjugieren Sie sollen im Präsens.",
+          "ar": "صرّف sollen في المضارع.",
+          "en": "Conjugate sollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sollen",
-          "soll",
-          "sollst",
-          "sollt"
-        ]
+        "sentence": "Wir ___ leise sein.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-08-q05",
         "position": 5,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sollen — Ihr ___ die Aufgabe machen.",
-          "de": "Ergänzen Sie: sollen — Ihr ___ die Aufgabe machen.",
-          "ar": "أكمل باستعمال sollen — Ihr ___ die Aufgabe machen.",
-          "en": "Complete with sollen — Ihr ___ die Aufgabe machen."
+          "fr": "Conjuguez sollen au présent.",
+          "de": "Konjugieren Sie sollen im Präsens.",
+          "ar": "صرّف sollen في المضارع.",
+          "en": "Conjugate sollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "soll",
-          "sollst",
-          "sollen",
-          "sollt"
-        ]
+        "sentence": "Ihr ___ die Aufgabe machen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-08-q06",
         "position": 6,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sollen — Die Schüler ___ lesen.",
-          "de": "Ergänzen Sie: sollen — Die Schüler ___ lesen.",
-          "ar": "أكمل باستعمال sollen — Die Schüler ___ lesen.",
-          "en": "Complete with sollen — Die Schüler ___ lesen."
+          "fr": "Conjuguez sollen au présent.",
+          "de": "Konjugieren Sie sollen im Präsens.",
+          "ar": "صرّف sollen في المضارع.",
+          "en": "Conjugate sollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sollst",
-          "sollt",
-          "sollen",
-          "soll"
-        ]
+        "sentence": "Die Schüler ___ lesen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-08-q07",
         "position": 7,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sollen — Sie (Singular) ___ warten.",
-          "de": "Ergänzen Sie: sollen — Sie (Singular) ___ warten.",
-          "ar": "أكمل باستعمال sollen — Sie (Singular) ___ warten.",
-          "en": "Complete with sollen — Sie (Singular) ___ warten."
+          "fr": "Conjuguez sollen au présent.",
+          "de": "Konjugieren Sie sollen im Präsens.",
+          "ar": "صرّف sollen في المضارع.",
+          "en": "Conjugate sollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sollt",
-          "soll",
-          "sollst",
-          "sollen"
-        ]
+        "sentence": "Sie (Singular) ___ warten.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-08-q08",
         "position": 8,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sollen — ___ Sie morgen kommen?",
-          "de": "Ergänzen Sie: sollen — ___ Sie morgen kommen?",
-          "ar": "أكمل باستعمال sollen — ___ Sie morgen kommen?",
-          "en": "Complete with sollen — ___ Sie morgen kommen?"
+          "fr": "Conjuguez sollen au présent.",
+          "de": "Konjugieren Sie sollen im Präsens.",
+          "ar": "صرّف sollen في المضارع.",
+          "en": "Conjugate sollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sollen",
-          "soll",
-          "sollst",
-          "sollt"
-        ]
+        "sentence": "___ Sie morgen kommen?",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-08-association",
         "position": 9,
-        "type": "matching",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Conjuguez wollen au présent.",
+          "de": "Konjugieren Sie wollen im Präsens.",
+          "ar": "صرّف wollen في المضارع.",
+          "en": "Conjugate wollen in the present tense."
         },
-        "items": [
-          {
-            "id": "i0",
-            "label": "ich müssen"
-          },
-          {
-            "id": "i1",
-            "label": "du müssen"
-          },
-          {
-            "id": "i2",
-            "label": "wir müssen"
-          }
-        ],
-        "options": [
-          "müssen",
-          "musst",
-          "muss"
-        ]
+        "sentence": "Ich ___ mit dem Bus fahren. (wollen)",
+        "blanks": 1
       }
     ]
   },
@@ -1681,61 +1536,51 @@ export const meistertraining: ExerciseSetDefinition[] = [
       "fr": "Volonté et souhait",
       "de": "Wille und Wunsch",
       "ar": "الإرادة والرغبة",
-      "en": "Intention and wish"
+      "en": "Will and wish"
     },
     "description": {
-      "fr": "Entraînez-vous aux verbes modaux.",
-      "de": "Üben Sie die Modalverben.",
-      "ar": "تدرب على الأفعال الناقصة.",
-      "en": "Practise modal verbs."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-05-ubung-09-q01",
         "position": 1,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec wollen — Ich ___ reisen.",
-          "de": "Ergänzen Sie: wollen — Ich ___ reisen.",
-          "ar": "أكمل باستعمال wollen — Ich ___ reisen.",
-          "en": "Complete with wollen — Ich ___ reisen."
+          "fr": "Conjuguez wollen au présent.",
+          "de": "Konjugieren Sie wollen im Präsens.",
+          "ar": "صرّف wollen في المضارع.",
+          "en": "Conjugate wollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "müssen",
-          "will",
-          "kann",
-          "muss"
-        ]
+        "sentence": "Ich ___ reisen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-09-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec wollen — Du ___ ein Auto kaufen.",
-          "de": "Ergänzen Sie: wollen — Du ___ ein Auto kaufen.",
-          "ar": "أكمل باستعمال wollen — Du ___ ein Auto kaufen.",
-          "en": "Complete with wollen — Du ___ ein Auto kaufen."
+          "fr": "Conjuguez wollen au présent.",
+          "de": "Konjugieren Sie wollen im Präsens.",
+          "ar": "صرّف wollen في المضارع.",
+          "en": "Conjugate wollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "willst",
-          "möchte",
-          "dürfen",
-          "wollt"
-        ]
+        "sentence": "Du ___ ein Auto kaufen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-09-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec wollen",
-          "de": "Ergänzen Sie: wollen",
-          "ar": "أكمل باستعمال wollen",
-          "en": "Complete with wollen"
-        },
         "type": "true_false",
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
         "statement": "Er will Arzt werden."
       },
       {
@@ -1767,69 +1612,53 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-05-ubung-09-q06",
         "position": 6,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec möchten — ___ ihr etwas essen?",
-          "de": "Ergänzen Sie: möchten — ___ ihr etwas essen?",
-          "ar": "أكمل باستعمال möchten — ___ ihr etwas essen?",
-          "en": "Complete with möchten — ___ ihr etwas essen?"
+          "fr": "Conjuguez möchten au présent.",
+          "de": "Konjugieren Sie möchten im Präsens.",
+          "ar": "صرّف möchten في المضارع.",
+          "en": "Conjugate möchten in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sollen",
-          "kann",
-          "möchtet",
-          "soll"
-        ]
+        "sentence": "___ ihr etwas essen?",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-09-q07",
         "position": 7,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec möchten — Sie (Singular) ___ bezahlen.",
-          "de": "Ergänzen Sie: möchten — Sie (Singular) ___ bezahlen.",
-          "ar": "أكمل باستعمال möchten — Sie (Singular) ___ bezahlen.",
-          "en": "Complete with möchten — Sie (Singular) ___ bezahlen."
+          "fr": "Conjuguez möchten au présent.",
+          "de": "Konjugieren Sie möchten im Präsens.",
+          "ar": "صرّف möchten في المضارع.",
+          "en": "Conjugate möchten in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "wollt",
-          "dürft",
-          "möchte",
-          "muss"
-        ]
+        "sentence": "Sie (Singular) ___ bezahlen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-09-q08",
         "position": 8,
-        "prompt": {
-          "fr": "Complétez avec möchten",
-          "de": "Ergänzen Sie: möchten",
-          "ar": "أكمل باستعمال möchten",
-          "en": "Complete with möchten"
-        },
         "type": "true_false",
-        "statement": "soll Sie einen Kaffee?"
+        "prompt": {
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
+        },
+        "statement": "Möchte Sie einen Kaffee?"
       },
       {
         "id": "kapitel-05-ubung-09-multi",
         "position": 9,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "ich müssen → muss",
-          "ich müssen → musst",
-          "du müssen → müssen",
-          "wir müssen → müssen",
-          "du müssen → musst"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez toutes les associations correctes.",
-          "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
-          "en": "Select all correct pairs."
-        }
+          "fr": "Conjuguez müssen au présent.",
+          "de": "Konjugieren Sie müssen im Präsens.",
+          "ar": "صرّف müssen في المضارع.",
+          "en": "Conjugate müssen in the present tense."
+        },
+        "sentence": "Ich ___ das Formular ausfüllen. (müssen)",
+        "blanks": 1
       }
     ]
   },
@@ -1838,197 +1667,147 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 10,
     "title": {
-      "fr": "Évaluation finale",
+      "fr": "Test de maîtrise",
       "de": "Abschlusstest",
-      "ar": "اختبار نهائي",
-      "en": "Final test"
+      "ar": "اختبار الإتقان",
+      "en": "Mastery test"
     },
     "description": {
-      "fr": "Entraînez-vous aux verbes modaux.",
-      "de": "Üben Sie die Modalverben.",
-      "ar": "تدرب على الأفعال الناقصة.",
-      "en": "Practise modal verbs."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-05-ubung-10-q01",
         "position": 1,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec müssen — Du ___ morgen arbeiten.",
-          "de": "Ergänzen Sie: müssen — Du ___ morgen arbeiten.",
-          "ar": "أكمل باستعمال müssen — Du ___ morgen arbeiten.",
-          "en": "Complete with müssen — Du ___ morgen arbeiten."
+          "fr": "Conjuguez müssen au présent.",
+          "de": "Konjugieren Sie müssen im Präsens.",
+          "ar": "صرّف müssen في المضارع.",
+          "en": "Conjugate müssen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "muss",
-          "müssen",
-          "müsst",
-          "musst"
-        ]
+        "sentence": "Du ___ morgen arbeiten.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-10-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec können — Er ___ gut lesen.",
-          "de": "Ergänzen Sie: können — Er ___ gut lesen.",
-          "ar": "أكمل باستعمال können — Er ___ gut lesen.",
-          "en": "Complete with können — Er ___ gut lesen."
+          "fr": "Conjuguez können au présent.",
+          "de": "Konjugieren Sie können im Präsens.",
+          "ar": "صرّف können في المضارع.",
+          "en": "Conjugate können in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "können",
-          "könnt",
-          "kann",
-          "kannst"
-        ]
+        "sentence": "Er ___ gut lesen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-10-q03",
         "position": 3,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec dürfen — ___ ich gehen?",
-          "de": "Ergänzen Sie: dürfen — ___ ich gehen?",
-          "ar": "أكمل باستعمال dürfen — ___ ich gehen?",
-          "en": "Complete with dürfen — ___ ich gehen?"
+          "fr": "Conjuguez dürfen au présent.",
+          "de": "Konjugieren Sie dürfen im Präsens.",
+          "ar": "صرّف dürfen في المضارع.",
+          "en": "Conjugate dürfen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "dürft",
-          "darf",
-          "darfst",
-          "dürfen"
-        ]
+        "sentence": "___ ich gehen?",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-10-q04",
         "position": 4,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec wollen — Wir ___ nach Berlin fahren.",
-          "de": "Ergänzen Sie: wollen — Wir ___ nach Berlin fahren.",
-          "ar": "أكمل باستعمال wollen — Wir ___ nach Berlin fahren.",
-          "en": "Complete with wollen — Wir ___ nach Berlin fahren."
+          "fr": "Conjuguez wollen au présent.",
+          "de": "Konjugieren Sie wollen im Präsens.",
+          "ar": "صرّف wollen في المضارع.",
+          "en": "Conjugate wollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "wollen",
-          "will",
-          "willst",
-          "wollt"
-        ]
+        "sentence": "Wir ___ nach Berlin fahren.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-10-q05",
         "position": 5,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sollen — Ihr ___ leise sein.",
-          "de": "Ergänzen Sie: sollen — Ihr ___ leise sein.",
-          "ar": "أكمل باستعمال sollen — Ihr ___ leise sein.",
-          "en": "Complete with sollen — Ihr ___ leise sein."
+          "fr": "Conjuguez sollen au présent.",
+          "de": "Konjugieren Sie sollen im Präsens.",
+          "ar": "صرّف sollen في المضارع.",
+          "en": "Conjugate sollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "soll",
-          "sollst",
-          "sollen",
-          "sollt"
-        ]
+        "sentence": "Ihr ___ leise sein.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-10-q06",
         "position": 6,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec möchten — ___ Sie Wasser trinken?",
-          "de": "Ergänzen Sie: möchten — ___ Sie Wasser trinken?",
-          "ar": "أكمل باستعمال möchten — ___ Sie Wasser trinken?",
-          "en": "Complete with möchten — ___ Sie Wasser trinken?"
+          "fr": "Conjuguez möchten au présent.",
+          "de": "Konjugieren Sie möchten im Präsens.",
+          "ar": "صرّف möchten في المضارع.",
+          "en": "Conjugate möchten in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "möchtest",
-          "möchtet",
-          "möchten",
-          "möchte"
-        ]
+        "sentence": "___ Sie Wasser trinken?",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-10-q07",
         "position": 7,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec dürfen — Man ___ hier nicht parken.",
-          "de": "Ergänzen Sie: dürfen — Man ___ hier nicht parken.",
-          "ar": "أكمل باستعمال dürfen — Man ___ hier nicht parken.",
-          "en": "Complete with dürfen — Man ___ hier nicht parken."
+          "fr": "Conjuguez dürfen au présent.",
+          "de": "Konjugieren Sie dürfen im Präsens.",
+          "ar": "صرّف dürfen في المضارع.",
+          "en": "Conjugate dürfen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "dürft",
-          "darf",
-          "darfst",
-          "dürfen"
-        ]
+        "sentence": "Man ___ hier nicht parken.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-10-q08",
         "position": 8,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec müssen — Ich ___ heute lernen.",
-          "de": "Ergänzen Sie: müssen — Ich ___ heute lernen.",
-          "ar": "أكمل باستعمال müssen — Ich ___ heute lernen.",
-          "en": "Complete with müssen — Ich ___ heute lernen."
+          "fr": "Conjuguez müssen au présent.",
+          "de": "Konjugieren Sie müssen im Präsens.",
+          "ar": "صرّف müssen في المضارع.",
+          "en": "Conjugate müssen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "muss",
-          "musst",
-          "müssen",
-          "müsst"
-        ]
+        "sentence": "Ich ___ heute lernen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-10-q09",
         "position": 9,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec können — Die Kinder ___ schwimmen.",
-          "de": "Ergänzen Sie: können — Die Kinder ___ schwimmen.",
-          "ar": "أكمل باستعمال können — Die Kinder ___ schwimmen.",
-          "en": "Complete with können — Die Kinder ___ schwimmen."
+          "fr": "Conjuguez können au présent.",
+          "de": "Konjugieren Sie können im Präsens.",
+          "ar": "صرّف können في المضارع.",
+          "en": "Conjugate können in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "kann",
-          "kannst",
-          "könnt",
-          "können"
-        ]
+        "sentence": "Die Kinder ___ schwimmen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-05-ubung-10-q10",
         "position": 10,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sollen — Du ___ den Arzt anrufen.",
-          "de": "Ergänzen Sie: sollen — Du ___ den Arzt anrufen.",
-          "ar": "أكمل باستعمال sollen — Du ___ den Arzt anrufen.",
-          "en": "Complete with sollen — Du ___ den Arzt anrufen."
+          "fr": "Conjuguez sollen au présent.",
+          "de": "Konjugieren Sie sollen im Präsens.",
+          "ar": "صرّف sollen في المضارع.",
+          "en": "Conjugate sollen in the present tense."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sollen",
-          "sollt",
-          "sollst",
-          "soll"
-        ]
+        "sentence": "Herr Kern, ___ Sie morgen kommen? (sollen)",
+        "blanks": 1
       }
     ]
   }

@@ -1,17 +1,18 @@
 import type { LessonDefinition } from '@/lib/grammar/types'
+
 export const lesson: LessonDefinition = {
   "id": "kapitel-27-lesson",
   "title": {
-    "fr": "Je pouvais, je devais, je voulais",
+    "fr": "Ich konnte, ich musste, ich wollte",
     "de": "Ich konnte, ich musste, ich wollte",
-    "ar": "كنت أستطيع، كان عليّ، كنت أريد",
-    "en": "I could, I had to, I wanted"
+    "ar": "Ich konnte, ich musste, ich wollte",
+    "en": "Ich konnte, ich musste, ich wollte"
   },
   "subtitle": {
-    "fr": "Les modaux au prétérit",
+    "fr": "Präteritum der Modalverben",
     "de": "Präteritum der Modalverben",
-    "ar": "الأفعال الناقصة في الماضي",
-    "en": "Modal verbs in the simple past"
+    "ar": "Präteritum der Modalverben",
+    "en": "Präteritum der Modalverben"
   },
   "objective": {
     "fr": "Au passé, les modaux sont souvent employés au Präteritum, même à l’oral. On supprime le tréma de können, müssen et dürfen, puis on ajoute les terminaisons -te, -test, -te, -ten, -tet, -ten.",
@@ -24,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "r0",
       "title": {
-        "fr": "Les modaux au prétérit",
+        "fr": "Präteritum der Modalverben",
         "de": "Präteritum der Modalverben",
-        "ar": "الأفعال الناقصة في الماضي",
-        "en": "Modal verbs in the simple past"
+        "ar": "Präteritum der Modalverben",
+        "en": "Präteritum der Modalverben"
       },
       "text": {
         "fr": "Au passé, les modaux sont souvent employés au Präteritum, même à l’oral. On supprime le tréma de können, müssen et dürfen, puis on ajoute les terminaisons -te, -test, -te, -ten, -tet, -ten.",
@@ -38,12 +39,28 @@ export const lesson: LessonDefinition = {
     },
     {
       "type": "paragraph",
+      "id": "premium-vertiefung",
+      "title": {
+        "fr": "Endungen und Satzbau",
+        "de": "Endungen und Satzbau",
+        "ar": "Endungen und Satzbau",
+        "en": "Endungen und Satzbau"
+      },
+      "text": {
+        "fr": "Radicaux : konn-, muss-, durf-, woll-, soll-. Ajoute -te, -test, -te, -ten, -tet, -ten. Le modal est conjugué, le verbe principal reste à l’infinitif sans zu : Gestern musste ich arbeiten. Dans une subordonnée : weil ich gestern arbeiten musste. Ne confonds pas konnte (passé) et könnte (conditionnel).",
+        "de": "Stämme: konn-, muss-, durf-, woll-, soll-. Ergänze -te, -test, -te, -ten, -tet, -ten. Das Modalverb ist finit, der Vollverb-Infinitiv steht ohne zu: Gestern musste ich arbeiten. Im Nebensatz: weil ich gestern arbeiten musste. Unterscheide konnte (Präteritum) und könnte (Konjunktiv II).",
+        "ar": "الجذور: konn-, muss-, durf-, woll-, soll-. أضف -te, -test, -te, -ten, -tet, -ten. يُصرّف الفعل الناقص ويبقى الفعل الرئيسي مصدراً دون zu: Gestern musste ich arbeiten. في الجملة التابعة: weil ich gestern arbeiten musste. ميّز بين konnte للماضي وkönnte للاحتمال.",
+        "en": "Stems: konn-, muss-, durf-, woll-, soll-. Add -te, -test, -te, -ten, -tet, -ten. Conjugate the modal; the main verb stays infinitive without zu: Gestern musste ich arbeiten. In a subordinate clause: weil ich gestern arbeiten musste. Distinguish konnte (past) from könnte (subjunctive)."
+      }
+    },
+    {
+      "type": "paragraph",
       "id": "r1",
       "title": {
-        "fr": "Les modaux au prétérit",
+        "fr": "Präteritum der Modalverben",
         "de": "Präteritum der Modalverben",
-        "ar": "الأفعال الناقصة في الماضي",
-        "en": "Modal verbs in the simple past"
+        "ar": "Präteritum der Modalverben",
+        "en": "Präteritum der Modalverben"
       },
       "text": {
         "fr": "Dans une principale, le modal conjugué occupe la deuxième position et l’infinitif sans zu se place à la fin. Après weil, l’infinitif précède le modal conjugué.",
@@ -56,10 +73,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "r2",
       "title": {
-        "fr": "Les modaux au prétérit",
+        "fr": "Präteritum der Modalverben",
         "de": "Präteritum der Modalverben",
-        "ar": "الأفعال الناقصة في الماضي",
-        "en": "Modal verbs in the simple past"
+        "ar": "Präteritum der Modalverben",
+        "en": "Präteritum der Modalverben"
       },
       "text": {
         "fr": "Nicht müssen signifie absence d’obligation ; nicht dürfen signifie interdiction. Ne confondez pas les deux.",
@@ -72,10 +89,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "r3",
       "title": {
-        "fr": "Les modaux au prétérit",
+        "fr": "Präteritum der Modalverben",
         "de": "Präteritum der Modalverben",
-        "ar": "الأفعال الناقصة في الماضي",
-        "en": "Modal verbs in the simple past"
+        "ar": "Präteritum der Modalverben",
+        "en": "Präteritum der Modalverben"
       },
       "text": {
         "fr": "Pour exprimer un souhait passé correspondant à möchte, on utilise généralement wollte. Möchte est le Konjunktiv II de mögen ; mochte signifie aimait.",
@@ -88,10 +105,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "conj",
       "title": {
-        "fr": "Conjugaison",
+        "fr": "Konjugation",
         "de": "Konjugation",
-        "ar": "التصريف",
-        "en": "Conjugation"
+        "ar": "Konjugation",
+        "en": "Konjugation"
       },
       "headers": [
         {
@@ -382,12 +399,12 @@ export const lesson: LessonDefinition = {
     },
     {
       "type": "examples",
-      "id": "examples",
+      "id": "premium-beispiele-1",
       "title": {
-        "fr": "Exemples commentés",
-        "de": "Kommentierte Beispiele",
-        "ar": "أمثلة مشروحة",
-        "en": "Annotated examples"
+        "fr": "Grundformen und Anwendung",
+        "de": "Grundformen und Anwendung",
+        "ar": "Grundformen und Anwendung",
+        "en": "Grundformen und Anwendung"
       },
       "items": [
         {
@@ -549,7 +566,19 @@ export const lesson: LessonDefinition = {
             "ar": "ich: يتحول müssen إلى musste (الضرورة) بالنهاية -te.",
             "en": "ich: müssen becomes musste (necessity), ending -te."
           }
-        },
+        }
+      ]
+    },
+    {
+      "type": "examples",
+      "id": "premium-beispiele-2",
+      "title": {
+        "fr": "Beispiele im Kontext",
+        "de": "Beispiele im Kontext",
+        "ar": "Beispiele im Kontext",
+        "en": "Beispiele im Kontext"
+      },
+      "items": [
         {
           "id": "e10",
           "context": {
@@ -709,7 +738,19 @@ export const lesson: LessonDefinition = {
             "ar": "du: يتحول wollen إلى wolltest (الرغبة أو الإرادة) بالنهاية -test.",
             "en": "du: wollen becomes wolltest (wish or intention), ending -test."
           }
-        },
+        }
+      ]
+    },
+    {
+      "type": "examples",
+      "id": "premium-beispiele-3",
+      "title": {
+        "fr": "Vertiefung und Kontraste",
+        "de": "Vertiefung und Kontraste",
+        "ar": "Vertiefung und Kontraste",
+        "en": "Vertiefung und Kontraste"
+      },
+      "items": [
         {
           "id": "e20",
           "context": {
@@ -789,8 +830,138 @@ export const lesson: LessonDefinition = {
             "ar": "du: يتحول sollen إلى solltest (التوجيه أو النصيحة) بالنهاية -test.",
             "en": "du: sollen becomes solltest (instruction or advice), ending -test."
           }
+        },
+        {
+          "id": "premium-add-26",
+          "german": "Als Kind konnte ich noch nicht lesen.",
+          "context": {
+            "fr": "Quand j’étais enfant, je ne savais pas encore lire.",
+            "de": "Als Kind konnte ich noch nicht lesen.",
+            "ar": "عندما كنت طفلاً لم أكن أستطيع القراءة بعد.",
+            "en": "As a child, I could not read yet."
+          },
+          "explanation": {
+            "fr": "ich → konnte — Können exprime une capacité ou une possibilité passée : konnte, konntest, konnten, konntet.",
+            "de": "ich → konnte — Können drückt vergangene Fähigkeit oder Möglichkeit aus: konnte, konntest, konnten, konntet.",
+            "ar": "ich → konnte — يعبر können عن قدرة أو إمكانية في الماضي: konnte, konntest, konnten, konntet.",
+            "en": "ich → konnte — Können expresses past ability or possibility: konnte, konntest, konnten, konntet."
+          }
+        },
+        {
+          "id": "premium-add-27",
+          "german": "Du musstest gestern nicht arbeiten.",
+          "context": {
+            "fr": "Tu n’étais pas obligé de travailler hier.",
+            "de": "Du musstest gestern nicht arbeiten.",
+            "ar": "لم تكن مضطراً للعمل أمس.",
+            "en": "You did not have to work yesterday."
+          },
+          "explanation": {
+            "fr": "du → musstest nicht — Nicht müssen signifie ne pas être obligé, et non ne pas avoir le droit.",
+            "de": "du → musstest nicht — Nicht müssen bedeutet keine Pflicht, nicht ein Verbot.",
+            "ar": "du → musstest nicht — تعني nicht müssen عدم الإلزام وليس المنع.",
+            "en": "du → musstest nicht — Nicht müssen means no obligation, not prohibition."
+          }
+        },
+        {
+          "id": "premium-add-28",
+          "german": "Die Kinder durften nicht allein hinausgehen.",
+          "context": {
+            "fr": "Les enfants n’avaient pas le droit de sortir seuls.",
+            "de": "Die Kinder durften nicht allein hinausgehen.",
+            "ar": "لم يكن مسموحاً للأطفال بالخروج وحدهم.",
+            "en": "The children were not allowed to go outside alone."
+          },
+          "explanation": {
+            "fr": "die Kinder → durften nicht — Dürfen exprime une permission ; sa négation exprime une interdiction.",
+            "de": "die Kinder → durften nicht — Dürfen drückt Erlaubnis aus; die Verneinung bezeichnet ein Verbot.",
+            "ar": "die Kinder → durften nicht — يعبر dürfen عن الإذن؛ ونفيه يعبر عن المنع.",
+            "en": "die Kinder → durften nicht — Dürfen expresses permission; its negation expresses prohibition."
+          }
+        },
+        {
+          "id": "premium-add-29",
+          "german": "Ich blieb zu Hause, weil ich lernen musste.",
+          "context": {
+            "fr": "Je suis resté chez moi parce que je devais étudier.",
+            "de": "Ich blieb zu Hause, weil ich lernen musste.",
+            "ar": "بقيت في المنزل لأنني كنت مضطراً للدراسة.",
+            "en": "I stayed at home because I had to study."
+          },
+          "explanation": {
+            "fr": "weil ich lernen musste — Dans la subordonnée avec weil, le modal conjugué se place à la fin, après l’infinitif.",
+            "de": "weil ich lernen musste — Im weil-Nebensatz steht das finite Modalverb am Ende, nach dem Infinitiv.",
+            "ar": "weil ich lernen musste — في الجملة التابعة مع weil يأتي الفعل الناقص المصرف في النهاية بعد المصدر.",
+            "en": "weil ich lernen musste — In a weil clause, the finite modal comes last, after the infinitive."
+          }
+        },
+        {
+          "id": "premium-add-30",
+          "german": "Was wolltet ihr gestern bestellen?",
+          "context": {
+            "fr": "Que vouliez-vous commander hier ?",
+            "de": "Was wolltet ihr gestern bestellen?",
+            "ar": "ماذا كنتم تريدون أن تطلبوا أمس؟",
+            "en": "What did you want to order yesterday?"
+          },
+          "explanation": {
+            "fr": "ihr → wolltet — Wollen exprime une volonté passée et peut aussi rapporter un souhait passé correspondant à möchte.",
+            "de": "ihr → wolltet — Wollen drückt vergangenen Willen aus und kann einen vergangenen Wunsch zu möchte wiedergeben.",
+            "ar": "ihr → wolltet — يعبر wollen عن إرادة سابقة ويمكن أن ينقل رغبة سابقة تقابل möchte.",
+            "en": "ihr → wolltet — Wollen expresses past intention and can report a past wish corresponding to möchte."
+          }
         }
       ]
+    },
+    {
+      "type": "paragraph",
+      "id": "premium-dialog",
+      "title": {
+        "fr": "Mini-Dialog",
+        "de": "Mini-Dialog",
+        "ar": "Mini-Dialog",
+        "en": "Mini-Dialog"
+      },
+      "text": {
+        "fr": "A: Konntest du gestern kommen? (Pouvais-tu venir hier ?)\nB: Nein, ich musste arbeiten. (Non, je devais travailler.)\nA: Durftest du früher gehen? (Avais-tu le droit de partir plus tôt ?)\nB: Nein, ich sollte bis sechs bleiben. (Non, je devais rester jusqu’à six heures.)",
+        "de": "A: Konntest du gestern kommen?\nB: Nein, ich musste arbeiten.\nA: Durftest du früher gehen?\nB: Nein, ich sollte bis sechs bleiben.",
+        "ar": "أ: هل استطعت المجيء أمس؟\nب: لا، كان عليّ العمل.\nأ: هل كان مسموحاً لك المغادرة مبكراً؟\nب: لا، كان من المفترض أن أبقى حتى السادسة.",
+        "en": "A: Could you come yesterday?\nB: No, I had to work.\nA: Were you allowed to leave early?\nB: No, I was supposed to stay until six."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "premium-fehler",
+      "title": {
+        "fr": "Typische Fehler",
+        "de": "Typische Fehler",
+        "ar": "Typische Fehler",
+        "en": "Typische Fehler"
+      },
+      "tone": "warning",
+      "text": {
+        "fr": "✗ Ich könnte gestern kommen. → Ich konnte gestern kommen (si l’on parle d’une possibilité réelle passée). ✗ Wir müsstet arbeiten. → Wir mussten arbeiten. ✗ Ich musste zu arbeiten. → Ich musste arbeiten.",
+        "de": "✗ Ich könnte gestern kommen. → Ich konnte gestern kommen (bei einer tatsächlichen vergangenen Möglichkeit). ✗ Wir müsstet arbeiten. → Wir mussten arbeiten. ✗ Ich musste zu arbeiten. → Ich musste arbeiten.",
+        "ar": "✗ Ich könnte gestern kommen. → Ich konnte gestern kommen (إمكانية حقيقية في الماضي). ✗ Wir müsstet arbeiten. → Wir mussten arbeiten. ✗ Ich musste zu arbeiten. → Ich musste arbeiten.",
+        "en": "✗ Ich könnte gestern kommen. → Ich konnte gestern kommen (for actual past ability). ✗ Wir müsstet arbeiten. → Wir mussten arbeiten. ✗ Ich musste zu arbeiten. → Ich musste arbeiten."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "premium-merke",
+      "title": {
+        "fr": "Merke dir!",
+        "de": "Merke dir!",
+        "ar": "Merke dir!",
+        "en": "Merke dir!"
+      },
+      "tone": "tip",
+      "text": {
+        "fr": "konnte ≠ könnte ; musste nicht = absence d’obligation ; durfte nicht = interdiction.",
+        "de": "konnte ≠ könnte; musste nicht = keine Pflicht; durfte nicht = Verbot.",
+        "ar": "konnte لا تساوي könnte؛ musste nicht تعني عدم الإلزام وdurfte nicht تعني المنع.",
+        "en": "konnte ≠ könnte; musste nicht = no obligation; durfte nicht = prohibition."
+      }
     }
   ]
 }

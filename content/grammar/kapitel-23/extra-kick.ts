@@ -5,94 +5,90 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "Entraînement 11",
-      "de": "Übung 11",
-      "ar": "تمرين 11",
-      "en": "Practice 11"
+      "fr": "Bei der Anmeldung",
+      "de": "Bei der Anmeldung",
+      "ar": "Bei der Anmeldung",
+      "en": "Bei der Anmeldung"
     },
     "description": {
-      "de": "Präteritum: sein und haben",
-      "fr": "Prétérit de sein et haben",
-      "ar": "الماضي البسيط للفعلين sein وhaben",
-      "en": "Simple past of sein and haben"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-23-ubung-11-q01",
         "position": 1,
-        "type": "reorder",
-        "tokens": [
-          "in München.",
-          "Er",
-          "war"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Commencez par le sujet.",
-          "de": "Beginnen Sie mit dem Subjekt.",
-          "ar": "ابدأ بالفاعل.",
-          "en": "Start with the subject."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Bei der Anmeldung: Gestern ___ ich einen Termin, aber das Büro ___ geschlossen. (haben/sein)",
+        "blanks": 2
       },
       {
         "id": "kapitel-23-ubung-11-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "waren",
-          "war",
-          "warst",
-          "wart"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Wir ___ wach.",
-          "de": "Wir ___ wach.",
-          "ar": "Wir ___ wach.",
-          "en": "Wir ___ wach."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Mitarbeiterin sagt: Wir ___ gestern zu wenig Personal; heute ___ wir wieder genug Personal. (haben)",
+        "blanks": 2
       },
       {
         "id": "kapitel-23-ubung-11-q03",
         "position": 3,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "waren",
-          "war",
-          "warst",
-          "wart"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Ihr ___ auf Geschäftsreise.",
-          "de": "Ihr ___ auf Geschäftsreise.",
-          "ar": "Ihr ___ auf Geschäftsreise.",
-          "en": "Ihr ___ auf Geschäftsreise."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Hatten ihr alle Unterlagen?",
+          "Wart ihr bei der Anmeldung?",
+          "Hattet ihr alle Unterlagen?",
+          "Waren ihr bei der Anmeldung?"
+        ]
       },
       {
         "id": "kapitel-23-ubung-11-q04",
         "position": 4,
         "type": "fill_blank",
-        "sentence": "Die Kinder ___ jung.",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Meine Kollegin ___ gestern frei, ihre Kinder ___ aber krank. (haben/sein)",
+        "blanks": 2
       },
       {
         "id": "kapitel-23-ubung-11-q05",
         "position": 5,
-        "type": "true_false",
-        "statement": "Ich hatte Fieber.",
+        "type": "reorder",
         "prompt": {
-          "fr": "Correct ?",
-          "de": "Richtig?",
-          "ar": "صحيح؟",
-          "en": "Correct?"
-        }
+          "fr": "Am Freitag … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Am Freitag … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Am Freitag … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Am Freitag … — Start with this chunk and reconstruct the sentence."
+        },
+        "tokens": [
+          "die Anmeldung noch möglich.",
+          "war",
+          "Am Freitag"
+        ]
       }
     ]
   },
@@ -101,94 +97,86 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Entraînement 12",
-      "de": "Übung 12",
-      "ar": "تمرين 12",
-      "en": "Practice 12"
+      "fr": "Im Hotel",
+      "de": "Im Hotel",
+      "ar": "Im Hotel",
+      "en": "Im Hotel"
     },
     "description": {
-      "de": "Präteritum: sein und haben",
-      "fr": "Prétérit de sein et haben",
-      "ar": "الماضي البسيط للفعلين sein وhaben",
-      "en": "Simple past of sein and haben"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-23-ubung-12-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "hatten",
-          "hatte",
-          "hattet",
-          "hattest"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Du ___ Zeit.",
-          "de": "Du ___ Zeit.",
-          "ar": "Du ___ Zeit.",
-          "en": "Du ___ Zeit."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Im Hotel: Das Zimmer ___ klein, aber wir ___ einen Balkon. (sein/haben, gestern)",
+        "blanks": 2
       },
       {
         "id": "kapitel-23-ubung-12-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "hatte",
-          "hattet",
-          "hatten",
-          "hattest"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Er ___ Urlaub.",
-          "de": "Er ___ Urlaub.",
-          "ar": "Er ___ Urlaub.",
-          "en": "Er ___ Urlaub."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ du mit dem Zimmer zufrieden? – Ja, ich ___ sehr zufrieden. (sein, gestern)",
+        "blanks": 2
       },
       {
         "id": "kapitel-23-ubung-12-q03",
         "position": 3,
-        "type": "fill_blank",
-        "sentence": "Wir ___ viel Arbeit.",
-        "blanks": 1,
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
+        },
+        "statement": "Die Gäste hattet gestern kein warmes Wasser."
       },
       {
         "id": "kapitel-23-ubung-12-q04",
         "position": 4,
-        "type": "true_false",
-        "statement": "Ihr hattet einen Termin.",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Correct ?",
-          "de": "Richtig?",
-          "ar": "صحيح؟",
-          "en": "Correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Letzte Nacht ___ ihr Pech: Ihr ___ keinen Strom. (haben)",
+        "blanks": 2
       },
       {
         "id": "kapitel-23-ubung-12-q05",
         "position": 5,
-        "type": "reorder",
-        "tokens": [
-          "keinen Stress.",
-          "Die Kinder",
-          "hatten"
-        ],
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Commencez par le sujet.",
-          "de": "Beginnen Sie mit dem Subjekt.",
-          "ar": "ابدأ بالفاعل.",
-          "en": "Start with the subject."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Gestern hattet wir keins.",
+          "Heute hast wir warmes Wasser.",
+          "Gestern hatten wir keins.",
+          "Heute haben wir warmes Wasser."
+        ]
       }
     ]
   },
@@ -197,94 +185,107 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Entraînement 13",
-      "de": "Übung 13",
-      "ar": "تمرين 13",
-      "en": "Practice 13"
+      "fr": "Meine Kindheit",
+      "de": "Meine Kindheit",
+      "ar": "Meine Kindheit",
+      "en": "Meine Kindheit"
     },
     "description": {
-      "de": "Präteritum: sein und haben",
-      "fr": "Prétérit de sein et haben",
-      "ar": "الماضي البسيط للفعلين sein وhaben",
-      "en": "Simple past of sein and haben"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-23-ubung-13-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "hattet",
-          "hatte",
-          "hattest",
-          "hatten"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Ich ___ eine Party.",
-          "de": "Ich ___ eine Party.",
-          "ar": "Ich ___ eine Party.",
-          "en": "Ich ___ eine Party."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Als Kind ___ ich Angst vor Hunden. Heute ___ ich einen Hund. (haben)",
+        "blanks": 2
       },
       {
         "id": "kapitel-23-ubung-13-q02",
         "position": 2,
         "type": "fill_blank",
-        "sentence": "Du ___ Probleme.",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Mein Bruder und ich ___ früher oft allein; heute ___ wir selten allein. (sein)",
+        "blanks": 2
       },
       {
         "id": "kapitel-23-ubung-13-q03",
         "position": 3,
-        "type": "true_false",
-        "statement": "Er hatte vier Kinder.",
+        "type": "matching",
         "prompt": {
-          "fr": "Correct ?",
-          "de": "Richtig?",
-          "ar": "صحيح؟",
-          "en": "Correct?"
-        }
+          "fr": "Associez chaque élément à la forme correspondante.",
+          "de": "Ordnen Sie jedem Element die passende Form zu.",
+          "ar": "اربط كل عنصر بالصيغة المناسبة.",
+          "en": "Match each item to the corresponding form."
+        },
+        "items": [
+          {
+            "id": "0",
+            "label": "ich, damals (sein)"
+          },
+          {
+            "id": "1",
+            "label": "du, jetzt (sein)"
+          },
+          {
+            "id": "2",
+            "label": "ihr, damals (haben)"
+          },
+          {
+            "id": "3",
+            "label": "sie (Plural), jetzt (haben)"
+          }
+        ],
+        "options": [
+          "bist",
+          "haben",
+          "hattet",
+          "war"
+        ]
       },
       {
         "id": "kapitel-23-ubung-13-q04",
         "position": 4,
-        "type": "reorder",
-        "tokens": [
-          "ein Auto.",
-          "Wir",
-          "hatten"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Commencez par le sujet.",
-          "de": "Beginnen Sie mit dem Subjekt.",
-          "ar": "ابدأ بالفاعل.",
-          "en": "Start with the subject."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Früher ___ meine Nachbarin kein Fahrrad; jetzt ___ sie zwei. (haben)",
+        "blanks": 2
       },
       {
         "id": "kapitel-23-ubung-13-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "hattet",
-          "hatte",
-          "hatten",
-          "hattest"
-        ],
+        "type": "reorder",
         "prompt": {
-          "fr": "Ihr ___ Geld.",
-          "de": "Ihr ___ Geld.",
-          "ar": "Ihr ___ Geld.",
-          "en": "Ihr ___ Geld."
-        }
+          "fr": "Mit zehn Jahren … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Mit zehn Jahren … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Mit zehn Jahren … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Mit zehn Jahren … — Start with this chunk and reconstruct the sentence."
+        },
+        "tokens": [
+          "ich noch sehr schüchtern.",
+          "war",
+          "Mit zehn Jahren"
+        ]
       }
     ]
   }

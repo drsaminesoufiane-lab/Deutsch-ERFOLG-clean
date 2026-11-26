@@ -5,83 +5,74 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "Anrede",
-      "de": "Anrede",
-      "ar": "Anrede",
-      "en": "Anrede"
+      "fr": "Au restaurant",
+      "de": "Im Restaurant",
+      "ar": "في المطعم",
+      "en": "At the restaurant"
     },
     "description": {
-      "fr": "Choisissez le pronom.",
-      "de": "Wählen Sie das Pronomen.",
-      "ar": "اختر الضمير.",
-      "en": "Choose the pronoun."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
         "id": "kapitel-01-extra-kick-rev-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "ich",
-          "es",
-          "wir",
-          "du"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Quel pronom remplace : Anna (direkte Anrede)",
-          "de": "Welches Pronomen passt: Anna (direkte Anrede)",
-          "ar": "ما الضمير المناسب: Anna (direkte Anrede)",
-          "en": "Which pronoun fits: Anna (direkte Anrede)"
-        }
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
+        },
+        "sentence": "Guten Abend, Herr und Frau Braun. Haben ___ reserviert?",
+        "blanks": 1
       },
       {
         "id": "kapitel-01-extra-kick-rev-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "es",
-          "du",
-          "Sie",
-          "er"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Quel pronom remplace : Frau Schmidt (höfliche Anrede)",
-          "de": "Welches Pronomen passt: Frau Schmidt (höfliche Anrede)",
-          "ar": "ما الضمير المناسب: Frau Schmidt (höfliche Anrede)",
-          "en": "Which pronoun fits: Frau Schmidt (höfliche Anrede)"
-        }
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
+        },
+        "sentence": "Emil und Nora, nehmt ___ den Bus?",
+        "blanks": 1
       },
       {
         "id": "kapitel-01-extra-kick-rev-q03",
         "position": 3,
-        "type": "true_false",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Quel pronom remplace : Daniel und Anna (direkte Anrede)",
-          "de": "Welches Pronomen passt: Daniel und Anna (direkte Anrede)",
-          "ar": "ما الضمير المناسب: Daniel und Anna (direkte Anrede)",
-          "en": "Which pronoun fits: Daniel und Anna (direkte Anrede)"
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
         },
-        "statement": "Welches Pronomen passt: Daniel und Anna (direkte Anrede) → ihr"
+        "sentence": "Herr Braun: Ja, ___ haben einen Tisch für zwei Personen.",
+        "blanks": 1
       },
       {
         "id": "kapitel-01-extra-kick-rev-q04",
         "position": 4,
         "type": "qcm",
+        "prompt": {
+          "fr": "Complétez avec le pronom personnel sujet. — Nora: Nein, ___ fahre mit dem Rad.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ. — Nora: Nein, ___ fahre mit dem Rad.",
+          "ar": "أكمل بضمير الفاعل الشخصي. — Nora: Nein, ___ fahre mit dem Rad.",
+          "en": "Complete with the subject personal pronoun. — Nora: Nein, ___ fahre mit dem Rad."
+        },
         "selection": "single",
         "options": [
+          "ich",
           "ihr",
-          "es",
-          "wir",
-          "Sie"
-        ],
-        "prompt": {
-          "fr": "Quel pronom remplace : Herr Meyer und Frau Schmidt (höfliche Anrede)",
-          "de": "Welches Pronomen passt: Herr Meyer und Frau Schmidt (höfliche Anrede)",
-          "ar": "ما الضمير المناسب: Herr Meyer und Frau Schmidt (höfliche Anrede)",
-          "en": "Which pronoun fits: Herr Meyer und Frau Schmidt (höfliche Anrede)"
-        }
+          "Sie",
+          "du"
+        ]
       }
     ]
   },
@@ -90,131 +81,100 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Dialoge",
-      "de": "Dialoge",
-      "ar": "Dialoge",
-      "en": "Dialoge"
+      "fr": "À la gare",
+      "de": "Am Bahnhof",
+      "ar": "في محطة القطار",
+      "en": "At the station"
     },
     "description": {
-      "fr": "Choisissez le pronom.",
-      "de": "Wählen Sie das Pronomen.",
-      "ar": "اختر الضمير.",
-      "en": "Choose the pronoun."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
         "id": "kapitel-01-ubung-12-rev-q01",
         "position": 1,
         "type": "qcm",
+        "prompt": {
+          "fr": "Complétez avec le pronom personnel sujet. — Die Fahrkarte liegt hier. ___ kostet drei Euro.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ. — Die Fahrkarte liegt hier. ___ kostet drei Euro.",
+          "ar": "أكمل بضمير الفاعل الشخصي. — Die Fahrkarte liegt hier. ___ kostet drei Euro.",
+          "en": "Complete with the subject personal pronoun. — Die Fahrkarte liegt hier. ___ kostet drei Euro."
+        },
         "selection": "single",
         "options": [
-          "ihr",
-          "du",
-          "wir",
-          "ich"
-        ],
-        "prompt": {
-          "fr": "Quel pronom remplace : Mario und ich",
-          "de": "Welches Pronomen passt: Mario und ich",
-          "ar": "ما الضمير المناسب: Mario und ich",
-          "en": "Which pronoun fits: Mario und ich"
-        }
+          "Es",
+          "Wir",
+          "Sie",
+          "Er"
+        ]
       },
       {
         "id": "kapitel-01-ubung-12-rev-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "du",
-          "er",
-          "ihr",
-          "wir"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Quel pronom remplace : Peter",
-          "de": "Welches Pronomen passt: Peter",
-          "ar": "ما الضمير المناسب: Peter",
-          "en": "Which pronoun fits: Peter"
-        }
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
+        },
+        "sentence": "Der Zug hat Verspätung. ___ kommt erst um neun.",
+        "blanks": 1
       },
       {
         "id": "kapitel-01-ubung-12-rev-q03",
         "position": 3,
-        "type": "true_false",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Quel pronom remplace : Marie",
-          "de": "Welches Pronomen passt: Marie",
-          "ar": "ما الضمير المناسب: Marie",
-          "en": "Which pronoun fits: Marie"
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
         },
-        "statement": "Welches Pronomen passt: Marie → sie"
+        "sentence": "Das Gleis ist frei. ___ liegt gleich rechts.",
+        "blanks": 1
       },
       {
         "id": "kapitel-01-ubung-12-rev-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "ich",
-          "er",
-          "sie",
-          "ihr"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Quel pronom remplace : der Kuchen",
-          "de": "Welches Pronomen passt: der Kuchen",
-          "ar": "ما الضمير المناسب: der Kuchen",
-          "en": "Which pronoun fits: der Kuchen"
-        }
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
+        },
+        "sentence": "Zwei Reisende warten dort. ___ fahren nach Bonn.",
+        "blanks": 1
       },
       {
         "id": "kapitel-01-ubung-12-rev-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "du",
-          "ich",
-          "sie",
-          "er"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Quel pronom remplace : Elena und Mario",
-          "de": "Welches Pronomen passt: Elena und Mario",
-          "ar": "ما الضمير المناسب: Elena und Mario",
-          "en": "Which pronoun fits: Elena und Mario"
-        }
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
+        },
+        "sentence": "Luca: Wo ist das Hotel? Sara: ___ liegt am Bahnhof.",
+        "blanks": 1
       },
       {
         "id": "kapitel-01-ubung-12-association",
         "position": 6,
-        "type": "matching",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
         },
-        "items": [
-          {
-            "id": "i0",
-            "label": "der Löffel"
-          },
-          {
-            "id": "i1",
-            "label": "das Messer"
-          },
-          {
-            "id": "i2",
-            "label": "die Gabel"
-          }
-        ],
-        "options": [
-          "es",
-          "sie",
-          "er"
-        ]
+        "sentence": "Sara: Wo ist der Eingang? Luca: ___ ist links.",
+        "blanks": 1
       }
     ]
   },
@@ -223,120 +183,100 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Personen",
-      "de": "Personen",
-      "ar": "Personen",
-      "en": "Personen"
+      "fr": "À l’hôtel",
+      "de": "Im Hotel",
+      "ar": "في الفندق",
+      "en": "At the hotel"
     },
     "description": {
-      "fr": "Choisissez le pronom.",
-      "de": "Wählen Sie das Pronomen.",
-      "ar": "اختر الضمير.",
-      "en": "Choose the pronoun."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
         "id": "kapitel-01-ubung-13-rev-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "wir",
-          "ihr",
-          "es",
-          "er"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Quel pronom remplace : Herr Gupta",
-          "de": "Welches Pronomen passt: Herr Gupta",
-          "ar": "ما الضمير المناسب: Herr Gupta",
-          "en": "Which pronoun fits: Herr Gupta"
-        }
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
+        },
+        "sentence": "Die Rezeptionistin spricht Englisch. ___ arbeitet heute Nacht.",
+        "blanks": 1
       },
       {
         "id": "kapitel-01-ubung-13-rev-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "du",
-          "wir",
-          "ihr",
-          "sie"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Quel pronom remplace : Frau Kioka",
-          "de": "Welches Pronomen passt: Frau Kioka",
-          "ar": "ما الضمير المناسب: Frau Kioka",
-          "en": "Which pronoun fits: Frau Kioka"
-        }
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
+        },
+        "sentence": "Sara und ich haben ein Zimmer. ___ bleiben zwei Nächte.",
+        "blanks": 1
       },
       {
         "id": "kapitel-01-ubung-13-rev-q03",
         "position": 3,
-        "type": "true_false",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Quel pronom remplace : Herr Gupta und Frau Kioka",
-          "de": "Welches Pronomen passt: Herr Gupta und Frau Kioka",
-          "ar": "ما الضمير المناسب: Herr Gupta und Frau Kioka",
-          "en": "Which pronoun fits: Herr Gupta und Frau Kioka"
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
         },
-        "statement": "Welches Pronomen passt: Herr Gupta und Frau Kioka → sie"
+        "sentence": "Die Zimmer sind groß. ___ haben einen Balkon.",
+        "blanks": 1
       },
       {
         "id": "kapitel-01-ubung-13-rev-q04",
         "position": 4,
         "type": "qcm",
+        "prompt": {
+          "fr": "Complétez avec le pronom personnel sujet. — Herr Yilmaz, brauchen ___ einen Schlüssel?",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ. — Herr Yilmaz, brauchen ___ einen Schlüssel?",
+          "ar": "أكمل بضمير الفاعل الشخصي. — Herr Yilmaz, brauchen ___ einen Schlüssel?",
+          "en": "Complete with the subject personal pronoun. — Herr Yilmaz, brauchen ___ einen Schlüssel?"
+        },
         "selection": "single",
         "options": [
           "ihr",
+          "Sie",
           "du",
-          "er",
-          "wir"
-        ],
-        "prompt": {
-          "fr": "Quel pronom remplace : Anna und ich",
-          "de": "Welches Pronomen passt: Anna und ich",
-          "ar": "ما الضمير المناسب: Anna und ich",
-          "en": "Which pronoun fits: Anna und ich"
-        }
+          "ich"
+        ]
       },
       {
         "id": "kapitel-01-ubung-13-rev-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "du",
-          "wir",
-          "ihr",
-          "es"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Quel pronom remplace : Marc und Dominic (direkte Anrede)",
-          "de": "Welches Pronomen passt: Marc und Dominic (direkte Anrede)",
-          "ar": "ما الضمير المناسب: Marc und Dominic (direkte Anrede)",
-          "en": "Which pronoun fits: Marc und Dominic (direkte Anrede)"
-        }
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
+        },
+        "sentence": "Mila, suchst ___ den Aufzug?",
+        "blanks": 1
       },
       {
         "id": "kapitel-01-ubung-13-multi",
         "position": 6,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "der Löffel → er",
-          "die Gabel → sie",
-          "das Messer → sie",
-          "der Löffel → es",
-          "das Messer → es"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez toutes les associations correctes.",
-          "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
-          "en": "Select all correct pairs."
-        }
+          "fr": "Complétez avec le pronom personnel sujet.",
+          "de": "Ergänzen Sie das Personalpronomen im Nominativ.",
+          "ar": "أكمل بضمير الفاعل الشخصي.",
+          "en": "Complete with the subject personal pronoun."
+        },
+        "sentence": "Mila und Jan, habt ___ das Gepäck?",
+        "blanks": 1
       }
     ]
   }

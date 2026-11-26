@@ -1,11 +1,12 @@
 import type { LessonDefinition } from '@/lib/grammar/types'
+
 export const lesson: LessonDefinition = {
   "id": "kapitel-03",
   "title": {
-    "fr": "Je suis, tu as, il voudrait",
+    "fr": "Ich bin, du hast, er möchte",
     "de": "Ich bin, du hast, er möchte",
-    "ar": "أنا أكون، أنت تملك، هو يود",
-    "en": "I am, you have, he would like"
+    "ar": "Ich bin, du hast, er möchte",
+    "en": "Ich bin, du hast, er möchte"
   },
   "subtitle": {
     "fr": "Être, avoir et verbes particuliers",
@@ -20,178 +21,37 @@ export const lesson: LessonDefinition = {
     "en": "Master six special verbs in the present tense."
   },
   "blocks": [
-{
-  "type": "paragraph",
-  "id": "refonte-theorie",
-  "title": {
-    "fr": "Comprendre et appliquer la règle",
-    "de": "Die Regel verstehen und anwenden",
-    "ar": "فهم القاعدة وتطبيقها",
-    "en": "Understand and apply the rule"
-  },
-  "text": {
-    "fr": "Sein exprime notamment l’identité ou un état ; haben exprime la possession et certaines sensations. Apprenez leurs formes irrégulières séparément. Möchte exprime un souhait poli ; avec un autre verbe, celui-ci reste à l’infinitif en fin de phrase.",
-    "de": "Sein bezeichnet Identität oder Zustand; haben Besitz und manche Empfindungen. Lerne die unregelmäßigen Formen einzeln. Möchte drückt einen höflichen Wunsch aus; ein weiteres Verb steht als Infinitiv am Ende.",
-    "ar": "sein للهوية أو الحالة وhaben للملكية وبعض الأحاسيس. احفظ التصريف غير المنتظم. möchte للرغبة المهذبة والفعل الآخر في المصدر آخر الجملة.",
-    "en": "Sein expresses identity or state; haben possession and some sensations. Learn their irregular forms separately. Möchte expresses a polite wish; a second verb stays infinitive at the end."
-  }
-},
-{
-  "type": "examples",
-  "id": "refonte-exemples",
-  "title": {
-    "fr": "Exemples traduits",
-    "de": "Übersetzte Beispiele",
-    "ar": "أمثلة مترجمة",
-    "en": "Translated examples"
-  },
-  "items": [
-    {
-      "id": "refonte-1",
-      "german": "Ich bin müde.",
-      "context": {
-        "fr": "Je suis fatigué.",
-        "de": "Ich bin müde.",
-        "ar": "أنا متعب.",
-        "en": "I am tired."
-      },
-      "explanation": {
-        "fr": "Sein exprime notamment l’identité ou un état ; haben exprime la possession et certaines sensations. Apprenez leurs formes irrégulières séparément. Möchte exprime un souhait poli ; avec un autre verbe, celui-ci reste à l’infinitif en fin de phrase.",
-        "de": "Sein bezeichnet Identität oder Zustand; haben Besitz und manche Empfindungen. Lerne die unregelmäßigen Formen einzeln. Möchte drückt einen höflichen Wunsch aus; ein weiteres Verb steht als Infinitiv am Ende.",
-        "ar": "sein للهوية أو الحالة وhaben للملكية وبعض الأحاسيس. احفظ التصريف غير المنتظم. möchte للرغبة المهذبة والفعل الآخر في المصدر آخر الجملة.",
-        "en": "Sein expresses identity or state; haben possession and some sensations. Learn their irregular forms separately. Möchte expresses a polite wish; a second verb stays infinitive at the end."
-      }
-    },
-    {
-      "id": "refonte-2",
-      "german": "Du hast Zeit.",
-      "context": {
-        "fr": "Tu as le temps.",
-        "de": "Du hast Zeit.",
-        "ar": "لديك وقت.",
-        "en": "You have time."
-      },
-      "explanation": {
-        "fr": "Sein exprime notamment l’identité ou un état ; haben exprime la possession et certaines sensations. Apprenez leurs formes irrégulières séparément. Möchte exprime un souhait poli ; avec un autre verbe, celui-ci reste à l’infinitif en fin de phrase.",
-        "de": "Sein bezeichnet Identität oder Zustand; haben Besitz und manche Empfindungen. Lerne die unregelmäßigen Formen einzeln. Möchte drückt einen höflichen Wunsch aus; ein weiteres Verb steht als Infinitiv am Ende.",
-        "ar": "sein للهوية أو الحالة وhaben للملكية وبعض الأحاسيس. احفظ التصريف غير المنتظم. möchte للرغبة المهذبة والفعل الآخر في المصدر آخر الجملة.",
-        "en": "Sein expresses identity or state; haben possession and some sensations. Learn their irregular forms separately. Möchte expresses a polite wish; a second verb stays infinitive at the end."
-      }
-    },
-    {
-      "id": "refonte-3",
-      "german": "Er ist Arzt.",
-      "context": {
-        "fr": "Il est médecin.",
-        "de": "Er ist Arzt.",
-        "ar": "هو طبيب.",
-        "en": "He is a doctor."
-      },
-      "explanation": {
-        "fr": "Sein exprime notamment l’identité ou un état ; haben exprime la possession et certaines sensations. Apprenez leurs formes irrégulières séparément. Möchte exprime un souhait poli ; avec un autre verbe, celui-ci reste à l’infinitif en fin de phrase.",
-        "de": "Sein bezeichnet Identität oder Zustand; haben Besitz und manche Empfindungen. Lerne die unregelmäßigen Formen einzeln. Möchte drückt einen höflichen Wunsch aus; ein weiteres Verb steht als Infinitiv am Ende.",
-        "ar": "sein للهوية أو الحالة وhaben للملكية وبعض الأحاسيس. احفظ التصريف غير المنتظم. möchte للرغبة المهذبة والفعل الآخر في المصدر آخر الجملة.",
-        "en": "Sein expresses identity or state; haben possession and some sensations. Learn their irregular forms separately. Möchte expresses a polite wish; a second verb stays infinitive at the end."
-      }
-    },
-    {
-      "id": "refonte-4",
-      "german": "Wir sind hier.",
-      "context": {
-        "fr": "Nous sommes ici.",
-        "de": "Wir sind hier.",
-        "ar": "نحن هنا.",
-        "en": "We are here."
-      },
-      "explanation": {
-        "fr": "Sein exprime notamment l’identité ou un état ; haben exprime la possession et certaines sensations. Apprenez leurs formes irrégulières séparément. Möchte exprime un souhait poli ; avec un autre verbe, celui-ci reste à l’infinitif en fin de phrase.",
-        "de": "Sein bezeichnet Identität oder Zustand; haben Besitz und manche Empfindungen. Lerne die unregelmäßigen Formen einzeln. Möchte drückt einen höflichen Wunsch aus; ein weiteres Verb steht als Infinitiv am Ende.",
-        "ar": "sein للهوية أو الحالة وhaben للملكية وبعض الأحاسيس. احفظ التصريف غير المنتظم. möchte للرغبة المهذبة والفعل الآخر في المصدر آخر الجملة.",
-        "en": "Sein expresses identity or state; haben possession and some sensations. Learn their irregular forms separately. Möchte expresses a polite wish; a second verb stays infinitive at the end."
-      }
-    },
-    {
-      "id": "refonte-5",
-      "german": "Ihr seid nett.",
-      "context": {
-        "fr": "Vous êtes gentils.",
-        "de": "Ihr seid nett.",
-        "ar": "أنتم لطفاء.",
-        "en": "You are nice."
-      },
-      "explanation": {
-        "fr": "Sein exprime notamment l’identité ou un état ; haben exprime la possession et certaines sensations. Apprenez leurs formes irrégulières séparément. Möchte exprime un souhait poli ; avec un autre verbe, celui-ci reste à l’infinitif en fin de phrase.",
-        "de": "Sein bezeichnet Identität oder Zustand; haben Besitz und manche Empfindungen. Lerne die unregelmäßigen Formen einzeln. Möchte drückt einen höflichen Wunsch aus; ein weiteres Verb steht als Infinitiv am Ende.",
-        "ar": "sein للهوية أو الحالة وhaben للملكية وبعض الأحاسيس. احفظ التصريف غير المنتظم. möchte للرغبة المهذبة والفعل الآخر في المصدر آخر الجملة.",
-        "en": "Sein expresses identity or state; haben possession and some sensations. Learn their irregular forms separately. Möchte expresses a polite wish; a second verb stays infinitive at the end."
-      }
-    },
-    {
-      "id": "refonte-6",
-      "german": "Sie hat Hunger.",
-      "context": {
-        "fr": "Elle a faim.",
-        "de": "Sie hat Hunger.",
-        "ar": "هي جائعة.",
-        "en": "She is hungry."
-      },
-      "explanation": {
-        "fr": "Sein exprime notamment l’identité ou un état ; haben exprime la possession et certaines sensations. Apprenez leurs formes irrégulières séparément. Möchte exprime un souhait poli ; avec un autre verbe, celui-ci reste à l’infinitif en fin de phrase.",
-        "de": "Sein bezeichnet Identität oder Zustand; haben Besitz und manche Empfindungen. Lerne die unregelmäßigen Formen einzeln. Möchte drückt einen höflichen Wunsch aus; ein weiteres Verb steht als Infinitiv am Ende.",
-        "ar": "sein للهوية أو الحالة وhaben للملكية وبعض الأحاسيس. احفظ التصريف غير المنتظم. möchte للرغبة المهذبة والفعل الآخر في المصدر آخر الجملة.",
-        "en": "Sein expresses identity or state; haben possession and some sensations. Learn their irregular forms separately. Möchte expresses a polite wish; a second verb stays infinitive at the end."
-      }
-    },
-    {
-      "id": "refonte-7",
-      "german": "Ich möchte Tee.",
-      "context": {
-        "fr": "Je voudrais du thé.",
-        "de": "Ich möchte Tee.",
-        "ar": "أود الشاي.",
-        "en": "I would like tea."
-      },
-      "explanation": {
-        "fr": "Sein exprime notamment l’identité ou un état ; haben exprime la possession et certaines sensations. Apprenez leurs formes irrégulières séparément. Möchte exprime un souhait poli ; avec un autre verbe, celui-ci reste à l’infinitif en fin de phrase.",
-        "de": "Sein bezeichnet Identität oder Zustand; haben Besitz und manche Empfindungen. Lerne die unregelmäßigen Formen einzeln. Möchte drückt einen höflichen Wunsch aus; ein weiteres Verb steht als Infinitiv am Ende.",
-        "ar": "sein للهوية أو الحالة وhaben للملكية وبعض الأحاسيس. احفظ التصريف غير المنتظم. möchte للرغبة المهذبة والفعل الآخر في المصدر آخر الجملة.",
-        "en": "Sein expresses identity or state; haben possession and some sensations. Learn their irregular forms separately. Möchte expresses a polite wish; a second verb stays infinitive at the end."
-      }
-    }
-  ]
-},
-
     {
       "type": "paragraph",
-      "id": "b1",
+      "id": "premium-intro",
       "title": {
-        "fr": "Être et avoir",
+        "fr": "Sein und haben",
         "de": "Sein und haben",
-        "ar": "فعل الكينونة والامتلاك",
-        "en": "Being and having"
+        "ar": "Sein und haben",
+        "en": "Sein und haben"
       },
       "text": {
-        "fr": "Sein décrit une identité, un état, un âge ou un lieu. Haben exprime la possession ou certaines situations : Ich habe Zeit. Ces deux verbes sont irréguliers : mémorisez chaque forme. En allemand, on dit Ich bin 20 Jahre alt, et non ich habe 20 Jahre.",
-        "de": "Sein beschreibt Identität, Zustand, Alter oder Ort. Haben drückt Besitz oder Situationen aus: Ich habe Zeit. Beide Verben sind unregelmäßig. Man sagt: Ich bin 20 Jahre alt.",
-        "ar": "نستعمل sein للهوية والحالة والعمر والمكان، وhaben للملكية أو للتعبير عن توفر الوقت مثلا. الفعلان غير منتظمين. نقول Ich bin 20 Jahre alt للتعبير عن العمر.",
-        "en": "Sein describes identity, state, age or location. Haben expresses possession or situations such as having time. Both are irregular. Say Ich bin 20 Jahre alt for age."
+        "fr": "sein exprime une identité, une caractéristique, un état, un lieu ou l’âge (ich bin 30 Jahre alt). haben exprime notamment la possession et des expressions comme Hunger haben ou Zeit haben. Ces deux verbes ont des formes irrégulières très fréquentes.",
+        "de": "sein bezeichnet Identität, Eigenschaften, Zustände oder Orte. haben bezeichnet Besitz und Ausdrücke wie Hunger haben oder Zeit haben; das Alter steht mit sein: ich bin 30 Jahre alt. Beide Verben sind sehr häufig und unregelmäßig.",
+        "ar": "يدل sein على الهوية أو الصفة أو الحالة أو المكان. ويدل haben على الملكية وتعبيرات مثل الجوع أو توفر الوقت. أما العمر فيستعمل معه sein: ich bin 30 Jahre alt. الفعلان شائعان وغير منتظمين.",
+        "en": "sein expresses identity, characteristics, states or location. haben expresses possession and phrases such as Hunger haben or Zeit haben; age uses sein: ich bin 30 Jahre alt. Both verbs are common and irregular."
       }
     },
     {
       "type": "table",
-      "id": "b2",
+      "id": "premium-sein-haben",
       "title": {
-        "fr": "Conjugaison",
-        "de": "Konjugation",
-        "ar": "التصريف",
-        "en": "Conjugation"
+        "fr": "Sein und haben",
+        "de": "Sein und haben",
+        "ar": "Sein und haben",
+        "en": "Sein und haben"
       },
       "headers": [
         {
-          "fr": "Sujet",
-          "de": "Subjekt",
-          "ar": "الفاعل",
-          "en": "Subject"
+          "fr": "Pronom sujet",
+          "de": "Subjektpronomen",
+          "ar": "ضمير الفاعل",
+          "en": "Subject pronoun"
         },
         {
           "fr": "sein",
@@ -208,7 +68,7 @@ export const lesson: LessonDefinition = {
       ],
       "rows": [
         {
-          "id": "0",
+          "id": "premium-sein-haben-1",
           "cells": [
             {
               "fr": "ich",
@@ -231,7 +91,7 @@ export const lesson: LessonDefinition = {
           ]
         },
         {
-          "id": "1",
+          "id": "premium-sein-haben-2",
           "cells": [
             {
               "fr": "du",
@@ -254,7 +114,7 @@ export const lesson: LessonDefinition = {
           ]
         },
         {
-          "id": "2",
+          "id": "premium-sein-haben-3",
           "cells": [
             {
               "fr": "er / sie / es",
@@ -277,7 +137,7 @@ export const lesson: LessonDefinition = {
           ]
         },
         {
-          "id": "3",
+          "id": "premium-sein-haben-4",
           "cells": [
             {
               "fr": "wir",
@@ -300,7 +160,7 @@ export const lesson: LessonDefinition = {
           ]
         },
         {
-          "id": "4",
+          "id": "premium-sein-haben-5",
           "cells": [
             {
               "fr": "ihr",
@@ -323,7 +183,7 @@ export const lesson: LessonDefinition = {
           ]
         },
         {
-          "id": "5",
+          "id": "premium-sein-haben-6",
           "cells": [
             {
               "fr": "sie / Sie",
@@ -349,47 +209,63 @@ export const lesson: LessonDefinition = {
     },
     {
       "type": "paragraph",
-      "id": "b3",
+      "id": "premium-wunsch",
       "title": {
-        "fr": "Goûts et souhaits",
-        "de": "Vorlieben und Wünsche",
-        "ar": "التفضيلات والرغبات",
-        "en": "Likes and wishes"
+        "fr": "Mögen und möchten",
+        "de": "Mögen und möchten",
+        "ar": "Mögen und möchten",
+        "en": "Mögen und möchten"
       },
       "text": {
-        "fr": "Mögen exprime un goût : Ich mag Kaffee. Möchten exprime un souhait poli : Ich möchte einen Kaffee. Avec un autre verbe, son infinitif se place à la fin : Ich möchte Deutsch lernen. Möchten est une forme du Konjunktiv II de mögen.",
-        "de": "Mögen drückt eine Vorliebe aus: Ich mag Kaffee. Möchten drückt einen höflichen Wunsch aus: Ich möchte einen Kaffee. Ein weiterer Infinitiv steht am Ende: Ich möchte Deutsch lernen. Möchten ist eine Konjunktiv-II-Form von mögen.",
-        "ar": "يعبر mögen عن التفضيل، أما möchten فيعبر عن رغبة مهذبة. عند وجود فعل آخر يوضع مصدره في نهاية الجملة. möchten صيغة من Konjunktiv II للفعل mögen.",
-        "en": "Mögen expresses liking; möchten expresses a polite wish. A second verb goes at the end in the infinitive. Möchten is a subjunctive II form of mögen."
+        "fr": "mögen indique un goût ou une affection : Ich mag Tee. möchten exprime un souhait ou une demande polie : Ich möchte Tee trinken. Il s’agit historiquement du Konjunktiv II de mögen, mais on l’apprend ici comme expression du souhait actuel. Avec un second verbe, celui-ci reste à l’infinitif en fin de proposition principale.",
+        "de": "mögen bezeichnet Vorlieben: Ich mag Tee. möchten bezeichnet einen Wunsch oder eine höfliche Bitte: Ich möchte Tee trinken. Die Form ist der Konjunktiv II von mögen, wird hier aber für aktuelle Wünsche gelernt. Ein zweites Verb steht im Hauptsatz als Infinitiv am Ende.",
+        "ar": "يدل mögen على التفضيل: Ich mag Tee. ويدل möchten على الرغبة أو الطلب المهذب: Ich möchte Tee trinken. وهو صيغة Konjunktiv II من mögen، ونتعلمه هنا للتعبير عن رغبة حالية. إذا وجد فعل ثانٍ يبقى في المصدر في نهاية الجملة الرئيسية.",
+        "en": "mögen expresses liking: Ich mag Tee. möchten expresses a wish or polite request: Ich möchte Tee trinken. It is the subjunctive II form of mögen, learned here for present wishes. A second verb stays in the infinitive at the end of the main clause."
+      }
+    },
+    {
+      "type": "paragraph",
+      "id": "premium-wissen",
+      "title": {
+        "fr": "Wissen und tun",
+        "de": "Wissen und tun",
+        "ar": "Wissen und tun",
+        "en": "Wissen und tun"
+      },
+      "text": {
+        "fr": "wissen signifie savoir un fait ; ses formes du singulier sont weiß, weißt, weiß. tun signifie faire et a les formes tue, tust, tut, tun, tut, tun. Dans Was tust du? le verbe est juste après le mot interrogatif.",
+        "de": "wissen bezeichnet Faktenwissen; im Singular: weiß, weißt, weiß. tun bedeutet handeln oder etwas machen: tue, tust, tut, tun, tut, tun. In Was tust du? folgt das Verb dem Fragewort.",
+        "ar": "يعني wissen معرفة معلومة، وصيغه في المفرد weiß وweißt وweiß. ويعني tun فعل شيء، وصيغه tue وtust وtut وtun وtut وtun. في Was tust du? يأتي الفعل بعد أداة الاستفهام.",
+        "en": "wissen means knowing a fact; singular forms are weiß, weißt, weiß. tun means doing something: tue, tust, tut, tun, tut, tun. In Was tust du? the verb follows the question word."
       }
     },
     {
       "type": "table",
-      "id": "b4",
+      "id": "premium-besondere",
       "title": {
-        "fr": "Conjugaison",
-        "de": "Konjugation",
-        "ar": "التصريف",
-        "en": "Conjugation"
+        "fr": "Besondere Verben",
+        "de": "Besondere Verben",
+        "ar": "Besondere Verben",
+        "en": "Besondere Verben"
       },
       "headers": [
         {
-          "fr": "Sujet",
-          "de": "Subjekt",
-          "ar": "الفاعل",
-          "en": "Subject"
-        },
-        {
-          "fr": "möchten",
-          "de": "möchten",
-          "ar": "möchten",
-          "en": "möchten"
+          "fr": "Pronom sujet",
+          "de": "Subjektpronomen",
+          "ar": "ضمير الفاعل",
+          "en": "Subject pronoun"
         },
         {
           "fr": "mögen",
           "de": "mögen",
           "ar": "mögen",
           "en": "mögen"
+        },
+        {
+          "fr": "möchten",
+          "de": "möchten",
+          "ar": "möchten",
+          "en": "möchten"
         },
         {
           "fr": "wissen",
@@ -406,7 +282,7 @@ export const lesson: LessonDefinition = {
       ],
       "rows": [
         {
-          "id": "0",
+          "id": "premium-besondere-1",
           "cells": [
             {
               "fr": "ich",
@@ -415,16 +291,16 @@ export const lesson: LessonDefinition = {
               "en": "ich"
             },
             {
-              "fr": "möchte",
-              "de": "möchte",
-              "ar": "möchte",
-              "en": "möchte"
-            },
-            {
               "fr": "mag",
               "de": "mag",
               "ar": "mag",
               "en": "mag"
+            },
+            {
+              "fr": "möchte",
+              "de": "möchte",
+              "ar": "möchte",
+              "en": "möchte"
             },
             {
               "fr": "weiß",
@@ -441,7 +317,7 @@ export const lesson: LessonDefinition = {
           ]
         },
         {
-          "id": "1",
+          "id": "premium-besondere-2",
           "cells": [
             {
               "fr": "du",
@@ -450,16 +326,16 @@ export const lesson: LessonDefinition = {
               "en": "du"
             },
             {
-              "fr": "möchtest",
-              "de": "möchtest",
-              "ar": "möchtest",
-              "en": "möchtest"
-            },
-            {
               "fr": "magst",
               "de": "magst",
               "ar": "magst",
               "en": "magst"
+            },
+            {
+              "fr": "möchtest",
+              "de": "möchtest",
+              "ar": "möchtest",
+              "en": "möchtest"
             },
             {
               "fr": "weißt",
@@ -476,7 +352,7 @@ export const lesson: LessonDefinition = {
           ]
         },
         {
-          "id": "2",
+          "id": "premium-besondere-3",
           "cells": [
             {
               "fr": "er / sie / es",
@@ -485,16 +361,16 @@ export const lesson: LessonDefinition = {
               "en": "er / sie / es"
             },
             {
-              "fr": "möchte",
-              "de": "möchte",
-              "ar": "möchte",
-              "en": "möchte"
-            },
-            {
               "fr": "mag",
               "de": "mag",
               "ar": "mag",
               "en": "mag"
+            },
+            {
+              "fr": "möchte",
+              "de": "möchte",
+              "ar": "möchte",
+              "en": "möchte"
             },
             {
               "fr": "weiß",
@@ -511,7 +387,7 @@ export const lesson: LessonDefinition = {
           ]
         },
         {
-          "id": "3",
+          "id": "premium-besondere-4",
           "cells": [
             {
               "fr": "wir",
@@ -520,16 +396,16 @@ export const lesson: LessonDefinition = {
               "en": "wir"
             },
             {
-              "fr": "möchten",
-              "de": "möchten",
-              "ar": "möchten",
-              "en": "möchten"
-            },
-            {
               "fr": "mögen",
               "de": "mögen",
               "ar": "mögen",
               "en": "mögen"
+            },
+            {
+              "fr": "möchten",
+              "de": "möchten",
+              "ar": "möchten",
+              "en": "möchten"
             },
             {
               "fr": "wissen",
@@ -546,7 +422,7 @@ export const lesson: LessonDefinition = {
           ]
         },
         {
-          "id": "4",
+          "id": "premium-besondere-5",
           "cells": [
             {
               "fr": "ihr",
@@ -555,16 +431,16 @@ export const lesson: LessonDefinition = {
               "en": "ihr"
             },
             {
-              "fr": "möchtet",
-              "de": "möchtet",
-              "ar": "möchtet",
-              "en": "möchtet"
-            },
-            {
               "fr": "mögt",
               "de": "mögt",
               "ar": "mögt",
               "en": "mögt"
+            },
+            {
+              "fr": "möchtet",
+              "de": "möchtet",
+              "ar": "möchtet",
+              "en": "möchtet"
             },
             {
               "fr": "wisst",
@@ -581,7 +457,7 @@ export const lesson: LessonDefinition = {
           ]
         },
         {
-          "id": "5",
+          "id": "premium-besondere-6",
           "cells": [
             {
               "fr": "sie / Sie",
@@ -590,16 +466,16 @@ export const lesson: LessonDefinition = {
               "en": "sie / Sie"
             },
             {
-              "fr": "möchten",
-              "de": "möchten",
-              "ar": "möchten",
-              "en": "möchten"
-            },
-            {
               "fr": "mögen",
               "de": "mögen",
               "ar": "mögen",
               "en": "mögen"
+            },
+            {
+              "fr": "möchten",
+              "de": "möchten",
+              "ar": "möchten",
+              "en": "möchten"
             },
             {
               "fr": "wissen",
@@ -618,235 +494,569 @@ export const lesson: LessonDefinition = {
       ]
     },
     {
-      "type": "paragraph",
-      "id": "b5",
-      "title": {
-        "fr": "Savoir et faire",
-        "de": "Wissen und tun",
-        "ar": "المعرفة والفعل",
-        "en": "Knowing and doing"
-      },
-      "text": {
-        "fr": "Wissen exprime la connaissance d’un fait : Ich weiß, wo der Bahnhof ist. Kennen exprime la familiarité avec une personne ou un lieu. Tun signifie faire et apparaît dans weh tun : Meine Ohren tun weh.",
-        "de": "Wissen bezeichnet Faktenwissen: Ich weiß, wo der Bahnhof ist. Kennen bezeichnet Vertrautheit. Tun bedeutet handeln und steht auch in weh tun: Meine Ohren tun weh.",
-        "ar": "يعبر wissen عن معرفة معلومة، بينما kennen يدل على معرفة شخص أو مكان. tun يعني القيام بفعل ويستعمل أيضا للتعبير عن الألم.",
-        "en": "Wissen expresses knowledge of facts; kennen expresses familiarity. Tun means to do and occurs in weh tun: Meine Ohren tun weh."
-      }
-    },
-    {
-      "type": "paragraph",
-      "id": "b6",
-      "title": {
-        "fr": "Ordre des mots",
-        "de": "Wortstellung",
-        "ar": "ترتيب الكلمات",
-        "en": "Word order"
-      },
-      "text": {
-        "fr": "Dans une phrase déclarative, le verbe conjugué occupe la deuxième position : Heute bin ich müde. Dans une question fermée, il vient en premier : Hast du Zeit? Après un mot interrogatif, il vient en deuxième position : Wo bist du?",
-        "de": "Im Aussagesatz steht das finite Verb an zweiter Stelle: Heute bin ich müde. In Ja/Nein-Fragen steht es zuerst: Hast du Zeit? Nach einem Fragewort steht es an zweiter Stelle: Wo bist du?",
-        "ar": "في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم أو لا يأتي أولا، وبعد أداة الاستفهام يأتي في الموقع الثاني.",
-        "en": "In statements the finite verb is second. In yes/no questions it is first. After a question word it is second."
-      }
-    },
-    {
-      "type": "paragraph",
-      "id": "b7",
-      "title": {
-        "fr": "Négation",
-        "de": "Verneinung",
-        "ar": "النفي",
-        "en": "Negation"
-      },
-      "text": {
-        "fr": "Kein nie un nom sans article défini : Ich habe kein Geld, keine Zeit, keinen Hund. Nicht nie notamment un état : Ich bin nicht müde.",
-        "de": "Kein verneint ein Nomen ohne bestimmten Artikel: kein Geld, keine Zeit, keinen Hund. Nicht verneint etwa einen Zustand: Ich bin nicht müde.",
-        "ar": "تستعمل kein لنفي اسم غير معرف، وتتغير حسب الجنس والحالة. وتستعمل nicht مثلا لنفي حالة.",
-        "en": "Kein negates nouns without a definite article; nicht can negate a state."
-      }
-    },
-    {
       "type": "examples",
-      "id": "b8",
+      "id": "premium-beispiele-1",
       "title": {
-        "fr": "sein",
-        "de": "sein",
-        "ar": "sein",
-        "en": "sein"
+        "fr": "Beispiele 1–10",
+        "de": "Beispiele 1–10",
+        "ar": "Beispiele 1–10",
+        "en": "Beispiele 1–10"
       },
       "items": [
         {
-          "id": "ex1",
+          "id": "premium-ex-01",
+          "german": "Ich bin Student.",
           "context": {
-            "fr": "Exemple",
-            "de": "Beispiel",
-            "ar": "مثال",
-            "en": "Example"
+            "fr": "Je suis étudiant.",
+            "de": "Ich bin Student.",
+            "ar": "أنا طالب.",
+            "en": "I am a student."
           },
-          "german": "Ich bin müde.",
           "explanation": {
-            "fr": "Je suis fatigué.",
-            "de": "Ich bin müde.",
-            "ar": "أنا متعب.",
-            "en": "I am tired."
+            "fr": "« bin » est la forme de sein pour la première personne du singulier. sein s’apprend comme un ensemble de formes irrégulières.",
+            "de": "„bin“ ist die Form von sein für die erste Person Singular. sein hat unregelmäßige Formen, die man einzeln lernt.",
+            "ar": "الصيغة «bin» من الفعل sein توافق المتكلم المفرد. للفعل sein صيغ غير منتظمة تحفظ كما هي.",
+            "en": "“bin” is the form of sein for first-person singular. sein has irregular forms learned individually."
+          }
+        },
+        {
+          "id": "premium-ex-02",
+          "german": "Du bist heute müde.",
+          "context": {
+            "fr": "Tu es fatigué(e) aujourd’hui.",
+            "de": "Du bist heute müde.",
+            "ar": "أنت متعب اليوم.",
+            "en": "You are tired today."
+          },
+          "explanation": {
+            "fr": "« bist » est la forme de sein pour la deuxième personne du singulier. sein s’apprend comme un ensemble de formes irrégulières.",
+            "de": "„bist“ ist die Form von sein für die zweite Person Singular. sein hat unregelmäßige Formen, die man einzeln lernt.",
+            "ar": "الصيغة «bist» من الفعل sein توافق المخاطب المفرد. للفعل sein صيغ غير منتظمة تحفظ كما هي.",
+            "en": "“bist” is the form of sein for second-person singular. sein has irregular forms learned individually."
+          }
+        },
+        {
+          "id": "premium-ex-03",
+          "german": "Sie ist 25 Jahre alt.",
+          "context": {
+            "fr": "Elle a 25 ans.",
+            "de": "Sie ist 25 Jahre alt.",
+            "ar": "عمرها 25 سنة.",
+            "en": "She is 25 years old."
+          },
+          "explanation": {
+            "fr": "« ist » est la forme de sein pour la troisième personne du singulier. sein s’apprend comme un ensemble de formes irrégulières.",
+            "de": "„ist“ ist die Form von sein für die dritte Person Singular. sein hat unregelmäßige Formen, die man einzeln lernt.",
+            "ar": "الصيغة «ist» من الفعل sein توافق الغائب المفرد. للفعل sein صيغ غير منتظمة تحفظ كما هي.",
+            "en": "“ist” is the form of sein for third-person singular. sein has irregular forms learned individually."
+          }
+        },
+        {
+          "id": "premium-ex-04",
+          "german": "Wir sind zu Hause.",
+          "context": {
+            "fr": "Nous sommes à la maison.",
+            "de": "Wir sind zu Hause.",
+            "ar": "نحن في المنزل.",
+            "en": "We are at home."
+          },
+          "explanation": {
+            "fr": "« sind » est la forme de sein pour la première personne du pluriel. sein s’apprend comme un ensemble de formes irrégulières.",
+            "de": "„sind“ ist die Form von sein für die erste Person Plural. sein hat unregelmäßige Formen, die man einzeln lernt.",
+            "ar": "الصيغة «sind» من الفعل sein توافق المتكلم الجمع. للفعل sein صيغ غير منتظمة تحفظ كما هي.",
+            "en": "“sind” is the form of sein for first-person plural. sein has irregular forms learned individually."
+          }
+        },
+        {
+          "id": "premium-ex-05",
+          "german": "Ihr seid sehr nett.",
+          "context": {
+            "fr": "Vous êtes très gentils.",
+            "de": "Ihr seid sehr nett.",
+            "ar": "أنتم لطفاء جداً.",
+            "en": "You are very nice."
+          },
+          "explanation": {
+            "fr": "« seid » est la forme de sein pour la deuxième personne du pluriel. sein s’apprend comme un ensemble de formes irrégulières.",
+            "de": "„seid“ ist die Form von sein für die zweite Person Plural. sein hat unregelmäßige Formen, die man einzeln lernt.",
+            "ar": "الصيغة «seid» من الفعل sein توافق المخاطب الجمع. للفعل sein صيغ غير منتظمة تحفظ كما هي.",
+            "en": "“seid” is the form of sein for second-person plural. sein has irregular forms learned individually."
+          }
+        },
+        {
+          "id": "premium-ex-06",
+          "german": "Ich habe Hunger.",
+          "context": {
+            "fr": "J’ai faim.",
+            "de": "Ich habe Hunger.",
+            "ar": "أنا جائع.",
+            "en": "I am hungry."
+          },
+          "explanation": {
+            "fr": "« habe » est la forme de haben pour la première personne du singulier. Avec du et er/sie/es, le b de haben disparaît.",
+            "de": "„habe“ ist die Form von haben für die erste Person Singular. Bei du und er/sie/es entfällt das b von haben.",
+            "ar": "الصيغة «habe» من الفعل haben توافق المتكلم المفرد. يحذف الحرف b من haben مع du وer/sie/es.",
+            "en": "“habe” is the form of haben for first-person singular. With du and er/sie/es, the b of haben disappears."
+          }
+        },
+        {
+          "id": "premium-ex-07",
+          "german": "Hast du einen Hund?",
+          "context": {
+            "fr": "As-tu un chien ?",
+            "de": "Hast du einen Hund?",
+            "ar": "هل لديك كلب؟",
+            "en": "Do you have a dog?"
+          },
+          "explanation": {
+            "fr": "« hast » est la forme de haben pour la deuxième personne du singulier. Avec du et er/sie/es, le b de haben disparaît.",
+            "de": "„hast“ ist die Form von haben für die zweite Person Singular. Bei du und er/sie/es entfällt das b von haben.",
+            "ar": "الصيغة «hast» من الفعل haben توافق المخاطب المفرد. يحذف الحرف b من haben مع du وer/sie/es.",
+            "en": "“hast” is the form of haben for second-person singular. With du and er/sie/es, the b of haben disappears."
+          }
+        },
+        {
+          "id": "premium-ex-08",
+          "german": "Er hat heute Zeit.",
+          "context": {
+            "fr": "Il a du temps aujourd’hui.",
+            "de": "Er hat heute Zeit.",
+            "ar": "لديه وقت اليوم.",
+            "en": "He has time today."
+          },
+          "explanation": {
+            "fr": "« hat » est la forme de haben pour la troisième personne du singulier. Avec du et er/sie/es, le b de haben disparaît.",
+            "de": "„hat“ ist die Form von haben für die dritte Person Singular. Bei du und er/sie/es entfällt das b von haben.",
+            "ar": "الصيغة «hat» من الفعل haben توافق الغائب المفرد. يحذف الحرف b من haben مع du وer/sie/es.",
+            "en": "“hat” is the form of haben for third-person singular. With du and er/sie/es, the b of haben disappears."
+          }
+        },
+        {
+          "id": "premium-ex-09",
+          "german": "Wir haben zwei Kinder.",
+          "context": {
+            "fr": "Nous avons deux enfants.",
+            "de": "Wir haben zwei Kinder.",
+            "ar": "لدينا طفلان.",
+            "en": "We have two children."
+          },
+          "explanation": {
+            "fr": "« haben » est la forme de haben pour la première personne du pluriel. Avec du et er/sie/es, le b de haben disparaît.",
+            "de": "„haben“ ist die Form von haben für die erste Person Plural. Bei du und er/sie/es entfällt das b von haben.",
+            "ar": "الصيغة «haben» من الفعل haben توافق المتكلم الجمع. يحذف الحرف b من haben مع du وer/sie/es.",
+            "en": "“haben” is the form of haben for first-person plural. With du and er/sie/es, the b of haben disappears."
+          }
+        },
+        {
+          "id": "premium-ex-10",
+          "german": "Haben Sie einen Termin?",
+          "context": {
+            "fr": "Avez-vous rendez-vous ?",
+            "de": "Haben Sie einen Termin?",
+            "ar": "هل لديك موعد؟",
+            "en": "Do you have an appointment?"
+          },
+          "explanation": {
+            "fr": "« haben » est la forme de haben pour la forme de la troisième personne du pluriel ou du Sie de politesse. Avec du et er/sie/es, le b de haben disparaît.",
+            "de": "„haben“ ist die Form von haben für die Form der dritten Person Plural oder der Höflichkeitsform Sie. Bei du und er/sie/es entfällt das b von haben.",
+            "ar": "الصيغة «haben» من الفعل haben توافق صيغة الغائب الجمع أو المخاطب للاحترام Sie. يحذف الحرف b من haben مع du وer/sie/es.",
+            "en": "“haben” is the form of haben for third-person plural or formal Sie agreement. With du and er/sie/es, the b of haben disappears."
           }
         }
       ]
     },
     {
       "type": "examples",
-      "id": "b9",
+      "id": "premium-beispiele-2",
       "title": {
-        "fr": "haben",
-        "de": "haben",
-        "ar": "haben",
-        "en": "haben"
+        "fr": "Beispiele 11–20",
+        "de": "Beispiele 11–20",
+        "ar": "Beispiele 11–20",
+        "en": "Beispiele 11–20"
       },
       "items": [
         {
-          "id": "ex1",
+          "id": "premium-ex-11",
+          "german": "Ich möchte einen Kaffee.",
           "context": {
-            "fr": "Exemple",
-            "de": "Beispiel",
-            "ar": "مثال",
-            "en": "Example"
+            "fr": "Je voudrais un café.",
+            "de": "Ich möchte einen Kaffee.",
+            "ar": "أود قهوة.",
+            "en": "I would like a coffee."
           },
-          "german": "Wir haben Zeit.",
           "explanation": {
-            "fr": "Nous avons du temps.",
-            "de": "Wir haben Zeit.",
-            "ar": "لدينا وقت.",
-            "en": "We have time."
+            "fr": "« möchte » est la forme de möchten pour la première personne du singulier. Cette forme exprime un souhait ; avec un autre verbe, celui-ci reste à l’infinitif.",
+            "de": "„möchte“ ist die Form von möchten für die erste Person Singular. Die Form drückt einen Wunsch aus; ein zweites Verb bleibt im Infinitiv.",
+            "ar": "الصيغة «möchte» من الفعل möchten توافق المتكلم المفرد. تعبر الصيغة عن رغبة، ويبقى الفعل الثاني في المصدر إن وجد.",
+            "en": "“möchte” is the form of möchten for first-person singular. This form expresses a wish; a second verb stays in the infinitive."
           }
-        }
-      ]
-    },
-    {
-      "type": "examples",
-      "id": "b10",
-      "title": {
-        "fr": "möchten",
-        "de": "möchten",
-        "ar": "möchten",
-        "en": "möchten"
-      },
-      "items": [
+        },
         {
-          "id": "ex1",
+          "id": "premium-ex-12",
+          "german": "Möchtest du mitkommen?",
           "context": {
-            "fr": "Exemple",
-            "de": "Beispiel",
-            "ar": "مثال",
-            "en": "Example"
+            "fr": "Voudrais-tu venir avec nous ?",
+            "de": "Möchtest du mitkommen?",
+            "ar": "هل ترغب في المجيء معنا؟",
+            "en": "Would you like to come along?"
           },
-          "german": "Ich möchte Wasser trinken.",
           "explanation": {
-            "fr": "Je voudrais boire de l’eau.",
-            "de": "Ich möchte Wasser trinken.",
-            "ar": "أود شرب الماء.",
-            "en": "I would like to drink water."
+            "fr": "« möchtest » est la forme de möchten pour la deuxième personne du singulier. Cette forme exprime un souhait ; avec un autre verbe, celui-ci reste à l’infinitif.",
+            "de": "„möchtest“ ist die Form von möchten für die zweite Person Singular. Die Form drückt einen Wunsch aus; ein zweites Verb bleibt im Infinitiv.",
+            "ar": "الصيغة «möchtest» من الفعل möchten توافق المخاطب المفرد. تعبر الصيغة عن رغبة، ويبقى الفعل الثاني في المصدر إن وجد.",
+            "en": "“möchtest” is the form of möchten for second-person singular. This form expresses a wish; a second verb stays in the infinitive."
           }
-        }
-      ]
-    },
-    {
-      "type": "examples",
-      "id": "b11",
-      "title": {
-        "fr": "mögen",
-        "de": "mögen",
-        "ar": "mögen",
-        "en": "mögen"
-      },
-      "items": [
+        },
         {
-          "id": "ex1",
+          "id": "premium-ex-13",
+          "german": "Er möchte Urlaub machen.",
           "context": {
-            "fr": "Exemple",
-            "de": "Beispiel",
-            "ar": "مثال",
-            "en": "Example"
+            "fr": "Il voudrait prendre des vacances.",
+            "de": "Er möchte Urlaub machen.",
+            "ar": "يرغب في أخذ عطلة.",
+            "en": "He would like to take a vacation."
           },
+          "explanation": {
+            "fr": "« möchte » est la forme de möchten pour la troisième personne du singulier. Cette forme exprime un souhait ; avec un autre verbe, celui-ci reste à l’infinitif.",
+            "de": "„möchte“ ist die Form von möchten für die dritte Person Singular. Die Form drückt einen Wunsch aus; ein zweites Verb bleibt im Infinitiv.",
+            "ar": "الصيغة «möchte» من الفعل möchten توافق الغائب المفرد. تعبر الصيغة عن رغبة، ويبقى الفعل الثاني في المصدر إن وجد.",
+            "en": "“möchte” is the form of möchten for third-person singular. This form expresses a wish; a second verb stays in the infinitive."
+          }
+        },
+        {
+          "id": "premium-ex-14",
+          "german": "Wir möchten etwas essen.",
+          "context": {
+            "fr": "Nous voudrions manger quelque chose.",
+            "de": "Wir möchten etwas essen.",
+            "ar": "نود أن نأكل شيئاً.",
+            "en": "We would like to eat something."
+          },
+          "explanation": {
+            "fr": "« möchten » est la forme de möchten pour la première personne du pluriel. Cette forme exprime un souhait ; avec un autre verbe, celui-ci reste à l’infinitif.",
+            "de": "„möchten“ ist die Form von möchten für die erste Person Plural. Die Form drückt einen Wunsch aus; ein zweites Verb bleibt im Infinitiv.",
+            "ar": "الصيغة «möchten» من الفعل möchten توافق المتكلم الجمع. تعبر الصيغة عن رغبة، ويبقى الفعل الثاني في المصدر إن وجد.",
+            "en": "“möchten” is the form of möchten for first-person plural. This form expresses a wish; a second verb stays in the infinitive."
+          }
+        },
+        {
+          "id": "premium-ex-15",
+          "german": "Was möchtet ihr trinken?",
+          "context": {
+            "fr": "Que voudriez-vous boire ?",
+            "de": "Was möchtet ihr trinken?",
+            "ar": "ماذا ترغبون في أن تشربوا؟",
+            "en": "What would you like to drink?"
+          },
+          "explanation": {
+            "fr": "« möchtet » est la forme de möchten pour la deuxième personne du pluriel. Cette forme exprime un souhait ; avec un autre verbe, celui-ci reste à l’infinitif.",
+            "de": "„möchtet“ ist die Form von möchten für die zweite Person Plural. Die Form drückt einen Wunsch aus; ein zweites Verb bleibt im Infinitiv.",
+            "ar": "الصيغة «möchtet» من الفعل möchten توافق المخاطب الجمع. تعبر الصيغة عن رغبة، ويبقى الفعل الثاني في المصدر إن وجد.",
+            "en": "“möchtet” is the form of möchten for second-person plural. This form expresses a wish; a second verb stays in the infinitive."
+          }
+        },
+        {
+          "id": "premium-ex-16",
+          "german": "Ich mag Tee.",
+          "context": {
+            "fr": "J’aime le thé.",
+            "de": "Ich mag Tee.",
+            "ar": "أحب الشاي.",
+            "en": "I like tea."
+          },
+          "explanation": {
+            "fr": "« mag » est la forme de mögen pour la première personne du singulier. mögen exprime une préférence ; au singulier on utilise mag ou magst.",
+            "de": "„mag“ ist die Form von mögen für die erste Person Singular. mögen drückt eine Vorliebe aus; im Singular stehen mag oder magst.",
+            "ar": "الصيغة «mag» من الفعل mögen توافق المتكلم المفرد. يدل mögen على التفضيل، وفي المفرد نستعمل mag أو magst.",
+            "en": "“mag” is the form of mögen for first-person singular. mögen expresses liking; singular forms are mag or magst."
+          }
+        },
+        {
+          "id": "premium-ex-17",
+          "german": "Magst du Musik?",
+          "context": {
+            "fr": "Aimes-tu la musique ?",
+            "de": "Magst du Musik?",
+            "ar": "هل تحب الموسيقى؟",
+            "en": "Do you like music?"
+          },
+          "explanation": {
+            "fr": "« magst » est la forme de mögen pour la deuxième personne du singulier. mögen exprime une préférence ; au singulier on utilise mag ou magst.",
+            "de": "„magst“ ist die Form von mögen für die zweite Person Singular. mögen drückt eine Vorliebe aus; im Singular stehen mag oder magst.",
+            "ar": "الصيغة «magst» من الفعل mögen توافق المخاطب المفرد. يدل mögen على التفضيل، وفي المفرد نستعمل mag أو magst.",
+            "en": "“magst” is the form of mögen for second-person singular. mögen expresses liking; singular forms are mag or magst."
+          }
+        },
+        {
+          "id": "premium-ex-18",
           "german": "Sie mag Italien.",
-          "explanation": {
+          "context": {
             "fr": "Elle aime l’Italie.",
             "de": "Sie mag Italien.",
-            "ar": "هي تحب إيطاليا.",
+            "ar": "تحب إيطاليا.",
             "en": "She likes Italy."
+          },
+          "explanation": {
+            "fr": "« mag » est la forme de mögen pour la troisième personne du singulier. mögen exprime une préférence ; au singulier on utilise mag ou magst.",
+            "de": "„mag“ ist die Form von mögen für die dritte Person Singular. mögen drückt eine Vorliebe aus; im Singular stehen mag oder magst.",
+            "ar": "الصيغة «mag» من الفعل mögen توافق الغائب المفرد. يدل mögen على التفضيل، وفي المفرد نستعمل mag أو magst.",
+            "en": "“mag” is the form of mögen for third-person singular. mögen expresses liking; singular forms are mag or magst."
+          }
+        },
+        {
+          "id": "premium-ex-19",
+          "german": "Wir mögen Katzen.",
+          "context": {
+            "fr": "Nous aimons les chats.",
+            "de": "Wir mögen Katzen.",
+            "ar": "نحب القطط.",
+            "en": "We like cats."
+          },
+          "explanation": {
+            "fr": "« mögen » est la forme de mögen pour la première personne du pluriel. mögen exprime une préférence ; au singulier on utilise mag ou magst.",
+            "de": "„mögen“ ist die Form von mögen für die erste Person Plural. mögen drückt eine Vorliebe aus; im Singular stehen mag oder magst.",
+            "ar": "الصيغة «mögen» من الفعل mögen توافق المتكلم الجمع. يدل mögen على التفضيل، وفي المفرد نستعمل mag أو magst.",
+            "en": "“mögen” is the form of mögen for first-person plural. mögen expresses liking; singular forms are mag or magst."
+          }
+        },
+        {
+          "id": "premium-ex-20",
+          "german": "Ihr mögt Schokolade.",
+          "context": {
+            "fr": "Vous aimez le chocolat.",
+            "de": "Ihr mögt Schokolade.",
+            "ar": "أنتم تحبون الشوكولاتة.",
+            "en": "You like chocolate."
+          },
+          "explanation": {
+            "fr": "« mögt » est la forme de mögen pour la deuxième personne du pluriel. mögen exprime une préférence ; au singulier on utilise mag ou magst.",
+            "de": "„mögt“ ist die Form von mögen für die zweite Person Plural. mögen drückt eine Vorliebe aus; im Singular stehen mag oder magst.",
+            "ar": "الصيغة «mögt» من الفعل mögen توافق المخاطب الجمع. يدل mögen على التفضيل، وفي المفرد نستعمل mag أو magst.",
+            "en": "“mögt” is the form of mögen for second-person plural. mögen expresses liking; singular forms are mag or magst."
           }
         }
       ]
     },
     {
       "type": "examples",
-      "id": "b12",
+      "id": "premium-beispiele-3",
       "title": {
-        "fr": "wissen",
-        "de": "wissen",
-        "ar": "wissen",
-        "en": "wissen"
+        "fr": "Beispiele 21–30",
+        "de": "Beispiele 21–30",
+        "ar": "Beispiele 21–30",
+        "en": "Beispiele 21–30"
       },
       "items": [
         {
-          "id": "ex1",
+          "id": "premium-ex-21",
+          "german": "Ich weiß die Antwort.",
           "context": {
-            "fr": "Exemple",
-            "de": "Beispiel",
-            "ar": "مثال",
-            "en": "Example"
+            "fr": "Je connais la réponse.",
+            "de": "Ich weiß die Antwort.",
+            "ar": "أعرف الإجابة.",
+            "en": "I know the answer."
           },
-          "german": "Ich weiß es nicht.",
           "explanation": {
-            "fr": "Je ne le sais pas.",
-            "de": "Ich weiß es nicht.",
-            "ar": "لا أعرف ذلك.",
-            "en": "I do not know."
+            "fr": "« weiß » est la forme de wissen pour la première personne du singulier. Au singulier, le radical est weiß-, au pluriel wiss-.",
+            "de": "„weiß“ ist die Form von wissen für die erste Person Singular. Im Singular lautet der Stamm weiß-, im Plural wiss-.",
+            "ar": "الصيغة «weiß» من الفعل wissen توافق المتكلم المفرد. الجذر في المفرد weiß- وفي الجمع wiss-.",
+            "en": "“weiß” is the form of wissen for first-person singular. The stem is weiß- in the singular and wiss- in the plural."
           }
-        }
-      ]
-    },
-    {
-      "type": "examples",
-      "id": "b13",
-      "title": {
-        "fr": "tun",
-        "de": "tun",
-        "ar": "tun",
-        "en": "tun"
-      },
-      "items": [
+        },
         {
-          "id": "ex1",
+          "id": "premium-ex-22",
+          "german": "Weißt du das?",
           "context": {
-            "fr": "Exemple",
-            "de": "Beispiel",
-            "ar": "مثال",
-            "en": "Example"
+            "fr": "Le sais-tu ?",
+            "de": "Weißt du das?",
+            "ar": "هل تعرف ذلك؟",
+            "en": "Do you know that?"
           },
-          "german": "Mein Kopf tut weh.",
           "explanation": {
-            "fr": "J’ai mal à la tête.",
-            "de": "Mein Kopf tut weh.",
-            "ar": "رأسي يؤلمني.",
-            "en": "My head hurts."
+            "fr": "« weißt » est la forme de wissen pour la deuxième personne du singulier. Au singulier, le radical est weiß-, au pluriel wiss-.",
+            "de": "„weißt“ ist die Form von wissen für die zweite Person Singular. Im Singular lautet der Stamm weiß-, im Plural wiss-.",
+            "ar": "الصيغة «weißt» من الفعل wissen توافق المخاطب المفرد. الجذر في المفرد weiß- وفي الجمع wiss-.",
+            "en": "“weißt” is the form of wissen for second-person singular. The stem is weiß- in the singular and wiss- in the plural."
+          }
+        },
+        {
+          "id": "premium-ex-23",
+          "german": "Er weiß es nicht.",
+          "context": {
+            "fr": "Il ne le sait pas.",
+            "de": "Er weiß es nicht.",
+            "ar": "هو لا يعرف ذلك.",
+            "en": "He does not know it."
+          },
+          "explanation": {
+            "fr": "« weiß » est la forme de wissen pour la troisième personne du singulier. Au singulier, le radical est weiß-, au pluriel wiss-.",
+            "de": "„weiß“ ist die Form von wissen für die dritte Person Singular. Im Singular lautet der Stamm weiß-, im Plural wiss-.",
+            "ar": "الصيغة «weiß» من الفعل wissen توافق الغائب المفرد. الجذر في المفرد weiß- وفي الجمع wiss-.",
+            "en": "“weiß” is the form of wissen for third-person singular. The stem is weiß- in the singular and wiss- in the plural."
+          }
+        },
+        {
+          "id": "premium-ex-24",
+          "german": "Wir wissen, wo du wohnst.",
+          "context": {
+            "fr": "Nous savons où tu habites.",
+            "de": "Wir wissen, wo du wohnst.",
+            "ar": "نعرف أين تسكن.",
+            "en": "We know where you live."
+          },
+          "explanation": {
+            "fr": "« wissen » est la forme de wissen pour la première personne du pluriel. Au singulier, le radical est weiß-, au pluriel wiss-.",
+            "de": "„wissen“ ist die Form von wissen für die erste Person Plural. Im Singular lautet der Stamm weiß-, im Plural wiss-.",
+            "ar": "الصيغة «wissen» من الفعل wissen توافق المتكلم الجمع. الجذر في المفرد weiß- وفي الجمع wiss-.",
+            "en": "“wissen” is the form of wissen for first-person plural. The stem is weiß- in the singular and wiss- in the plural."
+          }
+        },
+        {
+          "id": "premium-ex-25",
+          "german": "Wisst ihr das schon?",
+          "context": {
+            "fr": "Le savez-vous déjà ?",
+            "de": "Wisst ihr das schon?",
+            "ar": "هل تعرفون ذلك بالفعل؟",
+            "en": "Do you already know that?"
+          },
+          "explanation": {
+            "fr": "« wisst » est la forme de wissen pour la deuxième personne du pluriel. Au singulier, le radical est weiß-, au pluriel wiss-.",
+            "de": "„wisst“ ist die Form von wissen für die zweite Person Plural. Im Singular lautet der Stamm weiß-, im Plural wiss-.",
+            "ar": "الصيغة «wisst» من الفعل wissen توافق المخاطب الجمع. الجذر في المفرد weiß- وفي الجمع wiss-.",
+            "en": "“wisst” is the form of wissen for second-person plural. The stem is weiß- in the singular and wiss- in the plural."
+          }
+        },
+        {
+          "id": "premium-ex-26",
+          "german": "Ich tue mein Bestes.",
+          "context": {
+            "fr": "Je fais de mon mieux.",
+            "de": "Ich tue mein Bestes.",
+            "ar": "أبذل قصارى جهدي.",
+            "en": "I do my best."
+          },
+          "explanation": {
+            "fr": "« tue » est la forme de tun pour la première personne du singulier. tun a un infinitif en -n et des formes tue, tust, tut, tun.",
+            "de": "„tue“ ist die Form von tun für die erste Person Singular. tun hat einen Infinitiv auf -n und die Formen tue, tust, tut, tun.",
+            "ar": "الصيغة «tue» من الفعل tun توافق المتكلم المفرد. ينتهي مصدر tun بـ -n وله الصيغ tue وtust وtut وtun.",
+            "en": "“tue” is the form of tun for first-person singular. tun has an infinitive ending in -n and the forms tue, tust, tut, tun."
+          }
+        },
+        {
+          "id": "premium-ex-27",
+          "german": "Was tust du gerade?",
+          "context": {
+            "fr": "Que fais-tu en ce moment ?",
+            "de": "Was tust du gerade?",
+            "ar": "ماذا تفعل الآن؟",
+            "en": "What are you doing right now?"
+          },
+          "explanation": {
+            "fr": "« tust » est la forme de tun pour la deuxième personne du singulier. tun a un infinitif en -n et des formes tue, tust, tut, tun.",
+            "de": "„tust“ ist die Form von tun für die zweite Person Singular. tun hat einen Infinitiv auf -n und die Formen tue, tust, tut, tun.",
+            "ar": "الصيغة «tust» من الفعل tun توافق المخاطب المفرد. ينتهي مصدر tun بـ -n وله الصيغ tue وtust وtut وtun.",
+            "en": "“tust” is the form of tun for second-person singular. tun has an infinitive ending in -n and the forms tue, tust, tut, tun."
+          }
+        },
+        {
+          "id": "premium-ex-28",
+          "german": "Er tut nichts.",
+          "context": {
+            "fr": "Il ne fait rien.",
+            "de": "Er tut nichts.",
+            "ar": "لا يفعل شيئاً.",
+            "en": "He does nothing."
+          },
+          "explanation": {
+            "fr": "« tut » est la forme de tun pour la troisième personne du singulier. tun a un infinitif en -n et des formes tue, tust, tut, tun.",
+            "de": "„tut“ ist die Form von tun für die dritte Person Singular. tun hat einen Infinitiv auf -n und die Formen tue, tust, tut, tun.",
+            "ar": "الصيغة «tut» من الفعل tun توافق الغائب المفرد. ينتهي مصدر tun بـ -n وله الصيغ tue وtust وtut وtun.",
+            "en": "“tut” is the form of tun for third-person singular. tun has an infinitive ending in -n and the forms tue, tust, tut, tun."
+          }
+        },
+        {
+          "id": "premium-ex-29",
+          "german": "Wir tun etwas für die Umwelt.",
+          "context": {
+            "fr": "Nous faisons quelque chose pour l’environnement.",
+            "de": "Wir tun etwas für die Umwelt.",
+            "ar": "نفعل شيئاً من أجل البيئة.",
+            "en": "We do something for the environment."
+          },
+          "explanation": {
+            "fr": "« tun » est la forme de tun pour la première personne du pluriel. tun a un infinitif en -n et des formes tue, tust, tut, tun.",
+            "de": "„tun“ ist die Form von tun für die erste Person Plural. tun hat einen Infinitiv auf -n und die Formen tue, tust, tut, tun.",
+            "ar": "الصيغة «tun» من الفعل tun توافق المتكلم الجمع. ينتهي مصدر tun بـ -n وله الصيغ tue وtust وtut وtun.",
+            "en": "“tun” is the form of tun for first-person plural. tun has an infinitive ending in -n and the forms tue, tust, tut, tun."
+          }
+        },
+        {
+          "id": "premium-ex-30",
+          "german": "Was tun Sie beruflich?",
+          "context": {
+            "fr": "Que faites-vous comme métier ?",
+            "de": "Was tun Sie beruflich?",
+            "ar": "ماذا تعمل؟",
+            "en": "What do you do for a living?"
+          },
+          "explanation": {
+            "fr": "« tun » est la forme de tun pour la forme de la troisième personne du pluriel ou du Sie de politesse. tun a un infinitif en -n et des formes tue, tust, tut, tun.",
+            "de": "„tun“ ist die Form von tun für die Form der dritten Person Plural oder der Höflichkeitsform Sie. tun hat einen Infinitiv auf -n und die Formen tue, tust, tut, tun.",
+            "ar": "الصيغة «tun» من الفعل tun توافق صيغة الغائب الجمع أو المخاطب للاحترام Sie. ينتهي مصدر tun بـ -n وله الصيغ tue وtust وtut وtun.",
+            "en": "“tun” is the form of tun for third-person plural or formal Sie agreement. tun has an infinitive ending in -n and the forms tue, tust, tut, tun."
           }
         }
       ]
     },
     {
       "type": "paragraph",
-      "id": "b14",
+      "id": "premium-dialog",
       "title": {
-        "fr": "Erreurs fréquentes",
-        "de": "Häufige Fehler",
-        "ar": "أخطاء شائعة",
-        "en": "Common mistakes"
+        "fr": "Mini-Dialog: Im Café",
+        "de": "Mini-Dialog: Im Café",
+        "ar": "Mini-Dialog: Im Café",
+        "en": "Mini-Dialog: Im Café"
       },
       "text": {
-        "fr": "Ich bist → Ich bin. Du hat → Du hast. Er möchtet → Er möchte. Wir weiß → Wir wissen. Meine Ohren tut weh → Meine Ohren tun weh. Vérifiez toujours le sujet avant de choisir la forme.",
-        "de": "Ich bist → Ich bin. Du hat → Du hast. Er möchtet → Er möchte. Wir weiß → Wir wissen. Meine Ohren tut weh → Meine Ohren tun weh. Prüfen Sie zuerst das Subjekt.",
-        "ar": "انتبه إلى توافق الفعل مع الفاعل: Ich bin وليس Ich bist، Du hast وليس Du hat، Er möchte وليس Er möchtet، Wir wissen وليس Wir weiß.",
-        "en": "Check subject agreement: Ich bin, not Ich bist; Du hast, not Du hat; Er möchte, not Er möchtet; Wir wissen, not Wir weiß."
+        "fr": "A: Was möchten Sie trinken? (Que souhaitez-vous boire ?)\nB: Ich möchte einen Tee. Haben Sie auch Kuchen? (Je voudrais un thé. Avez-vous aussi du gâteau ?)\nA: Ja. Mögen Sie Schokoladenkuchen? (Oui. Aimez-vous le gâteau au chocolat ?)\nB: Ja, sehr gern. (Oui, beaucoup.)",
+        "de": "A: Was möchten Sie trinken?\nB: Ich möchte einen Tee. Haben Sie auch Kuchen?\nA: Ja. Mögen Sie Schokoladenkuchen?\nB: Ja, sehr gern.",
+        "ar": "أ: Was möchten Sie trinken? (ماذا تريد أن تشرب؟)\nب: Ich möchte einen Tee. Haben Sie auch Kuchen? (أود شاياً. هل لديكم كعك أيضاً؟)\nأ: Ja. Mögen Sie Schokoladenkuchen? (نعم. هل تحب كعكة الشوكولاتة؟)\nب: Ja, sehr gern. (نعم، كثيراً.)",
+        "en": "A: Was möchten Sie trinken? (What would you like to drink?)\nB: Ich möchte einen Tee. Haben Sie auch Kuchen? (I would like tea. Do you also have cake?)\nA: Ja. Mögen Sie Schokoladenkuchen? (Yes. Do you like chocolate cake?)\nB: Ja, sehr gern. (Yes, very much.)"
+      }
+    },
+    {
+      "type": "callout",
+      "id": "premium-errors",
+      "title": {
+        "fr": "Typische Fehler",
+        "de": "Typische Fehler",
+        "ar": "Typische Fehler",
+        "en": "Typische Fehler"
+      },
+      "tone": "warning",
+      "text": {
+        "fr": "❌ Ich habe 25 Jahre. → ✓ Ich bin 25 Jahre alt. (âge : sein)\n❌ Du habst Zeit. → ✓ Du hast Zeit.\n❌ Er möchte trinkt. → ✓ Er möchte trinken.\n❌ Ich wisse das. → ✓ Ich weiß das.",
+        "de": "❌ Ich habe 25 Jahre. → ✓ Ich bin 25 Jahre alt. (Alter: sein)\n❌ Du habst Zeit. → ✓ Du hast Zeit.\n❌ Er möchte trinkt. → ✓ Er möchte trinken.\n❌ Ich wisse das. → ✓ Ich weiß das.",
+        "ar": "❌ Ich habe 25 Jahre. → ✓ Ich bin 25 Jahre alt. (العمر مع sein)\n❌ Du habst Zeit. → ✓ Du hast Zeit.\n❌ Er möchte trinkt. → ✓ Er möchte trinken.\n❌ Ich wisse das. → ✓ Ich weiß das.",
+        "en": "❌ Ich habe 25 Jahre. → ✓ Ich bin 25 Jahre alt. (age: sein)\n❌ Du habst Zeit. → ✓ Du hast Zeit.\n❌ Er möchte trinkt. → ✓ Er möchte trinken.\n❌ Ich wisse das. → ✓ Ich weiß das."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "premium-merke",
+      "title": {
+        "fr": "Merke dir!",
+        "de": "Merke dir!",
+        "ar": "Merke dir!",
+        "en": "Merke dir!"
+      },
+      "tone": "tip",
+      "text": {
+        "fr": "Choisis sein pour l’identité, l’âge et l’état, haben pour la possession et certaines expressions, mögen pour un goût, möchten pour un souhait, wissen pour un fait et tun pour une action. Apprends leurs formes par cœur.",
+        "de": "Wähle sein für Identität, Alter und Zustand, haben für Besitz und bestimmte Ausdrücke, mögen für Vorlieben, möchten für Wünsche, wissen für Fakten und tun für Handlungen. Lerne die Formen auswendig.",
+        "ar": "اختر sein للهوية والعمر والحالة، وhaben للملكية وبعض التعبيرات، وmögen للتفضيل، وmöchten للرغبة، وwissen للمعرفة، وtun للفعل. احفظ الصيغ.",
+        "en": "Use sein for identity, age and states, haben for possession and certain expressions, mögen for liking, möchten for wishes, wissen for facts and tun for actions. Memorize their forms."
       }
     }
   ]

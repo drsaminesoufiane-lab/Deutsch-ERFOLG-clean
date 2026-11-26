@@ -8,14 +8,17 @@ function textFor(value: LocalizedText, language: 'fr' | 'de' | 'ar' | 'en') {
   return value[language] || value.fr
 }
 
-export default function LessonRenderer({ lesson }: { lesson: LessonDefinition }) {
+export default function LessonRenderer({ lesson, onStart }: { lesson: LessonDefinition; onStart?: () => void }) {
   const { language, isRTL } = useLanguage()
 
+  const labels = {fr:['Sommaire','Section','Commencer le Meistertraining'],de:['Inhalt','Abschnitt','Meistertraining starten'],ar:['المحتويات','القسم','ابدأ التدريب الأساسي'],en:['Contents','Section','Start Meistertraining']}[language]
   return (
-    <article className="mx-auto w-full max-w-5xl space-y-6" dir={isRTL ? 'rtl' : 'ltr'}>
-      <header className="rounded-3xl bg-slate-900 p-6 text-white sm:p-9">
+    <div className="studio-lesson-layout" dir={isRTL ? 'rtl' : 'ltr'}>
+      <nav className="studio-lesson-nav" aria-label={labels[0]}><strong>{labels[0]}</strong>{lesson.blocks.map((block,i)=><a key={block.id} href={`#lesson-${block.id}`}><span>{String(i+1).padStart(2,'0')}</span>{'title' in block && block.title ? <span lang="de" dir="ltr" className="studio-lesson-nav-title">{block.title.de}</span> : `${labels[1]} ${i+1}`}</a>)}</nav>
+    <article className="studio-lesson mx-auto w-full max-w-5xl space-y-6" dir={isRTL ? 'rtl' : 'ltr'}>
+      <header className="studio-lesson-hero">
         <p className="text-sm font-semibold tracking-wide text-blue-200">Lektion</p>
-        <h1 className="mt-2 text-3xl font-extrabold sm:text-4xl">{textFor(lesson.title, language)}</h1>
+        <h2 lang="de" dir="ltr" className="mt-2 text-3xl font-extrabold sm:text-4xl">{lesson.title.de}</h2>
         <p className="mt-3 max-w-3xl text-base leading-7 text-slate-300">{textFor(lesson.subtitle, language)}</p>
         <div className="mt-5 rounded-2xl border border-white/15 bg-white/10 p-4">
           <p className="text-xs font-bold uppercase tracking-wider text-blue-200">{language === 'fr' ? 'Objectif' : language === 'de' ? 'Lernziel' : language === 'ar' ? 'الهدف' : 'Objective'}</p>
@@ -26,8 +29,8 @@ export default function LessonRenderer({ lesson }: { lesson: LessonDefinition })
       {lesson.blocks.map((block) => {
         if (block.type === 'paragraph') {
           return (
-            <section key={block.id} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
-              {block.title && <h2 className="mb-3 text-xl font-bold text-slate-900">{textFor(block.title, language)}</h2>}
+            <section key={block.id} id={`lesson-${block.id}`} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm sm:p-6">
+              {block.title && <h2 lang="de" dir="ltr" className="mb-3 text-xl font-bold text-slate-900">{block.title.de}</h2>}
               <p className="whitespace-pre-line leading-8 text-slate-700">{textFor(block.text, language)}</p>
             </section>
           )
@@ -35,8 +38,8 @@ export default function LessonRenderer({ lesson }: { lesson: LessonDefinition })
 
         if (block.type === 'table') {
           return (
-            <section key={block.id} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-              <h2 className="p-5 text-xl font-bold text-slate-900">{textFor(block.title, language)}</h2>
+            <section key={block.id} id={`lesson-${block.id}`} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+              <h2 lang="de" dir="ltr" className="p-5 text-xl font-bold text-slate-900">{block.title.de}</h2>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse text-start">
                   <thead className="bg-slate-100">
@@ -45,7 +48,7 @@ export default function LessonRenderer({ lesson }: { lesson: LessonDefinition })
                   <tbody>
                     {block.rows.map((row) => (
                       <tr key={row.id} className="border-t border-slate-100">
-                        {row.cells.map((cell, index) => <td key={index} className="p-3 text-slate-700">{textFor(cell, language)}</td>)}
+                        {row.cells.map((cell, index) => <td key={index} className="p-3 text-slate-700" data-ending={/^[-–]?(e|st|t|en|est|et)$/.test(textFor(cell,language)) ? "true" : undefined}>{textFor(cell, language)}</td>)}
                       </tr>
                     ))}
                   </tbody>
@@ -57,8 +60,8 @@ export default function LessonRenderer({ lesson }: { lesson: LessonDefinition })
 
         if (block.type === 'examples') {
           return (
-            <section key={block.id} className="space-y-3">
-              <h2 className="text-xl font-bold text-slate-900">{textFor(block.title, language)}</h2>
+            <section key={block.id} id={`lesson-${block.id}`} className="space-y-3">
+              <h2 lang="de" dir="ltr" className="text-xl font-bold text-slate-900">{block.title.de}</h2>
               <div className="grid gap-3 md:grid-cols-2">
                 {block.items.map((item) => (
                   <div key={item.id} className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
@@ -74,7 +77,7 @@ export default function LessonRenderer({ lesson }: { lesson: LessonDefinition })
 
         if (block.type === 'image') {
           return (
-            <figure key={block.id} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+            <figure key={block.id} id={`lesson-${block.id}`} className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
               <div className="relative aspect-[16/9] w-full">
                 <Image src={block.src} alt={textFor(block.alt, language)} fill className="object-contain" sizes="(max-width: 768px) 100vw, 900px" />
               </div>
@@ -84,12 +87,23 @@ export default function LessonRenderer({ lesson }: { lesson: LessonDefinition })
         }
 
         return (
-          <aside key={block.id} className={`rounded-2xl border p-5 ${block.tone === 'warning' ? 'border-amber-200 bg-amber-50' : block.tone === 'tip' ? 'border-emerald-200 bg-emerald-50' : 'border-blue-200 bg-blue-50'}`}>
-            <h2 className="font-bold text-slate-900">{textFor(block.title, language)}</h2>
+          <aside key={block.id} id={`lesson-${block.id}`} className={`rounded-2xl border p-5 ${block.tone === 'warning' ? 'border-amber-200 bg-amber-50' : block.tone === 'tip' ? 'border-emerald-200 bg-emerald-50' : 'border-blue-200 bg-blue-50'}`}>
+            <h2 lang="de" dir="ltr" className="font-bold text-slate-900">{block.title.de}</h2>
             <p className="mt-2 leading-7 text-slate-700">{textFor(block.text, language)}</p>
           </aside>
         )
       })}
+      {onStart && <button type="button" className="studio-lesson-start" onClick={onStart}>{labels[2]} {isRTL ? '←' : '→'}</button>}
     </article>
+    <style jsx global>{`
+      .studio-lesson-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:24px;max-width:1200px;margin:24px auto;align-items:start;color:#192b43}
+      .studio-lesson-nav{position:sticky;top:24px;background:#fffdf8;border:1px solid #e4dac7;border-radius:16px;padding:18px;display:grid;gap:8px;max-height:75vh;overflow:auto}
+      .studio-lesson-nav strong{font-size:12px;text-transform:uppercase;letter-spacing:.12em;color:#806538;margin-bottom:8px}
+      .studio-lesson-nav a{display:flex;gap:10px;padding:10px 6px;border-radius:8px;font-size:13px;line-height:1.5;color:#192b43;text-decoration:none}.studio-lesson-nav a:hover{background:#f0e8d8}.studio-lesson-nav a > span:first-child{color:#967744;font-weight:700}
+      .studio-lesson-nav-title{min-width:0;overflow-wrap:anywhere}.studio-lesson{min-width:0}.studio-lesson-hero{background:linear-gradient(135deg,#192b43,#30445e);color:white;padding:32px;border-radius:20px}.studio-lesson-hero h2{font-family:Georgia,serif;color:white}.studio-lesson-hero .text-blue-200{color:#e5c990}
+      .studio-lesson>section,.studio-lesson>figure,.studio-lesson>aside{scroll-margin-top:32px;border-radius:16px;border:1px solid #e4dac7;box-shadow:none}.studio-lesson>section{background:#fffdf8;padding:24px}.studio-lesson>section h2{font-family:Georgia,serif;color:#192b43;font-size:23px}.studio-lesson>section p{line-height:1.85}.studio-lesson table{background:white}.studio-lesson thead{background:#192b43}.studio-lesson th{color:white}.studio-lesson td,.studio-lesson th{padding:14px}.studio-lesson tbody tr:nth-child(even){background:#faf7ef}.studio-lesson td[data-ending=true]{color:#806538;font-weight:700}.studio-lesson .text-blue-800{color:#806538}.studio-lesson .bg-white{border-color:#e4dac7;box-shadow:none}.studio-lesson aside{border-inline-start:4px solid #b49760}.studio-lesson-start{display:block;width:100%;background:#192b43;color:white;padding:17px;border-radius:12px;font-weight:700;cursor:pointer}.studio-lesson-start:hover{background:#30445e}
+      @media(max-width:900px){.studio-lesson-layout{grid-template-columns:minmax(0,1fr)}.studio-lesson-nav{position:static;max-height:220px}.studio-lesson-hero{padding:24px}.studio-lesson>section{padding:16px}}
+    `}</style>
+    </div>
   )
 }

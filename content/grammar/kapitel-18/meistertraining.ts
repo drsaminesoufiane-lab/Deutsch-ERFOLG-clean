@@ -23,16 +23,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "meinem",
-          "dein",
+          "meine",
           "mein",
-          "meine"
+          "meinem",
+          "dein"
         ],
         "prompt": {
-          "fr": "Choisissez : Hier bin ich. Das ist ___ Kind.",
-          "de": "Wählen Sie: Hier bin ich. Das ist ___ Kind.",
-          "ar": "اختر: Hier bin ich. Das ist ___ Kind.",
-          "en": "Choose: Hier bin ich. Das ist ___ Kind."
+          "fr": "Hier bin ich. Das ist ___ Kind. (ich) — Choisissez le possessif approprié.",
+          "de": "Hier bin ich. Das ist ___ Kind. (ich) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Hier bin ich. Das ist ___ Kind. (ich) — اختر أداة الملكية المناسبة.",
+          "en": "Hier bin ich. Das ist ___ Kind. (ich) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -41,41 +41,41 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "unser",
-          "meine",
+          "unseren",
           "unsere",
-          "unseren"
+          "meine",
+          "unser"
         ],
         "prompt": {
-          "fr": "Choisissez : Das sind wir und ___ Kinder.",
-          "de": "Wählen Sie: Das sind wir und ___ Kinder.",
-          "ar": "اختر: Das sind wir und ___ Kinder.",
-          "en": "Choose: Das sind wir und ___ Kinder."
+          "fr": "Das sind wir und ___ Kinder. (wir) — Choisissez le possessif approprié.",
+          "de": "Das sind wir und ___ Kinder. (wir) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Das sind wir und ___ Kinder. (wir) — اختر أداة الملكية المناسبة.",
+          "en": "Das sind wir und ___ Kinder. (wir) — Choose the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-01-q03",
         "position": 3,
         "type": "fill_blank",
-        "sentence": "Da ist Thomas und ___ Mutter.",
+        "sentence": "Da ist Thomas und ___ Mutter. (er)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-01-q04",
         "position": 4,
         "type": "true_false",
-        "statement": "Hier ist Judy und meine Tochter.",
+        "statement": "Hier ist Judy und meine Tochter. (Judys Tochter)",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -85,15 +85,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "deinem",
-          "dein",
           "deinen",
+          "dein",
           "mein"
         ],
         "prompt": {
-          "fr": "Choisissez : Du bist hier. Das ist ___ Vater.",
-          "de": "Wählen Sie: Du bist hier. Das ist ___ Vater.",
-          "ar": "اختر: Du bist hier. Das ist ___ Vater.",
-          "en": "Choose: Du bist hier. Das ist ___ Vater."
+          "fr": "Du bist hier. Das ist ___ Vater. (du) — Choisissez le possessif approprié.",
+          "de": "Du bist hier. Das ist ___ Vater. (du) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Du bist hier. Das ist ___ Vater. (du) — اختر أداة الملكية المناسبة.",
+          "en": "Du bist hier. Das ist ___ Vater. (du) — Choose the appropriate possessive determiner."
         }
       }
     ]
@@ -121,29 +121,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "seiner",
-          "seine",
           "deine",
-          "meine"
+          "seiner",
+          "meine",
+          "seine"
         ],
         "prompt": {
-          "fr": "Choisissez : Jörg hat eine Frau. Das ist ___ Frau Martina.",
-          "de": "Wählen Sie: Jörg hat eine Frau. Das ist ___ Frau Martina.",
-          "ar": "اختر: Jörg hat eine Frau. Das ist ___ Frau Martina.",
-          "en": "Choose: Jörg hat eine Frau. Das ist ___ Frau Martina."
+          "fr": "Jörg hat eine Frau. Das ist ___ Frau Martina. (er) — Choisissez le possessif approprié.",
+          "de": "Jörg hat eine Frau. Das ist ___ Frau Martina. (er) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Jörg hat eine Frau. Das ist ___ Frau Martina. (er) — اختر أداة الملكية المناسبة.",
+          "en": "Jörg hat eine Frau. Das ist ___ Frau Martina. (er) — Choose the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-02-q02",
         "position": 2,
         "type": "fill_blank",
-        "sentence": "Martina hat einen Mann. Das ist ___ Mann Jörg.",
+        "sentence": "Martina hat einen Mann. Das ist ___ Mann Jörg. (sie (Singular))",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       },
       {
@@ -152,10 +152,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Jörg hat ein Fahrrad. Das ist sein Fahrrad.",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -164,16 +164,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihre",
-          "deine",
+          "ihrer",
           "meine",
-          "ihrer"
+          "deine",
+          "ihre"
         ],
         "prompt": {
-          "fr": "Choisissez : Martina hat eine Tasche. Das ist ___ Tasche.",
-          "de": "Wählen Sie: Martina hat eine Tasche. Das ist ___ Tasche.",
-          "ar": "اختر: Martina hat eine Tasche. Das ist ___ Tasche.",
-          "en": "Choose: Martina hat eine Tasche. Das ist ___ Tasche."
+          "fr": "Martina hat eine Tasche. Das ist ___ Tasche. (sie (Singular)) — Choisissez le possessif approprié.",
+          "de": "Martina hat eine Tasche. Das ist ___ Tasche. (sie (Singular)) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Martina hat eine Tasche. Das ist ___ Tasche. (sie (Singular)) — اختر أداة الملكية المناسبة.",
+          "en": "Martina hat eine Tasche. Das ist ___ Tasche. (sie (Singular)) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -188,23 +188,23 @@ export const meistertraining: ExerciseSetDefinition[] = [
           "ihr"
         ],
         "prompt": {
-          "fr": "Choisissez : Jörg und Martina haben Kinder. Das sind ___ Kinder.",
-          "de": "Wählen Sie: Jörg und Martina haben Kinder. Das sind ___ Kinder.",
-          "ar": "اختر: Jörg und Martina haben Kinder. Das sind ___ Kinder.",
-          "en": "Choose: Jörg und Martina haben Kinder. Das sind ___ Kinder."
+          "fr": "Jörg und Martina haben Kinder. Das sind ___ Kinder. (sie (Plural)) — Choisissez le possessif approprié.",
+          "de": "Jörg und Martina haben Kinder. Das sind ___ Kinder. (sie (Plural)) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Jörg und Martina haben Kinder. Das sind ___ Kinder. (sie (Plural)) — اختر أداة الملكية المناسبة.",
+          "en": "Jörg und Martina haben Kinder. Das sind ___ Kinder. (sie (Plural)) — Choose the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-02-q06",
         "position": 6,
         "type": "fill_blank",
-        "sentence": "Jörg hat Bücher. Das sind ___ Bücher.",
+        "sentence": "Jörg hat Bücher. Das sind ___ Bücher. (er)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       }
     ]
@@ -230,13 +230,13 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-18-ubung-03-q01",
         "position": 1,
         "type": "fill_blank",
-        "sentence": "Thomas und Susi, wo ist ___ Papa?",
+        "sentence": "Thomas und Susi, wo ist ___ Papa? (ihr)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       },
       {
@@ -245,10 +245,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Wir antworten: unserem Papa ist in der Küche.",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -258,15 +258,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "eure",
-          "eurer",
+          "meine",
           "deine",
-          "meine"
+          "eurer"
         ],
         "prompt": {
-          "fr": "Choisissez : Kinder, wo ist ___ Mama?",
-          "de": "Wählen Sie: Kinder, wo ist ___ Mama?",
-          "ar": "اختر: Kinder, wo ist ___ Mama?",
-          "en": "Choose: Kinder, wo ist ___ Mama?"
+          "fr": "Kinder, wo ist ___ Mama? (ihr) — Choisissez le possessif approprié.",
+          "de": "Kinder, wo ist ___ Mama? (ihr) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Kinder, wo ist ___ Mama? (ihr) — اختر أداة الملكية المناسبة.",
+          "en": "Kinder, wo ist ___ Mama? (ihr) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -275,29 +275,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "unsere",
           "unserer",
+          "meine",
           "deine",
-          "meine"
+          "unsere"
         ],
         "prompt": {
-          "fr": "Choisissez : Wir antworten: ___ Mama arbeitet.",
-          "de": "Wählen Sie: Wir antworten: ___ Mama arbeitet.",
-          "ar": "اختر: Wir antworten: ___ Mama arbeitet.",
-          "en": "Choose: Wir antworten: ___ Mama arbeitet."
+          "fr": "Wir antworten: ___ Mama arbeitet. (wir) — Choisissez le possessif approprié.",
+          "de": "Wir antworten: ___ Mama arbeitet. (wir) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Wir antworten: ___ Mama arbeitet. (wir) — اختر أداة الملكية المناسبة.",
+          "en": "Wir antworten: ___ Mama arbeitet. (wir) — Choose the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-03-q05",
         "position": 5,
         "type": "fill_blank",
-        "sentence": "Kinder, wie heißen ___ Freunde?",
+        "sentence": "Kinder, wie heißen ___ Freunde? (ihr)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       },
       {
@@ -306,10 +306,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Wir antworten: unseren Freunde heißen Philip und Sabina.",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       }
     ]
@@ -337,10 +337,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Frau Dorn, wie geht es Ihrer Tochter Lisa?",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -349,16 +349,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihren",
-          "ihre",
+          "ihrem",
           "meinen",
-          "ihrem"
+          "ihren",
+          "ihre"
         ],
         "prompt": {
-          "fr": "Choisissez : Lisa ist bei ___ Großeltern.",
-          "de": "Wählen Sie: Lisa ist bei ___ Großeltern.",
-          "ar": "اختر: Lisa ist bei ___ Großeltern.",
-          "en": "Choose: Lisa ist bei ___ Großeltern."
+          "fr": "Lisa ist bei ___ Großeltern. (sie (Singular)) — Choisissez le possessif approprié.",
+          "de": "Lisa ist bei ___ Großeltern. (sie (Singular)) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Lisa ist bei ___ Großeltern. (sie (Singular)) — اختر أداة الملكية المناسبة.",
+          "en": "Lisa ist bei ___ Großeltern. (sie (Singular)) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -367,29 +367,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihr",
           "meinen",
+          "ihr",
           "ihrem",
           "ihren"
         ],
         "prompt": {
-          "fr": "Choisissez : Lisa liebt ___ Opa.",
-          "de": "Wählen Sie: Lisa liebt ___ Opa.",
-          "ar": "اختر: Lisa liebt ___ Opa.",
-          "en": "Choose: Lisa liebt ___ Opa."
+          "fr": "Lisa liebt ___ Opa. (sie (Singular)) — Choisissez le possessif approprié.",
+          "de": "Lisa liebt ___ Opa. (sie (Singular)) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Lisa liebt ___ Opa. (sie (Singular)) — اختر أداة الملكية المناسبة.",
+          "en": "Lisa liebt ___ Opa. (sie (Singular)) — Choose the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-04-q04",
         "position": 4,
         "type": "fill_blank",
-        "sentence": "Frau Mall, wie geht es ___ Familie?",
+        "sentence": "Frau Mall, wie geht es ___ Familie? (Sie)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       },
       {
@@ -398,10 +398,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Frau Mall, wo sind Ihre Kinder?",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -410,16 +410,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihre",
-          "ihren",
           "meinen",
-          "ihrem"
+          "ihrem",
+          "ihre",
+          "ihren"
         ],
         "prompt": {
-          "fr": "Choisissez : Tim und Tom sind bei ___ Freunden.",
-          "de": "Wählen Sie: Tim und Tom sind bei ___ Freunden.",
-          "ar": "اختر: Tim und Tom sind bei ___ Freunden.",
-          "en": "Choose: Tim und Tom sind bei ___ Freunden."
+          "fr": "Tim und Tom sind bei ___ Freunden. (sie (Plural)) — Choisissez le possessif approprié.",
+          "de": "Tim und Tom sind bei ___ Freunden. (sie (Plural)) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Tim und Tom sind bei ___ Freunden. (sie (Plural)) — اختر أداة الملكية المناسبة.",
+          "en": "Tim und Tom sind bei ___ Freunden. (sie (Plural)) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -428,16 +428,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Ihren",
-          "Ihrem",
           "Ihr",
-          "mein"
+          "mein",
+          "Ihrem",
+          "Ihren"
         ],
         "prompt": {
-          "fr": "Choisissez : Frau Dorn, ___ Mann hat angerufen.",
-          "de": "Wählen Sie: Frau Dorn, ___ Mann hat angerufen.",
-          "ar": "اختر: Frau Dorn, ___ Mann hat angerufen.",
-          "en": "Choose: Frau Dorn, ___ Mann hat angerufen."
+          "fr": "Frau Dorn, ___ Mann hat angerufen. (Sie) — Choisissez le possessif approprié.",
+          "de": "Frau Dorn, ___ Mann hat angerufen. (Sie) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Frau Dorn, ___ Mann hat angerufen. (Sie) — اختر أداة الملكية المناسبة.",
+          "en": "Frau Dorn, ___ Mann hat angerufen. (Sie) — Choose the appropriate possessive determiner."
         }
       }
     ]
@@ -467,14 +467,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "options": [
           "deiner",
           "meinen",
-          "meine",
-          "meiner"
+          "meiner",
+          "meine"
         ],
         "prompt": {
-          "fr": "Choisissez : Ich fahre zu ___ Familie.",
-          "de": "Wählen Sie: Ich fahre zu ___ Familie.",
-          "ar": "اختر: Ich fahre zu ___ Familie.",
-          "en": "Choose: Ich fahre zu ___ Familie."
+          "fr": "Ich fahre zu ___ Familie. (ich) — Choisissez le possessif approprié.",
+          "de": "Ich fahre zu ___ Familie. (ich) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Ich fahre zu ___ Familie. (ich) — اختر أداة الملكية المناسبة.",
+          "en": "Ich fahre zu ___ Familie. (ich) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -483,29 +483,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "seiner",
           "meiner",
           "seine",
-          "seinen"
+          "seinen",
+          "seiner"
         ],
         "prompt": {
-          "fr": "Choisissez : Mein Bruder Heinrich wohnt mit ___ Frau Doris.",
-          "de": "Wählen Sie: Mein Bruder Heinrich wohnt mit ___ Frau Doris.",
-          "ar": "اختر: Mein Bruder Heinrich wohnt mit ___ Frau Doris.",
-          "en": "Choose: Mein Bruder Heinrich wohnt mit ___ Frau Doris."
+          "fr": "Mein Bruder Heinrich wohnt mit ___ Frau Doris. (er) — Choisissez le possessif approprié.",
+          "de": "Mein Bruder Heinrich wohnt mit ___ Frau Doris. (er) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Mein Bruder Heinrich wohnt mit ___ Frau Doris. (er) — اختر أداة الملكية المناسبة.",
+          "en": "Mein Bruder Heinrich wohnt mit ___ Frau Doris. (er) — Choose the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-05-q03",
         "position": 3,
         "type": "fill_blank",
-        "sentence": "Doris wohnt im Haus von ___ Eltern.",
+        "sentence": "Doris wohnt im Haus von ___ Eltern. (sie (Singular))",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       },
       {
@@ -514,10 +514,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Leonie liebt ihrem Bruder Ralf.",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -526,16 +526,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "seine",
-          "meine",
           "deine",
+          "meine",
+          "seine",
           "seiner"
         ],
         "prompt": {
-          "fr": "Choisissez : Ralf mag ___ Schwester Leonie.",
-          "de": "Wählen Sie: Ralf mag ___ Schwester Leonie.",
-          "ar": "اختر: Ralf mag ___ Schwester Leonie.",
-          "en": "Choose: Ralf mag ___ Schwester Leonie."
+          "fr": "Ralf mag ___ Schwester Leonie. (er) — Choisissez le possessif approprié.",
+          "de": "Ralf mag ___ Schwester Leonie. (er) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Ralf mag ___ Schwester Leonie. (er) — اختر أداة الملكية المناسبة.",
+          "en": "Ralf mag ___ Schwester Leonie. (er) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -544,29 +544,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "meinen",
           "meinem",
+          "meinen",
           "deinen",
           "mein"
         ],
         "prompt": {
-          "fr": "Choisissez : Ich feiere ___ Geburtstag bei meinen Eltern.",
-          "de": "Wählen Sie: Ich feiere ___ Geburtstag bei meinen Eltern.",
-          "ar": "اختر: Ich feiere ___ Geburtstag bei meinen Eltern.",
-          "en": "Choose: Ich feiere ___ Geburtstag bei meinen Eltern."
+          "fr": "Ich feiere ___ Geburtstag bei meinen Eltern. (ich) — Choisissez le possessif approprié.",
+          "de": "Ich feiere ___ Geburtstag bei meinen Eltern. (ich) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Ich feiere ___ Geburtstag bei meinen Eltern. (ich) — اختر أداة الملكية المناسبة.",
+          "en": "Ich feiere ___ Geburtstag bei meinen Eltern. (ich) — Choose the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-05-q07",
         "position": 7,
         "type": "fill_blank",
-        "sentence": "Monika kommt mit ___ Freund Joachim.",
+        "sentence": "Monika kommt mit ___ Freund Joachim. (sie (Singular))",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       },
       {
@@ -575,10 +575,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Joachim kommt mit seinen Tochter Ana.",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -587,16 +587,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "meine",
           "meinen",
-          "deinen",
-          "meinem"
+          "meinem",
+          "meine",
+          "deinen"
         ],
         "prompt": {
-          "fr": "Choisissez : Ich bekomme Geschenke von ___ Geschwistern.",
-          "de": "Wählen Sie: Ich bekomme Geschenke von ___ Geschwistern.",
-          "ar": "اختر: Ich bekomme Geschenke von ___ Geschwistern.",
-          "en": "Choose: Ich bekomme Geschenke von ___ Geschwistern."
+          "fr": "Ich bekomme Geschenke von ___ Geschwistern. (ich) — Choisissez le possessif approprié.",
+          "de": "Ich bekomme Geschenke von ___ Geschwistern. (ich) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Ich bekomme Geschenke von ___ Geschwistern. (ich) — اختر أداة الملكية المناسبة.",
+          "en": "Ich bekomme Geschenke von ___ Geschwistern. (ich) — Choose the appropriate possessive determiner."
         }
       }
     ]
@@ -624,29 +624,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "mein",
           "meinem",
+          "deinen",
           "meinen",
-          "deinen"
+          "mein"
         ],
         "prompt": {
-          "fr": "Choisissez : Ich suche ___ Schlüssel.",
-          "de": "Wählen Sie: Ich suche ___ Schlüssel.",
-          "ar": "اختر: Ich suche ___ Schlüssel.",
-          "en": "Choose: Ich suche ___ Schlüssel."
+          "fr": "Ich suche ___ Schlüssel. (ich) — Choisissez le possessif approprié.",
+          "de": "Ich suche ___ Schlüssel. (ich) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Ich suche ___ Schlüssel. (ich) — اختر أداة الملكية المناسبة.",
+          "en": "Ich suche ___ Schlüssel. (ich) — Choose the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-06-q02",
         "position": 2,
         "type": "fill_blank",
-        "sentence": "Du besuchst ___ Mutter.",
+        "sentence": "Du besuchst ___ Mutter. (du)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       },
       {
@@ -655,10 +655,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Paul verkauft sein Auto.",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -668,15 +668,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "unsere",
-          "unseren",
           "meine",
+          "unseren",
           "deine"
         ],
         "prompt": {
-          "fr": "Choisissez : Wir holen ___ Kinder ab.",
-          "de": "Wählen Sie: Wir holen ___ Kinder ab.",
-          "ar": "اختر: Wir holen ___ Kinder ab.",
-          "en": "Choose: Wir holen ___ Kinder ab."
+          "fr": "Wir holen ___ Kinder ab. (wir) — Choisissez le possessif approprié.",
+          "de": "Wir holen ___ Kinder ab. (wir) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Wir holen ___ Kinder ab. (wir) — اختر أداة الملكية المناسبة.",
+          "en": "Wir holen ___ Kinder ab. (wir) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -686,15 +686,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "euren",
-          "euer",
           "eurem",
-          "meinen"
+          "meinen",
+          "euer"
         ],
         "prompt": {
-          "fr": "Choisissez : Kinder, nehmt ___ Rucksack mit!",
-          "de": "Wählen Sie: Kinder, nehmt ___ Rucksack mit!",
-          "ar": "اختر: Kinder, nehmt ___ Rucksack mit!",
-          "en": "Choose: Kinder, nehmt ___ Rucksack mit!"
+          "fr": "Kinder, nehmt ___ Rucksack mit! (ihr) — Choisissez le possessif approprié.",
+          "de": "Kinder, nehmt ___ Rucksack mit! (ihr) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Kinder, nehmt ___ Rucksack mit! (ihr) — اختر أداة الملكية المناسبة.",
+          "en": "Kinder, nehmt ___ Rucksack mit! (ihr) — Choose the appropriate possessive determiner."
         }
       }
     ]
@@ -720,13 +720,13 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-18-ubung-07-q01",
         "position": 1,
         "type": "fill_blank",
-        "sentence": "Ich helfe ___ Vater.",
+        "sentence": "Ich helfe ___ Vater. (ich)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       },
       {
@@ -735,10 +735,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Du fährst mit dein Auto.",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -747,16 +747,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "meiner",
-          "ihrer",
+          "ihre",
           "ihren",
-          "ihre"
+          "ihrer",
+          "meiner"
         ],
         "prompt": {
-          "fr": "Choisissez : Anna telefoniert mit ___ Schwester.",
-          "de": "Wählen Sie: Anna telefoniert mit ___ Schwester.",
-          "ar": "اختر: Anna telefoniert mit ___ Schwester.",
-          "en": "Choose: Anna telefoniert mit ___ Schwester."
+          "fr": "Anna telefoniert mit ___ Schwester. (sie (Singular)) — Choisissez le possessif approprié.",
+          "de": "Anna telefoniert mit ___ Schwester. (sie (Singular)) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Anna telefoniert mit ___ Schwester. (sie (Singular)) — اختر أداة الملكية المناسبة.",
+          "en": "Anna telefoniert mit ___ Schwester. (sie (Singular)) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -765,30 +765,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "unsere",
+          "unseren",
           "meinen",
-          "unserem",
-          "unseren"
+          "unsere",
+          "unserem"
         ],
         "prompt": {
-          "fr": "Choisissez : Wir sprechen mit ___ Lehrern.",
-          "de": "Wählen Sie: Wir sprechen mit ___ Lehrern.",
-          "ar": "اختر: Wir sprechen mit ___ Lehrern.",
-          "en": "Choose: Wir sprechen mit ___ Lehrern."
+          "fr": "Wir sprechen mit ___ Lehrern. (wir) — Choisissez le possessif approprié.",
+          "de": "Wir sprechen mit ___ Lehrern. (wir) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Wir sprechen mit ___ Lehrern. (wir) — اختر أداة الملكية المناسبة.",
+          "en": "Wir sprechen mit ___ Lehrern. (wir) — Choose the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-07-q05",
         "position": 5,
         "type": "fill_blank",
-        "sentence": "Kinder, helft ___ Mutter!",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Kinder, helft ___ Mutter und bringt ___ Vater den Einkauf. (die Eltern der Kinder)",
+        "blanks": 2
       }
     ]
   },
@@ -815,10 +815,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Mein Bruder hilft mir. (ich)",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -827,16 +827,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "Deinen",
           "Meinem",
           "Meinen",
-          "Deinen",
           "Mein"
         ],
         "prompt": {
-          "fr": "Choisissez : ___ Bruder besuche ich. (ich)",
-          "de": "Wählen Sie: ___ Bruder besuche ich. (ich)",
-          "ar": "اختر: ___ Bruder besuche ich. (ich)",
-          "en": "Choose: ___ Bruder besuche ich. (ich)"
+          "fr": "___ Bruder besuche ich. (ich) — Choisissez le possessif approprié.",
+          "de": "___ Bruder besuche ich. (ich) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "___ Bruder besuche ich. (ich) — اختر أداة الملكية المناسبة.",
+          "en": "___ Bruder besuche ich. (ich) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -845,30 +845,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Deinem",
-          "Mein",
           "Meinem",
-          "Meinen"
+          "Meinen",
+          "Deinem",
+          "Mein"
         ],
         "prompt": {
-          "fr": "Choisissez : ___ Bruder helfe ich. (ich)",
-          "de": "Wählen Sie: ___ Bruder helfe ich. (ich)",
-          "ar": "اختر: ___ Bruder helfe ich. (ich)",
-          "en": "Choose: ___ Bruder helfe ich. (ich)"
+          "fr": "___ Bruder helfe ich. (ich) — Choisissez le possessif approprié.",
+          "de": "___ Bruder helfe ich. (ich) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "___ Bruder helfe ich. (ich) — اختر أداة الملكية المناسبة.",
+          "en": "___ Bruder helfe ich. (ich) — Choose the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-08-q04",
         "position": 4,
         "type": "fill_blank",
-        "sentence": "___ Kindern gibt sie Bücher. (sie, Singular)",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Mutter besucht ___ Kinder und schenkt ___ Kindern Bücher. (Kinder der Mutter)",
+        "blanks": 2
       }
     ]
   },
@@ -895,16 +895,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "Ihr",
           "Ihren",
-          "meinen",
-          "Ihrem"
+          "Ihrem",
+          "Ihr",
+          "meinen"
         ],
         "prompt": {
-          "fr": "Choisissez : Herr Klein, ich habe ___ Ausweis gefunden.",
-          "de": "Wählen Sie: Herr Klein, ich habe ___ Ausweis gefunden.",
-          "ar": "اختر: Herr Klein, ich habe ___ Ausweis gefunden.",
-          "en": "Choose: Herr Klein, ich habe ___ Ausweis gefunden."
+          "fr": "Herr Klein, ich habe ___ Ausweis gefunden. (Sie) — Choisissez le possessif approprié.",
+          "de": "Herr Klein, ich habe ___ Ausweis gefunden. (Sie) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Herr Klein, ich habe ___ Ausweis gefunden. (Sie) — اختر أداة الملكية المناسبة.",
+          "en": "Herr Klein, ich habe ___ Ausweis gefunden. (Sie) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -913,42 +913,48 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "deine",
           "eure",
           "euren",
-          "meine",
-          "deine"
+          "meine"
         ],
         "prompt": {
-          "fr": "Choisissez : Kinder, ich habe ___ Ausweise gefunden.",
-          "de": "Wählen Sie: Kinder, ich habe ___ Ausweise gefunden.",
-          "ar": "اختر: Kinder, ich habe ___ Ausweise gefunden.",
-          "en": "Choose: Kinder, ich habe ___ Ausweise gefunden."
+          "fr": "Kinder, ich habe ___ Ausweise gefunden. (ihr) — Choisissez le possessif approprié.",
+          "de": "Kinder, ich habe ___ Ausweise gefunden. (ihr) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Kinder, ich habe ___ Ausweise gefunden. (ihr) — اختر أداة الملكية المناسبة.",
+          "en": "Kinder, ich habe ___ Ausweise gefunden. (ihr) — Choose the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-09-q03",
         "position": 3,
         "type": "fill_blank",
-        "sentence": "Anna sagt: Ich habe ___ Ausweis verloren.",
+        "sentence": "Anna sagt: Ich habe ___ Ausweis verloren. (ich)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       },
       {
         "id": "kapitel-18-ubung-09-q04",
         "position": 4,
-        "type": "true_false",
-        "statement": "Paul sagt zu Anna: Hier ist mein Ausweis.",
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Kinder, hier sind euren Pässe.",
+          "Kinder, hier sind eure Pässe.",
+          "Frau Weber, hier ist Ihren Pass.",
+          "Frau Weber, hier ist Ihr Pass."
+        ]
       }
     ]
   },
@@ -975,16 +981,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihrem",
           "meinem",
-          "ihr",
-          "ihren"
+          "ihrem",
+          "ihren",
+          "ihr"
         ],
         "prompt": {
-          "fr": "Choisissez : Lena besucht Paul mit ___ Bruder. (Lenas Bruder)",
-          "de": "Wählen Sie: Lena besucht Paul mit ___ Bruder. (Lenas Bruder)",
-          "ar": "اختر: Lena besucht Paul mit ___ Bruder. (Lenas Bruder)",
-          "en": "Choose: Lena besucht Paul mit ___ Bruder. (Lenas Bruder)"
+          "fr": "Lena besucht Paul mit ___ Bruder. (Lenas Bruder) — Choisissez le possessif approprié.",
+          "de": "Lena besucht Paul mit ___ Bruder. (Lenas Bruder) — Wählen Sie den passenden Possessivartikel.",
+          "ar": "Lena besucht Paul mit ___ Bruder. (Lenas Bruder) — اختر أداة الملكية المناسبة.",
+          "en": "Lena besucht Paul mit ___ Bruder. (Lenas Bruder) — Choose the appropriate possessive determiner."
         }
       },
       {
@@ -994,10 +1000,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Paul besucht Lena mit ___ Bruder. (Pauls Bruder)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
+          "fr": "Complétez avec le possessif approprié.",
+          "de": "Ergänzen Sie den passenden Possessivartikel.",
+          "ar": "أكمل باستخدام أداة الملكية المناسبة.",
+          "en": "Complete with the appropriate possessive determiner."
         }
       },
       {
@@ -1006,29 +1012,24 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Kinder, ich gebe eurem Vater das Paket.",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
         "id": "kapitel-18-ubung-10-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "Ihr",
-          "Ihren",
-          "Ihrem",
-          "meinem"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Frau Klein, ich gebe ___ Vater das Paket.",
-          "de": "Wählen Sie: Frau Klein, ich gebe ___ Vater das Paket.",
-          "ar": "اختر: Frau Klein, ich gebe ___ Vater das Paket.",
-          "en": "Choose: Frau Klein, ich gebe ___ Vater das Paket."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Frau Klein, ich habe ___ Vater gesehen. Ich habe mit ___ Vater gesprochen. (Vater von Frau Klein)",
+        "blanks": 2
       }
     ]
   }

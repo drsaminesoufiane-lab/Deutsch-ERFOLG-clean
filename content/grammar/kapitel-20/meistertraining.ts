@@ -23,16 +23,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "ihr",
           "ihnen",
           "sie",
-          "Sie",
-          "ihr"
+          "Sie"
         ],
         "prompt": {
-          "fr": "Magst du die Kollegin? Ja, ich mag ___.",
-          "de": "Magst du die Kollegin? Ja, ich mag ___.",
-          "ar": "Magst du die Kollegin? Ja, ich mag ___.",
-          "en": "Magst du die Kollegin? Ja, ich mag ___."
+          "fr": "Magst du die Kollegin? Ja, ich mag ___. — Choisissez le pronom personnel approprié.",
+          "de": "Magst du die Kollegin? Ja, ich mag ___. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Magst du die Kollegin? Ja, ich mag ___. — اختر الضمير الشخصي المناسب.",
+          "en": "Magst du die Kollegin? Ja, ich mag ___. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -42,15 +42,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "er",
-          "ihn",
           "ihr",
-          "ihm"
+          "ihm",
+          "ihn"
         ],
         "prompt": {
-          "fr": "Liebst du den Mann? Ja, ich liebe ___.",
-          "de": "Liebst du den Mann? Ja, ich liebe ___.",
-          "ar": "Liebst du den Mann? Ja, ich liebe ___.",
-          "en": "Liebst du den Mann? Ja, ich liebe ___."
+          "fr": "Liebst du den Mann? Ja, ich liebe ___. — Choisissez le pronom personnel approprié.",
+          "de": "Liebst du den Mann? Ja, ich liebe ___. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Liebst du den Mann? Ja, ich liebe ___. — اختر الضمير الشخصي المناسب.",
+          "en": "Liebst du den Mann? Ja, ich liebe ___. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -60,10 +60,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Isst du die Spaghetti? Ja, ich esse ___.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
@@ -72,10 +72,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Liebst du mich? Ja, ich liebe du.",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -84,16 +84,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "ihm",
           "es",
           "ihr",
-          "ihm",
           "ihn"
         ],
         "prompt": {
-          "fr": "Kaufst du das Auto? Nein, ich kaufe ___ nicht.",
-          "de": "Kaufst du das Auto? Nein, ich kaufe ___ nicht.",
-          "ar": "Kaufst du das Auto? Nein, ich kaufe ___ nicht.",
-          "en": "Kaufst du das Auto? Nein, ich kaufe ___ nicht."
+          "fr": "Kaufst du das Auto? Nein, ich kaufe ___ nicht. — Choisissez le pronom personnel approprié.",
+          "de": "Kaufst du das Auto? Nein, ich kaufe ___ nicht. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Kaufst du das Auto? Nein, ich kaufe ___ nicht. — اختر الضمير الشخصي المناسب.",
+          "en": "Kaufst du das Auto? Nein, ich kaufe ___ nicht. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -102,16 +102,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "ihm",
           "ihr",
           "ihn",
-          "euch",
-          "ihm"
+          "euch"
         ],
         "prompt": {
-          "fr": "Mögt ihr uns? Ja, wir mögen ___.",
-          "de": "Mögt ihr uns? Ja, wir mögen ___.",
-          "ar": "Mögt ihr uns? Ja, wir mögen ___.",
-          "en": "Mögt ihr uns? Ja, wir mögen ___."
+          "fr": "Mögt ihr uns? Ja, wir mögen ___. — Choisissez le pronom personnel approprié.",
+          "de": "Mögt ihr uns? Ja, wir mögen ___. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Mögt ihr uns? Ja, wir mögen ___. — اختر الضمير الشخصي المناسب.",
+          "en": "Mögt ihr uns? Ja, wir mögen ___. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -174,16 +174,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "es",
           "ihm",
+          "es",
           "ihr",
           "ihn"
         ],
         "prompt": {
-          "fr": "Wir bekommen ein Mädchen. Wir lieben ___.",
-          "de": "Wir bekommen ein Mädchen. Wir lieben ___.",
-          "ar": "Wir bekommen ein Mädchen. Wir lieben ___.",
-          "en": "Wir bekommen ein Mädchen. Wir lieben ___."
+          "fr": "Wir bekommen ein Mädchen. Wir lieben ___. — Choisissez le pronom personnel approprié.",
+          "de": "Wir bekommen ein Mädchen. Wir lieben ___. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Wir bekommen ein Mädchen. Wir lieben ___. — اختر الضمير الشخصي المناسب.",
+          "en": "Wir bekommen ein Mädchen. Wir lieben ___. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -193,10 +193,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Unsere Wohnung ist klein. Wir mögen ___.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
@@ -205,10 +205,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Mein Bruder kommt. Ich besuche ihn.",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -217,16 +217,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "ihnen",
           "Sie",
           "sie",
-          "ihnen",
           "ihr"
         ],
         "prompt": {
-          "fr": "Meine Eltern wohnen hier. Ich sehe ___ oft.",
-          "de": "Meine Eltern wohnen hier. Ich sehe ___ oft.",
-          "ar": "Meine Eltern wohnen hier. Ich sehe ___ oft.",
-          "en": "Meine Eltern wohnen hier. Ich sehe ___ oft."
+          "fr": "Meine Eltern wohnen hier. Ich sehe ___ oft. — Choisissez le pronom personnel approprié.",
+          "de": "Meine Eltern wohnen hier. Ich sehe ___ oft. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Meine Eltern wohnen hier. Ich sehe ___ oft. — اختر الضمير الشخصي المناسب.",
+          "en": "Meine Eltern wohnen hier. Ich sehe ___ oft. — Choose the appropriate personal pronoun."
         }
       }
     ]
@@ -255,22 +255,22 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Der Vater kauft den Kindern Eis. Er kauft ___ auch Schokolade.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
         "id": "kapitel-20-ubung-03-q02",
         "position": 2,
         "type": "true_false",
-        "statement": "Der Kellner bringt der Dame Tee. Er bringt euch auch Torte.",
+        "statement": "Der Kellner bringt der Dame Tee. Er bringt euch auch Torte. (der Dame)",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -279,16 +279,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "uns",
           "ihm",
-          "wir",
-          "ihn"
+          "uns",
+          "ihn",
+          "wir"
         ],
         "prompt": {
-          "fr": "Ich bestelle dir und mir Pizza. Ich bestelle ___ auch Cola.",
-          "de": "Ich bestelle dir und mir Pizza. Ich bestelle ___ auch Cola.",
-          "ar": "Ich bestelle dir und mir Pizza. Ich bestelle ___ auch Cola.",
-          "en": "Ich bestelle dir und mir Pizza. Ich bestelle ___ auch Cola."
+          "fr": "Ich bestelle dir und mir Pizza. Ich bestelle ___ auch Cola. — Choisissez le pronom personnel approprié.",
+          "de": "Ich bestelle dir und mir Pizza. Ich bestelle ___ auch Cola. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Ich bestelle dir und mir Pizza. Ich bestelle ___ auch Cola. — اختر الضمير الشخصي المناسب.",
+          "en": "Ich bestelle dir und mir Pizza. Ich bestelle ___ auch Cola. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -297,16 +297,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihn",
+          "sie",
           "ihr",
           "euch",
-          "sie"
+          "ihn"
         ],
         "prompt": {
-          "fr": "Er schenkt seiner Freundin Blumen. Er schenkt ___ einen Ring.",
-          "de": "Er schenkt seiner Freundin Blumen. Er schenkt ___ einen Ring.",
-          "ar": "Er schenkt seiner Freundin Blumen. Er schenkt ___ einen Ring.",
-          "en": "Er schenkt seiner Freundin Blumen. Er schenkt ___ einen Ring."
+          "fr": "Er schenkt seiner Freundin Blumen. Er schenkt ___ einen Ring. — Choisissez le pronom personnel approprié.",
+          "de": "Er schenkt seiner Freundin Blumen. Er schenkt ___ einen Ring. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Er schenkt seiner Freundin Blumen. Er schenkt ___ einen Ring. — اختر الضمير الشخصي المناسب.",
+          "en": "Er schenkt seiner Freundin Blumen. Er schenkt ___ einen Ring. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -316,22 +316,22 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Er bezahlt dir und deiner Schwester die Cola. Er bezahlt ___ auch das Essen.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
         "id": "kapitel-20-ubung-03-q06",
         "position": 6,
         "type": "true_false",
-        "statement": "Der Lehrer gibt den Studenten Aufgaben. Er gibt Ihnen einen Test.",
+        "statement": "Der Lehrer gibt den Studenten Aufgaben. Er gibt Ihnen einen Test. (den Studenten)",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       }
     ]
@@ -359,10 +359,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Wie geht es Ihnen? – Es geht mir gut.",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -371,16 +371,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "ihm",
           "es",
           "er",
-          "ihm",
           "ihn"
         ],
         "prompt": {
-          "fr": "Wie geht es Ihrem Vater? – Es geht ___ gut.",
-          "de": "Wie geht es Ihrem Vater? – Es geht ___ gut.",
-          "ar": "Wie geht es Ihrem Vater? – Es geht ___ gut.",
-          "en": "Wie geht es Ihrem Vater? – Es geht ___ gut."
+          "fr": "Wie geht es Ihrem Vater? – Es geht ___ gut. — Choisissez le pronom personnel approprié.",
+          "de": "Wie geht es Ihrem Vater? – Es geht ___ gut. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Wie geht es Ihrem Vater? – Es geht ___ gut. — اختر الضمير الشخصي المناسب.",
+          "en": "Wie geht es Ihrem Vater? – Es geht ___ gut. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -389,16 +389,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "euch",
+          "ihn",
           "sie",
           "ihr",
-          "ihn"
+          "euch"
         ],
         "prompt": {
-          "fr": "Wie geht es Ihrer Mutter? – Es geht ___ gut.",
-          "de": "Wie geht es Ihrer Mutter? – Es geht ___ gut.",
-          "ar": "Wie geht es Ihrer Mutter? – Es geht ___ gut.",
-          "en": "Wie geht es Ihrer Mutter? – Es geht ___ gut."
+          "fr": "Wie geht es Ihrer Mutter? – Es geht ___ gut. — Choisissez le pronom personnel approprié.",
+          "de": "Wie geht es Ihrer Mutter? – Es geht ___ gut. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Wie geht es Ihrer Mutter? – Es geht ___ gut. — اختر الضمير الشخصي المناسب.",
+          "en": "Wie geht es Ihrer Mutter? – Es geht ___ gut. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -408,10 +408,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Wie geht es Ihren Eltern? – Es geht ___ gut.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
@@ -420,10 +420,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Wie geht es dir? – Es geht mir gut.",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -432,16 +432,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "uns",
-          "ihm",
           "ihn",
-          "wir"
+          "ihm",
+          "wir",
+          "uns"
         ],
         "prompt": {
-          "fr": "Wie geht es Ihnen und Ihrer Frau? – Es geht ___ gut.",
-          "de": "Wie geht es Ihnen und Ihrer Frau? – Es geht ___ gut.",
-          "ar": "Wie geht es Ihnen und Ihrer Frau? – Es geht ___ gut.",
-          "en": "Wie geht es Ihnen und Ihrer Frau? – Es geht ___ gut."
+          "fr": "Wie geht es Ihnen und Ihrer Frau? – Es geht ___ gut. — Choisissez le pronom personnel approprié.",
+          "de": "Wie geht es Ihnen und Ihrer Frau? – Es geht ___ gut. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Wie geht es Ihnen und Ihrer Frau? – Es geht ___ gut. — اختر الضمير الشخصي المناسب.",
+          "en": "Wie geht es Ihnen und Ihrer Frau? – Es geht ___ gut. — Choose the appropriate personal pronoun."
         }
       }
     ]
@@ -470,15 +470,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "er",
-          "es",
           "ihm",
-          "ihn"
+          "ihn",
+          "es"
         ],
         "prompt": {
-          "fr": "Herr Bauer, der Chef möchte mit Herrn Schütz sprechen. Er möchte mit ___ sprechen.",
-          "de": "Herr Bauer, der Chef möchte mit Herrn Schütz sprechen. Er möchte mit ___ sprechen.",
-          "ar": "Herr Bauer, der Chef möchte mit Herrn Schütz sprechen. Er möchte mit ___ sprechen.",
-          "en": "Herr Bauer, der Chef möchte mit Herrn Schütz sprechen. Er möchte mit ___ sprechen."
+          "fr": "Herr Bauer, der Chef möchte mit Herrn Schütz sprechen. Er möchte mit ___ sprechen. — Choisissez le pronom personnel approprié.",
+          "de": "Herr Bauer, der Chef möchte mit Herrn Schütz sprechen. Er möchte mit ___ sprechen. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Herr Bauer, der Chef möchte mit Herrn Schütz sprechen. Er möchte mit ___ sprechen. — اختر الضمير الشخصي المناسب.",
+          "en": "Herr Bauer, der Chef möchte mit Herrn Schütz sprechen. Er möchte mit ___ sprechen. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -487,16 +487,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "sie",
-          "Sie",
           "ihnen",
-          "Ihnen"
+          "Ihnen",
+          "Sie",
+          "sie"
         ],
         "prompt": {
-          "fr": "Herr Bauer, ich möchte mit ___ sprechen. (formell)",
-          "de": "Herr Bauer, ich möchte mit ___ sprechen. (formell)",
-          "ar": "Herr Bauer, ich möchte mit ___ sprechen. (formell)",
-          "en": "Herr Bauer, ich möchte mit ___ sprechen. (formell)"
+          "fr": "Herr Bauer, ich möchte mit ___ sprechen. (formell) — Choisissez le pronom personnel approprié.",
+          "de": "Herr Bauer, ich möchte mit ___ sprechen. (formell) — Wählen Sie das passende Personalpronomen.",
+          "ar": "Herr Bauer, ich möchte mit ___ sprechen. (formell) — اختر الضمير الشخصي المناسب.",
+          "en": "Herr Bauer, ich möchte mit ___ sprechen. (formell) — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -506,22 +506,22 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Herr Schütz, der Chef möchte mit ___ sprechen. (formell)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
         "id": "kapitel-20-ubung-05-q04",
         "position": 4,
         "type": "true_false",
-        "statement": "Meine Frau wartet. Bitte sagen Sie euch Bescheid.",
+        "statement": "Meine Frau wartet. Bitte sagen Sie euch Bescheid. (meiner Frau)",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -531,15 +531,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "ihm",
-          "wir",
+          "uns",
           "ihn",
-          "uns"
+          "wir"
         ],
         "prompt": {
-          "fr": "Wir gehen ins Theater. Unsere Freunde kommen mit ___.",
-          "de": "Wir gehen ins Theater. Unsere Freunde kommen mit ___.",
-          "ar": "Wir gehen ins Theater. Unsere Freunde kommen mit ___.",
-          "en": "Wir gehen ins Theater. Unsere Freunde kommen mit ___."
+          "fr": "Wir gehen ins Theater. Unsere Freunde kommen mit ___. — Choisissez le pronom personnel approprié.",
+          "de": "Wir gehen ins Theater. Unsere Freunde kommen mit ___. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Wir gehen ins Theater. Unsere Freunde kommen mit ___. — اختر الضمير الشخصي المناسب.",
+          "en": "Wir gehen ins Theater. Unsere Freunde kommen mit ___. — Choose the appropriate personal pronoun."
         }
       }
     ]
@@ -567,16 +567,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "dich",
-          "dir",
+          "ihn",
           "du",
-          "ihn"
+          "dich",
+          "dir"
         ],
         "prompt": {
-          "fr": "Gehst du mit mir? Ja, nur mit ___.",
-          "de": "Gehst du mit mir? Ja, nur mit ___.",
-          "ar": "Gehst du mit mir? Ja, nur mit ___.",
-          "en": "Gehst du mit mir? Ja, nur mit ___."
+          "fr": "Gehst du mit mir? Ja, nur mit ___. — Choisissez le pronom personnel approprié.",
+          "de": "Gehst du mit mir? Ja, nur mit ___. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Gehst du mit mir? Ja, nur mit ___. — اختر الضمير الشخصي المناسب.",
+          "en": "Gehst du mit mir? Ja, nur mit ___. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -586,10 +586,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Gehst du mit mir? Ja, nie ohne ___.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
@@ -598,10 +598,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Fährst du mit deiner Freundin? Ja, nur mit ihr.",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -616,10 +616,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
           "sie"
         ],
         "prompt": {
-          "fr": "Fährst du mit deiner Freundin? Ja, nie ohne ___.",
-          "de": "Fährst du mit deiner Freundin? Ja, nie ohne ___.",
-          "ar": "Fährst du mit deiner Freundin? Ja, nie ohne ___.",
-          "en": "Fährst du mit deiner Freundin? Ja, nie ohne ___."
+          "fr": "Fährst du mit deiner Freundin? Ja, nie ohne ___. — Choisissez le pronom personnel approprié.",
+          "de": "Fährst du mit deiner Freundin? Ja, nie ohne ___. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Fährst du mit deiner Freundin? Ja, nie ohne ___. — اختر الضمير الشخصي المناسب.",
+          "en": "Fährst du mit deiner Freundin? Ja, nie ohne ___. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -628,16 +628,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "er",
           "ihm",
+          "ihn",
           "es",
-          "ihn"
+          "er"
         ],
         "prompt": {
-          "fr": "Tanzt du mit dem Mädchen? Ja, nur mit ___.",
-          "de": "Tanzt du mit dem Mädchen? Ja, nur mit ___.",
-          "ar": "Tanzt du mit dem Mädchen? Ja, nur mit ___.",
-          "en": "Tanzt du mit dem Mädchen? Ja, nur mit ___."
+          "fr": "Tanzt du mit dem Mädchen? Ja, nur mit ___. — Choisissez le pronom personnel approprié.",
+          "de": "Tanzt du mit dem Mädchen? Ja, nur mit ___. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Tanzt du mit dem Mädchen? Ja, nur mit ___. — اختر الضمير الشخصي المناسب.",
+          "en": "Tanzt du mit dem Mädchen? Ja, nur mit ___. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -647,10 +647,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Tanzt du mit dem Mädchen? Ja, nie ohne ___.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
@@ -659,10 +659,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Gehen Sie mit Ihren Kindern? Ja, nie ohne sie.",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -708,10 +708,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich habe meinen Traummann getroffen. ___ ist so nett.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
@@ -720,10 +720,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich habe ihm gestern kennengelernt. (den Mann)",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -732,16 +732,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihn",
           "ihm",
+          "ihn",
           "er",
           "es"
         ],
         "prompt": {
-          "fr": "Ich habe mit ___ getanzt. (dem Mann)",
-          "de": "Ich habe mit ___ getanzt. (dem Mann)",
-          "ar": "Ich habe mit ___ getanzt. (dem Mann)",
-          "en": "Ich habe mit ___ getanzt. (dem Mann)"
+          "fr": "Ich habe mit ___ getanzt. (dem Mann) — Choisissez le pronom personnel approprié.",
+          "de": "Ich habe mit ___ getanzt. (dem Mann) — Wählen Sie das passende Personalpronomen.",
+          "ar": "Ich habe mit ___ getanzt. (dem Mann) — اختر الضمير الشخصي المناسب.",
+          "en": "Ich habe mit ___ getanzt. (dem Mann) — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -751,15 +751,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "ich",
-          "mich",
           "mir",
+          "mich",
           "ihn"
         ],
         "prompt": {
-          "fr": "Er gefällt ___. (ich)",
-          "de": "Er gefällt ___. (ich)",
-          "ar": "Er gefällt ___. (ich)",
-          "en": "Er gefällt ___. (ich)"
+          "fr": "Er gefällt ___. (ich) — Choisissez le pronom personnel approprié.",
+          "de": "Er gefällt ___. (ich) — Wählen Sie das passende Personalpronomen.",
+          "ar": "Er gefällt ___. (ich) — اختر الضمير الشخصي المناسب.",
+          "en": "Er gefällt ___. (ich) — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -769,23 +769,24 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Er hat ___ nach Hause gebracht. (ich)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
         "id": "kapitel-20-ubung-07-q06",
         "position": 6,
-        "type": "true_false",
-        "statement": "Ich liebe ihn und er liebt mir. (ich)",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Ich liebe Paul und er liebt mich. Er schreibt ___ jeden Tag und ich rufe ___ abends an. (ich/Paul)",
+        "blanks": 2
       },
       {
         "id": "kapitel-20-ubung-07-q07",
@@ -793,16 +794,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ich",
-          "mir",
           "mich",
+          "mir",
+          "ich",
           "ihn"
         ],
         "prompt": {
-          "fr": "Liebe Ulrike, ruf ___ an! (ich)",
-          "de": "Liebe Ulrike, ruf ___ an! (ich)",
-          "ar": "Liebe Ulrike, ruf ___ an! (ich)",
-          "en": "Liebe Ulrike, ruf ___ an! (ich)"
+          "fr": "Liebe Ulrike, ruf ___ an! (ich) — Choisissez le pronom personnel approprié.",
+          "de": "Liebe Ulrike, ruf ___ an! (ich) — Wählen Sie das passende Personalpronomen.",
+          "ar": "Liebe Ulrike, ruf ___ an! (ich) — اختر الضمير الشخصي المناسب.",
+          "en": "Liebe Ulrike, ruf ___ an! (ich) — Choose the appropriate personal pronoun."
         }
       }
     ]
@@ -830,10 +831,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Du fragst mich. (ich)",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -843,15 +844,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "dich",
-          "ihn",
           "dir",
-          "du"
+          "du",
+          "ihn"
         ],
         "prompt": {
-          "fr": "Ich antworte ___. (du)",
-          "de": "Ich antworte ___. (du)",
-          "ar": "Ich antworte ___. (du)",
-          "en": "Ich antworte ___. (du)"
+          "fr": "Ich antworte ___. (du) — Choisissez le pronom personnel approprié.",
+          "de": "Ich antworte ___. (du) — Wählen Sie das passende Personalpronomen.",
+          "ar": "Ich antworte ___. (du) — اختر الضمير الشخصي المناسب.",
+          "en": "Ich antworte ___. (du) — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -860,16 +861,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "dir",
-          "du",
+          "ihn",
           "dich",
-          "ihn"
+          "du",
+          "dir"
         ],
         "prompt": {
-          "fr": "Ich mag ___. (du)",
-          "de": "Ich mag ___. (du)",
-          "ar": "Ich mag ___. (du)",
-          "en": "Ich mag ___. (du)"
+          "fr": "Ich mag ___. (du) — Choisissez le pronom personnel approprié.",
+          "de": "Ich mag ___. (du) — Wählen Sie das passende Personalpronomen.",
+          "ar": "Ich mag ___. (du) — اختر الضمير الشخصي المناسب.",
+          "en": "Ich mag ___. (du) — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -879,10 +880,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Du gefällst ___. (ich)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
@@ -891,29 +892,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich helfe dir. (du)",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
         "id": "kapitel-20-ubung-08-q06",
         "position": 6,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "mir",
-          "ihn",
-          "ich",
-          "mich"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Du brauchst ___. (ich)",
-          "de": "Du brauchst ___. (ich)",
-          "ar": "Du brauchst ___. (ich)",
-          "en": "Du brauchst ___. (ich)"
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Ich helfe dir.",
+          "Ich helfe dich.",
+          "Ich brauche dir.",
+          "Ich brauche dich."
+        ]
       }
     ]
   },
@@ -940,16 +941,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihm",
           "ihn",
-          "er",
-          "es"
+          "es",
+          "ihm",
+          "er"
         ],
         "prompt": {
-          "fr": "Der Schlüssel gehört Paul. Ich gebe ___ den Schlüssel.",
-          "de": "Der Schlüssel gehört Paul. Ich gebe ___ den Schlüssel.",
-          "ar": "Der Schlüssel gehört Paul. Ich gebe ___ den Schlüssel.",
-          "en": "Der Schlüssel gehört Paul. Ich gebe ___ den Schlüssel."
+          "fr": "Der Schlüssel gehört Paul. Ich gebe ___ den Schlüssel. — Choisissez le pronom personnel approprié.",
+          "de": "Der Schlüssel gehört Paul. Ich gebe ___ den Schlüssel. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Der Schlüssel gehört Paul. Ich gebe ___ den Schlüssel. — اختر الضمير الشخصي المناسب.",
+          "en": "Der Schlüssel gehört Paul. Ich gebe ___ den Schlüssel. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -959,15 +960,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "ihm",
-          "ihn",
           "er",
-          "ihr"
+          "ihr",
+          "ihn"
         ],
         "prompt": {
-          "fr": "Der Schlüssel liegt hier. Ich gebe ___ Paul.",
-          "de": "Der Schlüssel liegt hier. Ich gebe ___ Paul.",
-          "ar": "Der Schlüssel liegt hier. Ich gebe ___ Paul.",
-          "en": "Der Schlüssel liegt hier. Ich gebe ___ Paul."
+          "fr": "Der Schlüssel liegt hier. Ich gebe ___ Paul. (der Schlüssel) — Choisissez le pronom personnel approprié.",
+          "de": "Der Schlüssel liegt hier. Ich gebe ___ Paul. (der Schlüssel) — Wählen Sie das passende Personalpronomen.",
+          "ar": "Der Schlüssel liegt hier. Ich gebe ___ Paul. (der Schlüssel) — اختر الضمير الشخصي المناسب.",
+          "en": "Der Schlüssel liegt hier. Ich gebe ___ Paul. (der Schlüssel) — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -977,23 +978,24 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Anna braucht das Buch. Ich gebe ___ das Buch.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
         "id": "kapitel-20-ubung-09-q04",
         "position": 4,
-        "type": "true_false",
-        "statement": "Das Buch liegt hier. Ich gebe ihr Anna.",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Tasche gehört Anna. Ich gebe ___ die Tasche und Anna nimmt ___ sofort mit. (Anna/die Tasche)",
+        "blanks": 2
       }
     ]
   },
@@ -1020,16 +1022,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "sie",
-          "ihnen",
           "Ihnen",
-          "Sie"
+          "sie",
+          "Sie",
+          "ihnen"
         ],
         "prompt": {
-          "fr": "Meine Kollegen warten. Ich gehe zu ___.",
-          "de": "Meine Kollegen warten. Ich gehe zu ___.",
-          "ar": "Meine Kollegen warten. Ich gehe zu ___.",
-          "en": "Meine Kollegen warten. Ich gehe zu ___."
+          "fr": "Meine Kollegen warten. Ich gehe zu ___. — Choisissez le pronom personnel approprié.",
+          "de": "Meine Kollegen warten. Ich gehe zu ___. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Meine Kollegen warten. Ich gehe zu ___. — اختر الضمير الشخصي المناسب.",
+          "en": "Meine Kollegen warten. Ich gehe zu ___. — Choose the appropriate personal pronoun."
         }
       },
       {
@@ -1039,10 +1041,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Meine Kollegen warten. Ich rufe ___ an.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pronom personnel approprié.",
+          "de": "Ergänzen Sie das passende Personalpronomen.",
+          "ar": "أكمل باستخدام الضمير الشخصي المناسب.",
+          "en": "Complete with the appropriate personal pronoun."
         }
       },
       {
@@ -1051,10 +1053,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Frau Klein, ich danke Ihnen.",
         "prompt": {
-          "fr": "Le pronom est-il correct ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -1063,35 +1065,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihnen",
           "Sie",
           "ihr",
+          "ihnen",
           "sie"
         ],
         "prompt": {
-          "fr": "Frau Klein, ich verstehe ___.",
-          "de": "Frau Klein, ich verstehe ___.",
-          "ar": "Frau Klein, ich verstehe ___.",
-          "en": "Frau Klein, ich verstehe ___."
+          "fr": "Frau Klein, ich verstehe ___. — Choisissez le pronom personnel approprié.",
+          "de": "Frau Klein, ich verstehe ___. — Wählen Sie das passende Personalpronomen.",
+          "ar": "Frau Klein, ich verstehe ___. — اختر الضمير الشخصي المناسب.",
+          "en": "Frau Klein, ich verstehe ___. — Choose the appropriate personal pronoun."
         }
       },
       {
         "id": "kapitel-20-ubung-10-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "er",
-          "ihm",
-          "ihn",
-          "es"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Das Kind ist müde. Ich helfe ___.",
-          "de": "Das Kind ist müde. Ich helfe ___.",
-          "ar": "Das Kind ist müde. Ich helfe ___.",
-          "en": "Das Kind ist müde. Ich helfe ___."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Das Kind ist müde. Ich helfe ___ und bringe ___ ins Bett. (das Kind)",
+        "blanks": 2
       },
       {
         "id": "kapitel-20-ubung-10-extra",

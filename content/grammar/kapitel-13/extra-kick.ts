@@ -5,10 +5,10 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "Im Supermarkt",
+      "fr": "Au supermarché",
       "de": "Im Supermarkt",
-      "ar": "Im Supermarkt",
-      "en": "Im Supermarkt"
+      "ar": "في المتجر",
+      "en": "At the supermarket"
     },
     "description": {
       "fr": "Pluriel des noms",
@@ -20,68 +20,59 @@ export const extraKick: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-13-ubung-11-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von der Apfel: die ___",
-          "de": "Ergänzen Sie. — Plural von der Apfel: die ___",
-          "ar": "أكمل. — Plural von der Apfel: die ___",
-          "en": "Complete. — Plural von der Apfel: die ___"
+          "fr": "Complétez tous les pluriels dans l’ordre.",
+          "de": "Ergänzen Sie alle Pluralformen in der richtigen Reihenfolge.",
+          "ar": "أكمل جميع صيغ الجمع بالترتيب.",
+          "en": "Complete all plural forms in order."
         },
-        "selection": "single",
-        "options": [
-          "Äpfel",
-          "Eier",
-          "Bananen",
-          "Tomaten"
-        ]
+        "sentence": "Für das Buffet brauche ich vier ___ (der Apfel), zwei ___ (die Zitrone) und sechs ___ (das Ei).",
+        "blanks": 3
       },
       {
         "id": "kapitel-13-ubung-11-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von die Banane: die ___",
-          "de": "Ergänzen Sie. — Plural von die Banane: die ___",
-          "ar": "أكمل. — Plural von die Banane: die ___",
-          "en": "Complete. — Plural von die Banane: die ___"
+          "fr": "Sélectionnez toutes les formes compatibles avec sechs.",
+          "de": "Wählen Sie alle Formen, die nach sechs passen.",
+          "ar": "اختر كل الصيغ المناسبة بعد sechs.",
+          "en": "Select all forms that fit after sechs."
         },
-        "selection": "single",
+        "selection": "multiple",
         "options": [
+          "Tomate",
+          "Banane",
+          "Bananes",
           "Tomaten",
-          "Eier",
-          "Bananen",
-          "Äpfel"
+          "Bananen"
         ]
       },
       {
         "id": "kapitel-13-ubung-11-q03",
         "position": 3,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von die Tomate: die ___",
-          "de": "Ergänzen Sie. — Plural von die Tomate: die ___",
-          "ar": "أكمل. — Plural von die Tomate: die ___",
-          "en": "Complete. — Plural von die Tomate: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "selection": "single",
-        "options": [
-          "Bananen",
-          "Äpfel",
-          "Eier",
-          "Tomaten"
-        ]
+        "sentence": "Für die Soße schneiden wir vier ___. (die Tomate)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-11-q04",
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "sentence": "Plural von das Ei: die ___",
+        "sentence": "Für den Teig brauchen wir drei ___. (das Ei)",
         "blanks": 1
       }
     ]
@@ -91,10 +82,10 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Im Büro",
+      "fr": "Au bureau",
       "de": "Im Büro",
-      "ar": "Im Büro",
-      "en": "Im Büro"
+      "ar": "في المكتب",
+      "en": "At the office"
     },
     "description": {
       "fr": "Pluriel des noms",
@@ -106,55 +97,62 @@ export const extraKick: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-13-ubung-12-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von der Computer: die ___",
-          "de": "Ergänzen Sie. — Plural von der Computer: die ___",
-          "ar": "أكمل. — Plural von der Computer: die ___",
-          "en": "Complete. — Plural von der Computer: die ___"
+          "fr": "Complétez tous les pluriels dans l’ordre.",
+          "de": "Ergänzen Sie alle Pluralformen in der richtigen Reihenfolge.",
+          "ar": "أكمل جميع صيغ الجمع بالترتيب.",
+          "en": "Complete all plural forms in order."
         },
-        "selection": "single",
-        "options": [
-          "Formulare",
-          "Stifte",
-          "Dateien",
-          "Computer"
-        ]
+        "sentence": "In unserem Büro stehen drei ___ (der Computer), zwei ___ (der Drucker) und vier ___ (der Bildschirm).",
+        "blanks": 3
       },
       {
         "id": "kapitel-13-ubung-12-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von der Stift: die ___",
-          "de": "Ergänzen Sie. — Plural von der Stift: die ___",
-          "ar": "أكمل. — Plural von der Stift: die ___",
-          "en": "Complete. — Plural von der Stift: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Auf jedem Schreibtisch liegen zwei ___. (der Stift)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Auf jedem Schreibtisch liegen zwei ___. (der Stift)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Auf jedem Schreibtisch liegen zwei ___. (der Stift)",
+          "en": "Complete with the plural of the noun in brackets. — Auf jedem Schreibtisch liegen zwei ___. (der Stift)"
         },
         "selection": "single",
         "options": [
           "Stifte",
-          "Formulare",
-          "Dateien",
-          "Computer"
+          "Stifter",
+          "Stift",
+          "Stiften"
         ]
       },
       {
         "id": "kapitel-13-ubung-12-q03",
         "position": 3,
-        "type": "qcm",
+        "type": "matching",
         "prompt": {
-          "fr": "Complétez. — Plural von die Datei: die ___",
-          "de": "Ergänzen Sie. — Plural von die Datei: die ___",
-          "ar": "أكمل. — Plural von die Datei: die ___",
-          "en": "Complete. — Plural von die Datei: die ___"
+          "fr": "Associez chaque élément à sa forme correcte.",
+          "de": "Ordnen Sie jedem Element die richtige Form zu.",
+          "ar": "صل كل عنصر بصيغته الصحيحة.",
+          "en": "Match each item to its correct form."
         },
-        "selection": "single",
+        "items": [
+          {
+            "id": "kapitel-13-ubung-12-q03-m1",
+            "label": "die Datei"
+          },
+          {
+            "id": "kapitel-13-ubung-12-q03-m2",
+            "label": "das Formular"
+          },
+          {
+            "id": "kapitel-13-ubung-12-q03-m3",
+            "label": "der Stift"
+          }
+        ],
         "options": [
-          "Stifte",
           "Formulare",
           "Dateien",
-          "Computer"
+          "Stifte"
         ]
       },
       {
@@ -162,12 +160,12 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "sentence": "Plural von das Formular: die ___",
+        "sentence": "Die neuen Mitarbeiter füllen drei ___ aus. (das Formular)",
         "blanks": 1
       }
     ]
@@ -177,9 +175,9 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Challenge",
+      "fr": "Défi",
       "de": "Challenge",
-      "ar": "Challenge",
+      "ar": "تحدٍ",
       "en": "Challenge"
     },
     "description": {
@@ -192,68 +190,58 @@ export const extraKick: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-13-ubung-13-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von das Haus: die ___",
-          "de": "Ergänzen Sie. — Plural von das Haus: die ___",
-          "ar": "أكمل. — Plural von das Haus: die ___",
-          "en": "Complete. — Plural von das Haus: die ___"
+          "fr": "Complétez tous les pluriels dans l’ordre.",
+          "de": "Ergänzen Sie alle Pluralformen in der richtigen Reihenfolge.",
+          "ar": "أكمل جميع صيغ الجمع بالترتيب.",
+          "en": "Complete all plural forms in order."
         },
-        "selection": "single",
-        "options": [
-          "Häuser",
-          "Städte",
-          "Babys",
-          "Züge"
-        ]
+        "sentence": "In der Region gibt es zwei neue ___ (das Krankenhaus), drei ___ (die Praxis) und mehrere ___ (die Apotheke).",
+        "blanks": 3
       },
       {
         "id": "kapitel-13-ubung-13-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von der Zug: die ___",
-          "de": "Ergänzen Sie. — Plural von der Zug: die ___",
-          "ar": "أكمل. — Plural von der Zug: die ___",
-          "en": "Complete. — Plural von der Zug: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Wegen der Baustelle fallen drei ___ aus. (der Zug)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Wegen der Baustelle fallen drei ___ aus. (der Zug)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Wegen der Baustelle fallen drei ___ aus. (der Zug)",
+          "en": "Complete with the plural of the noun in brackets. — Wegen der Baustelle fallen drei ___ aus. (der Zug)"
         },
         "selection": "single",
         "options": [
-          "Häuser",
-          "Städte",
-          "Babys",
-          "Züge"
+          "Zügen",
+          "Züge",
+          "Zuge",
+          "Zuger"
         ]
       },
       {
         "id": "kapitel-13-ubung-13-q03",
         "position": 3,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von die Stadt: die ___",
-          "de": "Ergänzen Sie. — Plural von die Stadt: die ___",
-          "ar": "أكمل. — Plural von die Stadt: die ___",
-          "en": "Complete. — Plural von die Stadt: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "selection": "single",
-        "options": [
-          "Städte",
-          "Züge",
-          "Häuser",
-          "Babys"
-        ]
+        "sentence": "Die Tour führt durch fünf ___. (die Stadt)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-13-q04",
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "sentence": "Plural von das Baby: die ___",
+        "sentence": "In der Klinik schlafen vier ___. (das Baby)",
         "blanks": 1
       }
     ]

@@ -1,17 +1,18 @@
 import type { LessonDefinition } from '@/lib/grammar/types'
+
 export const lesson: LessonDefinition = {
   "id": "kapitel-22-lesson",
   "title": {
-    "fr": "Je t’aide, tu me remercies",
+    "fr": "Ich helfe dir, du dankst mir",
     "de": "Ich helfe dir, du dankst mir",
-    "ar": "أساعدك وتشكرني",
-    "en": "I help you, you thank me"
+    "ar": "Ich helfe dir, du dankst mir",
+    "en": "Ich helfe dir, du dankst mir"
   },
   "subtitle": {
-    "fr": "Verbes au datif",
+    "fr": "Verben mit Dativ",
     "de": "Verben mit Dativ",
-    "ar": "أفعال الداتيف",
-    "en": "Dative verbs"
+    "ar": "Verben mit Dativ",
+    "en": "Verben mit Dativ"
   },
   "objective": {
     "fr": "Certains verbes exigent un complément au datif même sans objet à l’accusatif. Il faut apprendre le verbe avec son cas : jemandem helfen, jemandem danken. Ne traduisez pas mécaniquement le complément français.",
@@ -24,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "concept",
       "title": {
-        "fr": "1. Comprendre le datif",
+        "fr": "1. Den Dativ verstehen",
         "de": "1. Den Dativ verstehen",
-        "ar": "١. فهم الداتيف",
-        "en": "1. Understanding the dative"
+        "ar": "1. Den Dativ verstehen",
+        "en": "1. Den Dativ verstehen"
       },
       "text": {
         "fr": "Le cas grammatical indique la fonction d’un groupe dans la phrase. Le nominatif désigne le sujet, qui commande la conjugaison. L’accusatif et le datif peuvent désigner des compléments. Le choix dépend notamment du verbe.\n\nDans Ich helfe dem Mann, ich est le sujet et dem Mann est le complément au datif. Le verbe helfen exige ce cas : il n’est pas nécessaire d’avoir un deuxième complément. En français, on dit pourtant « aider quelqu’un ». Il faut donc apprendre helfen avec jemandem (à quelqu’un), et non traduire mécaniquement.",
@@ -38,12 +39,28 @@ export const lesson: LessonDefinition = {
     },
     {
       "type": "paragraph",
+      "id": "premium-vertiefung",
+      "title": {
+        "fr": "Dativ oder Akkusativ?",
+        "de": "Dativ oder Akkusativ?",
+        "ar": "Dativ oder Akkusativ?",
+        "en": "Dativ oder Akkusativ?"
+      },
+      "text": {
+        "fr": "Compare Ich helfe dem Kind et Ich frage das Kind. Helfen exige le datif ; fragen exige l’accusatif pour la personne. Avec gefallen, inverse la logique du français : Die Bilder gefallen mir. Die Bilder est le sujet pluriel, mir le complément au datif.",
+        "de": "Vergleiche Ich helfe dem Kind und Ich frage das Kind. Helfen verlangt Dativ, fragen für die Person Akkusativ. Bei gefallen gilt: Die Bilder gefallen mir. Die Bilder ist das Subjekt im Plural, mir das Dativobjekt.",
+        "ar": "قارن Ich helfe dem Kind وIch frage das Kind. يتطلب helfen الداتيف وfragen الأكوزاتيف للشخص. في Die Bilder gefallen mir الفاعل هو Die Bilder في الجمع والمفعول mir في الداتيف.",
+        "en": "Compare Ich helfe dem Kind and Ich frage das Kind. Helfen requires the dative, fragen takes an accusative person. With gefallen: Die Bilder gefallen mir. Die Bilder is the plural subject, mir the dative object."
+      }
+    },
+    {
+      "type": "paragraph",
       "id": "method",
       "title": {
-        "fr": "2. Méthode en quatre étapes",
+        "fr": "2. Vier Schritte",
         "de": "2. Vier Schritte",
-        "ar": "٢. أربع خطوات",
-        "en": "2. Four-step method"
+        "ar": "2. Vier Schritte",
+        "en": "2. Vier Schritte"
       },
       "text": {
         "fr": "1. Repérez le verbe : helfen.\n2. Identifiez le sujet avec wer? : Das Kind.\n3. Cherchez le complément avec wem? : dem Mann.\n4. Déclinez le nom et conjuguez selon le sujet : Das Kind hilft dem Mann.\n\nSi le sujet devient Die Kinder, le verbe devient helfen, mais dem Mann ne change pas. Si le complément devient die Frau, on écrit der Frau. Le sujet et le complément suivent deux règles indépendantes.",
@@ -56,10 +73,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "articles",
       "title": {
-        "fr": "3. Former le datif",
+        "fr": "3. Den Dativ bilden",
         "de": "3. Den Dativ bilden",
-        "ar": "٣. تشكيل الداتيف",
-        "en": "3. Forming the dative"
+        "ar": "3. Den Dativ bilden",
+        "en": "3. Den Dativ bilden"
       },
       "text": {
         "fr": "Au masculin et au neutre, der/das deviennent dem et ein devient einem. Au féminin, die devient der et eine devient einer. Au pluriel, die devient den et le nom prend généralement -n : die Kinder → den Kindern. On n’ajoute pas de -n si le pluriel finit déjà en -n ou en -s : den Frauen, den Babys.\n\nLes possessifs suivent les mêmes terminaisons : meinem Vater, meiner Mutter, meinen Freunden. Attention : der Frau est ici un datif féminin, pas un nominatif masculin.",
@@ -72,10 +89,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "declension",
       "title": {
-        "fr": "4. Pronoms personnels",
+        "fr": "4. Personalpronomen",
         "de": "4. Personalpronomen",
-        "ar": "٤. الضمائر الشخصية",
-        "en": "4. Personal pronouns"
+        "ar": "4. Personalpronomen",
+        "en": "4. Personalpronomen"
       },
       "headers": [
         {
@@ -311,10 +328,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "pronouns",
       "title": {
-        "fr": "5. Remplacer un nom par un pronom",
+        "fr": "5. Nomen durch Pronomen ersetzen",
         "de": "5. Nomen durch Pronomen ersetzen",
-        "ar": "٥. استبدال الاسم بضمير",
-        "en": "5. Replacing nouns with pronouns"
+        "ar": "5. Nomen durch Pronomen ersetzen",
+        "en": "5. Nomen durch Pronomen ersetzen"
       },
       "text": {
         "fr": "Le pronom doit conserver le cas du nom remplacé : Ich helfe dem Mann → Ich helfe ihm. Ich helfe der Frau → Ich helfe ihr. Ich helfe den Kindern → Ich helfe ihnen.\n\nNe confondez pas ihn (accusatif masculin) et ihm (datif masculin ou neutre). Pour das Mädchen, le pronom grammatical est ihm au datif. Dans une conversation formelle, Ihnen prend une majuscule : Kann ich Ihnen helfen?",
@@ -327,10 +344,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "subject",
       "title": {
-        "fr": "Qui commande le verbe ?",
+        "fr": "Was bestimmt das Verb?",
         "de": "Was bestimmt das Verb?",
-        "ar": "ما الذي يحدد التصريف؟",
-        "en": "What controls agreement?"
+        "ar": "Was bestimmt das Verb?",
+        "en": "Was bestimmt das Verb?"
       },
       "text": {
         "fr": "Avec gefallen, gehören, schmecken, passen, stehen et wehtun, la chose qui plaît, appartient, a bon goût, convient ou fait mal est le sujet. Die Schuhe gefallen mir : Schuhe est pluriel, donc gefallen. Der Schuh gefällt mir : singulier. Le datif peut précéder le sujet : Mir gefallen die Schuhe.",
@@ -343,10 +360,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "families",
       "title": {
-        "fr": "6. Deux familles de verbes",
+        "fr": "6. Zwei Verbgruppen",
         "de": "6. Zwei Verbgruppen",
-        "ar": "٦. مجموعتان من الأفعال",
-        "en": "6. Two verb families"
+        "ar": "6. Zwei Verbgruppen",
+        "en": "6. Zwei Verbgruppen"
       },
       "text": {
         "fr": "Avec helfen, danken, antworten, gratulieren, glauben et zuhören, le sujet accomplit généralement une action envers quelqu’un : Ich danke dir.\n\nAvec gefallen, schmecken, gehören, passen, stehen et wehtun, le sujet est souvent la chose qui provoque une sensation, plaît ou appartient à quelqu’un. Dans Mir gefällt der Film, mir désigne la personne qui apprécie le film, mais der Film est le sujet. Au pluriel : Mir gefallen die Filme.\n\nPassen concerne notamment la taille ou la disponibilité ; stehen concerne l’apparence : Die Hose passt mir (bonne taille), Die Farbe steht mir (elle me va bien).",
@@ -356,377 +373,13 @@ export const lesson: LessonDefinition = {
       }
     },
     {
-      "type": "examples",
-      "id": "examples",
-      "title": {
-        "fr": "22 exemples commentés",
-        "de": "22 Beispiele",
-        "ar": "٢٢ مثالا",
-        "en": "22 annotated examples"
-      },
-      "items": [
-        {
-          "id": "0",
-          "german": "Ich helfe dir.",
-          "context": {
-            "fr": "Je t’aide.",
-            "de": "Ich helfe dir.",
-            "ar": "أساعدك.",
-            "en": "I help you."
-          },
-          "explanation": {
-            "fr": "helfen exige ici le Dativ : dir.",
-            "de": "helfen verlangt hier Dativ: dir.",
-            "ar": "الفعل helfen يتطلب هنا Dativ: dir.",
-            "en": "helfen requires Dativ here: dir."
-          }
-        },
-        {
-          "id": "1",
-          "german": "Du dankst mir.",
-          "context": {
-            "fr": "Tu me remercies.",
-            "de": "Du dankst mir.",
-            "ar": "تشكرني.",
-            "en": "You thank me."
-          },
-          "explanation": {
-            "fr": "danken exige ici le Dativ : mir.",
-            "de": "danken verlangt hier Dativ: mir.",
-            "ar": "الفعل danken يتطلب هنا Dativ: mir.",
-            "en": "danken requires Dativ here: mir."
-          }
-        },
-        {
-          "id": "2",
-          "german": "Er antwortet der Frau.",
-          "context": {
-            "fr": "Il répond à la femme.",
-            "de": "Er antwortet der Frau.",
-            "ar": "يجيب المرأة.",
-            "en": "He answers the woman."
-          },
-          "explanation": {
-            "fr": "antworten exige ici le Dativ : der Frau.",
-            "de": "antworten verlangt hier Dativ: der Frau.",
-            "ar": "الفعل antworten يتطلب هنا Dativ: der Frau.",
-            "en": "antworten requires Dativ here: der Frau."
-          }
-        },
-        {
-          "id": "3",
-          "german": "Wir gratulieren ihm.",
-          "context": {
-            "fr": "Nous le félicitons.",
-            "de": "Wir gratulieren ihm.",
-            "ar": "نهنئه.",
-            "en": "We congratulate him."
-          },
-          "explanation": {
-            "fr": "gratulieren exige ici le Dativ : ihm.",
-            "de": "gratulieren verlangt hier Dativ: ihm.",
-            "ar": "الفعل gratulieren يتطلب هنا Dativ: ihm.",
-            "en": "gratulieren requires Dativ here: ihm."
-          }
-        },
-        {
-          "id": "4",
-          "german": "Die Kinder hören der Oma zu.",
-          "context": {
-            "fr": "Les enfants écoutent leur grand-mère.",
-            "de": "Die Kinder hören der Oma zu.",
-            "ar": "الأطفال يستمعون للجدة.",
-            "en": "The children listen to grandma."
-          },
-          "explanation": {
-            "fr": "zuhören exige ici le Dativ : der Oma.",
-            "de": "zuhören verlangt hier Dativ: der Oma.",
-            "ar": "الفعل zuhören يتطلب هنا Dativ: der Oma.",
-            "en": "zuhören requires Dativ here: der Oma."
-          }
-        },
-        {
-          "id": "5",
-          "german": "Ich glaube dir.",
-          "context": {
-            "fr": "Je te crois.",
-            "de": "Ich glaube dir.",
-            "ar": "أصدقك.",
-            "en": "I believe you."
-          },
-          "explanation": {
-            "fr": "glauben exige ici le Dativ : dir.",
-            "de": "glauben verlangt hier Dativ: dir.",
-            "ar": "الفعل glauben يتطلب هنا Dativ: dir.",
-            "en": "glauben requires Dativ here: dir."
-          }
-        },
-        {
-          "id": "6",
-          "german": "Das Haus gefällt den Leuten.",
-          "context": {
-            "fr": "La maison plaît aux gens.",
-            "de": "Das Haus gefällt den Leuten.",
-            "ar": "المنزل يعجب الناس.",
-            "en": "People like the house."
-          },
-          "explanation": {
-            "fr": "gefallen exige ici le Dativ : den Leuten.",
-            "de": "gefallen verlangt hier Dativ: den Leuten.",
-            "ar": "الفعل gefallen يتطلب هنا Dativ: den Leuten.",
-            "en": "gefallen requires Dativ here: den Leuten."
-          }
-        },
-        {
-          "id": "7",
-          "german": "Die Schuhe gefallen mir.",
-          "context": {
-            "fr": "Les chaussures me plaisent.",
-            "de": "Die Schuhe gefallen mir.",
-            "ar": "الأحذية تعجبني.",
-            "en": "I like the shoes."
-          },
-          "explanation": {
-            "fr": "gefallen exige ici le Dativ : mir.",
-            "de": "gefallen verlangt hier Dativ: mir.",
-            "ar": "الفعل gefallen يتطلب هنا Dativ: mir.",
-            "en": "gefallen requires Dativ here: mir."
-          }
-        },
-        {
-          "id": "8",
-          "german": "Der Wein schmeckt ihm.",
-          "context": {
-            "fr": "Il aime le goût du vin.",
-            "de": "Der Wein schmeckt ihm.",
-            "ar": "يعجبه طعم النبيذ.",
-            "en": "He likes the taste of the wine."
-          },
-          "explanation": {
-            "fr": "schmecken exige ici le Dativ : ihm.",
-            "de": "schmecken verlangt hier Dativ: ihm.",
-            "ar": "الفعل schmecken يتطلب هنا Dativ: ihm.",
-            "en": "schmecken requires Dativ here: ihm."
-          }
-        },
-        {
-          "id": "9",
-          "german": "Die Suppe schmeckt uns.",
-          "context": {
-            "fr": "Nous aimons le goût de la soupe.",
-            "de": "Die Suppe schmeckt uns.",
-            "ar": "يعجبنا طعم الحساء.",
-            "en": "We like the soup."
-          },
-          "explanation": {
-            "fr": "schmecken exige ici le Dativ : uns.",
-            "de": "schmecken verlangt hier Dativ: uns.",
-            "ar": "الفعل schmecken يتطلب هنا Dativ: uns.",
-            "en": "schmecken requires Dativ here: uns."
-          }
-        },
-        {
-          "id": "10",
-          "german": "Das Auto gehört dem Chef.",
-          "context": {
-            "fr": "La voiture appartient au chef.",
-            "de": "Das Auto gehört dem Chef.",
-            "ar": "السيارة ملك المدير.",
-            "en": "The car belongs to the boss."
-          },
-          "explanation": {
-            "fr": "gehören exige ici le Dativ : dem Chef.",
-            "de": "gehören verlangt hier Dativ: dem Chef.",
-            "ar": "الفعل gehören يتطلب هنا Dativ: dem Chef.",
-            "en": "gehören requires Dativ here: dem Chef."
-          }
-        },
-        {
-          "id": "11",
-          "german": "Die Hose passt ihr nicht.",
-          "context": {
-            "fr": "Le pantalon ne lui va pas.",
-            "de": "Die Hose passt ihr nicht.",
-            "ar": "السروال لا يناسبها.",
-            "en": "The trousers do not fit her."
-          },
-          "explanation": {
-            "fr": "passen exige ici le Dativ : ihr.",
-            "de": "passen verlangt hier Dativ: ihr.",
-            "ar": "الفعل passen يتطلب هنا Dativ: ihr.",
-            "en": "passen requires Dativ here: ihr."
-          }
-        },
-        {
-          "id": "12",
-          "german": "Der Termin passt mir.",
-          "context": {
-            "fr": "Le rendez-vous me convient.",
-            "de": "Der Termin passt mir.",
-            "ar": "الموعد يناسبني.",
-            "en": "The appointment suits me."
-          },
-          "explanation": {
-            "fr": "passen exige ici le Dativ : mir.",
-            "de": "passen verlangt hier Dativ: mir.",
-            "ar": "الفعل passen يتطلب هنا Dativ: mir.",
-            "en": "passen requires Dativ here: mir."
-          }
-        },
-        {
-          "id": "13",
-          "german": "Die Farbe steht dir gut.",
-          "context": {
-            "fr": "La couleur te va bien.",
-            "de": "Die Farbe steht dir gut.",
-            "ar": "اللون يليق بك.",
-            "en": "The color suits you."
-          },
-          "explanation": {
-            "fr": "stehen exige ici le Dativ : dir.",
-            "de": "stehen verlangt hier Dativ: dir.",
-            "ar": "الفعل stehen يتطلب هنا Dativ: dir.",
-            "en": "stehen requires Dativ here: dir."
-          }
-        },
-        {
-          "id": "14",
-          "german": "Der Kopf tut mir weh.",
-          "context": {
-            "fr": "J’ai mal à la tête.",
-            "de": "Der Kopf tut mir weh.",
-            "ar": "رأسي يؤلمني.",
-            "en": "My head hurts."
-          },
-          "explanation": {
-            "fr": "wehtun exige ici le Dativ : mir.",
-            "de": "wehtun verlangt hier Dativ: mir.",
-            "ar": "الفعل wehtun يتطلب هنا Dativ: mir.",
-            "en": "wehtun requires Dativ here: mir."
-          }
-        },
-        {
-          "id": "15",
-          "german": "Die Füße tun ihm weh.",
-          "context": {
-            "fr": "Il a mal aux pieds.",
-            "de": "Die Füße tun ihm weh.",
-            "ar": "قدماه تؤلمانه.",
-            "en": "His feet hurt."
-          },
-          "explanation": {
-            "fr": "wehtun exige ici le Dativ : ihm.",
-            "de": "wehtun verlangt hier Dativ: ihm.",
-            "ar": "الفعل wehtun يتطلب هنا Dativ: ihm.",
-            "en": "wehtun requires Dativ here: ihm."
-          }
-        },
-        {
-          "id": "16",
-          "german": "Wie geht es Ihnen?",
-          "context": {
-            "fr": "Comment allez-vous ?",
-            "de": "Wie geht es Ihnen?",
-            "ar": "كيف حال حضرتك؟",
-            "en": "How are you?"
-          },
-          "explanation": {
-            "fr": "es geht exige ici le Dativ : Ihnen.",
-            "de": "es geht verlangt hier Dativ: Ihnen.",
-            "ar": "الفعل es geht يتطلب هنا Dativ: Ihnen.",
-            "en": "es geht requires Dativ here: Ihnen."
-          }
-        },
-        {
-          "id": "17",
-          "german": "Es geht ihr schlecht.",
-          "context": {
-            "fr": "Elle va mal.",
-            "de": "Es geht ihr schlecht.",
-            "ar": "حالها سيئ.",
-            "en": "She is not well."
-          },
-          "explanation": {
-            "fr": "es geht exige ici le Dativ : ihr.",
-            "de": "es geht verlangt hier Dativ: ihr.",
-            "ar": "الفعل es geht يتطلب هنا Dativ: ihr.",
-            "en": "es geht requires Dativ here: ihr."
-          }
-        },
-        {
-          "id": "18",
-          "german": "Es tut mir leid.",
-          "context": {
-            "fr": "Je suis désolé.",
-            "de": "Es tut mir leid.",
-            "ar": "أنا آسف.",
-            "en": "I am sorry."
-          },
-          "explanation": {
-            "fr": "leidtun exige ici le Dativ : mir.",
-            "de": "leidtun verlangt hier Dativ: mir.",
-            "ar": "الفعل leidtun يتطلب هنا Dativ: mir.",
-            "en": "leidtun requires Dativ here: mir."
-          }
-        },
-        {
-          "id": "19",
-          "german": "Ich vertraue euch.",
-          "context": {
-            "fr": "Je vous fais confiance.",
-            "de": "Ich vertraue euch.",
-            "ar": "أثق بكم.",
-            "en": "I trust you all."
-          },
-          "explanation": {
-            "fr": "vertrauen exige ici le Dativ : euch.",
-            "de": "vertrauen verlangt hier Dativ: euch.",
-            "ar": "الفعل vertrauen يتطلب هنا Dativ: euch.",
-            "en": "vertrauen requires Dativ here: euch."
-          }
-        },
-        {
-          "id": "20",
-          "german": "Ich frage dich.",
-          "context": {
-            "fr": "Je te pose une question.",
-            "de": "Ich frage dich.",
-            "ar": "أسألك.",
-            "en": "I ask you."
-          },
-          "explanation": {
-            "fr": "fragen exige ici le Akkusativ : dich.",
-            "de": "fragen verlangt hier Akkusativ: dich.",
-            "ar": "الفعل fragen يتطلب هنا Akkusativ: dich.",
-            "en": "fragen requires Akkusativ here: dich."
-          }
-        },
-        {
-          "id": "21",
-          "german": "Ich besuche ihn.",
-          "context": {
-            "fr": "Je lui rends visite.",
-            "de": "Ich besuche ihn.",
-            "ar": "أزوره.",
-            "en": "I visit him."
-          },
-          "explanation": {
-            "fr": "besuchen exige ici le Akkusativ : ihn.",
-            "de": "besuchen verlangt hier Akkusativ: ihn.",
-            "ar": "الفعل besuchen يتطلب هنا Akkusativ: ihn.",
-            "en": "besuchen requires Akkusativ here: ihn."
-          }
-        }
-      ]
-    },
-    {
       "type": "paragraph",
       "id": "contrast",
       "title": {
-        "fr": "7. Comparer avant de choisir",
+        "fr": "7. Vor der Wahl vergleichen",
         "de": "7. Vor der Wahl vergleichen",
-        "ar": "٧. المقارنة قبل الاختيار",
-        "en": "7. Compare before choosing"
+        "ar": "7. Vor der Wahl vergleichen",
+        "en": "7. Vor der Wahl vergleichen"
       },
       "text": {
         "fr": "Ich frage dich / Ich antworte dir : fragen prend la personne à l’accusatif, antworten au datif.\n\nIch höre dich / Ich höre dir zu : hören signifie entendre ; zuhören signifie écouter attentivement. Zu est séparé dans une phrase principale.\n\nIch mag die Schuhe / Die Schuhe gefallen mir : le sens est proche mais le sujet change. Avec gefallen, les chaussures commandent le pluriel du verbe.\n\nIch habe Halsschmerzen / Der Hals tut mir weh : dans la deuxième phrase, le sujet est der Hals et mir désigne la personne qui souffre.",
@@ -739,10 +392,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "errors",
       "title": {
-        "fr": "Pièges et exceptions",
+        "fr": "Fehler und Besonderheiten",
         "de": "Fehler und Besonderheiten",
-        "ar": "أخطاء واستثناءات",
-        "en": "Pitfalls and exceptions"
+        "ar": "Fehler und Besonderheiten",
+        "en": "Fehler und Besonderheiten"
       },
       "text": {
         "fr": "✗ Ich helfe dich → Ich helfe dir. ✗ Die Schuhe gefällt mir → Die Schuhe gefallen mir. ✗ Ich höre dir → Ich höre dir zu (écouter attentivement). Hören sans zu prend normalement l’accusatif. Glauben peut aussi prendre un contenu à l’accusatif : Ich glaube dir die Geschichte.",
@@ -755,16 +408,565 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "dialog",
       "title": {
-        "fr": "Dialogue et résumé",
+        "fr": "Dialog und Merksatz",
         "de": "Dialog und Merksatz",
-        "ar": "حوار وملخص",
-        "en": "Dialogue and summary"
+        "ar": "Dialog und Merksatz",
+        "en": "Dialog und Merksatz"
       },
       "text": {
         "fr": "A: Wie geht es dir? B: Mein Rücken tut mir weh. A: Kann ich dir helfen? B: Ja, danke! Retenez le verbe avec wem? et vérifiez l’accord avec le sujet, pas avec le datif.",
         "de": "A: Wie geht es dir? B: Mein Rücken tut mir weh. A: Kann ich dir helfen? B: Ja, danke! Lerne das Verb mit wem? und achte auf die Übereinstimmung mit dem Subjekt.",
         "ar": "A: Wie geht es dir? B: Mein Rücken tut mir weh. A: Kann ich dir helfen? B: Ja, danke! احفظ الفعل مع wem وتحقق من مطابقته للفاعل.",
         "en": "A: Wie geht es dir? B: Mein Rücken tut mir weh. A: Kann ich dir helfen? B: Ja, danke! Learn the verb with wem? and check agreement with the subject."
+      }
+    },
+    {
+      "type": "examples",
+      "id": "premium-beispiele-1",
+      "title": {
+        "fr": "Grundformen und Anwendung",
+        "de": "Grundformen und Anwendung",
+        "ar": "Grundformen und Anwendung",
+        "en": "Grundformen und Anwendung"
+      },
+      "items": [
+        {
+          "id": "0",
+          "german": "Ich helfe dir.",
+          "context": {
+            "fr": "Je t’aide.",
+            "de": "Ich helfe dir.",
+            "ar": "أساعدك.",
+            "en": "I help you."
+          },
+          "explanation": {
+            "fr": "helfen → dir — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "helfen → dir — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "helfen → dir — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "helfen → dir — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "1",
+          "german": "Du dankst mir.",
+          "context": {
+            "fr": "Tu me remercies.",
+            "de": "Du dankst mir.",
+            "ar": "تشكرني.",
+            "en": "You thank me."
+          },
+          "explanation": {
+            "fr": "danken → mir — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "danken → mir — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "danken → mir — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "danken → mir — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "2",
+          "german": "Er antwortet der Frau.",
+          "context": {
+            "fr": "Il répond à la femme.",
+            "de": "Er antwortet der Frau.",
+            "ar": "يجيب المرأة.",
+            "en": "He answers the woman."
+          },
+          "explanation": {
+            "fr": "antworten → der Frau — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "antworten → der Frau — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "antworten → der Frau — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "antworten → der Frau — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "3",
+          "german": "Wir gratulieren ihm.",
+          "context": {
+            "fr": "Nous le félicitons.",
+            "de": "Wir gratulieren ihm.",
+            "ar": "نهنئه.",
+            "en": "We congratulate him."
+          },
+          "explanation": {
+            "fr": "gratulieren → ihm — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "gratulieren → ihm — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "gratulieren → ihm — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "gratulieren → ihm — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "4",
+          "german": "Die Kinder hören der Oma zu.",
+          "context": {
+            "fr": "Les enfants écoutent leur grand-mère.",
+            "de": "Die Kinder hören der Oma zu.",
+            "ar": "الأطفال يستمعون للجدة.",
+            "en": "The children listen to grandma."
+          },
+          "explanation": {
+            "fr": "zuhören → der Oma — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "zuhören → der Oma — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "zuhören → der Oma — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "zuhören → der Oma — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "5",
+          "german": "Ich glaube dir.",
+          "context": {
+            "fr": "Je te crois.",
+            "de": "Ich glaube dir.",
+            "ar": "أصدقك.",
+            "en": "I believe you."
+          },
+          "explanation": {
+            "fr": "glauben → dir — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "glauben → dir — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "glauben → dir — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "glauben → dir — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "6",
+          "german": "Das Haus gefällt den Leuten.",
+          "context": {
+            "fr": "La maison plaît aux gens.",
+            "de": "Das Haus gefällt den Leuten.",
+            "ar": "المنزل يعجب الناس.",
+            "en": "People like the house."
+          },
+          "explanation": {
+            "fr": "Das Haus → gefällt; den Leuten — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Das Haus → gefällt; den Leuten — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Das Haus → gefällt; den Leuten — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Das Haus → gefällt; den Leuten — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "7",
+          "german": "Die Schuhe gefallen mir.",
+          "context": {
+            "fr": "Les chaussures me plaisent.",
+            "de": "Die Schuhe gefallen mir.",
+            "ar": "الأحذية تعجبني.",
+            "en": "I like the shoes."
+          },
+          "explanation": {
+            "fr": "Die Schuhe → gefallen; mir — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Die Schuhe → gefallen; mir — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Die Schuhe → gefallen; mir — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Die Schuhe → gefallen; mir — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "8",
+          "german": "Der Wein schmeckt ihm.",
+          "context": {
+            "fr": "Il aime le goût du vin.",
+            "de": "Der Wein schmeckt ihm.",
+            "ar": "يعجبه طعم النبيذ.",
+            "en": "He likes the taste of the wine."
+          },
+          "explanation": {
+            "fr": "Der Wein → schmeckt; ihm — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Der Wein → schmeckt; ihm — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Der Wein → schmeckt; ihm — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Der Wein → schmeckt; ihm — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "9",
+          "german": "Die Suppe schmeckt uns.",
+          "context": {
+            "fr": "Nous aimons le goût de la soupe.",
+            "de": "Die Suppe schmeckt uns.",
+            "ar": "يعجبنا طعم الحساء.",
+            "en": "We like the soup."
+          },
+          "explanation": {
+            "fr": "Die Suppe → schmeckt; uns — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Die Suppe → schmeckt; uns — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Die Suppe → schmeckt; uns — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Die Suppe → schmeckt; uns — The nominative thing controls verb agreement; the dative person does not."
+          }
+        }
+      ]
+    },
+    {
+      "type": "examples",
+      "id": "premium-beispiele-2",
+      "title": {
+        "fr": "Beispiele im Kontext",
+        "de": "Beispiele im Kontext",
+        "ar": "Beispiele im Kontext",
+        "en": "Beispiele im Kontext"
+      },
+      "items": [
+        {
+          "id": "10",
+          "german": "Das Auto gehört dem Chef.",
+          "context": {
+            "fr": "La voiture appartient au chef.",
+            "de": "Das Auto gehört dem Chef.",
+            "ar": "السيارة ملك المدير.",
+            "en": "The car belongs to the boss."
+          },
+          "explanation": {
+            "fr": "Das Auto → gehört; dem Chef — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Das Auto → gehört; dem Chef — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Das Auto → gehört; dem Chef — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Das Auto → gehört; dem Chef — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "11",
+          "german": "Die Hose passt ihr nicht.",
+          "context": {
+            "fr": "Le pantalon ne lui va pas.",
+            "de": "Die Hose passt ihr nicht.",
+            "ar": "السروال لا يناسبها.",
+            "en": "The trousers do not fit her."
+          },
+          "explanation": {
+            "fr": "Die Hose → passt; ihr — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Die Hose → passt; ihr — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Die Hose → passt; ihr — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Die Hose → passt; ihr — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "12",
+          "german": "Der Termin passt mir.",
+          "context": {
+            "fr": "Le rendez-vous me convient.",
+            "de": "Der Termin passt mir.",
+            "ar": "الموعد يناسبني.",
+            "en": "The appointment suits me."
+          },
+          "explanation": {
+            "fr": "Der Termin → passt; mir — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Der Termin → passt; mir — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Der Termin → passt; mir — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Der Termin → passt; mir — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "13",
+          "german": "Die Farbe steht dir gut.",
+          "context": {
+            "fr": "La couleur te va bien.",
+            "de": "Die Farbe steht dir gut.",
+            "ar": "اللون يليق بك.",
+            "en": "The color suits you."
+          },
+          "explanation": {
+            "fr": "Die Farbe → steht; dir — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Die Farbe → steht; dir — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Die Farbe → steht; dir — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Die Farbe → steht; dir — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "14",
+          "german": "Der Kopf tut mir weh.",
+          "context": {
+            "fr": "J’ai mal à la tête.",
+            "de": "Der Kopf tut mir weh.",
+            "ar": "رأسي يؤلمني.",
+            "en": "My head hurts."
+          },
+          "explanation": {
+            "fr": "Der Kopf → tut weh; mir — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Der Kopf → tut weh; mir — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Der Kopf → tut weh; mir — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Der Kopf → tut weh; mir — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "15",
+          "german": "Die Füße tun ihm weh.",
+          "context": {
+            "fr": "Il a mal aux pieds.",
+            "de": "Die Füße tun ihm weh.",
+            "ar": "قدماه تؤلمانه.",
+            "en": "His feet hurt."
+          },
+          "explanation": {
+            "fr": "Die Füße → tun weh; ihm — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Die Füße → tun weh; ihm — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Die Füße → tun weh; ihm — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Die Füße → tun weh; ihm — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "16",
+          "german": "Wie geht es Ihnen?",
+          "context": {
+            "fr": "Comment allez-vous ?",
+            "de": "Wie geht es Ihnen?",
+            "ar": "كيف حال حضرتك؟",
+            "en": "How are you?"
+          },
+          "explanation": {
+            "fr": "Wie geht es? → Ihnen — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "Wie geht es? → Ihnen — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "Wie geht es? → Ihnen — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "Wie geht es? → Ihnen — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "17",
+          "german": "Es geht ihr schlecht.",
+          "context": {
+            "fr": "Elle va mal.",
+            "de": "Es geht ihr schlecht.",
+            "ar": "حالها سيئ.",
+            "en": "She is not well."
+          },
+          "explanation": {
+            "fr": "Es geht schlecht → ihr — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "Es geht schlecht → ihr — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "Es geht schlecht → ihr — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "Es geht schlecht → ihr — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "18",
+          "german": "Es tut mir leid.",
+          "context": {
+            "fr": "Je suis désolé.",
+            "de": "Es tut mir leid.",
+            "ar": "أنا آسف.",
+            "en": "I am sorry."
+          },
+          "explanation": {
+            "fr": "Es tut leid → mir — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "Es tut leid → mir — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "Es tut leid → mir — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "Es tut leid → mir — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "19",
+          "german": "Ich vertraue euch.",
+          "context": {
+            "fr": "Je vous fais confiance.",
+            "de": "Ich vertraue euch.",
+            "ar": "أثق بكم.",
+            "en": "I trust you all."
+          },
+          "explanation": {
+            "fr": "vertrauen → euch — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "vertrauen → euch — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "vertrauen → euch — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "vertrauen → euch — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        }
+      ]
+    },
+    {
+      "type": "examples",
+      "id": "premium-beispiele-3",
+      "title": {
+        "fr": "Vertiefung und Kontraste",
+        "de": "Vertiefung und Kontraste",
+        "ar": "Vertiefung und Kontraste",
+        "en": "Vertiefung und Kontraste"
+      },
+      "items": [
+        {
+          "id": "20",
+          "german": "Ich frage dich.",
+          "context": {
+            "fr": "Je te pose une question.",
+            "de": "Ich frage dich.",
+            "ar": "أسألك.",
+            "en": "I ask you."
+          },
+          "explanation": {
+            "fr": "fragen → dich — Ce verbe prend un complément direct à l’accusatif, sans destinataire obligatoire.",
+            "de": "fragen → dich — Dieses Verb hat ein Akkusativobjekt, aber keinen obligatorischen Empfänger.",
+            "ar": "fragen → dich — يأخذ هذا الفعل مفعولاً في الأكوزاتيف دون متلقٍ إلزامي.",
+            "en": "fragen → dich — This verb takes an accusative object, with no required recipient."
+          }
+        },
+        {
+          "id": "21",
+          "german": "Ich besuche ihn.",
+          "context": {
+            "fr": "Je lui rends visite.",
+            "de": "Ich besuche ihn.",
+            "ar": "أزوره.",
+            "en": "I visit him."
+          },
+          "explanation": {
+            "fr": "besuchen → ihn — Ce verbe prend un complément direct à l’accusatif, sans destinataire obligatoire.",
+            "de": "besuchen → ihn — Dieses Verb hat ein Akkusativobjekt, aber keinen obligatorischen Empfänger.",
+            "ar": "besuchen → ihn — يأخذ هذا الفعل مفعولاً في الأكوزاتيف دون متلقٍ إلزامي.",
+            "en": "besuchen → ihn — This verb takes an accusative object, with no required recipient."
+          }
+        },
+        {
+          "id": "premium-add-23",
+          "german": "Der Hund folgt seinem Besitzer.",
+          "context": {
+            "fr": "Le chien suit son maître.",
+            "de": "Der Hund folgt seinem Besitzer.",
+            "ar": "يتبع الكلب صاحبه.",
+            "en": "The dog follows its owner."
+          },
+          "explanation": {
+            "fr": "folgen → seinem Besitzer — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "folgen → seinem Besitzer — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "folgen → seinem Besitzer — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "folgen → seinem Besitzer — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "premium-add-24",
+          "german": "Ich begegne einer Kollegin.",
+          "context": {
+            "fr": "Je croise une collègue.",
+            "de": "Ich begegne einer Kollegin.",
+            "ar": "ألتقي بزميلة.",
+            "en": "I run into a colleague."
+          },
+          "explanation": {
+            "fr": "begegnen → einer Kollegin — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "begegnen → einer Kollegin — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "begegnen → einer Kollegin — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "begegnen → einer Kollegin — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "premium-add-25",
+          "german": "Wir widersprechen dem Chef.",
+          "context": {
+            "fr": "Nous contredisons le chef.",
+            "de": "Wir widersprechen dem Chef.",
+            "ar": "نعارض كلام المدير.",
+            "en": "We disagree with the boss."
+          },
+          "explanation": {
+            "fr": "widersprechen → dem Chef — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "widersprechen → dem Chef — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "widersprechen → dem Chef — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "widersprechen → dem Chef — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "premium-add-26",
+          "german": "Die Musik gefällt meiner Schwester.",
+          "context": {
+            "fr": "La musique plaît à ma sœur.",
+            "de": "Die Musik gefällt meiner Schwester.",
+            "ar": "تعجب الموسيقى أختي.",
+            "en": "My sister likes the music."
+          },
+          "explanation": {
+            "fr": "Die Musik (Singular) → gefällt; meiner Schwester (Dativ) — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Die Musik (Singular) → gefällt; meiner Schwester (Dativ) — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Die Musik (Singular) → gefällt; meiner Schwester (Dativ) — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Die Musik (Singular) → gefällt; meiner Schwester (Dativ) — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "premium-add-27",
+          "german": "Die Bücher gehören den Kindern.",
+          "context": {
+            "fr": "Les livres appartiennent aux enfants.",
+            "de": "Die Bücher gehören den Kindern.",
+            "ar": "الكتب ملك للأطفال.",
+            "en": "The books belong to the children."
+          },
+          "explanation": {
+            "fr": "Die Bücher (Plural) → gehören; den Kindern (Dativ) — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Die Bücher (Plural) → gehören; den Kindern (Dativ) — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Die Bücher (Plural) → gehören; den Kindern (Dativ) — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Die Bücher (Plural) → gehören; den Kindern (Dativ) — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "premium-add-28",
+          "german": "Der Mantel passt dem Jungen.",
+          "context": {
+            "fr": "Le manteau va au garçon.",
+            "de": "Der Mantel passt dem Jungen.",
+            "ar": "المعطف مناسب للصبي.",
+            "en": "The coat fits the boy."
+          },
+          "explanation": {
+            "fr": "Der Mantel → passt; dem Jungen (Dativ) — La chose au nominatif détermine la forme du verbe ; la personne au datif ne commande pas la conjugaison.",
+            "de": "Der Mantel → passt; dem Jungen (Dativ) — Die Sache im Nominativ bestimmt die Verbform; die Person im Dativ bestimmt sie nicht.",
+            "ar": "Der Mantel → passt; dem Jungen (Dativ) — يحدد الشيء في النوميناتيف تصريف الفعل وليس الشخص في الداتيف.",
+            "en": "Der Mantel → passt; dem Jungen (Dativ) — The nominative thing controls verb agreement; the dative person does not."
+          }
+        },
+        {
+          "id": "premium-add-29",
+          "german": "Ich höre meiner Freundin aufmerksam zu.",
+          "context": {
+            "fr": "J’écoute attentivement mon amie.",
+            "de": "Ich höre meiner Freundin aufmerksam zu.",
+            "ar": "أصغي بانتباه لصديقتي.",
+            "en": "I listen carefully to my friend."
+          },
+          "explanation": {
+            "fr": "zuhören → meiner Freundin — Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+            "de": "zuhören → meiner Freundin — Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+            "ar": "zuhören → meiner Freundin — احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+            "en": "zuhören → meiner Freundin — Learn the verb with its dative object, even if the translation uses a direct object."
+          }
+        },
+        {
+          "id": "premium-add-30",
+          "german": "Wir fragen den Lehrer.",
+          "context": {
+            "fr": "Nous interrogeons le professeur.",
+            "de": "Wir fragen den Lehrer.",
+            "ar": "نسأل المعلم.",
+            "en": "We ask the teacher."
+          },
+          "explanation": {
+            "fr": "fragen → den Lehrer — Ce verbe prend un complément direct à l’accusatif, sans destinataire obligatoire.",
+            "de": "fragen → den Lehrer — Dieses Verb hat ein Akkusativobjekt, aber keinen obligatorischen Empfänger.",
+            "ar": "fragen → den Lehrer — يأخذ هذا الفعل مفعولاً في الأكوزاتيف دون متلقٍ إلزامي.",
+            "en": "fragen → den Lehrer — This verb takes an accusative object, with no required recipient."
+          }
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "id": "premium-dialog",
+      "title": {
+        "fr": "Mini-Dialog",
+        "de": "Mini-Dialog",
+        "ar": "Mini-Dialog",
+        "en": "Mini-Dialog"
+      },
+      "text": {
+        "fr": "A: Gefällt dir die Jacke? (La veste te plaît ?)\nB: Ja, aber sie passt mir nicht. (Oui, mais elle ne me va pas.)\nA: Ich helfe dir. (Je t’aide.)",
+        "de": "A: Gefällt dir die Jacke?\nB: Ja, aber sie passt mir nicht.\nA: Ich helfe dir.",
+        "ar": "أ: هل تعجبك السترة؟\nب: نعم لكنها لا تناسبني.\nأ: سأساعدك.",
+        "en": "A: Do you like the jacket?\nB: Yes, but it does not fit me.\nA: I will help you."
+      }
+    },
+    {
+      "type": "callout",
+      "id": "premium-merke",
+      "title": {
+        "fr": "Merke dir!",
+        "de": "Merke dir!",
+        "ar": "Merke dir!",
+        "en": "Merke dir!"
+      },
+      "tone": "tip",
+      "text": {
+        "fr": "Apprends le verbe avec son complément au datif, même si la traduction utilise un complément direct.",
+        "de": "Lerne das Verb mit seinem Dativobjekt, auch wenn die Übersetzung ein direktes Objekt hat.",
+        "ar": "احفظ الفعل مع مفعوله في الداتيف حتى لو كان المقابل في الترجمة مفعولاً مباشراً.",
+        "en": "Learn the verb with its dative object, even if the translation uses a direct object."
       }
     }
   ]

@@ -5,16 +5,16 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "Révision 11",
-      "de": "Wiederholung 11",
-      "ar": "مراجعة 11",
-      "en": "Review 11"
+      "fr": "À la gare",
+      "de": "Am Bahnhof",
+      "ar": "في محطة القطار",
+      "en": "At the station"
     },
     "description": {
-      "fr": "Révisez la conjugaison.",
-      "de": "Üben Sie die Konjugation.",
-      "ar": "راجع التصريف.",
-      "en": "Review conjugation."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
@@ -22,109 +22,122 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Woher komm___ er?",
-          "de": "Ergänzen Sie die Endungen. — Woher komm___ er?",
-          "ar": "أكمل نهايات الأفعال. — Woher komm___ er?",
-          "en": "Complete the endings. — Woher komm___ er?"
+          "fr": "Conjuguez warten au présent. — Ich ___ jeden Morgen am Bahnhof. (warten)",
+          "de": "Konjugieren Sie warten im Präsens. — Ich ___ jeden Morgen am Bahnhof. (warten)",
+          "ar": "صرّف warten في المضارع. — Ich ___ jeden Morgen am Bahnhof. (warten)",
+          "en": "Conjugate warten in the present tense. — Ich ___ jeden Morgen am Bahnhof. (warten)"
         },
         "selection": "single",
         "options": [
-          "st",
-          "e",
-          "est",
-          "t"
+          "wartet",
+          "warte",
+          "wartest",
+          "warten"
         ]
       },
       {
         "id": "kapitel-02-ubung-11-rev-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Dann geh___ sie in die Disko.",
-          "de": "Ergänzen Sie die Endungen. — Dann geh___ sie in die Disko.",
-          "ar": "أكمل نهايات الأفعال. — Dann geh___ sie in die Disko.",
-          "en": "Complete the endings. — Dann geh___ sie in die Disko."
+          "fr": "Conjuguez warten au présent.",
+          "de": "Konjugieren Sie warten im Präsens.",
+          "ar": "صرّف warten في المضارع.",
+          "en": "Conjugate warten in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "st",
-          "est",
-          "en",
-          "e"
-        ]
+        "sentence": "___ du auf die Linie 5? (warten)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-11-rev-q03",
         "position": 3,
-        "type": "true_false",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez kommen au présent.",
+          "de": "Konjugieren Sie kommen im Präsens.",
+          "ar": "صرّف kommen في المضارع.",
+          "en": "Conjugate kommen in the present tense."
         },
-        "statement": "Wie heißen Sie?"
+        "sentence": "Der Fahrer ___ pünktlich. (kommen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-11-rev-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez wohnen au présent. — Wir ___ in der Nähe der Station. (wohnen)",
+          "de": "Konjugieren Sie wohnen im Präsens. — Wir ___ in der Nähe der Station. (wohnen)",
+          "ar": "صرّف wohnen في المضارع. — Wir ___ in der Nähe der Station. (wohnen)",
+          "en": "Conjugate wohnen in the present tense. — Wir ___ in der Nähe der Station. (wohnen)"
         },
-        "sentence": "Sie komm___ um 19 Uhr an.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "wohne",
+          "wohnst",
+          "wohnen",
+          "wohnt"
+        ]
       },
       {
         "id": "kapitel-02-ubung-11-rev-q05",
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez fragen au présent.",
+          "de": "Konjugieren Sie fragen im Präsens.",
+          "ar": "صرّف fragen في المضارع.",
+          "en": "Conjugate fragen in the present tense."
         },
-        "sentence": "Ich komm___ gerne.",
+        "sentence": "Ihr ___ am Schalter. (fragen)",
         "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-11-rev-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Wir wohn___ jetzt in Berlin.",
-          "de": "Ergänzen Sie die Endungen. — Wir wohn___ jetzt in Berlin.",
-          "ar": "أكمل نهايات الأفعال. — Wir wohn___ jetzt in Berlin.",
-          "en": "Complete the endings. — Wir wohn___ jetzt in Berlin."
+          "fr": "Conjuguez reisen au présent.",
+          "de": "Konjugieren Sie reisen im Präsens.",
+          "ar": "صرّف reisen في المضارع.",
+          "en": "Conjugate reisen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "t",
-          "est",
-          "st"
-        ]
+        "sentence": "Die Fahrgäste ___ nach Köln. (reisen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-11-rev-q07",
         "position": 7,
-        "type": "qcm",
+        "type": "matching",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Frau Tan komm___ heute.",
-          "de": "Ergänzen Sie die Endungen. — Frau Tan komm___ heute.",
-          "ar": "أكمل نهايات الأفعال. — Frau Tan komm___ heute.",
-          "en": "Complete the endings. — Frau Tan komm___ heute."
+          "fr": "Associez les formes aux sujets.",
+          "de": "Ordnen Sie die Formen den Subjekten zu.",
+          "ar": "صل الصيغ بالفاعلين.",
+          "en": "Match the forms to the subjects."
         },
-        "selection": "single",
+        "items": [
+          {
+            "id": "i0",
+            "label": "ich – warten"
+          },
+          {
+            "id": "i1",
+            "label": "du – warten"
+          },
+          {
+            "id": "i2",
+            "label": "wir – warten"
+          },
+          {
+            "id": "i3",
+            "label": "ihr – warten"
+          }
+        ],
         "options": [
-          "en",
-          "t",
-          "e",
-          "est"
+          "wartet",
+          "wartest",
+          "warten",
+          "warte"
         ]
       }
     ]
@@ -134,16 +147,16 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Révision 12",
-      "de": "Wiederholung 12",
-      "ar": "مراجعة 12",
-      "en": "Review 12"
+      "fr": "Au travail",
+      "de": "Bei der Arbeit",
+      "ar": "في العمل",
+      "en": "At work"
     },
     "description": {
-      "fr": "Révisez la conjugaison.",
-      "de": "Üben Sie die Konjugation.",
-      "ar": "راجع التصريف.",
-      "en": "Review conjugation."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
@@ -151,134 +164,121 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Er komm___ aus Russland.",
-          "de": "Ergänzen Sie die Endungen. — Er komm___ aus Russland.",
-          "ar": "أكمل نهايات الأفعال. — Er komm___ aus Russland.",
-          "en": "Complete the endings. — Er komm___ aus Russland."
+          "fr": "Conjuguez arbeiten au présent. — Der Automat ___ nicht. (arbeiten)",
+          "de": "Konjugieren Sie arbeiten im Präsens. — Der Automat ___ nicht. (arbeiten)",
+          "ar": "صرّف arbeiten في المضارع. — Der Automat ___ nicht. (arbeiten)",
+          "en": "Conjugate arbeiten in the present tense. — Der Automat ___ nicht. (arbeiten)"
         },
         "selection": "single",
         "options": [
-          "st",
-          "t",
-          "en",
-          "est"
+          "arbeite",
+          "arbeiten",
+          "arbeitest",
+          "arbeitet"
         ]
       },
       {
         "id": "kapitel-02-ubung-12-rev-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Ich kenn___ dich doch.",
-          "de": "Ergänzen Sie die Endungen. — Ich kenn___ dich doch.",
-          "ar": "أكمل نهايات الأفعال. — Ich kenn___ dich doch.",
-          "en": "Complete the endings. — Ich kenn___ dich doch."
+          "fr": "Conjuguez antworten au présent.",
+          "de": "Konjugieren Sie antworten im Präsens.",
+          "ar": "صرّف antworten في المضارع.",
+          "en": "Conjugate antworten in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "t",
-          "st",
-          "en",
-          "e"
-        ]
+        "sentence": "Ich ___ dem Mitarbeiter. (antworten)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-12-rev-q03",
         "position": 3,
-        "type": "true_false",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez antworten au présent.",
+          "de": "Konjugieren Sie antworten im Präsens.",
+          "ar": "صرّف antworten في المضارع.",
+          "en": "Conjugate antworten in the present tense."
         },
-        "statement": "Pedro und Angelo kommen aus Südamerika."
+        "sentence": "Du ___ sehr höflich. (antworten)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-12-rev-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez arbeiten au présent. — Herr Roth ___ in der Werkstatt. (arbeiten)",
+          "de": "Konjugieren Sie arbeiten im Präsens. — Herr Roth ___ in der Werkstatt. (arbeiten)",
+          "ar": "صرّف arbeiten في المضارع. — Herr Roth ___ in der Werkstatt. (arbeiten)",
+          "en": "Conjugate arbeiten in the present tense. — Herr Roth ___ in der Werkstatt. (arbeiten)"
         },
-        "sentence": "Woher komm___ du?",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "arbeite",
+          "arbeitet",
+          "arbeitest",
+          "arbeiten"
+        ]
       },
       {
         "id": "kapitel-02-ubung-12-rev-q05",
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez reden au présent.",
+          "de": "Konjugieren Sie reden im Präsens.",
+          "ar": "صرّف reden في المضارع.",
+          "en": "Conjugate reden in the present tense."
         },
-        "sentence": "Maria tanz___.",
+        "sentence": "Wir ___ mit dem Techniker. (reden)",
         "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-12-rev-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Sie bring___ erst ihre Kinder in den Kindergarten.",
-          "de": "Ergänzen Sie die Endungen. — Sie bring___ erst ihre Kinder in den Kindergarten.",
-          "ar": "أكمل نهايات الأفعال. — Sie bring___ erst ihre Kinder in den Kindergarten.",
-          "en": "Complete the endings. — Sie bring___ erst ihre Kinder in den Kindergarten."
+          "fr": "Conjuguez warten au présent.",
+          "de": "Konjugieren Sie warten im Präsens.",
+          "ar": "صرّف warten في المضارع.",
+          "en": "Conjugate warten in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "est",
-          "t",
-          "e"
-        ]
+        "sentence": "Ihr ___ auf Ersatzteile. (warten)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-12-rev-q07",
         "position": 7,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez arbeiten au présent. — Die Techniker ___ heute länger. (arbeiten)",
+          "de": "Konjugieren Sie arbeiten im Präsens. — Die Techniker ___ heute länger. (arbeiten)",
+          "ar": "صرّف arbeiten في المضارع. — Die Techniker ___ heute länger. (arbeiten)",
+          "en": "Conjugate arbeiten in the present tense. — Die Techniker ___ heute länger. (arbeiten)"
         },
-        "sentence": "Angelo und Pedro red___ und trink___ eine Cola.",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "arbeitest",
+          "arbeitet",
+          "arbeite",
+          "arbeiten"
+        ]
       },
       {
         "id": "kapitel-02-ubung-12-association",
         "position": 8,
-        "type": "matching",
+        "type": "reorder",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Reconstituez la phrase. Commencez par « Wann ».",
+          "de": "Bilden Sie den Satz. Beginnen Sie mit „Wann“.",
+          "ar": "رتّب الجملة. ابدأ بـ « Wann ».",
+          "en": "Rebuild the sentence. Start with “Wann”."
         },
-        "items": [
-          {
-            "id": "i0",
-            "label": "ich kommen"
-          },
-          {
-            "id": "i1",
-            "label": "du kommen"
-          },
-          {
-            "id": "i2",
-            "label": "wir kommen"
-          }
-        ],
-        "options": [
-          "kommen",
-          "komme",
-          "kommst"
+        "tokens": [
+          "Wann",
+          "du?",
+          "arbeitest"
         ]
       }
     ]
@@ -288,141 +288,141 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Révision 13",
-      "de": "Wiederholung 13",
-      "ar": "مراجعة 13",
-      "en": "Review 13"
+      "fr": "Communication quotidienne",
+      "de": "Alltagskommunikation",
+      "ar": "التواصل اليومي",
+      "en": "Everyday communication"
     },
     "description": {
-      "fr": "Révisez la conjugaison.",
-      "de": "Üben Sie die Konjugation.",
-      "ar": "راجع التصريف.",
-      "en": "Review conjugation."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
         "id": "kapitel-02-ubung-13-rev-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez schreiben au présent. — Ich ___ die Adresse ins Formular. (schreiben)",
+          "de": "Konjugieren Sie schreiben im Präsens. — Ich ___ die Adresse ins Formular. (schreiben)",
+          "ar": "صرّف schreiben في المضارع. — Ich ___ die Adresse ins Formular. (schreiben)",
+          "en": "Conjugate schreiben in the present tense. — Ich ___ die Adresse ins Formular. (schreiben)"
         },
-        "sentence": "Wir tanz___ gerne und geh___ gerne aus.",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "schreibt",
+          "schreibe",
+          "schreibst",
+          "schreiben"
+        ]
       },
       {
         "id": "kapitel-02-ubung-13-rev-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Ich freu___ mich schon.",
-          "de": "Ergänzen Sie die Endungen. — Ich freu___ mich schon.",
-          "ar": "أكمل نهايات الأفعال. — Ich freu___ mich schon.",
-          "en": "Complete the endings. — Ich freu___ mich schon."
+          "fr": "Conjuguez fragen au présent.",
+          "de": "Konjugieren Sie fragen im Präsens.",
+          "ar": "صرّف fragen في المضارع.",
+          "en": "Conjugate fragen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "st",
-          "e",
-          "en",
-          "est"
-        ]
+        "sentence": "Die Kundin ___ nach einem Termin. (fragen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-13-rev-q03",
         "position": 3,
-        "type": "true_false",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez hören au présent.",
+          "de": "Konjugieren Sie hören im Präsens.",
+          "ar": "صرّف hören في المضارع.",
+          "en": "Conjugate hören in the present tense."
         },
-        "statement": "Ich komme meistens gegen acht Uhr ins Büro."
+        "sentence": "Wir ___ die Nachricht. (hören)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-13-rev-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez tanzen au présent. — ___ ihr heute Abend? (tanzen)",
+          "de": "Konjugieren Sie tanzen im Präsens. — ___ ihr heute Abend? (tanzen)",
+          "ar": "صرّف tanzen في المضارع. — ___ ihr heute Abend? (tanzen)",
+          "en": "Conjugate tanzen in the present tense. — ___ ihr heute Abend? (tanzen)"
         },
-        "sentence": "Das mach___ immer Spaß.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Tanztt",
+          "Tanzt",
+          "Tanzen",
+          "Tanze"
+        ]
       },
       {
         "id": "kapitel-02-ubung-13-rev-q05",
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez wohnen au présent.",
+          "de": "Konjugieren Sie wohnen im Präsens.",
+          "ar": "صرّف wohnen في المضارع.",
+          "en": "Conjugate wohnen in the present tense."
         },
-        "sentence": "Wir mach___ fast alles zusammen.",
+        "sentence": "Die Gäste ___ im Hotel. (wohnen)",
         "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-13-rev-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Wir wohn___ jetzt in Berlin.",
-          "de": "Ergänzen Sie die Endungen. — Wir wohn___ jetzt in Berlin.",
-          "ar": "أكمل نهايات الأفعال. — Wir wohn___ jetzt in Berlin.",
-          "en": "Complete the endings. — Wir wohn___ jetzt in Berlin."
+          "fr": "Conjuguez schreiben au présent.",
+          "de": "Konjugieren Sie schreiben im Präsens.",
+          "ar": "صرّف schreiben في المضارع.",
+          "en": "Conjugate schreiben in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "est",
-          "e",
-          "st"
-        ]
+        "sentence": "Herr Koch, ___ Sie die E-Mail? (schreiben)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-13-rev-q07",
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Jana besuch___ ihre Eltern.",
-          "de": "Ergänzen Sie die Endungen. — Jana besuch___ ihre Eltern.",
-          "ar": "أكمل نهايات الأفعال. — Jana besuch___ ihre Eltern.",
-          "en": "Complete the endings. — Jana besuch___ ihre Eltern."
+          "fr": "Conjuguez reden au présent. — Du ___ mit der Kollegin. (reden)",
+          "de": "Konjugieren Sie reden im Präsens. — Du ___ mit der Kollegin. (reden)",
+          "ar": "صرّف reden في المضارع. — Du ___ mit der Kollegin. (reden)",
+          "en": "Conjugate reden in the present tense. — Du ___ mit der Kollegin. (reden)"
         },
         "selection": "single",
         "options": [
-          "en",
-          "est",
-          "t",
-          "e"
+          "rede",
+          "reden",
+          "redet",
+          "redest"
         ]
       },
       {
         "id": "kapitel-02-ubung-13-multi",
         "position": 8,
         "type": "qcm",
+        "prompt": {
+          "fr": "Sélectionnez toutes les phrases correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر جميع الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
         "selection": "multiple",
         "options": [
-          "ich kommen → komme",
-          "du kommen → kommst",
-          "du kommen → kommen",
-          "wir kommen → kommen",
-          "ich kommen → kommst"
-        ],
-        "prompt": {
-          "fr": "Sélectionnez toutes les associations correctes.",
-          "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
-          "en": "Select all correct pairs."
-        }
+          "Ihr redet sehr laut.",
+          "Du wartest auf mich.",
+          "Er arbeitst heute.",
+          "Wir wohnt in Bonn."
+        ]
       }
     ]
   }

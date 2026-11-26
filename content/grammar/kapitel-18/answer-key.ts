@@ -4,10 +4,10 @@ export const chapter18AnswerKey: AnswerKey = {
   "kapitel-18-ubung-01-q01": {
     "acceptedAnswers": "mein",
     "explanation": {
-      "fr": "Hier bin ich. Das ist mein Kind. — mein + ∅ (N, n.) → mein. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Hier bin ich. Das ist mein Kind. — mein + ∅ (N, n.) → mein. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Hier bin ich. Das ist mein Kind. — mein + ∅ (N, n.) → mein. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Hier bin ich. Das ist mein Kind. — mein + ∅ (N, n.) → mein. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Hier bin ich. Das ist mein Kind. — mein + (N, n.) → mein. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Hier bin ich. Das ist mein Kind. — mein + (N, n.) → mein. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
+      "ar": "Hier bin ich. Das ist mein Kind. — mein + (N, n.) → mein. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
+      "en": "Hier bin ich. Das ist mein Kind. — mein + (N, n.) → mein. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
     }
   },
   "kapitel-18-ubung-01-q02": {
@@ -42,10 +42,10 @@ export const chapter18AnswerKey: AnswerKey = {
   "kapitel-18-ubung-01-q05": {
     "acceptedAnswers": "dein",
     "explanation": {
-      "fr": "Du bist hier. Das ist dein Vater. — dein + ∅ (N, m.) → dein. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Du bist hier. Das ist dein Vater. — dein + ∅ (N, m.) → dein. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Du bist hier. Das ist dein Vater. — dein + ∅ (N, m.) → dein. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Du bist hier. Das ist dein Vater. — dein + ∅ (N, m.) → dein. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Du bist hier. Das ist dein Vater. — dein + (N, m.) → dein. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Du bist hier. Das ist dein Vater. — dein + (N, m.) → dein. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
+      "ar": "Du bist hier. Das ist dein Vater. — dein + (N, m.) → dein. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
+      "en": "Du bist hier. Das ist dein Vater. — dein + (N, m.) → dein. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
     }
   },
   "kapitel-18-ubung-02-q01": {
@@ -62,19 +62,19 @@ export const chapter18AnswerKey: AnswerKey = {
       "ihr"
     ],
     "explanation": {
-      "fr": "Martina hat einen Mann. Das ist ihr Mann Jörg. — ihr + ∅ (N, m.) → ihr. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Martina hat einen Mann. Das ist ihr Mann Jörg. — ihr + ∅ (N, m.) → ihr. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Martina hat einen Mann. Das ist ihr Mann Jörg. — ihr + ∅ (N, m.) → ihr. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Martina hat einen Mann. Das ist ihr Mann Jörg. — ihr + ∅ (N, m.) → ihr. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Martina hat einen Mann. Das ist ihr Mann Jörg. — ihr + (N, m.) → ihr. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Martina hat einen Mann. Das ist ihr Mann Jörg. — ihr + (N, m.) → ihr. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
+      "ar": "Martina hat einen Mann. Das ist ihr Mann Jörg. — ihr + (N, m.) → ihr. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
+      "en": "Martina hat einen Mann. Das ist ihr Mann Jörg. — ihr + (N, m.) → ihr. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
     }
   },
   "kapitel-18-ubung-02-q03": {
     "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Jörg hat ein Fahrrad. Das ist sein Fahrrad. — sein + ∅ (N, n.) → sein. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Jörg hat ein Fahrrad. Das ist sein Fahrrad. — sein + ∅ (N, n.) → sein. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Jörg hat ein Fahrrad. Das ist sein Fahrrad. — sein + ∅ (N, n.) → sein. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Jörg hat ein Fahrrad. Das ist sein Fahrrad. — sein + ∅ (N, n.) → sein. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Jörg hat ein Fahrrad. Das ist sein Fahrrad. — sein + (N, n.) → sein. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Jörg hat ein Fahrrad. Das ist sein Fahrrad. — sein + (N, n.) → sein. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
+      "ar": "Jörg hat ein Fahrrad. Das ist sein Fahrrad. — sein + (N, n.) → sein. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
+      "en": "Jörg hat ein Fahrrad. Das ist sein Fahrrad. — sein + (N, n.) → sein. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
     }
   },
   "kapitel-18-ubung-02-q04": {
@@ -111,19 +111,19 @@ export const chapter18AnswerKey: AnswerKey = {
       "euer"
     ],
     "explanation": {
-      "fr": "Thomas und Susi, wo ist euer Papa? — euer + ∅ (N, m.) → euer. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Thomas und Susi, wo ist euer Papa? — euer + ∅ (N, m.) → euer. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Thomas und Susi, wo ist euer Papa? — euer + ∅ (N, m.) → euer. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Thomas und Susi, wo ist euer Papa? — euer + ∅ (N, m.) → euer. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Thomas und Susi, wo ist euer Papa? — euer + (N, m.) → euer. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Thomas und Susi, wo ist euer Papa? — euer + (N, m.) → euer. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
+      "ar": "Thomas und Susi, wo ist euer Papa? — euer + (N, m.) → euer. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
+      "en": "Thomas und Susi, wo ist euer Papa? — euer + (N, m.) → euer. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
     }
   },
   "kapitel-18-ubung-03-q02": {
     "acceptedAnswers": "false",
     "explanation": {
-      "fr": "Wir antworten: unser Papa ist in der Küche. — unser + ∅ (N, m.) → unser. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Wir antworten: unser Papa ist in der Küche. — unser + ∅ (N, m.) → unser. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Wir antworten: unser Papa ist in der Küche. — unser + ∅ (N, m.) → unser. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Wir antworten: unser Papa ist in der Küche. — unser + ∅ (N, m.) → unser. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Wir antworten: unser Papa ist in der Küche. — unser + (N, m.) → unser. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Wir antworten: unser Papa ist in der Küche. — unser + (N, m.) → unser. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
+      "ar": "Wir antworten: unser Papa ist in der Küche. — unser + (N, m.) → unser. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
+      "en": "Wir antworten: unser Papa ist in der Küche. — unser + (N, m.) → unser. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
     }
   },
   "kapitel-18-ubung-03-q03": {
@@ -223,10 +223,10 @@ export const chapter18AnswerKey: AnswerKey = {
   "kapitel-18-ubung-04-q07": {
     "acceptedAnswers": "Ihr",
     "explanation": {
-      "fr": "Frau Dorn, Ihr Mann hat angerufen. — Ihr + ∅ (N, m.) → Ihr. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Frau Dorn, Ihr Mann hat angerufen. — Ihr + ∅ (N, m.) → Ihr. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Frau Dorn, Ihr Mann hat angerufen. — Ihr + ∅ (N, m.) → Ihr. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Frau Dorn, Ihr Mann hat angerufen. — Ihr + ∅ (N, m.) → Ihr. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Frau Dorn, Ihr Mann hat angerufen. — Ihr + (N, m.) → Ihr. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Frau Dorn, Ihr Mann hat angerufen. — Ihr + (N, m.) → Ihr. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
+      "ar": "Frau Dorn, Ihr Mann hat angerufen. — Ihr + (N, m.) → Ihr. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
+      "en": "Frau Dorn, Ihr Mann hat angerufen. — Ihr + (N, m.) → Ihr. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
     }
   },
   "kapitel-18-ubung-05-q01": {
@@ -337,10 +337,10 @@ export const chapter18AnswerKey: AnswerKey = {
   "kapitel-18-ubung-06-q03": {
     "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Paul verkauft sein Auto. — sein + ∅ (A, n.) → sein. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Paul verkauft sein Auto. — sein + ∅ (A, n.) → sein. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Paul verkauft sein Auto. — sein + ∅ (A, n.) → sein. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Paul verkauft sein Auto. — sein + ∅ (A, n.) → sein. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Paul verkauft sein Auto. — sein + (A, n.) → sein. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Paul verkauft sein Auto. — sein + (A, n.) → sein. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
+      "ar": "Paul verkauft sein Auto. — sein + (A, n.) → sein. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
+      "en": "Paul verkauft sein Auto. — sein + (A, n.) → sein. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
     }
   },
   "kapitel-18-ubung-06-q04": {
@@ -401,22 +401,23 @@ export const chapter18AnswerKey: AnswerKey = {
   },
   "kapitel-18-ubung-07-q05": {
     "acceptedAnswers": [
-      "eurer"
+      "eurer",
+      "eurem"
     ],
     "explanation": {
-      "fr": "Kinder, helft eurer Mutter! — euer + er (D, f.) → eurer. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Kinder, helft eurer Mutter! — euer + er (D, f.) → eurer. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Kinder, helft eurer Mutter! — euer + er (D, f.) → eurer. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Kinder, helft eurer Mutter! — euer + er (D, f.) → eurer. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Kinder, helft eurer Mutter und bringt eurem Vater den Einkauf. (die Eltern der Kinder) — Avec ihr, le possessif est euer sans terminaison, mais eur- devant une terminaison : eure, euren, eurem, eurer.",
+      "de": "Kinder, helft eurer Mutter und bringt eurem Vater den Einkauf. (die Eltern der Kinder) — Zu ihr gehört euer ohne Endung, aber eur- vor einer Endung: eure, euren, eurem, eurer.",
+      "ar": "Kinder, helft eurer Mutter und bringt eurem Vater den Einkauf. (die Eltern der Kinder) — مع ihr نستعمل euer دون نهاية، وeur- مع النهاية: eure وeuren وeurem وeurer.",
+      "en": "Kinder, helft eurer Mutter und bringt eurem Vater den Einkauf. (die Eltern der Kinder) — With ihr, use euer without an ending, but eur- before an ending: eure, euren, eurem, eurer."
     }
   },
   "kapitel-18-ubung-08-q01": {
     "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Mein Bruder hilft mir. (ich) — mein + ∅ (N, m.) → Mein. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Mein Bruder hilft mir. (ich) — mein + ∅ (N, m.) → Mein. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Mein Bruder hilft mir. (ich) — mein + ∅ (N, m.) → Mein. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Mein Bruder hilft mir. (ich) — mein + ∅ (N, m.) → Mein. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Mein Bruder hilft mir. (ich) — mein + (N, m.) → Mein. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Mein Bruder hilft mir. (ich) — mein + (N, m.) → Mein. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
+      "ar": "Mein Bruder hilft mir. (ich) — mein + (N, m.) → Mein. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
+      "en": "Mein Bruder hilft mir. (ich) — mein + (N, m.) → Mein. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
     }
   },
   "kapitel-18-ubung-08-q02": {
@@ -439,13 +440,14 @@ export const chapter18AnswerKey: AnswerKey = {
   },
   "kapitel-18-ubung-08-q04": {
     "acceptedAnswers": [
-      "Ihren"
+      "ihre",
+      "ihren"
     ],
     "explanation": {
-      "fr": "Ihren Kindern gibt sie Bücher. (sie, Singular) — ihr + en (D, Pl.) → Ihren. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Ihren Kindern gibt sie Bücher. (sie, Singular) — ihr + en (D, Pl.) → Ihren. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Ihren Kindern gibt sie Bücher. (sie, Singular) — ihr + en (D, Pl.) → Ihren. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Ihren Kindern gibt sie Bücher. (sie, Singular) — ihr + en (D, Pl.) → Ihren. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Die Mutter besucht ihre Kinder und schenkt ihren Kindern Bücher. (Kinder der Mutter) — Le propriétaire détermine le radical du possessif ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Die Mutter besucht ihre Kinder und schenkt ihren Kindern Bücher. (Kinder der Mutter) — Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des besessenen Nomens bestimmen die Endung.",
+      "ar": "Die Mutter besucht ihre Kinder und schenkt ihren Kindern Bücher. (Kinder der Mutter) — يحدد المالك أصل أداة الملكية، ويحدد جنس الاسم المملوك وعدده وحالته النهاية.",
+      "en": "Die Mutter besucht ihre Kinder und schenkt ihren Kindern Bücher. (Kinder der Mutter) — The owner determines the possessive stem; the possessed noun’s gender, number and case determine its ending."
     }
   },
   "kapitel-18-ubung-09-q01": {
@@ -478,12 +480,15 @@ export const chapter18AnswerKey: AnswerKey = {
     }
   },
   "kapitel-18-ubung-09-q04": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "Frau Weber, hier ist Ihr Pass.",
+      "Kinder, hier sind eure Pässe."
+    ],
     "explanation": {
-      "fr": "Paul sagt zu Anna: Hier ist dein Ausweis. — dein + ∅ (N, m.) → dein. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Paul sagt zu Anna: Hier ist dein Ausweis. — dein + ∅ (N, m.) → dein. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Paul sagt zu Anna: Hier ist dein Ausweis. — dein + ∅ (N, m.) → dein. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Paul sagt zu Anna: Hier ist dein Ausweis. — dein + ∅ (N, m.) → dein. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Frau Weber, hier ist Ihr Pass. / Kinder, hier sind eure Pässe. — Le possessif de politesse Ihr- s’écrit avec une majuscule. Les terminaisons dépendent du nom possédé et de son cas.",
+      "de": "Frau Weber, hier ist Ihr Pass. / Kinder, hier sind eure Pässe. — Der höfliche Possessivartikel Ihr- wird großgeschrieben. Die Endung richtet sich nach dem Nomen und seinem Kasus.",
+      "ar": "Frau Weber, hier ist Ihr Pass. / Kinder, hier sind eure Pässe. — تكتب أداة الملكية الرسمية Ihr- بحرف كبير، وتتبع نهايتها الاسم وحالته.",
+      "en": "Frau Weber, hier ist Ihr Pass. / Kinder, hier sind eure Pässe. — The formal possessive Ihr- is capitalized. Its ending depends on the noun and its case."
     }
   },
   "kapitel-18-ubung-10-q01": {
@@ -516,126 +521,158 @@ export const chapter18AnswerKey: AnswerKey = {
     }
   },
   "kapitel-18-ubung-10-q04": {
-    "acceptedAnswers": "Ihrem",
+    "acceptedAnswers": [
+      "Ihren",
+      "Ihrem"
+    ],
     "explanation": {
-      "fr": "Frau Klein, ich gebe Ihrem Vater das Paket. — Ihr + em (D, m.) → Ihrem. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Frau Klein, ich gebe Ihrem Vater das Paket. — Ihr + em (D, m.) → Ihrem. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Frau Klein, ich gebe Ihrem Vater das Paket. — Ihr + em (D, m.) → Ihrem. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Frau Klein, ich gebe Ihrem Vater das Paket. — Ihr + em (D, m.) → Ihrem. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Frau Klein, ich habe Ihren Vater gesehen. Ich habe mit Ihrem Vater gesprochen. (Vater von Frau Klein) — Le possessif de politesse Ihr- s’écrit avec une majuscule. Les terminaisons dépendent du nom possédé et de son cas.",
+      "de": "Frau Klein, ich habe Ihren Vater gesehen. Ich habe mit Ihrem Vater gesprochen. (Vater von Frau Klein) — Der höfliche Possessivartikel Ihr- wird großgeschrieben. Die Endung richtet sich nach dem Nomen und seinem Kasus.",
+      "ar": "Frau Klein, ich habe Ihren Vater gesehen. Ich habe mit Ihrem Vater gesprochen. (Vater von Frau Klein) — تكتب أداة الملكية الرسمية Ihr- بحرف كبير، وتتبع نهايتها الاسم وحالته.",
+      "en": "Frau Klein, ich habe Ihren Vater gesehen. Ich habe mit Ihrem Vater gesprochen. (Vater von Frau Klein) — The formal possessive Ihr- is capitalized. Its ending depends on the noun and its case."
     }
   },
   "kapitel-18-ubung-11-q01": {
     "acceptedAnswers": [
-      "Ihren"
+      "Ihren",
+      "Ihrer"
     ],
     "explanation": {
-      "fr": "Herr Weber, bringen Sie bitte Ihren Befund mit. — Ihr + en (A, m.) → Ihren. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Herr Weber, bringen Sie bitte Ihren Befund mit. — Ihr + en (A, m.) → Ihren. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Herr Weber, bringen Sie bitte Ihren Befund mit. — Ihr + en (A, m.) → Ihren. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Herr Weber, bringen Sie bitte Ihren Befund mit. — Ihr + en (A, m.) → Ihren. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Herr Braun, ich habe Ihren Schlüssel gefunden. Er liegt neben Ihrer Tasche. (beides gehört Herrn Braun) — Le possessif de politesse Ihr- s’écrit avec une majuscule. Les terminaisons dépendent du nom possédé et de son cas.",
+      "de": "Herr Braun, ich habe Ihren Schlüssel gefunden. Er liegt neben Ihrer Tasche. (beides gehört Herrn Braun) — Der höfliche Possessivartikel Ihr- wird großgeschrieben. Die Endung richtet sich nach dem Nomen und seinem Kasus.",
+      "ar": "Herr Braun, ich habe Ihren Schlüssel gefunden. Er liegt neben Ihrer Tasche. (beides gehört Herrn Braun) — تكتب أداة الملكية الرسمية Ihr- بحرف كبير، وتتبع نهايتها الاسم وحالته.",
+      "en": "Herr Braun, ich habe Ihren Schlüssel gefunden. Er liegt neben Ihrer Tasche. (beides gehört Herrn Braun) — The formal possessive Ihr- is capitalized. Its ending depends on the noun and its case."
     }
   },
   "kapitel-18-ubung-11-q02": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "Frau Lang, hier ist Ihr Rezept.",
+      "Frau Lang, ich bringe Ihnen Ihre Tasche."
+    ],
     "explanation": {
-      "fr": "Die Patientin zeigt dem Arzt ihren Befund. — ihr + en (A, m.) → ihren. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Die Patientin zeigt dem Arzt ihren Befund. — ihr + en (A, m.) → ihren. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Die Patientin zeigt dem Arzt ihren Befund. — ihr + en (A, m.) → ihren. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Die Patientin zeigt dem Arzt ihren Befund. — ihr + en (A, m.) → ihren. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Frau Lang, hier ist Ihr Rezept. / Frau Lang, ich bringe Ihnen Ihre Tasche. — Le possessif de politesse Ihr- s’écrit avec une majuscule. Les terminaisons dépendent du nom possédé et de son cas.",
+      "de": "Frau Lang, hier ist Ihr Rezept. / Frau Lang, ich bringe Ihnen Ihre Tasche. — Der höfliche Possessivartikel Ihr- wird großgeschrieben. Die Endung richtet sich nach dem Nomen und seinem Kasus.",
+      "ar": "Frau Lang, hier ist Ihr Rezept. / Frau Lang, ich bringe Ihnen Ihre Tasche. — تكتب أداة الملكية الرسمية Ihr- بحرف كبير، وتتبع نهايتها الاسم وحالته.",
+      "en": "Frau Lang, hier ist Ihr Rezept. / Frau Lang, ich bringe Ihnen Ihre Tasche. — The formal possessive Ihr- is capitalized. Its ending depends on the noun and its case."
     }
   },
   "kapitel-18-ubung-11-q03": {
-    "acceptedAnswers": "seiner",
+    "acceptedAnswers": [
+      "meinem",
+      "deine",
+      "unseren"
+    ],
     "explanation": {
-      "fr": "Der Arzt spricht mit seiner Patientin. (seine Patientin) — sein + er (D, f.) → seiner. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Der Arzt spricht mit seiner Patientin. (seine Patientin) — sein + er (D, f.) → seiner. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Der Arzt spricht mit seiner Patientin. (seine Patientin) — sein + er (D, f.) → seiner. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Der Arzt spricht mit seiner Patientin. (seine Patientin) — sein + er (D, f.) → seiner. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Das Fahrrad gehört mir: Ich fahre mit meinem Fahrrad. / Die Tasche gehört dir: Ich sehe deine Tasche. / Der Wagen gehört uns: Wir verkaufen unseren Wagen. — Le propriétaire détermine le radical du possessif ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Das Fahrrad gehört mir: Ich fahre mit meinem Fahrrad. / Die Tasche gehört dir: Ich sehe deine Tasche. / Der Wagen gehört uns: Wir verkaufen unseren Wagen. — Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des besessenen Nomens bestimmen die Endung.",
+      "ar": "Das Fahrrad gehört mir: Ich fahre mit meinem Fahrrad. / Die Tasche gehört dir: Ich sehe deine Tasche. / Der Wagen gehört uns: Wir verkaufen unseren Wagen. — يحدد المالك أصل أداة الملكية، ويحدد جنس الاسم المملوك وعدده وحالته النهاية.",
+      "en": "Das Fahrrad gehört mir: Ich fahre mit meinem Fahrrad. / Die Tasche gehört dir: Ich sehe deine Tasche. / Der Wagen gehört uns: Wir verkaufen unseren Wagen. — The owner determines the possessive stem; the possessed noun’s gender, number and case determine its ending."
     }
   },
   "kapitel-18-ubung-11-q04": {
-    "acceptedAnswers": "unseren",
+    "acceptedAnswers": [
+      "ihren",
+      "ihre"
+    ],
     "explanation": {
-      "fr": "Wir helfen unseren Patienten. (unsere Patienten, Plural) — unser + en (D, Pl.) → unseren. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Wir helfen unseren Patienten. (unsere Patienten, Plural) — unser + en (D, Pl.) → unseren. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Wir helfen unseren Patienten. (unsere Patienten, Plural) — unser + en (D, Pl.) → unseren. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Wir helfen unseren Patienten. (unsere Patienten, Plural) — unser + en (D, Pl.) → unseren. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Die Ärztin hat zwei Kinder und zwei Jacken für sich. Sie zeigt ihren Kindern ihre neuen Jacken. (Kinder und Jacken der Ärztin) — Le propriétaire détermine le radical du possessif ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Die Ärztin hat zwei Kinder und zwei Jacken für sich. Sie zeigt ihren Kindern ihre neuen Jacken. (Kinder und Jacken der Ärztin) — Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des besessenen Nomens bestimmen die Endung.",
+      "ar": "Die Ärztin hat zwei Kinder und zwei Jacken für sich. Sie zeigt ihren Kindern ihre neuen Jacken. (Kinder und Jacken der Ärztin) — يحدد المالك أصل أداة الملكية، ويحدد جنس الاسم المملوك وعدده وحالته النهاية.",
+      "en": "Die Ärztin hat zwei Kinder und zwei Jacken für sich. Sie zeigt ihren Kindern ihre neuen Jacken. (Kinder und Jacken der Ärztin) — The owner determines the possessive stem; the possessed noun’s gender, number and case determine its ending."
     }
   },
   "kapitel-18-ubung-12-q01": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "euer",
+      "eurem"
+    ],
     "explanation": {
-      "fr": "Kinder, stellt euren Tisch hierhin! — euer + en (A, m.) → euren. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Kinder, stellt euren Tisch hierhin! — euer + en (A, m.) → euren. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Kinder, stellt euren Tisch hierhin! — euer + en (A, m.) → euren. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Kinder, stellt euren Tisch hierhin! — euer + en (A, m.) → euren. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Kinder, wo ist euer Ball? Habt ihr mit eurem Ball gespielt? (Ball der Kinder) — Avec ihr, le possessif est euer sans terminaison, mais eur- devant une terminaison : eure, euren, eurem, eurer.",
+      "de": "Kinder, wo ist euer Ball? Habt ihr mit eurem Ball gespielt? (Ball der Kinder) — Zu ihr gehört euer ohne Endung, aber eur- vor einer Endung: eure, euren, eurem, eurer.",
+      "ar": "Kinder, wo ist euer Ball? Habt ihr mit eurem Ball gespielt? (Ball der Kinder) — مع ihr نستعمل euer دون نهاية، وeur- مع النهاية: eure وeuren وeurem وeurer.",
+      "en": "Kinder, wo ist euer Ball? Habt ihr mit eurem Ball gespielt? (Ball der Kinder) — With ihr, use euer without an ending, but eur- before an ending: eure, euren, eurem, eurer."
     }
   },
   "kapitel-18-ubung-12-q02": {
-    "acceptedAnswers": "eurem",
+    "acceptedAnswers": [
+      "Euren neuen Tisch",
+      "stellen",
+      "wir hierhin."
+    ],
     "explanation": {
-      "fr": "Kinder, auf eurem Tisch liegen die Bücher. — euer + em (D, m.) → eurem. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Kinder, auf eurem Tisch liegen die Bücher. — euer + em (D, m.) → eurem. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Kinder, auf eurem Tisch liegen die Bücher. — euer + em (D, m.) → eurem. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Kinder, auf eurem Tisch liegen die Bücher. — euer + em (D, m.) → eurem. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Euren neuen Tisch stellen wir hierhin. — Le propriétaire détermine le radical du possessif ; le genre, le nombre et le cas du nom possédé déterminent la terminaison. Dans une phrase déclarative, le verbe conjugué est en deuxième position ; le premier groupe forme un seul constituant. Respectez les blocs indiqués.",
+      "de": "Euren neuen Tisch stellen wir hierhin. — Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des besessenen Nomens bestimmen die Endung. Im Aussagesatz steht das finite Verb an zweiter Stelle; das erste Satzglied zählt als Einheit. Beachten Sie die vorgegebenen Blöcke.",
+      "ar": "Euren neuen Tisch stellen wir hierhin. — يحدد المالك أصل أداة الملكية، ويحدد جنس الاسم المملوك وعدده وحالته النهاية. في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وتعد المجموعة الأولى وحدة واحدة. التزم بالمجموعات المعطاة.",
+      "en": "Euren neuen Tisch stellen wir hierhin. — The owner determines the possessive stem; the possessed noun’s gender, number and case determine its ending. In a statement the finite verb is second; the initial phrase counts as one constituent. Keep the given chunks together."
     }
   },
   "kapitel-18-ubung-12-q03": {
-    "acceptedAnswers": "unser",
+    "acceptedAnswers": [
+      "Kinder, nehmt eure Bücher mit!",
+      "Kinder, ich helfe eurer Mutter."
+    ],
     "explanation": {
-      "fr": "Wir stellen unser Sofa neben den Tisch. — unser + ∅ (A, n.) → unser. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Wir stellen unser Sofa neben den Tisch. — unser + ∅ (A, n.) → unser. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Wir stellen unser Sofa neben den Tisch. — unser + ∅ (A, n.) → unser. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Wir stellen unser Sofa neben den Tisch. — unser + ∅ (A, n.) → unser. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Kinder, nehmt eure Bücher mit! / Kinder, ich helfe eurer Mutter. — Avec ihr, le possessif est euer sans terminaison, mais eur- devant une terminaison : eure, euren, eurem, eurer.",
+      "de": "Kinder, nehmt eure Bücher mit! / Kinder, ich helfe eurer Mutter. — Zu ihr gehört euer ohne Endung, aber eur- vor einer Endung: eure, euren, eurem, eurer.",
+      "ar": "Kinder, nehmt eure Bücher mit! / Kinder, ich helfe eurer Mutter. — مع ihr نستعمل euer دون نهاية، وeur- مع النهاية: eure وeuren وeurem وeurer.",
+      "en": "Kinder, nehmt eure Bücher mit! / Kinder, ich helfe eurer Mutter. — With ihr, use euer without an ending, but eur- before an ending: eure, euren, eurem, eurer."
     }
   },
   "kapitel-18-ubung-12-q04": {
     "acceptedAnswers": [
+      "ihr",
       "ihrem"
     ],
     "explanation": {
-      "fr": "Anna und Tom fahren mit ihrem Auto zum Möbelhaus. — ihr + em (D, n.) → ihrem. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Anna und Tom fahren mit ihrem Auto zum Möbelhaus. — ihr + em (D, n.) → ihrem. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Anna und Tom fahren mit ihrem Auto zum Möbelhaus. — ihr + em (D, n.) → ihrem. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Anna und Tom fahren mit ihrem Auto zum Möbelhaus. — ihr + em (D, n.) → ihrem. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Tom und Mia ziehen um. Sie verkaufen ihr Sofa und fahren mit ihrem Wagen zum Möbelhaus. (beides gehört Tom und Mia) — Le propriétaire détermine le radical du possessif ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Tom und Mia ziehen um. Sie verkaufen ihr Sofa und fahren mit ihrem Wagen zum Möbelhaus. (beides gehört Tom und Mia) — Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des besessenen Nomens bestimmen die Endung.",
+      "ar": "Tom und Mia ziehen um. Sie verkaufen ihr Sofa und fahren mit ihrem Wagen zum Möbelhaus. (beides gehört Tom und Mia) — يحدد المالك أصل أداة الملكية، ويحدد جنس الاسم المملوك وعدده وحالته النهاية.",
+      "en": "Tom und Mia ziehen um. Sie verkaufen ihr Sofa und fahren mit ihrem Wagen zum Möbelhaus. (beides gehört Tom und Mia) — The owner determines the possessive stem; the possessed noun’s gender, number and case determine its ending."
     }
   },
   "kapitel-18-ubung-13-q01": {
-    "acceptedAnswers": "Ihr",
+    "acceptedAnswers": [
+      "ihren",
+      "seinem"
+    ],
     "explanation": {
-      "fr": "Frau Berg, Ihr Kollege wartet auf Sie. — Ihr + ∅ (N, m.) → Ihr. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Frau Berg, Ihr Kollege wartet auf Sie. — Ihr + ∅ (N, m.) → Ihr. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Frau Berg, Ihr Kollege wartet auf Sie. — Ihr + ∅ (N, m.) → Ihr. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Frau Berg, Ihr Kollege wartet auf Sie. — Ihr + ∅ (N, m.) → Ihr. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Lea sucht ihren Bruder (Leas Bruder). Paul telefoniert mit seinem Bruder (Pauls Bruder). — Le propriétaire détermine le radical du possessif ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Lea sucht ihren Bruder (Leas Bruder). Paul telefoniert mit seinem Bruder (Pauls Bruder). — Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des besessenen Nomens bestimmen die Endung.",
+      "ar": "Lea sucht ihren Bruder (Leas Bruder). Paul telefoniert mit seinem Bruder (Pauls Bruder). — يحدد المالك أصل أداة الملكية، ويحدد جنس الاسم المملوك وعدده وحالته النهاية.",
+      "en": "Lea sucht ihren Bruder (Leas Bruder). Paul telefoniert mit seinem Bruder (Pauls Bruder). — The owner determines the possessive stem; the possessed noun’s gender, number and case determine its ending."
     }
   },
   "kapitel-18-ubung-13-q02": {
-    "acceptedAnswers": "Ihren",
+    "acceptedAnswers": [
+      "Herr Beck, ich brauche Ihren Ausweis.",
+      "Herr Beck, wir sprechen mit Ihrer Kollegin."
+    ],
     "explanation": {
-      "fr": "Frau Berg, ich warte auf Ihren Kollegen. — Ihr + en (A, m.) → Ihren. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Frau Berg, ich warte auf Ihren Kollegen. — Ihr + en (A, m.) → Ihren. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Frau Berg, ich warte auf Ihren Kollegen. — Ihr + en (A, m.) → Ihren. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Frau Berg, ich warte auf Ihren Kollegen. — Ihr + en (A, m.) → Ihren. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Herr Beck, ich brauche Ihren Ausweis. / Herr Beck, wir sprechen mit Ihrer Kollegin. — Le possessif de politesse Ihr- s’écrit avec une majuscule. Les terminaisons dépendent du nom possédé et de son cas.",
+      "de": "Herr Beck, ich brauche Ihren Ausweis. / Herr Beck, wir sprechen mit Ihrer Kollegin. — Der höfliche Possessivartikel Ihr- wird großgeschrieben. Die Endung richtet sich nach dem Nomen und seinem Kasus.",
+      "ar": "Herr Beck, ich brauche Ihren Ausweis. / Herr Beck, wir sprechen mit Ihrer Kollegin. — تكتب أداة الملكية الرسمية Ihr- بحرف كبير، وتتبع نهايتها الاسم وحالته.",
+      "en": "Herr Beck, ich brauche Ihren Ausweis. / Herr Beck, wir sprechen mit Ihrer Kollegin. — The formal possessive Ihr- is capitalized. Its ending depends on the noun and its case."
     }
   },
   "kapitel-18-ubung-13-q03": {
-    "acceptedAnswers": [
-      "Ihrem"
-    ],
+    "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Frau Berg, ich spreche mit Ihrem Kollegen. — Ihr + em (D, m.) → Ihrem. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Frau Berg, ich spreche mit Ihrem Kollegen. — Ihr + em (D, m.) → Ihrem. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Frau Berg, ich spreche mit Ihrem Kollegen. — Ihr + em (D, m.) → Ihrem. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Frau Berg, ich spreche mit Ihrem Kollegen. — Ihr + em (D, m.) → Ihrem. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Anna spricht mit ihrem Vater. — Le propriétaire détermine le radical du possessif ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Anna spricht mit ihrem Vater. — Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des besessenen Nomens bestimmen die Endung.",
+      "ar": "Anna spricht mit ihrem Vater. — يحدد المالك أصل أداة الملكية، ويحدد جنس الاسم المملوك وعدده وحالته النهاية.",
+      "en": "Anna spricht mit ihrem Vater. — The owner determines the possessive stem; the possessed noun’s gender, number and case determine its ending."
     }
   },
   "kapitel-18-ubung-13-q04": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "unsere",
+      "unseren"
+    ],
     "explanation": {
-      "fr": "Lena sagt: Ich spreche mit meinem Kollegen. (mein Kollege) — mein + em (D, m.) → meinem. Le propriétaire détermine le radical ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
-      "de": "Lena sagt: Ich spreche mit meinem Kollegen. (mein Kollege) — mein + em (D, m.) → meinem. Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des Nomens bestimmen die Endung.",
-      "ar": "Lena sagt: Ich spreche mit meinem Kollegen. (mein Kollege) — mein + em (D, m.) → meinem. يحدد المالك أصل الأداة ويحدد جنس الاسم وعدده وحالته النهاية.",
-      "en": "Lena sagt: Ich spreche mit meinem Kollegen. (mein Kollege) — mein + em (D, m.) → meinem. The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
+      "fr": "Wir besuchen unsere Eltern und helfen unseren Nachbarn (Plural). (beides: unser) — Le propriétaire détermine le radical du possessif ; le genre, le nombre et le cas du nom possédé déterminent la terminaison.",
+      "de": "Wir besuchen unsere Eltern und helfen unseren Nachbarn (Plural). (beides: unser) — Der Besitzer bestimmt den Stamm; Genus, Numerus und Kasus des besessenen Nomens bestimmen die Endung.",
+      "ar": "Wir besuchen unsere Eltern und helfen unseren Nachbarn (Plural). (beides: unser) — يحدد المالك أصل أداة الملكية، ويحدد جنس الاسم المملوك وعدده وحالته النهاية.",
+      "en": "Wir besuchen unsere Eltern und helfen unseren Nachbarn (Plural). (beides: unser) — The owner determines the possessive stem; the possessed noun’s gender, number and case determine its ending."
     }
   }
 }

@@ -5,102 +5,120 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "À la gare",
-      "de": "Am Bahnhof",
-      "ar": "في المحطة",
-      "en": "At the station"
+      "fr": "En voyage en groupe",
+      "de": "Eine Gruppenreise",
+      "ar": "رحلة جماعية",
+      "en": "A group trip"
     },
     "description": {
-      "fr": "Entraînez les formes de l’impératif.",
-      "de": "Üben Sie die Imperativformen.",
-      "ar": "تدرب على صيغ الأمر.",
-      "en": "Practise imperative forms."
+      "fr": "Résolvez les situations inédites en appliquant la règle du chapitre.",
+      "de": "Lösen Sie neue Situationen mit der Grammatik des Kapitels.",
+      "ar": "حل مواقف جديدة بتطبيق قاعدة الفصل.",
+      "en": "Solve new situations using the chapter grammar."
     },
     "questions": [
       {
         "id": "kapitel-08-ubung-11-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (mitbringen, ihr) ___ bitte eure Ausweise ___!",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (mitbringen, ihr) ___ bitte eure Ausweise ___!",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (mitbringen, ihr) ___ bitte eure Ausweise ___!",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (mitbringen, ihr) ___ bitte eure Ausweise ___!"
         },
-        "sentence": "(einsteigen, Sie) ___ Sie bitte ___!",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "mit / Bringt",
+          "Bringt / mit",
+          "Bring / mit"
+        ]
       },
       {
         "id": "kapitel-08-ubung-11-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (aufstehen, du) ___ jetzt ___, der Bus kommt!",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (aufstehen, du) ___ jetzt ___, der Bus kommt!",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (aufstehen, du) ___ jetzt ___, der Bus kommt!",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (aufstehen, du) ___ jetzt ___, der Bus kommt!"
         },
-        "sentence": "(warten, du) ___ hier!",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "auf / Steh",
+          "Stehst / auf",
+          "Steh / auf"
+        ]
       },
       {
         "id": "kapitel-08-ubung-11-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (sein, Sie) ___ Sie bitte vor der Abfahrt am Eingang!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (sein, Sie) ___ Sie bitte vor der Abfahrt am Eingang!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (sein, Sie) ___ Sie bitte vor der Abfahrt am Eingang!",
+          "en": "Choose the correct answer in context. — (sein, Sie) ___ Sie bitte vor der Abfahrt am Eingang!"
         },
-        "sentence": "(mitkommen, ihr) ___ bitte ___!",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "Seien",
+          "Sind"
+        ]
       },
       {
         "id": "kapitel-08-ubung-11-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (nehmen, du) ___ den Zug um acht!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (nehmen, du) ___ den Zug um acht!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (nehmen, du) ___ den Zug um acht!",
+          "en": "Choose the correct answer in context. — (nehmen, du) ___ den Zug um acht!"
         },
-        "sentence": "(nehmen, Sie) ___ Sie den nächsten Zug!",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Nehmt",
+          "Nimm"
+        ]
       },
       {
         "id": "kapitel-08-ubung-11-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (umsteigen, Sie) ___ Sie bitte in Bonn ___!",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (umsteigen, Sie) ___ Sie bitte in Bonn ___!",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (umsteigen, Sie) ___ Sie bitte in Bonn ___!",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (umsteigen, Sie) ___ Sie bitte in Bonn ___!"
         },
-        "sentence": "(sein, du) ___ pünktlich!",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Steigt / um",
+          "um / Steigen",
+          "Steigen / um"
+        ]
       },
       {
+        "id": "kapitel-08-ubung-11-div-6",
+        "position": 6,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "Sie: kommen → Kommen Sie!",
-          "ihr: essen → Lies!",
-          "ihr: essen → Esst!",
-          "du: lesen → Lies!",
-          "du: lesen → Esst!",
-          "Sie: kommen → Lies!"
-        ],
-        "id": "kapitel-08-ubung-11-div-6",
-        "position": 6
+          "(lesen, ihr) ___ die Anleitung! → Liest",
+          "(fahren, du) ___ langsam durch das Dorf! → Fähr",
+          "(lesen, ihr) ___ die Anleitung! → Lest",
+          "(fahren, du) ___ langsam durch das Dorf! → Fahr",
+          "(sein, du) ___ ehrlich! → Bist",
+          "(sein, du) ___ ehrlich! → Sei"
+        ]
       }
     ]
   },
@@ -109,94 +127,110 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "À la maison",
-      "de": "Zu Hause",
-      "ar": "في المنزل",
-      "en": "At home"
+      "fr": "Préparation du bureau",
+      "de": "Vorbereitung im Büro",
+      "ar": "التحضير في المكتب",
+      "en": "Office preparations"
     },
     "description": {
-      "fr": "Entraînez les formes de l’impératif.",
-      "de": "Üben Sie die Imperativformen.",
-      "ar": "تدرب على صيغ الأمر.",
-      "en": "Practise imperative forms."
+      "fr": "Résolvez les situations inédites en appliquant la règle du chapitre.",
+      "de": "Lösen Sie neue Situationen mit der Grammatik des Kapitels.",
+      "ar": "حل مواقف جديدة بتطبيق قاعدة الفصل.",
+      "en": "Solve new situations using the chapter grammar."
     },
     "questions": [
       {
         "id": "kapitel-08-ubung-12-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (lesen, ihr) ___ den Fahrplan genau!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (lesen, ihr) ___ den Fahrplan genau!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (lesen, ihr) ___ den Fahrplan genau!",
+          "en": "Choose the correct answer in context. — (lesen, ihr) ___ den Fahrplan genau!"
         },
-        "sentence": "(aufräumen, ihr) ___ euer Zimmer ___!",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "Lest",
+          "Liest"
+        ]
       },
       {
         "id": "kapitel-08-ubung-12-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (aufräumen, du) ___ deinen Schreibtisch ___!",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (aufräumen, du) ___ deinen Schreibtisch ___!",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (aufräumen, du) ___ deinen Schreibtisch ___!",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (aufräumen, du) ___ deinen Schreibtisch ___!"
         },
-        "sentence": "(essen, du) ___ langsam!",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Räum / auf",
+          "auf / Räum",
+          "Räumst / auf"
+        ]
       },
       {
         "id": "kapitel-08-ubung-12-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (abgeben, Sie) ___ Sie die Unterlagen an der Rezeption ab!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (abgeben, Sie) ___ Sie die Unterlagen an der Rezeption ab!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (abgeben, Sie) ___ Sie die Unterlagen an der Rezeption ab!",
+          "en": "Choose the correct answer in context. — (abgeben, Sie) ___ Sie die Unterlagen an der Rezeption ab!"
         },
-        "sentence": "(zumachen, du) ___ die Tür ___!",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "Geben",
+          "Gebt"
+        ]
       },
       {
         "id": "kapitel-08-ubung-12-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (helfen, du) ___ mir bei der Vorbereitung!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (helfen, du) ___ mir bei der Vorbereitung!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (helfen, du) ___ mir bei der Vorbereitung!",
+          "en": "Choose the correct answer in context. — (helfen, du) ___ mir bei der Vorbereitung!"
         },
-        "sentence": "(haben, ihr) ___ Geduld!",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Hilf",
+          "Helft"
+        ]
       },
       {
         "id": "kapitel-08-ubung-12-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (antworten, ihr) ___ bitte einzeln!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (antworten, ihr) ___ bitte einzeln!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (antworten, ihr) ___ bitte einzeln!",
+          "en": "Choose the correct answer in context. — (antworten, ihr) ___ bitte einzeln!"
         },
-        "sentence": "(lesen, du) ___ den Brief!",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Antworte",
+          "Antwortet"
+        ]
       },
       {
+        "id": "kapitel-08-ubung-12-div-6",
+        "position": 6,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "du: nehmen → Nimm!",
-        "id": "kapitel-08-ubung-12-div-6",
-        "position": 6
+        "statement": "(geben, Sie) ___ Sie mir bitte eine Quittung! → Gebt"
       }
     ]
   },
@@ -205,125 +239,144 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Défi final",
-      "de": "Imperativ-Challenge",
-      "ar": "التحدي النهائي",
-      "en": "Final challenge"
+      "fr": "Consignes au quotidien",
+      "de": "Anweisungen im Alltag",
+      "ar": "تعليمات يومية",
+      "en": "Everyday instructions"
     },
     "description": {
-      "fr": "Entraînez les formes de l’impératif.",
-      "de": "Üben Sie die Imperativformen.",
-      "ar": "تدرب على صيغ الأمر.",
-      "en": "Practise imperative forms."
+      "fr": "Résolvez les situations inédites en appliquant la règle du chapitre.",
+      "de": "Lösen Sie neue Situationen mit der Grammatik des Kapitels.",
+      "ar": "حل مواقف جديدة بتطبيق قاعدة الفصل.",
+      "en": "Solve new situations using the chapter grammar."
     },
     "questions": [
       {
         "id": "kapitel-08-ubung-13-q01",
         "position": 1,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (warten, Sie) ___ Sie vor dem Büro!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (warten, Sie) ___ Sie vor dem Büro!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (warten, Sie) ___ Sie vor dem Büro!",
+          "en": "Choose the correct answer in context. — (warten, Sie) ___ Sie vor dem Büro!"
         },
-        "sentence": "(helfen, du) ___ mir doch mal!",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wartet",
+          "Warten"
+        ]
       },
       {
         "id": "kapitel-08-ubung-13-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (sein, du) ___ pünktlich beim Termin!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (sein, du) ___ pünktlich beim Termin!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (sein, du) ___ pünktlich beim Termin!",
+          "en": "Choose the correct answer in context. — (sein, du) ___ pünktlich beim Termin!"
         },
-        "sentence": "(sprechen, ihr) ___ leise!",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Seid",
+          "Sei"
+        ]
       },
       {
         "id": "kapitel-08-ubung-13-q03",
         "position": 3,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (essen, du) ___ zuerst dein Frühstück!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (essen, du) ___ zuerst dein Frühstück!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (essen, du) ___ zuerst dein Frühstück!",
+          "en": "Choose the correct answer in context. — (essen, du) ___ zuerst dein Frühstück!"
         },
-        "sentence": "(sein, Sie) ___ Sie vorsichtig!",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Isst",
+          "Iss"
+        ]
       },
       {
         "id": "kapitel-08-ubung-13-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (ausschalten, ihr) ___ die Geräte ___!",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (ausschalten, ihr) ___ die Geräte ___!",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (ausschalten, ihr) ___ die Geräte ___!",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (ausschalten, ihr) ___ die Geräte ___!"
         },
-        "sentence": "(fahren, du) ___ langsam!",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "aus / Schaltet",
+          "Schaltet / aus",
+          "Schalt / aus"
+        ]
       },
       {
         "id": "kapitel-08-ubung-13-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (sprechen, Sie) ___ Sie bitte mit dem Empfang!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (sprechen, Sie) ___ Sie bitte mit dem Empfang!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (sprechen, Sie) ___ Sie bitte mit dem Empfang!",
+          "en": "Choose the correct answer in context. — (sprechen, Sie) ___ Sie bitte mit dem Empfang!"
         },
-        "sentence": "(anrufen, Sie) ___ Sie mich morgen ___!",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "Sprecht",
+          "Sprechen"
+        ]
       },
       {
         "id": "kapitel-08-ubung-13-q06",
         "position": 6,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez à l’impératif selon la personne indiquée.",
-          "de": "Ergänzen Sie den Imperativ für die angegebene Person.",
-          "ar": "أكمل بصيغة الأمر حسب الشخص المحدد.",
-          "en": "Complete the imperative for the indicated person."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (waschen, du) ___ die Tasse gründlich!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (waschen, du) ___ die Tasse gründlich!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (waschen, du) ___ die Tasse gründlich!",
+          "en": "Choose the correct answer in context. — (waschen, du) ___ die Tasse gründlich!"
         },
-        "sentence": "(geben, du) ___ mir bitte das Buch!",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Wasch",
+          "Wäsch"
+        ]
       },
       {
+        "id": "kapitel-08-ubung-13-div-7",
+        "position": 7,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "du: lesen"
+            "label": "(essen, ihr) ___ nicht so hastig!"
           },
           {
             "id": "i1",
-            "label": "ihr: essen"
+            "label": "(öffnen, du) ___ das Paket vorsichtig!"
           },
           {
             "id": "i2",
-            "label": "Sie: kommen"
+            "label": "(schließen, ihr) ___ bitte die Fenster!"
           }
         ],
         "options": [
-          "Lies!",
-          "Esst!",
-          "Kommen Sie!"
-        ],
-        "id": "kapitel-08-ubung-13-div-7",
-        "position": 7
+          "Öffne",
+          "Esst",
+          "Schließt"
+        ]
       }
     ]
   }

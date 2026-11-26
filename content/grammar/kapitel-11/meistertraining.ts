@@ -5,10 +5,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 1,
     "title": {
-      "fr": "Sätze",
+      "fr": "Phrases déclaratives",
       "de": "Sätze",
-      "ar": "Sätze",
-      "en": "Sätze"
+      "ar": "جمل خبرية",
+      "en": "Statements"
     },
     "description": {
       "fr": "Ordre des mots 1",
@@ -22,27 +22,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "statement": "heißt Er Peter Schmidt ."
+        "statement": "Er heißt Peter Schmidt."
       },
       {
         "id": "kapitel-11-ubung-01-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la phrase affirmative correcte (pas une question).",
+          "de": "Wählen Sie den grammatisch richtigen Aussagesatz (keine Frage).",
+          "ar": "اختر الجملة الخبرية الصحيحة نحوياً (وليست سؤالاً).",
+          "en": "Choose the grammatical declarative sentence (not a question)."
         },
         "selection": "single",
         "options": [
-          "und Peter seine Frau wohnen jetzt in Heidelberg .",
-          "Peter und seine Frau wohnen jetzt in Heidelberg ."
+          "Wohnen Peter und seine Frau jetzt in Heidelberg.",
+          "Peter und seine Frau wohnen jetzt in Heidelberg.",
+          "Peter wohnen und seine Frau jetzt in Heidelberg.",
+          "Peter und seine Frau jetzt in Heidelberg wohnen."
         ]
       },
       {
@@ -50,15 +52,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la phrase affirmative correcte (pas une question).",
+          "de": "Wählen Sie den grammatisch richtigen Aussagesatz (keine Frage).",
+          "ar": "اختر الجملة الخبرية الصحيحة نحوياً (وليست سؤالاً).",
+          "en": "Choose the grammatical declarative sentence (not a question)."
         },
         "selection": "single",
         "options": [
-          "Adresse Seine ist Auerstraße 12 .",
-          "Seine Adresse ist Auerstraße 12 ."
+          "Seine ist Adresse Auerstraße 12.",
+          "Seine Adresse Auerstraße 12 ist.",
+          "Ist Seine Adresse Auerstraße 12.",
+          "Seine Adresse ist Auerstraße 12."
         ]
       },
       {
@@ -66,18 +70,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Peter ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Peter“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Peter ».",
+          "en": "Reorder the groups. Start with “Peter”."
         },
         "tokens": [
-          "Peter",
-          "Ingenieur",
+          "von Beruf",
           "ist",
-          "von",
-          ".",
-          "Beruf"
+          "Peter",
+          "Ingenieur."
         ]
       },
       {
@@ -85,18 +87,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Seine Frau ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Seine Frau“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Seine Frau ».",
+          "en": "Reorder the groups. Start with “Seine Frau”."
         },
         "tokens": [
-          "Krankenhaus",
-          "Frau",
-          ".",
-          "Seine",
           "arbeitet",
-          "im"
+          "Seine Frau",
+          "im Krankenhaus."
         ]
       }
     ]
@@ -106,10 +105,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 2,
     "title": {
-      "fr": "W-Fragen",
+      "fr": "Questions ouvertes",
       "de": "W-Fragen",
-      "ar": "W-Fragen",
-      "en": "W-Fragen"
+      "ar": "أسئلة مفتوحة",
+      "en": "W-questions"
     },
     "description": {
       "fr": "Ordre des mots 1",
@@ -123,27 +122,41 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "statement": "kommen Woher Luis und Paloma ?"
+        "statement": "kommen Woher Luis und Paloma?"
       },
       {
         "id": "kapitel-11-ubung-02-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "matching",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Associez chaque élément à sa forme correcte.",
+          "de": "Ordnen Sie jedem Element die richtige Form zu.",
+          "ar": "صل كل عنصر بصيغته الصحيحة.",
+          "en": "Match each item to its correct form."
         },
-        "selection": "single",
+        "items": [
+          {
+            "id": "kapitel-11-ubung-02-q02-m1",
+            "label": "Woher kommen Sie?"
+          },
+          {
+            "id": "kapitel-11-ubung-02-q02-m2",
+            "label": "Wo wohnen Sie?"
+          },
+          {
+            "id": "kapitel-11-ubung-02-q02-m3",
+            "label": "Wann beginnt der Kurs?"
+          }
+        ],
         "options": [
-          "sind Was sie von Beruf ?",
-          "Was sind sie von Beruf ?"
+          "Herkunft",
+          "Zeitpunkt",
+          "Wohnort"
         ]
       },
       {
@@ -151,15 +164,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la question grammaticalement correcte.",
+          "de": "Wählen Sie die grammatisch richtige Frage.",
+          "ar": "اختر السؤال الصحيح نحوياً.",
+          "en": "Choose the grammatically correct question."
         },
         "selection": "single",
         "options": [
-          "wohnen Wo sie jetzt ?",
-          "Wo wohnen sie jetzt ?"
+          "Wo sie wohnen jetzt?",
+          "Wohnen wo sie jetzt?",
+          "Wo wohnen sie jetzt?",
+          "Wo sie jetzt wohnen?"
         ]
       },
       {
@@ -167,18 +182,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Was ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Was“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Was ».",
+          "en": "Reorder the groups. Start with “Was”."
         },
         "tokens": [
+          "heute Abend?",
+          "sie",
           "machen",
-          "Was",
-          "heute",
-          "Abend",
-          "?",
-          "sie"
+          "Was"
         ]
       }
     ]
@@ -188,10 +201,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 3,
     "title": {
-      "fr": "Ja/Nein-Fragen",
+      "fr": "Questions fermées",
       "de": "Ja/Nein-Fragen",
-      "ar": "Ja/Nein-Fragen",
-      "en": "Ja/Nein-Fragen"
+      "ar": "أسئلة نعم أو لا",
+      "en": "Yes/no questions"
     },
     "description": {
       "fr": "Ordre des mots 1",
@@ -205,27 +218,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "statement": "das Ist Paloma ?"
+        "statement": "Ist das Paloma?"
       },
       {
         "id": "kapitel-11-ubung-03-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la question grammaticalement correcte.",
+          "de": "Wählen Sie die grammatisch richtige Frage.",
+          "ar": "اختر السؤال الصحيح نحوياً.",
+          "en": "Choose the grammatically correct question."
         },
         "selection": "single",
         "options": [
-          "sie Kommt aus Peru ?",
-          "Kommt sie aus Peru ?"
+          "Sie kommt aus Peru Kommt?",
+          "Kommt sie Kommt aus Peru?",
+          "Kommt sie aus Peru?",
+          "Sie aus Peru kommt?"
         ]
       },
       {
@@ -233,15 +248,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la question grammaticalement correcte.",
+          "de": "Wählen Sie die grammatisch richtige Frage.",
+          "ar": "اختر السؤال الصحيح نحوياً.",
+          "en": "Choose the grammatically correct question."
         },
         "selection": "single",
         "options": [
-          "Paloma Lernt Deutsch ?",
-          "Lernt Paloma Deutsch ?"
+          "Lernt Paloma Lernt Deutsch?",
+          "Lernt Paloma Deutsch?",
+          "Paloma Deutsch lernt?",
+          "Paloma lernt Deutsch Lernt?"
         ]
       },
       {
@@ -249,16 +266,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Ist ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Ist“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Ist ».",
+          "en": "Reorder the groups. Start with “Ist”."
         },
         "tokens": [
           "sie",
-          "Ist",
-          "?",
-          "Mechanikerin"
+          "Mechanikerin?",
+          "Ist"
         ]
       },
       {
@@ -266,17 +282,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Heißt ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Heißt“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Heißt ».",
+          "en": "Reorder the groups. Start with “Heißt”."
         },
         "tokens": [
+          "ihr Mann",
           "Heißt",
-          "Luis",
-          "?",
-          "ihr",
-          "Mann"
+          "Luis?"
         ]
       }
     ]
@@ -286,10 +300,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 4,
     "title": {
-      "fr": "Fragewort oder Verb",
+      "fr": "Mot interrogatif ou verbe",
       "de": "Fragewort oder Verb",
-      "ar": "Fragewort oder Verb",
-      "en": "Fragewort oder Verb"
+      "ar": "أداة استفهام أم فعل",
+      "en": "Question word or verb"
     },
     "description": {
       "fr": "Ordre des mots 1",
@@ -303,53 +317,48 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — ___ kommt Paloma? – Aus Peru.",
-          "de": "Ergänzen Sie. — ___ kommt Paloma? – Aus Peru.",
-          "ar": "أكمل. — ___ kommt Paloma? – Aus Peru.",
-          "en": "Complete. — ___ kommt Paloma? – Aus Peru."
+          "fr": "Choisissez la forme correcte. — ___ kommt Paloma? – Aus Peru.",
+          "de": "Wählen Sie die richtige Form. — ___ kommt Paloma? – Aus Peru.",
+          "ar": "اختر الصيغة الصحيحة. — ___ kommt Paloma? – Aus Peru.",
+          "en": "Choose the correct form. — ___ kommt Paloma? – Aus Peru."
         },
         "selection": "single",
         "options": [
-          "Kommt",
           "Ist",
+          "Was",
           "Woher",
-          "Was"
+          "Kommt"
         ]
       },
       {
         "id": "kapitel-11-ubung-04-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — ___ Paloma aus Chile? – Nein.",
-          "de": "Ergänzen Sie. — ___ Paloma aus Chile? – Nein.",
-          "ar": "أكمل. — ___ Paloma aus Chile? – Nein.",
-          "en": "Complete. — ___ Paloma aus Chile? – Nein."
+          "fr": "Complétez avec la forme correcte.",
+          "de": "Ergänzen Sie die richtige Form.",
+          "ar": "أكمل بالصيغة الصحيحة.",
+          "en": "Complete with the correct form."
         },
-        "selection": "single",
-        "options": [
-          "Kommt",
-          "Wie",
-          "Ist",
-          "Heißt"
-        ]
+        "sentence": "___ Paloma aus Chile? – Nein.",
+        "blanks": 1
       },
       {
         "id": "kapitel-11-ubung-04-q03",
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — ___ ist sie von Beruf?",
-          "de": "Ergänzen Sie. — ___ ist sie von Beruf?",
-          "ar": "أكمل. — ___ ist sie von Beruf?",
-          "en": "Complete. — ___ ist sie von Beruf?"
+          "fr": "Choisissez la forme correcte. — ___ ist sie von Beruf?",
+          "de": "Wählen Sie die richtige Form. — ___ ist sie von Beruf?",
+          "ar": "اختر الصيغة الصحيحة. — ___ ist sie von Beruf?",
+          "en": "Choose the correct form. — ___ ist sie von Beruf?"
         },
         "selection": "single",
         "options": [
-          "Was",
           "Wie",
           "Woher",
-          "Ist"
+          "Ist",
+          "Was"
         ]
       },
       {
@@ -357,10 +366,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec la forme correcte.",
+          "de": "Ergänzen Sie die richtige Form.",
+          "ar": "أكمل بالصيغة الصحيحة.",
+          "en": "Complete with the correct form."
         },
         "sentence": "___ sie Mechanikerin?",
         "blanks": 1
@@ -370,10 +379,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec la forme correcte.",
+          "de": "Ergänzen Sie die richtige Form.",
+          "ar": "أكمل بالصيغة الصحيحة.",
+          "en": "Complete with the correct form."
         },
         "sentence": "___ ihr Mann Carlos?",
         "blanks": 1
@@ -381,20 +390,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-11-ubung-04-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — ___ heißt ihr Mann?",
-          "de": "Ergänzen Sie. — ___ heißt ihr Mann?",
-          "ar": "أكمل. — ___ heißt ihr Mann?",
-          "en": "Complete. — ___ heißt ihr Mann?"
+          "fr": "Complétez avec la forme correcte.",
+          "de": "Ergänzen Sie die richtige Form.",
+          "ar": "أكمل بالصيغة الصحيحة.",
+          "en": "Complete with the correct form."
         },
-        "selection": "single",
-        "options": [
-          "Was",
-          "Kommt",
-          "Wie",
-          "Ist"
-        ]
+        "sentence": "___ heißt ihr Mann?",
+        "blanks": 1
       }
     ]
   },
@@ -403,10 +407,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 5,
     "title": {
-      "fr": "Fragen",
+      "fr": "Questions",
       "de": "Fragen",
-      "ar": "Fragen",
-      "en": "Fragen"
+      "ar": "أسئلة",
+      "en": "Questions"
     },
     "description": {
       "fr": "Ordre des mots 1",
@@ -420,27 +424,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "statement": "Sie Sind heute müde ?"
+        "statement": "Sind Sie heute müde?"
       },
       {
         "id": "kapitel-11-ubung-05-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la question grammaticalement correcte.",
+          "de": "Wählen Sie die grammatisch richtige Frage.",
+          "ar": "اختر السؤال الصحيح نحوياً.",
+          "en": "Choose the grammatically correct question."
         },
         "selection": "single",
         "options": [
-          "Wie lange schlafen Sie immer ?",
-          "lange Wie schlafen Sie immer ?"
+          "Wie lange schlafen Sie immer?",
+          "Schlafen wie lange Sie immer?",
+          "Wie lange Sie immer schlafen?",
+          "Wie lange Sie schlafen immer?"
         ]
       },
       {
@@ -448,15 +454,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la question grammaticalement correcte.",
+          "de": "Wählen Sie die grammatisch richtige Frage.",
+          "ar": "اختر السؤال الصحيح نحوياً.",
+          "en": "Choose the grammatically correct question."
         },
         "selection": "single",
         "options": [
-          "Was trinken Sie am Morgen ?",
-          "trinken Was Sie am Morgen ?"
+          "Was Sie am Morgen trinken?",
+          "Was trinken Sie am Morgen?",
+          "Trinken was Sie am Morgen?",
+          "Was Sie trinken am Morgen?"
         ]
       },
       {
@@ -464,18 +472,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Trinken ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Trinken“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Trinken ».",
+          "en": "Reorder the groups. Start with “Trinken”."
         },
         "tokens": [
-          "?",
-          "Kaffee",
-          "Morgen",
-          "am",
+          "Sie",
           "Trinken",
-          "Sie"
+          "am Morgen",
+          "Kaffee?"
         ]
       }
     ]
@@ -485,10 +491,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 6,
     "title": {
-      "fr": "Imperativ",
+      "fr": "Impératif",
       "de": "Imperativ",
-      "ar": "Imperativ",
-      "en": "Imperativ"
+      "ar": "الأمر",
+      "en": "Imperative"
     },
     "description": {
       "fr": "Ordre des mots 1",
@@ -502,15 +508,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Kommen ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Kommen“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Kommen ».",
+          "en": "Reorder the groups. Start with “Kommen”."
         },
         "tokens": [
-          "Kommen",
-          "Sie",
-          "!"
+          "Sie!",
+          "Kommen"
         ]
       },
       {
@@ -518,15 +523,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez l’ordre correct pour l’impératif de politesse avec Sie.",
+          "de": "Wählen Sie die richtige Wortstellung im höflichen Sie-Imperativ.",
+          "ar": "اختر الترتيب الصحيح للأمر المهذب مع Sie.",
+          "en": "Choose the correct word order for the formal Sie imperative."
         },
         "selection": "single",
         "options": [
-          "Sie Hören die Geschichte !",
-          "Hören Sie die Geschichte !"
+          "Hören Sie die Geschichte!",
+          "Sie hören die Geschichte Hören!",
+          "Hören Sie Hören die Geschichte!",
+          "Sie die Geschichte hören!"
         ]
       },
       {
@@ -534,15 +541,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez l’ordre correct pour l’impératif de politesse avec Sie.",
+          "de": "Wählen Sie die richtige Wortstellung im höflichen Sie-Imperativ.",
+          "ar": "اختر الترتيب الصحيح للأمر المهذب مع Sie.",
+          "en": "Choose the correct word order for the formal Sie imperative."
         },
         "selection": "single",
         "options": [
-          "Sagen Sie jetzt nichts !",
-          "Sie Sagen jetzt nichts !"
+          "Sie sagen jetzt nichts Sagen!",
+          "Sie jetzt nichts sagen!",
+          "Sagen Sie jetzt nichts!",
+          "Sagen Sie Sagen jetzt nichts!"
         ]
       },
       {
@@ -550,19 +559,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Erzählen ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Erzählen“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Erzählen ».",
+          "en": "Reorder the groups. Start with “Erzählen”."
         },
         "tokens": [
-          "die",
-          "Geschichte",
-          "Sie",
-          "Ihren",
           "Erzählen",
-          "!",
-          "Freunden"
+          "die Geschichte!",
+          "Ihren Freunden",
+          "Sie"
         ]
       }
     ]
@@ -572,10 +578,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 7,
     "title": {
-      "fr": "Zeit und Ort",
+      "fr": "Temps et lieu",
       "de": "Zeit und Ort",
-      "ar": "Zeit und Ort",
-      "en": "Zeit und Ort"
+      "ar": "الزمان والمكان",
+      "en": "Time and place"
     },
     "description": {
       "fr": "Ordre des mots 1",
@@ -589,27 +595,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "statement": "wohne Ich schon drei Jahre in Heidelberg ."
+        "statement": "Ich wohne schon drei Jahre in Heidelberg."
       },
       {
         "id": "kapitel-11-ubung-07-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la phrase affirmative correcte (pas une question).",
+          "de": "Wählen Sie den grammatisch richtigen Aussagesatz (keine Frage).",
+          "ar": "اختر الجملة الخبرية الصحيحة نحوياً (وليست سؤالاً).",
+          "en": "Choose the grammatical declarative sentence (not a question)."
         },
         "selection": "single",
         "options": [
-          "Ich arbeite seit zwei Jahren in Frankfurt .",
-          "arbeite Ich seit zwei Jahren in Frankfurt ."
+          "Ich seit zwei Jahren in Frankfurt arbeite.",
+          "Ich seit arbeite zwei Jahren in Frankfurt.",
+          "Arbeite Ich seit zwei Jahren in Frankfurt.",
+          "Ich arbeite seit zwei Jahren in Frankfurt."
         ]
       },
       {
@@ -617,15 +625,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la phrase affirmative correcte (pas une question).",
+          "de": "Wählen Sie den grammatisch richtigen Aussagesatz (keine Frage).",
+          "ar": "اختر الجملة الخبرية الصحيحة نحوياً (وليست سؤالاً).",
+          "en": "Choose the grammatical declarative sentence (not a question)."
         },
         "selection": "single",
         "options": [
-          "Ich fahre jeden Montag von Heidelberg nach Frankfurt .",
-          "fahre Ich jeden Montag von Heidelberg nach Frankfurt ."
+          "Ich fahre jeden Montag von Heidelberg nach Frankfurt.",
+          "Fahre Ich jeden Montag von Heidelberg nach Frankfurt.",
+          "Ich jeden Montag von Heidelberg nach Frankfurt fahre.",
+          "Ich jeden fahre Montag von Heidelberg nach Frankfurt."
         ]
       },
       {
@@ -633,22 +643,18 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Ich ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Ich“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Ich ».",
+          "en": "Reorder the groups. Start with “Ich”."
         },
         "tokens": [
           "wohne",
-          ".",
-          "Cousine",
-          "Ich",
-          "Montag",
-          "von",
-          "Freitag",
-          "bis",
+          "von Montag",
+          "meiner Cousine.",
+          "bis Freitag",
           "bei",
-          "meiner"
+          "Ich"
         ]
       },
       {
@@ -656,22 +662,18 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Ich ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Ich“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Ich ».",
+          "en": "Reorder the groups. Start with “Ich”."
         },
         "tokens": [
-          "Uhr",
-          "Ich",
+          "im Büro.",
           "arbeite",
-          "Büro",
-          "9",
-          "18",
-          ".",
-          "von",
-          "bis",
-          "im"
+          "von 9",
+          "bis 18",
+          "Ich",
+          "Uhr"
         ]
       },
       {
@@ -679,27 +681,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "statement": "Ich esse in der Mittagspause in der Kantine ."
+        "statement": "Ich esse in der Mittagspause in der Kantine."
       },
       {
         "id": "kapitel-11-ubung-07-q07",
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la phrase affirmative correcte (pas une question).",
+          "de": "Wählen Sie den grammatisch richtigen Aussagesatz (keine Frage).",
+          "ar": "اختر الجملة الخبرية الصحيحة نحوياً (وليست سؤالاً).",
+          "en": "Choose the grammatical declarative sentence (not a question)."
         },
         "selection": "single",
         "options": [
-          "Ich gehe zweimal pro Woche ins Fitnessstudio .",
-          "gehe Ich zweimal pro Woche ins Fitnessstudio ."
+          "Ich gehe zweimal pro Woche ins Fitnessstudio.",
+          "Gehe Ich zweimal pro Woche ins Fitnessstudio.",
+          "Ich zweimal pro Woche ins Fitnessstudio gehe.",
+          "Ich zweimal gehe pro Woche ins Fitnessstudio."
         ]
       },
       {
@@ -707,15 +711,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 8,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la phrase affirmative correcte (pas une question).",
+          "de": "Wählen Sie den grammatisch richtigen Aussagesatz (keine Frage).",
+          "ar": "اختر الجملة الخبرية الصحيحة نحوياً (وليست سؤالاً).",
+          "en": "Choose the grammatical declarative sentence (not a question)."
         },
         "selection": "single",
         "options": [
-          "Ich fahre freitags um 17 Uhr nach Heidelberg .",
-          "fahre Ich freitags um 17 Uhr nach Heidelberg ."
+          "Ich freitags fahre um 17 Uhr nach Heidelberg.",
+          "Fahre Ich freitags um 17 Uhr nach Heidelberg.",
+          "Ich freitags um 17 Uhr nach Heidelberg fahre.",
+          "Ich fahre freitags um 17 Uhr nach Heidelberg."
         ]
       },
       {
@@ -723,21 +729,18 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 9,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Ich ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Ich“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Ich ».",
+          "en": "Reorder the groups. Start with “Ich”."
         },
         "tokens": [
-          "bin",
+          "bis Montagmorgen",
+          "Hause.",
           "Ich",
-          "bis",
-          "zu",
-          "Hause",
-          "Freitagabend",
-          "Montagmorgen",
-          "von",
-          "."
+          "von Freitagabend",
+          "bin",
+          "zu"
         ]
       }
     ]
@@ -747,10 +750,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 8,
     "title": {
-      "fr": "Zeit zuerst",
+      "fr": "Temps en première position",
       "de": "Zeit zuerst",
-      "ar": "Zeit zuerst",
-      "en": "Zeit zuerst"
+      "ar": "الزمن في الموقع الأول",
+      "en": "Time first"
     },
     "description": {
       "fr": "Ordre des mots 1",
@@ -764,27 +767,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "statement": "arbeite Heute ich zu Hause ."
+        "statement": "arbeite Heute ich zu Hause."
       },
       {
         "id": "kapitel-11-ubung-08-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر جميع الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
         },
-        "selection": "single",
+        "selection": "multiple",
         "options": [
-          "Morgen fährt er nach Bonn .",
-          "fährt Morgen er nach Bonn ."
+          "Am Montag Mia arbeitet im Büro.",
+          "Am Montag arbeitet Mia im Büro.",
+          "Mia am Montag arbeitet im Büro.",
+          "Mia arbeitet am Montag im Büro."
         ]
       },
       {
@@ -792,15 +797,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la phrase affirmative correcte (pas une question).",
+          "de": "Wählen Sie den grammatisch richtigen Aussagesatz (keine Frage).",
+          "ar": "اختر الجملة الخبرية الصحيحة نحوياً (وليست سؤالاً).",
+          "en": "Choose the grammatical declarative sentence (not a question)."
         },
         "selection": "single",
         "options": [
-          "Abend Am essen wir Pizza .",
-          "Am Abend essen wir Pizza ."
+          "Am Abend essen wir Pizza.",
+          "Am essen Abend wir Pizza.",
+          "Essen am Abend wir Pizza.",
+          "Am Abend wir Pizza essen."
         ]
       },
       {
@@ -808,18 +815,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Seit Mai ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Seit Mai“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Seit Mai ».",
+          "en": "Reorder the groups. Start with “Seit Mai”."
         },
         "tokens": [
-          ".",
-          "Mai",
-          "wohnt",
+          "Seit Mai",
           "sie",
-          "hier",
-          "Seit"
+          "wohnt",
+          "hier."
         ]
       }
     ]
@@ -829,10 +834,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 9,
     "title": {
-      "fr": "Verbposition",
+      "fr": "Position du verbe",
       "de": "Verbposition",
-      "ar": "Verbposition",
-      "en": "Verbposition"
+      "ar": "موقع الفعل",
+      "en": "Verb position"
     },
     "description": {
       "fr": "Ordre des mots 1",
@@ -846,50 +851,48 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Heute ___ ich Deutsch. (lernen)",
-          "de": "Ergänzen Sie. — Heute ___ ich Deutsch. (lernen)",
-          "ar": "أكمل. — Heute ___ ich Deutsch. (lernen)",
-          "en": "Complete. — Heute ___ ich Deutsch. (lernen)"
+          "fr": "Choisissez la forme correcte. — Heute ___ ich Deutsch. (lernen)",
+          "de": "Wählen Sie die richtige Form. — Heute ___ ich Deutsch. (lernen)",
+          "ar": "اختر الصيغة الصحيحة. — Heute ___ ich Deutsch. (lernen)",
+          "en": "Choose the correct form. — Heute ___ ich Deutsch. (lernen)"
         },
         "selection": "single",
         "options": [
-          "fährt",
-          "arbeiten",
-          "lerne"
+          "lernt",
+          "lernen",
+          "lerne",
+          "lernst"
         ]
       },
       {
         "id": "kapitel-11-ubung-09-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Am Montag ___ wir im Büro. (arbeiten)",
-          "de": "Ergänzen Sie. — Am Montag ___ wir im Büro. (arbeiten)",
-          "ar": "أكمل. — Am Montag ___ wir im Büro. (arbeiten)",
-          "en": "Complete. — Am Montag ___ wir im Büro. (arbeiten)"
+          "fr": "Complétez avec la forme correcte.",
+          "de": "Ergänzen Sie die richtige Form.",
+          "ar": "أكمل بالصيغة الصحيحة.",
+          "en": "Complete with the correct form."
         },
-        "selection": "single",
-        "options": [
-          "arbeiten",
-          "fährt",
-          "lerne"
-        ]
+        "sentence": "Am Montag ___ wir im Büro. (arbeiten)",
+        "blanks": 1
       },
       {
         "id": "kapitel-11-ubung-09-q03",
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Morgen ___ sie nach Berlin. (fahren, Singular)",
-          "de": "Ergänzen Sie. — Morgen ___ sie nach Berlin. (fahren, Singular)",
-          "ar": "أكمل. — Morgen ___ sie nach Berlin. (fahren, Singular)",
-          "en": "Complete. — Morgen ___ sie nach Berlin. (fahren, Singular)"
+          "fr": "Choisissez la forme correcte. — Morgen ___ sie nach Berlin. (fahren, Singular)",
+          "de": "Wählen Sie die richtige Form. — Morgen ___ sie nach Berlin. (fahren, Singular)",
+          "ar": "اختر الصيغة الصحيحة. — Morgen ___ sie nach Berlin. (fahren, Singular)",
+          "en": "Choose the correct form. — Morgen ___ sie nach Berlin. (fahren, Singular)"
         },
         "selection": "single",
         "options": [
-          "arbeiten",
-          "lerne",
-          "fährt"
+          "fährt",
+          "fahre",
+          "fährst",
+          "fahren"
         ]
       }
     ]
@@ -899,10 +902,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 10,
     "title": {
-      "fr": "Abschlusstest",
+      "fr": "Test final",
       "de": "Abschlusstest",
-      "ar": "Abschlusstest",
-      "en": "Abschlusstest"
+      "ar": "اختبار نهائي",
+      "en": "Final test"
     },
     "description": {
       "fr": "Ordre des mots 1",
@@ -916,27 +919,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "statement": "Sonntag Am schlafen wir lange ."
+        "statement": "Sonntag Am schlafen wir lange."
       },
       {
         "id": "kapitel-11-ubung-10-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la question grammaticalement correcte.",
+          "de": "Wählen Sie die grammatisch richtige Frage.",
+          "ar": "اختر السؤال الصحيح نحوياً.",
+          "en": "Choose the grammatically correct question."
         },
         "selection": "single",
         "options": [
-          "arbeitet Wo dein Bruder ?",
-          "Wo arbeitet dein Bruder ?"
+          "Wo dein arbeitet Bruder?",
+          "Wo dein Bruder arbeitet?",
+          "Wo arbeitet dein Bruder?",
+          "Arbeitet wo dein Bruder?"
         ]
       },
       {
@@ -944,15 +949,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la question grammaticalement correcte.",
+          "de": "Wählen Sie die grammatisch richtige Frage.",
+          "ar": "اختر السؤال الصحيح نحوياً.",
+          "en": "Choose the grammatically correct question."
         },
         "selection": "single",
         "options": [
-          "Sie Kommen morgen ?",
-          "Kommen Sie morgen ?"
+          "Kommen Sie morgen?",
+          "Kommen Sie Kommen morgen?",
+          "Sie kommen morgen Kommen?",
+          "Sie morgen kommen?"
         ]
       },
       {
@@ -960,17 +967,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Trinken ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Trinken“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Trinken ».",
+          "en": "Reorder the groups. Start with “Trinken”."
         },
         "tokens": [
+          "Sie",
           "bitte",
-          "Wasser",
           "Trinken",
-          "!",
-          "Sie"
+          "Wasser!"
         ]
       }
     ]

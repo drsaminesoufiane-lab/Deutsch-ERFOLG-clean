@@ -5,159 +5,159 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 1,
     "title": {
-      "fr": "Entraînement 1",
-      "de": "Übung 1",
-      "ar": "تمرين 1",
-      "en": "Practice 1"
+      "fr": "Infinitive im Kontext I",
+      "de": "Infinitive im Kontext I",
+      "ar": "Infinitive im Kontext I",
+      "en": "Infinitive im Kontext I"
     },
     "description": {
-      "fr": "Le participe passé",
-      "de": "Partizip II",
-      "ar": "اسم المفعول الثاني",
-      "en": "Past participle"
+      "fr": "Appliquez les formes fondamentales.",
+      "de": "Wenden Sie die Grundformen an.",
+      "ar": "طبّق الصيغ الأساسية.",
+      "en": "Apply the basic forms."
     },
     "questions": [
       {
         "id": "kapitel-26-ubung-01-q01",
         "position": 1,
         "type": "fill_blank",
-        "sentence": "abgeholt → ___",
+        "sentence": "Der Vater hat das Kind abgeholt. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-01-q02",
         "position": 2,
         "type": "fill_blank",
-        "sentence": "angekommen → ___",
+        "sentence": "Der Zug ist angekommen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-01-q03",
         "position": 3,
         "type": "fill_blank",
-        "sentence": "angefangen → ___",
+        "sentence": "Die Stunde hat angefangen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-01-q04",
         "position": 4,
         "type": "fill_blank",
-        "sentence": "ausgestiegen → ___",
+        "sentence": "Wir sind am Bahnhof ausgestiegen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-01-q05",
         "position": 5,
         "type": "fill_blank",
-        "sentence": "bekommen → ___",
+        "sentence": "Sie hat einen Brief bekommen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-01-q06",
         "position": 6,
         "type": "fill_blank",
-        "sentence": "gedacht → ___",
+        "sentence": "Ich habe an dich gedacht. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-01-q07",
         "position": 7,
         "type": "fill_blank",
-        "sentence": "eingeladen → ___",
+        "sentence": "Er hat seine Freunde eingeladen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-01-q08",
         "position": 8,
         "type": "fill_blank",
-        "sentence": "empfohlen → ___",
+        "sentence": "Die Ärztin hat eine Pause empfohlen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-01-q09",
         "position": 9,
         "type": "fill_blank",
-        "sentence": "gegessen → ___",
+        "sentence": "Wir haben Reis gegessen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-01-q10",
         "position": 10,
         "type": "fill_blank",
-        "sentence": "geflogen → ___",
+        "sentence": "Sie ist nach Madrid geflogen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-01-q11",
         "position": 11,
         "type": "fill_blank",
-        "sentence": "gefallen → ___",
+        "sentence": "Die Tasse ist auf den Boden gefallen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       }
     ]
@@ -167,146 +167,146 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 2,
     "title": {
-      "fr": "Entraînement 2",
-      "de": "Übung 2",
-      "ar": "تمرين 2",
-      "en": "Practice 2"
+      "fr": "Infinitive im Kontext II",
+      "de": "Infinitive im Kontext II",
+      "ar": "Infinitive im Kontext II",
+      "en": "Infinitive im Kontext II"
     },
     "description": {
-      "fr": "Le participe passé",
-      "de": "Partizip II",
-      "ar": "اسم المفعول الثاني",
-      "en": "Past participle"
+      "fr": "Appliquez les formes fondamentales.",
+      "de": "Wenden Sie die Grundformen an.",
+      "ar": "طبّق الصيغ الأساسية.",
+      "en": "Apply the basic forms."
     },
     "questions": [
       {
         "id": "kapitel-26-ubung-02-q01",
         "position": 1,
         "type": "fill_blank",
-        "sentence": "gewonnen → ___",
+        "sentence": "Unsere Mannschaft hat gewonnen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-02-q02",
         "position": 2,
         "type": "fill_blank",
-        "sentence": "gekannt → ___",
+        "sentence": "Ich habe ihn schon früher gekannt. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-02-q03",
         "position": 3,
         "type": "fill_blank",
-        "sentence": "gelaufen → ___",
+        "sentence": "Er ist zum Bus gelaufen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-02-q04",
         "position": 4,
         "type": "fill_blank",
-        "sentence": "mitgebracht → ___",
+        "sentence": "Sie hat einen Kuchen mitgebracht. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-02-q05",
         "position": 5,
         "type": "fill_blank",
-        "sentence": "genommen → ___",
+        "sentence": "Du hast das Buch genommen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-02-q06",
         "position": 6,
         "type": "fill_blank",
-        "sentence": "geschlafen → ___",
+        "sentence": "Das Kind hat geschlafen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-02-q07",
         "position": 7,
         "type": "fill_blank",
-        "sentence": "geschwommen → ___",
+        "sentence": "Wir sind im See geschwommen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-02-q08",
         "position": 8,
         "type": "fill_blank",
-        "sentence": "getrunken → ___",
+        "sentence": "Ihr habt Wasser getrunken. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-02-q09",
         "position": 9,
         "type": "fill_blank",
-        "sentence": "gesehen → ___",
+        "sentence": "Er hat einen Film gesehen. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       },
       {
         "id": "kapitel-26-ubung-02-q10",
         "position": 10,
         "type": "fill_blank",
-        "sentence": "verloren → ___",
+        "sentence": "Sie hat den Schlüssel verloren. → ___",
         "blanks": 1,
         "prompt": {
-          "fr": "Donnez l’infinitif.",
-          "de": "Nennen Sie den Infinitiv.",
-          "ar": "اكتب المصدر.",
-          "en": "Give the infinitive."
+          "fr": "Donnez l’infinitif du participe dans la phrase.",
+          "de": "Nennen Sie den Infinitiv zum Partizip im Satz.",
+          "ar": "اكتب مصدر التصريف الثالث الوارد في الجملة.",
+          "en": "Give the infinitive of the participle in the sentence."
         }
       }
     ]
@@ -316,192 +316,186 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 3,
     "title": {
-      "fr": "Entraînement 3",
-      "de": "Übung 3",
-      "ar": "تمرين 3",
-      "en": "Practice 3"
+      "fr": "Vorsilben und Stammwechsel",
+      "de": "Vorsilben und Stammwechsel",
+      "ar": "Vorsilben und Stammwechsel",
+      "en": "Vorsilben und Stammwechsel"
     },
     "description": {
-      "fr": "Le participe passé",
-      "de": "Partizip II",
-      "ar": "اسم المفعول الثاني",
-      "en": "Past participle"
+      "fr": "Appliquez les formes fondamentales.",
+      "de": "Wenden Sie die Grundformen an.",
+      "ar": "طبّق الصيغ الأساسية.",
+      "en": "Apply the basic forms."
     },
     "questions": [
       {
         "id": "kapitel-26-ubung-03-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "einsteigen → eingestiegen",
-          "abholen → abgeholt",
-          "einsteigen → geeingestiegen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez les deux formes correctes.",
-          "de": "Wählen Sie beide richtigen Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Select both correct forms."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Am Bahnhof sind wir in den Zug ___. (einsteigen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-03-q02",
         "position": 2,
-        "type": "reorder",
-        "tokens": [
-          "wortet",
-          "geant"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez le participe de antworten",
-          "de": "Bilden Sie das Partizip von antworten",
-          "ar": "رتب أجزاء antworten",
-          "en": "Reconstruct the participle of antworten"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Lehrerin hat auf meine Frage ___. (antworten)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-03-q03",
         "position": 3,
-        "type": "fill_blank",
-        "sentence": "aufmachen → ___",
-        "blanks": 1,
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Formez le participe.",
-          "de": "Bilden Sie das Partizip.",
-          "ar": "كوّن اسم المفعول.",
-          "en": "Form the participle."
-        }
+          "fr": "Wer hat das Fenster ___? (aufmachen) — Choisissez la forme ou la phrase correcte.",
+          "de": "Wer hat das Fenster ___? (aufmachen) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Wer hat das Fenster ___? (aufmachen) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Wer hat das Fenster ___? (aufmachen) — Choose the correct form or sentence."
+        },
+        "options": [
+          "geaufmacht",
+          "aufgemacht",
+          "aufmacht",
+          "aufgemachen"
+        ]
       },
       {
         "id": "kapitel-26-ubung-03-q04",
         "position": 4,
         "type": "true_false",
-        "statement": "bringen → gegebracht",
         "prompt": {
-          "fr": "Cette forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is this form correct?"
-        }
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
+        },
+        "statement": "Der Bote hat das Paket gegebracht."
       },
       {
         "id": "kapitel-26-ubung-03-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "entschuldigt",
-          "entschuldigen",
-          "entschuldigtt",
-          "geentschuldigt"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Partizip II: entschuldigen",
-          "de": "Partizip II: entschuldigen",
-          "ar": "Partizip II: entschuldigen",
-          "en": "Partizip II: entschuldigen"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Er hat sich für den Fehler ___. (entschuldigen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-03-q06",
         "position": 6,
         "type": "matching",
+        "prompt": {
+          "fr": "Associez chaque élément à la forme correspondante.",
+          "de": "Ordnen Sie jedem Element die passende Form zu.",
+          "ar": "اربط كل عنصر بالصيغة المناسبة.",
+          "en": "Match each item to the corresponding form."
+        },
         "items": [
           {
-            "id": "a",
+            "id": "0",
             "label": "versuchen"
           },
           {
-            "id": "b",
+            "id": "1",
             "label": "bekommen"
+          },
+          {
+            "id": "2",
+            "label": "erzählen"
           }
         ],
         "options": [
-          "versucht",
-          "bekommen"
-        ],
-        "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "طابق.",
-          "en": "Match."
-        }
+          "bekommen",
+          "erzählt",
+          "versucht"
+        ]
       },
       {
         "id": "kapitel-26-ubung-03-q07",
         "position": 7,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "waschen → gewaschen",
-          "sehen → gesehen",
-          "waschen → gegewaschen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez les deux formes correctes.",
-          "de": "Wählen Sie beide richtigen Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Select both correct forms."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Sie hat die Bluse ___ und den Fleck ___. (waschen/sehen)",
+        "blanks": 2
       },
       {
         "id": "kapitel-26-ubung-03-q08",
         "position": 8,
-        "type": "reorder",
-        "tokens": [
-          "eben",
-          "geg"
-        ],
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Reconstituez le participe de geben",
-          "de": "Bilden Sie das Partizip von geben",
-          "ar": "رتب أجزاء geben",
-          "en": "Reconstruct the participle of geben"
-        }
+          "fr": "Der Arzt hat mir einen Rat ___. (geben) — Choisissez la forme ou la phrase correcte.",
+          "de": "Der Arzt hat mir einen Rat ___. (geben) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Der Arzt hat mir einen Rat ___. (geben) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Der Arzt hat mir einen Rat ___. (geben) — Choose the correct form or sentence."
+        },
+        "options": [
+          "gegaben",
+          "gegiben",
+          "gegeben",
+          "gegebt"
+        ]
       },
       {
         "id": "kapitel-26-ubung-03-q09",
         "position": 9,
         "type": "fill_blank",
-        "sentence": "bestellen → ___",
-        "blanks": 1,
         "prompt": {
-          "fr": "Formez le participe.",
-          "de": "Bilden Sie das Partizip.",
-          "ar": "كوّن اسم المفعول.",
-          "en": "Form the participle."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Wir haben zwei Pizzen ___. (bestellen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-03-q10",
         "position": 10,
-        "type": "true_false",
-        "statement": "erzählen → geerzählt",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Cette forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is this form correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Oma hat uns eine Geschichte ___. (erzählen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-03-q11",
         "position": 11,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "umziehen",
-          "umgezogen",
-          "geumgezogen",
-          "umgezogent"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Partizip II: umziehen",
-          "de": "Partizip II: umziehen",
-          "ar": "Partizip II: umziehen",
-          "en": "Partizip II: umziehen"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Familie ist nach Köln ___. (umziehen)",
+        "blanks": 1
       }
     ]
   },
@@ -510,117 +504,122 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 4,
     "title": {
-      "fr": "Entraînement 4",
-      "de": "Übung 4",
-      "ar": "تمرين 4",
-      "en": "Practice 4"
+      "fr": "Verben auf -ieren",
+      "de": "Verben auf -ieren",
+      "ar": "Verben auf -ieren",
+      "en": "Verben auf -ieren"
     },
     "description": {
-      "fr": "Le participe passé",
-      "de": "Partizip II",
-      "ar": "اسم المفعول الثاني",
-      "en": "Past participle"
+      "fr": "Complétez les situations et distinguez les formes.",
+      "de": "Ergänzen Sie die Situationen und unterscheiden Sie die Formen.",
+      "ar": "أكمل المواقف وميّز الصيغ.",
+      "en": "Complete the situations and distinguish the forms."
     },
     "questions": [
       {
         "id": "kapitel-26-ubung-04-q01",
         "position": 1,
-        "type": "reorder",
-        "tokens": [
-          "iert",
-          "stud"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez le participe de studieren",
-          "de": "Bilden Sie das Partizip von studieren",
-          "ar": "رتب أجزاء studieren",
-          "en": "Reconstruct the participle of studieren"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "In Heidelberg hat sie Medizin ___. (studieren)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-04-q02",
         "position": 2,
         "type": "fill_blank",
-        "sentence": "explodieren → ___",
-        "blanks": 1,
         "prompt": {
-          "fr": "Formez le participe.",
-          "de": "Bilden Sie das Partizip.",
-          "ar": "كوّن اسم المفعول.",
-          "en": "Form the participle."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Im Labor ist ein Behälter ___. (explodieren)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-04-q03",
         "position": 3,
-        "type": "true_false",
-        "statement": "diskutieren → diskutiert",
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Cette forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is this form correct?"
-        }
+          "fr": "Danach haben wir lange über den Vorfall ___. (diskutieren) — Choisissez la forme ou la phrase correcte.",
+          "de": "Danach haben wir lange über den Vorfall ___. (diskutieren) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Danach haben wir lange über den Vorfall ___. (diskutieren) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Danach haben wir lange über den Vorfall ___. (diskutieren) — Choose the correct form or sentence."
+        },
+        "options": [
+          "diskutiert",
+          "diskutieren",
+          "diskutiertet",
+          "gediskutiert"
+        ]
       },
       {
         "id": "kapitel-26-ubung-04-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "probiertt",
-          "probieren",
-          "geprobiert",
-          "probiert"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Partizip II: probieren",
-          "de": "Partizip II: probieren",
-          "ar": "Partizip II: probieren",
-          "en": "Partizip II: probieren"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Im Restaurant hat er ein neues Gericht ___. (probieren)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-04-q05",
         "position": 5,
         "type": "matching",
+        "prompt": {
+          "fr": "Associez chaque élément à la forme correspondante.",
+          "de": "Ordnen Sie jedem Element die passende Form zu.",
+          "ar": "اربط كل عنصر بالصيغة المناسبة.",
+          "en": "Match each item to the corresponding form."
+        },
         "items": [
           {
-            "id": "a",
+            "id": "0",
             "label": "reparieren"
           },
           {
-            "id": "b",
-            "label": "studieren"
+            "id": "1",
+            "label": "gratulieren"
+          },
+          {
+            "id": "2",
+            "label": "telefonieren"
           }
         ],
         "options": [
-          "repariert",
-          "studiert"
-        ],
-        "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "طابق.",
-          "en": "Match."
-        }
+          "telefoniert",
+          "gratuliert",
+          "repariert"
+        ]
       },
       {
         "id": "kapitel-26-ubung-04-q06",
         "position": 6,
         "type": "qcm",
         "selection": "multiple",
-        "options": [
-          "gratulieren → gratuliert",
-          "studieren → studiert",
-          "gratulieren → gegratuliert"
-        ],
         "prompt": {
-          "fr": "Sélectionnez les deux formes correctes.",
-          "de": "Wählen Sie beide richtigen Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Select both correct forms."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Sie hat gegratuliert.",
+          "Die Mechanikerin hat das Rad repariert.",
+          "Ich habe getelefoniert.",
+          "Wir haben ihm zum Geburtstag gratuliert."
+        ]
       }
     ]
   },
@@ -629,217 +628,209 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 5,
     "title": {
-      "fr": "Entraînement 5",
-      "de": "Übung 5",
-      "ar": "تمرين 5",
-      "en": "Practice 5"
+      "fr": "Partizipfamilien",
+      "de": "Partizipfamilien",
+      "ar": "Partizipfamilien",
+      "en": "Partizipfamilien"
     },
     "description": {
-      "fr": "Le participe passé",
-      "de": "Partizip II",
-      "ar": "اسم المفعول الثاني",
-      "en": "Past participle"
+      "fr": "Complétez les situations et distinguez les formes.",
+      "de": "Ergänzen Sie die Situationen und unterscheiden Sie die Formen.",
+      "ar": "أكمل المواقف وميّز الصيغ.",
+      "en": "Complete the situations and distinguish the forms."
     },
     "questions": [
       {
         "id": "kapitel-26-ubung-05-q01",
         "position": 1,
         "type": "fill_blank",
-        "sentence": "besuchen → ___",
-        "blanks": 1,
         "prompt": {
-          "fr": "Formez le participe.",
-          "de": "Bilden Sie das Partizip.",
-          "ar": "كوّن اسم المفعول.",
-          "en": "Form the participle."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Am Sonntag haben wir Freunde ___. (besuchen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-05-q02",
         "position": 2,
-        "type": "true_false",
-        "statement": "kommen → gegekommen",
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Cette forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is this form correct?"
-        }
+          "fr": "Die Gäste sind erst um neun ___. (kommen) — Choisissez la forme ou la phrase correcte.",
+          "de": "Die Gäste sind erst um neun ___. (kommen) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Die Gäste sind erst um neun ___. (kommen) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Die Gäste sind erst um neun ___. (kommen) — Choose the correct form or sentence."
+        },
+        "options": [
+          "gekommenen",
+          "gekommt",
+          "gekammt",
+          "gekommen"
+        ]
       },
       {
         "id": "kapitel-26-ubung-05-q03",
         "position": 3,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "abgeflogent",
-          "abfliegen",
-          "abgeflogen",
-          "geabgeflogen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Partizip II: abfliegen",
-          "de": "Partizip II: abfliegen",
-          "ar": "Partizip II: abfliegen",
-          "en": "Partizip II: abfliegen"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Das Flugzeug ist pünktlich ___. (abfliegen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-05-q04",
         "position": 4,
-        "type": "matching",
-        "items": [
-          {
-            "id": "a",
-            "label": "fernsehen"
-          },
-          {
-            "id": "b",
-            "label": "abholen"
-          }
-        ],
-        "options": [
-          "ferngesehen",
-          "abgeholt"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "طابق.",
-          "en": "Match."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Kinder haben eine Stunde ___. (fernsehen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-05-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "ausmachen → ausgemacht",
-          "abholen → abgeholt",
-          "ausmachen → geausgemacht"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez les deux formes correctes.",
-          "de": "Wählen Sie beide richtigen Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Select both correct forms."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Vor dem Schlafen hat er das Licht ___. (ausmachen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-05-q06",
         "position": 6,
-        "type": "reorder",
-        "tokens": [
-          "eitet",
-          "gearb"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez le participe de arbeiten",
-          "de": "Bilden Sie das Partizip von arbeiten",
-          "ar": "رتب أجزاء arbeiten",
-          "en": "Reconstruct the participle of arbeiten"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Ich habe bis acht Uhr ___. (arbeiten)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-05-q07",
         "position": 7,
-        "type": "fill_blank",
-        "sentence": "beginnen → ___",
-        "blanks": 1,
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Formez le participe.",
-          "de": "Bilden Sie das Partizip.",
-          "ar": "كوّن اسم المفعول.",
-          "en": "Form the participle."
-        }
+          "fr": "Der Kurs hat bereits ___. (beginnen) — Choisissez la forme ou la phrase correcte.",
+          "de": "Der Kurs hat bereits ___. (beginnen) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Der Kurs hat bereits ___. (beginnen) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Der Kurs hat bereits ___. (beginnen) — Choose the correct form or sentence."
+        },
+        "options": [
+          "gebeginnt",
+          "beginnt",
+          "begonnen",
+          "gebegonnen"
+        ]
       },
       {
         "id": "kapitel-26-ubung-05-q08",
         "position": 8,
-        "type": "true_false",
-        "statement": "diskutieren → gediskutiert",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Cette forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is this form correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Politiker haben zwei Stunden ___. (diskutieren)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-05-q09",
         "position": 9,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "gegefahren",
-          "gefahrent",
-          "gefahren",
-          "fahren"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Partizip II: fahren",
-          "de": "Partizip II: fahren",
-          "ar": "Partizip II: fahren",
-          "en": "Partizip II: fahren"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Meine Eltern sind nach Wien ___. (fahren)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-05-q10",
         "position": 10,
         "type": "matching",
+        "prompt": {
+          "fr": "Associez chaque élément à la forme correspondante.",
+          "de": "Ordnen Sie jedem Element die passende Form zu.",
+          "ar": "اربط كل عنصر بالصيغة المناسبة.",
+          "en": "Match each item to the corresponding form."
+        },
         "items": [
           {
-            "id": "a",
+            "id": "0",
             "label": "fragen"
           },
           {
-            "id": "b",
-            "label": "kaufen"
+            "id": "1",
+            "label": "anklicken"
+          },
+          {
+            "id": "2",
+            "label": "vergessen"
           }
         ],
         "options": [
-          "gefragt",
-          "gekauft"
-        ],
-        "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "طابق.",
-          "en": "Match."
-        }
+          "angeklickt",
+          "vergessen",
+          "gefragt"
+        ]
       },
       {
         "id": "kapitel-26-ubung-05-q11",
         "position": 11,
         "type": "qcm",
         "selection": "multiple",
-        "options": [
-          "anklicken → angeklickt",
-          "abholen → abgeholt",
-          "anklicken → geangeklickt"
-        ],
         "prompt": {
-          "fr": "Sélectionnez les deux formes correctes.",
-          "de": "Wählen Sie beide richtigen Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Select both correct forms."
-        }
+          "fr": "Sélectionnez les participes correctement formés.",
+          "de": "Wählen Sie die richtig gebildeten Partizipien.",
+          "ar": "اختر صيغ التصريف الثالث الصحيحة.",
+          "en": "Select the correctly formed participles."
+        },
+        "options": [
+          "gefragen",
+          "gearbeit",
+          "gefragt",
+          "gearbeitet"
+        ]
       },
       {
         "id": "kapitel-26-ubung-05-q12",
         "position": 12,
         "type": "reorder",
-        "tokens": [
-          "essen",
-          "verg"
-        ],
         "prompt": {
-          "fr": "Reconstituez le participe de vergessen",
-          "de": "Bilden Sie das Partizip von vergessen",
-          "ar": "رتب أجزاء vergessen",
-          "en": "Reconstruct the participle of vergessen"
-        }
+          "fr": "Den Link … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Den Link … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Den Link … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Den Link … — Start with this chunk and reconstruct the sentence."
+        },
+        "tokens": [
+          "sie",
+          "angeklickt.",
+          "Den Link",
+          "hat"
+        ]
       }
     ]
   },
@@ -848,189 +839,147 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 6,
     "title": {
-      "fr": "Entraînement 6",
-      "de": "Übung 6",
-      "ar": "تمرين 6",
-      "en": "Practice 6"
+      "fr": "China-Reise I",
+      "de": "China-Reise I",
+      "ar": "China-Reise I",
+      "en": "China-Reise I"
     },
     "description": {
-      "fr": "Le participe passé",
-      "de": "Partizip II",
-      "ar": "اسم المفعول الثاني",
-      "en": "Past participle"
+      "fr": "Complétez les situations et distinguez les formes.",
+      "de": "Ergänzen Sie die Situationen und unterscheiden Sie die Formen.",
+      "ar": "أكمل المواقف وميّز الصيغ.",
+      "en": "Complete the situations and distinguish the forms."
     },
     "questions": [
       {
         "id": "kapitel-26-ubung-06-q01",
         "position": 1,
-        "type": "true_false",
-        "statement": "machen → gemacht",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Cette forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is this form correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Letztes Jahr haben wir eine Reise nach China ___. (machen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-06-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "teilgenomment",
-          "geteilgenommen",
-          "teilgenommen",
-          "teilnehmen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Partizip II: teilnehmen",
-          "de": "Partizip II: teilnehmen",
-          "ar": "Partizip II: teilnehmen",
-          "en": "Partizip II: teilnehmen"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Wir haben an einer Führung ___. (teilnehmen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-06-q03",
         "position": 3,
-        "type": "matching",
-        "items": [
-          {
-            "id": "a",
-            "label": "fliegen"
-          },
-          {
-            "id": "b",
-            "label": "sehen"
-          }
-        ],
-        "options": [
-          "geflogen",
-          "gesehen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "طابق.",
-          "en": "Match."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Zuerst sind wir nach Peking ___. (fliegen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-06-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "schlafen → geschlafen",
-          "sehen → gesehen",
-          "schlafen → gegeschlafen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez les deux formes correctes.",
-          "de": "Wählen Sie beide richtigen Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Select both correct forms."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Im Flugzeug haben wir kaum ___. (schlafen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-06-q05",
         "position": 5,
-        "type": "reorder",
-        "tokens": [
-          "ommen",
-          "angek"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez le participe de ankommen",
-          "de": "Bilden Sie das Partizip von ankommen",
-          "ar": "رتب أجزاء ankommen",
-          "en": "Reconstruct the participle of ankommen"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Am Morgen sind wir endlich ___. (ankommen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-06-q06",
         "position": 6,
         "type": "fill_blank",
-        "sentence": "fahren → ___",
-        "blanks": 1,
         "prompt": {
-          "fr": "Formez le participe.",
-          "de": "Bilden Sie das Partizip.",
-          "ar": "كوّن اسم المفعول.",
-          "en": "Form the participle."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Danach sind wir zum Hotel ___. (fahren)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-06-q07",
         "position": 7,
-        "type": "true_false",
-        "statement": "auspacken → ausgepackt",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Cette forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is this form correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Im Zimmer haben wir die Koffer ___. (auspacken)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-06-q08",
         "position": 8,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "losfahren",
-          "losgefahren",
-          "losgefahrent",
-          "gelosgefahren"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Partizip II: losfahren",
-          "de": "Partizip II: losfahren",
-          "ar": "Partizip II: losfahren",
-          "en": "Partizip II: losfahren"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Um zehn sind wir wieder ___. (losfahren)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-06-q09",
         "position": 9,
-        "type": "matching",
-        "items": [
-          {
-            "id": "a",
-            "label": "besichtigen"
-          },
-          {
-            "id": "b",
-            "label": "bekommen"
-          }
-        ],
-        "options": [
-          "besichtigt",
-          "bekommen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "طابق.",
-          "en": "Match."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Wir haben einen Tempel ___. (besichtigen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-06-q10",
         "position": 10,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "laufen → gelaufen",
-          "sehen → gesehen",
-          "laufen → gegelaufen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez les deux formes correctes.",
-          "de": "Wählen Sie beide richtigen Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Select both correct forms."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Danach sind wir durch den Park ___. (laufen)",
+        "blanks": 1
       }
     ]
   },
@@ -1039,177 +988,134 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 7,
     "title": {
-      "fr": "Entraînement 7",
-      "de": "Übung 7",
-      "ar": "تمرين 7",
-      "en": "Practice 7"
+      "fr": "China-Reise II",
+      "de": "China-Reise II",
+      "ar": "China-Reise II",
+      "en": "China-Reise II"
     },
     "description": {
-      "fr": "Le participe passé",
-      "de": "Partizip II",
-      "ar": "اسم المفعول الثاني",
-      "en": "Past participle"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-26-ubung-07-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "machen",
-          "gemacht",
-          "gegemacht",
-          "gemachtt"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Partizip II: machen",
-          "de": "Partizip II: machen",
-          "ar": "Partizip II: machen",
-          "en": "Partizip II: machen"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Wir haben viele Fotos ___. (machen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-07-q02",
         "position": 2,
-        "type": "matching",
-        "items": [
-          {
-            "id": "a",
-            "label": "essen"
-          },
-          {
-            "id": "b",
-            "label": "sehen"
-          }
-        ],
-        "options": [
-          "gegessen",
-          "gesehen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "طابق.",
-          "en": "Match."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Mittags haben wir Reis ___. (essen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-07-q03",
         "position": 3,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "gehen → gegangen",
-          "sehen → gesehen",
-          "gehen → gegegangen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez les deux formes correctes.",
-          "de": "Wählen Sie beide richtigen Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Select both correct forms."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Anschließend sind wir ins Museum ___. (gehen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-07-q04",
         "position": 4,
-        "type": "reorder",
-        "tokens": [
-          "sehen",
-          "ange"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez le participe de ansehen",
-          "de": "Bilden Sie das Partizip von ansehen",
-          "ar": "رتب أجزاء ansehen",
-          "en": "Reconstruct the participle of ansehen"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Dort haben wir alte Bilder ___. (ansehen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-07-q05",
         "position": 5,
         "type": "fill_blank",
-        "sentence": "warten → ___",
-        "blanks": 1,
         "prompt": {
-          "fr": "Formez le participe.",
-          "de": "Bilden Sie das Partizip.",
-          "ar": "كوّن اسم المفعول.",
-          "en": "Form the participle."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Vor dem Eingang haben wir lange ___. (warten)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-07-q06",
         "position": 6,
-        "type": "true_false",
-        "statement": "einkaufen → geeingekauft",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Cette forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is this form correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Am Nachmittag haben wir ___. (einkaufen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-07-q07",
         "position": 7,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "besuchen",
-          "gebesucht",
-          "besuchtt",
-          "besucht"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Partizip II: besuchen",
-          "de": "Partizip II: besuchen",
-          "ar": "Partizip II: besuchen",
-          "en": "Partizip II: besuchen"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Am nächsten Tag haben wir Freunde ___. (besuchen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-07-q08",
         "position": 8,
-        "type": "matching",
-        "items": [
-          {
-            "id": "a",
-            "label": "einschlafen"
-          },
-          {
-            "id": "b",
-            "label": "abholen"
-          }
-        ],
-        "options": [
-          "eingeschlafen",
-          "abgeholt"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "طابق.",
-          "en": "Match."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Im Bus sind die Kinder ___. (einschlafen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-26-ubung-07-q09",
         "position": 9,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "zurückkommen → zurückgekommen",
-          "abholen → abgeholt",
-          "zurückkommen → gezurückgekommen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez les deux formes correctes.",
-          "de": "Wählen Sie beide richtigen Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Select both correct forms."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Am Abend sind wir ins Hotel ___. (zurückkommen)",
+        "blanks": 1
       }
     ]
   },
@@ -1218,99 +1124,108 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 8,
     "title": {
-      "fr": "Entraînement 8",
-      "de": "Übung 8",
-      "ar": "تمرين 8",
-      "en": "Practice 8"
+      "fr": "Formen im Vergleich",
+      "de": "Formen im Vergleich",
+      "ar": "Formen im Vergleich",
+      "en": "Formen im Vergleich"
     },
     "description": {
-      "fr": "Le participe passé",
-      "de": "Partizip II",
-      "ar": "اسم المفعول الثاني",
-      "en": "Past participle"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-26-ubung-08-q01",
         "position": 1,
-        "type": "matching",
-        "items": [
-          {
-            "id": "a",
-            "label": "kaufen"
-          },
-          {
-            "id": "b",
-            "label": "arbeiten"
-          }
-        ],
-        "options": [
-          "gekauft",
-          "gearbeitet"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "طابق.",
-          "en": "Match."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Ich habe die Nachricht ___ und sofort an dich ___. (lesen/denken)",
+        "blanks": 2
       },
       {
         "id": "kapitel-26-ubung-08-q02",
         "position": 2,
         "type": "qcm",
         "selection": "multiple",
-        "options": [
-          "bezahlen → bezahlt",
-          "bekommen → bekommen",
-          "bezahlen → gebezahlt"
-        ],
         "prompt": {
-          "fr": "Sélectionnez les deux formes correctes.",
-          "de": "Wählen Sie beide richtigen Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Select both correct forms."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Sie hat den Termin abgesagt.",
+          "Er hat den Brief beantgewordet.",
+          "Er hat den Brief beantwortet.",
+          "Sie hat den Termin geabsagt."
+        ]
       },
       {
         "id": "kapitel-26-ubung-08-q03",
         "position": 3,
-        "type": "reorder",
-        "tokens": [
-          "oniert",
-          "telef"
-        ],
+        "type": "matching",
         "prompt": {
-          "fr": "Reconstituez le participe de telefonieren",
-          "de": "Bilden Sie das Partizip von telefonieren",
-          "ar": "رتب أجزاء telefonieren",
-          "en": "Reconstruct the participle of telefonieren"
-        }
+          "fr": "Associez chaque élément à la forme correspondante.",
+          "de": "Ordnen Sie jedem Element die passende Form zu.",
+          "ar": "اربط كل عنصر بالصيغة المناسبة.",
+          "en": "Match each item to the corresponding form."
+        },
+        "items": [
+          {
+            "id": "0",
+            "label": "wissen"
+          },
+          {
+            "id": "1",
+            "label": "kennen"
+          },
+          {
+            "id": "2",
+            "label": "bringen"
+          }
+        ],
+        "options": [
+          "gewusst",
+          "gekannt",
+          "gebracht"
+        ]
       },
       {
         "id": "kapitel-26-ubung-08-q04",
         "position": 4,
         "type": "fill_blank",
-        "sentence": "denken → ___",
-        "blanks": 1,
         "prompt": {
-          "fr": "Formez le participe.",
-          "de": "Bilden Sie das Partizip.",
-          "ar": "كوّن اسم المفعول.",
-          "en": "Form the participle."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Wir haben den Betrag ___ und die Quittung ___. (bezahlen/verlieren)",
+        "blanks": 2
       },
       {
         "id": "kapitel-26-ubung-08-q05",
         "position": 5,
-        "type": "true_false",
-        "statement": "bringen → gebracht",
+        "type": "reorder",
         "prompt": {
-          "fr": "Cette forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is this form correct?"
-        }
+          "fr": "Die Nachricht … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Die Nachricht … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Die Nachricht … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Die Nachricht … — Start with this chunk and reconstruct the sentence."
+        },
+        "tokens": [
+          "Die Nachricht",
+          "mich",
+          "überrascht.",
+          "hat"
+        ]
       }
     ]
   },
@@ -1319,92 +1234,90 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 9,
     "title": {
-      "fr": "Entraînement 9",
-      "de": "Übung 9",
-      "ar": "تمرين 9",
-      "en": "Practice 9"
+      "fr": "Nachrichten und Dialoge",
+      "de": "Nachrichten und Dialoge",
+      "ar": "Nachrichten und Dialoge",
+      "en": "Nachrichten und Dialoge"
     },
     "description": {
-      "fr": "Le participe passé",
-      "de": "Partizip II",
-      "ar": "اسم المفعول الثاني",
-      "en": "Past participle"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-26-ubung-09-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "schreiben → geschrieben",
-          "sehen → gesehen",
-          "schreiben → gegeschrieben"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez les deux formes correctes.",
-          "de": "Wählen Sie beide richtigen Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Select both correct forms."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Hast du die E-Mail ___ und das Formular ___? (schreiben/ausfüllen)",
+        "blanks": 2
       },
       {
         "id": "kapitel-26-ubung-09-q02",
         "position": 2,
-        "type": "reorder",
-        "tokens": [
-          "eben",
-          "geg"
-        ],
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Reconstituez le participe de geben",
-          "de": "Bilden Sie das Partizip von geben",
-          "ar": "رتب أجزاء geben",
-          "en": "Reconstruct the participle of geben"
-        }
+          "fr": "Ich habe den Schlüssel ___. (vergessen) — Choisissez la forme ou la phrase correcte.",
+          "de": "Ich habe den Schlüssel ___. (vergessen) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Ich habe den Schlüssel ___. (vergessen) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Ich habe den Schlüssel ___. (vergessen) — Choose the correct form or sentence."
+        },
+        "options": [
+          "vergesst",
+          "gevergessen",
+          "vergessen",
+          "vergesen"
+        ]
       },
       {
         "id": "kapitel-26-ubung-09-q03",
         "position": 3,
-        "type": "fill_blank",
-        "sentence": "nehmen → ___",
-        "blanks": 1,
+        "type": "true_false",
         "prompt": {
-          "fr": "Formez le participe.",
-          "de": "Bilden Sie das Partizip.",
-          "ar": "كوّن اسم المفعول.",
-          "en": "Form the participle."
-        }
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
+        },
+        "statement": "Die Kollegin hat das Problem erklärt."
       },
       {
         "id": "kapitel-26-ubung-09-q04",
         "position": 4,
-        "type": "true_false",
-        "statement": "wissen → gegewusst",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Cette forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is this form correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Der Gast hat den falschen Koffer ___ und es später ___. (nehmen/bemerken)",
+        "blanks": 2
       },
       {
         "id": "kapitel-26-ubung-09-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "gekannt",
-          "kennen",
-          "gegekannt",
-          "gekanntt"
-        ],
+        "type": "reorder",
         "prompt": {
-          "fr": "Partizip II: kennen",
-          "de": "Partizip II: kennen",
-          "ar": "Partizip II: kennen",
-          "en": "Partizip II: kennen"
-        }
+          "fr": "Das Paket … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Das Paket … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Das Paket … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Das Paket … — Start with this chunk and reconstruct the sentence."
+        },
+        "tokens": [
+          "Das Paket",
+          "er",
+          "mitgebracht.",
+          "hat"
+        ]
       }
     ]
   },
@@ -1413,100 +1326,108 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 10,
     "title": {
-      "fr": "Entraînement 10",
-      "de": "Übung 10",
-      "ar": "تمرين 10",
-      "en": "Practice 10"
+      "fr": "Abschlusstest",
+      "de": "Abschlusstest",
+      "ar": "Abschlusstest",
+      "en": "Abschlusstest"
     },
     "description": {
-      "fr": "Le participe passé",
-      "de": "Partizip II",
-      "ar": "اسم المفعول الثاني",
-      "en": "Past participle"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-26-ubung-10-q01",
         "position": 1,
-        "type": "reorder",
-        "tokens": [
-          "macht",
-          "aufge"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez le participe de aufmachen",
-          "de": "Bilden Sie das Partizip von aufmachen",
-          "ar": "رتب أجزاء aufmachen",
-          "en": "Reconstruct the participle of aufmachen"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Gäste haben ___ und den Tisch ___. (anrufen/bestellen)",
+        "blanks": 2
       },
       {
         "id": "kapitel-26-ubung-10-q02",
         "position": 2,
         "type": "fill_blank",
-        "sentence": "bestellen → ___",
-        "blanks": 1,
         "prompt": {
-          "fr": "Formez le participe.",
-          "de": "Bilden Sie das Partizip.",
-          "ar": "كوّن اسم المفعول.",
-          "en": "Form the participle."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Wir haben das Angebot ___ und die Bestellung ___. (verstehen/abschicken)",
+        "blanks": 2
       },
       {
         "id": "kapitel-26-ubung-10-q03",
         "position": 3,
-        "type": "true_false",
-        "statement": "vergessen → vergessen",
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Cette forme est-elle correcte ?",
-          "de": "Ist die Form richtig?",
-          "ar": "هل الصيغة صحيحة؟",
-          "en": "Is this form correct?"
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Ich habe den Mantel gewascht.",
+          "Ich habe den Mantel gewaschen.",
+          "Sie hat die Rechnung kontrolliert.",
+          "Sie hat die Rechnung gekontrolliert."
+        ]
       },
       {
         "id": "kapitel-26-ubung-10-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "geempfohlen",
-          "empfohlent",
-          "empfohlen",
-          "empfehlen"
-        ],
+        "type": "reorder",
         "prompt": {
-          "fr": "Partizip II: empfehlen",
-          "de": "Partizip II: empfehlen",
-          "ar": "Partizip II: empfehlen",
-          "en": "Partizip II: empfehlen"
-        }
+          "fr": "Den Computer … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Den Computer … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Den Computer … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Den Computer … — Start with this chunk and reconstruct the sentence."
+        },
+        "tokens": [
+          "hat",
+          "Den Computer",
+          "eingeschaltet.",
+          "die Technikerin"
+        ]
       },
       {
         "id": "kapitel-26-ubung-10-q05",
         "position": 5,
         "type": "matching",
+        "prompt": {
+          "fr": "Associez chaque élément à la forme correspondante.",
+          "de": "Ordnen Sie jedem Element die passende Form zu.",
+          "ar": "اربط كل عنصر بالصيغة المناسبة.",
+          "en": "Match each item to the corresponding form."
+        },
         "items": [
           {
-            "id": "a",
-            "label": "arbeiten"
+            "id": "0",
+            "label": "empfehlen"
           },
           {
-            "id": "b",
-            "label": "kaufen"
+            "id": "1",
+            "label": "aufstehen"
+          },
+          {
+            "id": "2",
+            "label": "warten"
           }
         ],
         "options": [
-          "gearbeitet",
-          "gekauft"
-        ],
-        "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "طابق.",
-          "en": "Match."
-        }
+          "empfohlen",
+          "aufgestanden",
+          "gewartet"
+        ]
       }
     ]
   }

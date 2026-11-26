@@ -5,10 +5,10 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "Im Café",
+      "fr": "Au café",
       "de": "Im Café",
-      "ar": "Im Café",
-      "en": "Im Café"
+      "ar": "في المقهى",
+      "en": "At the café"
     },
     "description": {
       "fr": "Articles",
@@ -20,35 +20,32 @@ export const extraKick: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-14-ubung-11-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Ich möchte ___ Kaffee.",
-          "de": "Ergänzen Sie. — Ich möchte ___ Kaffee.",
-          "ar": "أكمل. — Ich möchte ___ Kaffee.",
-          "en": "Complete. — Ich möchte ___ Kaffee."
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
-        "selection": "single",
-        "options": [
-          "Der",
-          "eine",
-          "einen"
-        ]
+        "sentence": "Im Café bestellt Lea ___ Tee.",
+        "blanks": 1
       },
       {
         "id": "kapitel-14-ubung-11-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich möchte ___ Banane.",
-          "de": "Ergänzen Sie. — Ich möchte ___ Banane.",
-          "ar": "أكمل. — Ich möchte ___ Banane.",
-          "en": "Complete. — Ich möchte ___ Banane."
+          "fr": "Complétez avec l’article défini. — Der Kellner bringt ___ Tee, den Lea bestellt hat.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — Der Kellner bringt ___ Tee, den Lea bestellt hat.",
+          "ar": "أكمل بأداة التعريف المناسبة. — Der Kellner bringt ___ Tee, den Lea bestellt hat.",
+          "en": "Complete with the definite article. — Der Kellner bringt ___ Tee, den Lea bestellt hat."
         },
         "selection": "single",
         "options": [
-          "Der",
-          "eine",
-          "einen"
+          "den",
+          "der",
+          "die",
+          "dem"
         ]
       },
       {
@@ -56,16 +53,17 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — ___ Kaffee ist heiß. (bekannt)",
-          "de": "Ergänzen Sie. — ___ Kaffee ist heiß. (bekannt)",
-          "ar": "أكمل. — ___ Kaffee ist heiß. (bekannt)",
-          "en": "Complete. — ___ Kaffee ist heiß. (bekannt)"
+          "fr": "Complétez avec l’article indéfini. — Auf dem Tisch steht ___ Tasse.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Auf dem Tisch steht ___ Tasse.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Auf dem Tisch steht ___ Tasse.",
+          "en": "Complete with the indefinite article. — Auf dem Tisch steht ___ Tasse."
         },
         "selection": "single",
         "options": [
           "eine",
+          "ein",
           "einen",
-          "Der"
+          "einer"
         ]
       }
     ]
@@ -75,10 +73,10 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Im Geschäft",
+      "fr": "Au magasin",
       "de": "Im Geschäft",
-      "ar": "Im Geschäft",
-      "en": "Im Geschäft"
+      "ar": "في المتجر",
+      "en": "At the shop"
     },
     "description": {
       "fr": "Articles",
@@ -90,52 +88,48 @@ export const extraKick: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-14-ubung-12-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Ich suche ___ Kleid. (neu)",
-          "de": "Ergänzen Sie. — Ich suche ___ Kleid. (neu)",
-          "ar": "أكمل. — Ich suche ___ Kleid. (neu)",
-          "en": "Complete. — Ich suche ___ Kleid. (neu)"
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
-        "selection": "single",
-        "options": [
-          "den",
-          "die",
-          "ein"
-        ]
+        "sentence": "Im Kaufhaus probiert Niko ___ Jacke an.",
+        "blanks": 1
       },
       {
         "id": "kapitel-14-ubung-12-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich nehme ___ Schuhe. (bekannt)",
-          "de": "Ergänzen Sie. — Ich nehme ___ Schuhe. (bekannt)",
-          "ar": "أكمل. — Ich nehme ___ Schuhe. (bekannt)",
-          "en": "Complete. — Ich nehme ___ Schuhe. (bekannt)"
+          "fr": "Complétez avec l’article défini. — An der Kasse bezahlt er ___ Jacke.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — An der Kasse bezahlt er ___ Jacke.",
+          "ar": "أكمل بأداة التعريف المناسبة. — An der Kasse bezahlt er ___ Jacke.",
+          "en": "Complete with the definite article. — An der Kasse bezahlt er ___ Jacke."
         },
         "selection": "single",
         "options": [
-          "den",
+          "der",
+          "das",
           "die",
-          "ein"
+          "dem"
         ]
       },
       {
         "id": "kapitel-14-ubung-12-q03",
         "position": 3,
-        "type": "qcm",
+        "type": "reorder",
         "prompt": {
-          "fr": "Complétez. — Ich bezahle ___ Pullover. (bekannt)",
-          "de": "Ergänzen Sie. — Ich bezahle ___ Pullover. (bekannt)",
-          "ar": "أكمل. — Ich bezahle ___ Pullover. (bekannt)",
-          "en": "Complete. — Ich bezahle ___ Pullover. (bekannt)"
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Neben der Kasse ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Neben der Kasse“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Neben der Kasse ».",
+          "en": "Reorder the groups. Start with “Neben der Kasse”."
         },
-        "selection": "single",
-        "options": [
-          "die",
-          "den",
-          "ein"
+        "tokens": [
+          "steht",
+          "ein Spiegel.",
+          "Neben der Kasse"
         ]
       }
     ]
@@ -145,9 +139,9 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Challenge",
+      "fr": "Défi",
       "de": "Challenge",
-      "ar": "Challenge",
+      "ar": "تحدٍ",
       "en": "Challenge"
     },
     "description": {
@@ -160,35 +154,32 @@ export const extraKick: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-14-ubung-13-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Ich gebe ___ Kind ein Buch. (bekannt)",
-          "de": "Ergänzen Sie. — Ich gebe ___ Kind ein Buch. (bekannt)",
-          "ar": "أكمل. — Ich gebe ___ Kind ein Buch. (bekannt)",
-          "en": "Complete. — Ich gebe ___ Kind ein Buch. (bekannt)"
+          "fr": "Complétez avec l’article indéfini.",
+          "de": "Ergänzen Sie den unbestimmten Artikel.",
+          "ar": "أكمل بأداة النكرة المناسبة.",
+          "en": "Complete with the indefinite article."
         },
-        "selection": "single",
-        "options": [
-          "dem",
-          "einer",
-          "ein"
-        ]
+        "sentence": "Die Lehrerin gibt ___ neuen Schüler ein Heft.",
+        "blanks": 1
       },
       {
         "id": "kapitel-14-ubung-13-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Sie spricht mit ___ Kollegin. (unbekannt)",
-          "de": "Ergänzen Sie. — Sie spricht mit ___ Kollegin. (unbekannt)",
-          "ar": "أكمل. — Sie spricht mit ___ Kollegin. (unbekannt)",
-          "en": "Complete. — Sie spricht mit ___ Kollegin. (unbekannt)"
+          "fr": "Complétez avec l’article défini. — Ich fahre mit ___ Bus, der vor dem Haus hält.",
+          "de": "Ergänzen Sie den bestimmten Artikel. — Ich fahre mit ___ Bus, der vor dem Haus hält.",
+          "ar": "أكمل بأداة التعريف المناسبة. — Ich fahre mit ___ Bus, der vor dem Haus hält.",
+          "en": "Complete with the definite article. — Ich fahre mit ___ Bus, der vor dem Haus hält."
         },
         "selection": "single",
         "options": [
-          "einer",
-          "ein",
-          "dem"
+          "das",
+          "der",
+          "dem",
+          "die"
         ]
       },
       {
@@ -196,15 +187,16 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Er kauft ___ Fahrrad. (neu)",
-          "de": "Ergänzen Sie. — Er kauft ___ Fahrrad. (neu)",
-          "ar": "أكمل. — Er kauft ___ Fahrrad. (neu)",
-          "en": "Complete. — Er kauft ___ Fahrrad. (neu)"
+          "fr": "Complétez avec l’article indéfini. — Im Park sehe ich ___ Kind mit einem Ball.",
+          "de": "Ergänzen Sie den unbestimmten Artikel. — Im Park sehe ich ___ Kind mit einem Ball.",
+          "ar": "أكمل بأداة النكرة المناسبة. — Im Park sehe ich ___ Kind mit einem Ball.",
+          "en": "Complete with the indefinite article. — Im Park sehe ich ___ Kind mit einem Ball."
         },
         "selection": "single",
         "options": [
           "einer",
-          "dem",
+          "eine",
+          "einen",
           "ein"
         ]
       }

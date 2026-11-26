@@ -5,16 +5,16 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "Im Café",
-      "de": "Im Café",
-      "ar": "Im Café",
-      "en": "Im Café"
+      "fr": "À la gare",
+      "de": "Am Bahnhof",
+      "ar": "في محطة القطار",
+      "en": "At the station"
     },
     "description": {
-      "fr": "Entraînez les questions et réponses.",
-      "de": "Üben Sie Fragen und Antworten.",
-      "ar": "تدرب على الأسئلة والأجوبة.",
-      "en": "Practise questions and answers."
+      "fr": "Résolvez les situations inédites en appliquant la règle du chapitre.",
+      "de": "Lösen Sie neue Situationen mit der Grammatik des Kapitels.",
+      "ar": "حل مواقف جديدة بتطبيق قاعدة الفصل.",
+      "en": "Solve new situations using the chapter grammar."
     },
     "questions": [
       {
@@ -22,12 +22,12 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "sentence": "Möchten Sie Kaffee? – ___, bitte.",
+        "sentence": "Ist die Reservierung nicht gültig? – ___, sie ist gültig.",
         "blanks": 1
       },
       {
@@ -35,12 +35,12 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "sentence": "Möchten Sie keinen Kuchen? – ___, ich möchte ein Stück.",
+        "sentence": "Haben Sie einen Fensterplatz? – ___, ich sitze am Gang.",
         "blanks": 1
       },
       {
@@ -48,12 +48,12 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "sentence": "Trinken Sie Tee? – ___, ich trinke nur Wasser.",
+        "sentence": "Fährt dieser Zug nach Basel? – ___, er fährt direkt nach Basel.",
         "blanks": 1
       },
       {
@@ -61,33 +61,33 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "sentence": "Ist der Tisch frei? – ___, er ist frei.",
+        "sentence": "Ist das Gleis nicht geändert worden? – ___, es ist jetzt Gleis acht.",
         "blanks": 1
       },
       {
+        "id": "kapitel-10-ubung-11-div-5",
+        "position": 5,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "Kommst du nicht? — Ich komme. → Doch",
-          "Kommst du? — Ich komme nicht. → Ja",
-          "Kommst du? — Ich komme. → Ja",
-          "Kommst du? — Ich komme. → Doch",
-          "Kommst du? — Ich komme nicht. → Nein",
-          "Kommst du nicht? — Ich komme. → Ja"
-        ],
-        "id": "kapitel-10-ubung-11-div-5",
-        "position": 5
+          "Arbeitet ihr heute zu Hause? – ___, wir bleiben im Homeoffice. → Doch",
+          "Ist die Tür nicht abgeschlossen? – ___, sie ist nicht abgeschlossen. → Nein",
+          "Arbeitet ihr heute zu Hause? – ___, wir bleiben im Homeoffice. → Ja",
+          "Ist der Zug nicht pünktlich? – ___, er ist genau pünktlich. → Nein",
+          "Ist der Zug nicht pünktlich? – ___, er ist genau pünktlich. → Doch",
+          "Ist die Tür nicht abgeschlossen? – ___, sie ist nicht abgeschlossen. → Doch"
+        ]
       }
     ]
   },
@@ -96,107 +96,81 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Beim Amt",
-      "de": "Beim Amt",
-      "ar": "Beim Amt",
-      "en": "Beim Amt"
+      "fr": "Au service administratif",
+      "de": "Im Bürgerbüro",
+      "ar": "في المكتب الإداري",
+      "en": "At the municipal office"
     },
     "description": {
-      "fr": "Entraînez les questions et réponses.",
-      "de": "Üben Sie Fragen und Antworten.",
-      "ar": "تدرب على الأسئلة والأجوبة.",
-      "en": "Practise questions and answers."
+      "fr": "Résolvez les situations inédites en appliquant la règle du chapitre.",
+      "de": "Lösen Sie neue Situationen mit der Grammatik des Kapitels.",
+      "ar": "حل مواقف جديدة بتطبيق قاعدة الفصل.",
+      "en": "Solve new situations using the chapter grammar."
     },
     "questions": [
       {
         "id": "kapitel-10-ubung-12-q01",
         "position": 1,
-        "type": "reorder",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "tokens": [
-          "mir",
-          "bitte",
-          "helfen",
-          "?",
-          "Könnten",
-          "Sie"
-        ]
+        "sentence": "Müssen wir umsteigen? – ___, wir fahren ohne Umstieg.",
+        "blanks": 1
       },
       {
         "id": "kapitel-10-ubung-12-q02",
         "position": 2,
-        "type": "reorder",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "tokens": [
-          "bitte",
-          "hier",
-          "unterschreiben",
-          "?",
-          "Würden",
-          "Sie"
-        ]
+        "sentence": "Ist die Fahrkarte noch gültig? – ___, bis Sonntag.",
+        "blanks": 1
       },
       {
         "id": "kapitel-10-ubung-12-q03",
         "position": 3,
-        "type": "reorder",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "tokens": [
-          "mir",
-          "das",
-          "Formular",
-          "geben",
-          "?",
-          "Könnten",
-          "Sie"
-        ]
+        "sentence": "Ist das Büro heute nicht besetzt? – ___, die Kollegin ist da.",
+        "blanks": 1
       },
       {
         "id": "kapitel-10-ubung-12-q04",
         "position": 4,
-        "type": "reorder",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "tokens": [
-          "bitte",
-          "die",
-          "Tür",
-          "öffnen",
-          "?",
-          "Würden",
-          "Sie"
-        ]
+        "sentence": "Haben Sie die Kopie mitgebracht? – ___, ich habe sie vergessen.",
+        "blanks": 1
       },
       {
+        "id": "kapitel-10-ubung-12-div-5",
+        "position": 5,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "Hast du Zeit? — Ich habe keine Zeit. → Nein",
-        "id": "kapitel-10-ubung-12-div-5",
-        "position": 5
+        "statement": "Hast du die Adresse? – ___, sie fehlt mir. → Ja"
       }
     ]
   },
@@ -205,16 +179,16 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Antwort-Challenge",
-      "de": "Antwort-Challenge",
-      "ar": "Antwort-Challenge",
-      "en": "Antwort-Challenge"
+      "fr": "Une réunion de travail",
+      "de": "Eine Arbeitssitzung",
+      "ar": "اجتماع عمل",
+      "en": "A work meeting"
     },
     "description": {
-      "fr": "Entraînez les questions et réponses.",
-      "de": "Üben Sie Fragen und Antworten.",
-      "ar": "تدرب على الأسئلة والأجوبة.",
-      "en": "Practise questions and answers."
+      "fr": "Résolvez les situations inédites en appliquant la règle du chapitre.",
+      "de": "Lösen Sie neue Situationen mit der Grammatik des Kapitels.",
+      "ar": "حل مواقف جديدة بتطبيق قاعدة الفصل.",
+      "en": "Solve new situations using the chapter grammar."
     },
     "questions": [
       {
@@ -222,12 +196,12 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "sentence": "Haben Sie keinen Termin? – ___, ich habe einen.",
+        "sentence": "Können Sie den Brief lesen? – ___, alles ist gut lesbar.",
         "blanks": 1
       },
       {
@@ -235,12 +209,12 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "sentence": "Sind Sie nicht Herr Klein? – ___, ich bin Herr Klein.",
+        "sentence": "Ist Ihre Adresse nicht richtig? – ___, sie stimmt nicht.",
         "blanks": 1
       },
       {
@@ -248,12 +222,12 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "sentence": "Ist das nicht Ihr Pass? – ___, das ist nicht meiner.",
+        "sentence": "Hat der Antrag keine Nummer? – ___, er hat die Nummer 15.",
         "blanks": 1
       },
       {
@@ -261,43 +235,43 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
-        "sentence": "Kommen Sie morgen? – ___, um neun.",
+        "sentence": "Brauchen wir ein Foto? – ___, ein Foto ist erforderlich.",
         "blanks": 1
       },
       {
+        "id": "kapitel-10-ubung-13-div-5",
+        "position": 5,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "Kommst du? — Ich komme."
+            "label": "Muss ich nicht unterschreiben? – ___, Sie müssen unterschreiben."
           },
           {
             "id": "i1",
-            "label": "Kommst du nicht? — Ich komme."
+            "label": "Ist die Besprechung morgen? – ___, morgen um zehn."
           },
           {
             "id": "i2",
-            "label": "Kommst du? — Ich komme nicht."
+            "label": "Ist der Termin nicht abgesagt worden? – ___, er ist abgesagt worden."
           }
         ],
         "options": [
-          "Doch",
-          "Ja",
-          "Nein"
-        ],
-        "id": "kapitel-10-ubung-13-div-5",
-        "position": 5
+          "Muss ich nicht unterschreiben? – Doch, Sie müssen unterschreiben.",
+          "Ist der Termin nicht abgesagt worden? – Doch, er ist abgesagt worden.",
+          "Ist die Besprechung morgen? – Ja, morgen um zehn."
+        ]
       }
     ]
   }

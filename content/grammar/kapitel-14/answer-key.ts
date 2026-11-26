@@ -4,28 +4,28 @@ export const chapter14AnswerKey: AnswerKey = {
   "kapitel-14-ubung-01-q01": {
     "acceptedAnswers": "ein",
     "explanation": {
-      "fr": "Das ist ein Stuhl. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Das ist ein Stuhl. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Das ist ein Stuhl. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Das ist ein Stuhl. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Das ist ein Stuhl. — « ein » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Das ist ein Stuhl. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Das ist ein Stuhl. — الصيغة « ein » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Das ist ein Stuhl. — “ein” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-01-q02": {
     "acceptedAnswers": "ein",
     "explanation": {
-      "fr": "Das ist ein Bild. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Das ist ein Bild. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Das ist ein Bild. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Das ist ein Bild. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Das ist ein Bild. — « ein » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Das ist ein Bild. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Das ist ein Bild. — الصيغة « ein » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Das ist ein Bild. — “ein” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-01-q03": {
     "acceptedAnswers": "ein",
     "explanation": {
-      "fr": "Das ist ein Wörterbuch. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Das ist ein Wörterbuch. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Das ist ein Wörterbuch. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Das ist ein Wörterbuch. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Das ist ein Wörterbuch. — « ein » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Das ist ein Wörterbuch. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Das ist ein Wörterbuch. — الصيغة « ein » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Das ist ein Wörterbuch. — “ein” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-01-q04": {
@@ -33,10 +33,10 @@ export const chapter14AnswerKey: AnswerKey = {
       "ein"
     ],
     "explanation": {
-      "fr": "Das ist ein Laptop. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Das ist ein Laptop. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Das ist ein Laptop. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Das ist ein Laptop. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Das ist ein Laptop. — « ein » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Das ist ein Laptop. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Das ist ein Laptop. — الصيغة « ein » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Das ist ein Laptop. — “ein” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-01-q05": {
@@ -44,64 +44,66 @@ export const chapter14AnswerKey: AnswerKey = {
       "eine"
     ],
     "explanation": {
-      "fr": "Das ist eine Vase. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Das ist eine Vase. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Das ist eine Vase. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Das ist eine Vase. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Das ist eine Vase. — « eine » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Das ist eine Vase. — „eine“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Das ist eine Vase. — الصيغة « eine » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Das ist eine Vase. — “eine” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-01-q06": {
     "acceptedAnswers": "eine",
     "explanation": {
-      "fr": "Das ist eine Tür. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Das ist eine Tür. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Das ist eine Tür. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Das ist eine Tür. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Das ist eine Tür. — « eine » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Das ist eine Tür. — „eine“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Das ist eine Tür. — الصيغة « eine » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Das ist eine Tür. — “eine” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-01-q07": {
     "acceptedAnswers": "Die",
     "explanation": {
-      "fr": "Die Stifte sind neu. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Die Stifte sind neu. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Die Stifte sind neu. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Die Stifte sind neu. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Die Stifte sind neu. — « Die » est la forme de l’article défini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Die Stifte sind neu. — „Die“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Nominativ.",
+      "ar": "Die Stifte sind neu. — الصيغة « Die » هي أداة معرّفة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Die Stifte sind neu. — “Die” is the definite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-01-q08": {
-    "acceptedAnswers": "Die",
+    "acceptedAnswers": [
+      "Die"
+    ],
     "explanation": {
-      "fr": "Die Blumen sind schön. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Die Blumen sind schön. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Die Blumen sind schön. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Die Blumen sind schön. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Die Blumen sind schön. — « Die » est la forme de l’article défini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Die Blumen sind schön. — „Die“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Nominativ.",
+      "ar": "Die Blumen sind schön. — الصيغة « Die » هي أداة معرّفة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Die Blumen sind schön. — “Die” is the definite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-02-q01": {
     "acceptedAnswers": "einen",
     "explanation": {
-      "fr": "Hast du einen Kuli? — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Hast du einen Kuli? — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Hast du einen Kuli? — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Hast du einen Kuli? — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Hast du einen Kuli? — « einen » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Hast du einen Kuli? — „einen“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Hast du einen Kuli? — الصيغة « einen » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Hast du einen Kuli? — “einen” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-02-q02": {
     "acceptedAnswers": "ein",
     "explanation": {
-      "fr": "Hast du ein Auto? — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Hast du ein Auto? — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Hast du ein Auto? — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Hast du ein Auto? — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Hast du ein Auto? — « ein » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Hast du ein Auto? — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Hast du ein Auto? — الصيغة « ein » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Hast du ein Auto? — “ein” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-02-q03": {
     "acceptedAnswers": "eine",
     "explanation": {
-      "fr": "Hast du eine Uhr? — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Hast du eine Uhr? — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Hast du eine Uhr? — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Hast du eine Uhr? — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Hast du eine Uhr? — « eine » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Hast du eine Uhr? — „eine“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Hast du eine Uhr? — الصيغة « eine » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Hast du eine Uhr? — “eine” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-02-q04": {
@@ -109,10 +111,10 @@ export const chapter14AnswerKey: AnswerKey = {
       "einen"
     ],
     "explanation": {
-      "fr": "Hast du einen Schirm? — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Hast du einen Schirm? — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Hast du einen Schirm? — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Hast du einen Schirm? — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Hast du einen Schirm? — « einen » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Hast du einen Schirm? — „einen“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Hast du einen Schirm? — الصيغة « einen » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Hast du einen Schirm? — “einen” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-02-q05": {
@@ -120,55 +122,55 @@ export const chapter14AnswerKey: AnswerKey = {
       "einen"
     ],
     "explanation": {
-      "fr": "Hast du einen Computer? — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Hast du einen Computer? — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Hast du einen Computer? — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Hast du einen Computer? — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Hast du einen Computer? — « einen » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Hast du einen Computer? — „einen“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Hast du einen Computer? — الصيغة « einen » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Hast du einen Computer? — “einen” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-02-q06": {
     "acceptedAnswers": "eine",
     "explanation": {
-      "fr": "Hast du eine Katze? — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Hast du eine Katze? — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Hast du eine Katze? — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Hast du eine Katze? — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Hast du eine Katze? — « eine » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Hast du eine Katze? — „eine“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Hast du eine Katze? — الصيغة « eine » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Hast du eine Katze? — “eine” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-02-q07": {
     "acceptedAnswers": "ein",
     "explanation": {
-      "fr": "Hast du ein Handy? — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Hast du ein Handy? — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Hast du ein Handy? — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Hast du ein Handy? — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Hast du ein Handy? — « ein » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Hast du ein Handy? — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Hast du ein Handy? — الصيغة « ein » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Hast du ein Handy? — “ein” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-03-q01": {
     "acceptedAnswers": "die",
     "explanation": {
-      "fr": "Wie findest du die Bluse? — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Wie findest du die Bluse? — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Wie findest du die Bluse? — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Wie findest du die Bluse? — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Wie findest du die Bluse? — « die » est la forme de l’article défini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Wie findest du die Bluse? — „die“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Akkusativ.",
+      "ar": "Wie findest du die Bluse? — الصيغة « die » هي أداة معرّفة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Wie findest du die Bluse? — “die” is the definite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-03-q02": {
     "acceptedAnswers": "das",
     "explanation": {
-      "fr": "Wie findest du das Kleid? — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Wie findest du das Kleid? — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Wie findest du das Kleid? — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Wie findest du das Kleid? — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Wie findest du das Kleid? — « das » est la forme de l’article défini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Wie findest du das Kleid? — „das“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Akkusativ.",
+      "ar": "Wie findest du das Kleid? — الصيغة « das » هي أداة معرّفة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Wie findest du das Kleid? — “das” is the definite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-03-q03": {
     "acceptedAnswers": "die",
     "explanation": {
-      "fr": "Wie findest du die Schuhe? — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Wie findest du die Schuhe? — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Wie findest du die Schuhe? — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Wie findest du die Schuhe? — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Wie findest du die Schuhe? — « die » est la forme de l’article défini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Wie findest du die Schuhe? — „die“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Akkusativ.",
+      "ar": "Wie findest du die Schuhe? — الصيغة « die » هي أداة معرّفة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Wie findest du die Schuhe? — “die” is the definite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-03-q04": {
@@ -176,102 +178,91 @@ export const chapter14AnswerKey: AnswerKey = {
       "den"
     ],
     "explanation": {
-      "fr": "Wie findest du den Hund? — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Wie findest du den Hund? — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Wie findest du den Hund? — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Wie findest du den Hund? — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Wie findest du den Hund? — « den » est la forme de l’article défini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Wie findest du den Hund? — „den“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Akkusativ.",
+      "ar": "Wie findest du den Hund? — الصيغة « den » هي أداة معرّفة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Wie findest du den Hund? — “den” is the definite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-04-q01": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": "—",
     "explanation": {
-      "fr": "Sie hat Zeit . — Le verbe conjugué occupe la deuxième position, même après un complément.",
-      "de": "Sie hat Zeit . — Das finite Verb steht auf Position zwei, auch nach einer Angabe.",
-      "ar": "Sie hat Zeit . — الفعل المصرف في الموقع الثاني حتى بعد ظرف.",
-      "en": "Sie hat Zeit . — The finite verb takes second position, even after an adverbial."
+      "fr": "Sie hat keine Zeit. → Sie hat  Zeit. — Le nom est employé sans article dans ce sens général ou non comptable.",
+      "de": "Sie hat keine Zeit. → Sie hat  Zeit. — Das Nomen steht hier in allgemeiner oder nicht zählbarer Bedeutung ohne Artikel.",
+      "ar": "Sie hat keine Zeit. → Sie hat  Zeit. — يأتي الاسم هنا دون أداة لأنه عام أو غير معدود.",
+      "en": "Sie hat keine Zeit. → Sie hat  Zeit. — The noun is used without an article in this general or uncountable sense."
     }
   },
   "kapitel-14-ubung-04-q02": {
-    "acceptedAnswers": "Sie hat Geld .",
+    "acceptedAnswers": "—",
     "explanation": {
-      "fr": "Sie hat Geld . — Le verbe conjugué occupe la deuxième position, même après un complément.",
-      "de": "Sie hat Geld . — Das finite Verb steht auf Position zwei, auch nach einer Angabe.",
-      "ar": "Sie hat Geld . — الفعل المصرف في الموقع الثاني حتى بعد ظرف.",
-      "en": "Sie hat Geld . — The finite verb takes second position, even after an adverbial."
+      "fr": "Sie hat kein Geld. → Sie hat  Geld. — Le nom est employé sans article dans ce sens général ou non comptable.",
+      "de": "Sie hat kein Geld. → Sie hat  Geld. — Das Nomen steht hier in allgemeiner oder nicht zählbarer Bedeutung ohne Artikel.",
+      "ar": "Sie hat kein Geld. → Sie hat  Geld. — يأتي الاسم هنا دون أداة لأنه عام أو غير معدود.",
+      "en": "Sie hat kein Geld. → Sie hat  Geld. — The noun is used without an article in this general or uncountable sense."
     }
   },
   "kapitel-14-ubung-04-q03": {
-    "acceptedAnswers": "Sie hat ein Handy .",
+    "acceptedAnswers": "ein",
     "explanation": {
-      "fr": "Sie hat ein Handy . — Le verbe conjugué occupe la deuxième position, même après un complément.",
-      "de": "Sie hat ein Handy . — Das finite Verb steht auf Position zwei, auch nach einer Angabe.",
-      "ar": "Sie hat ein Handy . — الفعل المصرف في الموقع الثاني حتى بعد ظرف.",
-      "en": "Sie hat ein Handy . — The finite verb takes second position, even after an adverbial."
+      "fr": "Sie hat kein Handy. → Sie hat ein Handy. — « ein » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Sie hat kein Handy. → Sie hat ein Handy. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Sie hat kein Handy. → Sie hat ein Handy. — الصيغة « ein » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Sie hat kein Handy. → Sie hat ein Handy. — “ein” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-04-q04": {
-    "acceptedAnswers": [
-      "Sie",
-      "mag",
-      "Reis",
-      "."
-    ],
+    "acceptedAnswers": "—",
     "explanation": {
-      "fr": "Sie mag Reis . — Le verbe conjugué occupe la deuxième position, même après un complément.",
-      "de": "Sie mag Reis . — Das finite Verb steht auf Position zwei, auch nach einer Angabe.",
-      "ar": "Sie mag Reis . — الفعل المصرف في الموقع الثاني حتى بعد ظرف.",
-      "en": "Sie mag Reis . — The finite verb takes second position, even after an adverbial."
+      "fr": "Sie mag keinen Reis. → Sie mag  Reis. — Le nom est employé sans article dans ce sens général ou non comptable.",
+      "de": "Sie mag keinen Reis. → Sie mag  Reis. — Das Nomen steht hier in allgemeiner oder nicht zählbarer Bedeutung ohne Artikel.",
+      "ar": "Sie mag keinen Reis. → Sie mag  Reis. — يأتي الاسم هنا دون أداة لأنه عام أو غير معدود.",
+      "en": "Sie mag keinen Reis. → Sie mag  Reis. — The noun is used without an article in this general or uncountable sense."
     }
   },
   "kapitel-14-ubung-04-q05": {
-    "acceptedAnswers": [
-      "Sie",
-      "hat",
-      "ein",
-      "Fahrrad",
-      "."
-    ],
+    "acceptedAnswers": "ein",
     "explanation": {
-      "fr": "Sie hat ein Fahrrad . — Le verbe conjugué occupe la deuxième position, même après un complément.",
-      "de": "Sie hat ein Fahrrad . — Das finite Verb steht auf Position zwei, auch nach einer Angabe.",
-      "ar": "Sie hat ein Fahrrad . — الفعل المصرف في الموقع الثاني حتى بعد ظرف.",
-      "en": "Sie hat ein Fahrrad . — The finite verb takes second position, even after an adverbial."
+      "fr": "Sie hat kein Fahrrad. → Sie hat ein Fahrrad. — « ein » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Sie hat kein Fahrrad. → Sie hat ein Fahrrad. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Sie hat kein Fahrrad. → Sie hat ein Fahrrad. — الصيغة « ein » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Sie hat kein Fahrrad. → Sie hat ein Fahrrad. — “ein” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-04-q06": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": "—",
     "explanation": {
-      "fr": "Sie hat Glück . — Le verbe conjugué occupe la deuxième position, même après un complément.",
-      "de": "Sie hat Glück . — Das finite Verb steht auf Position zwei, auch nach einer Angabe.",
-      "ar": "Sie hat Glück . — الفعل المصرف في الموقع الثاني حتى بعد ظرف.",
-      "en": "Sie hat Glück . — The finite verb takes second position, even after an adverbial."
+      "fr": "Sie hat kein Glück. → Sie hat  Glück. — Le nom est employé sans article dans ce sens général ou non comptable.",
+      "de": "Sie hat kein Glück. → Sie hat  Glück. — Das Nomen steht hier in allgemeiner oder nicht zählbarer Bedeutung ohne Artikel.",
+      "ar": "Sie hat kein Glück. → Sie hat  Glück. — يأتي الاسم هنا دون أداة لأنه عام أو غير معدود.",
+      "en": "Sie hat kein Glück. → Sie hat  Glück. — The noun is used without an article in this general or uncountable sense."
     }
   },
   "kapitel-14-ubung-05-q01": {
     "acceptedAnswers": "ein",
     "explanation": {
-      "fr": "Da ist ein Stadion. (neu) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Da ist ein Stadion. (neu) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Da ist ein Stadion. (neu) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Da ist ein Stadion. (neu) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Da ist ein Stadion. — « ein » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Da ist ein Stadion. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Da ist ein Stadion. — الصيغة « ein » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Da ist ein Stadion. — “ein” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-05-q02": {
     "acceptedAnswers": "das",
     "explanation": {
-      "fr": "Das ist das Olympiastadion. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Das ist das Olympiastadion. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Das ist das Olympiastadion. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Das ist das Olympiastadion. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Das ist das Olympiastadion. — « das » est la forme de l’article défini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Das ist das Olympiastadion. — „das“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Nominativ.",
+      "ar": "Das ist das Olympiastadion. — الصيغة « das » هي أداة معرّفة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Das ist das Olympiastadion. — “das” is the definite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-05-q03": {
     "acceptedAnswers": "eine",
     "explanation": {
-      "fr": "Sie sehen eine Kirche. (neu) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Sie sehen eine Kirche. (neu) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Sie sehen eine Kirche. (neu) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Sie sehen eine Kirche. (neu) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Sie sehen eine Kirche. — « eine » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Sie sehen eine Kirche. — „eine“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Sie sehen eine Kirche. — الصيغة « eine » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Sie sehen eine Kirche. — “eine” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-05-q04": {
@@ -279,10 +270,10 @@ export const chapter14AnswerKey: AnswerKey = {
       "die"
     ],
     "explanation": {
-      "fr": "Das ist die Frauenkirche. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Das ist die Frauenkirche. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Das ist die Frauenkirche. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Das ist die Frauenkirche. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Das ist die Frauenkirche. — « die » est la forme de l’article défini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Das ist die Frauenkirche. — „die“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Nominativ.",
+      "ar": "Das ist die Frauenkirche. — الصيغة « die » هي أداة معرّفة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Das ist die Frauenkirche. — “die” is the definite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-05-q05": {
@@ -290,64 +281,66 @@ export const chapter14AnswerKey: AnswerKey = {
       "ein"
     ],
     "explanation": {
-      "fr": "Hier ist ein großer Platz. (neu) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Hier ist ein großer Platz. (neu) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Hier ist ein großer Platz. (neu) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Hier ist ein großer Platz. (neu) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Hier ist ein großer Platz. — « ein » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Hier ist ein großer Platz. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Hier ist ein großer Platz. — الصيغة « ein » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Hier ist ein großer Platz. — “ein” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-05-q06": {
     "acceptedAnswers": "der",
     "explanation": {
-      "fr": "Das ist der Marienplatz. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Das ist der Marienplatz. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Das ist der Marienplatz. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Das ist der Marienplatz. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Das ist der Marienplatz. — « der » est la forme de l’article défini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Das ist der Marienplatz. — „der“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Nominativ.",
+      "ar": "Das ist der Marienplatz. — الصيغة « der » هي أداة معرّفة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Das ist der Marienplatz. — “der” is the definite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-05-q07": {
     "acceptedAnswers": "ein",
     "explanation": {
-      "fr": "Dort steht ein Haus. (neu) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Dort steht ein Haus. (neu) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Dort steht ein Haus. (neu) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Dort steht ein Haus. (neu) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Dort steht ein Haus. — « ein » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Dort steht ein Haus. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Dort steht ein Haus. — الصيغة « ein » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Dort steht ein Haus. — “ein” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-05-q08": {
-    "acceptedAnswers": "das",
+    "acceptedAnswers": [
+      "das"
+    ],
     "explanation": {
-      "fr": "Das ist das Rathaus. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Das ist das Rathaus. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Das ist das Rathaus. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Das ist das Rathaus. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Das ist das Rathaus. — « das » est la forme de l’article défini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Das ist das Rathaus. — „das“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Nominativ.",
+      "ar": "Das ist das Rathaus. — الصيغة « das » هي أداة معرّفة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Das ist das Rathaus. — “das” is the definite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-06-q01": {
     "acceptedAnswers": "ein",
     "explanation": {
-      "fr": "Es war einmal ein König. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Es war einmal ein König. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Es war einmal ein König. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Es war einmal ein König. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Es war einmal ein König. — « ein » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Es war einmal ein König. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Es war einmal ein König. — الصيغة « ein » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Es war einmal ein König. — “ein” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-06-q02": {
     "acceptedAnswers": "Der",
     "explanation": {
-      "fr": "Der König war reich. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Der König war reich. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Der König war reich. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Der König war reich. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Der König war reich. — « Der » est la forme de l’article défini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Der König war reich. — „Der“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Nominativ.",
+      "ar": "Der König war reich. — الصيغة « Der » هي أداة معرّفة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Der König war reich. — “Der” is the definite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-06-q03": {
     "acceptedAnswers": "eine",
     "explanation": {
-      "fr": "Er hatte eine Tochter. (neu) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Er hatte eine Tochter. (neu) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Er hatte eine Tochter. (neu) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Er hatte eine Tochter. (neu) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Er hatte eine Tochter. — « eine » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Er hatte eine Tochter. — „eine“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Er hatte eine Tochter. — الصيغة « eine » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Er hatte eine Tochter. — “eine” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-06-q04": {
@@ -355,10 +348,10 @@ export const chapter14AnswerKey: AnswerKey = {
       "Die"
     ],
     "explanation": {
-      "fr": "Die Tochter war schön. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Die Tochter war schön. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Die Tochter war schön. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Die Tochter war schön. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Die Tochter war schön. — « Die » est la forme de l’article défini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Die Tochter war schön. — „Die“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Nominativ.",
+      "ar": "Die Tochter war schön. — الصيغة « Die » هي أداة معرّفة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Die Tochter war schön. — “Die” is the definite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-06-q05": {
@@ -366,64 +359,70 @@ export const chapter14AnswerKey: AnswerKey = {
       "ein"
     ],
     "explanation": {
-      "fr": "Eines Tages kommt ein Prinz. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Eines Tages kommt ein Prinz. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Eines Tages kommt ein Prinz. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Eines Tages kommt ein Prinz. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Eines Tages kommt ein Prinz. — « ein » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Eines Tages kommt ein Prinz. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Eines Tages kommt ein Prinz. — الصيغة « ein » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Eines Tages kommt ein Prinz. — “ein” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-06-q06": {
     "acceptedAnswers": "Der",
     "explanation": {
-      "fr": "Der Prinz möchte heiraten. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Der Prinz möchte heiraten. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Der Prinz möchte heiraten. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Der Prinz möchte heiraten. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Der Prinz möchte heiraten. — Prinz est le sujet masculin singulier ; au nominatif défini, on emploie der.",
+      "de": "Der Prinz möchte heiraten. — Prinz ist das maskuline Subjekt im Singular; im bestimmten Nominativ steht der.",
+      "ar": "Der Prinz möchte heiraten. — Prinz فاعل مذكر مفرد، وأداة التعريف في الرفع هي der.",
+      "en": "Der Prinz möchte heiraten. — Prinz is the masculine singular subject; definite nominative takes der."
     }
   },
   "kapitel-14-ubung-06-q07": {
     "acceptedAnswers": "die",
     "explanation": {
-      "fr": "Er möchte die Prinzessin heiraten. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Er möchte die Prinzessin heiraten. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Er möchte die Prinzessin heiraten. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Er möchte die Prinzessin heiraten. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Er möchte die Prinzessin heiraten. — « die » est la forme de l’article défini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Er möchte die Prinzessin heiraten. — „die“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Akkusativ.",
+      "ar": "Er möchte die Prinzessin heiraten. — الصيغة « die » هي أداة معرّفة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Er möchte die Prinzessin heiraten. — “die” is the definite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-06-q08": {
-    "acceptedAnswers": "eine",
+    "acceptedAnswers": [
+      "eine"
+    ],
     "explanation": {
-      "fr": "Zum Schluss bekommen sie eine Tochter. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Zum Schluss bekommen sie eine Tochter. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Zum Schluss bekommen sie eine Tochter. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Zum Schluss bekommen sie eine Tochter. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Zum Schluss bekommen sie eine Tochter. — « eine » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Zum Schluss bekommen sie eine Tochter. — „eine“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Zum Schluss bekommen sie eine Tochter. — الصيغة « eine » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Zum Schluss bekommen sie eine Tochter. — “eine” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-07-q01": {
-    "acceptedAnswers": "dem",
+    "acceptedAnswers": [
+      "dem",
+      "der",
+      "den"
+    ],
     "explanation": {
-      "fr": "Ich helfe dem Mann. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich helfe dem Mann. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich helfe dem Mann. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich helfe dem Mann. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "dem Mann / der Frau / den Kindern — Helfen exige le datif : dem au masculin, der au féminin, den au pluriel.",
+      "de": "dem Mann / der Frau / den Kindern — Helfen verlangt Dativ: dem maskulin, der feminin, den Plural.",
+      "ar": "dem Mann / der Frau / den Kindern — يتطلب helfen الداتيف: dem للمذكر وder للمؤنث وden للجمع.",
+      "en": "dem Mann / der Frau / den Kindern — Helfen takes dative: dem masculine, der feminine, den plural."
     }
   },
   "kapitel-14-ubung-07-q02": {
     "acceptedAnswers": "der",
     "explanation": {
-      "fr": "Ich helfe der Frau. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich helfe der Frau. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich helfe der Frau. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich helfe der Frau. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Ich helfe der Frau. — « der » est la forme de l’article défini au Dativ requise ici par le genre et le nombre du nom.",
+      "de": "Ich helfe der Frau. — „der“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Dativ.",
+      "ar": "Ich helfe der Frau. — الصيغة « der » هي أداة معرّفة في حالة Dativ بحسب جنس الاسم وعدده.",
+      "en": "Ich helfe der Frau. — “der” is the definite article in the Dativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-07-q03": {
     "acceptedAnswers": "dem",
     "explanation": {
-      "fr": "Ich fahre mit dem Auto. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich fahre mit dem Auto. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich fahre mit dem Auto. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich fahre mit dem Auto. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Ich fahre mit dem Auto. — « dem » est la forme de l’article défini au Dativ requise ici par le genre et le nombre du nom.",
+      "de": "Ich fahre mit dem Auto. — „dem“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Dativ.",
+      "ar": "Ich fahre mit dem Auto. — الصيغة « dem » هي أداة معرّفة في حالة Dativ بحسب جنس الاسم وعدده.",
+      "en": "Ich fahre mit dem Auto. — “dem” is the definite article in the Dativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-07-q04": {
@@ -431,64 +430,69 @@ export const chapter14AnswerKey: AnswerKey = {
       "den"
     ],
     "explanation": {
-      "fr": "Ich spreche mit den Freunden. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich spreche mit den Freunden. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich spreche mit den Freunden. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich spreche mit den Freunden. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Ich spreche mit den Freunden. — « den » est la forme de l’article défini au Dativ requise ici par le genre et le nombre du nom.",
+      "de": "Ich spreche mit den Freunden. — „den“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Dativ.",
+      "ar": "Ich spreche mit den Freunden. — الصيغة « den » هي أداة معرّفة في حالة Dativ بحسب جنس الاسم وعدده.",
+      "en": "Ich spreche mit den Freunden. — “den” is the definite article in the Dativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-08-q01": {
-    "acceptedAnswers": "einem",
+    "acceptedAnswers": [
+      "einem"
+    ],
     "explanation": {
-      "fr": "Ich helfe einem Mann. (unbekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich helfe einem Mann. (unbekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich helfe einem Mann. (unbekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich helfe einem Mann. (unbekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Ich helfe einem Mann. — « einem » est la forme de l’article indéfini au Dativ requise ici par le genre et le nombre du nom.",
+      "de": "Ich helfe einem Mann. — „einem“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Dativ.",
+      "ar": "Ich helfe einem Mann. — الصيغة « einem » هي أداة نكرة في حالة Dativ بحسب جنس الاسم وعدده.",
+      "en": "Ich helfe einem Mann. — “einem” is the indefinite article in the Dativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-08-q02": {
     "acceptedAnswers": "einer",
     "explanation": {
-      "fr": "Ich spreche mit einer Freundin. (unbekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich spreche mit einer Freundin. (unbekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich spreche mit einer Freundin. (unbekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich spreche mit einer Freundin. (unbekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Ich spreche mit einer Freundin. — « einer » est la forme de l’article indéfini au Dativ requise ici par le genre et le nombre du nom.",
+      "de": "Ich spreche mit einer Freundin. — „einer“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Dativ.",
+      "ar": "Ich spreche mit einer Freundin. — الصيغة « einer » هي أداة نكرة في حالة Dativ بحسب جنس الاسم وعدده.",
+      "en": "Ich spreche mit einer Freundin. — “einer” is the indefinite article in the Dativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-08-q03": {
     "acceptedAnswers": "einem",
     "explanation": {
-      "fr": "Ich fahre mit einem Auto. (unbekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich fahre mit einem Auto. (unbekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich fahre mit einem Auto. (unbekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich fahre mit einem Auto. (unbekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Ich fahre mit einem Auto. — « einem » est la forme de l’article indéfini au Dativ requise ici par le genre et le nombre du nom.",
+      "de": "Ich fahre mit einem Auto. — „einem“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Dativ.",
+      "ar": "Ich fahre mit einem Auto. — الصيغة « einem » هي أداة نكرة في حالة Dativ بحسب جنس الاسم وعدده.",
+      "en": "Ich fahre mit einem Auto. — “einem” is the indefinite article in the Dativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-09-q01": {
-    "acceptedAnswers": "ein",
+    "acceptedAnswers": [
+      "Ich kaufe ein Buch.",
+      "Ich suche ein Buch."
+    ],
     "explanation": {
-      "fr": "Ich kaufe ein Buch. (neu) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich kaufe ein Buch. (neu) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich kaufe ein Buch. (neu) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich kaufe ein Buch. (neu) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "ein Buch — Buch est neutre : ein reste ein à l’accusatif.",
+      "de": "ein Buch — Buch ist neutral: ein bleibt im Akkusativ ein.",
+      "ar": "ein Buch — Buch محايد وتبقى ein كما هي في النصب.",
+      "en": "ein Buch — Buch is neuter: ein remains ein in the accusative."
     }
   },
   "kapitel-14-ubung-09-q02": {
     "acceptedAnswers": "Das",
     "explanation": {
-      "fr": "Das Buch ist interessant. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Das Buch ist interessant. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Das Buch ist interessant. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Das Buch ist interessant. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Das Buch ist interessant. — « Das » est la forme de l’article défini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Das Buch ist interessant. — „Das“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Nominativ.",
+      "ar": "Das Buch ist interessant. — الصيغة « Das » هي أداة معرّفة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Das Buch ist interessant. — “Das” is the definite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-09-q03": {
     "acceptedAnswers": "einen",
     "explanation": {
-      "fr": "Ich sehe einen Hund. (neu) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich sehe einen Hund. (neu) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich sehe einen Hund. (neu) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich sehe einen Hund. (neu) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Ich sehe einen Hund. — « einen » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Ich sehe einen Hund. — „einen“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Ich sehe einen Hund. — الصيغة « einen » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Ich sehe einen Hund. — “einen” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-09-q04": {
@@ -496,118 +500,130 @@ export const chapter14AnswerKey: AnswerKey = {
       "Der"
     ],
     "explanation": {
-      "fr": "Der Hund ist klein. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Der Hund ist klein. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Der Hund ist klein. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Der Hund ist klein. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Der Hund ist klein. — « Der » est la forme de l’article défini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Der Hund ist klein. — „Der“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Nominativ.",
+      "ar": "Der Hund ist klein. — الصيغة « Der » هي أداة معرّفة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Der Hund ist klein. — “Der” is the definite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-10-q01": {
-    "acceptedAnswers": "eine",
+    "acceptedAnswers": [
+      "eine"
+    ],
     "explanation": {
-      "fr": "Sie hat eine Tasche. (neu) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Sie hat eine Tasche. (neu) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Sie hat eine Tasche. (neu) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Sie hat eine Tasche. (neu) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Sie hat eine Tasche. — « eine » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Sie hat eine Tasche. — „eine“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Sie hat eine Tasche. — الصيغة « eine » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Sie hat eine Tasche. — “eine” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-10-q02": {
-    "acceptedAnswers": "den",
+    "acceptedAnswers": "false",
     "explanation": {
-      "fr": "Er kennt den Lehrer. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Er kennt den Lehrer. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Er kennt den Lehrer. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Er kennt den Lehrer. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Er kennt den Lehrer. — « den » est la forme de l’article défini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Er kennt den Lehrer. — „den“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Akkusativ.",
+      "ar": "Er kennt den Lehrer. — الصيغة « den » هي أداة معرّفة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Er kennt den Lehrer. — “den” is the definite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-10-q03": {
     "acceptedAnswers": "einem",
     "explanation": {
-      "fr": "Wir wohnen in einem Haus. (unbekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Wir wohnen in einem Haus. (unbekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Wir wohnen in einem Haus. (unbekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Wir wohnen in einem Haus. (unbekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Wir wohnen in einem Haus. — « einem » est la forme de l’article indéfini au Dativ requise ici par le genre et le nombre du nom.",
+      "de": "Wir wohnen in einem Haus. — „einem“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Dativ.",
+      "ar": "Wir wohnen in einem Haus. — الصيغة « einem » هي أداة نكرة في حالة Dativ بحسب جنس الاسم وعدده.",
+      "en": "Wir wohnen in einem Haus. — “einem” is the indefinite article in the Dativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-11-q01": {
-    "acceptedAnswers": "einen",
+    "acceptedAnswers": [
+      "einen"
+    ],
     "explanation": {
-      "fr": "Ich möchte einen Kaffee. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich möchte einen Kaffee. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich möchte einen Kaffee. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich möchte einen Kaffee. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Im Café bestellt Lea einen Tee. — « einen » est la forme de l’article indéfini au Akkusativ requise ici par le genre et le nombre du nom.",
+      "de": "Im Café bestellt Lea einen Tee. — „einen“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Akkusativ.",
+      "ar": "Im Café bestellt Lea einen Tee. — الصيغة « einen » هي أداة نكرة في حالة Akkusativ بحسب جنس الاسم وعدده.",
+      "en": "Im Café bestellt Lea einen Tee. — “einen” is the indefinite article in the Akkusativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-11-q02": {
-    "acceptedAnswers": "eine",
+    "acceptedAnswers": "den",
     "explanation": {
-      "fr": "Ich möchte eine Banane. — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich möchte eine Banane. — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich möchte eine Banane. — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich möchte eine Banane. — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Der Kellner bringt den Tee, den Lea bestellt hat. — Tee est masculin et objet de bringen ; la relative identifie le thé, donc den.",
+      "de": "Der Kellner bringt den Tee, den Lea bestellt hat. — Tee ist maskulin und Objekt von bringen; der Relativsatz identifiziert ihn, daher den.",
+      "ar": "Der Kellner bringt den Tee, den Lea bestellt hat. — Tee مذكر ومفعول به للفعل bringen، وتحدده الجملة الموصولة، لذا den.",
+      "en": "Der Kellner bringt den Tee, den Lea bestellt hat. — Tee is masculine and the object of bringen; the relative clause identifies it, so den."
     }
   },
   "kapitel-14-ubung-11-q03": {
-    "acceptedAnswers": "Der",
+    "acceptedAnswers": "eine",
     "explanation": {
-      "fr": "Der Kaffee ist heiß. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Der Kaffee ist heiß. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Der Kaffee ist heiß. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Der Kaffee ist heiß. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Auf dem Tisch steht eine Tasse. — « eine » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Auf dem Tisch steht eine Tasse. — „eine“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Auf dem Tisch steht eine Tasse. — الصيغة « eine » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Auf dem Tisch steht eine Tasse. — “eine” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-12-q01": {
-    "acceptedAnswers": "ein",
+    "acceptedAnswers": [
+      "eine"
+    ],
     "explanation": {
-      "fr": "Ich suche ein Kleid. (neu) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich suche ein Kleid. (neu) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich suche ein Kleid. (neu) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich suche ein Kleid. (neu) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Im Kaufhaus probiert Niko eine Jacke an. — « eine » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Im Kaufhaus probiert Niko eine Jacke an. — „eine“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Im Kaufhaus probiert Niko eine Jacke an. — الصيغة « eine » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Im Kaufhaus probiert Niko eine Jacke an. — “eine” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-12-q02": {
     "acceptedAnswers": "die",
     "explanation": {
-      "fr": "Ich nehme die Schuhe. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich nehme die Schuhe. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich nehme die Schuhe. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich nehme die Schuhe. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "An der Kasse bezahlt er die Jacke. — « die » est la forme de l’article défini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "An der Kasse bezahlt er die Jacke. — „die“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Nominativ.",
+      "ar": "An der Kasse bezahlt er die Jacke. — الصيغة « die » هي أداة معرّفة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "An der Kasse bezahlt er die Jacke. — “die” is the definite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-12-q03": {
-    "acceptedAnswers": "den",
+    "acceptedAnswers": [
+      "Neben der Kasse",
+      "steht",
+      "ein Spiegel."
+    ],
     "explanation": {
-      "fr": "Ich bezahle den Pullover. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich bezahle den Pullover. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich bezahle den Pullover. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich bezahle den Pullover. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Neben der Kasse steht ein Spiegel. — « ein » est la forme de l’article indéfini au Nominativ requise ici par le genre et le nombre du nom.",
+      "de": "Neben der Kasse steht ein Spiegel. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Nominativ.",
+      "ar": "Neben der Kasse steht ein Spiegel. — الصيغة « ein » هي أداة نكرة في حالة Nominativ بحسب جنس الاسم وعدده.",
+      "en": "Neben der Kasse steht ein Spiegel. — “ein” is the indefinite article in the Nominativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-13-q01": {
-    "acceptedAnswers": "dem",
+    "acceptedAnswers": [
+      "einem"
+    ],
     "explanation": {
-      "fr": "Ich gebe dem Kind ein Buch. (bekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Ich gebe dem Kind ein Buch. (bekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Ich gebe dem Kind ein Buch. (bekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Ich gebe dem Kind ein Buch. (bekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Die Lehrerin gibt einem neuen Schüler ein Heft. — Le destinataire de geben est au datif. Schüler est masculin ; l’article indéfini est einem.",
+      "de": "Die Lehrerin gibt einem neuen Schüler ein Heft. — Der Empfänger bei geben steht im Dativ. Schüler ist maskulin; der unbestimmte Artikel ist einem.",
+      "ar": "Die Lehrerin gibt einem neuen Schüler ein Heft. — متلقي الفعل geben في الداتيف، وSchüler مذكر، فأداة النكرة هي einem.",
+      "en": "Die Lehrerin gibt einem neuen Schüler ein Heft. — The recipient of geben is dative. Schüler is masculine, so the indefinite article is einem."
     }
   },
   "kapitel-14-ubung-13-q02": {
-    "acceptedAnswers": "einer",
+    "acceptedAnswers": "dem",
     "explanation": {
-      "fr": "Sie spricht mit einer Kollegin. (unbekannt) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Sie spricht mit einer Kollegin. (unbekannt) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Sie spricht mit einer Kollegin. (unbekannt) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Sie spricht mit einer Kollegin. (unbekannt) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Ich fahre mit dem Bus, der vor dem Haus hält. — « dem » est la forme de l’article défini au Dativ requise ici par le genre et le nombre du nom.",
+      "de": "Ich fahre mit dem Bus, der vor dem Haus hält. — „dem“ ist hier die nach Genus und Numerus erforderliche Form des bestimmten Artikels im Dativ.",
+      "ar": "Ich fahre mit dem Bus, der vor dem Haus hält. — الصيغة « dem » هي أداة معرّفة في حالة Dativ بحسب جنس الاسم وعدده.",
+      "en": "Ich fahre mit dem Bus, der vor dem Haus hält. — “dem” is the definite article in the Dativ required by the noun’s gender and number."
     }
   },
   "kapitel-14-ubung-13-q03": {
     "acceptedAnswers": "ein",
     "explanation": {
-      "fr": "Er kauft ein Fahrrad. (neu) — Choisissez selon le genre, le nombre, le cas et le caractère connu ou nouveau du nom.",
-      "de": "Er kauft ein Fahrrad. (neu) — Genus, Numerus, Kasus und Bekanntheit bestimmen den Artikel.",
-      "ar": "Er kauft ein Fahrrad. (neu) — تحدد الأداة حسب الجنس والعدد والحالة وما إذا كان الاسم معروفا.",
-      "en": "Er kauft ein Fahrrad. (neu) — Choose the article by gender, number, case and whether the noun is known."
+      "fr": "Im Park sehe ich ein Kind mit einem Ball. — « ein » est la forme de l’article indéfini au Dativ requise ici par le genre et le nombre du nom.",
+      "de": "Im Park sehe ich ein Kind mit einem Ball. — „ein“ ist hier die nach Genus und Numerus erforderliche Form des unbestimmten Artikels im Dativ.",
+      "ar": "Im Park sehe ich ein Kind mit einem Ball. — الصيغة « ein » هي أداة نكرة في حالة Dativ بحسب جنس الاسم وعدده.",
+      "en": "Im Park sehe ich ein Kind mit einem Ball. — “ein” is the indefinite article in the Dativ required by the noun’s gender and number."
     }
   }
 }

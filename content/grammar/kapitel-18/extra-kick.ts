@@ -11,72 +11,85 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "At the clinic"
     },
     "description": {
-      "fr": "Articles possessifs",
-      "de": "Possessivartikel",
-      "ar": "أدوات الملكية",
-      "en": "Possessive determiners"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-18-ubung-11-q01",
         "position": 1,
         "type": "fill_blank",
-        "sentence": "Herr Weber, bringen Sie bitte ___ Befund mit.",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Herr Braun, ich habe ___ Schlüssel gefunden. Er liegt neben ___ Tasche. (beides gehört Herrn Braun)",
+        "blanks": 2
       },
       {
         "id": "kapitel-18-ubung-11-q02",
         "position": 2,
-        "type": "true_false",
-        "statement": "Die Patientin zeigt dem Arzt ihr Befund.",
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Frau Lang, ich bringe Ihnen Ihre Tasche.",
+          "Frau Lang, hier ist Ihr Rezept.",
+          "Frau Lang, hier ist Ihren Rezept.",
+          "Frau Lang, ich bringe Ihnen Ihren Tasche."
+        ]
       },
       {
         "id": "kapitel-18-ubung-11-q03",
         "position": 3,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "meiner",
-          "seiner",
-          "seine",
-          "seinen"
-        ],
+        "type": "matching",
         "prompt": {
-          "fr": "Choisissez : Der Arzt spricht mit ___ Patientin. (seine Patientin)",
-          "de": "Wählen Sie: Der Arzt spricht mit ___ Patientin. (seine Patientin)",
-          "ar": "اختر: Der Arzt spricht mit ___ Patientin. (seine Patientin)",
-          "en": "Choose: Der Arzt spricht mit ___ Patientin. (seine Patientin)"
-        }
+          "fr": "Associez chaque phrase à la forme qui convient.",
+          "de": "Ordnen Sie jedem Satz die passende Form zu.",
+          "ar": "اربط كل جملة بالصيغة المناسبة.",
+          "en": "Match each sentence with the appropriate form."
+        },
+        "items": [
+          {
+            "id": "0",
+            "label": "Das Fahrrad gehört mir: Ich fahre mit ___ Fahrrad."
+          },
+          {
+            "id": "1",
+            "label": "Die Tasche gehört dir: Ich sehe ___ Tasche."
+          },
+          {
+            "id": "2",
+            "label": "Der Wagen gehört uns: Wir verkaufen ___ Wagen."
+          }
+        ],
+        "options": [
+          "unseren",
+          "meinem",
+          "deine"
+        ]
       },
       {
         "id": "kapitel-18-ubung-11-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "unsere",
-          "unseren",
-          "unserem",
-          "meinen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Wir helfen ___ Patienten. (unsere Patienten, Plural)",
-          "de": "Wählen Sie: Wir helfen ___ Patienten. (unsere Patienten, Plural)",
-          "ar": "اختر: Wir helfen ___ Patienten. (unsere Patienten, Plural)",
-          "en": "Choose: Wir helfen ___ Patienten. (unsere Patienten, Plural)"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Ärztin hat zwei Kinder und zwei Jacken für sich. Sie zeigt ___ Kindern ___ neuen Jacken. (Kinder und Jacken der Ärztin)",
+        "blanks": 2
       }
     ]
   },
@@ -91,72 +104,71 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "Moving house"
     },
     "description": {
-      "fr": "Articles possessifs",
-      "de": "Possessivartikel",
-      "ar": "أدوات الملكية",
-      "en": "Possessive determiners"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-18-ubung-12-q01",
         "position": 1,
-        "type": "true_false",
-        "statement": "Kinder, stellt euren Tisch hierhin!",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Kinder, wo ist ___ Ball? Habt ihr mit ___ Ball gespielt? (Ball der Kinder)",
+        "blanks": 2
       },
       {
         "id": "kapitel-18-ubung-12-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "eurem",
-          "euer",
-          "euren",
-          "meinem"
-        ],
+        "type": "reorder",
         "prompt": {
-          "fr": "Choisissez : Kinder, auf ___ Tisch liegen die Bücher.",
-          "de": "Wählen Sie: Kinder, auf ___ Tisch liegen die Bücher.",
-          "ar": "اختر: Kinder, auf ___ Tisch liegen die Bücher.",
-          "en": "Choose: Kinder, auf ___ Tisch liegen die Bücher."
-        }
+          "fr": "Euren neuen Tisch … — Commencez par ce groupe et reconstituez la phrase.",
+          "de": "Euren neuen Tisch … — Beginnen Sie mit dieser Gruppe und bilden Sie den Satz.",
+          "ar": "Euren neuen Tisch … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Euren neuen Tisch … — Start with this phrase and reconstruct the sentence."
+        },
+        "tokens": [
+          "Euren neuen Tisch",
+          "wir hierhin.",
+          "stellen"
+        ]
       },
       {
         "id": "kapitel-18-ubung-12-q03",
         "position": 3,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "unser",
-          "unsere",
-          "unserem",
-          "mein"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Choisissez : Wir stellen ___ Sofa neben den Tisch.",
-          "de": "Wählen Sie: Wir stellen ___ Sofa neben den Tisch.",
-          "ar": "اختر: Wir stellen ___ Sofa neben den Tisch.",
-          "en": "Choose: Wir stellen ___ Sofa neben den Tisch."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Kinder, nehmt euren Bücher mit!",
+          "Kinder, ich helfe eurer Mutter.",
+          "Kinder, nehmt eure Bücher mit!",
+          "Kinder, ich helfe euren Mutter."
+        ]
       },
       {
         "id": "kapitel-18-ubung-12-q04",
         "position": 4,
         "type": "fill_blank",
-        "sentence": "Anna und Tom fahren mit ___ Auto zum Möbelhaus.",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Tom und Mia ziehen um. Sie verkaufen ___ Sofa und fahren mit ___ Wagen zum Möbelhaus. (beides gehört Tom und Mia)",
+        "blanks": 2
       }
     ]
   },
@@ -171,72 +183,67 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "At work"
     },
     "description": {
-      "fr": "Articles possessifs",
-      "de": "Possessivartikel",
-      "ar": "أدوات الملكية",
-      "en": "Possessive determiners"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-18-ubung-13-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "mein",
-          "Ihrem",
-          "Ihr",
-          "Ihren"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Frau Berg, ___ Kollege wartet auf Sie.",
-          "de": "Wählen Sie: Frau Berg, ___ Kollege wartet auf Sie.",
-          "ar": "اختر: Frau Berg, ___ Kollege wartet auf Sie.",
-          "en": "Choose: Frau Berg, ___ Kollege wartet auf Sie."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Lea sucht ___ Bruder (Leas Bruder). Paul telefoniert mit ___ Bruder (Pauls Bruder).",
+        "blanks": 2
       },
       {
         "id": "kapitel-18-ubung-13-q02",
         "position": 2,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "Ihren",
-          "Ihr",
-          "Ihrem",
-          "meinen"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Choisissez : Frau Berg, ich warte auf ___ Kollegen.",
-          "de": "Wählen Sie: Frau Berg, ich warte auf ___ Kollegen.",
-          "ar": "اختر: Frau Berg, ich warte auf ___ Kollegen.",
-          "en": "Choose: Frau Berg, ich warte auf ___ Kollegen."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Herr Beck, ich brauche Ihrem Ausweis.",
+          "Herr Beck, wir sprechen mit Ihrer Kollegin.",
+          "Herr Beck, ich brauche Ihren Ausweis.",
+          "Herr Beck, wir sprechen mit Ihre Kollegin."
+        ]
       },
       {
         "id": "kapitel-18-ubung-13-q03",
         "position": 3,
-        "type": "fill_blank",
-        "sentence": "Frau Berg, ich spreche mit ___ Kollegen.",
-        "blanks": 1,
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez le possessif.",
-          "de": "Ergänzen Sie den Possessivartikel.",
-          "ar": "أكمل أداة الملكية.",
-          "en": "Complete the possessive."
-        }
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
+        },
+        "statement": "Anna spricht mit ihrem Vater. (Annas Vater)"
       },
       {
         "id": "kapitel-18-ubung-13-q04",
         "position": 4,
-        "type": "true_false",
-        "statement": "Lena sagt: Ich spreche mit mein Kollegen. (mein Kollege)",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Le possessif est-il correct ?",
-          "de": "Ist der Possessivartikel richtig?",
-          "ar": "هل أداة الملكية صحيحة؟",
-          "en": "Is the possessive correct?"
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Wir besuchen ___ Eltern und helfen ___ Nachbarn (Plural). (beides: unser)",
+        "blanks": 2
       }
     ]
   }

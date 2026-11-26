@@ -5,16 +5,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 1,
     "title": {
-      "fr": "Répondre et aider",
+      "fr": "Antworten und helfen",
       "de": "Antworten und helfen",
-      "ar": "الإجابة والمساعدة",
-      "en": "Answer and help"
+      "ar": "Antworten und helfen",
+      "en": "Antworten und helfen"
     },
     "description": {
-      "fr": "Verbes au datif",
-      "de": "Verben mit Dativ",
-      "ar": "أفعال الداتيف",
-      "en": "Dative verbs"
+      "fr": "Appliquez les formes fondamentales.",
+      "de": "Wenden Sie die Grundformen an.",
+      "ar": "طبّق الصيغ الأساسية.",
+      "en": "Apply the basic forms."
     },
     "questions": [
       {
@@ -23,16 +23,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "dem",
+          "die",
           "den",
-          "der",
-          "die"
+          "dem",
+          "der"
         ],
         "prompt": {
-          "fr": "Der Mann antwortet ___ Frau. (die)",
-          "de": "Der Mann antwortet ___ Frau. (die)",
-          "ar": "Der Mann antwortet ___ Frau. (die)",
-          "en": "Der Mann antwortet ___ Frau. (die)"
+          "fr": "Der Mann antwortet ___ Frau. (die) — Choisissez la forme ou la phrase correcte.",
+          "de": "Der Mann antwortet ___ Frau. (die) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Der Mann antwortet ___ Frau. (die) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Der Mann antwortet ___ Frau. (die) — Choose the correct form or sentence."
         }
       },
       {
@@ -41,16 +41,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "dem",
           "der",
           "die",
-          "dem",
           "den"
         ],
         "prompt": {
-          "fr": "Das Kind hilft ___ Mann. (der)",
-          "de": "Das Kind hilft ___ Mann. (der)",
-          "ar": "Das Kind hilft ___ Mann. (der)",
-          "en": "Das Kind hilft ___ Mann. (der)"
+          "fr": "Das Kind hilft ___ Mann. (der) — Choisissez la forme ou la phrase correcte.",
+          "de": "Das Kind hilft ___ Mann. (der) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Das Kind hilft ___ Mann. (der) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Das Kind hilft ___ Mann. (der) — Choose the correct form or sentence."
         }
       },
       {
@@ -60,10 +60,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Er gratuliert ___ Frau. (die)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
         }
       },
       {
@@ -72,10 +72,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Die Kinder hören dem Oma zu. (die)",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
         }
       },
       {
@@ -83,10 +83,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "matching",
         "prompt": {
-          "fr": "Associez les verbes aux cas.",
-          "de": "Ordnen Sie zu.",
-          "ar": "طابق الأفعال والحالات.",
-          "en": "Match verbs to cases."
+          "fr": "Associez les verbes au type de complément qu’ils régissent dans leur emploi de base.",
+          "de": "Ordnen Sie die Verben dem Kasusobjekt ihrer Grundverwendung zu.",
+          "ar": "اربط كل فعل بنوع المفعول الذي يقتضيه في استعماله الأساسي.",
+          "en": "Match the verbs to the object case in their basic use."
         },
         "items": [
           {
@@ -96,11 +96,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
           {
             "id": "1",
             "label": "fragen"
+          },
+          {
+            "id": "2",
+            "label": "lachen"
           }
         ],
         "options": [
-          "Akkusativ",
-          "Dativ"
+          "kein Objekt nötig",
+          "Akkusativobjekt",
+          "Dativobjekt"
         ]
       }
     ]
@@ -110,35 +115,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 2,
     "title": {
-      "fr": "Goûts",
+      "fr": "Geschmack",
       "de": "Geschmack",
-      "ar": "الذوق",
-      "en": "Taste"
+      "ar": "Geschmack",
+      "en": "Geschmack"
     },
     "description": {
-      "fr": "Verbes au datif",
-      "de": "Verben mit Dativ",
-      "ar": "أفعال الداتيف",
-      "en": "Dative verbs"
+      "fr": "Appliquez les formes fondamentales.",
+      "de": "Wenden Sie die Grundformen an.",
+      "ar": "طبّق الصيغ الأساسية.",
+      "en": "Apply the basic forms."
     },
     "questions": [
       {
         "id": "kapitel-22-ubung-02-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "den",
-          "dem",
-          "die",
-          "der"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Das Haus gefällt ___ Leuten. (die)",
-          "de": "Das Haus gefällt ___ Leuten. (die)",
-          "ar": "Das Haus gefällt ___ Leuten. (die)",
-          "en": "Das Haus gefällt ___ Leuten. (die)"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Das Haus ___ den Leuten, aber die Zimmer ___ ihnen nicht. (gefallen)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-02-q02",
@@ -147,10 +147,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Der Wein schmeckt ___ Mann nicht. (der)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
         }
       },
       {
@@ -159,10 +159,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Die Schuhe passen der Frau. (die)",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
         }
       },
       {
@@ -171,16 +171,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "den",
-          "die",
+          "der",
           "dem",
-          "der"
+          "die",
+          "den"
         ],
         "prompt": {
-          "fr": "Das Auto gehört ___ Chef. (der)",
-          "de": "Das Auto gehört ___ Chef. (der)",
-          "ar": "Das Auto gehört ___ Chef. (der)",
-          "en": "Das Auto gehört ___ Chef. (der)"
+          "fr": "Das Auto gehört ___ Chef. (der) — Choisissez la forme ou la phrase correcte.",
+          "de": "Das Auto gehört ___ Chef. (der) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Das Auto gehört ___ Chef. (der) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Das Auto gehört ___ Chef. (der) — Choose the correct form or sentence."
         }
       },
       {
@@ -189,16 +189,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "den",
           "der",
           "die",
-          "dem"
+          "dem",
+          "den"
         ],
         "prompt": {
-          "fr": "Die Jacke steht ___ Mädchen. (das)",
-          "de": "Die Jacke steht ___ Mädchen. (das)",
-          "ar": "Die Jacke steht ___ Mädchen. (das)",
-          "en": "Die Jacke steht ___ Mädchen. (das)"
+          "fr": "Die Jacke steht ___ Mädchen. (das) — Choisissez la forme ou la phrase correcte.",
+          "de": "Die Jacke steht ___ Mädchen. (das) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Die Jacke steht ___ Mädchen. (das) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Die Jacke steht ___ Mädchen. (das) — Choose the correct form or sentence."
         }
       },
       {
@@ -208,10 +208,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Der Film gefällt ___ Freunden. (die)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
         }
       },
       {
@@ -220,10 +220,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Der Kopf tut der Frau weh. (die)",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
         }
       }
     ]
@@ -233,35 +233,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 3,
     "title": {
-      "fr": "Réactions",
+      "fr": "Reaktionen",
       "de": "Reaktionen",
-      "ar": "ردود الفعل",
-      "en": "Responses"
+      "ar": "Reaktionen",
+      "en": "Reaktionen"
     },
     "description": {
-      "fr": "Verbes au datif",
-      "de": "Verben mit Dativ",
-      "ar": "أفعال الداتيف",
-      "en": "Dative verbs"
+      "fr": "Appliquez les formes fondamentales.",
+      "de": "Wenden Sie die Grundformen an.",
+      "ar": "طبّق الصيغ الأساسية.",
+      "en": "Apply the basic forms."
     },
     "questions": [
       {
         "id": "kapitel-22-ubung-03-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "dir",
-          "mir",
-          "mich",
-          "ich"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Ich frage den Mann. Er antwortet ___.",
-          "de": "Ich frage den Mann. Er antwortet ___.",
-          "ar": "Ich frage den Mann. Er antwortet ___.",
-          "en": "Ich frage den Mann. Er antwortet ___."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Ich frage den Mann. Er antwortet ___. Danach frage ich ___ noch einmal. (ich/der Mann)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-03-q02",
@@ -269,16 +264,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "er",
           "ihn",
           "ihm",
-          "ihr",
-          "er"
+          "ihr"
         ],
         "prompt": {
-          "fr": "Anastasia hat Geburtstag. Wir gratulieren ___.",
-          "de": "Anastasia hat Geburtstag. Wir gratulieren ___.",
-          "ar": "Anastasia hat Geburtstag. Wir gratulieren ___.",
-          "en": "Anastasia hat Geburtstag. Wir gratulieren ___."
+          "fr": "Anastasia hat Geburtstag. Wir gratulieren ___. — Choisissez la forme ou la phrase correcte.",
+          "de": "Anastasia hat Geburtstag. Wir gratulieren ___. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Anastasia hat Geburtstag. Wir gratulieren ___. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Anastasia hat Geburtstag. Wir gratulieren ___. — Choose the correct form or sentence."
         }
       },
       {
@@ -287,16 +282,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "dir",
           "ich",
-          "mich",
           "mir",
-          "dir"
+          "mich"
         ],
         "prompt": {
-          "fr": "Du hast Probleme. Ich helfe ___.",
-          "de": "Du hast Probleme. Ich helfe ___.",
-          "ar": "Du hast Probleme. Ich helfe ___.",
-          "en": "Du hast Probleme. Ich helfe ___."
+          "fr": "Du hast Probleme. Ich helfe ___. — Choisissez la forme ou la phrase correcte.",
+          "de": "Du hast Probleme. Ich helfe ___. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Du hast Probleme. Ich helfe ___. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Du hast Probleme. Ich helfe ___. — Choose the correct form or sentence."
         }
       },
       {
@@ -305,16 +300,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihm",
           "ihn",
+          "er",
           "ihr",
-          "er"
+          "ihm"
         ],
         "prompt": {
-          "fr": "Der Vater erzählt. Die Kinder hören ___ zu.",
-          "de": "Der Vater erzählt. Die Kinder hören ___ zu.",
-          "ar": "Der Vater erzählt. Die Kinder hören ___ zu.",
-          "en": "Der Vater erzählt. Die Kinder hören ___ zu."
+          "fr": "Der Vater erzählt. Die Kinder hören ___ zu. — Choisissez la forme ou la phrase correcte.",
+          "de": "Der Vater erzählt. Die Kinder hören ___ zu. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Der Vater erzählt. Die Kinder hören ___ zu. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Der Vater erzählt. Die Kinder hören ___ zu. — Choose the correct form or sentence."
         }
       }
     ]
@@ -324,16 +319,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 4,
     "title": {
-      "fr": "Excuses",
+      "fr": "Entschuldigung",
       "de": "Entschuldigung",
-      "ar": "الاعتذار",
-      "en": "Apologies"
+      "ar": "Entschuldigung",
+      "en": "Entschuldigung"
     },
     "description": {
-      "fr": "Verbes au datif",
-      "de": "Verben mit Dativ",
-      "ar": "أفعال الداتيف",
-      "en": "Dative verbs"
+      "fr": "Complétez les situations et distinguez les formes.",
+      "de": "Ergänzen Sie die Situationen und unterscheiden Sie die Formen.",
+      "ar": "أكمل المواقف وميّز الصيغ.",
+      "en": "Complete the situations and distinguish the forms."
     },
     "questions": [
       {
@@ -342,35 +337,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "ich",
           "mich",
           "mir",
-          "ich",
           "dir"
         ],
         "prompt": {
-          "fr": "Ich habe einen Fehler gemacht. Es tut ___ leid.",
-          "de": "Ich habe einen Fehler gemacht. Es tut ___ leid.",
-          "ar": "Ich habe einen Fehler gemacht. Es tut ___ leid.",
-          "en": "Ich habe einen Fehler gemacht. Es tut ___ leid."
+          "fr": "Ich habe einen Fehler gemacht. Es tut ___ leid. — Choisissez la forme ou la phrase correcte.",
+          "de": "Ich habe einen Fehler gemacht. Es tut ___ leid. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Ich habe einen Fehler gemacht. Es tut ___ leid. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Ich habe einen Fehler gemacht. Es tut ___ leid. — Choose the correct form or sentence."
         }
       },
       {
         "id": "kapitel-22-ubung-04-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "mir",
-          "mich",
-          "dir",
-          "ich"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Mein Sohn sagt: Es tut ___ leid. (ich)",
-          "de": "Mein Sohn sagt: Es tut ___ leid. (ich)",
-          "ar": "Mein Sohn sagt: Es tut ___ leid. (ich)",
-          "en": "Mein Sohn sagt: Es tut ___ leid. (ich)"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Mein Sohn sagt: Es tut ___ leid. Seine Schwester sagt: Mir tut es auch leid. (ich)",
+        "blanks": 1
       },
       {
         "id": "kapitel-22-ubung-04-q03",
@@ -378,16 +368,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihr",
-          "ihnen",
+          "ihm",
           "sie",
-          "ihm"
+          "ihnen",
+          "ihr"
         ],
         "prompt": {
-          "fr": "Meine Eltern bedauern ihren Fehler. Es tut ___ leid.",
-          "de": "Meine Eltern bedauern ihren Fehler. Es tut ___ leid.",
-          "ar": "Meine Eltern bedauern ihren Fehler. Es tut ___ leid.",
-          "en": "Meine Eltern bedauern ihren Fehler. Es tut ___ leid."
+          "fr": "Meine Eltern bedauern ihren Fehler. Es tut ___ leid. — Choisissez la forme ou la phrase correcte.",
+          "de": "Meine Eltern bedauern ihren Fehler. Es tut ___ leid. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Meine Eltern bedauern ihren Fehler. Es tut ___ leid. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Meine Eltern bedauern ihren Fehler. Es tut ___ leid. — Choose the correct form or sentence."
         }
       },
       {
@@ -396,16 +386,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "dir",
-          "mir",
+          "mich",
           "ich",
-          "mich"
+          "dir",
+          "mir"
         ],
         "prompt": {
-          "fr": "Du bedauerst deinen Fehler. Es tut ___ leid.",
-          "de": "Du bedauerst deinen Fehler. Es tut ___ leid.",
-          "ar": "Du bedauerst deinen Fehler. Es tut ___ leid.",
-          "en": "Du bedauerst deinen Fehler. Es tut ___ leid."
+          "fr": "Du bedauerst deinen Fehler. Es tut ___ leid. — Choisissez la forme ou la phrase correcte.",
+          "de": "Du bedauerst deinen Fehler. Es tut ___ leid. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Du bedauerst deinen Fehler. Es tut ___ leid. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Du bedauerst deinen Fehler. Es tut ___ leid. — Choose the correct form or sentence."
         }
       },
       {
@@ -414,16 +404,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "wir",
           "euch",
           "uns",
-          "ihnen"
+          "ihnen",
+          "wir"
         ],
         "prompt": {
-          "fr": "Wir bedauern unseren Fehler. Es tut ___ leid.",
-          "de": "Wir bedauern unseren Fehler. Es tut ___ leid.",
-          "ar": "Wir bedauern unseren Fehler. Es tut ___ leid.",
-          "en": "Wir bedauern unseren Fehler. Es tut ___ leid."
+          "fr": "Wir bedauern unseren Fehler. Es tut ___ leid. — Choisissez la forme ou la phrase correcte.",
+          "de": "Wir bedauern unseren Fehler. Es tut ___ leid. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Wir bedauern unseren Fehler. Es tut ___ leid. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Wir bedauern unseren Fehler. Es tut ___ leid. — Choose the correct form or sentence."
         }
       },
       {
@@ -432,16 +422,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "wir",
           "euch",
           "uns",
-          "ihnen"
+          "ihnen",
+          "wir"
         ],
         "prompt": {
-          "fr": "Ihr bedauert euren Fehler. Es tut ___ leid.",
-          "de": "Ihr bedauert euren Fehler. Es tut ___ leid.",
-          "ar": "Ihr bedauert euren Fehler. Es tut ___ leid.",
-          "en": "Ihr bedauert euren Fehler. Es tut ___ leid."
+          "fr": "Ihr bedauert euren Fehler. Es tut ___ leid. — Choisissez la forme ou la phrase correcte.",
+          "de": "Ihr bedauert euren Fehler. Es tut ___ leid. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Ihr bedauert euren Fehler. Es tut ___ leid. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Ihr bedauert euren Fehler. Es tut ___ leid. — Choose the correct form or sentence."
         }
       }
     ]
@@ -451,16 +441,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 5,
     "title": {
-      "fr": "Reformuler",
+      "fr": "Umformulieren",
       "de": "Umformulieren",
-      "ar": "إعادة الصياغة",
-      "en": "Rephrase"
+      "ar": "Umformulieren",
+      "en": "Umformulieren"
     },
     "description": {
-      "fr": "Verbes au datif",
-      "de": "Verben mit Dativ",
-      "ar": "أفعال الداتيف",
-      "en": "Dative verbs"
+      "fr": "Complétez les situations et distinguez les formes.",
+      "de": "Ergänzen Sie die Situationen und unterscheiden Sie die Formen.",
+      "ar": "أكمل المواقف وميّز الصيغ.",
+      "en": "Complete the situations and distinguish the forms."
     },
     "questions": [
       {
@@ -469,16 +459,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ich",
           "mir",
+          "dir",
           "mich",
-          "dir"
+          "ich"
         ],
         "prompt": {
-          "fr": "Ich habe morgen keine Zeit. Morgen passt es ___ nicht.",
-          "de": "Ich habe morgen keine Zeit. Morgen passt es ___ nicht.",
-          "ar": "Ich habe morgen keine Zeit. Morgen passt es ___ nicht.",
-          "en": "Ich habe morgen keine Zeit. Morgen passt es ___ nicht."
+          "fr": "Ich habe morgen keine Zeit. Morgen passt es ___ nicht. — Choisissez la forme ou la phrase correcte.",
+          "de": "Ich habe morgen keine Zeit. Morgen passt es ___ nicht. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Ich habe morgen keine Zeit. Morgen passt es ___ nicht. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Ich habe morgen keine Zeit. Morgen passt es ___ nicht. — Choose the correct form or sentence."
         }
       },
       {
@@ -487,16 +477,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihnen",
+          "wir",
           "uns",
-          "euch",
-          "wir"
+          "ihnen",
+          "euch"
         ],
         "prompt": {
-          "fr": "Wir finden Frankfurt schön. Frankfurt gefällt ___.",
-          "de": "Wir finden Frankfurt schön. Frankfurt gefällt ___.",
-          "ar": "Wir finden Frankfurt schön. Frankfurt gefällt ___.",
-          "en": "Wir finden Frankfurt schön. Frankfurt gefällt ___."
+          "fr": "Wir finden Frankfurt schön. Frankfurt gefällt ___. — Choisissez la forme ou la phrase correcte.",
+          "de": "Wir finden Frankfurt schön. Frankfurt gefällt ___. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Wir finden Frankfurt schön. Frankfurt gefällt ___. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Wir finden Frankfurt schön. Frankfurt gefällt ___. — Choose the correct form or sentence."
         }
       },
       {
@@ -505,16 +495,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihm",
-          "ihn",
+          "er",
           "ihr",
-          "er"
+          "ihn",
+          "ihm"
         ],
         "prompt": {
-          "fr": "Ulrike ist krank. Es geht ___ schlecht.",
-          "de": "Ulrike ist krank. Es geht ___ schlecht.",
-          "ar": "Ulrike ist krank. Es geht ___ schlecht.",
-          "en": "Ulrike ist krank. Es geht ___ schlecht."
+          "fr": "Ulrike ist krank. Es geht ___ schlecht. — Choisissez la forme ou la phrase correcte.",
+          "de": "Ulrike ist krank. Es geht ___ schlecht. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Ulrike ist krank. Es geht ___ schlecht. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Ulrike ist krank. Es geht ___ schlecht. — Choose the correct form or sentence."
         }
       },
       {
@@ -523,16 +513,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "mich",
           "ich",
-          "mir",
-          "dir"
+          "dir",
+          "mich",
+          "mir"
         ],
         "prompt": {
-          "fr": "Ich finde die Suppe lecker. Sie schmeckt ___.",
-          "de": "Ich finde die Suppe lecker. Sie schmeckt ___.",
-          "ar": "Ich finde die Suppe lecker. Sie schmeckt ___.",
-          "en": "Ich finde die Suppe lecker. Sie schmeckt ___."
+          "fr": "Ich finde die Suppe lecker. Sie schmeckt ___. — Choisissez la forme ou la phrase correcte.",
+          "de": "Ich finde die Suppe lecker. Sie schmeckt ___. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Ich finde die Suppe lecker. Sie schmeckt ___. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Ich finde die Suppe lecker. Sie schmeckt ___. — Choose the correct form or sentence."
         }
       },
       {
@@ -541,16 +531,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "dir",
           "mich",
-          "ich",
-          "mir"
+          "dir",
+          "mir",
+          "ich"
         ],
         "prompt": {
-          "fr": "Das ist nicht meine Uhr. Sie gehört ___ nicht.",
-          "de": "Das ist nicht meine Uhr. Sie gehört ___ nicht.",
-          "ar": "Das ist nicht meine Uhr. Sie gehört ___ nicht.",
-          "en": "Das ist nicht meine Uhr. Sie gehört ___ nicht."
+          "fr": "Das ist nicht meine Uhr. Sie gehört ___ nicht. — Choisissez la forme ou la phrase correcte.",
+          "de": "Das ist nicht meine Uhr. Sie gehört ___ nicht. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Das ist nicht meine Uhr. Sie gehört ___ nicht. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Das ist nicht meine Uhr. Sie gehört ___ nicht. — Choose the correct form or sentence."
         }
       },
       {
@@ -560,15 +550,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "dir",
-          "mich",
           "mir",
+          "mich",
           "ich"
         ],
         "prompt": {
-          "fr": "Meine Hose ist zu klein. Sie passt ___ nicht.",
-          "de": "Meine Hose ist zu klein. Sie passt ___ nicht.",
-          "ar": "Meine Hose ist zu klein. Sie passt ___ nicht.",
-          "en": "Meine Hose ist zu klein. Sie passt ___ nicht."
+          "fr": "Meine Hose ist zu klein. Sie passt ___ nicht. — Choisissez la forme ou la phrase correcte.",
+          "de": "Meine Hose ist zu klein. Sie passt ___ nicht. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Meine Hose ist zu klein. Sie passt ___ nicht. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Meine Hose ist zu klein. Sie passt ___ nicht. — Choose the correct form or sentence."
         }
       },
       {
@@ -577,16 +567,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "mich",
-          "mir",
+          "ich",
           "dir",
-          "ich"
+          "mich",
+          "mir"
         ],
         "prompt": {
-          "fr": "Ich habe Halsschmerzen. Der Hals tut ___ weh.",
-          "de": "Ich habe Halsschmerzen. Der Hals tut ___ weh.",
-          "ar": "Ich habe Halsschmerzen. Der Hals tut ___ weh.",
-          "en": "Ich habe Halsschmerzen. Der Hals tut ___ weh."
+          "fr": "Ich habe Halsschmerzen. Der Hals tut ___ weh. — Choisissez la forme ou la phrase correcte.",
+          "de": "Ich habe Halsschmerzen. Der Hals tut ___ weh. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Ich habe Halsschmerzen. Der Hals tut ___ weh. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Ich habe Halsschmerzen. Der Hals tut ___ weh. — Choose the correct form or sentence."
         }
       }
     ]
@@ -598,14 +588,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "title": {
       "fr": "Clemens",
       "de": "Clemens",
-      "ar": "كليمنس",
+      "ar": "Clemens",
       "en": "Clemens"
     },
     "description": {
-      "fr": "Verbes au datif",
-      "de": "Verben mit Dativ",
-      "ar": "أفعال الداتيف",
-      "en": "Dative verbs"
+      "fr": "Complétez les situations et distinguez les formes.",
+      "de": "Ergänzen Sie die Situationen und unterscheiden Sie die Formen.",
+      "ar": "أكمل المواقف وميّز الصيغ.",
+      "en": "Complete the situations and distinguish the forms."
     },
     "questions": [
       {
@@ -614,16 +604,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "ihm",
-          "er",
           "ihn",
-          "ihr"
+          "er",
+          "ihr",
+          "ihm"
         ],
         "prompt": {
-          "fr": "Das ist Clemens. Ich finde ___ wunderbar.",
-          "de": "Das ist Clemens. Ich finde ___ wunderbar.",
-          "ar": "Das ist Clemens. Ich finde ___ wunderbar.",
-          "en": "Das ist Clemens. Ich finde ___ wunderbar."
+          "fr": "Das ist Clemens. Ich finde ___ wunderbar. — Choisissez la forme ou la phrase correcte.",
+          "de": "Das ist Clemens. Ich finde ___ wunderbar. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Das ist Clemens. Ich finde ___ wunderbar. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Das ist Clemens. Ich finde ___ wunderbar. — Choose the correct form or sentence."
         }
       },
       {
@@ -633,10 +623,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Clemens gefällt ___ sehr. (ich)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
         }
       },
       {
@@ -645,47 +635,37 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Jede Farbe steht ihm. (Clemens)",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
         }
       },
       {
         "id": "kapitel-22-ubung-06-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "ihm",
-          "er",
-          "ihn",
-          "ihr"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Ich rufe ___ an. (Clemens)",
-          "de": "Ich rufe ___ an. (Clemens)",
-          "ar": "Ich rufe ___ an. (Clemens)",
-          "en": "Ich rufe ___ an. (Clemens)"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Ich rufe Clemens an und frage ___ etwas. Er antwortet ___ sofort. (Clemens/ich)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-06-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "ihn",
-          "er",
-          "ihm",
-          "ihr"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Ich höre ___ zu. (Clemens)",
-          "de": "Ich höre ___ zu. (Clemens)",
-          "ar": "Ich höre ___ zu. (Clemens)",
-          "en": "Ich höre ___ zu. (Clemens)"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Clemens erzählt eine Geschichte. Ich höre ___ zu und glaube ___. (Clemens)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-06-q06",
@@ -694,10 +674,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich antworte ___. (Clemens)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
         }
       },
       {
@@ -706,10 +686,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich liebe ihn. (Clemens)",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
         }
       }
     ]
@@ -719,30 +699,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 7,
     "title": {
-      "fr": "Contrastes",
+      "fr": "Kontraste",
       "de": "Kontraste",
-      "ar": "المقارنة",
-      "en": "Contrasts"
+      "ar": "Kontraste",
+      "en": "Kontraste"
     },
     "description": {
-      "fr": "Verbes au datif",
-      "de": "Verben mit Dativ",
-      "ar": "أفعال الداتيف",
-      "en": "Dative verbs"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-22-ubung-07-q01",
         "position": 1,
         "type": "fill_blank",
-        "sentence": "Der Mann schenkt ___ Frau Blumen. (die)",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Der Mann schenkt ___ Frau Blumen. Die Blumen gefallen ___ Frau. (bestimmt)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-07-q02",
@@ -750,29 +730,24 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Die Blumen gefallen dem Frau. (die)",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
         }
       },
       {
         "id": "kapitel-22-ubung-07-q03",
         "position": 3,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "der",
-          "den",
-          "dem",
-          "die"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Der Chef fragt ___ Sekretärin. (die)",
-          "de": "Der Chef fragt ___ Sekretärin. (die)",
-          "ar": "Der Chef fragt ___ Sekretärin. (die)",
-          "en": "Der Chef fragt ___ Sekretärin. (die)"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Der Chef fragt ___ Sekretärin. Sie antwortet ___ Chef. (bestimmt)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-07-q04",
@@ -780,30 +755,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "der",
+          "die",
           "dem",
-          "den",
-          "die"
+          "der",
+          "den"
         ],
         "prompt": {
-          "fr": "Die Sekretärin antwortet ___ Chef. (der)",
-          "de": "Die Sekretärin antwortet ___ Chef. (der)",
-          "ar": "Die Sekretärin antwortet ___ Chef. (der)",
-          "en": "Die Sekretärin antwortet ___ Chef. (der)"
+          "fr": "Die Sekretärin antwortet ___ Chef. (der) — Choisissez la forme ou la phrase correcte.",
+          "de": "Die Sekretärin antwortet ___ Chef. (der) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Die Sekretärin antwortet ___ Chef. (der) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Die Sekretärin antwortet ___ Chef. (der) — Choose the correct form or sentence."
         }
       },
       {
         "id": "kapitel-22-ubung-07-q05",
         "position": 5,
         "type": "fill_blank",
-        "sentence": "Der Freund liest ___ Brief. (der)",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Der Freund liest ___ Brief und antwortet ___ Mädchen. (bestimmt)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-07-q06",
@@ -811,10 +786,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Die Jacke passt der Kind. (das)",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
         }
       },
       {
@@ -825,14 +800,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "options": [
           "den",
           "die",
-          "dem",
-          "der"
+          "der",
+          "dem"
         ],
         "prompt": {
-          "fr": "Der Arzt hilft ___ Mann. (der)",
-          "de": "Der Arzt hilft ___ Mann. (der)",
-          "ar": "Der Arzt hilft ___ Mann. (der)",
-          "en": "Der Arzt hilft ___ Mann. (der)"
+          "fr": "Der Arzt hilft ___ Mann. (der) — Choisissez la forme ou la phrase correcte.",
+          "de": "Der Arzt hilft ___ Mann. (der) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Der Arzt hilft ___ Mann. (der) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Der Arzt hilft ___ Mann. (der) — Choose the correct form or sentence."
         }
       }
     ]
@@ -842,78 +817,69 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 8,
     "title": {
-      "fr": "Accord du sujet",
+      "fr": "Subjekt und Verb",
       "de": "Subjekt und Verb",
-      "ar": "مطابقة الفاعل",
-      "en": "Subject agreement"
+      "ar": "Subjekt und Verb",
+      "en": "Subjekt und Verb"
     },
     "description": {
-      "fr": "Verbes au datif",
-      "de": "Verben mit Dativ",
-      "ar": "أفعال الداتيف",
-      "en": "Dative verbs"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-22-ubung-08-q01",
         "position": 1,
-        "type": "true_false",
-        "statement": "Die Schuhe gefallen mir. (ich)",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Schuhe ___ mir, aber die Jacke ___ mir nicht. (gefallen)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-08-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "uns",
-          "ihnen",
-          "euch",
-          "wir"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Die Suppe schmeckt ___. (wir)",
-          "de": "Die Suppe schmeckt ___. (wir)",
-          "ar": "Die Suppe schmeckt ___. (wir)",
-          "en": "Die Suppe schmeckt ___. (wir)"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Suppe schmeckt ___, aber der Salat schmeckt ___ nicht. (wir/ich)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-08-q03",
         "position": 3,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "ihn",
-          "er",
-          "ihm",
-          "ihr"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Die Bücher gehören ___. (er)",
-          "de": "Die Bücher gehören ___. (er)",
-          "ar": "Die Bücher gehören ___. (er)",
-          "en": "Die Bücher gehören ___. (er)"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Das Buch gehört Paul. Die Bücher gehören Anna. Das Buch gehört ___, die Bücher gehören ___.",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-08-q04",
         "position": 4,
         "type": "fill_blank",
-        "sentence": "Die Termine passen ___. (du)",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Termine passen ___, aber der Montag passt ___ nicht. (du/ich)",
+        "blanks": 2
       }
     ]
   },
@@ -922,53 +888,43 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 9,
     "title": {
-      "fr": "Dialogues",
+      "fr": "Dialoge",
       "de": "Dialoge",
-      "ar": "حوارات",
-      "en": "Dialogues"
+      "ar": "Dialoge",
+      "en": "Dialoge"
     },
     "description": {
-      "fr": "Verbes au datif",
-      "de": "Verben mit Dativ",
-      "ar": "أفعال الداتيف",
-      "en": "Dative verbs"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-22-ubung-09-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "ihnen",
-          "Ihnen",
-          "sie",
-          "ihm"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Frau Klein, ich danke ___.",
-          "de": "Frau Klein, ich danke ___.",
-          "ar": "Frau Klein, ich danke ___.",
-          "en": "Frau Klein, ich danke ___."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Frau Klein, ich danke ___ für Ihre Hilfe. Ich rufe ___ morgen an. (höflich)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-09-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "mich",
-          "dir",
-          "mir",
-          "ich"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Paul, ich glaube ___.",
-          "de": "Paul, ich glaube ___.",
-          "ar": "Paul, ich glaube ___.",
-          "en": "Paul, ich glaube ___."
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Paul, ich glaube ___, aber ich muss ___ noch etwas fragen. (du)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-09-q03",
@@ -976,16 +932,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "er",
-          "ihn",
           "ihr",
-          "ihm"
+          "ihn",
+          "ihm",
+          "er"
         ],
         "prompt": {
-          "fr": "Anna wartet. Ich antworte ___.",
-          "de": "Anna wartet. Ich antworte ___.",
-          "ar": "Anna wartet. Ich antworte ___.",
-          "en": "Anna wartet. Ich antworte ___."
+          "fr": "Anna wartet. Ich antworte ___. — Choisissez la forme ou la phrase correcte.",
+          "de": "Anna wartet. Ich antworte ___. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Anna wartet. Ich antworte ___. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Anna wartet. Ich antworte ___. — Choose the correct form or sentence."
         }
       },
       {
@@ -995,15 +951,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "ihr",
-          "ihnen",
+          "ihm",
           "sie",
-          "ihm"
+          "ihnen"
         ],
         "prompt": {
-          "fr": "Die Gäste sprechen. Ich höre ___ zu.",
-          "de": "Die Gäste sprechen. Ich höre ___ zu.",
-          "ar": "Die Gäste sprechen. Ich höre ___ zu.",
-          "en": "Die Gäste sprechen. Ich höre ___ zu."
+          "fr": "Die Gäste sprechen. Ich höre ___ zu. — Choisissez la forme ou la phrase correcte.",
+          "de": "Die Gäste sprechen. Ich höre ___ zu. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Die Gäste sprechen. Ich höre ___ zu. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Die Gäste sprechen. Ich höre ___ zu. — Choose the correct form or sentence."
         }
       },
       {
@@ -1011,15 +967,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "reorder",
         "prompt": {
-          "fr": "Commencez par Ich.",
-          "de": "Beginnen Sie mit Ich.",
-          "ar": "ابدأ بـ Ich.",
-          "en": "Start with Ich."
+          "fr": "Ich … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Ich … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Ich … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Ich … — Start with this chunk and reconstruct the sentence."
         },
         "tokens": [
-          "zu.",
           "Ich",
-          "dir",
+          "dir aufmerksam zu.",
           "höre"
         ]
       }
@@ -1030,35 +985,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 10,
     "title": {
-      "fr": "Bilan",
+      "fr": "Abschlusstest",
       "de": "Abschlusstest",
-      "ar": "اختبار شامل",
-      "en": "Review"
+      "ar": "Abschlusstest",
+      "en": "Abschlusstest"
     },
     "description": {
-      "fr": "Verbes au datif",
-      "de": "Verben mit Dativ",
-      "ar": "أفعال الداتيف",
-      "en": "Dative verbs"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-22-ubung-10-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "Der",
-          "Das",
-          "Dem",
-          "Den"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "___ Mann hilft das Kind. (der)",
-          "de": "___ Mann hilft das Kind. (der)",
-          "ar": "___ Mann hilft das Kind. (der)",
-          "en": "___ Mann hilft das Kind. (der)"
-        }
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Mann hilft das Kind. ___ Kind dankt dem Mann. (bestimmt; erste Lücke = Objekt)",
+        "blanks": 2
       },
       {
         "id": "kapitel-22-ubung-10-q02",
@@ -1067,10 +1017,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "___ Mann sieht das Kind. (der, Objekt)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec les formes indiquées par le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ وفق التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
         }
       },
       {
@@ -1079,29 +1029,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Der Frau gehört das Auto. (die)",
         "prompt": {
-          "fr": "La forme est-elle correcte ?",
-          "de": "Ist das Pronomen richtig?",
-          "ar": "هل الضمير صحيح؟",
-          "en": "Is the pronoun correct?"
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
         }
       },
       {
         "id": "kapitel-22-ubung-10-q04",
         "position": 4,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "mein",
-          "meine",
-          "meinen",
-          "meinem"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Ich besuche ___ Bruder. (mein)",
-          "de": "Ich besuche ___ Bruder. (mein)",
-          "ar": "Ich besuche ___ Bruder. (mein)",
-          "en": "Ich besuche ___ Bruder. (mein)"
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Ich besuche meinem Bruder.",
+          "Ich helfe meinem Bruder.",
+          "Ich besuche meinen Bruder.",
+          "Ich helfe meinen Bruder."
+        ]
       },
       {
         "id": "kapitel-22-ubung-10-extra",
@@ -1109,16 +1059,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "multiple",
         "prompt": {
-          "fr": "Deux phrases correctes.",
-          "de": "Zwei richtige Sätze.",
-          "ar": "جملتان صحيحتان.",
-          "en": "Two correct sentences."
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
         },
         "options": [
+          "Ich frage ihm.",
           "Ich helfe ihm.",
           "Ich frage ihn.",
-          "Ich danke ihn.",
-          "Ich antworte ihn."
+          "Ich helfe ihn."
         ]
       }
     ]

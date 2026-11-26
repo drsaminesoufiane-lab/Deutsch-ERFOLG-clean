@@ -5,10 +5,10 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "Reise",
+      "fr": "Voyage",
       "de": "Reise",
-      "ar": "Reise",
-      "en": "Reise"
+      "ar": "السفر",
+      "en": "Travel"
     },
     "description": {
       "fr": "Ordre des mots 2",
@@ -20,45 +20,48 @@ export const extraKick: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-12-ubung-11-q01",
         "position": 1,
-        "type": "true_false",
+        "type": "reorder",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Vor der Abfahrt ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Vor der Abfahrt“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Vor der Abfahrt ».",
+          "en": "Reorder the groups. Start with “Vor der Abfahrt”."
         },
-        "statement": "müssen Wir die Tickets buchen ."
+        "tokens": [
+          "drucken.",
+          "müssen",
+          "wir die Tickets",
+          "Vor der Abfahrt"
+        ]
       },
       {
         "id": "kapitel-12-ubung-11-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "true_false",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "selection": "single",
-        "options": [
-          "Der Zug fährt um acht Uhr ab .",
-          "Zug Der fährt um acht Uhr ab ."
-        ]
+        "statement": "fährt Der Bus am Rathaus ab."
       },
       {
         "id": "kapitel-12-ubung-11-q03",
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la phrase affirmative correcte (pas une question).",
+          "de": "Wählen Sie den grammatisch richtigen Aussagesatz (keine Frage).",
+          "ar": "اختر الجملة الخبرية الصحيحة نحوياً (وليست سؤالاً).",
+          "en": "Choose the grammatical declarative sentence (not a question)."
         },
         "selection": "single",
         "options": [
-          "sind Wir gestern angekommen .",
-          "Wir sind gestern angekommen ."
+          "Wir pünktlich angekommen sind.",
+          "Wir pünktlich sind angekommen.",
+          "Sind Wir pünktlich angekommen.",
+          "Wir sind pünktlich angekommen."
         ]
       }
     ]
@@ -68,10 +71,10 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Freizeit",
+      "fr": "Loisirs",
       "de": "Freizeit",
-      "ar": "Freizeit",
-      "en": "Freizeit"
+      "ar": "وقت الفراغ",
+      "en": "Leisure"
     },
     "description": {
       "fr": "Ordre des mots 2",
@@ -83,45 +86,48 @@ export const extraKick: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-12-ubung-12-q01",
         "position": 1,
-        "type": "true_false",
+        "type": "reorder",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Am Samstag ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Am Samstag“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Am Samstag ».",
+          "en": "Reorder the groups. Start with “Am Samstag”."
         },
-        "statement": "gehen Heute wir schwimmen ."
+        "tokens": [
+          "schwimmen.",
+          "Am Samstag",
+          "Lena mit Freunden",
+          "geht"
+        ]
       },
       {
         "id": "kapitel-12-ubung-12-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "true_false",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "selection": "single",
-        "options": [
-          "möchte Ich Tennis spielen .",
-          "Ich möchte Tennis spielen ."
-        ]
+        "statement": "Ich möchte heute einen Film sehen."
       },
       {
         "id": "kapitel-12-ubung-12-q03",
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la phrase affirmative correcte (pas une question).",
+          "de": "Wählen Sie den grammatisch richtigen Aussagesatz (keine Frage).",
+          "ar": "اختر الجملة الخبرية الصحيحة نحوياً (وليست سؤالاً).",
+          "en": "Choose the grammatical declarative sentence (not a question)."
         },
         "selection": "single",
         "options": [
-          "Sie hat Musik gehört .",
-          "hat Sie Musik gehört ."
+          "Die Kinder haben im Chor gesungen.",
+          "Haben Die Kinder im Chor gesungen.",
+          "Die haben Kinder im Chor gesungen.",
+          "Die Kinder im Chor gesungen haben."
         ]
       }
     ]
@@ -131,9 +137,9 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Challenge",
+      "fr": "Défi",
       "de": "Challenge",
-      "ar": "Challenge",
+      "ar": "تحدٍ",
       "en": "Challenge"
     },
     "description": {
@@ -146,45 +152,48 @@ export const extraKick: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-12-ubung-13-q01",
         "position": 1,
-        "type": "true_false",
+        "type": "reorder",
         "prompt": {
-          "fr": "Cette phrase respecte-t-elle l’ordre attendu ?",
-          "de": "Ist die Wortstellung richtig?",
-          "ar": "هل ترتيب الكلمات صحيح؟",
-          "en": "Is the word order correct?"
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Nach der Arbeit ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Nach der Arbeit“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Nach der Arbeit ».",
+          "en": "Reorder the groups. Start with “Nach der Arbeit”."
         },
-        "statement": "Abend Am räume ich mein Zimmer auf ."
+        "tokens": [
+          "räumt",
+          "auf.",
+          "Paul die Küche",
+          "Nach der Arbeit"
+        ]
       },
       {
         "id": "kapitel-12-ubung-13-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "true_false",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "selection": "single",
-        "options": [
-          "muss Morgen ich früh aufstehen .",
-          "Morgen muss ich früh aufstehen ."
-        ]
+        "statement": "muss Morgen ich den Arzt anrufen."
       },
       {
         "id": "kapitel-12-ubung-13-q03",
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Choisissez la phrase attendue.",
-          "de": "Wählen Sie den richtigen Satz.",
-          "ar": "اختر الجملة الصحيحة.",
-          "en": "Choose the correct sentence."
+          "fr": "Choisissez la phrase affirmative correcte (pas une question).",
+          "de": "Wählen Sie den grammatisch richtigen Aussagesatz (keine Frage).",
+          "ar": "اختر الجملة الخبرية الصحيحة نحوياً (وليست سؤالاً).",
+          "en": "Choose the grammatical declarative sentence (not a question)."
         },
         "selection": "single",
         "options": [
-          "Gestern bin ich spät zurückgekommen .",
-          "bin Gestern ich spät zurückgekommen ."
+          "Am Abend hat Mila ihre Tasche gepackt.",
+          "Am Abend Mila ihre Tasche gepackt hat.",
+          "Hat am Abend Mila ihre Tasche gepackt.",
+          "Am hat Abend Mila ihre Tasche gepackt."
         ]
       }
     ]

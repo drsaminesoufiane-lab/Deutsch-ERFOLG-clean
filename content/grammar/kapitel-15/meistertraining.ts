@@ -5,10 +5,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 1,
     "title": {
-      "fr": "Nicht oder kein",
+      "fr": "Nicht ou kein",
       "de": "Nicht oder kein",
-      "ar": "Nicht oder kein",
-      "en": "Nicht oder kein"
+      "ar": "nicht أم kein",
+      "en": "Nicht or kein"
     },
     "description": {
       "fr": "Négation",
@@ -22,17 +22,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich komme ___ aus Sri Lanka.",
-          "de": "Ergänzen Sie. — Ich komme ___ aus Sri Lanka.",
-          "ar": "أكمل. — Ich komme ___ aus Sri Lanka.",
-          "en": "Complete. — Ich komme ___ aus Sri Lanka."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich komme ___ aus Sri Lanka.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich komme ___ aus Sri Lanka.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich komme ___ aus Sri Lanka.",
+          "en": "Complete with nicht or a form of kein. — Ich komme ___ aus Sri Lanka."
         },
         "selection": "single",
         "options": [
-          "kein",
-          "keinen",
+          "keinem",
           "nicht",
-          "keine"
+          "keine",
+          "keiner"
         ]
       },
       {
@@ -40,17 +40,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich bin ___ 23 Jahre alt.",
-          "de": "Ergänzen Sie. — Ich bin ___ 23 Jahre alt.",
-          "ar": "أكمل. — Ich bin ___ 23 Jahre alt.",
-          "en": "Complete. — Ich bin ___ 23 Jahre alt."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich bin ___ 23 Jahre alt.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich bin ___ 23 Jahre alt.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich bin ___ 23 Jahre alt.",
+          "en": "Complete with nicht or a form of kein. — Ich bin ___ 23 Jahre alt."
         },
         "selection": "single",
         "options": [
-          "kein",
-          "nicht",
           "keinen",
-          "keine"
+          "nicht",
+          "keinem",
+          "kein"
         ]
       },
       {
@@ -58,15 +58,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich wohne ___ in Köln.",
-          "de": "Ergänzen Sie. — Ich wohne ___ in Köln.",
-          "ar": "أكمل. — Ich wohne ___ in Köln.",
-          "en": "Complete. — Ich wohne ___ in Köln."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich wohne ___ in Köln.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich wohne ___ in Köln.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich wohne ___ in Köln.",
+          "en": "Complete with nicht or a form of kein. — Ich wohne ___ in Köln."
         },
         "selection": "single",
         "options": [
-          "keinen",
           "nicht",
+          "keinen",
           "kein",
           "keine"
         ]
@@ -76,10 +76,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Ich bin ___ verheiratet.",
         "blanks": 1
@@ -89,10 +89,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Ich habe ___ Kinder.",
         "blanks": 1
@@ -102,17 +102,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Das sind ___ meine Kinder.",
-          "de": "Ergänzen Sie. — Das sind ___ meine Kinder.",
-          "ar": "أكمل. — Das sind ___ meine Kinder.",
-          "en": "Complete. — Das sind ___ meine Kinder."
+          "fr": "Complétez avec nicht ou une forme de kein. — Das sind ___ meine Kinder.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Das sind ___ meine Kinder.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Das sind ___ meine Kinder.",
+          "en": "Complete with nicht or a form of kein. — Das sind ___ meine Kinder."
         },
         "selection": "single",
         "options": [
-          "kein",
-          "nicht",
+          "keiner",
+          "keinen",
           "keine",
-          "keinen"
+          "nicht"
         ]
       },
       {
@@ -120,46 +120,41 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Sie haben ___ Hunger.",
-          "de": "Ergänzen Sie. — Sie haben ___ Hunger.",
-          "ar": "أكمل. — Sie haben ___ Hunger.",
-          "en": "Complete. — Sie haben ___ Hunger."
+          "fr": "Complétez avec nicht ou une forme de kein. — Sie haben ___ Hunger.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Sie haben ___ Hunger.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Sie haben ___ Hunger.",
+          "en": "Complete with nicht or a form of kein. — Sie haben ___ Hunger."
         },
         "selection": "single",
         "options": [
           "keine",
-          "keinen",
-          "nicht",
-          "kein"
+          "kein",
+          "keiner",
+          "keinen"
         ]
       },
       {
         "id": "kapitel-15-ubung-01-q08",
         "position": 8,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Ich kaufe ___ Brot.",
-          "de": "Ergänzen Sie. — Ich kaufe ___ Brot.",
-          "ar": "أكمل. — Ich kaufe ___ Brot.",
-          "en": "Complete. — Ich kaufe ___ Brot."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
-        "selection": "single",
-        "options": [
-          "nicht",
-          "keine",
-          "kein",
-          "keinen"
-        ]
+        "sentence": "Ich kaufe ___ Brot.",
+        "blanks": 1
       },
       {
         "id": "kapitel-15-ubung-01-q09",
         "position": 9,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Ich bin ___ glücklich.",
         "blanks": 1
@@ -171,10 +166,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 2,
     "title": {
-      "fr": "Was passt",
+      "fr": "Choisir la négation",
       "de": "Was passt",
-      "ar": "Was passt",
-      "en": "Was passt"
+      "ar": "اختيار النفي",
+      "en": "Choose the negation"
     },
     "description": {
       "fr": "Négation",
@@ -188,17 +183,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Das ist ___ Hund, das ist eine Katze.",
-          "de": "Ergänzen Sie. — Das ist ___ Hund, das ist eine Katze.",
-          "ar": "أكمل. — Das ist ___ Hund, das ist eine Katze.",
-          "en": "Complete. — Das ist ___ Hund, das ist eine Katze."
+          "fr": "Complétez avec nicht ou une forme de kein. — Das ist ___ Hund, das ist eine Katze.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Das ist ___ Hund, das ist eine Katze.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Das ist ___ Hund, das ist eine Katze.",
+          "en": "Complete with nicht or a form of kein. — Das ist ___ Hund, das ist eine Katze."
         },
         "selection": "single",
         "options": [
-          "keinen",
           "keine",
-          "kein",
-          "nicht"
+          "keinem",
+          "nicht",
+          "kein"
         ]
       },
       {
@@ -206,16 +201,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Sie hat ___ Lust zu kochen.",
-          "de": "Ergänzen Sie. — Sie hat ___ Lust zu kochen.",
-          "ar": "أكمل. — Sie hat ___ Lust zu kochen.",
-          "en": "Complete. — Sie hat ___ Lust zu kochen."
+          "fr": "Complétez avec nicht ou une forme de kein. — Sie hat ___ Lust zu kochen.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Sie hat ___ Lust zu kochen.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Sie hat ___ Lust zu kochen.",
+          "en": "Complete with nicht or a form of kein. — Sie hat ___ Lust zu kochen."
         },
         "selection": "single",
         "options": [
-          "keine",
-          "nicht",
           "kein",
+          "nicht",
+          "keine",
           "keinen"
         ]
       },
@@ -224,17 +219,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Sie hat ___ Freund.",
-          "de": "Ergänzen Sie. — Sie hat ___ Freund.",
-          "ar": "أكمل. — Sie hat ___ Freund.",
-          "en": "Complete. — Sie hat ___ Freund."
+          "fr": "Complétez avec nicht ou une forme de kein. — Sie hat ___ Freund.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Sie hat ___ Freund.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Sie hat ___ Freund.",
+          "en": "Complete with nicht or a form of kein. — Sie hat ___ Freund."
         },
         "selection": "single",
         "options": [
-          "kein",
-          "nicht",
+          "keiner",
           "keine",
-          "keinen"
+          "keinen",
+          "keinem"
         ]
       },
       {
@@ -242,10 +237,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Er kann ___ kochen.",
         "blanks": 1
@@ -255,10 +250,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Wir gehen ___ ins Kino.",
         "blanks": 1
@@ -268,17 +263,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich kaufe ___ diese Schuhe.",
-          "de": "Ergänzen Sie. — Ich kaufe ___ diese Schuhe.",
-          "ar": "أكمل. — Ich kaufe ___ diese Schuhe.",
-          "en": "Complete. — Ich kaufe ___ diese Schuhe."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich kaufe ___ diese Schuhe.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich kaufe ___ diese Schuhe.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich kaufe ___ diese Schuhe.",
+          "en": "Complete with nicht or a form of kein. — Ich kaufe ___ diese Schuhe."
         },
         "selection": "single",
         "options": [
           "kein",
           "nicht",
           "keine",
-          "keinen"
+          "keinem"
         ]
       }
     ]
@@ -288,10 +283,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 3,
     "title": {
-      "fr": "Kein Mittagessen",
+      "fr": "Pas de déjeuner",
       "de": "Kein Mittagessen",
-      "ar": "Kein Mittagessen",
-      "en": "Kein Mittagessen"
+      "ar": "بدون غداء",
+      "en": "No lunch"
     },
     "description": {
       "fr": "Négation",
@@ -305,17 +300,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich kann ___ mitkommen.",
-          "de": "Ergänzen Sie. — Ich kann ___ mitkommen.",
-          "ar": "أكمل. — Ich kann ___ mitkommen.",
-          "en": "Complete. — Ich kann ___ mitkommen."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich kann ___ mitkommen.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich kann ___ mitkommen.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich kann ___ mitkommen.",
+          "en": "Complete with nicht or a form of kein. — Ich kann ___ mitkommen."
         },
         "selection": "single",
         "options": [
-          "keinen",
           "kein",
-          "keine",
-          "nicht"
+          "nicht",
+          "keiner",
+          "keinen"
         ]
       },
       {
@@ -323,17 +318,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich habe ___ Zeit.",
-          "de": "Ergänzen Sie. — Ich habe ___ Zeit.",
-          "ar": "أكمل. — Ich habe ___ Zeit.",
-          "en": "Complete. — Ich habe ___ Zeit."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich habe ___ Zeit.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich habe ___ Zeit.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich habe ___ Zeit.",
+          "en": "Complete with nicht or a form of kein. — Ich habe ___ Zeit."
         },
         "selection": "single",
         "options": [
-          "keine",
-          "kein",
+          "keinem",
           "keinen",
-          "nicht"
+          "keine",
+          "kein"
         ]
       },
       {
@@ -341,17 +336,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich habe ___ Hunger.",
-          "de": "Ergänzen Sie. — Ich habe ___ Hunger.",
-          "ar": "أكمل. — Ich habe ___ Hunger.",
-          "en": "Complete. — Ich habe ___ Hunger."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich habe ___ Hunger.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich habe ___ Hunger.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich habe ___ Hunger.",
+          "en": "Complete with nicht or a form of kein. — Ich habe ___ Hunger."
         },
         "selection": "single",
         "options": [
-          "kein",
+          "keinen",
           "keine",
           "nicht",
-          "keinen"
+          "keinem"
         ]
       },
       {
@@ -359,10 +354,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Das geht ___.",
         "blanks": 1
@@ -372,10 +367,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Ich arbeite ___ in dem Projekt.",
         "blanks": 1
@@ -385,17 +380,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich treffe ihn ___.",
-          "de": "Ergänzen Sie. — Ich treffe ihn ___.",
-          "ar": "أكمل. — Ich treffe ihn ___.",
-          "en": "Complete. — Ich treffe ihn ___."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich treffe ihn ___.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich treffe ihn ___.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich treffe ihn ___.",
+          "en": "Complete with nicht or a form of kein. — Ich treffe ihn ___."
         },
         "selection": "single",
         "options": [
-          "keinen",
-          "kein",
           "nicht",
-          "keine"
+          "kein",
+          "keinen",
+          "keinem"
         ]
       },
       {
@@ -403,46 +398,41 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich mache ___ Pause.",
-          "de": "Ergänzen Sie. — Ich mache ___ Pause.",
-          "ar": "أكمل. — Ich mache ___ Pause.",
-          "en": "Complete. — Ich mache ___ Pause."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich mache ___ Pause.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich mache ___ Pause.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich mache ___ Pause.",
+          "en": "Complete with nicht or a form of kein. — Ich mache ___ Pause."
         },
         "selection": "single",
         "options": [
-          "kein",
           "keine",
-          "keinen",
-          "nicht"
+          "keinem",
+          "kein",
+          "keinen"
         ]
       },
       {
         "id": "kapitel-15-ubung-03-q08",
         "position": 8,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Ich habe ___ Sekretärin.",
-          "de": "Ergänzen Sie. — Ich habe ___ Sekretärin.",
-          "ar": "أكمل. — Ich habe ___ Sekretärin.",
-          "en": "Complete. — Ich habe ___ Sekretärin."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
-        "selection": "single",
-        "options": [
-          "keine",
-          "keinen",
-          "kein",
-          "nicht"
-        ]
+        "sentence": "Ich habe ___ Sekretärin.",
+        "blanks": 1
       },
       {
         "id": "kapitel-15-ubung-03-q09",
         "position": 9,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Ich kann mittags ___ essen gehen.",
         "blanks": 1
@@ -452,10 +442,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 10,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Ich habe ___ Lust zu kochen.",
         "blanks": 1
@@ -465,14 +455,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 11,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Sandwiches schmecken mir ___.",
-          "de": "Ergänzen Sie. — Sandwiches schmecken mir ___.",
-          "ar": "أكمل. — Sandwiches schmecken mir ___.",
-          "en": "Complete. — Sandwiches schmecken mir ___."
+          "fr": "Complétez avec nicht ou une forme de kein. — Sandwiches schmecken mir ___.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Sandwiches schmecken mir ___.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Sandwiches schmecken mir ___.",
+          "en": "Complete with nicht or a form of kein. — Sandwiches schmecken mir ___."
         },
         "selection": "single",
         "options": [
-          "keinen",
+          "keiner",
           "keine",
           "nicht",
           "kein"
@@ -481,37 +471,32 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-15-ubung-03-q12",
         "position": 12,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Ich esse ___ Süßigkeiten.",
-          "de": "Ergänzen Sie. — Ich esse ___ Süßigkeiten.",
-          "ar": "أكمل. — Ich esse ___ Süßigkeiten.",
-          "en": "Complete. — Ich esse ___ Süßigkeiten."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
-        "selection": "single",
-        "options": [
-          "kein",
-          "keine",
-          "keinen",
-          "nicht"
-        ]
+        "sentence": "Ich esse ___ Süßigkeiten.",
+        "blanks": 1
       },
       {
         "id": "kapitel-15-ubung-03-q13",
         "position": 13,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich esse ___ Fast Food.",
-          "de": "Ergänzen Sie. — Ich esse ___ Fast Food.",
-          "ar": "أكمل. — Ich esse ___ Fast Food.",
-          "en": "Complete. — Ich esse ___ Fast Food."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich esse ___ Fast Food.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich esse ___ Fast Food.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich esse ___ Fast Food.",
+          "en": "Complete with nicht or a form of kein. — Ich esse ___ Fast Food."
         },
         "selection": "single",
         "options": [
-          "nicht",
           "kein",
           "keinen",
-          "keine"
+          "keine",
+          "keinem"
         ]
       },
       {
@@ -519,10 +504,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 14,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Ich möchte ___ zunehmen.",
         "blanks": 1
@@ -532,10 +517,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 15,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Das Essen ist ___ gesund.",
         "blanks": 1
@@ -543,20 +528,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-15-ubung-03-q16",
         "position": 16,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Sie müssen ___ Angst haben.",
-          "de": "Ergänzen Sie. — Sie müssen ___ Angst haben.",
-          "ar": "أكمل. — Sie müssen ___ Angst haben.",
-          "en": "Complete. — Sie müssen ___ Angst haben."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
-        "selection": "single",
-        "options": [
-          "nicht",
-          "kein",
-          "keinen",
-          "keine"
-        ]
+        "sentence": "Sie müssen ___ Angst haben.",
+        "blanks": 1
       }
     ]
   },
@@ -565,10 +545,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 4,
     "title": {
-      "fr": "Herr Negativ",
+      "fr": "Monsieur Négatif",
       "de": "Herr Negativ",
-      "ar": "Herr Negativ",
-      "en": "Herr Negativ"
+      "ar": "السيد السلبي",
+      "en": "Mr Negative"
     },
     "description": {
       "fr": "Négation",
@@ -582,17 +562,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich bin ___ jung. (nicht länger)",
-          "de": "Ergänzen Sie. — Ich bin ___ jung. (nicht länger)",
-          "ar": "أكمل. — Ich bin ___ jung. (nicht länger)",
-          "en": "Complete. — Ich bin ___ jung. (nicht länger)"
+          "fr": "Exprimez « ne…plus ». — Ich bin ___ jung.",
+          "de": "Drücken Sie aus, dass ein früherer Zustand beendet ist. — Ich bin ___ jung.",
+          "ar": "عبّر عن « لم يعد ». — Ich bin ___ jung.",
+          "en": "Express “no longer”. — Ich bin ___ jung."
         },
         "selection": "single",
         "options": [
           "nicht mehr",
-          "nie",
-          "keine",
-          "niemanden"
+          "ohne",
+          "niemand",
+          "nie"
         ]
       },
       {
@@ -600,17 +580,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich habe ___ Energie mehr.",
-          "de": "Ergänzen Sie. — Ich habe ___ Energie mehr.",
-          "ar": "أكمل. — Ich habe ___ Energie mehr.",
-          "en": "Complete. — Ich habe ___ Energie mehr."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich habe ___ Energie mehr.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich habe ___ Energie mehr.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich habe ___ Energie mehr.",
+          "en": "Complete with nicht or a form of kein. — Ich habe ___ Energie mehr."
         },
         "selection": "single",
         "options": [
-          "niemanden",
+          "keinem",
           "keine",
-          "nicht mehr",
-          "nichts"
+          "keinen",
+          "nicht"
         ]
       },
       {
@@ -618,17 +598,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich bin ___ glücklich. (niemals)",
-          "de": "Ergänzen Sie. — Ich bin ___ glücklich. (niemals)",
-          "ar": "أكمل. — Ich bin ___ glücklich. (niemals)",
-          "en": "Complete. — Ich bin ___ glücklich. (niemals)"
+          "fr": "Exprimez « jamais ». — Ich bin ___ glücklich.",
+          "de": "Drücken Sie „zu keiner Zeit“ aus. — Ich bin ___ glücklich.",
+          "ar": "عبّر عن « أبداً ». — Ich bin ___ glücklich.",
+          "en": "Express “never”. — Ich bin ___ glücklich."
         },
         "selection": "single",
         "options": [
-          "niemanden",
-          "nie",
-          "nicht mehr",
-          "keine"
+          "niemand",
+          "nichts",
+          "noch nicht",
+          "nie"
         ]
       },
       {
@@ -636,12 +616,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Exprimez « rien ».",
+          "de": "Verneinen Sie die Sache.",
+          "ar": "عبّر عن « لا شيء ».",
+          "en": "Express “nothing”."
         },
-        "sentence": "Ich finde ___ wunderbar. (keine Sache)",
+        "sentence": "Ich finde ___ wunderbar.",
         "blanks": 1
       },
       {
@@ -649,12 +629,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Exprimez « personne » avec la forme fléchie à l’accusatif.",
+          "de": "Verneinen Sie die Person mit der flektierten Akkusativform.",
+          "ar": "عبّر عن « لا أحد » بصيغة النصب المصرفة.",
+          "en": "Express “nobody” using the inflected accusative form."
         },
-        "sentence": "Ich liebe ___. (keine Person)",
+        "sentence": "Ich liebe ___.",
         "blanks": 1
       },
       {
@@ -662,17 +642,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich war noch ___ im Urlaub.",
-          "de": "Ergänzen Sie. — Ich war noch ___ im Urlaub.",
-          "ar": "أكمل. — Ich war noch ___ im Urlaub.",
-          "en": "Complete. — Ich war noch ___ im Urlaub."
+          "fr": "Exprimez « jamais ». — Ich war noch ___ im Urlaub.",
+          "de": "Drücken Sie „zu keiner Zeit“ aus. — Ich war noch ___ im Urlaub.",
+          "ar": "عبّر عن « أبداً ». — Ich war noch ___ im Urlaub.",
+          "en": "Express “never”. — Ich war noch ___ im Urlaub."
         },
         "selection": "single",
         "options": [
-          "nie",
+          "niemanden",
           "nichts",
-          "keine",
-          "niemanden"
+          "mehr",
+          "nie"
         ]
       },
       {
@@ -680,17 +660,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich nehme ___ mit Humor. (keine Sache)",
-          "de": "Ergänzen Sie. — Ich nehme ___ mit Humor. (keine Sache)",
-          "ar": "أكمل. — Ich nehme ___ mit Humor. (keine Sache)",
-          "en": "Complete. — Ich nehme ___ mit Humor. (keine Sache)"
+          "fr": "Exprimez « rien ». — Ich nehme ___ mit Humor.",
+          "de": "Verneinen Sie die Sache. — Ich nehme ___ mit Humor.",
+          "ar": "عبّر عن « لا شيء ». — Ich nehme ___ mit Humor.",
+          "en": "Express “nothing”. — Ich nehme ___ mit Humor."
         },
         "selection": "single",
         "options": [
-          "keine",
           "nichts",
-          "niemanden",
-          "nicht mehr"
+          "niemand",
+          "nie",
+          "ohne"
         ]
       }
     ]
@@ -700,10 +680,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 5,
     "title": {
-      "fr": "Negieren",
+      "fr": "Nier",
       "de": "Negieren",
-      "ar": "Negieren",
-      "en": "Negieren"
+      "ar": "النفي",
+      "en": "Negate"
     },
     "description": {
       "fr": "Négation",
@@ -717,17 +697,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich war noch ___ in Japan.",
-          "de": "Ergänzen Sie. — Ich war noch ___ in Japan.",
-          "ar": "أكمل. — Ich war noch ___ in Japan.",
-          "en": "Complete. — Ich war noch ___ in Japan."
+          "fr": "Exprimez « jamais ». — Ich war noch ___ in Japan.",
+          "de": "Drücken Sie „zu keiner Zeit“ aus. — Ich war noch ___ in Japan.",
+          "ar": "عبّر عن « أبداً ». — Ich war noch ___ in Japan.",
+          "en": "Express “never”. — Ich war noch ___ in Japan."
         },
         "selection": "single",
         "options": [
+          "noch nicht",
+          "mehr",
           "nie",
-          "nichts",
-          "ohne",
-          "Niemand"
+          "ohne"
         ]
       },
       {
@@ -735,17 +715,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich fahre ___ ins Ausland. (niemals)",
-          "de": "Ergänzen Sie. — Ich fahre ___ ins Ausland. (niemals)",
-          "ar": "أكمل. — Ich fahre ___ ins Ausland. (niemals)",
-          "en": "Complete. — Ich fahre ___ ins Ausland. (niemals)"
+          "fr": "Exprimez « jamais ». — Ich fahre ___ ins Ausland.",
+          "de": "Drücken Sie „zu keiner Zeit“ aus. — Ich fahre ___ ins Ausland.",
+          "ar": "عبّر عن « أبداً ». — Ich fahre ___ ins Ausland.",
+          "en": "Express “never”. — Ich fahre ___ ins Ausland."
         },
         "selection": "single",
         "options": [
-          "Niemand",
-          "ohne",
-          "mehr",
-          "nie"
+          "nie",
+          "noch nicht",
+          "niemand",
+          "niemanden"
         ]
       },
       {
@@ -753,17 +733,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — ___ fährt ins Ausland. (keine Person)",
-          "de": "Ergänzen Sie. — ___ fährt ins Ausland. (keine Person)",
-          "ar": "أكمل. — ___ fährt ins Ausland. (keine Person)",
-          "en": "Complete. — ___ fährt ins Ausland. (keine Person)"
+          "fr": "Exprimez « personne » comme sujet. — ___ fährt ins Ausland.",
+          "de": "Verneinen Sie die Person als Subjekt. — ___ fährt ins Ausland.",
+          "ar": "عبّر عن « لا أحد » كفاعل. — ___ fährt ins Ausland.",
+          "en": "Express “nobody” as subject. — ___ fährt ins Ausland."
         },
         "selection": "single",
         "options": [
-          "nichts",
-          "ohne",
+          "Ohne",
           "Niemand",
-          "mehr"
+          "Mehr",
+          "Nicht mehr"
         ]
       },
       {
@@ -771,12 +751,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Exprimez « rien ».",
+          "de": "Verneinen Sie die Sache.",
+          "ar": "عبّر عن « لا شيء ».",
+          "en": "Express “nothing”."
         },
-        "sentence": "Hier gibt es ___. (keine Sache)",
+        "sentence": "Hier gibt es ___.",
         "blanks": 1
       },
       {
@@ -784,12 +764,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Exprimez « ne…plus » avec kein.",
+          "de": "Drücken Sie mit kein aus, dass etwas nicht mehr vorhanden ist.",
+          "ar": "عبّر عن « لم يعد » باستخدام kein.",
+          "en": "Express “no longer” with kein."
         },
-        "sentence": "Wir haben keine Suppe ___. (nicht länger)",
+        "sentence": "Wir haben keine Suppe ___.",
         "blanks": 1
       },
       {
@@ -797,17 +777,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Salat mit Eiern oder ___ Eier? (ohne)",
-          "de": "Ergänzen Sie. — Salat mit Eiern oder ___ Eier? (ohne)",
-          "ar": "أكمل. — Salat mit Eiern oder ___ Eier? (ohne)",
-          "en": "Complete. — Salat mit Eiern oder ___ Eier? (ohne)"
+          "fr": "Exprimez l’absence des œufs. — Salat mit Eiern oder ___ Eier?",
+          "de": "Drücken Sie das Fehlen der Eier aus. — Salat mit Eiern oder ___ Eier?",
+          "ar": "عبّر عن عدم وجود البيض. — Salat mit Eiern oder ___ Eier?",
+          "en": "Express the absence of eggs. — Salat mit Eiern oder ___ Eier?"
         },
         "selection": "single",
         "options": [
-          "nie",
+          "nicht",
           "ohne",
-          "Niemand",
-          "mehr"
+          "kein",
+          "mit"
         ]
       }
     ]
@@ -817,10 +797,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 6,
     "title": {
-      "fr": "Kein deklinieren",
+      "fr": "Déclinaison de kein",
       "de": "Kein deklinieren",
-      "ar": "Kein deklinieren",
-      "en": "Kein deklinieren"
+      "ar": "تصريف kein",
+      "en": "Decline kein"
     },
     "description": {
       "fr": "Négation",
@@ -832,14 +812,27 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-15-ubung-06-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "matching",
         "prompt": {
-          "fr": "Complétez. — Ich habe ___ Auto.",
-          "de": "Ergänzen Sie. — Ich habe ___ Auto.",
-          "ar": "أكمل. — Ich habe ___ Auto.",
-          "en": "Complete. — Ich habe ___ Auto."
+          "fr": "Associez chaque élément à sa forme correcte.",
+          "de": "Ordnen Sie jedem Element die richtige Form zu.",
+          "ar": "صل كل عنصر بصيغته الصحيحة.",
+          "en": "Match each item to its correct form."
         },
-        "selection": "single",
+        "items": [
+          {
+            "id": "kapitel-15-ubung-06-q01-m1",
+            "label": "Ich habe ___ Auto."
+          },
+          {
+            "id": "kapitel-15-ubung-06-q01-m2",
+            "label": "Ich sehe ___ Mann."
+          },
+          {
+            "id": "kapitel-15-ubung-06-q01-m3",
+            "label": "Ich habe ___ Tasche."
+          }
+        ],
         "options": [
           "keine",
           "keinen",
@@ -851,16 +844,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich sehe ___ Mann.",
-          "de": "Ergänzen Sie. — Ich sehe ___ Mann.",
-          "ar": "أكمل. — Ich sehe ___ Mann.",
-          "en": "Complete. — Ich sehe ___ Mann."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich sehe ___ Mann.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich sehe ___ Mann.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich sehe ___ Mann.",
+          "en": "Complete with nicht or a form of kein. — Ich sehe ___ Mann."
         },
         "selection": "single",
         "options": [
-          "keine",
-          "kein",
-          "keinen"
+          "keinen",
+          "keiner",
+          "nicht",
+          "keinem"
         ]
       },
       {
@@ -868,16 +862,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich habe ___ Tasche.",
-          "de": "Ergänzen Sie. — Ich habe ___ Tasche.",
-          "ar": "أكمل. — Ich habe ___ Tasche.",
-          "en": "Complete. — Ich habe ___ Tasche."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich habe ___ Tasche.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich habe ___ Tasche.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich habe ___ Tasche.",
+          "en": "Complete with nicht or a form of kein. — Ich habe ___ Tasche."
         },
         "selection": "single",
         "options": [
-          "keinen",
-          "keine",
-          "kein"
+          "keiner",
+          "nicht",
+          "keinem",
+          "keine"
         ]
       },
       {
@@ -885,10 +880,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Ich spreche mit ___ Kollegen. (Plural)",
         "blanks": 1
@@ -902,7 +897,7 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "title": {
       "fr": "Nicht",
       "de": "Nicht",
-      "ar": "Nicht",
+      "ar": "النفي بـ nicht",
       "en": "Nicht"
     },
     "description": {
@@ -917,10 +912,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Das ist ___ teuer.",
         "blanks": 1
@@ -930,10 +925,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Ich wohne ___ in Bonn.",
         "blanks": 1
@@ -943,10 +938,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec nicht ou une forme de kein.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein.",
+          "ar": "أكمل بـ nicht أو صيغة من kein.",
+          "en": "Complete with nicht or a form of kein."
         },
         "sentence": "Ich kann heute ___ kommen.",
         "blanks": 1
@@ -958,10 +953,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 8,
     "title": {
-      "fr": "Nie und nichts",
+      "fr": "Nie et nichts",
       "de": "Nie und nichts",
-      "ar": "Nie und nichts",
-      "en": "Nie und nichts"
+      "ar": "nie وnichts",
+      "en": "Nie and nichts"
     },
     "description": {
       "fr": "Négation",
@@ -975,16 +970,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich esse ___. (keine Sache)",
-          "de": "Ergänzen Sie. — Ich esse ___. (keine Sache)",
-          "ar": "أكمل. — Ich esse ___. (keine Sache)",
-          "en": "Complete. — Ich esse ___. (keine Sache)"
+          "fr": "Sélectionnez les phrases qui expriment « rien ».",
+          "de": "Wählen Sie alle Sätze mit der Bedeutung „nichts“.",
+          "ar": "اختر كل الجمل التي تعبر عن « لا شيء ».",
+          "en": "Select all sentences that express “nothing”."
         },
-        "selection": "single",
+        "selection": "multiple",
         "options": [
-          "Niemand",
-          "nie",
-          "nichts"
+          "Ich esse nichts.",
+          "Ich kaufe nichts.",
+          "Ich kaufe nie.",
+          "Ich esse niemanden."
         ]
       },
       {
@@ -992,16 +988,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich rauche ___. (niemals)",
-          "de": "Ergänzen Sie. — Ich rauche ___. (niemals)",
-          "ar": "أكمل. — Ich rauche ___. (niemals)",
-          "en": "Complete. — Ich rauche ___. (niemals)"
+          "fr": "Exprimez « jamais ». — Ich rauche ___.",
+          "de": "Drücken Sie „zu keiner Zeit“ aus. — Ich rauche ___.",
+          "ar": "عبّر عن « أبداً ». — Ich rauche ___.",
+          "en": "Express “never”. — Ich rauche ___."
         },
         "selection": "single",
         "options": [
-          "Niemand",
-          "nie",
-          "nichts"
+          "nichts",
+          "nicht mehr",
+          "ohne",
+          "nie"
         ]
       },
       {
@@ -1009,16 +1006,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — ___ ist hier. (keine Person)",
-          "de": "Ergänzen Sie. — ___ ist hier. (keine Person)",
-          "ar": "أكمل. — ___ ist hier. (keine Person)",
-          "en": "Complete. — ___ ist hier. (keine Person)"
+          "fr": "Exprimez « personne » comme sujet. — ___ ist hier.",
+          "de": "Verneinen Sie die Person als Subjekt. — ___ ist hier.",
+          "ar": "عبّر عن « لا أحد » كفاعل. — ___ ist hier.",
+          "en": "Express “nobody” as subject. — ___ ist hier."
         },
         "selection": "single",
         "options": [
-          "Niemand",
-          "nichts",
-          "nie"
+          "Nichts",
+          "Noch nicht",
+          "Niemanden",
+          "Niemand"
         ]
       }
     ]
@@ -1028,10 +1026,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 9,
     "title": {
-      "fr": "Noch nicht und nicht mehr",
+      "fr": "Pas encore et ne…plus",
       "de": "Noch nicht und nicht mehr",
-      "ar": "Noch nicht und nicht mehr",
-      "en": "Noch nicht und nicht mehr"
+      "ar": "ليس بعد ولم يعد",
+      "en": "Not yet and no longer"
     },
     "description": {
       "fr": "Négation",
@@ -1043,35 +1041,31 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-15-ubung-09-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez. — Ich bin ___ fertig. (noch nicht fertig)",
-          "de": "Ergänzen Sie. — Ich bin ___ fertig. (noch nicht fertig)",
-          "ar": "أكمل. — Ich bin ___ fertig. (noch nicht fertig)",
-          "en": "Complete. — Ich bin ___ fertig. (noch nicht fertig)"
+          "fr": "La phrase exprime-t-elle correctement que l’action n’est pas encore terminée ?",
+          "de": "Drückt der Satz korrekt aus, dass die Handlung bisher nicht beendet ist?",
+          "ar": "هل تعبّر الجملة بشكل صحيح عن عدم انتهاء الفعل بعد؟",
+          "en": "Does the sentence correctly express that the action is not finished yet?"
         },
-        "selection": "single",
-        "options": [
-          "nicht mehr",
-          "noch nicht",
-          "mehr"
-        ]
+        "statement": "Ich bin noch nicht fertig."
       },
       {
         "id": "kapitel-15-ubung-09-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich arbeite hier ___. (nicht länger)",
-          "de": "Ergänzen Sie. — Ich arbeite hier ___. (nicht länger)",
-          "ar": "أكمل. — Ich arbeite hier ___. (nicht länger)",
-          "en": "Complete. — Ich arbeite hier ___. (nicht länger)"
+          "fr": "Exprimez « ne…plus ». — Ich arbeite hier ___.",
+          "de": "Drücken Sie aus, dass ein früherer Zustand beendet ist. — Ich arbeite hier ___.",
+          "ar": "عبّر عن « لم يعد ». — Ich arbeite hier ___.",
+          "en": "Express “no longer”. — Ich arbeite hier ___."
         },
         "selection": "single",
         "options": [
-          "noch nicht",
-          "mehr",
-          "nicht mehr"
+          "niemand",
+          "nicht mehr",
+          "nie",
+          "ohne"
         ]
       },
       {
@@ -1079,16 +1073,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich habe kein Geld ___.",
-          "de": "Ergänzen Sie. — Ich habe kein Geld ___.",
-          "ar": "أكمل. — Ich habe kein Geld ___.",
-          "en": "Complete. — Ich habe kein Geld ___."
+          "fr": "Exprimez « ne…plus » avec kein. — Ich habe kein Geld ___.",
+          "de": "Drücken Sie mit kein aus, dass etwas nicht mehr vorhanden ist. — Ich habe kein Geld ___.",
+          "ar": "عبّر عن « لم يعد » باستخدام kein. — Ich habe kein Geld ___.",
+          "en": "Express “no longer” with kein. — Ich habe kein Geld ___."
         },
         "selection": "single",
         "options": [
-          "mehr",
-          "noch nicht",
-          "nicht mehr"
+          "nie",
+          "nicht mehr",
+          "ohne",
+          "mehr"
         ]
       }
     ]
@@ -1098,10 +1093,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 10,
     "title": {
-      "fr": "Abschlusstest",
+      "fr": "Test final",
       "de": "Abschlusstest",
-      "ar": "Abschlusstest",
-      "en": "Abschlusstest"
+      "ar": "اختبار نهائي",
+      "en": "Final test"
     },
     "description": {
       "fr": "Négation",
@@ -1115,35 +1110,33 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ich trinke ___ Kaffee.",
-          "de": "Ergänzen Sie. — Ich trinke ___ Kaffee.",
-          "ar": "أكمل. — Ich trinke ___ Kaffee.",
-          "en": "Complete. — Ich trinke ___ Kaffee."
+          "fr": "Complétez avec nicht ou une forme de kein. — Ich trinke ___ Kaffee.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Ich trinke ___ Kaffee.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Ich trinke ___ Kaffee.",
+          "en": "Complete with nicht or a form of kein. — Ich trinke ___ Kaffee."
         },
         "selection": "single",
         "options": [
-          "nie",
-          "keinen",
-          "keine",
-          "nicht"
+          "keiner",
+          "nicht",
+          "keinem",
+          "keinen"
         ]
       },
       {
         "id": "kapitel-15-ubung-10-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "reorder",
         "prompt": {
-          "fr": "Complétez. — Er ist ___ müde.",
-          "de": "Ergänzen Sie. — Er ist ___ müde.",
-          "ar": "أكمل. — Er ist ___ müde.",
-          "en": "Complete. — Er ist ___ müde."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Heute ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Heute“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Heute ».",
+          "en": "Reorder the groups. Start with “Heute”."
         },
-        "selection": "single",
-        "options": [
-          "keine",
-          "nicht",
-          "nie",
-          "keinen"
+        "tokens": [
+          "ist",
+          "er nicht müde.",
+          "Heute"
         ]
       },
       {
@@ -1151,17 +1144,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Sie hat ___ Kinder.",
-          "de": "Ergänzen Sie. — Sie hat ___ Kinder.",
-          "ar": "أكمل. — Sie hat ___ Kinder.",
-          "en": "Complete. — Sie hat ___ Kinder."
+          "fr": "Complétez avec nicht ou une forme de kein. — Sie hat ___ Kinder.",
+          "de": "Ergänzen Sie nicht oder eine Form von kein. — Sie hat ___ Kinder.",
+          "ar": "أكمل بـ nicht أو صيغة من kein. — Sie hat ___ Kinder.",
+          "en": "Complete with nicht or a form of kein. — Sie hat ___ Kinder."
         },
         "selection": "single",
         "options": [
-          "nie",
-          "keine",
+          "kein",
           "nicht",
-          "keinen"
+          "keinem",
+          "keine"
         ]
       },
       {
@@ -1169,12 +1162,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Exprimez « jamais ».",
+          "de": "Drücken Sie „zu keiner Zeit“ aus.",
+          "ar": "عبّر عن « أبداً ».",
+          "en": "Express “never”."
         },
-        "sentence": "Wir gehen ___ dorthin. (niemals)",
+        "sentence": "Wir gehen ___ dorthin.",
         "blanks": 1
       }
     ]

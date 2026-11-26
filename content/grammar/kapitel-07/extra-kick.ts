@@ -5,102 +5,108 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "À la gare",
-      "de": "Am Bahnhof",
-      "ar": "في المحطة",
-      "en": "At the station"
+      "fr": "Un atelier de réparation",
+      "de": "In der Werkstatt",
+      "ar": "في ورشة الإصلاح",
+      "en": "At the workshop"
     },
     "description": {
-      "fr": "Entraînez la position du verbe.",
-      "de": "Üben Sie die Verbstellung.",
-      "ar": "تدرب على موقع الفعل.",
-      "en": "Practise verb position."
+      "fr": "Résolvez les situations inédites en appliquant la règle du chapitre.",
+      "de": "Lösen Sie neue Situationen mit der Grammatik des Kapitels.",
+      "ar": "حل مواقف جديدة بتطبيق قاعدة الفصل.",
+      "en": "Solve new situations using the chapter grammar."
     },
     "questions": [
       {
         "id": "kapitel-07-ubung-11-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
-        "sentence": "(abfahren) Wann ___ der Zug ___?",
+        "prompt": {
+          "fr": "Complétez selon la consigne.",
+          "de": "Ergänzen Sie nach der Angabe.",
+          "ar": "أكمل حسب التعليمات.",
+          "en": "Complete as instructed."
+        },
+        "sentence": "(abstellen) Der Kurier ___ das Fahrrad im Hof ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-11-q02",
         "position": 2,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
-        "sentence": "(umsteigen) Wir müssen in Köln ___.",
-        "blanks": 1
+        "prompt": {
+          "fr": "Complétez selon la consigne.",
+          "de": "Ergänzen Sie nach der Angabe.",
+          "ar": "أكمل حسب التعليمات.",
+          "en": "Complete as instructed."
+        },
+        "sentence": "(aufmachen) Die Tür ist verschlossen. ___ Sie bitte die Tür ___!",
+        "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-11-q03",
         "position": 3,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (zurückbringen) Ihr müsst die geliehenen Helme morgen ___.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (zurückbringen) Ihr müsst die geliehenen Helme morgen ___.",
+          "ar": "اختر الإجابة المناسبة للسياق. — (zurückbringen) Ihr müsst die geliehenen Helme morgen ___.",
+          "en": "Choose the correct answer in context. — (zurückbringen) Ihr müsst die geliehenen Helme morgen ___."
         },
-        "type": "fill_blank",
-        "sentence": "(einsteigen) ___ Sie bitte ___!",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "bringen zurück",
+          "zurückbringen"
+        ]
       },
       {
         "id": "kapitel-07-ubung-11-q04",
         "position": 4,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (weitergehen) Wir warten, weil die Führung gleich ___.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (weitergehen) Wir warten, weil die Führung gleich ___.",
+          "ar": "اختر الإجابة المناسبة للسياق. — (weitergehen) Wir warten, weil die Führung gleich ___.",
+          "en": "Choose the correct answer in context. — (weitergehen) Wir warten, weil die Führung gleich ___."
         },
-        "type": "fill_blank",
-        "sentence": "(ankommen) Ich rufe dich an, weil ich gleich ___.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "geht weiter",
+          "weitergeht"
+        ]
       },
       {
         "id": "kapitel-07-ubung-11-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
-        "sentence": "(abholen) Mein Bruder ___ mich ___.",
+        "prompt": {
+          "fr": "Complétez selon la consigne.",
+          "de": "Ergänzen Sie nach der Angabe.",
+          "ar": "أكمل حسب التعليمات.",
+          "en": "Complete as instructed."
+        },
+        "sentence": "(ausleihen) Die Touristinnen ___ Fahrräder ___.",
         "blanks": 2
       },
       {
+        "id": "kapitel-07-ubung-11-div-6",
+        "position": 6,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "Der Zug fährt pünktlich … → auf",
-          "Ich stehe früh … → ab",
-          "Der Zug fährt pünktlich … → ab",
-          "Wir kaufen im Supermarkt … → auf",
-          "Wir kaufen im Supermarkt … → ein",
-          "Ich stehe früh … → auf"
-        ],
-        "id": "kapitel-07-ubung-11-div-6",
-        "position": 6
+          "(aufsetzen) Du setzt die Mütze ___. → auf",
+          "(herkommen) Kommen Sie bitte ___! → weg",
+          "(festhalten) Der Junge hält das Seil ___. → an",
+          "(festhalten) Der Junge hält das Seil ___. → fest",
+          "(aufsetzen) Du setzt die Mütze ___. → ab",
+          "(herkommen) Kommen Sie bitte ___! → her"
+        ]
       }
     ]
   },
@@ -109,94 +115,103 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "À la maison",
-      "de": "Zu Hause",
-      "ar": "في المنزل",
-      "en": "At home"
+      "fr": "Une livraison imprévue",
+      "de": "Eine unerwartete Lieferung",
+      "ar": "توصيل غير متوقع",
+      "en": "An unexpected delivery"
     },
     "description": {
-      "fr": "Entraînez la position du verbe.",
-      "de": "Üben Sie die Verbstellung.",
-      "ar": "تدرب على موقع الفعل.",
-      "en": "Practise verb position."
+      "fr": "Résolvez les situations inédites en appliquant la règle du chapitre.",
+      "de": "Lösen Sie neue Situationen mit der Grammatik des Kapitels.",
+      "ar": "حل مواقف جديدة بتطبيق قاعدة الفصل.",
+      "en": "Solve new situations using the chapter grammar."
     },
     "questions": [
       {
         "id": "kapitel-07-ubung-12-q01",
         "position": 1,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (vorbeikommen) Kannst du nach der Arbeit ___?",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (vorbeikommen) Kannst du nach der Arbeit ___?",
+          "ar": "اختر الإجابة المناسبة للسياق. — (vorbeikommen) Kannst du nach der Arbeit ___?",
+          "en": "Choose the correct answer in context. — (vorbeikommen) Kannst du nach der Arbeit ___?"
         },
-        "type": "fill_blank",
-        "sentence": "(aufhängen) Du ___ die Wäsche ___.",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "vorbeikommen",
+          "kommst vorbei"
+        ]
       },
       {
         "id": "kapitel-07-ubung-12-q02",
         "position": 2,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
-        "sentence": "(aufräumen) Wir sollen das Zimmer ___.",
-        "blanks": 1
+        "prompt": {
+          "fr": "Complétez selon la consigne.",
+          "de": "Ergänzen Sie nach der Angabe.",
+          "ar": "أكمل حسب التعليمات.",
+          "en": "Complete as instructed."
+        },
+        "sentence": "(aufhängen) Die Helfer ___ die Schilder ___.",
+        "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-12-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
-        "sentence": "(ausschalten) ___ Sie das Licht ___!",
+        "prompt": {
+          "fr": "Complétez selon la consigne.",
+          "de": "Ergänzen Sie nach der Angabe.",
+          "ar": "أكمل حسب التعليمات.",
+          "en": "Complete as instructed."
+        },
+        "sentence": "(einräumen) Der Mitarbeiter ___ die Regale ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-12-q04",
         "position": 4,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (abziehen) Bevor ihr geht, müsst ihr den Stecker ___.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (abziehen) Bevor ihr geht, müsst ihr den Stecker ___.",
+          "ar": "اختر الإجابة المناسبة للسياق. — (abziehen) Bevor ihr geht, müsst ihr den Stecker ___.",
+          "en": "Choose the correct answer in context. — (abziehen) Bevor ihr geht, müsst ihr den Stecker ___."
         },
-        "type": "fill_blank",
-        "sentence": "(fernsehen) Er bleibt zu Hause, weil er ___.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "zieht ab",
+          "abziehen"
+        ]
       },
       {
         "id": "kapitel-07-ubung-12-q05",
         "position": 5,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (zurückschicken) Die Firma möchte das falsche Paket ___.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (zurückschicken) Die Firma möchte das falsche Paket ___.",
+          "ar": "اختر الإجابة المناسبة للسياق. — (zurückschicken) Die Firma möchte das falsche Paket ___.",
+          "en": "Choose the correct answer in context. — (zurückschicken) Die Firma möchte das falsche Paket ___."
         },
-        "type": "fill_blank",
-        "sentence": "(vorbereiten) Ich ___ das Essen ___.",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "schickt zurück",
+          "zurückschicken"
+        ]
       },
       {
+        "id": "kapitel-07-ubung-12-div-6",
+        "position": 6,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "Ich rufe dich morgen … → an",
-        "id": "kapitel-07-ubung-12-div-6",
-        "position": 6
+        "statement": "(herunterladen) Wir laden die Datei ___. → hoch"
       }
     ]
   },
@@ -205,125 +220,134 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Défi syntaxique",
-      "de": "Satzbau-Challenge",
-      "ar": "تحدي تركيب الجمل",
-      "en": "Sentence challenge"
+      "fr": "Organisation d’une réunion",
+      "de": "Eine Besprechung organisieren",
+      "ar": "تنظيم اجتماع",
+      "en": "Organising a meeting"
     },
     "description": {
-      "fr": "Entraînez la position du verbe.",
-      "de": "Üben Sie die Verbstellung.",
-      "ar": "تدرب على موقع الفعل.",
-      "en": "Practise verb position."
+      "fr": "Résolvez les situations inédites en appliquant la règle du chapitre.",
+      "de": "Lösen Sie neue Situationen mit der Grammatik des Kapitels.",
+      "ar": "حل مواقف جديدة بتطبيق قاعدة الفصل.",
+      "en": "Solve new situations using the chapter grammar."
     },
     "questions": [
       {
         "id": "kapitel-07-ubung-13-q01",
         "position": 1,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (auffallen) Das ist wichtig, weil der Fehler sonst nicht ___.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (auffallen) Das ist wichtig, weil der Fehler sonst nicht ___.",
+          "ar": "اختر الإجابة المناسبة للسياق. — (auffallen) Das ist wichtig, weil der Fehler sonst nicht ___.",
+          "en": "Choose the correct answer in context. — (auffallen) Das ist wichtig, weil der Fehler sonst nicht ___."
         },
-        "type": "fill_blank",
-        "sentence": "(stattfinden) Das Konzert ___ morgen ___.",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "fällt auf",
+          "auffällt"
+        ]
       },
       {
         "id": "kapitel-07-ubung-13-q02",
         "position": 2,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
-        "sentence": "(weiterarbeiten) Wir müssen ___.",
-        "blanks": 1
+        "prompt": {
+          "fr": "Complétez selon la consigne.",
+          "de": "Ergänzen Sie nach der Angabe.",
+          "ar": "أكمل حسب التعليمات.",
+          "en": "Complete as instructed."
+        },
+        "sentence": "(herausnehmen) ___ du das Heft aus der Tasche ___?",
+        "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-13-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
-        "sentence": "(zusammenarbeiten) Es klappt, weil wir ___.",
-        "blanks": 1
+        "prompt": {
+          "fr": "Complétez selon la consigne.",
+          "de": "Ergänzen Sie nach der Angabe.",
+          "ar": "أكمل حسب التعليمات.",
+          "en": "Complete as instructed."
+        },
+        "sentence": "(eintragen) Wir ___ die Namen in die Liste ___.",
+        "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-13-q04",
         "position": 4,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (teilnehmen) Die Nachbarin will an der Sitzung ___.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (teilnehmen) Die Nachbarin will an der Sitzung ___.",
+          "ar": "اختر الإجابة المناسبة للسياق. — (teilnehmen) Die Nachbarin will an der Sitzung ___.",
+          "en": "Choose the correct answer in context. — (teilnehmen) Die Nachbarin will an der Sitzung ___."
         },
-        "type": "fill_blank",
-        "sentence": "(weggehen) ___ du schon ___?",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "teilnehmen",
+          "nimmt teil"
+        ]
       },
       {
         "id": "kapitel-07-ubung-13-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
-        "sentence": "(vorlesen) Sie ___ den Kindern ___.",
+        "prompt": {
+          "fr": "Complétez selon la consigne.",
+          "de": "Ergänzen Sie nach der Angabe.",
+          "ar": "أكمل حسب التعليمات.",
+          "en": "Complete as instructed."
+        },
+        "sentence": "(vorbereiten) Morgen ___ ich den Raum für die Prüfung ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-13-q06",
         "position": 6,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. — (zusammenpacken) Packt bitte eure Sachen ___!",
+          "de": "Wählen Sie die passende Antwort im Kontext. — (zusammenpacken) Packt bitte eure Sachen ___!",
+          "ar": "اختر الإجابة المناسبة للسياق. — (zusammenpacken) Packt bitte eure Sachen ___!",
+          "en": "Choose the correct answer in context. — (zusammenpacken) Packt bitte eure Sachen ___!"
         },
-        "type": "fill_blank",
-        "sentence": "(zurückrufen) Ich möchte später ___.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "weiter",
+          "zusammen"
+        ]
       },
       {
+        "id": "kapitel-07-ubung-13-div-7",
+        "position": 7,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "Ich stehe früh …"
+            "label": "(ausruhen) Die Wanderer ruhen sich ___."
           },
           {
             "id": "i1",
-            "label": "Der Zug fährt pünktlich …"
+            "label": "(ankreuzen) Ihr kreuzt die richtige Lösung ___."
           },
           {
             "id": "i2",
-            "label": "Wir kaufen im Supermarkt …"
+            "label": "(abreißen) Der Arbeiter reißt die alte Tapete ___."
           }
         ],
         "options": [
-          "ein",
+          "an",
           "ab",
-          "auf"
-        ],
-        "id": "kapitel-07-ubung-13-div-7",
-        "position": 7
+          "aus"
+        ]
       }
     ]
   }

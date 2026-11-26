@@ -28,6 +28,7 @@ export default function ChapitreGrammairePage() {
   const { language, isRTL } = useLanguage()
   const params = useParams()
   const id = Array.isArray(params.numero) ? params.numero[0] : params.numero
+  const backHref = `/espace-etudiant/apprentissage/grammaire${id ? `#${encodeURIComponent(id)}` : ''}`
   const [payload, setPayload] = useState<{chapter:ChapterDefinition; attempts:Attempt[]; mandatory:{id:string;total:number}[]; unlocked:boolean; lockedSets:{id:string;title:LocalizedText;category:string}[]} | null>(null)
   const [tab, setTab] = useState('lesson')
   const [exerciseIndex, setExerciseIndex] = useState(0)
@@ -45,7 +46,7 @@ export default function ChapitreGrammairePage() {
     } catch(e) { setPayload(null); setError(e instanceof Error ? e.message : 'Erreur de chargement.') }
   }, [id])
   useEffect(() => { setTab('lesson'); setExerciseIndex(0); setPayload(null); void refresh() }, [refresh])
-  if (!payload || payload.chapter.id !== id) return <main className="p-8"><p>{error || 'Chargement…'}</p><Link href="/espace-etudiant/apprentissage/grammaire">Retour</Link>{error && <button onClick={()=>void refresh()}>Réessayer</button>}</main>
+  if (!payload || payload.chapter.id !== id) return <main className="p-8"><p>{error || 'Chargement…'}</p><Link href={backHref} scroll={false}>Retour</Link>{error && <button onClick={()=>void refresh()}>Réessayer</button>}</main>
   const {chapter,attempts,mandatory,unlocked,lockedSets} = payload
   const best = (id: string) => attempts.filter(a => a.exercise_set_id === id && a.score !== null).sort((a,b) => Number(b.score)-Number(a.score))[0]
   const total = mandatory.reduce((n,s)=>n+s.total,0)
@@ -57,8 +58,8 @@ export default function ChapitreGrammairePage() {
   const active = entries[index]
   const labels = ({fr:{prev:'Précédent',next:'Suivant',empty:'Aucune Übung disponible'},de:{prev:'Zurück',next:'Weiter',empty:'Keine Übungen verfügbar'},ar:{prev:'السابق',next:'التالي',empty:'لا توجد تمارين'},en:{prev:'Previous',next:'Next',empty:'No exercises available'}})[language]
   return <main className="premium-page min-h-screen" dir={isRTL ? 'rtl' : 'ltr'}><div className="grammar-page-shell mx-auto px-4 py-8">
-    <Link className="premium-back" href="/espace-etudiant/apprentissage/grammaire">← Retour aux chapitres</Link>
-    <header className="chapter-header my-8"><span className="studio-brand">DEUTSCH · ERFOLG / GRAMMATIK</span><span className="studio-chapter-number" aria-hidden="true">{String(chapter.number).padStart(2,'0')}.</span><span className="level-label">KAPITEL {String(chapter.number).padStart(2,'0')} · {chapter.level}</span><h1 className="chapter-title">{chapter.title[language]}</h1><p className="chapter-description">{chapter.subtitle[language]}</p></header>
+    <Link className="premium-back" href={backHref} scroll={false}>← Retour aux chapitres</Link>
+    <header className="chapter-header my-8"><span className="studio-brand">DEUTSCH · ERFOLG / GRAMMATIK</span><span className="studio-chapter-number" aria-hidden="true">{String(chapter.number).padStart(2,'0')}.</span><span className="level-label">KAPITEL {String(chapter.number).padStart(2,'0')} · {chapter.level}</span><h1 className="chapter-title" lang="de" dir="ltr">{chapter.title.de}</h1><p className="chapter-description">{chapter.subtitle[language]}</p></header>
     <section className="chapter-progress studio-progress-summary">
       {(() => {
         const t = {fr:['Note globale','Übungen réussies','Meilleur score','Voir détails','Note pondérée par le nombre de questions corrigées.','Bonnes réponses','Aucune tentative','Meistertraining uniquement'],de:['Gesamtnote','Gemeisterte Übungen','Bestes Ergebnis','Details anzeigen','Nach Anzahl der bewerteten Fragen gewichtet.','Richtige Antworten','Keine Versuche','Nur Meistertraining'],ar:['النتيجة الإجمالية','التمارين المتقنة','أفضل نتيجة','عرض التفاصيل','النتيجة موزونة حسب عدد الأسئلة المصححة.','الإجابات الصحيحة','لا توجد محاولات','التدريب الأساسي فقط'],en:['Overall score','Mastered exercises','Best score','View details','Weighted by the number of graded questions.','Correct answers','No attempts','Meistertraining only']}[language]
@@ -73,7 +74,7 @@ export default function ChapitreGrammairePage() {
     </section>
     {error && <p role="alert">{error} <button onClick={() => void refresh()}>Réessayer</button></p>}
     <nav className="chapter-tabs">{[['lesson','Lektion'],['meistertraining','Meistertraining'],['extra_kick',unlocked ? 'Extra-Kick' : '🔒 Extra-Kick']].map(([key,label]) => <button key={key} className={`chapter-tab ${tab === key ? 'chapter-tab-active' : ''}`} onClick={() => { if (tab !== key) { setTab(key); setExerciseIndex(0) } }}>{label}</button>)}</nav>
-    {tab === 'lesson' ? <LessonRenderer lesson={chapter.lesson}/> : tab === 'extra_kick' && !unlocked ? <p className="locked-panel">Obtenez 100/100 dans chaque Übung Meistertraining.</p> : entries.length === 0 ? <p className="empty-state">{labels.empty}</p> : <div className="grammar-pager">
+    {tab === 'lesson' ? <LessonRenderer lesson={chapter.lesson} onStart={() => { setTab('meistertraining'); setExerciseIndex(0); window.scrollTo({top:0,behavior:'smooth'}) }}/> : tab === 'extra_kick' && !unlocked ? <p className="locked-panel">Obtenez 100/100 dans chaque Übung Meistertraining.</p> : entries.length === 0 ? <p className="empty-state">{labels.empty}</p> : <div className="grammar-pager">
       <div className="grammar-pager-heading"><strong>Übung {index + 1} / {entries.length}</strong><div className="grammar-step-list">{entries.map((entry,i)=><button type="button" key={entry.id} aria-current={i===index ? "step" : undefined} className={i===index ? "current" : ""} onClick={()=>setExerciseIndex(i)}>{i+1}{entry.locked ? " 🔒" : Number(best(entry.id)?.score)===100 ? " ✓" : ""}</button>)}</div><div className="progress-track"><div className="progress-fill" style={{width: `${(index+1)/entries.length*100}%`}}/></div></div>
       {availableSets.map(s => <section key={s.id} className="exercise-card grammar-paged-card" hidden={active?.id !== s.id}><div className="grammar-exercise-layout"><div className="grammar-exercise-main"><ExerciseRenderer chapterId={chapter.id} exerciseSet={s} onAttempt={() => void refresh()}/></div><PerformanceHistory attempts={attempts.filter(a => a.exercise_set_id === s.id)} language={language}/></div></section>)}
       {active?.locked && <section className="locked-panel">🔒 {active.title[language]} — <Link href="/espace-etudiant/pro">PRO</Link></section>}

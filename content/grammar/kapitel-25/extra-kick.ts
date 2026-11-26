@@ -5,94 +5,112 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 1,
     "title": {
-      "fr": "Entraînement 11",
-      "de": "Übung 11",
-      "ar": "تمرين 11",
-      "en": "Practice 11"
+      "fr": "Bei der Wanderung",
+      "de": "Bei der Wanderung",
+      "ar": "Bei der Wanderung",
+      "en": "Bei der Wanderung"
     },
     "description": {
-      "de": "Perfekt mit sein",
-      "fr": "Passé composé avec sein",
-      "ar": "الماضي المركب مع sein",
-      "en": "Perfect with sein"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-25-ubung-11-q01",
         "position": 1,
-        "type": "reorder",
-        "tokens": [
-          "aufgewacht.",
-          "Er",
-          "ist"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Commencez par le sujet.",
-          "de": "Beginnen Sie mit dem Subjekt.",
-          "ar": "ابدأ بالفاعل.",
-          "en": "Start with the subject."
-        }
+          "fr": "Complétez les auxiliaires au Perfekt : haben ou sein, conjugué selon le sujet.",
+          "de": "Ergänzen Sie die Hilfsverben im Perfekt: haben oder sein, passend zum Subjekt.",
+          "ar": "أكمل الأفعال المساعدة في البيرفكت: haben أو sein حسب الفاعل.",
+          "en": "Complete the perfect auxiliaries: haben or sein, conjugated for the subject."
+        },
+        "sentence": "Bei der Wanderung ___ wir früh losgegangen und ___ einen Rucksack mitgenommen.",
+        "blanks": 2
       },
       {
         "id": "kapitel-25-ubung-11-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sind",
-          "haben",
-          "habt",
-          "seid"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Wir ___ angekommen.",
-          "de": "Wir ___ angekommen.",
-          "ar": "Wir ___ angekommen.",
-          "en": "Wir ___ angekommen."
-        }
+          "fr": "Complétez les auxiliaires au Perfekt : haben ou sein, conjugué selon le sujet.",
+          "de": "Ergänzen Sie die Hilfsverben im Perfekt: haben oder sein, passend zum Subjekt.",
+          "ar": "أكمل الأفعال المساعدة في البيرفكت: haben أو sein حسب الفاعل.",
+          "en": "Complete the perfect auxiliaries: haben or sein, conjugated for the subject."
+        },
+        "sentence": "Meine Freundin ___ auf dem Weg gestürzt, aber sie ___ sich nicht verletzt.",
+        "blanks": 2
       },
       {
         "id": "kapitel-25-ubung-11-q03",
         "position": 3,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sind",
-          "habt",
-          "haben",
-          "seid"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Ihr ___ eingeschlafen.",
-          "de": "Ihr ___ eingeschlafen.",
-          "ar": "Ihr ___ eingeschlafen.",
-          "en": "Ihr ___ eingeschlafen."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Wir sind den Berg hinaufgestiegen.",
+          "Wir haben den Berg hinaufgestiegen.",
+          "Wir haben oben Fotos gemacht.",
+          "Wir sind oben Fotos gemacht."
+        ]
       },
       {
         "id": "kapitel-25-ubung-11-q04",
         "position": 4,
-        "type": "fill_blank",
-        "sentence": "Die Kinder ___ geflogen.",
-        "blanks": 1,
+        "type": "matching",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Associez chaque élément à la forme correspondante.",
+          "de": "Ordnen Sie jedem Element die passende Form zu.",
+          "ar": "اربط كل عنصر بالصيغة المناسبة.",
+          "en": "Match each item to the corresponding form."
+        },
+        "items": [
+          {
+            "id": "0",
+            "label": "du, zurückkommen"
+          },
+          {
+            "id": "1",
+            "label": "ich, fotografieren"
+          },
+          {
+            "id": "2",
+            "label": "ihr, losgehen"
+          },
+          {
+            "id": "3",
+            "label": "er, sich ausruhen"
+          }
+        ],
+        "options": [
+          "bist",
+          "seid",
+          "hat",
+          "habe"
+        ]
       },
       {
         "id": "kapitel-25-ubung-11-q05",
         "position": 5,
-        "type": "true_false",
-        "statement": "Ich habe gearbeitet.",
+        "type": "reorder",
         "prompt": {
-          "fr": "Correct ?",
-          "de": "Richtig?",
-          "ar": "صحيح؟",
-          "en": "Correct?"
-        }
+          "fr": "Nach der Pause … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Nach der Pause … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Nach der Pause … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Nach der Pause … — Start with this chunk and reconstruct the sentence."
+        },
+        "tokens": [
+          "sind",
+          "Nach der Pause",
+          "wir weitergewandert."
+        ]
       }
     ]
   },
@@ -101,94 +119,86 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Entraînement 12",
-      "de": "Übung 12",
-      "ar": "تمرين 12",
-      "en": "Practice 12"
+      "fr": "Wohnungsbesichtigung",
+      "de": "Wohnungsbesichtigung",
+      "ar": "Wohnungsbesichtigung",
+      "en": "Wohnungsbesichtigung"
     },
     "description": {
-      "de": "Perfekt mit sein",
-      "fr": "Passé composé avec sein",
-      "ar": "الماضي المركب مع sein",
-      "en": "Perfect with sein"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-25-ubung-12-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "hat",
-          "bist",
-          "ist",
-          "hast"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Du ___ gefrühstückt.",
-          "de": "Du ___ gefrühstückt.",
-          "ar": "Du ___ gefrühstückt.",
-          "en": "Du ___ gefrühstückt."
-        }
+          "fr": "Complétez les auxiliaires au Perfekt : haben ou sein, conjugué selon le sujet.",
+          "de": "Ergänzen Sie die Hilfsverben im Perfekt: haben oder sein, passend zum Subjekt.",
+          "ar": "أكمل الأفعال المساعدة في البيرفكت: haben أو sein حسب الفاعل.",
+          "en": "Complete the perfect auxiliaries: haben or sein, conjugated for the subject."
+        },
+        "sentence": "Bei der Wohnungsbesichtigung ___ wir zu spät angekommen und ___ den Vermieter angerufen.",
+        "blanks": 2
       },
       {
         "id": "kapitel-25-ubung-12-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "hat",
-          "sind",
-          "haben",
-          "ist"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Er ___ gesprochen.",
-          "de": "Er ___ gesprochen.",
-          "ar": "Er ___ gesprochen.",
-          "en": "Er ___ gesprochen."
-        }
+          "fr": "Complétez les auxiliaires au Perfekt : haben ou sein, conjugué selon le sujet.",
+          "de": "Ergänzen Sie die Hilfsverben im Perfekt: haben oder sein, passend zum Subjekt.",
+          "ar": "أكمل الأفعال المساعدة في البيرفكت: haben أو sein حسب الفاعل.",
+          "en": "Complete the perfect auxiliaries: haben or sein, conjugated for the subject."
+        },
+        "sentence": "Er ___ aus dem Büro gekommen und ___ uns die Wohnung gezeigt.",
+        "blanks": 2
       },
       {
         "id": "kapitel-25-ubung-12-q03",
         "position": 3,
         "type": "fill_blank",
-        "sentence": "Wir ___ gesehen.",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Complétez les auxiliaires au Perfekt : haben ou sein, conjugué selon le sujet.",
+          "de": "Ergänzen Sie die Hilfsverben im Perfekt: haben oder sein, passend zum Subjekt.",
+          "ar": "أكمل الأفعال المساعدة في البيرفكت: haben أو sein حسب الفاعل.",
+          "en": "Complete the perfect auxiliaries: haben or sein, conjugated for the subject."
+        },
+        "sentence": "Die Vormieter ___ ausgezogen und ___ ihre Möbel verkauft.",
+        "blanks": 2
       },
       {
         "id": "kapitel-25-ubung-12-q04",
         "position": 4,
-        "type": "true_false",
-        "statement": "Ihr habt vergessen.",
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Correct ?",
-          "de": "Richtig?",
-          "ar": "صحيح؟",
-          "en": "Correct?"
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Wir sind den Vertrag unterschrieben.",
+          "Wir haben am Samstag eingezogen.",
+          "Wir haben den Vertrag unterschrieben.",
+          "Wir sind am Samstag eingezogen."
+        ]
       },
       {
         "id": "kapitel-25-ubung-12-q05",
         "position": 5,
-        "type": "reorder",
-        "tokens": [
-          "geöffnet.",
-          "Die Kinder",
-          "haben"
-        ],
+        "type": "true_false",
         "prompt": {
-          "fr": "Commencez par le sujet.",
-          "de": "Beginnen Sie mit dem Subjekt.",
-          "ar": "ابدأ بالفاعل.",
-          "en": "Start with the subject."
-        }
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
+        },
+        "statement": "Die neue Nachbarin ist uns gestern begegnet."
       }
     ]
   },
@@ -197,94 +207,90 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Entraînement 13",
-      "de": "Übung 13",
-      "ar": "تمرين 13",
-      "en": "Practice 13"
+      "fr": "Beim Konzert",
+      "de": "Beim Konzert",
+      "ar": "Beim Konzert",
+      "en": "Beim Konzert"
     },
     "description": {
-      "de": "Perfekt mit sein",
-      "fr": "Passé composé avec sein",
-      "ar": "الماضي المركب مع sein",
-      "en": "Perfect with sein"
+      "fr": "Défi inédit en contexte : résolvez plusieurs difficultés dans une même situation.",
+      "de": "Neue Kontext-Challenge: Lösen Sie mehrere Schwierigkeiten in einer Situation.",
+      "ar": "تحدّ جديد في السياق: حلّ عدة صعوبات في موقف واحد.",
+      "en": "New context challenge: solve several difficulties in one situation."
     },
     "questions": [
       {
         "id": "kapitel-25-ubung-13-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "bist",
-          "habe",
-          "bin",
-          "hast"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Ich ___ geholt.",
-          "de": "Ich ___ geholt.",
-          "ar": "Ich ___ geholt.",
-          "en": "Ich ___ geholt."
-        }
+          "fr": "Complétez les auxiliaires au Perfekt : haben ou sein, conjugué selon le sujet.",
+          "de": "Ergänzen Sie die Hilfsverben im Perfekt: haben oder sein, passend zum Subjekt.",
+          "ar": "أكمل الأفعال المساعدة في البيرفكت: haben أو sein حسب الفاعل.",
+          "en": "Complete the perfect auxiliaries: haben or sein, conjugated for the subject."
+        },
+        "sentence": "Beim Konzert ___ ich früh angekommen, aber meine Freunde ___ den Bus verpasst.",
+        "blanks": 2
       },
       {
         "id": "kapitel-25-ubung-13-q02",
         "position": 2,
         "type": "fill_blank",
-        "sentence": "Du ___ ausgepackt.",
-        "blanks": 1,
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
-        }
+          "fr": "Complétez les auxiliaires au Perfekt : haben ou sein, conjugué selon le sujet.",
+          "de": "Ergänzen Sie die Hilfsverben im Perfekt: haben oder sein, passend zum Subjekt.",
+          "ar": "أكمل الأفعال المساعدة في البيرفكت: haben أو sein حسب الفاعل.",
+          "en": "Complete the perfect auxiliaries: haben or sein, conjugated for the subject."
+        },
+        "sentence": "Der Sänger ___ auf die Bühne gekommen und ___ das Publikum begrüßt.",
+        "blanks": 2
       },
       {
         "id": "kapitel-25-ubung-13-q03",
         "position": 3,
-        "type": "true_false",
-        "statement": "Er hat besichtigt.",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Correct ?",
-          "de": "Richtig?",
-          "ar": "صحيح؟",
-          "en": "Correct?"
-        }
+          "fr": "Complétez les auxiliaires au Perfekt : haben ou sein, conjugué selon le sujet.",
+          "de": "Ergänzen Sie die Hilfsverben im Perfekt: haben oder sein, passend zum Subjekt.",
+          "ar": "أكمل الأفعال المساعدة في البيرفكت: haben أو sein حسب الفاعل.",
+          "en": "Complete the perfect auxiliaries: haben or sein, conjugated for the subject."
+        },
+        "sentence": "Ihr ___ bis Mitternacht getanzt und ___ danach nach Hause gelaufen.",
+        "blanks": 2
       },
       {
         "id": "kapitel-25-ubung-13-q04",
         "position": 4,
-        "type": "reorder",
-        "tokens": [
-          "gegessen.",
-          "Wir",
-          "haben"
-        ],
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Commencez par le sujet.",
-          "de": "Beginnen Sie mit dem Subjekt.",
-          "ar": "ابدأ بالفاعل.",
-          "en": "Start with the subject."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Der Strom ist ausgefallen.",
+          "Der Strom hat ausgefallen.",
+          "Die Techniker haben das Problem gelöst.",
+          "Die Techniker sind das Problem gelöst."
+        ]
       },
       {
         "id": "kapitel-25-ubung-13-q05",
         "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "habt",
-          "seid",
-          "sind",
-          "haben"
-        ],
+        "type": "reorder",
         "prompt": {
-          "fr": "Ihr ___ geschrieben.",
-          "de": "Ihr ___ geschrieben.",
-          "ar": "Ihr ___ geschrieben.",
-          "en": "Ihr ___ geschrieben."
-        }
+          "fr": "Nach dem Konzert … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Nach dem Konzert … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Nach dem Konzert … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Nach dem Konzert … — Start with this chunk and reconstruct the sentence."
+        },
+        "tokens": [
+          "sind",
+          "alle Gäste nach Hause gegangen.",
+          "Nach dem Konzert"
+        ]
       }
     ]
   }

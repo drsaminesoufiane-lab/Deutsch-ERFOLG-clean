@@ -11,10 +11,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
       "en": "Short dialogues"
     },
     "description": {
-      "fr": "Complétez les terminaisons.",
-      "de": "Ergänzen Sie die Endungen.",
-      "ar": "أكمل نهايات الأفعال.",
-      "en": "Complete the endings."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -29,39 +29,34 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "est",
-          "st",
           "t",
-          "e"
+          "st",
+          "e",
+          "en"
         ]
       },
       {
         "id": "k02-u1-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Ich komm___ aus Brasilien.",
-          "de": "Ergänzen Sie die Endungen. — Ich komm___ aus Brasilien.",
-          "ar": "أكمل نهايات الأفعال. — Ich komm___ aus Brasilien.",
-          "en": "Complete the endings. — Ich komm___ aus Brasilien."
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "e",
-          "est",
-          "en",
-          "t"
-        ]
+        "sentence": "Ich komm___ aus Brasilien.",
+        "blanks": 1
       },
       {
         "id": "k02-u1-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Er kommt aus Russland."
       },
@@ -103,10 +98,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "e",
           "est",
           "t",
-          "en"
+          "e",
+          "st"
         ]
       },
       {
@@ -121,10 +116,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
+          "st",
           "e",
           "en",
-          "t",
-          "st"
+          "t"
         ]
       },
       {
@@ -132,10 +127,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Wie heißt Sie?"
       },
@@ -168,20 +163,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "k02-u1-q11",
         "position": 11,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Ich komm___ aus Japan.",
-          "de": "Ergänzen Sie die Endungen. — Ich komm___ aus Japan.",
-          "ar": "أكمل نهايات الأفعال. — Ich komm___ aus Japan.",
-          "en": "Complete the endings. — Ich komm___ aus Japan."
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "e",
-          "t",
-          "st",
-          "en"
-        ]
+        "sentence": "Ich komm___ aus Japan.",
+        "blanks": 1
       },
       {
         "id": "k02-u1-q12",
@@ -195,8 +185,8 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
+          "en",
           "e",
-          "est",
           "t",
           "st"
         ]
@@ -206,10 +196,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 13,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Wir wohnen jetzt in Berlin."
       }
@@ -220,16 +210,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 2,
     "title": {
-      "fr": "Associations",
+      "fr": "Associer les formes",
       "de": "Was passt zusammen?",
-      "ar": "المطابقة",
-      "en": "Matching"
+      "ar": "مطابقة الصيغ",
+      "en": "Matching forms"
     },
     "description": {
-      "fr": "Complétez les terminaisons.",
-      "de": "Ergänzen Sie die Endungen.",
-      "ar": "أكمل نهايات الأفعال.",
-      "en": "Complete the endings."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -237,27 +227,27 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "matching",
         "prompt": {
-          "fr": "Associez les éléments selon le contexte.",
-          "de": "Ordnen Sie passend zu.",
-          "ar": "صل العناصر حسب السياق.",
-          "en": "Match using the context."
+          "fr": "Associez les formes aux sujets.",
+          "de": "Ordnen Sie die Formen den Subjekten zu.",
+          "ar": "صل الصيغ بالفاعلين.",
+          "en": "Match the forms to the subjects."
         },
         "items": [
           {
             "id": "i0",
-            "label": "Ich"
+            "label": "Ich (Deutschland)"
           },
           {
             "id": "i1",
-            "label": "Du"
+            "label": "Du (Hotel)"
           },
           {
             "id": "i2",
-            "label": "Er"
+            "label": "Er (Frankfurt)"
           },
           {
             "id": "i3",
-            "label": "Wir (aus Italien)"
+            "label": "Wir (Italien)"
           },
           {
             "id": "i4",
@@ -265,16 +255,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
           },
           {
             "id": "i5",
-            "label": "Ihr"
+            "label": "Ihr (Berlin)"
           }
         ],
         "options": [
-          "wohnt im Hotel.",
-          "heißen Schmidt, Frau Schmidt.",
-          "arbeite in Deutschland.",
-          "kommen aus Italien.",
           "arbeitet in Frankfurt.",
-          "wohnst im Hotel."
+          "wohnst im Hotel.",
+          "kommen aus Italien.",
+          "heißen Schmidt.",
+          "wohnt in Berlin.",
+          "arbeite in Deutschland."
         ]
       },
       {
@@ -314,16 +304,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 3,
     "title": {
-      "fr": "Terminaisons et associations",
+      "fr": "Terminaisons en contexte",
       "de": "Ergänzen und kombinieren",
-      "ar": "الإكمال والمطابقة",
-      "en": "Complete and match"
+      "ar": "النهايات في السياق",
+      "en": "Endings in context"
     },
     "description": {
-      "fr": "Complétez les terminaisons.",
-      "de": "Ergänzen Sie die Endungen.",
-      "ar": "أكمل نهايات الأفعال.",
-      "en": "Complete the endings."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -338,39 +328,34 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "en",
+          "st",
           "t",
-          "e",
-          "est"
+          "en",
+          "e"
         ]
       },
       {
         "id": "k02-u3-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Komm___ ihr mit ins Kino?",
-          "de": "Ergänzen Sie die Endungen. — Komm___ ihr mit ins Kino?",
-          "ar": "أكمل نهايات الأفعال. — Komm___ ihr mit ins Kino?",
-          "en": "Complete the endings. — Komm___ ihr mit ins Kino?"
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "st",
-          "e",
-          "t"
-        ]
+        "sentence": "Komm___ ihr mit ins Kino?",
+        "blanks": 1
       },
       {
         "id": "k02-u3-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Frau Tan kommt heute."
       },
@@ -412,10 +397,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "t",
-          "st",
           "e",
-          "est"
+          "t",
+          "en",
+          "st"
         ]
       },
       {
@@ -430,10 +415,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
+          "st",
           "en",
-          "est",
-          "e",
-          "t"
+          "t",
+          "e"
         ]
       },
       {
@@ -441,10 +426,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Ich verstehest dich nicht."
       },
@@ -477,20 +462,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "k02-u3-q11",
         "position": 11,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Sie komm___ um 19 Uhr an.",
-          "de": "Ergänzen Sie die Endungen. — Sie komm___ um 19 Uhr an.",
-          "ar": "أكمل نهايات الأفعال. — Sie komm___ um 19 Uhr an.",
-          "en": "Complete the endings. — Sie komm___ um 19 Uhr an."
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "e",
-          "est",
-          "t"
-        ]
+        "sentence": "Sie komm___ um 19 Uhr an.",
+        "blanks": 1
       },
       {
         "id": "k02-u3-match",
@@ -564,10 +544,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
       "en": "In German class"
     },
     "description": {
-      "fr": "Complétez les terminaisons.",
-      "de": "Ergänzen Sie die Endungen.",
-      "ar": "أكمل نهايات الأفعال.",
-      "en": "Complete the endings."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -582,39 +562,34 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "est",
-          "t",
+          "st",
+          "e",
           "en",
-          "st"
+          "t"
         ]
       },
       {
         "id": "k02-u4-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Pedro und Angelo komm___ aus Südamerika.",
-          "de": "Ergänzen Sie die Endungen. — Pedro und Angelo komm___ aus Südamerika.",
-          "ar": "أكمل نهايات الأفعال. — Pedro und Angelo komm___ aus Südamerika.",
-          "en": "Complete the endings. — Pedro und Angelo komm___ aus Südamerika."
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "st",
-          "e",
-          "est"
-        ]
+        "sentence": "Pedro und Angelo komm___ aus Südamerika.",
+        "blanks": 1
       },
       {
         "id": "k02-u4-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Maria, Pedro und Angelo lernen zusammen Deutsch."
       },
@@ -656,9 +631,9 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "t",
           "st",
-          "est",
+          "en",
+          "t",
           "e"
         ]
       },
@@ -674,10 +649,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "t",
-          "est",
           "en",
-          "st"
+          "st",
+          "e",
+          "t"
         ]
       },
       {
@@ -685,10 +660,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Maria tanze."
       },
@@ -727,14 +702,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "title": {
       "fr": "Un e-mail",
       "de": "Eine E-Mail",
-      "ar": "رسالة إلكترونية",
+      "ar": "بريد إلكتروني",
       "en": "An email"
     },
     "description": {
-      "fr": "Complétez les terminaisons.",
-      "de": "Ergänzen Sie die Endungen.",
-      "ar": "أكمل نهايات الأفعال.",
-      "en": "Complete the endings."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -749,39 +724,34 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "est",
           "st",
-          "t",
-          "e"
+          "en",
+          "e",
+          "t"
         ]
       },
       {
         "id": "k02-u5-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Woher kenn___ du ihn?",
-          "de": "Ergänzen Sie die Endungen. — Woher kenn___ du ihn?",
-          "ar": "أكمل نهايات الأفعال. — Woher kenn___ du ihn?",
-          "en": "Complete the endings. — Woher kenn___ du ihn?"
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "st",
-          "t",
-          "e"
-        ]
+        "sentence": "Woher kenn___ du ihn?",
+        "blanks": 1
       },
       {
         "id": "k02-u5-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Woher kommt er?"
       },
@@ -823,10 +793,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "e",
-          "est",
           "en",
-          "t"
+          "st",
+          "t",
+          "e"
         ]
       },
       {
@@ -841,10 +811,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
+          "t",
+          "en",
           "e",
-          "est",
-          "st",
-          "en"
+          "st"
         ]
       },
       {
@@ -889,50 +859,28 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "k02-u5-q11",
         "position": 11,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Ich freu___ mich schon.",
-          "de": "Ergänzen Sie die Endungen. — Ich freu___ mich schon.",
-          "ar": "أكمل نهايات الأفعال. — Ich freu___ mich schon.",
-          "en": "Complete the endings. — Ich freu___ mich schon."
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "st",
-          "en",
-          "est",
-          "e"
-        ]
+        "sentence": "Ich freu___ mich schon.",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-05-association",
         "position": 12,
-        "type": "matching",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Conjuguez hören au présent.",
+          "de": "Konjugieren Sie hören im Präsens.",
+          "ar": "صرّف hören في المضارع.",
+          "en": "Conjugate hören in the present tense."
         },
-        "items": [
-          {
-            "id": "i0",
-            "label": "ich kommen"
-          },
-          {
-            "id": "i1",
-            "label": "du kommen"
-          },
-          {
-            "id": "i2",
-            "label": "wir kommen"
-          }
-        ],
-        "options": [
-          "kommst",
-          "kommen",
-          "komme"
-        ]
+        "sentence": "Die Kinder ___ eine Geschichte. (hören)",
+        "blanks": 1
       }
     ]
   },
@@ -947,10 +895,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
       "en": "My working day"
     },
     "description": {
-      "fr": "Complétez les terminaisons.",
-      "de": "Ergänzen Sie die Endungen.",
-      "ar": "أكمل نهايات الأفعال.",
-      "en": "Complete the endings."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
@@ -966,28 +914,23 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "t",
-          "est",
+          "e",
           "st",
-          "e"
+          "en"
         ]
       },
       {
         "id": "k02-u6-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Ich schalt___ erst einmal den Computer ein.",
-          "de": "Ergänzen Sie die Endungen. — Ich schalt___ erst einmal den Computer ein.",
-          "ar": "أكمل نهايات الأفعال. — Ich schalt___ erst einmal den Computer ein.",
-          "en": "Complete the endings. — Ich schalt___ erst einmal den Computer ein."
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "est",
-          "t",
-          "e",
-          "en"
-        ]
+        "sentence": "Ich schalt___ erst einmal den Computer ein.",
+        "blanks": 1
       },
       {
         "id": "k02-u6-q03",
@@ -1053,10 +996,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         },
         "selection": "single",
         "options": [
-          "st",
-          "est",
           "e",
-          "en"
+          "en",
+          "st",
+          "t"
         ]
       },
       {
@@ -1064,10 +1007,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 8,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Meistens trinkest wir auch noch einen Kaffee zusammen."
       },
@@ -1113,21 +1056,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-02-ubung-06-multi",
         "position": 12,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "du kommen → kommst",
-          "du kommen → kommen",
-          "ich kommen → kommst",
-          "wir kommen → kommen",
-          "ich kommen → komme"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez toutes les associations correctes.",
-          "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
-          "en": "Select all correct pairs."
-        }
+          "fr": "Conjuguez schreiben au présent.",
+          "de": "Konjugieren Sie schreiben im Präsens.",
+          "ar": "صرّف schreiben في المضارع.",
+          "en": "Conjugate schreiben in the present tense."
+        },
+        "sentence": "Der Schüler ___ eine Frage. (schreiben)",
+        "blanks": 1
       }
     ]
   },
@@ -1136,78 +1073,68 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 7,
     "title": {
-      "fr": "Révision 7",
-      "de": "Wiederholung 7",
-      "ar": "مراجعة 7",
-      "en": "Review 7"
+      "fr": "Sujets et terminaisons",
+      "de": "Subjekt und Endung",
+      "ar": "الفاعل والنهاية",
+      "en": "Subjects and endings"
     },
     "description": {
-      "fr": "Révisez la conjugaison.",
-      "de": "Üben Sie die Konjugation.",
-      "ar": "راجع التصريف.",
-      "en": "Review conjugation."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-02-ubung-07-rev-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Das mach___ immer Spaß.",
-          "de": "Ergänzen Sie die Endungen. — Das mach___ immer Spaß.",
-          "ar": "أكمل نهايات الأفعال. — Das mach___ immer Spaß.",
-          "en": "Complete the endings. — Das mach___ immer Spaß."
+          "fr": "Conjuguez verpassen au présent.",
+          "de": "Konjugieren Sie verpassen im Präsens.",
+          "ar": "صرّف verpassen في المضارع.",
+          "en": "Conjugate verpassen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "st",
-          "t",
-          "e"
-        ]
+        "sentence": "Die Studentin ___ den Bus. (verpassen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-07-rev-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Wir wohn___ ganz in der Nähe.",
-          "de": "Ergänzen Sie die Endungen. — Wir wohn___ ganz in der Nähe.",
-          "ar": "أكمل نهايات الأفعال. — Wir wohn___ ganz in der Nähe.",
-          "en": "Complete the endings. — Wir wohn___ ganz in der Nähe."
+          "fr": "Conjuguez joggen au présent.",
+          "de": "Konjugieren Sie joggen im Präsens.",
+          "ar": "صرّف joggen في المضارع.",
+          "en": "Conjugate joggen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "t",
-          "e",
-          "st",
-          "en"
-        ]
+        "sentence": "Ich ___ jeden Montag im Park. (joggen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-07-rev-q03",
         "position": 3,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez heißen au présent.",
+          "de": "Konjugieren Sie heißen im Präsens.",
+          "ar": "صرّف heißen في المضارع.",
+          "en": "Conjugate heißen in the present tense."
         },
-        "sentence": "Ich öffn___ meine Mailbox und beantwort___ meine E-Mails.",
-        "blanks": 2
+        "sentence": "Wie ___ die neue Kollegin? (heißen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-07-rev-q04",
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez antworten au présent.",
+          "de": "Konjugieren Sie antworten im Präsens.",
+          "ar": "صرّف antworten في المضارع.",
+          "en": "Conjugate antworten in the present tense."
         },
-        "sentence": "Warum antwort___ du nicht?",
+        "sentence": "Ich ___ dir später. (antworten)",
         "blanks": 1
       },
       {
@@ -1215,49 +1142,39 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez fragen au présent.",
+          "de": "Konjugieren Sie fragen im Präsens.",
+          "ar": "صرّف fragen في المضارع.",
+          "en": "Conjugate fragen in the present tense."
         },
-        "sentence": "Ich arbeit___ heute bis acht.",
+        "sentence": "Du ___ nach dem Preis. (fragen)",
         "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-07-rev-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Ich kenn___ ihn jetzt seit vier Wochen.",
-          "de": "Ergänzen Sie die Endungen. — Ich kenn___ ihn jetzt seit vier Wochen.",
-          "ar": "أكمل نهايات الأفعال. — Ich kenn___ ihn jetzt seit vier Wochen.",
-          "en": "Complete the endings. — Ich kenn___ ihn jetzt seit vier Wochen."
+          "fr": "Conjuguez kommen au présent.",
+          "de": "Konjugieren Sie kommen im Präsens.",
+          "ar": "صرّف kommen في المضارع.",
+          "en": "Conjugate kommen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "est",
-          "e",
-          "st"
-        ]
+        "sentence": "Der Bus ___ gleich. (kommen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-07-rev-q07",
         "position": 7,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Dann geh___ sie in die Disko.",
-          "de": "Ergänzen Sie die Endungen. — Dann geh___ sie in die Disko.",
-          "ar": "أكمل نهايات الأفعال. — Dann geh___ sie in die Disko.",
-          "en": "Complete the endings. — Dann geh___ sie in die Disko."
+          "fr": "Conjuguez bezahlen au présent.",
+          "de": "Konjugieren Sie bezahlen im Präsens.",
+          "ar": "صرّف bezahlen في المضارع.",
+          "en": "Conjugate bezahlen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "t",
-          "en",
-          "est",
-          "e"
-        ]
+        "sentence": "Du ___ die Rechnung online. (bezahlen)",
+        "blanks": 1
       }
     ]
   },
@@ -1266,80 +1183,53 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 8,
     "title": {
-      "fr": "Révision 8",
-      "de": "Wiederholung 8",
-      "ar": "مراجعة 8",
-      "en": "Review 8"
+      "fr": "Dialogues et exceptions",
+      "de": "Dialoge und Ausnahmen",
+      "ar": "حوارات واستثناءات",
+      "en": "Dialogues and exceptions"
     },
     "description": {
-      "fr": "Révisez la conjugaison.",
-      "de": "Üben Sie die Konjugation.",
-      "ar": "راجع التصريف.",
-      "en": "Review conjugation."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-02-ubung-08-rev-q01",
         "position": 1,
-        "type": "matching",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les dialogues.",
-          "de": "Kombinieren Sie die Dialoge.",
-          "ar": "صل أجزاء الحوار.",
-          "en": "Match the dialogues."
+          "fr": "Conjuguez schneiden au présent.",
+          "de": "Konjugieren Sie schneiden im Präsens.",
+          "ar": "صرّف schneiden في المضارع.",
+          "en": "Conjugate schneiden in the present tense."
         },
-        "items": [
-          {
-            "id": "i0",
-            "label": "Wie heißt du?"
-          },
-          {
-            "id": "i1",
-            "label": "Kommt ihr mit ins Kino?"
-          },
-          {
-            "id": "i2",
-            "label": "Frau Tan kommt heute."
-          },
-          {
-            "id": "i3",
-            "label": "Warum antwortest du nicht?"
-          },
-          {
-            "id": "i4",
-            "label": "Tanzt du gerne?"
-          }
-        ],
-        "options": [
-          "Ja, aber mein Freund tanzt leider nicht.",
-          "Ich verstehe dich nicht.",
-          "Ja, sie kommt um 19 Uhr an.",
-          "Nein, leider nicht. Ich arbeite heute bis acht.",
-          "Ich heiße Alexander."
-        ]
+        "sentence": "Der Koch ___ das Gemüse. (schneiden)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-08-rev-q02",
         "position": 2,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez putzen au présent.",
+          "de": "Konjugieren Sie putzen im Präsens.",
+          "ar": "صرّف putzen في المضارع.",
+          "en": "Conjugate putzen in the present tense."
         },
-        "sentence": "Wir tanz___ gerne und geh___ gerne aus.",
-        "blanks": 2
+        "sentence": "Wir ___ am Sonntag die Wohnung. (putzen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-08-rev-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Mittags gehen wir zusammen essen."
       },
@@ -1348,13 +1238,13 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez lernen au présent.",
+          "de": "Konjugieren Sie lernen im Präsens.",
+          "ar": "صرّف lernen في المضارع.",
+          "en": "Conjugate lernen in the present tense."
         },
-        "sentence": "Angelo und Pedro red___ und trink___ eine Cola.",
-        "blanks": 2
+        "sentence": "Ich ___ die Aussprache. (lernen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-08-rev-q05",
@@ -1372,68 +1262,41 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-02-ubung-08-rev-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Ich komm___ aus Brasilien.",
-          "de": "Ergänzen Sie die Endungen. — Ich komm___ aus Brasilien.",
-          "ar": "أكمل نهايات الأفعال. — Ich komm___ aus Brasilien.",
-          "en": "Complete the endings. — Ich komm___ aus Brasilien."
+          "fr": "Conjuguez warten au présent.",
+          "de": "Konjugieren Sie warten im Präsens.",
+          "ar": "صرّف warten في المضارع.",
+          "en": "Conjugate warten in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "t",
-          "en",
-          "e",
-          "st"
-        ]
+        "sentence": "Die Gruppe ___ auf den Lehrer. (warten)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-08-rev-q07",
         "position": 7,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Wie heiß___ Sie?",
-          "de": "Ergänzen Sie die Endungen. — Wie heiß___ Sie?",
-          "ar": "أكمل نهايات الأفعال. — Wie heiß___ Sie?",
-          "en": "Complete the endings. — Wie heiß___ Sie?"
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "t",
-          "e",
-          "est"
-        ]
+        "sentence": "Wie heiß___ Sie?",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-08-association",
         "position": 8,
-        "type": "matching",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Conjuguez hören au présent.",
+          "de": "Konjugieren Sie hören im Präsens.",
+          "ar": "صرّف hören في المضارع.",
+          "en": "Conjugate hören in the present tense."
         },
-        "items": [
-          {
-            "id": "i0",
-            "label": "ich kommen"
-          },
-          {
-            "id": "i1",
-            "label": "du kommen"
-          },
-          {
-            "id": "i2",
-            "label": "wir kommen"
-          }
-        ],
-        "options": [
-          "kommst",
-          "komme",
-          "kommen"
-        ]
+        "sentence": "Ihr ___ gut zu. (hören)",
+        "blanks": 1
       }
     ]
   },
@@ -1442,63 +1305,53 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 9,
     "title": {
-      "fr": "Révision 9",
-      "de": "Wiederholung 9",
-      "ar": "مراجعة 9",
-      "en": "Review 9"
+      "fr": "Formes proches",
+      "de": "Ähnliche Formen",
+      "ar": "صيغ متشابهة",
+      "en": "Similar forms"
     },
     "description": {
-      "fr": "Révisez la conjugaison.",
-      "de": "Üben Sie die Konjugation.",
-      "ar": "راجع التصريف.",
-      "en": "Review conjugation."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-02-ubung-09-rev-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Die Kollegen erzähl___ lustige Geschichten.",
-          "de": "Ergänzen Sie die Endungen. — Die Kollegen erzähl___ lustige Geschichten.",
-          "ar": "أكمل نهايات الأفعال. — Die Kollegen erzähl___ lustige Geschichten.",
-          "en": "Complete the endings. — Die Kollegen erzähl___ lustige Geschichten."
+          "fr": "Conjuguez sammeln au présent.",
+          "de": "Konjugieren Sie sammeln im Präsens.",
+          "ar": "صرّف sammeln في المضارع.",
+          "en": "Conjugate sammeln in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "st",
-          "en",
-          "e",
-          "t"
-        ]
+        "sentence": "Ihr ___ die Bilder. (sammeln)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-09-rev-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Frau Tan komm___ heute.",
-          "de": "Ergänzen Sie die Endungen. — Frau Tan komm___ heute.",
-          "ar": "أكمل نهايات الأفعال. — Frau Tan komm___ heute.",
-          "en": "Complete the endings. — Frau Tan komm___ heute."
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "est",
-          "en",
-          "t",
-          "e"
-        ]
+        "sentence": "Frau Tan komm___ heute.",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-09-rev-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Meine Frau kommt aus den USA."
       },
@@ -1507,12 +1360,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez sitzen au présent.",
+          "de": "Konjugieren Sie sitzen im Präsens.",
+          "ar": "صرّف sitzen في المضارع.",
+          "en": "Conjugate sitzen in the present tense."
         },
-        "sentence": "Woher kenn___ du ihn?",
+        "sentence": "Die Eltern ___ auf dem Balkon. (sitzen)",
         "blanks": 1
       },
       {
@@ -1520,68 +1373,52 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez telefonieren au présent.",
+          "de": "Konjugieren Sie telefonieren im Präsens.",
+          "ar": "صرّف telefonieren في المضارع.",
+          "en": "Conjugate telefonieren in the present tense."
         },
-        "sentence": "Manchmal frag___ ich sie: Arbeit___ ihr eigentlich auch?",
-        "blanks": 2
+        "sentence": "Frau Jung, ___ Sie in der Pause? (telefonieren)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-09-rev-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Er komm___ aus Russland.",
-          "de": "Ergänzen Sie die Endungen. — Er komm___ aus Russland.",
-          "ar": "أكمل نهايات الأفعال. — Er komm___ aus Russland.",
-          "en": "Complete the endings. — Er komm___ aus Russland."
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "t",
-          "est",
-          "en",
-          "e"
-        ]
+        "sentence": "Er komm___ aus Russland.",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-09-rev-q07",
         "position": 7,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Ich arbeit___ bei der Post.",
-          "de": "Ergänzen Sie die Endungen. — Ich arbeit___ bei der Post.",
-          "ar": "أكمل نهايات الأفعال. — Ich arbeit___ bei der Post.",
-          "en": "Complete the endings. — Ich arbeit___ bei der Post."
+          "fr": "Conjuguez üben au présent.",
+          "de": "Konjugieren Sie üben im Präsens.",
+          "ar": "صرّف üben في المضارع.",
+          "en": "Conjugate üben in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "e",
-          "t",
-          "en",
-          "est"
-        ]
+        "sentence": "Der Student ___ jeden Tag. (üben)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-09-multi",
         "position": 8,
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "du kommen → kommen",
-          "ich kommen → kommst",
-          "wir kommen → kommen",
-          "ich kommen → komme",
-          "du kommen → kommst"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Sélectionnez toutes les associations correctes.",
-          "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
-          "en": "Select all correct pairs."
-        }
+          "fr": "Conjuguez hören au présent.",
+          "de": "Konjugieren Sie hören im Präsens.",
+          "ar": "صرّف hören في المضارع.",
+          "en": "Conjugate hören in the present tense."
+        },
+        "sentence": "Du ___ die Musik zu laut. (hören)",
+        "blanks": 1
       }
     ]
   },
@@ -1590,63 +1427,53 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 10,
     "title": {
-      "fr": "Révision 10",
-      "de": "Wiederholung 10",
-      "ar": "مراجعة 10",
-      "en": "Review 10"
+      "fr": "Test de maîtrise",
+      "de": "Abschlusstest",
+      "ar": "اختبار الإتقان",
+      "en": "Mastery test"
     },
     "description": {
-      "fr": "Révisez la conjugaison.",
-      "de": "Üben Sie die Konjugation.",
-      "ar": "راجع التصريف.",
-      "en": "Review conjugation."
+      "fr": "Appliquez les règles dans des phrases allemandes. Vérifiez le contexte et la forme.",
+      "de": "Wenden Sie die Regeln in deutschen Sätzen an. Achten Sie auf Kontext und Form.",
+      "ar": "طبّق القواعد في جمل ألمانية وانتبه إلى السياق والصيغة.",
+      "en": "Apply the rules in German sentences. Pay attention to context and form."
     },
     "questions": [
       {
         "id": "kapitel-02-ubung-10-rev-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Woher komm___ er?",
-          "de": "Ergänzen Sie die Endungen. — Woher komm___ er?",
-          "ar": "أكمل نهايات الأفعال. — Woher komm___ er?",
-          "en": "Complete the endings. — Woher komm___ er?"
+          "fr": "Écrivez uniquement la terminaison.",
+          "de": "Schreiben Sie nur die Endung.",
+          "ar": "اكتب النهاية فقط.",
+          "en": "Write only the ending."
         },
-        "selection": "single",
-        "options": [
-          "st",
-          "est",
-          "t",
-          "en"
-        ]
+        "sentence": "Woher komm___ er?",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-10-rev-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Pedro und Angelo komm___ aus Südamerika.",
-          "de": "Ergänzen Sie die Endungen. — Pedro und Angelo komm___ aus Südamerika.",
-          "ar": "أكمل نهايات الأفعال. — Pedro und Angelo komm___ aus Südamerika.",
-          "en": "Complete the endings. — Pedro und Angelo komm___ aus Südamerika."
+          "fr": "Conjuguez suchen au présent.",
+          "de": "Konjugieren Sie suchen im Präsens.",
+          "ar": "صرّف suchen في المضارع.",
+          "en": "Conjugate suchen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "est",
-          "t",
-          "e",
-          "en"
-        ]
+        "sentence": "Wir ___ eine neue Wohnung. (suchen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-10-rev-q03",
         "position": 3,
         "type": "true_false",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "La phrase est-elle grammaticalement correcte ?",
+          "de": "Ist der Satz grammatisch richtig?",
+          "ar": "هل الجملة صحيحة نحوياً؟",
+          "en": "Is the sentence grammatically correct?"
         },
         "statement": "Ich arbeite heute bis acht."
       },
@@ -1655,12 +1482,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez bestellen au présent.",
+          "de": "Konjugieren Sie bestellen im Präsens.",
+          "ar": "صرّف bestellen في المضارع.",
+          "en": "Conjugate bestellen in the present tense."
         },
-        "sentence": "Ich freu___ mich schon.",
+        "sentence": "Ihr ___ die Getränke. (bestellen)",
         "blanks": 1
       },
       {
@@ -1668,49 +1495,39 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons.",
-          "de": "Ergänzen Sie die Endungen.",
-          "ar": "أكمل نهايات الأفعال.",
-          "en": "Complete the endings."
+          "fr": "Conjuguez tanzen au présent.",
+          "de": "Konjugieren Sie tanzen im Präsens.",
+          "ar": "صرّف tanzen في المضارع.",
+          "en": "Conjugate tanzen in the present tense."
         },
-        "sentence": "Frau Richter komm___ eine halbe Stunde später.",
+        "sentence": "Die Nachbarn ___ zusammen. (tanzen)",
         "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-10-rev-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Ich heiß___ Alexander.",
-          "de": "Ergänzen Sie die Endungen. — Ich heiß___ Alexander.",
-          "ar": "أكمل نهايات الأفعال. — Ich heiß___ Alexander.",
-          "en": "Complete the endings. — Ich heiß___ Alexander."
+          "fr": "Conjuguez packen au présent.",
+          "de": "Konjugieren Sie packen im Präsens.",
+          "ar": "صرّف packen في المضارع.",
+          "en": "Conjugate packen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "e",
-          "est",
-          "st"
-        ]
+        "sentence": "Die Verkäuferin ___ die Ware. (packen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-02-ubung-10-rev-q07",
         "position": 7,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez les terminaisons. — Die Kollegen erzähl___ lustige Geschichten.",
-          "de": "Ergänzen Sie die Endungen. — Die Kollegen erzähl___ lustige Geschichten.",
-          "ar": "أكمل نهايات الأفعال. — Die Kollegen erzähl___ lustige Geschichten.",
-          "en": "Complete the endings. — Die Kollegen erzähl___ lustige Geschichten."
+          "fr": "Conjuguez arbeiten au présent.",
+          "de": "Konjugieren Sie arbeiten im Präsens.",
+          "ar": "صرّف arbeiten في المضارع.",
+          "en": "Conjugate arbeiten in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "en",
-          "t",
-          "est",
-          "st"
-        ]
+        "sentence": "Du ___ am Samstag. (arbeiten)",
+        "blanks": 1
       }
     ]
   }

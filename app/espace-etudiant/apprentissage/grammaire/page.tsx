@@ -2,7 +2,7 @@
 'use client'
 
 import { useLanguage } from '@/contexts/LanguageContext'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import {
@@ -39,6 +39,7 @@ export default function GrammairePage() {
   const [niveauFiltre, setNiveauFiltre] = useState('all')
   const [chargement, setChargement] = useState(true)
   const [erreur, setErreur] = useState('')
+  const restoredChapter = useRef<string | null>(null)
 
   // CHARGEMENT DU PROFIL
 
@@ -98,7 +99,7 @@ export default function GrammairePage() {
         const result = await response.json()
         if (!response.ok) throw new Error(result.error)
         if (actif) {
-          setChapitres(result.chapters.map((c: Pick<ChapterDefinition,'id'|'number'|'title'|'subtitle'|'level'> & {locked:boolean}) => ({id:c.id,numero:c.number,titre:c.title[language],theme:c.subtitle[language],level:c.level,locked:c.locked})))
+          setChapitres(result.chapters.map((c: Pick<ChapterDefinition,'id'|'number'|'title'|'subtitle'|'level'> & {locked:boolean}) => ({id:c.id,numero:c.number,titre:c.title.de,theme:c.subtitle[language],level:c.level,locked:c.locked})))
           setErreur('')
         }
       } catch (e) { if (actif) { setChapitres([]); setErreur(e instanceof Error ? e.message : 'Erreur de chargement.') } }
@@ -122,6 +123,30 @@ export default function GrammairePage() {
 
     return correspondRecherche && correspondNiveau
   })
+
+  // Le fragment indique le chapitre à retrouver après le chargement asynchrone.
+  useEffect(() => {
+    if (chargement || erreur) return
+    const anchor = window.location.hash.slice(1)
+    if (!/^kapitel-\d+$/.test(anchor)) {
+      restoredChapter.current = null
+      return
+    }
+    if (restoredChapter.current === anchor || !chapitres.some(c => c.id === anchor)) return
+
+    // Si un filtre conservé masque la carte, la rendre visible avant le scroll.
+    const target = document.getElementById(anchor)
+    if (!target) {
+      if (recherche) setRecherche('')
+      if (niveauFiltre !== 'all') setNiveauFiltre('all')
+      return
+    }
+    const frame = window.requestAnimationFrame(() => {
+      target.scrollIntoView({ block: 'center', inline: 'nearest', behavior: 'instant' })
+      restoredChapter.current = anchor
+    })
+    return () => window.cancelAnimationFrame(frame)
+  }, [chargement, erreur, chapitres, recherche, niveauFiltre])
 
   return (
     <div
@@ -341,6 +366,7 @@ export default function GrammairePage() {
 
                   <Link
                     key={chapitre.id}
+                    id={chapitre.id}
                     href={`/espace-etudiant/apprentissage/grammaire/${chapitre.id}`}
                     className="grammar-chapter-card"
                   >
@@ -363,7 +389,7 @@ export default function GrammairePage() {
                         {g.chapter} {String(chapitre.numero).padStart(2, '0')}
                       </span>
 
-                      <h3>
+                      <h3 lang="de" dir="ltr">
                         {chapitre.titre || `${g.chapter} ${chapitre.numero}`}
                       </h3>
 
@@ -787,6 +813,12 @@ export default function GrammairePage() {
           text-decoration: none;
           color: inherit;
           transition: .22s ease;
+        }
+
+        .grammar-chapter-card:target {
+          border-color: #D6B56D;
+          outline: 2px solid #D6B56D;
+          outline-offset: 2px;
         }
 
         .grammar-chapter-card:hover {

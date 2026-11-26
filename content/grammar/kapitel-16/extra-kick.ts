@@ -11,65 +11,72 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "Extra: Bahnhof"
     },
     "description": {
-      "fr": "accusatif",
-      "de": "Akkusativ",
-      "ar": "النصب",
-      "en": "accusative"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-16-ubung-11-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "der",
-          "den",
-          "dem",
-          "das"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Zug nehme ich heute nicht.",
-          "de": "Wählen Sie den definit Artikel: ___ Zug nehme ich heute nicht.",
-          "ar": "اختر الأداة معرف: ___ Zug nehme ich heute nicht.",
-          "en": "Choose the definite article: ___ Zug nehme ich heute nicht."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Am Bahnhof suche ich ___ Schalter (m., bestimmt). ___ Schalter ist neben dem Eingang.",
+        "blanks": 2
       },
       {
         "id": "kapitel-16-ubung-11-q02",
         "position": 2,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "dem",
-          "das",
-          "den",
-          "der"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Zug fährt um neun Uhr.",
-          "de": "Wählen Sie den definit Artikel: ___ Zug fährt um neun Uhr.",
-          "ar": "اختر الأداة معرف: ___ Zug fährt um neun Uhr.",
-          "en": "Choose the definite article: ___ Zug fährt um neun Uhr."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Den Koffer steht am Eingang.",
+          "Dem Koffer trägt der Mann.",
+          "Den Koffer trägt der Mann.",
+          "Der Koffer steht am Eingang."
+        ]
       },
       {
         "id": "kapitel-16-ubung-11-q03",
         "position": 3,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "mein",
-          "meinen",
-          "meinem",
-          "meine"
-        ],
+        "type": "matching",
         "prompt": {
-          "fr": "Choisissez l’article possessif mein : Ich finde ___ Pass nicht.",
-          "de": "Wählen Sie den Possessivartikel mein Artikel: Ich finde ___ Pass nicht.",
-          "ar": "اختر الأداة ملكية mein: Ich finde ___ Pass nicht.",
-          "en": "Choose the possessive mein article: Ich finde ___ Pass nicht."
-        }
+          "fr": "Associez chaque phrase à la forme qui convient.",
+          "de": "Ordnen Sie jedem Satz die passende Form zu.",
+          "ar": "اربط كل جملة بالصيغة المناسبة.",
+          "en": "Match each sentence with the appropriate form."
+        },
+        "items": [
+          {
+            "id": "0",
+            "label": "___ Fahrkarte kaufe ich. (bestimmt)"
+          },
+          {
+            "id": "1",
+            "label": "___ Fahrplan hängt hier. (bestimmt)"
+          },
+          {
+            "id": "2",
+            "label": "___ Gleis finde ich nicht. (bestimmt)"
+          }
+        ],
+        "options": [
+          "Der",
+          "Das",
+          "Die"
+        ]
       }
     ]
   },
@@ -84,60 +91,58 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "Extra: Wohnung"
     },
     "description": {
-      "fr": "accusatif",
-      "de": "Akkusativ",
-      "ar": "النصب",
-      "en": "accusative"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-16-ubung-12-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "das",
-          "der",
-          "dem",
-          "den"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Schlüssel liegt auf dem Tisch.",
-          "de": "Wählen Sie den definit Artikel: ___ Schlüssel liegt auf dem Tisch.",
-          "ar": "اختر الأداة معرف: ___ Schlüssel liegt auf dem Tisch.",
-          "en": "Choose the definite article: ___ Schlüssel liegt auf dem Tisch."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "In der Wohnung gibt es ___ Tisch (ein), aber ___ Stühle (kein).",
+        "blanks": 2
       },
       {
         "id": "kapitel-16-ubung-12-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "meinen",
-          "meine",
-          "meinem",
-          "mein"
-        ],
+        "type": "reorder",
         "prompt": {
-          "fr": "Choisissez l’article possessif mein : Ich suche ___ Schlüssel.",
-          "de": "Wählen Sie den Possessivartikel mein Artikel: Ich suche ___ Schlüssel.",
-          "ar": "اختر الأداة ملكية mein: Ich suche ___ Schlüssel.",
-          "en": "Choose the possessive mein article: Ich suche ___ Schlüssel."
-        }
+          "fr": "Den alten Schrank … — Commencez par ce groupe et reconstituez la phrase.",
+          "de": "Den alten Schrank … — Beginnen Sie mit dieser Gruppe und bilden Sie den Satz.",
+          "ar": "Den alten Schrank … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Den alten Schrank … — Start with this phrase and reconstruct the sentence."
+        },
+        "tokens": [
+          "unsere Nachbarin.",
+          "verkauft",
+          "Den alten Schrank"
+        ]
       },
       {
         "id": "kapitel-16-ubung-12-q03",
         "position": 3,
-        "type": "fill_blank",
-        "sentence": "Wir brauchen ___ neuen Schrank.",
-        "blanks": 1,
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Complétez avec l’article indéfini.",
-          "de": "Ergänzen Sie den indefinit Artikel.",
-          "ar": "أكمل بالأداة: نكرة",
-          "en": "Complete with the indefinite article."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Wir brauchen keinem Teppich.",
+          "Ein Sofa steht im Wohnzimmer.",
+          "Einen Sofa steht im Wohnzimmer.",
+          "Wir brauchen keinen Teppich."
+        ]
       }
     ]
   },
@@ -152,54 +157,54 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "Extra: Alltag"
     },
     "description": {
-      "fr": "accusatif",
-      "de": "Akkusativ",
-      "ar": "النصب",
-      "en": "accusative"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-16-ubung-13-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "der",
-          "den",
-          "dem",
-          "das"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Nachbar grüßt mich.",
-          "de": "Wählen Sie den definit Artikel: ___ Nachbar grüßt mich.",
-          "ar": "اختر الأداة معرف: ___ Nachbar grüßt mich.",
-          "en": "Choose the definite article: ___ Nachbar grüßt mich."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Für das Büro kauft Lea ___ Drucker und ___ Lampe. (ein)",
+        "blanks": 2
       },
       {
         "id": "kapitel-16-ubung-13-q02",
         "position": 2,
-        "type": "fill_blank",
-        "sentence": "Ich kenne ___ Nachbarn noch nicht.",
-        "blanks": 1,
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Der Mitarbeiterin begrüßt den Kunden.",
+          "Dem Kunden begrüßt die Mitarbeiterin.",
+          "Die Mitarbeiterin begrüßt den Kunden.",
+          "Den Kunden begrüßt die Mitarbeiterin."
+        ]
       },
       {
         "id": "kapitel-16-ubung-13-q03",
         "position": 3,
         "type": "true_false",
-        "statement": "Sie hat keinen eigenen Garten.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
-        }
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
+        },
+        "statement": "Einen Termin hat die Ärztin heute noch."
       }
     ]
   }

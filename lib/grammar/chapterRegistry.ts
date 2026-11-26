@@ -96,6 +96,214 @@ import { extraKick as extra27 } from '@/content/grammar/kapitel-27/extra-kick'
 import { lesson as lesson28 } from '@/content/grammar/kapitel-28/lesson'
 import { meistertraining as training28 } from '@/content/grammar/kapitel-28/meistertraining'
 import { extraKick as extra28 } from '@/content/grammar/kapitel-28/extra-kick'
+import { lesson as lesson29 } from '@/content/grammar/kapitel-29/lesson'
+import { meistertraining as training29 } from '@/content/grammar/kapitel-29/meistertraining'
+import { extraKick as extra29 } from '@/content/grammar/kapitel-29/extra-kick'
+
+import { lesson as lesson30 } from '@/content/grammar/kapitel-30/lesson'
+import { meistertraining as training30 } from '@/content/grammar/kapitel-30/meistertraining'
+import { extraKick as extra30 } from '@/content/grammar/kapitel-30/extra-kick'
+
+import { lesson as lesson31 } from '@/content/grammar/kapitel-31/lesson'
+import { meistertraining as training31 } from '@/content/grammar/kapitel-31/meistertraining'
+import { extraKick as extra31 } from '@/content/grammar/kapitel-31/extra-kick'
+
+import { lesson as lesson32 } from '@/content/grammar/kapitel-32/lesson'
+import { meistertraining as training32 } from '@/content/grammar/kapitel-32/meistertraining'
+import { extraKick as extra32 } from '@/content/grammar/kapitel-32/extra-kick'
+
+import { lesson as lesson33 } from '@/content/grammar/kapitel-33/lesson'
+import { meistertraining as training33 } from '@/content/grammar/kapitel-33/meistertraining'
+import { extraKick as extra33 } from '@/content/grammar/kapitel-33/extra-kick'
+
+import { lesson as lesson34 } from '@/content/grammar/kapitel-34/lesson'
+import { meistertraining as training34 } from '@/content/grammar/kapitel-34/meistertraining'
+import { extraKick as extra34 } from '@/content/grammar/kapitel-34/extra-kick'
+
+import { lesson as lesson35 } from '@/content/grammar/kapitel-35/lesson'
+import { meistertraining as training35 } from '@/content/grammar/kapitel-35/meistertraining'
+import { extraKick as extra35 } from '@/content/grammar/kapitel-35/extra-kick'
+
+import { lesson as lesson36 } from '@/content/grammar/kapitel-36/lesson'
+import { meistertraining as training36 } from '@/content/grammar/kapitel-36/meistertraining'
+import { extraKick as extra36 } from '@/content/grammar/kapitel-36/extra-kick'
+
+import { lesson as lesson37 } from '@/content/grammar/kapitel-37/lesson'
+import { meistertraining as training37 } from '@/content/grammar/kapitel-37/meistertraining'
+import { extraKick as extra37 } from '@/content/grammar/kapitel-37/extra-kick'
+
+import { lesson as lesson38 } from '@/content/grammar/kapitel-38/lesson'
+import { meistertraining as training38 } from '@/content/grammar/kapitel-38/meistertraining'
+import { extraKick as extra38 } from '@/content/grammar/kapitel-38/extra-kick'
+
+import { lesson as lesson39 } from '@/content/grammar/kapitel-39/lesson'
+import { meistertraining as training39 } from '@/content/grammar/kapitel-39/meistertraining'
+import { extraKick as extra39 } from '@/content/grammar/kapitel-39/extra-kick'
+
+import { lesson as lesson40 } from '@/content/grammar/kapitel-40/lesson'
+import { meistertraining as training40 } from '@/content/grammar/kapitel-40/meistertraining'
+import { extraKick as extra40 } from '@/content/grammar/kapitel-40/extra-kick'
+
+import { lesson as lesson41 } from '@/content/grammar/kapitel-41/lesson'
+import { meistertraining as training41 } from '@/content/grammar/kapitel-41/meistertraining'
+import { extraKick as extra41 } from '@/content/grammar/kapitel-41/extra-kick'
+
+import { lesson as lesson42 } from '@/content/grammar/kapitel-42/lesson'
+import { meistertraining as training42 } from '@/content/grammar/kapitel-42/meistertraining'
+import { extraKick as extra42 } from '@/content/grammar/kapitel-42/extra-kick'
+
+import { lesson as lesson43 } from '@/content/grammar/kapitel-43/lesson'
+import { meistertraining as training43 } from '@/content/grammar/kapitel-43/meistertraining'
+import { extraKick as extra43 } from '@/content/grammar/kapitel-43/extra-kick'
+
+import { lesson as lesson44 } from '@/content/grammar/kapitel-44/lesson'
+import { meistertraining as training44 } from '@/content/grammar/kapitel-44/meistertraining'
+import { extraKick as extra44 } from '@/content/grammar/kapitel-44/extra-kick'
+
+import { lesson as lesson45 } from '@/content/grammar/kapitel-45/lesson'
+import { meistertraining as training45 } from '@/content/grammar/kapitel-45/meistertraining'
+import { extraKick as extra45 } from '@/content/grammar/kapitel-45/extra-kick'
+
+import { lesson as lesson46 } from '@/content/grammar/kapitel-46/lesson'
+import { meistertraining as training46 } from '@/content/grammar/kapitel-46/meistertraining'
+import { extraKick as extra46 } from '@/content/grammar/kapitel-46/extra-kick'
+
+import { lesson as lesson47 } from '@/content/grammar/kapitel-47/lesson'
+import { meistertraining as training47 } from '@/content/grammar/kapitel-47/meistertraining'
+import { extraKick as extra47 } from '@/content/grammar/kapitel-47/extra-kick'
+
+import { lesson as lesson48 } from '@/content/grammar/kapitel-48/lesson'
+import { meistertraining as training48 } from '@/content/grammar/kapitel-48/meistertraining'
+import { extraKick as extra48 } from '@/content/grammar/kapitel-48/extra-kick'
+
+import { lesson as lesson49 } from '@/content/grammar/kapitel-49/lesson'
+import { meistertraining as training49 } from '@/content/grammar/kapitel-49/meistertraining'
+import { extraKick as extra49 } from '@/content/grammar/kapitel-49/extra-kick'
+
+import { lesson as lesson50 } from '@/content/grammar/kapitel-50/lesson'
+import { meistertraining as training50 } from '@/content/grammar/kapitel-50/meistertraining'
+import { extraKick as extra50 } from '@/content/grammar/kapitel-50/extra-kick'
+
+import { lesson as lesson51 } from '@/content/grammar/kapitel-51/lesson'
+import { meistertraining as training51 } from '@/content/grammar/kapitel-51/meistertraining'
+import { extraKick as extra51 } from '@/content/grammar/kapitel-51/extra-kick'
+
+import { lesson as lesson52 } from '@/content/grammar/kapitel-52/lesson'
+import { meistertraining as training52 } from '@/content/grammar/kapitel-52/meistertraining'
+import { extraKick as extra52 } from '@/content/grammar/kapitel-52/extra-kick'
+
+import { lesson as lesson53 } from '@/content/grammar/kapitel-53/lesson'
+import { meistertraining as training53 } from '@/content/grammar/kapitel-53/meistertraining'
+import { extraKick as extra53 } from '@/content/grammar/kapitel-53/extra-kick'
+
+import { lesson as lesson54 } from '@/content/grammar/kapitel-54/lesson'
+import { meistertraining as training54 } from '@/content/grammar/kapitel-54/meistertraining'
+import { extraKick as extra54 } from '@/content/grammar/kapitel-54/extra-kick'
+
+import { lesson as lesson55 } from '@/content/grammar/kapitel-55/lesson'
+import { meistertraining as training55 } from '@/content/grammar/kapitel-55/meistertraining'
+import { extraKick as extra55 } from '@/content/grammar/kapitel-55/extra-kick'
+
+import { lesson as lesson56 } from '@/content/grammar/kapitel-56/lesson'
+import { meistertraining as training56 } from '@/content/grammar/kapitel-56/meistertraining'
+import { extraKick as extra56 } from '@/content/grammar/kapitel-56/extra-kick'
+
+import { lesson as lesson57 } from '@/content/grammar/kapitel-57/lesson'
+import { meistertraining as training57 } from '@/content/grammar/kapitel-57/meistertraining'
+import { extraKick as extra57 } from '@/content/grammar/kapitel-57/extra-kick'
+
+import { lesson as lesson58 } from '@/content/grammar/kapitel-58/lesson'
+import { meistertraining as training58 } from '@/content/grammar/kapitel-58/meistertraining'
+import { extraKick as extra58 } from '@/content/grammar/kapitel-58/extra-kick'
+
+import { lesson as lesson59 } from '@/content/grammar/kapitel-59/lesson'
+import { meistertraining as training59 } from '@/content/grammar/kapitel-59/meistertraining'
+import { extraKick as extra59 } from '@/content/grammar/kapitel-59/extra-kick'
+
+import { lesson as lesson60 } from '@/content/grammar/kapitel-60/lesson'
+import { meistertraining as training60 } from '@/content/grammar/kapitel-60/meistertraining'
+import { extraKick as extra60 } from '@/content/grammar/kapitel-60/extra-kick'
+
+import { lesson as lesson61 } from '@/content/grammar/kapitel-61/lesson'
+import { meistertraining as training61 } from '@/content/grammar/kapitel-61/meistertraining'
+import { extraKick as extra61 } from '@/content/grammar/kapitel-61/extra-kick'
+
+import { lesson as lesson62 } from '@/content/grammar/kapitel-62/lesson'
+import { meistertraining as training62 } from '@/content/grammar/kapitel-62/meistertraining'
+import { extraKick as extra62 } from '@/content/grammar/kapitel-62/extra-kick'
+
+import { lesson as lesson63 } from '@/content/grammar/kapitel-63/lesson'
+import { meistertraining as training63 } from '@/content/grammar/kapitel-63/meistertraining'
+import { extraKick as extra63 } from '@/content/grammar/kapitel-63/extra-kick'
+
+import { lesson as lesson64 } from '@/content/grammar/kapitel-64/lesson'
+import { meistertraining as training64 } from '@/content/grammar/kapitel-64/meistertraining'
+import { extraKick as extra64 } from '@/content/grammar/kapitel-64/extra-kick'
+
+import { lesson as lesson65 } from '@/content/grammar/kapitel-65/lesson'
+import { meistertraining as training65 } from '@/content/grammar/kapitel-65/meistertraining'
+import { extraKick as extra65 } from '@/content/grammar/kapitel-65/extra-kick'
+
+import { lesson as lesson66 } from '@/content/grammar/kapitel-66/lesson'
+import { meistertraining as training66 } from '@/content/grammar/kapitel-66/meistertraining'
+import { extraKick as extra66 } from '@/content/grammar/kapitel-66/extra-kick'
+
+import { lesson as lesson67 } from '@/content/grammar/kapitel-67/lesson'
+import { meistertraining as training67 } from '@/content/grammar/kapitel-67/meistertraining'
+import { extraKick as extra67 } from '@/content/grammar/kapitel-67/extra-kick'
+
+import { lesson as lesson68 } from '@/content/grammar/kapitel-68/lesson'
+import { meistertraining as training68 } from '@/content/grammar/kapitel-68/meistertraining'
+import { extraKick as extra68 } from '@/content/grammar/kapitel-68/extra-kick'
+
+import { lesson as lesson69 } from '@/content/grammar/kapitel-69/lesson'
+import { meistertraining as training69 } from '@/content/grammar/kapitel-69/meistertraining'
+import { extraKick as extra69 } from '@/content/grammar/kapitel-69/extra-kick'
+
+import { lesson as lesson70 } from '@/content/grammar/kapitel-70/lesson'
+import { meistertraining as training70 } from '@/content/grammar/kapitel-70/meistertraining'
+import { extraKick as extra70 } from '@/content/grammar/kapitel-70/extra-kick'
+
+import { lesson as lesson71 } from '@/content/grammar/kapitel-71/lesson'
+import { meistertraining as training71 } from '@/content/grammar/kapitel-71/meistertraining'
+import { extraKick as extra71 } from '@/content/grammar/kapitel-71/extra-kick'
+
+import { lesson as lesson72 } from '@/content/grammar/kapitel-72/lesson'
+import { meistertraining as training72 } from '@/content/grammar/kapitel-72/meistertraining'
+import { extraKick as extra72 } from '@/content/grammar/kapitel-72/extra-kick'
+
+import { lesson as lesson73 } from '@/content/grammar/kapitel-73/lesson'
+import { meistertraining as training73 } from '@/content/grammar/kapitel-73/meistertraining'
+import { extraKick as extra73 } from '@/content/grammar/kapitel-73/extra-kick'
+
+import { lesson as lesson74 } from '@/content/grammar/kapitel-74/lesson'
+import { meistertraining as training74 } from '@/content/grammar/kapitel-74/meistertraining'
+import { extraKick as extra74 } from '@/content/grammar/kapitel-74/extra-kick'
+
+import { lesson as lesson75 } from '@/content/grammar/kapitel-75/lesson'
+import { meistertraining as training75 } from '@/content/grammar/kapitel-75/meistertraining'
+import { extraKick as extra75 } from '@/content/grammar/kapitel-75/extra-kick'
+
+import { lesson as lesson76 } from '@/content/grammar/kapitel-76/lesson'
+import { meistertraining as training76 } from '@/content/grammar/kapitel-76/meistertraining'
+import { extraKick as extra76 } from '@/content/grammar/kapitel-76/extra-kick'
+
+import { lesson as lesson77 } from '@/content/grammar/kapitel-77/lesson'
+import { meistertraining as training77 } from '@/content/grammar/kapitel-77/meistertraining'
+import { extraKick as extra77 } from '@/content/grammar/kapitel-77/extra-kick'
+
+import { lesson as lesson78 } from '@/content/grammar/kapitel-78/lesson'
+import { meistertraining as training78 } from '@/content/grammar/kapitel-78/meistertraining'
+import { extraKick as extra78 } from '@/content/grammar/kapitel-78/extra-kick'
+
+import { lesson as lesson79 } from '@/content/grammar/kapitel-79/lesson'
+import { meistertraining as training79 } from '@/content/grammar/kapitel-79/meistertraining'
+import { extraKick as extra79 } from '@/content/grammar/kapitel-79/extra-kick'
+
+import { lesson as lesson80 } from '@/content/grammar/kapitel-80/lesson'
+import { meistertraining as training80 } from '@/content/grammar/kapitel-80/meistertraining'
+import { extraKick as extra80 } from '@/content/grammar/kapitel-80/extra-kick'
+
 export const grammarChapters: ChapterDefinition[] = [
   {
     id: 'kapitel-01',
@@ -403,6 +611,578 @@ export const grammarChapters: ChapterDefinition[] = [
   "ar": "استعمال الأزمنة",
   "en": "Use of tenses"
 }, lesson: lesson28, exerciseSets: [...training28, ...extra28] },
+  { id: "kapitel-29", number: 29, level: "A2", title: {
+  "fr": "Elle se lave",
+  "de": "Sie wäscht sich",
+  "ar": "هي تغتسل",
+  "en": "She washes herself"
+}, subtitle: {
+  "fr": "Verbes réfléchis et réciproques",
+  "de": "Reflexive und reziproke Verben",
+  "ar": "الأفعال الانعكاسية والمتبادلة",
+  "en": "Reflexive and reciprocal verbs"
+}, lesson: lesson29, exerciseSets: [...training29, ...extra29] },
+  { id: "kapitel-30", number: 30, level: "A2", title: {
+  "fr": "En, le, à, de… à, après et avant",
+  "de": "Im, am, um, von ... bis, nach und vor",
+  "ar": "في، عند، من… إلى، بعد وقبل",
+  "en": "In, on, at, from… to, after and before"
+}, subtitle: {
+  "fr": "Prépositions temporelles",
+  "de": "Temporale Präpositionen",
+  "ar": "حروف الجر الزمنية",
+  "en": "Temporal prepositions"
+}, lesson: lesson30, exerciseSets: [...training30, ...extra30] },
+  { id: "kapitel-31", number: 31, level: "A2", title: {
+  "fr": "Aus, bei, mit, nach, seit, von ou zu",
+  "de": "Aus, bei, mit, nach, seit, von oder zu",
+  "ar": "حروف الجر aus و bei و mit و nach و seit و von و zu",
+  "en": "Aus, bei, mit, nach, seit, von or zu"
+}, subtitle: {
+  "fr": "Prépositions avec le datif",
+  "de": "Präpositionen mit Dativ",
+  "ar": "حروف الجر مع الداتيف",
+  "en": "Dative prepositions"
+}, lesson: lesson31, exerciseSets: [...training31, ...extra31] },
+  { id: "kapitel-32", number: 32, level: "A2", title: {
+  "fr": "Pour, autour de, à travers, sans et contre",
+  "de": "Für, um, durch, ohne und gegen",
+  "ar": "لأجل وحول وعبر وبدون وضد",
+  "en": "For, around, through, without and against"
+}, subtitle: {
+  "fr": "Prépositions avec l’accusatif",
+  "de": "Präpositionen mit Akkusativ",
+  "ar": "حروف الجر مع النصب",
+  "en": "Accusative prepositions"
+}, lesson: lesson32, exerciseSets: [...training32, ...extra32] },
+  { id: "kapitel-33", number: 33, level: "A2", title: {
+  "fr": "Où ? Au cinéma",
+  "de": "Wo? Im Kino",
+  "ar": "أين؟ في السينما",
+  "en": "Where? At the cinema"
+}, subtitle: {
+  "fr": "Prépositions mixtes au datif",
+  "de": "Wechselpräpositionen mit Dativ",
+  "ar": "حروف الجر المتغيرة مع الداتيف",
+  "en": "Two-way prepositions with dative"
+}, lesson: lesson33, exerciseSets: [...training33, ...extra33] },
+  { id: "kapitel-34", number: 34, level: "A2", title: {
+  "fr": "Au cinéma ou vers le cinéma ?",
+  "de": "Im Kino oder ins Kino?",
+  "ar": "في السينما أم إلى السينما؟",
+  "en": "At the cinema or to the cinema?"
+}, subtitle: {
+  "fr": "Prépositions mixtes au datif et à l’accusatif",
+  "de": "Wechselpräpositionen mit Dativ und Akkusativ",
+  "ar": "حروف الجر المتغيرة مع الداتيف والنصب",
+  "en": "Two-way prepositions with dative and accusative"
+}, lesson: lesson34, exerciseSets: [...training34, ...extra34] },
+  { id: "kapitel-35", number: 35, level: "A2", title: {
+  "fr": "Chez le boulanger, chez le coiffeur, au terrain de sport",
+  "de": "Beim Bäcker, zum Friseur, auf den Sportplatz",
+  "ar": "عند الخباز وإلى الحلاق وإلى الملعب",
+  "en": "At the baker’s, to the hairdresser, to the sports ground"
+}, subtitle: {
+  "fr": "Prépositions locales",
+  "de": "Lokale Präpositionen",
+  "ar": "حروف الجر المكانية",
+  "en": "Local prepositions"
+}, lesson: lesson35, exerciseSets: [...training35, ...extra35] },
+  { id: "kapitel-36", number: 36, level: "A2", title: {
+  "fr": "Un homme gentil ! J’aime cet homme gentil.",
+  "de": "Ein netter Mann! Ich liebe den netten Mann.",
+  "ar": "رجل لطيف! أحب الرجل اللطيف.",
+  "en": "A kind man! I love the kind man."
+}, subtitle: {
+  "fr": "Déclinaison de l’adjectif au nominatif et à l’accusatif",
+  "de": "Adjektivdeklination im Nominativ und Akkusativ",
+  "ar": "تصريف الصفات في الرفع والنصب",
+  "en": "Adjective declension in nominative and accusative"
+}, lesson: lesson36, exerciseSets: [...training36, ...extra36] },
+  { id: "kapitel-37", number: 37, level: "A2", title: {
+  "fr": "Le premier mai",
+  "de": "Am ersten Mai",
+  "ar": "في الأول من مايو",
+  "en": "On the first of May"
+}, subtitle: {
+  "fr": "Déclinaison des adjectifs au nominatif, à l’accusatif et au datif",
+  "de": "Adjektivdeklination im Nominativ, Akkusativ und Dativ",
+  "ar": "تصريف الصفات في الرفع والنصب والداتيف",
+  "en": "Adjective declension in nominative, accusative and dative"
+}, lesson: lesson37, exerciseSets: [...training37, ...extra37] },
+  { id: "kapitel-38", number: 38, level: "A2", title: {
+  "fr": "Plus vite que…",
+  "de": "Schneller als ...",
+  "ar": "أسرع من…",
+  "en": "Faster than…"
+}, subtitle: {
+  "fr": "Comparatif et phrases de comparaison",
+  "de": "Komparativ und Vergleichssätze",
+  "ar": "صيغة المقارنة وجمل المقارنة",
+  "en": "Comparative and comparison clauses"
+}, lesson: lesson38, exerciseSets: [...training38, ...extra38] },
+  { id: "kapitel-39", number: 39, level: "B1", title: {
+  "fr": "L’homme le plus petit court le plus vite",
+  "de": "Der kleinste Mann läuft am schnellsten",
+  "ar": "أصغر رجل يركض بأقصى سرعة",
+  "en": "The smallest man runs the fastest"
+}, subtitle: {
+  "fr": "Superlatif",
+  "de": "Superlativ",
+  "ar": "صيغة التفضيل العليا",
+  "en": "Superlative"
+}, lesson: lesson39, exerciseSets: [...training39, ...extra39] },
+  { id: "kapitel-40", number: 40, level: "A2", title: {
+  "fr": "Et, mais, ou, car",
+  "de": "Und, aber, oder, denn",
+  "ar": "و، لكن، أو، لأن",
+  "en": "And, but, or, for"
+}, subtitle: {
+  "fr": "Relier des propositions principales (position 0)",
+  "de": "Hauptsätze verbinden (Position 0)",
+  "ar": "ربط الجمل الرئيسية (الموضع صفر)",
+  "en": "Connecting main clauses (position 0)"
+}, lesson: lesson40, exerciseSets: [...training40, ...extra40] },
+  { id: "kapitel-41", number: 41, level: "A2", title: {
+  "fr": "Deshalb, sonst, dann, danach",
+  "de": "Deshalb, sonst, dann, danach",
+  "ar": "Deshalb, sonst, dann, danach",
+  "en": "Deshalb, sonst, dann, danach"
+}, subtitle: {
+  "fr": "Relier des propositions principales (position 1)",
+  "de": "Hauptsätze verbinden (Position 1)",
+  "ar": "ربط الجمل الرئيسية (الموضع الأول)",
+  "en": "Connecting main clauses (position 1)"
+}, lesson: lesson41, exerciseSets: [...training41, ...extra41] },
+  { id: "kapitel-42", number: 42, level: "A2", title: {
+  "fr": "Weil, dass und wenn",
+  "de": "Weil, dass und wenn",
+  "ar": "Weil, dass und wenn",
+  "en": "Weil, dass und wenn"
+}, subtitle: {
+  "fr": "Les propositions subordonnées",
+  "de": "Nebensätze",
+  "ar": "الجمل التابعة",
+  "en": "Subordinate clauses"
+}, lesson: lesson42, exerciseSets: [...training42, ...extra42] },
+  { id: "kapitel-43", number: 43, level: "A2", title: {
+  "fr": "Ich bin da. Kommst du auch dahin?",
+  "de": "Ich bin da. Kommst du auch dahin?",
+  "ar": "Ich bin da. Kommst du auch dahin?",
+  "en": "Ich bin da. Kommst du auch dahin?"
+}, subtitle: {
+  "fr": "Adverbes de position et de direction",
+  "de": "Positionsadverbien und Direktionaladverbien",
+  "ar": "ظروف المكان والاتجاه",
+  "en": "Position and direction adverbs"
+}, lesson: lesson43, exerciseSets: [...training43, ...extra43] },
+  { id: "kapitel-44", number: 44, level: "A2", title: {
+  "fr": "Was heißt das denn?",
+  "de": "Was heißt das denn?",
+  "ar": "Was heißt das denn?",
+  "en": "Was heißt das denn?"
+}, subtitle: {
+  "fr": "Particules modales",
+  "de": "Partikeln",
+  "ar": "الجسيمات التعبيرية",
+  "en": "Modal particles"
+}, lesson: lesson44, exerciseSets: [...training44, ...extra44] },
+  { id: "kapitel-45", number: 45, level: "A2", title: {
+  "fr": "Kinderarzt oder Arztkinder?",
+  "de": "Kinderarzt oder Arztkinder?",
+  "ar": "Kinderarzt oder Arztkinder?",
+  "en": "Kinderarzt oder Arztkinder?"
+}, subtitle: {
+  "fr": "Les mots composés",
+  "de": "Komposita",
+  "ar": "الكلمات المركبة",
+  "en": "Compound nouns"
+}, lesson: lesson45, exerciseSets: [...training45, ...extra45] },
+  { id: "kapitel-46", number: 46, level: "A2", title: {
+  "fr": "-chen, -lein, -er, -in, -ung",
+  "de": "-chen, -lein, -er, -in, -ung",
+  "ar": "-chen, -lein, -er, -in, -ung",
+  "en": "-chen, -lein, -er, -in, -ung"
+}, subtitle: {
+  "fr": "La dérivation des mots",
+  "de": "Aus Wörtern neue Wörter machen",
+  "ar": "اشتقاق الكلمات",
+  "en": "Word formation"
+}, lesson: lesson46, exerciseSets: [...training46, ...extra46] },
+  { id: "kapitel-47", number: 47, level: "A2", title: {
+  "fr": "Ich bin dann mal weg",
+  "de": "Ich bin dann mal weg",
+  "ar": "Ich bin dann mal weg",
+  "en": "Ich bin dann mal weg"
+}, subtitle: {
+  "fr": "Expressions avec sein et haben",
+  "de": "Zusammengesetzte Verben",
+  "ar": "تعبيرات مع sein وhaben",
+  "en": "Expressions with sein and haben"
+}, lesson: lesson47, exerciseSets: [...training47, ...extra47] },
+  { id: "kapitel-48", number: 48, level: "A2", title: {
+  "fr": "Der, die oder das?",
+  "de": "Der, die oder das?",
+  "ar": "Der, die oder das?",
+  "en": "Der, die oder das?"
+}, subtitle: {
+  "fr": "Le genre des noms",
+  "de": "Genusregeln",
+  "ar": "جنس الأسماء",
+  "en": "Noun gender"
+}, lesson: lesson48, exerciseSets: [...training48, ...extra48] },
+  { id: "kapitel-49", number: 49, level: "B1", title: {
+  "fr": "Er kam, sah und sagte",
+  "de": "Er kam, sah und sagte",
+  "ar": "Er kam, sah und sagte",
+  "en": "Er kam, sah und sagte"
+}, subtitle: {
+  "fr": "Le prétérit",
+  "de": "Präteritum",
+  "ar": "الماضي البسيط",
+  "en": "Simple past"
+}, lesson: lesson49, exerciseSets: [...training49, ...extra49] },
+  { id: "kapitel-50", number: 50, level: "B1", title: {
+  "fr": "Ich hatte zu lange geschlafen",
+  "de": "Ich hatte zu lange geschlafen",
+  "ar": "Ich hatte zu lange geschlafen",
+  "en": "Ich hatte zu lange geschlafen"
+}, subtitle: {
+  "fr": "Le plus-que-parfait",
+  "de": "Plusquamperfekt",
+  "ar": "الماضي الأسبق",
+  "en": "Past perfect"
+}, lesson: lesson50, exerciseSets: [...training50, ...extra50] },
+  { id: "kapitel-51", number: 51, level: "B1", title: {
+  "fr": "Ich wasche mir die Hände",
+  "de": "Ich wasche mir die Hände",
+  "ar": "Ich wasche mir die Hände",
+  "en": "Ich wasche mir die Hände"
+}, subtitle: {
+  "fr": "Pronoms réfléchis au datif",
+  "de": "Reflexivpronomen im Dativ",
+  "ar": "ضمائر الانعكاس في الداتيف",
+  "en": "Dative reflexive pronouns"
+}, lesson: lesson51, exerciseSets: [...training51, ...extra51] },
+  { id: "kapitel-52", number: 52, level: "B1", title: {
+  "fr": "Kaufe ich ein oder bestelle ich Pizza?",
+  "de": "Kaufe ich ein oder bestelle ich Pizza?",
+  "ar": "Kaufe ich ein oder bestelle ich Pizza?",
+  "en": "Kaufe ich ein oder bestelle ich Pizza?"
+}, subtitle: {
+  "fr": "Verbes séparables et inséparables",
+  "de": "Trennbare und untrennbare Verben",
+  "ar": "الأفعال القابلة وغير القابلة للانفصال",
+  "en": "Separable and inseparable verbs"
+}, lesson: lesson52, exerciseSets: [...training52, ...extra52] },
+  { id: "kapitel-53", number: 53, level: "B1", title: {
+  "fr": "Sie freut sich über die Blumen",
+  "de": "Sie freut sich über die Blumen",
+  "ar": "Sie freut sich über die Blumen",
+  "en": "Sie freut sich über die Blumen"
+}, subtitle: {
+  "fr": "Verbes à préposition",
+  "de": "Verben mit Präpositionen",
+  "ar": "الأفعال مع حروف الجر",
+  "en": "Verbs with prepositions"
+}, lesson: lesson53, exerciseSets: [...training53, ...extra53] },
+  { id: "kapitel-54", number: 54, level: "B1", title: {
+  "fr": "Daneben, danach, dafür ...",
+  "de": "Daneben, danach, dafür ...",
+  "ar": "Daneben, danach, dafür ...",
+  "en": "Daneben, danach, dafür ..."
+}, subtitle: {
+  "fr": "Adverbes pronominaux",
+  "de": "Präpositionaladverbien und -pronomen",
+  "ar": "الظروف والضمائر المركبة مع حروف الجر",
+  "en": "Prepositional adverbs and pronouns"
+}, lesson: lesson54, exerciseSets: [...training54, ...extra54] },
+  { id: "kapitel-55", number: 55, level: "B1", title: {
+  "fr": "Wäre, hätte, würde ...",
+  "de": "Wäre, hätte, würde ...",
+  "ar": "Wäre, hätte, würde ...",
+  "en": "Wäre, hätte, würde ..."
+}, subtitle: {
+  "fr": "Formes du subjonctif II",
+  "de": "Konjunktiv II: Formen",
+  "ar": "صيغ الكونينكتيف الثاني",
+  "en": "Subjunctive II forms"
+}, lesson: lesson55, exerciseSets: [...training55, ...extra55] },
+  { id: "kapitel-56", number: 56, level: "B1", title: {
+  "fr": "Wenn ich viel Geld hätte, ...",
+  "de": "Wenn ich viel Geld hätte, ...",
+  "ar": "Wenn ich viel Geld hätte, ...",
+  "en": "Wenn ich viel Geld hätte, ..."
+}, subtitle: {
+  "fr": "Emplois du subjonctif II",
+  "de": "Konjunktiv II: Gebrauch",
+  "ar": "استعمالات الكونينكتيف الثاني",
+  "en": "Uses of subjunctive II"
+}, lesson: lesson56, exerciseSets: [...training56, ...extra56] },
+  { id: "kapitel-57", number: 57, level: "B1", title: {
+  "fr": "Das Auto wird gebaut",
+  "de": "Das Auto wird gebaut",
+  "ar": "Das Auto wird gebaut",
+  "en": "Das Auto wird gebaut"
+}, subtitle: {
+  "fr": "Passif au présent",
+  "de": "Passiv Teil 1",
+  "ar": "المبني للمجهول في الحاضر",
+  "en": "Present passive"
+}, lesson: lesson57, exerciseSets: [...training57, ...extra57] },
+  { id: "kapitel-58", number: 58, level: "B1", title: {
+  "fr": "Wann wurde der Kölner Dom gebaut?",
+  "de": "Wann wurde der Kölner Dom gebaut?",
+  "ar": "Wann wurde der Kölner Dom gebaut?",
+  "en": "Wann wurde der Kölner Dom gebaut?"
+}, subtitle: {
+  "fr": "Passif au passé",
+  "de": "Passiv Teil 2",
+  "ar": "المبني للمجهول في الماضي",
+  "en": "Past passive"
+}, lesson: lesson58, exerciseSets: [...training58, ...extra58] },
+  { id: "kapitel-59", number: 59, level: "B1", title: {
+  "fr": "Der Präsident wird kommen",
+  "de": "Der Präsident wird kommen",
+  "ar": "Der Präsident wird kommen",
+  "en": "Der Präsident wird kommen"
+}, subtitle: {
+  "fr": "Futur I : avenir et supposition",
+  "de": "Vermutung und Zukunft mit Futur I",
+  "ar": "المستقبل والافتراض بصيغة Futur I",
+  "en": "Future and supposition with Futur I"
+}, lesson: lesson59, exerciseSets: [...training59, ...extra59] },
+  { id: "kapitel-60", number: 60, level: "B1", title: {
+  "fr": "Werden, werden, werden ...",
+  "de": "Werden, werden, werden ...",
+  "ar": "Werden, werden, werden ...",
+  "en": "Werden, werden, werden ..."
+}, subtitle: {
+  "fr": "Les fonctions de werden",
+  "de": "Funktionen von werden",
+  "ar": "وظائف werden",
+  "en": "Functions of werden"
+}, lesson: lesson60, exerciseSets: [...training60, ...extra60] },
+  { id: "kapitel-61", number: 61, level: "B1", title: {
+  "fr": "Leben und leben lassen",
+  "de": "Leben und leben lassen",
+  "ar": "Leben und leben lassen",
+  "en": "Leben und leben lassen"
+}, subtitle: {
+  "fr": "Le verbe lassen",
+  "de": "Das Verb lassen",
+  "ar": "الفعل lassen",
+  "en": "The verb lassen"
+}, lesson: lesson61, exerciseSets: [...training61, ...extra61] },
+  { id: "kapitel-62", number: 62, level: "B1", title: {
+  "fr": "Sitzen, setzen, stehen, stellen, liegen, legen und hängen",
+  "de": "Sitzen, setzen, stehen, stellen, liegen, legen und hängen",
+  "ar": "Sitzen, setzen, stehen, stellen, liegen, legen und hängen",
+  "en": "Sitzen, setzen, stehen, stellen, liegen, legen und hängen"
+}, subtitle: {
+  "fr": "Verbes de position et de direction",
+  "de": "Positions- und Direktionsverben",
+  "ar": "أفعال الوضع والاتجاه",
+  "en": "Position and direction verbs"
+}, lesson: lesson62, exerciseSets: [...training62, ...extra62] },
+  { id: "kapitel-63", number: 63, level: "B1", title: {
+  "fr": "Das Auto seines Vaters",
+  "de": "Das Auto seines Vaters",
+  "ar": "Das Auto seines Vaters",
+  "en": "Das Auto seines Vaters"
+}, subtitle: {
+  "fr": "Le génitif",
+  "de": "Genitiv",
+  "ar": "الجينيتيف",
+  "en": "Genitive"
+}, lesson: lesson63, exerciseSets: [...training63, ...extra63] },
+  { id: "kapitel-64", number: 64, level: "B1", title: {
+  "fr": "Kennen Sie den Herrn?",
+  "de": "Kennen Sie den Herrn?",
+  "ar": "Kennen Sie den Herrn?",
+  "en": "Kennen Sie den Herrn?"
+}, subtitle: {
+  "fr": "Déclinaison faible des noms",
+  "de": "N-Deklination",
+  "ar": "التصريف الضعيف للأسماء",
+  "en": "Weak noun declension"
+}, lesson: lesson64, exerciseSets: [...training64, ...extra64] },
+  { id: "kapitel-65", number: 65, level: "B1", title: {
+  "fr": "Der Jugendliche – ein Jugendlicher",
+  "de": "Der Jugendliche – ein Jugendlicher",
+  "ar": "Der Jugendliche – ein Jugendlicher",
+  "en": "Der Jugendliche – ein Jugendlicher"
+}, subtitle: {
+  "fr": "Adjectifs substantivés désignant des personnes",
+  "de": "Adjektive für Personen als Nomen",
+  "ar": "الصفات المستعملة أسماء للأشخاص",
+  "en": "Adjectives as nouns for people"
+}, lesson: lesson65, exerciseSets: [...training65, ...extra65] },
+  { id: "kapitel-66", number: 66, level: "B1", title: {
+  "fr": "Alles Gute!",
+  "de": "Alles Gute!",
+  "ar": "Alles Gute!",
+  "en": "Alles Gute!"
+}, subtitle: {
+  "fr": "Adjectifs substantivés neutres",
+  "de": "Adjektive als neutrale Nomen",
+  "ar": "الصفات المحولة إلى أسماء محايدة",
+  "en": "Adjectives as neuter nouns"
+}, lesson: lesson66, exerciseSets: [...training66, ...extra66] },
+  { id: "kapitel-67", number: 67, level: "B1", title: {
+  "fr": "Wissen Sie, ob ...?",
+  "de": "Wissen Sie, ob ...?",
+  "ar": "Wissen Sie, ob ...?",
+  "en": "Wissen Sie, ob ...?"
+}, subtitle: {
+  "fr": "Questions indirectes",
+  "de": "Indirekte Fragen",
+  "ar": "الأسئلة غير المباشرة",
+  "en": "Indirect questions"
+}, lesson: lesson67, exerciseSets: [...training67, ...extra67] },
+  { id: "kapitel-68", number: 68, level: "B1", title: {
+  "fr": "Es ist schön, zu feiern",
+  "de": "Es ist schön, zu feiern",
+  "ar": "Es ist schön, zu feiern",
+  "en": "Es ist schön, zu feiern"
+}, subtitle: {
+  "fr": "Infinitif avec zu",
+  "de": "Infinitiv mit zu",
+  "ar": "المصدر مع zu",
+  "en": "Infinitive with zu"
+}, lesson: lesson68, exerciseSets: [...training68, ...extra68] },
+  { id: "kapitel-69", number: 69, level: "B1", title: {
+  "fr": "Ich will singen, lass mich singen!",
+  "de": "Ich will singen, lass mich singen!",
+  "ar": "Ich will singen, lass mich singen!",
+  "en": "Ich will singen, lass mich singen!"
+}, subtitle: {
+  "fr": "Infinitif sans zu",
+  "de": "Infinitiv ohne zu",
+  "ar": "المصدر دون zu",
+  "en": "Bare infinitive"
+}, lesson: lesson69, exerciseSets: [...training69, ...extra69] },
+  { id: "kapitel-70", number: 70, level: "B1", title: {
+  "fr": "Das ist der Mann, der immer meine Nachbarin besucht",
+  "de": "Das ist der Mann, der immer meine Nachbarin besucht",
+  "ar": "Das ist der Mann, der immer meine Nachbarin besucht",
+  "en": "Das ist der Mann, der immer meine Nachbarin besucht"
+}, subtitle: {
+  "fr": "Relatives au nominatif",
+  "de": "Relativsätze 1: Nominativ",
+  "ar": "الجمل الموصولة في الرفع",
+  "en": "Relative clauses: nominative"
+}, lesson: lesson70, exerciseSets: [...training70, ...extra70] },
+  { id: "kapitel-71", number: 71, level: "B1", title: {
+  "fr": "Wie heißt das Ding, mit dem man ...?",
+  "de": "Wie heißt das Ding, mit dem man ...?",
+  "ar": "Wie heißt das Ding, mit dem man ...?",
+  "en": "Wie heißt das Ding, mit dem man ...?"
+}, subtitle: {
+  "fr": "Propositions relatives 2",
+  "de": "Relativsätze 2",
+  "ar": "الجمل الموصولة 2",
+  "en": "Relative clauses 2"
+}, lesson: lesson71, exerciseSets: [...training71, ...extra71] },
+  { id: "kapitel-72", number: 72, level: "B1", title: {
+  "fr": "Ich gehe, wenn ... / Ich ging, als ...",
+  "de": "Ich gehe, wenn ... / Ich ging, als ...",
+  "ar": "Ich gehe, wenn ... / Ich ging, als ...",
+  "en": "Ich gehe, wenn ... / Ich ging, als ..."
+}, subtitle: {
+  "fr": "Subordonnées temporelles",
+  "de": "Temporale Nebensätze mit wenn und als",
+  "ar": "الجمل الزمنية التابعة",
+  "en": "Temporal subordinate clauses"
+}, lesson: lesson72, exerciseSets: [...training72, ...extra72] },
+  { id: "kapitel-73", number: 73, level: "B1", title: {
+  "fr": "Während, bevor, nachdem und seit",
+  "de": "Während, bevor, nachdem und seit",
+  "ar": "Während, bevor, nachdem und seit",
+  "en": "Während, bevor, nachdem und seit"
+}, subtitle: {
+  "fr": "Subordonnées temporelles",
+  "de": "Temporale Nebensätze",
+  "ar": "الجمل التابعة الزمنية",
+  "en": "Temporal clauses"
+}, lesson: lesson73, exerciseSets: [...training73, ...extra73] },
+  { id: "kapitel-74", number: 74, level: "B1", title: {
+  "fr": "Um ... zu und damit",
+  "de": "Um ... zu und damit",
+  "ar": "Um ... zu und damit",
+  "en": "Um ... zu und damit"
+}, subtitle: {
+  "fr": "Subordonnées finales",
+  "de": "Finalsätze",
+  "ar": "الجمل التابعة الغائية",
+  "en": "Purpose clauses"
+}, lesson: lesson74, exerciseSets: [...training74, ...extra74] },
+  { id: "kapitel-75", number: 75, level: "B1", title: {
+  "fr": "Entweder ... oder, weder ... noch, sowohl ... als auch und nicht nur ... sondern auch",
+  "de": "Entweder ... oder, weder ... noch, sowohl ... als auch und nicht nur ... sondern auch",
+  "ar": "Entweder ... oder, weder ... noch, sowohl ... als auch und nicht nur ... sondern auch",
+  "en": "Entweder ... oder, weder ... noch, sowohl ... als auch und nicht nur ... sondern auch"
+}, subtitle: {
+  "fr": "Connecteurs doubles",
+  "de": "Doppelkonnektoren",
+  "ar": "الروابط المزدوجة",
+  "en": "Paired conjunctions"
+}, lesson: lesson75, exerciseSets: [...training75, ...extra75] },
+  { id: "kapitel-76", number: 76, level: "B1", title: {
+  "fr": "Je größer, desto besser!",
+  "de": "Je größer, desto besser!",
+  "ar": "Je größer, desto besser!",
+  "en": "Je größer, desto besser!"
+}, subtitle: {
+  "fr": "Comparaisons corrélatives",
+  "de": "Vergleichssätze",
+  "ar": "جمل المقارنة المتلازمة",
+  "en": "Correlative comparisons"
+}, lesson: lesson76, exerciseSets: [...training76, ...extra76] },
+  { id: "kapitel-77", number: 77, level: "B1", title: {
+  "fr": "Während, wegen, trotz, innerhalb, außerhalb",
+  "de": "Während, wegen, trotz, innerhalb, außerhalb",
+  "ar": "Während, wegen, trotz, innerhalb, außerhalb",
+  "en": "Während, wegen, trotz, innerhalb, außerhalb"
+}, subtitle: {
+  "fr": "Prépositions au génitif",
+  "de": "Präpositionen mit Genitiv",
+  "ar": "حروف الجر مع الجينيتيف",
+  "en": "Genitive prepositions"
+}, lesson: lesson77, exerciseSets: [...training77, ...extra77] },
+  { id: "kapitel-78", number: 78, level: "B1", title: {
+  "fr": "Innerhalb, außerhalb, in, nach, vor, seit, bei und während",
+  "de": "Innerhalb, außerhalb, in, nach, vor, seit, bei und während",
+  "ar": "Innerhalb, außerhalb, in, nach, vor, seit, bei und während",
+  "en": "Innerhalb, außerhalb, in, nach, vor, seit, bei und während"
+}, subtitle: {
+  "fr": "Prépositions temporelles 2",
+  "de": "Temporale Präpositionen 2",
+  "ar": "حروف الجر الزمنية 2",
+  "en": "Temporal prepositions 2"
+}, lesson: lesson78, exerciseSets: [...training78, ...extra78] },
+  { id: "kapitel-79", number: 79, level: "B1", title: {
+  "fr": "Deutsches Bier",
+  "de": "Deutsches Bier",
+  "ar": "Deutsches Bier",
+  "en": "Deutsches Bier"
+}, subtitle: {
+  "fr": "Déclinaison des adjectifs avec et sans article",
+  "de": "Adjektivdeklination mit und ohne Artikel",
+  "ar": "تصريف الصفات مع أداة التعريف وبدونها",
+  "en": "Adjective declension with and without articles"
+}, lesson: lesson79, exerciseSets: [...training79, ...extra79] },
+  { id: "kapitel-80", number: 80, level: "B1", title: {
+  "fr": "Singende Vögel und fliegende Fische",
+  "de": "Singende Vögel und fliegende Fische",
+  "ar": "Singende Vögel und fliegende Fische",
+  "en": "Singende Vögel und fliegende Fische"
+}, subtitle: {
+  "fr": "Participe présent comme adjectif",
+  "de": "Partizip I als Adjektiv",
+  "ar": "اسم الفاعل كصفة",
+  "en": "Present participle as an adjective"
+}, lesson: lesson80, exerciseSets: [...training80, ...extra80] },
 ]
 
 export function getGrammarChapter(chapterId: string) {

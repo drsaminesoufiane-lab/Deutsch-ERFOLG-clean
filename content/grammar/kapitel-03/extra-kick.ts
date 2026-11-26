@@ -11,10 +11,10 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "At reception"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
@@ -22,122 +22,141 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec sein. — Guten Tag, ich ___ Frau Klein.",
-          "de": "Ergänzen Sie sein. — Guten Tag, ich ___ Frau Klein.",
-          "ar": "أكمل باستعمال sein. — Guten Tag, ich ___ Frau Klein.",
-          "en": "Complete with sein. — Guten Tag, ich ___ Frau Klein."
+          "fr": "Conjuguez sein au présent. — Ich ___ heute an der Rezeption. (sein)",
+          "de": "Konjugieren Sie sein im Präsens. — Ich ___ heute an der Rezeption. (sein)",
+          "ar": "صرّف sein في المضارع. — Ich ___ heute an der Rezeption. (sein)",
+          "en": "Conjugate sein in the present tense. — Ich ___ heute an der Rezeption. (sein)"
         },
         "selection": "single",
         "options": [
-          "hat",
-          "wissen",
-          "bin",
-          "hast"
+          "sind",
+          "ist",
+          "bist",
+          "bin"
         ]
       },
       {
         "id": "kapitel-03-ubung-11-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec haben. — Ich ___ eine Reservierung.",
-          "de": "Ergänzen Sie haben. — Ich ___ eine Reservierung.",
-          "ar": "أكمل باستعمال haben. — Ich ___ eine Reservierung.",
-          "en": "Complete with haben. — Ich ___ eine Reservierung."
+          "fr": "Conjuguez haben au présent.",
+          "de": "Konjugieren Sie haben im Präsens.",
+          "ar": "صرّف haben في المضارع.",
+          "en": "Conjugate haben in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "ist",
-          "seid",
-          "tut",
-          "habe"
-        ]
+        "sentence": "___ du schon ein Zimmer? (haben)",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-11-q03",
         "position": 3,
-        "type": "true_false",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec haben.",
-          "de": "Ergänzen Sie haben.",
-          "ar": "أكمل باستعمال haben.",
-          "en": "Complete with haben."
+          "fr": "Conjuguez sein au présent.",
+          "de": "Konjugieren Sie sein im Präsens.",
+          "ar": "صرّف sein في المضارع.",
+          "en": "Conjugate sein in the present tense."
         },
-        "statement": "haben Sie Ihren Pass dabei?"
+        "sentence": "Die Reservierung ___ für zwei Nächte. (sein)",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-11-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec möchten.",
-          "de": "Ergänzen Sie möchten.",
-          "ar": "أكمل باستعمال möchten.",
-          "en": "Complete with möchten."
+          "fr": "Conjuguez haben au présent. — Wir ___ ein Problem mit der Karte. (haben)",
+          "de": "Konjugieren Sie haben im Präsens. — Wir ___ ein Problem mit der Karte. (haben)",
+          "ar": "صرّف haben في المضارع. — Wir ___ ein Problem mit der Karte. (haben)",
+          "en": "Conjugate haben in the present tense. — Wir ___ ein Problem mit der Karte. (haben)"
         },
-        "sentence": "Wir ___ ein ruhiges Zimmer.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "hat",
+          "hast",
+          "habe",
+          "haben"
+        ]
       },
       {
         "id": "kapitel-03-ubung-11-q05",
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec wissen.",
-          "de": "Ergänzen Sie wissen.",
-          "ar": "أكمل باستعمال wissen.",
-          "en": "Complete with wissen."
+          "fr": "Conjuguez sein au présent.",
+          "de": "Konjugieren Sie sein im Präsens.",
+          "ar": "صرّف sein في المضارع.",
+          "en": "Conjugate sein in the present tense."
         },
-        "sentence": "___ du die Zimmernummer?",
+        "sentence": "Ihr ___ im zweiten Stock. (sein)",
         "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-11-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sein. — Das Zimmer ___ im zweiten Stock.",
-          "de": "Ergänzen Sie sein. — Das Zimmer ___ im zweiten Stock.",
-          "ar": "أكمل باستعمال sein. — Das Zimmer ___ im zweiten Stock.",
-          "en": "Complete with sein. — Das Zimmer ___ im zweiten Stock."
+          "fr": "Conjuguez haben au présent.",
+          "de": "Konjugieren Sie haben im Präsens.",
+          "ar": "صرّف haben في المضارع.",
+          "en": "Conjugate haben in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "hast",
-          "mag",
-          "tust",
-          "ist"
-        ]
+        "sentence": "Die Gäste ___ einen Balkon. (haben)",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-11-q07",
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec haben. — Ihr ___ heute Glück.",
-          "de": "Ergänzen Sie haben. — Ihr ___ heute Glück.",
-          "ar": "أكمل باستعمال haben. — Ihr ___ heute Glück.",
-          "en": "Complete with haben. — Ihr ___ heute Glück."
+          "fr": "Conjuguez haben au présent. — Herr Keller, ___ Sie noch Fragen? (haben)",
+          "de": "Konjugieren Sie haben im Präsens. — Herr Keller, ___ Sie noch Fragen? (haben)",
+          "ar": "صرّف haben في المضارع. — Herr Keller, ___ Sie noch Fragen? (haben)",
+          "en": "Conjugate haben in the present tense. — Herr Keller, ___ Sie noch Fragen? (haben)"
         },
         "selection": "single",
         "options": [
-          "magst",
-          "habt",
-          "tue",
-          "mögen"
+          "hast",
+          "hat",
+          "habe",
+          "haben"
         ]
       },
       {
         "id": "kapitel-03-ubung-11-q08",
         "position": 8,
-        "type": "true_false",
+        "type": "matching",
         "prompt": {
-          "fr": "Complétez avec sein.",
-          "de": "Ergänzen Sie sein.",
-          "ar": "أكمل باستعمال sein.",
-          "en": "Complete with sein."
+          "fr": "Associez les formes aux sujets.",
+          "de": "Ordnen Sie die Formen den Subjekten zu.",
+          "ar": "صل الصيغ بالفاعلين.",
+          "en": "Match the forms to the subjects."
         },
-        "statement": "Meine Eltern haben im Hotel."
+        "items": [
+          {
+            "id": "i0",
+            "label": "ich – sein"
+          },
+          {
+            "id": "i1",
+            "label": "du – sein"
+          },
+          {
+            "id": "i2",
+            "label": "ihr – sein"
+          },
+          {
+            "id": "i3",
+            "label": "wir – sein"
+          }
+        ],
+        "options": [
+          "seid",
+          "bin",
+          "sind",
+          "bist"
+        ]
       }
     ]
   },
@@ -146,16 +165,16 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 2,
     "title": {
-      "fr": "Chez le médecin",
-      "de": "Beim Arzt",
-      "ar": "عند الطبيب",
-      "en": "At the doctor"
+      "fr": "Santé et rendez-vous",
+      "de": "Gesundheit und Termine",
+      "ar": "الصحة والمواعيد",
+      "en": "Health and appointments"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
@@ -163,151 +182,135 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec haben. — Ich ___ Kopfschmerzen.",
-          "de": "Ergänzen Sie haben. — Ich ___ Kopfschmerzen.",
-          "ar": "أكمل باستعمال haben. — Ich ___ Kopfschmerzen.",
-          "en": "Complete with haben. — Ich ___ Kopfschmerzen."
+          "fr": "Conjuguez tun au présent. — Meine Knie ___ weh. (tun)",
+          "de": "Konjugieren Sie tun im Präsens. — Meine Knie ___ weh. (tun)",
+          "ar": "صرّف tun في المضارع. — Meine Knie ___ weh. (tun)",
+          "en": "Conjugate tun in the present tense. — Meine Knie ___ weh. (tun)"
         },
         "selection": "single",
         "options": [
-          "ist",
-          "wisst",
-          "mögen",
-          "habe"
+          "tun",
+          "tue",
+          "tust",
+          "tut"
         ]
       },
       {
         "id": "kapitel-03-ubung-12-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec tun. — Mein Hals ___ weh.",
-          "de": "Ergänzen Sie tun. — Mein Hals ___ weh.",
-          "ar": "أكمل باستعمال tun. — Mein Hals ___ weh.",
-          "en": "Complete with tun. — Mein Hals ___ weh."
+          "fr": "Conjuguez wissen au présent.",
+          "de": "Konjugieren Sie wissen im Präsens.",
+          "ar": "صرّف wissen في المضارع.",
+          "en": "Conjugate wissen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "tut",
-          "möchtet",
-          "wisst",
-          "bist"
-        ]
+        "sentence": "Ich ___ nicht, wo der Eingang ist. (wissen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-12-q03",
         "position": 3,
-        "type": "true_false",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sein.",
-          "de": "Ergänzen Sie sein.",
-          "ar": "أكمل باستعمال sein.",
-          "en": "Complete with sein."
+          "fr": "Conjuguez wissen au présent.",
+          "de": "Konjugieren Sie wissen im Präsens.",
+          "ar": "صرّف wissen في المضارع.",
+          "en": "Conjugate wissen in the present tense."
         },
-        "statement": "bist du müde?"
+        "sentence": "___ du, wann der Arzt kommt? (wissen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-12-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec tun.",
-          "de": "Ergänzen Sie tun.",
-          "ar": "أكمل باستعمال tun.",
-          "en": "Complete with tun."
+          "fr": "Conjuguez haben au présent. — Die Ärztin ___ heute wenig Zeit. (haben)",
+          "de": "Konjugieren Sie haben im Präsens. — Die Ärztin ___ heute wenig Zeit. (haben)",
+          "ar": "صرّف haben في المضارع. — Die Ärztin ___ heute wenig Zeit. (haben)",
+          "en": "Conjugate haben in the present tense. — Die Ärztin ___ heute wenig Zeit. (haben)"
         },
-        "sentence": "Meine Beine ___ weh.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "haben",
+          "habe",
+          "hat",
+          "hast"
+        ]
       },
       {
         "id": "kapitel-03-ubung-12-q05",
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec möchten.",
-          "de": "Ergänzen Sie möchten.",
-          "ar": "أكمل باستعمال möchten.",
-          "en": "Complete with möchten."
+          "fr": "Conjuguez sein au présent.",
+          "de": "Konjugieren Sie sein im Präsens.",
+          "ar": "صرّف sein في المضارع.",
+          "en": "Conjugate sein in the present tense."
         },
-        "sentence": "Wir ___ einen Termin vereinbaren.",
+        "sentence": "Wir ___ um zehn Uhr dort. (sein)",
         "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-12-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec wissen. — ___ Sie, wo die Apotheke ist?",
-          "de": "Ergänzen Sie wissen. — ___ Sie, wo die Apotheke ist?",
-          "ar": "أكمل باستعمال wissen. — ___ Sie, wo die Apotheke ist?",
-          "en": "Complete with wissen. — ___ Sie, wo die Apotheke ist?"
+          "fr": "Conjuguez möchten au présent.",
+          "de": "Konjugieren Sie möchten im Präsens.",
+          "ar": "صرّف möchten في المضارع.",
+          "en": "Conjugate möchten in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "wissen",
-          "wisst",
-          "haben",
-          "weißt"
-        ]
+        "sentence": "Ihr ___ heute länger bleiben. (möchten)",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-12-q07",
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec haben. — Ihr ___ heute keine Schule.",
-          "de": "Ergänzen Sie haben. — Ihr ___ heute keine Schule.",
-          "ar": "أكمل باستعمال haben. — Ihr ___ heute keine Schule.",
-          "en": "Complete with haben. — Ihr ___ heute keine Schule."
+          "fr": "Conjuguez möchten au présent. — Ich ___ einen Tee bestellen. (möchten)",
+          "de": "Konjugieren Sie möchten im Präsens. — Ich ___ einen Tee bestellen. (möchten)",
+          "ar": "صرّف möchten في المضارع. — Ich ___ einen Tee bestellen. (möchten)",
+          "en": "Conjugate möchten in the present tense. — Ich ___ einen Tee bestellen. (möchten)"
         },
         "selection": "single",
         "options": [
-          "mögen",
-          "mögt",
-          "habt",
-          "weißt"
+          "möchte",
+          "möchtet",
+          "möchtest",
+          "möchten"
         ]
       },
       {
         "id": "kapitel-03-ubung-12-q08",
         "position": 8,
-        "type": "true_false",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sein.",
-          "de": "Ergänzen Sie sein.",
-          "ar": "أكمل باستعمال sein.",
-          "en": "Complete with sein."
+          "fr": "Conjuguez mögen au présent.",
+          "de": "Konjugieren Sie mögen im Präsens.",
+          "ar": "صرّف mögen في المضارع.",
+          "en": "Conjugate mögen in the present tense."
         },
-        "statement": "Ich tue wieder gesund."
+        "sentence": "Du ___ keinen Zucker. (mögen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-12-association",
         "position": 9,
-        "type": "matching",
+        "type": "reorder",
         "prompt": {
-          "fr": "Associez les formes.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين الصيغ.",
-          "en": "Match the forms."
+          "fr": "Reconstituez la phrase. Commencez par « Warum ».",
+          "de": "Bilden Sie den Satz. Beginnen Sie mit „Warum“.",
+          "ar": "رتّب الجملة. ابدأ بـ « Warum ».",
+          "en": "Rebuild the sentence. Start with “Warum”."
         },
-        "items": [
-          {
-            "id": "i0",
-            "label": "ich sein"
-          },
-          {
-            "id": "i1",
-            "label": "du sein"
-          },
-          {
-            "id": "i2",
-            "label": "wir sein"
-          }
-        ],
-        "options": [
-          "sind",
-          "bist",
-          "bin"
+        "tokens": [
+          "ihr",
+          "seid",
+          "hier?",
+          "Warum"
         ]
       }
     ]
@@ -317,16 +320,16 @@ export const extraKick: ExerciseSetDefinition[] = [
     "category": "extra_kick",
     "position": 3,
     "title": {
-      "fr": "Vie quotidienne",
-      "de": "Alltag",
-      "ar": "الحياة اليومية",
-      "en": "Everyday life"
+      "fr": "Au café et au quotidien",
+      "de": "Im Café und im Alltag",
+      "ar": "في المقهى والحياة اليومية",
+      "en": "At the café and in daily life"
     },
     "description": {
-      "fr": "Complétez les phrases.",
-      "de": "Ergänzen Sie die Sätze.",
-      "ar": "أكمل الجمل.",
-      "en": "Complete the sentences."
+      "fr": "Défi : choisissez ou produisez les formes correctes dans de nouvelles situations.",
+      "de": "Extra-Kick: Wählen oder bilden Sie die richtigen Formen in neuen Situationen.",
+      "ar": "تحدٍّ: اختر أو كوّن الصيغ الصحيحة في مواقف جديدة.",
+      "en": "Challenge: choose or produce the correct forms in new situations."
     },
     "questions": [
       {
@@ -334,167 +337,168 @@ export const extraKick: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec mögen. — Du ___ gern Tee.",
-          "de": "Ergänzen Sie mögen. — Du ___ gern Tee.",
-          "ar": "أكمل باستعمال mögen. — Du ___ gern Tee.",
-          "en": "Complete with mögen. — Du ___ gern Tee."
+          "fr": "Conjuguez möchten au présent. — Wir ___ lieber Mineralwasser trinken. (möchten)",
+          "de": "Konjugieren Sie möchten im Präsens. — Wir ___ lieber Mineralwasser trinken. (möchten)",
+          "ar": "صرّف möchten في المضارع. — Wir ___ lieber Mineralwasser trinken. (möchten)",
+          "en": "Conjugate möchten in the present tense. — Wir ___ lieber Mineralwasser trinken. (möchten)"
         },
         "selection": "single",
         "options": [
+          "möchte",
+          "möchtet",
           "möchten",
-          "magst",
-          "mag",
           "möchtest"
         ]
       },
       {
         "id": "kapitel-03-ubung-13-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec möchten. — Ich ___ heute zu Hause bleiben.",
-          "de": "Ergänzen Sie möchten. — Ich ___ heute zu Hause bleiben.",
-          "ar": "أكمل باستعمال möchten. — Ich ___ heute zu Hause bleiben.",
-          "en": "Complete with möchten. — Ich ___ heute zu Hause bleiben."
+          "fr": "Conjuguez haben au présent.",
+          "de": "Konjugieren Sie haben im Präsens.",
+          "ar": "صرّف haben في المضارع.",
+          "en": "Conjugate haben in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "tut",
-          "möchte",
-          "möchten",
-          "mag"
-        ]
+        "sentence": "Ihr ___ viel Geduld. (haben)",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-13-q03",
         "position": 3,
-        "type": "true_false",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec haben.",
-          "de": "Ergänzen Sie haben.",
-          "ar": "أكمل باستعمال haben.",
-          "en": "Complete with haben."
+          "fr": "Conjuguez mögen au présent.",
+          "de": "Konjugieren Sie mögen im Präsens.",
+          "ar": "صرّف mögen في المضارع.",
+          "en": "Conjugate mögen in the present tense."
         },
-        "statement": "Wir haben Hunger."
+        "sentence": "Die Kinder ___ Schokolade. (mögen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-13-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec wissen.",
-          "de": "Ergänzen Sie wissen.",
-          "ar": "أكمل باستعمال wissen.",
-          "en": "Complete with wissen."
+          "fr": "Conjuguez wissen au présent. — Herr Peters, ___ Sie den Preis? (wissen)",
+          "de": "Konjugieren Sie wissen im Präsens. — Herr Peters, ___ Sie den Preis? (wissen)",
+          "ar": "صرّف wissen في المضارع. — Herr Peters, ___ Sie den Preis? (wissen)",
+          "en": "Conjugate wissen in the present tense. — Herr Peters, ___ Sie den Preis? (wissen)"
         },
-        "sentence": "Er ___ nicht, wann der Bus kommt.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "weiß",
+          "weißt",
+          "wissen",
+          "wisst"
+        ]
       },
       {
         "id": "kapitel-03-ubung-13-q05",
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec sein.",
-          "de": "Ergänzen Sie sein.",
-          "ar": "أكمل باستعمال sein.",
-          "en": "Complete with sein."
+          "fr": "Conjuguez tun au présent.",
+          "de": "Konjugieren Sie tun im Präsens.",
+          "ar": "صرّف tun في المضارع.",
+          "en": "Conjugate tun in the present tense."
         },
-        "sentence": "Ihr ___ sehr pünktlich.",
+        "sentence": "Das ___ mir leid. (tun)",
         "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-13-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec tun. — Was ___ du gerade?",
-          "de": "Ergänzen Sie tun. — Was ___ du gerade?",
-          "ar": "أكمل باستعمال tun. — Was ___ du gerade?",
-          "en": "Complete with tun. — Was ___ du gerade?"
+          "fr": "Conjuguez wissen au présent.",
+          "de": "Konjugieren Sie wissen im Präsens.",
+          "ar": "صرّف wissen في المضارع.",
+          "en": "Conjugate wissen in the present tense."
         },
-        "selection": "single",
-        "options": [
-          "möchtet",
-          "tun",
-          "tust",
-          "bist"
-        ]
+        "sentence": "Wir ___ nicht, wie spät es ist. (wissen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-13-q07",
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec mögen. — Meine Freunde ___ Pizza.",
-          "de": "Ergänzen Sie mögen. — Meine Freunde ___ Pizza.",
-          "ar": "أكمل باستعمال mögen. — Meine Freunde ___ Pizza.",
-          "en": "Complete with mögen. — Meine Freunde ___ Pizza."
+          "fr": "Conjuguez wissen au présent. — ___ ihr, wo die Kasse ist? (wissen)",
+          "de": "Konjugieren Sie wissen im Präsens. — ___ ihr, wo die Kasse ist? (wissen)",
+          "ar": "صرّف wissen في المضارع. — ___ ihr, wo die Kasse ist? (wissen)",
+          "en": "Conjugate wissen in the present tense. — ___ ihr, wo die Kasse ist? (wissen)"
         },
         "selection": "single",
         "options": [
-          "möchten",
-          "wissen",
-          "weiß",
-          "mögen"
+          "Weißt",
+          "Weiß",
+          "Wisst",
+          "Wissen"
         ]
       },
       {
         "id": "kapitel-03-ubung-13-q08",
         "position": 8,
-        "type": "true_false",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec möchten.",
-          "de": "Ergänzen Sie möchten.",
-          "ar": "أكمل باستعمال möchten.",
-          "en": "Complete with möchten."
+          "fr": "Conjuguez haben au présent.",
+          "de": "Konjugieren Sie haben im Präsens.",
+          "ar": "صرّف haben في المضارع.",
+          "en": "Conjugate haben in the present tense."
         },
-        "statement": "mag ihr etwas trinken?"
+        "sentence": "Die Kolleginnen ___ heute frei. (haben)",
+        "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-13-q09",
         "position": 9,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez avec haben.",
-          "de": "Ergänzen Sie haben.",
-          "ar": "أكمل باستعمال haben.",
-          "en": "Complete with haben."
+          "fr": "Conjuguez sein au présent.",
+          "de": "Konjugieren Sie sein im Präsens.",
+          "ar": "صرّف sein في المضارع.",
+          "en": "Conjugate sein in the present tense."
         },
-        "sentence": "Sie (Plural) ___ morgen frei.",
+        "sentence": "Das Essen ___ sehr gut. (sein)",
         "blanks": 1
       },
       {
         "id": "kapitel-03-ubung-13-q10",
         "position": 10,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec sein.",
-          "de": "Ergänzen Sie sein.",
-          "ar": "أكمل باستعمال sein.",
-          "en": "Complete with sein."
+          "fr": "Conjuguez haben au présent. — Ich ___ noch einen Wunsch. (haben)",
+          "de": "Konjugieren Sie haben im Präsens. — Ich ___ noch einen Wunsch. (haben)",
+          "ar": "صرّف haben في المضارع. — Ich ___ noch einen Wunsch. (haben)",
+          "en": "Conjugate haben in the present tense. — Ich ___ noch einen Wunsch. (haben)"
         },
-        "sentence": "Ich ___ im Büro.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "hat",
+          "haben",
+          "habe",
+          "hast"
+        ]
       },
       {
         "id": "kapitel-03-ubung-13-multi",
         "position": 11,
         "type": "qcm",
+        "prompt": {
+          "fr": "Sélectionnez toutes les phrases correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر جميع الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
         "selection": "multiple",
         "options": [
-          "du sein → bist",
-          "ich sein → bist",
-          "du sein → sind",
-          "ich sein → bin",
-          "wir sein → sind"
-        ],
-        "prompt": {
-          "fr": "Sélectionnez toutes les associations correctes.",
-          "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
-          "en": "Select all correct pairs."
-        }
+          "Ihr seid pünktlich.",
+          "Du hast einen Termin.",
+          "Wir bin im Hotel.",
+          "Er weißt die Antwort."
+        ]
       }
     ]
   }

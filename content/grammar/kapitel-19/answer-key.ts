@@ -1,6 +1,20 @@
 import 'server-only'
 import type { AnswerKey } from '@/lib/grammar/types'
 export const chapter19AnswerKey: AnswerKey = {
+  "kapitel-19-ubung-01-q01": {
+    "acceptedAnswers": [
+      "Welcher",
+      "Welches",
+      "welchem",
+      "Welchen"
+    ],
+    "explanation": {
+      "fr": "Welcher Mantel ist teuer? (welcher) / Welches Buch kaufst du? (welcher) / Mit welchem Kind gehst du ins Kino? (welcher) / Welchen Arzt rufst du an? (welcher) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welcher Mantel ist teuer? (welcher) / Welches Buch kaufst du? (welcher) / Mit welchem Kind gehst du ins Kino? (welcher) / Welchen Arzt rufst du an? (welcher) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welcher Mantel ist teuer? (welcher) / Welches Buch kaufst du? (welcher) / Mit welchem Kind gehst du ins Kino? (welcher) / Welchen Arzt rufst du an? (welcher) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welcher Mantel ist teuer? (welcher) / Welches Buch kaufst du? (welcher) / Mit welchem Kind gehst du ins Kino? (welcher) / Welchen Arzt rufst du an? (welcher) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
+    }
+  },
   "kapitel-19-ubung-02-q01": {
     "acceptedAnswers": "Dieser",
     "explanation": {
@@ -366,12 +380,15 @@ export const chapter19AnswerKey: AnswerKey = {
     }
   },
   "kapitel-19-ubung-08-q05": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "Diesen",
+      "diesem"
+    ],
     "explanation": {
-      "fr": "Diesen Arzt kenne ich. — objet direct ou préposition à l’accusatif (A, m.): dies + en → Diesen.",
-      "de": "Diesen Arzt kenne ich. — Akkusativobjekt oder Akkusativpräposition (A, m.): dies + en → Diesen.",
-      "ar": "Diesen Arzt kenne ich. — مفعول مباشر أو حرف جر مع الأكوزاتيف (A, m.): dies + en → Diesen.",
-      "en": "Diesen Arzt kenne ich. — direct object or accusative preposition (A, m.): dies + en → Diesen."
+      "fr": "Diesen Arzt kenne ich, aber diesem Arzt vertraue ich nicht. (dieser; gleicher Arzt) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Diesen Arzt kenne ich, aber diesem Arzt vertraue ich nicht. (dieser; gleicher Arzt) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Diesen Arzt kenne ich, aber diesem Arzt vertraue ich nicht. (dieser; gleicher Arzt) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Diesen Arzt kenne ich, aber diesem Arzt vertraue ich nicht. (dieser; gleicher Arzt) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-09-q01": {
@@ -413,12 +430,15 @@ export const chapter19AnswerKey: AnswerKey = {
     }
   },
   "kapitel-19-ubung-09-q05": {
-    "acceptedAnswers": "diesem",
+    "acceptedAnswers": [
+      "Welcher",
+      "diesem"
+    ],
     "explanation": {
-      "fr": "Wir sitzen in diesem Bus. — verbe ou préposition au datif (D, m.): dies + em → diesem.",
-      "de": "Wir sitzen in diesem Bus. — Dativverb oder Dativpräposition (D, m.): dies + em → diesem.",
-      "ar": "Wir sitzen in diesem Bus. — فعل أو حرف جر مع الداتيف (D, m.): dies + em → diesem.",
-      "en": "Wir sitzen in diesem Bus. — dative verb or preposition (D, m.): dies + em → diesem."
+      "fr": "Welcher Bus fährt zum Zentrum? Mit diesem Bus fahren wir zur Arbeit. (welcher/dieser) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welcher Bus fährt zum Zentrum? Mit diesem Bus fahren wir zur Arbeit. (welcher/dieser) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welcher Bus fährt zum Zentrum? Mit diesem Bus fahren wir zur Arbeit. (welcher/dieser) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welcher Bus fährt zum Zentrum? Mit diesem Bus fahren wir zur Arbeit. (welcher/dieser) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-10-q01": {
@@ -460,169 +480,188 @@ export const chapter19AnswerKey: AnswerKey = {
     }
   },
   "kapitel-19-ubung-10-q05": {
-    "acceptedAnswers": "diesen",
+    "acceptedAnswers": [
+      "Welchen",
+      "Welchem"
+    ],
     "explanation": {
-      "fr": "Ich berate diesen Kunden. (Singular) — objet direct ou préposition à l’accusatif (A, m.): dies + en → diesen.",
-      "de": "Ich berate diesen Kunden. (Singular) — Akkusativobjekt oder Akkusativpräposition (A, m.): dies + en → diesen.",
-      "ar": "Ich berate diesen Kunden. (Singular) — مفعول مباشر أو حرف جر مع الأكوزاتيف (A, m.): dies + en → diesen.",
-      "en": "Ich berate diesen Kunden. (Singular) — direct object or accusative preposition (A, m.): dies + en → diesen."
+      "fr": "Welchen Kunden beraten Sie? Welchem Kunden geben Sie die Information? (welcher; jeweils Singular) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welchen Kunden beraten Sie? Welchem Kunden geben Sie die Information? (welcher; jeweils Singular) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welchen Kunden beraten Sie? Welchem Kunden geben Sie die Information? (welcher; jeweils Singular) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welchen Kunden beraten Sie? Welchem Kunden geben Sie die Information? (welcher; jeweils Singular) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-11-q01": {
     "acceptedAnswers": [
-      "Welcher"
+      "Welcher",
+      "diesem"
     ],
     "explanation": {
-      "fr": "Welcher Patient braucht Hilfe? — sujet ou identification (N, m.): welch + er → Welcher.",
-      "de": "Welcher Patient braucht Hilfe? — Subjekt oder Identifikation (N, m.): welch + er → Welcher.",
-      "ar": "Welcher Patient braucht Hilfe? — فاعل أو تعريف (N, m.): welch + er → Welcher.",
-      "en": "Welcher Patient braucht Hilfe? — subject or identification (N, m.): welch + er → Welcher."
+      "fr": "Welcher Apotheker arbeitet heute? Ich spreche mit diesem Apotheker dort. (welcher/dieser) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welcher Apotheker arbeitet heute? Ich spreche mit diesem Apotheker dort. (welcher/dieser) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welcher Apotheker arbeitet heute? Ich spreche mit diesem Apotheker dort. (welcher/dieser) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welcher Apotheker arbeitet heute? Ich spreche mit diesem Apotheker dort. (welcher/dieser) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-11-q02": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "Welchen Patienten beraten Sie?",
+      "Welchem Patienten helfen Sie?"
+    ],
     "explanation": {
-      "fr": "Welchen Patienten beraten Sie? (Singular) — objet direct ou préposition à l’accusatif (A, m.): welch + en → Welchen.",
-      "de": "Welchen Patienten beraten Sie? (Singular) — Akkusativobjekt oder Akkusativpräposition (A, m.): welch + en → Welchen.",
-      "ar": "Welchen Patienten beraten Sie? (Singular) — مفعول مباشر أو حرف جر مع الأكوزاتيف (A, m.): welch + en → Welchen.",
-      "en": "Welchen Patienten beraten Sie? (Singular) — direct object or accusative preposition (A, m.): welch + en → Welchen."
+      "fr": "Welchen Patienten beraten Sie? / Welchem Patienten helfen Sie? — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welchen Patienten beraten Sie? / Welchem Patienten helfen Sie? — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welchen Patienten beraten Sie? / Welchem Patienten helfen Sie? — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welchen Patienten beraten Sie? / Welchem Patienten helfen Sie? — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-11-q03": {
-    "acceptedAnswers": "Welchem",
+    "acceptedAnswers": [
+      "Welches",
+      "dieser",
+      "Welchen"
+    ],
     "explanation": {
-      "fr": "Welchem Patienten geben Sie das Rezept zurück? (Singular) — verbe ou préposition au datif (D, m.): welch + em → Welchem.",
-      "de": "Welchem Patienten geben Sie das Rezept zurück? (Singular) — Dativverb oder Dativpräposition (D, m.): welch + em → Welchem.",
-      "ar": "Welchem Patienten geben Sie das Rezept zurück? (Singular) — فعل أو حرف جر مع الداتيف (D, m.): welch + em → Welchem.",
-      "en": "Welchem Patienten geben Sie das Rezept zurück? (Singular) — dative verb or preposition (D, m.): welch + em → Welchem."
+      "fr": "Welches Rezept ist gültig? (welcher) / Mit dieser Ärztin sprechen Sie? (dieser) / Welchen Kollegen rufen Sie an? (welcher; Singular) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welches Rezept ist gültig? (welcher) / Mit dieser Ärztin sprechen Sie? (dieser) / Welchen Kollegen rufen Sie an? (welcher; Singular) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welches Rezept ist gültig? (welcher) / Mit dieser Ärztin sprechen Sie? (dieser) / Welchen Kollegen rufen Sie an? (welcher; Singular) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welches Rezept ist gültig? (welcher) / Mit dieser Ärztin sprechen Sie? (dieser) / Welchen Kollegen rufen Sie an? (welcher; Singular) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-11-q04": {
-    "acceptedAnswers": "welcher",
+    "acceptedAnswers": [
+      "Welche",
+      "diese"
+    ],
     "explanation": {
-      "fr": "Mit welcher Ärztin sprechen Sie? — verbe ou préposition au datif (D, f.): welch + er → welcher.",
-      "de": "Mit welcher Ärztin sprechen Sie? — Dativverb oder Dativpräposition (D, f.): welch + er → welcher.",
-      "ar": "Mit welcher Ärztin sprechen Sie? — فعل أو حرف جر مع الداتيف (D, f.): welch + er → welcher.",
-      "en": "Mit welcher Ärztin sprechen Sie? — dative verb or preposition (D, f.): welch + er → welcher."
+      "fr": "Welche Packung brauchen Sie? Ich nehme diese hier. (welcher/dieser) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welche Packung brauchen Sie? Ich nehme diese hier. (welcher/dieser) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welche Packung brauchen Sie? Ich nehme diese hier. (welcher/dieser) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welche Packung brauchen Sie? Ich nehme diese hier. (welcher/dieser) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-11-q05": {
-    "acceptedAnswers": [
-      "dieser"
-    ],
+    "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Ich vertraue dieser Ärztin. — verbe ou préposition au datif (D, f.): dies + er → dieser.",
-      "de": "Ich vertraue dieser Ärztin. — Dativverb oder Dativpräposition (D, f.): dies + er → dieser.",
-      "ar": "Ich vertraue dieser Ärztin. — فعل أو حرف جر مع الداتيف (D, f.): dies + er → dieser.",
-      "en": "Ich vertraue dieser Ärztin. — dative verb or preposition (D, f.): dies + er → dieser."
+      "fr": "Mit diesen Medikamenten bin ich zufrieden. — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Mit diesen Medikamenten bin ich zufrieden. — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Mit diesen Medikamenten bin ich zufrieden. — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Mit diesen Medikamenten bin ich zufrieden. — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-12-q01": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "Welcher",
+      "diesem"
+    ],
     "explanation": {
-      "fr": "In welchem Hotel übernachten wir? — verbe ou préposition au datif (D, n.): welch + em → welchem.",
-      "de": "In welchem Hotel übernachten wir? — Dativverb oder Dativpräposition (D, n.): welch + em → welchem.",
-      "ar": "In welchem Hotel übernachten wir? — فعل أو حرف جر مع الداتيف (D, n.): welch + em → welchem.",
-      "en": "In welchem Hotel übernachten wir? — dative verb or preposition (D, n.): welch + em → welchem."
+      "fr": "Welcher Zug fährt nach Köln? In diesem Zug möchte ich sitzen. (welcher/dieser) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welcher Zug fährt nach Köln? In diesem Zug möchte ich sitzen. (welcher/dieser) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welcher Zug fährt nach Köln? In diesem Zug möchte ich sitzen. (welcher/dieser) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welcher Zug fährt nach Köln? In diesem Zug möchte ich sitzen. (welcher/dieser) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-12-q02": {
-    "acceptedAnswers": "Welches",
+    "acceptedAnswers": [
+      "Welches Hotel",
+      "buchen",
+      "wir für morgen?"
+    ],
     "explanation": {
-      "fr": "Welches Hotel buchen wir? — objet direct ou préposition à l’accusatif (A, n.): welch + es → Welches.",
-      "de": "Welches Hotel buchen wir? — Akkusativobjekt oder Akkusativpräposition (A, n.): welch + es → Welches.",
-      "ar": "Welches Hotel buchen wir? — مفعول مباشر أو حرف جر مع الأكوزاتيف (A, n.): welch + es → Welches.",
-      "en": "Welches Hotel buchen wir? — direct object or accusative preposition (A, n.): welch + es → Welches."
+      "fr": "Welches Hotel buchen wir für morgen? Welches porte la terminaison -es de l’accusatif neutre. Le groupe interrogatif est suivi du verbe conjugué buchen, puis du sujet wir.",
+      "de": "Welches Hotel buchen wir für morgen? Welches trägt die Endung -es im Akkusativ Neutrum. Auf die Fragegruppe folgen das finite Verb buchen und das Subjekt wir.",
+      "ar": "Welches Hotel buchen wir für morgen? تأخذ welches النهاية es لأن Hotel محايد في النصب. يلي مجموعة السؤال الفعل buchen ثم الفاعل wir.",
+      "en": "Welches Hotel buchen wir für morgen? Welches takes the neuter accusative ending -es. The question phrase is followed by the finite verb buchen and then the subject wir."
     }
   },
   "kapitel-19-ubung-12-q03": {
-    "acceptedAnswers": "welchen",
+    "acceptedAnswers": [
+      "Welche Busse fahren zum Bahnhof?",
+      "Mit welchen Bussen fahren wir?"
+    ],
     "explanation": {
-      "fr": "Mit welchen Zügen fahren wir? — verbe ou préposition au datif (D, Pl.): welch + en → welchen.",
-      "de": "Mit welchen Zügen fahren wir? — Dativverb oder Dativpräposition (D, Pl.): welch + en → welchen.",
-      "ar": "Mit welchen Zügen fahren wir? — فعل أو حرف جر مع الداتيف (D, Pl.): welch + en → welchen.",
-      "en": "Mit welchen Zügen fahren wir? — dative verb or preposition (D, Pl.): welch + en → welchen."
+      "fr": "Welche Busse fahren zum Bahnhof? / Mit welchen Bussen fahren wir? — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welche Busse fahren zum Bahnhof? / Mit welchen Bussen fahren wir? — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welche Busse fahren zum Bahnhof? / Mit welchen Bussen fahren wir? — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welche Busse fahren zum Bahnhof? / Mit welchen Bussen fahren wir? — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-12-q04": {
     "acceptedAnswers": [
-      "Welcher"
+      "Welcher",
+      "diesen"
     ],
     "explanation": {
-      "fr": "Welcher Zug erreicht Berlin zuerst? — sujet ou identification (N, m.): welch + er → Welcher.",
-      "de": "Welcher Zug erreicht Berlin zuerst? — Subjekt oder Identifikation (N, m.): welch + er → Welcher.",
-      "ar": "Welcher Zug erreicht Berlin zuerst? — فاعل أو تعريف (N, m.): welch + er → Welcher.",
-      "en": "Welcher Zug erreicht Berlin zuerst? — subject or identification (N, m.): welch + er → Welcher."
+      "fr": "Welcher Koffer gehört dir? Ich nehme diesen Koffer hier. (welcher/dieser) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welcher Koffer gehört dir? Ich nehme diesen Koffer hier. (welcher/dieser) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welcher Koffer gehört dir? Ich nehme diesen Koffer hier. (welcher/dieser) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welcher Koffer gehört dir? Ich nehme diesen Koffer hier. (welcher/dieser) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-12-q05": {
     "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Wir steigen in diesen Zug ein. — objet direct ou préposition à l’accusatif (A, m.): dies + en → diesen.",
-      "de": "Wir steigen in diesen Zug ein. — Akkusativobjekt oder Akkusativpräposition (A, m.): dies + en → diesen.",
-      "ar": "Wir steigen in diesen Zug ein. — مفعول مباشر أو حرف جر مع الأكوزاتيف (A, m.): dies + en → diesen.",
-      "en": "Wir steigen in diesen Zug ein. — direct object or accusative preposition (A, m.): dies + en → diesen."
+      "fr": "Mit welchem Ticket darf ich fahren? — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Mit welchem Ticket darf ich fahren? — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Mit welchem Ticket darf ich fahren? — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Mit welchem Ticket darf ich fahren? — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-13-q01": {
-    "acceptedAnswers": "Welchem",
+    "acceptedAnswers": [
+      "Welcher",
+      "Welchen"
+    ],
     "explanation": {
-      "fr": "Welchem Kollegen schickst du die E-Mail? (Singular) — verbe ou préposition au datif (D, m.): welch + em → Welchem.",
-      "de": "Welchem Kollegen schickst du die E-Mail? (Singular) — Dativverb oder Dativpräposition (D, m.): welch + em → Welchem.",
-      "ar": "Welchem Kollegen schickst du die E-Mail? (Singular) — فعل أو حرف جر مع الداتيف (D, m.): welch + em → Welchem.",
-      "en": "Welchem Kollegen schickst du die E-Mail? (Singular) — dative verb or preposition (D, m.): welch + em → Welchem."
+      "fr": "Welcher Kollegin schreibst du? Welchen Kollegen rufst du an? (welcher; Singular) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welcher Kollegin schreibst du? Welchen Kollegen rufst du an? (welcher; Singular) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welcher Kollegin schreibst du? Welchen Kollegen rufst du an? (welcher; Singular) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welcher Kollegin schreibst du? Welchen Kollegen rufst du an? (welcher; Singular) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-13-q02": {
-    "acceptedAnswers": "Welchen",
+    "acceptedAnswers": [
+      "Diesen Ordner brauche ich.",
+      "In diesem Ordner sind die Verträge."
+    ],
     "explanation": {
-      "fr": "Welchen Kollegen suchst du? (Singular) — objet direct ou préposition à l’accusatif (A, m.): welch + en → Welchen.",
-      "de": "Welchen Kollegen suchst du? (Singular) — Akkusativobjekt oder Akkusativpräposition (A, m.): welch + en → Welchen.",
-      "ar": "Welchen Kollegen suchst du? (Singular) — مفعول مباشر أو حرف جر مع الأكوزاتيف (A, m.): welch + en → Welchen.",
-      "en": "Welchen Kollegen suchst du? (Singular) — direct object or accusative preposition (A, m.): welch + en → Welchen."
+      "fr": "Diesen Ordner brauche ich. / In diesem Ordner sind die Verträge. — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Diesen Ordner brauche ich. / In diesem Ordner sind die Verträge. — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Diesen Ordner brauche ich. / In diesem Ordner sind die Verträge. — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Diesen Ordner brauche ich. / In diesem Ordner sind die Verträge. — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-13-q03": {
-    "acceptedAnswers": [
-      "Welche"
-    ],
+    "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Welche Kollegin hat angerufen? — sujet ou identification (N, f.): welch + e → Welche.",
-      "de": "Welche Kollegin hat angerufen? — Subjekt oder Identifikation (N, f.): welch + e → Welche.",
-      "ar": "Welche Kollegin hat angerufen? — فاعل أو تعريف (N, f.): welch + e → Welche.",
-      "en": "Welche Kollegin hat angerufen? — subject or identification (N, f.): welch + e → Welche."
+      "fr": "Welches Dokument fehlt noch? — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Welches Dokument fehlt noch? — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Welches Dokument fehlt noch? — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Welches Dokument fehlt noch? — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-13-q04": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "Diesen",
+      "Diese"
+    ],
     "explanation": {
-      "fr": "Mit welchen Kolleginnen arbeitest du? — verbe ou préposition au datif (D, Pl.): welch + en → welchen.",
-      "de": "Mit welchen Kolleginnen arbeitest du? — Dativverb oder Dativpräposition (D, Pl.): welch + en → welchen.",
-      "ar": "Mit welchen Kolleginnen arbeitest du? — فعل أو حرف جر مع الداتيف (D, Pl.): welch + en → welchen.",
-      "en": "Mit welchen Kolleginnen arbeitest du? — dative verb or preposition (D, Pl.): welch + en → welchen."
+      "fr": "Diesen Kollegen erklären wir das Programm. Diese Kollegin besucht uns morgen. (dieser; Plural/Singular) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Diesen Kollegen erklären wir das Programm. Diese Kollegin besucht uns morgen. (dieser; Plural/Singular) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Diesen Kollegen erklären wir das Programm. Diese Kollegin besucht uns morgen. (dieser; Plural/Singular) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Diesen Kollegen erklären wir das Programm. Diese Kollegin besucht uns morgen. (dieser; Plural/Singular) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   },
   "kapitel-19-ubung-13-q05": {
-    "acceptedAnswers": "diesem",
-    "explanation": {
-      "fr": "Ich gebe diesem Kollegen den Schlüssel. (Singular) — verbe ou préposition au datif (D, m.): dies + em → diesem.",
-      "de": "Ich gebe diesem Kollegen den Schlüssel. (Singular) — Dativverb oder Dativpräposition (D, m.): dies + em → diesem.",
-      "ar": "Ich gebe diesem Kollegen den Schlüssel. (Singular) — فعل أو حرف جر مع الداتيف (D, m.): dies + em → diesem.",
-      "en": "Ich gebe diesem Kollegen den Schlüssel. (Singular) — dative verb or preposition (D, m.): dies + em → diesem."
-    }
-  },
-  "kapitel-19-ubung-01-q01": {
     "acceptedAnswers": [
-      "Dieser Kollege",
-      "Diese Tür",
-      "Dieses Buch",
-      "Diese Socken"
+      "welchem",
+      "diesen"
     ],
     "explanation": {
-      "fr": "Au nominatif : -er masculin, -es neutre, -e féminin et pluriel.",
-      "de": "Im Nominativ: -er maskulin, -es neutral, -e feminin und Plural.",
-      "ar": "في النوميناتيف: er للمذكر وes للمحايد وe للمؤنث والجمع.",
-      "en": "Nominative: -er masculine, -es neuter, -e feminine and plural."
+      "fr": "Mit welchem Computer arbeitest du? Ich benutze diesen Computer da. (welcher/dieser) — Welcher et dieser suivent les terminaisons de l’article défini : masculin -er/-en/-em, féminin -e/-e/-er, neutre -es/-es/-em, pluriel -e/-e/-en (N/A/D).",
+      "de": "Mit welchem Computer arbeitest du? Ich benutze diesen Computer da. (welcher/dieser) — Welcher und dieser haben die Endungen des bestimmten Artikels: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, Pl. -e/-e/-en (N/A/D).",
+      "ar": "Mit welchem Computer arbeitest du? Ich benutze diesen Computer da. (welcher/dieser) — يتبع welcher وdieser نهايات أداة التعريف: المذكر er/en/em، المؤنث e/e/er، المحايد es/es/em، الجمع e/e/en (رفع/نصب/داتيف).",
+      "en": "Mit welchem Computer arbeitest du? Ich benutze diesen Computer da. (welcher/dieser) — Welcher and dieser follow definite article endings: m. -er/-en/-em, f. -e/-e/-er, n. -es/-es/-em, plural -e/-e/-en (N/A/D)."
     }
   }
 }

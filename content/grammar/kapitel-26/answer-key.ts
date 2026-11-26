@@ -234,91 +234,87 @@ export const chapter26AnswerKey: AnswerKey = {
   },
   "kapitel-26-ubung-03-q01": {
     "acceptedAnswers": [
-      "einsteigen → eingestiegen",
-      "abholen → abgeholt"
+      "eingestiegen"
     ],
     "explanation": {
-      "fr": "einsteigen → eingestiegen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "einsteigen → eingestiegen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "einsteigen → eingestiegen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "einsteigen → eingestiegen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Am Bahnhof sind wir in den Zug eingestiegen. (einsteigen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Am Bahnhof sind wir in den Zug eingestiegen. (einsteigen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Am Bahnhof sind wir in den Zug eingestiegen. (einsteigen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Am Bahnhof sind wir in den Zug eingestiegen. (einsteigen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-03-q02": {
     "acceptedAnswers": [
-      "geant",
-      "wortet"
+      "geantwortet"
     ],
     "explanation": {
-      "fr": "antworten → geantwortet. Verbe régulier : ge- + radical + -t. Après certains radicaux, notamment en -t ou -d, on ajoute -et pour faciliter la prononciation.",
-      "de": "antworten → geantwortet. Schwache Verben: ge- + Stamm + -t. Nach bestimmten Stämmen, etwa auf -t oder -d, steht -et.",
-      "ar": "antworten → geantwortet. الفعل المنتظم: ge- ثم الجذر ثم -t. بعد بعض الجذور مثل -t و-d نضيف -et.",
-      "en": "antworten → geantwortet. Weak verbs: ge- + stem + -t. Certain stems, including those ending in -t or -d, take -et."
+      "fr": "Die Lehrerin hat auf meine Frage geantwortet. (antworten) — Le participe régulier se forme avec ge- et -t ; après un radical en -t ou -d, on emploie généralement -et.",
+      "de": "Die Lehrerin hat auf meine Frage geantwortet. (antworten) — Das schwache Partizip hat ge- und -t; nach einem Stamm auf -t oder -d steht meist -et.",
+      "ar": "Die Lehrerin hat auf meine Frage geantwortet. (antworten) — يتكوّن التصريف الثالث للفعل المنتظم من ge- و-t، وغالباً -et بعد جذر ينتهي بـ t أو d.",
+      "en": "Die Lehrerin hat auf meine Frage geantwortet. (antworten) — Weak participles take ge- and -t; stems ending in t or d usually take -et."
     }
   },
   "kapitel-26-ubung-03-q03": {
-    "acceptedAnswers": [
-      "aufgemacht"
-    ],
+    "acceptedAnswers": "aufgemacht",
     "explanation": {
-      "fr": "aufmachen → aufgemacht. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "aufmachen → aufgemacht. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "aufmachen → aufgemacht. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "aufmachen → aufgemacht. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Wer hat das Fenster aufgemacht? (aufmachen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Wer hat das Fenster aufgemacht? (aufmachen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Wer hat das Fenster aufgemacht? (aufmachen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Wer hat das Fenster aufgemacht? (aufmachen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-03-q04": {
     "acceptedAnswers": "false",
     "explanation": {
-      "fr": "bringen → gebracht. Les verbes mixtes changent de radical mais prennent -t comme les réguliers. Il faut mémoriser ces formes.",
-      "de": "bringen → gebracht. Gemischte Verben ändern den Stamm, haben aber -t wie schwache Verben. Diese Formen muss man lernen.",
-      "ar": "bringen → gebracht. الأفعال المختلطة تغير الجذر وتأخذ -t مثل المنتظمة. يجب حفظها.",
-      "en": "bringen → gebracht. Mixed verbs change their stem but take -t like weak verbs. Memorize these forms."
+      "fr": "Der Bote hat das Paket gebracht. — Ce verbe mixte combine un changement de radical avec la terminaison -t.",
+      "de": "Der Bote hat das Paket gebracht. — Dieses gemischte Verb verbindet einen Stammwechsel mit der Endung -t.",
+      "ar": "Der Bote hat das Paket gebracht. — يجمع هذا الفعل المختلط بين تغير الجذر والنهاية -t.",
+      "en": "Der Bote hat das Paket gebracht. — This mixed verb combines a stem change with the ending -t."
     }
   },
   "kapitel-26-ubung-03-q05": {
-    "acceptedAnswers": "entschuldigt",
+    "acceptedAnswers": [
+      "entschuldigt"
+    ],
     "explanation": {
-      "fr": "entschuldigen → entschuldigt. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "entschuldigen → entschuldigt. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "entschuldigen → entschuldigt. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "entschuldigen → entschuldigt. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Er hat sich für den Fehler entschuldigt. (entschuldigen) — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "Er hat sich für den Fehler entschuldigt. (entschuldigen) — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "Er hat sich für den Fehler entschuldigt. (entschuldigen) — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "Er hat sich für den Fehler entschuldigt. (entschuldigen) — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-03-q06": {
     "acceptedAnswers": [
       "versucht",
-      "bekommen"
+      "bekommen",
+      "erzählt"
     ],
     "explanation": {
-      "fr": "versuchen → versucht. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "versuchen → versucht. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "versuchen → versucht. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "versuchen → versucht. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "versuchen → versucht / bekommen → bekommen / erzählen → erzählt — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "versuchen → versucht / bekommen → bekommen / erzählen → erzählt — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "versuchen → versucht / bekommen → bekommen / erzählen → erzählt — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "versuchen → versucht / bekommen → bekommen / erzählen → erzählt — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-03-q07": {
     "acceptedAnswers": [
-      "waschen → gewaschen",
-      "sehen → gesehen"
+      "gewaschen",
+      "gesehen"
     ],
     "explanation": {
-      "fr": "waschen → gewaschen. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "waschen → gewaschen. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "waschen → gewaschen. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "waschen → gewaschen. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Sie hat die Bluse gewaschen und den Fleck gesehen. (waschen/sehen) — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Sie hat die Bluse gewaschen und den Fleck gesehen. (waschen/sehen) — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Sie hat die Bluse gewaschen und den Fleck gesehen. (waschen/sehen) — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Sie hat die Bluse gewaschen und den Fleck gesehen. (waschen/sehen) — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   },
   "kapitel-26-ubung-03-q08": {
-    "acceptedAnswers": [
-      "geg",
-      "eben"
-    ],
+    "acceptedAnswers": "gegeben",
     "explanation": {
-      "fr": "geben → gegeben. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "geben → gegeben. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "geben → gegeben. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "geben → gegeben. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Der Arzt hat mir einen Rat gegeben. (geben) — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Der Arzt hat mir einen Rat gegeben. (geben) — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Der Arzt hat mir einen Rat gegeben. (geben) — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Der Arzt hat mir einen Rat gegeben. (geben) — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   },
   "kapitel-26-ubung-03-q09": {
@@ -326,40 +322,43 @@ export const chapter26AnswerKey: AnswerKey = {
       "bestellt"
     ],
     "explanation": {
-      "fr": "bestellen → bestellt. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "bestellen → bestellt. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "bestellen → bestellt. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "bestellen → bestellt. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Wir haben zwei Pizzen bestellt. (bestellen) — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "Wir haben zwei Pizzen bestellt. (bestellen) — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "Wir haben zwei Pizzen bestellt. (bestellen) — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "Wir haben zwei Pizzen bestellt. (bestellen) — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-03-q10": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "erzählt"
+    ],
     "explanation": {
-      "fr": "erzählen → erzählt. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "erzählen → erzählt. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "erzählen → erzählt. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "erzählen → erzählt. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Oma hat uns eine Geschichte erzählt. (erzählen) — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "Oma hat uns eine Geschichte erzählt. (erzählen) — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "Oma hat uns eine Geschichte erzählt. (erzählen) — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "Oma hat uns eine Geschichte erzählt. (erzählen) — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-03-q11": {
-    "acceptedAnswers": "umgezogen",
+    "acceptedAnswers": [
+      "umgezogen"
+    ],
     "explanation": {
-      "fr": "umziehen → umgezogen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "umziehen → umgezogen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "umziehen → umgezogen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "umziehen → umgezogen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Die Familie ist nach Köln umgezogen. (umziehen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Die Familie ist nach Köln umgezogen. (umziehen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Die Familie ist nach Köln umgezogen. (umziehen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Die Familie ist nach Köln umgezogen. (umziehen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-04-q01": {
     "acceptedAnswers": [
-      "stud",
-      "iert"
+      "studiert"
     ],
     "explanation": {
-      "fr": "studieren → studiert. Les verbes en -ieren forment leur participe en -iert sans ge-, même si le verbe est long.",
-      "de": "studieren → studiert. Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
-      "ar": "studieren → studiert. الأفعال المنتهية بـ -ieren تأخذ -iert دون ge-.",
-      "en": "studieren → studiert. Verbs ending in -ieren form their participle with -iert and no ge-."
+      "fr": "In Heidelberg hat sie Medizin studiert. (studieren) — Les verbes en -ieren prennent -iert, sans ge-.",
+      "de": "In Heidelberg hat sie Medizin studiert. (studieren) — Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
+      "ar": "In Heidelberg hat sie Medizin studiert. (studieren) — الأفعال المنتهية بـ -ieren تأخذ -iert دون ge.",
+      "en": "In Heidelberg hat sie Medizin studiert. (studieren) — Verbs ending in -ieren form the participle in -iert without ge-."
     }
   },
   "kapitel-26-ubung-04-q02": {
@@ -367,52 +366,55 @@ export const chapter26AnswerKey: AnswerKey = {
       "explodiert"
     ],
     "explanation": {
-      "fr": "explodieren → explodiert. Les verbes en -ieren forment leur participe en -iert sans ge-, même si le verbe est long.",
-      "de": "explodieren → explodiert. Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
-      "ar": "explodieren → explodiert. الأفعال المنتهية بـ -ieren تأخذ -iert دون ge-.",
-      "en": "explodieren → explodiert. Verbs ending in -ieren form their participle with -iert and no ge-."
+      "fr": "Im Labor ist ein Behälter explodiert. (explodieren) — Les verbes en -ieren prennent -iert, sans ge-.",
+      "de": "Im Labor ist ein Behälter explodiert. (explodieren) — Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
+      "ar": "Im Labor ist ein Behälter explodiert. (explodieren) — الأفعال المنتهية بـ -ieren تأخذ -iert دون ge.",
+      "en": "Im Labor ist ein Behälter explodiert. (explodieren) — Verbs ending in -ieren form the participle in -iert without ge-."
     }
   },
   "kapitel-26-ubung-04-q03": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": "diskutiert",
     "explanation": {
-      "fr": "diskutieren → diskutiert. Les verbes en -ieren forment leur participe en -iert sans ge-, même si le verbe est long.",
-      "de": "diskutieren → diskutiert. Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
-      "ar": "diskutieren → diskutiert. الأفعال المنتهية بـ -ieren تأخذ -iert دون ge-.",
-      "en": "diskutieren → diskutiert. Verbs ending in -ieren form their participle with -iert and no ge-."
+      "fr": "Danach haben wir lange über den Vorfall diskutiert. (diskutieren) — Les verbes en -ieren prennent -iert, sans ge-.",
+      "de": "Danach haben wir lange über den Vorfall diskutiert. (diskutieren) — Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
+      "ar": "Danach haben wir lange über den Vorfall diskutiert. (diskutieren) — الأفعال المنتهية بـ -ieren تأخذ -iert دون ge.",
+      "en": "Danach haben wir lange über den Vorfall diskutiert. (diskutieren) — Verbs ending in -ieren form the participle in -iert without ge-."
     }
   },
   "kapitel-26-ubung-04-q04": {
-    "acceptedAnswers": "probiert",
+    "acceptedAnswers": [
+      "probiert"
+    ],
     "explanation": {
-      "fr": "probieren → probiert. Les verbes en -ieren forment leur participe en -iert sans ge-, même si le verbe est long.",
-      "de": "probieren → probiert. Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
-      "ar": "probieren → probiert. الأفعال المنتهية بـ -ieren تأخذ -iert دون ge-.",
-      "en": "probieren → probiert. Verbs ending in -ieren form their participle with -iert and no ge-."
+      "fr": "Im Restaurant hat er ein neues Gericht probiert. (probieren) — Les verbes en -ieren prennent -iert, sans ge-.",
+      "de": "Im Restaurant hat er ein neues Gericht probiert. (probieren) — Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
+      "ar": "Im Restaurant hat er ein neues Gericht probiert. (probieren) — الأفعال المنتهية بـ -ieren تأخذ -iert دون ge.",
+      "en": "Im Restaurant hat er ein neues Gericht probiert. (probieren) — Verbs ending in -ieren form the participle in -iert without ge-."
     }
   },
   "kapitel-26-ubung-04-q05": {
     "acceptedAnswers": [
       "repariert",
-      "studiert"
+      "gratuliert",
+      "telefoniert"
     ],
     "explanation": {
-      "fr": "reparieren → repariert. Les verbes en -ieren forment leur participe en -iert sans ge-, même si le verbe est long.",
-      "de": "reparieren → repariert. Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
-      "ar": "reparieren → repariert. الأفعال المنتهية بـ -ieren تأخذ -iert دون ge-.",
-      "en": "reparieren → repariert. Verbs ending in -ieren form their participle with -iert and no ge-."
+      "fr": "reparieren → repariert / gratulieren → gratuliert / telefonieren → telefoniert — Les verbes en -ieren prennent -iert, sans ge-.",
+      "de": "reparieren → repariert / gratulieren → gratuliert / telefonieren → telefoniert — Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
+      "ar": "reparieren → repariert / gratulieren → gratuliert / telefonieren → telefoniert — الأفعال المنتهية بـ -ieren تأخذ -iert دون ge.",
+      "en": "reparieren → repariert / gratulieren → gratuliert / telefonieren → telefoniert — Verbs ending in -ieren form the participle in -iert without ge-."
     }
   },
   "kapitel-26-ubung-04-q06": {
     "acceptedAnswers": [
-      "gratulieren → gratuliert",
-      "studieren → studiert"
+      "Die Mechanikerin hat das Rad repariert.",
+      "Wir haben ihm zum Geburtstag gratuliert."
     ],
     "explanation": {
-      "fr": "gratulieren → gratuliert. Les verbes en -ieren forment leur participe en -iert sans ge-, même si le verbe est long.",
-      "de": "gratulieren → gratuliert. Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
-      "ar": "gratulieren → gratuliert. الأفعال المنتهية بـ -ieren تأخذ -iert دون ge-.",
-      "en": "gratulieren → gratuliert. Verbs ending in -ieren form their participle with -iert and no ge-."
+      "fr": "Die Mechanikerin hat das Rad repariert. / Wir haben ihm zum Geburtstag gratuliert. — Les verbes en -ieren prennent -iert, sans ge-.",
+      "de": "Die Mechanikerin hat das Rad repariert. / Wir haben ihm zum Geburtstag gratuliert. — Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
+      "ar": "Die Mechanikerin hat das Rad repariert. / Wir haben ihm zum Geburtstag gratuliert. — الأفعال المنتهية بـ -ieren تأخذ -iert دون ge.",
+      "en": "Die Mechanikerin hat das Rad repariert. / Wir haben ihm zum Geburtstag gratuliert. — Verbs ending in -ieren form the participle in -iert without ge-."
     }
   },
   "kapitel-26-ubung-05-q01": {
@@ -420,183 +422,188 @@ export const chapter26AnswerKey: AnswerKey = {
       "besucht"
     ],
     "explanation": {
-      "fr": "besuchen → besucht. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "besuchen → besucht. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "besuchen → besucht. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "besuchen → besucht. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Am Sonntag haben wir Freunde besucht. (besuchen) — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "Am Sonntag haben wir Freunde besucht. (besuchen) — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "Am Sonntag haben wir Freunde besucht. (besuchen) — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "Am Sonntag haben wir Freunde besucht. (besuchen) — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-05-q02": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": "gekommen",
     "explanation": {
-      "fr": "kommen → gekommen. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "kommen → gekommen. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "kommen → gekommen. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "kommen → gekommen. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Die Gäste sind erst um neun gekommen. (kommen) — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Die Gäste sind erst um neun gekommen. (kommen) — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Die Gäste sind erst um neun gekommen. (kommen) — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Die Gäste sind erst um neun gekommen. (kommen) — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   },
   "kapitel-26-ubung-05-q03": {
-    "acceptedAnswers": "abgeflogen",
+    "acceptedAnswers": [
+      "abgeflogen"
+    ],
     "explanation": {
-      "fr": "abfliegen → abgeflogen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "abfliegen → abgeflogen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "abfliegen → abgeflogen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "abfliegen → abgeflogen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Das Flugzeug ist pünktlich abgeflogen. (abfliegen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Das Flugzeug ist pünktlich abgeflogen. (abfliegen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Das Flugzeug ist pünktlich abgeflogen. (abfliegen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Das Flugzeug ist pünktlich abgeflogen. (abfliegen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-05-q04": {
     "acceptedAnswers": [
-      "ferngesehen",
-      "abgeholt"
+      "ferngesehen"
     ],
     "explanation": {
-      "fr": "fernsehen → ferngesehen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "fernsehen → ferngesehen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "fernsehen → ferngesehen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "fernsehen → ferngesehen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Die Kinder haben eine Stunde ferngesehen. (fernsehen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Die Kinder haben eine Stunde ferngesehen. (fernsehen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Die Kinder haben eine Stunde ferngesehen. (fernsehen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Die Kinder haben eine Stunde ferngesehen. (fernsehen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-05-q05": {
     "acceptedAnswers": [
-      "ausmachen → ausgemacht",
-      "abholen → abgeholt"
+      "ausgemacht"
     ],
     "explanation": {
-      "fr": "ausmachen → ausgemacht. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "ausmachen → ausgemacht. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "ausmachen → ausgemacht. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "ausmachen → ausgemacht. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Vor dem Schlafen hat er das Licht ausgemacht. (ausmachen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Vor dem Schlafen hat er das Licht ausgemacht. (ausmachen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Vor dem Schlafen hat er das Licht ausgemacht. (ausmachen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Vor dem Schlafen hat er das Licht ausgemacht. (ausmachen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-05-q06": {
     "acceptedAnswers": [
-      "gearb",
-      "eitet"
+      "gearbeitet"
     ],
     "explanation": {
-      "fr": "arbeiten → gearbeitet. Verbe régulier : ge- + radical + -t. Après certains radicaux, notamment en -t ou -d, on ajoute -et pour faciliter la prononciation.",
-      "de": "arbeiten → gearbeitet. Schwache Verben: ge- + Stamm + -t. Nach bestimmten Stämmen, etwa auf -t oder -d, steht -et.",
-      "ar": "arbeiten → gearbeitet. الفعل المنتظم: ge- ثم الجذر ثم -t. بعد بعض الجذور مثل -t و-d نضيف -et.",
-      "en": "arbeiten → gearbeitet. Weak verbs: ge- + stem + -t. Certain stems, including those ending in -t or -d, take -et."
+      "fr": "Ich habe bis acht Uhr gearbeitet. (arbeiten) — Le participe régulier se forme avec ge- et -t ; après un radical en -t ou -d, on emploie généralement -et.",
+      "de": "Ich habe bis acht Uhr gearbeitet. (arbeiten) — Das schwache Partizip hat ge- und -t; nach einem Stamm auf -t oder -d steht meist -et.",
+      "ar": "Ich habe bis acht Uhr gearbeitet. (arbeiten) — يتكوّن التصريف الثالث للفعل المنتظم من ge- و-t، وغالباً -et بعد جذر ينتهي بـ t أو d.",
+      "en": "Ich habe bis acht Uhr gearbeitet. (arbeiten) — Weak participles take ge- and -t; stems ending in t or d usually take -et."
     }
   },
   "kapitel-26-ubung-05-q07": {
-    "acceptedAnswers": [
-      "begonnen"
-    ],
+    "acceptedAnswers": "begonnen",
     "explanation": {
-      "fr": "beginnen → begonnen. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "beginnen → begonnen. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "beginnen → begonnen. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "beginnen → begonnen. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Der Kurs hat bereits begonnen. (beginnen) — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "Der Kurs hat bereits begonnen. (beginnen) — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "Der Kurs hat bereits begonnen. (beginnen) — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "Der Kurs hat bereits begonnen. (beginnen) — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-05-q08": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "diskutiert"
+    ],
     "explanation": {
-      "fr": "diskutieren → diskutiert. Les verbes en -ieren forment leur participe en -iert sans ge-, même si le verbe est long.",
-      "de": "diskutieren → diskutiert. Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
-      "ar": "diskutieren → diskutiert. الأفعال المنتهية بـ -ieren تأخذ -iert دون ge-.",
-      "en": "diskutieren → diskutiert. Verbs ending in -ieren form their participle with -iert and no ge-."
+      "fr": "Die Politiker haben zwei Stunden diskutiert. (diskutieren) — Les verbes en -ieren prennent -iert, sans ge-.",
+      "de": "Die Politiker haben zwei Stunden diskutiert. (diskutieren) — Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
+      "ar": "Die Politiker haben zwei Stunden diskutiert. (diskutieren) — الأفعال المنتهية بـ -ieren تأخذ -iert دون ge.",
+      "en": "Die Politiker haben zwei Stunden diskutiert. (diskutieren) — Verbs ending in -ieren form the participle in -iert without ge-."
     }
   },
   "kapitel-26-ubung-05-q09": {
-    "acceptedAnswers": "gefahren",
+    "acceptedAnswers": [
+      "gefahren"
+    ],
     "explanation": {
-      "fr": "fahren → gefahren. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "fahren → gefahren. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "fahren → gefahren. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "fahren → gefahren. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Meine Eltern sind nach Wien gefahren. (fahren) — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Meine Eltern sind nach Wien gefahren. (fahren) — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Meine Eltern sind nach Wien gefahren. (fahren) — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Meine Eltern sind nach Wien gefahren. (fahren) — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   },
   "kapitel-26-ubung-05-q10": {
     "acceptedAnswers": [
       "gefragt",
-      "gekauft"
+      "angeklickt",
+      "vergessen"
     ],
     "explanation": {
-      "fr": "fragen → gefragt. Verbe régulier : ge- + radical + -t. Après certains radicaux, notamment en -t ou -d, on ajoute -et pour faciliter la prononciation.",
-      "de": "fragen → gefragt. Schwache Verben: ge- + Stamm + -t. Nach bestimmten Stämmen, etwa auf -t oder -d, steht -et.",
-      "ar": "fragen → gefragt. الفعل المنتظم: ge- ثم الجذر ثم -t. بعد بعض الجذور مثل -t و-d نضيف -et.",
-      "en": "fragen → gefragt. Weak verbs: ge- + stem + -t. Certain stems, including those ending in -t or -d, take -et."
+      "fr": "fragen → gefragt / anklicken → angeklickt / vergessen → vergessen — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "fragen → gefragt / anklicken → angeklickt / vergessen → vergessen — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "fragen → gefragt / anklicken → angeklickt / vergessen → vergessen — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "fragen → gefragt / anklicken → angeklickt / vergessen → vergessen — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-05-q11": {
     "acceptedAnswers": [
-      "anklicken → angeklickt",
-      "abholen → abgeholt"
+      "gefragt",
+      "gearbeitet"
     ],
     "explanation": {
-      "fr": "anklicken → angeklickt. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "anklicken → angeklickt. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "anklicken → angeklickt. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "anklicken → angeklickt. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "gefragt / gearbeitet — Le participe régulier se forme avec ge- et -t ; après un radical en -t ou -d, on emploie généralement -et.",
+      "de": "gefragt / gearbeitet — Das schwache Partizip hat ge- und -t; nach einem Stamm auf -t oder -d steht meist -et.",
+      "ar": "gefragt / gearbeitet — يتكوّن التصريف الثالث للفعل المنتظم من ge- و-t، وغالباً -et بعد جذر ينتهي بـ t أو d.",
+      "en": "gefragt / gearbeitet — Weak participles take ge- and -t; stems ending in t or d usually take -et."
     }
   },
   "kapitel-26-ubung-05-q12": {
     "acceptedAnswers": [
-      "verg",
-      "essen"
+      "Den Link",
+      "hat",
+      "sie",
+      "angeklickt."
     ],
     "explanation": {
-      "fr": "vergessen → vergessen. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "vergessen → vergessen. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "vergessen → vergessen. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "vergessen → vergessen. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Den Link hat sie angeklickt. — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Den Link hat sie angeklickt. — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Den Link hat sie angeklickt. — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Den Link hat sie angeklickt. — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-06-q01": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "gemacht"
+    ],
     "explanation": {
-      "fr": "machen → gemacht. Verbe régulier : ge- + radical + -t. Après certains radicaux, notamment en -t ou -d, on ajoute -et pour faciliter la prononciation.",
-      "de": "machen → gemacht. Schwache Verben: ge- + Stamm + -t. Nach bestimmten Stämmen, etwa auf -t oder -d, steht -et.",
-      "ar": "machen → gemacht. الفعل المنتظم: ge- ثم الجذر ثم -t. بعد بعض الجذور مثل -t و-d نضيف -et.",
-      "en": "machen → gemacht. Weak verbs: ge- + stem + -t. Certain stems, including those ending in -t or -d, take -et."
+      "fr": "Letztes Jahr haben wir eine Reise nach China gemacht. (machen) — Le participe régulier se forme avec ge- et -t ; après un radical en -t ou -d, on emploie généralement -et.",
+      "de": "Letztes Jahr haben wir eine Reise nach China gemacht. (machen) — Das schwache Partizip hat ge- und -t; nach einem Stamm auf -t oder -d steht meist -et.",
+      "ar": "Letztes Jahr haben wir eine Reise nach China gemacht. (machen) — يتكوّن التصريف الثالث للفعل المنتظم من ge- و-t، وغالباً -et بعد جذر ينتهي بـ t أو d.",
+      "en": "Letztes Jahr haben wir eine Reise nach China gemacht. (machen) — Weak participles take ge- and -t; stems ending in t or d usually take -et."
     }
   },
   "kapitel-26-ubung-06-q02": {
-    "acceptedAnswers": "teilgenommen",
+    "acceptedAnswers": [
+      "teilgenommen"
+    ],
     "explanation": {
-      "fr": "teilnehmen → teilgenommen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "teilnehmen → teilgenommen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "teilnehmen → teilgenommen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "teilnehmen → teilgenommen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Wir haben an einer Führung teilgenommen. (teilnehmen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Wir haben an einer Führung teilgenommen. (teilnehmen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Wir haben an einer Führung teilgenommen. (teilnehmen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Wir haben an einer Führung teilgenommen. (teilnehmen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-06-q03": {
     "acceptedAnswers": [
-      "geflogen",
-      "gesehen"
+      "geflogen"
     ],
     "explanation": {
-      "fr": "fliegen → geflogen. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "fliegen → geflogen. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "fliegen → geflogen. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "fliegen → geflogen. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Zuerst sind wir nach Peking geflogen. (fliegen) — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Zuerst sind wir nach Peking geflogen. (fliegen) — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Zuerst sind wir nach Peking geflogen. (fliegen) — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Zuerst sind wir nach Peking geflogen. (fliegen) — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   },
   "kapitel-26-ubung-06-q04": {
     "acceptedAnswers": [
-      "schlafen → geschlafen",
-      "sehen → gesehen"
+      "geschlafen"
     ],
     "explanation": {
-      "fr": "schlafen → geschlafen. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "schlafen → geschlafen. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "schlafen → geschlafen. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "schlafen → geschlafen. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Im Flugzeug haben wir kaum geschlafen. (schlafen) — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Im Flugzeug haben wir kaum geschlafen. (schlafen) — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Im Flugzeug haben wir kaum geschlafen. (schlafen) — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Im Flugzeug haben wir kaum geschlafen. (schlafen) — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   },
   "kapitel-26-ubung-06-q05": {
     "acceptedAnswers": [
-      "angek",
-      "ommen"
+      "angekommen"
     ],
     "explanation": {
-      "fr": "ankommen → angekommen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "ankommen → angekommen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "ankommen → angekommen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "ankommen → angekommen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Am Morgen sind wir endlich angekommen. (ankommen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Am Morgen sind wir endlich angekommen. (ankommen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Am Morgen sind wir endlich angekommen. (ankommen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Am Morgen sind wir endlich angekommen. (ankommen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-06-q06": {
@@ -604,97 +611,98 @@ export const chapter26AnswerKey: AnswerKey = {
       "gefahren"
     ],
     "explanation": {
-      "fr": "fahren → gefahren. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "fahren → gefahren. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "fahren → gefahren. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "fahren → gefahren. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Danach sind wir zum Hotel gefahren. (fahren) — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Danach sind wir zum Hotel gefahren. (fahren) — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Danach sind wir zum Hotel gefahren. (fahren) — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Danach sind wir zum Hotel gefahren. (fahren) — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   },
   "kapitel-26-ubung-06-q07": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "ausgepackt"
+    ],
     "explanation": {
-      "fr": "auspacken → ausgepackt. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "auspacken → ausgepackt. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "auspacken → ausgepackt. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "auspacken → ausgepackt. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Im Zimmer haben wir die Koffer ausgepackt. (auspacken) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Im Zimmer haben wir die Koffer ausgepackt. (auspacken) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Im Zimmer haben wir die Koffer ausgepackt. (auspacken) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Im Zimmer haben wir die Koffer ausgepackt. (auspacken) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-06-q08": {
-    "acceptedAnswers": "losgefahren",
+    "acceptedAnswers": [
+      "losgefahren"
+    ],
     "explanation": {
-      "fr": "losfahren → losgefahren. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "losfahren → losgefahren. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "losfahren → losgefahren. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "losfahren → losgefahren. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Um zehn sind wir wieder losgefahren. (losfahren) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Um zehn sind wir wieder losgefahren. (losfahren) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Um zehn sind wir wieder losgefahren. (losfahren) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Um zehn sind wir wieder losgefahren. (losfahren) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-06-q09": {
     "acceptedAnswers": [
-      "besichtigt",
-      "bekommen"
+      "besichtigt"
     ],
     "explanation": {
-      "fr": "besichtigen → besichtigt. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "besichtigen → besichtigt. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "besichtigen → besichtigt. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "besichtigen → besichtigt. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Wir haben einen Tempel besichtigt. (besichtigen) — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "Wir haben einen Tempel besichtigt. (besichtigen) — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "Wir haben einen Tempel besichtigt. (besichtigen) — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "Wir haben einen Tempel besichtigt. (besichtigen) — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-06-q10": {
     "acceptedAnswers": [
-      "laufen → gelaufen",
-      "sehen → gesehen"
+      "gelaufen"
     ],
     "explanation": {
-      "fr": "laufen → gelaufen. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "laufen → gelaufen. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "laufen → gelaufen. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "laufen → gelaufen. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Danach sind wir durch den Park gelaufen. (laufen) — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Danach sind wir durch den Park gelaufen. (laufen) — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Danach sind wir durch den Park gelaufen. (laufen) — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Danach sind wir durch den Park gelaufen. (laufen) — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   },
   "kapitel-26-ubung-07-q01": {
-    "acceptedAnswers": "gemacht",
+    "acceptedAnswers": [
+      "gemacht"
+    ],
     "explanation": {
-      "fr": "machen → gemacht. Verbe régulier : ge- + radical + -t. Après certains radicaux, notamment en -t ou -d, on ajoute -et pour faciliter la prononciation.",
-      "de": "machen → gemacht. Schwache Verben: ge- + Stamm + -t. Nach bestimmten Stämmen, etwa auf -t oder -d, steht -et.",
-      "ar": "machen → gemacht. الفعل المنتظم: ge- ثم الجذر ثم -t. بعد بعض الجذور مثل -t و-d نضيف -et.",
-      "en": "machen → gemacht. Weak verbs: ge- + stem + -t. Certain stems, including those ending in -t or -d, take -et."
+      "fr": "Wir haben viele Fotos gemacht. (machen) — Le participe régulier se forme avec ge- et -t ; après un radical en -t ou -d, on emploie généralement -et.",
+      "de": "Wir haben viele Fotos gemacht. (machen) — Das schwache Partizip hat ge- und -t; nach einem Stamm auf -t oder -d steht meist -et.",
+      "ar": "Wir haben viele Fotos gemacht. (machen) — يتكوّن التصريف الثالث للفعل المنتظم من ge- و-t، وغالباً -et بعد جذر ينتهي بـ t أو d.",
+      "en": "Wir haben viele Fotos gemacht. (machen) — Weak participles take ge- and -t; stems ending in t or d usually take -et."
     }
   },
   "kapitel-26-ubung-07-q02": {
     "acceptedAnswers": [
-      "gegessen",
-      "gesehen"
+      "gegessen"
     ],
     "explanation": {
-      "fr": "essen → gegessen. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "essen → gegessen. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "essen → gegessen. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "essen → gegessen. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Mittags haben wir Reis gegessen. (essen) — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Mittags haben wir Reis gegessen. (essen) — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Mittags haben wir Reis gegessen. (essen) — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Mittags haben wir Reis gegessen. (essen) — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   },
   "kapitel-26-ubung-07-q03": {
     "acceptedAnswers": [
-      "gehen → gegangen",
-      "sehen → gesehen"
+      "gegangen"
     ],
     "explanation": {
-      "fr": "gehen → gegangen. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "gehen → gegangen. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "gehen → gegangen. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "gehen → gegangen. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Anschließend sind wir ins Museum gegangen. (gehen) — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Anschließend sind wir ins Museum gegangen. (gehen) — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Anschließend sind wir ins Museum gegangen. (gehen) — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Anschließend sind wir ins Museum gegangen. (gehen) — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   },
   "kapitel-26-ubung-07-q04": {
     "acceptedAnswers": [
-      "ange",
-      "sehen"
+      "angesehen"
     ],
     "explanation": {
-      "fr": "ansehen → angesehen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "ansehen → angesehen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "ansehen → angesehen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "ansehen → angesehen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Dort haben wir alte Bilder angesehen. (ansehen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Dort haben wir alte Bilder angesehen. (ansehen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Dort haben wir alte Bilder angesehen. (ansehen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Dort haben wir alte Bilder angesehen. (ansehen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-07-q05": {
@@ -702,377 +710,413 @@ export const chapter26AnswerKey: AnswerKey = {
       "gewartet"
     ],
     "explanation": {
-      "fr": "warten → gewartet. Verbe régulier : ge- + radical + -t. Après certains radicaux, notamment en -t ou -d, on ajoute -et pour faciliter la prononciation.",
-      "de": "warten → gewartet. Schwache Verben: ge- + Stamm + -t. Nach bestimmten Stämmen, etwa auf -t oder -d, steht -et.",
-      "ar": "warten → gewartet. الفعل المنتظم: ge- ثم الجذر ثم -t. بعد بعض الجذور مثل -t و-d نضيف -et.",
-      "en": "warten → gewartet. Weak verbs: ge- + stem + -t. Certain stems, including those ending in -t or -d, take -et."
+      "fr": "Vor dem Eingang haben wir lange gewartet. (warten) — Le participe régulier se forme avec ge- et -t ; après un radical en -t ou -d, on emploie généralement -et.",
+      "de": "Vor dem Eingang haben wir lange gewartet. (warten) — Das schwache Partizip hat ge- und -t; nach einem Stamm auf -t oder -d steht meist -et.",
+      "ar": "Vor dem Eingang haben wir lange gewartet. (warten) — يتكوّن التصريف الثالث للفعل المنتظم من ge- و-t، وغالباً -et بعد جذر ينتهي بـ t أو d.",
+      "en": "Vor dem Eingang haben wir lange gewartet. (warten) — Weak participles take ge- and -t; stems ending in t or d usually take -et."
     }
   },
   "kapitel-26-ubung-07-q06": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "eingekauft"
+    ],
     "explanation": {
-      "fr": "einkaufen → eingekauft. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "einkaufen → eingekauft. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "einkaufen → eingekauft. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "einkaufen → eingekauft. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Am Nachmittag haben wir eingekauft. (einkaufen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Am Nachmittag haben wir eingekauft. (einkaufen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Am Nachmittag haben wir eingekauft. (einkaufen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Am Nachmittag haben wir eingekauft. (einkaufen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-07-q07": {
-    "acceptedAnswers": "besucht",
+    "acceptedAnswers": [
+      "besucht"
+    ],
     "explanation": {
-      "fr": "besuchen → besucht. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "besuchen → besucht. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "besuchen → besucht. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "besuchen → besucht. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Am nächsten Tag haben wir Freunde besucht. (besuchen) — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "Am nächsten Tag haben wir Freunde besucht. (besuchen) — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "Am nächsten Tag haben wir Freunde besucht. (besuchen) — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "Am nächsten Tag haben wir Freunde besucht. (besuchen) — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-07-q08": {
     "acceptedAnswers": [
-      "eingeschlafen",
-      "abgeholt"
+      "eingeschlafen"
     ],
     "explanation": {
-      "fr": "einschlafen → eingeschlafen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "einschlafen → eingeschlafen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "einschlafen → eingeschlafen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "einschlafen → eingeschlafen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Im Bus sind die Kinder eingeschlafen. (einschlafen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Im Bus sind die Kinder eingeschlafen. (einschlafen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Im Bus sind die Kinder eingeschlafen. (einschlafen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Im Bus sind die Kinder eingeschlafen. (einschlafen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-07-q09": {
     "acceptedAnswers": [
-      "zurückkommen → zurückgekommen",
-      "abholen → abgeholt"
+      "zurückgekommen"
     ],
     "explanation": {
-      "fr": "zurückkommen → zurückgekommen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "zurückkommen → zurückgekommen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "zurückkommen → zurückgekommen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "zurückkommen → zurückgekommen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Am Abend sind wir ins Hotel zurückgekommen. (zurückkommen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Am Abend sind wir ins Hotel zurückgekommen. (zurückkommen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Am Abend sind wir ins Hotel zurückgekommen. (zurückkommen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Am Abend sind wir ins Hotel zurückgekommen. (zurückkommen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-08-q01": {
     "acceptedAnswers": [
-      "gekauft",
-      "gearbeitet"
+      "gelesen",
+      "gedacht"
     ],
     "explanation": {
-      "fr": "kaufen → gekauft. Verbe régulier : ge- + radical + -t. Après certains radicaux, notamment en -t ou -d, on ajoute -et pour faciliter la prononciation.",
-      "de": "kaufen → gekauft. Schwache Verben: ge- + Stamm + -t. Nach bestimmten Stämmen, etwa auf -t oder -d, steht -et.",
-      "ar": "kaufen → gekauft. الفعل المنتظم: ge- ثم الجذر ثم -t. بعد بعض الجذور مثل -t و-d نضيف -et.",
-      "en": "kaufen → gekauft. Weak verbs: ge- + stem + -t. Certain stems, including those ending in -t or -d, take -et."
+      "fr": "Ich habe die Nachricht gelesen und sofort an dich gedacht. (lesen/denken) — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Ich habe die Nachricht gelesen und sofort an dich gedacht. (lesen/denken) — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Ich habe die Nachricht gelesen und sofort an dich gedacht. (lesen/denken) — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Ich habe die Nachricht gelesen und sofort an dich gedacht. (lesen/denken) — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-08-q02": {
     "acceptedAnswers": [
-      "bezahlen → bezahlt",
-      "bekommen → bekommen"
+      "Sie hat den Termin abgesagt.",
+      "Er hat den Brief beantwortet."
     ],
     "explanation": {
-      "fr": "bezahlen → bezahlt. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "bezahlen → bezahlt. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "bezahlen → bezahlt. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "bezahlen → bezahlt. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Sie hat den Termin abgesagt. / Er hat den Brief beantwortet. — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Sie hat den Termin abgesagt. / Er hat den Brief beantwortet. — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Sie hat den Termin abgesagt. / Er hat den Brief beantwortet. — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Sie hat den Termin abgesagt. / Er hat den Brief beantwortet. — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-08-q03": {
     "acceptedAnswers": [
-      "telef",
-      "oniert"
+      "gewusst",
+      "gekannt",
+      "gebracht"
     ],
     "explanation": {
-      "fr": "telefonieren → telefoniert. Les verbes en -ieren forment leur participe en -iert sans ge-, même si le verbe est long.",
-      "de": "telefonieren → telefoniert. Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
-      "ar": "telefonieren → telefoniert. الأفعال المنتهية بـ -ieren تأخذ -iert دون ge-.",
-      "en": "telefonieren → telefoniert. Verbs ending in -ieren form their participle with -iert and no ge-."
+      "fr": "wissen → gewusst / kennen → gekannt / bringen → gebracht — Ce verbe mixte combine un changement de radical avec la terminaison -t.",
+      "de": "wissen → gewusst / kennen → gekannt / bringen → gebracht — Dieses gemischte Verb verbindet einen Stammwechsel mit der Endung -t.",
+      "ar": "wissen → gewusst / kennen → gekannt / bringen → gebracht — يجمع هذا الفعل المختلط بين تغير الجذر والنهاية -t.",
+      "en": "wissen → gewusst / kennen → gekannt / bringen → gebracht — This mixed verb combines a stem change with the ending -t."
     }
   },
   "kapitel-26-ubung-08-q04": {
     "acceptedAnswers": [
-      "gedacht"
+      "bezahlt",
+      "verloren"
     ],
     "explanation": {
-      "fr": "denken → gedacht. Les verbes mixtes changent de radical mais prennent -t comme les réguliers. Il faut mémoriser ces formes.",
-      "de": "denken → gedacht. Gemischte Verben ändern den Stamm, haben aber -t wie schwache Verben. Diese Formen muss man lernen.",
-      "ar": "denken → gedacht. الأفعال المختلطة تغير الجذر وتأخذ -t مثل المنتظمة. يجب حفظها.",
-      "en": "denken → gedacht. Mixed verbs change their stem but take -t like weak verbs. Memorize these forms."
+      "fr": "Wir haben den Betrag bezahlt und die Quittung verloren. (bezahlen/verlieren) — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "Wir haben den Betrag bezahlt und die Quittung verloren. (bezahlen/verlieren) — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "Wir haben den Betrag bezahlt und die Quittung verloren. (bezahlen/verlieren) — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "Wir haben den Betrag bezahlt und die Quittung verloren. (bezahlen/verlieren) — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-08-q05": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "Die Nachricht",
+      "hat",
+      "mich",
+      "überrascht."
+    ],
     "explanation": {
-      "fr": "bringen → gebracht. Les verbes mixtes changent de radical mais prennent -t comme les réguliers. Il faut mémoriser ces formes.",
-      "de": "bringen → gebracht. Gemischte Verben ändern den Stamm, haben aber -t wie schwache Verben. Diese Formen muss man lernen.",
-      "ar": "bringen → gebracht. الأفعال المختلطة تغير الجذر وتأخذ -t مثل المنتظمة. يجب حفظها.",
-      "en": "bringen → gebracht. Mixed verbs change their stem but take -t like weak verbs. Memorize these forms."
+      "fr": "Die Nachricht hat mich überrascht. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Die Nachricht hat mich überrascht. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Die Nachricht hat mich überrascht. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Die Nachricht hat mich überrascht. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-26-ubung-09-q01": {
     "acceptedAnswers": [
-      "schreiben → geschrieben",
-      "sehen → gesehen"
+      "geschrieben",
+      "ausgefüllt"
     ],
     "explanation": {
-      "fr": "schreiben → geschrieben. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "schreiben → geschrieben. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "schreiben → geschrieben. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "schreiben → geschrieben. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Hast du die E-Mail geschrieben und das Formular ausgefüllt? (schreiben/ausfüllen) — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Hast du die E-Mail geschrieben und das Formular ausgefüllt? (schreiben/ausfüllen) — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Hast du die E-Mail geschrieben und das Formular ausgefüllt? (schreiben/ausfüllen) — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Hast du die E-Mail geschrieben und das Formular ausgefüllt? (schreiben/ausfüllen) — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-09-q02": {
-    "acceptedAnswers": [
-      "geg",
-      "eben"
-    ],
+    "acceptedAnswers": "vergessen",
     "explanation": {
-      "fr": "geben → gegeben. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "geben → gegeben. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "geben → gegeben. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "geben → gegeben. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Ich habe den Schlüssel vergessen. (vergessen) — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "Ich habe den Schlüssel vergessen. (vergessen) — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "Ich habe den Schlüssel vergessen. (vergessen) — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "Ich habe den Schlüssel vergessen. (vergessen) — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-09-q03": {
-    "acceptedAnswers": [
-      "genommen"
-    ],
+    "acceptedAnswers": "true",
     "explanation": {
-      "fr": "nehmen → genommen. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "nehmen → genommen. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "nehmen → genommen. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "nehmen → genommen. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Die Kollegin hat das Problem erklärt. — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "Die Kollegin hat das Problem erklärt. — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "Die Kollegin hat das Problem erklärt. — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "Die Kollegin hat das Problem erklärt. — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-09-q04": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "genommen",
+      "bemerkt"
+    ],
     "explanation": {
-      "fr": "wissen → gewusst. Les verbes mixtes changent de radical mais prennent -t comme les réguliers. Il faut mémoriser ces formes.",
-      "de": "wissen → gewusst. Gemischte Verben ändern den Stamm, haben aber -t wie schwache Verben. Diese Formen muss man lernen.",
-      "ar": "wissen → gewusst. الأفعال المختلطة تغير الجذر وتأخذ -t مثل المنتظمة. يجب حفظها.",
-      "en": "wissen → gewusst. Mixed verbs change their stem but take -t like weak verbs. Memorize these forms."
+      "fr": "Der Gast hat den falschen Koffer genommen und es später bemerkt. (nehmen/bemerken) — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Der Gast hat den falschen Koffer genommen und es später bemerkt. (nehmen/bemerken) — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Der Gast hat den falschen Koffer genommen und es später bemerkt. (nehmen/bemerken) — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Der Gast hat den falschen Koffer genommen und es später bemerkt. (nehmen/bemerken) — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-09-q05": {
-    "acceptedAnswers": "gekannt",
+    "acceptedAnswers": [
+      "Das Paket",
+      "hat",
+      "er",
+      "mitgebracht."
+    ],
     "explanation": {
-      "fr": "kennen → gekannt. Les verbes mixtes changent de radical mais prennent -t comme les réguliers. Il faut mémoriser ces formes.",
-      "de": "kennen → gekannt. Gemischte Verben ändern den Stamm, haben aber -t wie schwache Verben. Diese Formen muss man lernen.",
-      "ar": "kennen → gekannt. الأفعال المختلطة تغير الجذر وتأخذ -t مثل المنتظمة. يجب حفظها.",
-      "en": "kennen → gekannt. Mixed verbs change their stem but take -t like weak verbs. Memorize these forms."
+      "fr": "Das Paket hat er mitgebracht. — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Das Paket hat er mitgebracht. — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Das Paket hat er mitgebracht. — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Das Paket hat er mitgebracht. — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-10-q01": {
     "acceptedAnswers": [
-      "aufge",
-      "macht"
+      "angerufen",
+      "bestellt"
     ],
     "explanation": {
-      "fr": "aufmachen → aufgemacht. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "aufmachen → aufgemacht. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "aufmachen → aufgemacht. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "aufmachen → aufgemacht. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Die Gäste haben angerufen und den Tisch bestellt. (anrufen/bestellen) — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Die Gäste haben angerufen und den Tisch bestellt. (anrufen/bestellen) — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Die Gäste haben angerufen und den Tisch bestellt. (anrufen/bestellen) — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Die Gäste haben angerufen und den Tisch bestellt. (anrufen/bestellen) — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-10-q02": {
     "acceptedAnswers": [
-      "bestellt"
+      "verstanden",
+      "abgeschickt"
     ],
     "explanation": {
-      "fr": "bestellen → bestellt. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "bestellen → bestellt. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "bestellen → bestellt. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "bestellen → bestellt. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Wir haben das Angebot verstanden und die Bestellung abgeschickt. (verstehen/abschicken) — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Wir haben das Angebot verstanden und die Bestellung abgeschickt. (verstehen/abschicken) — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Wir haben das Angebot verstanden und die Bestellung abgeschickt. (verstehen/abschicken) — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Wir haben das Angebot verstanden und die Bestellung abgeschickt. (verstehen/abschicken) — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-10-q03": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "Ich habe den Mantel gewaschen.",
+      "Sie hat die Rechnung kontrolliert."
+    ],
     "explanation": {
-      "fr": "vergessen → vergessen. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "vergessen → vergessen. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "vergessen → vergessen. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "vergessen → vergessen. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Ich habe den Mantel gewaschen. / Sie hat die Rechnung kontrolliert. — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Ich habe den Mantel gewaschen. / Sie hat die Rechnung kontrolliert. — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Ich habe den Mantel gewaschen. / Sie hat die Rechnung kontrolliert. — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Ich habe den Mantel gewaschen. / Sie hat die Rechnung kontrolliert. — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-10-q04": {
-    "acceptedAnswers": "empfohlen",
+    "acceptedAnswers": [
+      "Den Computer",
+      "hat",
+      "die Technikerin",
+      "eingeschaltet."
+    ],
     "explanation": {
-      "fr": "empfehlen → empfohlen. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "empfehlen → empfohlen. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "empfehlen → empfohlen. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "empfehlen → empfohlen. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Den Computer hat die Technikerin eingeschaltet. — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Den Computer hat die Technikerin eingeschaltet. — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Den Computer hat die Technikerin eingeschaltet. — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Den Computer hat die Technikerin eingeschaltet. — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-10-q05": {
     "acceptedAnswers": [
-      "gearbeitet",
-      "gekauft"
+      "empfohlen",
+      "aufgestanden",
+      "gewartet"
     ],
     "explanation": {
-      "fr": "arbeiten → gearbeitet. Verbe régulier : ge- + radical + -t. Après certains radicaux, notamment en -t ou -d, on ajoute -et pour faciliter la prononciation.",
-      "de": "arbeiten → gearbeitet. Schwache Verben: ge- + Stamm + -t. Nach bestimmten Stämmen, etwa auf -t oder -d, steht -et.",
-      "ar": "arbeiten → gearbeitet. الفعل المنتظم: ge- ثم الجذر ثم -t. بعد بعض الجذور مثل -t و-d نضيف -et.",
-      "en": "arbeiten → gearbeitet. Weak verbs: ge- + stem + -t. Certain stems, including those ending in -t or -d, take -et."
+      "fr": "empfehlen → empfohlen / aufstehen → aufgestanden / warten → gewartet — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "empfehlen → empfohlen / aufstehen → aufgestanden / warten → gewartet — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "empfehlen → empfohlen / aufstehen → aufgestanden / warten → gewartet — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "empfehlen → empfohlen / aufstehen → aufgestanden / warten → gewartet — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-11-q01": {
     "acceptedAnswers": [
+      "geprüft",
       "repariert"
     ],
     "explanation": {
-      "fr": "reparieren → repariert. Les verbes en -ieren forment leur participe en -iert sans ge-, même si le verbe est long.",
-      "de": "reparieren → repariert. Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
-      "ar": "reparieren → repariert. الأفعال المنتهية بـ -ieren تأخذ -iert دون ge-.",
-      "en": "reparieren → repariert. Verbs ending in -ieren form their participle with -iert and no ge-."
+      "fr": "Beim Fahrradverleih hat der Mitarbeiter die Bremse geprüft und das Rad repariert. (prüfen/reparieren) — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Beim Fahrradverleih hat der Mitarbeiter die Bremse geprüft und das Rad repariert. (prüfen/reparieren) — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Beim Fahrradverleih hat der Mitarbeiter die Bremse geprüft und das Rad repariert. (prüfen/reparieren) — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Beim Fahrradverleih hat der Mitarbeiter die Bremse geprüft und das Rad repariert. (prüfen/reparieren) — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-11-q02": {
-    "acceptedAnswers": "false",
+    "acceptedAnswers": [
+      "aufgesetzt",
+      "vorgezeigt"
+    ],
     "explanation": {
-      "fr": "abholen → abgeholt. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "abholen → abgeholt. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "abholen → abgeholt. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "abholen → abgeholt. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Wir haben die Helme aufgesetzt und die Ausweise vorgezeigt. (aufsetzen/vorzeigen) — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Wir haben die Helme aufgesetzt und die Ausweise vorgezeigt. (aufsetzen/vorzeigen) — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Wir haben die Helme aufgesetzt und die Ausweise vorgezeigt. (aufsetzen/vorzeigen) — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Wir haben die Helme aufgesetzt und die Ausweise vorgezeigt. (aufsetzen/vorzeigen) — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-11-q03": {
-    "acceptedAnswers": "bezahlt",
+    "acceptedAnswers": "gerissen",
     "explanation": {
-      "fr": "bezahlen → bezahlt. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "bezahlen → bezahlt. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "bezahlen → bezahlt. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "bezahlen → bezahlt. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Auf der Rückfahrt ist die Kette gerissen. (reißen) — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Auf der Rückfahrt ist die Kette gerissen. (reißen) — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Auf der Rückfahrt ist die Kette gerissen. (reißen) — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Auf der Rückfahrt ist die Kette gerissen. (reißen) — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   },
   "kapitel-26-ubung-11-q04": {
     "acceptedAnswers": [
-      "mitgebracht",
-      "abgeholt"
+      "Ich habe das Rad zurückgegeben.",
+      "Der Mitarbeiter hat die Kaution erstattet."
     ],
     "explanation": {
-      "fr": "mitbringen → mitgebracht. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "mitbringen → mitgebracht. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "mitbringen → mitgebracht. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "mitbringen → mitgebracht. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Ich habe das Rad zurückgegeben. / Der Mitarbeiter hat die Kaution erstattet. — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Ich habe das Rad zurückgegeben. / Der Mitarbeiter hat die Kaution erstattet. — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Ich habe das Rad zurückgegeben. / Der Mitarbeiter hat die Kaution erstattet. — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Ich habe das Rad zurückgegeben. / Der Mitarbeiter hat die Kaution erstattet. — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-11-q05": {
     "acceptedAnswers": [
-      "anrufen → angerufen",
-      "abholen → abgeholt"
+      "Den Schaden",
+      "haben",
+      "wir",
+      "gemeldet."
     ],
     "explanation": {
-      "fr": "anrufen → angerufen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "anrufen → angerufen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "anrufen → angerufen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "anrufen → angerufen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Den Schaden haben wir gemeldet. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Den Schaden haben wir gemeldet. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Den Schaden haben wir gemeldet. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Den Schaden haben wir gemeldet. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-26-ubung-12-q01": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "entworfen",
+      "aufgehängt"
+    ],
     "explanation": {
-      "fr": "studieren → studiert. Les verbes en -ieren forment leur participe en -iert sans ge-, même si le verbe est long.",
-      "de": "studieren → studiert. Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
-      "ar": "studieren → studiert. الأفعال المنتهية بـ -ieren تأخذ -iert دون ge-.",
-      "en": "studieren → studiert. Verbs ending in -ieren form their participle with -iert and no ge-."
+      "fr": "Für die Ausstellung haben die Schüler Plakate entworfen und Fotos aufgehängt. (entwerfen/aufhängen) — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Für die Ausstellung haben die Schüler Plakate entworfen und Fotos aufgehängt. (entwerfen/aufhängen) — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Für die Ausstellung haben die Schüler Plakate entworfen und Fotos aufgehängt. (entwerfen/aufhängen) — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Für die Ausstellung haben die Schüler Plakate entworfen und Fotos aufgehängt. (entwerfen/aufhängen) — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-12-q02": {
-    "acceptedAnswers": "teilgenommen",
+    "acceptedAnswers": [
+      "reserviert",
+      "empfangen"
+    ],
     "explanation": {
-      "fr": "teilnehmen → teilgenommen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "teilnehmen → teilgenommen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "teilnehmen → teilgenommen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "teilnehmen → teilgenommen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Die Lehrerin hat den Raum reserviert und die Gäste empfangen. (reservieren/empfangen) — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Die Lehrerin hat den Raum reserviert und die Gäste empfangen. (reservieren/empfangen) — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Die Lehrerin hat den Raum reserviert und die Gäste empfangen. (reservieren/empfangen) — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Die Lehrerin hat den Raum reserviert und die Gäste empfangen. (reservieren/empfangen) — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-12-q03": {
-    "acceptedAnswers": [
-      "geschrieben",
-      "gesehen"
-    ],
+    "acceptedAnswers": "verteilt",
     "explanation": {
-      "fr": "schreiben → geschrieben. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "schreiben → geschrieben. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "schreiben → geschrieben. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "schreiben → geschrieben. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Wer hat die Eintrittskarten verteilt? (verteilen) — Les préfixes inséparables ne prennent pas ge- ; la terminaison est celle du verbe régulier ou fort.",
+      "de": "Wer hat die Eintrittskarten verteilt? (verteilen) — Untrennbare Vorsilben bekommen kein ge-; die Endung richtet sich nach dem schwachen oder starken Verb.",
+      "ar": "Wer hat die Eintrittskarten verteilt? (verteilen) — لا نضيف ge مع البادئات غير القابلة للفصل، والنهاية حسب نوع الفعل.",
+      "en": "Wer hat die Eintrittskarten verteilt? (verteilen) — Inseparable prefixes take no ge-; the ending follows the weak or strong verb."
     }
   },
   "kapitel-26-ubung-12-q04": {
     "acceptedAnswers": [
-      "diskutieren → diskutiert",
-      "studieren → studiert"
+      "Die Klasse hat die Bilder beschrieben.",
+      "Die Besucher haben applaudiert."
     ],
     "explanation": {
-      "fr": "diskutieren → diskutiert. Les verbes en -ieren forment leur participe en -iert sans ge-, même si le verbe est long.",
-      "de": "diskutieren → diskutiert. Verben auf -ieren bilden das Partizip auf -iert ohne ge-.",
-      "ar": "diskutieren → diskutiert. الأفعال المنتهية بـ -ieren تأخذ -iert دون ge-.",
-      "en": "diskutieren → diskutiert. Verbs ending in -ieren form their participle with -iert and no ge-."
+      "fr": "Die Klasse hat die Bilder beschrieben. / Die Besucher haben applaudiert. — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Die Klasse hat die Bilder beschrieben. / Die Besucher haben applaudiert. — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Die Klasse hat die Bilder beschrieben. / Die Besucher haben applaudiert. — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Die Klasse hat die Bilder beschrieben. / Die Besucher haben applaudiert. — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-12-q05": {
     "acceptedAnswers": [
-      "verst",
-      "anden"
+      "Die Ausstellung",
+      "haben",
+      "die Schüler",
+      "vorbereitet."
     ],
     "explanation": {
-      "fr": "verstehen → verstanden. Les préfixes inséparables be-, emp-, ent-, er-, ge-, ver-, zer- empêchent l’ajout de ge-. La terminaison reste celle du type de verbe.",
-      "de": "verstehen → verstanden. Untrennbare Präfixe be-, emp-, ent-, er-, ge-, ver-, zer- verhindern zusätzliches ge-. Die Endung richtet sich nach dem Verbtyp.",
-      "ar": "verstehen → verstanden. البادئات غير المنفصلة تمنع إضافة ge-. النهاية حسب نوع الفعل.",
-      "en": "verstehen → verstanden. Inseparable prefixes be-, emp-, ent-, er-, ge-, ver-, zer- block additional ge-. The ending depends on verb type."
+      "fr": "Die Ausstellung haben die Schüler vorbereitet. — Avec un préfixe séparable, ge- se place entre le préfixe et le radical ; la terminaison dépend du verbe de base.",
+      "de": "Die Ausstellung haben die Schüler vorbereitet. — Bei trennbaren Verben steht ge- zwischen Vorsilbe und Stamm; die Endung hängt vom Grundverb ab.",
+      "ar": "Die Ausstellung haben die Schüler vorbereitet. — مع البادئة القابلة للفصل يأتي ge بين البادئة والجذر، والنهاية حسب الفعل الأساسي.",
+      "en": "Die Ausstellung haben die Schüler vorbereitet. — With separable verbs, ge- goes between prefix and stem; the ending depends on the base verb."
     }
   },
   "kapitel-26-ubung-13-q01": {
-    "acceptedAnswers": "eingekauft",
+    "acceptedAnswers": [
+      "gepflanzt",
+      "umgegraben"
+    ],
     "explanation": {
-      "fr": "einkaufen → eingekauft. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "einkaufen → eingekauft. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "einkaufen → eingekauft. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "einkaufen → eingekauft. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Im Garten haben wir einen Baum gepflanzt und die Erde umgegraben. (pflanzen/umgraben) — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Im Garten haben wir einen Baum gepflanzt und die Erde umgegraben. (pflanzen/umgraben) — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Im Garten haben wir einen Baum gepflanzt und die Erde umgegraben. (pflanzen/umgraben) — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Im Garten haben wir einen Baum gepflanzt und die Erde umgegraben. (pflanzen/umgraben) — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-13-q02": {
     "acceptedAnswers": [
-      "ausgepackt",
-      "abgeholt"
+      "geliehen",
+      "erleichtert"
     ],
     "explanation": {
-      "fr": "auspacken → ausgepackt. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "auspacken → ausgepackt. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "auspacken → ausgepackt. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "auspacken → ausgepackt. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Die Nachbarin hat uns Werkzeug geliehen und die Arbeit erleichtert. (leihen/erleichtern) — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Die Nachbarin hat uns Werkzeug geliehen und die Arbeit erleichtert. (leihen/erleichtern) — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Die Nachbarin hat uns Werkzeug geliehen und die Arbeit erleichtert. (leihen/erleichtern) — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Die Nachbarin hat uns Werkzeug geliehen und die Arbeit erleichtert. (leihen/erleichtern) — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-13-q03": {
-    "acceptedAnswers": [
-      "zurückkommen → zurückgekommen",
-      "abholen → abgeholt"
-    ],
+    "acceptedAnswers": "getrocknet",
     "explanation": {
-      "fr": "zurückkommen → zurückgekommen. Avec un préfixe séparable, ge- se place entre le préfixe et le radical. La terminaison dépend du verbe de base.",
-      "de": "zurückkommen → zurückgekommen. Bei trennbaren Verben steht ge- zwischen Präfix und Stamm. Die Endung hängt vom Grundverb ab.",
-      "ar": "zurückkommen → zurückgekommen. مع البادئة المنفصلة تأتي ge- بين البادئة والجذر. النهاية حسب الفعل الأصلي.",
-      "en": "zurückkommen → zurückgekommen. With separable prefixes, ge- goes between prefix and stem. The ending depends on the base verb."
+      "fr": "Nach dem Regen ist der Weg getrocknet. (trocknen) — Le participe régulier se forme avec ge- et -t ; après un radical en -t ou -d, on emploie généralement -et.",
+      "de": "Nach dem Regen ist der Weg getrocknet. (trocknen) — Das schwache Partizip hat ge- und -t; nach einem Stamm auf -t oder -d steht meist -et.",
+      "ar": "Nach dem Regen ist der Weg getrocknet. (trocknen) — يتكوّن التصريف الثالث للفعل المنتظم من ge- و-t، وغالباً -et بعد جذر ينتهي بـ t أو d.",
+      "en": "Nach dem Regen ist der Weg getrocknet. (trocknen) — Weak participles take ge- and -t; stems ending in t or d usually take -et."
     }
   },
   "kapitel-26-ubung-13-q04": {
     "acceptedAnswers": [
-      "gewa",
-      "rtet"
+      "Wir haben die Äste abgeschnitten.",
+      "Der Hund hat ein Loch gegraben."
     ],
     "explanation": {
-      "fr": "warten → gewartet. Verbe régulier : ge- + radical + -t. Après certains radicaux, notamment en -t ou -d, on ajoute -et pour faciliter la prononciation.",
-      "de": "warten → gewartet. Schwache Verben: ge- + Stamm + -t. Nach bestimmten Stämmen, etwa auf -t oder -d, steht -et.",
-      "ar": "warten → gewartet. الفعل المنتظم: ge- ثم الجذر ثم -t. بعد بعض الجذور مثل -t و-d نضيف -et.",
-      "en": "warten → gewartet. Weak verbs: ge- + stem + -t. Certain stems, including those ending in -t or -d, take -et."
+      "fr": "Wir haben die Äste abgeschnitten. / Der Hund hat ein Loch gegraben. — Le participe II est propre au verbe : les verbes réguliers prennent souvent ge-…-t, les forts souvent ge-…-en avec changement de radical ; les préfixes inséparables et -ieren ne prennent pas ge-.",
+      "de": "Wir haben die Äste abgeschnitten. / Der Hund hat ein Loch gegraben. — Das Partizip II hängt vom Verb ab: schwache Verben oft ge-…-t, starke oft ge-…-en mit Stammwechsel; untrennbare Vorsilben und -ieren ohne ge-.",
+      "ar": "Wir haben die Äste abgeschnitten. / Der Hund hat ein Loch gegraben. — يتحدد اسم المفعول حسب الفعل: غالباً ge-…-t للأفعال المنتظمة وge-…-en مع تغيير الجذر للقوية؛ لا نضيف ge مع البادئات غير القابلة للفصل أو -ieren.",
+      "en": "Wir haben die Äste abgeschnitten. / Der Hund hat ein Loch gegraben. — The past participle depends on the verb: weak verbs often take ge-…-t, strong verbs often ge-…-en with stem change; inseparable prefixes and -ieren take no ge-."
     }
   },
   "kapitel-26-ubung-13-q05": {
     "acceptedAnswers": [
-      "gefahren"
+      "Die Pflanzen",
+      "haben",
+      "wir",
+      "gegossen."
     ],
     "explanation": {
-      "fr": "fahren → gefahren. Les verbes forts prennent généralement ge- et -en ; le radical peut changer. Il faut apprendre la forme avec l’infinitif.",
-      "de": "fahren → gefahren. Starke Verben haben meist ge- und -en; der Stamm kann sich ändern. Lernen Sie beide Formen zusammen.",
-      "ar": "fahren → gefahren. الأفعال القوية غالبا تأخذ ge- و-en وقد يتغير الجذر. احفظ الصيغتين معا.",
-      "en": "fahren → gefahren. Strong verbs usually take ge- and -en; the stem may change. Learn both forms together."
+      "fr": "Die Pflanzen haben wir gegossen. — Le participe fort se termine généralement en -en ; le radical peut changer. Il faut mémoriser la forme exacte.",
+      "de": "Die Pflanzen haben wir gegossen. — Das starke Partizip endet meist auf -en; der Stamm kann sich ändern. Die genaue Form muss man lernen.",
+      "ar": "Die Pflanzen haben wir gegossen. — ينتهي التصريف الثالث للفعل القوي غالباً بـ -en وقد يتغير الجذر. احفظ الصيغة الدقيقة.",
+      "en": "Die Pflanzen haben wir gegossen. — Strong participles generally end in -en, and the stem may change. Learn the exact form."
     }
   }
 }

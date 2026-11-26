@@ -22,16 +22,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Heißen ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Heißen“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Heißen ».",
+          "en": "Reorder the groups. Start with “Heißen”."
         },
         "tokens": [
-          "Schmidt",
-          "?",
           "Heißen",
-          "Sie"
+          "Schmidt",
+          "Sie",
+          "?"
         ]
       },
       {
@@ -39,16 +39,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Kommen ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Kommen“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Kommen ».",
+          "en": "Reorder the groups. Start with “Kommen”."
         },
         "tokens": [
-          "aus",
           "Südafrika",
           "?",
           "Kommen",
+          "aus",
           "Sie"
         ]
       },
@@ -57,14 +57,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Sprechen ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Sprechen“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Sprechen ».",
+          "en": "Reorder the groups. Start with “Sprechen”."
         },
         "tokens": [
-          "Englisch",
           "?",
+          "Englisch",
           "Sprechen",
           "Sie"
         ]
@@ -74,16 +74,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Sind ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Sind“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Sind ».",
+          "en": "Reorder the groups. Start with “Sind”."
         },
         "tokens": [
-          "verheiratet",
-          "?",
+          "Sie",
           "Sind",
-          "Sie"
+          "?",
+          "verheiratet"
         ]
       },
       {
@@ -91,47 +91,47 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Haben ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Haben“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Haben ».",
+          "en": "Reorder the groups. Start with “Haben”."
         },
         "tokens": [
-          "Kinder",
+          "Sie",
           "?",
           "Haben",
-          "Sie"
+          "Kinder"
         ]
       },
       {
+        "id": "kapitel-10-ubung-01-div-6",
+        "position": 6,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "Kommst du? — Ich komme."
+            "label": "Ist der Drucker kaputt? – ___, er funktioniert nicht."
           },
           {
             "id": "i1",
-            "label": "Kommst du nicht? — Ich komme."
+            "label": "Hast du keinen Schlüssel? – ___, hier ist er."
           },
           {
             "id": "i2",
-            "label": "Kommst du? — Ich komme nicht."
+            "label": "Kannst du heute kommen? – ___, ich habe keine Zeit."
           }
         ],
         "options": [
+          "Nein",
           "Ja",
-          "Doch",
-          "Nein"
-        ],
-        "id": "kapitel-10-ubung-01-div-6",
-        "position": 6
+          "Doch"
+        ]
       }
     ]
   },
@@ -157,16 +157,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Sprechen ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Sprechen“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Sprechen ».",
+          "en": "Reorder the groups. Start with “Sprechen”."
         },
         "tokens": [
-          "Französisch",
           "?",
           "Sprechen",
-          "Sie"
+          "Sie",
+          "Französisch"
         ]
       },
       {
@@ -174,15 +174,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Sind ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Sind“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Sind ».",
+          "en": "Reorder the groups. Start with “Sind”."
         },
         "tokens": [
+          "Sind",
           "Deutsche",
           "?",
-          "Sind",
           "Sie"
         ]
       },
@@ -191,17 +191,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Ist ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Ist“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Ist ».",
+          "en": "Reorder the groups. Start with “Ist”."
         },
         "tokens": [
-          "Lehrer",
+          "Ist",
           "von",
           "Beruf",
+          "Lehrer",
           "?",
-          "Ist",
           "er"
         ]
       },
@@ -210,20 +210,20 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Wohnen ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Wohnen“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Wohnen ».",
+          "en": "Reorder the groups. Start with “Wohnen”."
         },
         "tokens": [
-          "schon",
           "lange",
           "hier",
-          "im",
-          "Haus",
-          "?",
           "Wohnen",
-          "Sie"
+          "Sie",
+          "schon",
+          "?",
+          "im",
+          "Haus"
         ]
       },
       {
@@ -231,37 +231,37 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Haben ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Haben“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Haben ».",
+          "en": "Reorder the groups. Start with “Haben”."
         },
         "tokens": [
-          "Kinder",
           "?",
-          "Haben",
-          "sie"
+          "sie",
+          "Kinder",
+          "Haben"
         ]
       },
       {
+        "id": "kapitel-10-ubung-02-div-6",
+        "position": 6,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "Hast du Zeit? — Ich habe keine Zeit. → Nein",
-          "Wohnst du nicht hier? — Ich wohne hier. → Ja",
-          "Hast du Zeit? — Ich habe keine Zeit. → Ja",
-          "Lernst du Deutsch? — Ich lerne Deutsch. → Ja",
-          "Lernst du Deutsch? — Ich lerne Deutsch. → Doch",
-          "Wohnst du nicht hier? — Ich wohne hier. → Doch"
-        ],
-        "id": "kapitel-10-ubung-02-div-6",
-        "position": 6
+          "Ist die Rechnung schon bezahlt? – ___, das Geld fehlt noch. → Nein",
+          "Fährt der Bus nicht mehr? – ___, er fährt noch. → Nein",
+          "Fährt der Bus nicht mehr? – ___, er fährt noch. → Doch",
+          "Sind die Fenster offen? – ___, beide sind offen. → Doch",
+          "Ist die Rechnung schon bezahlt? – ___, das Geld fehlt noch. → Doch",
+          "Sind die Fenster offen? – ___, beide sind offen. → Ja"
+        ]
       }
     ]
   },
@@ -287,10 +287,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Lernen Sie Deutsch? – ___, schon seit zwei Monaten.",
         "blanks": 1
@@ -300,10 +300,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Spielen Sie ein Musikinstrument? – ___, leider nicht.",
         "blanks": 1
@@ -313,10 +313,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Wohnen Sie nicht in Köln? – ___, schon seit drei Jahren.",
         "blanks": 1
@@ -326,10 +326,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Sind Sie Herr Maier? – ___, mein Name ist Westermann.",
         "blanks": 1
@@ -339,10 +339,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Kommen Sie nicht zur Party? – ___, aber später.",
         "blanks": 1
@@ -352,25 +352,25 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Gehen Sie gerne ins Kino? – ___, ich gehe lieber ins Theater.",
         "blanks": 1
       },
       {
+        "id": "kapitel-10-ubung-03-div-7",
+        "position": 7,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "Kommst du? — Ich komme nicht. → Ja",
-        "id": "kapitel-10-ubung-03-div-7",
-        "position": 7
+        "statement": "Hat die Kollegin keinen Urlaub? – ___, sie hat nächste Woche frei. → Doch"
       }
     ]
   },
@@ -396,10 +396,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Er hat Spanisch gelernt. Kann er kein Spanisch? – ___, er kann Spanisch.",
         "blanks": 1
@@ -409,10 +409,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Er wohnt in Frankfurt. Wohnt er in der Stadt? – ___.",
         "blanks": 1
@@ -422,10 +422,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Seine Verwandten wohnen bei München. Hat er keine Verwandten in Frankfurt? – ___, er hat dort keine.",
         "blanks": 1
@@ -435,10 +435,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Er arbeitet als Programmierer. Hat er keine Arbeit? – ___, er arbeitet.",
         "blanks": 1
@@ -448,10 +448,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Er kennt niemanden in Frankfurt. Kennt er viele Leute dort? – ___.",
         "blanks": 1
@@ -461,10 +461,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Er kommt aus München. Kommt er aus München? – ___.",
         "blanks": 1
@@ -474,43 +474,43 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Er ist seit zwei Monaten in Frankfurt. Ist er schon seit Jahren dort? – ___.",
         "blanks": 1
       },
       {
+        "id": "kapitel-10-ubung-04-div-8",
+        "position": 8,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "Wohnst du nicht hier? — Ich wohne hier."
+            "label": "Müssen wir morgen arbeiten? – ___, morgen ist frei."
           },
           {
             "id": "i1",
-            "label": "Lernst du Deutsch? — Ich lerne Deutsch."
+            "label": "Ist das Zimmer frei? – ___, niemand wohnt dort."
           },
           {
             "id": "i2",
-            "label": "Hast du Zeit? — Ich habe keine Zeit."
+            "label": "Hast du die E-Mail nicht gelesen? – ___, ich habe sie gelesen."
           }
         ],
         "options": [
-          "Ja",
           "Nein",
-          "Doch"
-        ],
-        "id": "kapitel-10-ubung-04-div-8",
-        "position": 8
+          "Doch",
+          "Ja"
+        ]
       }
     ]
   },
@@ -536,20 +536,20 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Könnten ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Könnten“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Könnten ».",
+          "en": "Reorder the groups. Start with “Könnten”."
         },
         "tokens": [
+          "Sie",
+          "geben",
           "bitte",
           "mir",
           "den",
-          "Zucker",
-          "geben",
           "?",
           "Könnten",
-          "Sie"
+          "Zucker"
         ]
       },
       {
@@ -557,20 +557,20 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Würden ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Würden“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Würden ».",
+          "en": "Reorder the groups. Start with “Würden”."
         },
         "tokens": [
-          "bitte",
-          "mir",
-          "den",
           "Zucker",
           "geben",
-          "?",
+          "mir",
           "Würden",
-          "Sie"
+          "den",
+          "Sie",
+          "bitte",
+          "?"
         ]
       },
       {
@@ -578,22 +578,22 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Könnten ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Könnten“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Könnten ».",
+          "en": "Reorder the groups. Start with “Könnten”."
         },
         "tokens": [
           "bitte",
           "mir",
-          "den",
-          "Weg",
-          "zum",
           "Bahnhof",
-          "sagen",
           "?",
           "Könnten",
-          "Sie"
+          "zum",
+          "Weg",
+          "Sie",
+          "sagen",
+          "den"
         ]
       },
       {
@@ -601,22 +601,22 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Würden ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Würden“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Würden ».",
+          "en": "Reorder the groups. Start with “Würden”."
         },
         "tokens": [
+          "sagen",
           "bitte",
-          "mir",
-          "den",
           "Weg",
+          "Sie",
+          "mir",
+          "Würden",
           "zum",
           "Bahnhof",
-          "sagen",
           "?",
-          "Würden",
-          "Sie"
+          "den"
         ]
       },
       {
@@ -624,20 +624,20 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Könnten ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Könnten“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Könnten ».",
+          "en": "Reorder the groups. Start with “Könnten”."
         },
         "tokens": [
-          "bitte",
-          "mir",
-          "den",
-          "Stift",
           "geben",
           "?",
+          "Sie",
+          "mir",
+          "Stift",
+          "bitte",
           "Könnten",
-          "Sie"
+          "den"
         ]
       },
       {
@@ -645,20 +645,20 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 6,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Würden ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Würden“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Würden ».",
+          "en": "Reorder the groups. Start with “Würden”."
         },
         "tokens": [
-          "bitte",
-          "mir",
+          "geben",
           "den",
           "Stift",
-          "geben",
+          "bitte",
           "?",
-          "Würden",
-          "Sie"
+          "Sie",
+          "mir",
+          "Würden"
         ]
       },
       {
@@ -666,16 +666,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Könnten ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Könnten“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Könnten ».",
+          "en": "Reorder the groups. Start with “Könnten”."
         },
         "tokens": [
           "bitte",
           "das",
-          "Radio",
           "leiser",
+          "Radio",
           "machen",
           "?",
           "Könnten",
@@ -687,20 +687,20 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 8,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Würden ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Würden“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Würden ».",
+          "en": "Reorder the groups. Start with “Würden”."
         },
         "tokens": [
-          "bitte",
           "das",
-          "Radio",
-          "leiser",
-          "machen",
           "?",
+          "leiser",
+          "bitte",
+          "Sie",
+          "Radio",
           "Würden",
-          "Sie"
+          "machen"
         ]
       },
       {
@@ -708,20 +708,20 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 9,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Könnten ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Könnten“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Könnten ».",
+          "en": "Reorder the groups. Start with “Könnten”."
         },
         "tokens": [
-          "bitte",
-          "mir",
-          "das",
-          "Wörterbuch",
-          "geben",
           "?",
+          "das",
+          "geben",
+          "mir",
           "Könnten",
-          "Sie"
+          "bitte",
+          "Sie",
+          "Wörterbuch"
         ]
       },
       {
@@ -729,19 +729,19 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 10,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Würden ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Würden“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Würden ».",
+          "en": "Reorder the groups. Start with “Würden”."
         },
         "tokens": [
-          "bitte",
-          "mir",
-          "das",
-          "Wörterbuch",
-          "geben",
           "?",
           "Würden",
+          "bitte",
+          "mir",
+          "geben",
+          "Wörterbuch",
+          "das",
           "Sie"
         ]
       },
@@ -750,20 +750,20 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 11,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Könnten ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Könnten“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Könnten ».",
+          "en": "Reorder the groups. Start with “Könnten”."
         },
         "tokens": [
           "bitte",
-          "mir",
           "die",
-          "Rechnung",
-          "erklären",
+          "Sie",
           "?",
+          "Rechnung",
           "Könnten",
-          "Sie"
+          "erklären",
+          "mir"
         ]
       },
       {
@@ -771,41 +771,41 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 12,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Würden ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Würden“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Würden ».",
+          "en": "Reorder the groups. Start with “Würden”."
         },
         "tokens": [
+          "Würden",
+          "?",
+          "Rechnung",
+          "die",
           "bitte",
           "mir",
-          "die",
-          "Rechnung",
           "erklären",
-          "?",
-          "Würden",
           "Sie"
         ]
       },
       {
+        "id": "kapitel-10-ubung-05-div-13",
+        "position": 13,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "Kommst du nicht? — Ich komme. → Ja",
-          "Kommst du? — Ich komme nicht. → Nein",
-          "Kommst du? — Ich komme nicht. → Ja",
-          "Kommst du? — Ich komme. → Ja",
-          "Kommst du? — Ich komme. → Doch",
-          "Kommst du nicht? — Ich komme. → Doch"
-        ],
-        "id": "kapitel-10-ubung-05-div-13",
-        "position": 13
+          "Wohnt ihr im Zentrum? – ___, wir wohnen außerhalb. → Ja",
+          "Ist das Formular nicht fertig? – ___, es ist noch nicht fertig. → Doch",
+          "Wohnt ihr im Zentrum? – ___, wir wohnen außerhalb. → Nein",
+          "Sprechen Sie Italienisch? – ___, ich spreche fließend Italienisch. → Ja",
+          "Ist das Formular nicht fertig? – ___, es ist noch nicht fertig. → Nein",
+          "Sprechen Sie Italienisch? – ___, ich spreche fließend Italienisch. → Doch"
+        ]
       }
     ]
   },
@@ -831,10 +831,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Liegt Ihre Wohnung zentral? – ___, direkt in der Innenstadt.",
         "blanks": 1
@@ -844,10 +844,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Suchen Sie eine neue Wohnung? – ___, unsere ist zu klein.",
         "blanks": 1
@@ -857,10 +857,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Ist Ihre Miete 650 Euro? – ___, sie beträgt 650 Euro.",
         "blanks": 1
@@ -870,10 +870,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Wohnen Sie erst seit einem Monat hier? – ___, schon drei Jahre.",
         "blanks": 1
@@ -883,25 +883,25 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 5,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Möchten Sie nicht auf dem Land wohnen? – ___, sehr gerne.",
         "blanks": 1
       },
       {
+        "id": "kapitel-10-ubung-06-div-6",
+        "position": 6,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "Hast du Zeit? — Ich habe keine Zeit. → Nein",
-        "id": "kapitel-10-ubung-06-div-6",
-        "position": 6
+        "statement": "Kennt ihr den Weg nicht? – ___, wir kennen ihn sehr gut. → Ja"
       }
     ]
   },
@@ -927,10 +927,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Hast du kein Auto? – ___, ich habe eins.",
         "blanks": 1
@@ -938,25 +938,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-10-ubung-07-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — Bist du nicht müde? – ___, ich bin nicht müde.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — Bist du nicht müde? – ___, ich bin nicht müde.",
+          "ar": "اختر الإجابة المناسبة للسياق. — Bist du nicht müde? – ___, ich bin nicht müde.",
+          "en": "Choose the correct answer in context. — Bist du nicht müde? – ___, ich bin nicht müde."
         },
-        "sentence": "Bist du nicht müde? – ___, ich bin nicht müde.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Nein",
+          "Ja",
+          "Doch"
+        ]
       },
       {
         "id": "kapitel-10-ubung-07-q03",
         "position": 3,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Kannst du nicht schwimmen? – ___, ich kann schwimmen.",
         "blanks": 1
@@ -964,45 +968,49 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-10-ubung-07-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — Arbeitest du nicht? – ___, ich arbeite heute nicht.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — Arbeitest du nicht? – ___, ich arbeite heute nicht.",
+          "ar": "اختر الإجابة المناسبة للسياق. — Arbeitest du nicht? – ___, ich arbeite heute nicht.",
+          "en": "Choose the correct answer in context. — Arbeitest du nicht? – ___, ich arbeite heute nicht."
         },
-        "sentence": "Arbeitest du nicht? – ___, ich arbeite heute nicht.",
-        "blanks": 1
-      },
-      {
-        "type": "matching",
-        "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
-        },
-        "items": [
-          {
-            "id": "i0",
-            "label": "Kommst du? — Ich komme."
-          },
-          {
-            "id": "i1",
-            "label": "Kommst du nicht? — Ich komme."
-          },
-          {
-            "id": "i2",
-            "label": "Kommst du? — Ich komme nicht."
-          }
-        ],
+        "selection": "single",
         "options": [
           "Nein",
           "Ja",
           "Doch"
-        ],
+        ]
+      },
+      {
         "id": "kapitel-10-ubung-07-div-5",
-        "position": 5
+        "position": 5,
+        "type": "matching",
+        "prompt": {
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
+        },
+        "items": [
+          {
+            "id": "i0",
+            "label": "Hat er eine Fahrkarte? – ___, er hat eine Monatskarte."
+          },
+          {
+            "id": "i1",
+            "label": "Ist das Paket für mich? – ___, es ist für deinen Bruder."
+          },
+          {
+            "id": "i2",
+            "label": "Kommt der Techniker nicht? – ___, er ist schon unterwegs."
+          }
+        ],
+        "options": [
+          "Nein",
+          "Doch",
+          "Ja"
+        ]
       }
     ]
   },
@@ -1028,17 +1036,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Kannst ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Kannst“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Kannst ».",
+          "en": "Reorder the groups. Start with “Kannst”."
         },
         "tokens": [
-          "morgen",
-          "kommen",
-          "?",
+          "du",
           "Kannst",
-          "du"
+          "morgen",
+          "?",
+          "kommen"
         ]
       },
       {
@@ -1046,17 +1054,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Müssen ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Müssen“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Müssen ».",
+          "en": "Reorder the groups. Start with “Müssen”."
         },
         "tokens": [
-          "heute",
           "arbeiten",
-          "?",
           "Müssen",
-          "wir"
+          "wir",
+          "heute",
+          "?"
         ]
       },
       {
@@ -1064,17 +1072,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Darf ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Darf“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Darf ».",
+          "en": "Reorder the groups. Start with “Darf”."
         },
         "tokens": [
           "hier",
-          "parken",
-          "?",
           "Darf",
-          "ich"
+          "parken",
+          "ich",
+          "?"
         ]
       },
       {
@@ -1082,10 +1090,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "reorder",
         "prompt": {
-          "fr": "Remettez les mots dans l’ordre.",
-          "de": "Ordnen Sie die Wörter.",
-          "ar": "رتب الكلمات.",
-          "en": "Put the words in order."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Willst ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Willst“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Willst ».",
+          "en": "Reorder the groups. Start with “Willst”."
         },
         "tokens": [
           "mitkommen",
@@ -1095,24 +1103,24 @@ export const meistertraining: ExerciseSetDefinition[] = [
         ]
       },
       {
+        "id": "kapitel-10-ubung-08-div-5",
+        "position": 5,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "Lernst du Deutsch? — Ich lerne Deutsch. → Ja",
-          "Wohnst du nicht hier? — Ich wohne hier. → Doch",
-          "Hast du Zeit? — Ich habe keine Zeit. → Nein",
-          "Lernst du Deutsch? — Ich lerne Deutsch. → Doch",
-          "Hast du Zeit? — Ich habe keine Zeit. → Ja",
-          "Wohnst du nicht hier? — Ich wohne hier. → Ja"
-        ],
-        "id": "kapitel-10-ubung-08-div-5",
-        "position": 5
+          "Hat sie kein Fahrrad? – ___, sie hat sogar zwei. → Ja",
+          "Möchtest du keinen Tee? – ___, ich möchte keinen. → Doch",
+          "Möchtest du keinen Tee? – ___, ich möchte keinen. → Nein",
+          "Sind die Plätze reserviert? – ___, sie sind alle reserviert. → Ja",
+          "Sind die Plätze reserviert? – ___, sie sind alle reserviert. → Doch",
+          "Hat sie kein Fahrrad? – ___, sie hat sogar zwei. → Doch"
+        ]
       }
     ]
   },
@@ -1138,10 +1146,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Ist das dein Buch? – ___, das ist mein Buch.",
         "blanks": 1
@@ -1149,25 +1157,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-10-ubung-09-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — Hast du Zeit? – ___, leider nicht.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — Hast du Zeit? – ___, leider nicht.",
+          "ar": "اختر الإجابة المناسبة للسياق. — Hast du Zeit? – ___, leider nicht.",
+          "en": "Choose the correct answer in context. — Hast du Zeit? – ___, leider nicht."
         },
-        "sentence": "Hast du Zeit? – ___, leider nicht.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Doch",
+          "Ja",
+          "Nein"
+        ]
       },
       {
         "id": "kapitel-10-ubung-09-q03",
         "position": 3,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Kommt er nicht? – ___, er kommt.",
         "blanks": 1
@@ -1175,27 +1187,31 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-10-ubung-09-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — Ist sie Ärztin? – ___, sie ist Lehrerin.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — Ist sie Ärztin? – ___, sie ist Lehrerin.",
+          "ar": "اختر الإجابة المناسبة للسياق. — Ist sie Ärztin? – ___, sie ist Lehrerin.",
+          "en": "Choose the correct answer in context. — Ist sie Ärztin? – ___, sie ist Lehrerin."
         },
-        "sentence": "Ist sie Ärztin? – ___, sie ist Lehrerin.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Ja",
+          "Doch",
+          "Nein"
+        ]
       },
       {
+        "id": "kapitel-10-ubung-09-div-5",
+        "position": 5,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "Kommst du? — Ich komme nicht. → Ja",
-        "id": "kapitel-10-ubung-09-div-5",
-        "position": 5
+        "statement": "Ist das Wasser warm? – ___, es ist kalt. → Nein"
       }
     ]
   },
@@ -1221,10 +1237,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Kannst du Deutsch? – ___, ich kann Deutsch.",
         "blanks": 1
@@ -1232,25 +1248,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-10-ubung-10-q02",
         "position": 2,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — Hast du keine Kinder? – ___, ich habe zwei.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — Hast du keine Kinder? – ___, ich habe zwei.",
+          "ar": "اختر الإجابة المناسبة للسياق. — Hast du keine Kinder? – ___, ich habe zwei.",
+          "en": "Choose the correct answer in context. — Hast du keine Kinder? – ___, ich habe zwei."
         },
-        "sentence": "Hast du keine Kinder? – ___, ich habe zwei.",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Ja",
+          "Doch",
+          "Nein"
+        ]
       },
       {
         "id": "kapitel-10-ubung-10-q03",
         "position": 3,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Complétez par Ja, Nein ou Doch.",
+          "de": "Ergänzen Sie Ja, Nein oder Doch.",
+          "ar": "أكمل بـ Ja أو Nein أو Doch.",
+          "en": "Complete with Ja, Nein or Doch."
         },
         "sentence": "Wohnst du in Berlin? – ___, in Bonn.",
         "blanks": 1
@@ -1258,45 +1278,49 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-10-ubung-10-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez selon le contexte.",
-          "de": "Ergänzen Sie passend zum Kontext.",
-          "ar": "أكمل حسب السياق.",
-          "en": "Complete according to context."
+          "fr": "Choisissez la réponse correcte selon le contexte. — Ist der Laden nicht offen? – ___, er ist offen.",
+          "de": "Wählen Sie die passende Antwort im Kontext. — Ist der Laden nicht offen? – ___, er ist offen.",
+          "ar": "اختر الإجابة المناسبة للسياق. — Ist der Laden nicht offen? – ___, er ist offen.",
+          "en": "Choose the correct answer in context. — Ist der Laden nicht offen? – ___, er ist offen."
         },
-        "sentence": "Ist der Laden nicht offen? – ___, er ist offen.",
-        "blanks": 1
-      },
-      {
-        "type": "matching",
-        "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
-        },
-        "items": [
-          {
-            "id": "i0",
-            "label": "Wohnst du nicht hier? — Ich wohne hier."
-          },
-          {
-            "id": "i1",
-            "label": "Lernst du Deutsch? — Ich lerne Deutsch."
-          },
-          {
-            "id": "i2",
-            "label": "Hast du Zeit? — Ich habe keine Zeit."
-          }
-        ],
+        "selection": "single",
         "options": [
           "Ja",
           "Nein",
           "Doch"
-        ],
+        ]
+      },
+      {
         "id": "kapitel-10-ubung-10-div-5",
-        "position": 5
+        "position": 5,
+        "type": "matching",
+        "prompt": {
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
+        },
+        "items": [
+          {
+            "id": "i0",
+            "label": "Haben Sie einen Ausweis? – ___, hier ist er."
+          },
+          {
+            "id": "i1",
+            "label": "Kann der Schüler nicht lesen? – ___, er liest sehr gut."
+          },
+          {
+            "id": "i2",
+            "label": "Ist der Laden geschlossen? – ___, er ist geöffnet."
+          }
+        ],
+        "options": [
+          "Nein",
+          "Ja",
+          "Doch"
+        ]
       }
     ]
   }

@@ -5,125 +5,125 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 1,
     "title": {
-      "fr": "Entraînement 1",
-      "de": "Übung 1",
-      "ar": "تمرين 1",
-      "en": "Practice 1"
+      "fr": "Grundformen",
+      "de": "Grundformen",
+      "ar": "Grundformen",
+      "en": "Grundformen"
     },
     "description": {
-      "fr": "Les modaux au prétérit",
-      "de": "Präteritum der Modalverben",
-      "ar": "الأفعال الناقصة في الماضي",
-      "en": "Modal verbs in the simple past"
+      "fr": "Appliquez les formes fondamentales.",
+      "de": "Wenden Sie die Grundformen an.",
+      "ar": "طبّق الصيغ الأساسية.",
+      "en": "Apply the basic forms."
     },
     "questions": [
       {
         "id": "kapitel-27-ubung-01-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Choisissez : Ich ___ nie kochen.",
-          "de": "Wählen Sie: Ich ___ nie kochen.",
-          "ar": "اختر: Ich ___ nie kochen.",
-          "en": "Choose: Ich ___ nie kochen."
-        },
         "type": "qcm",
         "selection": "single",
+        "prompt": {
+          "fr": "Als Kind ___ ich nie kochen. (müssen) — Choisissez la forme ou la phrase correcte.",
+          "de": "Als Kind ___ ich nie kochen. (müssen) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Als Kind ___ ich nie kochen. (müssen) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Als Kind ___ ich nie kochen. (müssen) — Choose the correct form or sentence."
+        },
         "options": [
-          "müssen",
-          "mussten",
+          "musste",
           "musstest",
-          "musste"
+          "muss",
+          "mussten"
         ]
       },
       {
         "id": "kapitel-27-ubung-01-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La phrase est-elle grammaticalement correcte ?",
-          "de": "Ist der Satz grammatisch richtig?",
-          "ar": "هل الجملة صحيحة نحويا؟",
-          "en": "Is the sentence grammatically correct?"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "true_false",
-        "statement": "Ich konntest jeden Tag ins Kino gehen."
+        "sentence": "Mit sechs Jahren ___ du schon lesen. (können)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-01-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Associez les formes de dürfen",
-          "de": "Ordnen Sie die Formen von dürfen zu",
-          "ar": "طابق صيغ dürfen",
-          "en": "Match the forms of dürfen"
-        },
         "type": "matching",
+        "prompt": {
+          "fr": "Associez chaque élément à la forme correspondante.",
+          "de": "Ordnen Sie jedem Element die passende Form zu.",
+          "ar": "اربط كل عنصر بالصيغة المناسبة.",
+          "en": "Match each item to the corresponding form."
+        },
         "items": [
           {
             "id": "0",
-            "label": "ich"
+            "label": "ich (dürfen)"
           },
           {
             "id": "1",
-            "label": "du"
+            "label": "ihr (dürfen)"
           },
           {
-            "id": "4",
-            "label": "ihr"
+            "id": "2",
+            "label": "wir (dürfen)"
           }
         ],
         "options": [
           "durfte",
-          "durftest",
+          "durften",
           "durftet"
         ]
       },
       {
         "id": "kapitel-27-ubung-01-q04",
         "position": 4,
+        "type": "true_false",
         "prompt": {
-          "fr": "Choisissez les deux formes correctes.",
-          "de": "Wählen Sie zwei richtige Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Choose two correct forms."
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
         },
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "ich wollte",
-          "du wolltest",
-          "ihr wollte",
-          "wir wolltest"
-        ]
+        "statement": "Er solltet gestern zum Arzt gehen."
       },
       {
         "id": "kapitel-27-ubung-01-q05",
         "position": 5,
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Reconstituez : Je devais beaucoup étudier selon les consignes reçues.",
-          "de": "Bilden Sie den Satz.",
-          "ar": "رتب: كان مطلوبا مني أن أدرس كثيرا.",
-          "en": "Reconstruct: I was supposed to study a lot."
+          "fr": "Damals ___ wir in die Stadt ziehen. (wollen) — Choisissez la forme ou la phrase correcte.",
+          "de": "Damals ___ wir in die Stadt ziehen. (wollen) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Damals ___ wir in die Stadt ziehen. (wollen) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Damals ___ wir in die Stadt ziehen. (wollen) — Choose the correct form or sentence."
         },
-        "type": "reorder",
-        "tokens": [
-          "lernen.",
-          "viel",
-          "sollte",
-          "Ich"
+        "options": [
+          "wollen",
+          "wolltet",
+          "wollten",
+          "wollte"
         ]
       },
       {
         "id": "kapitel-27-ubung-01-q06",
         "position": 6,
+        "type": "reorder",
         "prompt": {
-          "fr": "Complétez au prétérit : müssen",
-          "de": "Ergänzen Sie im Präteritum: müssen",
-          "ar": "أكمل في الماضي: müssen",
-          "en": "Complete in the simple past: müssen"
+          "fr": "Früher … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Früher … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Früher … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Früher … — Start with this chunk and reconstruct the sentence."
         },
-        "type": "fill_blank",
-        "sentence": "Musstest du im Haushalt helfen?",
-        "blanks": 1
+        "tokens": [
+          "ich",
+          "musste",
+          "Früher",
+          "früh aufstehen."
+        ]
       }
     ]
   },
@@ -132,124 +132,120 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 2,
     "title": {
-      "fr": "Entraînement 2",
-      "de": "Übung 2",
-      "ar": "تمرين 2",
-      "en": "Practice 2"
+      "fr": "Personalendungen",
+      "de": "Personalendungen",
+      "ar": "Personalendungen",
+      "en": "Personalendungen"
     },
     "description": {
-      "fr": "Les modaux au prétérit",
-      "de": "Präteritum der Modalverben",
-      "ar": "الأفعال الناقصة في الماضي",
-      "en": "Modal verbs in the simple past"
+      "fr": "Appliquez les formes fondamentales.",
+      "de": "Wenden Sie die Grundformen an.",
+      "ar": "طبّق الصيغ الأساسية.",
+      "en": "Apply the basic forms."
     },
     "questions": [
       {
         "id": "kapitel-27-ubung-02-q01",
         "position": 1,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La phrase est-elle grammaticalement correcte ?",
-          "de": "Ist der Satz grammatisch richtig?",
-          "ar": "هل الجملة صحيحة نحويا؟",
-          "en": "Is the sentence grammatically correct?"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "true_false",
-        "statement": "Wir wollten ins Schwimmbad gehen."
+        "sentence": "Ihr ___ gestern die Küche putzen. (sollen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-02-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes de dürfen",
-          "de": "Ordnen Sie die Formen von dürfen zu",
-          "ar": "طابق صيغ dürfen",
-          "en": "Match the forms of dürfen"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "matching",
-        "items": [
-          {
-            "id": "0",
-            "label": "ich"
-          },
-          {
-            "id": "1",
-            "label": "du"
-          },
-          {
-            "id": "4",
-            "label": "ihr"
-          }
-        ],
-        "options": [
-          "durfte",
-          "durftest",
-          "durftet"
-        ]
+        "sentence": "Meine Eltern ___ früher nicht verreisen. (können)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-02-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Choisissez les deux formes correctes.",
-          "de": "Wählen Sie zwei richtige Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Choose two correct forms."
-        },
         "type": "qcm",
         "selection": "multiple",
+        "prompt": {
+          "fr": "Sélectionnez les formes correctes au Präteritum.",
+          "de": "Wählen Sie die richtigen Präteritumformen.",
+          "ar": "اختر الصيغ الصحيحة في الماضي البسيط.",
+          "en": "Select the correct preterite forms."
+        },
         "options": [
-          "ich konnte",
-          "du konntest",
-          "ihr konnte",
-          "wir konntest"
+          "ihr wolltest",
+          "ihr wolltet",
+          "du müsstest (Präteritum)",
+          "du musstest"
         ]
       },
       {
         "id": "kapitel-27-ubung-02-q04",
         "position": 4,
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Reconstituez : Je devais apprendre le français.",
-          "de": "Bilden Sie den Satz.",
-          "ar": "رتب: كان عليّ تعلم الفرنسية.",
-          "en": "Reconstruct: I had to learn French."
+          "fr": "Frau Kern, ___ Sie damals allein reisen? (dürfen) — Choisissez la forme ou la phrase correcte.",
+          "de": "Frau Kern, ___ Sie damals allein reisen? (dürfen) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Frau Kern, ___ Sie damals allein reisen? (dürfen) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Frau Kern, ___ Sie damals allein reisen? (dürfen) — Choose the correct form or sentence."
         },
-        "type": "reorder",
-        "tokens": [
-          "lernen.",
-          "Französisch",
-          "musste",
-          "Ich"
+        "options": [
+          "dürfen",
+          "durfte",
+          "durftet",
+          "durften"
         ]
       },
       {
         "id": "kapitel-27-ubung-02-q05",
         "position": 5,
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez au prétérit : wollen",
-          "de": "Ergänzen Sie im Präteritum: wollen",
-          "ar": "أكمل في الماضي: wollen",
-          "en": "Complete in the simple past: wollen"
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
         },
-        "type": "fill_blank",
-        "sentence": "Ich ___ in der Exportabteilung arbeiten.",
-        "blanks": 1
+        "statement": "Die Kinder konntet nicht schwimmen."
       },
       {
         "id": "kapitel-27-ubung-02-q06",
         "position": 6,
+        "type": "matching",
         "prompt": {
-          "fr": "Choisissez : Ich ___ nach Paris fahren.",
-          "de": "Wählen Sie: Ich ___ nach Paris fahren.",
-          "ar": "اختر: Ich ___ nach Paris fahren.",
-          "en": "Choose: Ich ___ nach Paris fahren."
+          "fr": "Associez chaque élément à la forme correspondante.",
+          "de": "Ordnen Sie jedem Element die passende Form zu.",
+          "ar": "اربط كل عنصر بالصيغة المناسبة.",
+          "en": "Match each item to the corresponding form."
         },
-        "type": "qcm",
-        "selection": "single",
+        "items": [
+          {
+            "id": "0",
+            "label": "du (wollen)"
+          },
+          {
+            "id": "1",
+            "label": "er (sollen)"
+          },
+          {
+            "id": "2",
+            "label": "wir (müssen)"
+          }
+        ],
         "options": [
-          "konntest",
-          "konnten",
-          "konnte",
-          "können"
+          "wolltest",
+          "sollte",
+          "mussten"
         ]
       }
     ]
@@ -259,125 +255,108 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 3,
     "title": {
-      "fr": "Entraînement 3",
-      "de": "Übung 3",
-      "ar": "تمرين 3",
-      "en": "Practice 3"
+      "fr": "Heute und früher",
+      "de": "Heute und früher",
+      "ar": "Heute und früher",
+      "en": "Heute und früher"
     },
     "description": {
-      "fr": "Les modaux au prétérit",
-      "de": "Präteritum der Modalverben",
-      "ar": "الأفعال الناقصة في الماضي",
-      "en": "Modal verbs in the simple past"
+      "fr": "Appliquez les formes fondamentales.",
+      "de": "Wenden Sie die Grundformen an.",
+      "ar": "طبّق الصيغ الأساسية.",
+      "en": "Apply the basic forms."
     },
     "questions": [
       {
         "id": "kapitel-27-ubung-03-q01",
         "position": 1,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes de können",
-          "de": "Ordnen Sie die Formen von können zu",
-          "ar": "طابق صيغ können",
-          "en": "Match the forms of können"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "matching",
-        "items": [
-          {
-            "id": "0",
-            "label": "ich"
-          },
-          {
-            "id": "1",
-            "label": "du"
-          },
-          {
-            "id": "4",
-            "label": "ihr"
-          }
-        ],
-        "options": [
-          "konnte",
-          "konntest",
-          "konntet"
-        ]
+        "sentence": "Heute kann ich fahren. Früher ___ ich nicht fahren. (können)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-03-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez les deux formes correctes.",
-          "de": "Wählen Sie zwei richtige Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Choose two correct forms."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "ich durfte",
-          "du durftest",
-          "ihr durfte",
-          "wir durftest"
-        ]
+        "sentence": "Damals ___ du früh ins Bett. Heute ___ du länger wach bleiben. (müssen/dürfen, Präsens im zweiten Satz)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-03-q03",
         "position": 3,
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Reconstituez : Avant, je voulais fumer.",
-          "de": "Bilden Sie den Satz.",
-          "ar": "رتب: كنت أريد التدخين سابقا.",
-          "en": "Reconstruct: I used to want to smoke."
+          "fr": "Heute möchte ich Tee. Gestern ___ ich Kaffee. (Wunsch) — Choisissez la forme ou la phrase correcte.",
+          "de": "Heute möchte ich Tee. Gestern ___ ich Kaffee. (Wunsch) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Heute möchte ich Tee. Gestern ___ ich Kaffee. (Wunsch) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Heute möchte ich Tee. Gestern ___ ich Kaffee. (Wunsch) — Choose the correct form or sentence."
         },
-        "type": "reorder",
-        "tokens": [
-          "rauchen.",
-          "früher",
-          "wollte",
-          "Ich"
+        "options": [
+          "wolltest",
+          "will",
+          "möchtete",
+          "wollte"
         ]
       },
       {
         "id": "kapitel-27-ubung-03-q04",
         "position": 4,
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Complétez au prétérit : dürfen",
-          "de": "Ergänzen Sie im Präteritum: dürfen",
-          "ar": "أكمل في الماضي: dürfen",
-          "en": "Complete in the simple past: dürfen"
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
         },
-        "type": "fill_blank",
-        "sentence": "Die Gäste ___ rauchen.",
-        "blanks": 1
+        "options": [
+          "Früher musste er arbeiten.",
+          "Heute muss er arbeiten.",
+          "Heute musst er arbeiten.",
+          "Früher mussete er arbeiten."
+        ]
       },
       {
         "id": "kapitel-27-ubung-03-q05",
         "position": 5,
+        "type": "true_false",
         "prompt": {
-          "fr": "Choisissez : Ihr ___ pünktlich kommen.",
-          "de": "Wählen Sie: Ihr ___ pünktlich kommen.",
-          "ar": "اختر: Ihr ___ pünktlich kommen.",
-          "en": "Choose: Ihr ___ pünktlich kommen."
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "sollten",
-          "solltet",
-          "sollen",
-          "solltest"
-        ]
+        "statement": "Gestern durftest du hier parken."
       },
       {
         "id": "kapitel-27-ubung-03-q06",
         "position": 6,
+        "type": "reorder",
         "prompt": {
-          "fr": "La phrase est-elle grammaticalement correcte ?",
-          "de": "Ist der Satz grammatisch richtig?",
-          "ar": "هل الجملة صحيحة نحويا؟",
-          "en": "Is the sentence grammatically correct?"
+          "fr": "Heute … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Heute … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Heute … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Heute … — Start with this chunk and reconstruct the sentence."
         },
-        "type": "true_false",
-        "statement": "Wir musstet nicht bezahlen."
+        "tokens": [
+          "darf",
+          "länger bleiben.",
+          "sie",
+          "Heute"
+        ]
       }
     ]
   },
@@ -386,125 +365,95 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 4,
     "title": {
-      "fr": "Entraînement 4",
-      "de": "Übung 4",
-      "ar": "تمرين 4",
-      "en": "Practice 4"
+      "fr": "Meine Kindheit I",
+      "de": "Meine Kindheit I",
+      "ar": "Meine Kindheit I",
+      "en": "Meine Kindheit I"
     },
     "description": {
-      "fr": "Les modaux au prétérit",
-      "de": "Präteritum der Modalverben",
-      "ar": "الأفعال الناقصة في الماضي",
-      "en": "Modal verbs in the simple past"
+      "fr": "Complétez les situations et distinguez les formes.",
+      "de": "Ergänzen Sie die Situationen und unterscheiden Sie die Formen.",
+      "ar": "أكمل المواقف وميّز الصيغ.",
+      "en": "Complete the situations and distinguish the forms."
     },
     "questions": [
       {
         "id": "kapitel-27-ubung-04-q01",
         "position": 1,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez les deux formes correctes.",
-          "de": "Wählen Sie zwei richtige Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Choose two correct forms."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "ich durfte",
-          "du durftest",
-          "ihr durfte",
-          "wir durftest"
-        ]
+        "sentence": "Ilse: Ich ___ nie im Haushalt helfen und ___ so viel Eis essen, wie ich ___. (müssen/dürfen/wollen)",
+        "blanks": 3
       },
       {
         "id": "kapitel-27-ubung-04-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez : Tu voulais devenir médecin.",
-          "de": "Bilden Sie den Satz.",
-          "ar": "رتب: كنت تريد أن تصبح طبيبا.",
-          "en": "Reconstruct: You wanted to become a doctor."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "reorder",
-        "tokens": [
-          "werden.",
-          "Arzt",
-          "wolltest",
-          "Du"
-        ]
+        "sentence": "Gerda, ___ du viel im Haushalt helfen? (müssen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-04-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez au prétérit : sollen",
-          "de": "Ergänzen Sie im Präteritum: sollen",
-          "ar": "أكمل في الماضي: sollen",
-          "en": "Complete in the simple past: sollen"
-        },
         "type": "fill_blank",
-        "sentence": "Er ___ den Chef anrufen.",
-        "blanks": 1
+        "prompt": {
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
+        },
+        "sentence": "Ich ___ oft machen, was ich ___. (dürfen/wollen)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-04-q04",
         "position": 4,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Wir ___ den Zug nehmen.",
-          "de": "Wählen Sie: Wir ___ den Zug nehmen.",
-          "ar": "اختر: Wir ___ den Zug nehmen.",
-          "en": "Choose: Wir ___ den Zug nehmen."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "konnte",
-          "können",
-          "konntet",
-          "konnten"
-        ]
+        "sentence": "___ du viel für die Schule lernen? (müssen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-04-q05",
         "position": 5,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La phrase est-elle grammaticalement correcte ?",
-          "de": "Ist der Satz grammatisch richtig?",
-          "ar": "هل الجملة صحيحة نحويا؟",
-          "en": "Is the sentence grammatically correct?"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "true_false",
-        "statement": "Ihr musstet früh aufstehen."
+        "sentence": "Ich ___ studieren, also ___ ich viel lernen. (sollen)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-04-q06",
         "position": 6,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes de wollen",
-          "de": "Ordnen Sie die Formen von wollen zu",
-          "ar": "طابق صيغ wollen",
-          "en": "Match the forms of wollen"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "matching",
-        "items": [
-          {
-            "id": "0",
-            "label": "ich"
-          },
-          {
-            "id": "1",
-            "label": "du"
-          },
-          {
-            "id": "4",
-            "label": "ihr"
-          }
-        ],
-        "options": [
-          "wollte",
-          "wolltest",
-          "wolltet"
-        ]
+        "sentence": "Mein Vater ___ studieren, aber er ___ nicht. (wollen/dürfen)",
+        "blanks": 2
       }
     ]
   },
@@ -513,125 +462,103 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 5,
     "title": {
-      "fr": "Entraînement 5",
-      "de": "Übung 5",
-      "ar": "تمرين 5",
-      "en": "Practice 5"
+      "fr": "Meine Kindheit II",
+      "de": "Meine Kindheit II",
+      "ar": "Meine Kindheit II",
+      "en": "Meine Kindheit II"
     },
     "description": {
-      "fr": "Les modaux au prétérit",
-      "de": "Präteritum der Modalverben",
-      "ar": "الأفعال الناقصة في الماضي",
-      "en": "Modal verbs in the simple past"
+      "fr": "Complétez les situations et distinguez les formes.",
+      "de": "Ergänzen Sie die Situationen und unterscheiden Sie die Formen.",
+      "ar": "أكمل المواقف وميّز الصيغ.",
+      "en": "Complete the situations and distinguish the forms."
     },
     "questions": [
       {
         "id": "kapitel-27-ubung-05-q01",
         "position": 1,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez : On te conseillait de boire plus d’eau.",
-          "de": "Bilden Sie den Satz.",
-          "ar": "رتب: كان ينصحك أحد بشرب المزيد من الماء.",
-          "en": "Reconstruct: You were advised to drink more water."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "reorder",
-        "tokens": [
-          "trinken.",
-          "Wasser",
-          "mehr",
-          "solltest",
-          "Du"
-        ]
+        "sentence": "Er ___, dass ich studiere, aber ich ___ lieber spielen. (wollen)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-05-q02",
         "position": 2,
-        "prompt": {
-          "fr": "Complétez au prétérit : müssen",
-          "de": "Ergänzen Sie im Präteritum: müssen",
-          "ar": "أكمل في الماضي: müssen",
-          "en": "Complete in the simple past: müssen"
-        },
         "type": "fill_blank",
-        "sentence": "Ich ___ nie kochen.",
+        "prompt": {
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
+        },
+        "sentence": "Wann ___ du schwimmen? (können)",
         "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-05-q03",
         "position": 3,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Ich ___ jeden Tag ins Kino gehen.",
-          "de": "Wählen Sie: Ich ___ jeden Tag ins Kino gehen.",
-          "ar": "اختر: Ich ___ jeden Tag ins Kino gehen.",
-          "en": "Choose: Ich ___ jeden Tag ins Kino gehen."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "können",
-          "konntest",
-          "konnte",
-          "konnten"
-        ]
+        "sentence": "Ich ___ erst mit sechs schwimmen, meine Schwester ___ schon mit drei schwimmen. (können)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-05-q04",
         "position": 4,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La phrase est-elle grammaticalement correcte ?",
-          "de": "Ist der Satz grammatisch richtig?",
-          "ar": "هل الجملة صحيحة نحويا؟",
-          "en": "Is the sentence grammatically correct?"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "true_false",
-        "statement": "Ich durftest keinen Alkohol trinken."
+        "sentence": "Wir ___ jeden Tag ins Schwimmbad gehen, aber wir ___ nur einmal pro Woche gehen. (wollen/dürfen)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-05-q05",
         "position": 5,
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Associez les formes de wollen",
-          "de": "Ordnen Sie die Formen von wollen zu",
-          "ar": "طابق صيغ wollen",
-          "en": "Match the forms of wollen"
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
         },
-        "type": "matching",
-        "items": [
-          {
-            "id": "0",
-            "label": "ich"
-          },
-          {
-            "id": "1",
-            "label": "du"
-          },
-          {
-            "id": "4",
-            "label": "ihr"
-          }
-        ],
         "options": [
-          "wollte",
-          "wolltest",
-          "wolltet"
+          "Meine Schwester konnte schwimmen.",
+          "Meine Schwester konnten schwimmen.",
+          "Ich dürfte spielen. (Präteritum)",
+          "Ich durfte spielen."
         ]
       },
       {
         "id": "kapitel-27-ubung-05-q06",
         "position": 6,
+        "type": "reorder",
         "prompt": {
-          "fr": "Choisissez les deux formes correctes.",
-          "de": "Wählen Sie zwei richtige Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Choose two correct forms."
+          "fr": "Als Kind … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Als Kind … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Als Kind … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Als Kind … — Start with this chunk and reconstruct the sentence."
         },
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "ich sollte",
-          "du solltest",
-          "ihr sollte",
-          "wir solltest"
+        "tokens": [
+          "Als Kind",
+          "Tierärztin werden.",
+          "wollte",
+          "ich"
         ]
       }
     ]
@@ -641,127 +568,95 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 6,
     "title": {
-      "fr": "Entraînement 6",
-      "de": "Übung 6",
-      "ar": "تمرين 6",
-      "en": "Practice 6"
+      "fr": "Sprachenlernen für den Job",
+      "de": "Sprachenlernen für den Job",
+      "ar": "Sprachenlernen für den Job",
+      "en": "Sprachenlernen für den Job"
     },
     "description": {
-      "fr": "Les modaux au prétérit",
-      "de": "Präteritum der Modalverben",
-      "ar": "الأفعال الناقصة في الماضي",
-      "en": "Modal verbs in the simple past"
+      "fr": "Complétez les situations et distinguez les formes.",
+      "de": "Ergänzen Sie die Situationen und unterscheiden Sie die Formen.",
+      "ar": "أكمل المواقف وميّز الصيغ.",
+      "en": "Complete the situations and distinguish the forms."
     },
     "questions": [
       {
         "id": "kapitel-27-ubung-06-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez au prétérit : müssen",
-          "de": "Ergänzen Sie im Präteritum: müssen",
-          "ar": "أكمل في الماضي: müssen",
-          "en": "Complete in the simple past: müssen"
-        },
         "type": "fill_blank",
-        "sentence": "Musstest du im Haushalt helfen?",
-        "blanks": 1
+        "prompt": {
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
+        },
+        "sentence": "Letztes Jahr ___ ich in der Exportabteilung arbeiten, aber ich ___ nicht, weil ich kein Französisch ___. (wollen/dürfen/können)",
+        "blanks": 3
       },
       {
         "id": "kapitel-27-ubung-06-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Wir ___ ins Schwimmbad gehen.",
-          "de": "Wählen Sie: Wir ___ ins Schwimmbad gehen.",
-          "ar": "اختر: Wir ___ ins Schwimmbad gehen.",
-          "en": "Choose: Wir ___ ins Schwimmbad gehen."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "wolltet",
-          "wollte",
-          "wollten",
-          "wollen"
-        ]
+        "sentence": "Deshalb ___ ich Französisch lernen. Nach zwei Monaten ___ ich noch nicht viel Französisch. (müssen/können)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-06-q03",
         "position": 3,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La phrase est-elle grammaticalement correcte ?",
-          "de": "Ist der Satz grammatisch richtig?",
-          "ar": "هل الجملة صحيحة نحويا؟",
-          "en": "Is the sentence grammatically correct?"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "true_false",
-        "statement": "Wir durften nur einmal pro Woche gehen."
+        "sentence": "Also ___ ich einen Sprachkurs in Frankreich machen. Dann ___ ich nach Paris fahren. (müssen/können)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-06-q04",
         "position": 4,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes de können",
-          "de": "Ordnen Sie die Formen von können zu",
-          "ar": "طابق صيغ können",
-          "en": "Match the forms of können"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "matching",
-        "items": [
-          {
-            "id": "0",
-            "label": "ich"
-          },
-          {
-            "id": "1",
-            "label": "du"
-          },
-          {
-            "id": "4",
-            "label": "ihr"
-          }
-        ],
-        "options": [
-          "konnte",
-          "konntest",
-          "konntet"
-        ]
+        "sentence": "Im Kurs ___ ich täglich Hausaufgaben machen. Ich ___ gern alle Sehenswürdigkeiten besuchen. (müssen/wollen)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-06-q05",
         "position": 5,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez les deux formes correctes.",
-          "de": "Wählen Sie zwei richtige Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Choose two correct forms."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "ich musste",
-          "du musstest",
-          "ihr musste",
-          "wir musstest"
-        ]
+        "sentence": "Das ___ ich nicht, weil ich keine Zeit hatte. Nach zwei Wochen ___ ich viel verstehen. (können)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-06-q06",
         "position": 6,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez : Je voulais travailler au service export.",
-          "de": "Bilden Sie den Satz.",
-          "ar": "رتب: كنت أريد العمل في قسم التصدير.",
-          "en": "Reconstruct: I wanted to work in the export department."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "reorder",
-        "tokens": [
-          "arbeiten.",
-          "Exportabteilung",
-          "der",
-          "in",
-          "wollte",
-          "Ich"
-        ]
+        "sentence": "Dann ___ ich in der Exportabteilung arbeiten. (Erlaubnis: dürfen)",
+        "blanks": 1
       }
     ]
   },
@@ -770,125 +665,109 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 7,
     "title": {
-      "fr": "Entraînement 7",
-      "de": "Übung 7",
-      "ar": "تمرين 7",
-      "en": "Practice 7"
+      "fr": "Pflicht oder Verbot?",
+      "de": "Pflicht oder Verbot?",
+      "ar": "Pflicht oder Verbot?",
+      "en": "Pflicht oder Verbot?"
     },
     "description": {
-      "fr": "Les modaux au prétérit",
-      "de": "Präteritum der Modalverben",
-      "ar": "الأفعال الناقصة في الماضي",
-      "en": "Modal verbs in the simple past"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-27-ubung-07-q01",
         "position": 1,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Ich ___ nach Paris fahren.",
-          "de": "Wählen Sie: Ich ___ nach Paris fahren.",
-          "ar": "اختر: Ich ___ nach Paris fahren.",
-          "en": "Choose: Ich ___ nach Paris fahren."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "können",
-          "konnten",
-          "konntest",
-          "konnte"
-        ]
+        "sentence": "Der Eintritt war kostenlos. Wir ___ nicht bezahlen. (müssen: keine Pflicht)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-07-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La phrase est-elle grammaticalement correcte ?",
-          "de": "Ist der Satz grammatisch richtig?",
-          "ar": "هل الجملة صحيحة نحويا؟",
-          "en": "Is the sentence grammatically correct?"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "true_false",
-        "statement": "Du konnte früher nicht lange schlafen."
+        "sentence": "Das Schild verbot das Betreten. Ihr ___ nicht hineingehen. (dürfen: Verbot)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-07-q03",
         "position": 3,
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Associez les formes de dürfen",
-          "de": "Ordnen Sie die Formen von dürfen zu",
-          "ar": "طابق صيغ dürfen",
-          "en": "Match the forms of dürfen"
+          "fr": "Die Aufgabe war freiwillig: Welche Form bedeutet „keine Pflicht“? Du ___ sie nicht machen. — Choisissez la forme ou la phrase correcte.",
+          "de": "Die Aufgabe war freiwillig: Welche Form bedeutet „keine Pflicht“? Du ___ sie nicht machen. — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Die Aufgabe war freiwillig: Welche Form bedeutet „keine Pflicht“? Du ___ sie nicht machen. — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Die Aufgabe war freiwillig: Welche Form bedeutet „keine Pflicht“? Du ___ sie nicht machen. — Choose the correct form or sentence."
         },
-        "type": "matching",
-        "items": [
-          {
-            "id": "0",
-            "label": "ich"
-          },
-          {
-            "id": "1",
-            "label": "du"
-          },
-          {
-            "id": "4",
-            "label": "ihr"
-          }
-        ],
         "options": [
-          "durfte",
+          "wolltest",
           "durftest",
-          "durftet"
+          "solltest",
+          "musstest"
         ]
       },
       {
         "id": "kapitel-27-ubung-07-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Choisissez les deux formes correctes.",
-          "de": "Wählen Sie zwei richtige Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Choose two correct forms."
-        },
         "type": "qcm",
         "selection": "multiple",
+        "prompt": {
+          "fr": "Sélectionnez les phrases dont le modal correspond au sens indiqué.",
+          "de": "Wählen Sie die Sätze, deren Modalverb zur angegebenen Bedeutung passt.",
+          "ar": "اختر الجمل التي يطابق فعلها الناقص المعنى المحدد.",
+          "en": "Select sentences whose modal matches the stated meaning."
+        },
         "options": [
-          "ich wollte",
-          "du wolltest",
-          "ihr wollte",
-          "wir wolltest"
+          "Es war freiwillig: Wir mussten nicht mitkommen.",
+          "Es war Pflicht: Er durfte nicht arbeiten.",
+          "Der Arzt erlaubte es: Sie durfte spazieren gehen.",
+          "Der Eintritt war verboten: Wir mussten nicht hineingehen."
         ]
       },
       {
         "id": "kapitel-27-ubung-07-q05",
         "position": 5,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez : Les clients avaient le droit de fumer.",
-          "de": "Bilden Sie den Satz.",
-          "ar": "رتب: كان مسموحا للزبائن بالتدخين.",
-          "en": "Reconstruct: The guests were allowed to smoke."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "reorder",
-        "tokens": [
-          "rauchen.",
-          "durften",
-          "Gäste",
-          "Die"
-        ]
+        "sentence": "Es gab keinen Zwang, aber ich ___ mitmachen. (eigener Wunsch: wollen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-07-q06",
         "position": 6,
+        "type": "reorder",
         "prompt": {
-          "fr": "Complétez au prétérit : sollen",
-          "de": "Ergänzen Sie im Präteritum: sollen",
-          "ar": "أكمل في الماضي: sollen",
-          "en": "Complete in the simple past: sollen"
+          "fr": "Wegen des Verbots … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Wegen des Verbots … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Wegen des Verbots … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Wegen des Verbots … — Start with this chunk and reconstruct the sentence."
         },
-        "type": "fill_blank",
-        "sentence": "Ihr ___ pünktlich kommen.",
-        "blanks": 1
+        "tokens": [
+          "durften",
+          "Wegen des Verbots",
+          "wir",
+          "nicht fotografieren."
+        ]
       }
     ]
   },
@@ -897,126 +776,95 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 8,
     "title": {
-      "fr": "Entraînement 8",
-      "de": "Übung 8",
-      "ar": "تمرين 8",
-      "en": "Practice 8"
+      "fr": "Heinrich und sein Freund",
+      "de": "Heinrich und sein Freund",
+      "ar": "Heinrich und sein Freund",
+      "en": "Heinrich und sein Freund"
     },
     "description": {
-      "fr": "Les modaux au prétérit",
-      "de": "Präteritum der Modalverben",
-      "ar": "الأفعال الناقصة في الماضي",
-      "en": "Modal verbs in the simple past"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-27-ubung-08-q01",
         "position": 1,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "La phrase est-elle grammaticalement correcte ?",
-          "de": "Ist der Satz grammatisch richtig?",
-          "ar": "هل الجملة صحيحة نحويا؟",
-          "en": "Is the sentence grammatically correct?"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "true_false",
-        "statement": "Wir mussten nicht bezahlen."
+        "sentence": "Heute musst du nicht mehr arbeiten. Früher ___ du jeden Tag arbeiten. (müssen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-08-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Associez les formes de dürfen",
-          "de": "Ordnen Sie die Formen von dürfen zu",
-          "ar": "طابق صيغ dürfen",
-          "en": "Match the forms of dürfen"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "matching",
-        "items": [
-          {
-            "id": "0",
-            "label": "ich"
-          },
-          {
-            "id": "1",
-            "label": "du"
-          },
-          {
-            "id": "4",
-            "label": "ihr"
-          }
-        ],
-        "options": [
-          "durfte",
-          "durftest",
-          "durftet"
-        ]
+        "sentence": "Jetzt kannst du lange schlafen. Früher ___ du nicht lange schlafen. (können)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-08-q03",
         "position": 3,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez les deux formes correctes.",
-          "de": "Wählen Sie zwei richtige Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Choose two correct forms."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "ich wollte",
-          "du wolltest",
-          "ihr wollte",
-          "wir wolltest"
-        ]
+        "sentence": "Meine Enkelin kann jetzt lesen. Vor zwei Jahren ___ sie noch nicht lesen. (können)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-08-q04",
         "position": 4,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez : Il devait appeler le chef sur instruction.",
-          "de": "Bilden Sie den Satz.",
-          "ar": "رتب: كان مطلوبا منه الاتصال بالمدير.",
-          "en": "Reconstruct: He was supposed to call the boss."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "reorder",
-        "tokens": [
-          "anrufen.",
-          "Chef",
-          "den",
-          "sollte",
-          "Er"
-        ]
+        "sentence": "Jetzt darf mein Enkel heiraten. Als Minderjähriger ___ er in dieser Situation noch nicht heiraten. (dürfen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-08-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez au prétérit : können",
-          "de": "Ergänzen Sie im Präteritum: können",
-          "ar": "أكمل في الماضي: können",
-          "en": "Complete in the simple past: können"
-        },
         "type": "fill_blank",
-        "sentence": "Wir ___ den Zug nehmen.",
+        "prompt": {
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
+        },
+        "sentence": "Heute möchte ich nicht mehr rauchen. Früher ___ ich rauchen. (wollen)",
         "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-08-q06",
         "position": 6,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Ihr ___ früh aufstehen.",
-          "de": "Wählen Sie: Ihr ___ früh aufstehen.",
-          "ar": "اختر: Ihr ___ früh aufstehen.",
-          "en": "Choose: Ihr ___ früh aufstehen."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "müssen",
-          "musstet",
-          "musstest",
-          "mussten"
-        ]
+        "sentence": "Heute dürfen die Gäste hier nicht rauchen. Damals ___ sie hier rauchen. (dürfen)",
+        "blanks": 1
       }
     ]
   },
@@ -1025,125 +873,108 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 9,
     "title": {
-      "fr": "Entraînement 9",
-      "de": "Übung 9",
-      "ar": "تمرين 9",
-      "en": "Practice 9"
+      "fr": "Nebensätze",
+      "de": "Nebensätze",
+      "ar": "Nebensätze",
+      "en": "Nebensätze"
     },
     "description": {
-      "fr": "Les modaux au prétérit",
-      "de": "Präteritum der Modalverben",
-      "ar": "الأفعال الناقصة في الماضي",
-      "en": "Modal verbs in the simple past"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-27-ubung-09-q01",
         "position": 1,
+        "type": "reorder",
         "prompt": {
-          "fr": "Associez les formes de wollen",
-          "de": "Ordnen Sie die Formen von wollen zu",
-          "ar": "طابق صيغ wollen",
-          "en": "Match the forms of wollen"
+          "fr": "Er blieb zu Hause, … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Er blieb zu Hause, … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Er blieb zu Hause, … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Er blieb zu Hause, … — Start with this chunk and reconstruct the sentence."
         },
-        "type": "matching",
-        "items": [
-          {
-            "id": "0",
-            "label": "ich"
-          },
-          {
-            "id": "1",
-            "label": "du"
-          },
-          {
-            "id": "4",
-            "label": "ihr"
-          }
-        ],
-        "options": [
-          "wollte",
-          "wolltest",
-          "wolltet"
+        "tokens": [
+          "er",
+          "arbeiten musste.",
+          "weil",
+          "Er blieb zu Hause,"
         ]
       },
       {
         "id": "kapitel-27-ubung-09-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez les deux formes correctes.",
-          "de": "Wählen Sie zwei richtige Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Choose two correct forms."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "ich sollte",
-          "du solltest",
-          "ihr sollte",
-          "wir solltest"
-        ]
+        "sentence": "Sie sagte, dass sie früher nicht Auto fahren ___. (können)",
+        "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-09-q03",
         "position": 3,
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Reconstituez : Je ne devais jamais cuisiner.",
-          "de": "Bilden Sie den Satz.",
-          "ar": "رتب: لم يكن عليّ الطبخ أبدا.",
-          "en": "Reconstruct: I never had to cook."
+          "fr": "Ich ging früher, weil ich ___. (müssen) — Choisissez la forme ou la phrase correcte.",
+          "de": "Ich ging früher, weil ich ___. (müssen) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Ich ging früher, weil ich ___. (müssen) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Ich ging früher, weil ich ___. (müssen) — Choose the correct form or sentence."
         },
-        "type": "reorder",
-        "tokens": [
-          "kochen.",
-          "nie",
-          "musste",
-          "Ich"
+        "options": [
+          "den Bus musste nehmen",
+          "den Bus nehmen musste",
+          "den Bus nehmen mussten",
+          "musste den Bus nehmen"
         ]
       },
       {
         "id": "kapitel-27-ubung-09-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Complétez au prétérit : können",
-          "de": "Ergänzen Sie im Präteritum: können",
-          "ar": "أكمل في الماضي: können",
-          "en": "Complete in the simple past: können"
-        },
         "type": "fill_blank",
-        "sentence": "Ich ___ jeden Tag ins Kino gehen.",
+        "prompt": {
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
+        },
+        "sentence": "Wir waren enttäuscht, weil wir nicht mitkommen ___. (dürfen)",
         "blanks": 1
       },
       {
         "id": "kapitel-27-ubung-09-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Choisissez : Ich ___ keinen Alkohol trinken.",
-          "de": "Wählen Sie: Ich ___ keinen Alkohol trinken.",
-          "ar": "اختر: Ich ___ keinen Alkohol trinken.",
-          "en": "Choose: Ich ___ keinen Alkohol trinken."
-        },
         "type": "qcm",
-        "selection": "single",
+        "selection": "multiple",
+        "prompt": {
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
         "options": [
-          "durften",
-          "dürfen",
-          "durfte",
-          "durftest"
+          "Ich wusste, dass du lernen musstest.",
+          "Er blieb, weil er wollte helfen.",
+          "Ich wusste, dass du musstest lernen.",
+          "Er blieb, weil er helfen wollte."
         ]
       },
       {
         "id": "kapitel-27-ubung-09-q06",
         "position": 6,
-        "prompt": {
-          "fr": "La phrase est-elle grammaticalement correcte ?",
-          "de": "Ist der Satz grammatisch richtig?",
-          "ar": "هل الجملة صحيحة نحويا؟",
-          "en": "Is the sentence grammatically correct?"
-        },
         "type": "true_false",
-        "statement": "Ich wolltest keine Kinder."
+        "prompt": {
+          "fr": "Cette phrase est-elle correcte selon la règle étudiée ?",
+          "de": "Ist der Satz nach der behandelten Regel richtig?",
+          "ar": "هل الجملة صحيحة وفق القاعدة المدروسة؟",
+          "en": "Is the sentence correct according to the rule being studied?"
+        },
+        "statement": "Sie kam später, weil sie noch einkaufen musste."
       }
     ]
   },
@@ -1152,125 +983,108 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 10,
     "title": {
-      "fr": "Entraînement 10",
-      "de": "Übung 10",
-      "ar": "تمرين 10",
-      "en": "Practice 10"
+      "fr": "Abschlusstest",
+      "de": "Abschlusstest",
+      "ar": "Abschlusstest",
+      "en": "Abschlusstest"
     },
     "description": {
-      "fr": "Les modaux au prétérit",
-      "de": "Präteritum der Modalverben",
-      "ar": "الأفعال الناقصة في الماضي",
-      "en": "Modal verbs in the simple past"
+      "fr": "Combinez plusieurs règles et repérez les erreurs.",
+      "de": "Kombinieren Sie mehrere Regeln und erkennen Sie Fehler.",
+      "ar": "اجمع عدة قواعد واكتشف الأخطاء.",
+      "en": "Combine several rules and identify errors."
     },
     "questions": [
       {
         "id": "kapitel-27-ubung-10-q01",
         "position": 1,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez les deux formes correctes.",
-          "de": "Wählen Sie zwei richtige Formen.",
-          "ar": "اختر الصيغتين الصحيحتين.",
-          "en": "Choose two correct forms."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "multiple",
-        "options": [
-          "ich sollte",
-          "du solltest",
-          "ihr sollte",
-          "wir solltest"
-        ]
+        "sentence": "Die Ärztin sagte, ich ___ mehr schlafen. Ich ___ aber noch arbeiten. (sollen/müssen)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-10-q02",
         "position": 2,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Reconstituez : Devais-tu aider à la maison ?",
-          "de": "Bilden Sie den Satz.",
-          "ar": "رتب: هل كان عليك المساعدة في المنزل؟",
-          "en": "Reconstruct: Did you have to help at home?"
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "reorder",
-        "tokens": [
-          "helfen?",
-          "Haushalt",
-          "im",
-          "du",
-          "Musstest"
-        ]
+        "sentence": "Wir ___ gestern nicht kommen, weil wir keinen Wagen hatten. Heute ___ wir kommen. (können)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-10-q03",
         "position": 3,
+        "type": "qcm",
+        "selection": "single",
         "prompt": {
-          "fr": "Complétez au prétérit : wollen",
-          "de": "Ergänzen Sie im Präteritum: wollen",
-          "ar": "أكمل في الماضي: wollen",
-          "en": "Complete in the simple past: wollen"
+          "fr": "Die Bibliothek war geschlossen, deshalb ___ wir keine Bücher ausleihen. (können) — Choisissez la forme ou la phrase correcte.",
+          "de": "Die Bibliothek war geschlossen, deshalb ___ wir keine Bücher ausleihen. (können) — Wählen Sie die richtige Form oder den richtigen Satz.",
+          "ar": "Die Bibliothek war geschlossen, deshalb ___ wir keine Bücher ausleihen. (können) — اختر الصيغة أو الجملة الصحيحة.",
+          "en": "Die Bibliothek war geschlossen, deshalb ___ wir keine Bücher ausleihen. (können) — Choose the correct form or sentence."
         },
-        "type": "fill_blank",
-        "sentence": "Wir ___ ins Schwimmbad gehen.",
-        "blanks": 1
+        "options": [
+          "konntet",
+          "konnte",
+          "konnten",
+          "könnten"
+        ]
       },
       {
         "id": "kapitel-27-ubung-10-q04",
         "position": 4,
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez : Wir ___ nur einmal pro Woche gehen.",
-          "de": "Wählen Sie: Wir ___ nur einmal pro Woche gehen.",
-          "ar": "اختر: Wir ___ nur einmal pro Woche gehen.",
-          "en": "Choose: Wir ___ nur einmal pro Woche gehen."
+          "fr": "Complétez au Präteritum, sauf indication contraire.",
+          "de": "Ergänzen Sie im Präteritum, sofern nicht anders angegeben.",
+          "ar": "أكمل في الماضي البسيط ما لم يُذكر غير ذلك.",
+          "en": "Complete in the preterite unless otherwise specified."
         },
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "durftet",
-          "durften",
-          "durfte",
-          "dürfen"
-        ]
+        "sentence": "Ihr ___ das Zimmer nicht putzen, aber ihr ___ es nicht verlassen. (keine Pflicht / Verbot)",
+        "blanks": 2
       },
       {
         "id": "kapitel-27-ubung-10-q05",
         "position": 5,
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "La phrase est-elle grammaticalement correcte ?",
-          "de": "Ist der Satz grammatisch richtig?",
-          "ar": "هل الجملة صحيحة نحويا؟",
-          "en": "Is the sentence grammatically correct?"
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
         },
-        "type": "true_false",
-        "statement": "Sie konnte mit drei Jahren schwimmen."
+        "options": [
+          "Sie möchtete früher Tänzerin werden.",
+          "Sie wollte früher Tänzerin werden.",
+          "Wir solltet den Bericht abgeben.",
+          "Wir sollten den Bericht abgeben."
+        ]
       },
       {
         "id": "kapitel-27-ubung-10-q06",
         "position": 6,
+        "type": "reorder",
         "prompt": {
-          "fr": "Associez les formes de müssen",
-          "de": "Ordnen Sie die Formen von müssen zu",
-          "ar": "طابق صيغ müssen",
-          "en": "Match the forms of müssen"
+          "fr": "Die Mutter fragte, … — Commencez par ce bloc et reconstituez la phrase.",
+          "de": "Die Mutter fragte, … — Beginnen Sie mit diesem Block und bilden Sie den Satz.",
+          "ar": "Die Mutter fragte, … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Die Mutter fragte, … — Start with this chunk and reconstruct the sentence."
         },
-        "type": "matching",
-        "items": [
-          {
-            "id": "0",
-            "label": "ich"
-          },
-          {
-            "id": "1",
-            "label": "du"
-          },
-          {
-            "id": "4",
-            "label": "ihr"
-          }
-        ],
-        "options": [
-          "musste",
-          "musstest",
-          "musstet"
+        "tokens": [
+          "Die Mutter fragte,",
+          "ob",
+          "mitkommen wollten.",
+          "wir"
         ]
       }
     ]

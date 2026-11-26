@@ -5,10 +5,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 1,
     "title": {
-      "fr": "Ohne Endung",
+      "fr": "Sans terminaison",
       "de": "Ohne Endung",
-      "ar": "Ohne Endung",
-      "en": "Ohne Endung"
+      "ar": "دون نهاية",
+      "en": "No ending"
     },
     "description": {
       "fr": "Pluriel des noms",
@@ -22,17 +22,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von der Sessel: die ___",
-          "de": "Ergänzen Sie. — Plural von der Sessel: die ___",
-          "ar": "أكمل. — Plural von der Sessel: die ___",
-          "en": "Complete. — Plural von der Sessel: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Im Wartezimmer stehen vier ___. (der Sessel)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Im Wartezimmer stehen vier ___. (der Sessel)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Im Wartezimmer stehen vier ___. (der Sessel)",
+          "en": "Complete with the plural of the noun in brackets. — Im Wartezimmer stehen vier ___. (der Sessel)"
         },
         "selection": "single",
         "options": [
           "Sessel",
-          "Brötchen",
-          "Väter",
-          "Gärten"
+          "Sessels",
+          "Sessele",
+          "Sesseln"
         ]
       },
       {
@@ -40,17 +40,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von das Brötchen: die ___",
-          "de": "Ergänzen Sie. — Plural von das Brötchen: die ___",
-          "ar": "أكمل. — Plural von das Brötchen: die ___",
-          "en": "Complete. — Plural von das Brötchen: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Zum Frühstück kaufen wir sechs ___. (das Brötchen)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Zum Frühstück kaufen wir sechs ___. (das Brötchen)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Zum Frühstück kaufen wir sechs ___. (das Brötchen)",
+          "en": "Complete with the plural of the noun in brackets. — Zum Frühstück kaufen wir sechs ___. (das Brötchen)"
         },
         "selection": "single",
         "options": [
-          "Väter",
-          "Brötchen",
-          "Sessel",
-          "Gärten"
+          "Brötchens",
+          "Brötchene",
+          "Brötchener",
+          "Brötchen"
         ]
       },
       {
@@ -58,16 +58,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von der Vater: die ___",
-          "de": "Ergänzen Sie. — Plural von der Vater: die ___",
-          "ar": "أكمل. — Plural von der Vater: die ___",
-          "en": "Complete. — Plural von der Vater: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Beim Elternabend sprechen zwei ___ mit der Lehrerin. (der Vater)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Beim Elternabend sprechen zwei ___ mit der Lehrerin. (der Vater)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Beim Elternabend sprechen zwei ___ mit der Lehrerin. (der Vater)",
+          "en": "Complete with the plural of the noun in brackets. — Beim Elternabend sprechen zwei ___ mit der Lehrerin. (der Vater)"
         },
         "selection": "single",
         "options": [
-          "Gärten",
-          "Brötchen",
-          "Sessel",
+          "Vatern",
+          "Väters",
+          "Vater",
           "Väter"
         ]
       },
@@ -76,12 +76,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "sentence": "Plural von der Garten: die ___",
+        "sentence": "Hinter den Häusern liegen drei ___. (der Garten)",
         "blanks": 1
       }
     ]
@@ -91,10 +91,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 2,
     "title": {
-      "fr": "Pluralendungen",
+      "fr": "Terminaisons du pluriel",
       "de": "Pluralendungen",
-      "ar": "Pluralendungen",
-      "en": "Pluralendungen"
+      "ar": "نهايات الجمع",
+      "en": "Plural endings"
     },
     "description": {
       "fr": "Pluriel des noms",
@@ -108,17 +108,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von das Sofa: die ___",
-          "de": "Ergänzen Sie. — Plural von das Sofa: die ___",
-          "ar": "أكمل. — Plural von das Sofa: die ___",
-          "en": "Complete. — Plural von das Sofa: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Im Möbelhaus gibt es fünf neue ___. (das Sofa)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Im Möbelhaus gibt es fünf neue ___. (das Sofa)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Im Möbelhaus gibt es fünf neue ___. (das Sofa)",
+          "en": "Complete with the plural of the noun in brackets. — Im Möbelhaus gibt es fünf neue ___. (das Sofa)"
         },
         "selection": "single",
         "options": [
+          "Sofen",
+          "Sofae",
           "Sofas",
-          "Zeitungen",
-          "Organisationen",
-          "Informationen"
+          "Sofa"
         ]
       },
       {
@@ -126,17 +126,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von das Haar: die ___",
-          "de": "Ergänzen Sie. — Plural von das Haar: die ___",
-          "ar": "أكمل. — Plural von das Haar: die ___",
-          "en": "Complete. — Plural von das Haar: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Auf meiner Jacke sind einige weiße ___. (das Haar)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Auf meiner Jacke sind einige weiße ___. (das Haar)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Auf meiner Jacke sind einige weiße ___. (das Haar)",
+          "en": "Complete with the plural of the noun in brackets. — Auf meiner Jacke sind einige weiße ___. (das Haar)"
         },
         "selection": "single",
         "options": [
-          "Tickets",
-          "Sekretärinnen",
-          "Lösungen",
-          "Haare"
+          "Haar",
+          "Haaren",
+          "Haare",
+          "Härer"
         ]
       },
       {
@@ -144,17 +144,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von die Freiheit: die ___",
-          "de": "Ergänzen Sie. — Plural von die Freiheit: die ___",
-          "ar": "أكمل. — Plural von die Freiheit: die ___",
-          "en": "Complete. — Plural von die Freiheit: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Das Gesetz schützt verschiedene persönliche ___. (die Freiheit)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Das Gesetz schützt verschiedene persönliche ___. (die Freiheit)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Das Gesetz schützt verschiedene persönliche ___. (die Freiheit)",
+          "en": "Complete with the plural of the noun in brackets. — Das Gesetz schützt verschiedene persönliche ___. (die Freiheit)"
         },
         "selection": "single",
         "options": [
-          "Zeitungen",
-          "Informationen",
+          "Freiheitenen",
+          "Freiheite",
           "Freiheiten",
-          "Kinos"
+          "Freiheits"
         ]
       },
       {
@@ -162,43 +162,48 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "sentence": "Plural von das Hobby: die ___",
+        "sentence": "Meine Schwester hat zwei ___. (das Hobby)",
         "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-02-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Am Kiosk liegen mehrere deutsche ___. (die Zeitung)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Am Kiosk liegen mehrere deutsche ___. (die Zeitung)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Am Kiosk liegen mehrere deutsche ___. (die Zeitung)",
+          "en": "Complete with the plural of the noun in brackets. — Am Kiosk liegen mehrere deutsche ___. (die Zeitung)"
         },
-        "sentence": "Plural von die Zeitung: die ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Zeitung",
+          "Zeitungen",
+          "Zeitunge",
+          "Zeitungs"
+        ]
       },
       {
         "id": "kapitel-13-ubung-02-q06",
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von die Information: die ___",
-          "de": "Ergänzen Sie. — Plural von die Information: die ___",
-          "ar": "أكمل. — Plural von die Information: die ___",
-          "en": "Complete. — Plural von die Information: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Für die Anmeldung brauchen wir weitere ___. (die Information)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Für die Anmeldung brauchen wir weitere ___. (die Information)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Für die Anmeldung brauchen wir weitere ___. (die Information)",
+          "en": "Complete with the plural of the noun in brackets. — Für die Anmeldung brauchen wir weitere ___. (die Information)"
         },
         "selection": "single",
         "options": [
+          "Informations",
           "Informationen",
-          "Lösungen",
-          "Restaurants",
-          "Tickets"
+          "Information",
+          "Informatione"
         ]
       },
       {
@@ -206,177 +211,182 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von das Tier: die ___",
-          "de": "Ergänzen Sie. — Plural von das Tier: die ___",
-          "ar": "أكمل. — Plural von das Tier: die ___",
-          "en": "Complete. — Plural von das Tier: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Im Zoo leben viele verschiedene ___. (das Tier)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Im Zoo leben viele verschiedene ___. (das Tier)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Im Zoo leben viele verschiedene ___. (das Tier)",
+          "en": "Complete with the plural of the noun in brackets. — Im Zoo leben viele verschiedene ___. (das Tier)"
         },
         "selection": "single",
         "options": [
-          "Krankheiten",
-          "Sachen",
-          "Tickets",
-          "Tiere"
+          "Tierer",
+          "Tier",
+          "Tiere",
+          "Tieren"
         ]
       },
       {
         "id": "kapitel-13-ubung-02-q08",
         "position": 8,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von die Lehrerin: die ___",
-          "de": "Ergänzen Sie. — Plural von die Lehrerin: die ___",
-          "ar": "أكمل. — Plural von die Lehrerin: die ___",
-          "en": "Complete. — Plural von die Lehrerin: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "selection": "single",
-        "options": [
-          "Lehrerinnen",
-          "Kinos",
-          "Restaurants",
-          "Informationen"
-        ]
+        "sentence": "An der Schule arbeiten vier neue ___. (die Lehrerin)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-02-q09",
         "position": 9,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Im Koffer sind noch ein paar ___. (die Sache)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Im Koffer sind noch ein paar ___. (die Sache)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Im Koffer sind noch ein paar ___. (die Sache)",
+          "en": "Complete with the plural of the noun in brackets. — Im Koffer sind noch ein paar ___. (die Sache)"
         },
-        "sentence": "Plural von die Sache: die ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Sachens",
+          "Sacher",
+          "Sachen",
+          "Sache"
+        ]
       },
       {
         "id": "kapitel-13-ubung-02-q10",
         "position": 10,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Für den Obstsalat brauche ich drei ___. (die Kiwi)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Für den Obstsalat brauche ich drei ___. (die Kiwi)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Für den Obstsalat brauche ich drei ___. (die Kiwi)",
+          "en": "Complete with the plural of the noun in brackets. — Für den Obstsalat brauche ich drei ___. (die Kiwi)"
         },
-        "sentence": "Plural von die Kiwi: die ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Kiwien",
+          "Kiwi",
+          "Kiwies",
+          "Kiwis"
+        ]
       },
       {
         "id": "kapitel-13-ubung-02-q11",
         "position": 11,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von die Sekunde: die ___",
-          "de": "Ergänzen Sie. — Plural von die Sekunde: die ___",
-          "ar": "أكمل. — Plural von die Sekunde: die ___",
-          "en": "Complete. — Plural von die Sekunde: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Der Zug hält nur wenige ___ am Bahnhof. (die Sekunde)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Der Zug hält nur wenige ___ am Bahnhof. (die Sekunde)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Der Zug hält nur wenige ___ am Bahnhof. (die Sekunde)",
+          "en": "Complete with the plural of the noun in brackets. — Der Zug hält nur wenige ___ am Bahnhof. (die Sekunde)"
         },
         "selection": "single",
         "options": [
-          "Sekunden",
-          "Sachen",
-          "Organisationen",
-          "Sofas"
+          "Sekundes",
+          "Sekunder",
+          "Sekunde",
+          "Sekunden"
         ]
       },
       {
         "id": "kapitel-13-ubung-02-q12",
         "position": 12,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von die Organisation: die ___",
-          "de": "Ergänzen Sie. — Plural von die Organisation: die ___",
-          "ar": "أكمل. — Plural von die Organisation: die ___",
-          "en": "Complete. — Plural von die Organisation: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "selection": "single",
-        "options": [
-          "Omas",
-          "Haare",
-          "Organisationen",
-          "Informationen"
-        ]
+        "sentence": "Bei dem Projekt helfen drei soziale ___. (die Organisation)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-02-q13",
         "position": 13,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von die Operation: die ___",
-          "de": "Ergänzen Sie. — Plural von die Operation: die ___",
-          "ar": "أكمل. — Plural von die Operation: die ___",
-          "en": "Complete. — Plural von die Operation: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Heute finden im Krankenhaus zwei ___ statt. (die Operation)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Heute finden im Krankenhaus zwei ___ statt. (die Operation)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Heute finden im Krankenhaus zwei ___ statt. (die Operation)",
+          "en": "Complete with the plural of the noun in brackets. — Heute finden im Krankenhaus zwei ___ statt. (die Operation)"
         },
         "selection": "single",
         "options": [
-          "Tiere",
-          "Krankheiten",
-          "Sachen",
+          "Operation",
+          "Operatione",
+          "Operations",
           "Operationen"
         ]
       },
       {
         "id": "kapitel-13-ubung-02-q14",
         "position": 14,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Auf der Liste stehen zwölf ___. (der Name)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Auf der Liste stehen zwölf ___. (der Name)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Auf der Liste stehen zwölf ___. (der Name)",
+          "en": "Complete with the plural of the noun in brackets. — Auf der Liste stehen zwölf ___. (der Name)"
         },
-        "sentence": "Plural von der Name: die ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Namer",
+          "Name",
+          "Names",
+          "Namen"
+        ]
       },
       {
         "id": "kapitel-13-ubung-02-q15",
         "position": 15,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Im Erdgeschoss gibt es zwei ___. (die Toilette)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Im Erdgeschoss gibt es zwei ___. (die Toilette)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Im Erdgeschoss gibt es zwei ___. (die Toilette)",
+          "en": "Complete with the plural of the noun in brackets. — Im Erdgeschoss gibt es zwei ___. (die Toilette)"
         },
-        "sentence": "Plural von die Toilette: die ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Toilette",
+          "Toiletten",
+          "Toilettenes",
+          "Toiletes"
+        ]
       },
       {
         "id": "kapitel-13-ubung-02-q16",
         "position": 16,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von die Oma: die ___",
-          "de": "Ergänzen Sie. — Plural von die Oma: die ___",
-          "ar": "أكمل. — Plural von die Oma: die ___",
-          "en": "Complete. — Plural von die Oma: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "selection": "single",
-        "options": [
-          "Tickets",
-          "Lehrerinnen",
-          "Omas",
-          "Informationen"
-        ]
+        "sentence": "Am Sonntag besuchen uns beide ___. (die Oma)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-02-q17",
         "position": 17,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von die Sekretärin: die ___",
-          "de": "Ergänzen Sie. — Plural von die Sekretärin: die ___",
-          "ar": "أكمل. — Plural von die Sekretärin: die ___",
-          "en": "Complete. — Plural von die Sekretärin: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — In der Praxis arbeiten zwei ___. (die Sekretärin)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — In der Praxis arbeiten zwei ___. (die Sekretärin)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — In der Praxis arbeiten zwei ___. (die Sekretärin)",
+          "en": "Complete with the plural of the noun in brackets. — In der Praxis arbeiten zwei ___. (die Sekretärin)"
         },
         "selection": "single",
         "options": [
-          "Organisationen",
-          "Sekretärinnen",
-          "Namen",
-          "Lehrerinnen"
+          "Sekretärinen",
+          "Sekretärins",
+          "Sekretärin",
+          "Sekretärinnen"
         ]
       },
       {
@@ -384,43 +394,48 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 18,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von der Junge: die ___",
-          "de": "Ergänzen Sie. — Plural von der Junge: die ___",
-          "ar": "أكمل. — Plural von der Junge: die ___",
-          "en": "Complete. — Plural von der Junge: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Auf dem Schulhof spielen fünf ___. (der Junge)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Auf dem Schulhof spielen fünf ___. (der Junge)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Auf dem Schulhof spielen fünf ___. (der Junge)",
+          "en": "Complete with the plural of the noun in brackets. — Auf dem Schulhof spielen fünf ___. (der Junge)"
         },
         "selection": "single",
         "options": [
+          "Junger",
           "Jungen",
-          "Restaurants",
-          "Zeitungen",
-          "Organisationen"
+          "Junges",
+          "Junge"
         ]
       },
       {
         "id": "kapitel-13-ubung-02-q19",
         "position": 19,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Wir brauchen vier ___ für das Konzert. (das Ticket)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Wir brauchen vier ___ für das Konzert. (das Ticket)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Wir brauchen vier ___ für das Konzert. (das Ticket)",
+          "en": "Complete with the plural of the noun in brackets. — Wir brauchen vier ___ für das Konzert. (das Ticket)"
         },
-        "sentence": "Plural von das Ticket: die ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Tickete",
+          "Ticket",
+          "Ticketen",
+          "Tickets"
+        ]
       },
       {
         "id": "kapitel-13-ubung-02-q20",
         "position": 20,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "sentence": "Plural von das Restaurant: die ___",
+        "sentence": "Am Marktplatz gibt es drei italienische ___. (das Restaurant)",
         "blanks": 1
       },
       {
@@ -428,17 +443,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 21,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von die Lösung: die ___",
-          "de": "Ergänzen Sie. — Plural von die Lösung: die ___",
-          "ar": "أكمل. — Plural von die Lösung: die ___",
-          "en": "Complete. — Plural von die Lösung: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Für das Problem gibt es mehrere ___. (die Lösung)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Für das Problem gibt es mehrere ___. (die Lösung)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Für das Problem gibt es mehrere ___. (die Lösung)",
+          "en": "Complete with the plural of the noun in brackets. — Für das Problem gibt es mehrere ___. (die Lösung)"
         },
         "selection": "single",
         "options": [
-          "Restaurants",
-          "Toiletten",
-          "Lösungen",
-          "Informationen"
+          "Lösungs",
+          "Lösunge",
+          "Lösung",
+          "Lösungen"
         ]
       },
       {
@@ -446,17 +461,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 22,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von die Krankheit: die ___",
-          "de": "Ergänzen Sie. — Plural von die Krankheit: die ___",
-          "ar": "أكمل. — Plural von die Krankheit: die ___",
-          "en": "Complete. — Plural von die Krankheit: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Der Arzt kennt viele seltene ___. (die Krankheit)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Der Arzt kennt viele seltene ___. (die Krankheit)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Der Arzt kennt viele seltene ___. (die Krankheit)",
+          "en": "Complete with the plural of the noun in brackets. — Der Arzt kennt viele seltene ___. (die Krankheit)"
         },
         "selection": "single",
         "options": [
-          "Lehrerinnen",
-          "Toiletten",
-          "Sachen",
-          "Krankheiten"
+          "Krankheite",
+          "Krankheit",
+          "Krankheiten",
+          "Krankheits"
         ]
       },
       {
@@ -464,17 +479,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 23,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von der Herd: die ___",
-          "de": "Ergänzen Sie. — Plural von der Herd: die ___",
-          "ar": "أكمل. — Plural von der Herd: die ___",
-          "en": "Complete. — Plural von der Herd: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Im Geschäft stehen zwei elektrische ___. (der Herd)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Im Geschäft stehen zwei elektrische ___. (der Herd)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Im Geschäft stehen zwei elektrische ___. (der Herd)",
+          "en": "Complete with the plural of the noun in brackets. — Im Geschäft stehen zwei elektrische ___. (der Herd)"
         },
         "selection": "single",
         "options": [
-          "Operationen",
-          "Informationen",
-          "Lösungen",
-          "Herde"
+          "Herden",
+          "Herde",
+          "Herd",
+          "Härde"
         ]
       },
       {
@@ -482,12 +497,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 24,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "sentence": "Plural von das Kino: die ___",
+        "sentence": "In dieser Stadt gibt es vier ___. (das Kino)",
         "blanks": 1
       }
     ]
@@ -497,9 +512,9 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 3,
     "title": {
-      "fr": "Singular",
+      "fr": "Singulier",
       "de": "Singular",
-      "ar": "Singular",
+      "ar": "المفرد",
       "en": "Singular"
     },
     "description": {
@@ -514,17 +529,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — die Bilder – das ___",
-          "de": "Ergänzen Sie. — die Bilder – das ___",
-          "ar": "أكمل. — die Bilder – das ___",
-          "en": "Complete. — die Bilder – das ___"
+          "fr": "Complétez avec le singulier du nom entre parenthèses. — Von den drei Bildern hängt nur ein ___ im Flur. (die Bilder)",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern. — Von den drei Bildern hängt nur ein ___ im Flur. (die Bilder)",
+          "ar": "أكمل بمفرد الاسم بين القوسين. — Von den drei Bildern hängt nur ein ___ im Flur. (die Bilder)",
+          "en": "Complete with the singular of the noun in brackets. — Von den drei Bildern hängt nur ein ___ im Flur. (die Bilder)"
         },
         "selection": "single",
         "options": [
-          "Information",
-          "Foto",
           "Bild",
-          "Arzt"
+          "Bilde",
+          "Bilder",
+          "Bilden"
         ]
       },
       {
@@ -532,17 +547,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — die Männer – der ___",
-          "de": "Ergänzen Sie. — die Männer – der ___",
-          "ar": "أكمل. — die Männer – der ___",
-          "en": "Complete. — die Männer – der ___"
+          "fr": "Complétez avec le singulier du nom entre parenthèses. — Von den Männern wartet nur ein ___ draußen. (die Männer)",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern. — Von den Männern wartet nur ein ___ draußen. (die Männer)",
+          "ar": "أكمل بمفرد الاسم بين القوسين. — Von den Männern wartet nur ein ___ draußen. (die Männer)",
+          "en": "Complete with the singular of the noun in brackets. — Von den Männern wartet nur ein ___ draußen. (die Männer)"
         },
         "selection": "single",
         "options": [
-          "Mann",
-          "Foto",
-          "Arzt",
-          "Baum"
+          "Mannen",
+          "Manne",
+          "Männer",
+          "Mann"
         ]
       },
       {
@@ -550,17 +565,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — die Brötchen – das ___",
-          "de": "Ergänzen Sie. — die Brötchen – das ___",
-          "ar": "أكمل. — die Brötchen – das ___",
-          "en": "Complete. — die Brötchen – das ___"
+          "fr": "Complétez avec le singulier du nom entre parenthèses. — Von den Brötchen nehme ich nur ein ___. (die Brötchen)",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern. — Von den Brötchen nehme ich nur ein ___. (die Brötchen)",
+          "ar": "أكمل بمفرد الاسم بين القوسين. — Von den Brötchen nehme ich nur ein ___. (die Brötchen)",
+          "en": "Complete with the singular of the noun in brackets. — Von den Brötchen nehme ich nur ein ___. (die Brötchen)"
         },
         "selection": "single",
         "options": [
-          "Arzt",
-          "Baum",
-          "Hotel",
-          "Brötchen"
+          "Brötchen",
+          "Brötchenen",
+          "Brötchens",
+          "Brötchene"
         ]
       },
       {
@@ -568,43 +583,48 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le singulier du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern.",
+          "ar": "أكمل بمفرد الاسم بين القوسين.",
+          "en": "Complete with the singular of the noun in brackets."
         },
-        "sentence": "die Meere – das ___",
+        "sentence": "Welches ___ liegt zwischen Europa und Afrika? (die Meere)",
         "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-03-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le singulier du nom entre parenthèses. — Deutschland ist ein ___ in Europa. (die Länder)",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern. — Deutschland ist ein ___ in Europa. (die Länder)",
+          "ar": "أكمل بمفرد الاسم بين القوسين. — Deutschland ist ein ___ in Europa. (die Länder)",
+          "en": "Complete with the singular of the noun in brackets. — Deutschland ist ein ___ in Europa. (die Länder)"
         },
-        "sentence": "die Länder – das ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Landen",
+          "Lande",
+          "Land",
+          "Länder"
+        ]
       },
       {
         "id": "kapitel-13-ubung-03-q06",
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — die Architektinnen – die ___",
-          "de": "Ergänzen Sie. — die Architektinnen – die ___",
-          "ar": "أكمل. — die Architektinnen – die ___",
-          "en": "Complete. — die Architektinnen – die ___"
+          "fr": "Complétez avec le singulier du nom entre parenthèses. — Meine Tante ist eine ___. (die Architektinnen)",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern. — Meine Tante ist eine ___. (die Architektinnen)",
+          "ar": "أكمل بمفرد الاسم بين القوسين. — Meine Tante ist eine ___. (die Architektinnen)",
+          "en": "Complete with the singular of the noun in brackets. — Meine Tante ist eine ___. (die Architektinnen)"
         },
         "selection": "single",
         "options": [
-          "Arzt",
-          "Architektin",
-          "Baum",
-          "Kurs"
+          "Architektinen",
+          "Architektine",
+          "Architektinnen",
+          "Architektin"
         ]
       },
       {
@@ -612,129 +632,134 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — die Kurse – der ___",
-          "de": "Ergänzen Sie. — die Kurse – der ___",
-          "ar": "أكمل. — die Kurse – der ___",
-          "en": "Complete. — die Kurse – der ___"
+          "fr": "Complétez avec le singulier du nom entre parenthèses. — Ich besuche nur einen ___ am Abend. (die Kurse)",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern. — Ich besuche nur einen ___ am Abend. (die Kurse)",
+          "ar": "أكمل بمفرد الاسم بين القوسين. — Ich besuche nur einen ___ am Abend. (die Kurse)",
+          "en": "Complete with the singular of the noun in brackets. — Ich besuche nur einen ___ am Abend. (die Kurse)"
         },
         "selection": "single",
         "options": [
-          "Meer",
           "Kurs",
-          "Baum",
-          "Brötchen"
+          "Kurse",
+          "Kursen",
+          "Kurss"
         ]
       },
       {
         "id": "kapitel-13-ubung-03-q08",
         "position": 8,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — die Hotels – das ___",
-          "de": "Ergänzen Sie. — die Hotels – das ___",
-          "ar": "أكمل. — die Hotels – das ___",
-          "en": "Complete. — die Hotels – das ___"
+          "fr": "Complétez avec le singulier du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern.",
+          "ar": "أكمل بمفرد الاسم بين القوسين.",
+          "en": "Complete with the singular of the noun in brackets."
         },
-        "selection": "single",
-        "options": [
-          "Hotel",
-          "Information",
-          "Einladung",
-          "Kurs"
-        ]
+        "sentence": "Wir buchen ein ___ am Bahnhof. (die Hotels)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-03-q09",
         "position": 9,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le singulier du nom entre parenthèses. — Heute arbeitet nur ein ___ in der Praxis. (die Ärzte)",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern. — Heute arbeitet nur ein ___ in der Praxis. (die Ärzte)",
+          "ar": "أكمل بمفرد الاسم بين القوسين. — Heute arbeitet nur ein ___ in der Praxis. (die Ärzte)",
+          "en": "Complete with the singular of the noun in brackets. — Heute arbeitet nur ein ___ in der Praxis. (die Ärzte)"
         },
-        "sentence": "die Ärzte – der ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Arzten",
+          "Arzte",
+          "Arzt",
+          "Ärzte"
+        ]
       },
       {
         "id": "kapitel-13-ubung-03-q10",
         "position": 10,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le singulier du nom entre parenthèses. — Mein linker ___ tut weh. (die Füße)",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern. — Mein linker ___ tut weh. (die Füße)",
+          "ar": "أكمل بمفرد الاسم بين القوسين. — Mein linker ___ tut weh. (die Füße)",
+          "en": "Complete with the singular of the noun in brackets. — Mein linker ___ tut weh. (die Füße)"
         },
-        "sentence": "die Füße – der ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Fuß",
+          "Fußen",
+          "Füße",
+          "Fuße"
+        ]
       },
       {
         "id": "kapitel-13-ubung-03-q11",
         "position": 11,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — die Fotos – das ___",
-          "de": "Ergänzen Sie. — die Fotos – das ___",
-          "ar": "أكمل. — die Fotos – das ___",
-          "en": "Complete. — die Fotos – das ___"
+          "fr": "Complétez avec le singulier du nom entre parenthèses. — Ich schicke dir ein ___ vom Urlaub. (die Fotos)",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern. — Ich schicke dir ein ___ vom Urlaub. (die Fotos)",
+          "ar": "أكمل بمفرد الاسم بين القوسين. — Ich schicke dir ein ___ vom Urlaub. (die Fotos)",
+          "en": "Complete with the singular of the noun in brackets. — Ich schicke dir ein ___ vom Urlaub. (die Fotos)"
         },
         "selection": "single",
         "options": [
-          "Brötchen",
-          "Land",
+          "Fotoen",
+          "Fotoe",
           "Foto",
-          "Baum"
+          "Fotos"
         ]
       },
       {
         "id": "kapitel-13-ubung-03-q12",
         "position": 12,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — die Informationen – die ___",
-          "de": "Ergänzen Sie. — die Informationen – die ___",
-          "ar": "أكمل. — die Informationen – die ___",
-          "en": "Complete. — die Informationen – die ___"
+          "fr": "Complétez avec le singulier du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern.",
+          "ar": "أكمل بمفرد الاسم بين القوسين.",
+          "en": "Complete with the singular of the noun in brackets."
         },
-        "selection": "single",
-        "options": [
-          "Meer",
-          "Einladung",
-          "Information",
-          "Baum"
-        ]
+        "sentence": "Mir fehlt noch eine wichtige ___. (die Informationen)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-03-q13",
         "position": 13,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — die Einladungen – die ___",
-          "de": "Ergänzen Sie. — die Einladungen – die ___",
-          "ar": "أكمل. — die Einladungen – die ___",
-          "en": "Complete. — die Einladungen – die ___"
+          "fr": "Complétez avec le singulier du nom entre parenthèses. — Auf dem Tisch liegt eine ___ zur Hochzeit. (die Einladungen)",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern. — Auf dem Tisch liegt eine ___ zur Hochzeit. (die Einladungen)",
+          "ar": "أكمل بمفرد الاسم بين القوسين. — Auf dem Tisch liegt eine ___ zur Hochzeit. (die Einladungen)",
+          "en": "Complete with the singular of the noun in brackets. — Auf dem Tisch liegt eine ___ zur Hochzeit. (die Einladungen)"
         },
         "selection": "single",
         "options": [
-          "Brötchen",
-          "Hotel",
           "Einladung",
-          "Land"
+          "Einladungen",
+          "Einladunge",
+          "Einladungs"
         ]
       },
       {
         "id": "kapitel-13-ubung-03-q14",
         "position": 14,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le singulier du nom entre parenthèses. — Vor dem Haus steht ein großer ___. (die Bäume)",
+          "de": "Ergänzen Sie den Singular des Nomens in Klammern. — Vor dem Haus steht ein großer ___. (die Bäume)",
+          "ar": "أكمل بمفرد الاسم بين القوسين. — Vor dem Haus steht ein großer ___. (die Bäume)",
+          "en": "Complete with the singular of the noun in brackets. — Vor dem Haus steht ein großer ___. (die Bäume)"
         },
-        "sentence": "die Bäume – der ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Bäume",
+          "Baumen",
+          "Baum",
+          "Baume"
+        ]
       }
     ]
   },
@@ -743,10 +768,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 4,
     "title": {
-      "fr": "Kein Plural",
+      "fr": "Noms non comptés",
       "de": "Kein Plural",
-      "ar": "Kein Plural",
-      "en": "Kein Plural"
+      "ar": "الأسماء غير المعدودة",
+      "en": "Uncounted nouns"
     },
     "description": {
       "fr": "Pluriel des noms",
@@ -760,146 +785,126 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Ohne Plural: Zucker oder Kuchen? ___",
-          "de": "Ergänzen Sie. — Ohne Plural: Zucker oder Kuchen? ___",
-          "ar": "أكمل. — Ohne Plural: Zucker oder Kuchen? ___",
-          "en": "Complete. — Ohne Plural: Zucker oder Kuchen? ___"
+          "fr": "Choisissez le nom non compté ou collectif dans son sens courant. — Für den Tee brauche ich etwas ___.",
+          "de": "Wählen Sie das ungezählte Nomen oder den Sammelbegriff in der üblichen Bedeutung. — Für den Tee brauche ich etwas ___.",
+          "ar": "اختر الاسم غير المعدود أو الجمعي بمعناه المعتاد. — Für den Tee brauche ich etwas ___.",
+          "en": "Choose the uncounted or collective noun in its ordinary sense. — Für den Tee brauche ich etwas ___."
         },
         "selection": "single",
         "options": [
+          "Zuckers",
           "Zucker",
-          "Gemüse",
-          "Natur",
-          "Wasser"
+          "Zuckere",
+          "Zuckern"
         ]
       },
       {
         "id": "kapitel-13-ubung-04-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez. — Gepäck oder Koffer? ___",
-          "de": "Ergänzen Sie. — Gepäck oder Koffer? ___",
-          "ar": "أكمل. — Gepäck oder Koffer? ___",
-          "en": "Complete. — Gepäck oder Koffer? ___"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "selection": "single",
-        "options": [
-          "Gepäck",
-          "Benzin",
-          "Reis",
-          "Fleisch"
-        ]
+        "statement": "Am Flughafen haben wir viel Gepäck."
       },
       {
         "id": "kapitel-13-ubung-04-q03",
         "position": 3,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Glas oder Wasser? ___",
-          "de": "Ergänzen Sie. — Glas oder Wasser? ___",
-          "ar": "أكمل. — Glas oder Wasser? ___",
-          "en": "Complete. — Glas oder Wasser? ___"
+          "fr": "Choisissez le nom non compté ou collectif.",
+          "de": "Wählen Sie das ungezählte Nomen oder den Sammelbegriff.",
+          "ar": "اختر الاسم غير المعدود أو الجمعي.",
+          "en": "Choose the uncounted or collective noun."
         },
-        "selection": "single",
-        "options": [
-          "Wasser",
-          "Gemüse",
-          "Benzin",
-          "Polizei"
-        ]
+        "sentence": "Nach dem Sport trinke ich viel ___. (Wasser / Gläser)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-04-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Choisissez le nom non compté ou collectif dans son sens courant. — Sie isst wenig ___.",
+          "de": "Wählen Sie das ungezählte Nomen oder den Sammelbegriff in der üblichen Bedeutung. — Sie isst wenig ___.",
+          "ar": "اختر الاسم غير المعدود أو الجمعي بمعناه المعتاد. — Sie isst wenig ___.",
+          "en": "Choose the uncounted or collective noun in its ordinary sense. — Sie isst wenig ___."
         },
-        "sentence": "Fleisch oder Steak? ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Fleische",
+          "Fleisch",
+          "Steak"
+        ]
       },
       {
         "id": "kapitel-13-ubung-04-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "sentence": "Auto oder Benzin? ___",
-        "blanks": 1
+        "statement": "Im Tank ist noch etwas Benzine."
       },
       {
         "id": "kapitel-13-ubung-04-q06",
         "position": 6,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Kartoffel oder Reis? ___",
-          "de": "Ergänzen Sie. — Kartoffel oder Reis? ___",
-          "ar": "أكمل. — Kartoffel oder Reis? ___",
-          "en": "Complete. — Kartoffel oder Reis? ___"
+          "fr": "Choisissez le nom non compté ou collectif.",
+          "de": "Wählen Sie das ungezählte Nomen oder den Sammelbegriff.",
+          "ar": "اختر الاسم غير المعدود أو الجمعي.",
+          "en": "Choose the uncounted or collective noun."
         },
-        "selection": "single",
-        "options": [
-          "Reis",
-          "Gemüse",
-          "Fleisch",
-          "Wasser"
-        ]
+        "sentence": "Als Beilage kochen wir etwas ___. (Reis / Kartoffeln)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-04-q07",
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Karotte oder Gemüse? ___",
-          "de": "Ergänzen Sie. — Karotte oder Gemüse? ___",
-          "ar": "أكمل. — Karotte oder Gemüse? ___",
-          "en": "Complete. — Karotte oder Gemüse? ___"
+          "fr": "Choisissez le nom non compté ou collectif dans son sens courant. — Wir kaufen frisches ___.",
+          "de": "Wählen Sie das ungezählte Nomen oder den Sammelbegriff in der üblichen Bedeutung. — Wir kaufen frisches ___.",
+          "ar": "اختر الاسم غير المعدود أو الجمعي بمعناه المعتاد. — Wir kaufen frisches ___.",
+          "en": "Choose the uncounted or collective noun in its ordinary sense. — Wir kaufen frisches ___."
         },
         "selection": "single",
         "options": [
-          "Gepäck",
-          "Polizei",
           "Gemüse",
-          "Natur"
+          "Karotte",
+          "Gemüsen"
         ]
       },
       {
         "id": "kapitel-13-ubung-04-q08",
         "position": 8,
-        "type": "qcm",
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez. — Polizei oder Polizist? ___",
-          "de": "Ergänzen Sie. — Polizei oder Polizist? ___",
-          "ar": "أكمل. — Polizei oder Polizist? ___",
-          "en": "Complete. — Polizei oder Polizist? ___"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "selection": "single",
-        "options": [
-          "Reis",
-          "Polizei",
-          "Gepäck",
-          "Natur"
-        ]
+        "statement": "Bei einem Unfall rufen wir die Polizei."
       },
       {
         "id": "kapitel-13-ubung-04-q09",
         "position": 9,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Choisissez le nom non compté ou collectif.",
+          "de": "Wählen Sie das ungezählte Nomen oder den Sammelbegriff.",
+          "ar": "اختر الاسم غير المعدود أو الجمعي.",
+          "en": "Choose the uncounted or collective noun."
         },
-        "sentence": "Natur oder Fluss? ___",
+        "sentence": "Am Wochenende genießen wir die ___. (Natur / Flüsse)",
         "blanks": 1
       }
     ]
@@ -909,10 +914,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 5,
     "title": {
-      "fr": "Kein Singular",
+      "fr": "Noms collectifs au pluriel",
       "de": "Kein Singular",
-      "ar": "Kein Singular",
-      "en": "Kein Singular"
+      "ar": "أسماء جمعية بالجمع",
+      "en": "Plural collectives"
     },
     "description": {
       "fr": "Pluriel des noms",
@@ -926,17 +931,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Nur Plural: Omas oder Großeltern? ___",
-          "de": "Ergänzen Sie. — Nur Plural: Omas oder Großeltern? ___",
-          "ar": "أكمل. — Nur Plural: Omas oder Großeltern? ___",
-          "en": "Complete. — Nur Plural: Omas oder Großeltern? ___"
+          "fr": "Choisissez le nom normalement employé seulement au pluriel dans ce sens. — Die Eltern meiner Eltern sind meine ___.",
+          "de": "Wählen Sie das Nomen, das in dieser Bedeutung normalerweise nur im Plural steht. — Die Eltern meiner Eltern sind meine ___.",
+          "ar": "اختر الاسم المستعمل عادة في الجمع فقط بهذا المعنى. — Die Eltern meiner Eltern sind meine ___.",
+          "en": "Choose the noun normally used only in the plural in this sense. — Die Eltern meiner Eltern sind meine ___."
         },
         "selection": "single",
         "options": [
-          "Möbel",
-          "Ferien",
-          "Großeltern",
-          "Leute"
+          "Omas",
+          "Großelter",
+          "Großeltern"
         ]
       },
       {
@@ -944,17 +948,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Eltern oder Väter? ___",
-          "de": "Ergänzen Sie. — Eltern oder Väter? ___",
-          "ar": "أكمل. — Eltern oder Väter? ___",
-          "en": "Complete. — Eltern oder Väter? ___"
+          "fr": "Choisissez le nom normalement employé seulement au pluriel dans ce sens. — Meine Mutter und mein Vater sind meine ___.",
+          "de": "Wählen Sie das Nomen, das in dieser Bedeutung normalerweise nur im Plural steht. — Meine Mutter und mein Vater sind meine ___.",
+          "ar": "اختر الاسم المستعمل عادة في الجمع فقط بهذا المعنى. — Meine Mutter und mein Vater sind meine ___.",
+          "en": "Choose the noun normally used only in the plural in this sense. — Meine Mutter und mein Vater sind meine ___."
         },
         "selection": "single",
         "options": [
           "Eltern",
-          "Großeltern",
-          "Alpen",
-          "Ferien"
+          "Elter",
+          "Väter"
         ]
       },
       {
@@ -962,61 +965,68 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Sofas oder Möbel? ___",
-          "de": "Ergänzen Sie. — Sofas oder Möbel? ___",
-          "ar": "أكمل. — Sofas oder Möbel? ___",
-          "en": "Complete. — Sofas oder Möbel? ___"
+          "fr": "Choisissez le nom normalement employé seulement au pluriel dans ce sens. — Tische, Stühle und Schränke sind ___. ",
+          "de": "Wählen Sie das Nomen, das in dieser Bedeutung normalerweise nur im Plural steht. — Tische, Stühle und Schränke sind ___. ",
+          "ar": "اختر الاسم المستعمل عادة في الجمع فقط بهذا المعنى. — Tische, Stühle und Schränke sind ___. ",
+          "en": "Choose the noun normally used only in the plural in this sense. — Tische, Stühle und Schränke sind ___. "
         },
         "selection": "single",
         "options": [
-          "Großeltern",
-          "Alpen",
-          "Leute",
+          "Möbeln",
+          "Möbele",
+          "Möbels",
           "Möbel"
         ]
       },
       {
         "id": "kapitel-13-ubung-05-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Choisissez le nom normalement employé seulement au pluriel dans ce sens. — Die ___ sind ein Gebirge in Europa.",
+          "de": "Wählen Sie das Nomen, das in dieser Bedeutung normalerweise nur im Plural steht. — Die ___ sind ein Gebirge in Europa.",
+          "ar": "اختر الاسم المستعمل عادة في الجمع فقط بهذا المعنى. — Die ___ sind ein Gebirge in Europa.",
+          "en": "Choose the noun normally used only in the plural in this sense. — Die ___ sind ein Gebirge in Europa."
         },
-        "sentence": "Berge oder Alpen? ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Berge",
+          "Alpen",
+          "Alpe"
+        ]
       },
       {
         "id": "kapitel-13-ubung-05-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Choisissez le nom normalement employé seulement au pluriel dans ce sens. — Im Juli haben die Schüler ___. ",
+          "de": "Wählen Sie das Nomen, das in dieser Bedeutung normalerweise nur im Plural steht. — Im Juli haben die Schüler ___. ",
+          "ar": "اختر الاسم المستعمل عادة في الجمع فقط بهذا المعنى. — Im Juli haben die Schüler ___. ",
+          "en": "Choose the noun normally used only in the plural in this sense. — Im Juli haben die Schüler ___. "
         },
-        "sentence": "Ferien oder Reisen? ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Ferien",
+          "Reisen",
+          "Ferie"
+        ]
       },
       {
         "id": "kapitel-13-ubung-05-q06",
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Leute oder Personen? ___",
-          "de": "Ergänzen Sie. — Leute oder Personen? ___",
-          "ar": "أكمل. — Leute oder Personen? ___",
-          "en": "Complete. — Leute oder Personen? ___"
+          "fr": "Choisissez le nom normalement employé seulement au pluriel dans ce sens. — Das Wort „___“ bedeutet Personen und wird normalerweise nur im Plural gebraucht.",
+          "de": "Wählen Sie das Nomen, das in dieser Bedeutung normalerweise nur im Plural steht. — Das Wort „___“ bedeutet Personen und wird normalerweise nur im Plural gebraucht.",
+          "ar": "اختر الاسم المستعمل عادة في الجمع فقط بهذا المعنى. — Das Wort „___“ bedeutet Personen und wird normalerweise nur im Plural gebraucht.",
+          "en": "Choose the noun normally used only in the plural in this sense. — Das Wort „___“ bedeutet Personen und wird normalerweise nur im Plural gebraucht."
         },
         "selection": "single",
         "options": [
+          "Personen",
           "Leute",
-          "Großeltern",
-          "Eltern",
-          "Ferien"
+          "Leutes"
         ]
       }
     ]
@@ -1026,10 +1036,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 6,
     "title": {
-      "fr": "Bestellung",
+      "fr": "Commande",
       "de": "Bestellung",
-      "ar": "Bestellung",
-      "en": "Bestellung"
+      "ar": "طلب شراء",
+      "en": "Order"
     },
     "description": {
       "fr": "Pluriel des noms",
@@ -1043,17 +1053,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 1,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von der Küchenstuhl: die ___",
-          "de": "Ergänzen Sie. — Plural von der Küchenstuhl: die ___",
-          "ar": "أكمل. — Plural von der Küchenstuhl: die ___",
-          "en": "Complete. — Plural von der Küchenstuhl: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Für die neue Küche bestellen wir sechs ___. (der Küchenstuhl)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Für die neue Küche bestellen wir sechs ___. (der Küchenstuhl)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Für die neue Küche bestellen wir sechs ___. (der Küchenstuhl)",
+          "en": "Complete with the plural of the noun in brackets. — Für die neue Küche bestellen wir sechs ___. (der Küchenstuhl)"
         },
         "selection": "single",
         "options": [
+          "Küchenstuhls",
           "Küchenstühle",
-          "Gläser",
-          "Sofas",
-          "Löffel"
+          "Küchenstuhle",
+          "Küchenstühlen"
         ]
       },
       {
@@ -1061,17 +1071,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von die Lampe: die ___",
-          "de": "Ergänzen Sie. — Plural von die Lampe: die ___",
-          "ar": "أكمل. — Plural von die Lampe: die ___",
-          "en": "Complete. — Plural von die Lampe: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Für das Wohnzimmer brauchen wir zwei ___. (die Lampe)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Für das Wohnzimmer brauchen wir zwei ___. (die Lampe)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Für das Wohnzimmer brauchen wir zwei ___. (die Lampe)",
+          "en": "Complete with the plural of the noun in brackets. — Für das Wohnzimmer brauchen wir zwei ___. (die Lampe)"
         },
         "selection": "single",
         "options": [
-          "Löffel",
+          "Lamper",
+          "Lampe",
           "Lampen",
-          "Herde",
-          "Küchenstühle"
+          "Lampes"
         ]
       },
       {
@@ -1079,16 +1089,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von der Schrank: die ___",
-          "de": "Ergänzen Sie. — Plural von der Schrank: die ___",
-          "ar": "أكمل. — Plural von der Schrank: die ___",
-          "en": "Complete. — Plural von der Schrank: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Für die Schlafzimmer kaufen wir drei ___. (der Schrank)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Für die Schlafzimmer kaufen wir drei ___. (der Schrank)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Für die Schlafzimmer kaufen wir drei ___. (der Schrank)",
+          "en": "Complete with the plural of the noun in brackets. — Für die Schlafzimmer kaufen wir drei ___. (der Schrank)"
         },
         "selection": "single",
         "options": [
-          "Sofas",
-          "Herde",
-          "Lampen",
+          "Schränken",
+          "Schränker",
+          "Schranke",
           "Schränke"
         ]
       },
@@ -1097,43 +1107,48 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "sentence": "Plural von das Sofa: die ___",
+        "sentence": "In der Hotellobby stehen zwei bequeme ___. (das Sofa)",
         "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-06-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Für die Kochschule bestellen wir acht ___. (der Herd)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Für die Kochschule bestellen wir acht ___. (der Herd)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Für die Kochschule bestellen wir acht ___. (der Herd)",
+          "en": "Complete with the plural of the noun in brackets. — Für die Kochschule bestellen wir acht ___. (der Herd)"
         },
-        "sentence": "Plural von der Herd: die ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Härde",
+          "Herd",
+          "Herden",
+          "Herde"
+        ]
       },
       {
         "id": "kapitel-13-ubung-06-q06",
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von der Teller: die ___",
-          "de": "Ergänzen Sie. — Plural von der Teller: die ___",
-          "ar": "أكمل. — Plural von der Teller: die ___",
-          "en": "Complete. — Plural von der Teller: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Für die Feier brauchen wir zwanzig ___. (der Teller)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Für die Feier brauchen wir zwanzig ___. (der Teller)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Für die Feier brauchen wir zwanzig ___. (der Teller)",
+          "en": "Complete with the plural of the noun in brackets. — Für die Feier brauchen wir zwanzig ___. (der Teller)"
         },
         "selection": "single",
         "options": [
-          "Gläser",
+          "Tellers",
           "Teller",
-          "Küchenstühle",
-          "Sofas"
+          "Tellere",
+          "Tellern"
         ]
       },
       {
@@ -1141,49 +1156,49 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 7,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von das Glas: die ___",
-          "de": "Ergänzen Sie. — Plural von das Glas: die ___",
-          "ar": "أكمل. — Plural von das Glas: die ___",
-          "en": "Complete. — Plural von das Glas: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Auf dem Tablett stehen sechs ___. (das Glas)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Auf dem Tablett stehen sechs ___. (das Glas)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Auf dem Tablett stehen sechs ___. (das Glas)",
+          "en": "Complete with the plural of the noun in brackets. — Auf dem Tablett stehen sechs ___. (das Glas)"
         },
         "selection": "single",
         "options": [
-          "Sofas",
-          "Herde",
-          "Schränke",
-          "Gläser"
+          "Gläsern",
+          "Gläser",
+          "Glaser",
+          "Gläse"
         ]
       },
       {
         "id": "kapitel-13-ubung-06-q08",
         "position": 8,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von der Löffel: die ___",
-          "de": "Ergänzen Sie. — Plural von der Löffel: die ___",
-          "ar": "أكمل. — Plural von der Löffel: die ___",
-          "en": "Complete. — Plural von der Löffel: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "selection": "single",
-        "options": [
-          "Herde",
-          "Schränke",
-          "Teller",
-          "Löffel"
-        ]
+        "sentence": "In der Schublade liegen zehn ___. (der Löffel)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-06-q09",
         "position": 9,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Das Restaurant bestellt zwei neue ___. (der Servierwagen)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Das Restaurant bestellt zwei neue ___. (der Servierwagen)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Das Restaurant bestellt zwei neue ___. (der Servierwagen)",
+          "en": "Complete with the plural of the noun in brackets. — Das Restaurant bestellt zwei neue ___. (der Servierwagen)"
         },
-        "sentence": "Plural von der Servierwagen: die ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Servierwagen",
+          "Servierwagener",
+          "Servierwagene",
+          "Servierwagens"
+        ]
       }
     ]
   },
@@ -1194,7 +1209,7 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "title": {
       "fr": "Umlaut",
       "de": "Umlaut",
-      "ar": "Umlaut",
+      "ar": "تغير حرف العلة",
       "en": "Umlaut"
     },
     "description": {
@@ -1207,37 +1222,34 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-13-ubung-07-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von das Buch: die ___",
-          "de": "Ergänzen Sie. — Plural von das Buch: die ___",
-          "ar": "أكمل. — Plural von das Buch: die ___",
-          "en": "Complete. — Plural von das Buch: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "selection": "single",
-        "options": [
-          "Männer",
-          "Stühle",
-          "Bücher",
-          "Hände"
-        ]
+        "sentence": "Die Bibliothek kauft hundert neue ___. (das Buch)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-07-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von der Mann: die ___",
-          "de": "Ergänzen Sie. — Plural von der Mann: die ___",
-          "ar": "أكمل. — Plural von der Mann: die ___",
-          "en": "Complete. — Plural von der Mann: die ___"
+          "fr": "Sélectionnez les pluriels corrects de Mann, Buch et Hand.",
+          "de": "Wählen Sie die richtigen Pluralformen von Mann, Buch und Hand.",
+          "ar": "اختر صيغ الجمع الصحيحة للأسماء Mann وBuch وHand.",
+          "en": "Select the correct plurals of Mann, Buch and Hand."
         },
-        "selection": "single",
+        "selection": "multiple",
         "options": [
+          "Bucher",
+          "Bücher",
           "Hände",
           "Männer",
-          "Bücher",
-          "Stühle"
+          "Manner",
+          "Hande"
         ]
       },
       {
@@ -1245,17 +1257,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von die Hand: die ___",
-          "de": "Ergänzen Sie. — Plural von die Hand: die ___",
-          "ar": "أكمل. — Plural von die Hand: die ___",
-          "en": "Complete. — Plural von die Hand: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Die Kinder waschen ihre ___ vor dem Essen. (die Hand)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Die Kinder waschen ihre ___ vor dem Essen. (die Hand)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Die Kinder waschen ihre ___ vor dem Essen. (die Hand)",
+          "en": "Complete with the plural of the noun in brackets. — Die Kinder waschen ihre ___ vor dem Essen. (die Hand)"
         },
         "selection": "single",
         "options": [
-          "Stühle",
-          "Männer",
+          "Händen",
+          "Hande",
           "Hände",
-          "Bücher"
+          "Händeren"
         ]
       },
       {
@@ -1263,12 +1275,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "sentence": "Plural von der Stuhl: die ___",
+        "sentence": "Im Kursraum fehlen zwei ___. (der Stuhl)",
         "blanks": 1
       }
     ]
@@ -1278,10 +1290,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 8,
     "title": {
-      "fr": "Fremdwörter",
+      "fr": "Mots empruntés",
       "de": "Fremdwörter",
-      "ar": "Fremdwörter",
-      "en": "Fremdwörter"
+      "ar": "الكلمات الدخيلة",
+      "en": "Loanwords"
     },
     "description": {
       "fr": "Pluriel des noms",
@@ -1293,19 +1305,31 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-13-ubung-08-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "matching",
         "prompt": {
-          "fr": "Complétez. — Plural von das Museum: die ___",
-          "de": "Ergänzen Sie. — Plural von das Museum: die ___",
-          "ar": "أكمل. — Plural von das Museum: die ___",
-          "en": "Complete. — Plural von das Museum: die ___"
+          "fr": "Associez chaque élément à sa forme correcte.",
+          "de": "Ordnen Sie jedem Element die richtige Form zu.",
+          "ar": "صل كل عنصر بصيغته الصحيحة.",
+          "en": "Match each item to its correct form."
         },
-        "selection": "single",
+        "items": [
+          {
+            "id": "kapitel-13-ubung-08-q01-m1",
+            "label": "das Museum"
+          },
+          {
+            "id": "kapitel-13-ubung-08-q01-m2",
+            "label": "das Datum"
+          },
+          {
+            "id": "kapitel-13-ubung-08-q01-m3",
+            "label": "das Praktikum"
+          }
+        ],
         "options": [
-          "Firmen",
           "Museen",
-          "Praxen",
-          "Visa"
+          "Daten",
+          "Praktika"
         ]
       },
       {
@@ -1313,17 +1337,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von das Datum: die ___",
-          "de": "Ergänzen Sie. — Plural von das Datum: die ___",
-          "ar": "أكمل. — Plural von das Datum: die ___",
-          "en": "Complete. — Plural von das Datum: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Im Kalender fehlen noch drei ___. (das Datum)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Im Kalender fehlen noch drei ___. (das Datum)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Im Kalender fehlen noch drei ___. (das Datum)",
+          "en": "Complete with the plural of the noun in brackets. — Im Kalender fehlen noch drei ___. (das Datum)"
         },
         "selection": "single",
         "options": [
-          "Visa",
-          "Praktika",
-          "Praxen",
-          "Daten"
+          "Daten",
+          "Datums",
+          "Datume",
+          "Datumen"
         ]
       },
       {
@@ -1331,17 +1355,17 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von das Visum: die ___",
-          "de": "Ergänzen Sie. — Plural von das Visum: die ___",
-          "ar": "أكمل. — Plural von das Visum: die ___",
-          "en": "Complete. — Plural von das Visum: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Die Reisenden brauchen zwei ___. (das Visum)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Die Reisenden brauchen zwei ___. (das Visum)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Die Reisenden brauchen zwei ___. (das Visum)",
+          "en": "Complete with the plural of the noun in brackets. — Die Reisenden brauchen zwei ___. (das Visum)"
         },
         "selection": "single",
         "options": [
-          "Firmen",
+          "Visumern",
           "Visa",
-          "Praxen",
-          "Daten"
+          "Visume",
+          "Visen"
         ]
       },
       {
@@ -1349,42 +1373,47 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "sentence": "Plural von das Praktikum: die ___",
+        "sentence": "Im Studium macht er zwei ___. (das Praktikum)",
         "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-08-q05",
         "position": 5,
-        "type": "fill_blank",
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — In dem Gebäude arbeiten vier verschiedene ___. (die Firma)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — In dem Gebäude arbeiten vier verschiedene ___. (die Firma)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — In dem Gebäude arbeiten vier verschiedene ___. (die Firma)",
+          "en": "Complete with the plural of the noun in brackets. — In dem Gebäude arbeiten vier verschiedene ___. (die Firma)"
         },
-        "sentence": "Plural von die Firma: die ___",
-        "blanks": 1
+        "selection": "single",
+        "options": [
+          "Firmenen",
+          "Firmas",
+          "Firma",
+          "Firmen"
+        ]
       },
       {
         "id": "kapitel-13-ubung-08-q06",
         "position": 6,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von die Praxis: die ___",
-          "de": "Ergänzen Sie. — Plural von die Praxis: die ___",
-          "ar": "أكمل. — Plural von die Praxis: die ___",
-          "en": "Complete. — Plural von die Praxis: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — In der Straße gibt es zwei ärztliche ___. (die Praxis)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — In der Straße gibt es zwei ärztliche ___. (die Praxis)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — In der Straße gibt es zwei ärztliche ___. (die Praxis)",
+          "en": "Complete with the plural of the noun in brackets. — In der Straße gibt es zwei ärztliche ___. (die Praxis)"
         },
         "selection": "single",
         "options": [
-          "Museen",
-          "Firmen",
-          "Praktika",
+          "Praxis",
+          "Praxene",
+          "Praxisen",
           "Praxen"
         ]
       }
@@ -1395,10 +1424,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 9,
     "title": {
-      "fr": "Personen",
+      "fr": "Personnes",
       "de": "Personen",
-      "ar": "Personen",
-      "en": "Personen"
+      "ar": "الأشخاص",
+      "en": "People"
     },
     "description": {
       "fr": "Pluriel des noms",
@@ -1410,55 +1439,44 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-13-ubung-09-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von die Kundin: die ___",
-          "de": "Ergänzen Sie. — Plural von die Kundin: die ___",
-          "ar": "أكمل. — Plural von die Kundin: die ___",
-          "en": "Complete. — Plural von die Kundin: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "selection": "single",
-        "options": [
-          "Ärzte",
-          "Kinder",
-          "Kundinnen",
-          "Frauen"
-        ]
+        "sentence": "Zwei ___ warten an der Kasse. (die Kundin)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-09-q02",
         "position": 2,
-        "type": "qcm",
+        "type": "true_false",
         "prompt": {
-          "fr": "Complétez. — Plural von der Arzt: die ___",
-          "de": "Ergänzen Sie. — Plural von der Arzt: die ___",
-          "ar": "أكمل. — Plural von der Arzt: die ___",
-          "en": "Complete. — Plural von der Arzt: die ___"
+          "fr": "Cette phrase est-elle grammaticalement correcte ?",
+          "de": "Ist dieser Satz grammatisch richtig?",
+          "ar": "هل هذه الجملة صحيحة نحوياً؟",
+          "en": "Is this sentence grammatically correct?"
         },
-        "selection": "single",
-        "options": [
-          "Frauen",
-          "Kinder",
-          "Ärzte",
-          "Kundinnen"
-        ]
+        "statement": "Im Notdienst arbeiten drei Arzte."
       },
       {
         "id": "kapitel-13-ubung-09-q03",
         "position": 3,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von das Kind: die ___",
-          "de": "Ergänzen Sie. — Plural von das Kind: die ___",
-          "ar": "أكمل. — Plural von das Kind: die ___",
-          "en": "Complete. — Plural von das Kind: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Auf dem Spielplatz sind viele ___. (das Kind)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Auf dem Spielplatz sind viele ___. (das Kind)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Auf dem Spielplatz sind viele ___. (das Kind)",
+          "en": "Complete with the plural of the noun in brackets. — Auf dem Spielplatz sind viele ___. (das Kind)"
         },
         "selection": "single",
         "options": [
+          "Kindern",
+          "Kinders",
           "Kinder",
-          "Kundinnen",
-          "Ärzte",
-          "Frauen"
+          "Kinde"
         ]
       },
       {
@@ -1466,12 +1484,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "position": 4,
         "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "sentence": "Plural von die Frau: die ___",
+        "sentence": "In der Mannschaft spielen elf ___. (die Frau)",
         "blanks": 1
       }
     ]
@@ -1481,10 +1499,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
     "category": "meistertraining",
     "position": 10,
     "title": {
-      "fr": "Abschlusstest",
+      "fr": "Test final",
       "de": "Abschlusstest",
-      "ar": "Abschlusstest",
-      "en": "Abschlusstest"
+      "ar": "اختبار نهائي",
+      "en": "Final test"
     },
     "description": {
       "fr": "Pluriel des noms",
@@ -1496,69 +1514,62 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-13-ubung-10-q01",
         "position": 1,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von der Baum: die ___",
-          "de": "Ergänzen Sie. — Plural von der Baum: die ___",
-          "ar": "أكمل. — Plural von der Baum: die ___",
-          "en": "Complete. — Plural von der Baum: die ___"
+          "fr": "Complétez tous les pluriels dans l’ordre.",
+          "de": "Ergänzen Sie alle Pluralformen in der richtigen Reihenfolge.",
+          "ar": "أكمل جميع صيغ الجمع بالترتيب.",
+          "en": "Complete all plural forms in order."
         },
-        "selection": "single",
-        "options": [
-          "Taschen",
-          "Radios",
-          "Brote",
-          "Bäume"
-        ]
+        "sentence": "Im Stadtpark pflanzen wir zehn ___ (der Baum) und fünf ___ (der Strauch).",
+        "blanks": 2
       },
       {
         "id": "kapitel-13-ubung-10-q02",
         "position": 2,
         "type": "qcm",
         "prompt": {
-          "fr": "Complétez. — Plural von das Brot: die ___",
-          "de": "Ergänzen Sie. — Plural von das Brot: die ___",
-          "ar": "أكمل. — Plural von das Brot: die ___",
-          "en": "Complete. — Plural von das Brot: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses. — Die Bäckerei verkauft jeden Morgen viele ___. (das Brot)",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern. — Die Bäckerei verkauft jeden Morgen viele ___. (das Brot)",
+          "ar": "أكمل بجمع الاسم بين القوسين. — Die Bäckerei verkauft jeden Morgen viele ___. (das Brot)",
+          "en": "Complete with the plural of the noun in brackets. — Die Bäckerei verkauft jeden Morgen viele ___. (das Brot)"
         },
         "selection": "single",
         "options": [
+          "Broten",
           "Brote",
-          "Radios",
-          "Taschen",
-          "Bäume"
+          "Brot",
+          "Bröter"
         ]
       },
       {
         "id": "kapitel-13-ubung-10-q03",
         "position": 3,
-        "type": "qcm",
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Complétez. — Plural von die Tasche: die ___",
-          "de": "Ergänzen Sie. — Plural von die Tasche: die ___",
-          "ar": "أكمل. — Plural von die Tasche: die ___",
-          "en": "Complete. — Plural von die Tasche: die ___"
+          "fr": "Complétez avec le pluriel du nom entre parenthèses.",
+          "de": "Ergänzen Sie den Plural des Nomens in Klammern.",
+          "ar": "أكمل بجمع الاسم بين القوسين.",
+          "en": "Complete with the plural of the noun in brackets."
         },
-        "selection": "single",
-        "options": [
-          "Brote",
-          "Bäume",
-          "Radios",
-          "Taschen"
-        ]
+        "sentence": "Die Reisenden tragen zwei schwere ___. (die Tasche)",
+        "blanks": 1
       },
       {
         "id": "kapitel-13-ubung-10-q04",
         "position": 4,
-        "type": "fill_blank",
+        "type": "reorder",
         "prompt": {
-          "fr": "Complétez.",
-          "de": "Ergänzen Sie.",
-          "ar": "أكمل.",
-          "en": "Complete."
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Im Elektronikladen ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Im Elektronikladen“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Im Elektronikladen ».",
+          "en": "Reorder the groups. Start with “Im Elektronikladen”."
         },
-        "sentence": "Plural von das Radio: die ___",
-        "blanks": 1
+        "tokens": [
+          "stehen",
+          "Im Elektronikladen",
+          "drei kleine Radios."
+        ]
       }
     ]
   }

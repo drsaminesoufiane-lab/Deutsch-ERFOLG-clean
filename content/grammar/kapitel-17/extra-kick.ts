@@ -11,64 +11,72 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "Extra: Hotel"
     },
     "description": {
-      "fr": "datif",
-      "de": "Dativ",
-      "ar": "الجر",
-      "en": "dative"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-17-ubung-11-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "den",
-          "der",
-          "dem"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich zeige ___ Gast das Zimmer.",
-          "de": "Wählen Sie den definit Artikel: Ich zeige ___ Gast das Zimmer.",
-          "ar": "اختر الأداة معرف: Ich zeige ___ Gast das Zimmer.",
-          "en": "Choose the definite article: Ich zeige ___ Gast das Zimmer."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Im Hotel zeigt der Portier ___ Gast (bestimmt) ___ Zimmer (bestimmt).",
+        "blanks": 2
       },
       {
         "id": "kapitel-17-ubung-11-q02",
         "position": 2,
         "type": "qcm",
-        "selection": "single",
-        "options": [
-          "den",
-          "das",
-          "der",
-          "dem"
-        ],
+        "selection": "multiple",
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich suche ___ Gast.",
-          "de": "Wählen Sie den definit Artikel: Ich suche ___ Gast.",
-          "ar": "اختر الأداة معرف: Ich suche ___ Gast.",
-          "en": "Choose the definite article: Ich suche ___ Gast."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Wir fahren mit den Taxis.",
+          "Wir fahren mit den Taxin.",
+          "Wir fahren mit den Gästen.",
+          "Wir fahren mit die Gästen."
+        ]
       },
       {
         "id": "kapitel-17-ubung-11-q03",
         "position": 3,
-        "type": "qcm",
-        "selection": "single",
+        "type": "matching",
+        "prompt": {
+          "fr": "Associez chaque phrase à la forme qui convient.",
+          "de": "Ordnen Sie jedem Satz die passende Form zu.",
+          "ar": "اربط كل جملة بالصيغة المناسبة.",
+          "en": "Match each sentence with the appropriate form."
+        },
+        "items": [
+          {
+            "id": "0",
+            "label": "Ich danke ___ Kellner. (bestimmt)"
+          },
+          {
+            "id": "1",
+            "label": "Wir sprechen mit ___ Köchin. (bestimmt)"
+          },
+          {
+            "id": "2",
+            "label": "Sie hilft ___ Gästen. (bestimmt)"
+          }
+        ],
         "options": [
           "dem",
-          "der",
           "den",
-          "das"
-        ],
-        "prompt": {
-          "fr": "Choisissez l’article défini : ___ Gast wartet.",
-          "de": "Wählen Sie den definit Artikel: ___ Gast wartet.",
-          "ar": "اختر الأداة معرف: ___ Gast wartet.",
-          "en": "Choose the definite article: ___ Gast wartet."
-        }
+          "der"
+        ]
       }
     ]
   },
@@ -83,59 +91,58 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "Extra: Kurs"
     },
     "description": {
-      "fr": "datif",
-      "de": "Dativ",
-      "ar": "الجر",
-      "en": "dative"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-17-ubung-12-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "die",
-          "der",
-          "den",
-          "dem"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich erkläre ___ Schülern die Aufgabe.",
-          "de": "Wählen Sie den definit Artikel: Ich erkläre ___ Schülern die Aufgabe.",
-          "ar": "اختر الأداة معرف: Ich erkläre ___ Schülern die Aufgabe.",
-          "en": "Choose the definite article: Ich erkläre ___ Schülern die Aufgabe."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Im Kurs erklärt die Lehrerin ___ Kind (bestimmt) ___ Aufgabe (unbestimmt).",
+        "blanks": 2
       },
       {
         "id": "kapitel-17-ubung-12-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "die",
-          "den",
-          "das"
-        ],
+        "type": "reorder",
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich frage ___ Schüler.",
-          "de": "Wählen Sie den definit Artikel: Ich frage ___ Schüler.",
-          "ar": "اختر الأداة معرف: Ich frage ___ Schüler.",
-          "en": "Choose the definite article: Ich frage ___ Schüler."
-        }
+          "fr": "Nach der Pause … — Commencez par ce groupe et reconstituez la phrase.",
+          "de": "Nach der Pause … — Beginnen Sie mit dieser Gruppe und bilden Sie den Satz.",
+          "ar": "Nach der Pause … — ابدأ بهذه المجموعة ورتب الجملة.",
+          "en": "Nach der Pause … — Start with this phrase and reconstruct the sentence."
+        },
+        "tokens": [
+          "hilft",
+          "Nach der Pause",
+          "der Lehrer den Kindern."
+        ]
       },
       {
         "id": "kapitel-17-ubung-12-q03",
         "position": 3,
-        "type": "fill_blank",
-        "sentence": "Ich antworte ___ Lehrerin.",
-        "blanks": 1,
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Complétez avec l’article possessif mein.",
-          "de": "Ergänzen Sie den Possessivartikel mein Artikel.",
-          "ar": "أكمل بالأداة: ملكية mein",
-          "en": "Complete with the possessive mein article."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Ich frage dem Lehrer.",
+          "Ich frage den Lehrer.",
+          "Ich danke dem Lehrer.",
+          "Ich danke den Lehrer."
+        ]
       }
     ]
   },
@@ -150,54 +157,54 @@ export const extraKick: ExerciseSetDefinition[] = [
       "en": "Extra: Büro"
     },
     "description": {
-      "fr": "datif",
-      "de": "Dativ",
-      "ar": "الجر",
-      "en": "dative"
+      "fr": "Défi en contexte : combinez les règles, en justifiant mentalement chaque choix.",
+      "de": "Kontext-Challenge: Kombinieren Sie die Regeln und begründen Sie jede Form für sich.",
+      "ar": "تحدٍّ في السياق: اجمع القواعد وبرر كل اختيار ذهنياً.",
+      "en": "Context challenge: combine the rules and mentally justify each choice."
     },
     "questions": [
       {
         "id": "kapitel-17-ubung-13-q01",
         "position": 1,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "mein",
-          "meiner",
-          "meinem",
-          "meinen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez l’article possessif mein : Ich gebe ___ Chef den Vertrag.",
-          "de": "Wählen Sie den Possessivartikel mein Artikel: Ich gebe ___ Chef den Vertrag.",
-          "ar": "اختر الأداة ملكية mein: Ich gebe ___ Chef den Vertrag.",
-          "en": "Choose the possessive mein article: Ich gebe ___ Chef den Vertrag."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Im Büro spreche ich mit ___ Kolleginnen und mit ___ Kunden. (bestimmt, beide Plural)",
+        "blanks": 2
       },
       {
         "id": "kapitel-17-ubung-13-q02",
         "position": 2,
-        "type": "fill_blank",
-        "sentence": "Ich brauche ___ Vertrag.",
-        "blanks": 1,
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "Complétez avec l’article possessif mein.",
-          "de": "Ergänzen Sie den Possessivartikel mein Artikel.",
-          "ar": "أكمل بالأداة: ملكية mein",
-          "en": "Complete with the possessive mein article."
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Sie zeigt einen Praktikanten die Liste.",
+          "Sie zeigt einer Kollegin den Plan.",
+          "Sie zeigt einem Praktikanten die Liste.",
+          "Sie zeigt eine Kollegin den Plan."
+        ]
       },
       {
         "id": "kapitel-17-ubung-13-q03",
         "position": 3,
         "type": "true_false",
-        "statement": "mein Vertrag liegt beim Chef.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
-        }
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
+        },
+        "statement": "Mit den Autos kommen die Kollegen pünktlich."
       }
     ]
   }

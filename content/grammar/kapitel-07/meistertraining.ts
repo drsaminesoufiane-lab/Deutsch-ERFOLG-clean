@@ -20,149 +20,149 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-07-ubung-01-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(aufstehen) Ich stehe früh ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-01-q02",
         "position": 2,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(einladen) Wir laden Freunde ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-01-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(einkaufen) Sie kauft heute ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-01-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(abfahren) Der Zug fährt gleich ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-01-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(ankommen) Er kommt morgen ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-01-q06",
         "position": 6,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(umsteigen) Du steigst hier ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-01-q07",
         "position": 7,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(aufhören) Ihr hört jetzt ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-01-q08",
         "position": 8,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(zumachen) Ich mache die Tür ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-01-q09",
         "position": 9,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(mitkommen) Wir kommen ___.",
         "blanks": 1
       },
       {
+        "id": "kapitel-07-ubung-01-div-10",
+        "position": 10,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "Ich stehe früh …"
+            "label": "(abschließen) Der Hausmeister schließt das Gebäude ___."
           },
           {
             "id": "i1",
-            "label": "Der Zug fährt pünktlich …"
+            "label": "(ausfüllen) Die Bewerber füllen das Formular ___."
           },
           {
             "id": "i2",
-            "label": "Wir kaufen im Supermarkt …"
+            "label": "(zurückgeben) Du gibst die Bücher morgen ___."
           }
         ],
         "options": [
-          "auf",
-          "ein",
-          "ab"
-        ],
-        "id": "kapitel-07-ubung-01-div-10",
-        "position": 10
+          "ab",
+          "aus",
+          "zurück"
+        ]
       }
     ]
   },
@@ -186,139 +186,139 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-07-ubung-02-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(einsteigen) Ich ___ an der Station Westend in die U6 ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-02-q02",
         "position": 2,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(umsteigen) An der Station Hauptwache ___ ich ___ und nehme die U1.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-02-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(aussteigen) Am Südbahnhof ___ ich ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-02-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(ankommen) Pünktlich um 8 Uhr ___ ich im Büro ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-02-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(aufmachen) Ich ___ das Fenster ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-02-q06",
         "position": 6,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(reinkommen) Mein Kollege ___ ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-02-q07",
         "position": 7,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(zumachen) ___ Sie doch das Fenster ___!",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-02-q08",
         "position": 8,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(zumachen) Ich ___ das Fenster wieder ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-02-q09",
         "position": 9,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(anfangen) Ich ___ mit der Arbeit ___.",
         "blanks": 2
       },
       {
+        "id": "kapitel-07-ubung-02-div-10",
+        "position": 10,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "Ich sehe abends … → fern",
-          "Mach bitte die Tür … → auf",
-          "Mach bitte die Tür … → zu",
-          "Ich sehe abends … → auf",
-          "Ich rufe dich morgen … → an",
-          "Ich rufe dich morgen … → auf"
-        ],
-        "id": "kapitel-07-ubung-02-div-10",
-        "position": 10
+          "(ausziehen) Ihr zieht die nassen Jacken ___. → aus",
+          "(einschalten) Die Technikerin schaltet den Monitor ___. → ein",
+          "(einschalten) Die Technikerin schaltet den Monitor ___. → aus",
+          "(ausziehen) Ihr zieht die nassen Jacken ___. → an",
+          "(vorlesen) Die Lehrerin liest den Text ___. → mit",
+          "(vorlesen) Die Lehrerin liest den Text ___. → vor"
+        ]
       }
     ]
   },
@@ -342,115 +342,115 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-07-ubung-03-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : aufstehen müssen",
-          "de": "Ordnen Sie die Satzteile: aufstehen müssen",
-          "ar": "رتب أجزاء الجملة: aufstehen müssen",
-          "en": "Put the chunks in order: aufstehen müssen"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Ich ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Ich“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Ich ».",
+          "en": "Reorder the groups. Start with “Ich”."
+        },
         "tokens": [
-          "immer um 6 Uhr",
           "aufstehen.",
           "Ich",
+          "immer um 6 Uhr",
           "muss"
         ]
       },
       {
         "id": "kapitel-07-ubung-03-q02",
         "position": 2,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : anfangen",
-          "de": "Ordnen Sie die Satzteile: anfangen",
-          "ar": "رتب أجزاء الجملة: anfangen",
-          "en": "Put the chunks in order: anfangen"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Ich ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Ich“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Ich ».",
+          "en": "Reorder the groups. Start with “Ich”."
+        },
         "tokens": [
+          "fange",
           "um 7.30 Uhr mit der Arbeit",
           "an.",
-          "Ich",
-          "fange"
+          "Ich"
         ]
       },
       {
         "id": "kapitel-07-ubung-03-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : einkaufen",
-          "de": "Ordnen Sie die Satzteile: einkaufen",
-          "ar": "رتب أجزاء الجملة: einkaufen",
-          "en": "Put the chunks in order: einkaufen"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Am Montag ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Am Montag“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Am Montag ».",
+          "en": "Reorder the groups. Start with “Am Montag”."
+        },
         "tokens": [
           "ich nach der Arbeit",
+          "kaufe",
           "ein.",
-          "Am Montag",
-          "kaufe"
+          "Am Montag"
         ]
       },
       {
         "id": "kapitel-07-ubung-03-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : zurückkommen",
-          "de": "Ordnen Sie die Satzteile: zurückkommen",
-          "ar": "رتب أجزاء الجملة: zurückkommen",
-          "en": "Put the chunks in order: zurückkommen"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Am Abend ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Am Abend“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Am Abend ».",
+          "en": "Reorder the groups. Start with “Am Abend”."
+        },
         "tokens": [
-          "ich um 19 Uhr nach Hause",
-          "zurück.",
+          "komme",
           "Am Abend",
-          "komme"
+          "ich um 19 Uhr nach Hause",
+          "zurück."
         ]
       },
       {
         "id": "kapitel-07-ubung-03-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : ausgehen möchten",
-          "de": "Ordnen Sie die Satzteile: ausgehen möchten",
-          "ar": "رتب أجزاء الجملة: ausgehen möchten",
-          "en": "Put the chunks in order: ausgehen möchten"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Heute ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Heute“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Heute ».",
+          "en": "Reorder the groups. Start with “Heute”."
+        },
         "tokens": [
-          "ich",
-          "ausgehen.",
+          "möchte",
           "Heute",
-          "möchte"
+          "ich",
+          "ausgehen."
         ]
       },
       {
         "id": "kapitel-07-ubung-03-q06",
         "position": 6,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : mitkommen möchten",
-          "de": "Ordnen Sie die Satzteile: mitkommen möchten",
-          "ar": "رتب أجزاء الجملة: mitkommen möchten",
-          "en": "Put the chunks in order: mitkommen möchten"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Möchtest ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Möchtest“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Möchtest ».",
+          "en": "Reorder the groups. Start with “Möchtest”."
+        },
         "tokens": [
-          "mitkommen?",
           "Möchtest",
+          "mitkommen?",
           "du"
         ]
       },
       {
+        "id": "kapitel-07-ubung-03-div-7",
+        "position": 7,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "Wir kaufen im Supermarkt … → auf",
-        "id": "kapitel-07-ubung-03-div-7",
-        "position": 7
+        "statement": "(aufwachen) Das Kind wacht um fünf Uhr ___. → auf"
       }
     ]
   },
@@ -474,149 +474,159 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-07-ubung-04-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(einladen) Meine Freundin wohnt an der Nordsee und sie ___ mich ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-04-q02",
         "position": 2,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (mitkommen) Meine Kinder ___ auch ___.",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (mitkommen) Meine Kinder ___ auch ___.",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (mitkommen) Meine Kinder ___ auch ___.",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (mitkommen) Meine Kinder ___ auch ___."
         },
-        "type": "fill_blank",
-        "sentence": "(mitkommen) Meine Kinder ___ auch ___.",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "kommen / mit",
+          "komment / mit",
+          "mit / kommen",
+          "kommen / miten"
+        ]
       },
       {
         "id": "kapitel-07-ubung-04-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(anfangen) Die Ferien ___ am Montag ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-04-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(abfahren) Wir ___ schon am Freitag ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-04-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(umsteigen) In Hannover müssen wir ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-04-q06",
         "position": 6,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (ankommen) Um 20.18 Uhr ___ wir in Sankt Peter-Ording ___.",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (ankommen) Um 20.18 Uhr ___ wir in Sankt Peter-Ording ___.",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (ankommen) Um 20.18 Uhr ___ wir in Sankt Peter-Ording ___.",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (ankommen) Um 20.18 Uhr ___ wir in Sankt Peter-Ording ___."
         },
-        "type": "fill_blank",
-        "sentence": "(ankommen) Um 20.18 Uhr ___ wir in Sankt Peter-Ording ___.",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "kommen / an",
+          "komment / an",
+          "an / kommen",
+          "kommen / anen"
+        ]
       },
       {
         "id": "kapitel-07-ubung-04-q07",
         "position": 7,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(abholen) Meine Freundin ___ uns am Bahnhof ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-04-q08",
         "position": 8,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(mitnehmen) Wir müssen warme Kleidung ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-04-q09",
         "position": 9,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(zurückfahren) Nach zwei Wochen müssen wir nach Hause ___.",
         "blanks": 1
       },
       {
+        "id": "kapitel-07-ubung-04-div-10",
+        "position": 10,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "Ich sehe abends …"
+            "label": "(umtauschen) Wir tauschen die Hose ___."
           },
           {
             "id": "i1",
-            "label": "Mach bitte die Tür …"
+            "label": "(weiterfahren) Der Fahrer fährt nach der Pause ___."
           },
           {
             "id": "i2",
-            "label": "Ich rufe dich morgen …"
+            "label": "(wegwerfen) Du wirfst die alten Zettel ___."
           }
         ],
         "options": [
-          "zu",
-          "fern",
-          "an"
-        ],
-        "id": "kapitel-07-ubung-04-div-10",
-        "position": 10
+          "weiter",
+          "weg",
+          "um"
+        ]
       }
     ]
   },
@@ -640,178 +650,193 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-07-ubung-05-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(aufstehen) Jeden Morgen muss ich früh ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-05-q02",
         "position": 2,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (vorbereiten) Jeden Tag ___ ich das Frühstück ___.",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (vorbereiten) Jeden Tag ___ ich das Frühstück ___.",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (vorbereiten) Jeden Tag ___ ich das Frühstück ___.",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (vorbereiten) Jeden Tag ___ ich das Frühstück ___."
         },
-        "type": "fill_blank",
-        "sentence": "(vorbereiten) Jeden Tag ___ ich das Frühstück ___.",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "bereitet / vor",
+          "bereite / voren",
+          "bereite / vor",
+          "vor / bereite"
+        ]
       },
       {
         "id": "kapitel-07-ubung-05-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(abwaschen) Danach ___ ich das Geschirr ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-05-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(anmachen) Ich ___ die Waschmaschine ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-05-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(einkaufen) Dann muss ich ___ und kochen.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-05-q06",
         "position": 6,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (zurückkommen) Um 13 Uhr ___ die Kinder aus der Schule ___.",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (zurückkommen) Um 13 Uhr ___ die Kinder aus der Schule ___.",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (zurückkommen) Um 13 Uhr ___ die Kinder aus der Schule ___.",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (zurückkommen) Um 13 Uhr ___ die Kinder aus der Schule ___."
         },
-        "type": "fill_blank",
-        "sentence": "(zurückkommen) Um 13 Uhr ___ die Kinder aus der Schule ___.",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "zurück / kommen",
+          "komment / zurück",
+          "kommen / zurück",
+          "kommen / zurücken"
+        ]
       },
       {
         "id": "kapitel-07-ubung-05-q07",
         "position": 7,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(mitbringen) Manchmal ___ sie Freunde zum Essen ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-05-q08",
         "position": 8,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(aufräumen) Ich ___ die Küche ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-05-q09",
         "position": 9,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(ausleeren) Ich ___ die Mülleimer ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-05-q10",
         "position": 10,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (aufhängen) Ich ___ die Wäsche ___.",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (aufhängen) Ich ___ die Wäsche ___.",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (aufhängen) Ich ___ die Wäsche ___.",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (aufhängen) Ich ___ die Wäsche ___."
         },
-        "type": "fill_blank",
-        "sentence": "(aufhängen) Ich ___ die Wäsche ___.",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "auf / hänge",
+          "hänge / auf",
+          "hänget / auf",
+          "hänge / aufen"
+        ]
       },
       {
         "id": "kapitel-07-ubung-05-q11",
         "position": 11,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(anrufen) Ich ___ meine Frau ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-05-q12",
         "position": 12,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(fernsehen) Am Abend ___ wir ___.",
         "blanks": 2
       },
       {
+        "id": "kapitel-07-ubung-05-div-13",
+        "position": 13,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "Ich stehe früh … → auf",
-          "Ich stehe früh … → ab",
-          "Der Zug fährt pünktlich … → ab",
-          "Wir kaufen im Supermarkt … → ein",
-          "Der Zug fährt pünktlich … → auf",
-          "Wir kaufen im Supermarkt … → auf"
-        ],
-        "id": "kapitel-07-ubung-05-div-13",
-        "position": 13
+          "(aufpassen) Die Schüler passen im Unterricht ___. → auf",
+          "(aufpassen) Die Schüler passen im Unterricht ___. → an",
+          "(vorstellen) Ich stelle den neuen Kollegen ___. → auf",
+          "(mitmachen) Meine Nachbarin macht beim Spiel ___. → aus",
+          "(mitmachen) Meine Nachbarin macht beim Spiel ___. → mit",
+          "(vorstellen) Ich stelle den neuen Kollegen ___. → vor"
+        ]
       }
     ]
   },
@@ -835,167 +860,167 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-07-ubung-06-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : anschalten",
-          "de": "Ordnen Sie die Satzteile: anschalten",
-          "ar": "رتب أجزاء الجملة: anschalten",
-          "en": "Put the chunks in order: anschalten"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Um 8 Uhr ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Um 8 Uhr“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Um 8 Uhr ».",
+          "en": "Reorder the groups. Start with “Um 8 Uhr”."
+        },
         "tokens": [
-          "ich den Computer",
           "an.",
           "Um 8 Uhr",
+          "ich den Computer",
           "schalte"
         ]
       },
       {
         "id": "kapitel-07-ubung-06-q02",
         "position": 2,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : ankommen",
-          "de": "Ordnen Sie die Satzteile: ankommen",
-          "ar": "رتب أجزاء الجملة: ankommen",
-          "en": "Put the chunks in order: ankommen"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Um 10 Uhr ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Um 10 Uhr“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Um 10 Uhr ».",
+          "en": "Reorder the groups. Start with “Um 10 Uhr”."
+        },
         "tokens": [
-          "eine Lieferung",
-          "an.",
           "Um 10 Uhr",
-          "kommt"
+          "kommt",
+          "an.",
+          "eine Lieferung"
         ]
       },
       {
         "id": "kapitel-07-ubung-06-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : anrufen + schreiben müssen",
-          "de": "Ordnen Sie die Satzteile: anrufen + schreiben müssen",
-          "ar": "رتب أجزاء الجملة: anrufen + schreiben müssen",
-          "en": "Put the chunks in order: anrufen + schreiben müssen"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Um 9 Uhr ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Um 9 Uhr“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Um 9 Uhr ».",
+          "en": "Reorder the groups. Start with “Um 9 Uhr”."
+        },
         "tokens": [
+          "Um 9 Uhr",
           "und muss",
           "E-Mails schreiben.",
-          "Um 9 Uhr",
           "rufe ich Kunden an"
         ]
       },
       {
         "id": "kapitel-07-ubung-06-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : arbeiten + anfangen",
-          "de": "Ordnen Sie die Satzteile: arbeiten + anfangen",
-          "ar": "رتب أجزاء الجملة: arbeiten + anfangen",
-          "en": "Put the chunks in order: arbeiten + anfangen"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Ich arbeite schnell, ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Ich arbeite schnell,“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Ich arbeite schnell, ».",
+          "en": "Reorder the groups. Start with “Ich arbeite schnell,”."
+        },
         "tokens": [
-          "das Meeting um 11 Uhr",
-          "anfängt.",
+          "weil",
           "Ich arbeite schnell,",
-          "weil"
+          "das Meeting um 11 Uhr",
+          "anfängt."
         ]
       },
       {
         "id": "kapitel-07-ubung-06-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : anfangen können",
-          "de": "Ordnen Sie die Satzteile: anfangen können",
-          "ar": "رتب أجزاء الجملة: anfangen können",
-          "en": "Put the chunks in order: anfangen können"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Nach dem Meeting ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Nach dem Meeting“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Nach dem Meeting ».",
+          "en": "Reorder the groups. Start with “Nach dem Meeting”."
+        },
         "tokens": [
-          "wir mit der Pause",
+          "können",
           "anfangen.",
           "Nach dem Meeting",
-          "können"
+          "wir mit der Pause"
         ]
       },
       {
         "id": "kapitel-07-ubung-06-q06",
         "position": 6,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : zurückkommen müssen",
-          "de": "Ordnen Sie die Satzteile: zurückkommen müssen",
-          "ar": "رتب أجزاء الجملة: zurückkommen müssen",
-          "en": "Put the chunks in order: zurückkommen müssen"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Pünktlich um 13 Uhr ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Pünktlich um 13 Uhr“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Pünktlich um 13 Uhr ».",
+          "en": "Reorder the groups. Start with “Pünktlich um 13 Uhr”."
+        },
         "tokens": [
-          "ich aus der Pause",
-          "zurückkommen.",
           "Pünktlich um 13 Uhr",
-          "muss"
+          "muss",
+          "zurückkommen.",
+          "ich aus der Pause"
         ]
       },
       {
         "id": "kapitel-07-ubung-06-q07",
         "position": 7,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : ausschalten + aufräumen",
-          "de": "Ordnen Sie die Satzteile: ausschalten + aufräumen",
-          "ar": "رتب أجزاء الجملة: ausschalten + aufräumen",
-          "en": "Put the chunks in order: ausschalten + aufräumen"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Um 17 Uhr ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Um 17 Uhr“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Um 17 Uhr ».",
+          "en": "Reorder the groups. Start with “Um 17 Uhr”."
+        },
         "tokens": [
-          "und",
-          "räume den Schreibtisch auf.",
           "Um 17 Uhr",
-          "schalte ich den Computer aus"
+          "und",
+          "schalte ich den Computer aus",
+          "räume den Schreibtisch auf."
         ]
       },
       {
         "id": "kapitel-07-ubung-06-q08",
         "position": 8,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : zurückgehen + ausgehen möchten",
-          "de": "Ordnen Sie die Satzteile: zurückgehen + ausgehen möchten",
-          "ar": "رتب أجزاء الجملة: zurückgehen + ausgehen möchten",
-          "en": "Put the chunks in order: zurückgehen + ausgehen möchten"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Ich gehe schnell nach Hause zurück, ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Ich gehe schnell nach Hause zurück,“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Ich gehe schnell nach Hause zurück, ».",
+          "en": "Reorder the groups. Start with “Ich gehe schnell nach Hause zurück,”."
+        },
         "tokens": [
+          "weil",
           "ich heute",
-          "ausgehen möchte.",
           "Ich gehe schnell nach Hause zurück,",
-          "weil"
+          "ausgehen möchte."
         ]
       },
       {
         "id": "kapitel-07-ubung-06-q09",
         "position": 9,
-        "prompt": {
-          "fr": "Remettez les groupes dans l’ordre : gehen + mitkommen",
-          "de": "Ordnen Sie die Satzteile: gehen + mitkommen",
-          "ar": "رتب أجزاء الجملة: gehen + mitkommen",
-          "en": "Put the chunks in order: gehen + mitkommen"
-        },
         "type": "reorder",
+        "prompt": {
+          "fr": "Remettez les groupes dans l’ordre. Commencez par « Gehe ich ».",
+          "de": "Ordnen Sie die Gruppen. Beginnen Sie mit „Gehe ich“.",
+          "ar": "رتّب المجموعات بدءاً بـ « Gehe ich ».",
+          "en": "Reorder the groups. Start with “Gehe ich”."
+        },
         "tokens": [
-          "oder",
-          "kommen Sie mit?",
           "Gehe ich",
-          "alleine ins Kino"
+          "alleine ins Kino",
+          "kommen Sie mit?",
+          "oder"
         ]
       },
       {
+        "id": "kapitel-07-ubung-06-div-10",
+        "position": 10,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "Ich rufe dich morgen … → an",
-        "id": "kapitel-07-ubung-06-div-10",
-        "position": 10
+        "statement": "(ausschalten) Schalten Sie die Lampe bitte ___! → an"
       }
     ]
   },
@@ -1019,110 +1044,110 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-07-ubung-07-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(aufstehen) Du musst früh ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-07-q02",
         "position": 2,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(anrufen) Ich soll den Arzt ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-07-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(mitkommen) Ihr könnt gerne ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-07-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(fernsehen) Die Kinder dürfen heute ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-07-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(ausgehen) Wir wollen heute ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-07-q06",
         "position": 6,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(einkaufen) Sie möchte morgen ___.",
         "blanks": 1
       },
       {
+        "id": "kapitel-07-ubung-07-div-7",
+        "position": 7,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "Ich stehe früh …"
+            "label": "(einpacken) Das Kind packt das Geschenk ___."
           },
           {
             "id": "i1",
-            "label": "Der Zug fährt pünktlich …"
+            "label": "(zusammenarbeiten) Die Teams arbeiten gut ___."
           },
           {
             "id": "i2",
-            "label": "Wir kaufen im Supermarkt …"
+            "label": "(nachfragen) Die Kundin fragt noch einmal ___."
           }
         ],
         "options": [
-          "ab",
           "ein",
-          "auf"
-        ],
-        "id": "kapitel-07-ubung-07-div-7",
-        "position": 7
+          "zusammen",
+          "nach"
+        ]
       }
     ]
   },
@@ -1146,100 +1171,100 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-07-ubung-08-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(aufstehen) Ich gehe ins Bett, weil ich früh ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-08-q02",
         "position": 2,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(ankommen) Ich warte, weil der Zug bald ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-08-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(anfangen) Wir gehen hinein, weil der Kurs gleich ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-08-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(mitkommen) Ich freue mich, weil du ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-08-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(einkaufen) Sie bleibt zu Hause, weil ihr Mann ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-08-q06",
         "position": 6,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(zurückkommen) Wir warten, weil die Kinder bald ___.",
         "blanks": 1
       },
       {
+        "id": "kapitel-07-ubung-08-div-7",
+        "position": 7,
         "type": "qcm",
-        "selection": "multiple",
         "prompt": {
-          "fr": "Sélectionnez toutes les correspondances correctes.",
+          "fr": "Sélectionnez toutes les associations correctes.",
           "de": "Wählen Sie alle richtigen Zuordnungen.",
-          "ar": "اختر كل المطابقات الصحيحة.",
+          "ar": "اختر جميع المطابقات الصحيحة.",
           "en": "Select all correct matches."
         },
+        "selection": "multiple",
         "options": [
-          "Ich sehe abends … → auf",
-          "Mach bitte die Tür … → auf",
-          "Ich rufe dich morgen … → auf",
-          "Ich rufe dich morgen … → an",
-          "Ich sehe abends … → fern",
-          "Mach bitte die Tür … → zu"
-        ],
-        "id": "kapitel-07-ubung-08-div-7",
-        "position": 7
+          "(aufbauen) Ihr baut das Regal ___. → ab",
+          "(abgeben) Wir geben die Schlüssel morgen ___. → auf",
+          "(aufbauen) Ihr baut das Regal ___. → auf",
+          "(abholen) Der Vater holt das Kind vom Hort ___. → mit",
+          "(abholen) Der Vater holt das Kind vom Hort ___. → ab",
+          "(abgeben) Wir geben die Schlüssel morgen ___. → ab"
+        ]
       }
     ]
   },
@@ -1263,92 +1288,102 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-07-ubung-09-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(mitkommen) ___ du heute ___?",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-09-q02",
         "position": 2,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (aufstehen) ___ ihr früh ___?",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (aufstehen) ___ ihr früh ___?",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (aufstehen) ___ ihr früh ___?",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (aufstehen) ___ ihr früh ___?"
         },
-        "type": "fill_blank",
-        "sentence": "(aufstehen) ___ ihr früh ___?",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "auf / Steht",
+          "Stehtt / auf",
+          "Steht / aufen",
+          "Steht / auf"
+        ]
       },
       {
         "id": "kapitel-07-ubung-09-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(anrufen) ___ Sie mich bitte ___!",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-09-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(einsteigen) ___ Sie bitte ___!",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-09-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(zumachen) ___ du die Tür ___?",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-09-q06",
         "position": 6,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (aufmachen) ___ Sie das Fenster ___!",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (aufmachen) ___ Sie das Fenster ___!",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (aufmachen) ___ Sie das Fenster ___!",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (aufmachen) ___ Sie das Fenster ___!"
         },
-        "type": "fill_blank",
-        "sentence": "(aufmachen) ___ Sie das Fenster ___!",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "Machent / auf",
+          "Machen / auf",
+          "auf / Machen",
+          "Machen / aufen"
+        ]
       },
       {
+        "id": "kapitel-07-ubung-09-div-7",
+        "position": 7,
         "type": "true_false",
         "prompt": {
-          "fr": "Cette association est-elle correcte ?",
-          "de": "Ist diese Zuordnung richtig?",
-          "ar": "هل هذه المطابقة صحيحة؟",
-          "en": "Is this match correct?"
+          "fr": "La phrase proposée respecte-t-elle la consigne ?",
+          "de": "Entspricht der Vorschlag der Angabe?",
+          "ar": "هل الجملة المقترحة توافق المطلوب؟",
+          "en": "Does the proposed sentence satisfy the instruction?"
         },
-        "statement": "Wir kaufen im Supermarkt … → auf",
-        "id": "kapitel-07-ubung-09-div-7",
-        "position": 7
+        "statement": "(aufheben) Das Mädchen hebt die Münze ___. → auf"
       }
     ]
   },
@@ -1372,136 +1407,141 @@ export const meistertraining: ExerciseSetDefinition[] = [
       {
         "id": "kapitel-07-ubung-10-q01",
         "position": 1,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(abfahren) Der Bus ___ um neun ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-10-q02",
         "position": 2,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(aufstehen) Ich muss morgen früh ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-10-q03",
         "position": 3,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(anfangen) Wir warten, weil der Film gleich ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-10-q04",
         "position": 4,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(einladen) Du ___ deine Freunde ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-10-q05",
         "position": 5,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(mitnehmen) Ihr müsst die Taschen ___.",
         "blanks": 1
       },
       {
         "id": "kapitel-07-ubung-10-q06",
         "position": 6,
+        "type": "qcm",
         "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
+          "fr": "Choisissez la réponse correcte selon le contexte. Les formes sont dans l’ordre des blancs. — (aussteigen) ___ Sie hier ___?",
+          "de": "Wählen Sie die passende Antwort im Kontext. Die Formen stehen in der Reihenfolge der Lücken. — (aussteigen) ___ Sie hier ___?",
+          "ar": "اختر الإجابة المناسبة للسياق. الصيغ مرتبة حسب الفراغات. — (aussteigen) ___ Sie hier ___?",
+          "en": "Choose the correct answer in context. Forms are in blank order. — (aussteigen) ___ Sie hier ___?"
         },
-        "type": "fill_blank",
-        "sentence": "(aussteigen) ___ Sie hier ___?",
-        "blanks": 2
+        "selection": "single",
+        "options": [
+          "aus / Steigen",
+          "Steigent / aus",
+          "Steigen / ausen",
+          "Steigen / aus"
+        ]
       },
       {
         "id": "kapitel-07-ubung-10-q07",
         "position": 7,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(fernsehen) Er ___ abends ___.",
         "blanks": 2
       },
       {
         "id": "kapitel-07-ubung-10-q08",
         "position": 8,
-        "prompt": {
-          "fr": "Complétez avec le verbe indiqué.",
-          "de": "Ergänzen Sie das angegebene Verb.",
-          "ar": "أكمل بالفعل المحدد.",
-          "en": "Complete using the indicated verb."
-        },
         "type": "fill_blank",
+        "prompt": {
+          "fr": "Conjuguez le verbe indiqué, avec le préfixe à la bonne place.",
+          "de": "Setzen Sie das angegebene Verb ein; achten Sie auf das Präfix.",
+          "ar": "صرّف الفعل المحدد مع وضع البادئة في مكانها الصحيح.",
+          "en": "Use the given verb; place the prefix correctly."
+        },
         "sentence": "(aufräumen) Sie bleibt zu Hause, weil sie ___.",
         "blanks": 1
       },
       {
+        "id": "kapitel-07-ubung-10-div-9",
+        "position": 9,
         "type": "matching",
         "prompt": {
-          "fr": "Associez.",
-          "de": "Ordnen Sie zu.",
-          "ar": "صل بين العناصر.",
-          "en": "Match the items."
+          "fr": "Associez chaque contexte à la réponse appropriée.",
+          "de": "Ordnen Sie jedem Kontext die passende Antwort zu.",
+          "ar": "صل كل سياق بالإجابة المناسبة.",
+          "en": "Match each context to the appropriate answer."
         },
         "items": [
           {
             "id": "i0",
-            "label": "Ich sehe abends …"
+            "label": "(anklopfen) Der Besucher klopft an der Tür ___."
           },
           {
             "id": "i1",
-            "label": "Mach bitte die Tür …"
+            "label": "(zurückrufen) Der Kollege ruft später ___."
           },
           {
             "id": "i2",
-            "label": "Ich rufe dich morgen …"
+            "label": "(einziehen) Die Familie zieht am Samstag in die Wohnung ___."
           }
         ],
         "options": [
-          "fern",
-          "zu",
+          "ein",
+          "zurück",
           "an"
-        ],
-        "id": "kapitel-07-ubung-10-div-9",
-        "position": 9
+        ]
       }
     ]
   }

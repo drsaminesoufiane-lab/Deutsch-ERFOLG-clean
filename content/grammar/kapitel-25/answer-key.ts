@@ -3,665 +3,768 @@ import type { AnswerKey } from '@/lib/grammar/types'
 export const chapter25AnswerKey: AnswerKey = {
   "kapitel-25-ubung-01-q01": {
     "acceptedAnswers": [
-      "Ich",
-      "bin",
-      "gegangen."
+      "ist"
     ],
     "explanation": {
-      "fr": "Ich commande la forme bin. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ich verlangt die Form bin. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ich يتطلب الصيغة bin. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ich requires the form bin. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Vor einer Woche ist ein Kollege aus London gekommen. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Vor einer Woche ist ein Kollege aus London gekommen. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Vor einer Woche ist ein Kollege aus London gekommen. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Vor einer Woche ist ein Kollege aus London gekommen. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-01-q02": {
-    "acceptedAnswers": "bist",
+    "acceptedAnswers": [
+      "ist",
+      "bin"
+    ],
     "explanation": {
-      "fr": "Du commande la forme bist. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Du verlangt die Form bist. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Du يتطلب الصيغة bist. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Du requires the form bist. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Sein Flugzeug ist um 16 Uhr gelandet und ich bin pünktlich da gewesen. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Sein Flugzeug ist um 16 Uhr gelandet und ich bin pünktlich da gewesen. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Sein Flugzeug ist um 16 Uhr gelandet und ich bin pünktlich da gewesen. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Sein Flugzeug ist um 16 Uhr gelandet und ich bin pünktlich da gewesen. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-01-q03": {
-    "acceptedAnswers": "ist",
+    "acceptedAnswers": "sind",
     "explanation": {
-      "fr": "Er commande la forme ist. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Er verlangt die Form ist. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Er يتطلب الصيغة ist. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Er requires the form ist. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Wir sind zusammen im Taxi in die Firma gefahren. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Wir sind zusammen im Taxi in die Firma gefahren. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Wir sind zusammen im Taxi in die Firma gefahren. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Wir sind zusammen im Taxi in die Firma gefahren. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-01-q04": {
     "acceptedAnswers": [
-      "sind"
+      "ist",
+      "ist"
     ],
     "explanation": {
-      "fr": "Wir commande la forme sind. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Wir verlangt die Form sind. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Wir يتطلب الصيغة sind. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Wir requires the form sind. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Da ist etwas passiert. Der Kollege ist auf der Treppe gefallen. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Da ist etwas passiert. Der Kollege ist auf der Treppe gefallen. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Da ist etwas passiert. Der Kollege ist auf der Treppe gefallen. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Da ist etwas passiert. Der Kollege ist auf der Treppe gefallen. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-01-q05": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "sind"
+    ],
     "explanation": {
-      "fr": "Ihr commande la forme seid. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ihr verlangt die Form seid. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ihr يتطلب الصيغة seid. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ihr requires the form seid. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Wir sind ins Krankenhaus gefahren und drei Stunden dort geblieben. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Wir sind ins Krankenhaus gefahren und drei Stunden dort geblieben. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Wir sind ins Krankenhaus gefahren und drei Stunden dort geblieben. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Wir sind ins Krankenhaus gefahren und drei Stunden dort geblieben. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-02-q01": {
-    "acceptedAnswers": "sind",
+    "acceptedAnswers": [
+      "bin",
+      "hast",
+      "habt",
+      "sind"
+    ],
     "explanation": {
-      "fr": "Die Kinder commande la forme sind. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Die Kinder verlangt die Form sind. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Die Kinder يتطلب الصيغة sind. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Die Kinder requires the form sind. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "ich, nach Rom geflogen → bin / du, im Hotel gewohnt → hast / ihr, Spaghetti gegessen → habt / wir, früh aufgestanden → sind — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "ich, nach Rom geflogen → bin / du, im Hotel gewohnt → hast / ihr, Spaghetti gegessen → habt / wir, früh aufgestanden → sind — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "ich, nach Rom geflogen → bin / du, im Hotel gewohnt → hast / ihr, Spaghetti gegessen → habt / wir, früh aufgestanden → sind — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "ich, nach Rom geflogen → bin / du, im Hotel gewohnt → hast / ihr, Spaghetti gegessen → habt / wir, früh aufgestanden → sind — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-02-q02": {
-    "acceptedAnswers": "habe",
+    "acceptedAnswers": [
+      "habe",
+      "bin"
+    ],
     "explanation": {
-      "fr": "Ich commande la forme habe. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ich verlangt die Form habe. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ich يتطلب الصيغة habe. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ich requires the form habe. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ich habe das Kolosseum gesehen und bin im Vatikan gewesen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Ich habe das Kolosseum gesehen und bin im Vatikan gewesen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Ich habe das Kolosseum gesehen und bin im Vatikan gewesen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Ich habe das Kolosseum gesehen und bin im Vatikan gewesen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-02-q03": {
     "acceptedAnswers": [
-      "hast"
+      "bin",
+      "habe"
     ],
     "explanation": {
-      "fr": "Du commande la forme hast. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Du verlangt die Form hast. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Du يتطلب الصيغة hast. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Du requires the form hast. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ich bin eine Woche geblieben und habe viel Spaß gehabt. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Ich bin eine Woche geblieben und habe viel Spaß gehabt. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Ich bin eine Woche geblieben und habe viel Spaß gehabt. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Ich bin eine Woche geblieben und habe viel Spaß gehabt. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-02-q04": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": "bin",
     "explanation": {
-      "fr": "Er commande la forme hat. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Er verlangt die Form hat. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Er يتطلب الصيغة hat. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Er requires the form hat. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ich bin jeden Tag drei Stunden durch die Stadt gelaufen. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Ich bin jeden Tag drei Stunden durch die Stadt gelaufen. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Ich bin jeden Tag drei Stunden durch die Stadt gelaufen. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Ich bin jeden Tag drei Stunden durch die Stadt gelaufen. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-02-q05": {
     "acceptedAnswers": [
-      "Wir",
-      "haben",
-      "gesehen."
+      "habe"
     ],
     "explanation": {
-      "fr": "Wir commande la forme haben. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Wir verlangt die Form haben. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Wir يتطلب الصيغة haben. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Wir requires the form haben. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ich habe Postkarten geschrieben und Souvenirs gekauft. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Ich habe Postkarten geschrieben und Souvenirs gekauft. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Ich habe Postkarten geschrieben und Souvenirs gekauft. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Ich habe Postkarten geschrieben und Souvenirs gekauft. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-03-q01": {
-    "acceptedAnswers": "habt",
+    "acceptedAnswers": [
+      "bin",
+      "habe"
+    ],
     "explanation": {
-      "fr": "Ihr commande la forme habt. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ihr verlangt die Form habt. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ihr يتطلب الصيغة habt. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ihr requires the form habt. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Letzte Woche bin ich um acht Uhr ins Büro gekommen und habe mit der Arbeit angefangen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Letzte Woche bin ich um acht Uhr ins Büro gekommen und habe mit der Arbeit angefangen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Letzte Woche bin ich um acht Uhr ins Büro gekommen und habe mit der Arbeit angefangen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Letzte Woche bin ich um acht Uhr ins Büro gekommen und habe mit der Arbeit angefangen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-03-q02": {
     "acceptedAnswers": [
-      "haben"
+      "bin",
+      "habe"
     ],
     "explanation": {
-      "fr": "Die Kinder commande la forme haben. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Die Kinder verlangt die Form haben. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Die Kinder يتطلب الصيغة haben. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Die Kinder requires the form haben. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "In der Pause bin ich zum Essen gegangen und habe mit Kollegen gesprochen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "In der Pause bin ich zum Essen gegangen und habe mit Kollegen gesprochen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "In der Pause bin ich zum Essen gegangen und habe mit Kollegen gesprochen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "In der Pause bin ich zum Essen gegangen und habe mit Kollegen gesprochen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-03-q03": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "bin",
+      "bin"
+    ],
     "explanation": {
-      "fr": "Ich commande la forme habe. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ich verlangt die Form habe. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ich يتطلب الصيغة habe. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ich requires the form habe. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Am Nachmittag bin ich zu einem Kunden gefahren. Ich bin dort eine Stunde geblieben. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Am Nachmittag bin ich zu einem Kunden gefahren. Ich bin dort eine Stunde geblieben. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Am Nachmittag bin ich zu einem Kunden gefahren. Ich bin dort eine Stunde geblieben. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Am Nachmittag bin ich zu einem Kunden gefahren. Ich bin dort eine Stunde geblieben. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-03-q04": {
-    "acceptedAnswers": [
-      "Du",
-      "hast",
-      "ausgepackt."
-    ],
+    "acceptedAnswers": "habe",
     "explanation": {
-      "fr": "Du commande la forme hast. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Du verlangt die Form hast. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Du يتطلب الصيغة hast. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Du requires the form hast. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Danach habe ich bis 18 Uhr im Büro gearbeitet. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Danach habe ich bis 18 Uhr im Büro gearbeitet. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Danach habe ich bis 18 Uhr im Büro gearbeitet. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Danach habe ich bis 18 Uhr im Büro gearbeitet. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-03-q05": {
-    "acceptedAnswers": "hat",
+    "acceptedAnswers": "false",
     "explanation": {
-      "fr": "Er commande la forme hat. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Er verlangt die Form hat. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Er يتطلب الصيغة hat. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Er requires the form hat. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ich habe gestern lange gearbeitet. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Ich habe gestern lange gearbeitet. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Ich habe gestern lange gearbeitet. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Ich habe gestern lange gearbeitet. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-04-q01": {
     "acceptedAnswers": [
-      "haben"
+      "ist",
+      "habe"
     ],
     "explanation": {
-      "fr": "Wir commande la forme haben. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Wir verlangt die Form haben. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Wir يتطلب الصيغة haben. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Wir requires the form haben. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Gestern ist etwas Dramatisches passiert. Ich habe geduscht und gefrühstückt. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Gestern ist etwas Dramatisches passiert. Ich habe geduscht und gefrühstückt. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Gestern ist etwas Dramatisches passiert. Ich habe geduscht und gefrühstückt. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Gestern ist etwas Dramatisches passiert. Ich habe geduscht und gefrühstückt. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-04-q02": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "bin",
+      "habe"
+    ],
     "explanation": {
-      "fr": "Ihr commande la forme habt. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ihr verlangt die Form habt. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ihr يتطلب الصيغة habt. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ihr requires the form habt. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Dann bin ich aus dem Haus gegangen. Vor der Tür habe ich meinen Fehler bemerkt. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Dann bin ich aus dem Haus gegangen. Vor der Tür habe ich meinen Fehler bemerkt. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Dann bin ich aus dem Haus gegangen. Vor der Tür habe ich meinen Fehler bemerkt. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Dann bin ich aus dem Haus gegangen. Vor der Tür habe ich meinen Fehler bemerkt. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-04-q03": {
     "acceptedAnswers": [
-      "Die Kinder",
-      "haben",
-      "gelacht."
+      "habe",
+      "bin"
     ],
     "explanation": {
-      "fr": "Die Kinder commande la forme haben. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Die Kinder verlangt die Form haben. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Die Kinder يتطلب الصيغة haben. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Die Kinder requires the form haben. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ich habe meinen Schlüssel vergessen und bin durch das Fenster ins Haus gestiegen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Ich habe meinen Schlüssel vergessen und bin durch das Fenster ins Haus gestiegen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Ich habe meinen Schlüssel vergessen und bin durch das Fenster ins Haus gestiegen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Ich habe meinen Schlüssel vergessen und bin durch das Fenster ins Haus gestiegen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-04-q04": {
-    "acceptedAnswers": "bin",
+    "acceptedAnswers": [
+      "ist",
+      "haben"
+    ],
     "explanation": {
-      "fr": "Ich commande la forme bin. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ich verlangt die Form bin. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ich يتطلب الصيغة bin. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ich requires the form bin. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ein Polizeiauto ist gekommen. Die Polizisten haben mich gesehen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Ein Polizeiauto ist gekommen. Die Polizisten haben mich gesehen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Ein Polizeiauto ist gekommen. Die Polizisten haben mich gesehen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Ein Polizeiauto ist gekommen. Die Polizisten haben mich gesehen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-04-q05": {
-    "acceptedAnswers": "bist",
+    "acceptedAnswers": [
+      "habe"
+    ],
     "explanation": {
-      "fr": "Du commande la forme bist. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Du verlangt die Form bist. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Du يتطلب الصيغة bist. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Du requires the form bist. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ich habe mit den Polizisten gesprochen und die Situation erklärt. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Ich habe mit den Polizisten gesprochen und die Situation erklärt. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Ich habe mit den Polizisten gesprochen und die Situation erklärt. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Ich habe mit den Polizisten gesprochen und die Situation erklärt. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-05-q01": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "hat",
+      "habe"
+    ],
     "explanation": {
-      "fr": "Er commande la forme ist. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Er verlangt die Form ist. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Er يتطلب الصيغة ist. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Er requires the form ist. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ein Polizist hat die Tür geöffnet und ich habe meinen Schlüssel geholt. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Ein Polizist hat die Tür geöffnet und ich habe meinen Schlüssel geholt. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Ein Polizist hat die Tür geöffnet und ich habe meinen Schlüssel geholt. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Ein Polizist hat die Tür geöffnet und ich habe meinen Schlüssel geholt. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-05-q02": {
     "acceptedAnswers": [
-      "Wir",
-      "sind",
-      "gefallen."
+      "bin",
+      "bin"
     ],
     "explanation": {
-      "fr": "Wir commande la forme sind. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Wir verlangt die Form sind. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Wir يتطلب الصيغة sind. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Wir requires the form sind. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Dann bin ich schnell zur Arbeit gefahren, aber ich bin zu spät gewesen. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Dann bin ich schnell zur Arbeit gefahren, aber ich bin zu spät gewesen. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Dann bin ich schnell zur Arbeit gefahren, aber ich bin zu spät gewesen. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Dann bin ich schnell zur Arbeit gefahren, aber ich bin zu spät gewesen. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-05-q03": {
-    "acceptedAnswers": "seid",
+    "acceptedAnswers": [
+      "Das Flugzeug ist in Frankfurt gestartet.",
+      "Wir sind auf Hawaii angekommen."
+    ],
     "explanation": {
-      "fr": "Ihr commande la forme seid. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ihr verlangt die Form seid. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ihr يتطلب الصيغة seid. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ihr requires the form seid. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Das Flugzeug ist in Frankfurt gestartet. / Wir sind auf Hawaii angekommen. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Das Flugzeug ist in Frankfurt gestartet. / Wir sind auf Hawaii angekommen. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Das Flugzeug ist in Frankfurt gestartet. / Wir sind auf Hawaii angekommen. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Das Flugzeug ist in Frankfurt gestartet. / Wir sind auf Hawaii angekommen. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-05-q04": {
-    "acceptedAnswers": "sind",
+    "acceptedAnswers": [
+      "Letztes Jahr",
+      "haben",
+      "wir drei Wochen Urlaub auf Hawaii gemacht."
+    ],
     "explanation": {
-      "fr": "Die Kinder commande la forme sind. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Die Kinder verlangt die Form sind. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Die Kinder يتطلب الصيغة sind. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Die Kinder requires the form sind. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Letztes Jahr haben wir drei Wochen Urlaub auf Hawaii gemacht. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Letztes Jahr haben wir drei Wochen Urlaub auf Hawaii gemacht. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Letztes Jahr haben wir drei Wochen Urlaub auf Hawaii gemacht. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Letztes Jahr haben wir drei Wochen Urlaub auf Hawaii gemacht. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-25-ubung-05-q05": {
     "acceptedAnswers": [
-      "bin"
+      "sind",
+      "haben"
     ],
     "explanation": {
-      "fr": "Ich commande la forme bin. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ich verlangt die Form bin. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ich يتطلب الصيغة bin. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ich requires the form bin. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Wir sind ins Hotel gefahren und haben unsere Koffer ausgepackt. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Wir sind ins Hotel gefahren und haben unsere Koffer ausgepackt. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Wir sind ins Hotel gefahren und haben unsere Koffer ausgepackt. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Wir sind ins Hotel gefahren und haben unsere Koffer ausgepackt. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-06-q01": {
     "acceptedAnswers": [
-      "Du",
-      "bist",
-      "aufgestanden."
+      "sind"
     ],
     "explanation": {
-      "fr": "Du commande la forme bist. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Du verlangt die Form bist. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Du يتطلب الصيغة bist. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Du requires the form bist. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Wir sind ins Bett gegangen und nach vier Stunden aufgewacht. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Wir sind ins Bett gegangen und nach vier Stunden aufgewacht. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Wir sind ins Bett gegangen und nach vier Stunden aufgewacht. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Wir sind ins Bett gegangen und nach vier Stunden aufgewacht. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-06-q02": {
-    "acceptedAnswers": "ist",
+    "acceptedAnswers": [
+      "haben"
+    ],
     "explanation": {
-      "fr": "Er commande la forme ist. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Er verlangt die Form ist. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Er يتطلب الصيغة ist. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Er requires the form ist. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Danach haben wir die Stadt besichtigt und in einem Restaurant gegessen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Danach haben wir die Stadt besichtigt und in einem Restaurant gegessen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Danach haben wir die Stadt besichtigt und in einem Restaurant gegessen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Danach haben wir die Stadt besichtigt und in einem Restaurant gegessen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-06-q03": {
-    "acceptedAnswers": "sind",
+    "acceptedAnswers": [
+      "ist",
+      "habt",
+      "bist",
+      "haben"
+    ],
     "explanation": {
-      "fr": "Wir commande la forme sind. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Wir verlangt die Form sind. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Wir يتطلب الصيغة sind. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Wir requires the form sind. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "er, einschlafen → ist / ihr, essen → habt / du, kommen → bist / wir, arbeiten → haben — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "er, einschlafen → ist / ihr, essen → habt / du, kommen → bist / wir, arbeiten → haben — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "er, einschlafen → ist / ihr, essen → habt / du, kommen → bist / wir, arbeiten → haben — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "er, einschlafen → ist / ihr, essen → habt / du, kommen → bist / wir, arbeiten → haben — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-06-q04": {
     "acceptedAnswers": [
-      "seid"
+      "Um fünf Uhr",
+      "sind",
+      "wir am Strand angekommen."
     ],
     "explanation": {
-      "fr": "Ihr commande la forme seid. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ihr verlangt die Form seid. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ihr يتطلب الصيغة seid. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ihr requires the form seid. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Um fünf Uhr sind wir am Strand angekommen. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Um fünf Uhr sind wir am Strand angekommen. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Um fünf Uhr sind wir am Strand angekommen. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Um fünf Uhr sind wir am Strand angekommen. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-25-ubung-06-q05": {
     "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Die Kinder commande la forme sind. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Die Kinder verlangt die Form sind. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Die Kinder يتطلب الصيغة sind. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Die Kinder requires the form sind. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Der Tourist hat im Hotel geschlafen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Der Tourist hat im Hotel geschlafen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Der Tourist hat im Hotel geschlafen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Der Tourist hat im Hotel geschlafen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-07-q01": {
-    "acceptedAnswers": "habe",
+    "acceptedAnswers": [
+      "ist",
+      "hat"
+    ],
     "explanation": {
-      "fr": "Ich commande la forme habe. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ich verlangt die Form habe. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ich يتطلب الصيغة habe. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ich requires the form habe. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Das Kind ist eingeschlafen und hat zwei Stunden geschlafen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Das Kind ist eingeschlafen und hat zwei Stunden geschlafen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Das Kind ist eingeschlafen und hat zwei Stunden geschlafen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Das Kind ist eingeschlafen und hat zwei Stunden geschlafen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-07-q02": {
-    "acceptedAnswers": "hast",
+    "acceptedAnswers": [
+      "hat",
+      "ist"
+    ],
     "explanation": {
-      "fr": "Du commande la forme hast. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Du verlangt die Form hast. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Du يتطلب الصيغة hast. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Du requires the form hast. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Der Mann hat den Lieferwagen selbst gefahren. Danach ist er zu Fuß nach Hause gegangen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Der Mann hat den Lieferwagen selbst gefahren. Danach ist er zu Fuß nach Hause gegangen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Der Mann hat den Lieferwagen selbst gefahren. Danach ist er zu Fuß nach Hause gegangen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Der Mann hat den Lieferwagen selbst gefahren. Danach ist er zu Fuß nach Hause gegangen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-07-q03": {
     "acceptedAnswers": [
-      "hat"
+      "Die Pflanze ist gewachsen.",
+      "Das Kind hat im Garten gespielt."
     ],
     "explanation": {
-      "fr": "Er commande la forme hat. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Er verlangt die Form hat. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Er يتطلب الصيغة hat. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Er requires the form hat. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Die Pflanze ist gewachsen. / Das Kind hat im Garten gespielt. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Die Pflanze ist gewachsen. / Das Kind hat im Garten gespielt. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Die Pflanze ist gewachsen. / Das Kind hat im Garten gespielt. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Die Pflanze ist gewachsen. / Das Kind hat im Garten gespielt. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-07-q04": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": "ist",
     "explanation": {
-      "fr": "Wir commande la forme haben. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Wir verlangt die Form haben. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Wir يتطلب الصيغة haben. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Wir requires the form haben. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Was ist mit dem Glas passiert? — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Was ist mit dem Glas passiert? — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Was ist mit dem Glas passiert? — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Was ist mit dem Glas passiert? — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-07-q05": {
     "acceptedAnswers": [
-      "Ihr",
-      "habt",
-      "vergessen."
+      "Heute Morgen",
+      "bin",
+      "ich sehr früh aufgestanden."
     ],
     "explanation": {
-      "fr": "Ihr commande la forme habt. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ihr verlangt die Form habt. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ihr يتطلب الصيغة habt. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ihr requires the form habt. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Heute Morgen bin ich sehr früh aufgestanden. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Heute Morgen bin ich sehr früh aufgestanden. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Heute Morgen bin ich sehr früh aufgestanden. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Heute Morgen bin ich sehr früh aufgestanden. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-25-ubung-08-q01": {
-    "acceptedAnswers": "haben",
+    "acceptedAnswers": [
+      "ist",
+      "haben"
+    ],
     "explanation": {
-      "fr": "Die Kinder commande la forme haben. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Die Kinder verlangt die Form haben. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Die Kinder يتطلب الصيغة haben. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Die Kinder requires the form haben. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Der Zug ist abgefahren, aber wir haben ihn verpasst. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Der Zug ist abgefahren, aber wir haben ihn verpasst. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Der Zug ist abgefahren, aber wir haben ihn verpasst. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Der Zug ist abgefahren, aber wir haben ihn verpasst. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-08-q02": {
     "acceptedAnswers": [
-      "habe"
+      "seid",
+      "habt"
     ],
     "explanation": {
-      "fr": "Ich commande la forme habe. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ich verlangt die Form habe. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ich يتطلب الصيغة habe. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ich requires the form habe. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ihr seid in Köln umgestiegen und habt dort einen Kaffee getrunken. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Ihr seid in Köln umgestiegen und habt dort einen Kaffee getrunken. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Ihr seid in Köln umgestiegen und habt dort einen Kaffee getrunken. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Ihr seid in Köln umgestiegen und habt dort einen Kaffee getrunken. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-08-q03": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "bin",
+      "hast",
+      "sind",
+      "hat"
+    ],
     "explanation": {
-      "fr": "Du commande la forme hast. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Du verlangt die Form hast. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Du يتطلب الصيغة hast. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Du requires the form hast. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "ich, bleiben → bin / du, schlafen → hast / wir, aufwachen → sind / sie (Singular), lesen → hat — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "ich, bleiben → bin / du, schlafen → hast / wir, aufwachen → sind / sie (Singular), lesen → hat — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "ich, bleiben → bin / du, schlafen → hast / wir, aufwachen → sind / sie (Singular), lesen → hat — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "ich, bleiben → bin / du, schlafen → hast / wir, aufwachen → sind / sie (Singular), lesen → hat — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-08-q04": {
-    "acceptedAnswers": [
-      "Er",
-      "hat",
-      "besichtigt."
-    ],
+    "acceptedAnswers": "false",
     "explanation": {
-      "fr": "Er commande la forme hat. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Er verlangt die Form hat. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Er يتطلب الصيغة hat. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Er requires the form hat. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Die Gäste sind gestern in Berlin angekommen. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Die Gäste sind gestern in Berlin angekommen. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Die Gäste sind gestern in Berlin angekommen. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Die Gäste sind gestern in Berlin angekommen. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-08-q05": {
-    "acceptedAnswers": "haben",
+    "acceptedAnswers": [
+      "Warum",
+      "bist",
+      "du so spät gekommen?"
+    ],
     "explanation": {
-      "fr": "Wir commande la forme haben. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Wir verlangt die Form haben. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Wir يتطلب الصيغة haben. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Wir requires the form haben. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Warum bist du so spät gekommen? — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Warum bist du so spät gekommen? — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Warum bist du so spät gekommen? — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Warum bist du so spät gekommen? — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-25-ubung-09-q01": {
     "acceptedAnswers": [
-      "habt"
+      "Seid",
+      "sind"
     ],
     "explanation": {
-      "fr": "Ihr commande la forme habt. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ihr verlangt die Form habt. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ihr يتطلب الصيغة habt. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ihr requires the form habt. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "A: Seid ihr schon im Museum gewesen? B: Nein, wir sind noch nicht dort gewesen. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "A: Seid ihr schon im Museum gewesen? B: Nein, wir sind noch nicht dort gewesen. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "A: Seid ihr schon im Museum gewesen? B: Nein, wir sind noch nicht dort gewesen. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "A: Seid ihr schon im Museum gewesen? B: Nein, wir sind noch nicht dort gewesen. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-09-q02": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "Hast",
+      "ist"
+    ],
     "explanation": {
-      "fr": "Die Kinder commande la forme haben. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Die Kinder verlangt die Form haben. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Die Kinder يتطلب الصيغة haben. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Die Kinder requires the form haben. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "A: Hast du den Schlüssel gefunden? B: Ja, aber er ist mir aus der Hand gefallen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "A: Hast du den Schlüssel gefunden? B: Ja, aber er ist mir aus der Hand gefallen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "A: Hast du den Schlüssel gefunden? B: Ja, aber er ist mir aus der Hand gefallen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "A: Hast du den Schlüssel gefunden? B: Ja, aber er ist mir aus der Hand gefallen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-09-q03": {
     "acceptedAnswers": [
-      "Ich",
-      "bin",
-      "gekommen."
+      "Sie ist gestern umgezogen.",
+      "Sie hat gestern ihre Wohnung geputzt."
     ],
     "explanation": {
-      "fr": "Ich commande la forme bin. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ich verlangt die Form bin. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ich يتطلب الصيغة bin. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ich requires the form bin. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Sie ist gestern umgezogen. / Sie hat gestern ihre Wohnung geputzt. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Sie ist gestern umgezogen. / Sie hat gestern ihre Wohnung geputzt. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Sie ist gestern umgezogen. / Sie hat gestern ihre Wohnung geputzt. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Sie ist gestern umgezogen. / Sie hat gestern ihre Wohnung geputzt. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-09-q04": {
-    "acceptedAnswers": "bist",
+    "acceptedAnswers": [
+      "ist",
+      "ist"
+    ],
     "explanation": {
-      "fr": "Du commande la forme bist. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Du verlangt die Form bist. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Du يتطلب الصيغة bist. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Du requires the form bist. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "A: Was ist passiert? B: Das Kind ist gestürzt. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "A: Was ist passiert? B: Das Kind ist gestürzt. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "A: Was ist passiert? B: Das Kind ist gestürzt. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "A: Was ist passiert? B: Das Kind ist gestürzt. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-09-q05": {
-    "acceptedAnswers": "ist",
+    "acceptedAnswers": [
+      "Wann",
+      "seid",
+      "ihr zu Hause angekommen?"
+    ],
     "explanation": {
-      "fr": "Er commande la forme ist. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Er verlangt die Form ist. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Er يتطلب الصيغة ist. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Er requires the form ist. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Wann seid ihr zu Hause angekommen? — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Wann seid ihr zu Hause angekommen? — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Wann seid ihr zu Hause angekommen? — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Wann seid ihr zu Hause angekommen? — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-25-ubung-10-q01": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "ist",
+      "hat"
+    ],
     "explanation": {
-      "fr": "Wir commande la forme sind. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Wir verlangt die Form sind. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Wir يتطلب الصيغة sind. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Wir requires the form sind. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Mein Bruder ist nach Berlin geflogen und hat dort Freunde besucht. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Mein Bruder ist nach Berlin geflogen und hat dort Freunde besucht. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Mein Bruder ist nach Berlin geflogen und hat dort Freunde besucht. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Mein Bruder ist nach Berlin geflogen und hat dort Freunde besucht. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-10-q02": {
     "acceptedAnswers": [
-      "Ihr",
-      "seid",
-      "geblieben."
+      "sind",
+      "haben"
     ],
     "explanation": {
-      "fr": "Ihr commande la forme seid. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ihr verlangt die Form seid. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ihr يتطلب الصيغة seid. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ihr requires the form seid. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Wir sind im Park spazieren gegangen und haben danach zu Hause gekocht. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Wir sind im Park spazieren gegangen und haben danach zu Hause gekocht. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Wir sind im Park spazieren gegangen und haben danach zu Hause gekocht. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Wir sind im Park spazieren gegangen und haben danach zu Hause gekocht. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-10-q03": {
-    "acceptedAnswers": "sind",
+    "acceptedAnswers": [
+      "Ich bin nach Hause gefahren.",
+      "Ich habe das Auto meines Vaters gefahren."
+    ],
     "explanation": {
-      "fr": "Die Kinder commande la forme sind. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Die Kinder verlangt die Form sind. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Die Kinder يتطلب الصيغة sind. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Die Kinder requires the form sind. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ich bin nach Hause gefahren. / Ich habe das Auto meines Vaters gefahren. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Ich bin nach Hause gefahren. / Ich habe das Auto meines Vaters gefahren. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Ich bin nach Hause gefahren. / Ich habe das Auto meines Vaters gefahren. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Ich bin nach Hause gefahren. / Ich habe das Auto meines Vaters gefahren. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-10-q04": {
-    "acceptedAnswers": "bin",
+    "acceptedAnswers": [
+      "bist",
+      "hast"
+    ],
     "explanation": {
-      "fr": "Ich commande la forme bin. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ich verlangt die Form bin. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ich يتطلب الصيغة bin. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ich requires the form bin. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Du bist krank geworden, aber du hast trotzdem bis abends gearbeitet. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Du bist krank geworden, aber du hast trotzdem bis abends gearbeitet. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Du bist krank geworden, aber du hast trotzdem bis abends gearbeitet. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Du bist krank geworden, aber du hast trotzdem bis abends gearbeitet. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-10-q05": {
     "acceptedAnswers": [
-      "bist"
+      "Am Wochenende",
+      "sind",
+      "meine Eltern in der Stadt geblieben."
     ],
     "explanation": {
-      "fr": "Du commande la forme bist. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Du verlangt die Form bist. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Du يتطلب الصيغة bist. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Du requires the form bist. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Am Wochenende sind meine Eltern in der Stadt geblieben. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Am Wochenende sind meine Eltern in der Stadt geblieben. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Am Wochenende sind meine Eltern in der Stadt geblieben. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Am Wochenende sind meine Eltern in der Stadt geblieben. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-25-ubung-11-q01": {
     "acceptedAnswers": [
-      "Er",
-      "ist",
-      "aufgewacht."
+      "sind",
+      "haben"
     ],
     "explanation": {
-      "fr": "Er commande la forme ist. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Er verlangt die Form ist. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Er يتطلب الصيغة ist. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Er requires the form ist. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Bei der Wanderung sind wir früh losgegangen und haben einen Rucksack mitgenommen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Bei der Wanderung sind wir früh losgegangen und haben einen Rucksack mitgenommen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Bei der Wanderung sind wir früh losgegangen und haben einen Rucksack mitgenommen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Bei der Wanderung sind wir früh losgegangen und haben einen Rucksack mitgenommen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-11-q02": {
-    "acceptedAnswers": "sind",
+    "acceptedAnswers": [
+      "ist",
+      "hat"
+    ],
     "explanation": {
-      "fr": "Wir commande la forme sind. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Wir verlangt die Form sind. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Wir يتطلب الصيغة sind. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Wir requires the form sind. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Meine Freundin ist auf dem Weg gestürzt, aber sie hat sich nicht verletzt. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Meine Freundin ist auf dem Weg gestürzt, aber sie hat sich nicht verletzt. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Meine Freundin ist auf dem Weg gestürzt, aber sie hat sich nicht verletzt. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Meine Freundin ist auf dem Weg gestürzt, aber sie hat sich nicht verletzt. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-11-q03": {
-    "acceptedAnswers": "seid",
+    "acceptedAnswers": [
+      "Wir sind den Berg hinaufgestiegen.",
+      "Wir haben oben Fotos gemacht."
+    ],
     "explanation": {
-      "fr": "Ihr commande la forme seid. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ihr verlangt die Form seid. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ihr يتطلب الصيغة seid. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ihr requires the form seid. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Wir sind den Berg hinaufgestiegen. / Wir haben oben Fotos gemacht. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Wir sind den Berg hinaufgestiegen. / Wir haben oben Fotos gemacht. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Wir sind den Berg hinaufgestiegen. / Wir haben oben Fotos gemacht. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Wir sind den Berg hinaufgestiegen. / Wir haben oben Fotos gemacht. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-11-q04": {
     "acceptedAnswers": [
-      "sind"
+      "bist",
+      "habe",
+      "seid",
+      "hat"
     ],
     "explanation": {
-      "fr": "Die Kinder commande la forme sind. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Die Kinder verlangt die Form sind. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Die Kinder يتطلب الصيغة sind. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Die Kinder requires the form sind. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "du, zurückkommen → bist / ich, fotografieren → habe / ihr, losgehen → seid / er, sich ausruhen → hat — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "du, zurückkommen → bist / ich, fotografieren → habe / ihr, losgehen → seid / er, sich ausruhen → hat — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "du, zurückkommen → bist / ich, fotografieren → habe / ihr, losgehen → seid / er, sich ausruhen → hat — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "du, zurückkommen → bist / ich, fotografieren → habe / ihr, losgehen → seid / er, sich ausruhen → hat — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-11-q05": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "Nach der Pause",
+      "sind",
+      "wir weitergewandert."
+    ],
     "explanation": {
-      "fr": "Ich commande la forme habe. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ich verlangt die Form habe. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ich يتطلب الصيغة habe. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ich requires the form habe. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Nach der Pause sind wir weitergewandert. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Nach der Pause sind wir weitergewandert. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Nach der Pause sind wir weitergewandert. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Nach der Pause sind wir weitergewandert. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   },
   "kapitel-25-ubung-12-q01": {
-    "acceptedAnswers": "hast",
+    "acceptedAnswers": [
+      "sind",
+      "haben"
+    ],
     "explanation": {
-      "fr": "Du commande la forme hast. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Du verlangt die Form hast. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Du يتطلب الصيغة hast. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Du requires the form hast. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Bei der Wohnungsbesichtigung sind wir zu spät angekommen und haben den Vermieter angerufen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Bei der Wohnungsbesichtigung sind wir zu spät angekommen und haben den Vermieter angerufen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Bei der Wohnungsbesichtigung sind wir zu spät angekommen und haben den Vermieter angerufen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Bei der Wohnungsbesichtigung sind wir zu spät angekommen und haben den Vermieter angerufen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-12-q02": {
-    "acceptedAnswers": "hat",
+    "acceptedAnswers": [
+      "ist",
+      "hat"
+    ],
     "explanation": {
-      "fr": "Er commande la forme hat. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Er verlangt die Form hat. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Er يتطلب الصيغة hat. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Er requires the form hat. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Er ist aus dem Büro gekommen und hat uns die Wohnung gezeigt. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Er ist aus dem Büro gekommen und hat uns die Wohnung gezeigt. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Er ist aus dem Büro gekommen und hat uns die Wohnung gezeigt. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Er ist aus dem Büro gekommen und hat uns die Wohnung gezeigt. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-12-q03": {
     "acceptedAnswers": [
+      "sind",
       "haben"
     ],
     "explanation": {
-      "fr": "Wir commande la forme haben. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Wir verlangt die Form haben. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Wir يتطلب الصيغة haben. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Wir requires the form haben. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Die Vormieter sind ausgezogen und haben ihre Möbel verkauft. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Die Vormieter sind ausgezogen und haben ihre Möbel verkauft. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Die Vormieter sind ausgezogen und haben ihre Möbel verkauft. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Die Vormieter sind ausgezogen und haben ihre Möbel verkauft. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-12-q04": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "Wir haben den Vertrag unterschrieben.",
+      "Wir sind am Samstag eingezogen."
+    ],
     "explanation": {
-      "fr": "Ihr commande la forme habt. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ihr verlangt die Form habt. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ihr يتطلب الصيغة habt. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ihr requires the form habt. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Wir haben den Vertrag unterschrieben. / Wir sind am Samstag eingezogen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Wir haben den Vertrag unterschrieben. / Wir sind am Samstag eingezogen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Wir haben den Vertrag unterschrieben. / Wir sind am Samstag eingezogen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Wir haben den Vertrag unterschrieben. / Wir sind am Samstag eingezogen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-12-q05": {
-    "acceptedAnswers": [
-      "Die Kinder",
-      "haben",
-      "geöffnet."
-    ],
+    "acceptedAnswers": "true",
     "explanation": {
-      "fr": "Die Kinder commande la forme haben. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Die Kinder verlangt die Form haben. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Die Kinder يتطلب الصيغة haben. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Die Kinder requires the form haben. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Die neue Nachbarin ist uns gestern begegnet. — Les verbes de déplacement sans objet direct et de changement d’état prennent souvent sein au Perfekt. Sein et bleiben prennent aussi sein. L’auxiliaire s’accorde avec le sujet.",
+      "de": "Die neue Nachbarin ist uns gestern begegnet. — Verben der Ortsveränderung ohne Akkusativobjekt und der Zustandsänderung bilden das Perfekt oft mit sein. Auch sein und bleiben nehmen sein. Das Hilfsverb richtet sich nach dem Subjekt.",
+      "ar": "Die neue Nachbarin ist uns gestern begegnet. — تأخذ أفعال الانتقال دون مفعول مباشر وتغير الحالة غالباً sein في البيرفكت. كذلك sein وbleiben. يطابق الفعل المساعد الفاعل.",
+      "en": "Die neue Nachbarin ist uns gestern begegnet. — Verbs of movement without a direct object and change of state often form the perfect with sein. Sein and bleiben also take sein. The auxiliary agrees with the subject."
     }
   },
   "kapitel-25-ubung-13-q01": {
-    "acceptedAnswers": "habe",
+    "acceptedAnswers": [
+      "bin",
+      "haben"
+    ],
     "explanation": {
-      "fr": "Ich commande la forme habe. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ich verlangt die Form habe. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ich يتطلب الصيغة habe. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ich requires the form habe. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Beim Konzert bin ich früh angekommen, aber meine Freunde haben den Bus verpasst. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Beim Konzert bin ich früh angekommen, aber meine Freunde haben den Bus verpasst. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Beim Konzert bin ich früh angekommen, aber meine Freunde haben den Bus verpasst. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Beim Konzert bin ich früh angekommen, aber meine Freunde haben den Bus verpasst. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-13-q02": {
     "acceptedAnswers": [
-      "hast"
+      "ist",
+      "hat"
     ],
     "explanation": {
-      "fr": "Du commande la forme hast. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Du verlangt die Form hast. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Du يتطلب الصيغة hast. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Du requires the form hast. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Der Sänger ist auf die Bühne gekommen und hat das Publikum begrüßt. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Der Sänger ist auf die Bühne gekommen und hat das Publikum begrüßt. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Der Sänger ist auf die Bühne gekommen und hat das Publikum begrüßt. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Der Sänger ist auf die Bühne gekommen und hat das Publikum begrüßt. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-13-q03": {
-    "acceptedAnswers": "true",
+    "acceptedAnswers": [
+      "habt",
+      "seid"
+    ],
     "explanation": {
-      "fr": "Er commande la forme hat. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Er verlangt die Form hat. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Er يتطلب الصيغة hat. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Er requires the form hat. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Ihr habt bis Mitternacht getanzt und seid danach nach Hause gelaufen. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Ihr habt bis Mitternacht getanzt und seid danach nach Hause gelaufen. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Ihr habt bis Mitternacht getanzt und seid danach nach Hause gelaufen. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Ihr habt bis Mitternacht getanzt und seid danach nach Hause gelaufen. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-13-q04": {
     "acceptedAnswers": [
-      "Wir",
-      "haben",
-      "gegessen."
+      "Der Strom ist ausgefallen.",
+      "Die Techniker haben das Problem gelöst."
     ],
     "explanation": {
-      "fr": "Wir commande la forme haben. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Wir verlangt die Form haben. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Wir يتطلب الصيغة haben. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Wir requires the form haben. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Der Strom ist ausgefallen. / Die Techniker haben das Problem gelöst. — Le choix dépend du sens et du verbe : un trajet ou un changement d’état prend souvent sein ; une activité comme arbeiten, essen ou schlafen prend haben. Fahren avec un véhicule comme objet direct prend haben.",
+      "de": "Der Strom ist ausgefallen. / Die Techniker haben das Problem gelöst. — Die Wahl hängt vom Verb und seiner Bedeutung ab: Orts- oder Zustandswechsel oft mit sein; Tätigkeiten wie arbeiten, essen oder schlafen mit haben. Fahren mit einem Fahrzeug als direktem Objekt nimmt haben.",
+      "ar": "Der Strom ist ausgefallen. / Die Techniker haben das Problem gelöst. — يعتمد الاختيار على الفعل ومعناه: الانتقال أو تغير الحالة غالباً مع sein؛ والعمل والأكل والنوم مع haben. يأخذ fahren مع مركبة كمفعول مباشر haben.",
+      "en": "Der Strom ist ausgefallen. / Die Techniker haben das Problem gelöst. — The choice depends on the verb and its meaning: movement or change of state often takes sein; activities such as arbeiten, essen or schlafen take haben. Fahren with a vehicle as direct object takes haben."
     }
   },
   "kapitel-25-ubung-13-q05": {
-    "acceptedAnswers": "habt",
+    "acceptedAnswers": [
+      "Nach dem Konzert",
+      "sind",
+      "alle Gäste nach Hause gegangen."
+    ],
     "explanation": {
-      "fr": "Ihr commande la forme habt. La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
-      "de": "Ihr verlangt die Form habt. Die meisten Verben bilden das Perfekt mit haben. Sein steht oft bei intransitiven Verben der Orts- oder Zustandsänderung. Auch sein, bleiben und passieren verlangen sein. Bewegung allein reicht nicht: Ich habe das Auto gefahren, aber Ich bin nach Hause gefahren.",
-      "ar": "الفاعل Ihr يتطلب الصيغة habt. معظم الأفعال تستعمل haben. ويستعمل sein غالبا مع الأفعال اللازمة التي تدل على انتقال أو تغير حالة. كذلك sein وbleiben وpassieren. الحركة وحدها لا تكفي: Ich habe das Auto gefahren مقابل Ich bin nach Hause gefahren.",
-      "en": "Ihr requires the form habt. Most verbs use haben. Sein often accompanies intransitive verbs expressing a change of location or state. Sein, bleiben and passieren also use sein. Motion alone is not sufficient: Ich habe das Auto gefahren versus Ich bin nach Hause gefahren."
+      "fr": "Nach dem Konzert sind alle Gäste nach Hause gegangen. — Dans une déclaration, le verbe conjugué occupe la deuxième position ; dans une question fermée, la première. Avec un mot interrogatif, il suit celui-ci. Au Perfekt, le participe termine la proposition principale.",
+      "de": "Nach dem Konzert sind alle Gäste nach Hause gegangen. — Im Aussagesatz steht das finite Verb an zweiter Stelle, in der Ja/Nein-Frage an erster. In der W-Frage folgt es dem Fragewort. Im Perfekt steht das Partizip am Ende des Hauptsatzes.",
+      "ar": "Nach dem Konzert sind alle Gäste nach Hause gegangen. — في الجملة الخبرية يأتي الفعل المصرف في الموقع الثاني، وفي سؤال نعم/لا في الأول، وبعد أداة الاستفهام في السؤال المفتوح. في البيرفكت يأتي اسم المفعول في نهاية الجملة الرئيسية.",
+      "en": "Nach dem Konzert sind alle Gäste nach Hause gegangen. — In a statement the finite verb is second; in a yes/no question it is first. In a wh-question it follows the question word. In the perfect the participle ends the main clause."
     }
   }
 }

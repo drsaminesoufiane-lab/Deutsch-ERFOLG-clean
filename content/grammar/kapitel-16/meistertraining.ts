@@ -23,16 +23,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "den",
           "das",
           "der",
-          "dem"
+          "dem",
+          "den"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich brauche ___ Wecker.",
-          "de": "Wählen Sie den definit Artikel: Ich brauche ___ Wecker.",
-          "ar": "اختر الأداة معرف: Ich brauche ___ Wecker.",
-          "en": "Choose the definite article: Ich brauche ___ Wecker."
+          "fr": "Ich brauche ___ Wecker. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich brauche ___ Wecker. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich brauche ___ Wecker. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich brauche ___ Wecker. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -42,15 +42,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "das",
-          "den",
           "der",
+          "den",
           "dem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich brauche ___ Computer.",
-          "de": "Wählen Sie den definit Artikel: Ich brauche ___ Computer.",
-          "ar": "اختر الأداة معرف: Ich brauche ___ Computer.",
-          "en": "Choose the definite article: Ich brauche ___ Computer."
+          "fr": "Ich brauche ___ Computer. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich brauche ___ Computer. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich brauche ___ Computer. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich brauche ___ Computer. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -59,16 +59,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "dem",
           "der",
           "den",
-          "das"
+          "das",
+          "dem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich brauche ___ Pass.",
-          "de": "Wählen Sie den definit Artikel: Ich brauche ___ Pass.",
-          "ar": "اختر الأداة معرف: Ich brauche ___ Pass.",
-          "en": "Choose the definite article: Ich brauche ___ Pass."
+          "fr": "Ich brauche ___ Pass. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich brauche ___ Pass. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich brauche ___ Pass. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich brauche ___ Pass. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -78,10 +78,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich brauche ___ Kreditkarte.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
+          "fr": "Complétez avec l’article défini (der/die/das).",
+          "de": "Ergänzen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "أكمل باستخدام أداة التعريف (der/die/das).",
+          "en": "Complete with the definite article (der/die/das)."
         }
       },
       {
@@ -90,10 +90,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich brauche den Schirm.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -102,16 +102,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "der",
-          "die",
+          "den",
           "das",
-          "den"
+          "die",
+          "der"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich brauche ___ Tasche.",
-          "de": "Wählen Sie den definit Artikel: Ich brauche ___ Tasche.",
-          "ar": "اختر الأداة معرف: Ich brauche ___ Tasche.",
-          "en": "Choose the definite article: Ich brauche ___ Tasche."
+          "fr": "Ich brauche ___ Tasche. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich brauche ___ Tasche. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich brauche ___ Tasche. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich brauche ___ Tasche. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -122,14 +122,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "options": [
           "der",
           "das",
-          "den",
-          "dem"
+          "dem",
+          "den"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich brauche ___ MP3-Player.",
-          "de": "Wählen Sie den definit Artikel: Ich brauche ___ MP3-Player.",
-          "ar": "اختر الأداة معرف: Ich brauche ___ MP3-Player.",
-          "en": "Choose the definite article: Ich brauche ___ MP3-Player."
+          "fr": "Ich brauche ___ MP3-Player. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich brauche ___ MP3-Player. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich brauche ___ MP3-Player. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich brauche ___ MP3-Player. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -138,15 +138,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "die",
           "den",
-          "das"
+          "das",
+          "die"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich brauche ___ Schuhe.",
-          "de": "Wählen Sie den definit Artikel: Ich brauche ___ Schuhe.",
-          "ar": "اختر الأداة معرف: Ich brauche ___ Schuhe.",
-          "en": "Choose the definite article: Ich brauche ___ Schuhe."
+          "fr": "Ich brauche ___ Schuhe. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich brauche ___ Schuhe. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich brauche ___ Schuhe. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich brauche ___ Schuhe. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -156,22 +156,22 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich brauche ___ Socken.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
+          "fr": "Complétez avec l’article défini (der/die/das).",
+          "de": "Ergänzen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "أكمل باستخدام أداة التعريف (der/die/das).",
+          "en": "Complete with the definite article (der/die/das)."
         }
       },
       {
         "id": "kapitel-16-ubung-01-q10",
         "position": 10,
         "type": "true_false",
-        "statement": "Ich brauche das Pyjama.",
+        "statement": "Ich brauche das Regenschirm.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -180,16 +180,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "die",
-          "dem",
           "das",
-          "den"
+          "den",
+          "die",
+          "dem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich brauche ___ Waschzeug.",
-          "de": "Wählen Sie den definit Artikel: Ich brauche ___ Waschzeug.",
-          "ar": "اختر الأداة معرف: Ich brauche ___ Waschzeug.",
-          "en": "Choose the definite article: Ich brauche ___ Waschzeug."
+          "fr": "Ich brauche ___ Waschzeug. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich brauche ___ Waschzeug. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich brauche ___ Waschzeug. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich brauche ___ Waschzeug. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -198,16 +198,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "die",
           "das",
+          "den",
           "der",
-          "den"
+          "die"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich brauche ___ Zeitung.",
-          "de": "Wählen Sie den definit Artikel: Ich brauche ___ Zeitung.",
-          "ar": "اختر الأداة معرف: Ich brauche ___ Zeitung.",
-          "en": "Choose the definite article: Ich brauche ___ Zeitung."
+          "fr": "Ich brauche ___ Zeitung. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich brauche ___ Zeitung. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich brauche ___ Zeitung. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich brauche ___ Zeitung. — Choose the definite article (der/die/das)."
         }
       }
     ]
@@ -235,82 +235,21 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "einer",
           "ein",
           "einen",
-          "einer",
           "eine"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Walter kauft ___ Flasche Wein.",
-          "de": "Wählen Sie den indefinit Artikel: Walter kauft ___ Flasche Wein.",
-          "ar": "اختر الأداة نكرة: Walter kauft ___ Flasche Wein.",
-          "en": "Choose the indefinite article: Walter kauft ___ Flasche Wein."
+          "fr": "Walter kauft ___ Flasche Wein. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Walter kauft ___ Flasche Wein. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Walter kauft ___ Flasche Wein. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Walter kauft ___ Flasche Wein. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
         "id": "kapitel-16-ubung-02-q02",
         "position": 2,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "einem",
-          "ein",
-          "einen",
-          "eine"
-        ],
-        "prompt": {
-          "fr": "Choisissez l’article indéfini : Walter kauft ___ Glas Marmelade.",
-          "de": "Wählen Sie den indefinit Artikel: Walter kauft ___ Glas Marmelade.",
-          "ar": "اختر الأداة نكرة: Walter kauft ___ Glas Marmelade.",
-          "en": "Choose the indefinite article: Walter kauft ___ Glas Marmelade."
-        }
-      },
-      {
-        "id": "kapitel-16-ubung-02-q03",
-        "position": 3,
-        "type": "fill_blank",
-        "sentence": "Walter kauft ___ Schwarzbrot.",
-        "blanks": 1,
-        "prompt": {
-          "fr": "Complétez avec l’article indéfini.",
-          "de": "Ergänzen Sie den indefinit Artikel.",
-          "ar": "أكمل بالأداة: نكرة",
-          "en": "Complete with the indefinite article."
-        }
-      },
-      {
-        "id": "kapitel-16-ubung-02-q04",
-        "position": 4,
-        "type": "true_false",
-        "statement": "Walter kauft einen Brötchen.",
-        "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
-        }
-      },
-      {
-        "id": "kapitel-16-ubung-02-q05",
-        "position": 5,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "ein",
-          "einer",
-          "eine",
-          "einen"
-        ],
-        "prompt": {
-          "fr": "Choisissez l’article indéfini : Walter kauft ___ Packung Milch.",
-          "de": "Wählen Sie den indefinit Artikel: Walter kauft ___ Packung Milch.",
-          "ar": "اختر الأداة نكرة: Walter kauft ___ Packung Milch.",
-          "en": "Choose the indefinite article: Walter kauft ___ Packung Milch."
-        }
-      },
-      {
-        "id": "kapitel-16-ubung-02-q06",
-        "position": 6,
         "type": "qcm",
         "selection": "single",
         "options": [
@@ -320,10 +259,71 @@ export const meistertraining: ExerciseSetDefinition[] = [
           "ein"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Walter kauft ___ Salat.",
-          "de": "Wählen Sie den indefinit Artikel: Walter kauft ___ Salat.",
-          "ar": "اختر الأداة نكرة: Walter kauft ___ Salat.",
-          "en": "Choose the indefinite article: Walter kauft ___ Salat."
+          "fr": "Walter kauft ___ Glas Marmelade. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Walter kauft ___ Glas Marmelade. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Walter kauft ___ Glas Marmelade. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Walter kauft ___ Glas Marmelade. — Choose the indefinite article (ein/eine; ∅ in the plural)."
+        }
+      },
+      {
+        "id": "kapitel-16-ubung-02-q03",
+        "position": 3,
+        "type": "fill_blank",
+        "sentence": "Walter kauft ___ Schwarzbrot.",
+        "blanks": 1,
+        "prompt": {
+          "fr": "Complétez avec l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ergänzen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "أكمل باستخدام أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Complete with the indefinite article (ein/eine; ∅ in the plural)."
+        }
+      },
+      {
+        "id": "kapitel-16-ubung-02-q04",
+        "position": 4,
+        "type": "true_false",
+        "statement": "Walter kauft einen Brötchen.",
+        "prompt": {
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
+        }
+      },
+      {
+        "id": "kapitel-16-ubung-02-q05",
+        "position": 5,
+        "type": "qcm",
+        "selection": "single",
+        "options": [
+          "einer",
+          "einen",
+          "eine",
+          "ein"
+        ],
+        "prompt": {
+          "fr": "Walter kauft ___ Packung Milch. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Walter kauft ___ Packung Milch. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Walter kauft ___ Packung Milch. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Walter kauft ___ Packung Milch. — Choose the indefinite article (ein/eine; ∅ in the plural)."
+        }
+      },
+      {
+        "id": "kapitel-16-ubung-02-q06",
+        "position": 6,
+        "type": "qcm",
+        "selection": "single",
+        "options": [
+          "ein",
+          "einem",
+          "einen",
+          "eine"
+        ],
+        "prompt": {
+          "fr": "Walter kauft ___ Salat. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Walter kauft ___ Salat. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Walter kauft ___ Salat. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Walter kauft ___ Salat. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -338,23 +338,23 @@ export const meistertraining: ExerciseSetDefinition[] = [
           "ein"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Walter kauft ___ Tomaten.",
-          "de": "Wählen Sie den indefinit Artikel: Walter kauft ___ Tomaten.",
-          "ar": "اختر الأداة نكرة: Walter kauft ___ Tomaten.",
-          "en": "Choose the indefinite article: Walter kauft ___ Tomaten."
+          "fr": "Walter kauft ___ Tomaten. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Walter kauft ___ Tomaten. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Walter kauft ___ Tomaten. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Walter kauft ___ Tomaten. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
         "id": "kapitel-16-ubung-02-q08",
         "position": 8,
         "type": "fill_blank",
-        "sentence": "Walter kauft ___ Joghurt.",
+        "sentence": "Walter kauft ___ Joghurt. (der Joghurt)",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article indéfini.",
-          "de": "Ergänzen Sie den indefinit Artikel.",
-          "ar": "أكمل بالأداة: نكرة",
-          "en": "Complete with the indefinite article."
+          "fr": "Complétez avec l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ergänzen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "أكمل باستخدام أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Complete with the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -363,10 +363,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Walter kauft einen Schokoladenkuchen.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       }
     ]
@@ -394,16 +394,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "einen",
           "eine",
-          "einem",
-          "ein"
+          "einen",
+          "ein",
+          "einem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Thomas hat ___ Auto.",
-          "de": "Wählen Sie den indefinit Artikel: Thomas hat ___ Auto.",
-          "ar": "اختر الأداة نكرة: Thomas hat ___ Auto.",
-          "en": "Choose the indefinite article: Thomas hat ___ Auto."
+          "fr": "Thomas hat ___ Auto. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Thomas hat ___ Auto. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Thomas hat ___ Auto. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Thomas hat ___ Auto. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -413,10 +413,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Thomas hat ___ Bett.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article indéfini.",
-          "de": "Ergänzen Sie den indefinit Artikel.",
-          "ar": "أكمل بالأداة: نكرة",
-          "en": "Complete with the indefinite article."
+          "fr": "Complétez avec l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ergänzen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "أكمل باستخدام أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Complete with the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -425,10 +425,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Thomas hat einen Fernseher.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -437,16 +437,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "ein",
           "eine",
           "einen",
-          "einem",
-          "ein"
+          "einem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Thomas hat ___ Tisch.",
-          "de": "Wählen Sie den indefinit Artikel: Thomas hat ___ Tisch.",
-          "ar": "اختر الأداة نكرة: Thomas hat ___ Tisch.",
-          "en": "Choose the indefinite article: Thomas hat ___ Tisch."
+          "fr": "Thomas hat ___ Tisch. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Thomas hat ___ Tisch. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Thomas hat ___ Tisch. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Thomas hat ___ Tisch. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -456,15 +456,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "keinen",
-          "kein",
+          "keine",
           "keinem",
-          "keine"
+          "kein"
         ],
         "prompt": {
-          "fr": "Choisissez l’article négatif : Thomas hat ___ Fahrrad.",
-          "de": "Wählen Sie den Negativartikel Artikel: Thomas hat ___ Fahrrad.",
-          "ar": "اختر الأداة نفي: Thomas hat ___ Fahrrad.",
-          "en": "Choose the negative article: Thomas hat ___ Fahrrad."
+          "fr": "Thomas hat ___ Fahrrad. — Choisissez la forme de kein.",
+          "de": "Thomas hat ___ Fahrrad. — Wählen Sie die passende Form von kein.",
+          "ar": "Thomas hat ___ Fahrrad. — اختر صيغة kein المناسبة.",
+          "en": "Thomas hat ___ Fahrrad. — Choose the correct form of kein."
         }
       },
       {
@@ -473,16 +473,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "kein",
-          "keiner",
           "keinen",
-          "keine"
+          "kein",
+          "keine",
+          "keiner"
         ],
         "prompt": {
-          "fr": "Choisissez l’article négatif : Thomas hat ___ Waschmaschine.",
-          "de": "Wählen Sie den Negativartikel Artikel: Thomas hat ___ Waschmaschine.",
-          "ar": "اختر الأداة نفي: Thomas hat ___ Waschmaschine.",
-          "en": "Choose the negative article: Thomas hat ___ Waschmaschine."
+          "fr": "Thomas hat ___ Waschmaschine. — Choisissez la forme de kein.",
+          "de": "Thomas hat ___ Waschmaschine. — Wählen Sie die passende Form von kein.",
+          "ar": "Thomas hat ___ Waschmaschine. — اختر صيغة kein المناسبة.",
+          "en": "Thomas hat ___ Waschmaschine. — Choose the correct form of kein."
         }
       },
       {
@@ -492,10 +492,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Thomas hat ___ Telefon.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article négatif.",
-          "de": "Ergänzen Sie den Negativartikel Artikel.",
-          "ar": "أكمل بالأداة: نفي",
-          "en": "Complete with the negative article."
+          "fr": "Complétez avec la forme de kein.",
+          "de": "Ergänzen Sie die passende Form von kein.",
+          "ar": "أكمل باستخدام صيغة kein المناسبة.",
+          "en": "Complete with the correct form of kein."
         }
       },
       {
@@ -504,10 +504,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Thomas hat keinem Computer.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -518,14 +518,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "options": [
           "kein",
           "keine",
-          "keinem",
-          "keinen"
+          "keinen",
+          "keinem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article négatif : Thomas hat ___ Stuhl.",
-          "de": "Wählen Sie den Negativartikel Artikel: Thomas hat ___ Stuhl.",
-          "ar": "اختر الأداة نفي: Thomas hat ___ Stuhl.",
-          "en": "Choose the negative article: Thomas hat ___ Stuhl."
+          "fr": "Thomas hat ___ Stuhl. — Choisissez la forme de kein.",
+          "de": "Thomas hat ___ Stuhl. — Wählen Sie die passende Form von kein.",
+          "ar": "Thomas hat ___ Stuhl. — اختر صيغة kein المناسبة.",
+          "en": "Thomas hat ___ Stuhl. — Choose the correct form of kein."
         }
       },
       {
@@ -534,16 +534,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "keinem",
-          "keine",
           "keinen",
-          "kein"
+          "keine",
+          "kein",
+          "keinem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article négatif : Thomas hat ___ Kühlschrank.",
-          "de": "Wählen Sie den Negativartikel Artikel: Thomas hat ___ Kühlschrank.",
-          "ar": "اختر الأداة نفي: Thomas hat ___ Kühlschrank.",
-          "en": "Choose the negative article: Thomas hat ___ Kühlschrank."
+          "fr": "Thomas hat ___ Kühlschrank. — Choisissez la forme de kein.",
+          "de": "Thomas hat ___ Kühlschrank. — Wählen Sie die passende Form von kein.",
+          "ar": "Thomas hat ___ Kühlschrank. — اختر صيغة kein المناسبة.",
+          "en": "Thomas hat ___ Kühlschrank. — Choose the correct form of kein."
         }
       },
       {
@@ -554,14 +554,14 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "options": [
           "keinem",
           "keinen",
-          "keine",
-          "kein"
+          "kein",
+          "keine"
         ],
         "prompt": {
-          "fr": "Choisissez l’article négatif : Thomas hat ___ Haus.",
-          "de": "Wählen Sie den Negativartikel Artikel: Thomas hat ___ Haus.",
-          "ar": "اختر الأداة نفي: Thomas hat ___ Haus.",
-          "en": "Choose the negative article: Thomas hat ___ Haus."
+          "fr": "Thomas hat ___ Haus. — Choisissez la forme de kein.",
+          "de": "Thomas hat ___ Haus. — Wählen Sie die passende Form von kein.",
+          "ar": "Thomas hat ___ Haus. — اختر صيغة kein المناسبة.",
+          "en": "Thomas hat ___ Haus. — Choose the correct form of kein."
         }
       }
     ]
@@ -590,10 +590,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "___ Kuh frisst Gras.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
+          "fr": "Complétez avec l’article défini (der/die/das).",
+          "de": "Ergänzen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "أكمل باستخدام أداة التعريف (der/die/das).",
+          "en": "Complete with the definite article (der/die/das)."
         }
       },
       {
@@ -602,10 +602,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Der Mensch trinkt der Milch.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -614,16 +614,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "den",
-          "dem",
-          "das",
-          "der"
+          "Der",
+          "Dem",
+          "Den",
+          "Das"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Fisch frisst Pflanzen.",
-          "de": "Wählen Sie den definit Artikel: ___ Fisch frisst Pflanzen.",
-          "ar": "اختر الأداة معرف: ___ Fisch frisst Pflanzen.",
-          "en": "Choose the definite article: ___ Fisch frisst Pflanzen."
+          "fr": "___ Fisch frisst Pflanzen. — Choisissez l’article défini (der/die/das).",
+          "de": "___ Fisch frisst Pflanzen. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "___ Fisch frisst Pflanzen. — اختر أداة التعريف (der/die/das).",
+          "en": "___ Fisch frisst Pflanzen. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -632,16 +632,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "der",
           "dem",
-          "das",
-          "den"
+          "der",
+          "den",
+          "das"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Der Mensch isst ___ Fisch.",
-          "de": "Wählen Sie den definit Artikel: Der Mensch isst ___ Fisch.",
-          "ar": "اختر الأداة معرف: Der Mensch isst ___ Fisch.",
-          "en": "Choose the definite article: Der Mensch isst ___ Fisch."
+          "fr": "Der Mensch isst ___ Fisch. — Choisissez l’article défini (der/die/das).",
+          "de": "Der Mensch isst ___ Fisch. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Der Mensch isst ___ Fisch. — اختر أداة التعريف (der/die/das).",
+          "en": "Der Mensch isst ___ Fisch. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -650,16 +650,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "die",
-          "das",
-          "den",
-          "der"
+          "Die",
+          "Den",
+          "Das",
+          "Der"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Hühner fressen Körner.",
-          "de": "Wählen Sie den definit Artikel: ___ Hühner fressen Körner.",
-          "ar": "اختر الأداة معرف: ___ Hühner fressen Körner.",
-          "en": "Choose the definite article: ___ Hühner fressen Körner."
+          "fr": "___ Hühner fressen Körner. — Choisissez l’article défini (der/die/das).",
+          "de": "___ Hühner fressen Körner. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "___ Hühner fressen Körner. — اختر أداة التعريف (der/die/das).",
+          "en": "___ Hühner fressen Körner. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -669,10 +669,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Der Mensch isst ___ Hühner.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
+          "fr": "Complétez avec l’article défini (der/die/das).",
+          "de": "Ergänzen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "أكمل باستخدام أداة التعريف (der/die/das).",
+          "en": "Complete with the definite article (der/die/das)."
         }
       }
     ]
@@ -700,10 +700,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich sehe den Mann.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -712,16 +712,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "den",
-          "die",
           "der",
-          "das"
+          "den",
+          "das",
+          "die"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich sehe ___ Frau.",
-          "de": "Wählen Sie den definit Artikel: Ich sehe ___ Frau.",
-          "ar": "اختر الأداة معرف: Ich sehe ___ Frau.",
-          "en": "Choose the definite article: Ich sehe ___ Frau."
+          "fr": "Ich sehe ___ Frau. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich sehe ___ Frau. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich sehe ___ Frau. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich sehe ___ Frau. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -730,16 +730,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "die",
           "dem",
           "den",
-          "die",
           "das"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich sehe ___ Kind.",
-          "de": "Wählen Sie den definit Artikel: Ich sehe ___ Kind.",
-          "ar": "اختر الأداة معرف: Ich sehe ___ Kind.",
-          "en": "Choose the definite article: Ich sehe ___ Kind."
+          "fr": "Ich sehe ___ Kind. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich sehe ___ Kind. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich sehe ___ Kind. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich sehe ___ Kind. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -748,15 +748,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "die",
           "das",
+          "die",
           "den"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Ich sehe ___ Leute.",
-          "de": "Wählen Sie den definit Artikel: Ich sehe ___ Leute.",
-          "ar": "اختر الأداة معرف: Ich sehe ___ Leute.",
-          "en": "Choose the definite article: Ich sehe ___ Leute."
+          "fr": "Ich sehe ___ Leute. — Choisissez l’article défini (der/die/das).",
+          "de": "Ich sehe ___ Leute. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Ich sehe ___ Leute. — اختر أداة التعريف (der/die/das).",
+          "en": "Ich sehe ___ Leute. — Choose the definite article (der/die/das)."
         }
       }
     ]
@@ -785,15 +785,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "selection": "single",
         "options": [
           "einem",
-          "einen",
+          "eine",
           "ein",
-          "eine"
+          "einen"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Wir trinken ___ Glas Wein.",
-          "de": "Wählen Sie den indefinit Artikel: Wir trinken ___ Glas Wein.",
-          "ar": "اختر الأداة نكرة: Wir trinken ___ Glas Wein.",
-          "en": "Choose the indefinite article: Wir trinken ___ Glas Wein."
+          "fr": "Wir trinken ___ Glas Wein. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Wir trinken ___ Glas Wein. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Wir trinken ___ Glas Wein. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Wir trinken ___ Glas Wein. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -802,16 +802,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "einen",
-          "ein",
           "einer",
-          "eine"
+          "einen",
+          "eine",
+          "ein"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Ich höre ___ Oper.",
-          "de": "Wählen Sie den indefinit Artikel: Ich höre ___ Oper.",
-          "ar": "اختر الأداة نكرة: Ich höre ___ Oper.",
-          "en": "Choose the indefinite article: Ich höre ___ Oper."
+          "fr": "Ich höre ___ Oper. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ich höre ___ Oper. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Ich höre ___ Oper. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Ich höre ___ Oper. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -820,16 +820,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "ein",
           "eine",
-          "einen",
           "∅",
-          "ein"
+          "einen"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Meine Freunde lesen ___ Bücher.",
-          "de": "Wählen Sie den indefinit Artikel: Meine Freunde lesen ___ Bücher.",
-          "ar": "اختر الأداة نكرة: Meine Freunde lesen ___ Bücher.",
-          "en": "Choose the indefinite article: Meine Freunde lesen ___ Bücher."
+          "fr": "Meine Freunde lesen ___ Bücher. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Meine Freunde lesen ___ Bücher. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Meine Freunde lesen ___ Bücher. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Meine Freunde lesen ___ Bücher. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -839,10 +839,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich brauche ___ Stift.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article indéfini.",
-          "de": "Ergänzen Sie den indefinit Artikel.",
-          "ar": "أكمل بالأداة: نكرة",
-          "en": "Complete with the indefinite article."
+          "fr": "Complétez avec l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Ergänzen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "أكمل باستخدام أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Complete with the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -851,10 +851,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Wir kaufen ein Auto.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -863,16 +863,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
+          "ein",
           "einem",
           "einen",
-          "ein",
           "eine"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Wir sehen ___ Film.",
-          "de": "Wählen Sie den indefinit Artikel: Wir sehen ___ Film.",
-          "ar": "اختر الأداة نكرة: Wir sehen ___ Film.",
-          "en": "Choose the indefinite article: Wir sehen ___ Film."
+          "fr": "Wir sehen ___ Film. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Wir sehen ___ Film. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Wir sehen ___ Film. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Wir sehen ___ Film. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       }
     ]
@@ -900,15 +900,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "das",
-          "die",
-          "den"
+          "Die",
+          "Den",
+          "Das"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Stühle finde ich schön.",
-          "de": "Wählen Sie den definit Artikel: ___ Stühle finde ich schön.",
-          "ar": "اختر الأداة معرف: ___ Stühle finde ich schön.",
-          "en": "Choose the definite article: ___ Stühle finde ich schön."
+          "fr": "___ Stühle finde ich schön. — Choisissez l’article défini (der/die/das).",
+          "de": "___ Stühle finde ich schön. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "___ Stühle finde ich schön. — اختر أداة التعريف (der/die/das).",
+          "en": "___ Stühle finde ich schön. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -917,16 +917,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "mein",
-          "meinen",
-          "meine",
-          "meinem"
+          "Mein",
+          "Meinem",
+          "Meinen",
+          "Meine"
         ],
         "prompt": {
-          "fr": "Choisissez l’article possessif mein : ___ Sohn besucht uns.",
-          "de": "Wählen Sie den Possessivartikel mein Artikel: ___ Sohn besucht uns.",
-          "ar": "اختر الأداة ملكية mein: ___ Sohn besucht uns.",
-          "en": "Choose the possessive mein article: ___ Sohn besucht uns."
+          "fr": "___ Sohn besucht uns. — Choisissez la forme de mein.",
+          "de": "___ Sohn besucht uns. — Wählen Sie die passende Form von mein.",
+          "ar": "___ Sohn besucht uns. — اختر صيغة mein المناسبة.",
+          "en": "___ Sohn besucht uns. — Choose the correct form of mein."
         }
       },
       {
@@ -936,23 +936,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Die Kinder lieben ___ Lehrerin.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
+          "fr": "Complétez avec l’article défini (der/die/das).",
+          "de": "Ergänzen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "أكمل باستخدام أداة التعريف (der/die/das).",
+          "en": "Complete with the definite article (der/die/das)."
         }
       },
       {
         "id": "kapitel-16-ubung-07-q04",
         "position": 4,
-        "type": "true_false",
-        "statement": "dem Wein bezahle ich.",
+        "type": "qcm",
+        "selection": "multiple",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
-        }
+          "fr": "Sélectionnez toutes les phrases grammaticalement correctes.",
+          "de": "Wählen Sie alle grammatisch richtigen Sätze.",
+          "ar": "اختر كل الجمل الصحيحة نحوياً.",
+          "en": "Select all grammatically correct sentences."
+        },
+        "options": [
+          "Der Gast bezahlt den Wein.",
+          "Den Gast bezahlt dem Wein.",
+          "Dem Wein bezahlt der Gast.",
+          "Den Wein bezahlt der Gast."
+        ]
       },
       {
         "id": "kapitel-16-ubung-07-q05",
@@ -960,16 +966,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "der",
-          "den",
-          "das",
-          "dem"
+          "Dem",
+          "Den",
+          "Das",
+          "Der"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Kellner bringt das Essen.",
-          "de": "Wählen Sie den definit Artikel: ___ Kellner bringt das Essen.",
-          "ar": "اختر الأداة معرف: ___ Kellner bringt das Essen.",
-          "en": "Choose the definite article: ___ Kellner bringt das Essen."
+          "fr": "___ Kellner bringt das Essen. — Choisissez l’article défini (der/die/das).",
+          "de": "___ Kellner bringt das Essen. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "___ Kellner bringt das Essen. — اختر أداة التعريف (der/die/das).",
+          "en": "___ Kellner bringt das Essen. — Choose the definite article (der/die/das)."
         }
       }
     ]
@@ -997,16 +1003,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "einem",
           "ein",
+          "einem",
           "eine",
           "einen"
         ],
         "prompt": {
-          "fr": "Choisissez l’article indéfini : Jetzt habe ich ___ Hund.",
-          "de": "Wählen Sie den indefinit Artikel: Jetzt habe ich ___ Hund.",
-          "ar": "اختر الأداة نكرة: Jetzt habe ich ___ Hund.",
-          "en": "Choose the indefinite article: Jetzt habe ich ___ Hund."
+          "fr": "Jetzt habe ich ___ Hund. — Choisissez l’article indéfini (ein/eine ; ∅ au pluriel).",
+          "de": "Jetzt habe ich ___ Hund. — Wählen Sie den unbestimmten Artikel (ein/eine; ∅ im Plural).",
+          "ar": "Jetzt habe ich ___ Hund. — اختر أداة النكرة (ein/eine؛ ∅ في الجمع).",
+          "en": "Jetzt habe ich ___ Hund. — Choose the indefinite article (ein/eine; ∅ in the plural)."
         }
       },
       {
@@ -1016,10 +1022,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "___ Hund heißt Flocki.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article défini.",
-          "de": "Ergänzen Sie den definit Artikel.",
-          "ar": "أكمل بالأداة: معرف",
-          "en": "Complete with the definite article."
+          "fr": "Complétez avec l’article défini (der/die/das).",
+          "de": "Ergänzen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "أكمل باستخدام أداة التعريف (der/die/das).",
+          "en": "Complete with the definite article (der/die/das)."
         }
       },
       {
@@ -1028,10 +1034,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich habe auch eine Katze.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -1040,16 +1046,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "dem",
-          "den",
-          "das",
-          "der"
+          "Dem",
+          "Der",
+          "Den",
+          "Das"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Hund liebe ich sehr.",
-          "de": "Wählen Sie den definit Artikel: ___ Hund liebe ich sehr.",
-          "ar": "اختر الأداة معرف: ___ Hund liebe ich sehr.",
-          "en": "Choose the definite article: ___ Hund liebe ich sehr."
+          "fr": "___ Hund liebe ich sehr. — Choisissez l’article défini (der/die/das).",
+          "de": "___ Hund liebe ich sehr. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "___ Hund liebe ich sehr. — اختر أداة التعريف (der/die/das).",
+          "en": "___ Hund liebe ich sehr. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -1058,33 +1064,29 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "der",
-          "die",
-          "das"
+          "Der",
+          "Das",
+          "Die"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Katze mag den Hund.",
-          "de": "Wählen Sie den definit Artikel: ___ Katze mag den Hund.",
-          "ar": "اختر الأداة معرف: ___ Katze mag den Hund.",
-          "en": "Choose the definite article: ___ Katze mag den Hund."
+          "fr": "___ Katze mag den Hund. — Choisissez l’article défini (der/die/das).",
+          "de": "___ Katze mag den Hund. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "___ Katze mag den Hund. — اختر أداة التعريف (der/die/das).",
+          "en": "___ Katze mag den Hund. — Choose the definite article (der/die/das)."
         }
       },
       {
         "id": "kapitel-16-ubung-08-q06",
         "position": 6,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "die",
-          "den",
-          "das"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez l’article défini : Die Katze möchte ___ Fische fressen.",
-          "de": "Wählen Sie den definit Artikel: Die Katze möchte ___ Fische fressen.",
-          "ar": "اختر الأداة معرف: Die Katze möchte ___ Fische fressen.",
-          "en": "Choose the definite article: Die Katze möchte ___ Fische fressen."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Die Katze sieht ___ Fisch im Aquarium. ___ Fisch schwimmt schnell weg. (bestimmt)",
+        "blanks": 2
       }
     ]
   },
@@ -1112,10 +1114,10 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "sentence": "Ich besuche ___ Vater.",
         "blanks": 1,
         "prompt": {
-          "fr": "Complétez avec l’article possessif mein.",
-          "de": "Ergänzen Sie den Possessivartikel mein Artikel.",
-          "ar": "أكمل بالأداة: ملكية mein",
-          "en": "Complete with the possessive mein article."
+          "fr": "Complétez avec la forme de mein.",
+          "de": "Ergänzen Sie die passende Form von mein.",
+          "ar": "أكمل باستخدام صيغة mein المناسبة.",
+          "en": "Complete with the correct form of mein."
         }
       },
       {
@@ -1124,29 +1126,24 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "true_false",
         "statement": "Ich besuche meiner Mutter.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
         "id": "kapitel-16-ubung-09-q03",
         "position": 3,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "meinem",
-          "mein",
-          "meine",
-          "meinen"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez l’article possessif mein : Ich besuche ___ Kind.",
-          "de": "Wählen Sie den Possessivartikel mein Artikel: Ich besuche ___ Kind.",
-          "ar": "اختر الأداة ملكية mein: Ich besuche ___ Kind.",
-          "en": "Choose the possessive mein article: Ich besuche ___ Kind."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "Ich besuche ___ Kind und ___ Eltern. (mein)",
+        "blanks": 2
       },
       {
         "id": "kapitel-16-ubung-09-q04",
@@ -1154,15 +1151,15 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "mein",
           "meinen",
+          "mein",
           "meine"
         ],
         "prompt": {
-          "fr": "Choisissez l’article possessif mein : Ich besuche ___ Eltern.",
-          "de": "Wählen Sie den Possessivartikel mein Artikel: Ich besuche ___ Eltern.",
-          "ar": "اختر الأداة ملكية mein: Ich besuche ___ Eltern.",
-          "en": "Choose the possessive mein article: Ich besuche ___ Eltern."
+          "fr": "Ich besuche ___ Eltern. — Choisissez la forme de mein.",
+          "de": "Ich besuche ___ Eltern. — Wählen Sie die passende Form von mein.",
+          "ar": "Ich besuche ___ Eltern. — اختر صيغة mein المناسبة.",
+          "en": "Ich besuche ___ Eltern. — Choose the correct form of mein."
         }
       }
     ]
@@ -1188,12 +1185,12 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "id": "kapitel-16-ubung-10-q01",
         "position": 1,
         "type": "true_false",
-        "statement": "der Arzt sucht den Patienten.",
+        "statement": "Der Arzt sucht den Patienten.",
         "prompt": {
-          "fr": "La forme de l’article est-elle correcte ?",
-          "de": "Ist die Artikelform richtig?",
-          "ar": "هل صيغة الأداة صحيحة؟",
-          "en": "Is the article form correct?"
+          "fr": "La forme soulignée par le contexte est-elle correcte (grammaire et référent) ?",
+          "de": "Ist die Form im gegebenen Kontext grammatisch und inhaltlich richtig?",
+          "ar": "هل الصيغة صحيحة نحوياً ومناسبة للمرجع في السياق؟",
+          "en": "Is the form grammatically correct and appropriate for its referent in context?"
         }
       },
       {
@@ -1202,16 +1199,16 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "den",
-          "dem",
           "das",
-          "der"
+          "den",
+          "der",
+          "dem"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : Den Arzt sucht ___ Patient.",
-          "de": "Wählen Sie den definit Artikel: Den Arzt sucht ___ Patient.",
-          "ar": "اختر الأداة معرف: Den Arzt sucht ___ Patient.",
-          "en": "Choose the definite article: Den Arzt sucht ___ Patient."
+          "fr": "Den Arzt sucht ___ Patient. — Choisissez l’article défini (der/die/das).",
+          "de": "Den Arzt sucht ___ Patient. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "Den Arzt sucht ___ Patient. — اختر أداة التعريف (der/die/das).",
+          "en": "Den Arzt sucht ___ Patient. — Choose the definite article (der/die/das)."
         }
       },
       {
@@ -1220,35 +1217,30 @@ export const meistertraining: ExerciseSetDefinition[] = [
         "type": "qcm",
         "selection": "single",
         "options": [
-          "den",
-          "dem",
-          "der",
-          "das"
+          "Das",
+          "Der",
+          "Dem",
+          "Den"
         ],
         "prompt": {
-          "fr": "Choisissez l’article défini : ___ Lehrer kennt die Schülerin.",
-          "de": "Wählen Sie den definit Artikel: ___ Lehrer kennt die Schülerin.",
-          "ar": "اختر الأداة معرف: ___ Lehrer kennt die Schülerin.",
-          "en": "Choose the definite article: ___ Lehrer kennt die Schülerin."
+          "fr": "___ Lehrer kennt die Schülerin. — Choisissez l’article défini (der/die/das).",
+          "de": "___ Lehrer kennt die Schülerin. — Wählen Sie den bestimmten Artikel (der/die/das).",
+          "ar": "___ Lehrer kennt die Schülerin. — اختر أداة التعريف (der/die/das).",
+          "en": "___ Lehrer kennt die Schülerin. — Choose the definite article (der/die/das)."
         }
       },
       {
         "id": "kapitel-16-ubung-10-q04",
         "position": 4,
-        "type": "qcm",
-        "selection": "single",
-        "options": [
-          "dem",
-          "der",
-          "das",
-          "den"
-        ],
+        "type": "fill_blank",
         "prompt": {
-          "fr": "Choisissez l’article défini : Die Schülerin kennt ___ Lehrer.",
-          "de": "Wählen Sie den definit Artikel: Die Schülerin kennt ___ Lehrer.",
-          "ar": "اختر الأداة معرف: Die Schülerin kennt ___ Lehrer.",
-          "en": "Choose the definite article: Die Schülerin kennt ___ Lehrer."
-        }
+          "fr": "Complétez les formes selon les indications et le contexte.",
+          "de": "Ergänzen Sie die Formen nach den Angaben und dem Kontext.",
+          "ar": "أكمل الصيغ حسب التعليمات والسياق.",
+          "en": "Complete the forms using the cues and context."
+        },
+        "sentence": "___ Lehrer fragt die Schülerin. Später fragt die Schülerin ___ Lehrer. (bestimmt)",
+        "blanks": 2
       }
     ]
   }
