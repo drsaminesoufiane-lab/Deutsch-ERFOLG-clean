@@ -20,6 +20,147 @@ export const lesson: LessonDefinition = {
     "en": "Form questions and understand answers."
   },
   "blocks": [
+{
+  "type": "paragraph",
+  "id": "refonte-theorie",
+  "title": {
+    "fr": "Comprendre et appliquer la règle",
+    "de": "Die Regel verstehen und anwenden",
+    "ar": "فهم القاعدة وتطبيقها",
+    "en": "Understand and apply the rule"
+  },
+  "text": {
+    "fr": "Le mot interrogatif indique l’information recherchée. Wo demande un lieu, wohin une destination, woher une origine. Le verbe conjugué suit le groupe interrogatif, puis le sujet si celui-ci n’est pas déjà le mot interrogatif.",
+    "de": "Das Fragewort bestimmt die gesuchte Information. Wo fragt nach Ort, wohin nach Ziel, woher nach Herkunft. Das finite Verb folgt der Fragegruppe; danach kommt das Subjekt, sofern es nicht selbst das Fragewort ist.",
+    "ar": "أداة السؤال تحدد المعلومة المطلوبة. wo للمكان وwohin للوجهة وwoher للمصدر. يأتي الفعل المصرف بعد أداة السؤال ثم الفاعل إن لم تكن الأداة نفسها فاعلا.",
+    "en": "The question word specifies the information sought. Wo asks location, wohin destination, woher origin. The finite verb follows the question phrase, then the subject unless the question word itself is the subject."
+  }
+},
+{
+  "type": "examples",
+  "id": "refonte-exemples",
+  "title": {
+    "fr": "Exemples traduits",
+    "de": "Übersetzte Beispiele",
+    "ar": "أمثلة مترجمة",
+    "en": "Translated examples"
+  },
+  "items": [
+    {
+      "id": "refonte-1",
+      "german": "Wer kommt?",
+      "context": {
+        "fr": "Qui vient ?",
+        "de": "Wer kommt?",
+        "ar": "من يأتي؟",
+        "en": "Who is coming?"
+      },
+      "explanation": {
+        "fr": "Le mot interrogatif indique l’information recherchée. Wo demande un lieu, wohin une destination, woher une origine. Le verbe conjugué suit le groupe interrogatif, puis le sujet si celui-ci n’est pas déjà le mot interrogatif.",
+        "de": "Das Fragewort bestimmt die gesuchte Information. Wo fragt nach Ort, wohin nach Ziel, woher nach Herkunft. Das finite Verb folgt der Fragegruppe; danach kommt das Subjekt, sofern es nicht selbst das Fragewort ist.",
+        "ar": "أداة السؤال تحدد المعلومة المطلوبة. wo للمكان وwohin للوجهة وwoher للمصدر. يأتي الفعل المصرف بعد أداة السؤال ثم الفاعل إن لم تكن الأداة نفسها فاعلا.",
+        "en": "The question word specifies the information sought. Wo asks location, wohin destination, woher origin. The finite verb follows the question phrase, then the subject unless the question word itself is the subject."
+      }
+    },
+    {
+      "id": "refonte-2",
+      "german": "Was machst du?",
+      "context": {
+        "fr": "Que fais-tu ?",
+        "de": "Was machst du?",
+        "ar": "ماذا تفعل؟",
+        "en": "What are you doing?"
+      },
+      "explanation": {
+        "fr": "Le mot interrogatif indique l’information recherchée. Wo demande un lieu, wohin une destination, woher une origine. Le verbe conjugué suit le groupe interrogatif, puis le sujet si celui-ci n’est pas déjà le mot interrogatif.",
+        "de": "Das Fragewort bestimmt die gesuchte Information. Wo fragt nach Ort, wohin nach Ziel, woher nach Herkunft. Das finite Verb folgt der Fragegruppe; danach kommt das Subjekt, sofern es nicht selbst das Fragewort ist.",
+        "ar": "أداة السؤال تحدد المعلومة المطلوبة. wo للمكان وwohin للوجهة وwoher للمصدر. يأتي الفعل المصرف بعد أداة السؤال ثم الفاعل إن لم تكن الأداة نفسها فاعلا.",
+        "en": "The question word specifies the information sought. Wo asks location, wohin destination, woher origin. The finite verb follows the question phrase, then the subject unless the question word itself is the subject."
+      }
+    },
+    {
+      "id": "refonte-3",
+      "german": "Wo wohnst du?",
+      "context": {
+        "fr": "Où habites-tu ?",
+        "de": "Wo wohnst du?",
+        "ar": "أين تسكن؟",
+        "en": "Where do you live?"
+      },
+      "explanation": {
+        "fr": "Le mot interrogatif indique l’information recherchée. Wo demande un lieu, wohin une destination, woher une origine. Le verbe conjugué suit le groupe interrogatif, puis le sujet si celui-ci n’est pas déjà le mot interrogatif.",
+        "de": "Das Fragewort bestimmt die gesuchte Information. Wo fragt nach Ort, wohin nach Ziel, woher nach Herkunft. Das finite Verb folgt der Fragegruppe; danach kommt das Subjekt, sofern es nicht selbst das Fragewort ist.",
+        "ar": "أداة السؤال تحدد المعلومة المطلوبة. wo للمكان وwohin للوجهة وwoher للمصدر. يأتي الفعل المصرف بعد أداة السؤال ثم الفاعل إن لم تكن الأداة نفسها فاعلا.",
+        "en": "The question word specifies the information sought. Wo asks location, wohin destination, woher origin. The finite verb follows the question phrase, then the subject unless the question word itself is the subject."
+      }
+    },
+    {
+      "id": "refonte-4",
+      "german": "Woher kommst du?",
+      "context": {
+        "fr": "D’où viens-tu ?",
+        "de": "Woher kommst du?",
+        "ar": "من أين أنت؟",
+        "en": "Where are you from?"
+      },
+      "explanation": {
+        "fr": "Le mot interrogatif indique l’information recherchée. Wo demande un lieu, wohin une destination, woher une origine. Le verbe conjugué suit le groupe interrogatif, puis le sujet si celui-ci n’est pas déjà le mot interrogatif.",
+        "de": "Das Fragewort bestimmt die gesuchte Information. Wo fragt nach Ort, wohin nach Ziel, woher nach Herkunft. Das finite Verb folgt der Fragegruppe; danach kommt das Subjekt, sofern es nicht selbst das Fragewort ist.",
+        "ar": "أداة السؤال تحدد المعلومة المطلوبة. wo للمكان وwohin للوجهة وwoher للمصدر. يأتي الفعل المصرف بعد أداة السؤال ثم الفاعل إن لم تكن الأداة نفسها فاعلا.",
+        "en": "The question word specifies the information sought. Wo asks location, wohin destination, woher origin. The finite verb follows the question phrase, then the subject unless the question word itself is the subject."
+      }
+    },
+    {
+      "id": "refonte-5",
+      "german": "Wohin gehst du?",
+      "context": {
+        "fr": "Où vas-tu ?",
+        "de": "Wohin gehst du?",
+        "ar": "إلى أين تذهب؟",
+        "en": "Where are you going?"
+      },
+      "explanation": {
+        "fr": "Le mot interrogatif indique l’information recherchée. Wo demande un lieu, wohin une destination, woher une origine. Le verbe conjugué suit le groupe interrogatif, puis le sujet si celui-ci n’est pas déjà le mot interrogatif.",
+        "de": "Das Fragewort bestimmt die gesuchte Information. Wo fragt nach Ort, wohin nach Ziel, woher nach Herkunft. Das finite Verb folgt der Fragegruppe; danach kommt das Subjekt, sofern es nicht selbst das Fragewort ist.",
+        "ar": "أداة السؤال تحدد المعلومة المطلوبة. wo للمكان وwohin للوجهة وwoher للمصدر. يأتي الفعل المصرف بعد أداة السؤال ثم الفاعل إن لم تكن الأداة نفسها فاعلا.",
+        "en": "The question word specifies the information sought. Wo asks location, wohin destination, woher origin. The finite verb follows the question phrase, then the subject unless the question word itself is the subject."
+      }
+    },
+    {
+      "id": "refonte-6",
+      "german": "Wann beginnt der Kurs?",
+      "context": {
+        "fr": "Quand commence le cours ?",
+        "de": "Wann beginnt der Kurs?",
+        "ar": "متى يبدأ الدرس؟",
+        "en": "When does the course start?"
+      },
+      "explanation": {
+        "fr": "Le mot interrogatif indique l’information recherchée. Wo demande un lieu, wohin une destination, woher une origine. Le verbe conjugué suit le groupe interrogatif, puis le sujet si celui-ci n’est pas déjà le mot interrogatif.",
+        "de": "Das Fragewort bestimmt die gesuchte Information. Wo fragt nach Ort, wohin nach Ziel, woher nach Herkunft. Das finite Verb folgt der Fragegruppe; danach kommt das Subjekt, sofern es nicht selbst das Fragewort ist.",
+        "ar": "أداة السؤال تحدد المعلومة المطلوبة. wo للمكان وwohin للوجهة وwoher للمصدر. يأتي الفعل المصرف بعد أداة السؤال ثم الفاعل إن لم تكن الأداة نفسها فاعلا.",
+        "en": "The question word specifies the information sought. Wo asks location, wohin destination, woher origin. The finite verb follows the question phrase, then the subject unless the question word itself is the subject."
+      }
+    },
+    {
+      "id": "refonte-7",
+      "german": "Wie heißt du?",
+      "context": {
+        "fr": "Comment t’appelles-tu ?",
+        "de": "Wie heißt du?",
+        "ar": "ما اسمك؟",
+        "en": "What is your name?"
+      },
+      "explanation": {
+        "fr": "Le mot interrogatif indique l’information recherchée. Wo demande un lieu, wohin une destination, woher une origine. Le verbe conjugué suit le groupe interrogatif, puis le sujet si celui-ci n’est pas déjà le mot interrogatif.",
+        "de": "Das Fragewort bestimmt die gesuchte Information. Wo fragt nach Ort, wohin nach Ziel, woher nach Herkunft. Das finite Verb folgt der Fragegruppe; danach kommt das Subjekt, sofern es nicht selbst das Fragewort ist.",
+        "ar": "أداة السؤال تحدد المعلومة المطلوبة. wo للمكان وwohin للوجهة وwoher للمصدر. يأتي الفعل المصرف بعد أداة السؤال ثم الفاعل إن لم تكن الأداة نفسها فاعلا.",
+        "en": "The question word specifies the information sought. Wo asks location, wohin destination, woher origin. The finite verb follows the question phrase, then the subject unless the question word itself is the subject."
+      }
+    }
+  ]
+},
+
     {
       "type": "table",
       "id": "words",

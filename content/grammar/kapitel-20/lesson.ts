@@ -20,6 +20,131 @@ export const lesson: LessonDefinition = {
     "en": "A pronoun replaces a known noun. First identify the referent, then its function in the new sentence. Grammatical gender matters: das Mädchen → es."
   },
   "blocks": [
+{
+  "type": "paragraph",
+  "id": "refonte-theorie",
+  "title": {
+    "fr": "Comprendre et appliquer la règle",
+    "de": "Die Regel verstehen und anwenden",
+    "ar": "فهم القاعدة وتطبيقها",
+    "en": "Understand and apply the rule"
+  },
+  "text": {
+    "fr": "Le pronom conserve le cas du groupe remplacé. Den Mann devient ihn, dem Mann devient ihm. Mit exige le datif, ohne l’accusatif. Uns et euch ont la même forme aux deux cas ; le contexte détermine leur fonction. Ihnen avec majuscule est le datif de politesse.",
+    "de": "Das Pronomen behält den Kasus: den Mann → ihn, dem Mann → ihm. Mit verlangt Dativ, ohne Akkusativ. Uns und euch sind in beiden Fällen gleich; der Kontext bestimmt die Funktion. Höfliches Ihnen schreibt man groß.",
+    "ar": "يحتفظ الضمير بحالة الاسم: den Mann → ihn وdem Mann → ihm. mit للداتيف وohne للأكوزاتيف. uns وeuch متطابقان في الحالتين. Ihnen بحرف كبير للمخاطبة الرسمية.",
+    "en": "The pronoun keeps the case of the phrase it replaces: den Mann → ihn, dem Mann → ihm. Mit requires dative, ohne accusative. Uns and euch have identical forms in both cases. Formal Ihnen is capitalized."
+  }
+},
+{
+  "type": "examples",
+  "id": "refonte-exemples",
+  "title": {
+    "fr": "Exemples traduits",
+    "de": "Übersetzte Beispiele",
+    "ar": "أمثلة مترجمة",
+    "en": "Translated examples"
+  },
+  "items": [
+    {
+      "id": "refonte-1",
+      "german": "Ich sehe dich.",
+      "context": {
+        "fr": "Je te vois.",
+        "de": "Ich sehe dich.",
+        "ar": "أراك.",
+        "en": "I see you."
+      },
+      "explanation": {
+        "fr": "Le pronom conserve le cas du groupe remplacé. Den Mann devient ihn, dem Mann devient ihm. Mit exige le datif, ohne l’accusatif. Uns et euch ont la même forme aux deux cas ; le contexte détermine leur fonction. Ihnen avec majuscule est le datif de politesse.",
+        "de": "Das Pronomen behält den Kasus: den Mann → ihn, dem Mann → ihm. Mit verlangt Dativ, ohne Akkusativ. Uns und euch sind in beiden Fällen gleich; der Kontext bestimmt die Funktion. Höfliches Ihnen schreibt man groß.",
+        "ar": "يحتفظ الضمير بحالة الاسم: den Mann → ihn وdem Mann → ihm. mit للداتيف وohne للأكوزاتيف. uns وeuch متطابقان في الحالتين. Ihnen بحرف كبير للمخاطبة الرسمية.",
+        "en": "The pronoun keeps the case of the phrase it replaces: den Mann → ihn, dem Mann → ihm. Mit requires dative, ohne accusative. Uns and euch have identical forms in both cases. Formal Ihnen is capitalized."
+      }
+    },
+    {
+      "id": "refonte-2",
+      "german": "Ich helfe dir.",
+      "context": {
+        "fr": "Je t’aide.",
+        "de": "Ich helfe dir.",
+        "ar": "أساعدك.",
+        "en": "I help you."
+      },
+      "explanation": {
+        "fr": "Le pronom conserve le cas du groupe remplacé. Den Mann devient ihn, dem Mann devient ihm. Mit exige le datif, ohne l’accusatif. Uns et euch ont la même forme aux deux cas ; le contexte détermine leur fonction. Ihnen avec majuscule est le datif de politesse.",
+        "de": "Das Pronomen behält den Kasus: den Mann → ihn, dem Mann → ihm. Mit verlangt Dativ, ohne Akkusativ. Uns und euch sind in beiden Fällen gleich; der Kontext bestimmt die Funktion. Höfliches Ihnen schreibt man groß.",
+        "ar": "يحتفظ الضمير بحالة الاسم: den Mann → ihn وdem Mann → ihm. mit للداتيف وohne للأكوزاتيف. uns وeuch متطابقان في الحالتين. Ihnen بحرف كبير للمخاطبة الرسمية.",
+        "en": "The pronoun keeps the case of the phrase it replaces: den Mann → ihn, dem Mann → ihm. Mit requires dative, ohne accusative. Uns and euch have identical forms in both cases. Formal Ihnen is capitalized."
+      }
+    },
+    {
+      "id": "refonte-3",
+      "german": "Sie liebt ihn.",
+      "context": {
+        "fr": "Elle l’aime.",
+        "de": "Sie liebt ihn.",
+        "ar": "هي تحبه.",
+        "en": "She loves him."
+      },
+      "explanation": {
+        "fr": "Le pronom conserve le cas du groupe remplacé. Den Mann devient ihn, dem Mann devient ihm. Mit exige le datif, ohne l’accusatif. Uns et euch ont la même forme aux deux cas ; le contexte détermine leur fonction. Ihnen avec majuscule est le datif de politesse.",
+        "de": "Das Pronomen behält den Kasus: den Mann → ihn, dem Mann → ihm. Mit verlangt Dativ, ohne Akkusativ. Uns und euch sind in beiden Fällen gleich; der Kontext bestimmt die Funktion. Höfliches Ihnen schreibt man groß.",
+        "ar": "يحتفظ الضمير بحالة الاسم: den Mann → ihn وdem Mann → ihm. mit للداتيف وohne للأكوزاتيف. uns وeuch متطابقان في الحالتين. Ihnen بحرف كبير للمخاطبة الرسمية.",
+        "en": "The pronoun keeps the case of the phrase it replaces: den Mann → ihn, dem Mann → ihm. Mit requires dative, ohne accusative. Uns and euch have identical forms in both cases. Formal Ihnen is capitalized."
+      }
+    },
+    {
+      "id": "refonte-4",
+      "german": "Sie spricht mit ihm.",
+      "context": {
+        "fr": "Elle parle avec lui.",
+        "de": "Sie spricht mit ihm.",
+        "ar": "تتحدث معه.",
+        "en": "She talks with him."
+      },
+      "explanation": {
+        "fr": "Le pronom conserve le cas du groupe remplacé. Den Mann devient ihn, dem Mann devient ihm. Mit exige le datif, ohne l’accusatif. Uns et euch ont la même forme aux deux cas ; le contexte détermine leur fonction. Ihnen avec majuscule est le datif de politesse.",
+        "de": "Das Pronomen behält den Kasus: den Mann → ihn, dem Mann → ihm. Mit verlangt Dativ, ohne Akkusativ. Uns und euch sind in beiden Fällen gleich; der Kontext bestimmt die Funktion. Höfliches Ihnen schreibt man groß.",
+        "ar": "يحتفظ الضمير بحالة الاسم: den Mann → ihn وdem Mann → ihm. mit للداتيف وohne للأكوزاتيف. uns وeuch متطابقان في الحالتين. Ihnen بحرف كبير للمخاطبة الرسمية.",
+        "en": "The pronoun keeps the case of the phrase it replaces: den Mann → ihn, dem Mann → ihm. Mit requires dative, ohne accusative. Uns and euch have identical forms in both cases. Formal Ihnen is capitalized."
+      }
+    },
+    {
+      "id": "refonte-5",
+      "german": "Kann ich Ihnen helfen?",
+      "context": {
+        "fr": "Puis-je vous aider ?",
+        "de": "Kann ich Ihnen helfen?",
+        "ar": "هل يمكنني مساعدتك؟",
+        "en": "Can I help you?"
+      },
+      "explanation": {
+        "fr": "Le pronom conserve le cas du groupe remplacé. Den Mann devient ihn, dem Mann devient ihm. Mit exige le datif, ohne l’accusatif. Uns et euch ont la même forme aux deux cas ; le contexte détermine leur fonction. Ihnen avec majuscule est le datif de politesse.",
+        "de": "Das Pronomen behält den Kasus: den Mann → ihn, dem Mann → ihm. Mit verlangt Dativ, ohne Akkusativ. Uns und euch sind in beiden Fällen gleich; der Kontext bestimmt die Funktion. Höfliches Ihnen schreibt man groß.",
+        "ar": "يحتفظ الضمير بحالة الاسم: den Mann → ihn وdem Mann → ihm. mit للداتيف وohne للأكوزاتيف. uns وeuch متطابقان في الحالتين. Ihnen بحرف كبير للمخاطبة الرسمية.",
+        "en": "The pronoun keeps the case of the phrase it replaces: den Mann → ihn, dem Mann → ihm. Mit requires dative, ohne accusative. Uns and euch have identical forms in both cases. Formal Ihnen is capitalized."
+      }
+    },
+    {
+      "id": "refonte-6",
+      "german": "Wir fahren ohne sie.",
+      "context": {
+        "fr": "Nous partons sans elle/eux.",
+        "de": "Wir fahren ohne sie.",
+        "ar": "نسافر بدونها أو بدونهم.",
+        "en": "We travel without her/them."
+      },
+      "explanation": {
+        "fr": "Le pronom conserve le cas du groupe remplacé. Den Mann devient ihn, dem Mann devient ihm. Mit exige le datif, ohne l’accusatif. Uns et euch ont la même forme aux deux cas ; le contexte détermine leur fonction. Ihnen avec majuscule est le datif de politesse.",
+        "de": "Das Pronomen behält den Kasus: den Mann → ihn, dem Mann → ihm. Mit verlangt Dativ, ohne Akkusativ. Uns und euch sind in beiden Fällen gleich; der Kontext bestimmt die Funktion. Höfliches Ihnen schreibt man groß.",
+        "ar": "يحتفظ الضمير بحالة الاسم: den Mann → ihn وdem Mann → ihm. mit للداتيف وohne للأكوزاتيف. uns وeuch متطابقان في الحالتين. Ihnen بحرف كبير للمخاطبة الرسمية.",
+        "en": "The pronoun keeps the case of the phrase it replaces: den Mann → ihn, dem Mann → ihm. Mit requires dative, ohne accusative. Uns and euch have identical forms in both cases. Formal Ihnen is capitalized."
+      }
+    }
+  ]
+},
+
     {
       "type": "paragraph",
       "id": "intro",

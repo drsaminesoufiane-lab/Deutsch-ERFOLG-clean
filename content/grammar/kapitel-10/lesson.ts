@@ -20,6 +20,131 @@ export const lesson: LessonDefinition = {
     "en": "Form questions and understand answers."
   },
   "blocks": [
+{
+  "type": "paragraph",
+  "id": "refonte-theorie",
+  "title": {
+    "fr": "Comprendre et appliquer la règle",
+    "de": "Die Regel verstehen und anwenden",
+    "ar": "فهم القاعدة وتطبيقها",
+    "en": "Understand and apply the rule"
+  },
+  "text": {
+    "fr": "Une question fermée commence par le verbe conjugué, suivi du sujet. Les autres éléments gardent leur rôle, notamment le préfixe séparé ou l’infinitif final. Répondez ja ou nein ; doch contredit une question négative.",
+    "de": "Eine Entscheidungsfrage beginnt mit dem finiten Verb, danach folgt das Subjekt. Vorsilbe oder Infinitiv bleiben am Ende. Antworte mit ja oder nein; doch widerspricht einer negativen Frage.",
+    "ar": "يبدأ سؤال نعم أو لا بالفعل المصرف ثم الفاعل. تبقى السابقة المنفصلة أو المصدر في النهاية. نجيب ja أو nein ونستعمل doch لنفي مضمون سؤال منفي.",
+    "en": "A yes/no question starts with the finite verb, followed by the subject. The prefix or infinitive remains at the end. Answer ja or nein; doch contradicts a negative question."
+  }
+},
+{
+  "type": "examples",
+  "id": "refonte-exemples",
+  "title": {
+    "fr": "Exemples traduits",
+    "de": "Übersetzte Beispiele",
+    "ar": "أمثلة مترجمة",
+    "en": "Translated examples"
+  },
+  "items": [
+    {
+      "id": "refonte-1",
+      "german": "Lernst du Deutsch?",
+      "context": {
+        "fr": "Apprends-tu l’allemand ?",
+        "de": "Lernst du Deutsch?",
+        "ar": "هل تتعلم الألمانية؟",
+        "en": "Do you learn German?"
+      },
+      "explanation": {
+        "fr": "Une question fermée commence par le verbe conjugué, suivi du sujet. Les autres éléments gardent leur rôle, notamment le préfixe séparé ou l’infinitif final. Répondez ja ou nein ; doch contredit une question négative.",
+        "de": "Eine Entscheidungsfrage beginnt mit dem finiten Verb, danach folgt das Subjekt. Vorsilbe oder Infinitiv bleiben am Ende. Antworte mit ja oder nein; doch widerspricht einer negativen Frage.",
+        "ar": "يبدأ سؤال نعم أو لا بالفعل المصرف ثم الفاعل. تبقى السابقة المنفصلة أو المصدر في النهاية. نجيب ja أو nein ونستعمل doch لنفي مضمون سؤال منفي.",
+        "en": "A yes/no question starts with the finite verb, followed by the subject. The prefix or infinitive remains at the end. Answer ja or nein; doch contradicts a negative question."
+      }
+    },
+    {
+      "id": "refonte-2",
+      "german": "Ist er hier?",
+      "context": {
+        "fr": "Est-il ici ?",
+        "de": "Ist er hier?",
+        "ar": "هل هو هنا؟",
+        "en": "Is he here?"
+      },
+      "explanation": {
+        "fr": "Une question fermée commence par le verbe conjugué, suivi du sujet. Les autres éléments gardent leur rôle, notamment le préfixe séparé ou l’infinitif final. Répondez ja ou nein ; doch contredit une question négative.",
+        "de": "Eine Entscheidungsfrage beginnt mit dem finiten Verb, danach folgt das Subjekt. Vorsilbe oder Infinitiv bleiben am Ende. Antworte mit ja oder nein; doch widerspricht einer negativen Frage.",
+        "ar": "يبدأ سؤال نعم أو لا بالفعل المصرف ثم الفاعل. تبقى السابقة المنفصلة أو المصدر في النهاية. نجيب ja أو nein ونستعمل doch لنفي مضمون سؤال منفي.",
+        "en": "A yes/no question starts with the finite verb, followed by the subject. The prefix or infinitive remains at the end. Answer ja or nein; doch contradicts a negative question."
+      }
+    },
+    {
+      "id": "refonte-3",
+      "german": "Haben Sie Zeit?",
+      "context": {
+        "fr": "Avez-vous le temps ?",
+        "de": "Haben Sie Zeit?",
+        "ar": "هل لديك وقت؟",
+        "en": "Do you have time?"
+      },
+      "explanation": {
+        "fr": "Une question fermée commence par le verbe conjugué, suivi du sujet. Les autres éléments gardent leur rôle, notamment le préfixe séparé ou l’infinitif final. Répondez ja ou nein ; doch contredit une question négative.",
+        "de": "Eine Entscheidungsfrage beginnt mit dem finiten Verb, danach folgt das Subjekt. Vorsilbe oder Infinitiv bleiben am Ende. Antworte mit ja oder nein; doch widerspricht einer negativen Frage.",
+        "ar": "يبدأ سؤال نعم أو لا بالفعل المصرف ثم الفاعل. تبقى السابقة المنفصلة أو المصدر في النهاية. نجيب ja أو nein ونستعمل doch لنفي مضمون سؤال منفي.",
+        "en": "A yes/no question starts with the finite verb, followed by the subject. The prefix or infinitive remains at the end. Answer ja or nein; doch contradicts a negative question."
+      }
+    },
+    {
+      "id": "refonte-4",
+      "german": "Kannst du kommen?",
+      "context": {
+        "fr": "Peux-tu venir ?",
+        "de": "Kannst du kommen?",
+        "ar": "هل تستطيع المجيء؟",
+        "en": "Can you come?"
+      },
+      "explanation": {
+        "fr": "Une question fermée commence par le verbe conjugué, suivi du sujet. Les autres éléments gardent leur rôle, notamment le préfixe séparé ou l’infinitif final. Répondez ja ou nein ; doch contredit une question négative.",
+        "de": "Eine Entscheidungsfrage beginnt mit dem finiten Verb, danach folgt das Subjekt. Vorsilbe oder Infinitiv bleiben am Ende. Antworte mit ja oder nein; doch widerspricht einer negativen Frage.",
+        "ar": "يبدأ سؤال نعم أو لا بالفعل المصرف ثم الفاعل. تبقى السابقة المنفصلة أو المصدر في النهاية. نجيب ja أو nein ونستعمل doch لنفي مضمون سؤال منفي.",
+        "en": "A yes/no question starts with the finite verb, followed by the subject. The prefix or infinitive remains at the end. Answer ja or nein; doch contradicts a negative question."
+      }
+    },
+    {
+      "id": "refonte-5",
+      "german": "Kaufst du ein?",
+      "context": {
+        "fr": "Fais-tu les courses ?",
+        "de": "Kaufst du ein?",
+        "ar": "هل تتسوق؟",
+        "en": "Are you shopping?"
+      },
+      "explanation": {
+        "fr": "Une question fermée commence par le verbe conjugué, suivi du sujet. Les autres éléments gardent leur rôle, notamment le préfixe séparé ou l’infinitif final. Répondez ja ou nein ; doch contredit une question négative.",
+        "de": "Eine Entscheidungsfrage beginnt mit dem finiten Verb, danach folgt das Subjekt. Vorsilbe oder Infinitiv bleiben am Ende. Antworte mit ja oder nein; doch widerspricht einer negativen Frage.",
+        "ar": "يبدأ سؤال نعم أو لا بالفعل المصرف ثم الفاعل. تبقى السابقة المنفصلة أو المصدر في النهاية. نجيب ja أو nein ونستعمل doch لنفي مضمون سؤال منفي.",
+        "en": "A yes/no question starts with the finite verb, followed by the subject. The prefix or infinitive remains at the end. Answer ja or nein; doch contradicts a negative question."
+      }
+    },
+    {
+      "id": "refonte-6",
+      "german": "Kommst du nicht? – Doch!",
+      "context": {
+        "fr": "Tu ne viens pas ? – Si !",
+        "de": "Kommst du nicht? – Doch!",
+        "ar": "ألن تأتي؟ بلى!",
+        "en": "Aren’t you coming? – Yes, I am!"
+      },
+      "explanation": {
+        "fr": "Une question fermée commence par le verbe conjugué, suivi du sujet. Les autres éléments gardent leur rôle, notamment le préfixe séparé ou l’infinitif final. Répondez ja ou nein ; doch contredit une question négative.",
+        "de": "Eine Entscheidungsfrage beginnt mit dem finiten Verb, danach folgt das Subjekt. Vorsilbe oder Infinitiv bleiben am Ende. Antworte mit ja oder nein; doch widerspricht einer negativen Frage.",
+        "ar": "يبدأ سؤال نعم أو لا بالفعل المصرف ثم الفاعل. تبقى السابقة المنفصلة أو المصدر في النهاية. نجيب ja أو nein ونستعمل doch لنفي مضمون سؤال منفي.",
+        "en": "A yes/no question starts with the finite verb, followed by the subject. The prefix or infinitive remains at the end. Answer ja or nein; doch contradicts a negative question."
+      }
+    }
+  ]
+},
+
     {
       "type": "paragraph",
       "id": "rule-0",

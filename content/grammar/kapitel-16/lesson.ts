@@ -20,6 +20,131 @@ export const lesson: LessonDefinition = {
     "en": "accusative"
   },
   "blocks": [
+{
+  "type": "paragraph",
+  "id": "refonte-theorie",
+  "title": {
+    "fr": "Comprendre et appliquer la règle",
+    "de": "Die Regel verstehen und anwenden",
+    "ar": "فهم القاعدة وتطبيقها",
+    "en": "Understand and apply the rule"
+  },
+  "text": {
+    "fr": "Identifiez le sujet puis le complément exigé par le verbe : sehen, kaufen, lieben prennent généralement l’accusatif. Posez wen? pour une personne, was? pour une chose. Seul le masculin change de forme d’article entre nominatif et accusatif : der → den, ein → einen. La position initiale ne suffit pas à identifier le sujet.",
+    "de": "Bestimme Subjekt und Verbobjekt: sehen, kaufen, lieben verlangen meist Akkusativ. Frage wen? oder was? Nur maskuline Artikel ändern sich zwischen Nominativ und Akkusativ: der → den, ein → einen. Die erste Position allein zeigt nicht das Subjekt.",
+    "ar": "حدد الفاعل والمفعول الذي يتطلبه الفعل. sehen وkaufen وlieben تتطلب غالبا الأكوزاتيف. نسأل wen أو was. تتغير أداة المذكر فقط: der إلى den وein إلى einen. الموقع الأول لا يعني بالضرورة الفاعل.",
+    "en": "Identify the subject and the object required by the verb: sehen, kaufen, lieben usually take accusative. Ask wen? or was? Only masculine article forms change from nominative to accusative: der → den, ein → einen. Initial position alone does not identify the subject."
+  }
+},
+{
+  "type": "examples",
+  "id": "refonte-exemples",
+  "title": {
+    "fr": "Exemples traduits",
+    "de": "Übersetzte Beispiele",
+    "ar": "أمثلة مترجمة",
+    "en": "Translated examples"
+  },
+  "items": [
+    {
+      "id": "refonte-1",
+      "german": "Ich sehe den Mann.",
+      "context": {
+        "fr": "Je vois l’homme.",
+        "de": "Ich sehe den Mann.",
+        "ar": "أرى الرجل.",
+        "en": "I see the man."
+      },
+      "explanation": {
+        "fr": "Identifiez le sujet puis le complément exigé par le verbe : sehen, kaufen, lieben prennent généralement l’accusatif. Posez wen? pour une personne, was? pour une chose. Seul le masculin change de forme d’article entre nominatif et accusatif : der → den, ein → einen. La position initiale ne suffit pas à identifier le sujet.",
+        "de": "Bestimme Subjekt und Verbobjekt: sehen, kaufen, lieben verlangen meist Akkusativ. Frage wen? oder was? Nur maskuline Artikel ändern sich zwischen Nominativ und Akkusativ: der → den, ein → einen. Die erste Position allein zeigt nicht das Subjekt.",
+        "ar": "حدد الفاعل والمفعول الذي يتطلبه الفعل. sehen وkaufen وlieben تتطلب غالبا الأكوزاتيف. نسأل wen أو was. تتغير أداة المذكر فقط: der إلى den وein إلى einen. الموقع الأول لا يعني بالضرورة الفاعل.",
+        "en": "Identify the subject and the object required by the verb: sehen, kaufen, lieben usually take accusative. Ask wen? or was? Only masculine article forms change from nominative to accusative: der → den, ein → einen. Initial position alone does not identify the subject."
+      }
+    },
+    {
+      "id": "refonte-2",
+      "german": "Ich kaufe einen Computer.",
+      "context": {
+        "fr": "J’achète un ordinateur.",
+        "de": "Ich kaufe einen Computer.",
+        "ar": "أشتري حاسوبا.",
+        "en": "I buy a computer."
+      },
+      "explanation": {
+        "fr": "Identifiez le sujet puis le complément exigé par le verbe : sehen, kaufen, lieben prennent généralement l’accusatif. Posez wen? pour une personne, was? pour une chose. Seul le masculin change de forme d’article entre nominatif et accusatif : der → den, ein → einen. La position initiale ne suffit pas à identifier le sujet.",
+        "de": "Bestimme Subjekt und Verbobjekt: sehen, kaufen, lieben verlangen meist Akkusativ. Frage wen? oder was? Nur maskuline Artikel ändern sich zwischen Nominativ und Akkusativ: der → den, ein → einen. Die erste Position allein zeigt nicht das Subjekt.",
+        "ar": "حدد الفاعل والمفعول الذي يتطلبه الفعل. sehen وkaufen وlieben تتطلب غالبا الأكوزاتيف. نسأل wen أو was. تتغير أداة المذكر فقط: der إلى den وein إلى einen. الموقع الأول لا يعني بالضرورة الفاعل.",
+        "en": "Identify the subject and the object required by the verb: sehen, kaufen, lieben usually take accusative. Ask wen? or was? Only masculine article forms change from nominative to accusative: der → den, ein → einen. Initial position alone does not identify the subject."
+      }
+    },
+    {
+      "id": "refonte-3",
+      "german": "Sie liest das Buch.",
+      "context": {
+        "fr": "Elle lit le livre.",
+        "de": "Sie liest das Buch.",
+        "ar": "تقرأ الكتاب.",
+        "en": "She reads the book."
+      },
+      "explanation": {
+        "fr": "Identifiez le sujet puis le complément exigé par le verbe : sehen, kaufen, lieben prennent généralement l’accusatif. Posez wen? pour une personne, was? pour une chose. Seul le masculin change de forme d’article entre nominatif et accusatif : der → den, ein → einen. La position initiale ne suffit pas à identifier le sujet.",
+        "de": "Bestimme Subjekt und Verbobjekt: sehen, kaufen, lieben verlangen meist Akkusativ. Frage wen? oder was? Nur maskuline Artikel ändern sich zwischen Nominativ und Akkusativ: der → den, ein → einen. Die erste Position allein zeigt nicht das Subjekt.",
+        "ar": "حدد الفاعل والمفعول الذي يتطلبه الفعل. sehen وkaufen وlieben تتطلب غالبا الأكوزاتيف. نسأل wen أو was. تتغير أداة المذكر فقط: der إلى den وein إلى einen. الموقع الأول لا يعني بالضرورة الفاعل.",
+        "en": "Identify the subject and the object required by the verb: sehen, kaufen, lieben usually take accusative. Ask wen? or was? Only masculine article forms change from nominative to accusative: der → den, ein → einen. Initial position alone does not identify the subject."
+      }
+    },
+    {
+      "id": "refonte-4",
+      "german": "Er liebt seine Frau.",
+      "context": {
+        "fr": "Il aime sa femme.",
+        "de": "Er liebt seine Frau.",
+        "ar": "يحب زوجته.",
+        "en": "He loves his wife."
+      },
+      "explanation": {
+        "fr": "Identifiez le sujet puis le complément exigé par le verbe : sehen, kaufen, lieben prennent généralement l’accusatif. Posez wen? pour une personne, was? pour une chose. Seul le masculin change de forme d’article entre nominatif et accusatif : der → den, ein → einen. La position initiale ne suffit pas à identifier le sujet.",
+        "de": "Bestimme Subjekt und Verbobjekt: sehen, kaufen, lieben verlangen meist Akkusativ. Frage wen? oder was? Nur maskuline Artikel ändern sich zwischen Nominativ und Akkusativ: der → den, ein → einen. Die erste Position allein zeigt nicht das Subjekt.",
+        "ar": "حدد الفاعل والمفعول الذي يتطلبه الفعل. sehen وkaufen وlieben تتطلب غالبا الأكوزاتيف. نسأل wen أو was. تتغير أداة المذكر فقط: der إلى den وein إلى einen. الموقع الأول لا يعني بالضرورة الفاعل.",
+        "en": "Identify the subject and the object required by the verb: sehen, kaufen, lieben usually take accusative. Ask wen? or was? Only masculine article forms change from nominative to accusative: der → den, ein → einen. Initial position alone does not identify the subject."
+      }
+    },
+    {
+      "id": "refonte-5",
+      "german": "Wir haben keinen Hund.",
+      "context": {
+        "fr": "Nous n’avons pas de chien.",
+        "de": "Wir haben keinen Hund.",
+        "ar": "ليس لدينا كلب.",
+        "en": "We have no dog."
+      },
+      "explanation": {
+        "fr": "Identifiez le sujet puis le complément exigé par le verbe : sehen, kaufen, lieben prennent généralement l’accusatif. Posez wen? pour une personne, was? pour une chose. Seul le masculin change de forme d’article entre nominatif et accusatif : der → den, ein → einen. La position initiale ne suffit pas à identifier le sujet.",
+        "de": "Bestimme Subjekt und Verbobjekt: sehen, kaufen, lieben verlangen meist Akkusativ. Frage wen? oder was? Nur maskuline Artikel ändern sich zwischen Nominativ und Akkusativ: der → den, ein → einen. Die erste Position allein zeigt nicht das Subjekt.",
+        "ar": "حدد الفاعل والمفعول الذي يتطلبه الفعل. sehen وkaufen وlieben تتطلب غالبا الأكوزاتيف. نسأل wen أو was. تتغير أداة المذكر فقط: der إلى den وein إلى einen. الموقع الأول لا يعني بالضرورة الفاعل.",
+        "en": "Identify the subject and the object required by the verb: sehen, kaufen, lieben usually take accusative. Ask wen? or was? Only masculine article forms change from nominative to accusative: der → den, ein → einen. Initial position alone does not identify the subject."
+      }
+    },
+    {
+      "id": "refonte-6",
+      "german": "Den Film mag ich.",
+      "context": {
+        "fr": "Ce film, je l’aime.",
+        "de": "Den Film mag ich.",
+        "ar": "أحب هذا الفيلم.",
+        "en": "I like the film."
+      },
+      "explanation": {
+        "fr": "Identifiez le sujet puis le complément exigé par le verbe : sehen, kaufen, lieben prennent généralement l’accusatif. Posez wen? pour une personne, was? pour une chose. Seul le masculin change de forme d’article entre nominatif et accusatif : der → den, ein → einen. La position initiale ne suffit pas à identifier le sujet.",
+        "de": "Bestimme Subjekt und Verbobjekt: sehen, kaufen, lieben verlangen meist Akkusativ. Frage wen? oder was? Nur maskuline Artikel ändern sich zwischen Nominativ und Akkusativ: der → den, ein → einen. Die erste Position allein zeigt nicht das Subjekt.",
+        "ar": "حدد الفاعل والمفعول الذي يتطلبه الفعل. sehen وkaufen وlieben تتطلب غالبا الأكوزاتيف. نسأل wen أو was. تتغير أداة المذكر فقط: der إلى den وein إلى einen. الموقع الأول لا يعني بالضرورة الفاعل.",
+        "en": "Identify the subject and the object required by the verb: sehen, kaufen, lieben usually take accusative. Ask wen? or was? Only masculine article forms change from nominative to accusative: der → den, ein → einen. Initial position alone does not identify the subject."
+      }
+    }
+  ]
+},
+
     {
       "type": "paragraph",
       "id": "N",

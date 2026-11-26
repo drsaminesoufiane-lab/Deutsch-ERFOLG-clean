@@ -20,6 +20,131 @@ export const lesson: LessonDefinition = {
     "en": "Welch- asks which item; dies- points to a specific item. Both follow definite article endings."
   },
   "blocks": [
+{
+  "type": "paragraph",
+  "id": "refonte-theorie",
+  "title": {
+    "fr": "Comprendre et appliquer la règle",
+    "de": "Die Regel verstehen und anwenden",
+    "ar": "فهم القاعدة وتطبيقها",
+    "en": "Understand and apply the rule"
+  },
+  "text": {
+    "fr": "Welch- demande lequel parmi plusieurs ; dies- désigne un élément précis. Les deux suivent les terminaisons de l’article défini : welcher/dieser au masculin nominatif, welchen/diesen à l’accusatif, welchem/diesem au datif. Identifiez le cas avant de choisir la terminaison.",
+    "de": "Welch- fragt nach einer Auswahl; dies- zeigt auf etwas Bestimmtes. Beide folgen den Endungen des bestimmten Artikels: welcher/dieser, welchen/diesen, welchem/diesem. Bestimme zuerst den Kasus.",
+    "ar": "welch للسؤال عن الاختيار وdies للإشارة إلى شيء محدد. يتبعان نهايات الأداة المعرفة: welcher/dieser للنوماتيف المذكر وwelchen/diesen للأكوزاتيف وwelchem/diesem للداتيف. حدد الحالة أولا.",
+    "en": "Welch- asks which of several; dies- points to a specific item. Both follow definite article endings: welcher/dieser, welchen/diesen, welchem/diesem. Determine case before choosing the ending."
+  }
+},
+{
+  "type": "examples",
+  "id": "refonte-exemples",
+  "title": {
+    "fr": "Exemples traduits",
+    "de": "Übersetzte Beispiele",
+    "ar": "أمثلة مترجمة",
+    "en": "Translated examples"
+  },
+  "items": [
+    {
+      "id": "refonte-1",
+      "german": "Welcher Mantel ist schön?",
+      "context": {
+        "fr": "Quel manteau est beau ?",
+        "de": "Welcher Mantel ist schön?",
+        "ar": "أي معطف جميل؟",
+        "en": "Which coat is nice?"
+      },
+      "explanation": {
+        "fr": "Welch- demande lequel parmi plusieurs ; dies- désigne un élément précis. Les deux suivent les terminaisons de l’article défini : welcher/dieser au masculin nominatif, welchen/diesen à l’accusatif, welchem/diesem au datif. Identifiez le cas avant de choisir la terminaison.",
+        "de": "Welch- fragt nach einer Auswahl; dies- zeigt auf etwas Bestimmtes. Beide folgen den Endungen des bestimmten Artikels: welcher/dieser, welchen/diesen, welchem/diesem. Bestimme zuerst den Kasus.",
+        "ar": "welch للسؤال عن الاختيار وdies للإشارة إلى شيء محدد. يتبعان نهايات الأداة المعرفة: welcher/dieser للنوماتيف المذكر وwelchen/diesen للأكوزاتيف وwelchem/diesem للداتيف. حدد الحالة أولا.",
+        "en": "Welch- asks which of several; dies- points to a specific item. Both follow definite article endings: welcher/dieser, welchen/diesen, welchem/diesem. Determine case before choosing the ending."
+      }
+    },
+    {
+      "id": "refonte-2",
+      "german": "Diesen Mantel nehme ich.",
+      "context": {
+        "fr": "Je prends ce manteau.",
+        "de": "Diesen Mantel nehme ich.",
+        "ar": "آخذ هذا المعطف.",
+        "en": "I take this coat."
+      },
+      "explanation": {
+        "fr": "Welch- demande lequel parmi plusieurs ; dies- désigne un élément précis. Les deux suivent les terminaisons de l’article défini : welcher/dieser au masculin nominatif, welchen/diesen à l’accusatif, welchem/diesem au datif. Identifiez le cas avant de choisir la terminaison.",
+        "de": "Welch- fragt nach einer Auswahl; dies- zeigt auf etwas Bestimmtes. Beide folgen den Endungen des bestimmten Artikels: welcher/dieser, welchen/diesen, welchem/diesem. Bestimme zuerst den Kasus.",
+        "ar": "welch للسؤال عن الاختيار وdies للإشارة إلى شيء محدد. يتبعان نهايات الأداة المعرفة: welcher/dieser للنوماتيف المذكر وwelchen/diesen للأكوزاتيف وwelchem/diesem للداتيف. حدد الحالة أولا.",
+        "en": "Welch- asks which of several; dies- points to a specific item. Both follow definite article endings: welcher/dieser, welchen/diesen, welchem/diesem. Determine case before choosing the ending."
+      }
+    },
+    {
+      "id": "refonte-3",
+      "german": "Mit welchem Bus fährst du?",
+      "context": {
+        "fr": "Avec quel bus voyages-tu ?",
+        "de": "Mit welchem Bus fährst du?",
+        "ar": "بأي حافلة تذهب؟",
+        "en": "Which bus do you take?"
+      },
+      "explanation": {
+        "fr": "Welch- demande lequel parmi plusieurs ; dies- désigne un élément précis. Les deux suivent les terminaisons de l’article défini : welcher/dieser au masculin nominatif, welchen/diesen à l’accusatif, welchem/diesem au datif. Identifiez le cas avant de choisir la terminaison.",
+        "de": "Welch- fragt nach einer Auswahl; dies- zeigt auf etwas Bestimmtes. Beide folgen den Endungen des bestimmten Artikels: welcher/dieser, welchen/diesen, welchem/diesem. Bestimme zuerst den Kasus.",
+        "ar": "welch للسؤال عن الاختيار وdies للإشارة إلى شيء محدد. يتبعان نهايات الأداة المعرفة: welcher/dieser للنوماتيف المذكر وwelchen/diesen للأكوزاتيف وwelchem/diesem للداتيف. حدد الحالة أولا.",
+        "en": "Welch- asks which of several; dies- points to a specific item. Both follow definite article endings: welcher/dieser, welchen/diesen, welchem/diesem. Determine case before choosing the ending."
+      }
+    },
+    {
+      "id": "refonte-4",
+      "german": "Mit diesem Bus.",
+      "context": {
+        "fr": "Avec ce bus.",
+        "de": "Mit diesem Bus.",
+        "ar": "بهذه الحافلة.",
+        "en": "With this bus."
+      },
+      "explanation": {
+        "fr": "Welch- demande lequel parmi plusieurs ; dies- désigne un élément précis. Les deux suivent les terminaisons de l’article défini : welcher/dieser au masculin nominatif, welchen/diesen à l’accusatif, welchem/diesem au datif. Identifiez le cas avant de choisir la terminaison.",
+        "de": "Welch- fragt nach einer Auswahl; dies- zeigt auf etwas Bestimmtes. Beide folgen den Endungen des bestimmten Artikels: welcher/dieser, welchen/diesen, welchem/diesem. Bestimme zuerst den Kasus.",
+        "ar": "welch للسؤال عن الاختيار وdies للإشارة إلى شيء محدد. يتبعان نهايات الأداة المعرفة: welcher/dieser للنوماتيف المذكر وwelchen/diesen للأكوزاتيف وwelchem/diesem للداتيف. حدد الحالة أولا.",
+        "en": "Welch- asks which of several; dies- points to a specific item. Both follow definite article endings: welcher/dieser, welchen/diesen, welchem/diesem. Determine case before choosing the ending."
+      }
+    },
+    {
+      "id": "refonte-5",
+      "german": "Welche Schuhe gefallen dir?",
+      "context": {
+        "fr": "Quelles chaussures te plaisent ?",
+        "de": "Welche Schuhe gefallen dir?",
+        "ar": "أي حذاء يعجبك؟",
+        "en": "Which shoes do you like?"
+      },
+      "explanation": {
+        "fr": "Welch- demande lequel parmi plusieurs ; dies- désigne un élément précis. Les deux suivent les terminaisons de l’article défini : welcher/dieser au masculin nominatif, welchen/diesen à l’accusatif, welchem/diesem au datif. Identifiez le cas avant de choisir la terminaison.",
+        "de": "Welch- fragt nach einer Auswahl; dies- zeigt auf etwas Bestimmtes. Beide folgen den Endungen des bestimmten Artikels: welcher/dieser, welchen/diesen, welchem/diesem. Bestimme zuerst den Kasus.",
+        "ar": "welch للسؤال عن الاختيار وdies للإشارة إلى شيء محدد. يتبعان نهايات الأداة المعرفة: welcher/dieser للنوماتيف المذكر وwelchen/diesen للأكوزاتيف وwelchem/diesem للداتيف. حدد الحالة أولا.",
+        "en": "Welch- asks which of several; dies- points to a specific item. Both follow definite article endings: welcher/dieser, welchen/diesen, welchem/diesem. Determine case before choosing the ending."
+      }
+    },
+    {
+      "id": "refonte-6",
+      "german": "In diesem Raum lernen wir.",
+      "context": {
+        "fr": "Nous étudions dans cette salle.",
+        "de": "In diesem Raum lernen wir.",
+        "ar": "ندرس في هذه القاعة.",
+        "en": "We study in this room."
+      },
+      "explanation": {
+        "fr": "Welch- demande lequel parmi plusieurs ; dies- désigne un élément précis. Les deux suivent les terminaisons de l’article défini : welcher/dieser au masculin nominatif, welchen/diesen à l’accusatif, welchem/diesem au datif. Identifiez le cas avant de choisir la terminaison.",
+        "de": "Welch- fragt nach einer Auswahl; dies- zeigt auf etwas Bestimmtes. Beide folgen den Endungen des bestimmten Artikels: welcher/dieser, welchen/diesen, welchem/diesem. Bestimme zuerst den Kasus.",
+        "ar": "welch للسؤال عن الاختيار وdies للإشارة إلى شيء محدد. يتبعان نهايات الأداة المعرفة: welcher/dieser للنوماتيف المذكر وwelchen/diesen للأكوزاتيف وwelchem/diesem للداتيف. حدد الحالة أولا.",
+        "en": "Welch- asks which of several; dies- points to a specific item. Both follow definite article endings: welcher/dieser, welchen/diesen, welchem/diesem. Determine case before choosing the ending."
+      }
+    }
+  ]
+},
+
     {
       "type": "paragraph",
       "id": "rule",

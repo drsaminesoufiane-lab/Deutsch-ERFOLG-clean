@@ -20,6 +20,131 @@ export const lesson: LessonDefinition = {
     "en": "The owner determines the stem; the possessed noun’s gender, number and case determine the ending."
   },
   "blocks": [
+{
+  "type": "paragraph",
+  "id": "refonte-theorie",
+  "title": {
+    "fr": "Comprendre et appliquer la règle",
+    "de": "Die Regel verstehen und anwenden",
+    "ar": "فهم القاعدة وتطبيقها",
+    "en": "Understand and apply the rule"
+  },
+  "text": {
+    "fr": "Choisissez d’abord le radical selon le propriétaire : ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Puis choisissez la terminaison selon le nom possédé et son cas. Euer perd normalement son deuxième e devant une terminaison : eure, euren, eurem. Ihr majuscule marque la politesse.",
+    "de": "Wähle zuerst den Stamm nach dem Besitzer: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Dann die Endung nach Genus, Numerus und Kasus des Besitzes. Euer verliert vor Endungen meist das zweite e: eure, euren, eurem. Ihr ist höflich.",
+    "ar": "اختر الجذر حسب المالك: ich → mein وer → sein وsie → ihr وwir → unser وihr → euer. ثم النهاية حسب جنس وعدد وحالة الاسم المملوك. euer تصبح eure وeuren وeurem. Ihr بحرف كبير للاحترام.",
+    "en": "First choose the stem by owner: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Then choose the ending by gender, number and case of the possessed noun. Euer normally drops its second e before endings: eure, euren, eurem. Capitalized Ihr is formal."
+  }
+},
+{
+  "type": "examples",
+  "id": "refonte-exemples",
+  "title": {
+    "fr": "Exemples traduits",
+    "de": "Übersetzte Beispiele",
+    "ar": "أمثلة مترجمة",
+    "en": "Translated examples"
+  },
+  "items": [
+    {
+      "id": "refonte-1",
+      "german": "Das ist mein Vater.",
+      "context": {
+        "fr": "C’est mon père.",
+        "de": "Das ist mein Vater.",
+        "ar": "هذا أبي.",
+        "en": "That is my father."
+      },
+      "explanation": {
+        "fr": "Choisissez d’abord le radical selon le propriétaire : ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Puis choisissez la terminaison selon le nom possédé et son cas. Euer perd normalement son deuxième e devant une terminaison : eure, euren, eurem. Ihr majuscule marque la politesse.",
+        "de": "Wähle zuerst den Stamm nach dem Besitzer: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Dann die Endung nach Genus, Numerus und Kasus des Besitzes. Euer verliert vor Endungen meist das zweite e: eure, euren, eurem. Ihr ist höflich.",
+        "ar": "اختر الجذر حسب المالك: ich → mein وer → sein وsie → ihr وwir → unser وihr → euer. ثم النهاية حسب جنس وعدد وحالة الاسم المملوك. euer تصبح eure وeuren وeurem. Ihr بحرف كبير للاحترام.",
+        "en": "First choose the stem by owner: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Then choose the ending by gender, number and case of the possessed noun. Euer normally drops its second e before endings: eure, euren, eurem. Capitalized Ihr is formal."
+      }
+    },
+    {
+      "id": "refonte-2",
+      "german": "Das ist seine Mutter.",
+      "context": {
+        "fr": "C’est sa mère (à lui).",
+        "de": "Das ist seine Mutter.",
+        "ar": "هذه أمه.",
+        "en": "That is his mother."
+      },
+      "explanation": {
+        "fr": "Choisissez d’abord le radical selon le propriétaire : ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Puis choisissez la terminaison selon le nom possédé et son cas. Euer perd normalement son deuxième e devant une terminaison : eure, euren, eurem. Ihr majuscule marque la politesse.",
+        "de": "Wähle zuerst den Stamm nach dem Besitzer: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Dann die Endung nach Genus, Numerus und Kasus des Besitzes. Euer verliert vor Endungen meist das zweite e: eure, euren, eurem. Ihr ist höflich.",
+        "ar": "اختر الجذر حسب المالك: ich → mein وer → sein وsie → ihr وwir → unser وihr → euer. ثم النهاية حسب جنس وعدد وحالة الاسم المملوك. euer تصبح eure وeuren وeurem. Ihr بحرف كبير للاحترام.",
+        "en": "First choose the stem by owner: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Then choose the ending by gender, number and case of the possessed noun. Euer normally drops its second e before endings: eure, euren, eurem. Capitalized Ihr is formal."
+      }
+    },
+    {
+      "id": "refonte-3",
+      "german": "Das ist ihr Vater.",
+      "context": {
+        "fr": "C’est son père (à elle).",
+        "de": "Das ist ihr Vater.",
+        "ar": "هذا أبوها.",
+        "en": "That is her father."
+      },
+      "explanation": {
+        "fr": "Choisissez d’abord le radical selon le propriétaire : ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Puis choisissez la terminaison selon le nom possédé et son cas. Euer perd normalement son deuxième e devant une terminaison : eure, euren, eurem. Ihr majuscule marque la politesse.",
+        "de": "Wähle zuerst den Stamm nach dem Besitzer: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Dann die Endung nach Genus, Numerus und Kasus des Besitzes. Euer verliert vor Endungen meist das zweite e: eure, euren, eurem. Ihr ist höflich.",
+        "ar": "اختر الجذر حسب المالك: ich → mein وer → sein وsie → ihr وwir → unser وihr → euer. ثم النهاية حسب جنس وعدد وحالة الاسم المملوك. euer تصبح eure وeuren وeurem. Ihr بحرف كبير للاحترام.",
+        "en": "First choose the stem by owner: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Then choose the ending by gender, number and case of the possessed noun. Euer normally drops its second e before endings: eure, euren, eurem. Capitalized Ihr is formal."
+      }
+    },
+    {
+      "id": "refonte-4",
+      "german": "Wo ist euer Auto?",
+      "context": {
+        "fr": "Où est votre voiture ?",
+        "de": "Wo ist euer Auto?",
+        "ar": "أين سيارتكم؟",
+        "en": "Where is your car?"
+      },
+      "explanation": {
+        "fr": "Choisissez d’abord le radical selon le propriétaire : ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Puis choisissez la terminaison selon le nom possédé et son cas. Euer perd normalement son deuxième e devant une terminaison : eure, euren, eurem. Ihr majuscule marque la politesse.",
+        "de": "Wähle zuerst den Stamm nach dem Besitzer: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Dann die Endung nach Genus, Numerus und Kasus des Besitzes. Euer verliert vor Endungen meist das zweite e: eure, euren, eurem. Ihr ist höflich.",
+        "ar": "اختر الجذر حسب المالك: ich → mein وer → sein وsie → ihr وwir → unser وihr → euer. ثم النهاية حسب جنس وعدد وحالة الاسم المملوك. euer تصبح eure وeuren وeurem. Ihr بحرف كبير للاحترام.",
+        "en": "First choose the stem by owner: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Then choose the ending by gender, number and case of the possessed noun. Euer normally drops its second e before endings: eure, euren, eurem. Capitalized Ihr is formal."
+      }
+    },
+    {
+      "id": "refonte-5",
+      "german": "Ich sehe euren Vater.",
+      "context": {
+        "fr": "Je vois votre père.",
+        "de": "Ich sehe euren Vater.",
+        "ar": "أرى أباكم.",
+        "en": "I see your father."
+      },
+      "explanation": {
+        "fr": "Choisissez d’abord le radical selon le propriétaire : ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Puis choisissez la terminaison selon le nom possédé et son cas. Euer perd normalement son deuxième e devant une terminaison : eure, euren, eurem. Ihr majuscule marque la politesse.",
+        "de": "Wähle zuerst den Stamm nach dem Besitzer: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Dann die Endung nach Genus, Numerus und Kasus des Besitzes. Euer verliert vor Endungen meist das zweite e: eure, euren, eurem. Ihr ist höflich.",
+        "ar": "اختر الجذر حسب المالك: ich → mein وer → sein وsie → ihr وwir → unser وihr → euer. ثم النهاية حسب جنس وعدد وحالة الاسم المملوك. euer تصبح eure وeuren وeurem. Ihr بحرف كبير للاحترام.",
+        "en": "First choose the stem by owner: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Then choose the ending by gender, number and case of the possessed noun. Euer normally drops its second e before endings: eure, euren, eurem. Capitalized Ihr is formal."
+      }
+    },
+    {
+      "id": "refonte-6",
+      "german": "Ich fahre mit meiner Frau.",
+      "context": {
+        "fr": "Je voyage avec ma femme.",
+        "de": "Ich fahre mit meiner Frau.",
+        "ar": "أسافر مع زوجتي.",
+        "en": "I travel with my wife."
+      },
+      "explanation": {
+        "fr": "Choisissez d’abord le radical selon le propriétaire : ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Puis choisissez la terminaison selon le nom possédé et son cas. Euer perd normalement son deuxième e devant une terminaison : eure, euren, eurem. Ihr majuscule marque la politesse.",
+        "de": "Wähle zuerst den Stamm nach dem Besitzer: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Dann die Endung nach Genus, Numerus und Kasus des Besitzes. Euer verliert vor Endungen meist das zweite e: eure, euren, eurem. Ihr ist höflich.",
+        "ar": "اختر الجذر حسب المالك: ich → mein وer → sein وsie → ihr وwir → unser وihr → euer. ثم النهاية حسب جنس وعدد وحالة الاسم المملوك. euer تصبح eure وeuren وeurem. Ihr بحرف كبير للاحترام.",
+        "en": "First choose the stem by owner: ich → mein, er → sein, sie → ihr, wir → unser, ihr → euer. Then choose the ending by gender, number and case of the possessed noun. Euer normally drops its second e before endings: eure, euren, eurem. Capitalized Ihr is formal."
+      }
+    }
+  ]
+},
+
     {
       "type": "paragraph",
       "id": "rule",

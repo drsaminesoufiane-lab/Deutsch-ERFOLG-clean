@@ -14,6 +14,7 @@ import {
   Loader2,
   LibraryBig,
 } from 'lucide-react'
+import type { ChapterDefinition } from '@/lib/grammar/types'
 import { supabase } from '@/lib/supabase'
 
 type Chapitre = {
@@ -22,11 +23,12 @@ type Chapitre = {
   titre: string
   theme: string
   level: string
+  locked: boolean
 }
 
 export default function GrammairePage() {
   const router = useRouter()
-  const { t, isRTL } = useLanguage()
+  const { t, isRTL, language } = useLanguage()
   const g = t.grammar
 
   const [nom, setNom] = useState('Étudiant')
@@ -84,48 +86,27 @@ export default function GrammairePage() {
     }
   }, [router])
 
-  // CHARGEMENT DES CHAPITRES
-
   useEffect(() => {
     let actif = true
-
-    async function chargerChapitres() {
-      setChargement(true)
-      setErreur('')
-
-      const { data, error } = await supabase
-        .from('grammar_chapters')
-        .select('id, level, title, description, position')
-        .eq('is_published', true)
-        .order('position', { ascending: true })
-
-      if (!actif) return
-
-      if (error) {
-        console.error('Erreur chargement chapitres :', error)
-        setErreur(g.loadError)
-        setChapitres([])
-      } else {
-        setChapitres(
-          (data || []).map(chapitre => ({
-            id: chapitre.id,
-            numero: chapitre.position,
-            titre: chapitre.title,
-            theme: chapitre.description || 'Grammatik',
-            level: chapitre.level,
-          }))
-        )
-      }
-
-      setChargement(false)
+    setChargement(true)
+    async function load() {
+      try {
+        const {data} = await supabase.auth.getSession()
+        const token = data.session?.access_token
+        if (!token) throw new Error('Connexion requise.')
+        const response = await fetch('/api/grammar/content', {headers:{Authorization:`Bearer ${token}`},cache:'no-store'})
+        const result = await response.json()
+        if (!response.ok) throw new Error(result.error)
+        if (actif) {
+          setChapitres(result.chapters.map((c: Pick<ChapterDefinition,'id'|'number'|'title'|'subtitle'|'level'> & {locked:boolean}) => ({id:c.id,numero:c.number,titre:c.title[language],theme:c.subtitle[language],level:c.level,locked:c.locked})))
+          setErreur('')
+        }
+      } catch (e) { if (actif) { setChapitres([]); setErreur(e instanceof Error ? e.message : 'Erreur de chargement.') } }
+      finally { if (actif) setChargement(false) }
     }
-
-    chargerChapitres()
-
-    return () => {
-      actif = false
-    }
-  }, [g.loadError])
+    void load()
+    return () => { actif = false }
+  }, [language])
 
   // RECHERCHE ET FILTRE PAR NIVEAU
 
@@ -371,7 +352,7 @@ export default function GrammairePage() {
                       </div>
 
                       <span className="grammar-level">
-                        {chapitre.level}
+                        {chapitre.level}{chapitre.locked ? ' · 🔒 PRO' : ''}
                       </span>
 
                     </div>

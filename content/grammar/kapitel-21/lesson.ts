@@ -20,6 +20,131 @@ export const lesson: LessonDefinition = {
     "en": "The nominative subject controls agreement. With geben, schenken, zeigen or bringen, the recipient is dative (wem?) and the transferred thing accusative (was?). Institutions can be recipients too. Lachen needs no object."
   },
   "blocks": [
+{
+  "type": "paragraph",
+  "id": "refonte-theorie",
+  "title": {
+    "fr": "Comprendre et appliquer la règle",
+    "de": "Die Regel verstehen und anwenden",
+    "ar": "فهم القاعدة وتطبيقها",
+    "en": "Understand and apply the rule"
+  },
+  "text": {
+    "fr": "Avec geben ou schenken, le destinataire est au datif et l’objet transmis à l’accusatif. Dans un ordre neutre, deux noms suivent généralement datif puis accusatif ; un pronom précède généralement un nom ; deux pronoms suivent généralement accusatif puis datif. Le sujet commande toujours le verbe. Ces tendances peuvent varier selon la mise en relief.",
+    "de": "Bei geben oder schenken steht der Empfänger im Dativ, die Sache im Akkusativ. Neutral: zwei Nomen meist Dativ vor Akkusativ; Pronomen meist vor Nomen; zwei Pronomen meist Akkusativ vor Dativ. Das Subjekt bestimmt das Verb. Betonung kann die Reihenfolge verändern.",
+    "ar": "مع geben أو schenken المتلقي في الداتيف والشيء في الأكوزاتيف. في الترتيب المحايد اسمان: الداتيف ثم الأكوزاتيف، الضمير قبل الاسم غالبا، ضميران: الأكوزاتيف ثم الداتيف غالبا. الفاعل يحدد تصريف الفعل وقد يتغير الترتيب للتأكيد.",
+    "en": "With geben or schenken the recipient is dative and the transferred object accusative. Neutral order: two nouns usually dative before accusative; pronoun usually before noun; two pronouns usually accusative before dative. The subject controls the verb. Emphasis may change order."
+  }
+},
+{
+  "type": "examples",
+  "id": "refonte-exemples",
+  "title": {
+    "fr": "Exemples traduits",
+    "de": "Übersetzte Beispiele",
+    "ar": "أمثلة مترجمة",
+    "en": "Translated examples"
+  },
+  "items": [
+    {
+      "id": "refonte-1",
+      "german": "Ich gebe dem Kind ein Buch.",
+      "context": {
+        "fr": "Je donne un livre à l’enfant.",
+        "de": "Ich gebe dem Kind ein Buch.",
+        "ar": "أعطي الطفل كتابا.",
+        "en": "I give the child a book."
+      },
+      "explanation": {
+        "fr": "Avec geben ou schenken, le destinataire est au datif et l’objet transmis à l’accusatif. Dans un ordre neutre, deux noms suivent généralement datif puis accusatif ; un pronom précède généralement un nom ; deux pronoms suivent généralement accusatif puis datif. Le sujet commande toujours le verbe. Ces tendances peuvent varier selon la mise en relief.",
+        "de": "Bei geben oder schenken steht der Empfänger im Dativ, die Sache im Akkusativ. Neutral: zwei Nomen meist Dativ vor Akkusativ; Pronomen meist vor Nomen; zwei Pronomen meist Akkusativ vor Dativ. Das Subjekt bestimmt das Verb. Betonung kann die Reihenfolge verändern.",
+        "ar": "مع geben أو schenken المتلقي في الداتيف والشيء في الأكوزاتيف. في الترتيب المحايد اسمان: الداتيف ثم الأكوزاتيف، الضمير قبل الاسم غالبا، ضميران: الأكوزاتيف ثم الداتيف غالبا. الفاعل يحدد تصريف الفعل وقد يتغير الترتيب للتأكيد.",
+        "en": "With geben or schenken the recipient is dative and the transferred object accusative. Neutral order: two nouns usually dative before accusative; pronoun usually before noun; two pronouns usually accusative before dative. The subject controls the verb. Emphasis may change order."
+      }
+    },
+    {
+      "id": "refonte-2",
+      "german": "Ich gebe ihm ein Buch.",
+      "context": {
+        "fr": "Je lui donne un livre.",
+        "de": "Ich gebe ihm ein Buch.",
+        "ar": "أعطيه كتابا.",
+        "en": "I give him a book."
+      },
+      "explanation": {
+        "fr": "Avec geben ou schenken, le destinataire est au datif et l’objet transmis à l’accusatif. Dans un ordre neutre, deux noms suivent généralement datif puis accusatif ; un pronom précède généralement un nom ; deux pronoms suivent généralement accusatif puis datif. Le sujet commande toujours le verbe. Ces tendances peuvent varier selon la mise en relief.",
+        "de": "Bei geben oder schenken steht der Empfänger im Dativ, die Sache im Akkusativ. Neutral: zwei Nomen meist Dativ vor Akkusativ; Pronomen meist vor Nomen; zwei Pronomen meist Akkusativ vor Dativ. Das Subjekt bestimmt das Verb. Betonung kann die Reihenfolge verändern.",
+        "ar": "مع geben أو schenken المتلقي في الداتيف والشيء في الأكوزاتيف. في الترتيب المحايد اسمان: الداتيف ثم الأكوزاتيف، الضمير قبل الاسم غالبا، ضميران: الأكوزاتيف ثم الداتيف غالبا. الفاعل يحدد تصريف الفعل وقد يتغير الترتيب للتأكيد.",
+        "en": "With geben or schenken the recipient is dative and the transferred object accusative. Neutral order: two nouns usually dative before accusative; pronoun usually before noun; two pronouns usually accusative before dative. The subject controls the verb. Emphasis may change order."
+      }
+    },
+    {
+      "id": "refonte-3",
+      "german": "Ich gebe es dem Kind.",
+      "context": {
+        "fr": "Je le donne à l’enfant.",
+        "de": "Ich gebe es dem Kind.",
+        "ar": "أعطيه للطفل.",
+        "en": "I give it to the child."
+      },
+      "explanation": {
+        "fr": "Avec geben ou schenken, le destinataire est au datif et l’objet transmis à l’accusatif. Dans un ordre neutre, deux noms suivent généralement datif puis accusatif ; un pronom précède généralement un nom ; deux pronoms suivent généralement accusatif puis datif. Le sujet commande toujours le verbe. Ces tendances peuvent varier selon la mise en relief.",
+        "de": "Bei geben oder schenken steht der Empfänger im Dativ, die Sache im Akkusativ. Neutral: zwei Nomen meist Dativ vor Akkusativ; Pronomen meist vor Nomen; zwei Pronomen meist Akkusativ vor Dativ. Das Subjekt bestimmt das Verb. Betonung kann die Reihenfolge verändern.",
+        "ar": "مع geben أو schenken المتلقي في الداتيف والشيء في الأكوزاتيف. في الترتيب المحايد اسمان: الداتيف ثم الأكوزاتيف، الضمير قبل الاسم غالبا، ضميران: الأكوزاتيف ثم الداتيف غالبا. الفاعل يحدد تصريف الفعل وقد يتغير الترتيب للتأكيد.",
+        "en": "With geben or schenken the recipient is dative and the transferred object accusative. Neutral order: two nouns usually dative before accusative; pronoun usually before noun; two pronouns usually accusative before dative. The subject controls the verb. Emphasis may change order."
+      }
+    },
+    {
+      "id": "refonte-4",
+      "german": "Ich gebe es ihm.",
+      "context": {
+        "fr": "Je le lui donne.",
+        "de": "Ich gebe es ihm.",
+        "ar": "أعطيه إياه.",
+        "en": "I give it to him."
+      },
+      "explanation": {
+        "fr": "Avec geben ou schenken, le destinataire est au datif et l’objet transmis à l’accusatif. Dans un ordre neutre, deux noms suivent généralement datif puis accusatif ; un pronom précède généralement un nom ; deux pronoms suivent généralement accusatif puis datif. Le sujet commande toujours le verbe. Ces tendances peuvent varier selon la mise en relief.",
+        "de": "Bei geben oder schenken steht der Empfänger im Dativ, die Sache im Akkusativ. Neutral: zwei Nomen meist Dativ vor Akkusativ; Pronomen meist vor Nomen; zwei Pronomen meist Akkusativ vor Dativ. Das Subjekt bestimmt das Verb. Betonung kann die Reihenfolge verändern.",
+        "ar": "مع geben أو schenken المتلقي في الداتيف والشيء في الأكوزاتيف. في الترتيب المحايد اسمان: الداتيف ثم الأكوزاتيف، الضمير قبل الاسم غالبا، ضميران: الأكوزاتيف ثم الداتيف غالبا. الفاعل يحدد تصريف الفعل وقد يتغير الترتيب للتأكيد.",
+        "en": "With geben or schenken the recipient is dative and the transferred object accusative. Neutral order: two nouns usually dative before accusative; pronoun usually before noun; two pronouns usually accusative before dative. The subject controls the verb. Emphasis may change order."
+      }
+    },
+    {
+      "id": "refonte-5",
+      "german": "Heute schenkt er seiner Frau Blumen.",
+      "context": {
+        "fr": "Aujourd’hui il offre des fleurs à sa femme.",
+        "de": "Heute schenkt er seiner Frau Blumen.",
+        "ar": "اليوم يهدي زوجته زهورا.",
+        "en": "Today he gives his wife flowers."
+      },
+      "explanation": {
+        "fr": "Avec geben ou schenken, le destinataire est au datif et l’objet transmis à l’accusatif. Dans un ordre neutre, deux noms suivent généralement datif puis accusatif ; un pronom précède généralement un nom ; deux pronoms suivent généralement accusatif puis datif. Le sujet commande toujours le verbe. Ces tendances peuvent varier selon la mise en relief.",
+        "de": "Bei geben oder schenken steht der Empfänger im Dativ, die Sache im Akkusativ. Neutral: zwei Nomen meist Dativ vor Akkusativ; Pronomen meist vor Nomen; zwei Pronomen meist Akkusativ vor Dativ. Das Subjekt bestimmt das Verb. Betonung kann die Reihenfolge verändern.",
+        "ar": "مع geben أو schenken المتلقي في الداتيف والشيء في الأكوزاتيف. في الترتيب المحايد اسمان: الداتيف ثم الأكوزاتيف، الضمير قبل الاسم غالبا، ضميران: الأكوزاتيف ثم الداتيف غالبا. الفاعل يحدد تصريف الفعل وقد يتغير الترتيب للتأكيد.",
+        "en": "With geben or schenken the recipient is dative and the transferred object accusative. Neutral order: two nouns usually dative before accusative; pronoun usually before noun; two pronouns usually accusative before dative. The subject controls the verb. Emphasis may change order."
+      }
+    },
+    {
+      "id": "refonte-6",
+      "german": "Die Kinder lachen.",
+      "context": {
+        "fr": "Les enfants rient.",
+        "de": "Die Kinder lachen.",
+        "ar": "الأطفال يضحكون.",
+        "en": "The children laugh."
+      },
+      "explanation": {
+        "fr": "Avec geben ou schenken, le destinataire est au datif et l’objet transmis à l’accusatif. Dans un ordre neutre, deux noms suivent généralement datif puis accusatif ; un pronom précède généralement un nom ; deux pronoms suivent généralement accusatif puis datif. Le sujet commande toujours le verbe. Ces tendances peuvent varier selon la mise en relief.",
+        "de": "Bei geben oder schenken steht der Empfänger im Dativ, die Sache im Akkusativ. Neutral: zwei Nomen meist Dativ vor Akkusativ; Pronomen meist vor Nomen; zwei Pronomen meist Akkusativ vor Dativ. Das Subjekt bestimmt das Verb. Betonung kann die Reihenfolge verändern.",
+        "ar": "مع geben أو schenken المتلقي في الداتيف والشيء في الأكوزاتيف. في الترتيب المحايد اسمان: الداتيف ثم الأكوزاتيف، الضمير قبل الاسم غالبا، ضميران: الأكوزاتيف ثم الداتيف غالبا. الفاعل يحدد تصريف الفعل وقد يتغير الترتيب للتأكيد.",
+        "en": "With geben or schenken the recipient is dative and the transferred object accusative. Neutral order: two nouns usually dative before accusative; pronoun usually before noun; two pronouns usually accusative before dative. The subject controls the verb. Emphasis may change order."
+      }
+    }
+  ]
+},
+
     {
       "type": "paragraph",
       "id": "intro",

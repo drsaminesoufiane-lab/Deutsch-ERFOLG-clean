@@ -75,6 +75,27 @@ import { extraKick as extra20 } from '@/content/grammar/kapitel-20/extra-kick'
 import { lesson as lesson21 } from '@/content/grammar/kapitel-21/lesson'
 import { meistertraining as training21 } from '@/content/grammar/kapitel-21/meistertraining'
 import { extraKick as extra21 } from '@/content/grammar/kapitel-21/extra-kick'
+import { lesson as lesson22 } from '@/content/grammar/kapitel-22/lesson'
+import { meistertraining as training22 } from '@/content/grammar/kapitel-22/meistertraining'
+import { extraKick as extra22 } from '@/content/grammar/kapitel-22/extra-kick'
+import { lesson as lesson23 } from '@/content/grammar/kapitel-23/lesson'
+import { meistertraining as training23 } from '@/content/grammar/kapitel-23/meistertraining'
+import { extraKick as extra23 } from '@/content/grammar/kapitel-23/extra-kick'
+import { lesson as lesson24 } from '@/content/grammar/kapitel-24/lesson'
+import { meistertraining as training24 } from '@/content/grammar/kapitel-24/meistertraining'
+import { extraKick as extra24 } from '@/content/grammar/kapitel-24/extra-kick'
+import { lesson as lesson25 } from '@/content/grammar/kapitel-25/lesson'
+import { meistertraining as training25 } from '@/content/grammar/kapitel-25/meistertraining'
+import { extraKick as extra25 } from '@/content/grammar/kapitel-25/extra-kick'
+import { lesson as lesson26 } from '@/content/grammar/kapitel-26/lesson'
+import { meistertraining as training26 } from '@/content/grammar/kapitel-26/meistertraining'
+import { extraKick as extra26 } from '@/content/grammar/kapitel-26/extra-kick'
+import { lesson as lesson27 } from '@/content/grammar/kapitel-27/lesson'
+import { meistertraining as training27 } from '@/content/grammar/kapitel-27/meistertraining'
+import { extraKick as extra27 } from '@/content/grammar/kapitel-27/extra-kick'
+import { lesson as lesson28 } from '@/content/grammar/kapitel-28/lesson'
+import { meistertraining as training28 } from '@/content/grammar/kapitel-28/meistertraining'
+import { extraKick as extra28 } from '@/content/grammar/kapitel-28/extra-kick'
 export const grammarChapters: ChapterDefinition[] = [
   {
     id: 'kapitel-01',
@@ -305,6 +326,83 @@ export const grammarChapters: ChapterDefinition[] = [
   "ar": "أفعال بمفعولين",
   "en": "Verbs with two objects"
 }, lesson: lesson21, exerciseSets: [...training21, ...extra21] },
+  { id: "kapitel-22", number: 22, level: "A2", title: {
+  "fr": "Je t’aide, tu me remercies",
+  "de": "Ich helfe dir, du dankst mir",
+  "ar": "أساعدك وتشكرني",
+  "en": "I help you, you thank me"
+}, subtitle: {
+  "fr": "Verbes au datif",
+  "de": "Verben mit Dativ",
+  "ar": "أفعال الداتيف",
+  "en": "Dative verbs"
+}, lesson: lesson22, exerciseSets: [...training22, ...extra22] },
+  { id: "kapitel-23", number: 23, level: "A2", title: {
+  "fr": "Ich war, ich hatte",
+  "de": "Ich war, ich hatte",
+  "ar": "Ich war, ich hatte",
+  "en": "Ich war, ich hatte"
+}, subtitle: {
+  "fr": "Präteritum: sein und haben",
+  "de": "Präteritum: sein und haben",
+  "ar": "Präteritum: sein und haben",
+  "en": "Präteritum: sein und haben"
+}, lesson: lesson23, exerciseSets: [...training23, ...extra23] },
+  { id: "kapitel-24", number: 24, level: "A2", title: {
+  "fr": "Was hast du gestern gemacht?",
+  "de": "Was hast du gestern gemacht?",
+  "ar": "Was hast du gestern gemacht?",
+  "en": "Was hast du gestern gemacht?"
+}, subtitle: {
+  "fr": "Perfekt mit haben",
+  "de": "Perfekt mit haben",
+  "ar": "Perfekt mit haben",
+  "en": "Perfekt mit haben"
+}, lesson: lesson24, exerciseSets: [...training24, ...extra24] },
+  { id: "kapitel-25", number: 25, level: "A2", title: {
+  "fr": "Ich bin gekommen, ich habe gelacht",
+  "de": "Ich bin gekommen, ich habe gelacht",
+  "ar": "Ich bin gekommen, ich habe gelacht",
+  "en": "Ich bin gekommen, ich habe gelacht"
+}, subtitle: {
+  "fr": "Perfekt mit sein",
+  "de": "Perfekt mit sein",
+  "ar": "Perfekt mit sein",
+  "en": "Perfekt mit sein"
+}, lesson: lesson25, exerciseSets: [...training25, ...extra25] },
+  { id: "kapitel-26", number: 26, level: "A2", title: {
+  "fr": "Vu – acheté – payé",
+  "de": "Gesehen – eingekauft – bezahlt",
+  "ar": "رأى – تسوق – دفع",
+  "en": "Seen – shopped – paid"
+}, subtitle: {
+  "fr": "Le participe passé",
+  "de": "Partizip II",
+  "ar": "اسم المفعول الثاني",
+  "en": "Past participle"
+}, lesson: lesson26, exerciseSets: [...training26, ...extra26] },
+  { id: "kapitel-27", number: 27, level: "A2", title: {
+  "fr": "Je pouvais, je devais, je voulais",
+  "de": "Ich konnte, ich musste, ich wollte",
+  "ar": "كنت أستطيع، كان عليّ، كنت أريد",
+  "en": "I could, I had to, I wanted"
+}, subtitle: {
+  "fr": "Les modaux au prétérit",
+  "de": "Präteritum der Modalverben",
+  "ar": "الأفعال الناقصة في الماضي",
+  "en": "Modal verbs in the simple past"
+}, lesson: lesson27, exerciseSets: [...training27, ...extra27] },
+  { id: "kapitel-28", number: 28, level: "A2", title: {
+  "fr": "Hier, j’avais soif et j’ai bu du jus.",
+  "de": "Gestern hatte ich Durst und habe Saft getrunken",
+  "ar": "بالأمس كنت عطشان وشربت العصير",
+  "en": "Yesterday I was thirsty and drank juice"
+}, subtitle: {
+  "fr": "Emploi des temps",
+  "de": "Zeitengebrauch",
+  "ar": "استعمال الأزمنة",
+  "en": "Use of tenses"
+}, lesson: lesson28, exerciseSets: [...training28, ...extra28] },
 ]
 
 export function getGrammarChapter(chapterId: string) {

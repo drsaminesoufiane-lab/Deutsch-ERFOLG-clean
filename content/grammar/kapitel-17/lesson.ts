@@ -20,6 +20,131 @@ export const lesson: LessonDefinition = {
     "en": "dative"
   },
   "blocks": [
+{
+  "type": "paragraph",
+  "id": "refonte-theorie",
+  "title": {
+    "fr": "Comprendre et appliquer la règle",
+    "de": "Die Regel verstehen und anwenden",
+    "ar": "فهم القاعدة وتطبيقها",
+    "en": "Understand and apply the rule"
+  },
+  "text": {
+    "fr": "Mit, bei, von, zu et nach exigent le datif. Certains verbes comme helfen aussi. Au masculin et au neutre utilisez dem/einem, au féminin der/einer, au pluriel den avec généralement -n au nom. Pas de n supplémentaire après un pluriel en -n ou -s.",
+    "de": "Mit, bei, von, zu und nach verlangen Dativ, ebenso Verben wie helfen. Maskulin und neutral dem/einem, feminin der/einer, Plural den und meist -n am Nomen. Kein zusätzliches n nach Plural auf -n oder -s.",
+    "ar": "mit وbei وvon وzu وnach تتطلب الداتيف وكذلك helfen. المذكر والمحايد dem/einem والمؤنث der/einer والجمع den مع n غالبا في آخر الاسم إلا إذا انتهى الجمع بـ n أو s.",
+    "en": "Mit, bei, von, zu and nach require dative, as do verbs such as helfen. Masculine and neuter use dem/einem, feminine der/einer, plural den and usually noun -n. No extra n after plural -n or -s."
+  }
+},
+{
+  "type": "examples",
+  "id": "refonte-exemples",
+  "title": {
+    "fr": "Exemples traduits",
+    "de": "Übersetzte Beispiele",
+    "ar": "أمثلة مترجمة",
+    "en": "Translated examples"
+  },
+  "items": [
+    {
+      "id": "refonte-1",
+      "german": "Ich fahre mit dem Auto.",
+      "context": {
+        "fr": "Je roule en voiture.",
+        "de": "Ich fahre mit dem Auto.",
+        "ar": "أذهب بالسيارة.",
+        "en": "I travel by car."
+      },
+      "explanation": {
+        "fr": "Mit, bei, von, zu et nach exigent le datif. Certains verbes comme helfen aussi. Au masculin et au neutre utilisez dem/einem, au féminin der/einer, au pluriel den avec généralement -n au nom. Pas de n supplémentaire après un pluriel en -n ou -s.",
+        "de": "Mit, bei, von, zu und nach verlangen Dativ, ebenso Verben wie helfen. Maskulin und neutral dem/einem, feminin der/einer, Plural den und meist -n am Nomen. Kein zusätzliches n nach Plural auf -n oder -s.",
+        "ar": "mit وbei وvon وzu وnach تتطلب الداتيف وكذلك helfen. المذكر والمحايد dem/einem والمؤنث der/einer والجمع den مع n غالبا في آخر الاسم إلا إذا انتهى الجمع بـ n أو s.",
+        "en": "Mit, bei, von, zu and nach require dative, as do verbs such as helfen. Masculine and neuter use dem/einem, feminine der/einer, plural den and usually noun -n. No extra n after plural -n or -s."
+      }
+    },
+    {
+      "id": "refonte-2",
+      "german": "Sie spricht mit einer Freundin.",
+      "context": {
+        "fr": "Elle parle avec une amie.",
+        "de": "Sie spricht mit einer Freundin.",
+        "ar": "تتحدث مع صديقة.",
+        "en": "She talks with a friend."
+      },
+      "explanation": {
+        "fr": "Mit, bei, von, zu et nach exigent le datif. Certains verbes comme helfen aussi. Au masculin et au neutre utilisez dem/einem, au féminin der/einer, au pluriel den avec généralement -n au nom. Pas de n supplémentaire après un pluriel en -n ou -s.",
+        "de": "Mit, bei, von, zu und nach verlangen Dativ, ebenso Verben wie helfen. Maskulin und neutral dem/einem, feminin der/einer, Plural den und meist -n am Nomen. Kein zusätzliches n nach Plural auf -n oder -s.",
+        "ar": "mit وbei وvon وzu وnach تتطلب الداتيف وكذلك helfen. المذكر والمحايد dem/einem والمؤنث der/einer والجمع den مع n غالبا في آخر الاسم إلا إذا انتهى الجمع بـ n أو s.",
+        "en": "Mit, bei, von, zu and nach require dative, as do verbs such as helfen. Masculine and neuter use dem/einem, feminine der/einer, plural den and usually noun -n. No extra n after plural -n or -s."
+      }
+    },
+    {
+      "id": "refonte-3",
+      "german": "Wir helfen den Kindern.",
+      "context": {
+        "fr": "Nous aidons les enfants.",
+        "de": "Wir helfen den Kindern.",
+        "ar": "نساعد الأطفال.",
+        "en": "We help the children."
+      },
+      "explanation": {
+        "fr": "Mit, bei, von, zu et nach exigent le datif. Certains verbes comme helfen aussi. Au masculin et au neutre utilisez dem/einem, au féminin der/einer, au pluriel den avec généralement -n au nom. Pas de n supplémentaire après un pluriel en -n ou -s.",
+        "de": "Mit, bei, von, zu und nach verlangen Dativ, ebenso Verben wie helfen. Maskulin und neutral dem/einem, feminin der/einer, Plural den und meist -n am Nomen. Kein zusätzliches n nach Plural auf -n oder -s.",
+        "ar": "mit وbei وvon وzu وnach تتطلب الداتيف وكذلك helfen. المذكر والمحايد dem/einem والمؤنث der/einer والجمع den مع n غالبا في آخر الاسم إلا إذا انتهى الجمع بـ n أو s.",
+        "en": "Mit, bei, von, zu and nach require dative, as do verbs such as helfen. Masculine and neuter use dem/einem, feminine der/einer, plural den and usually noun -n. No extra n after plural -n or -s."
+      }
+    },
+    {
+      "id": "refonte-4",
+      "german": "Er fährt mit zwei Autos.",
+      "context": {
+        "fr": "Il voyage avec deux voitures.",
+        "de": "Er fährt mit zwei Autos.",
+        "ar": "يسافر بسيارتين.",
+        "en": "He travels with two cars."
+      },
+      "explanation": {
+        "fr": "Mit, bei, von, zu et nach exigent le datif. Certains verbes comme helfen aussi. Au masculin et au neutre utilisez dem/einem, au féminin der/einer, au pluriel den avec généralement -n au nom. Pas de n supplémentaire après un pluriel en -n ou -s.",
+        "de": "Mit, bei, von, zu und nach verlangen Dativ, ebenso Verben wie helfen. Maskulin und neutral dem/einem, feminin der/einer, Plural den und meist -n am Nomen. Kein zusätzliches n nach Plural auf -n oder -s.",
+        "ar": "mit وbei وvon وzu وnach تتطلب الداتيف وكذلك helfen. المذكر والمحايد dem/einem والمؤنث der/einer والجمع den مع n غالبا في آخر الاسم إلا إذا انتهى الجمع بـ n أو s.",
+        "en": "Mit, bei, von, zu and nach require dative, as do verbs such as helfen. Masculine and neuter use dem/einem, feminine der/einer, plural den and usually noun -n. No extra n after plural -n or -s."
+      }
+    },
+    {
+      "id": "refonte-5",
+      "german": "Ich wohne bei meinen Eltern.",
+      "context": {
+        "fr": "J’habite chez mes parents.",
+        "de": "Ich wohne bei meinen Eltern.",
+        "ar": "أسكن عند والدي.",
+        "en": "I live with my parents."
+      },
+      "explanation": {
+        "fr": "Mit, bei, von, zu et nach exigent le datif. Certains verbes comme helfen aussi. Au masculin et au neutre utilisez dem/einem, au féminin der/einer, au pluriel den avec généralement -n au nom. Pas de n supplémentaire après un pluriel en -n ou -s.",
+        "de": "Mit, bei, von, zu und nach verlangen Dativ, ebenso Verben wie helfen. Maskulin und neutral dem/einem, feminin der/einer, Plural den und meist -n am Nomen. Kein zusätzliches n nach Plural auf -n oder -s.",
+        "ar": "mit وbei وvon وzu وnach تتطلب الداتيف وكذلك helfen. المذكر والمحايد dem/einem والمؤنث der/einer والجمع den مع n غالبا في آخر الاسم إلا إذا انتهى الجمع بـ n أو s.",
+        "en": "Mit, bei, von, zu and nach require dative, as do verbs such as helfen. Masculine and neuter use dem/einem, feminine der/einer, plural den and usually noun -n. No extra n after plural -n or -s."
+      }
+    },
+    {
+      "id": "refonte-6",
+      "german": "Ich gebe dem Kind ein Buch.",
+      "context": {
+        "fr": "Je donne un livre à l’enfant.",
+        "de": "Ich gebe dem Kind ein Buch.",
+        "ar": "أعطي الطفل كتابا.",
+        "en": "I give the child a book."
+      },
+      "explanation": {
+        "fr": "Mit, bei, von, zu et nach exigent le datif. Certains verbes comme helfen aussi. Au masculin et au neutre utilisez dem/einem, au féminin der/einer, au pluriel den avec généralement -n au nom. Pas de n supplémentaire après un pluriel en -n ou -s.",
+        "de": "Mit, bei, von, zu und nach verlangen Dativ, ebenso Verben wie helfen. Maskulin und neutral dem/einem, feminin der/einer, Plural den und meist -n am Nomen. Kein zusätzliches n nach Plural auf -n oder -s.",
+        "ar": "mit وbei وvon وzu وnach تتطلب الداتيف وكذلك helfen. المذكر والمحايد dem/einem والمؤنث der/einer والجمع den مع n غالبا في آخر الاسم إلا إذا انتهى الجمع بـ n أو s.",
+        "en": "Mit, bei, von, zu and nach require dative, as do verbs such as helfen. Masculine and neuter use dem/einem, feminine der/einer, plural den and usually noun -n. No extra n after plural -n or -s."
+      }
+    }
+  ]
+},
+
     {
       "type": "paragraph",
       "id": "N",

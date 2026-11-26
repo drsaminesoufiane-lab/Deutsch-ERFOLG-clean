@@ -1,1987 +1,104 @@
-
 'use client'
-
-import { useLanguage } from '@/contexts/LanguageContext'
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import {
-  ArrowLeft,
-  BookOpen,
-  CheckCircle,
-  XCircle,
-  RotateCcw,
-  Trophy,
-  GraduationCap,
-  Loader2,
-  ChevronDown,
-  ChevronUp,
-  Sparkles,
-  Award,
-  Lock,
-  History,
-  Medal
-} from 'lucide-react'
+import { useLanguage } from '@/contexts/LanguageContext'
 import { supabase } from '@/lib/supabase'
+import type { ChapterDefinition, LocalizedText } from '@/lib/grammar/types'
+import LessonRenderer from '@/components/grammar/LessonRenderer'
+import ExerciseRenderer from '@/components/grammar/ExerciseRenderer'
 
-type PageLecon = {
-  title?: string
-  markdown?: string
-  printed_page?: number
-  figures?: {
-    url?: string
-    local_file?: string
-    description?: string
-    caption?: string
-  }[]
+type Attempt = { id: string; exercise_set_id: string; score: number | null; correct_answers: number; total_questions: number; created_at: string }
+function PerformanceHistory({attempts, language}: {attempts: Attempt[]; language: keyof LocalizedText}) {
+  const rows = [...attempts].sort((a,b)=>Date.parse(b.created_at)-Date.parse(a.created_at))
+  const scored = rows.filter(a=>a.score !== null)
+  const best = scored.length ? Math.max(...scored.map(a=>Number(a.score))) : null
+  const delta = scored.length > 1 ? Number(scored[0].score)-Number(scored[scored.length-1].score) : null
+  const t = {fr:['Ma performance','Meilleur résultat','Tentatives','Progression','Évolution des résultats','Historique des tentatives','Aucune tentative','Übung réussie','Tentative'],de:['Meine Leistung','Bestes Ergebnis','Versuche','Fortschritt','Ergebnisverlauf','Versuchsverlauf','Keine Versuche','Übung bestanden','Versuch'],ar:['أدائي','أفضل نتيجة','المحاولات','التقدم','تطور النتائج','سجل المحاولات','لا توجد محاولات','تمرين ناجح','محاولة'],en:['My performance','Best result','Attempts','Progress','Score trend','Attempt history','No attempts','Exercise mastered','Attempt']}[language]
+  const trend = [...scored].reverse().slice(-20)
+  const points = trend.map((a,i)=>`${10+i*220/Math.max(1,trend.length-1)},${90-Number(a.score)*0.8}`).join(' ')
+  return <aside className="grammar-history-sidebar performance-panel">
+    <div className="performance-hero"><span>{t[0]}</span><small>{t[1]}</small><div><strong>{best ?? '—'}</strong> / 100</div><div className="performance-track"><i style={{width:`${best ?? 0}%`}}/></div>{best===100 && <small>✓ {t[7]}</small>}</div>
+    <div className="performance-stats"><div><small>{t[2]}</small><strong>{rows.length}</strong></div><div><small>{t[3]}</small><strong>{delta===null?'—':`${delta>0?'+':''}${Number(delta.toFixed(2))}`}</strong></div></div>
+    {trend.length>1 && <div className="performance-trend"><h3>{t[4]}</h3><svg viewBox="0 0 240 100" role="img" aria-label={t[4]}><path d="M10 10H230 M10 50H230 M10 90H230" stroke="#e7e1d5" fill="none" strokeDasharray="4 4"/><polyline points={points} fill="none" stroke="#a18450" strokeWidth="2.5" strokeLinejoin="round"/>{trend.map((a,i)=><circle key={a.id} cx={10+i*220/Math.max(1,trend.length-1)} cy={90-Number(a.score)*0.8} r="3" fill="#a18450"/>)}</svg></div>}
+    <h3>{t[5]}</h3><div className="performance-rows">{rows.length===0?<p className="record-empty">{t[6]}</p>:rows.map((a,i)=><div className="performance-row" key={a.id}><div><b>{t[8]} {rows.length-i}</b><time dateTime={a.created_at}>{new Date(a.created_at).toLocaleString(language,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</time></div><strong className={Number(a.score)===100?'perfect':''}>{a.score ?? '—'}<small>/100</small></strong></div>)}</div>
+  </aside>
 }
-
-type ContenuLecon = {
-  objective?: string
-  pages?: PageLecon[]
-  rules?: unknown[]
-  examples?: unknown[]
-  [key: string]: any
-}
-
-type Chapitre = {
-  id: string
-  title: string
-  level: string
-  description: string | null
-  position: number
-}
-
-type Lecon = {
-  id: string
-  title: string
-  content: ContenuLecon
-  position: number
-}
-
-type Ubung = {
-  id: string
-  chapter_id: string
-  lesson_id: string | null
-  category: 'meistertraining' | 'extra_kick'
-  title: string
-  description: string | null
-  position: number
-}
-
-type Exercice = {
-  id: string
-  ubung_id: string
-  title: string
-  exercise_type:
-    | 'qcm'
-    | 'fill_blank'
-    | 'true_false'
-    | 'matching'
-    | 'reorder'
-    | 'writing'
-  question: string
-  content: {
-    label?: string
-    prompt?: string
-    sentence?: string
-    options?: string[]
-    pairs?: { id: string; left: string; answer: string }[]
-  }
-  correct_answer: string | string[]
-  explanation: string | null
-  explanation_ar: string | null
-  position: number
-}
-
-type Reponse = string | string[]
-type Onglet = 'lecons' | 'meistertraining' | 'extra_kick'
-
-type Tentative = {
-  id: string
-  student_id: string
-  ubung_id: string
-  score: number
-  total_questions: number
-  correct_answers: number
-  created_at: string
-}
-
-function normaliser(valeur: string) {
-  return valeur.trim().replace(/\s+/g, ' ').toLowerCase()
-}
-
-function normaliserVraiFaux(valeur: string) {
-  const v = normaliser(valeur)
-  if (v === 'true' || v === 'vrai') return 'true'
-  if (v === 'false' || v === 'faux') return 'false'
-  return v
-}
-
-function attenduesExercice(exercice: Exercice): string[] {
-  return Array.isArray(exercice.correct_answer)
-    ? exercice.correct_answer
-    : [exercice.correct_answer]
-}
-
-function attenduePourAffichage(exercice: Exercice, option: string) {
-  return attenduesExercice(exercice).some(answer => {
-    if (exercice.exercise_type === 'true_false') {
-      return normaliserVraiFaux(answer) === normaliserVraiFaux(option)
-    }
-    return normaliser(answer) === normaliser(option)
-  })
-}
-
-function comparerReponses(
-  exercice: Exercice,
-  reponse: Reponse | undefined
-): boolean {
-  if (reponse === undefined || exercice.exercise_type === 'writing') {
-    return false
-  }
-
-  const attendues = attenduesExercice(exercice)
-
-  if (exercice.exercise_type === 'true_false') {
-    const valeur = Array.isArray(reponse) ? reponse[0] || '' : reponse
-    return attendues.some(
-      attendue =>
-        normaliserVraiFaux(valeur) === normaliserVraiFaux(attendue)
-    )
-  }
-
-  if (
-    exercice.exercise_type === 'matching' ||
-    exercice.exercise_type === 'reorder'
-  ) {
-    const donnees = Array.isArray(reponse) ? reponse : [reponse]
-    if (donnees.length !== attendues.length) return false
-
-    return attendues.every((attendue, index) => {
-      const valeur = donnees[index]
-      return (
-        typeof valeur === 'string' &&
-        valeur.trim() !== '' &&
-        normaliser(valeur) === normaliser(attendue || '')
-      )
-    })
-  }
-
-  if (exercice.exercise_type === 'qcm' && attendues.length > 1) {
-    const donnees = Array.isArray(reponse) ? reponse : [reponse]
-    return (
-      donnees.length === attendues.length &&
-      attendues.every(attendue =>
-        donnees.some(valeur => normaliser(valeur) === normaliser(attendue))
-      )
-    )
-  }
-
-  const valeur = Array.isArray(reponse) ? reponse[0] || '' : reponse
-  return attendues.some(
-    attendue => normaliser(valeur) === normaliser(attendue)
-  )
-}
-
-function nettoyerMarkdown(markdown: string) {
-  return markdown
-    .replace(/<!--[\s\S]*?-->/g, '')
-    .replace(/\n{3,}/g, '\n\n')
-    .trim()
-}
-
 export default function ChapitreGrammairePage() {
-  const { t, language, isRTL } = useLanguage()
-  const g = t.grammarChapter
+  const { language, isRTL } = useLanguage()
   const params = useParams()
-
-  const chapitreId = Array.isArray(params.numero)
-    ? params.numero[0]
-    : params.numero
-
-  const [chapitre, setChapitre] = useState<Chapitre | null>(null)
-  const [lecons, setLecons] = useState<Lecon[]>([])
-  const [ubungen, setUbungen] = useState<Ubung[]>([])
-  const [exercices, setExercices] = useState<Exercice[]>([])
-
-  const [reponses, setReponses] = useState<Record<string, Reponse>>({})
-  const [corriges, setCorriges] = useState<string[]>([])
-  const [scoresSession, setScoresSession] = useState<Record<string, number>>({})
-
-  const [tentatives, setTentatives] = useState<Tentative[]>([])
-  const [utilisateurId, setUtilisateurId] = useState<string | null>(null)
-  const [soumissions, setSoumissions] = useState<string[]>([])
-  const [erreursSoumission, setErreursSoumission] = useState<Record<string, string>>({})
-  const [historiquesOuverts, setHistoriquesOuverts] = useState<string[]>([])
-
-  const [leconsOuvertes, setLeconsOuvertes] = useState<string[]>([])
-  const [ubungenOuvertes, setUbungenOuvertes] = useState<string[]>([])
-  const [ongletActif, setOngletActif] = useState<Onglet>('lecons')
-
-  const [chargement, setChargement] = useState(true)
-  const [chargementRecords, setChargementRecords] = useState(false)
-  const [erreur, setErreur] = useState('')
-
-  // Chargement du chapitre, des leçons et des exercices
-  useEffect(() => {
-    let actif = true
-
-    async function chargerContenu() {
-      setChargement(true)
-      setErreur('')
-      setChapitre(null)
-      setLecons([])
-      setUbungen([])
-      setExercices([])
-      setReponses({})
-      setCorriges([])
-      setScoresSession({})
-      setTentatives([])
-      setOngletActif('lecons')
-
-      if (!chapitreId) {
-        setErreur('Identifiant du chapitre invalide.')
-        setChargement(false)
-        return
-      }
-
-      const { data: chapitreData, error: chapitreError } = await supabase
-        .from('grammar_chapters')
-        .select('id, title, level, description, position')
-        .eq('id', chapitreId)
-        .eq('is_published', true)
-        .single()
-
-      if (!actif) return
-
-      if (chapitreError || !chapitreData) {
-        setErreur('Chapitre introuvable ou non publié.')
-        setChargement(false)
-        return
-      }
-
-      setChapitre(chapitreData)
-
-      const { data: leconsData, error: leconsError } = await supabase
-  .from('grammar_lessons')
-  .select('id, chapter_id, title, content, position, is_published')
-  .eq('chapter_id', chapitreId)
-  .eq('is_published', true)
-  .order('position', { ascending: true })
-
-console.log('========== DIAGNOSTIC LEÇONS ==========')
-console.log('Chapitre ID utilisé :', chapitreId)
-console.log('Leçons récupérées :', leconsData)
-console.log('Erreur Supabase :', leconsError)
-console.log('=======================================')
-
-if (!actif) return
-
-if (leconsError) {
-  console.error(leconsError)
-  setErreur('Impossible de charger les leçons.')
-  setChargement(false)
-  return
-}
-
-setLecons((leconsData || []) as Lecon[])
-
-      setLecons((leconsData || []) as Lecon[])
-
-      const { data: ubungenData, error: ubungenError } = await supabase
-        .from('grammar_ubungen')
-        .select(
-          'id, chapter_id, lesson_id, category, title, description, position'
-        )
-        .eq('chapter_id', chapitreId)
-        .eq('is_published', true)
-        .order('position', { ascending: true })
-
-      if (!actif) return
-
-      if (ubungenError) {
-        console.error(ubungenError)
-        setErreur('Impossible de charger les exercices.')
-        setChargement(false)
-        return
-      }
-
-      const ubungenValides = (ubungenData || []).filter(
-        (u: any) =>
-          u.category === 'meistertraining' ||
-          u.category === 'extra_kick'
-      ) as Ubung[]
-
-      setUbungen(ubungenValides)
-
-      if (ubungenValides.length > 0) {
-        const ids = ubungenValides.map(u => u.id)
-
-        const { data: exercicesData, error: exercicesError } = await supabase
-          .from('grammar_exercises')
-          .select(`
-            id,
-            ubung_id,
-            title,
-            exercise_type,
-            question,
-            content,
-            correct_answer,
-            explanation,
-            explanation_ar,
-            position
-          `)
-          .in('ubung_id', ids)
-          .eq('is_published', true)
-          .order('position', { ascending: true })
-
-        if (!actif) return
-
-        if (exercicesError) {
-          console.error(exercicesError)
-          setErreur('Impossible de charger les questions.')
-          setChargement(false)
-          return
-        }
-
-        setExercices((exercicesData || []) as Exercice[])
-      }
-
-      setChargement(false)
-    }
-
-    chargerContenu()
-
-    return () => {
-      actif = false
-    }
-  }, [chapitreId])
-
-  // Chargement des records enregistrés dans Supabase
-  useEffect(() => {
-    let actif = true
-
-    async function chargerTentatives() {
-      if (ubungen.length === 0) {
-        setTentatives([])
-        return
-      }
-
-      setChargementRecords(true)
-
-      const { data: authData, error: authError } =
-        await supabase.auth.getUser()
-
-      if (!actif) return
-
-      if (authError || !authData.user) {
-        setUtilisateurId(null)
-        setTentatives([])
-        setChargementRecords(false)
-        return
-      }
-
-      const userId = authData.user.id
-      setUtilisateurId(userId)
-
-      const ids = ubungen.map(u => u.id)
-
-      const { data, error: recordsError } = await supabase
-        .from('grammar_ubung_attempts')
-        .select(
-          'id, student_id, ubung_id, score, total_questions, correct_answers, created_at'
-        )
-        .eq('student_id', userId)
-        .in('ubung_id', ids)
-        .order('created_at', { ascending: false })
-
-      if (!actif) return
-
-      if (recordsError) {
-        console.error('Erreur chargement des records :', recordsError)
-      } else {
-        setTentatives((data || []) as Tentative[])
-      }
-
-      setChargementRecords(false)
-    }
-
-    chargerTentatives()
-
-    return () => {
-      actif = false
-    }
-  }, [ubungen])
-
-  const exercicesParUbung = useMemo(() => {
-    return ubungen.map(ubung => ({
-      ubung,
-      exercices: exercices
-        .filter(exercice => exercice.ubung_id === ubung.id)
-        .sort((a, b) => a.position - b.position)
-    }))
-  }, [ubungen, exercices])
-
-  const meistertraining = exercicesParUbung.filter(
-    item => item.ubung.category === 'meistertraining'
-  )
-
-  const extraKick = exercicesParUbung.filter(
-    item => item.ubung.category === 'extra_kick'
-  )
-
-  function tentativesUbung(ubungId: string) {
-    return tentatives
-      .filter(t => t.ubung_id === ubungId)
-      .sort(
-        (a, b) =>
-          new Date(b.created_at).getTime() -
-          new Date(a.created_at).getTime()
-      )
-  }
-
-  function meilleurScore(ubungId: string) {
-    const liste = tentativesUbung(ubungId)
-    if (liste.length === 0) return null
-    return Math.max(...liste.map(t => Number(t.score)))
-  }
-
-  function nombreTentatives(ubungId: string) {
-    return tentativesUbung(ubungId).length
-  }
-
-  // Extra-Kick : chaque Übung obligatoire doit avoir un record de 100/100.
-  // Une Übung sans question corrigeable automatiquement bloque la validation.
-  const extraKickDebloque =
-    meistertraining.length > 0 &&
-    meistertraining.every(item => {
-      const corrigeables = item.exercices.filter(
-        ex => ex.exercise_type !== 'writing'
-      )
-
-      return (
-        corrigeables.length > 0 &&
-        meilleurScore(item.ubung.id) === 100
-      )
-    })
-
-  const meistertrainingValides = meistertraining.filter(
-    item => meilleurScore(item.ubung.id) === 100
-  ).length
-
-  const meistertrainingRestants = meistertraining.length - meistertrainingValides
-
-  // Progression persistante : une Übung est terminée dès qu'une tentative
-  // a été enregistrée, même si la note n'est pas encore de 100/100.
-  const totalQuestionsMeister = meistertraining.reduce(
-    (total, item) => total + item.exercices.length,
-    0
-  )
-
-  const questionsTerminees = meistertraining.reduce((total, item) => {
-    return total + (
-      nombreTentatives(item.ubung.id) > 0
-        ? item.exercices.length
-        : 0
-    )
-  }, 0)
-
-  const questionsRestantes = Math.max(
-    0,
-    totalQuestionsMeister - questionsTerminees
-  )
-
-  const progression =
-    totalQuestionsMeister > 0
-      ? Math.round((questionsTerminees / totalQuestionsMeister) * 100)
-      : 0
-
-  function changerReponse(id: string, valeur: Reponse) {
-    setReponses(prev => ({ ...prev, [id]: valeur }))
-  }
-
-  function nombreRepondu(liste: Exercice[]) {
-    return liste.filter(exercice => {
-      const reponse = reponses[exercice.id]
-
-      if (
-        exercice.exercise_type === 'matching' ||
-        exercice.exercise_type === 'reorder'
-      ) {
-        const attendu =
-          exercice.exercise_type === 'matching'
-            ? (exercice.content?.pairs || []).length
-            : (exercice.content?.options || []).length
-
-        return (
-          Array.isArray(reponse) &&
-          reponse.length === attendu &&
-          Array.from({ length: attendu }, (_, index) => reponse[index]).every(
-            valeur =>
-              typeof valeur === 'string' && valeur.trim() !== ''
-          )
-        )
-      }
-
-      if (
-        exercice.exercise_type === 'qcm' &&
-        Array.isArray(exercice.correct_answer) &&
-        exercice.correct_answer.length > 1
-      ) {
-        return Array.isArray(reponse) && reponse.length > 0
-      }
-
-      return typeof reponse === 'string' && reponse.trim() !== ''
-    }).length
-  }
-
-  function scoreUbung(liste: Exercice[]) {
-    const corrigeables = liste.filter(
-      exercice => exercice.exercise_type !== 'writing'
-    )
-
-    if (corrigeables.length === 0) return 0
-
-    const bonnesReponses = corrigeables.filter(exercice =>
-      comparerReponses(exercice, reponses[exercice.id])
-    ).length
-
-    return Math.round((bonnesReponses / corrigeables.length) * 100)
-  }
-
-  async function corrigerUbung(ubungId: string, liste: Exercice[]) {
-    if (soumissions.includes(ubungId)) return
-
-    if (!utilisateurId) {
-      setErreursSoumission(prev => ({
-        ...prev,
-        [ubungId]: 'Vous devez être connecté à votre compte étudiant pour enregistrer votre résultat.'
-      }))
-      return
-    }
-
-    const reponsesUbung: Record<string, Reponse> = {}
-
-    for (const exercice of liste) {
-      const reponse = reponses[exercice.id]
-
-      if (reponse === undefined) {
-        setErreursSoumission(prev => ({
-          ...prev,
-          [ubungId]: 'Veuillez répondre à toutes les questions avant la correction.'
-        }))
-        return
-      }
-
-      reponsesUbung[exercice.id] = reponse
-    }
-
-    const totalCorrigeable = liste.filter(
-      ex => ex.exercise_type !== 'writing'
-    ).length
-
-    if (totalCorrigeable === 0) {
-      setErreursSoumission(prev => ({
-        ...prev,
-        [ubungId]: 'Cette Übung contient uniquement des rédactions. Elle ne peut pas encore être validée automatiquement.'
-      }))
-      return
-    }
-
-    setSoumissions(prev => [...prev, ubungId])
-    setErreursSoumission(prev => ({ ...prev, [ubungId]: '' }))
-
-    const { data, error } = await supabase.rpc(
-      'submit_grammar_ubung_attempt',
-      {
-        p_ubung_id: ubungId,
-        p_answers: reponsesUbung
-      }
-    )
-
-    if (error) {
-      console.error('Erreur enregistrement tentative :', error)
-
-      setErreursSoumission(prev => ({
-        ...prev,
-        [ubungId]: error.message || 'Impossible d’enregistrer votre résultat.'
-      }))
-
-      setSoumissions(prev => prev.filter(id => id !== ubungId))
-      return
-    }
-
-    const scoreServeur = Number(data?.score)
-
-    setScoresSession(prev => ({
-      ...prev,
-      [ubungId]: Number.isFinite(scoreServeur)
-        ? scoreServeur
-        : scoreUbung(liste)
-    }))
-
-    setCorriges(prev =>
-      prev.includes(ubungId) ? prev : [...prev, ubungId]
-    )
-
-    // Recharger l'historique depuis Supabase après chaque tentative.
-    const { data: nouvellesTentatives, error: historiqueError } =
-      await supabase
-        .from('grammar_ubung_attempts')
-        .select(
-          'id, student_id, ubung_id, score, total_questions, correct_answers, created_at'
-        )
-        .eq('student_id', utilisateurId)
-        .eq('ubung_id', ubungId)
-        .order('created_at', { ascending: false })
-
-    if (historiqueError) {
-      console.error('Erreur actualisation historique :', historiqueError)
-    } else {
-      setTentatives(prev => [
-        ...prev.filter(t => t.ubung_id !== ubungId),
-        ...((nouvellesTentatives || []) as Tentative[])
-      ])
-    }
-
-    setSoumissions(prev => prev.filter(id => id !== ubungId))
-  }
-
-  function recommencerUbung(ubungId: string, liste: Exercice[]) {
-    setReponses(prev => {
-      const nouvelles = { ...prev }
-      liste.forEach(exercice => delete nouvelles[exercice.id])
-      return nouvelles
-    })
-
-    setCorriges(prev => prev.filter(id => id !== ubungId))
-
-    setScoresSession(prev => {
-      const nouvelles = { ...prev }
-      delete nouvelles[ubungId]
-      return nouvelles
-    })
-
-    setErreursSoumission(prev => ({
-      ...prev,
-      [ubungId]: ''
-    }))
-
-    // Important : ne jamais supprimer les records Supabase ici.
-  }
-
-  function afficherHistorique(ubungId: string) {
-    setHistoriquesOuverts(prev =>
-      prev.includes(ubungId)
-        ? prev.filter(id => id !== ubungId)
-        : [...prev, ubungId]
-    )
-  }
-
-  function afficherUbung(item: {
-    ubung: Ubung
-    exercices: Exercice[]
-  }) {
-    const { ubung, exercices: liste } = item
-    const corrige = corriges.includes(ubung.id)
-    const ouverte = ubungenOuvertes.includes(ubung.id)
-    const repondu = nombreRepondu(liste)
-    const score = scoresSession[ubung.id] ?? scoreUbung(liste)
-    const total = liste.length
-
-    const redactions = liste.filter(
-      exercice => exercice.exercise_type === 'writing'
-    ).length
-
-    const totalCorrigeable = total - redactions
-    const historique = tentativesUbung(ubung.id)
-    const meilleur = meilleurScore(ubung.id)
-    const historiqueOuvert = historiquesOuverts.includes(ubung.id)
-    const enSoumission = soumissions.includes(ubung.id)
-
-    function basculerUbung() {
-      setUbungenOuvertes(prev =>
-        prev.includes(ubung.id)
-          ? prev.filter(id => id !== ubung.id)
-          : [...prev, ubung.id]
-      )
-    }
-
-    const types: Record<string, string> = {
-      qcm: 'QCM',
-      fill_blank: 'Texte à trous',
-      true_false: 'Vrai / Faux',
-      matching: 'Association',
-      reorder: 'Remise en ordre',
-      writing: 'Expression écrite'
-    }
-
-    return (
-      <section
-        key={ubung.id}
-        className={`exercise-card ${ouverte ? 'exercise-card-open' : ''}`}
-      >
-        <button
-          type="button"
-          onClick={basculerUbung}
-          className="exercise-toggle"
-          aria-expanded={ouverte}
-        >
-          <div className="exercise-toggle-number">
-            <BookOpen size={21} />
-          </div>
-
-          <div className="exercise-toggle-content">
-            <span className="eyebrow">
-              {ubung.category === 'meistertraining'
-                ? 'MEISTERTRAINING'
-                : 'EXTRA-KICK'}
-            </span>
-
-            <h3 className="exercise-title">{ubung.title}</h3>
-
-            {ubung.description && (
-              <p className="exercise-instruction">
-                {ubung.description}
-              </p>
-            )}
-
-            <span className="exercise-question-count">
-              {total} question{total > 1 ? 's' : ''}
-            </span>
-          </div>
-
-          <span className="exercise-toggle-icon">
-            {ouverte ? <ChevronUp size={22} /> : <ChevronDown size={22} />}
-          </span>
-        </button>
-
-        {ouverte && (
-          <>
-            {total === 0 ? (
-              <p className="empty-message">
-                Aucun exercice publié dans cette Übung pour le moment.
-              </p>
-            ) : (
-              <div className="exercise-body">
-
-                {/* RECORDS PERMANENTS */}
-                <div className="record-panel">
-                  <div className="record-heading">
-                    <div className="record-heading-icon">
-                      <Medal size={19} />
-                    </div>
-                    <div>
-                      <strong>Vos records</strong>
-                      <p>Historique sauvegardé automatiquement</p>
-                    </div>
-                  </div>
-
-                  {chargementRecords ? (
-                    <div className="record-loading">
-                      <Loader2 size={15} className="animate-spin" />
-                      Chargement des records...
-                    </div>
-                  ) : historique.length === 0 ? (
-                    <p className="record-empty">
-                      Aucune tentative enregistrée. Votre premier résultat apparaîtra ici.
-                    </p>
-                  ) : (
-                    <>
-                      <div className="record-stats">
-                        <div className="record-stat">
-                          <span>MEILLEUR SCORE</span>
-                          <strong className={meilleur === 100 ? 'record-perfect' : ''}>
-                            {meilleur} / 100
-                          </strong>
-                        </div>
-
-                        <div className="record-stat">
-                          <span>DERNIER SCORE</span>
-                          <strong>
-                            {Number(historique[0].score)} / 100
-                          </strong>
-                        </div>
-
-                        <div className="record-stat">
-                          <span>TENTATIVES</span>
-                          <strong>{historique.length}</strong>
-                        </div>
-                      </div>
-
-                      <button
-                        type="button"
-                        className="history-toggle"
-                        onClick={() => afficherHistorique(ubung.id)}
-                      >
-                        <History size={15} />
-                        {historiqueOuvert ? 'Masquer l’historique' : 'Voir tout l’historique'}
-                        {historiqueOuvert
-                          ? <ChevronUp size={15} />
-                          : <ChevronDown size={15} />}
-                      </button>
-
-                      {historiqueOuvert && (
-                        <div className="history-list">
-                          {historique.map((tentative, index) => (
-                            <div className="history-row" key={tentative.id}>
-                              <span className="history-index">
-                                #{historique.length - index}
-                              </span>
-                              <span className="history-date">
-                                {new Date(tentative.created_at).toLocaleString('fr-FR', {
-                                  dateStyle: 'short',
-                                  timeStyle: 'short'
-                                })}
-                              </span>
-                              <strong className={
-                                Number(tentative.score) === 100
-                                  ? 'record-perfect'
-                                  : ''
-                              }>
-                                {Number(tentative.score)} / 100
-                              </strong>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </>
-                  )}
-                </div>
-
-                <div className="questions-grid">
-                  {liste.map((exercice, index) => {
-                    const reponse = reponses[exercice.id]
-                    const correct = comparerReponses(exercice, reponse)
-                    const options = exercice.content?.options || []
-                    const pairs = exercice.content?.pairs || []
-
-                    const tableauReponses = Array.isArray(reponse)
-                      ? reponse
-                      : []
-
-                    const attendues = attenduesExercice(exercice)
-
-                    return (
-                      <article key={exercice.id} className="question-card">
-                        <div className="question-meta">
-                          <span className="question-number">
-                            QUESTION {String(index + 1).padStart(2, '0')}
-                          </span>
-                          <span className="type-pill">
-                            {types[exercice.exercise_type] || 'Format inconnu'}
-                          </span>
-                        </div>
-
-                        {exercice.content?.label && (
-                          <p className="question-label">
-                            {exercice.content.label}
-                          </p>
-                        )}
-
-                        <h4 className="question-title">
-                          {exercice.content?.prompt || exercice.question}
-                        </h4>
-
-                        {exercice.exercise_type === 'qcm' && (
-                          <div className="space-y-2">
-                            {options.map(option => {
-                              const multi = attendues.length > 1
-                              const selected = Array.isArray(reponse)
-                                ? reponse.includes(option)
-                                : reponse === option
-
-                              const isCorrect =
-                                corrige &&
-                                attenduePourAffichage(exercice, option)
-
-                              const isWrong = corrige && selected && !isCorrect
-
-                              return (
-                                <button
-                                  key={option}
-                                  type="button"
-                                  disabled={corrige}
-                                  onClick={() => {
-                                    if (!multi) {
-                                      changerReponse(exercice.id, option)
-                                      return
-                                    }
-
-                                    const current = Array.isArray(reponse)
-                                      ? reponse
-                                      : []
-
-                                    changerReponse(
-                                      exercice.id,
-                                      current.includes(option)
-                                        ? current.filter(value => value !== option)
-                                        : [...current, option]
-                                    )
-                                  }}
-                                  className={`answer-option ${
-                                    isCorrect
-                                      ? 'answer-correct'
-                                      : isWrong
-                                        ? 'answer-wrong'
-                                        : selected
-                                          ? 'answer-selected'
-                                          : ''
-                                  }`}
-                                >
-                                  <span>{option}</span>
-                                  {isCorrect && <CheckCircle size={17} />}
-                                  {isWrong && <XCircle size={17} />}
-                                </button>
-                              )
-                            })}
-                          </div>
-                        )}
-
-                        {exercice.exercise_type === 'true_false' && (
-                          <div className="grid grid-cols-2 gap-2">
-                            {(options.length ? options : ['Vrai', 'Faux']).map(option => {
-                              const selected = Array.isArray(reponse)
-                                ? reponse[0] === option
-                                : reponse === option
-
-                              const isCorrect =
-                                corrige &&
-                                attenduePourAffichage(exercice, option)
-
-                              const isWrong = corrige && selected && !correct
-
-                              return (
-                                <button
-                                  key={option}
-                                  type="button"
-                                  disabled={corrige}
-                                  onClick={() =>
-                                    changerReponse(exercice.id, option)
-                                  }
-                                  className={`answer-option justify-center ${
-                                    isCorrect
-                                      ? 'answer-correct'
-                                      : isWrong
-                                        ? 'answer-wrong'
-                                        : selected
-                                          ? 'answer-selected'
-                                          : ''
-                                  }`}
-                                >
-                                  <span>{option}</span>
-                                  {isCorrect && <CheckCircle size={17} />}
-                                  {isWrong && <XCircle size={17} />}
-                                </button>
-                              )
-                            })}
-                          </div>
-                        )}
-
-                        {exercice.exercise_type === 'fill_blank' && (
-                          <div>
-                            {exercice.content?.sentence && (
-                              <p className="muted-text mb-3 leading-relaxed">
-                                {exercice.content.sentence}
-                              </p>
-                            )}
-                            <input
-                              type="text"
-                              value={typeof reponse === 'string' ? reponse : ''}
-                              disabled={corrige}
-                              onChange={e =>
-                                changerReponse(exercice.id, e.target.value)
-                              }
-                              placeholder="Écrivez votre réponse..."
-                              className="premium-input w-full"
-                            />
-                          </div>
-                        )}
-
-                        {exercice.exercise_type === 'matching' && (
-                          <div className="space-y-3">
-                            {pairs.map((pair, pairIndex) => (
-                              <div
-                                key={pair.id || pairIndex}
-                                className="space-y-2"
-                              >
-                                <div className="match-item">{pair.left}</div>
-                                <select
-                                  value={tableauReponses[pairIndex] || ''}
-                                  disabled={corrige}
-                                  onChange={e => {
-                                    const nouvelles = [...tableauReponses]
-                                    nouvelles[pairIndex] = e.target.value
-                                    changerReponse(exercice.id, nouvelles)
-                                  }}
-                                  className="premium-input w-full"
-                                >
-                                  <option value="">Choisir une réponse</option>
-                                  {pairs.map(option => (
-                                    <option key={option.id} value={option.answer}>
-                                      {option.answer}
-                                    </option>
-                                  ))}
-                                </select>
-                              </div>
-                            ))}
-                          </div>
-                        )}
-
-                        {exercice.exercise_type === 'reorder' && (
-                          <div className="space-y-3">
-                            <p className="muted-text mb-3">
-                              Remettez les éléments dans le bon ordre.
-                            </p>
-                            {options.map((option, optionIndex) => (
-                              <div
-                                key={`${exercice.id}-${optionIndex}`}
-                                className="flex items-center gap-2"
-                              >
-                                <span className="number-badge">
-                                  {optionIndex + 1}
-                                </span>
-                                <select
-                                  value={tableauReponses[optionIndex] || ''}
-                                  disabled={corrige}
-                                  onChange={e => {
-                                    const nouvelles = [...tableauReponses]
-                                    nouvelles[optionIndex] = e.target.value
-                                    changerReponse(exercice.id, nouvelles)
-                                  }}
-                                  className="premium-input flex-1 min-w-0"
-                                >
-                                  <option value="">Choisir un élément</option>
-                                  {options.map(item => (
-                                    <option key={item} value={item}>
-                                      {item}
-                                    </option>
-                                  ))}
-                                </select>
-                              </div>
-                            ))}
-                          </div>
-                        )}
-
-                        {exercice.exercise_type === 'writing' && (
-                          <div>
-                            <p className="muted-text mb-2">
-                              Rédigez votre réponse.
-                            </p>
-                            <textarea
-                              value={typeof reponse === 'string' ? reponse : ''}
-                              disabled={corrige}
-                              onChange={e =>
-                                changerReponse(exercice.id, e.target.value)
-                              }
-                              rows={5}
-                              placeholder="Écrivez votre texte ici..."
-                              className="premium-input w-full resize-y"
-                            />
-                          </div>
-                        )}
-
-                        {corrige && (
-                          <div
-                            className={`feedback-box ${
-                              exercice.exercise_type === 'writing'
-                                ? 'feedback-neutral'
-                                : correct
-                                  ? 'feedback-success'
-                                  : 'feedback-error'
-                            }`}
-                          >
-                            <div className="feedback-heading">
-                              {exercice.exercise_type === 'writing' ? (
-                                <BookOpen size={18} />
-                              ) : correct ? (
-                                <CheckCircle size={18} />
-                              ) : (
-                                <XCircle size={18} />
-                              )}
-
-                              {exercice.exercise_type === 'writing'
-                                ? 'Réponse enregistrée : consultez le modèle ci-dessous.'
-                                : correct
-                                  ? 'Bonne réponse !'
-                                  : `Réponse correcte : ${attendues.join(' / ')}`}
-                            </div>
-
-                            {exercice.explanation && (
-                              <p className="muted-text leading-relaxed">
-                                {exercice.explanation}
-                              </p>
-                            )}
-
-                            {exercice.explanation_ar && (
-                              <p
-                                dir="rtl"
-                                className="muted-text mt-3 text-right leading-8"
-                              >
-                                {exercice.explanation_ar}
-                              </p>
-                            )}
-                          </div>
-                        )}
-                      </article>
-                    )
-                  })}
-                </div>
-
-                <div className="result-panel">
-                  {!corrige ? (
-                    <>
-                      <div className="flex justify-between text-sm muted-text mb-3">
-                        <span className="font-semibold">Votre progression</span>
-                        <span className="font-bold text-[#263348]">
-                          {repondu} / {total} réponses
-                        </span>
-                      </div>
-
-                      <div className="progress-track mb-6">
-                        <div
-                          className="progress-fill"
-                          style={{
-                            width: `${total > 0 ? (repondu / total) * 100 : 0}%`
-                          }}
-                        />
-                      </div>
-
-                      {erreursSoumission[ubung.id] && (
-                        <p className="submission-error">
-                          {erreursSoumission[ubung.id]}
-                        </p>
-                      )}
-
-                      <button
-                        type="button"
-                        onClick={() => corrigerUbung(ubung.id, liste)}
-                        disabled={
-                          repondu !== total ||
-                          enSoumission ||
-                          totalCorrigeable === 0
-                        }
-                        className="premium-button"
-                      >
-                        {enSoumission ? (
-                          <Loader2 size={18} className="animate-spin" />
-                        ) : (
-                          <CheckCircle size={18} />
-                        )}
-                        {enSoumission
-                          ? 'Enregistrement...'
-                          : 'Corriger cette Übung'}
-                      </button>
-
-                      {repondu !== total && (
-                        <p className="text-xs muted-text mt-3">
-                          Répondez aux {total} questions pour pouvoir corriger.
-                        </p>
-                      )}
-
-                      {totalCorrigeable === 0 && (
-                        <p className="text-xs muted-text mt-3">
-                          Cette Übung contient uniquement des rédactions et nécessite une évaluation séparée.
-                        </p>
-                      )}
-                    </>
-                  ) : (
-                    <div className="text-center py-2">
-                      <div className="result-icon">
-                        <Trophy size={27} />
-                      </div>
-
-                      <span className="eyebrow">TRAINING COMPLETED</span>
-
-                      <h4 className="text-3xl font-bold text-[#263348] mt-3">
-                        {score} / 100
-                      </h4>
-
-                      <p className="muted-text mt-2 text-sm">
-                        {redactions > 0 &&
-                          `${redactions} rédaction(s) à évaluer séparément. `}
-
-                        {totalCorrigeable === 0
-                          ? 'Cette Übung contient uniquement des rédactions à évaluer séparément.'
-                          : score === 100
-                            ? 'Excellent ! Toutes les réponses corrigées sont correctes.'
-                            : score >= 50
-                              ? 'Très bien ! Continuez à vous entraîner.'
-                              : 'Continuez vos efforts : relisez la leçon et réessayez.'}
-                      </p>
-
-                      {meilleur !== null && (
-                        <p className="best-score-note">
-                          Votre meilleur record : <strong>{meilleur}/100</strong>
-                        </p>
-                      )}
-
-                      <button
-                        type="button"
-                        onClick={() => recommencerUbung(ubung.id, liste)}
-                        className="premium-button mt-6"
-                      >
-                        <RotateCcw size={18} />
-                        Recommencer
-                      </button>
-                    </div>
-                  )}
-                </div>
-              </div>
-            )}
-          </>
-        )}
-      </section>
-    )
-  }
-
-  if (chargement) {
-    return (
-      <main className="premium-page min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <Loader2 className="animate-spin mx-auto mb-4 text-[#a88b58]" size={32} />
-          <p className="muted-text">Chargement du chapitre...</p>
-        </div>
-      </main>
-    )
-  }
-
-  if (erreur || !chapitre) {
-    return (
-      <main className="premium-page min-h-screen px-5 py-12">
-        <div className="max-w-4xl mx-auto error-card p-8">
-          <p className="text-red-700">
-            {erreur || 'Chapitre introuvable.'}
-          </p>
-          <Link
-            href="/espace-etudiant/apprentissage/grammaire"
-            className="premium-back mt-6 inline-flex"
-          >
-            <ArrowLeft size={17} />
-            Retour aux chapitres
-          </Link>
-        </div>
-      </main>
-    )
-  }
-
-  return (
-    <main className="premium-page min-h-screen">
-      <div className="max-w-6xl mx-auto px-4 py-7 md:px-8 md:py-10">
-
-        <Link
-          href="/espace-etudiant/apprentissage/grammaire"
-          className="premium-back mb-7 inline-flex"
-        >
-          <ArrowLeft size={17} />
-          Retour aux chapitres
-        </Link>
-
-        <header className="chapter-header mb-8">
-          <div className="relative z-10">
-            <div className="header-brand">
-              <GraduationCap size={18} />
-              DEUTSCH ERFOLG
-              <span className="header-separator">/</span>
-              GRAMMATIK
-            </div>
-
-            <span className="level-label">
-              NIVEAU {chapitre.level}
-            </span>
-
-            <h1 className="chapter-title">{chapitre.title}</h1>
-
-            {chapitre.description && (
-              <p className="chapter-description">
-                {chapitre.description}
-              </p>
-            )}
-
-            <div className="header-stats">
-              <span>
-                <BookOpen size={15} />
-                {lecons.length} leçon{lecons.length > 1 ? 's' : ''}
-              </span>
-              <span>
-                <Trophy size={15} />
-                {ubungen.length} Übung{ubungen.length > 1 ? 's' : ''}
-              </span>
-            </div>
-          </div>
-          <div className="header-monogram">DE</div>
-        </header>
-
-        {/* PROGRESSION MEISTERTRAINING */}
-        {meistertraining.length > 0 && (
-          <section className="chapter-progress">
-            <div className="progress-topline">
-              <div>
-                <span className="eyebrow">VOTRE PARCOURS</span>
-                <h2>Progression du Meistertraining</h2>
-              </div>
-              <strong>{progression}%</strong>
-            </div>
-
-            <div className="progress-track">
-              <div
-                className="progress-fill"
-                style={{ width: `${progression}%` }}
-              />
-            </div>
-
-            <div className="progress-details">
-              <span>
-                <CheckCircle size={15} />
-                {questionsTerminees} question(s) dans les Übungen déjà tentées
-              </span>
-              <span>
-                {questionsRestantes} question(s) restantes
-              </span>
-            </div>
-
-            <div className="mastery-line">
-              <Trophy size={16} />
-              <span>
-                {meistertrainingValides} / {meistertraining.length} Übungen validées à 100/100
-              </span>
-            </div>
-          </section>
-        )}
-
-        <nav className="chapter-tabs" aria-label="Contenu du chapitre">
-          <button
-            type="button"
-            onClick={() => setOngletActif('lecons')}
-            className={`chapter-tab ${ongletActif === 'lecons' ? 'chapter-tab-active' : ''}`}
-          >
-            <BookOpen size={18} />
-            <span>Leçons</span>
-            <small>{lecons.length}</small>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => setOngletActif('meistertraining')}
-            className={`chapter-tab ${ongletActif === 'meistertraining' ? 'chapter-tab-active' : ''}`}
-          >
-            <Trophy size={18} />
-            <span>Meistertraining</span>
-            <small>{meistertraining.length}</small>
-          </button>
-
-          <button
-            type="button"
-            onClick={() => setOngletActif('extra_kick')}
-            className={`chapter-tab ${ongletActif === 'extra_kick' ? 'chapter-tab-active' : ''}`}
-          >
-            {extraKickDebloque ? <Sparkles size={18} /> : <Lock size={17} />}
-            <span>Extra-Kick</span>
-            <small>{extraKick.length}</small>
-          </button>
-        </nav>
-
-        {/* LEÇONS */}
-        {ongletActif === 'lecons' && (
-          <section className="tab-content">
-            <div className="content-heading">
-              <div>
-                <span className="eyebrow">LEARNING MATERIAL</span>
-                <h2 className="section-title">Leçons</h2>
-                <p className="muted-text mt-1">
-                  Consultez le cours à votre rythme.
-                </p>
-              </div>
-              <BookOpen className="heading-icon" size={25} />
-            </div>
-
-            {lecons.length === 0 ? (
-              <div className="empty-state">
-                Aucune leçon publiée pour ce chapitre.
-              </div>
-            ) : (
-              <div className="space-y-3">
-                {lecons.map((lecon, index) => {
-  const contenu: any = lecon.content || {}
-
-  const pages = Array.isArray(contenu.pages)
-    ? contenu.pages
-    : []
-
-  const blocs = Array.isArray(contenu.blocks)
-    ? contenu.blocks
-    : []
-
-  const utiliserNouveauxBlocs = blocs.length > 0
-
-  const ouverte = leconsOuvertes.includes(lecon.id)
-
-  return (
-    <article
-      key={lecon.id}
-      className={`lesson-card ${ouverte ? 'lesson-card-open' : ''}`}
-    >
-      {/* EN-TÊTE DE LA LEÇON */}
-      <button
-        type="button"
-        onClick={() =>
-          setLeconsOuvertes(prev =>
-            prev.includes(lecon.id)
-              ? prev.filter(id => id !== lecon.id)
-              : [...prev, lecon.id]
-          )
-        }
-        className="lesson-toggle"
-      >
-        <span className="lesson-number">
-          {String(index + 1).padStart(2, '0')}
-        </span>
-
-        <span className="lesson-heading">
-          <span className="eyebrow">
-            LEÇON {String(index + 1).padStart(2, '0')}
-          </span>
-
-          <strong>{lecon.title}</strong>
-
-          {contenu.objective && (
-            <small>{contenu.objective}</small>
-          )}
-        </span>
-
-        <span className="lesson-chevron">
-          {ouverte
-            ? <ChevronUp size={19} />
-            : <ChevronDown size={19} />}
-        </span>
-      </button>
-
-      {/* CONTENU DE LA LEÇON */}
-      {ouverte && (
-        <div className="lesson-content">
-
-          {/* OBJECTIF PÉDAGOGIQUE */}
-          {contenu.objective && (
-            <div className="lesson-objective">
-              <div className="lesson-objective-icon">
-                <BookOpen size={19} />
-              </div>
-
-              <div>
-                <span>OBJECTIF DE LA LEÇON</span>
-                <p>{contenu.objective}</p>
-              </div>
-            </div>
-          )}
-
-          {/* NOUVEAU FORMAT : BLOCS JSONB */}
-          {utiliserNouveauxBlocs ? (
-            <div className="lesson-blocks">
-
-              {blocs.map((bloc: any, blocIndex: number) => {
-
-                /* BLOC TEXTE */
-                if (bloc.type === 'text') {
-                  return (
-                    <section
-                      key={bloc.id || blocIndex}
-                      className="lesson-block lesson-block-text"
-                    >
-                      {bloc.title && (
-                        <h3 className="lesson-block-title">
-                          <span className="lesson-block-index">
-                            {String(blocIndex + 1).padStart(2, '0')}
-                          </span>
-                          {bloc.title}
-                        </h3>
-                      )}
-
-                      {bloc.content && (
-                        <div className="premium-prose prose max-w-none">
-                          <ReactMarkdown
-                            remarkPlugins={[remarkGfm]}
-                            components={{
-                              img: ({ src, alt }) => (
-                                <img
-                                  src={typeof src === 'string' ? src : ''}
-                                  alt={alt || ''}
-                                  loading="lazy"
-                                  className="lesson-image"
-                                />
-                              ),
-                            }}
-                          >
-                            {nettoyerMarkdown(bloc.content)}
-                          </ReactMarkdown>
-                        </div>
-                      )}
-                    </section>
-                  )
-                }
-
-                /* BLOC TABLEAU */
-                if (bloc.type === 'table') {
-                  const headers = Array.isArray(bloc.headers)
-                    ? bloc.headers
-                    : []
-
-                  const rows = Array.isArray(bloc.rows)
-                    ? bloc.rows
-                    : []
-
-                  const premiereLigne = Array.isArray(rows[0])
-                    ? rows[0]
-                    : []
-
-                  // Détecte les anciens en-têtes génériques
-                  const entetesGeneriques =
-                    headers.some((h: any) =>
-                      /^colonne\s*\d*/i.test(String(h || '').trim())
-                    )
-
-                  // Corrige notamment le tableau Personalpronomen
-                  const utiliserPremiereLigne =
-                    premiereLigne.length > headers.length ||
-                    (entetesGeneriques && premiereLigne.length > 0)
-
-                  const entetes = utiliserPremiereLigne
-                    ? premiereLigne
-                    : headers
-
-                  const lignes = utiliserPremiereLigne
-                    ? rows.slice(1)
-                    : rows
-
-                  return (
-                    <section
-                      key={bloc.id || blocIndex}
-                      className="lesson-block lesson-block-table"
-                    >
-                      {bloc.title && (
-                        <h3 className="lesson-block-title">
-                          <span className="lesson-block-index">
-                            {String(blocIndex + 1).padStart(2, '0')}
-                          </span>
-                          {bloc.title}
-                        </h3>
-                      )}
-
-                      <div className="lesson-table-wrapper">
-                        <table className="lesson-table">
-                          {entetes.length > 0 && (
-                            <thead>
-                              <tr>
-                                {entetes.map((header: any, i: number) => (
-                                  <th key={i}>
-                                    {header}
-                                  </th>
-                                ))}
-                              </tr>
-                            </thead>
-                          )}
-
-                          <tbody>
-                            {lignes.map((ligne: any, ligneIndex: number) => (
-                              <tr key={ligneIndex}>
-                                {(
-                                  Array.isArray(ligne)
-                                    ? ligne
-                                    : []
-                                ).map((cellule: any, celluleIndex: number) => (
-                                  <td key={celluleIndex}>
-                                    {cellule}
-                                  </td>
-                                ))}
-                              </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  )
-                }
-
-                /* BLOC ENCADRÉ / ATTENTION */
-                if (bloc.type === 'callout') {
-                  const variant = ['info', 'warning', 'success'].includes(
-                    bloc.variant
-                  )
-                    ? bloc.variant
-                    : 'info'
-
-                  const labels: Record<string, string> = {
-                    info: 'À RETENIR',
-                    warning: 'ATTENTION',
-                    success: 'BON À SAVOIR',
-                  }
-
-                  return (
-                    <section
-                      key={bloc.id || blocIndex}
-                      className={`lesson-callout lesson-callout-${variant}`}
-                    >
-                      <div className="lesson-callout-heading">
-                        <span className="lesson-callout-symbol">
-                          {variant === 'warning'
-                            ? '!'
-                            : variant === 'success'
-                              ? '✓'
-                              : 'i'}
-                        </span>
-
-                        <div>
-                          <span>{labels[variant]}</span>
-                          {bloc.title && <h3>{bloc.title}</h3>}
-                        </div>
-                      </div>
-
-                      {bloc.content && (
-                        <div className="premium-prose prose max-w-none">
-                          <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                            {nettoyerMarkdown(bloc.content)}
-                          </ReactMarkdown>
-                        </div>
-                      )}
-                    </section>
-                  )
-                }
-
-                /* BLOC EXEMPLES */
-                if (bloc.type === 'examples') {
-                  const items = Array.isArray(bloc.items)
-                    ? bloc.items
-                    : []
-
-                  return (
-                    <section
-                      key={bloc.id || blocIndex}
-                      className="lesson-block lesson-block-examples"
-                    >
-                      {bloc.title && (
-                        <h3 className="lesson-block-title">
-                          <span className="lesson-block-index">
-                            {String(blocIndex + 1).padStart(2, '0')}
-                          </span>
-                          {bloc.title}
-                        </h3>
-                      )}
-
-                      {items.length > 0 && (
-                        <div className="lesson-examples-grid">
-                          {items.map((item: any, itemIndex: number) => (
-                            <div
-                              key={itemIndex}
-                              className="lesson-example-card"
-                            >
-                              <span className="lesson-example-number">
-                                {String(itemIndex + 1).padStart(2, '0')}
-                              </span>
-
-                              <div className="premium-prose prose max-w-none">
-                                <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                                  {typeof item === 'string'
-                                    ? nettoyerMarkdown(item)
-                                    : nettoyerMarkdown(
-                                        item?.content || item?.text || ''
-                                      )}
-                                </ReactMarkdown>
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      )}
-                    </section>
-                  )
-                }
-
-                /* BLOC IMAGE */
-                if (bloc.type === 'image') {
-                  const imageUrl = bloc.url || bloc.local_file
-
-                  return (
-                    <section
-                      key={bloc.id || blocIndex}
-                      className="lesson-block lesson-block-image"
-                    >
-                      {bloc.title && (
-                        <h3 className="lesson-block-title">
-                          <span className="lesson-block-index">
-                            {String(blocIndex + 1).padStart(2, '0')}
-                          </span>
-                          {bloc.title}
-                        </h3>
-                      )}
-
-                      {imageUrl && (
-                        <figure className="lesson-image-figure">
-                          <img
-                            src={imageUrl}
-                            alt={bloc.caption || bloc.title || 'Illustration de la leçon'}
-                            loading="lazy"
-                            className="lesson-image"
-                          />
-
-                          {bloc.caption && (
-                            <figcaption>
-                              {bloc.caption}
-                            </figcaption>
-                          )}
-                        </figure>
-                      )}
-                    </section>
-                  )
-                }
-
-                // Type inconnu : ne pas afficher de JSON brut
-                return null
-              })}
-            </div>
-          ) : (
-
-            /* ANCIEN FORMAT : COMPATIBILITÉ AVEC PAGES */
-            <div className="lesson-legacy-content">
-              {pages.map((page: any, pageIndex: number) => (
-                <section
-                  key={pageIndex}
-                  className="lesson-block lesson-block-text"
-                >
-                  {page.title && (
-                    <h3 className="lesson-block-title">
-                      {page.title}
-                    </h3>
-                  )}
-
-                  {page.markdown && (
-                    <div className="premium-prose prose max-w-none">
-                      <ReactMarkdown
-                        remarkPlugins={[remarkGfm]}
-                        components={{
-                          img: ({ src, alt }) => (
-                            <img
-                              src={typeof src === 'string' ? src : ''}
-                              alt={alt || ''}
-                              loading="lazy"
-                              className="lesson-image"
-                            />
-                          ),
-                        }}
-                      >
-                        {nettoyerMarkdown(page.markdown)}
-                      </ReactMarkdown>
-                    </div>
-                  )}
-
-                  {page.figures?.map((figure: any, figureIndex: number) => (
-                    <figure
-                      key={figureIndex}
-                      className="lesson-image-figure"
-                    >
-                      {figure.url && (
-                        <img
-                          src={figure.url}
-                          alt={figure.description || figure.caption || ''}
-                          loading="lazy"
-                          className="lesson-image"
-                        />
-                      )}
-
-                      {figure.caption && (
-                        <figcaption>{figure.caption}</figcaption>
-                      )}
-                    </figure>
-                  ))}
-                </section>
-              ))}
-
-              {/* ANCIENNES RÈGLES */}
-              {Array.isArray(contenu.rules) && contenu.rules.length > 0 && (
-                <section className="lesson-block lesson-block-examples">
-                  <h3 className="lesson-block-title">Règles à retenir</h3>
-
-                  <div className="lesson-examples-grid">
-                    {contenu.rules.map((rule: any, i: number) => (
-                      <div key={i} className="lesson-example-card">
-                        {typeof rule === 'string'
-                          ? rule
-                          : rule?.content || rule?.text || JSON.stringify(rule)}
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              )}
-
-              {/* ANCIENS EXEMPLES */}
-              {Array.isArray(contenu.examples) && contenu.examples.length > 0 && (
-                <section className="lesson-block lesson-block-examples">
-                  <h3 className="lesson-block-title">Exemples</h3>
-
-                  <div className="lesson-examples-grid">
-                    {contenu.examples.map((example: any, i: number) => (
-                      <div key={i} className="lesson-example-card">
-                        {typeof example === 'string'
-                          ? example
-                          : example?.content || example?.text || JSON.stringify(example)}
-                      </div>
-                    ))}
-                  </div>
-                </section>
-              )}
-            </div>
-          )}
-        </div>
-      )}
-    </article>
-  )
-})}
-              </div>
-            )}
-
-            {meistertraining.length > 0 && (
-              <div className="next-section">
-                <div>
-                  <span className="eyebrow">{g.nextLesson}</span>
-                  <p>{g.startExercise}</p>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setOngletActif('meistertraining')}
-                  className="next-button"
-                >
-                  {g.startExercise}
-                  <ArrowLeft size={16} className="rotate-180" />
-                </button>
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* MEISTERTRAINING */}
-        {ongletActif === 'meistertraining' && (
-          <section className="tab-content">
-            <div className="content-heading">
-              <div>
-                <span className="eyebrow">{g.mandatoryPractice}</span>
-                <h2 className="section-title">Meistertraining</h2>
-                <p className="muted-text mt-1">
-                  {g.mandatoryDescription}
-                </p>
-              </div>
-              <Trophy className="heading-icon" size={25} />
-            </div>
-
-            {meistertraining.length === 0 ? (
-              <div className="empty-state">
-                {g.noMeistertraining}
-              </div>
-            ) : (
-              <div className="space-y-5">
-                {meistertraining.map(afficherUbung)}
-              </div>
-            )}
-          </section>
-        )}
-
-        {/* EXTRA-KICK */}
-        {ongletActif === 'extra_kick' && (
-          <section className="tab-content">
-            <div className="content-heading">
-              <div>
-                <span className="eyebrow">{g.optionalPractice}</span>
-                <h2 className="section-title">Extra-Kick ⚡</h2>
-                <p className="muted-text mt-1">
-                  {g.optionalDescription}
-                </p>
-              </div>
-              <Sparkles className="heading-icon" size={25} />
-            </div>
-
-            {!extraKickDebloque ? (
-              <div className="locked-panel">
-                <div className="locked-icon">
-                  <Lock size={30} />
-                </div>
-                <span className="eyebrow">{g.lockedZone}</span>
-                <h3>{g.continueMeistertraining}</h3>
-                <p>
-                  {g.extraKickUnlockDescription}
-                </p>
-
-                <div className="unlock-progress">
-                  <div className="unlock-progress-label">
-                    <span>{g.validatedExercises}</span>
-                    <strong>
-                      {meistertrainingValides} / {meistertraining.length}
-                    </strong>
-                  </div>
-                  <div className="progress-track">
-                    <div
-                      className="progress-fill"
-                      style={{
-                        width: `${
-                          meistertraining.length > 0
-                            ? (meistertrainingValides / meistertraining.length) * 100
-                            : 0
-                        }%`
-                      }}
-                    />
-                  </div>
-                </div>
-
-                <div className="locked-list">
-                  {meistertraining
-                    .filter(item => meilleurScore(item.ubung.id) !== 100)
-                    .map(item => (
-                      <div key={item.ubung.id} className="locked-item">
-                        <span>{item.ubung.title}</span>
-                        <span>
-                          {meilleurScore(item.ubung.id) === null
-                            ? g.toStart
-                            : `Meilleur score : ${meilleurScore(item.ubung.id)}/100`}
-                        </span>
-                      </div>
-                    ))}
-                </div>
-
-                <button
-                  type="button"
-                  className="premium-button mt-6"
-                  onClick={() => setOngletActif('meistertraining')}
-                >
-                  <Trophy size={17} />
-                  {g.backToMeistertraining}
-                </button>
-              </div>
-            ) : extraKick.length === 0 ? (
-              <div className="empty-state">
-                {g.noExtraKick}
-              </div>
-            ) : (
-              <div className="space-y-5">
-                <div className="unlocked-message">
-                  <CheckCircle size={19} />
-                  <span>
-                    {g.congratulations} {g.allMeistertrainingCompleted}
-                  </span>
-                </div>
-                {extraKick.map(afficherUbung)}
-              </div>
-            )}
-          </section>
-        )}
-
-        <footer className="premium-footer">
-          <div className="flex items-center justify-center gap-2">
-            <Award size={16} />
-            <span>{g.brand}</span>
-          </div>
-          <p>{g.slogan}</p>
-        </footer>
-      </div>
-
+  const id = Array.isArray(params.numero) ? params.numero[0] : params.numero
+  const [payload, setPayload] = useState<{chapter:ChapterDefinition; attempts:Attempt[]; mandatory:{id:string;total:number}[]; unlocked:boolean; lockedSets:{id:string;title:LocalizedText;category:string}[]} | null>(null)
+  const [tab, setTab] = useState('lesson')
+  const [exerciseIndex, setExerciseIndex] = useState(0)
+  const [error, setError] = useState('')
+  const refresh = useCallback(async () => {
+    setError('')
+    try {
+      const {data} = await supabase.auth.getSession()
+      const token = data.session?.access_token
+      if (!token) throw new Error('Connexion requise.')
+      const response = await fetch(`/api/grammar/content?chapterId=${encodeURIComponent(id || '')}`, {headers:{Authorization:`Bearer ${token}`},cache:'no-store'})
+      const result = await response.json()
+      if (!response.ok) throw new Error(result.error)
+      setPayload(result)
+    } catch(e) { setPayload(null); setError(e instanceof Error ? e.message : 'Erreur de chargement.') }
+  }, [id])
+  useEffect(() => { setTab('lesson'); setExerciseIndex(0); setPayload(null); void refresh() }, [refresh])
+  if (!payload || payload.chapter.id !== id) return <main className="p-8"><p>{error || 'Chargement…'}</p><Link href="/espace-etudiant/apprentissage/grammaire">Retour</Link>{error && <button onClick={()=>void refresh()}>Réessayer</button>}</main>
+  const {chapter,attempts,mandatory,unlocked,lockedSets} = payload
+  const best = (id: string) => attempts.filter(a => a.exercise_set_id === id && a.score !== null).sort((a,b) => Number(b.score)-Number(a.score))[0]
+  const total = mandatory.reduce((n,s)=>n+s.total,0)
+  const correct = mandatory.reduce((n,s)=>n+(best(s.id)?.correct_answers || 0),0)
+  const availableSets = chapter.exerciseSets.filter(s => s.category === tab)
+  const restrictedSets = lockedSets.filter(s => s.category === tab)
+  const entries = [...availableSets.map(s => ({id:s.id, exercise:s, locked:false as const})), ...restrictedSets.map(s => ({id:s.id, title:s.title, locked:true as const}))]
+  const index = Math.min(exerciseIndex, Math.max(0, entries.length - 1))
+  const active = entries[index]
+  const labels = ({fr:{prev:'Précédent',next:'Suivant',empty:'Aucune Übung disponible'},de:{prev:'Zurück',next:'Weiter',empty:'Keine Übungen verfügbar'},ar:{prev:'السابق',next:'التالي',empty:'لا توجد تمارين'},en:{prev:'Previous',next:'Next',empty:'No exercises available'}})[language]
+  return <main className="premium-page min-h-screen" dir={isRTL ? 'rtl' : 'ltr'}><div className="grammar-page-shell mx-auto px-4 py-8">
+    <Link className="premium-back" href="/espace-etudiant/apprentissage/grammaire">← Retour aux chapitres</Link>
+    <header className="chapter-header my-8"><span className="studio-brand">DEUTSCH · ERFOLG / GRAMMATIK</span><span className="studio-chapter-number" aria-hidden="true">{String(chapter.number).padStart(2,'0')}.</span><span className="level-label">KAPITEL {String(chapter.number).padStart(2,'0')} · {chapter.level}</span><h1 className="chapter-title">{chapter.title[language]}</h1><p className="chapter-description">{chapter.subtitle[language]}</p></header>
+    <section className="chapter-progress studio-progress-summary">
+      {(() => {
+        const t = {fr:['Note globale','Übungen réussies','Meilleur score','Voir détails','Note pondérée par le nombre de questions corrigées.','Bonnes réponses','Aucune tentative','Meistertraining uniquement'],de:['Gesamtnote','Gemeisterte Übungen','Bestes Ergebnis','Details anzeigen','Nach Anzahl der bewerteten Fragen gewichtet.','Richtige Antworten','Keine Versuche','Nur Meistertraining'],ar:['النتيجة الإجمالية','التمارين المتقنة','أفضل نتيجة','عرض التفاصيل','النتيجة موزونة حسب عدد الأسئلة المصححة.','الإجابات الصحيحة','لا توجد محاولات','التدريب الأساسي فقط'],en:['Overall score','Mastered exercises','Best score','View details','Weighted by the number of graded questions.','Correct answers','No attempts','Meistertraining only']}[language]
+        const ranked = mandatory.map(m=>({ ...m, attempt:best(m.id), title:chapter.exerciseSets.find(s=>s.id===m.id)?.title[language] ?? lockedSets.find(s=>s.id===m.id)?.title[language] ?? m.id }))
+        const top = ranked.filter(m=>m.attempt).sort((a,b)=>Number(b.attempt?.score)-Number(a.attempt?.score))[0]
+        return <>
+          <details className="studio-summary-item"><summary><small>{t[0]}</small><strong>{total ? Math.round(correct/total*100) : 0} / 100</strong><span>{t[3]} <b>⌄</b></span></summary><div className="studio-summary-detail"><p>{t[4]}</p><p>{t[5]} : {correct} / {total}</p></div></details>
+          <details className="studio-summary-item"><summary><small>{t[1]}</small><strong>{ranked.filter(m=>Number(m.attempt?.score)===100).length} / {mandatory.length}</strong><span>{t[3]} <b>⌄</b></span></summary><div className="studio-summary-detail">{ranked.map(m=><div className="studio-summary-row" key={m.id}><span>{m.title}</span><b>{m.attempt?.score ?? '—'} / 100</b></div>)}</div></details>
+          <details className="studio-summary-item"><summary><small>{t[2]}</small><strong>{top?.attempt?.score ?? '—'} / 100</strong><span>{t[3]} <b>⌄</b></span></summary><div className="studio-summary-detail"><p>{t[7]}</p>{top?.attempt ? <><p>{top.title}</p><p>{t[5]} : {top.attempt.correct_answers} / {top.attempt.total_questions}</p><time>{new Date(top.attempt.created_at).toLocaleString(language)}</time></> : <p>{t[6]}</p>}</div></details>
+        </>
+      })()}
+    </section>
+    {error && <p role="alert">{error} <button onClick={() => void refresh()}>Réessayer</button></p>}
+    <nav className="chapter-tabs">{[['lesson','Lektion'],['meistertraining','Meistertraining'],['extra_kick',unlocked ? 'Extra-Kick' : '🔒 Extra-Kick']].map(([key,label]) => <button key={key} className={`chapter-tab ${tab === key ? 'chapter-tab-active' : ''}`} onClick={() => { if (tab !== key) { setTab(key); setExerciseIndex(0) } }}>{label}</button>)}</nav>
+    {tab === 'lesson' ? <LessonRenderer lesson={chapter.lesson}/> : tab === 'extra_kick' && !unlocked ? <p className="locked-panel">Obtenez 100/100 dans chaque Übung Meistertraining.</p> : entries.length === 0 ? <p className="empty-state">{labels.empty}</p> : <div className="grammar-pager">
+      <div className="grammar-pager-heading"><strong>Übung {index + 1} / {entries.length}</strong><div className="grammar-step-list">{entries.map((entry,i)=><button type="button" key={entry.id} aria-current={i===index ? "step" : undefined} className={i===index ? "current" : ""} onClick={()=>setExerciseIndex(i)}>{i+1}{entry.locked ? " 🔒" : Number(best(entry.id)?.score)===100 ? " ✓" : ""}</button>)}</div><div className="progress-track"><div className="progress-fill" style={{width: `${(index+1)/entries.length*100}%`}}/></div></div>
+      {availableSets.map(s => <section key={s.id} className="exercise-card grammar-paged-card" hidden={active?.id !== s.id}><div className="grammar-exercise-layout"><div className="grammar-exercise-main"><ExerciseRenderer chapterId={chapter.id} exerciseSet={s} onAttempt={() => void refresh()}/></div><PerformanceHistory attempts={attempts.filter(a => a.exercise_set_id === s.id)} language={language}/></div></section>)}
+      {active?.locked && <section className="locked-panel">🔒 {active.title[language]} — <Link href="/espace-etudiant/pro">PRO</Link></section>}
+      <nav className="grammar-pager-nav" aria-label="Übungen">
+        <button type="button" className="premium-button" disabled={index === 0} onClick={()=>setExerciseIndex(index-1)}>{isRTL ? '→' : '←'} {labels.prev}</button>
+        <span>{index+1} / {entries.length}</span>
+        <button type="button" className="premium-button" disabled={index >= entries.length-1} onClick={()=>setExerciseIndex(index+1)}>{labels.next} {isRTL ? '←' : '→'}</button>
+      </nav>
+    </div>}
+    </div>
       <style jsx global>{`
+        .grammar-pager { max-width: 1100px; margin: 0 auto; }
+        .grammar-pager-heading { display: flex; flex-direction: column; gap: 10px; margin: 0 auto 18px; text-align: center; color: #9b8050; }
+        .grammar-paged-card { padding: 20px !important; }
+        .grammar-paged-card[hidden] { display: none !important; }
+        .grammar-pager-nav { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 20px 0; }
+        .grammar-pager-nav span { color: #9b8050; font-size: 13px; }
+        .grammar-exercise-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(220px, 280px); gap: 20px; align-items: start; }
+        .grammar-exercise-main { min-width: 0; }
+        .grammar-history-sidebar { position: sticky; top: 24px; max-height: calc(100vh - 48px); overflow-y: auto; min-width: 0; padding: 14px; background: #fff; border: 1px solid #eeeae1; border-radius: 8px; }
+        .grammar-history-sidebar .history-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; padding: 10px 0; border-bottom: 1px solid #eeeae1; }
+        .grammar-history-sidebar .history-date { flex: 1 1 90px; min-width: 0; overflow-wrap: anywhere; font-size: 11px; }
+        .grammar-history-sidebar .history-row strong { white-space: nowrap; font-size: 12px; }
+        @media (max-width: 900px) { .grammar-exercise-layout { grid-template-columns: minmax(0, 1fr); } .grammar-history-sidebar { position: static; max-height: 360px; } }
+
         .premium-page {
           min-height: 100vh;
           background: #f7f6f2;
@@ -3474,7 +1591,115 @@ setLecons((leconsData || []) as Lecon[])
   }
 }
 
+
+        .grammar-page-shell { max-width: 1440px; }
+        .grammar-pager { max-width: 1320px; }
+        .grammar-pager-heading { padding: 18px 22px; background: white; border: 1px solid #e8e4dc; border-radius: 14px; }
+        .grammar-step-list { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; }
+        .grammar-step-list button { min-width:40px; min-height:40px; padding:8px 12px; border:1px solid #e8e4dc; border-radius:9px; color:#80683f; background:#faf8f3; }
+        .grammar-step-list button.current { background:#263348; color:white; border-color:#263348; }
+        .grammar-step-list button:focus-visible { outline:2px solid #a18450; outline-offset:3px; }
+        .grammar-paged-card { background:#faf9f6; padding:24px !important; }
+        .grammar-exercise-layout { grid-template-columns:minmax(0,1fr) minmax(190px,230px); gap:24px; }
+        .grammar-history-sidebar { margin-top:0; border-radius:14px; padding:18px; }
+        .grammar-exercise-main { container-type:inline-size; }
+        .grammar-exercise-main .grammar-renderer { max-width:none; display:grid; gap:18px; }
+        .grammar-renderer > * { margin:0 !important; min-width:0; }
+        .grammar-renderer > header { border-color:#e5dfd2; background:#fff; }
+        .grammar-question-grid { display:grid; grid-template-columns:minmax(0,1fr); gap:16px; align-items:stretch; }
+        .grammar-question-grid > article { min-width:0; overflow-wrap:anywhere; padding:20px; border-radius:14px; display:flex; flex-direction:column; }
+        .grammar-question-grid > article > div:first-child { margin-bottom:8px; }
+        .grammar-question-grid > article > div:first-child > span { background:#f3ede0; color:#92743c; }
+        .grammar-question-grid > article[data-wide="true"] { grid-column:1/-1; }
+        .grammar-renderer > button { background:#263348; border-radius:10px; }
+        .grammar-renderer > button:hover:not(:disabled) { background:#3b4b63; }
+        @container (min-width: 560px) { .grammar-question-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+        
+        @media(max-width: 900px) { .grammar-exercise-layout { grid-template-columns:minmax(0,1fr); } .grammar-paged-card { padding:14px !important; } }
+        @media(max-width: 480px) { .grammar-question-grid > article { padding:14px; } .grammar-pager-nav .premium-button { padding:10px; } }
+      
+/* Deutsch-Erfolg Studio — scoped visual layer */
+.premium-page { background:#f5f3ee; }
+.premium-page .chapter-header { background:linear-gradient(115deg,#192b43,#263d57); padding:30px 36px; isolation:isolate; }
+.studio-brand { display:block; color:#d8be87; font-size:10px; font-weight:750; letter-spacing:.18em; }
+.studio-chapter-number { position:absolute; inset-inline-end:30px; bottom:-35px; font: 180px Georgia,serif; color:#ffffff0c; z-index:-1; }
+.premium-page .chapter-title { font-family:Georgia,serif; font-weight:500; }
+.premium-page .chapter-progress { border:0; box-shadow:0 2px 12px #192b4308; }
+.premium-page .grammar-pager { max-width:1280px; }
+.premium-page .grammar-paged-card { background:transparent; border:0; box-shadow:none; overflow:visible; padding:0 !important; }
+.premium-page .grammar-exercise-layout { grid-template-columns:minmax(0,1fr) 220px; gap:24px; }
+.studio-exercise-header { padding:8px 0 22px; border-bottom:1px solid #dcd5c7; }
+.studio-exercise-header h2 { font:500 clamp(25px,3vw,36px)/1.2 Georgia,serif; color:#192b43; }
+.studio-exercise-header p { color:#666c74; line-height:1.7; }
+/* Studio exercise masthead */
+.premium-page .studio-exercise-header { position:relative; overflow:hidden; padding:24px 26px 28px; border:1px solid #e3d9c5; border-radius:18px; background:linear-gradient(120deg,#fffdf8,#f5efe3); box-shadow:0 5px 18px #192b4308; }
+.premium-page .studio-exercise-header > div:first-child { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:22px; }
+.premium-page .studio-exercise-header > div:first-child > span:first-child { display:inline-flex; align-items:center; gap:8px; background:#192b43; color:#f0d8a4; border-radius:9px; padding:10px 14px; font-size:11px; letter-spacing:.07em; text-transform:uppercase; }
+.premium-page .studio-exercise-header > div:first-child > span:last-child { border:1px solid #ded4c1; border-radius:999px; padding:7px 12px; color:#192b43; background:#ffffff80; font-weight:600; }
+.premium-page .studio-exercise-header h2 { font:500 clamp(26px,3vw,38px)/1.15 Georgia,serif; letter-spacing:-.025em; margin:0; color:#192b43; }
+.premium-page .studio-exercise-header p { border-inline-start:3px solid #b49760; padding-inline-start:12px; margin-top:12px; font-size:15px; color:#626a75; }
+.premium-page .studio-exercise-header::after { content:''; position:absolute; inset-inline-start:26px; bottom:0; width:64px; height:3px; background:#b49760; border-radius:3px 3px 0 0; }
+@media(max-width:640px){ .premium-page .studio-exercise-header { padding:18px 16px 22px; } .premium-page .studio-exercise-header > div:first-child { margin-bottom:16px; } .premium-page .studio-exercise-header > div:first-child > span:first-child { padding:8px 10px; letter-spacing:0; } }
+
+.studio-renderer .grammar-question-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.studio-renderer .studio-question { border:1px solid #e4dfd4; border-radius:12px; box-shadow:0 3px 12px #192b4305; padding:20px; }
+.studio-renderer .studio-question[data-wide=true] { grid-column:1/-1; }
+.studio-renderer .studio-question[data-kind=fill_blank] { background:#fffefa; }
+.studio-number { display:grid; place-items:center; width:30px; height:30px; flex-shrink:0; border-radius:7px; background:#f0eadc; color:#967744; font:600 13px Georgia,serif; }
+.studio-blank { width:clamp(64px,12vw,110px); max-width:100%; border:0; border-bottom:2px solid #b49760; background:#f5f1e8; border-radius:5px 5px 0 0; padding:3px 7px; text-align:center; color:#192b43; font-weight:650; }
+.studio-renderer input:focus-visible,.studio-renderer select:focus-visible,.studio-renderer textarea:focus-visible { outline:2px solid #b49760; outline-offset:2px; }
+.studio-renderer label:has(input:checked) { background:#f4eee1; border-color:#b49760; }
+.studio-renderer input[type=radio],.studio-renderer input[type=checkbox] { accent-color:#967744; }
+.studio-submit { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; padding:16px; border-radius:9px; background:#192b43; color:white; font-weight:650; }
+.studio-submit:hover:not(:disabled) { background:#304b69; }
+.studio-submit:disabled { opacity:.5; }
+.premium-page .grammar-history-sidebar { border:1px solid #e4dfd4; border-radius:14px; padding:18px; margin-top:0; box-shadow:0 4px 18px #192b4306; }
+.studio-score { width:112px; height:112px; margin:0 auto 20px; border-radius:50%; display:grid; place-items:center; }
+.studio-score>div { width:98px; height:98px; border-radius:50%; background:white; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.studio-score strong { font:500 30px Georgia,serif; color:#192b43; }
+.studio-score small { color:#77766f; font-size:11px; }
+.premium-page .grammar-pager-nav { border-top:1px solid #dcd5c7; padding-top:20px; }
+@media(max-width:900px){ .premium-page .grammar-exercise-layout { grid-template-columns:minmax(0,1fr); } }
+@media(max-width:640px){ .premium-page .chapter-header { padding:24px 20px; } .studio-renderer .studio-question { padding:16px; } }
+
+@media (max-width: 768px) { .premium-page .studio-renderer .grammar-question-grid { grid-template-columns: minmax(0,1fr); } }
+
+.premium-page .grammar-exercise-layout { grid-template-columns:minmax(0,1fr) 280px; gap:24px; }
+.premium-page .performance-panel { padding:12px; max-height:none; overflow:visible; background:#fff; }
+.performance-hero { background:#192b43; color:white; border-radius:11px; padding:18px; display:grid; gap:10px; }
+.performance-hero > span { color:#d8be87; font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
+.performance-hero small { color:#e0d5bd; font-size:12px; }
+.performance-hero strong { font:500 42px Georgia,serif; }
+.performance-track { height:6px; background:#405068; border-radius:8px; overflow:hidden; }
+.performance-track i { display:block; height:100%; background:#d8be87; }
+.performance-stats { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; margin:12px 0; }
+.performance-stats > div { padding:10px; background:#f5f3ee; border-radius:8px; display:grid; gap:5px; }
+.performance-stats small { font-size:11px; color:#666; overflow-wrap:anywhere; }
+.performance-stats strong { font-size:21px; color:#192b43; }
+.performance-panel h3 { font-size:13px; font-weight:700; margin:14px 0 8px; color:#263348; }
+.performance-trend svg { width:100%; display:block; }
+.performance-rows { max-height:300px; overflow-y:auto; }
+.performance-row { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:12px 2px; border-bottom:1px solid #eeeae1; }
+.performance-row b,.performance-row time { display:block; font-size:12px; }
+.performance-row time { color:#77766f; font-size:11px; margin-top:4px; }
+.performance-row > strong { font-size:16px; white-space:nowrap; color:#192b43; }
+.performance-row > strong.perfect { color:#36734b; }
+.performance-row > strong small { font-size:10px; font-weight:400; }
+@media(max-width:900px){ .premium-page .grammar-exercise-layout { grid-template-columns:minmax(0,1fr); } .premium-page .performance-panel { position:static; } }
+ 
+        .studio-progress-summary { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; padding:0; border:0; background:transparent; align-items:start; }
+        .studio-summary-item { min-width:0; border:1px solid #e4dfd4; border-radius:13px; background:#fff; overflow:hidden; }
+        .studio-summary-item summary { list-style:none; cursor:pointer; padding:20px; display:flex; flex-direction:column; gap:8px; }
+        .studio-summary-item summary::-webkit-details-marker { display:none; }
+        .studio-summary-item summary:focus-visible { outline:2px solid #a18450; outline-offset:-3px; }
+        .studio-summary-item summary small { color:#746b5c; font-size:12px; font-weight:600; }
+        .studio-summary-item summary strong { color:#263348; font-size:clamp(20px,2.5vw,30px); font-variant-numeric:tabular-nums; }
+        .studio-summary-item summary span { color:#8e7549; font-size:12px; display:flex; justify-content:space-between; }
+        .studio-summary-item[open] summary b { transform:rotate(180deg); }
+        .studio-summary-detail { border-top:1px solid #eeeae1; padding:15px 20px; font-size:12px; line-height:1.7; color:#505967; overflow-wrap:anywhere; }
+        .studio-summary-row { display:flex; justify-content:space-between; gap:8px; padding:8px 0; border-bottom:1px solid #eeeae1; }
+        .studio-summary-row b { white-space:nowrap; }
+        @media(max-width:640px) { .studio-progress-summary { grid-template-columns:1fr; } }
       `}</style>
-    </main>
-  )
+</main>
 }

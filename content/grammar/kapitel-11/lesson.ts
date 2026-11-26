@@ -20,6 +20,131 @@ export const lesson: LessonDefinition = {
     "en": "Word order 1"
   },
   "blocks": [
+{
+  "type": "paragraph",
+  "id": "refonte-theorie",
+  "title": {
+    "fr": "Comprendre et appliquer la règle",
+    "de": "Die Regel verstehen und anwenden",
+    "ar": "فهم القاعدة وتطبيقها",
+    "en": "Understand and apply the rule"
+  },
+  "text": {
+    "fr": "La position 2 signifie deuxième groupe syntaxique, pas deuxième mot. Si un complément de temps ouvre la phrase, le sujet vient généralement après le verbe. Dans une question fermée le verbe est premier ; dans une question ouverte il suit le groupe interrogatif.",
+    "de": "Position 2 bedeutet zweites Satzglied, nicht zweites Wort. Steht eine Zeitangabe vorne, folgt das Subjekt meist nach dem Verb. In Ja/Nein-Fragen steht das Verb zuerst, in W-Fragen nach der Fragegruppe.",
+    "ar": "الموقع الثاني يعني المجموعة النحوية الثانية لا الكلمة الثانية. إذا بدأنا بظرف زمان يأتي الفاعل غالبا بعد الفعل. في سؤال نعم أو لا الفعل أولا وفي السؤال المفتوح بعد أداة السؤال.",
+    "en": "Position 2 means second constituent, not second word. If a time phrase comes first, the subject usually follows the verb. Yes/no questions start with the verb; W-questions place it after the question phrase."
+  }
+},
+{
+  "type": "examples",
+  "id": "refonte-exemples",
+  "title": {
+    "fr": "Exemples traduits",
+    "de": "Übersetzte Beispiele",
+    "ar": "أمثلة مترجمة",
+    "en": "Translated examples"
+  },
+  "items": [
+    {
+      "id": "refonte-1",
+      "german": "Heute arbeite ich.",
+      "context": {
+        "fr": "Aujourd’hui je travaille.",
+        "de": "Heute arbeite ich.",
+        "ar": "اليوم أعمل.",
+        "en": "Today I work."
+      },
+      "explanation": {
+        "fr": "La position 2 signifie deuxième groupe syntaxique, pas deuxième mot. Si un complément de temps ouvre la phrase, le sujet vient généralement après le verbe. Dans une question fermée le verbe est premier ; dans une question ouverte il suit le groupe interrogatif.",
+        "de": "Position 2 bedeutet zweites Satzglied, nicht zweites Wort. Steht eine Zeitangabe vorne, folgt das Subjekt meist nach dem Verb. In Ja/Nein-Fragen steht das Verb zuerst, in W-Fragen nach der Fragegruppe.",
+        "ar": "الموقع الثاني يعني المجموعة النحوية الثانية لا الكلمة الثانية. إذا بدأنا بظرف زمان يأتي الفاعل غالبا بعد الفعل. في سؤال نعم أو لا الفعل أولا وفي السؤال المفتوح بعد أداة السؤال.",
+        "en": "Position 2 means second constituent, not second word. If a time phrase comes first, the subject usually follows the verb. Yes/no questions start with the verb; W-questions place it after the question phrase."
+      }
+    },
+    {
+      "id": "refonte-2",
+      "german": "Ich arbeite heute.",
+      "context": {
+        "fr": "Je travaille aujourd’hui.",
+        "de": "Ich arbeite heute.",
+        "ar": "أعمل اليوم.",
+        "en": "I work today."
+      },
+      "explanation": {
+        "fr": "La position 2 signifie deuxième groupe syntaxique, pas deuxième mot. Si un complément de temps ouvre la phrase, le sujet vient généralement après le verbe. Dans une question fermée le verbe est premier ; dans une question ouverte il suit le groupe interrogatif.",
+        "de": "Position 2 bedeutet zweites Satzglied, nicht zweites Wort. Steht eine Zeitangabe vorne, folgt das Subjekt meist nach dem Verb. In Ja/Nein-Fragen steht das Verb zuerst, in W-Fragen nach der Fragegruppe.",
+        "ar": "الموقع الثاني يعني المجموعة النحوية الثانية لا الكلمة الثانية. إذا بدأنا بظرف زمان يأتي الفاعل غالبا بعد الفعل. في سؤال نعم أو لا الفعل أولا وفي السؤال المفتوح بعد أداة السؤال.",
+        "en": "Position 2 means second constituent, not second word. If a time phrase comes first, the subject usually follows the verb. Yes/no questions start with the verb; W-questions place it after the question phrase."
+      }
+    },
+    {
+      "id": "refonte-3",
+      "german": "Am Abend essen wir Pizza.",
+      "context": {
+        "fr": "Le soir nous mangeons une pizza.",
+        "de": "Am Abend essen wir Pizza.",
+        "ar": "مساء نأكل البيتزا.",
+        "en": "In the evening we eat pizza."
+      },
+      "explanation": {
+        "fr": "La position 2 signifie deuxième groupe syntaxique, pas deuxième mot. Si un complément de temps ouvre la phrase, le sujet vient généralement après le verbe. Dans une question fermée le verbe est premier ; dans une question ouverte il suit le groupe interrogatif.",
+        "de": "Position 2 bedeutet zweites Satzglied, nicht zweites Wort. Steht eine Zeitangabe vorne, folgt das Subjekt meist nach dem Verb. In Ja/Nein-Fragen steht das Verb zuerst, in W-Fragen nach der Fragegruppe.",
+        "ar": "الموقع الثاني يعني المجموعة النحوية الثانية لا الكلمة الثانية. إذا بدأنا بظرف زمان يأتي الفاعل غالبا بعد الفعل. في سؤال نعم أو لا الفعل أولا وفي السؤال المفتوح بعد أداة السؤال.",
+        "en": "Position 2 means second constituent, not second word. If a time phrase comes first, the subject usually follows the verb. Yes/no questions start with the verb; W-questions place it after the question phrase."
+      }
+    },
+    {
+      "id": "refonte-4",
+      "german": "Wann kommst du?",
+      "context": {
+        "fr": "Quand viens-tu ?",
+        "de": "Wann kommst du?",
+        "ar": "متى تأتي؟",
+        "en": "When are you coming?"
+      },
+      "explanation": {
+        "fr": "La position 2 signifie deuxième groupe syntaxique, pas deuxième mot. Si un complément de temps ouvre la phrase, le sujet vient généralement après le verbe. Dans une question fermée le verbe est premier ; dans une question ouverte il suit le groupe interrogatif.",
+        "de": "Position 2 bedeutet zweites Satzglied, nicht zweites Wort. Steht eine Zeitangabe vorne, folgt das Subjekt meist nach dem Verb. In Ja/Nein-Fragen steht das Verb zuerst, in W-Fragen nach der Fragegruppe.",
+        "ar": "الموقع الثاني يعني المجموعة النحوية الثانية لا الكلمة الثانية. إذا بدأنا بظرف زمان يأتي الفاعل غالبا بعد الفعل. في سؤال نعم أو لا الفعل أولا وفي السؤال المفتوح بعد أداة السؤال.",
+        "en": "Position 2 means second constituent, not second word. If a time phrase comes first, the subject usually follows the verb. Yes/no questions start with the verb; W-questions place it after the question phrase."
+      }
+    },
+    {
+      "id": "refonte-5",
+      "german": "Kommst du heute?",
+      "context": {
+        "fr": "Viens-tu aujourd’hui ?",
+        "de": "Kommst du heute?",
+        "ar": "هل تأتي اليوم؟",
+        "en": "Are you coming today?"
+      },
+      "explanation": {
+        "fr": "La position 2 signifie deuxième groupe syntaxique, pas deuxième mot. Si un complément de temps ouvre la phrase, le sujet vient généralement après le verbe. Dans une question fermée le verbe est premier ; dans une question ouverte il suit le groupe interrogatif.",
+        "de": "Position 2 bedeutet zweites Satzglied, nicht zweites Wort. Steht eine Zeitangabe vorne, folgt das Subjekt meist nach dem Verb. In Ja/Nein-Fragen steht das Verb zuerst, in W-Fragen nach der Fragegruppe.",
+        "ar": "الموقع الثاني يعني المجموعة النحوية الثانية لا الكلمة الثانية. إذا بدأنا بظرف زمان يأتي الفاعل غالبا بعد الفعل. في سؤال نعم أو لا الفعل أولا وفي السؤال المفتوح بعد أداة السؤال.",
+        "en": "Position 2 means second constituent, not second word. If a time phrase comes first, the subject usually follows the verb. Yes/no questions start with the verb; W-questions place it after the question phrase."
+      }
+    },
+    {
+      "id": "refonte-6",
+      "german": "Meine Schwester und ich lernen Deutsch.",
+      "context": {
+        "fr": "Ma sœur et moi apprenons l’allemand.",
+        "de": "Meine Schwester und ich lernen Deutsch.",
+        "ar": "أختي وأنا نتعلم الألمانية.",
+        "en": "My sister and I learn German."
+      },
+      "explanation": {
+        "fr": "La position 2 signifie deuxième groupe syntaxique, pas deuxième mot. Si un complément de temps ouvre la phrase, le sujet vient généralement après le verbe. Dans une question fermée le verbe est premier ; dans une question ouverte il suit le groupe interrogatif.",
+        "de": "Position 2 bedeutet zweites Satzglied, nicht zweites Wort. Steht eine Zeitangabe vorne, folgt das Subjekt meist nach dem Verb. In Ja/Nein-Fragen steht das Verb zuerst, in W-Fragen nach der Fragegruppe.",
+        "ar": "الموقع الثاني يعني المجموعة النحوية الثانية لا الكلمة الثانية. إذا بدأنا بظرف زمان يأتي الفاعل غالبا بعد الفعل. في سؤال نعم أو لا الفعل أولا وفي السؤال المفتوح بعد أداة السؤال.",
+        "en": "Position 2 means second constituent, not second word. If a time phrase comes first, the subject usually follows the verb. Yes/no questions start with the verb; W-questions place it after the question phrase."
+      }
+    }
+  ]
+},
+
     {
       "type": "paragraph",
       "id": "rule-v2",
