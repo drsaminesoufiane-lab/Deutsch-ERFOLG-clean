@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import LeaguePodium, { type PodiumEntry } from '@/components/student/LeaguePodium'
 import { NotebookPen } from 'lucide-react'
-import { GraduationCap, BookOpen, LibraryBig, Trophy, BarChart3, Headphones, PenLine, Mic, ClipboardList, FileText, ChevronRight, Play, Zap, CheckCircle2, Medal, Construction, House, UserRound } from 'lucide-react'
+import { BookOpen, LibraryBig, Trophy, BarChart3, Headphones, PenLine, Mic, ClipboardList, FileText, ChevronRight, Play, Zap, CheckCircle2, Medal, Construction, House, UserRound } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { supabase } from '@/lib/supabase'
 
@@ -53,9 +53,9 @@ export default function StudentPage(){
     <section className="de-dash-greet de-dash-welcome-v2">
       <div className="de-dash-welcome-copy"><span className="de-dash-welcome-kicker">{d.welcome}</span>
         <h1>{t.hello}, <span>{name||t.student}</span> !</h1>
-        {level&&<div className="de-dash-welcome-level"><span>{d.level}</span><strong dir="ltr">{level}</strong></div>}
+        
       </div>
-      <div className="de-dash-welcome-art" aria-hidden="true"><span className="de-dash-welcome-ring"/><GraduationCap size={76} strokeWidth={1.45}/><span className="de-dash-welcome-spark">✦</span></div>
+      {level&&<div className="de-dash-welcome-art de-dash-large-level"><span className="de-dash-welcome-ring" aria-hidden="true"/><span className="de-dash-large-level-label">{d.level}</span><strong className="de-dash-large-level-value" dir="ltr">{level}</strong></div>}
     </section>
     <section className="de-dash-stats"><Link href={base+'/classement'}><Zap/><strong>{stats.xp===null?'—':fmt(stats.xp)}</strong><small>XP</small></Link><Link href={base+'/resultats'}><CheckCircle2/><strong>{stats.completed===null?'—':fmt(stats.completed)}</strong><small>{t.done}</small></Link><Link href={base+'/classement'}><Medal/><strong>{stats.rank!==null?'#'+fmt(stats.rank):'—'}</strong><small>{t.rank}</small></Link></section>
     {(statsLoading||stats.xp===null||stats.completed===null)&&<div className="de-dash-stats-status" role="status">{statsLoading?pc.loading:pc.pending}{!statsLoading&&<button type="button" onClick={()=>setStatsRevision(v=>v+1)}>{pc.retry}</button>}</div>}
@@ -122,6 +122,17 @@ export default function StudentPage(){
 .de-compact-dashboard .de-dash-tools-v2>a:hover .de-dash-tool-arrow{color:#f0d59b}
 }
 @media(prefers-reduced-motion:reduce){.de-compact-dashboard .de-dash-tools-v2>a{transition:none}.de-compact-dashboard .de-dash-tools-v2>a:is(:hover,:active){transform:none}}
+
+
+/* DE_DASHBOARD_NAVY_LEVEL_V1 */
+.de-compact-dashboard .de-dash-welcome-v2{background:#142743;border-color:#263c58;gap:20px}
+.de-compact-dashboard .de-dash-welcome-v2 h1{margin:16px 0 8px}
+.de-compact-dashboard .de-dash-welcome-art.de-dash-large-level{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;flex:0 0 190px;width:190px;height:174px;isolation:isolate}
+.de-dash-large-level .de-dash-welcome-ring{inset:10px 18px;background:transparent;z-index:-1;box-shadow:0 0 0 12px #e6c77f09,0 0 0 24px #e6c77f05}
+.de-dash-large-level .de-dash-large-level-label{color:#e4cf9d;font-size:12px;font-weight:650;line-height:1.3;text-align:center;padding:0 8px}
+.de-dash-large-level .de-dash-large-level-value{display:block;color:#e6c77f;font-family:Georgia,serif;font-size:clamp(64px,7vw,92px);font-weight:700;line-height:1;letter-spacing:-.045em;white-space:nowrap}
+@media(max-width:850px){.de-compact-dashboard .de-dash-welcome-v2{gap:12px}.de-compact-dashboard .de-dash-welcome-art.de-dash-large-level{flex:0 0 100px;width:100px;height:114px}.de-dash-large-level .de-dash-welcome-ring{inset:9px 0;box-shadow:0 0 0 6px #e6c77f09}.de-dash-large-level .de-dash-large-level-value{font-size:53px}.de-dash-large-level .de-dash-large-level-label{font-size:10px;padding:0 3px}}
+@media(max-width:350px){.de-compact-dashboard .de-dash-welcome-art.de-dash-large-level{flex-basis:78px;width:78px;height:92px}.de-dash-large-level .de-dash-large-level-value{font-size:41px}}
 
 `}</style>
   </main>
