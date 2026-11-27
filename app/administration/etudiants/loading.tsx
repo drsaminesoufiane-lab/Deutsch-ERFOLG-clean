@@ -1,2 +1,2 @@
-import DeutschErfolgLoader from '@/components/student/DeutschErfolgLoader'
-export default function Loading(){return <DeutschErfolgLoader />}
+import AdminLoader from '../AdminLoader'
+export default function Loading(){return <AdminLoader />}

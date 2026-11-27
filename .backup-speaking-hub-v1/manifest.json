@@ -1,0 +1,46 @@
+{
+  "app/espace-etudiant/page.tsx": {
+    "before": "2f4f59bc695929fb79312a63f6977428bcc54addb2ad790545e7a4b5d5039b58",
+    "after": "d842acb516993cae0202a3bd446dfe11ed22eb8b397896ef5ce4840c79a46e5f"
+  },
+  "components/student/StudentSidebar.tsx": {
+    "before": "7a8976da72f12aaee86f1d783afdaafbd709f145175dd79ed5caf6697b39cacd",
+    "after": "69147a44d1309af181386f2db4978fa732f43e8c8851baa063fe266e60e37988"
+  },
+  "app/espace-etudiant/speaking-training/speaking.css": {
+    "before": null,
+    "after": "b1ff3fbd09c738f3aa5d9a95995721d02364df04ed8c66e70dcca570f6e10b91"
+  },
+  "app/espace-etudiant/speaking-training/loading.tsx": {
+    "before": null,
+    "after": "7bb2ffd58bc2abf3209c0e270406eddbc832c71cd4c1ab2cfb9acb045e114c49"
+  },
+  "app/espace-etudiant/speaking-training/page.tsx": {
+    "before": null,
+    "after": "bbe048a7a3c73634c487b2429205a93f069cc80b77d9435f55f5880b1df97884"
+  },
+  "app/espace-etudiant/speaking-training/layout.tsx": {
+    "before": null,
+    "after": "43989f5b04b9812d7825d02ed4430c6cdbdaa58ff4e430b576266562ad089f92"
+  },
+  "app/espace-etudiant/speaking-training/session/loading.tsx": {
+    "before": null,
+    "after": "7bb2ffd58bc2abf3209c0e270406eddbc832c71cd4c1ab2cfb9acb045e114c49"
+  },
+  "app/espace-etudiant/speaking-training/session/page.tsx": {
+    "before": null,
+    "after": "1bb5f90f9c0536400ddb9adb9baca3a3105b4c3851328aa2ce2f045ca0323e57"
+  },
+  "components/student/SpeakingDashboardCard.tsx": {
+    "before": null,
+    "after": "f8958e5dfe0b66d00d85fe8d1cfa5d9c0e2896613ca2bb835e4825492f7be8d6"
+  },
+  "lib/speaking/copy.ts": {
+    "before": null,
+    "after": "3d9f05101d593a4814bb0c01b6b0d2e2e24a1a4e8085619539d1d08fc56ce08a"
+  },
+  "lib/speaking/topics.ts": {
+    "before": null,
+    "after": "8ae5ffd31c794b7308dcf369b571606929878ac45cbcf8ce8b9f0c7c9e745aef"
+  }
+}

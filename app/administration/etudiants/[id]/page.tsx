@@ -1,5 +1,6 @@
 
 'use client'
+import AdminLoader from '../../AdminLoader'
 
 import { useEffect, useState } from 'react'
 import { useParams, useRouter } from 'next/navigation'
@@ -351,7 +352,7 @@ async function enregistrerTelephone() {
           </Link>
 
           {chargement ? (
-            <div className="admin-section">Chargement de la fiche étudiant...</div>
+            <AdminLoader />
           ) : erreur ? (
             <div className="admin-demo-notice">
               <ShieldCheck size={20} />

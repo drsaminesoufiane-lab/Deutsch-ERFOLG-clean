@@ -1,0 +1,29 @@
+{
+  "original": "129e178023f703c23022dd2c794b66bbcd111480f419e9d5402ee05257bf33a6",
+  "installed": {
+    "app/espace-etudiant/apprentissage/allemand-debutant/page.tsx": "f3a49e23d6504ced8c45d949fb84a83eb4a5582fb90a2d4077970e4c703db00b",
+    "public/audio/deutsch-erfolg/beginner/ae.mp3": "ce98eb9ac291e3c85b04837b37b1a8ddaf58a4c6bab9f9d416bd49edd0a7536a",
+    "public/audio/deutsch-erfolg/beginner/aeu.mp3": "109b780fde9b7d7638bcb20a361098d9642c8ab5497b8c0f9bca1adf5deba70a",
+    "public/audio/deutsch-erfolg/beginner/ai.mp3": "962621b4f9e06b4a5959e343f3ed00dfcdb094f718545ae0c85a9904443de74a",
+    "public/audio/deutsch-erfolg/beginner/au.mp3": "180d41cb5291bbafd4f84d703a74f86f0131fd97e72f47a7a686ef5073a07d02",
+    "public/audio/deutsch-erfolg/beginner/ch-hard.mp3": "d43805c0f34be4504f31d615c6f05968d727acd0cb4fb41447396d4c2835d887",
+    "public/audio/deutsch-erfolg/beginner/ch-soft.mp3": "554284201affba6f9ec043ab1148da38c6420fd95798396b6e8214e5183440d0",
+    "public/audio/deutsch-erfolg/beginner/chst.mp3": "142c31f41cd9fec4346485b3eadc4df8d718dc0c9b856f30f0df7acc52e63772",
+    "public/audio/deutsch-erfolg/beginner/ck.mp3": "e690624b77a6f934c3fadd67c9069aadbbabb9b59fa4970fbb400652a85ee575",
+    "public/audio/deutsch-erfolg/beginner/ei.mp3": "962621b4f9e06b4a5959e343f3ed00dfcdb094f718545ae0c85a9904443de74a",
+    "public/audio/deutsch-erfolg/beginner/eu.mp3": "109b780fde9b7d7638bcb20a361098d9642c8ab5497b8c0f9bca1adf5deba70a",
+    "public/audio/deutsch-erfolg/beginner/ie.mp3": "763a37d9fb63503ad94768925284c2f11dbb945813d09eaf85520154e8cc4a46",
+    "public/audio/deutsch-erfolg/beginner/ks.mp3": "ef4306c2a17d1ef651059a33971fe9152f7bf65f85790e7acb51f8a966afaad0",
+    "public/audio/deutsch-erfolg/beginner/ng.mp3": "32ef730c814350f282af56348351c389b3665dfd56dca3b204b4d125f9f2af5d",
+    "public/audio/deutsch-erfolg/beginner/nk.mp3": "7d510bec5637e5a5af75e8a94f1a86e78421193a6d912fe7f51d7787279281c4",
+    "public/audio/deutsch-erfolg/beginner/oe.mp3": "9be13e36d9b906f5548dd52163565b15a8e0464c5281481f51410eccd791d073",
+    "public/audio/deutsch-erfolg/beginner/pf.mp3": "6e70ec4090de7767240628f1aa6399719d39c380487297256e9cb951096e6eda",
+    "public/audio/deutsch-erfolg/beginner/qu.mp3": "4863b311ea32b17e95012b76619eb752435a47bbbf6998278b75257afe6fa0c8",
+    "public/audio/deutsch-erfolg/beginner/sch.mp3": "aac390aaef96bc7963a087ed2eed71826749462a2a43dbb9fdd66a169c93ede3",
+    "public/audio/deutsch-erfolg/beginner/sp.mp3": "cef6d50c48a835ae052fdd3d5f95ad6c68ddbd70c70977f25ff4e8fdc0e08780",
+    "public/audio/deutsch-erfolg/beginner/ss.mp3": "229dde48c986b6887bd3524ff8cc0f6c8aedc9093cfbe79cbf6e9a7b688f339b",
+    "public/audio/deutsch-erfolg/beginner/st.mp3": "368287a77e2e66bfa6f02c769af651994e7bff18e2bdcff4e41a5b8ee884d31a",
+    "public/audio/deutsch-erfolg/beginner/tz.mp3": "d6af97f7d029e931c511568220ddb5b2291cc1da61a4723ca171e809c17a7855",
+    "public/audio/deutsch-erfolg/beginner/ue.mp3": "fdc86d4714ac60ccc568ed8715719d79f2a0451d1c2b7bab0c860f747a00e609"
+  }
+}

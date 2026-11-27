@@ -1,5 +1,6 @@
 
 'use client'
+import AdminLoader from '../AdminLoader'
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
@@ -407,10 +408,7 @@ const nombrePaiements = paiementsValides.length
 
   if (chargement) {
     return (
-      <main className="admin-loading">
-        <div className="loading-spinner" />
-        <p>Chargement de la gestion des étudiants...</p>
-      </main>
+      <AdminLoader />
     )
   }
 
@@ -966,10 +964,7 @@ const nombrePaiements = paiementsValides.length
             </div>
 
             {chargementHistorique ? (
-              <div className="history-loading">
-                <div className="loading-spinner" />
-                <p>Chargement de l'historique...</p>
-              </div>
+              <AdminLoader inline />
             ) : historique.length === 0 ? (
               <div className="history-empty">
                 <Clock size={28} />

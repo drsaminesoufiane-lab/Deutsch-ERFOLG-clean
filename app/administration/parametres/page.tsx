@@ -1,4 +1,5 @@
 'use client'
+import AdminLoader from '../AdminLoader'
 
 import { Globe, Settings, ShieldCheck, UserRound, Clock, LockKeyhole, LogOut, CheckCircle2 } from 'lucide-react'
 import {useEffect,useState,type FormEvent} from 'react'
@@ -91,7 +92,7 @@ export default function AdminSettingsPage(){
     </section>
     <section className="de-settings-panel"><h2><Clock size={21}/>{t('Date et heure','Datum und Uhrzeit','التاريخ والوقت')}</h2><dl className="de-settings-profile"><div><dt>{t('Fuseau des notifications et du journal','Zeitzone für Benachrichtigungen und Protokoll','المنطقة الزمنية للإشعارات والسجل')}</dt><dd>Africa/Casablanca</dd></div></dl><p>{t('Les notifications et le journal utilisent l’heure du Maroc.','Benachrichtigungen und Protokoll verwenden die marokkanische Ortszeit.','تستخدم الإشعارات والسجل توقيت المغرب.')}</p></section>
     <section className="de-settings-panel"><h2><ShieldCheck size={21}/>{t('Mes autorisations','Meine Berechtigungen','صلاحياتي')}</h2>
-      {accountLoading?<p>{t('Vérification…','Wird geprüft…','جار التحقق…')}</p>:!access?<p role="alert">{t('Impossible de vérifier vos autorisations.','Berechtigungen konnten nicht geprüft werden.','تعذر التحقق من صلاحياتك.')}</p>:<><p>{access.owner?t('Vous disposez de tous les droits administratifs.','Sie verfügen über alle Verwaltungsrechte.','لديك جميع صلاحيات الإدارة.'):t('Les droits suivants vous ont été attribués.','Ihnen wurden folgende Rechte zugewiesen.','تم منحك الصلاحيات التالية.')}</p><ul className="de-settings-permissions">{permissions.filter(p=>p!=='courses'&&has(access,p)).map(p=><li key={p}><CheckCircle2 size={16}/>{t(...permissionNames[p])}</li>)}</ul></>}
+      {accountLoading?<AdminLoader inline />:!access?<p role="alert">{t('Impossible de vérifier vos autorisations.','Berechtigungen konnten nicht geprüft werden.','تعذر التحقق من صلاحياتك.')}</p>:<><p>{access.owner?t('Vous disposez de tous les droits administratifs.','Sie verfügen über alle Verwaltungsrechte.','لديك جميع صلاحيات الإدارة.'):t('Les droits suivants vous ont été attribués.','Ihnen wurden folgende Rechte zugewiesen.','تم منحك الصلاحيات التالية.')}</p><ul className="de-settings-permissions">{permissions.filter(p=>p!=='courses'&&has(access,p)).map(p=><li key={p}><CheckCircle2 size={16}/>{t(...permissionNames[p])}</li>)}</ul></>}
       <p>{t('Les autorisations ne sont pas modifiables depuis cette page.','Die Rechte können hier nicht geändert werden.','لا يمكن تعديل الصلاحيات من هذه الصفحة.')}</p>
     </section>
     <section className="de-settings-panel"><h2><LockKeyhole size={21}/>{t('Sécurité du compte','Kontosicherheit','أمان الحساب')}</h2>

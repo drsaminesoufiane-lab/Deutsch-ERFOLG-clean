@@ -4,6 +4,8 @@
 // DE_LEAGUE_ADMIN_READ_V1
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
+import SpeakingDashboardCard from '@/components/student/SpeakingDashboardCard'
+// DE_SPEAKING_HUB_V1
 import LeaguePodium, { type PodiumEntry } from '@/components/student/LeaguePodium'
 import { NotebookPen } from 'lucide-react'
 import { BookOpen, LibraryBig, Trophy, BarChart3, Headphones, PenLine, Mic, ClipboardList, FileText, ChevronRight, Play, Zap, CheckCircle2, Medal, Construction, House, UserRound } from 'lucide-react'
@@ -18,6 +20,8 @@ const copy = {
 } as const
 const dashboardVisualCopy = {"fr": {"title": "Allemand pour d\u00e9butants", "sub": "Alphabet \u00b7 Prononciation", "welcome": "ESPACE D\u2019APPRENTISSAGE", "level": "Mon niveau"}, "de": {"title": "Deutsch f\u00fcr Anf\u00e4nger", "sub": "Alphabet \u00b7 Aussprache", "welcome": "MEIN LERNBEREICH", "level": "Mein Niveau"}, "en": {"title": "German for beginners", "sub": "Alphabet \u00b7 Pronunciation", "welcome": "MY LEARNING SPACE", "level": "My level"}, "ar": {"title": "\u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a\u0629 \u0644\u0644\u0645\u0628\u062a\u062f\u0626\u064a\u0646", "sub": "\u0627\u0644\u0623\u0628\u062c\u062f\u064a\u0629 \u00b7 \u0627\u0644\u0646\u0637\u0642", "welcome": "\u0641\u0636\u0627\u0621 \u0627\u0644\u062a\u0639\u0644\u0645", "level": "\u0645\u0633\u062a\u0648\u0627\u064a"}} as const
 const premiumCopy = {"fr": {"results": "Mes r\u00e9sultats", "resultsSub": "Scores et progression", "league": "Classement g\u00e9n\u00e9ral", "allTime": "Depuis le d\u00e9but", "see": "Voir la League", "empty": "Le podium attend ses premiers champions !", "unavailable": "Classement indisponible", "loading": "Chargement\u2026", "retry": "R\u00e9essayer", "pending": "Donn\u00e9es indisponibles", "me": "Moi", "motivation": "Chaque exercice r\u00e9ussi compte."}, "de": {"results": "Meine Ergebnisse", "resultsSub": "Punkte und Fortschritt", "league": "Gesamtrangliste", "allTime": "Gesamt", "see": "Liga ansehen", "empty": "Das Podium wartet auf seine ersten Champions!", "unavailable": "Rangliste nicht verf\u00fcgbar", "loading": "Wird geladen\u2026", "retry": "Erneut versuchen", "pending": "Daten nicht verf\u00fcgbar", "me": "Ich", "motivation": "Jede bestandene \u00dcbung z\u00e4hlt."}, "en": {"results": "My results", "resultsSub": "Scores and progress", "league": "Overall leaderboard", "allTime": "All time", "see": "View the League", "empty": "The podium awaits its first champions!", "unavailable": "Leaderboard unavailable", "loading": "Loading\u2026", "retry": "Try again", "pending": "Data unavailable", "me": "Me", "motivation": "Every passed exercise counts."}, "ar": {"results": "\u0646\u062a\u0627\u0626\u062c\u064a", "resultsSub": "\u0627\u0644\u062f\u0631\u062c\u0627\u062a \u0648\u0627\u0644\u062a\u0642\u062f\u0645", "league": "\u0627\u0644\u062a\u0631\u062a\u064a\u0628 \u0627\u0644\u0639\u0627\u0645", "allTime": "\u0645\u0646\u0630 \u0627\u0644\u0628\u062f\u0627\u064a\u0629", "see": "\u0639\u0631\u0636 \u0627\u0644\u062f\u0648\u0631\u064a", "empty": "\u0645\u0646\u0635\u0629 \u0627\u0644\u062a\u062a\u0648\u064a\u062c \u062a\u0646\u062a\u0638\u0631 \u0623\u0648\u0644 \u0623\u0628\u0637\u0627\u0644\u0647\u0627!", "unavailable": "\u0627\u0644\u062a\u0631\u062a\u064a\u0628 \u063a\u064a\u0631 \u0645\u062a\u0627\u062d", "loading": "\u062c\u0627\u0631\u064d \u0627\u0644\u062a\u062d\u0645\u064a\u0644\u2026", "retry": "\u0625\u0639\u0627\u062f\u0629 \u0627\u0644\u0645\u062d\u0627\u0648\u0644\u0629", "pending": "\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u063a\u064a\u0631 \u0645\u062a\u0627\u062d\u0629", "me": "\u0623\u0646\u0627", "motivation": "\u0643\u0644 \u062a\u0645\u0631\u064a\u0646 \u0646\u0627\u062c\u062d \u0644\u0647 \u0642\u064a\u0645\u0629."}} as const
+// DE_DASHBOARD_EXPIRY_V1
+const expiryCopy = {"fr": {"label": "Expiration PRO", "none": "Aucune date enregistr\u00e9e", "unknown": "Date indisponible"}, "de": {"label": "PRO l\u00e4uft ab am", "none": "Kein Ablaufdatum hinterlegt", "unknown": "Datum nicht verf\u00fcgbar"}, "en": {"label": "PRO expiry date", "none": "No expiry date recorded", "unknown": "Date unavailable"}, "ar": {"label": "\u062a\u0627\u0631\u064a\u062e \u0627\u0646\u062a\u0647\u0627\u0621 PRO", "none": "\u0644\u0627 \u064a\u0648\u062c\u062f \u062a\u0627\u0631\u064a\u062e \u0627\u0646\u062a\u0647\u0627\u0621 \u0645\u0633\u062c\u0644", "unknown": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e \u063a\u064a\u0631 \u0645\u062a\u0627\u062d"}} as const
 const base = '/espace-etudiant'
 const grammar = base+'/apprentissage/grammaire'
 const availableRoutes: string[] = ["/espace-etudiant/examens", "/espace-etudiant/examens/b1", "/espace-etudiant/examens/b1/hoeren", "/espace-etudiant/examens/b1/lesen", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-1", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-10", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-11", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-12", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-13", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-14", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-15", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-16", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-17", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-2", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-3", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-4", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-5", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-6", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-7", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-8", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-9", "/espace-etudiant/examens/b1/lesen/teil-2/exercice-1", "/espace-etudiant/examens/b1/lesen/teil-2/exercice-2", "/espace-etudiant/examens/b1/lesen/teil-2/exercice-3", "/espace-etudiant/examens/b1/lesen/teil-3/exercice-1", "/espace-etudiant/examens/b1/lesen/teil-3/exercice-2", "/espace-etudiant/examens/b1/lesen/teil-3/exercice-3", "/espace-etudiant/examens/b1/sprachbausteine", "/espace-etudiant/examens/b1/sprachbausteine/teil-1/exercice-1", "/espace-etudiant/examens/b1/sprachbausteine/teil-2/exercice-1", "/espace-etudiant/examens/b2"]
@@ -25,11 +29,12 @@ const skills = [{key:'lesen',name:'Lesen',Icon:BookOpen},{key:'hoeren',name:'Hö
 type Stats = {xp:number|null;completed:number|null;rank:number|null}
 export default function StudentPage(){
   const {language,isRTL}=useLanguage(); const t=copy[language]||copy.de
-  const [name,setName]=useState(''); const [level,setLevel]=useState(''); const [examLevel,setExamLevel]=useState<'b1'|'b2'>('b1')
+  const [proExpiry,setProExpiry]=useState<string|null|undefined>(undefined); const [name,setName]=useState(''); const [level,setLevel]=useState(''); const [examLevel,setExamLevel]=useState<'b1'|'b2'>('b1')
   const [stats,setStats]=useState<Stats>({xp:null,completed:null,rank:null}); const [leaders,setLeaders]=useState<PodiumEntry[]|null>(null); const [statsLoading,setStatsLoading]=useState(true); const [statsRevision,setStatsRevision]=useState(0); const [last,setLast]=useState<string|null>(null)
   useEffect(()=>{let active=true; setStatsLoading(true); async function load(){
     const {data:{user}}=await supabase.auth.getUser(); if(!active||!user)return
-    const {data:p}=await supabase.from('profiles').select('full_name,level').eq('id',user.id).maybeSingle(); if(!active)return
+    const {data:p}=await supabase.from('profiles').select('full_name,level,pro_until').eq('id',user.id).maybeSingle(); if(!active)return
+    setProExpiry(p ? (p.pro_until ?? null) : undefined)
     setName((p?.full_name||user.user_metadata?.full_name||'').trim()||'');setLevel(p?.level||'');setExamLevel(p?.level==='B2'?'b2':'b1')
     const [xp,rank,recent]=await Promise.all([supabase.rpc('league_get_my_xp'),supabase.rpc('league_get_ranking',{p_period:'all',p_level:null}),supabase.from('grammar_exercise_attempts').select('chapter_id').eq('student_id',user.id).order('created_at',{ascending:false}).limit(1).maybeSingle()]);if(!active)return
     const numeric=(value:unknown):number|null=>value!==null&&value!==undefined&&Number.isFinite(Number(value))?Number(value):null
@@ -49,10 +54,15 @@ export default function StudentPage(){
   ]
   const examRoot=base+'/examens';const examHome=availableRoutes.includes(examRoot+'/'+examLevel)?examRoot+'/'+examLevel:examRoot
   const fmt=(v:number)=>v.toLocaleString(language)
+  const expiryText=expiryCopy[language]||expiryCopy.de
+  const expiryDate=proExpiry?new Date(proExpiry):null
+  const expiryValid=expiryDate!==null&&Number.isFinite(expiryDate.getTime())
+  const expiryLabel=expiryValid?expiryDate.toLocaleDateString(language==='ar'?'ar-MA':language,{day:'numeric',month:'long',year:'numeric'}):proExpiry===null?expiryText.none:expiryText.unknown
   return <main className="de-compact-dashboard" dir={isRTL?'rtl':'ltr'}>
     <section className="de-dash-greet de-dash-welcome-v2">
       <div className="de-dash-welcome-copy"><span className="de-dash-welcome-kicker">{d.welcome}</span>
         <h1>{t.hello}, <span>{name||t.student}</span> !</h1>
+        <div className="de-dash-expiry"><span className="de-dash-expiry-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.65" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M16 3v4M8 3v4M3 10h18M8 15h3M14 15h2"/></svg></span><div><span className="de-dash-expiry-label">{expiryText.label}</span>{expiryValid&&proExpiry?<time dateTime={proExpiry}>{expiryLabel}</time>:<strong>{expiryLabel}</strong>}</div></div>
         
       </div>
       {level&&<div className="de-dash-welcome-art de-dash-large-level"><span className="de-dash-welcome-ring" aria-hidden="true"/><span className="de-dash-large-level-label">{d.level}</span><strong className="de-dash-large-level-value" dir="ltr">{level}</strong></div>}
@@ -62,6 +72,7 @@ export default function StudentPage(){
     <Link className="de-dash-resume" href={last?grammar+'/'+encodeURIComponent(last):grammar}><div><small>{last?t.last:t.start}</small><h2>{last&&chapterNumber?t.chapter+' '+chapterNumber:t.grammar}</h2><span>{last?t.resume:t.start}</span></div><span className="de-dash-play"><Play size={22}/></span></Link>
     <h2 className="de-dash-section">{t.learn}</h2><div className="de-dash-tools de-dash-tools-v2">{tools.map(({href,title,sub,level,kind,Icon})=><Link href={href} key={href} className={'de-dash-tool-'+kind}><div className="de-dash-tool-top"><span className="de-dash-tool-icon"><Icon size={38} strokeWidth={1.8}/></span>{level&&<span className="de-dash-tool-level" dir="ltr">{level}</span>}<ChevronRight className="de-dash-tool-arrow" size={18} aria-hidden="true"/></div><strong>{title}</strong>{sub&&<small>{sub}</small>}</Link>)}</div>
     <section className="de-dash-league-v3"><div className="de-dash-league-head"><div><h2>{t.league}</h2><small>{pc.league} · {pc.allTime}</small></div><Link href={base+'/classement'}>{pc.see}<ChevronRight size={16}/></Link></div>{leaders!==null?<LeaguePodium entries={leaders}/>:<div className="de-dash-league-status" role="status">{statsLoading?pc.loading:pc.unavailable}</div>}<p className="de-dash-motivation">{pc.motivation}</p></section>
+    <SpeakingDashboardCard />
     <div className="de-dash-exam-heading"><h2 className="de-dash-section">{t.exams}</h2><div className="de-dash-switch">{(['b1','b2'] as const).map(l=><button key={l} type="button" aria-pressed={examLevel===l} onClick={()=>setExamLevel(l)}>{l.toUpperCase()}</button>)}</div></div>
     <Link className="de-dash-building" href={examHome}><Construction size={15}/>{t.building}<ChevronRight size={15}/></Link>
     <div className="de-dash-exams">{skills.map(({key,name,Icon})=>{const href=examRoot+'/'+examLevel+'/'+key;return <Link key={key} href={availableRoutes.includes(href)?href:examHome}><Icon size={22}/><strong>{name}</strong><ChevronRight size={15}/></Link>})}</div>
@@ -133,6 +144,15 @@ export default function StudentPage(){
 .de-dash-large-level .de-dash-large-level-value{display:block;color:#e6c77f;font-family:Georgia,serif;font-size:clamp(64px,7vw,92px);font-weight:700;line-height:1;letter-spacing:-.045em;white-space:nowrap}
 @media(max-width:850px){.de-compact-dashboard .de-dash-welcome-v2{gap:12px}.de-compact-dashboard .de-dash-welcome-art.de-dash-large-level{flex:0 0 100px;width:100px;height:114px}.de-dash-large-level .de-dash-welcome-ring{inset:9px 0;box-shadow:0 0 0 6px #e6c77f09}.de-dash-large-level .de-dash-large-level-value{font-size:53px}.de-dash-large-level .de-dash-large-level-label{font-size:10px;padding:0 3px}}
 @media(max-width:350px){.de-compact-dashboard .de-dash-welcome-art.de-dash-large-level{flex-basis:78px;width:78px;height:92px}.de-dash-large-level .de-dash-large-level-value{font-size:41px}}
+
+
+/* DE_DASHBOARD_EXPIRY_V1 */
+.de-compact-dashboard .de-dash-expiry{display:inline-flex;align-items:center;gap:10px;max-width:100%;margin-top:12px;padding:9px 13px;border:1px solid #d6b56d50;background:#ffffff08;border-radius:10px;color:#f4e6bf;line-height:1.35;text-align:start;box-sizing:border-box}
+.de-dash-expiry-icon{display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px;border-radius:7px;color:#e6c77f;background:#d6b56d17}
+.de-dash-expiry>div{min-width:0;display:flex;flex-direction:column;gap:3px}
+.de-dash-expiry .de-dash-expiry-label{color:#d8c69d;font-size:10px;font-weight:600;letter-spacing:.02em}
+.de-dash-expiry time,.de-dash-expiry strong{color:#fff5db;font-weight:650;font-size:14px;overflow-wrap:anywhere}
+@media(max-width:600px){.de-compact-dashboard .de-dash-expiry{gap:7px;padding:7px 9px;margin-top:8px}.de-dash-expiry-icon{flex-basis:25px;width:25px;height:25px}.de-dash-expiry-icon svg{width:17px;height:17px}.de-dash-expiry time,.de-dash-expiry strong{font-size:12px}}
 
 `}</style>
   </main>

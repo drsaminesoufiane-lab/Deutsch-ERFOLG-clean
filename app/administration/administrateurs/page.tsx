@@ -1,4 +1,5 @@
 'use client'
+import AdminLoader from '../AdminLoader'
 import {useEffect,useState} from 'react'
 import Link from 'next/link'
 import {ShieldCheck,Users,History} from 'lucide-react'
@@ -71,7 +72,7 @@ export default function AdminManagement(){
    reset();await load();setMessage('Compte supprimé définitivement.')
   }catch(e){setError((e as {message?:string})?.message||'Suppression refusée.')}finally{setBusy(false)}
  }
- if(loading)return <main className="rbac-page"><p>Chargement des autorisations…</p></main>
+ if(loading)return <AdminLoader />
  return <main className="rbac-page"><Link href="/administration">← Tableau de bord</Link><header><ShieldCheck size={30}/><div><small>GESTION DES ACCÈS</small><h1>Administrateurs</h1><p>Propriétaire protégé · Autorisations individuelles</p></div></header>
  {error&&<p role="alert" className="rbac-error">{error}</p>}{message&&<p role="status" className="rbac-ok">{message}</p>}
  {access&&<>{rows.length>0&&<section><h2><Users size={20}/> Comptes administratifs</h2>{rows.map(r=><article key={r.id} className="rbac-person"><div><strong>{r.name||r.email||r.id}</strong><small>{r.email}</small><p>{positionLabel(r.position||'administrator',language,r.owner)} · {r.owner?t('Tous les droits','Alle Rechte','جميع الصلاحيات'):`${r.permissions.length} autorisation(s)`}{r.id===myId?' · Votre compte':''}</p>{!r.owner&&<details><summary>Autorisations</summary><ul>{r.permissions.map(p=><li key={p}>{permissionLabels[p]||p}</li>)}</ul></details>}</div><div className="rbac-actions">{canManage(r)&&has(access,'edit_admins')&&<button disabled={busy} onClick={()=>{setTarget(r);setSelected(r.permissions);setEmail('');setError('');const p=r.position||'administrator';setPosition(positions.some(x=>x[0]===p)?p:'custom');setCustom(positions.some(x=>x[0]===p)?'':p)}}>Modifier</button>}{canManage(r)&&has(access,'revoke_admins')&&<button className="rbac-danger" disabled={busy} onClick={()=>void save('revoke',r)}>Révoquer</button>}{access.owner&&!r.owner&&r.id!==myId&&<button type="button" className="rbac-delete-account" disabled={busy} onClick={()=>void deleteAccount(r)}>Supprimer le compte</button>}</div></article>)}</section>}

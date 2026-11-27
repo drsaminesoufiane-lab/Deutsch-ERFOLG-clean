@@ -9,7 +9,7 @@ export const lesson: LessonDefinition = {
   },
   "subtitle": {
     "fr": "Passif au passé",
-    "de": "Passiv Teil 2",
+    "de": "Passiv in der Vergangenheit",
     "ar": "المبني للمجهول في الماضي",
     "en": "Past passive"
   },

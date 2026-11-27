@@ -1,0 +1,12 @@
+{
+  "old": {
+    "app/connexion/page.tsx": "9ffb685246f3fa70894abba2505cc005e6ce5889384bcd27d680f44089476ad2",
+    "app/auth/confirm/route.ts": "aa1fa59c3c1f0e0f35e0aeb7f29b1d365a20d877bbf0277c8dd0d417bdee9aee",
+    "components/auth/EmailConfirmation.tsx": null
+  },
+  "new": {
+    "app/connexion/page.tsx": "75826667e857f27d71b57a6bf74f65734a1ae2b13cd8a782875d641cd898ea6b",
+    "app/auth/confirm/route.ts": "37c53ad13ef5f39f59eabf473c1726c559de882ea6f54671fc8b20d677bf5648",
+    "components/auth/EmailConfirmation.tsx": "6c305656d067017f2d6471e8a0b20c1e4ca69abe9b335537ff6902e2edeb3e5e"
+  }
+}

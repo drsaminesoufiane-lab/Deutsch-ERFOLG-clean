@@ -1,0 +1,18 @@
+{
+  "app/espace-etudiant/page.tsx": {
+    "before": "d842acb516993cae0202a3bd446dfe11ed22eb8b397896ef5ce4840c79a46e5f",
+    "after": "ca1e10d63fa7b99457b46e699bc52d5e094e0b1b535cbc782e4ddb8d99abd459"
+  },
+  "lib/grammar/chapterRegistry.ts": {
+    "before": "e37261dd36ef5fc146888e7b164cfae3489584b6678d73221ba3ea8d6fab0bfa",
+    "after": "86360510c14bef222c6e38f68fed4d1e7f19b65c9225a490fdf4f07461508b40"
+  },
+  "content/grammar/kapitel-57/lesson.ts": {
+    "before": "3155e74b147527801bb5b6429c4702ee24b67cb806ecff786f6b288db3a37965",
+    "after": "0c658d852c972c0ed64c57d3dd83ba7752ea88a996a041439ea50566710bb86c"
+  },
+  "content/grammar/kapitel-58/lesson.ts": {
+    "before": "06b58d0f6ef44ff45b09c2bc29b3a7b6b55345a68fbfd5672049880b0411af00",
+    "after": "0bc45c286f868e6074b8b7e59e336eb51d8efde3dd3a82f0572a2d09a6c8a46b"
+  }
+}

@@ -1,5 +1,6 @@
 
 'use client'
+import AdminLoader from '../AdminLoader'
 
 import { useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
@@ -420,10 +421,7 @@ export default function StatistiquesPage() {
 
   if (chargement) {
     return (
-      <div className="stats-loading">
-        <div className="stats-loader" />
-        <p>Préparation de vos statistiques...</p>
-      </div>
+      <AdminLoader />
     )
   }
 

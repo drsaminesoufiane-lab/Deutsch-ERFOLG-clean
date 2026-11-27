@@ -1,5 +1,6 @@
 
 'use client'
+import AdminLoader from '../AdminLoader'
 
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
@@ -650,11 +651,7 @@ export default function TachesPage() {
               </div>
 
               {chargement ? (
-                <div className="task-empty">
-                  <RefreshCw size={27} className="task-spin" />
-                  <strong>Chargement des tâches...</strong>
-                  <span>Veuillez patienter.</span>
-                </div>
+                <AdminLoader inline />
               ) : tachesFiltrees.length === 0 ? (
                 <div className="task-empty">
                   <div className="task-empty-icon">

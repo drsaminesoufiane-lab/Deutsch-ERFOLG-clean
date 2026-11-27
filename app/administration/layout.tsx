@@ -1,15 +1,17 @@
 'use client'
-import DeutschErfolgLoader from '@/components/student/DeutschErfolgLoader'
+import AdminLoader from './AdminLoader'
+import AdminQuickNav from './AdminQuickNav'
 
 
 import { useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
-import Link from 'next/link'
+import Link, { useLinkStatus } from 'next/link'
 import {usePathname} from 'next/navigation'
 import {allowedPath,has,links,parseAccess,permissions,type Access} from '@/lib/adminAccess'
-import { Bell, ShieldCheck, UserRound, RefreshCw, LayoutDashboard, Users, ClipboardList, Wallet, BarChart3, Menu, X, ArrowLeft, History, Settings, GraduationCap } from 'lucide-react'
+import { Bell, ShieldCheck, UserRound, RefreshCw, LayoutDashboard, Users, ClipboardList, Wallet, BarChart3, Menu, X, ArrowLeft, History, Settings, GraduationCap, ChartNoAxesColumnIncreasing, ChevronRight } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 import './admin-premium.css'
+import './admin-refined.css'
 import AdminDashboardBanner from './AdminDashboardBanner'
 import {AdminContext,useAdmin,translate,positionLabel,navLabel,type AdminLanguage} from './admin-context'
 
@@ -60,7 +62,7 @@ function RegistrationNotifications({ adminId, canReadStudents }: { adminId: stri
     {open&&<section id="de-admin-notice-panel" className="de-admin-notice-panel" aria-label={t("Notifications d’inscription","Anmeldebenachrichtigungen","إشعارات التسجيل")}>
       <div className="de-admin-notice-heading"><div><h2>{t("Nouvelles inscriptions","Neue Anmeldungen","تسجيلات جديدة")}</h2><p>{t("50 dernières inscriptions · Heure du Maroc","Letzte 50 Anmeldungen · Marokkanische Zeit","آخر 50 تسجيلاً · توقيت المغرب")}</p></div><button type="button" onClick={()=>setRefresh(n=>n+1)} aria-label={t("Actualiser","Aktualisieren","تحديث")}><RefreshCw size={17}/></button></div>
       <div className="de-admin-notice-actions"><button type="button" disabled={!loaded||error||unread===0} onClick={()=>mark(rows.map(r=>r.id))}>{t("Tout marquer comme lu","Alle als gelesen markieren","تحديد الكل كمقروء")}</button><button type="button" onClick={()=>setOpen(false)}>{t("Fermer","Schließen","إغلاق")}</button></div>
-      {!loaded?<p className="de-admin-notice-empty">{t("Chargement…","Wird geladen…","جار التحميل…")}</p>:error?<p className="de-admin-notice-empty" role="alert">{t("Notifications indisponibles. Actualisez pour réessayer.","Benachrichtigungen nicht verfügbar. Bitte aktualisieren.","الإشعارات غير متاحة. يرجى التحديث.")}</p>:rows.length===0?<p className="de-admin-notice-empty">{t("Aucune inscription.","Keine Anmeldungen.","لا توجد تسجيلات.")}</p>:<div className="de-admin-notice-list">{rows.map(r=>{
+      {!loaded?<AdminLoader inline />:error?<p className="de-admin-notice-empty" role="alert">{t("Notifications indisponibles. Actualisez pour réessayer.","Benachrichtigungen nicht verfügbar. Bitte aktualisieren.","الإشعارات غير متاحة. يرجى التحديث.")}</p>:rows.length===0?<p className="de-admin-notice-empty">{t("Aucune inscription.","Keine Anmeldungen.","لا توجد تسجيلات.")}</p>:<div className="de-admin-notice-list">{rows.map(r=>{
         const date = r.created_at ? new Date(r.created_at) : null
         const cls=`de-admin-notice-item ${read.includes(r.id)?'':'unread'}`; const content=<><UserRound size={19}/><span><strong>{r.full_name||r.email||t('Étudiant','Lernende','طالب')}</strong>{r.full_name&&r.email&&<small>{r.email}</small>}<small>{date&&!Number.isNaN(date.getTime())?dateFormat.format(date):t('Date inconnue','Unbekanntes Datum','تاريخ غير معروف')}{r.level?` · ${r.level}`:''}</small></span>{!read.includes(r.id)&&<i aria-label={t("Non lue","Ungelesen","غير مقروء")}/>}</>; return canReadStudents?<Link key={r.id} href={`/administration/etudiants/${encodeURIComponent(r.id)}`} onClick={()=>{mark([r.id]);setOpen(false)}} className={cls}>{content}</Link>:<button key={r.id} type="button" className={cls} onClick={()=>mark([r.id])}>{content}</button>
       })}</div>}
@@ -68,6 +70,8 @@ function RegistrationNotifications({ adminId, canReadStudents }: { adminId: stri
     </section>}
   </div>
 }
+
+function NavPending(){const {pending}=useLinkStatus();return pending?<span className="de-admin-nav-pending" aria-hidden="true"/>:null}
 
 export default function AdministrationLayout({ children }: { children: ReactNode }) {
   const [status,setStatus] = useState<'loading'|'allowed'|'denied'|'error'>('loading')
@@ -117,25 +121,32 @@ export default function AdministrationLayout({ children }: { children: ReactNode
     document.addEventListener('visibilitychange',check)
     return ()=>{active=false;++version;subscription.unsubscribe();if(pendingCheck!==undefined)clearTimeout(pendingCheck);window.clearInterval(timer);document.removeEventListener('visibilitychange',check)}
   },[retry])
-  if(status==='loading') return <DeutschErfolgLoader />
+  if(status==='loading') return <AdminLoader language={language} />
   if(status!=='allowed') return <main className="de-admin-gate"><ShieldCheck size={35}/><h1>Administration</h1><p>{status==='denied'?'Accès réservé aux administrateurs.':'Impossible de vérifier les droits. Réessayez.'}</p>{status==='error'&&<button type="button" onClick={()=>{setStatus('loading');setRetry(n=>n+1)}}>Réessayer</button>}<Link href="/">{t('Retour au site','Zur Website','العودة إلى الموقع')}</Link></main>
   const visible=links.filter(l=>allowedPath(access,l.url))
   const denied=!allowedPath(access,path)
+  const groups=[
+    {label:t('VUE D’ENSEMBLE','ÜBERSICHT','نظرة عامة'),urls:['/administration','/administration/statistiques']},
+    {label:t('GESTION & PÉDAGOGIE','VERWALTUNG & LERNEN','الإدارة والتعلم'),urls:['/administration/etudiants','/administration/resultats','/administration/taches','/administration/paiements']},
+    {label:t('SYSTÈME & SÉCURITÉ','SYSTEM & SICHERHEIT','النظام والأمان'),urls:['/administration/administrateurs','/administration/journal','/administration/parametres']},
+  ]
+  const current=visible.find(l=>l.url!='/administration'&&(path===l.url||path.startsWith(l.url+'/')))||visible.find(l=>l.url==='/administration')
+
   const classes=['de-admin-shell',...permissions.filter(p=>!has(access,p)).map(p=>`rbac-no-${p}`),...(!access?.owner?['rbac-delegated']:[])].join(' ')
-  const icons:Record<string,typeof LayoutDashboard>={'/administration':LayoutDashboard,'/administration/etudiants':Users,'/administration/taches':ClipboardList,'/administration/paiements':Wallet,'/administration/statistiques':BarChart3,'/administration/administrateurs':ShieldCheck,'/administration/journal':History,'/administration/resultats':BarChart3,'/administration/parametres':Settings}
+  const icons:Record<string,typeof LayoutDashboard>={'/administration':LayoutDashboard,'/administration/etudiants':Users,'/administration/taches':ClipboardList,'/administration/paiements':Wallet,'/administration/statistiques':BarChart3,'/administration/administrateurs':ShieldCheck,'/administration/journal':History,'/administration/resultats':ChartNoAxesColumnIncreasing,'/administration/parametres':Settings}
   const isActive=(url:string)=>url==='/administration'?(path===url||path===url+'/'):(path===url||path.startsWith(url+'/'))
   return <AdminContext.Provider value={{language,name:adminName,position,owner:!!access?.owner,changeLanguage}}><div className={`${classes} de-admin-workspace`} lang={language} dir={language==='ar'?'rtl':'ltr'}>
     {menuOpen&&<button className="de-admin-overlay" aria-label={t('Fermer le menu','Menü schließen','إغلاق القائمة')} onClick={()=>setMenuOpen(false)}/>}
     <aside id="de-admin-sidebar" className={`de-admin-sidebar-v2 ${menuOpen?'is-open':''}`}>
       <div className="de-admin-sidebar-heading"><Link href="/administration" className="de-admin-brand-v2" onClick={()=>setMenuOpen(false)}><ShieldCheck size={28}/><span>Deutsch <b>Erfolg</b><small>{t('ADMINISTRATION','VERWALTUNG','الإدارة')}</small></span></Link><button className="de-admin-close-menu" aria-label={t('Fermer le menu','Menü schließen','إغلاق القائمة')} onClick={()=>setMenuOpen(false)}><X size={22}/></button></div>
       <div className="de-admin-sidebar-role"><span className="de-admin-role-dot"/>{positionLabel(position,language,!!access?.owner)}</div>
-      <nav aria-label={t('Navigation administration','Verwaltungsnavigation','قائمة الإدارة')} className="de-admin-sidebar-links"><small>{t('ESPACE DE GESTION','VERWALTUNGSBEREICH','مساحة الإدارة')}</small>{visible.map(({url,label})=>{const Icon=icons[url]||ShieldCheck;const active=isActive(url);return <Link href={url} key={url} className={active?'active':''} aria-current={active?'page':undefined} onClick={()=>setMenuOpen(false)}><Icon size={19} strokeWidth={1.7}/><span>{navLabel(url,language,label)}</span></Link>})}
+      <nav aria-label={t('Navigation administration','Verwaltungsnavigation','قائمة الإدارة')} className="de-admin-sidebar-links">{groups.map(group=>{const items=group.urls.map(url=>visible.find(l=>l.url===url)).filter((item):item is NonNullable<typeof item>=>!!item);return items.length>0?<div className="de-admin-nav-group" key={group.label}><small>{group.label}</small>{items.map(({url,label})=>{const Icon=icons[url]||ShieldCheck;const active=isActive(url);return <Link href={url} key={url} className={active?'active':''} aria-current={active?'page':undefined} onClick={()=>setMenuOpen(false)}><Icon size={19} strokeWidth={1.7}/><span>{navLabel(url,language,label)}</span><NavPending/></Link>})}</div>:null})}
         <Link href="/espace-etudiant" className="de-admin-switch-student" onClick={()=>setMenuOpen(false)} style={{marginTop:12,border:'1px solid rgba(214,181,109,.55)',borderRadius:6,color:'#e3cb96',flexShrink:0}}><GraduationCap size={19} strokeWidth={1.7}/><span>{t('Espace étudiant','Lernbereich','فضاء الطالب')}</span></Link>
       </nav>
       <Link className="de-admin-sidebar-home" href="/"><ArrowLeft size={18}/> {t('Retour au site','Zur Website','العودة إلى الموقع')}</Link>
     </aside>
     <div className="de-admin-workspace-main">
-      <header className="de-admin-utility de-admin-top-v2"><div className="de-admin-identity"><button type="button" className="de-admin-open-menu" onClick={()=>setMenuOpen(v=>!v)} aria-expanded={menuOpen} aria-controls="de-admin-sidebar" aria-label={t('Ouvrir le menu','Menü öffnen','فتح القائمة')}><Menu size={23}/></button></div>{has(access,'notifications')&&<RegistrationNotifications key={adminId} adminId={adminId} canReadStudents={has(access,'students')}/>}</header>
+      <header className="de-admin-utility de-admin-top-v2"><div className="de-admin-identity"><button type="button" className="de-admin-open-menu" onClick={()=>setMenuOpen(v=>!v)} aria-expanded={menuOpen} aria-controls="de-admin-sidebar" aria-label={t('Ouvrir le menu','Menü öffnen','فتح القائمة')}><Menu size={23}/></button><div className="de-admin-breadcrumb"><Link href="/administration">{t('Administration','Verwaltung','الإدارة')}</Link><ChevronRight size={14} aria-hidden="true"/><strong>{denied?t('Accès restreint','Zugriff beschränkt','وصول مقيد'):current?navLabel(current.url,language,current.label):t('Tableau de bord','Übersicht','لوحة التحكم')}</strong></div></div><AdminQuickNav key={path} items={visible} language={language}/><div className="de-admin-top-account"><span className="de-admin-account-avatar" aria-hidden="true"><UserRound size={17}/></span><span><b>{adminName}</b><small>{positionLabel(position,language,!!access?.owner)}</small></span></div>{has(access,'notifications')&&<RegistrationNotifications key={adminId} adminId={adminId} canReadStudents={has(access,'students')}/>}</header>
       {denied?<main className="rbac-page"><h1>{t('Accès non autorisé','Zugriff verweigert','الوصول غير مصرح به')}</h1><Link href="/administration">{t('Retour au tableau de bord','Zurück zur Übersicht','العودة إلى لوحة التحكم')}</Link></main>:!access?.owner&&path==='/administration'?<main className="rbac-page"><AdminDashboardBanner onRefresh={()=>{setStatus('loading');setRetry(n=>n+1)}} /><p>{t('Accès selon vos autorisations.','Zugang gemäß Ihren Berechtigungen.','الوصول حسب صلاحياتك.')}</p><div className="rbac-checks">{visible.filter(l=>l.url!='/administration').map(l=><Link key={l.url} href={l.url}>{navLabel(l.url,language,l.label)} →</Link>)}</div><Link href="/">{t('Retour au site','Zur Website','العودة إلى الموقع')}</Link></main>:children}
     </div>
   </div></AdminContext.Provider>

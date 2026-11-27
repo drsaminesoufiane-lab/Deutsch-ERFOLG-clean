@@ -1,5 +1,6 @@
 
 'use client'
+import AdminLoader from '../AdminLoader'
 
 import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
@@ -1622,10 +1623,7 @@ leconSelectionnee && (
       {/* CHARGEMENT */}
       {chargement ? (
 
-        <div className="empty-state">
-          <Loader2 className="spin" />
-          Chargement...
-        </div>
+        <AdminLoader inline />
 
       ) : chapitresFiltres.length === 0 ? (
 

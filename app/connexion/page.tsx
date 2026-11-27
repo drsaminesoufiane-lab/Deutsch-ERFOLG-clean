@@ -7,7 +7,8 @@ import { useLanguage } from '@/contexts/LanguageContext'
 
 import GoogleAuthButton from '@/components/auth/GoogleAuthButton'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import EmailConfirmation, { type ConfirmationStatus } from '@/components/auth/EmailConfirmation'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
@@ -195,6 +196,26 @@ export default function ConnexionPage() {
   const { language: lang } = useLanguage()
 
   const t = traductions[lang]
+  // DE_EMAIL_CONFIRMATION_V2: read the result returned by the email endpoint.
+  const [confirmation, setConfirmation] = useState<ConfirmationStatus | null>(null)
+  useEffect(() => {
+    const url = new URL(window.location.href)
+    const status = url.searchParams.get('status')
+    const hash = new URLSearchParams(url.hash.slice(1))
+    if (status === 'error' || url.searchParams.get('error_code') === 'otp_expired' || hash.get('error_code') === 'otp_expired') {
+      setConfirmation('error')
+    } else if (status === 'success') {
+      setConfirmation('success')
+    }
+  }, [])
+
+  function continueToLogin() {
+    // Remove expired tokens and status from the address, without changing authentication.
+    window.history.replaceState(null, '', '/connexion')
+    setConfirmation(null)
+    setMessage('')
+    setPassword('')
+  }
 
   async function connecter(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -219,6 +240,11 @@ export default function ConnexionPage() {
     })
 
     if (error) {
+      if (error.code === 'email_not_confirmed') {
+        setConfirmation('pending')
+        setLoading(false)
+        return
+      }
       setMessage(t.erreurConnexion)
       setLoading(false)
       return
@@ -295,6 +321,10 @@ export default function ConnexionPage() {
     )
 
     router.refresh()
+  }
+
+  if (confirmation) {
+    return <EmailConfirmation status={confirmation} language={lang} initialEmail={email} onContinue={continueToLogin} />
   }
 
   return (

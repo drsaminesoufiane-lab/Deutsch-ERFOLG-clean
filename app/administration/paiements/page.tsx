@@ -1,5 +1,6 @@
 
 'use client'
+import AdminLoader from '../AdminLoader'
 
 import { useEffect, useMemo, useState } from 'react'
 import { supabase } from '@/lib/supabase'
@@ -480,10 +481,7 @@ export default function PaiementsPage() {
 
             <div className="payments-table-wrapper">
               {chargement ? (
-                <div className="payments-loading">
-                  <RefreshCw size={22} className="refresh-spinning" />
-                  <span>Chargement des transactions...</span>
-                </div>
+                <AdminLoader inline />
               ) : paiementsFiltres.length === 0 ? (
                 <div className="payments-empty">
                   <div className="payments-empty-icon">

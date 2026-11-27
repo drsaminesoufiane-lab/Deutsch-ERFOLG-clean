@@ -926,7 +926,7 @@ export const grammarChapters: ChapterDefinition[] = [
   "en": "Das Auto wird gebaut"
 }, subtitle: {
   "fr": "Passif au présent",
-  "de": "Passiv Teil 1",
+  "de": "Passiv im Präsens",
   "ar": "المبني للمجهول في الحاضر",
   "en": "Present passive"
 }, lesson: lesson57, exerciseSets: [...training57, ...extra57] },
@@ -937,7 +937,7 @@ export const grammarChapters: ChapterDefinition[] = [
   "en": "Wann wurde der Kölner Dom gebaut?"
 }, subtitle: {
   "fr": "Passif au passé",
-  "de": "Passiv Teil 2",
+  "de": "Passiv in der Vergangenheit",
   "ar": "المبني للمجهول في الماضي",
   "en": "Past passive"
 }, lesson: lesson58, exerciseSets: [...training58, ...extra58] },

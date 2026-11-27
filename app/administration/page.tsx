@@ -1,5 +1,6 @@
 
 'use client'
+import AdminLoader from './AdminLoader'
 
 import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
@@ -352,6 +353,8 @@ export default function AdministrationPage() {
       obtenirStatut(etudiant.last_seen_at, maintenant) === 'never'
   ).length
 
+  if (chargement && stats.etudiants === null && stats.paiements === null && !erreur) return <AdminLoader />
+
   return (
     <main className="admin-layout dashboard-page">
       <aside className="admin-sidebar">
@@ -623,13 +626,7 @@ export default function AdministrationPage() {
               {chargementPresence &&
               etudiantsPresence.length === 0 &&
               !erreurPresence ? (
-                <div className="presence-empty">
-                  <RefreshCw
-                    size={23}
-                    className="dashboard-spinning"
-                  />
-                  <p>Chargement des étudiants...</p>
-                </div>
+                <AdminLoader inline />
               ) : !erreurPresence &&
                 etudiantsPresence.length === 0 ? (
                 <div className="presence-empty">

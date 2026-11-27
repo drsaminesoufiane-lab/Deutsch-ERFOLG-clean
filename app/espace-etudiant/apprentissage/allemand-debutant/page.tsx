@@ -3,7 +3,7 @@
 
 import { celebratePerfectScore } from '@/components/student/ExerciseCelebration'
 
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import {
   BookOpen,
@@ -50,6 +50,12 @@ const alphabet = [
   { letter: 'Z', name: 'Tsett', example: 'Zeit', fr: 'Temps', de: 'Zeit', en: 'Time', ar: 'وقت', pronunciation: { fr: 'Comme TS dans tsar', de: 'Wie TS in Zeit', en: 'Like TS in cats', ar: 'مثل تس' } },
 ]
 
+// DE_BEGINNER_AUDIO_V1
+// DE_BEGINNER_AUDIO_SLOW_V3
+const deSoundFiles: Record<string, string> = {
+  ei:'ei', ai:'ai', au:'au', eu:'eu', 'äu':'aeu', ie:'ie', sch:'sch', ch:'ch-soft', 'ch-hard':'ch-hard', chs:'ks', 'ch (K)':'ck', chst:'chst', sp:'sp', st:'st', ck:'ck', tz:'tz', pf:'pf', qu:'qu', ng:'ng', nk:'nk', 'Ä':'ae', 'Ö':'oe', 'Ü':'ue', SS:'ss', ss:'ss', 'ß':'ss',
+}
+
 const specialLetters = [
   { letter: 'Ä ä', sound: 'Ä', word: 'Mädchen', meaning: { fr: 'Fille', de: 'Mädchen', en: 'Girl', ar: 'فتاة' }, description: { fr: 'Proche du è français.', de: 'Ä klingt ähnlich wie ein offenes E.', en: 'Similar to the vowel in bed.', ar: 'قريب من صوت إي المفتوحة.' } },
   { letter: 'Ö ö', sound: 'Ö', word: 'schön', meaning: { fr: 'Beau / belle', de: 'Schön', en: 'Beautiful', ar: 'جميل / جميلة' }, description: { fr: 'Prononce É avec les lèvres arrondies.', de: 'Sprich E mit gerundeten Lippen.', en: 'Say E with rounded lips.', ar: 'انطق إيه مع تدوير الشفتين.' } },
@@ -85,6 +91,7 @@ const combinations = [
   {
     category: 'consonants',
     items: [
+      { value: 'ss', sound: 's / ss', example: 'Wasser', meaning: { fr: 'eau', de: 'Wasser', en: 'water', ar: 'ماء' }, description: { fr: 'Un seul son S sourd, comme ß. Le double S suit généralement une voyelle courte.', de: 'Ein stimmloser S-Laut wie bei ß. Doppel-s steht meist nach einem kurzen Vokal.', en: 'One voiceless S sound, like ß. Double s usually follows a short vowel.', ar: 'صوت س واحد مثل ß، ويأتي غالباً بعد حرف متحرك قصير.' } },
       { value: 'sch', sound: 'ch', example: 'Schule', meaning: { fr: 'école', de: 'Schule', en: 'school', ar: 'مدرسة' }, description: { fr: 'Se prononce comme « ch » dans chat.', de: 'Wie „sch“ in Schule.', en: 'Like “sh” in “shoe”.', ar: 'مثل ش.' } },
       { value: 'ch', sound: 'kh / ç', example: 'ich', meaning: { fr: 'je', de: 'ich', en: 'I', ar: 'أنا' }, description: { fr: 'Deux sons importants : doux dans ich, guttural dans Buch.', de: 'Zwei wichtige Laute: weich in ich, rau in Buch.', en: 'Two common sounds: soft in ich, guttural in Buch.', ar: 'له صوتان: ناعم في ich وحلقي في Buch.' } },
       { value: 'sp', sound: 'chp', example: 'Sport', meaning: { fr: 'sport', de: 'Sport', en: 'sport', ar: 'رياضة' }, description: { fr: 'Au début d’un mot ou d’une syllabe, se prononce « chp ».', de: 'Am Wort- oder Silbenanfang klingt es wie „schp“.', en: 'At the beginning of a word or syllable, it sounds like “shp”.', ar: 'في بداية الكلمة أو المقطع تنطق شب.' } },
@@ -307,7 +314,19 @@ export default function AllemandDebutantPage() {
   const current = alphabet[selectedLetter]
   const direction = language === 'ar' ? 'rtl' : 'ltr'
 
+  const soundPlayer = useRef<HTMLAudioElement | null>(null)
+  useEffect(() => () => { soundPlayer.current?.pause(); if (typeof window !== 'undefined' && 'speechSynthesis' in window) window.speechSynthesis.cancel() }, [])
+  const speakSound = (key: string) => {
+    const file = /^letter-[a-z]$/.test(key) ? key : deSoundFiles[key]
+    if (!file || typeof window === 'undefined') return
+    soundPlayer.current?.pause()
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel()
+    const audio = new Audio(`/audio/deutsch-erfolg/beginner/slow/${file}.mp3`)
+    soundPlayer.current = audio
+    void audio.play().catch(() => { if (soundPlayer.current === audio && !audio.paused) return; if (soundPlayer.current === audio) console.warn(tr.noAudio) })
+  }
   const speak = (text: string) => {
+    soundPlayer.current?.pause()
     if (typeof window === 'undefined') return
 
     if (!('speechSynthesis' in window)) {
@@ -411,7 +430,7 @@ export default function AllemandDebutantPage() {
                   <span className="da-label">{tr.selected}</span>
                   <div className="da-letter" dir="ltr">{current.letter}</div>
                   <div className="da-name">{current.name}</div>
-                  <button type="button" className="da-listen" onClick={() => speak(current.letter)}>
+                  <button type="button" className="da-listen" onClick={() => speakSound('letter-' + current.letter.toLowerCase())}>
                     <Volume2 size={19} /> {tr.listen}
                   </button>
                 </div>
@@ -465,7 +484,10 @@ export default function AllemandDebutantPage() {
                 {specialLetters.map(item => (
                   <div key={item.letter} className="da-special">
                     <strong className="da-special-letter" dir="ltr">{item.letter}</strong>
-                    <p className="da-sound">{item.sound}</p>
+                    <div className="flex items-center justify-between gap-2">
+                      <p className="da-sound" dir="ltr">{item.sound}{item.letter === 'ß' && <span className="block text-xs font-normal">Eszett / scharfes S</span>}</p>
+                      <button type="button" className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#e3ded3] bg-white text-[#192b43] transition hover:bg-[#192b43] hover:text-white active:bg-[#192b43] active:text-white" onClick={() => speakSound(item.sound)} aria-label={`${tr.listen}: ${item.letter}`} title={`${tr.listen}: ${item.letter}`}><Volume2 size={19}/></button>
+                    </div>
                     <p>{item.description[language]}</p>
                     <div className="da-word-row da-special-word">
                       <div><strong dir="ltr">{item.word}</strong><p>{item.meaning[language]}</p></div>
@@ -580,9 +602,9 @@ export default function AllemandDebutantPage() {
                           {item.value}
                         </span>
                         <button
-                          onClick={() => speak(['chs', 'ch (K)', 'chst'].includes(item.value) ? item.example : item.value)}
+                          onClick={() => speakSound(item.value)}
                           className="rounded-full bg-[#f7f5f0] p-3 hover:bg-[#f3ecdd]"
-                          aria-label={combinationTranslations[language].listen}
+                          aria-label={`${combinationTranslations[language].listen}: ${item.sound}`} title={`${combinationTranslations[language].listen}: ${item.sound}`}
                         >
                           <Volume2 size={20} />
                         </button>
@@ -595,6 +617,10 @@ export default function AllemandDebutantPage() {
                         <p className="mt-1 font-semibold" dir="ltr">
                           {item.sound}
                         </p>
+                        {item.value === 'ch' && <div className="mt-3 flex flex-wrap gap-2" dir="ltr">
+                          <button type="button" onClick={() => speakSound('ch')} className="flex items-center gap-2 rounded-lg border border-[#e3ded3] bg-white px-3 py-2 text-sm text-[#192b43] hover:bg-[#192b43] hover:text-white" aria-label={`${tr.listen}: ch (ich)`}><Volume2 size={16}/> ich</button>
+                          <button type="button" onClick={() => speakSound('ch-hard')} className="flex items-center gap-2 rounded-lg border border-[#e3ded3] bg-white px-3 py-2 text-sm text-[#192b43] hover:bg-[#192b43] hover:text-white" aria-label={`${tr.listen}: ch (Buch)`}><Volume2 size={16}/> Buch</button>
+                        </div>}
                       </div>
 
                       <div className="mt-3">

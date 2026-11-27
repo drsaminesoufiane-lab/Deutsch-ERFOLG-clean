@@ -1,4 +1,5 @@
 'use client'
+import AdminLoader from '../AdminLoader'
 
 import {useEffect,useRef,useState} from 'react'
 import {History,RefreshCw,ShieldCheck,UserRound} from 'lucide-react'
@@ -36,7 +37,7 @@ export default function AdminActivityPage(){
   <section className="de-activity-intro"><ShieldCheck size={23}/><div><strong>Traçabilité des modifications</strong><p>Chaque ligne indique le compte qui a effectué l’opération. Les événements antérieurs ne sont repris que si l’ancien journal les contenait.</p></div><button type="button" onClick={()=>void load()} disabled={busy}><RefreshCw size={16}/> Actualiser</button></section>
   {error&&<p role="alert" className="rbac-error">{error}</p>}
   <section><h2>Historique des opérations</h2><p>{rows.length} opération(s) affichée(s) · Plus récentes en premier</p>
-   {!rows.length&&!error&&<p role="status">{busy?'Chargement…':'Aucune opération enregistrée.'}</p>}
+   {busy&&!rows.length&&!error?<AdminLoader inline />:!rows.length&&!error?<p role="status">Aucune opération enregistrée.</p>:null}
    <div className="de-activity-list">{rows.map(r=><article key={r.id} className="de-activity-row"><div className="de-activity-avatar"><UserRound size={19}/></div><div className="de-activity-event"><strong>{labels[r.action]||r.action}</strong><p>Par <b>{r.actor_name}</b>{r.target_name||r.target_id?<> · Cible : {r.target_name||r.target_id}</>:null}</p><small>{dateText(r.occurred_at)}{r.historical?' · Ancien journal':''}</small><details><summary>Détails de l’opération</summary><dl><dt>Compte auteur</dt><dd>{r.actor_id}</dd>{r.target_id&&<><dt>Compte cible</dt><dd>{r.target_id}</dd></>}{Object.entries(r.details||{}).map(([k,v])=><div key={k}><dt>{detailLabels[k]||k}</dt><dd>{detailText(k,v)}</dd></div>)}</dl></details></div></article>)}</div>
    {more&&<button type="button" disabled={busy} onClick={()=>void load(rows[rows.length-1].id)}>{busy?'Chargement…':'Afficher les opérations précédentes'}</button>}
   </section>

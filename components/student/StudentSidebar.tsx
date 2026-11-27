@@ -1,5 +1,7 @@
 
 'use client'
+import { Mic as SpeakingMenuIcon } from 'lucide-react'
+// DE_SPEAKING_HUB_V1
 import { NotebookPen } from 'lucide-react'
 import { BarChart3 } from 'lucide-react'
 
@@ -79,6 +81,11 @@ const administrationLabel = {
       label: dictionaryText,
       Icon: LibraryBig,
       href: '/espace-etudiant/apprentissage/woerterbuch-b1',
+    },
+    {
+      label: 'Sprechen',
+      Icon: SpeakingMenuIcon,
+      href: '/espace-etudiant/speaking-training',
     },
     {
       label: t.sidebar.exams,
