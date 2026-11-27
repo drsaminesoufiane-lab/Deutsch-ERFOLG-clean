@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "lektion-01-personalpronomen",
   "title": {
-    "fr": "Personalpronomen",
+    "fr": "Pronoms personnels",
     "de": "Personalpronomen",
-    "ar": "Personalpronomen",
-    "en": "Personalpronomen"
+    "ar": "الضمائر الشخصية",
+    "en": "Personal pronouns"
   },
   "subtitle": {
     "fr": "ich, du, er, sie, es, wir, ihr, sie et Sie",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-intro",
       "title": {
-        "fr": "Was ist ein Personalpronomen?",
+        "fr": "Qu’est-ce qu’un pronom personnel ?",
         "de": "Was ist ein Personalpronomen?",
-        "ar": "Was ist ein Personalpronomen?",
-        "en": "Was ist ein Personalpronomen?"
+        "ar": "ما الضمير الشخصي؟",
+        "en": "What is a personal pronoun?"
       },
       "text": {
         "fr": "Le pronom sujet remplace un nom ou désigne directement la personne qui parle, celle à qui on parle ou celle dont on parle. Il est au nominatif et détermine la conjugaison : Anna lernt → sie lernt. Il ne faut pas confondre le pronom sujet avec un complément comme mich ou mir.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-personen",
       "title": {
-        "fr": "Personalpronomen im Nominativ",
+        "fr": "Pronoms personnels au nominatif",
         "de": "Personalpronomen im Nominativ",
-        "ar": "Personalpronomen im Nominativ",
-        "en": "Personalpronomen im Nominativ"
+        "ar": "الضمائر الشخصية في حالة الرفع",
+        "en": "Personal pronouns in the nominative"
       },
       "headers": [
         {
@@ -186,10 +186,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-genus",
       "title": {
-        "fr": "Pronomen für Sachen",
+        "fr": "Pronoms pour désigner les choses",
         "de": "Pronomen für Sachen",
-        "ar": "Pronomen für Sachen",
-        "en": "Pronomen für Sachen"
+        "ar": "ضمائر الأشياء",
+        "en": "Pronouns for things"
       },
       "text": {
         "fr": "Pour un objet, l’article du nom donne le pronom : der → er, die → sie, das → es. Au pluriel, tous les genres donnent sie. Le genre allemand ne suit pas nécessairement le genre français ou arabe.",
@@ -202,10 +202,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-sachen",
       "title": {
-        "fr": "Der, die, das → er, sie, es",
+        "fr": "Der, die, das → er, sie, es : remplacement par les pronoms",
         "de": "Der, die, das → er, sie, es",
-        "ar": "Der, die, das → er, sie, es",
-        "en": "Der, die, das → er, sie, es"
+        "ar": "استبدال الأسماء بالضمائر: der, die, das → er, sie, es",
+        "en": "Der, die, das → er, sie, es: replacing nouns with pronouns"
       },
       "headers": [
         {
@@ -296,10 +296,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-sie",
       "title": {
-        "fr": "sie oder Sie?",
+        "fr": "sie (elle, ils, elles) ou Sie (vous de politesse) ?",
         "de": "sie oder Sie?",
-        "ar": "sie oder Sie?",
-        "en": "sie oder Sie?"
+        "ar": "sie (هي، هم، هن) أم Sie (المخاطبة الرسمية)؟",
+        "en": "sie (she, they) or Sie (formal you)?"
       },
       "text": {
         "fr": "Sie (politesse) prend toujours une majuscule, même au milieu d’une phrase, et le verbe a la forme du pluriel. sie ist signifie elle est ; sie sind signifie elles/ils sont. En début de phrase, Sie sind peut aussi désigner plusieurs personnes absentes : le contexte décide.",
@@ -312,10 +312,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Beispiele: Personen",
+        "fr": "Exemples : personnes",
         "de": "Beispiele: Personen",
-        "ar": "Beispiele: Personen",
-        "en": "Beispiele: Personen"
+        "ar": "أمثلة: الأشخاص",
+        "en": "Examples: people"
       },
       "items": [
         {
@@ -484,10 +484,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Beispiele: Anrede und Plural",
+        "fr": "Exemples : formes d’adresse et pluriel",
         "de": "Beispiele: Anrede und Plural",
-        "ar": "Beispiele: Anrede und Plural",
-        "en": "Beispiele: Anrede und Plural"
+        "ar": "أمثلة: صيغ المخاطبة والجمع",
+        "en": "Examples: forms of address and plural"
       },
       "items": [
         {
@@ -656,10 +656,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Beispiele: Sachen",
+        "fr": "Exemples : choses",
         "de": "Beispiele: Sachen",
-        "ar": "Beispiele: Sachen",
-        "en": "Beispiele: Sachen"
+        "ar": "أمثلة: الأشياء",
+        "en": "Examples: things"
       },
       "items": [
         {
@@ -828,10 +828,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog: Im Deutschkurs",
+        "fr": "Mini-dialogue : au cours d’allemand",
         "de": "Mini-Dialog: Im Deutschkurs",
-        "ar": "Mini-Dialog: Im Deutschkurs",
-        "en": "Mini-Dialog: Im Deutschkurs"
+        "ar": "حوار قصير: في درس الألمانية",
+        "en": "Mini-dialogue: in German class"
       },
       "text": {
         "fr": "A : Hallo, ich bin Lina. Und du? (Salut, je suis Lina. Et toi ?)\nB : Ich bin Samir. Wir sind im selben Kurs. (Je suis Samir. Nous sommes dans le même cours.)\nA à la professeure : Frau Berg, sind Sie unsere Lehrerin? (Madame Berg, êtes-vous notre professeure ?)\nOn passe de du entre élèves à Sie dans une situation formelle.",
@@ -844,10 +844,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -861,10 +861,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

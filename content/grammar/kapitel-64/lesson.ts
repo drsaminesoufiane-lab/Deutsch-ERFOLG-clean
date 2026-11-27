@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-64-lesson",
   "title": {
-    "fr": "Kennen Sie den Herrn?",
+    "fr": "Connaissez-vous ce monsieur ?",
     "de": "Kennen Sie den Herrn?",
-    "ar": "Kennen Sie den Herrn?",
-    "en": "Kennen Sie den Herrn?"
+    "ar": "هل تعرف هذا السيد؟",
+    "en": "Do you know the gentleman?"
   },
   "subtitle": {
     "fr": "Déclinaison faible des noms",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-64-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Identifier les noms faibles et les décliner dans les quatre cas.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-64-b2",
       "title": {
-        "fr": "Die N-Deklination",
+        "fr": "Déclinaison faible des noms masculins en -n",
         "de": "Die N-Deklination",
-        "ar": "Die N-Deklination",
-        "en": "Die N-Deklination"
+        "ar": "التصريف الضعيف للأسماء المذكرة بإضافة n",
+        "en": "Weak declension of masculine nouns (N-declension)"
       },
       "text": {
         "fr": "Les noms faibles masculins restent sans terminaison au nominatif singulier et prennent -(e)n à l’accusatif, au datif et au génitif singulier : der Student, den Studenten, dem Studenten, des Studenten. On ne rajoute pas -s au génitif ordinaire.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-64-b3",
       "title": {
-        "fr": "Typische Gruppen",
+        "fr": "Groupes typiques",
         "de": "Typische Gruppen",
-        "ar": "Typische Gruppen",
-        "en": "Typische Gruppen"
+        "ar": "المجموعات الشائعة",
+        "en": "Typical groups"
       },
       "text": {
         "fr": "Sont souvent faibles les noms masculins de personnes en -e (der Kollege, der Franzose), et les noms en -and, -ant, -ent, -at et -ist désignant une personne. Des animaux comme der Löwe, der Bär et der Affe suivent également cette déclinaison. Il faut apprendre le groupe avec le nom.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-64-b4",
       "title": {
-        "fr": "Schwach oder stark?",
+        "fr": "Déclinaison faible ou forte ?",
         "de": "Schwach oder stark?",
-        "ar": "Schwach oder stark?",
-        "en": "Schwach oder stark?"
+        "ar": "تصريف ضعيف أم قوي؟",
+        "en": "Weak or strong declension?"
       },
       "text": {
         "fr": "Tous les masculins ne sont pas faibles : der Freund → den Freund, dem Freund, des Freundes; der Italiener → den Italiener. Comparez le Herr : den Herrn, dem Herrn, des Herrn, au pluriel die Herren. Les féminins ne relèvent pas de cette classe faible.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-64-b5",
       "title": {
-        "fr": "Besondere Nomen",
+        "fr": "Noms particuliers",
         "de": "Besondere Nomen",
-        "ar": "Besondere Nomen",
-        "en": "Besondere Nomen"
+        "ar": "أسماء خاصة",
+        "en": "Special nouns"
       },
       "text": {
         "fr": "Des noms mixtes tels que der Name et der Buchstabe prennent -n à l’accusatif/datif et -ns au génitif : den Namen, des Namens. Das Herz est une exception neutre : das Herz (accusatif), dem Herzen (datif), des Herzens (génitif).",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-64-b6",
       "title": {
-        "fr": "Singular oder Plural?",
+        "fr": "Singulier ou pluriel ?",
         "de": "Singular oder Plural?",
-        "ar": "Singular oder Plural?",
-        "en": "Singular oder Plural?"
+        "ar": "مفرد أم جمع؟",
+        "en": "Singular or plural?"
       },
       "text": {
         "fr": "Une forme en -(e)n peut être un singulier oblique ou un pluriel. Identifiez l’article et le contexte : den Kollegen (un collègue, accusatif singulier) contre die Kollegen (plusieurs collègues). Au datif pluriel den Kollegen, le contexte tranche avec l’accusatif singulier.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-64-b7",
       "title": {
-        "fr": "Deklination",
+        "fr": "Déclinaison",
         "de": "Deklination",
-        "ar": "Deklination",
-        "en": "Deklination"
+        "ar": "التصريف الإعرابي",
+        "en": "Declension"
       },
       "headers": [
         {
@@ -334,10 +334,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-64-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

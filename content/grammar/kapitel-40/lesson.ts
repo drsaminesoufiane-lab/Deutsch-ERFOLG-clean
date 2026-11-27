@@ -43,7 +43,7 @@ export const lesson: LessonDefinition = {
         "fr": "Addition : und",
         "de": "Addition: und",
         "ar": "الإضافة: und",
-        "en": "Addition: und"
+        "en": "Addition: and (und)"
       },
       "text": {
         "fr": "Und ajoute une information compatible ou enchaîne des actions : Ich kaufe Brot und ich kaufe Milch. Si le sujet et le verbe sont identiques, on peut dire Ich kaufe Brot und Milch.",
@@ -75,7 +75,7 @@ export const lesson: LessonDefinition = {
         "fr": "Alternative : oder",
         "de": "Alternative: oder",
         "ar": "الاختيار: oder",
-        "en": "Alternative: oder"
+        "en": "Alternative: or (oder)"
       },
       "text": {
         "fr": "Oder propose une alternative : Möchtest du Kaffee oder Tee? Avec deux questions fermées complètes : Gehst du ins Kino oder bleibst du zu Hause? Le verbe reste en première position dans chaque question.",

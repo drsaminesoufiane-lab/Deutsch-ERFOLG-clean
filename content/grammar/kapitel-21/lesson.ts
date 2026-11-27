@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-21-lesson",
   "title": {
-    "fr": "Ich kaufe meinem Sohn einen Ball",
+    "fr": "J’achète un ballon à mon fils",
     "de": "Ich kaufe meinem Sohn einen Ball",
-    "ar": "Ich kaufe meinem Sohn einen Ball",
-    "en": "Ich kaufe meinem Sohn einen Ball"
+    "ar": "أشتري لابني كرة",
+    "en": "I buy my son a ball"
   },
   "subtitle": {
     "fr": "Verben mit Akkusativ und Dativ",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "refonte-theorie",
       "title": {
-        "fr": "Die Regel verstehen und anwenden",
+        "fr": "Comprendre et appliquer la règle",
         "de": "Die Regel verstehen und anwenden",
-        "ar": "Die Regel verstehen und anwenden",
-        "en": "Die Regel verstehen und anwenden"
+        "ar": "فهم القاعدة وتطبيقها",
+        "en": "Understanding and applying the rule"
       },
       "text": {
         "fr": "Avec geben ou schenken, le destinataire est au datif et l’objet transmis à l’accusatif. Dans un ordre neutre, deux noms suivent généralement datif puis accusatif ; un pronom précède généralement un nom ; deux pronoms suivent généralement accusatif puis datif. Le sujet commande toujours le verbe. Ces tendances peuvent varier selon la mise en relief.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-vertiefung",
       "title": {
-        "fr": "Objekte bestimmen",
+        "fr": "Identifier les compléments",
         "de": "Objekte bestimmen",
-        "ar": "Objekte bestimmen",
-        "en": "Objekte bestimmen"
+        "ar": "تحديد المفاعيل",
+        "en": "Identifying objects"
       },
       "text": {
         "fr": "Repère d’abord le verbe, puis le sujet (wer?), le destinataire (wem?) et la chose (was?). Exemple : Die Lehrerin erklärt den Kindern die Regel. Den Kindern est au datif pluriel ; die Regel est à l’accusatif féminin. Le choix du cas dépend de la construction du verbe, pas de l’ordre seul.",
@@ -57,10 +57,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "intro",
       "title": {
-        "fr": "Die drei Kasus verstehen",
+        "fr": "Comprendre les trois cas",
         "de": "Die drei Kasus verstehen",
-        "ar": "Die drei Kasus verstehen",
-        "en": "Die drei Kasus verstehen"
+        "ar": "فهم الحالات الإعرابية الثلاث",
+        "en": "Understanding the three cases"
       },
       "text": {
         "fr": "Le sujet au nominatif commande la conjugaison. Avec geben, schenken, zeigen ou bringen, le destinataire est au datif (wem?) et la chose transférée à l’accusatif (was?). Le destinataire peut aussi être une institution. Certains verbes comme lachen n’exigent aucun objet.",
@@ -73,10 +73,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "cases",
       "title": {
-        "fr": "Verben mit Akkusativ und Dativ",
+        "fr": "Verbes avec accusatif et datif",
         "de": "Verben mit Akkusativ und Dativ",
-        "ar": "Verben mit Akkusativ und Dativ",
-        "en": "Verben mit Akkusativ und Dativ"
+        "ar": "أفعال تتطلب النصب والداتيف",
+        "en": "Verbs with accusative and dative"
       },
       "headers": [
         {
@@ -222,10 +222,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "order",
       "title": {
-        "fr": "Neutrale Wortstellung",
+        "fr": "Ordre neutre des mots",
         "de": "Neutrale Wortstellung",
-        "ar": "Neutrale Wortstellung",
-        "en": "Neutrale Wortstellung"
+        "ar": "الترتيب المحايد للكلمات",
+        "en": "Neutral word order"
       },
       "text": {
         "fr": "Deux noms : datif avant accusatif (Ich gebe dem Kind das Buch). Un pronom non accentué précède généralement le nom (Ich gebe es dem Kind / Ich gebe ihm das Buch). Deux pronoms non accentués : accusatif avant datif (Ich gebe es ihm). Le verbe conjugué reste en deuxième position dans une principale déclarative.",
@@ -238,10 +238,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "errors",
       "title": {
-        "fr": "Fehler",
+        "fr": "Erreurs",
         "de": "Fehler",
-        "ar": "Fehler",
-        "en": "Fehler"
+        "ar": "الأخطاء",
+        "en": "Mistakes"
       },
       "text": {
         "fr": "✗ Ich gebe den Kind das Buch. → Ich gebe dem Kind das Buch. Kind est neutre, datif dem. ✗ Ich kaufe meinem Sohn ein Ball. → einen Ball (masculin accusatif). ✗ Ich besuche meinem Vater. → meinen Vater : besuchen exige l’accusatif.",
@@ -254,10 +254,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "dialog",
       "title": {
-        "fr": "Dialog und Merksatz",
+        "fr": "Dialogue et règle à retenir",
         "de": "Dialog und Merksatz",
-        "ar": "Dialog und Merksatz",
-        "en": "Dialog und Merksatz"
+        "ar": "حوار وقاعدة للتذكّر",
+        "en": "Dialogue and rule to remember"
       },
       "text": {
         "fr": "A: Wem gibst du das Buch? B: Meinem Bruder. A: Was gibst du ihm? B: Das Buch. A: Gibst du es ihm heute? B: Ja. Retenez wem = datif, wen/was = accusatif, wer/was = nominatif selon la fonction.",
@@ -270,10 +270,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Grundformen und Anwendung",
+        "fr": "Formes de base et application",
         "de": "Grundformen und Anwendung",
-        "ar": "Grundformen und Anwendung",
-        "en": "Grundformen und Anwendung"
+        "ar": "الصيغ الأساسية والتطبيق",
+        "en": "Basic forms and application"
       },
       "items": [
         {
@@ -442,10 +442,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Beispiele im Kontext",
+        "fr": "Exemples en contexte",
         "de": "Beispiele im Kontext",
-        "ar": "Beispiele im Kontext",
-        "en": "Beispiele im Kontext"
+        "ar": "أمثلة في السياق",
+        "en": "Examples in context"
       },
       "items": [
         {
@@ -614,10 +614,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Vertiefung und Kontraste",
+        "fr": "Approfondissement et contrastes",
         "de": "Vertiefung und Kontraste",
-        "ar": "Vertiefung und Kontraste",
-        "en": "Vertiefung und Kontraste"
+        "ar": "التعمّق والمقارنة",
+        "en": "Further practice and contrasts"
       },
       "items": [
         {
@@ -786,10 +786,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Wem schenkst du die Blumen? (À qui offres-tu les fleurs ?)\nB: Meiner Mutter. (À ma mère.)\nA: Schenkst du sie ihr heute? (Les lui offres-tu aujourd’hui ?)\nB: Ja, heute Abend. (Oui, ce soir.)",
@@ -802,10 +802,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

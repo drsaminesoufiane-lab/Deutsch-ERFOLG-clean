@@ -123,7 +123,7 @@ export const lesson: LessonDefinition = {
         "fr": "Pluriel",
         "de": "Plural",
         "ar": "الجمع",
-        "en": "Plural"
+        "en": "Plural forms"
       },
       "text": {
         "fr": "Au nominatif et à l’accusatif pluriels : sans déterminant, -e (schöne Schuhe) ; après die, keine, meine, alle, -en (die schönen Schuhe, keine schönen Schuhe, meine schönen Schuhe, alle schönen Schuhe).",

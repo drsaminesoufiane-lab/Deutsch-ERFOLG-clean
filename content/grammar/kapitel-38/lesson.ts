@@ -59,7 +59,7 @@ export const lesson: LessonDefinition = {
         "fr": "Le changement de voyelle",
         "de": "Umlaut",
         "ar": "تغير الحركة",
-        "en": "Umlaut"
+        "en": "Vowel alternation (umlaut)"
       },
       "text": {
         "fr": "Certains adjectifs prennent un Umlaut : alt → älter, jung → jünger, groß → größer, kurz → kürzer, lang → länger, gesund → gesünder. Il faut mémoriser les formes, car tous les adjectifs ne prennent pas d’Umlaut.",

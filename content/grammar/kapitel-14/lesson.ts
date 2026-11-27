@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-14-lesson",
   "title": {
-    "fr": "Der, das, die – ein, ein, eine",
+    "fr": "Articles définis der, das, die et indéfinis ein, ein, eine",
     "de": "Der, das, die – ein, ein, eine",
-    "ar": "Der, das, die – ein, ein, eine",
-    "en": "Der, das, die – ein, ein, eine"
+    "ar": "أدوات التعريف der و das و die وأدوات التنكير ein و ein و eine",
+    "en": "Definite der, das, die and indefinite ein, ein, eine"
   },
   "subtitle": {
     "fr": "Articles",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-1",
       "title": {
-        "fr": "Bestimmt, unbestimmt oder ohne Artikel?",
+        "fr": "Article défini, indéfini ou absence d’article ?",
         "de": "Bestimmt, unbestimmt oder ohne Artikel?",
-        "ar": "Bestimmt, unbestimmt oder ohne Artikel?",
-        "en": "Bestimmt, unbestimmt oder ohne Artikel?"
+        "ar": "أداة تعريف أم تنكير أم دون أداة؟",
+        "en": "Definite, indefinite or no article?"
       },
       "text": {
         "fr": "Un nom allemand a un genre grammatical qu’il faut apprendre : der Stuhl, das Bild, die Vase. Ein/eine introduit souvent un objet non encore identifié ; der/das/die désigne un objet identifiable. Le genre appartient au nom, le cas dépend de sa fonction ou de la préposition.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-2",
       "title": {
-        "fr": "Unbestimmter Artikel",
+        "fr": "Article indéfini",
         "de": "Unbestimmter Artikel",
-        "ar": "Unbestimmter Artikel",
-        "en": "Unbestimmter Artikel"
+        "ar": "أداة التنكير",
+        "en": "Indefinite article"
       },
       "headers": [
         {
@@ -189,10 +189,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-3",
       "title": {
-        "fr": "Bestimmter Artikel",
+        "fr": "Article défini",
         "de": "Bestimmter Artikel",
-        "ar": "Bestimmter Artikel",
-        "en": "Bestimmter Artikel"
+        "ar": "أداة التعريف",
+        "en": "Definite article"
       },
       "headers": [
         {
@@ -338,10 +338,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-4",
       "title": {
-        "fr": "Drei Schritte",
+        "fr": "Trois étapes",
         "de": "Drei Schritte",
-        "ar": "Drei Schritte",
-        "en": "Drei Schritte"
+        "ar": "ثلاث خطوات",
+        "en": "Three steps"
       },
       "text": {
         "fr": "1. Identifie le nom et son genre. 2. Choisis défini ou indéfini selon le contexte. 3. Détermine le cas : sujet au nominatif, objet direct généralement à l’accusatif, datif exigé par certains verbes (helfen) et prépositions (mit). Le datif pluriel ajoute souvent -n au nom : den Kindern.",
@@ -354,10 +354,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-5",
       "title": {
-        "fr": "Nullartikel",
+        "fr": "Absence d’article",
         "de": "Nullartikel",
-        "ar": "Nullartikel",
-        "en": "Nullartikel"
+        "ar": "غياب أداة التعريف أو التنكير",
+        "en": "Zero article"
       },
       "text": {
         "fr": "Le pluriel indéfini, les matières ou abstractions prises au sens général, et les métiers non qualifiés après sein n’ont souvent pas d’article : Ich kaufe Äpfel. Ich habe Zeit. Ich bin Apotheker. Compare : Das Wasser im Glas ist kalt ; ici l’eau est identifiée.",
@@ -370,10 +370,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Nominativ und Einführung des Akkusativs",
+        "fr": "Nominatif et introduction à l’accusatif",
         "de": "Nominativ und Einführung des Akkusativs",
-        "ar": "Nominativ und Einführung des Akkusativs",
-        "en": "Nominativ und Einführung des Akkusativs"
+        "ar": "حالة الرفع ومقدمة إلى حالة النصب",
+        "en": "Nominative and introduction to the accusative"
       },
       "items": [
         {
@@ -542,10 +542,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Akkusativ und Dativ",
+        "fr": "Accusatif et datif",
         "de": "Akkusativ und Dativ",
-        "ar": "Akkusativ und Dativ",
-        "en": "Akkusativ und Dativ"
+        "ar": "حالتا النصب والداتيف",
+        "en": "Accusative and dative"
       },
       "items": [
         {
@@ -714,10 +714,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Dativ und Nullartikel",
+        "fr": "Datif et absence d’article",
         "de": "Dativ und Nullartikel",
-        "ar": "Dativ und Nullartikel",
-        "en": "Dativ und Nullartikel"
+        "ar": "الداتيف وغياب الأداة",
+        "en": "Dative and zero article"
       },
       "items": [
         {
@@ -886,10 +886,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Was ist das? (Qu’est-ce que c’est ?)\nB: Das ist ein Wörterbuch. (C’est un dictionnaire.)\nA: Das Wörterbuch ist sehr praktisch. (Le dictionnaire est très pratique.)",
@@ -902,10 +902,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -919,10 +919,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

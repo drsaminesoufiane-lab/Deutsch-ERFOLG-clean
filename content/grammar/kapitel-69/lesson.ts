@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-69-lesson",
   "title": {
-    "fr": "Ich will singen, lass mich singen!",
+    "fr": "Je veux chanter, laisse-moi chanter !",
     "de": "Ich will singen, lass mich singen!",
-    "ar": "Ich will singen, lass mich singen!",
-    "en": "Ich will singen, lass mich singen!"
+    "ar": "أريد أن أغنّي، دعني أغنّي!",
+    "en": "I want to sing, let me sing!"
   },
   "subtitle": {
     "fr": "Infinitif sans zu",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-69-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Choisir entre infinitif avec et sans zu selon le verbe principal.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-69-b2",
       "title": {
-        "fr": "Modalverben",
+        "fr": "Verbes modaux",
         "de": "Modalverben",
-        "ar": "Modalverben",
-        "en": "Modalverben"
+        "ar": "الأفعال الناقصة",
+        "en": "Modal verbs"
       },
       "text": {
         "fr": "Après können, müssen, dürfen, wollen, sollen et möchten, le verbe dépendant reste à l’infinitif sans zu et se place à la fin de la principale. Le modal est conjugué : Ich kann schwimmen.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-69-b3",
       "title": {
-        "fr": "Lassen",
+        "fr": "Le verbe lassen",
         "de": "Lassen",
-        "ar": "Lassen",
-        "en": "Lassen"
+        "ar": "الفعل lassen",
+        "en": "The verb lassen"
       },
       "text": {
         "fr": "Lassen peut signifier permettre, faire faire ou laisser dans un état. Le verbe dépendant reste sans zu : Sie lässt ihn schlafen. L’objet est à l’accusatif.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-69-b4",
       "title": {
-        "fr": "Sehen und hören",
+        "fr": "Voir et entendre",
         "de": "Sehen und hören",
-        "ar": "Sehen und hören",
-        "en": "Sehen und hören"
+        "ar": "الرؤية والسماع",
+        "en": "Seeing and hearing"
       },
       "text": {
         "fr": "Les verbes de perception sehen et hören peuvent être suivis d’un objet à l’accusatif puis d’un infinitif sans zu, qui décrit une action perçue directement : Ich höre sie singen.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-69-b5",
       "title": {
-        "fr": "Gehen und bleiben",
+        "fr": "Aller et rester",
         "de": "Gehen und bleiben",
-        "ar": "Gehen und bleiben",
-        "en": "Gehen und bleiben"
+        "ar": "الذهاب والبقاء",
+        "en": "Going and staying"
       },
       "text": {
         "fr": "Gehen + infinitif sans zu exprime une activité vers laquelle on se rend (einkaufen gehen). Bleiben + infinitif sans zu décrit une position maintenue (sitzen bleiben, liegen bleiben, stehen bleiben).",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-69-b6",
       "title": {
-        "fr": "Mit oder ohne zu?",
+        "fr": "Avec ou sans zu ?",
         "de": "Mit oder ohne zu?",
-        "ar": "Mit oder ohne zu?",
-        "en": "Mit oder ohne zu?"
+        "ar": "مع zu أم بدونها؟",
+        "en": "With or without zu?"
       },
       "text": {
         "fr": "Ne choisissez pas zu en fonction du sens seul : identifiez le verbe qui régit l’infinitif. Ich will schlafen, mais Ich hoffe, schlafen zu können. Après hoffen, versuchen, avoir le temps (Zeit haben) et es ist schön, le groupe infinitif prend zu ; si le dernier verbe est modal, zu précède celui-ci.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-69-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

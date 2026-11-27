@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "lektion-02-praesens",
   "title": {
-    "fr": "Ich komme, du kommst",
+    "fr": "Je viens, tu viens",
     "de": "Ich komme, du kommst",
-    "ar": "Ich komme, du kommst",
-    "en": "Ich komme, du kommst"
+    "ar": "أنا آتي، أنت تأتي",
+    "en": "I come, you come"
   },
   "subtitle": {
     "fr": "Conjugaison au présent",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-intro",
       "title": {
-        "fr": "Verbstamm und Endung",
+        "fr": "Radical du verbe et terminaison",
         "de": "Verbstamm und Endung",
-        "ar": "Verbstamm und Endung",
-        "en": "Verbstamm und Endung"
+        "ar": "جذر الفعل والنهاية",
+        "en": "Verb stem and ending"
       },
       "text": {
         "fr": "Pour conjuguer un verbe régulier au présent, repère l’infinitif (kommen), retire -en pour trouver le radical (komm-), puis ajoute la terminaison du sujet. La terminaison n’est pas la même pour ich et du.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-konjugation",
       "title": {
-        "fr": "Konjugation im Präsens",
+        "fr": "Conjugaison au présent",
         "de": "Konjugation im Präsens",
-        "ar": "Konjugation im Präsens",
-        "en": "Konjugation im Präsens"
+        "ar": "تصريف الأفعال في المضارع",
+        "en": "Present tense conjugation"
       },
       "headers": [
         {
@@ -379,10 +379,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-t-d",
       "title": {
-        "fr": "Stamm auf -t oder -d",
+        "fr": "Radical se terminant par -t ou -d",
         "de": "Stamm auf -t oder -d",
-        "ar": "Stamm auf -t oder -d",
-        "en": "Stamm auf -t oder -d"
+        "ar": "جذر ينتهي بـ -t أو -d",
+        "en": "Stem ending in -t or -d"
       },
       "text": {
         "fr": "Lorsque le radical se termine par -t ou -d, on ajoute généralement un e avant les terminaisons -st et -t pour faciliter la prononciation : du arbeitest, er arbeitet, ihr arbeitet. Même principe pour reden et antworten.",
@@ -395,10 +395,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-s",
       "title": {
-        "fr": "Stamm auf -s, -ß, -z",
+        "fr": "Radical se terminant par -s, -ß, -z",
         "de": "Stamm auf -s, -ß, -z",
-        "ar": "Stamm auf -s, -ß, -z",
-        "en": "Stamm auf -s, -ß, -z"
+        "ar": "جذر ينتهي بـ -s أو -ß أو -z",
+        "en": "Stem ending in -s, -ß, -z"
       },
       "text": {
         "fr": "Si le radical se termine par s, ß, z (ou x), le du ne reçoit pas un s supplémentaire : du heißt, du tanzt. La forme est alors souvent identique à celle de er/sie/es.",
@@ -411,10 +411,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-position",
       "title": {
-        "fr": "Aussage und Frage",
+        "fr": "Affirmation et question",
         "de": "Aussage und Frage",
-        "ar": "Aussage und Frage",
-        "en": "Aussage und Frage"
+        "ar": "الجملة الخبرية والسؤال",
+        "en": "Statement and question"
       },
       "text": {
         "fr": "Dans une déclaration, le verbe conjugué occupe la deuxième position : Heute arbeite ich. Dans une question avec mot interrogatif, il suit ce mot : Wo wohnst du? Dans une question oui/non, il est en tête : Wohnst du hier?",
@@ -427,10 +427,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Beispiele 1–10",
+        "fr": "Exemples 1–10",
         "de": "Beispiele 1–10",
-        "ar": "Beispiele 1–10",
-        "en": "Beispiele 1–10"
+        "ar": "أمثلة 1–10",
+        "en": "Examples 1–10"
       },
       "items": [
         {
@@ -599,10 +599,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Beispiele 11–20",
+        "fr": "Exemples 11–20",
         "de": "Beispiele 11–20",
-        "ar": "Beispiele 11–20",
-        "en": "Beispiele 11–20"
+        "ar": "أمثلة 11–20",
+        "en": "Examples 11–20"
       },
       "items": [
         {
@@ -771,10 +771,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Beispiele 21–30",
+        "fr": "Exemples 21–30",
         "de": "Beispiele 21–30",
-        "ar": "Beispiele 21–30",
-        "en": "Beispiele 21–30"
+        "ar": "أمثلة 21–30",
+        "en": "Examples 21–30"
       },
       "items": [
         {
@@ -943,10 +943,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog: Kennenlernen",
+        "fr": "Mini-dialogue : faire connaissance",
         "de": "Mini-Dialog: Kennenlernen",
-        "ar": "Mini-Dialog: Kennenlernen",
-        "en": "Mini-Dialog: Kennenlernen"
+        "ar": "حوار قصير: التعارف",
+        "en": "Mini-dialogue: getting to know each other"
       },
       "text": {
         "fr": "A: Wie heißt du? (Comment t’appelles-tu ?)\nB: Ich heiße Mia. Wo wohnst du? (Je m’appelle Mia. Où habites-tu ?)\nA: Ich wohne in Köln. Arbeitest du hier? (J’habite à Cologne. Travailles-tu ici ?)\nB: Ja, ich arbeite hier. (Oui, je travaille ici.)",
@@ -959,10 +959,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -976,10 +976,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

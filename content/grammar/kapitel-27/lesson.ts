@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-27-lesson",
   "title": {
-    "fr": "Ich konnte, ich musste, ich wollte",
+    "fr": "Je pouvais, je devais, je voulais",
     "de": "Ich konnte, ich musste, ich wollte",
-    "ar": "Ich konnte, ich musste, ich wollte",
-    "en": "Ich konnte, ich musste, ich wollte"
+    "ar": "كنت أستطيع، كان يجب عليّ، كنت أريد",
+    "en": "I could, I had to, I wanted"
   },
   "subtitle": {
     "fr": "Präteritum der Modalverben",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "r0",
       "title": {
-        "fr": "Präteritum der Modalverben",
+        "fr": "Prétérit des verbes modaux",
         "de": "Präteritum der Modalverben",
-        "ar": "Präteritum der Modalverben",
-        "en": "Präteritum der Modalverben"
+        "ar": "الماضي البسيط للأفعال الناقصة",
+        "en": "Simple past of modal verbs"
       },
       "text": {
         "fr": "Au passé, les modaux sont souvent employés au Präteritum, même à l’oral. On supprime le tréma de können, müssen et dürfen, puis on ajoute les terminaisons -te, -test, -te, -ten, -tet, -ten.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-vertiefung",
       "title": {
-        "fr": "Endungen und Satzbau",
+        "fr": "Terminaisons et structure de la phrase",
         "de": "Endungen und Satzbau",
-        "ar": "Endungen und Satzbau",
-        "en": "Endungen und Satzbau"
+        "ar": "النهايات وبنية الجملة",
+        "en": "Endings and sentence structure"
       },
       "text": {
         "fr": "Radicaux : konn-, muss-, durf-, woll-, soll-. Ajoute -te, -test, -te, -ten, -tet, -ten. Le modal est conjugué, le verbe principal reste à l’infinitif sans zu : Gestern musste ich arbeiten. Dans une subordonnée : weil ich gestern arbeiten musste. Ne confonds pas konnte (passé) et könnte (conditionnel).",
@@ -57,10 +57,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "r1",
       "title": {
-        "fr": "Präteritum der Modalverben",
+        "fr": "Prétérit des verbes modaux",
         "de": "Präteritum der Modalverben",
-        "ar": "Präteritum der Modalverben",
-        "en": "Präteritum der Modalverben"
+        "ar": "الماضي البسيط للأفعال الناقصة",
+        "en": "Simple past of modal verbs"
       },
       "text": {
         "fr": "Dans une principale, le modal conjugué occupe la deuxième position et l’infinitif sans zu se place à la fin. Après weil, l’infinitif précède le modal conjugué.",
@@ -73,10 +73,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "r2",
       "title": {
-        "fr": "Präteritum der Modalverben",
+        "fr": "Prétérit des verbes modaux",
         "de": "Präteritum der Modalverben",
-        "ar": "Präteritum der Modalverben",
-        "en": "Präteritum der Modalverben"
+        "ar": "الماضي البسيط للأفعال الناقصة",
+        "en": "Simple past of modal verbs"
       },
       "text": {
         "fr": "Nicht müssen signifie absence d’obligation ; nicht dürfen signifie interdiction. Ne confondez pas les deux.",
@@ -89,10 +89,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "r3",
       "title": {
-        "fr": "Präteritum der Modalverben",
+        "fr": "Prétérit des verbes modaux",
         "de": "Präteritum der Modalverben",
-        "ar": "Präteritum der Modalverben",
-        "en": "Präteritum der Modalverben"
+        "ar": "الماضي البسيط للأفعال الناقصة",
+        "en": "Simple past of modal verbs"
       },
       "text": {
         "fr": "Pour exprimer un souhait passé correspondant à möchte, on utilise généralement wollte. Möchte est le Konjunktiv II de mögen ; mochte signifie aimait.",
@@ -105,10 +105,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "conj",
       "title": {
-        "fr": "Konjugation",
+        "fr": "Conjugaison",
         "de": "Konjugation",
-        "ar": "Konjugation",
-        "en": "Konjugation"
+        "ar": "التصريف",
+        "en": "Conjugation"
       },
       "headers": [
         {
@@ -401,10 +401,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Grundformen und Anwendung",
+        "fr": "Formes de base et application",
         "de": "Grundformen und Anwendung",
-        "ar": "Grundformen und Anwendung",
-        "en": "Grundformen und Anwendung"
+        "ar": "الصيغ الأساسية والتطبيق",
+        "en": "Basic forms and application"
       },
       "items": [
         {
@@ -573,10 +573,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Beispiele im Kontext",
+        "fr": "Exemples en contexte",
         "de": "Beispiele im Kontext",
-        "ar": "Beispiele im Kontext",
-        "en": "Beispiele im Kontext"
+        "ar": "أمثلة في السياق",
+        "en": "Examples in context"
       },
       "items": [
         {
@@ -745,10 +745,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Vertiefung und Kontraste",
+        "fr": "Approfondissement et contrastes",
         "de": "Vertiefung und Kontraste",
-        "ar": "Vertiefung und Kontraste",
-        "en": "Vertiefung und Kontraste"
+        "ar": "التعمّق والمقارنة",
+        "en": "Further practice and contrasts"
       },
       "items": [
         {
@@ -917,10 +917,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Konntest du gestern kommen? (Pouvais-tu venir hier ?)\nB: Nein, ich musste arbeiten. (Non, je devais travailler.)\nA: Durftest du früher gehen? (Avais-tu le droit de partir plus tôt ?)\nB: Nein, ich sollte bis sechs bleiben. (Non, je devais rester jusqu’à six heures.)",
@@ -933,10 +933,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-fehler",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -950,10 +950,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

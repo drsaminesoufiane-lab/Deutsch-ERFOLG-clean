@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-11-lesson",
   "title": {
-    "fr": "Wo steht was?",
+    "fr": "Quel élément va où ?",
     "de": "Wo steht was?",
-    "ar": "Wo steht was?",
-    "en": "Wo steht was?"
+    "ar": "أين يوضع كل عنصر؟",
+    "en": "Which element goes where?"
   },
   "subtitle": {
     "fr": "Ordre des mots 1",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-1",
       "title": {
-        "fr": "Position zwei",
+        "fr": "Deuxième position",
         "de": "Position zwei",
-        "ar": "Position zwei",
-        "en": "Position zwei"
+        "ar": "الموضع الثاني",
+        "en": "Second position"
       },
       "text": {
         "fr": "Compte les groupes syntaxiques et non les mots. Am Montag est un groupe : Am Montag | arbeitet | Sara. Quand le sujet commence la phrase, il précède le verbe. Si un autre groupe commence, le sujet suit généralement le verbe.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-2",
       "title": {
-        "fr": "Satztypen",
+        "fr": "Types de phrases",
         "de": "Satztypen",
-        "ar": "Satztypen",
-        "en": "Satztypen"
+        "ar": "أنواع الجمل",
+        "en": "Sentence types"
       },
       "headers": [
         {
@@ -224,10 +224,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-3",
       "title": {
-        "fr": "Zeit und Ort",
+        "fr": "Temps et lieu",
         "de": "Zeit und Ort",
-        "ar": "Zeit und Ort",
-        "en": "Zeit und Ort"
+        "ar": "الزمان والمكان",
+        "en": "Time and place"
       },
       "text": {
         "fr": "Pour un ordre neutre A1, place souvent le temps avant le lieu : Ich arbeite heute in Rabat. Le lieu peut aussi ouvrir la phrase pour être mis en relief : In Rabat arbeite ich heute. Dans ce cas, le verbe reste deuxième.",
@@ -240,10 +240,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-4",
       "title": {
-        "fr": "Fragen und Aufforderungen",
+        "fr": "Questions et demandes",
         "de": "Fragen und Aufforderungen",
-        "ar": "Fragen und Aufforderungen",
-        "en": "Fragen und Aufforderungen"
+        "ar": "الأسئلة والطلبات",
+        "en": "Questions and requests"
       },
       "text": {
         "fr": "Une W-Frage demande une information précise. Dans Wer kommt?, wer est le sujet. Une question fermée demande généralement oui ou non et commence par le verbe. L’impératif commence aussi par le verbe, mais demande une action.",
@@ -256,10 +256,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Aussagesätze",
+        "fr": "Phrases affirmatives",
         "de": "Aussagesätze",
-        "ar": "Aussagesätze",
-        "en": "Aussagesätze"
+        "ar": "الجمل الخبرية",
+        "en": "Statements"
       },
       "items": [
         {
@@ -428,10 +428,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Fragesätze",
+        "fr": "Phrases interrogatives",
         "de": "Fragesätze",
-        "ar": "Fragesätze",
-        "en": "Fragesätze"
+        "ar": "الجمل الاستفهامية",
+        "en": "Questions"
       },
       "items": [
         {
@@ -600,10 +600,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Fragen, Imperativ, Zeit und Ort",
+        "fr": "Questions, impératif, temps et lieu",
         "de": "Fragen, Imperativ, Zeit und Ort",
-        "ar": "Fragen, Imperativ, Zeit und Ort",
-        "en": "Fragen, Imperativ, Zeit und Ort"
+        "ar": "الأسئلة والأمر والزمان والمكان",
+        "en": "Questions, imperative, time and place"
       },
       "items": [
         {
@@ -772,10 +772,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Wann beginnt der Kurs? (Quand commence le cours ?)\nB: Um neun Uhr beginnt er. (Il commence à neuf heures.)",
@@ -788,10 +788,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -805,10 +805,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

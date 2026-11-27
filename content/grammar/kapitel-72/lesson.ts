@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-72-lesson",
   "title": {
-    "fr": "Ich gehe, wenn ... / Ich ging, als ...",
+    "fr": "Je pars quand… / Je suis parti quand…",
     "de": "Ich gehe, wenn ... / Ich ging, als ...",
-    "ar": "Ich gehe, wenn ... / Ich ging, als ...",
-    "en": "Ich gehe, wenn ... / Ich ging, als ..."
+    "ar": "أذهب عندما… / ذهبت عندما…",
+    "en": "I go when… / I went when…"
   },
   "subtitle": {
     "fr": "Subordonnées temporelles",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-72-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Distinguer un événement passé unique des habitudes et du présent/futur.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-72-b2",
       "title": {
-        "fr": "Wenn: Gegenwart und Zukunft",
+        "fr": "Wenn : présent et futur",
         "de": "Wenn: Gegenwart und Zukunft",
-        "ar": "Wenn: Gegenwart und Zukunft",
-        "en": "Wenn: Gegenwart und Zukunft"
+        "ar": "Wenn: المضارع والمستقبل",
+        "en": "Wenn: present and future"
       },
       "text": {
         "fr": "Wenn introduit une situation temporelle au présent ou au futur, ainsi qu’une condition. Le verbe conjugué se place à la fin de la subordonnée.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-72-b3",
       "title": {
-        "fr": "Als: einmalige Vergangenheit",
+        "fr": "Als : événement unique dans le passé",
         "de": "Als: einmalige Vergangenheit",
-        "ar": "Als: einmalige Vergangenheit",
-        "en": "Als: einmalige Vergangenheit"
+        "ar": "Als: حدث واحد في الماضي",
+        "en": "Als: single past event"
       },
       "text": {
         "fr": "Als situe un événement ou une période unique dans le passé. Als ich klein war décrit une seule période de l’enfance, même si elle a duré longtemps.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-72-b4",
       "title": {
-        "fr": "Wiederholung",
+        "fr": "Répétition",
         "de": "Wiederholung",
-        "ar": "Wiederholung",
-        "en": "Wiederholung"
+        "ar": "التكرار",
+        "en": "Repetition"
       },
       "text": {
         "fr": "Dans le passé, immer wenn et jedes Mal wenn signalent des événements répétés. Wenn convient donc aussi au passé, contrairement à une règle simpliste présent/passé.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-72-b5",
       "title": {
-        "fr": "Nebensatz und Hauptsatz",
+        "fr": "Proposition subordonnée et principale",
         "de": "Nebensatz und Hauptsatz",
-        "ar": "Nebensatz und Hauptsatz",
-        "en": "Nebensatz und Hauptsatz"
+        "ar": "الجملة التابعة والرئيسية",
+        "en": "Subordinate and main clauses"
       },
       "text": {
         "fr": "Le verbe fini est final dans la subordonnée. Si celle-ci précède la principale, le verbe fini de la principale vient immédiatement après la virgule : Wenn du kommst, gehen wir los.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-72-b6",
       "title": {
-        "fr": "Wann oder wenn?",
+        "fr": "Wann ou wenn ?",
         "de": "Wann oder wenn?",
-        "ar": "Wann oder wenn?",
-        "en": "Wann oder wenn?"
+        "ar": "الفرق بين wann و wenn",
+        "en": "Wann or wenn?"
       },
       "text": {
         "fr": "Wann pose une question de temps directe ou indirecte : Wann kommst du? Ich weiß nicht, wann du kommst. Wenn et als relient des événements, sans poser cette question.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-72-b7",
       "title": {
-        "fr": "Zeitbezug",
+        "fr": "Relation temporelle",
         "de": "Zeitbezug",
-        "ar": "Zeitbezug",
-        "en": "Zeitbezug"
+        "ar": "العلاقة الزمنية",
+        "en": "Time reference"
       },
       "headers": [
         {
@@ -197,10 +197,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-72-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

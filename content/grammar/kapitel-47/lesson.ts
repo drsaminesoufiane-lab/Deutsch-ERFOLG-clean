@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-47-lesson",
   "title": {
-    "fr": "Ich bin dann mal weg",
+    "fr": "Bon, je m’en vais",
     "de": "Ich bin dann mal weg",
-    "ar": "Ich bin dann mal weg",
-    "en": "Ich bin dann mal weg"
+    "ar": "حسنًا، سأغادر الآن",
+    "en": "Well, I’m off"
   },
   "subtitle": {
     "fr": "Expressions avec sein et haben",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-47-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Comprendre les expressions courantes avec sein et haben, ainsi que leur ordre dans la phrase.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-47-b2",
       "title": {
-        "fr": "An und aus",
+        "fr": "Allumé et éteint (an, aus)",
         "de": "An und aus",
-        "ar": "An und aus",
-        "en": "An und aus"
+        "ar": "التشغيل والإطفاء (an و aus)",
+        "en": "On and off (an, aus)"
       },
       "text": {
         "fr": "An sein indique qu’un appareil ou une lumière fonctionne ; aus sein indique qu’il est éteint. Ne confondez pas l’état avec l’action einschalten ou ausschalten.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-47-b3",
       "title": {
-        "fr": "Auf und zu",
+        "fr": "Ouvert et fermé (auf, zu)",
         "de": "Auf und zu",
-        "ar": "Auf und zu",
-        "en": "Auf und zu"
+        "ar": "مفتوح ومغلق (auf و zu)",
+        "en": "Open and closed (auf, zu)"
       },
       "text": {
         "fr": "Auf sein signifie être ouvert, zu sein être fermé. Pour un commerce, zu haben est aussi courant : Das Geschäft hat zu. Öffnen et schließen désignent des actions.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-47-b4",
       "title": {
-        "fr": "Da und weg",
+        "fr": "Présent et absent (da, weg)",
         "de": "Da und weg",
-        "ar": "Da und weg",
-        "en": "Da und weg"
+        "ar": "موجود وغائب (da و weg)",
+        "en": "Here and gone (da, weg)"
       },
       "text": {
         "fr": "Da sein signifie être présent ou disponible. Weg sein indique l’absence, le départ ou la disparition. Le contexte distingue une personne partie et un objet perdu.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-47-b5",
       "title": {
-        "fr": "Dafür und dagegen",
+        "fr": "Pour et contre (dafür, dagegen)",
         "de": "Dafür und dagegen",
-        "ar": "Dafür und dagegen",
-        "en": "Dafür und dagegen"
+        "ar": "مع وضد (dafür و dagegen)",
+        "en": "For and against (dafür, dagegen)"
       },
       "text": {
         "fr": "Dafür sein signifie être favorable à une proposition, dagegen sein être opposé. Ces mots renvoient à une proposition déjà connue. Ils restent distincts de für et gegen suivis d’un complément.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-47-b6",
       "title": {
-        "fr": "Was ist los?",
+        "fr": "Que se passe-t-il ?",
         "de": "Was ist los?",
-        "ar": "Was ist los?",
-        "en": "Was ist los?"
+        "ar": "ماذا يحدث؟",
+        "en": "What’s going on?"
       },
       "text": {
         "fr": "Viel los sein indique une forte activité ou animation ; nichts los sein indique le contraire. Was ist los? demande ce qui se passe. Los ne se traduit pas toujours de la même façon.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-47-b7",
       "title": {
-        "fr": "Anhaben und dabeihaben",
+        "fr": "Porter sur soi et avoir avec soi",
         "de": "Anhaben und dabeihaben",
-        "ar": "Anhaben und dabeihaben",
-        "en": "Anhaben und dabeihaben"
+        "ar": "ارتداء شيء وحمله معك",
+        "en": "Wearing and having with you"
       },
       "text": {
         "fr": "Anhaben signifie porter un vêtement. Dabeihaben signifie avoir un objet sur soi ou avec soi. Dans une principale, an et dabei se placent à la fin : Sie hat eine Jacke an.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-47-b8",
       "title": {
-        "fr": "Satzstellung",
+        "fr": "Position dans la phrase",
         "de": "Satzstellung",
-        "ar": "Satzstellung",
-        "en": "Satzstellung"
+        "ar": "الموضع في الجملة",
+        "en": "Sentence position"
       },
       "text": {
         "fr": "Dans une principale déclarative, sein ou haben conjugué occupe la deuxième position ; le complément an, auf, weg, dabei, etc. se place généralement à la fin. Dans une subordonnée, on trouve par exemple weil das Licht an ist ou weil er den Pass dabeihat. Ces expressions sont surtout courantes à l’oral.",
@@ -152,10 +152,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-47-b9",
       "title": {
-        "fr": "Ausdrücke im Überblick",
+        "fr": "Aperçu des expressions",
         "de": "Ausdrücke im Überblick",
-        "ar": "Ausdrücke im Überblick",
-        "en": "Ausdrücke im Überblick"
+        "ar": "نظرة عامة على التعبيرات",
+        "en": "Overview of expressions"
       },
       "headers": [
         {

@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-17-lesson",
   "title": {
-    "fr": "Ich fahre mit dem Auto",
+    "fr": "Je me déplace en voiture",
     "de": "Ich fahre mit dem Auto",
-    "ar": "Ich fahre mit dem Auto",
-    "en": "Ich fahre mit dem Auto"
+    "ar": "أتنقّل بالسيارة",
+    "en": "I travel by car"
   },
   "subtitle": {
     "fr": "datif",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-1",
       "title": {
-        "fr": "Wann steht der Dativ?",
+        "fr": "Quand employer le datif ?",
         "de": "Wann steht der Dativ?",
-        "ar": "Wann steht der Dativ?",
-        "en": "Wann steht der Dativ?"
+        "ar": "متى نستخدم الداتيف؟",
+        "en": "When is the dative used?"
       },
       "text": {
         "fr": "Le datif répond notamment à wem? pour un complément de personne. Il est exigé par certaines prépositions (mit, bei, von, zu, aus, nach, seit) et certains verbes (helfen, danken, gefallen, gehören). Il ne signifie donc pas toujours « à quelqu’un ».",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-2",
       "title": {
-        "fr": "Drei Kasus",
+        "fr": "Trois cas grammaticaux",
         "de": "Drei Kasus",
-        "ar": "Drei Kasus",
-        "en": "Drei Kasus"
+        "ar": "ثلاث حالات إعرابية",
+        "en": "Three grammatical cases"
       },
       "headers": [
         {
@@ -190,10 +190,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-3",
       "title": {
-        "fr": "Dativ Plural",
+        "fr": "Datif pluriel",
         "de": "Dativ Plural",
-        "ar": "Dativ Plural",
-        "en": "Dativ Plural"
+        "ar": "الداتيف في الجمع",
+        "en": "Dative plural"
       },
       "text": {
         "fr": "Regarde le nom en plus de l’article : die Kinder → den Kindern, die Bücher → den Büchern. Ne rajoute pas de -n à Autos ni à Frauen. Les possessifs et kein prennent -en : mit meinen Freunden, mit keinen Autos.",
@@ -206,10 +206,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-4",
       "title": {
-        "fr": "Empfänger und Sache",
+        "fr": "Destinataire et chose",
         "de": "Empfänger und Sache",
-        "ar": "Empfänger und Sache",
-        "en": "Empfänger und Sache"
+        "ar": "المتلقي والشيء",
+        "en": "Recipient and thing"
       },
       "text": {
         "fr": "Dans Ich gebe dem Kind ein Buch, le destinataire dem Kind est au datif, ein Buch à l’accusatif. Mais avec helfen, le seul complément est au datif : Ich helfe dem Kind. Apprends le cas avec chaque verbe.",
@@ -222,10 +222,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-5",
       "title": {
-        "fr": "Kurzformen",
+        "fr": "Formes contractées",
         "de": "Kurzformen",
-        "ar": "Kurzformen",
-        "en": "Kurzformen"
+        "ar": "الصيغ المختصرة",
+        "en": "Contracted forms"
       },
       "headers": [
         {
@@ -316,10 +316,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Präpositionen im Singular",
+        "fr": "Prépositions au singulier",
         "de": "Präpositionen im Singular",
-        "ar": "Präpositionen im Singular",
-        "en": "Präpositionen im Singular"
+        "ar": "حروف الجر مع المفرد",
+        "en": "Prepositions with singular nouns"
       },
       "items": [
         {
@@ -488,10 +488,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Plural und Dativverben",
+        "fr": "Pluriel et verbes régissant le datif",
         "de": "Plural und Dativverben",
-        "ar": "Plural und Dativverben",
-        "en": "Plural und Dativverben"
+        "ar": "الجمع والأفعال التي تتطلب الداتيف",
+        "en": "Plural and dative verbs"
       },
       "items": [
         {
@@ -660,10 +660,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Dativverben, zwei Objekte und Kurzformen",
+        "fr": "Verbes au datif, deux compléments et contractions",
         "de": "Dativverben, zwei Objekte und Kurzformen",
-        "ar": "Dativverben, zwei Objekte und Kurzformen",
-        "en": "Dativverben, zwei Objekte und Kurzformen"
+        "ar": "أفعال الداتيف ومفعولان والصيغ المختصرة",
+        "en": "Dative verbs, two objects and contractions"
       },
       "items": [
         {
@@ -832,10 +832,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A : Wie fährst du zur Arbeit? (Comment vas-tu au travail ?)\nB : Mit dem Bus. (En bus.)",
@@ -848,10 +848,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -865,10 +865,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

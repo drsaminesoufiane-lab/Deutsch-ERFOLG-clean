@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-61-lesson",
   "title": {
-    "fr": "Leben und leben lassen",
+    "fr": "Vivre et laisser vivre",
     "de": "Leben und leben lassen",
-    "ar": "Leben und leben lassen",
-    "en": "Leben und leben lassen"
+    "ar": "عش ودع الآخرين يعيشون",
+    "en": "Live and let live"
   },
   "subtitle": {
     "fr": "Le verbe lassen",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-61-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Distinguer les emplois de lassen et former le présent et le Perfekt.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-61-b2",
       "title": {
-        "fr": "Etwas zurücklassen",
+        "fr": "Laisser quelque chose derrière soi",
         "de": "Etwas zurücklassen",
-        "ar": "Etwas zurücklassen",
-        "en": "Etwas zurücklassen"
+        "ar": "ترك شيء خلفك",
+        "en": "Leaving something behind"
       },
       "text": {
         "fr": "Lorsque lassen signifie laisser un objet à un endroit, il prend un objet à l’accusatif et souvent un complément de lieu. Aucun second infinitif n’est nécessaire. Le Perfekt se forme avec haben + gelassen.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-61-b3",
       "title": {
-        "fr": "Erlauben",
+        "fr": "Autoriser",
         "de": "Erlauben",
-        "ar": "Erlauben",
-        "en": "Erlauben"
+        "ar": "السماح",
+        "en": "Allowing"
       },
       "text": {
         "fr": "Lassen + personne à l’accusatif + infinitif sans zu exprime la permission. La négation nicht indique ici qu’on ne permet pas l’action. Au Perfekt, le double infinitif reste à la fin : hat … spielen lassen.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-61-b4",
       "title": {
-        "fr": "Etwas machen lassen",
+        "fr": "Faire faire quelque chose",
         "de": "Etwas machen lassen",
-        "ar": "Etwas machen lassen",
-        "en": "Etwas machen lassen"
+        "ar": "جعل شخص يقوم بشيء",
+        "en": "Having something done"
       },
       "text": {
         "fr": "Pour une tâche effectuée par autrui, lassen + objet + infinitif sans zu signifie faire faire. Le sujet organise le service, mais n’exécute pas lui-même la tâche. Au Perfekt : haben + infinitif + lassen, jamais gelassen dans cette construction.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-61-b5",
       "title": {
-        "fr": "Formen und Satzbau",
+        "fr": "Formes et structure de la phrase",
         "de": "Formen und Satzbau",
-        "ar": "Formen und Satzbau",
-        "en": "Formen und Satzbau"
+        "ar": "الصيغ وبنية الجملة",
+        "en": "Forms and sentence structure"
       },
       "text": {
         "fr": "Lassen est irrégulier : ich lasse, du lässt, er lässt, wir lassen, ihr lasst, sie lassen. Au Präteritum : ließ, du ließest, wir ließen. Dans une principale au présent le deuxième infinitif est final; avec un modal, infinitif + lassen vient à la fin.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-61-b6",
       "title": {
-        "fr": "Gelassen oder lassen?",
+        "fr": "Gelassen ou lassen ?",
         "de": "Gelassen oder lassen?",
-        "ar": "Gelassen oder lassen?",
-        "en": "Gelassen oder lassen?"
+        "ar": "الفرق بين gelassen و lassen",
+        "en": "Gelassen or lassen?"
       },
       "text": {
         "fr": "Repérez le deuxième infinitif avant de choisir la forme du Perfekt. Sans deuxième verbe : gelassen. Avec un autre infinitif gouverné par lassen : Ersatzinfinitiv lassen. Haben est le verbe conjugué.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-61-b7",
       "title": {
-        "fr": "Formen",
+        "fr": "Formes",
         "de": "Formen",
-        "ar": "Formen",
-        "en": "Formen"
+        "ar": "الصيغ",
+        "en": "Forms"
       },
       "headers": [
         {
@@ -290,10 +290,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-61-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

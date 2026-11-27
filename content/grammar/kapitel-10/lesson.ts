@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-10-lesson",
   "title": {
-    "fr": "Lernen Sie Deutsch?",
+    "fr": "Apprenez-vous l’allemand ?",
     "de": "Lernen Sie Deutsch?",
-    "ar": "Lernen Sie Deutsch?",
-    "en": "Lernen Sie Deutsch?"
+    "ar": "هل تتعلّم الألمانية؟",
+    "en": "Are you learning German?"
   },
   "subtitle": {
     "fr": "Questions fermées",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-1",
       "title": {
-        "fr": "Aussage oder Entscheidungsfrage?",
+        "fr": "Affirmation ou question fermée ?",
         "de": "Aussage oder Entscheidungsfrage?",
-        "ar": "Aussage oder Entscheidungsfrage?",
-        "en": "Aussage oder Entscheidungsfrage?"
+        "ar": "جملة خبرية أم سؤال بنعم أو لا؟",
+        "en": "Statement or yes/no question?"
       },
       "text": {
         "fr": "Une phrase déclarative a normalement le verbe conjugué en deuxième position : Er kommt aus Berlin. Une question fermée place ce verbe en première position : Kommt er aus Berlin? Le sujet suit ; la conjugaison ne change pas. Contrairement à une W-Frage, aucun mot interrogatif ne précède le verbe.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-2",
       "title": {
-        "fr": "Satzbau",
+        "fr": "Structure de la phrase",
         "de": "Satzbau",
-        "ar": "Satzbau",
-        "en": "Satzbau"
+        "ar": "بنية الجملة",
+        "en": "Sentence structure"
       },
       "headers": [
         {
@@ -165,10 +165,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-3",
       "title": {
-        "fr": "Ja, nein und doch",
+        "fr": "Oui, non et réponse affirmative à une négation (doch)",
         "de": "Ja, nein und doch",
-        "ar": "Ja, nein und doch",
-        "en": "Ja, nein und doch"
+        "ar": "نعم ولا و doch للإجابة بالإيجاب عن النفي",
+        "en": "Yes, no and affirmative reply to a negative question (doch)"
       },
       "text": {
         "fr": "À une question affirmative, ja confirme et nein nie : Kommst du? — Ja, ich komme. / Nein, ich komme nicht. À une question négative, doch contredit la négation : Kommst du nicht? — Doch, ich komme. Nein confirme que tu ne viens pas : Nein, ich komme nicht. Évite un simple ja face à une question négative, car il peut être ambigu.",
@@ -181,10 +181,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-4",
       "title": {
-        "fr": "Antworten im Vergleich",
+        "fr": "Comparaison des réponses",
         "de": "Antworten im Vergleich",
-        "ar": "Antworten im Vergleich",
-        "en": "Antworten im Vergleich"
+        "ar": "مقارنة الإجابات",
+        "en": "Comparing answers"
       },
       "headers": [
         {
@@ -305,10 +305,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-5",
       "title": {
-        "fr": "Verben in der Satzklammer",
+        "fr": "Verbes dans le cadre verbal",
         "de": "Verben in der Satzklammer",
-        "ar": "Verben in der Satzklammer",
-        "en": "Verben in der Satzklammer"
+        "ar": "الأفعال في الإطار الفعلي",
+        "en": "Verbs in the verb bracket"
       },
       "text": {
         "fr": "Avec un modal, seul le modal conjugué passe en tête : Kannst du morgen kommen? Avec un verbe séparable, la particule reste finale : Rufst du mich an? Avec le Perfekt, l’auxiliaire ouvre la question : Hast du gegessen? On ne déplace pas l’ensemble du groupe verbal.",
@@ -321,10 +321,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-6",
       "title": {
-        "fr": "Höfliche Bitten",
+        "fr": "Demandes polies",
         "de": "Höfliche Bitten",
-        "ar": "Höfliche Bitten",
-        "en": "Höfliche Bitten"
+        "ar": "الطلبات المهذبة",
+        "en": "Polite requests"
       },
       "text": {
         "fr": "Könnten Sie mir bitte helfen? et Würden Sie bitte das Fenster öffnen? ont la forme d’une question fermée mais servent à faire une demande. Könnten est une forme de können au Konjunktiv II ; würden accompagne un infinitif. Avec une personne familière, on peut dire Könntest du…? ou Würdest du…?",
@@ -337,10 +337,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Entscheidungsfragen und Modalverben",
+        "fr": "Questions fermées et verbes modaux",
         "de": "Entscheidungsfragen und Modalverben",
-        "ar": "Entscheidungsfragen und Modalverben",
-        "en": "Entscheidungsfragen und Modalverben"
+        "ar": "أسئلة نعم أو لا والأفعال الناقصة",
+        "en": "Yes/no questions and modal verbs"
       },
       "items": [
         {
@@ -509,10 +509,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Satzklammer und ja/nein/doch",
+        "fr": "Cadre verbal et réponses ja/nein/doch",
         "de": "Satzklammer und ja/nein/doch",
-        "ar": "Satzklammer und ja/nein/doch",
-        "en": "Satzklammer und ja/nein/doch"
+        "ar": "الإطار الفعلي والإجابات ja و nein و doch",
+        "en": "Verb bracket and ja/nein/doch"
       },
       "items": [
         {
@@ -681,10 +681,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Doch, nein und höfliche Bitten",
+        "fr": "Doch, nein et demandes polies",
         "de": "Doch, nein und höfliche Bitten",
-        "ar": "Doch, nein und höfliche Bitten",
-        "en": "Doch, nein und höfliche Bitten"
+        "ar": "Doch و nein والطلبات المهذبة",
+        "en": "Doch, nein and polite requests"
       },
       "items": [
         {
@@ -853,10 +853,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Haben Sie einen Termin? (Avez-vous rendez-vous ?)\nB: Nein, ich habe keinen Termin. (Non, je n’ai pas rendez-vous.)\nA: Können Sie kurz warten? (Pouvez-vous attendre un instant ?)\nB: Ja, natürlich. Könnten Sie mir bitte sagen, wie lange? (Oui, bien sûr. Pourriez-vous me dire combien de temps ?)",
@@ -869,10 +869,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -886,10 +886,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

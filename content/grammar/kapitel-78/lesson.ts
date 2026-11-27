@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-78-lesson",
   "title": {
-    "fr": "Innerhalb, außerhalb, in, nach, vor, seit, bei und während",
+    "fr": "Dans un délai, hors de, dans, après, avant, depuis, lors de et pendant",
     "de": "Innerhalb, außerhalb, in, nach, vor, seit, bei und während",
-    "ar": "Innerhalb, außerhalb, in, nach, vor, seit, bei und während",
-    "en": "Innerhalb, außerhalb, in, nach, vor, seit, bei und während"
+    "ar": "خلال، خارج، في، بعد، قبل، منذ، عند، أثناء",
+    "en": "Within, outside, in, after, before, since, at and during"
   },
   "subtitle": {
     "fr": "Prépositions temporelles 2",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-78-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Distinguer les repères passés, futurs, les durées et les limites temporelles.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-78-b2",
       "title": {
-        "fr": "Vor und nach",
+        "fr": "Avant et après (vor, nach)",
         "de": "Vor und nach",
-        "ar": "Vor und nach",
-        "en": "Vor und nach"
+        "ar": "قبل وبعد (vor و nach)",
+        "en": "Before and after (vor, nach)"
       },
       "text": {
         "fr": "Vor et nach prennent le datif. Vor dem Gespräch signifie avant l’entretien, nach dem Gespräch après. Avec l’heure, fünf vor zwölf = 11 h 55 et fünf nach zwölf = 12 h 05.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-78-b3",
       "title": {
-        "fr": "Vor und in",
+        "fr": "Il y a et dans (vor, in)",
         "de": "Vor und in",
-        "ar": "Vor und in",
-        "en": "Vor und in"
+        "ar": "منذ مدة وبعد مدة (vor و in)",
+        "en": "Ago and in (vor, in)"
       },
       "text": {
         "fr": "Vor + datif et durée situe un événement il y a X temps. In + datif et durée situe un événement dans X temps (dans le futur). Comparez vor einer Woche et in einer Woche.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-78-b4",
       "title": {
-        "fr": "Vor und seit",
+        "fr": "Il y a et depuis (vor, seit)",
         "de": "Vor und seit",
-        "ar": "Vor und seit",
-        "en": "Vor und seit"
+        "ar": "منذ مدة ومنذ (vor و seit)",
+        "en": "Ago and since (vor, seit)"
       },
       "text": {
         "fr": "Vor marque un point passé. Seit marque un début ou une durée qui continue jusqu’au présent ; le verbe est souvent au Präsens. Les deux prennent le datif.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-78-b5",
       "title": {
-        "fr": "Bei + Dativ",
+        "fr": "Bei + datif",
         "de": "Bei + Dativ",
-        "ar": "Bei + Dativ",
-        "en": "Bei + Dativ"
+        "ar": "Bei مع الداتيف",
+        "en": "Bei + dative"
       },
       "text": {
         "fr": "Bei signifie ici au cours d’une activité ou dans une circonstance : beim Essen, bei Regen. Beim = bei dem. Le nom d’action substantivé prend une majuscule : das Essen.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-78-b6",
       "title": {
-        "fr": "Während + Genitiv",
+        "fr": "Während + génitif",
         "de": "Während + Genitiv",
-        "ar": "Während + Genitiv",
-        "en": "Während + Genitiv"
+        "ar": "Während مع حالة الإضافة",
+        "en": "Während + genitive"
       },
       "text": {
         "fr": "Während désigne une période pendant laquelle un autre événement se déroule. Dans la langue standard de cet exercice, il prend le génitif : während des Konzerts. Bei et während peuvent se recouvrir ; le cas et la nuance les distinguent.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-78-b7",
       "title": {
-        "fr": "Innerhalb und außerhalb",
+        "fr": "À l’intérieur et à l’extérieur",
         "de": "Innerhalb und außerhalb",
-        "ar": "Innerhalb und außerhalb",
-        "en": "Innerhalb und außerhalb"
+        "ar": "داخل وخارج",
+        "en": "Inside and outside"
       },
       "text": {
         "fr": "Innerhalb + génitif signifie dans les limites d’un délai ou d’une plage horaire. Außerhalb + génitif signifie en dehors. Innerhalb der nächsten zehn Tage n’est pas la même chose que in zehn Tagen : au plus tard dans dix jours, et non précisément dans dix jours.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-78-b8",
       "title": {
-        "fr": "Zeitpunkte und Zeiträume",
+        "fr": "Moments et durées",
         "de": "Zeitpunkte und Zeiträume",
-        "ar": "Zeitpunkte und Zeiträume",
-        "en": "Zeitpunkte und Zeiträume"
+        "ar": "اللحظات والفترات الزمنية",
+        "en": "Points in time and periods"
       },
       "headers": [
         {
@@ -283,10 +283,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-78-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

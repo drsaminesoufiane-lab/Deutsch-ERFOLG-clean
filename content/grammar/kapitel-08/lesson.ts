@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-08-lesson",
   "title": {
-    "fr": "Helfen Sie mir!",
+    "fr": "Aidez-moi !",
     "de": "Helfen Sie mir!",
-    "ar": "Helfen Sie mir!",
-    "en": "Helfen Sie mir!"
+    "ar": "ساعدني من فضلك!",
+    "en": "Help me!"
   },
   "subtitle": {
     "fr": "L’impératif",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-1",
       "title": {
-        "fr": "Aufforderungen und Anrede",
+        "fr": "Demandes et formes d’adresse",
         "de": "Aufforderungen und Anrede",
-        "ar": "Aufforderungen und Anrede",
-        "en": "Aufforderungen und Anrede"
+        "ar": "الطلبات وصيغ المخاطبة",
+        "en": "Requests and forms of address"
       },
       "text": {
         "fr": "L’impératif permet de donner un ordre, un conseil, une instruction ou une invitation. Choisis d’abord le destinataire : du pour une personne familière, ihr pour plusieurs, Sie pour la politesse. L’intonation et bitte déterminent aussi la courtoisie.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-2",
       "title": {
-        "fr": "Imperativformen",
+        "fr": "Formes de l’impératif",
         "de": "Imperativformen",
-        "ar": "Imperativformen",
-        "en": "Imperativformen"
+        "ar": "صيغ الأمر",
+        "en": "Imperative forms"
       },
       "headers": [
         {
@@ -311,10 +311,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-3",
       "title": {
-        "fr": "Du, ihr und Sie",
+        "fr": "Tu, vous (pluriel) et vous de politesse",
         "de": "Du, ihr und Sie",
-        "ar": "Du, ihr und Sie",
-        "en": "Du, ihr und Sie"
+        "ar": "صيغ المخاطبة du و ihr و Sie",
+        "en": "Informal singular, plural and formal you"
       },
       "text": {
         "fr": "Avec du, on emploie généralement le radical, parfois avec -e : Komm(e)! Arbeite! Avec ihr, on retire simplement le pronom de la forme du présent : ihr kommt → Kommt! Pour Sie, le verbe est en tête et Sie reste obligatoire : Kommen Sie!",
@@ -327,10 +327,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-4",
       "title": {
-        "fr": "Vokalwechsel und Sonderformen",
+        "fr": "Changement de voyelle et formes particulières",
         "de": "Vokalwechsel und Sonderformen",
-        "ar": "Vokalwechsel und Sonderformen",
-        "en": "Vokalwechsel und Sonderformen"
+        "ar": "تغيّر حرف العلة والصيغ الخاصة",
+        "en": "Vowel changes and special forms"
       },
       "text": {
         "fr": "Les verbes comme nehmen, geben, lesen et sprechen gardent le changement e → i/ie au singulier : Nimm!, Gib!, Lies!, Sprich! En revanche fahren, schlafen et waschen perdent l’umlaut : Fahr!, Schlaf!, Wasch! Sein et haben ont leurs propres formes.",
@@ -343,10 +343,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-5",
       "title": {
-        "fr": "Trennbare Verben und höfliche Bitten",
+        "fr": "Verbes séparables et demandes polies",
         "de": "Trennbare Verben und höfliche Bitten",
-        "ar": "Trennbare Verben und höfliche Bitten",
-        "en": "Trennbare Verben und höfliche Bitten"
+        "ar": "الأفعال القابلة للفصل والطلبات المهذبة",
+        "en": "Separable verbs and polite requests"
       },
       "text": {
         "fr": "Avec une particule, l’impératif se sépare comme dans la principale : Mach das Licht aus! Faites précéder ou suivre la demande de bitte : Bitte warten Sie hier. Le chapitre 10 approfondira les demandes avec Könnten Sie…?",
@@ -359,10 +359,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Imperativ Singular: Grundformen und Vokalwechsel",
+        "fr": "Impératif singulier : formes de base et changement de voyelle",
         "de": "Imperativ Singular: Grundformen und Vokalwechsel",
-        "ar": "Imperativ Singular: Grundformen und Vokalwechsel",
-        "en": "Imperativ Singular: Grundformen und Vokalwechsel"
+        "ar": "الأمر للمفرد: الصيغ الأساسية وتغيّر حرف العلة",
+        "en": "Singular imperative: basic forms and vowel changes"
       },
       "items": [
         {
@@ -531,10 +531,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Sonderformen und Plural",
+        "fr": "Formes particulières et pluriel",
         "de": "Sonderformen und Plural",
-        "ar": "Sonderformen und Plural",
-        "en": "Sonderformen und Plural"
+        "ar": "الصيغ الخاصة والجمع",
+        "en": "Special forms and plural"
       },
       "items": [
         {
@@ -703,10 +703,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Plural, Sie und trennbare Verben",
+        "fr": "Pluriel, vouvoiement et verbes séparables",
         "de": "Plural, Sie und trennbare Verben",
-        "ar": "Plural, Sie und trennbare Verben",
-        "en": "Plural, Sie und trennbare Verben"
+        "ar": "الجمع والمخاطبة الرسمية والأفعال القابلة للفصل",
+        "en": "Plural, formal address and separable verbs"
       },
       "items": [
         {
@@ -875,10 +875,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Wie lerne ich die Wörter? (Comment apprendre les mots ?)\nB: Schreib sie auf Karten! (Écris-les sur des fiches !)\nA: Und dann? (Et ensuite ?)\nB: Lies jeden Satz laut! (Lis chaque phrase à voix haute !)",
@@ -891,10 +891,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -908,10 +908,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

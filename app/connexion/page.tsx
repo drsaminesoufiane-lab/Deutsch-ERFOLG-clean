@@ -1,6 +1,12 @@
 
 'use client'
 
+// DE_AUTH_FLOATING_LANGUAGE_V1
+import FloatingPageTools from '@/components/student/FloatingPageTools'
+import { useLanguage } from '@/contexts/LanguageContext'
+
+import GoogleAuthButton from '@/components/auth/GoogleAuthButton'
+
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -18,7 +24,6 @@ import {
   EyeOff,
 } from 'lucide-react'
 
-type Lang = 'fr' | 'de' | 'ar' | 'en'
 
 const traductions = {
   fr: {
@@ -187,7 +192,7 @@ export default function ConnexionPage() {
   const [loading, setLoading] = useState(false)
   const [showPassword, setShowPassword] = useState(false)
   const [rememberMe, setRememberMe] = useState(true)
-  const [lang, setLang] = useState<Lang>('de')
+  const { language: lang } = useLanguage()
 
   const t = traductions[lang]
 
@@ -293,6 +298,7 @@ export default function ConnexionPage() {
   }
 
   return (
+    <>
     <main
       className="login-page"
       dir={lang === 'ar' ? 'rtl' : 'ltr'}
@@ -337,23 +343,7 @@ export default function ConnexionPage() {
       <section className="login-form-side">
         <div className="login-form-container">
 
-          <div className="login-language">
-            <label htmlFor="login-language">{t.langue}</label>
-
-            <div className="login-language-select">
-              <select
-                id="login-language"
-                value={lang}
-                onChange={e => setLang(e.target.value as Lang)}
-              >
-                <option value="de">🇩🇪 Deutsch</option>
-                <option value="fr">🇫🇷 Français</option>
-                <option value="ar">🇲🇦 العربية</option>
-                <option value="en">🇬🇧 English</option>
-              </select>
-              <span className="login-language-arrow">⌄</span>
-            </div>
-          </div>
+          
 
           <Link href="/" className="login-mobile-brand">
             <span className="login-brand-icon">
@@ -369,6 +359,8 @@ export default function ConnexionPage() {
             <h2>{t.bienvenue}</h2>
             <p>{t.intro}</p>
           </div>
+
+          <GoogleAuthButton language={lang} disabled={loading} />
 
           <form onSubmit={connecter} className="login-form">
             <label htmlFor="login-email">{t.email}</label>
@@ -454,6 +446,10 @@ export default function ConnexionPage() {
       </section>
 
       <style jsx>{`
+        @media (max-width: 700px) {
+          .login-page .login-form-side { padding-bottom: max(85px, calc(70px + env(safe-area-inset-bottom))); }
+        }
+
         .login-language {
           display: flex;
           align-items: center;
@@ -550,5 +546,7 @@ export default function ConnexionPage() {
         }
       `}</style>
     </main>
+    <FloatingPageTools showOffer={false} />
+    </>
   )
 }

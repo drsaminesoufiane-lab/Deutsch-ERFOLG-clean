@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-75-lesson",
   "title": {
-    "fr": "Entweder ... oder, weder ... noch, sowohl ... als auch und nicht nur ... sondern auch",
+    "fr": "Soit… soit, ni… ni, à la fois… et, non seulement… mais aussi",
     "de": "Entweder ... oder, weder ... noch, sowohl ... als auch und nicht nur ... sondern auch",
-    "ar": "Entweder ... oder, weder ... noch, sowohl ... als auch und nicht nur ... sondern auch",
-    "en": "Entweder ... oder, weder ... noch, sowohl ... als auch und nicht nur ... sondern auch"
+    "ar": "إمّا… أو، لا… ولا، كلّ من… و، ليس فقط… بل أيضًا",
+    "en": "Either… or, neither… nor, both… and, not only… but also"
   },
   "subtitle": {
     "fr": "Connecteurs doubles",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-75-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Relier deux éléments parallèles en exprimant le choix, l’addition ou la double négation.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-75-b2",
       "title": {
-        "fr": "Sowohl ... als auch",
+        "fr": "Sowohl… als auch : à la fois… et",
         "de": "Sowohl ... als auch",
-        "ar": "Sowohl ... als auch",
-        "en": "Sowohl ... als auch"
+        "ar": "Sowohl… als auch: كلّ من… و",
+        "en": "Sowohl… als auch: both… and"
       },
       "text": {
         "fr": "Sowohl ... als auch signifie à la fois A et B. Les deux éléments sont affirmés et de même fonction syntaxique : deux noms, adjectifs, compléments ou groupes verbaux.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-75-b3",
       "title": {
-        "fr": "Nicht nur ... sondern auch",
+        "fr": "Nicht nur… sondern auch : non seulement… mais aussi",
         "de": "Nicht nur ... sondern auch",
-        "ar": "Nicht nur ... sondern auch",
-        "en": "Nicht nur ... sondern auch"
+        "ar": "Nicht nur… sondern auch: ليس فقط… بل أيضًا",
+        "en": "Nicht nur… sondern auch: not only… but also"
       },
       "text": {
         "fr": "Les deux éléments sont affirmés, mais le second apporte une information supplémentaire mise en relief. Une virgule précède sondern. La négation nicht nur ne nie pas A.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-75-b4",
       "title": {
-        "fr": "Weder ... noch",
+        "fr": "Weder… noch : ni… ni",
         "de": "Weder ... noch",
-        "ar": "Weder ... noch",
-        "en": "Weder ... noch"
+        "ar": "Weder… noch: لا… ولا",
+        "en": "Weder… noch: neither… nor"
       },
       "text": {
         "fr": "Ni A ni B : les deux éléments sont niés. On n’ajoute pas nicht ou kein pour nier une seconde fois ces mêmes éléments. Chaque membre conserve son cas grammatical.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-75-b5",
       "title": {
-        "fr": "Entweder ... oder",
+        "fr": "Entweder… oder : soit… soit",
         "de": "Entweder ... oder",
-        "ar": "Entweder ... oder",
-        "en": "Entweder ... oder"
+        "ar": "Entweder… oder: إمّا… أو",
+        "en": "Entweder… oder: either… or"
       },
       "text": {
         "fr": "Entweder ... oder présente deux alternatives. Dans une situation de choix exclusif, un seul choix sera réalisé. Les deux termes doivent être construits en parallèle.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-75-b6",
       "title": {
-        "fr": "Parallelität und Satzbau",
+        "fr": "Parallélisme et structure de la phrase",
         "de": "Parallelität und Satzbau",
-        "ar": "Parallelität und Satzbau",
-        "en": "Parallelität und Satzbau"
+        "ar": "التوازي وبنية الجملة",
+        "en": "Parallelism and sentence structure"
       },
       "text": {
         "fr": "Le connecteur ne modifie pas le cas exigé par le verbe ou la préposition. Dans les propositions principales coordonnées, on garde l’ordre V2 : Entweder fährt er heute, oder er fährt morgen.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-75-b7",
       "title": {
-        "fr": "Doppelkonnektoren",
+        "fr": "Connecteurs doubles",
         "de": "Doppelkonnektoren",
-        "ar": "Doppelkonnektoren",
-        "en": "Doppelkonnektoren"
+        "ar": "أدوات الربط المزدوجة",
+        "en": "Paired conjunctions"
       },
       "headers": [
         {
@@ -214,10 +214,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-75-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

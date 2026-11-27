@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-58-lesson",
   "title": {
-    "fr": "Wann wurde der Kölner Dom gebaut?",
+    "fr": "Quand la cathédrale de Cologne a-t-elle été construite ?",
     "de": "Wann wurde der Kölner Dom gebaut?",
-    "ar": "Wann wurde der Kölner Dom gebaut?",
-    "en": "Wann wurde der Kölner Dom gebaut?"
+    "ar": "متى بُنيت كاتدرائية كولونيا؟",
+    "en": "When was Cologne Cathedral built?"
   },
   "subtitle": {
     "fr": "Passif au passé",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-58-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Employer le passif au Präteritum et au Perfekt, y compris avec un modal au Präteritum.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-58-b2",
       "title": {
-        "fr": "Passiv im Präteritum",
+        "fr": "Passif au prétérit",
         "de": "Passiv im Präteritum",
-        "ar": "Passiv im Präteritum",
-        "en": "Passiv im Präteritum"
+        "ar": "المبني للمجهول في الماضي البسيط",
+        "en": "Passive in the simple past"
       },
       "text": {
         "fr": "Le passif au Präteritum se forme avec wurde, wurdest, wurden, wurdet et le participe II. Wurde est l’auxiliaire au passé, le participe final porte le sens lexical.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-58-b3",
       "title": {
-        "fr": "Passiv im Perfekt",
+        "fr": "Passif au parfait allemand",
         "de": "Passiv im Perfekt",
-        "ar": "Passiv im Perfekt",
-        "en": "Passiv im Perfekt"
+        "ar": "المبني للمجهول في الماضي المركب",
+        "en": "Passive in the perfect tense"
       },
       "text": {
         "fr": "Le passif au Perfekt se construit avec sein au présent + participe II + worden : Die Mail ist geschrieben worden. Worden est la forme spéciale de werden auxiliaire du passif, sans ge-.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-58-b4",
       "title": {
-        "fr": "Modalverben im Präteritum",
+        "fr": "Verbes modaux au prétérit",
         "de": "Modalverben im Präteritum",
-        "ar": "Modalverben im Präteritum",
-        "en": "Modalverben im Präteritum"
+        "ar": "الأفعال الناقصة في الماضي البسيط",
+        "en": "Modal verbs in the simple past"
       },
       "text": {
         "fr": "Avec un modal au passé, seul le modal est conjugué au Präteritum : Die Tür musste geöffnet werden. Le participe II + werden infinitif reste final.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-58-b5",
       "title": {
-        "fr": "Präsens, Präteritum und Perfekt",
+        "fr": "Présent, prétérit et parfait",
         "de": "Präsens, Präteritum und Perfekt",
-        "ar": "Präsens, Präteritum und Perfekt",
-        "en": "Präsens, Präteritum und Perfekt"
+        "ar": "المضارع والماضي البسيط والماضي المركب",
+        "en": "Present, simple past and perfect"
       },
       "text": {
         "fr": "Les trois formes du passif décrivent une action. Le Präteritum est fréquent dans les récits et les comptes rendus écrits; le Perfekt dans les conversations. Un état résultant avec sein + participe seul n’est pas le même que le passif de processus au Perfekt.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-58-b6",
       "title": {
-        "fr": "Fragen im Passiv",
+        "fr": "Questions à la voix passive",
         "de": "Fragen im Passiv",
-        "ar": "Fragen im Passiv",
-        "en": "Fragen im Passiv"
+        "ar": "الأسئلة في المبني للمجهول",
+        "en": "Questions in the passive voice"
       },
       "text": {
         "fr": "Une question avec mot interrogatif suit l’ordre : mot interrogatif + auxiliaire conjugué + sujet + reste verbal. Exemple : Wann ist der Brief geschrieben worden? Von wem introduit l’agent au datif.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-58-b7",
       "title": {
-        "fr": "Kongruenz und Wortstellung",
+        "fr": "Accord et ordre des mots",
         "de": "Kongruenz und Wortstellung",
-        "ar": "Kongruenz und Wortstellung",
-        "en": "Kongruenz und Wortstellung"
+        "ar": "المطابقة وترتيب الكلمات",
+        "en": "Agreement and word order"
       },
       "text": {
         "fr": "Le sujet au nominatif impose le nombre de l’auxiliaire ou du modal. Dans une subordonnée, les formes finies viennent à la fin : dass die Rechnung bezahlt worden ist.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-58-b8",
       "title": {
-        "fr": "Passivformen",
+        "fr": "Formes du passif",
         "de": "Passivformen",
-        "ar": "Passivformen",
-        "en": "Passivformen"
+        "ar": "صيغ المبني للمجهول",
+        "en": "Passive forms"
       },
       "headers": [
         {
@@ -260,10 +260,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-58-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

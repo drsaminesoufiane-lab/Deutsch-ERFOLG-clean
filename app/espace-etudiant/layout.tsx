@@ -1,6 +1,8 @@
 
 'use client'
 
+import TrialWelcome from '@/components/student/TrialWelcome'
+
 import ExerciseCelebration from '@/components/student/ExerciseCelebration'
 
 import StudentGlobalHeader from '@/components/student/StudentGlobalHeader'
@@ -445,6 +447,7 @@ export default function StudentLayout({
         <SubscriptionContext.Provider value={subscriptionStatus}>
           <div className={`student-global-content ${!isProPage && !isAdmin && (subscriptionStatus === 'trial' || subscriptionStatus === 'free') ? 'de-has-offer' : ''}`}><StudentGlobalHeader />
           <ExerciseCelebration />
+          <TrialWelcome />
           {children}</div>
           <FloatingPageTools showOffer={/* DE_ADMIN_LEARNING_V1 */ !isProPage && !isAdmin} />
         </SubscriptionContext.Provider>

@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-03",
   "title": {
-    "fr": "Ich bin, du hast, er möchte",
+    "fr": "Je suis, tu as, il voudrait",
     "de": "Ich bin, du hast, er möchte",
-    "ar": "Ich bin, du hast, er möchte",
-    "en": "Ich bin, du hast, er möchte"
+    "ar": "أنا أكون، أنت تملك، هو يودّ",
+    "en": "I am, you have, he would like"
   },
   "subtitle": {
     "fr": "Être, avoir et verbes particuliers",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-intro",
       "title": {
-        "fr": "Sein und haben",
+        "fr": "Être et avoir",
         "de": "Sein und haben",
-        "ar": "Sein und haben",
-        "en": "Sein und haben"
+        "ar": "فعلا الكينونة والملكية (sein و haben)",
+        "en": "To be and to have"
       },
       "text": {
         "fr": "sein exprime une identité, une caractéristique, un état, un lieu ou l’âge (ich bin 30 Jahre alt). haben exprime notamment la possession et des expressions comme Hunger haben ou Zeit haben. Ces deux verbes ont des formes irrégulières très fréquentes.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-sein-haben",
       "title": {
-        "fr": "Sein und haben",
+        "fr": "Être et avoir",
         "de": "Sein und haben",
-        "ar": "Sein und haben",
-        "en": "Sein und haben"
+        "ar": "فعلا الكينونة والملكية (sein و haben)",
+        "en": "To be and to have"
       },
       "headers": [
         {
@@ -211,10 +211,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-wunsch",
       "title": {
-        "fr": "Mögen und möchten",
+        "fr": "Aimer et souhaiter",
         "de": "Mögen und möchten",
-        "ar": "Mögen und möchten",
-        "en": "Mögen und möchten"
+        "ar": "الرغبة والإعجاب (mögen و möchten)",
+        "en": "To like and would like"
       },
       "text": {
         "fr": "mögen indique un goût ou une affection : Ich mag Tee. möchten exprime un souhait ou une demande polie : Ich möchte Tee trinken. Il s’agit historiquement du Konjunktiv II de mögen, mais on l’apprend ici comme expression du souhait actuel. Avec un second verbe, celui-ci reste à l’infinitif en fin de proposition principale.",
@@ -227,10 +227,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-wissen",
       "title": {
-        "fr": "Wissen und tun",
+        "fr": "Savoir et faire",
         "de": "Wissen und tun",
-        "ar": "Wissen und tun",
-        "en": "Wissen und tun"
+        "ar": "المعرفة والفعل (wissen و tun)",
+        "en": "To know and to do"
       },
       "text": {
         "fr": "wissen signifie savoir un fait ; ses formes du singulier sont weiß, weißt, weiß. tun signifie faire et a les formes tue, tust, tut, tun, tut, tun. Dans Was tust du? le verbe est juste après le mot interrogatif.",
@@ -243,10 +243,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-besondere",
       "title": {
-        "fr": "Besondere Verben",
+        "fr": "Verbes particuliers",
         "de": "Besondere Verben",
-        "ar": "Besondere Verben",
-        "en": "Besondere Verben"
+        "ar": "أفعال خاصة",
+        "en": "Special verbs"
       },
       "headers": [
         {
@@ -497,10 +497,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Beispiele 1–10",
+        "fr": "Exemples 1–10",
         "de": "Beispiele 1–10",
-        "ar": "Beispiele 1–10",
-        "en": "Beispiele 1–10"
+        "ar": "أمثلة 1–10",
+        "en": "Examples 1–10"
       },
       "items": [
         {
@@ -669,10 +669,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Beispiele 11–20",
+        "fr": "Exemples 11–20",
         "de": "Beispiele 11–20",
-        "ar": "Beispiele 11–20",
-        "en": "Beispiele 11–20"
+        "ar": "أمثلة 11–20",
+        "en": "Examples 11–20"
       },
       "items": [
         {
@@ -841,10 +841,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Beispiele 21–30",
+        "fr": "Exemples 21–30",
         "de": "Beispiele 21–30",
-        "ar": "Beispiele 21–30",
-        "en": "Beispiele 21–30"
+        "ar": "أمثلة 21–30",
+        "en": "Examples 21–30"
       },
       "items": [
         {
@@ -1013,10 +1013,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog: Im Café",
+        "fr": "Mini-dialogue : au café",
         "de": "Mini-Dialog: Im Café",
-        "ar": "Mini-Dialog: Im Café",
-        "en": "Mini-Dialog: Im Café"
+        "ar": "حوار قصير: في المقهى",
+        "en": "Mini-dialogue: at the café"
       },
       "text": {
         "fr": "A: Was möchten Sie trinken? (Que souhaitez-vous boire ?)\nB: Ich möchte einen Tee. Haben Sie auch Kuchen? (Je voudrais un thé. Avez-vous aussi du gâteau ?)\nA: Ja. Mögen Sie Schokoladenkuchen? (Oui. Aimez-vous le gâteau au chocolat ?)\nB: Ja, sehr gern. (Oui, beaucoup.)",
@@ -1029,10 +1029,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -1046,10 +1046,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

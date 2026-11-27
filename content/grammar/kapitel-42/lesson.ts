@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-42-lesson",
   "title": {
-    "fr": "Weil, dass und wenn",
+    "fr": "Parce que, que et si/quand",
     "de": "Weil, dass und wenn",
-    "ar": "Weil, dass und wenn",
-    "en": "Weil, dass und wenn"
+    "ar": "لأنّ، أنّ، إذا أو عندما",
+    "en": "Because, that and if/when"
   },
   "subtitle": {
     "fr": "Les propositions subordonnées",

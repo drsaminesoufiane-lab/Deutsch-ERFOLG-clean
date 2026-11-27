@@ -1,6 +1,9 @@
 
 'use client'
 
+// DE_GRAMMAR_MODULE_TITLE_V1
+import GrammarModuleTitle from '@/components/student/GrammarModuleTitle'
+
 import { ProNameBadge } from '@/components/student/FloatingPageTools'
 
 import { useEffect, useState } from 'react'
@@ -372,7 +375,7 @@ export default function StudentPage() {
                 <span className="grammar-access-label">
                   {t.grammar.library}
                 </span>
-                <h3 lang="de" dir="ltr">Deutsche Grammatik</h3>
+                <h3><GrammarModuleTitle /></h3>
                 <p>{t.grammar.welcomeDescription}</p>
               </div>
 

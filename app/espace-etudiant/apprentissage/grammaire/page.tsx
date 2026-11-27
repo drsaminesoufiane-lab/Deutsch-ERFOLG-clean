@@ -1,6 +1,11 @@
 
 'use client'
 
+import DeutschErfolgLoader from '@/components/student/DeutschErfolgLoader'
+
+// DE_GRAMMAR_MODULE_TITLE_V1
+import GrammarModuleTitle from '@/components/student/GrammarModuleTitle'
+
 import { useLanguage } from '@/contexts/LanguageContext'
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
@@ -11,7 +16,7 @@ import {
   Search,
   X,
   ChevronRight,
-  Loader2,
+
   LibraryBig,
   Lock,
 } from 'lucide-react'
@@ -22,6 +27,9 @@ type Chapitre = {
   id: string
   numero: number
   titre: string
+  titreAllemand: string
+  titres: ChapterDefinition['title']
+  themes: ChapterDefinition['subtitle']
   theme: string
   level: string
   locked: boolean
@@ -35,7 +43,7 @@ export default function GrammairePage() {
   const [nom, setNom] = useState('Étudiant')
   const [niveau, setNiveau] = useState('B1')
 
-  const [chapitres, setChapitres] = useState<Chapitre[]>([])
+  const [chapitresSource, setChapitres] = useState<Chapitre[]>([])
   const [recherche, setRecherche] = useState('')
   const [niveauFiltre, setNiveauFiltre] = useState('all')
   const [chargement, setChargement] = useState(true)
@@ -100,7 +108,7 @@ export default function GrammairePage() {
         const result = await response.json()
         if (!response.ok) throw new Error(result.error)
         if (actif) {
-          setChapitres(result.chapters.map((c: Pick<ChapterDefinition,'id'|'number'|'title'|'subtitle'|'level'> & {locked:boolean}) => ({id:c.id,numero:c.number,titre:c.title.de,theme:c.subtitle[language],level:c.level,locked:c.locked})))
+          setChapitres(result.chapters.map((c: Pick<ChapterDefinition,'id'|'number'|'title'|'subtitle'|'level'> & {locked:boolean}) => ({id:c.id,numero:c.number,titre:c.title.de,titreAllemand:c.title.de,titres:c.title,themes:c.subtitle,theme:c.subtitle.de,level:c.level,locked:c.locked})))
           setErreur('')
         }
       } catch (e) { if (actif) { setChapitres([]); setErreur(e instanceof Error ? e.message : 'Erreur de chargement.') } }
@@ -108,13 +116,15 @@ export default function GrammairePage() {
     }
     void load()
     return () => { actif = false }
-  }, [language])
+  }, [])
 
   // RECHERCHE ET FILTRE PAR NIVEAU
 
+  // DE_GRAMMAR_LOCALIZED_CARDS_V1
+  const chapitres = chapitresSource.map(c => ({...c, titre: c.titres[language] || c.titreAllemand, theme: c.themes[language] || c.themes.de}))
   const filtres = chapitres.filter(c => {
     const correspondRecherche =
-      `${c.numero} ${c.titre} ${c.theme} ${c.level}`
+      `${c.numero} ${c.titre} ${c.titreAllemand} ${c.theme} ${c.level}`
         .toLowerCase()
         .includes(recherche.toLowerCase())
 
@@ -167,7 +177,7 @@ export default function GrammairePage() {
               {t.header.learningSpace}
             </span>
 
-            <h2 lang="de" dir="ltr">Deutsche Grammatik</h2>
+            <h2><GrammarModuleTitle /></h2>
           </div>
 
           <div className="student-header-profile">
@@ -198,7 +208,7 @@ export default function GrammairePage() {
                 {g.welcomeTag}
               </span>
 
-              <h1 lang="de" dir="ltr">Deutsche Grammatik</h1>
+              <h1><GrammarModuleTitle /></h1>
 
               <p>{g.welcomeDescription}</p>
 
@@ -347,10 +357,7 @@ export default function GrammairePage() {
 
             {chargement ? (
 
-              <div className="grammar-loading">
-                <Loader2 size={30} className="animate-spin" />
-                <p>{g.loading}</p>
-              </div>
+              <DeutschErfolgLoader kind="grammar" inline />
 
             ) : erreur ? (
 
@@ -386,8 +393,9 @@ export default function GrammairePage() {
                             </div>
                             <div className="grammar-card-info">
                               <span className="grammar-chapter-label" lang="de" dir="ltr">Kapitel {String(chapitre.numero).padStart(2, '0')}</span>
-                              <h4 lang="de" dir="ltr">{chapitre.titre || `${g.chapter} ${chapitre.numero}`}</h4>
-                              <p>{chapitre.theme}</p>
+                              <h4 lang={language} dir={isRTL ? 'rtl' : 'ltr'}>{chapitre.theme || chapitre.titre || `${g.chapter} ${chapitre.numero}`}</h4>
+                              {language !== 'de' && chapitre.titreAllemand && chapitre.titreAllemand !== chapitre.titre && <span className="de-card-original-title" lang="de" dir="ltr">{chapitre.titreAllemand}</span>}
+                              {chapitre.titre !== chapitre.theme && (language === 'de' || chapitre.titre !== chapitre.titreAllemand) && <p>{chapitre.titre}</p>}
                             </div>
                             <div className="grammar-card-footer">
                               {chapitre.locked ? <span className="grammar-pro-mark"><Lock size={13} aria-hidden="true" /> PRO</span> : <ChevronRight size={19} aria-hidden="true" />}
@@ -450,6 +458,8 @@ export default function GrammairePage() {
       {/* STYLES */}
 
       <style jsx global>{`
+        .grammar-card-info .de-card-original-title {display:block; margin:4px 0 7px; color:#8b6939; font-size:12px; line-height:1.4; font-weight:600; text-align:start; overflow-wrap:anywhere;}
+
 
         * {
           box-sizing: border-box;

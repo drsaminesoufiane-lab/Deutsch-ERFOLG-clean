@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-24-lesson",
   "title": {
-    "fr": "Was hast du gestern gemacht?",
+    "fr": "Qu’as-tu fait hier ?",
     "de": "Was hast du gestern gemacht?",
-    "ar": "Was hast du gestern gemacht?",
-    "en": "Was hast du gestern gemacht?"
+    "ar": "ماذا فعلت أمس؟",
+    "en": "What did you do yesterday?"
   },
   "subtitle": {
     "fr": "Perfekt mit haben",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "theory",
       "title": {
-        "fr": "Perfekt bilden",
+        "fr": "Former le parfait allemand",
         "de": "Perfekt bilden",
-        "ar": "Perfekt bilden",
-        "en": "Perfekt bilden"
+        "ar": "تكوين الماضي المركب (Perfekt)",
+        "en": "Forming the perfect tense"
       },
       "text": {
         "fr": "Le Perfekt sert souvent à raconter un événement passé à l’oral. Il combine haben conjugué au présent et le participe II. Le sujet commande la forme de haben ; le participe reste invariable. Les verbes réguliers prennent généralement ge- et -t, les forts souvent ge- et -en avec changement de radical. Les verbes en -ieren et à préfixe inséparable ne prennent pas ge-.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-vertiefung",
       "title": {
-        "fr": "Partizip II Schritt für Schritt",
+        "fr": "Participe passé étape par étape",
         "de": "Partizip II Schritt für Schritt",
-        "ar": "Partizip II Schritt für Schritt",
-        "en": "Partizip II Schritt für Schritt"
+        "ar": "اسم المفعول الثاني خطوة بخطوة",
+        "en": "Past participle step by step"
       },
       "text": {
         "fr": "Conjugue haben selon le sujet : ich habe, du hast, er/sie/es hat, wir haben, ihr habt, sie/Sie haben. Forme ensuite le participe : machen → gemacht ; arbeiten → gearbeitet ; lesen → gelesen ; anrufen → angerufen ; besuchen → besucht ; studieren → studiert. Le participe ne change pas avec la personne. Dans une question : Hast du gestern gearbeitet?",
@@ -57,10 +57,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "syntax",
       "title": {
-        "fr": "Wortstellung",
+        "fr": "Ordre des mots",
         "de": "Wortstellung",
-        "ar": "Wortstellung",
-        "en": "Wortstellung"
+        "ar": "ترتيب الكلمات",
+        "en": "Word order"
       },
       "text": {
         "fr": "Dans une principale déclarative, le verbe conjugué occupe la deuxième position, même après Gestern. Dans une question oui/non, il vient en premier. Dans le Perfekt, le participe se place à la fin de la principale.",
@@ -73,10 +73,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "forms",
       "title": {
-        "fr": "Perfekt mit haben",
+        "fr": "Parfait avec haben",
         "de": "Perfekt mit haben",
-        "ar": "Perfekt mit haben",
-        "en": "Perfekt mit haben"
+        "ar": "الماضي المركب مع haben",
+        "en": "Perfect tense with haben"
       },
       "headers": [
         {
@@ -243,10 +243,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "errors",
       "title": {
-        "fr": "Fehler",
+        "fr": "Erreurs",
         "de": "Fehler",
-        "ar": "Fehler",
-        "en": "Fehler"
+        "ar": "الأخطاء",
+        "en": "Mistakes"
       },
       "text": {
         "fr": "✗ Ich habe gestern arbeiten. → Ich habe gestern gearbeitet. Il faut le participe II. ✗ Ich habe getelefoniert. → Ich habe telefoniert.",
@@ -259,10 +259,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Grundformen und Anwendung",
+        "fr": "Formes de base et application",
         "de": "Grundformen und Anwendung",
-        "ar": "Grundformen und Anwendung",
-        "en": "Grundformen und Anwendung"
+        "ar": "الصيغ الأساسية والتطبيق",
+        "en": "Basic forms and application"
       },
       "items": [
         {
@@ -431,10 +431,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Beispiele im Kontext",
+        "fr": "Exemples en contexte",
         "de": "Beispiele im Kontext",
-        "ar": "Beispiele im Kontext",
-        "en": "Beispiele im Kontext"
+        "ar": "أمثلة في السياق",
+        "en": "Examples in context"
       },
       "items": [
         {
@@ -603,10 +603,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Vertiefung und Kontraste",
+        "fr": "Approfondissement et contrastes",
         "de": "Vertiefung und Kontraste",
-        "ar": "Vertiefung und Kontraste",
-        "en": "Vertiefung und Kontraste"
+        "ar": "التعمّق والمقارنة",
+        "en": "Further practice and contrasts"
       },
       "items": [
         {
@@ -775,10 +775,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Was hast du gestern gemacht? (Qu’as-tu fait hier ?)\nB: Ich habe eingekauft und gekocht. (J’ai fait les courses et cuisiné.)\nA: Hast du auch gearbeitet? (As-tu aussi travaillé ?)",
@@ -791,10 +791,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

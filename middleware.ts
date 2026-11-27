@@ -2,6 +2,7 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 import { allowedPath, parseAccess } from "./lib/adminAccess";
+import { googleProfileComplete, hasGoogleProvider } from "./lib/googleProfile";
 
 export async function middleware(request: NextRequest) {
   let response = NextResponse.next({
@@ -89,7 +90,7 @@ export async function middleware(request: NextRequest) {
   // Récupération du profil
   const { data: profile, error: profileError } = await supabase
     .from("profiles")
-    .select("role, is_pro, pro_until")
+    .select("role, is_pro, pro_until, full_name, telephone, pays, ville, level")
     .eq("id", user.id)
     .maybeSingle();
 
@@ -167,6 +168,11 @@ export async function middleware(request: NextRequest) {
 
         return redirectResponse;
       }
+    }
+
+    // Google: require the profile before entering the student area.
+    if (profile.role === "student" && hasGoogleProvider(user.app_metadata) && !googleProfileComplete(profile)) {
+      return redirectWithCookies(new URL("/auth/completer-profil", request.url));
     }
 
     // ==========================================

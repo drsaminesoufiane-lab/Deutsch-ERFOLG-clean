@@ -1,81 +1,63 @@
-
 'use client'
 
-import { useLanguage, type Language } from '@/contexts/LanguageContext'
-import { Globe, ChevronDown } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useId, useRef, useState } from 'react'
+import { useLanguage } from '@/contexts/LanguageContext'
 
-const languages: {
-  code: Language
-  label: string
-  flag: string
-}[] = [
-  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
-  { code: 'fr', label: 'Français', flag: '🇫🇷' },
-  { code: 'en', label: 'English', flag: '🇬🇧' },
-  { code: 'ar', label: 'العربية', flag: '🇲🇦' },
-]
+// DE_COMPACT_LANGUAGE_V1
+const languages = [
+  { code: 'de', flag: '🇩🇪', name: 'Deutsch' },
+  { code: 'fr', flag: '🇫🇷', name: 'Français' },
+  { code: 'en', flag: '🇬🇧', name: 'English' },
+  { code: 'ar', flag: '🇲🇦', name: 'العربية' },
+] as const
+
+const labels = { de: 'Sprache auswählen', fr: 'Choisir la langue', en: 'Select language', ar: 'اختر اللغة' }
 
 export default function LanguageSwitcher() {
   const { language, setLanguage } = useLanguage()
   const [open, setOpen] = useState(false)
+  const root = useRef<HTMLDivElement>(null)
+  const trigger = useRef<HTMLButtonElement>(null)
+  const menuId = useId()
+  const selected = languages.find(item => item.code === language) ?? languages[0]
 
-  const selectedLanguage = languages.find(
-    (item) => item.code === language
-  )!
+  useEffect(() => {
+    if (!open) return
+    function outside(event: PointerEvent) {
+      if (event.target instanceof Node && !root.current?.contains(event.target)) setOpen(false)
+    }
+    function escape(event: KeyboardEvent) {
+      if (event.key === 'Escape') { setOpen(false); trigger.current?.focus() }
+    }
+    document.addEventListener('pointerdown', outside)
+    document.addEventListener('keydown', escape)
+    return () => {
+      document.removeEventListener('pointerdown', outside)
+      document.removeEventListener('keydown', escape)
+    }
+  }, [open])
 
   return (
-    <div className="language-switcher">
-      <button
-        type="button"
-        className="language-switcher-trigger"
-        onClick={() => setOpen(!open)}
-        aria-label="Changer de langue"
-        aria-expanded={open}
-      >
-        <Globe size={17} />
-        <span className="language-switcher-flag">
-          {selectedLanguage.flag}
-        </span>
-        <span>{selectedLanguage.label}</span>
-        <ChevronDown
-          size={15}
-          className={open ? 'language-chevron open' : 'language-chevron'}
-        />
+    <div ref={root} className="language-switcher de-compact-language" onBlur={event => {
+      if (!event.currentTarget.contains(event.relatedTarget)) setOpen(false)
+    }}>
+      <button ref={trigger} type="button" className="language-switcher-trigger" dir="ltr"
+        aria-label={`${labels[selected.code]}: ${selected.name}`} title={selected.name}
+        aria-expanded={open} aria-controls={open ? menuId : undefined} onClick={() => setOpen(value => !value)}>
+        <span className="language-switcher-flag" aria-hidden="true">{selected.flag}</span>
+        <span>{selected.code.toUpperCase()}</span>
       </button>
-
-      {open && (
-        <>
-          <div
-            className="language-switcher-backdrop"
-            onClick={() => setOpen(false)}
-          />
-
-          <div className="language-switcher-menu">
-            {languages.map((item) => (
-              <button
-                key={item.code}
-                type="button"
-                className={
-                  language === item.code
-                    ? 'language-switcher-option active'
-                    : 'language-switcher-option'
-                }
-                onClick={() => {
-                  setLanguage(item.code)
-                  setOpen(false)
-                }}
-              >
-                <span>{item.flag}</span>
-                <span>{item.label}</span>
-                {language === item.code && (
-                  <span className="language-check">✓</span>
-                )}
-              </button>
-            ))}
-          </div>
-        </>
-      )}
+      {open && <div id={menuId} className="language-switcher-menu" role="group" aria-label={labels[selected.code]}>
+        {languages.map(item => (
+          <button key={item.code} type="button" dir="ltr" lang={item.code}
+            className={`language-switcher-option${item.code === language ? ' active' : ''}`}
+            aria-label={item.name} title={item.name} aria-pressed={item.code === language}
+            onClick={() => { setLanguage(item.code); setOpen(false); trigger.current?.focus() }}>
+            <span className="language-switcher-flag" aria-hidden="true">{item.flag}</span>
+            <span>{item.code.toUpperCase()}</span>
+          </button>
+        ))}
+      </div>}
     </div>
   )
 }

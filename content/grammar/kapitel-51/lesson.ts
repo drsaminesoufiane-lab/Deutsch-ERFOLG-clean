@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-51-lesson",
   "title": {
-    "fr": "Ich wasche mir die Hände",
+    "fr": "Je me lave les mains",
     "de": "Ich wasche mir die Hände",
-    "ar": "Ich wasche mir die Hände",
-    "en": "Ich wasche mir die Hände"
+    "ar": "أغسل يديّ",
+    "en": "I wash my hands"
   },
   "subtitle": {
     "fr": "Pronoms réfléchis au datif",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-51-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Distinguer les pronoms réfléchis à l’accusatif et au datif et utiliser les constructions lexicales.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-51-b2",
       "title": {
-        "fr": "Reflexivpronomen im Akkusativ",
+        "fr": "Pronoms réfléchis à l’accusatif",
         "de": "Reflexivpronomen im Akkusativ",
-        "ar": "Reflexivpronomen im Akkusativ",
-        "en": "Reflexivpronomen im Akkusativ"
+        "ar": "الضمائر الانعكاسية في حالة النصب",
+        "en": "Reflexive pronouns in the accusative"
       },
       "text": {
         "fr": "Le pronom est à l’accusatif si le sujet accomplit l’action sur lui-même et que le verbe prend ce complément : ich wasche mich. La forme dépend du sujet, même dans une subordonnée.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-51-b3",
       "title": {
-        "fr": "Reflexivpronomen im Dativ",
+        "fr": "Pronoms réfléchis au datif",
         "de": "Reflexivpronomen im Dativ",
-        "ar": "Reflexivpronomen im Dativ",
-        "en": "Reflexivpronomen im Dativ"
+        "ar": "الضمائر الانعكاسية في حالة الداتيف",
+        "en": "Reflexive pronouns in the dative"
       },
       "text": {
         "fr": "Dans les constructions comme sich die Hände waschen, le groupe die Hände est l’objet à l’accusatif. Le pronom réfléchi désigne le possesseur ou bénéficiaire au datif : ich wasche mir die Hände. On utilise normalement l’article défini pour les parties du corps.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-51-b4",
       "title": {
-        "fr": "Formen und Kasus",
+        "fr": "Formes et cas grammaticaux",
         "de": "Formen und Kasus",
-        "ar": "Formen und Kasus",
-        "en": "Formen und Kasus"
+        "ar": "الصيغ والحالات الإعرابية",
+        "en": "Forms and grammatical cases"
       },
       "text": {
         "fr": "Seules les formes ich et du changent visiblement : mich/mir et dich/dir. Uns, euch et sich sont identiques dans les deux cas. Pour reconnaître le cas, cherchez l’autre objet ou la construction du verbe, et ne vous fiez pas uniquement à la forme.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-51-b5",
       "title": {
-        "fr": "Feste Verbindungen",
+        "fr": "Expressions figées",
         "de": "Feste Verbindungen",
-        "ar": "Feste Verbindungen",
-        "en": "Feste Verbindungen"
+        "ar": "التعبيرات الثابتة",
+        "en": "Fixed expressions"
       },
       "text": {
         "fr": "Apprenez sich etwas kaufen, wünschen, aussuchen, vornehmen et Sorgen machen avec un réfléchi au datif. L’objet à l’accusatif peut être remplacé par was ou une proposition : Was wünschst du dir?",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-51-b6",
       "title": {
-        "fr": "Sich vorstellen oder sich etwas vorstellen?",
+        "fr": "Se présenter ou s’imaginer quelque chose ?",
         "de": "Sich vorstellen oder sich etwas vorstellen?",
-        "ar": "Sich vorstellen oder sich etwas vorstellen?",
-        "en": "Sich vorstellen oder sich etwas vorstellen?"
+        "ar": "التعريف بالنفس أم تخيّل شيء؟",
+        "en": "Introducing oneself or imagining something?"
       },
       "text": {
         "fr": "Ich stelle mich vor signifie se présenter. Ich stelle mir etwas vor signifie imaginer quelque chose. Dans Stell dir vor, le contenu imaginé suit souvent sous forme de proposition.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-51-b7",
       "title": {
-        "fr": "Lassen und Wortstellung",
+        "fr": "Lassen et ordre des mots",
         "de": "Lassen und Wortstellung",
-        "ar": "Lassen und Wortstellung",
-        "en": "Lassen und Wortstellung"
+        "ar": "الفعل lassen وترتيب الكلمات",
+        "en": "Lassen and word order"
       },
       "text": {
         "fr": "Dans ich lasse mir die Haare schneiden, mir est au datif et die Haare à l’accusatif. Dans ich lasse mich untersuchen, mich est la personne examinée. Le pronom non accentué se place généralement près du verbe conjugué et du sujet.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-51-b8",
       "title": {
-        "fr": "Reflexivpronomen",
+        "fr": "Pronoms réfléchis",
         "de": "Reflexivpronomen",
-        "ar": "Reflexivpronomen",
-        "en": "Reflexivpronomen"
+        "ar": "الضمائر الانعكاسية",
+        "en": "Reflexive pronouns"
       },
       "headers": [
         {

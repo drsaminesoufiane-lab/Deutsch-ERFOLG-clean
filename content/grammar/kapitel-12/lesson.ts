@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-12-lesson",
   "title": {
-    "fr": "Ich kaufe ... ein",
+    "fr": "Je fais ... mes courses",
     "de": "Ich kaufe ... ein",
-    "ar": "Ich kaufe ... ein",
-    "en": "Ich kaufe ... ein"
+    "ar": "أتسوّق ...",
+    "en": "I go ... shopping"
   },
   "subtitle": {
     "fr": "Ordre des mots 2",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-1",
       "title": {
-        "fr": "Die Satzklammer",
+        "fr": "Le cadre verbal",
         "de": "Die Satzklammer",
-        "ar": "Die Satzklammer",
-        "en": "Die Satzklammer"
+        "ar": "الإطار الفعلي",
+        "en": "The verb bracket"
       },
       "text": {
         "fr": "Lorsque le prédicat a deux parties, le verbe conjugué forme le bord gauche et l’autre partie le bord droit. Les compléments se trouvent souvent entre les deux : Ich | kaufe | heute Gemüse | ein. Le premier groupe peut changer sans déplacer le bord droit.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-2",
       "title": {
-        "fr": "Klammerformen",
+        "fr": "Formes du cadre verbal",
         "de": "Klammerformen",
-        "ar": "Klammerformen",
-        "en": "Klammerformen"
+        "ar": "صيغ الإطار الفعلي",
+        "en": "Verb bracket forms"
       },
       "headers": [
         {
@@ -295,10 +295,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-3",
       "title": {
-        "fr": "Echte und ähnliche Klammern",
+        "fr": "Cadres verbaux véritables et structures similaires",
         "de": "Echte und ähnliche Klammern",
-        "ar": "Echte und ähnliche Klammern",
-        "en": "Echte und ähnliche Klammern"
+        "ar": "الإطارات الفعلية الحقيقية والتراكيب المشابهة",
+        "en": "True verb brackets and similar structures"
       },
       "text": {
         "fr": "Les modaux, les verbes séparables et le Perfekt forment une véritable parenthèse verbale. Sein + adjectif, gehen + infinitif et certaines expressions nom-verbe ont souvent une disposition similaire. Un nom objet ordinaire n’est cependant pas une partie verbale obligatoire de fin de phrase.",
@@ -311,10 +311,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-4",
       "title": {
-        "fr": "Fragen und Zeitangaben",
+        "fr": "Questions et indications temporelles",
         "de": "Fragen und Zeitangaben",
-        "ar": "Fragen und Zeitangaben",
-        "en": "Fragen und Zeitangaben"
+        "ar": "الأسئلة والتعبيرات الزمنية",
+        "en": "Questions and time expressions"
       },
       "text": {
         "fr": "Heute kaufe ich ein : aujourd’hui occupe la première position. Wann kaufst du ein? : le mot interrogatif occupe cette position. Kaufst du heute ein? : le verbe commence la question. Dans les trois cas, ein reste à la fin.",
@@ -327,10 +327,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Modalverben und trennbare Verben",
+        "fr": "Verbes modaux et verbes séparables",
         "de": "Modalverben und trennbare Verben",
-        "ar": "Modalverben und trennbare Verben",
-        "en": "Modalverben und trennbare Verben"
+        "ar": "الأفعال الناقصة والقابلة للفصل",
+        "en": "Modal and separable verbs"
       },
       "items": [
         {
@@ -499,10 +499,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Adjektive und Verbverbindungen",
+        "fr": "Adjectifs et combinaisons verbales",
         "de": "Adjektive und Verbverbindungen",
-        "ar": "Adjektive und Verbverbindungen",
-        "en": "Adjektive und Verbverbindungen"
+        "ar": "الصفات والتراكيب الفعلية",
+        "en": "Adjectives and verb combinations"
       },
       "items": [
         {
@@ -671,10 +671,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Perfekt und Fragen",
+        "fr": "Parfait allemand et questions",
         "de": "Perfekt und Fragen",
-        "ar": "Perfekt und Fragen",
-        "en": "Perfekt und Fragen"
+        "ar": "الماضي المركب (Perfekt) والأسئلة",
+        "en": "Perfect tense and questions"
       },
       "items": [
         {
@@ -843,10 +843,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Was willst du heute machen? (Que veux-tu faire aujourd’hui ?)\nB: Ich will einkaufen. Danach räume ich die Küche auf. (Je veux faire les courses. Ensuite je range la cuisine.)",
@@ -859,10 +859,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -876,10 +876,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-05",
   "title": {
-    "fr": "Ich muss, ich kann, ich will",
+    "fr": "Je dois, je peux, je veux",
     "de": "Ich muss, ich kann, ich will",
-    "ar": "Ich muss, ich kann, ich will",
-    "en": "Ich muss, ich kann, ich will"
+    "ar": "يجب عليّ، أستطيع، أريد",
+    "en": "I must, I can, I want"
   },
   "subtitle": {
     "fr": "Verbes modaux : conjugaison et position",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-intro",
       "title": {
-        "fr": "Modalverben und ihre Bedeutung",
+        "fr": "Verbes modaux et leur sens",
         "de": "Modalverben und ihre Bedeutung",
-        "ar": "Modalverben und ihre Bedeutung",
-        "en": "Modalverben und ihre Bedeutung"
+        "ar": "الأفعال الناقصة ومعانيها",
+        "en": "Modal verbs and their meanings"
       },
       "text": {
         "fr": "Un verbe modal précise le rapport à l’action : obligation, capacité, permission, volonté, consigne ou souhait. Le verbe principal exprime l’action elle-même. Compare : Ich arbeite. → Ich muss arbeiten.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-modal",
       "title": {
-        "fr": "Bedeutungen",
+        "fr": "Significations",
         "de": "Bedeutungen",
-        "ar": "Bedeutungen",
-        "en": "Bedeutungen"
+        "ar": "المعاني",
+        "en": "Meanings"
       },
       "headers": [
         {
@@ -169,10 +169,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-konjugation",
       "title": {
-        "fr": "Konjugation",
+        "fr": "Conjugaison",
         "de": "Konjugation",
-        "ar": "Konjugation",
-        "en": "Konjugation"
+        "ar": "التصريف",
+        "en": "Conjugation"
       },
       "headers": [
         {
@@ -507,10 +507,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-klammer",
       "title": {
-        "fr": "Die Satzklammer",
+        "fr": "Le cadre verbal",
         "de": "Die Satzklammer",
-        "ar": "Die Satzklammer",
-        "en": "Die Satzklammer"
+        "ar": "الإطار الفعلي",
+        "en": "The verb bracket"
       },
       "text": {
         "fr": "Dans une proposition principale, le modal conjugué est en deuxième position et le verbe principal à l’infinitif (sans zu) en fin de phrase. Même un verbe séparable reste entier : Morgen muss ich früh aufstehen. Dans une question oui/non, le modal est en première position : Kannst du kommen? Si l’action est évidente dans le contexte, l’infinitif peut être omis : Ich möchte Wasser.",
@@ -523,10 +523,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-negation",
       "title": {
-        "fr": "Nicht müssen oder nicht dürfen?",
+        "fr": "Ne pas être obligé ou ne pas avoir le droit ?",
         "de": "Nicht müssen oder nicht dürfen?",
-        "ar": "Nicht müssen oder nicht dürfen?",
-        "en": "Nicht müssen oder nicht dürfen?"
+        "ar": "عدم الإلزام أم المنع؟",
+        "en": "Not having to or not being allowed to?"
       },
       "text": {
         "fr": "nicht müssen = ne pas être obligé (on peut quand même le faire). nicht dürfen = ne pas avoir le droit (interdiction). Ich muss nicht arbeiten : je peux me reposer. Ich darf hier nicht parken : stationner est interdit.",
@@ -539,10 +539,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Beispiele 1–10",
+        "fr": "Exemples 1–10",
         "de": "Beispiele 1–10",
-        "ar": "Beispiele 1–10",
-        "en": "Beispiele 1–10"
+        "ar": "أمثلة 1–10",
+        "en": "Examples 1–10"
       },
       "items": [
         {
@@ -711,10 +711,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Beispiele 11–20",
+        "fr": "Exemples 11–20",
         "de": "Beispiele 11–20",
-        "ar": "Beispiele 11–20",
-        "en": "Beispiele 11–20"
+        "ar": "أمثلة 11–20",
+        "en": "Examples 11–20"
       },
       "items": [
         {
@@ -883,10 +883,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Beispiele 21–30",
+        "fr": "Exemples 21–30",
         "de": "Beispiele 21–30",
-        "ar": "Beispiele 21–30",
-        "en": "Beispiele 21–30"
+        "ar": "أمثلة 21–30",
+        "en": "Examples 21–30"
       },
       "items": [
         {
@@ -1055,10 +1055,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog: Am Wochenende",
+        "fr": "Mini-dialogue : le week-end",
         "de": "Mini-Dialog: Am Wochenende",
-        "ar": "Mini-Dialog: Am Wochenende",
-        "en": "Mini-Dialog: Am Wochenende"
+        "ar": "حوار قصير: في عطلة نهاية الأسبوع",
+        "en": "Mini-dialogue: at the weekend"
       },
       "text": {
         "fr": "A: Kannst du am Samstag kommen? (Peux-tu venir samedi ?)\nB: Nein, ich muss arbeiten. (Non, je dois travailler.)\nA: Und am Sonntag? (Et dimanche ?)\nB: Da kann ich kommen. Ich möchte mit euch frühstücken. (Là, je peux venir. Je voudrais prendre le petit déjeuner avec vous.)",
@@ -1071,10 +1071,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -1088,10 +1088,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

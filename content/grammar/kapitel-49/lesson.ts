@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-49-lesson",
   "title": {
-    "fr": "Er kam, sah und sagte",
+    "fr": "Il vint, vit et dit",
     "de": "Er kam, sah und sagte",
-    "ar": "Er kam, sah und sagte",
-    "en": "Er kam, sah und sagte"
+    "ar": "جاء ورأى وقال",
+    "en": "He came, saw and said"
   },
   "subtitle": {
     "fr": "Le prétérit",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-49-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Conjuguer les verbes réguliers, forts et mixtes au Präteritum et raconter des événements passés.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-49-b2",
       "title": {
-        "fr": "Regelmäßige Verben",
+        "fr": "Verbes réguliers",
         "de": "Regelmäßige Verben",
-        "ar": "Regelmäßige Verben",
-        "en": "Regelmäßige Verben"
+        "ar": "الأفعال المنتظمة",
+        "en": "Regular verbs"
       },
       "text": {
         "fr": "Les verbes faibles ajoutent -te, -test, -te, -ten, -tet, -ten au radical. Après un radical en -t ou -d, on insère généralement un e : arbeiten → arbeitete, baden → badete. Les verbes à particule séparable placent cette particule en fin de principale : er kaufte ein.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-49-b3",
       "title": {
-        "fr": "Starke Verben",
+        "fr": "Verbes forts",
         "de": "Starke Verben",
-        "ar": "Starke Verben",
-        "en": "Starke Verben"
+        "ar": "الأفعال القوية",
+        "en": "Strong verbs"
       },
       "text": {
         "fr": "Les verbes forts changent généralement de voyelle au Präteritum. Les formes ich et er/sie/es n’ont pas de terminaison personnelle : ich kam, er kam. Les autres prennent -st, -en, -t, -en : du kamst, wir kamen, ihr kamt, sie kamen. Apprenez chaque radical avec son infinitif.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-49-b4",
       "title": {
-        "fr": "Gemischte Verben",
+        "fr": "Verbes mixtes",
         "de": "Gemischte Verben",
-        "ar": "Gemischte Verben",
-        "en": "Gemischte Verben"
+        "ar": "الأفعال المختلطة",
+        "en": "Mixed verbs"
       },
       "text": {
         "fr": "Les verbes mixtes combinent un radical modifié et les terminaisons faibles : denken → dachte, bringen → brachte, nennen → nannte, wissen → wusste. Ainsi du dachtest et wir brachten, et non du denkst pour le passé.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-49-b5",
       "title": {
-        "fr": "Präteritum und Perfekt",
+        "fr": "Prétérit et parfait allemand",
         "de": "Präteritum und Perfekt",
-        "ar": "Präteritum und Perfekt",
-        "en": "Präteritum und Perfekt"
+        "ar": "الماضي البسيط والماضي المركب",
+        "en": "Simple past and perfect tense"
       },
       "text": {
         "fr": "Le Präteritum domine dans les contes, récits écrits et articles relatant des faits passés. Le Perfekt est fréquent dans la conversation. Sein, haben et les modaux restent très courants au Präteritum à l’oral ; wusste, fand, ging et es gab le sont aussi. Le choix dépend du registre, de la région et du contexte.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-49-b6",
       "title": {
-        "fr": "Trennbare Verben",
+        "fr": "Verbes séparables",
         "de": "Trennbare Verben",
-        "ar": "Trennbare Verben",
-        "en": "Trennbare Verben"
+        "ar": "الأفعال القابلة للفصل",
+        "en": "Separable verbs"
       },
       "text": {
         "fr": "Dans une principale, la particule séparable va à la fin : Er stand früh auf. Dans une subordonnée introduite par als, weil ou dass, le verbe est regroupé à la fin : als er früh aufstand. Le radical suit la conjugaison du verbe de base : aufstehen → stand auf.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-49-b7",
       "title": {
-        "fr": "Sein, haben und Modalverben",
+        "fr": "Sein, haben et verbes modaux",
         "de": "Sein, haben und Modalverben",
-        "ar": "Sein, haben und Modalverben",
-        "en": "Sein, haben und Modalverben"
+        "ar": "Sein و haben والأفعال الناقصة",
+        "en": "Sein, haben and modal verbs"
       },
       "text": {
         "fr": "Sein → war, haben → hatte et les verbes modaux konnte, musste, durfte, wollte, sollte décrivent des états, possessions, capacités ou obligations dans le passé. Avec un modal, l’autre verbe reste à l’infinitif : Sie musste arbeiten.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-49-b8",
       "title": {
-        "fr": "Konjugation",
+        "fr": "Conjugaison",
         "de": "Konjugation",
-        "ar": "Konjugation",
-        "en": "Konjugation"
+        "ar": "التصريف",
+        "en": "Conjugation"
       },
       "headers": [
         {

@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-79-lesson",
   "title": {
-    "fr": "Deutsches Bier",
+    "fr": "Bière allemande",
     "de": "Deutsches Bier",
-    "ar": "Deutsches Bier",
-    "en": "Deutsches Bier"
+    "ar": "بيرة ألمانية",
+    "en": "German beer"
   },
   "subtitle": {
     "fr": "Déclinaison des adjectifs avec et sans article",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-79-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Choisir la terminaison selon le cas, le genre, le nombre et le déterminant.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-79-b2",
       "title": {
-        "fr": "Schwache Deklination",
+        "fr": "Déclinaison faible",
         "de": "Schwache Deklination",
-        "ar": "Schwache Deklination",
-        "en": "Schwache Deklination"
+        "ar": "التصريف الضعيف",
+        "en": "Weak declension"
       },
       "text": {
         "fr": "Après der/die/das et leurs formes fléchies, l’adjectif prend -e au nominatif singulier et à l’accusatif féminin/neutre singulier ; -en dans tous les autres cas. Le déterminant indique déjà le cas et le genre.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-79-b3",
       "title": {
-        "fr": "Gemischte Deklination",
+        "fr": "Déclinaison mixte",
         "de": "Gemischte Deklination",
-        "ar": "Gemischte Deklination",
-        "en": "Gemischte Deklination"
+        "ar": "التصريف المختلط",
+        "en": "Mixed declension"
       },
       "text": {
         "fr": "Après ein, kein et les possessifs, les formes sans terminaison de l’article exigent une terminaison forte de l’adjectif : ein guter Mann, ein gutes Kind. Les autres suivent le modèle faible ; au pluriel avec kein ou mein, l’adjectif prend toujours -en.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-79-b4",
       "title": {
-        "fr": "Starke Deklination",
+        "fr": "Déclinaison forte",
         "de": "Starke Deklination",
-        "ar": "Starke Deklination",
-        "en": "Starke Deklination"
+        "ar": "التصريف القوي",
+        "en": "Strong declension"
       },
       "text": {
         "fr": "Sans déterminant, l’adjectif indique normalement le genre et le cas : guter Kaffee, frische Milch, mit kaltem Wasser. Au génitif masculin et neutre, il prend exceptionnellement -en : wegen starken Regens.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-79-b5",
       "title": {
-        "fr": "Kasus und Nomen",
+        "fr": "Cas grammaticaux et noms",
         "de": "Kasus und Nomen",
-        "ar": "Kasus und Nomen",
-        "en": "Kasus und Nomen"
+        "ar": "الحالات الإعرابية والأسماء",
+        "en": "Grammatical cases and nouns"
       },
       "text": {
         "fr": "Déterminez d’abord le cas du groupe nominal : sujet = nominatif, objet direct = accusatif, mit = datif, wegen/trotz = génitif standard. Au datif pluriel, le nom prend souvent aussi -n, sauf s’il se termine déjà en -n ou -s.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-79-b6",
       "title": {
-        "fr": "Prädikative Adjektive",
+        "fr": "Adjectifs attributs",
         "de": "Prädikative Adjektive",
-        "ar": "Prädikative Adjektive",
-        "en": "Prädikative Adjektive"
+        "ar": "الصفات الخبرية",
+        "en": "Predicative adjectives"
       },
       "text": {
         "fr": "Après sein, werden ou bleiben, l’adjectif attribut du sujet n’est pas décliné : Die Stadt ist schön. Devant un nom, plusieurs adjectifs de même rang prennent normalement la même terminaison : frischer, leckerer Fisch.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-79-b7",
       "title": {
-        "fr": "Adjektivendungen",
+        "fr": "Terminaisons des adjectifs",
         "de": "Adjektivendungen",
-        "ar": "Adjektivendungen",
-        "en": "Adjektivendungen"
+        "ar": "نهايات الصفات",
+        "en": "Adjective endings"
       },
       "headers": [
         {
@@ -303,10 +303,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-79-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

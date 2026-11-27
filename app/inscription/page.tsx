@@ -1,6 +1,12 @@
 
 'use client'
 
+// DE_AUTH_FLOATING_LANGUAGE_V1
+import FloatingPageTools from '@/components/student/FloatingPageTools'
+import { useLanguage } from '@/contexts/LanguageContext'
+
+import GoogleAuthButton from '@/components/auth/GoogleAuthButton'
+
 import { useState } from 'react'
 import Link from 'next/link'
 import {
@@ -17,7 +23,6 @@ import {
 } from 'lucide-react'
 import { supabase } from '@/lib/supabase'
 
-type Lang = 'fr' | 'de' | 'ar' | 'en'
 
 const traductions = {
   fr: {
@@ -275,28 +280,105 @@ const deAuthBlueCopy = {
   }
 }
 
+const registrationValidationCopy = {
+  "fr": {
+    "requiredNote": "* Champs obligatoires",
+    "confirm": "Confirmer le mot de passe",
+    "confirmPlaceholder": "Saisis de nouveau ton mot de passe",
+    "country": "Choisis ton pays",
+    "level": "Choisis ton niveau",
+    "required": "Renseigne ce champ obligatoire.",
+    "email": "Saisis une adresse e-mail valide.",
+    "length": "Le mot de passe doit contenir au moins 6 caract\u00e8res.",
+    "mismatch": "Les deux mots de passe ne correspondent pas.",
+    "match": "Les mots de passe correspondent."
+  },
+  "de": {
+    "requiredNote": "* Pflichtfelder",
+    "confirm": "Passwort best\u00e4tigen",
+    "confirmPlaceholder": "Gib dein Passwort erneut ein",
+    "country": "W\u00e4hle dein Land",
+    "level": "W\u00e4hle dein Niveau",
+    "required": "Bitte f\u00fclle dieses Pflichtfeld aus.",
+    "email": "Gib eine g\u00fcltige E-Mail-Adresse ein.",
+    "length": "Das Passwort muss mindestens 6 Zeichen enthalten.",
+    "mismatch": "Die Passw\u00f6rter stimmen nicht \u00fcberein.",
+    "match": "Die Passw\u00f6rter stimmen \u00fcberein."
+  },
+  "en": {
+    "requiredNote": "* Required fields",
+    "confirm": "Confirm password",
+    "confirmPlaceholder": "Enter your password again",
+    "country": "Choose your country",
+    "level": "Choose your level",
+    "required": "Please complete this required field.",
+    "email": "Enter a valid email address.",
+    "length": "The password must be at least 6 characters long.",
+    "mismatch": "The passwords do not match.",
+    "match": "The passwords match."
+  },
+  "ar": {
+    "requiredNote": "* \u0627\u0644\u062d\u0642\u0648\u0644 \u0627\u0644\u0625\u0644\u0632\u0627\u0645\u064a\u0629",
+    "confirm": "\u062a\u0623\u0643\u064a\u062f \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631",
+    "confirmPlaceholder": "\u0623\u0639\u062f \u0625\u062f\u062e\u0627\u0644 \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631",
+    "country": "\u0627\u062e\u062a\u0631 \u0628\u0644\u062f\u0643",
+    "level": "\u0627\u062e\u062a\u0631 \u0645\u0633\u062a\u0648\u0627\u0643",
+    "required": "\u064a\u0631\u062c\u0649 \u0645\u0644\u0621 \u0647\u0630\u0627 \u0627\u0644\u062d\u0642\u0644 \u0627\u0644\u0625\u0644\u0632\u0627\u0645\u064a.",
+    "email": "\u0623\u062f\u062e\u0644 \u0628\u0631\u064a\u062f\u0627\u064b \u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a\u0627\u064b \u0635\u0627\u0644\u062d\u0627\u064b.",
+    "length": "\u064a\u062c\u0628 \u0623\u0646 \u062a\u062d\u062a\u0648\u064a \u0643\u0644\u0645\u0629 \u0627\u0644\u0645\u0631\u0648\u0631 \u0639\u0644\u0649 6 \u0623\u062d\u0631\u0641 \u0639\u0644\u0649 \u0627\u0644\u0623\u0642\u0644.",
+    "mismatch": "\u0643\u0644\u0645\u062a\u0627 \u0627\u0644\u0645\u0631\u0648\u0631 \u063a\u064a\u0631 \u0645\u062a\u0637\u0627\u0628\u0642\u062a\u064a\u0646.",
+    "match": "\u0643\u0644\u0645\u062a\u0627 \u0627\u0644\u0645\u0631\u0648\u0631 \u0645\u062a\u0637\u0627\u0628\u0642\u062a\u0627\u0646."
+  }
+} as const
+
+type RegistrationError = { field: string; reason: "required" | "email" | "length" | "mismatch" }
+
 export default function InscriptionPage() {
   const [nom, setNom] = useState('')
   const [pseudo, setPseudo] = useState('')
   const [pseudoError, setPseudoError] = useState<'invalid' | 'taken' | 'checkError' | ''>('')
   const [telephone, setTelephone] = useState('')
   const [email, setEmail] = useState('')
-  const [pays, setPays] = useState('Maroc')
+  const [pays, setPays] = useState('')
   const [ville, setVille] = useState('')
-  const [niveau, setNiveau] = useState('B1')
+  const [niveau, setNiveau] = useState('')
   const [motDePasse, setMotDePasse] = useState('')
+  const [confirmationMotDePasse, setConfirmationMotDePasse] = useState('')
+  const [voirConfirmation, setVoirConfirmation] = useState(false)
+  const [registrationError, setRegistrationError] = useState<RegistrationError | null>(null)
   const [voirMotDePasse, setVoirMotDePasse] = useState(false)
   const [message, setMessage] = useState('')
   const [chargement, setChargement] = useState(false)
   const [succes, setSucces] = useState(false)
-  const [lang, setLang] = useState<Lang>('de')
+  const { language: lang } = useLanguage()
 
   const t = traductions[lang]
+  const confirmationTitle = ({"fr": "Confirme ton compte par e-mail", "de": "Best\u00e4tige dein Konto per E-Mail", "en": "Confirm your account by email", "ar": "\u0623\u0643\u0651\u062f \u062d\u0633\u0627\u0628\u0643 \u0639\u0628\u0631 \u0627\u0644\u0628\u0631\u064a\u062f \u0627\u0644\u0625\u0644\u0643\u062a\u0631\u0648\u0646\u064a"} as const)[lang]
+  const rv = registrationValidationCopy[lang]
   const pt = pseudoTranslations[lang]
 
   async function inscrire(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     if (chargement) return
+    setRegistrationError(null)
+    setMessage('')
+    const form = e.currentTarget
+    const fail = (field: string, reason: RegistrationError['reason']) => {
+      setRegistrationError({ field, reason })
+      form.querySelector<HTMLElement>(`#${field}`)?.focus()
+    }
+    const fields = [
+      ['nom', nom], ['telephone', telephone], ['pays', pays],
+      ['ville', ville], ['email', email], ['niveau', niveau],
+      ['password', motDePasse], ['confirm-password', confirmationMotDePasse],
+    ]
+    const missing = fields.find(([, value]) => !value.trim())
+    if (missing) return fail(missing[0], 'required')
+    if (form.querySelector<HTMLInputElement>('#email')?.validity.typeMismatch) {
+      return fail('email', 'email')
+    }
+    if (motDePasse.length < 6) return fail('password', 'length')
+    if (motDePasse !== confirmationMotDePasse) return fail('confirm-password', 'mismatch')
     const pseudoChoisi = pseudo.trim()
     setPseudoError('')
     setMessage('')
@@ -344,6 +426,7 @@ export default function InscriptionPage() {
         setMessage(error.message || t.erreur)
       } else {
         setSucces(true)
+        window.scrollTo(0, 0)
         setMessage(t.succes)
       }
     } catch {
@@ -354,7 +437,8 @@ export default function InscriptionPage() {
   }
 
   return (
-    <main className="register-page" dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+    <>
+    <main className="register-page" data-email-confirmation={succes ? "true" : undefined} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
       <section className="register-visual">
         <Link href="/" className="register-brand">
           <span className="register-logo">
@@ -405,24 +489,7 @@ export default function InscriptionPage() {
       <section className="register-form-side">
         <div className="register-form-container">
 
-          <div className="register-language">
-            <label htmlFor="language">{t.langues}</label>
-
-            <div className="register-language-select">
-              <select
-                id="language"
-                value={lang}
-                onChange={e => setLang(e.target.value as Lang)}
-              >
-                <option value="fr">🇫🇷 Français</option>
-                <option value="de">🇩🇪 Deutsch</option>
-                <option value="ar">🇲🇦 العربية</option>
-                <option value="en">🇬🇧 English</option>
-              </select>
-
-              <span className="register-language-arrow">⌄</span>
-            </div>
-          </div>
+          
 
           <div className="register-mobile-brand">
             <span className="register-logo">
@@ -439,18 +506,20 @@ export default function InscriptionPage() {
             <p>{t.intro}</p>
           </div>
 
+          {!succes && <GoogleAuthButton language={lang} disabled={chargement} />}
+
           {succes ? (
             <div className="register-confirmation" role="status">
               <div className="register-confirmation-icon">
                 <Mail size={32} />
               </div>
 
-              <h2>{t.emailTitle}</h2>
+              <h2>{confirmationTitle}</h2>
 
               <p>{t.emailDescription}</p>
 
               <strong className="register-confirmation-email">
-                {email}
+                <bdi>{email.trim()}</bdi>
               </strong>
 
               <div className="register-confirmation-instructions">
@@ -474,10 +543,13 @@ export default function InscriptionPage() {
               </Link>
             </div>
           ) : (
-            <form onSubmit={inscrire} className="register-form">
-              <label htmlFor="nom">{t.nom}</label>
+            <form onSubmit={inscrire} className="register-form" noValidate onChange={() => setRegistrationError(null)}>
+              <p style={{ fontSize: 12, color: "#64748b", margin: "0 0 12px" }}>{rv.requiredNote}</p>
+              <label htmlFor="nom">{t.nom}<span aria-hidden="true" style={{ color: "#b44d4d" }}> *</span></label>
               <input
                 id="nom"
+                aria-invalid={registrationError?.field === "nom"}
+                aria-describedby={registrationError?.field === "nom" ? "registration-validation-error" : undefined}
                 type="text"
                 placeholder={t.nomPlaceholder}
                 value={nom}
@@ -509,9 +581,11 @@ export default function InscriptionPage() {
                 <p id="league-pseudo-error" className="register-pseudo-error" role="alert">{pt[pseudoError]}</p>
               )}
 
-              <label htmlFor="telephone">{t.telephone}</label>
+              <label htmlFor="telephone">{t.telephone}<span aria-hidden="true" style={{ color: "#b44d4d" }}> *</span></label>
               <input
                 id="telephone"
+                aria-invalid={registrationError?.field === "telephone"}
+                aria-describedby={registrationError?.field === "telephone" ? "registration-validation-error" : undefined}
                 type="tel"
                 placeholder={t.telephonePlaceholder}
                 value={telephone}
@@ -519,13 +593,16 @@ export default function InscriptionPage() {
                 required
               />
 
-              <label htmlFor="pays">{t.pays}</label>
+              <label htmlFor="pays">{t.pays}<span aria-hidden="true" style={{ color: "#b44d4d" }}> *</span></label>
               <select
                 id="pays"
+                aria-invalid={registrationError?.field === "pays"}
+                aria-describedby={registrationError?.field === "pays" ? "registration-validation-error" : undefined}
                 value={pays}
                 onChange={e => setPays(e.target.value)}
                 required
               >
+                <option value="" disabled>{rv.country}</option>
                 {paysDisponibles.map(option => (
                   <option key={option.value} value={option.value}>
                     {option.label}
@@ -533,9 +610,11 @@ export default function InscriptionPage() {
                 ))}
               </select>
 
-              <label htmlFor="ville">{t.ville}</label>
+              <label htmlFor="ville">{t.ville}<span aria-hidden="true" style={{ color: "#b44d4d" }}> *</span></label>
               <input
                 id="ville"
+                aria-invalid={registrationError?.field === "ville"}
+                aria-describedby={registrationError?.field === "ville" ? "registration-validation-error" : undefined}
                 type="text"
                 placeholder={t.villePlaceholder}
                 value={ville}
@@ -543,9 +622,11 @@ export default function InscriptionPage() {
                 required
               />
 
-              <label htmlFor="email">{t.email}</label>
+              <label htmlFor="email">{t.email}<span aria-hidden="true" style={{ color: "#b44d4d" }}> *</span></label>
               <input
                 id="email"
+                aria-invalid={registrationError?.field === "email"}
+                aria-describedby={registrationError?.field === "email" ? "registration-validation-error" : undefined}
                 type="email"
                 placeholder="exemple@email.com"
                 value={email}
@@ -553,24 +634,30 @@ export default function InscriptionPage() {
                 required
               />
 
-              <label htmlFor="niveau">{t.niveau}</label>
+              <label htmlFor="niveau">{t.niveau}<span aria-hidden="true" style={{ color: "#b44d4d" }}> *</span></label>
               <select
                 id="niveau"
+                aria-invalid={registrationError?.field === "niveau"}
+                aria-describedby={registrationError?.field === "niveau" ? "registration-validation-error" : undefined}
                 value={niveau}
                 onChange={e => setNiveau(e.target.value)}
                 required
               >
+                <option value="" disabled>{rv.level}</option>
                 <option value="A1">A1</option>
                   <option value="A2">A2</option>
                   <option value="B1">B1</option>
                   <option value="B2">B2</option>
                   </select>
 
-              <label htmlFor="password">{t.password}</label>
+              <label htmlFor="password">{t.password}<span aria-hidden="true" style={{ color: "#b44d4d" }}> *</span></label>
 
               <div className="register-password">
                 <input
                   id="password"
+                  autoComplete="new-password"
+                aria-invalid={registrationError?.field === "password"}
+                aria-describedby={registrationError?.field === "password" ? "registration-validation-error" : undefined}
                   type={voirMotDePasse ? 'text' : 'password'}
                   placeholder={t.passwordPlaceholder}
                   value={motDePasse}
@@ -591,6 +678,33 @@ export default function InscriptionPage() {
                   )}
                 </button>
               </div>
+
+
+              <label htmlFor="confirm-password">{rv.confirm}<span aria-hidden="true" style={{ color: "#b44d4d" }}> *</span></label>
+              <div className="register-password">
+                <input
+                  id="confirm-password"
+                  type={voirConfirmation ? 'text' : 'password'}
+                  placeholder={rv.confirmPlaceholder}
+                  value={confirmationMotDePasse}
+                  onChange={e => setConfirmationMotDePasse(e.target.value)}
+                  autoComplete="new-password"
+                  minLength={6}
+                  required
+                  aria-invalid={registrationError?.field === 'confirm-password' || (!!confirmationMotDePasse && confirmationMotDePasse !== motDePasse)}
+                  aria-describedby={registrationError?.field === 'confirm-password' ? 'registration-password-match registration-validation-error' : 'registration-password-match'}
+                />
+                <button type="button" onClick={() => setVoirConfirmation(!voirConfirmation)} aria-label={t.afficher}>
+                  {voirConfirmation ? <EyeOff size={19} /> : <Eye size={19} />}
+                </button>
+              </div>
+              <p id="registration-password-match" aria-live="polite" style={{ fontSize: 12, margin: '0 0 12px', color: confirmationMotDePasse === motDePasse ? '#15803d' : '#b44d4d' }}>
+                {confirmationMotDePasse ? (confirmationMotDePasse === motDePasse ? rv.match : rv.mismatch) : ''}
+              </p>
+              {registrationError && (
+                <p id="registration-validation-error" className="register-error" role="alert">{rv[registrationError.reason]}</p>
+              )}
+
 
               <button
                 type="submit"
@@ -627,6 +741,84 @@ export default function InscriptionPage() {
       </section>
 
       <style jsx>{`
+        @media (max-width: 700px) {
+          .register-page .register-form-side { padding-bottom: max(85px, calc(70px + env(safe-area-inset-bottom))); }
+        }
+
+        /* Dedicated email-confirmation screen. The signup form is unchanged. */
+        .register-page[data-email-confirmation="true"] {
+          display: grid !important;
+          grid-template-columns: minmax(0, 1fr) !important;
+          min-height: 100vh;
+          background: #f7f5f0;
+        }
+        .register-page[data-email-confirmation="true"] .register-visual,
+        .register-page[data-email-confirmation="true"] .register-heading,
+        .register-page[data-email-confirmation="true"] .register-bottom {
+          display: none !important;
+        }
+        .register-page[data-email-confirmation="true"] .register-form-side {
+          width: 100%;
+          min-height: 100vh;
+          padding: 32px 18px;
+          box-sizing: border-box;
+        }
+        .register-page[data-email-confirmation="true"] .register-form-container {
+          max-width: 540px !important;
+          width: 100%;
+        }
+        .register-page[data-email-confirmation="true"] .register-mobile-brand {
+          display: flex !important;
+          justify-content: center;
+          margin: 12px 0 24px;
+          color: #192b43;
+        }
+        .register-page[data-email-confirmation="true"] .register-language {
+          margin-bottom: 16px;
+        }
+        .register-page[data-email-confirmation="true"] .register-confirmation {
+          margin: 0;
+          padding: clamp(22px, 5vw, 42px);
+          border: 1px solid #e1d6c3;
+          border-radius: 24px;
+          background: #fff;
+          box-shadow: 0 16px 50px rgba(25, 43, 67, 0.08);
+          text-align: center;
+        }
+        .register-page[data-email-confirmation="true"] .register-confirmation-icon {
+          width: 80px;
+          height: 80px;
+          background: #192b43;
+          color: #d6b56d;
+        }
+        .register-page[data-email-confirmation="true"] .register-confirmation h2 {
+          color: #192b43;
+          font-size: clamp(23px, 4vw, 30px);
+          line-height: 1.25;
+        }
+        .register-page[data-email-confirmation="true"] .register-confirmation-email {
+          background: #f7f5f0;
+          color: #192b43;
+          border-radius: 10px;
+          padding: 12px;
+        }
+        .register-page[data-email-confirmation="true"] .register-confirmation-instructions {
+          background: #f7f5f0;
+          color: #192b43;
+          text-align: start;
+          border: 1px solid #e1d6c3;
+        }
+        .register-page[data-email-confirmation="true"] .register-confirmation-instructions svg {
+          color: #a2854a;
+        }
+        .register-page[data-email-confirmation="true"] :global(.register-confirmation-link) {
+          background: #192b43;
+          color: #fff;
+          min-height: 48px;
+          border-radius: 12px;
+          box-sizing: border-box;
+        }
+
         .register-form #league-pseudonym { margin-bottom: 6px; }
         .register-form #league-pseudonym[aria-invalid="true"] { border-color: #b44d4d; }
         .register-pseudo-hint, .register-pseudo-error {
@@ -808,5 +1000,7 @@ export default function InscriptionPage() {
         }
       `}</style>
     </main>
+    <FloatingPageTools showOffer={false} />
+    </>
   )
 }

@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-80-lesson",
   "title": {
-    "fr": "Singende Vögel und fliegende Fische",
+    "fr": "Des oiseaux qui chantent et des poissons qui volent",
     "de": "Singende Vögel und fliegende Fische",
-    "ar": "Singende Vögel und fliegende Fische",
-    "en": "Singende Vögel und fliegende Fische"
+    "ar": "طيور تغرّد وأسماك تطير",
+    "en": "Singing birds and flying fish"
   },
   "subtitle": {
     "fr": "Participe présent comme adjectif",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-80-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Former le Partizip I, l’accorder et le distinguer du Partizip II.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-80-b2",
       "title": {
-        "fr": "Bildung des Partizips I",
+        "fr": "Formation du participe présent",
         "de": "Bildung des Partizips I",
-        "ar": "Bildung des Partizips I",
-        "en": "Bildung des Partizips I"
+        "ar": "تكوين اسم الفاعل (Partizip I)",
+        "en": "Forming the present participle"
       },
       "text": {
         "fr": "Ajoutez -d à l’infinitif : spielen → spielend, warten → wartend. Pour un verbe séparable, gardez le préfixe : aufgehen → aufgehend. Sein → seiend et tun → tuend sont des formes particulières. Devant un nom, ajoutez une terminaison d’adjectif.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-80-b3",
       "title": {
-        "fr": "Aktiv und gleichzeitig",
+        "fr": "Action active et simultanée",
         "de": "Aktiv und gleichzeitig",
-        "ar": "Aktiv und gleichzeitig",
-        "en": "Aktiv und gleichzeitig"
+        "ar": "الفعل المبني للمعلوم والمتزامن",
+        "en": "Active and simultaneous action"
       },
       "text": {
         "fr": "Le Partizip I décrit généralement une action active en cours au moment de référence : ein bellender Hund = ein Hund, der bellt. Le moment peut être passé, présent ou futur selon le verbe principal ; il ne signifie pas nécessairement « maintenant ».",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-80-b4",
       "title": {
-        "fr": "Adjektivdeklination",
+        "fr": "Déclinaison des adjectifs",
         "de": "Adjektivdeklination",
-        "ar": "Adjektivdeklination",
-        "en": "Adjektivdeklination"
+        "ar": "التصريف الإعرابي للصفات",
+        "en": "Adjective declension"
       },
       "text": {
         "fr": "Comme au chapitre 79, choisissez la terminaison d’après le genre, le cas et l’article : ein spielendes Kind, mit dem spielenden Kind, spielende Kinder. Le -d appartient au participe ; seule la terminaison qui suit varie.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-80-b5",
       "title": {
-        "fr": "Partizip I und Partizip II",
+        "fr": "Participe présent et participe passé",
         "de": "Partizip I und Partizip II",
-        "ar": "Partizip I und Partizip II",
-        "en": "Partizip I und Partizip II"
+        "ar": "اسم الفاعل واسم المفعول (Partizip I و II)",
+        "en": "Present and past participles"
       },
       "text": {
         "fr": "Le Partizip I est actif et souvent simultané : die sich öffnende Tür, la porte qui s’ouvre. Le Partizip II peut désigner un résultat ou un état : die geöffnete Tür, la porte ouverte. Avec les verbes intransitifs, il peut aussi indiquer une action achevée (der angekommene Zug).",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-80-b6",
       "title": {
-        "fr": "Lexikalisierte Adjektive und Gebrauch",
+        "fr": "Adjectifs lexicalisés et emploi",
         "de": "Lexikalisierte Adjektive und Gebrauch",
-        "ar": "Lexikalisierte Adjektive und Gebrauch",
-        "en": "Lexikalisierte Adjektive und Gebrauch"
+        "ar": "الصفات المستعملة ككلمات مستقلة واستخدامها",
+        "en": "Lexicalized adjectives and usage"
       },
       "text": {
         "fr": "Les participes adjectivés comme spannend, dringend ou anstrengend peuvent être attributifs (ein spannender Film) et prédicatifs (Der Film ist spannend). En dehors de ces adjectifs, le Partizip I s’emploie aussi adverbialement : Sie kam lachend herein. Au niveau B1, on privilégie la construction devant un nom.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-80-b7",
       "title": {
-        "fr": "Partizip I als Adjektiv",
+        "fr": "Participe présent employé comme adjectif",
         "de": "Partizip I als Adjektiv",
-        "ar": "Partizip I als Adjektiv",
-        "en": "Partizip I als Adjektiv"
+        "ar": "اسم الفاعل بوصفه صفة",
+        "en": "Present participle as an adjective"
       },
       "headers": [
         {
@@ -244,10 +244,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-80-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

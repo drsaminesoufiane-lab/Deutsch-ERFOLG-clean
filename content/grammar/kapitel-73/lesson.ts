@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-73-lesson",
   "title": {
-    "fr": "Während, bevor, nachdem und seit",
+    "fr": "Pendant que, avant que, après que et depuis que",
     "de": "Während, bevor, nachdem und seit",
-    "ar": "Während, bevor, nachdem und seit",
-    "en": "Während, bevor, nachdem und seit"
+    "ar": "بينما، قبل أن، بعد أن، ومنذ أن",
+    "en": "While, before, after and since"
   },
   "subtitle": {
     "fr": "Subordonnées temporelles",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-73-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Exprimer la simultanéité, l’antériorité et une situation qui dure.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-73-b2",
       "title": {
-        "fr": "Bevor",
+        "fr": "Bevor : avant que",
         "de": "Bevor",
-        "ar": "Bevor",
-        "en": "Bevor"
+        "ar": "Bevor: قبل أن",
+        "en": "Bevor: before"
       },
       "text": {
         "fr": "Bevor signifie avant que : l’événement de la principale se produit en premier. Dans Ich packe, bevor ich fahre, je prépare la valise puis je pars.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-73-b3",
       "title": {
-        "fr": "Nachdem",
+        "fr": "Nachdem : après que",
         "de": "Nachdem",
-        "ar": "Nachdem",
-        "en": "Nachdem"
+        "ar": "Nachdem: بعد أن",
+        "en": "Nachdem: after"
       },
       "text": {
         "fr": "Nachdem présente l’événement antérieur. Dans les exercices, combinez Perfekt dans la subordonnée et Präsens dans la principale, ou Plusquamperfekt avec une principale passée. Dans l’usage réel, d’autres combinaisons temporelles sont possibles si la chronologie est claire.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-73-b4",
       "title": {
-        "fr": "Während",
+        "fr": "Während : pendant que",
         "de": "Während",
-        "ar": "Während",
-        "en": "Während"
+        "ar": "Während: بينما",
+        "en": "Während: while"
       },
       "text": {
         "fr": "Während indique que deux événements se recouvrent dans le temps. Il peut aussi exprimer un contraste, mais ici on travaille son sens temporel.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-73-b5",
       "title": {
-        "fr": "Seit(dem)",
+        "fr": "Seit(dem) : depuis que",
         "de": "Seit(dem)",
-        "ar": "Seit(dem)",
-        "en": "Seit(dem)"
+        "ar": "Seit(dem): منذ أن",
+        "en": "Seit(dem): since"
       },
       "text": {
         "fr": "Seit ou seitdem comme conjonction relie un point de départ passé à une situation qui continue. Le temps dépend du sens : Seitdem ich hier wohne, kenne ich viele Leute.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-73-b6",
       "title": {
-        "fr": "Satzklammer und Komma",
+        "fr": "Cadre verbal et virgule",
         "de": "Satzklammer und Komma",
-        "ar": "Satzklammer und Komma",
-        "en": "Satzklammer und Komma"
+        "ar": "الإطار الفعلي والفاصلة",
+        "en": "Verb bracket and comma"
       },
       "text": {
         "fr": "Dans ces subordonnées, le verbe fini est à la fin. Si elles ouvrent la phrase, le verbe fini principal suit immédiatement la virgule.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-73-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

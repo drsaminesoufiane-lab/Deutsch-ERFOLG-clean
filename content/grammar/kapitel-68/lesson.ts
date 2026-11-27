@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-68-lesson",
   "title": {
-    "fr": "Es ist schön, zu feiern",
+    "fr": "C’est agréable de faire la fête",
     "de": "Es ist schön, zu feiern",
-    "ar": "Es ist schön, zu feiern",
-    "en": "Es ist schön, zu feiern"
+    "ar": "من الجميل الاحتفال",
+    "en": "It is nice to celebrate"
   },
   "subtitle": {
     "fr": "Infinitif avec zu",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-68-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Construire des groupes infinitifs et distinguer zu et dass.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-68-b2",
       "title": {
-        "fr": "Infinitivgruppen",
+        "fr": "Groupes infinitifs",
         "de": "Infinitivgruppen",
-        "ar": "Infinitivgruppen",
-        "en": "Infinitivgruppen"
+        "ar": "تراكيب المصدر",
+        "en": "Infinitive phrases"
       },
       "text": {
         "fr": "Après certains verbes (hoffen, versuchen, vergessen), adjectifs (es ist schön) et noms (Zeit, Lust, Chance), le second verbe se met à l’infinitif avec zu. Il n’a pas de sujet exprimé. Exemple : Ich hoffe, bald zu kommen.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-68-b3",
       "title": {
-        "fr": "Trennbare Verben",
+        "fr": "Verbes séparables",
         "de": "Trennbare Verben",
-        "ar": "Trennbare Verben",
-        "en": "Trennbare Verben"
+        "ar": "الأفعال القابلة للفصل",
+        "en": "Separable verbs"
       },
       "text": {
         "fr": "Avec un verbe séparable, zu s’insère entre le préfixe et le radical, en un mot : anrufen → anzurufen, aufstehen → aufzustehen. Avec un verbe inséparable, zu reste séparé : besuchen → zu besuchen.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-68-b4",
       "title": {
-        "fr": "Mehrere Infinitive",
+        "fr": "Plusieurs infinitifs",
         "de": "Mehrere Infinitive",
-        "ar": "Mehrere Infinitive",
-        "en": "Mehrere Infinitive"
+        "ar": "عدة مصادر",
+        "en": "Multiple infinitives"
       },
       "text": {
         "fr": "Quand le groupe contient un modal, zu précède le modal final : besser sprechen zu können. Avec spazieren gehen, zu précède gehen. Ne mettez pas zu devant chaque infinitif.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-68-b5",
       "title": {
-        "fr": "Infinitiv oder dass?",
+        "fr": "Infinitif ou dass ?",
         "de": "Infinitiv oder dass?",
-        "ar": "Infinitiv oder dass?",
-        "en": "Infinitiv oder dass?"
+        "ar": "المصدر أم dass؟",
+        "en": "Infinitive or dass?"
       },
       "text": {
         "fr": "Le sujet implicite de l’infinitif dépend du verbe principal : souvent le sujet (ich hoffe), parfois l’objet (ich rate dir) ou une personne générique (es ist schön). Si un sujet distinct doit être exprimé, utilisez dass + sujet + verbe conjugué final.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-68-b6",
       "title": {
-        "fr": "Komma und Satzbau",
+        "fr": "Virgule et structure de la phrase",
         "de": "Komma und Satzbau",
-        "ar": "Komma und Satzbau",
-        "en": "Komma und Satzbau"
+        "ar": "الفاصلة وبنية الجملة",
+        "en": "Comma and sentence structure"
       },
       "text": {
         "fr": "La virgule est obligatoire notamment si le groupe dépend d’un nom (Zeit), d’un mot annonciateur (es, daran) ou commence par um, ohne, statt. Dans les autres groupes infinitifs, elle est souvent facultative mais facilite la lecture. Le groupe verbal se place à la fin.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-68-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

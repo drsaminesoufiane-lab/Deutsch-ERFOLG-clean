@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-06",
   "title": {
-    "fr": "Kann ich oder muss ich?",
+    "fr": "Puis-je ou dois-je ?",
     "de": "Kann ich oder muss ich?",
-    "ar": "Kann ich oder muss ich?",
-    "en": "Kann ich oder muss ich?"
+    "ar": "هل أستطيع أم يجب عليّ؟",
+    "en": "Can I or must I?"
   },
   "subtitle": {
     "fr": "Verbes modaux : emploi",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-1",
       "title": {
-        "fr": "Bedeutung statt Übersetzung",
+        "fr": "Comprendre le sens plutôt que traduire",
         "de": "Bedeutung statt Übersetzung",
-        "ar": "Bedeutung statt Übersetzung",
-        "en": "Bedeutung statt Übersetzung"
+        "ar": "فهم المعنى بدل الترجمة",
+        "en": "Meaning rather than translation"
       },
       "text": {
         "fr": "Les modaux ne décrivent pas l’action elle-même, mais la relation du sujet à cette action : capacité, possibilité, permission, obligation, consigne ou souhait. En français, « pouvoir » peut correspondre à können ou dürfen ; il faut lire le contexte.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-2",
       "title": {
-        "fr": "Modalverben im Vergleich",
+        "fr": "Comparaison des verbes modaux",
         "de": "Modalverben im Vergleich",
-        "ar": "Modalverben im Vergleich",
-        "en": "Modalverben im Vergleich"
+        "ar": "مقارنة الأفعال الناقصة",
+        "en": "Comparing modal verbs"
       },
       "headers": [
         {
@@ -211,10 +211,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-3",
       "title": {
-        "fr": "Pflicht oder Verbot?",
+        "fr": "Obligation ou interdiction ?",
         "de": "Pflicht oder Verbot?",
-        "ar": "Pflicht oder Verbot?",
-        "en": "Pflicht oder Verbot?"
+        "ar": "إلزام أم منع؟",
+        "en": "Obligation or prohibition?"
       },
       "text": {
         "fr": "Compare : Du musst nicht kommen (tu peux rester chez toi) et Du darfst nicht kommen (tu n’as pas le droit de venir). Du musst kommen impose au contraire la présence. Le choix de la négation change le sens, pas seulement la forme.",
@@ -227,10 +227,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-4",
       "title": {
-        "fr": "Satzklammer und Fragen",
+        "fr": "Cadre verbal et questions",
         "de": "Satzklammer und Fragen",
-        "ar": "Satzklammer und Fragen",
-        "en": "Satzklammer und Fragen"
+        "ar": "الإطار الفعلي والأسئلة",
+        "en": "Verb bracket and questions"
       },
       "text": {
         "fr": "Dans une principale, le modal conjugué occupe la deuxième position ; l’action à l’infinitif sans zu est à la fin. Dans une question fermée, le modal vient en tête : Darf ich hier sitzen? Sans infinitif exprimé, le contexte peut suffire : Ich möchte einen Tee.",
@@ -243,10 +243,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-5",
       "title": {
-        "fr": "Wunsch, Rat und Auftrag",
+        "fr": "Souhait, conseil et consigne",
         "de": "Wunsch, Rat und Auftrag",
-        "ar": "Wunsch, Rat und Auftrag",
-        "en": "Wunsch, Rat und Auftrag"
+        "ar": "الرغبة والنصيحة والتكليف",
+        "en": "Wish, advice and instruction"
       },
       "text": {
         "fr": "Möchte est adapté aux demandes polies. Wollen exprime un projet direct, sans être forcément impoli quand on parle de soi. Sollen rapporte souvent une consigne externe : Der Arzt sagt, ich soll mehr schlafen. Une question Soll ich…? propose une action.",
@@ -259,10 +259,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Pflicht, Fähigkeit und Möglichkeit",
+        "fr": "Obligation, capacité et possibilité",
         "de": "Pflicht, Fähigkeit und Möglichkeit",
-        "ar": "Pflicht, Fähigkeit und Möglichkeit",
-        "en": "Pflicht, Fähigkeit und Möglichkeit"
+        "ar": "الإلزام والقدرة والإمكانية",
+        "en": "Obligation, ability and possibility"
       },
       "items": [
         {
@@ -431,10 +431,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Erlaubnis, Verbot und Wunsch",
+        "fr": "Autorisation, interdiction et souhait",
         "de": "Erlaubnis, Verbot und Wunsch",
-        "ar": "Erlaubnis, Verbot und Wunsch",
-        "en": "Erlaubnis, Verbot und Wunsch"
+        "ar": "الإذن والمنع والرغبة",
+        "en": "Permission, prohibition and wish"
       },
       "items": [
         {
@@ -603,10 +603,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Absicht, Auftrag und Angebot",
+        "fr": "Intention, consigne et proposition",
         "de": "Absicht, Auftrag und Angebot",
-        "ar": "Absicht, Auftrag und Angebot",
-        "en": "Absicht, Auftrag und Angebot"
+        "ar": "النية والتكليف والعرض",
+        "en": "Intention, instruction and offer"
       },
       "items": [
         {
@@ -775,10 +775,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Darf ich hier parken? (Puis-je stationner ici ?)\nB: Nein, hier dürfen Sie nicht parken. (Non, c’est interdit.)\nA: Wo kann ich parken? (Où puis-je stationner ?)\nB: Hinter dem Haus. Sie müssen dort nicht bezahlen. (Derrière la maison. Vous n’avez pas à payer.)",
@@ -791,10 +791,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -808,10 +808,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

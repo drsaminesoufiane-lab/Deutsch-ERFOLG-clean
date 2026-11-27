@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-07-lesson",
   "title": {
-    "fr": "Ich kaufe im Supermarkt ein",
+    "fr": "Je fais mes courses au supermarché",
     "de": "Ich kaufe im Supermarkt ein",
-    "ar": "Ich kaufe im Supermarkt ein",
-    "en": "Ich kaufe im Supermarkt ein"
+    "ar": "أتسوّق في السوبرماركت",
+    "en": "I shop at the supermarket"
   },
   "subtitle": {
     "fr": "Verbes à particule séparable",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-1",
       "title": {
-        "fr": "Was ist ein trennbares Verb?",
+        "fr": "Qu’est-ce qu’un verbe séparable ?",
         "de": "Was ist ein trennbares Verb?",
-        "ar": "Was ist ein trennbares Verb?",
-        "en": "Was ist ein trennbares Verb?"
+        "ar": "ما الفعل القابل للفصل؟",
+        "en": "What is a separable verb?"
       },
       "text": {
         "fr": "Un verbe séparable comprend une particule accentuée et un verbe de base. einkaufen signifie faire les courses ; kaufen signifie acheter. Apprends le verbe complet avec son sens, car la particule peut modifier fortement le sens.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-2",
       "title": {
-        "fr": "Häufige trennbare Präfixe",
+        "fr": "Préfixes séparables fréquents",
         "de": "Häufige trennbare Präfixe",
-        "ar": "Häufige trennbare Präfixe",
-        "en": "Häufige trennbare Präfixe"
+        "ar": "البادئات القابلة للفصل الشائعة",
+        "en": "Common separable prefixes"
       },
       "headers": [
         {
@@ -303,10 +303,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-3",
       "title": {
-        "fr": "Die Satzklammer",
+        "fr": "Le cadre verbal",
         "de": "Die Satzklammer",
-        "ar": "Die Satzklammer",
-        "en": "Die Satzklammer"
+        "ar": "الإطار الفعلي",
+        "en": "The verb bracket"
       },
       "text": {
         "fr": "Dans une principale, le verbe conjugué est le premier élément verbal ; la particule se place en fin : Ich rufe meine Freundin an. Si un complément ouvre la phrase, le verbe reste en deuxième position : Morgen rufe ich sie an.",
@@ -319,10 +319,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-4",
       "title": {
-        "fr": "Drei Satztypen und eine Frage",
+        "fr": "Trois types de phrases et une question",
         "de": "Drei Satztypen und eine Frage",
-        "ar": "Drei Satztypen und eine Frage",
-        "en": "Drei Satztypen und eine Frage"
+        "ar": "ثلاثة أنواع من الجمل وسؤال",
+        "en": "Three sentence types and a question"
       },
       "headers": [
         {
@@ -473,10 +473,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-5",
       "title": {
-        "fr": "Modalverb und Nebensatz",
+        "fr": "Verbe modal et proposition subordonnée",
         "de": "Modalverb und Nebensatz",
-        "ar": "Modalverb und Nebensatz",
-        "en": "Modalverb und Nebensatz"
+        "ar": "الفعل الناقص والجملة التابعة",
+        "en": "Modal verb and subordinate clause"
       },
       "text": {
         "fr": "Avec un modal, le verbe séparable n’est pas conjugué : wir müssen aufstehen. Dans une subordonnée avec weil, le verbe conjugué retrouve sa particule : weil wir früh aufstehen. Avec les deux : weil wir früh aufstehen müssen.",
@@ -489,10 +489,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-6",
       "title": {
-        "fr": "Trennbar oder untrennbar?",
+        "fr": "Séparable ou inséparable ?",
         "de": "Trennbar oder untrennbar?",
-        "ar": "Trennbar oder untrennbar?",
-        "en": "Trennbar oder untrennbar?"
+        "ar": "قابل للفصل أم غير قابل للفصل؟",
+        "en": "Separable or inseparable?"
       },
       "text": {
         "fr": "Les préfixes be-, emp-, ent-, er-, ge-, ver-, zer- sont inséparables. Certains préfixes comme um- peuvent être séparables ou non selon le verbe et le sens : umsteigen est séparable, umarmen ne l’est pas. Apprends l’accentuation et le sens avec le vocabulaire.",
@@ -505,10 +505,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Trennbare Verben im Hauptsatz",
+        "fr": "Verbes séparables dans la proposition principale",
         "de": "Trennbare Verben im Hauptsatz",
-        "ar": "Trennbare Verben im Hauptsatz",
-        "en": "Trennbare Verben im Hauptsatz"
+        "ar": "الأفعال القابلة للفصل في الجملة الرئيسية",
+        "en": "Separable verbs in main clauses"
       },
       "items": [
         {
@@ -677,10 +677,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Zeitangaben und Modalverben",
+        "fr": "Indications temporelles et verbes modaux",
         "de": "Zeitangaben und Modalverben",
-        "ar": "Zeitangaben und Modalverben",
-        "en": "Zeitangaben und Modalverben"
+        "ar": "التعبيرات الزمنية والأفعال الناقصة",
+        "en": "Time expressions and modal verbs"
       },
       "items": [
         {
@@ -849,10 +849,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Nebensätze, Fragen und untrennbare Verben",
+        "fr": "Subordonnées, questions et verbes inséparables",
         "de": "Nebensätze, Fragen und untrennbare Verben",
-        "ar": "Nebensätze, Fragen und untrennbare Verben",
-        "en": "Nebensätze, Fragen und untrennbare Verben"
+        "ar": "الجمل التابعة والأسئلة والأفعال غير القابلة للفصل",
+        "en": "Subordinate clauses, questions and inseparable verbs"
       },
       "items": [
         {
@@ -1021,10 +1021,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Wann stehst du auf? (Quand te lèves-tu ?)\nB: Um sechs. Dann bereite ich das Frühstück vor. (À six heures. Puis je prépare le petit déjeuner.)\nA: Kaufst du auch ein? (Fais-tu aussi les courses ?)\nB: Ja, ich muss heute einkaufen. (Oui, je dois faire les courses aujourd’hui.)",
@@ -1037,10 +1037,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -1054,10 +1054,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

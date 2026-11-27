@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-09-lesson",
   "title": {
-    "fr": "Wer? Wie? Wo? Was?",
+    "fr": "Qui ? Comment ? Où ? Quoi ?",
     "de": "Wer? Wie? Wo? Was?",
-    "ar": "Wer? Wie? Wo? Was?",
-    "en": "Wer? Wie? Wo? Was?"
+    "ar": "من؟ كيف؟ أين؟ ماذا؟",
+    "en": "Who? How? Where? What?"
   },
   "subtitle": {
     "fr": "Questions ouvertes",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-1",
       "title": {
-        "fr": "W-Fragen und ihre Funktion",
+        "fr": "Questions ouvertes et leur fonction",
         "de": "W-Fragen und ihre Funktion",
-        "ar": "W-Fragen und ihre Funktion",
-        "en": "W-Fragen und ihre Funktion"
+        "ar": "الأسئلة المفتوحة ووظيفتها",
+        "en": "W-questions and their function"
       },
       "text": {
         "fr": "Une question ouverte cherche une information précise, pas simplement oui ou non. Le mot interrogatif commence généralement par w. Dans la question Wie heißen Sie?, Wie occupe la position 1, heißen la position 2 et Sie la position 3. Une expression comme Um wie viel Uhr occupe une seule position grammaticale.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-2",
       "title": {
-        "fr": "Die wichtigsten Fragewörter",
+        "fr": "Les mots interrogatifs essentiels",
         "de": "Die wichtigsten Fragewörter",
-        "ar": "Die wichtigsten Fragewörter",
-        "en": "Die wichtigsten Fragewörter"
+        "ar": "أهم أدوات الاستفهام",
+        "en": "The most important question words"
       },
       "headers": [
         {
@@ -349,10 +349,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-3",
       "title": {
-        "fr": "Wer, wen oder wem?",
+        "fr": "Wer, wen ou wem : qui selon le cas ?",
         "de": "Wer, wen oder wem?",
-        "ar": "Wer, wen oder wem?",
-        "en": "Wer, wen oder wem?"
+        "ar": "صيغ الاستفهام عن الشخص حسب الحالة: wer و wen و wem",
+        "en": "Wer, wen or wem: who in different cases?"
       },
       "text": {
         "fr": "Repère le rôle de la personne recherchée. Wer kommt? : la personne est le sujet. Wen siehst du? : la personne est complément accusatif du verbe sehen. Wem hilfst du? : helfen exige un complément datif. Mit wem? : mit exige aussi le datif.",
@@ -365,10 +365,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-4",
       "title": {
-        "fr": "Wo, wohin und woher",
+        "fr": "Où, vers où et d’où",
         "de": "Wo, wohin und woher",
-        "ar": "Wo, wohin und woher",
-        "en": "Wo, wohin und woher"
+        "ar": "أين، إلى أين ومن أين",
+        "en": "Where, where to and where from"
       },
       "text": {
         "fr": "Ces trois questions ne sont pas interchangeables. Wo bist du? — In Berlin. Wohin fährst du? — Nach Berlin. Woher kommst du? — Aus Berlin. Même lorsqu’un verbe de mouvement est présent, Wo? peut demander le lieu de l’action : Wo gehst du spazieren?",
@@ -381,10 +381,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-5",
       "title": {
-        "fr": "Satzklammer und Antworten",
+        "fr": "Cadre verbal et réponses",
         "de": "Satzklammer und Antworten",
-        "ar": "Satzklammer und Antworten",
-        "en": "Satzklammer und Antworten"
+        "ar": "الإطار الفعلي والإجابات",
+        "en": "Verb bracket and answers"
       },
       "text": {
         "fr": "Si la question contient un modal, l’infinitif est final : Was möchtest du essen? Si le verbe est séparable, la particule est finale : Wann stehst du auf? Au Perfekt, l’auxiliaire est en deuxième position et le participe à la fin : Was hast du gemacht? Réponds avec l’information demandée.",
@@ -397,10 +397,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Personen, Sachen und Orte",
+        "fr": "Personnes, choses et lieux",
         "de": "Personen, Sachen und Orte",
-        "ar": "Personen, Sachen und Orte",
-        "en": "Personen, Sachen und Orte"
+        "ar": "الأشخاص والأشياء والأماكن",
+        "en": "People, things and places"
       },
       "items": [
         {
@@ -569,10 +569,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Orte, Herkunft und Zeit",
+        "fr": "Lieux, provenance et temps",
         "de": "Orte, Herkunft und Zeit",
-        "ar": "Orte, Herkunft und Zeit",
-        "en": "Orte, Herkunft und Zeit"
+        "ar": "الأماكن والمنشأ والوقت",
+        "en": "Places, origin and time"
       },
       "items": [
         {
@@ -741,10 +741,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Befinden, Menge und weitere Fragen",
+        "fr": "État, quantité et autres questions",
         "de": "Befinden, Menge und weitere Fragen",
-        "ar": "Befinden, Menge und weitere Fragen",
-        "en": "Befinden, Menge und weitere Fragen"
+        "ar": "الحال والكمية وأسئلة أخرى",
+        "en": "Well-being, quantity and other questions"
       },
       "items": [
         {
@@ -913,10 +913,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Woher kommen Sie? (D’où venez-vous ?)\nB: Aus Marokko. (Du Maroc.)\nA: Warum lernen Sie Deutsch? (Pourquoi apprenez-vous l’allemand ?)\nB: Ich möchte in Deutschland arbeiten. (Je voudrais travailler en Allemagne.)",
@@ -929,10 +929,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -946,10 +946,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

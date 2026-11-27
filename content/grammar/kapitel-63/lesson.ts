@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-63-lesson",
   "title": {
-    "fr": "Das Auto seines Vaters",
+    "fr": "La voiture de son père",
     "de": "Das Auto seines Vaters",
-    "ar": "Das Auto seines Vaters",
-    "en": "Das Auto seines Vaters"
+    "ar": "سيارة والده",
+    "en": "His father's car"
   },
   "subtitle": {
     "fr": "Le génitif",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-63-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Exprimer l’appartenance et former le génitif des noms, des articles et des noms propres.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-63-b2",
       "title": {
-        "fr": "Maskulin und Neutrum",
+        "fr": "Masculin et neutre",
         "de": "Maskulin und Neutrum",
-        "ar": "Maskulin und Neutrum",
-        "en": "Maskulin und Neutrum"
+        "ar": "المذكر والمحايد",
+        "en": "Masculine and neuter"
       },
       "text": {
         "fr": "Au génitif masculin et neutre, les articles deviennent des, eines, meines, seines, etc. La plupart des noms forts prennent -(e)s : des Vaters, des Kindes. Les noms faibles suivent la N-Deklination : des Studenten, pas des Students.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-63-b3",
       "title": {
-        "fr": "Femininum und Plural",
+        "fr": "Féminin et pluriel",
         "de": "Femininum und Plural",
-        "ar": "Femininum und Plural",
-        "en": "Femininum und Plural"
+        "ar": "المؤنث والجمع",
+        "en": "Feminine and plural"
       },
       "text": {
         "fr": "Au féminin et au pluriel, le nom ne reçoit généralement pas de terminaison supplémentaire au génitif. Les articles sont der/einer/meiner au féminin, der/meiner au pluriel. Il n’existe pas de pluriel de ein; sans déterminant, von + datif est fréquent.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-63-b4",
       "title": {
-        "fr": "-s oder -es?",
+        "fr": "Terminaison -s ou -es ?",
         "de": "-s oder -es?",
-        "ar": "-s oder -es?",
-        "en": "-s oder -es?"
+        "ar": "النهاية -s أم -es؟",
+        "en": "Ending -s or -es?"
       },
       "text": {
         "fr": "Les noms en -s, -ß, -x, -z, -tz exigent normalement -es (des Platzes). Beaucoup de monosyllabes admettent -es (des Buches); de nombreux polysyllabes prennent -s (des Vaters). Des variantes existent, par exemple des Buchs. Ne confondez pas suffixe et article.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-63-b5",
       "title": {
-        "fr": "Genitiv bei Namen",
+        "fr": "Génitif des noms propres",
         "de": "Genitiv bei Namen",
-        "ar": "Genitiv bei Namen",
-        "en": "Genitiv bei Namen"
+        "ar": "حالة الإضافة مع أسماء العلم",
+        "en": "Genitive with proper names"
       },
       "text": {
         "fr": "Le possesseur exprimé par un nom propre précède souvent le nom possédé : Davids Auto, Luisas Tasche. Si le nom se termine par un son s (Hans, Max, Beatrix), on ajoute seulement une apostrophe : Hans’ Auto. Pas d’apostrophe ordinaire devant -s dans les exercices.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-63-b6",
       "title": {
-        "fr": "Von + Dativ und Genitivattribute",
+        "fr": "Von + datif et compléments au génitif",
         "de": "Von + Dativ und Genitivattribute",
-        "ar": "Von + Dativ und Genitivattribute",
-        "en": "Von + Dativ und Genitivattribute"
+        "ar": "Von مع الداتيف ومتممات الإضافة",
+        "en": "Von + dative and genitive attributes"
       },
       "text": {
         "fr": "Le génitif attributif peut souvent être remplacé par von + datif : das Auto meines Vaters = das Auto von meinem Vater. Le génitif est plus compact et fréquent à l’écrit. Des groupes comme zu Beginn des Kurses et in der Nähe des Bahnhofs suivent aussi ce modèle.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-63-b7",
       "title": {
-        "fr": "Artikel im Genitiv",
+        "fr": "Articles au génitif",
         "de": "Artikel im Genitiv",
-        "ar": "Artikel im Genitiv",
-        "en": "Artikel im Genitiv"
+        "ar": "الأدوات في حالة الإضافة",
+        "en": "Articles in the genitive"
       },
       "headers": [
         {
@@ -269,10 +269,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-63-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

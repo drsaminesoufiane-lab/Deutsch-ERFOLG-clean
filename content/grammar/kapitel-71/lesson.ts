@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-71-lesson",
   "title": {
-    "fr": "Wie heißt das Ding, mit dem man ...?",
+    "fr": "Comment s’appelle la chose avec laquelle on… ?",
     "de": "Wie heißt das Ding, mit dem man ...?",
-    "ar": "Wie heißt das Ding, mit dem man ...?",
-    "en": "Wie heißt das Ding, mit dem man ...?"
+    "ar": "ما اسم الشيء الذي نستخدمه لـ…؟",
+    "en": "What is the thing called that you use to…?"
   },
   "subtitle": {
     "fr": "Propositions relatives 2",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-71-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Choisir le relatif selon le genre et le cas interne à la relative.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-71-b2",
       "title": {
-        "fr": "Nominativ",
+        "fr": "Le nominatif",
         "de": "Nominativ",
-        "ar": "Nominativ",
-        "en": "Nominativ"
+        "ar": "حالة الرفع (Nominativ)",
+        "en": "Nominative"
       },
       "text": {
         "fr": "Le relatif sujet prend der, das, die ou die au pluriel. Le cas de l’antécédent dans la principale ne décide pas du cas du relatif.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-71-b3",
       "title": {
-        "fr": "Akkusativ",
+        "fr": "L’accusatif",
         "de": "Akkusativ",
-        "ar": "Akkusativ",
-        "en": "Akkusativ"
+        "ar": "حالة النصب (Akkusativ)",
+        "en": "Accusative"
       },
       "text": {
         "fr": "Le complément direct de la relative prend den au masculin, das au neutre, die au féminin et au pluriel. Le sujet de la relative reste distinct.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-71-b4",
       "title": {
-        "fr": "Dativ",
+        "fr": "Le datif",
         "de": "Dativ",
-        "ar": "Dativ",
-        "en": "Dativ"
+        "ar": "حالة الداتيف (Dativ)",
+        "en": "Dative"
       },
       "text": {
         "fr": "Les verbes helfen, danken, gefallen, vertrauen et le destinataire de geben demandent ici le datif : dem, dem, der, denen. Attention à denen au pluriel.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-71-b5",
       "title": {
-        "fr": "Präposition und Kasus",
+        "fr": "Préposition et cas grammatical",
         "de": "Präposition und Kasus",
-        "ar": "Präposition und Kasus",
-        "en": "Präposition und Kasus"
+        "ar": "حرف الجر والحالة الإعرابية",
+        "en": "Preposition and grammatical case"
       },
       "text": {
         "fr": "La préposition reste devant le relatif : mit + datif, für + accusatif, von + datif, auf warten + accusatif. Le genre vient de l’antécédent, le cas de la préposition.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-71-b6",
       "title": {
-        "fr": "Verbposition",
+        "fr": "Position du verbe",
         "de": "Verbposition",
-        "ar": "Verbposition",
-        "en": "Verbposition"
+        "ar": "موضع الفعل",
+        "en": "Verb position"
       },
       "text": {
         "fr": "Après la virgule, le verbe conjugué termine la relative. Avec le Perfekt, l’auxiliaire est en dernière position. Une relative insérée se ferme par une seconde virgule.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-71-b7",
       "title": {
-        "fr": "Relativpronomen",
+        "fr": "Pronoms relatifs",
         "de": "Relativpronomen",
-        "ar": "Relativpronomen",
-        "en": "Relativpronomen"
+        "ar": "الضمائر الموصولة",
+        "en": "Relative pronouns"
       },
       "headers": [
         {
@@ -269,10 +269,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-71-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

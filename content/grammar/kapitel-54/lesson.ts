@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-54-lesson",
   "title": {
-    "fr": "Daneben, danach, dafür ...",
+    "fr": "À côté, ensuite, pour cela…",
     "de": "Daneben, danach, dafür ...",
-    "ar": "Daneben, danach, dafür ...",
-    "en": "Daneben, danach, dafür ..."
+    "ar": "بجانبه، بعد ذلك، لأجله…",
+    "en": "Beside it, afterwards, for it…"
   },
   "subtitle": {
     "fr": "Adverbes pronominaux",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-54-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Utiliser les composés da(r)- et wo(r)- pour les lieux, les événements, les choses et les propositions.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-54-b2",
       "title": {
-        "fr": "Ortsangaben",
+        "fr": "Indications de lieu",
         "de": "Ortsangaben",
-        "ar": "Ortsangaben",
-        "en": "Ortsangaben"
+        "ar": "التعبيرات المكانية",
+        "en": "Place expressions"
       },
       "text": {
         "fr": "Daneben, davor, dahinter et daran renvoient à un objet ou un lieu déjà connu. Le composé évite de répéter le groupe prépositionnel : neben dem Bildschirm → daneben. Le sens dépend du repère mentionné.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-54-b3",
       "title": {
-        "fr": "Zeitliche Beziehungen",
+        "fr": "Relations temporelles",
         "de": "Zeitliche Beziehungen",
-        "ar": "Zeitliche Beziehungen",
-        "en": "Zeitliche Beziehungen"
+        "ar": "العلاقات الزمنية",
+        "en": "Temporal relations"
       },
       "text": {
         "fr": "Danach signifie après cela, davor avant cela, dabei pendant cette activité. Ces mots relient deux événements et évitent une répétition. En première position, ils sont suivis du verbe conjugué : Danach trinken wir Kaffee.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-54-b4",
       "title": {
-        "fr": "Da(r)- und wo(r)-Formen",
+        "fr": "Formes en da(r)- et wo(r)-",
         "de": "Da(r)- und wo(r)-Formen",
-        "ar": "Da(r)- und wo(r)-Formen",
-        "en": "Da(r)- und wo(r)-Formen"
+        "ar": "صيغ da(r)- و wo(r)-",
+        "en": "Da(r)- and wo(r)- forms"
       },
       "text": {
         "fr": "Pour une chose, formez da + préposition dans la réponse et wo + préposition dans la question : dafür/wofür, damit/womit. Insérez r devant une voyelle : darauf/worauf, daran/woran, darüber/worüber, darum/worum. Ne déclinez pas ces composés.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-54-b5",
       "title": {
-        "fr": "Personenbezug",
+        "fr": "Référence à des personnes",
         "de": "Personenbezug",
-        "ar": "Personenbezug",
-        "en": "Personenbezug"
+        "ar": "الإشارة إلى الأشخاص",
+        "en": "Reference to people"
       },
       "text": {
         "fr": "Pour les personnes, gardez la préposition et un pronom personnel au cas approprié : auf ihn, mit ihr, für sie. Pour interroger, utilisez auf wen, mit wem. Un composé en da(r)- ou wo(r)- vise normalement une chose, un événement ou un contenu, pas une personne.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-54-b6",
       "title": {
-        "fr": "Bezug auf Nebensätze",
+        "fr": "Référence à des subordonnées",
         "de": "Bezug auf Nebensätze",
-        "ar": "Bezug auf Nebensätze",
-        "en": "Bezug auf Nebensätze"
+        "ar": "الإشارة إلى الجمل التابعة",
+        "en": "Reference to subordinate clauses"
       },
       "text": {
         "fr": "Un composé en da(r)- peut annoncer une subordonnée ou un infinitif : Ich achte darauf, dass alles stimmt. Il conserve la préposition exigée par le verbe ; la proposition donne le contenu. La virgule sépare la subordonnée et le verbe conjugué y va à la fin.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-54-b7",
       "title": {
-        "fr": "Präpositionalpronomen",
+        "fr": "Pronoms prépositionnels",
         "de": "Präpositionalpronomen",
-        "ar": "Präpositionalpronomen",
-        "en": "Präpositionalpronomen"
+        "ar": "الضمائر المرتبطة بحروف الجر",
+        "en": "Prepositional pronouns"
       },
       "headers": [
         {

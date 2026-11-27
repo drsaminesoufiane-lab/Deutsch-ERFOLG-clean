@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-59-lesson",
   "title": {
-    "fr": "Der Präsident wird kommen",
+    "fr": "Le président viendra",
     "de": "Der Präsident wird kommen",
-    "ar": "Der Präsident wird kommen",
-    "en": "Der Präsident wird kommen"
+    "ar": "سيأتي الرئيس",
+    "en": "The president will come"
   },
   "subtitle": {
     "fr": "Futur I : avenir et supposition",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-59-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Former le Futur I, distinguer la prévision et l’hypothèse présente et choisir entre Präsens et Futur I selon le contexte.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-59-b2",
       "title": {
-        "fr": "Werden + Infinitiv",
+        "fr": "Werden + infinitif",
         "de": "Werden + Infinitiv",
-        "ar": "Werden + Infinitiv",
-        "en": "Werden + Infinitiv"
+        "ar": "Werden مع المصدر",
+        "en": "Werden + infinitive"
       },
       "text": {
         "fr": "Le Futur I utilise werden conjugué et l’infinitif du verbe lexical en fin de proposition principale : Die Schulen werden mehr Geld bekommen. Il ne faut ni zu ni participe II.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-59-b3",
       "title": {
-        "fr": "Vermutungen",
+        "fr": "Suppositions",
         "de": "Vermutungen",
-        "ar": "Vermutungen",
-        "en": "Vermutungen"
+        "ar": "الافتراضات",
+        "en": "Assumptions"
       },
       "text": {
         "fr": "Le Futur I peut exprimer une supposition même à propos du présent : Er wird wohl zu Hause sein. Les mots wohl, wahrscheinlich, vermutlich et vielleicht signalent différents degrés d’incertitude; bestimmt marque une forte conviction sans garantir le fait.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-59-b4",
       "title": {
-        "fr": "Präsens mit Zeitangabe",
+        "fr": "Présent avec indication temporelle",
         "de": "Präsens mit Zeitangabe",
-        "ar": "Präsens mit Zeitangabe",
-        "en": "Präsens mit Zeitangabe"
+        "ar": "المضارع مع تعبير زمني",
+        "en": "Present tense with a time expression"
       },
       "text": {
         "fr": "Dans les conversations, le présent accompagné d’un repère temporel suffit souvent pour annoncer un projet futur : Morgen ziehe ich um. Le marqueur morgen situe l’action dans l’avenir. Les verbes séparables gardent leur préfixe en fin de proposition principale.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-59-b5",
       "title": {
-        "fr": "Formelle und informelle Sprache",
+        "fr": "Langage formel et informel",
         "de": "Formelle und informelle Sprache",
-        "ar": "Formelle und informelle Sprache",
-        "en": "Formelle und informelle Sprache"
+        "ar": "اللغة الرسمية وغير الرسمية",
+        "en": "Formal and informal language"
       },
       "text": {
         "fr": "Dans les annonces et les articles, le Futur I est fréquent pour les événements à venir, tandis que le Präsens est fréquent dans les échanges quotidiens. Ce sont des tendances et non des règles absolues : une annonce peut aussi utiliser le présent.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-59-b6",
       "title": {
-        "fr": "Satzklammer und Nebensatz",
+        "fr": "Cadre verbal et proposition subordonnée",
         "de": "Satzklammer und Nebensatz",
-        "ar": "Satzklammer und Nebensatz",
-        "en": "Satzklammer und Nebensatz"
+        "ar": "الإطار الفعلي والجملة التابعة",
+        "en": "Verb bracket and subordinate clause"
       },
       "text": {
         "fr": "Dans une principale, werden occupe la deuxième position et l’infinitif forme la fin de la structure verbale. Dans une subordonnée, l’infinitif précède werden conjugué : Ich glaube, dass er kommen wird.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-59-b7",
       "title": {
-        "fr": "Zukunft oder Gegenwart?",
+        "fr": "Futur ou présent ?",
         "de": "Zukunft oder Gegenwart?",
-        "ar": "Zukunft oder Gegenwart?",
-        "en": "Zukunft oder Gegenwart?"
+        "ar": "المستقبل أم المضارع؟",
+        "en": "Future or present?"
       },
       "text": {
         "fr": "Pour distinguer une prévision future d’une supposition présente, observez les indications temporelles et le contexte. Morgen wird er anrufen situe l’appel demain; Er wird jetzt wohl telefonieren émet une hypothèse sur ce qui se passe maintenant.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-59-b8",
       "title": {
-        "fr": "Futur I",
+        "fr": "Futur simple (Futur I)",
         "de": "Futur I",
-        "ar": "Futur I",
-        "en": "Futur I"
+        "ar": "المستقبل البسيط (Futur I)",
+        "en": "Simple future (Futur I)"
       },
       "headers": [
         {
@@ -306,10 +306,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-59-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-62-lesson",
   "title": {
-    "fr": "Sitzen, setzen, stehen, stellen, liegen, legen und hängen",
+    "fr": "Verbes de position et de déplacement : sitzen, setzen, stehen, stellen, liegen, legen, hängen",
     "de": "Sitzen, setzen, stehen, stellen, liegen, legen und hängen",
-    "ar": "Sitzen, setzen, stehen, stellen, liegen, legen und hängen",
-    "en": "Sitzen, setzen, stehen, stellen, liegen, legen und hängen"
+    "ar": "أفعال الوضع والحركة: sitzen و setzen و stehen و stellen و liegen و legen و hängen",
+    "en": "Position and movement verbs: sitzen, setzen, stehen, stellen, liegen, legen, hängen"
   },
   "subtitle": {
     "fr": "Verbes de position et de direction",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-62-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Choisir les verbes de position et de placement et le cas après une préposition mixte.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-62-b2",
       "title": {
-        "fr": "Position: Wo?",
+        "fr": "Position : où ?",
         "de": "Position: Wo?",
-        "ar": "Position: Wo?",
-        "en": "Position: Wo?"
+        "ar": "الموقع: أين؟",
+        "en": "Position: where?"
       },
       "text": {
         "fr": "Stehen, sitzen, liegen et hängen décrivent la position du sujet. Avec une préposition mixte, la localisation répond à Wo? et demande le datif : auf dem Tisch. Le sujet peut être un objet ou une personne.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-62-b3",
       "title": {
-        "fr": "Direktion: Wohin?",
+        "fr": "Direction : vers où ?",
         "de": "Direktion: Wohin?",
-        "ar": "Direktion: Wohin?",
-        "en": "Direktion: Wohin?"
+        "ar": "الاتجاه: إلى أين؟",
+        "en": "Direction: where to?"
       },
       "text": {
         "fr": "Stellen, setzen et legen placent quelqu’un ou quelque chose dans une nouvelle position; hängen peut aussi être transitif. L’objet direct est à l’accusatif; une destination avec préposition mixte est également à l’accusatif : auf den Tisch.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-62-b4",
       "title": {
-        "fr": "Sich setzen, stellen, legen",
+        "fr": "S’asseoir, se mettre debout, s’allonger",
         "de": "Sich setzen, stellen, legen",
-        "ar": "Sich setzen, stellen, legen",
-        "en": "Sich setzen, stellen, legen"
+        "ar": "الجلوس والوقوف والاستلقاء",
+        "en": "Sitting down, standing up, lying down"
       },
       "text": {
         "fr": "Pour se placer soi-même, utilisez mich/dich/sich/uns/euch/sich avec setzen, stellen, legen. Distinguez ich sitze auf dem Stuhl (état) et ich setze mich auf den Stuhl (action).",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-62-b5",
       "title": {
-        "fr": "Partizip II",
+        "fr": "Participe passé",
         "de": "Partizip II",
-        "ar": "Partizip II",
-        "en": "Partizip II"
+        "ar": "اسم المفعول الثاني",
+        "en": "Past participle"
       },
       "text": {
         "fr": "Les verbes de placement sont faibles : gestellt, gesetzt, gelegt, gehängt. Les verbes de position sont forts : gestanden, gesessen, gelegen, gehangen. Le cours utilise haben au Perfekt; dans certaines régions du Sud on rencontre aussi sein avec stehen, sitzen et liegen.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-62-b6",
       "title": {
-        "fr": "Hängen: zwei Formen",
+        "fr": "Hängen : deux formes",
         "de": "Hängen: zwei Formen",
-        "ar": "Hängen: zwei Formen",
-        "en": "Hängen: zwei Formen"
+        "ar": "Hängen: صيغتان",
+        "en": "Hängen: two forms"
       },
       "text": {
         "fr": "Hängen au présent a les mêmes formes dans les deux sens. Le contexte distingue l’état (das Bild hängt an der Wand) du placement (ich hänge das Bild an die Wand). Au passé : hing/gehangen contre hängte/gehängt.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-62-b7",
       "title": {
-        "fr": "Verbpaare",
+        "fr": "Paires de verbes",
         "de": "Verbpaare",
-        "ar": "Verbpaare",
-        "en": "Verbpaare"
+        "ar": "أزواج الأفعال",
+        "en": "Verb pairs"
       },
       "headers": [
         {
@@ -274,10 +274,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-62-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

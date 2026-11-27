@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-39-b6",
       "title": {
-        "fr": "Umlaut",
+        "fr": "Alternance vocalique (Umlaut)",
         "de": "Umlaut",
         "ar": "تغير الحركة",
-        "en": "Umlaut"
+        "en": "Vowel alternation (umlaut)"
       },
       "text": {
         "fr": "Les adjectifs qui prennent un Umlaut au comparatif le conservent souvent au superlatif : alt – älter – am ältesten, lang – länger – am längsten, kurz – kürzer – am kürzesten.",

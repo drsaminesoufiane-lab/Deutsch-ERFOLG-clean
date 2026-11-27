@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-13-lesson",
   "title": {
-    "fr": "Die Männer, die Frauen, die Babys",
+    "fr": "Les hommes, les femmes, les bébés",
     "de": "Die Männer, die Frauen, die Babys",
-    "ar": "Die Männer, die Frauen, die Babys",
-    "en": "Die Männer, die Frauen, die Babys"
+    "ar": "الرجال والنساء والأطفال الرضّع",
+    "en": "The men, the women, the babies"
   },
   "subtitle": {
     "fr": "Pluriel des noms",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-1",
       "title": {
-        "fr": "Pluralbildung",
+        "fr": "Formation du pluriel",
         "de": "Pluralbildung",
-        "ar": "Pluralbildung",
-        "en": "Pluralbildung"
+        "ar": "تكوين الجمع",
+        "en": "Plural formation"
       },
       "text": {
         "fr": "Apprends chaque nom avec son article au singulier et sa forme plurielle : der Mann – die Männer. Tous les noms au pluriel ont die au nominatif et à l’accusatif. Les terminaisons -(e)n, -er, -e, -s ou l’absence de terminaison sont des familles, pas une méthode infaillible pour deviner.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-2",
       "title": {
-        "fr": "Pluralgruppen",
+        "fr": "Groupes de pluriels",
         "de": "Pluralgruppen",
-        "ar": "Pluralgruppen",
-        "en": "Pluralgruppen"
+        "ar": "أنماط الجمع",
+        "en": "Plural groups"
       },
       "headers": [
         {
@@ -234,10 +234,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-3",
       "title": {
-        "fr": "Umlaut und Endungen",
+        "fr": "Tréma et terminaisons",
         "de": "Umlaut und Endungen",
-        "ar": "Umlaut und Endungen",
-        "en": "Umlaut und Endungen"
+        "ar": "تغيّر حرف العلة (Umlaut) والنهايات",
+        "en": "Umlaut and endings"
       },
       "text": {
         "fr": "a, o, u et au peuvent devenir ä, ö, ü et äu au pluriel : Mann–Männer, Buch–Bücher, Haus–Häuser. Les noms en -chen gardent leur forme : Brötchen–Brötchen. Les noms en -ung, -heit, -keit ou -ion prennent normalement -en.",
@@ -250,10 +250,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-4",
       "title": {
-        "fr": "Nicht zählbare Nomen",
+        "fr": "Noms indénombrables",
         "de": "Nicht zählbare Nomen",
-        "ar": "Nicht zählbare Nomen",
-        "en": "Nicht zählbare Nomen"
+        "ar": "الأسماء غير المعدودة",
+        "en": "Uncountable nouns"
       },
       "text": {
         "fr": "Wasser, Milch et Obst s’emploient normalement sans pluriel quand on désigne une quantité de matière ou un ensemble. Certaines formes pluriel existent pour des types ou des sens spéciaux. Eltern, Leute et Ferien s’emploient couramment au pluriel.",
@@ -266,10 +266,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-5",
       "title": {
-        "fr": "Plural im Satz",
+        "fr": "Le pluriel dans la phrase",
         "de": "Plural im Satz",
-        "ar": "Plural im Satz",
-        "en": "Plural im Satz"
+        "ar": "الجمع في الجملة",
+        "en": "Plural in sentences"
       },
       "text": {
         "fr": "Le pluriel change souvent aussi le verbe : Das Kind spielt → Die Kinder spielen. Avec un nombre, il n’y a pas d’article indéfini pluriel : zwei Kinder. Au datif, on ajoute souvent -n au nom pluriel s’il ne se termine pas déjà en -n ou -s : mit den Kindern, mais mit den Autos.",
@@ -282,10 +282,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "-(e)n, -innen und -er",
+        "fr": "Terminaisons -(e)n, -innen et -er",
         "de": "-(e)n, -innen und -er",
-        "ar": "-(e)n, -innen und -er",
-        "en": "-(e)n, -innen und -er"
+        "ar": "النهايات -(e)n و -innen و -er",
+        "en": "Endings -(e)n, -innen and -er"
       },
       "items": [
         {
@@ -454,10 +454,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "-er, -e und Nullendung",
+        "fr": "Terminaisons -er, -e et absence de terminaison",
         "de": "-er, -e und Nullendung",
-        "ar": "-er, -e und Nullendung",
-        "en": "-er, -e und Nullendung"
+        "ar": "النهايات -er و -e وغياب النهاية",
+        "en": "Endings -er, -e and zero ending"
       },
       "items": [
         {
@@ -626,10 +626,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "-s, Sonderformen und besondere Nomen",
+        "fr": "Terminaison -s, formes particulières et noms spéciaux",
         "de": "-s, Sonderformen und besondere Nomen",
-        "ar": "-s, Sonderformen und besondere Nomen",
-        "en": "-s, Sonderformen und besondere Nomen"
+        "ar": "النهاية -s والصيغ الخاصة والأسماء الخاصة",
+        "en": "Ending -s, special forms and special nouns"
       },
       "items": [
         {
@@ -798,10 +798,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Was brauchst du? (De quoi as-tu besoin ?)\nB: Zwei Stühle und drei Bücher. (Deux chaises et trois livres.)\nA: Die Stühle stehen dort. (Les chaises sont là-bas.)",
@@ -814,10 +814,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -831,10 +831,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

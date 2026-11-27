@@ -1,0 +1,14 @@
+{
+  "app/espace-etudiant/apprentissage/grammaire/[numero]/page.tsx": {
+    "existed": true,
+    "after": "b1f8bf02963920528eccc898fa3424f3beb18d8d56f039db4f931a58a61a0284"
+  },
+  "app/globals.css": {
+    "existed": true,
+    "after": "84bce2bd462d7e9bc489f7b58befa5b2a69fba39773a04b98e9a2f35db529de3"
+  },
+  "components/grammar/GrammarLessonContents.tsx": {
+    "existed": false,
+    "after": "00b0591acbd8428282850007366233849aff9664e18cb1e617be357840e8edd9"
+  }
+}

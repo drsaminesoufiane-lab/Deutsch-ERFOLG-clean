@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-48-lesson",
   "title": {
-    "fr": "Der, die oder das?",
+    "fr": "Der, die ou das : quel genre ?",
     "de": "Der, die oder das?",
-    "ar": "Der, die oder das?",
-    "en": "Der, die oder das?"
+    "ar": "Der أم die أم das: أي جنس نحوي؟",
+    "en": "Der, die or das: which gender?"
   },
   "subtitle": {
     "fr": "Le genre des noms",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-48-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Utiliser des indices de genre sans oublier les exceptions et apprendre le nom avec son article.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-48-b2",
       "title": {
-        "fr": "Maskuline Tendenzen",
+        "fr": "Tendances du masculin",
         "de": "Maskuline Tendenzen",
-        "ar": "Maskuline Tendenzen",
-        "en": "Maskuline Tendenzen"
+        "ar": "أنماط التذكير",
+        "en": "Masculine patterns"
       },
       "text": {
         "fr": "Les jours, mois, saisons et beaucoup de noms météorologiques sont masculins : der Freitag, der August, der Sommer, der Wind. Beaucoup de boissons alcoolisées et de marques de voitures le sont aussi. Exceptions : die Woche, das Jahr, die Nacht, das Bier, das Gewitter, die Sonne. Les marques de voitures sont masculines quand elles désignent une voiture.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-48-b3",
       "title": {
-        "fr": "Feminine Endungen",
+        "fr": "Terminaisons féminines",
         "de": "Feminine Endungen",
-        "ar": "Feminine Endungen",
-        "en": "Feminine Endungen"
+        "ar": "النهايات المؤنثة",
+        "en": "Feminine endings"
       },
       "text": {
         "fr": "Les suffixes -heit, -keit, -ung, -ion et -in pour les personnes indiquent généralement le féminin : die Freiheit, die Möglichkeit, die Ausbildung, die Information, die Lehrerin. Il s’agit de véritables suffixes, non de simples lettres finales (par exemple das Benzin).",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-48-b4",
       "title": {
-        "fr": "Nomen auf -e",
+        "fr": "Noms se terminant en -e",
         "de": "Nomen auf -e",
-        "ar": "Nomen auf -e",
-        "en": "Nomen auf -e"
+        "ar": "الأسماء المنتهية بـ -e",
+        "en": "Nouns ending in -e"
       },
       "text": {
         "fr": "Beaucoup de noms terminés par -e sont féminins, comme die Tasche et die Nase. Ce n’est pas une règle absolue : der Name, der Buchstabe, der Junge, der Hase, das Auge et das Ende sont importants à mémoriser.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-48-b5",
       "title": {
-        "fr": "Neutrale Tendenzen",
+        "fr": "Tendances du neutre",
         "de": "Neutrale Tendenzen",
-        "ar": "Neutrale Tendenzen",
-        "en": "Neutrale Tendenzen"
+        "ar": "أنماط الجنس المحايد",
+        "en": "Neuter patterns"
       },
       "text": {
         "fr": "Les vrais diminutifs en -chen et -lein sont neutres. De nombreux noms en -o (das Kino, das Büro) et commençant par Ge- (das Gemüse, das Gesicht) sont également neutres. Ces deux dernières tendances ont des exceptions : die Disko, der Euro, die Gesundheit, die Gebühr, die Geschichte.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-48-b6",
       "title": {
-        "fr": "Fahrzeugmarken",
+        "fr": "Marques de véhicules",
         "de": "Fahrzeugmarken",
-        "ar": "Fahrzeugmarken",
-        "en": "Fahrzeugmarken"
+        "ar": "ماركات المركبات",
+        "en": "Vehicle brands"
       },
       "text": {
         "fr": "Le genre d’une marque dépend du véhicule désigné : der BMW pour une voiture, die BMW pour une moto. Le contexte doit donc être précisé. Die Kawasaki désigne habituellement une moto.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-48-b7",
       "title": {
-        "fr": "Singular und Plural",
+        "fr": "Singulier et pluriel",
         "de": "Singular und Plural",
-        "ar": "Singular und Plural",
-        "en": "Singular und Plural"
+        "ar": "المفرد والجمع",
+        "en": "Singular and plural"
       },
       "text": {
         "fr": "Au nominatif pluriel, l’article défini est toujours die, quel que soit le genre au singulier. Il faut retrouver le singulier avant de choisir der, die ou das. Les diminutifs en -chen et -lein ne changent pas de terminaison au pluriel.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-48-b8",
       "title": {
-        "fr": "Genusregeln",
+        "fr": "Règles du genre grammatical",
         "de": "Genusregeln",
-        "ar": "Genusregeln",
-        "en": "Genusregeln"
+        "ar": "قواعد الجنس النحوي",
+        "en": "Gender rules"
       },
       "headers": [
         {

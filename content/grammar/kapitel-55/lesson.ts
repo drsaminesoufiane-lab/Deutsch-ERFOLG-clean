@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-55-lesson",
   "title": {
-    "fr": "Wäre, hätte, würde ...",
+    "fr": "Je serais, j’aurais, je ferais…",
     "de": "Wäre, hätte, würde ...",
-    "ar": "Wäre, hätte, würde ...",
-    "en": "Wäre, hätte, würde ..."
+    "ar": "صيغ الشرط: wäre و hätte و würde",
+    "en": "Would be, would have, would…"
   },
   "subtitle": {
     "fr": "Formes du subjonctif II",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-55-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Former le Konjunktiv II et le distinguer du Präteritum.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-55-b2",
       "title": {
-        "fr": "Würde + Infinitiv",
+        "fr": "Würde + infinitif",
         "de": "Würde + Infinitiv",
-        "ar": "Würde + Infinitiv",
-        "en": "Würde + Infinitiv"
+        "ar": "Würde مع المصدر",
+        "en": "Würde + infinitive"
       },
       "text": {
         "fr": "Pour la plupart des verbes, on utilise würde conjugué suivi de l’infinitif final : ich würde reisen. Dans une question oui/non, würde vient en tête. Dans une subordonnée, le groupe infinitif + würde est final.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-55-b3",
       "title": {
-        "fr": "Sein und haben",
+        "fr": "Être et avoir",
         "de": "Sein und haben",
-        "ar": "Sein und haben",
-        "en": "Sein und haben"
+        "ar": "فعلا الكينونة والملكية (sein و haben)",
+        "en": "To be and to have"
       },
       "text": {
         "fr": "Pour sein et haben, privilégiez wäre et hätte plutôt que würde sein/haben. Ces formes expriment ici une situation hypothétique présente, non un événement passé. Ich et er ont la même terminaison -e.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-55-b4",
       "title": {
-        "fr": "Modalverben",
+        "fr": "Verbes modaux",
         "de": "Modalverben",
-        "ar": "Modalverben",
-        "en": "Modalverben"
+        "ar": "الأفعال الناقصة",
+        "en": "Modal verbs"
       },
       "text": {
         "fr": "Les formes usuelles sont könnte, müsste, dürfte, sollte et wollte. Können, müssen et dürfen prennent un Umlaut par rapport au Präteritum; sollen et wollen n’en prennent pas. L’autre verbe reste à l’infinitif.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-55-b5",
       "title": {
-        "fr": "Wenn-Sätze",
+        "fr": "Phrases conditionnelles avec wenn",
         "de": "Wenn-Sätze",
-        "ar": "Wenn-Sätze",
-        "en": "Wenn-Sätze"
+        "ar": "الجمل الشرطية مع wenn",
+        "en": "Conditional clauses with wenn"
       },
       "text": {
         "fr": "Une condition irréelle actuelle emploie souvent le Konjunktiv II dans les deux propositions. Après wenn, le verbe conjugué est final; si la subordonnée précède, le verbe principal suit immédiatement la virgule.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-55-b6",
       "title": {
-        "fr": "Präteritum oder Konjunktiv II?",
+        "fr": "Prétérit ou Konjunktiv II ?",
         "de": "Präteritum oder Konjunktiv II?",
-        "ar": "Präteritum oder Konjunktiv II?",
-        "en": "Präteritum oder Konjunktiv II?"
+        "ar": "الماضي البسيط أم صيغة الشرط Konjunktiv II؟",
+        "en": "Simple past or Konjunktiv II?"
       },
       "text": {
         "fr": "War, hatte, konnte, musste et durfte rapportent généralement des faits passés. Wäre, hätte, könnte, müsste et dürfte expriment une hypothèse ou une distance modale. Sollte et wollte sont identiques au Präteritum : le contexte décide.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-55-b7",
       "title": {
-        "fr": "Weitere Formen",
+        "fr": "Autres formes",
         "de": "Weitere Formen",
-        "ar": "Weitere Formen",
-        "en": "Weitere Formen"
+        "ar": "صيغ أخرى",
+        "en": "Other forms"
       },
       "text": {
         "fr": "Quelques verbes forts ont une forme simple courante, comme wüsste, käme ou ginge. La variante avec würde est souvent possible; ici l’indication de forme précise la réponse attendue.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-55-b8",
       "title": {
-        "fr": "Konjugation",
+        "fr": "Conjugaison",
         "de": "Konjugation",
-        "ar": "Konjugation",
-        "en": "Konjugation"
+        "ar": "التصريف",
+        "en": "Conjugation"
       },
       "headers": [
         {
@@ -558,10 +558,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-55-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-70-lesson",
   "title": {
-    "fr": "Das ist der Mann, der immer meine Nachbarin besucht",
+    "fr": "C’est l’homme qui rend toujours visite à ma voisine",
     "de": "Das ist der Mann, der immer meine Nachbarin besucht",
-    "ar": "Das ist der Mann, der immer meine Nachbarin besucht",
-    "en": "Das ist der Mann, der immer meine Nachbarin besucht"
+    "ar": "هذا هو الرجل الذي يزور جارتي دائمًا",
+    "en": "This is the man who always visits my neighbour"
   },
   "subtitle": {
     "fr": "Relatives au nominatif",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-70-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Relier des phrases avec der, die, das au nominatif et maîtriser la position du verbe.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-70-b2",
       "title": {
-        "fr": "Relativpronomen im Nominativ",
+        "fr": "Pronoms relatifs au nominatif",
         "de": "Relativpronomen im Nominativ",
-        "ar": "Relativpronomen im Nominativ",
-        "en": "Relativpronomen im Nominativ"
+        "ar": "الضمائر الموصولة في حالة الرفع",
+        "en": "Relative pronouns in the nominative"
       },
       "text": {
         "fr": "Le pronom relatif remplace le sujet de la proposition relative. Son genre et son nombre suivent l’antécédent : masculin der, féminin die, neutre das, pluriel die. Dans ce chapitre, le pronom est sujet, donc nominatif.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-70-b3",
       "title": {
-        "fr": "Kasus im Hauptsatz und Relativsatz",
+        "fr": "Cas dans la principale et la relative",
         "de": "Kasus im Hauptsatz und Relativsatz",
-        "ar": "Kasus im Hauptsatz und Relativsatz",
-        "en": "Kasus im Hauptsatz und Relativsatz"
+        "ar": "الحالة الإعرابية في الجملة الرئيسية والموصولة",
+        "en": "Case in main and relative clauses"
       },
       "text": {
         "fr": "Le cas du nom dans la principale ne détermine pas celui du relatif. Ich helfe dem Mann, der dort wohnt : dem Mann est datif dans la principale, der est nominatif car sujet de wohnt. Le cas relatif dépend toujours de sa fonction dans la relative.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-70-b4",
       "title": {
-        "fr": "Verb am Ende",
+        "fr": "Verbe en fin de proposition",
         "de": "Verb am Ende",
-        "ar": "Verb am Ende",
-        "en": "Verb am Ende"
+        "ar": "الفعل في نهاية الجملة",
+        "en": "Verb at the end of the clause"
       },
       "text": {
         "fr": "La relative est une subordonnée : le verbe conjugué se place à la fin. Avec un modal : spielen kann ; avec le Perfekt : gekommen ist, gewonnen hat ; avec un verbe séparable : anruft (préfixe attaché).",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-70-b5",
       "title": {
-        "fr": "Position und Kommas",
+        "fr": "Position et virgules",
         "de": "Position und Kommas",
-        "ar": "Position und Kommas",
-        "en": "Position und Kommas"
+        "ar": "الموضع والفواصل",
+        "en": "Position and commas"
       },
       "text": {
         "fr": "Placez normalement la relative juste après son antécédent. Elle est séparée par une virgule et, si la principale continue, refermée par une seconde virgule : Der Mann, der dort wohnt, arbeitet hier. Le verbe de la principale suit sa propre règle V2.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-70-b6",
       "title": {
-        "fr": "Kongruenz",
+        "fr": "Accord grammatical",
         "de": "Kongruenz",
-        "ar": "Kongruenz",
-        "en": "Kongruenz"
+        "ar": "المطابقة النحوية",
+        "en": "Grammatical agreement"
       },
       "text": {
         "fr": "Le verbe de la relative s’accorde avec le relatif sujet, donc avec le nombre de l’antécédent. Die Frau, die singt (singulier) ; die Frauen, die singen (pluriel). Le pronom die a la même forme dans les deux cas, mais le verbe permet de les distinguer.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-70-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

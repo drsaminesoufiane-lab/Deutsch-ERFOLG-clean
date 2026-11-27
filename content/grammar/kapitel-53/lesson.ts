@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-53-lesson",
   "title": {
-    "fr": "Sie freut sich über die Blumen",
+    "fr": "Elle se réjouit des fleurs",
     "de": "Sie freut sich über die Blumen",
-    "ar": "Sie freut sich über die Blumen",
-    "en": "Sie freut sich über die Blumen"
+    "ar": "إنها سعيدة بالزهور",
+    "en": "She is delighted with the flowers"
   },
   "subtitle": {
     "fr": "Verbes à préposition",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-53-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Apprendre chaque verbe avec sa préposition et son cas, puis poser des questions sur les personnes et les choses.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-53-b2",
       "title": {
-        "fr": "Verben mit Akkusativpräposition",
+        "fr": "Verbes avec préposition régissant l’accusatif",
         "de": "Verben mit Akkusativpräposition",
-        "ar": "Verben mit Akkusativpräposition",
-        "en": "Verben mit Akkusativpräposition"
+        "ar": "أفعال مع حروف جر تتطلب النصب",
+        "en": "Verbs with accusative prepositions"
       },
       "text": {
         "fr": "La préposition fait partie de la construction du verbe : warten auf + accusatif, denken an + accusatif, sich interessieren für + accusatif, sich kümmern um + accusatif. On apprend le groupe entier. Le cas ne dépend pas ici d’une direction physique.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-53-b3",
       "title": {
-        "fr": "Verben mit Dativpräposition",
+        "fr": "Verbes avec préposition régissant le datif",
         "de": "Verben mit Dativpräposition",
-        "ar": "Verben mit Dativpräposition",
-        "en": "Verben mit Dativpräposition"
+        "ar": "أفعال مع حروف جر تتطلب الداتيف",
+        "en": "Verbs with dative prepositions"
       },
       "text": {
         "fr": "Träumen von, fragen nach, teilnehmen an, telefonieren mit, sich beschäftigen mit et gratulieren zu prennent le datif. Attention à teilnehmen an + datif, contrairement à denken an + accusatif.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-53-b4",
       "title": {
-        "fr": "Thema oder Gesprächspartner?",
+        "fr": "Sujet de conversation ou interlocuteur ?",
         "de": "Thema oder Gesprächspartner?",
-        "ar": "Thema oder Gesprächspartner?",
-        "en": "Thema oder Gesprächspartner?"
+        "ar": "موضوع الحديث أم المحاور؟",
+        "en": "Topic or conversation partner?"
       },
       "text": {
         "fr": "Sprechen über + accusatif indique le sujet de la conversation. Sprechen mit + datif indique l’interlocuteur. Diskutieren peut suivre les mêmes constructions. On peut réunir les deux dans la même phrase.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-53-b5",
       "title": {
-        "fr": "Fragen nach Sachen",
+        "fr": "Questions sur les choses",
         "de": "Fragen nach Sachen",
-        "ar": "Fragen nach Sachen",
-        "en": "Fragen nach Sachen"
+        "ar": "أسئلة عن الأشياء",
+        "en": "Questions about things"
       },
       "text": {
         "fr": "Pour une chose, un événement ou une idée, la question utilise wo + préposition : womit, wofür, wovon. Devant une voyelle, insérez r : worauf, woran, worüber, worum. Les formulations avec préposition + was existent à l’oral mais la forme wo(r)- est standard.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-53-b6",
       "title": {
-        "fr": "Fragen nach Personen",
+        "fr": "Questions sur les personnes",
         "de": "Fragen nach Personen",
-        "ar": "Fragen nach Personen",
-        "en": "Fragen nach Personen"
+        "ar": "أسئلة عن الأشخاص",
+        "en": "Questions about people"
       },
       "text": {
         "fr": "Pour une personne, utilisez préposition + wen à l’accusatif ou wem au datif : auf wen, mit wem, von wem, für wen. Ne remplacez pas une personne par worauf ou womit.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-53-b7",
       "title": {
-        "fr": "Sich freuen auf oder über?",
+        "fr": "Se réjouir à l’avance ou d’un fait (auf/über) ?",
         "de": "Sich freuen auf oder über?",
-        "ar": "Sich freuen auf oder über?",
-        "en": "Sich freuen auf oder über?"
+        "ar": "التطلّع إلى شيء أم الفرح به (auf/über)؟",
+        "en": "Looking forward to or being pleased about (auf/über)?"
       },
       "text": {
         "fr": "Sich freuen auf + accusatif exprime l’attente heureuse d’un événement à venir. Sich freuen über + accusatif exprime la joie à propos d’une cause ou d’un résultat. Le contexte, et non simplement le temps du verbe, détermine la préposition.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-53-b8",
       "title": {
-        "fr": "Verbverbindungen",
+        "fr": "Combinaisons verbales",
         "de": "Verbverbindungen",
-        "ar": "Verbverbindungen",
-        "en": "Verbverbindungen"
+        "ar": "التراكيب الفعلية",
+        "en": "Verb combinations"
       },
       "headers": [
         {

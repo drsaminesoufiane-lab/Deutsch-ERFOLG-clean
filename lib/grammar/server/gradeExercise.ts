@@ -4,6 +4,8 @@ import type {
   AnswerKey,
   ExerciseSetDefinition,
   PublicQuestion,
+  Language,
+  LocalizedText,
 } from '@/lib/grammar/types'
 
 export type SubmittedAnswer = string | string[]
@@ -15,6 +17,7 @@ export interface QuestionCorrection {
   manualReview: boolean
   correctAnswer?: string | string[]
   explanation?: string
+  explanations?: LocalizedText
 }
 
 export interface ExerciseGrade {
@@ -101,6 +104,121 @@ function expectedAnswerForFeedback(
   return expected
 }
 
+// DE_PEDAGOGICAL_FEEDBACK_V1
+const feedbackCopy = {
+  fr: {
+    upper: 'Majuscule manquante : écris', lower: 'Minuscule attendue : écris', mixed: 'Majuscules et minuscules : écris',
+    start: 'Le premier mot de cette phrase commence par une majuscule.',
+    umlaut: 'Vérifie les lettres ä, ö, ü ou ß : écris', punctuation: 'Vérifie la ponctuation : écris',
+    compare: 'La forme attendue est', instead: 'au lieu de', blank: 'Trou',
+    pronoun: 'Le pronom choisi ne correspond pas à la réponse attendue dans ce contexte.',
+    order: 'Les mots sont présents, mais leur ordre est incorrect.',
+    matching: 'Certaines associations ne correspondent pas aux éléments attendus.',
+    multiple: 'Il manque une réponse correcte ou une option incorrecte a été sélectionnée.',
+    choice: 'Cette option ne correspond pas à la règle ou au contexte de la question.',
+    boolean: 'La réponse vrai/faux ne correspond pas au corrigé.',
+    unknown: 'Le corrigé ne contient pas de règle détaillée pour cette question.',
+  },
+  de: {
+    upper: 'Großbuchstabe fehlt: Schreibe', lower: 'Kleinbuchstabe erwartet: Schreibe', mixed: 'Groß- und Kleinschreibung: Schreibe',
+    start: 'Das erste Wort dieses Satzes wird großgeschrieben.',
+    umlaut: 'Prüfe ä, ö, ü oder ß: Schreibe', punctuation: 'Prüfe die Zeichensetzung: Schreibe',
+    compare: 'Erwartet wird', instead: 'statt', blank: 'Lücke',
+    pronoun: 'Das gewählte Pronomen passt hier nicht zur erwarteten Antwort.',
+    order: 'Die Wörter sind vorhanden, aber ihre Reihenfolge ist falsch.',
+    matching: 'Einige Zuordnungen stimmen nicht mit den erwarteten Paaren überein.',
+    multiple: 'Eine richtige Antwort fehlt oder eine falsche Option wurde ausgewählt.',
+    choice: 'Diese Option passt nicht zur Regel oder zum Kontext der Aufgabe.',
+    boolean: 'Die Wahr/Falsch-Antwort stimmt nicht mit der Lösung überein.',
+    unknown: 'Für diese Frage ist keine ausführliche Regel hinterlegt.',
+  },
+  en: {
+    upper: 'Missing capital letter: write', lower: 'Lowercase expected: write', mixed: 'Capitalization: write',
+    start: 'The first word of this sentence starts with a capital letter.',
+    umlaut: 'Check ä, ö, ü or ß: write', punctuation: 'Check the punctuation: write',
+    compare: 'The expected form is', instead: 'instead of', blank: 'Blank',
+    pronoun: 'The chosen pronoun does not match the expected answer in this context.',
+    order: 'The words are present, but their order is incorrect.',
+    matching: 'Some matches do not correspond to the expected pairs.',
+    multiple: 'A correct answer is missing or an incorrect option was selected.',
+    choice: 'This option does not match the rule or context of the question.',
+    boolean: 'The true/false answer does not match the solution.',
+    unknown: 'No detailed rule is available for this question.',
+  },
+  ar: {
+    upper: 'حرف كبير مطلوب: اكتب', lower: 'حرف صغير مطلوب: اكتب', mixed: 'خطأ في الحروف الكبيرة والصغيرة: اكتب',
+    start: 'تبدأ الكلمة الأولى في هذه الجملة بحرف كبير.',
+    umlaut: 'انتبه إلى الحروف ä و ö و ü و ß: اكتب', punctuation: 'انتبه إلى علامات الترقيم: اكتب',
+    compare: 'الصيغة المطلوبة هي', instead: 'بدلاً من', blank: 'الفراغ',
+    pronoun: 'الضمير المختار لا يطابق الإجابة المطلوبة في هذا السياق.',
+    order: 'الكلمات موجودة لكن ترتيبها غير صحيح.',
+    matching: 'بعض المطابقات لا تتوافق مع الأزواج المطلوبة.',
+    multiple: 'هناك إجابة صحيحة ناقصة أو خيار خاطئ تم اختياره.',
+    choice: 'هذا الخيار لا يتوافق مع القاعدة أو سياق السؤال.',
+    boolean: 'إجابة صحيح أو خطأ لا تتوافق مع التصحيح.',
+    unknown: 'لا توجد قاعدة مفصلة محفوظة لهذا السؤال.',
+  },
+} as const
+
+const feedbackLanguages = ['fr', 'de', 'ar', 'en'] as const
+const feedbackPronouns = new Set(['ich','du','er','sie','es','wir','ihr','mich','dich','ihn','uns','euch','mir','dir','ihm','ihnen'])
+const feedbackLower = (s: string) => s.toLocaleLowerCase('de')
+const feedbackUmlaut = (s: string) => feedbackLower(s).replace(/ä/g,'a').replace(/ö/g,'o').replace(/ü/g,'u').replace(/ß/g,'ss')
+const feedbackUmlautAscii = (s: string) => feedbackLower(s).replace(/ä/g,'ae').replace(/ö/g,'oe').replace(/ü/g,'ue').replace(/ß/g,'ss')
+const feedbackPunctuation = (s: string) => s.replace(/[.,!?;:„“”«»"']/g, '').replace(/\s+/g, ' ').trim()
+
+function feedbackForPair(actual: string, expected: string, question: PublicQuestion, index: number, lang: Language): string {
+  const c = feedbackCopy[lang]
+  const a = normalizeText(actual)
+  const e = normalizeText(expected)
+  if (a === e) return ''
+  // Quote actual and expected literally; do not infer a grammatical cause from edit distance.
+  const comparison = (label: string) => `${label} «${e}» ${c.instead} «${a}».`
+  if (feedbackLower(a) === feedbackLower(e)) {
+    const ac = Array.from(a), ec = Array.from(e)
+    const changes = ec.flatMap((v, i) => v === ac[i] ? [] : [v])
+    const allUpper = changes.length > 0 && changes.every(v => v === v.toLocaleUpperCase('de') && v !== feedbackLower(v))
+    const allLower = changes.length > 0 && changes.every(v => v === feedbackLower(v) && v !== v.toLocaleUpperCase('de'))
+    const label = allUpper ? c.upper : allLower ? c.lower : c.mixed
+    const prefix = question.type === 'fill_blank' ? question.sentence.split('___').slice(0, index + 1).join('___').trim() : ''
+    const sentenceStart = question.type === 'fill_blank' && (prefix === '' || /[.!?]\s*$/.test(prefix))
+    // Only claim sentence-initial capitalization when it is visibly at the blank boundary.
+    const start = sentenceStart && ac[0] !== ec[0] && ec[0] !== feedbackLower(ec[0]) ? ` ${c.start}` : ''
+    return comparison(label) + start
+  }
+  if ((/[äöüß]/i.test(a + e)) && (feedbackUmlaut(a) === feedbackUmlaut(e) || feedbackUmlautAscii(a) === feedbackUmlautAscii(e))) {
+    return comparison(c.umlaut)
+  }
+  if (feedbackPunctuation(a) === feedbackPunctuation(e)) return comparison(c.punctuation)
+  const pronoun = feedbackPronouns.has(feedbackLower(a)) && feedbackPronouns.has(feedbackLower(e)) ? `${c.pronoun} ` : ''
+  return pronoun + comparison(c.compare)
+}
+
+function localizedFeedback(question: PublicQuestion, submitted: SubmittedAnswer | undefined, expected: SubmittedAnswer | undefined, correct: boolean | null, rule: LocalizedText | undefined): LocalizedText {
+  const actual = asArray(submitted)
+  const target = asArray(expected)
+  const result = {} as LocalizedText
+  for (const lang of feedbackLanguages) {
+    const c = feedbackCopy[lang]
+    const details: string[] = []
+    if (correct === false && actual && target) {
+      if (question.type === 'true_false') details.push(c.boolean)
+      else if (question.type === 'qcm' && question.selection === 'multiple') details.push(c.multiple)
+      else if (question.type === 'matching') details.push(c.matching)
+      else if (question.type === 'reorder') details.push(c.order)
+      else if (actual.length === target.length && (question.type === 'fill_blank' || question.type === 'qcm')) {
+        for (let i = 0; i < target.length; i++) {
+          const message = feedbackForPair(actual[i], target[i], question, i, lang)
+          if (message) details.push(target.length > 1 ? `${c.blank} ${i + 1}: ${message}` : message)
+        }
+      } else details.push(c.choice)
+    }
+    const pedagogical = rule?.[lang]?.trim() || c.unknown
+    result[lang] = [...details, pedagogical].join('\n\n')
+  }
+  return result
+}
+
 export function gradeExercise(
   exerciseSet: ExerciseSetDefinition,
   answerKey: AnswerKey,
@@ -130,13 +248,15 @@ export function gradeExercise(
     const correct = isCorrect(question, submitted, key?.acceptedAnswers)
 
     if (correct) correctAnswers += 1
+    const explanations = localizedFeedback(question, submitted, key?.acceptedAnswers, correct, key?.explanation)
 
     corrections.push({
       questionId: question.id,
       correct,
       manualReview: false,
       correctAnswer: expectedAnswerForFeedback(question, key?.acceptedAnswers),
-      explanation: key?.explanation[language],
+      explanation: explanations[language],
+      explanations,
     })
   }
 

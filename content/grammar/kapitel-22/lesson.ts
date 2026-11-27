@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-22-lesson",
   "title": {
-    "fr": "Ich helfe dir, du dankst mir",
+    "fr": "Je t’aide, tu me remercies",
     "de": "Ich helfe dir, du dankst mir",
-    "ar": "Ich helfe dir, du dankst mir",
-    "en": "Ich helfe dir, du dankst mir"
+    "ar": "أساعدك، وأنت تشكرني",
+    "en": "I help you, you thank me"
   },
   "subtitle": {
     "fr": "Verben mit Dativ",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "concept",
       "title": {
-        "fr": "1. Den Dativ verstehen",
+        "fr": "1. Comprendre le datif",
         "de": "1. Den Dativ verstehen",
-        "ar": "1. Den Dativ verstehen",
-        "en": "1. Den Dativ verstehen"
+        "ar": "1. فهم الداتيف",
+        "en": "1. Understanding the dative"
       },
       "text": {
         "fr": "Le cas grammatical indique la fonction d’un groupe dans la phrase. Le nominatif désigne le sujet, qui commande la conjugaison. L’accusatif et le datif peuvent désigner des compléments. Le choix dépend notamment du verbe.\n\nDans Ich helfe dem Mann, ich est le sujet et dem Mann est le complément au datif. Le verbe helfen exige ce cas : il n’est pas nécessaire d’avoir un deuxième complément. En français, on dit pourtant « aider quelqu’un ». Il faut donc apprendre helfen avec jemandem (à quelqu’un), et non traduire mécaniquement.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-vertiefung",
       "title": {
-        "fr": "Dativ oder Akkusativ?",
+        "fr": "Datif ou accusatif ?",
         "de": "Dativ oder Akkusativ?",
-        "ar": "Dativ oder Akkusativ?",
-        "en": "Dativ oder Akkusativ?"
+        "ar": "الداتيف أم النصب؟",
+        "en": "Dative or accusative?"
       },
       "text": {
         "fr": "Compare Ich helfe dem Kind et Ich frage das Kind. Helfen exige le datif ; fragen exige l’accusatif pour la personne. Avec gefallen, inverse la logique du français : Die Bilder gefallen mir. Die Bilder est le sujet pluriel, mir le complément au datif.",
@@ -57,10 +57,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "method",
       "title": {
-        "fr": "2. Vier Schritte",
+        "fr": "2. Quatre étapes",
         "de": "2. Vier Schritte",
-        "ar": "2. Vier Schritte",
-        "en": "2. Vier Schritte"
+        "ar": "2. أربع خطوات",
+        "en": "2. Four steps"
       },
       "text": {
         "fr": "1. Repérez le verbe : helfen.\n2. Identifiez le sujet avec wer? : Das Kind.\n3. Cherchez le complément avec wem? : dem Mann.\n4. Déclinez le nom et conjuguez selon le sujet : Das Kind hilft dem Mann.\n\nSi le sujet devient Die Kinder, le verbe devient helfen, mais dem Mann ne change pas. Si le complément devient die Frau, on écrit der Frau. Le sujet et le complément suivent deux règles indépendantes.",
@@ -73,10 +73,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "articles",
       "title": {
-        "fr": "3. Den Dativ bilden",
+        "fr": "3. Former le datif",
         "de": "3. Den Dativ bilden",
-        "ar": "3. Den Dativ bilden",
-        "en": "3. Den Dativ bilden"
+        "ar": "3. تكوين الداتيف",
+        "en": "3. Forming the dative"
       },
       "text": {
         "fr": "Au masculin et au neutre, der/das deviennent dem et ein devient einem. Au féminin, die devient der et eine devient einer. Au pluriel, die devient den et le nom prend généralement -n : die Kinder → den Kindern. On n’ajoute pas de -n si le pluriel finit déjà en -n ou en -s : den Frauen, den Babys.\n\nLes possessifs suivent les mêmes terminaisons : meinem Vater, meiner Mutter, meinen Freunden. Attention : der Frau est ici un datif féminin, pas un nominatif masculin.",
@@ -89,10 +89,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "declension",
       "title": {
-        "fr": "4. Personalpronomen",
+        "fr": "4. Pronoms personnels",
         "de": "4. Personalpronomen",
-        "ar": "4. Personalpronomen",
-        "en": "4. Personalpronomen"
+        "ar": "4. الضمائر الشخصية",
+        "en": "4. Personal pronouns"
       },
       "headers": [
         {
@@ -328,10 +328,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "pronouns",
       "title": {
-        "fr": "5. Nomen durch Pronomen ersetzen",
+        "fr": "5. Remplacer les noms par des pronoms",
         "de": "5. Nomen durch Pronomen ersetzen",
-        "ar": "5. Nomen durch Pronomen ersetzen",
-        "en": "5. Nomen durch Pronomen ersetzen"
+        "ar": "5. استبدال الأسماء بالضمائر",
+        "en": "5. Replacing nouns with pronouns"
       },
       "text": {
         "fr": "Le pronom doit conserver le cas du nom remplacé : Ich helfe dem Mann → Ich helfe ihm. Ich helfe der Frau → Ich helfe ihr. Ich helfe den Kindern → Ich helfe ihnen.\n\nNe confondez pas ihn (accusatif masculin) et ihm (datif masculin ou neutre). Pour das Mädchen, le pronom grammatical est ihm au datif. Dans une conversation formelle, Ihnen prend une majuscule : Kann ich Ihnen helfen?",
@@ -344,10 +344,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "subject",
       "title": {
-        "fr": "Was bestimmt das Verb?",
+        "fr": "Que détermine le verbe ?",
         "de": "Was bestimmt das Verb?",
-        "ar": "Was bestimmt das Verb?",
-        "en": "Was bestimmt das Verb?"
+        "ar": "ماذا يحدّد الفعل؟",
+        "en": "What does the verb determine?"
       },
       "text": {
         "fr": "Avec gefallen, gehören, schmecken, passen, stehen et wehtun, la chose qui plaît, appartient, a bon goût, convient ou fait mal est le sujet. Die Schuhe gefallen mir : Schuhe est pluriel, donc gefallen. Der Schuh gefällt mir : singulier. Le datif peut précéder le sujet : Mir gefallen die Schuhe.",
@@ -360,10 +360,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "families",
       "title": {
-        "fr": "6. Zwei Verbgruppen",
+        "fr": "6. Deux groupes de verbes",
         "de": "6. Zwei Verbgruppen",
-        "ar": "6. Zwei Verbgruppen",
-        "en": "6. Zwei Verbgruppen"
+        "ar": "6. مجموعتان من الأفعال",
+        "en": "6. Two groups of verbs"
       },
       "text": {
         "fr": "Avec helfen, danken, antworten, gratulieren, glauben et zuhören, le sujet accomplit généralement une action envers quelqu’un : Ich danke dir.\n\nAvec gefallen, schmecken, gehören, passen, stehen et wehtun, le sujet est souvent la chose qui provoque une sensation, plaît ou appartient à quelqu’un. Dans Mir gefällt der Film, mir désigne la personne qui apprécie le film, mais der Film est le sujet. Au pluriel : Mir gefallen die Filme.\n\nPassen concerne notamment la taille ou la disponibilité ; stehen concerne l’apparence : Die Hose passt mir (bonne taille), Die Farbe steht mir (elle me va bien).",
@@ -376,10 +376,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "contrast",
       "title": {
-        "fr": "7. Vor der Wahl vergleichen",
+        "fr": "7. Comparer avant de choisir",
         "de": "7. Vor der Wahl vergleichen",
-        "ar": "7. Vor der Wahl vergleichen",
-        "en": "7. Vor der Wahl vergleichen"
+        "ar": "7. المقارنة قبل الاختيار",
+        "en": "7. Comparing before choosing"
       },
       "text": {
         "fr": "Ich frage dich / Ich antworte dir : fragen prend la personne à l’accusatif, antworten au datif.\n\nIch höre dich / Ich höre dir zu : hören signifie entendre ; zuhören signifie écouter attentivement. Zu est séparé dans une phrase principale.\n\nIch mag die Schuhe / Die Schuhe gefallen mir : le sens est proche mais le sujet change. Avec gefallen, les chaussures commandent le pluriel du verbe.\n\nIch habe Halsschmerzen / Der Hals tut mir weh : dans la deuxième phrase, le sujet est der Hals et mir désigne la personne qui souffre.",
@@ -392,10 +392,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "errors",
       "title": {
-        "fr": "Fehler und Besonderheiten",
+        "fr": "Erreurs et particularités",
         "de": "Fehler und Besonderheiten",
-        "ar": "Fehler und Besonderheiten",
-        "en": "Fehler und Besonderheiten"
+        "ar": "الأخطاء والخصائص",
+        "en": "Mistakes and special features"
       },
       "text": {
         "fr": "✗ Ich helfe dich → Ich helfe dir. ✗ Die Schuhe gefällt mir → Die Schuhe gefallen mir. ✗ Ich höre dir → Ich höre dir zu (écouter attentivement). Hören sans zu prend normalement l’accusatif. Glauben peut aussi prendre un contenu à l’accusatif : Ich glaube dir die Geschichte.",
@@ -408,10 +408,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "dialog",
       "title": {
-        "fr": "Dialog und Merksatz",
+        "fr": "Dialogue et règle à retenir",
         "de": "Dialog und Merksatz",
-        "ar": "Dialog und Merksatz",
-        "en": "Dialog und Merksatz"
+        "ar": "حوار وقاعدة للتذكّر",
+        "en": "Dialogue and rule to remember"
       },
       "text": {
         "fr": "A: Wie geht es dir? B: Mein Rücken tut mir weh. A: Kann ich dir helfen? B: Ja, danke! Retenez le verbe avec wem? et vérifiez l’accord avec le sujet, pas avec le datif.",
@@ -424,10 +424,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Grundformen und Anwendung",
+        "fr": "Formes de base et application",
         "de": "Grundformen und Anwendung",
-        "ar": "Grundformen und Anwendung",
-        "en": "Grundformen und Anwendung"
+        "ar": "الصيغ الأساسية والتطبيق",
+        "en": "Basic forms and application"
       },
       "items": [
         {
@@ -596,10 +596,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Beispiele im Kontext",
+        "fr": "Exemples en contexte",
         "de": "Beispiele im Kontext",
-        "ar": "Beispiele im Kontext",
-        "en": "Beispiele im Kontext"
+        "ar": "أمثلة في السياق",
+        "en": "Examples in context"
       },
       "items": [
         {
@@ -768,10 +768,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Vertiefung und Kontraste",
+        "fr": "Approfondissement et contrastes",
         "de": "Vertiefung und Kontraste",
-        "ar": "Vertiefung und Kontraste",
-        "en": "Vertiefung und Kontraste"
+        "ar": "التعمّق والمقارنة",
+        "en": "Further practice and contrasts"
       },
       "items": [
         {
@@ -940,10 +940,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Gefällt dir die Jacke? (La veste te plaît ?)\nB: Ja, aber sie passt mir nicht. (Oui, mais elle ne me va pas.)\nA: Ich helfe dir. (Je t’aide.)",
@@ -956,10 +956,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

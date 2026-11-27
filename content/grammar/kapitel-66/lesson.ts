@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-66-lesson",
   "title": {
-    "fr": "Alles Gute!",
+    "fr": "Tous mes vœux !",
     "de": "Alles Gute!",
-    "ar": "Alles Gute!",
-    "en": "Alles Gute!"
+    "ar": "أطيب التمنيات!",
+    "en": "All the best!"
   },
   "subtitle": {
     "fr": "Adjectifs substantivés neutres",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-66-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Employer les adjectifs substantivés neutres avec alles, das, etwas, nichts et les quantifieurs.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-66-b2",
       "title": {
-        "fr": "Alles und das",
+        "fr": "Alles et das",
         "de": "Alles und das",
-        "ar": "Alles und das",
-        "en": "Alles und das"
+        "ar": "Alles و das",
+        "en": "Alles and das"
       },
       "text": {
         "fr": "Après alles ou das au nominatif/accusatif neutre, l’adjectif substantivé prend -e et une majuscule : alles Gute, das Neue. Le déterminant indique déjà le neutre. Après d’autres cas, la terminaison change : mit allem Guten.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-66-b3",
       "title": {
-        "fr": "Etwas, nichts, viel, wenig",
+        "fr": "Quelque chose, rien, beaucoup, peu",
         "de": "Etwas, nichts, viel, wenig",
-        "ar": "Etwas, nichts, viel, wenig",
-        "en": "Etwas, nichts, viel, wenig"
+        "ar": "شيء ما، لا شيء، كثير، قليل",
+        "en": "Something, nothing, much, little"
       },
       "text": {
         "fr": "Après etwas, nichts, viel, wenig et ein bisschen, au nominatif/accusatif neutre, l’adjectif substantivé prend -es : etwas Schönes, nichts Neues, viel Gutes. La majuscule indique l’emploi nominal. Ne confondez pas etwa (environ) et etwas (quelque chose).",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-66-b4",
       "title": {
-        "fr": "Superlativ als Nomen",
+        "fr": "Superlatif substantivé",
         "de": "Superlativ als Nomen",
-        "ar": "Superlativ als Nomen",
-        "en": "Superlativ als Nomen"
+        "ar": "صيغة التفضيل العليا المحوّلة إلى اسم",
+        "en": "Nominalized superlative"
       },
       "text": {
         "fr": "Un superlatif peut être substantivé : das Beste, das Wichtigste, das Teuerste. Avec das, il prend -e et une majuscule. Gut a le superlatif irrégulier best-. Distinguez das Beste et am besten (emploi adverbial).",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-66-b5",
       "title": {
-        "fr": "Adjektiv oder Nomen?",
+        "fr": "Adjectif ou nom ?",
         "de": "Adjektiv oder Nomen?",
-        "ar": "Adjektiv oder Nomen?",
-        "en": "Adjektiv oder Nomen?"
+        "ar": "صفة أم اسم؟",
+        "en": "Adjective or noun?"
       },
       "text": {
         "fr": "Si un nom suit l’adjectif, on écrit l’adjectif en minuscule : ein wichtiges Ziel, schöne Träume. Sans nom exprimé, l’adjectif peut devenir un nom : etwas Wichtiges. L’adjectif attributif garde les terminaisons habituelles de genre, nombre et cas.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-66-b6",
       "title": {
-        "fr": "Bedeutung im Kontext",
+        "fr": "Sens en contexte",
         "de": "Bedeutung im Kontext",
-        "ar": "Bedeutung im Kontext",
-        "en": "Bedeutung im Kontext"
+        "ar": "المعنى في السياق",
+        "en": "Meaning in context"
       },
       "text": {
         "fr": "Les adjectifs substantivés désignent souvent quelque chose d’indéterminé, une qualité, une couleur ou une expérience. Etwas Rotes = quelque chose de rouge, das Rote = la partie rouge déjà identifiée. Choisissez le déterminant selon le contexte.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-66-b7",
       "title": {
-        "fr": "Endungen",
+        "fr": "Terminaisons",
         "de": "Endungen",
-        "ar": "Endungen",
-        "en": "Endungen"
+        "ar": "النهايات",
+        "en": "Endings"
       },
       "headers": [
         {
@@ -244,10 +244,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-66-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

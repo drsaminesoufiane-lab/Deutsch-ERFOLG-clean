@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-46-lesson",
   "title": {
-    "fr": "-chen, -lein, -er, -in, -ung",
+    "fr": "Suffixes -chen, -lein, -er, -in, -ung",
     "de": "-chen, -lein, -er, -in, -ung",
-    "ar": "-chen, -lein, -er, -in, -ung",
-    "en": "-chen, -lein, -er, -in, -ung"
+    "ar": "اللواحق -chen و -lein و -er و -in و -ung",
+    "en": "Suffixes -chen, -lein, -er, -in, -ung"
   },
   "subtitle": {
     "fr": "La dérivation des mots",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-46-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Former des noms à partir de noms et de verbes, et connaître leur genre et leur pluriel.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-46-b2",
       "title": {
-        "fr": "Diminutive: -chen und -lein",
+        "fr": "Diminutifs : -chen et -lein",
         "de": "Diminutive: -chen und -lein",
-        "ar": "Diminutive: -chen und -lein",
-        "en": "Diminutive: -chen und -lein"
+        "ar": "صيغ التصغير: -chen و -lein",
+        "en": "Diminutives: -chen and -lein"
       },
       "text": {
         "fr": "Les suffixes diminutifs -chen et -lein donnent toujours un nom neutre (das). Le pluriel ne change pas la terminaison. Un umlaut apparaît souvent : Baum → Bäumchen ; Stadt → Städtchen. Les formes ne sont pas toutes également fréquentes.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-46-b3",
       "title": {
-        "fr": "Personen und Geräte auf -er",
+        "fr": "Personnes et appareils en -er",
         "de": "Personen und Geräte auf -er",
-        "ar": "Personen und Geräte auf -er",
-        "en": "Personen und Geräte auf -er"
+        "ar": "أسماء الأشخاص والأجهزة المنتهية بـ -er",
+        "en": "People and devices ending in -er"
       },
       "text": {
         "fr": "Le suffixe -er peut désigner une personne exerçant une activité ou un appareil : der Spieler, der Fernseher. Ces formations sont généralement masculines et ont un pluriel sans terminaison supplémentaire. Un umlaut peut apparaître, comme dans Läufer.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-46-b4",
       "title": {
-        "fr": "Weibliche Personenbezeichnungen",
+        "fr": "Désignations féminines de personnes",
         "de": "Weibliche Personenbezeichnungen",
-        "ar": "Weibliche Personenbezeichnungen",
-        "en": "Weibliche Personenbezeichnungen"
+        "ar": "تسميات الأشخاص المؤنثة",
+        "en": "Feminine terms for people"
       },
       "text": {
         "fr": "Pour de nombreux noms de personnes, -in forme le féminin, -innen le pluriel : Verkäuferin, Verkäuferinnen. Les noms substantivés comme der Deutsche suivent plutôt la déclinaison adjectivale. Gast possède aussi la forme rare Gästin, mais die Gäste est habituellement inclusif.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-46-b5",
       "title": {
-        "fr": "Nomen auf -ung",
+        "fr": "Noms en -ung",
         "de": "Nomen auf -ung",
-        "ar": "Nomen auf -ung",
-        "en": "Nomen auf -ung"
+        "ar": "الأسماء المنتهية بـ -ung",
+        "en": "Nouns ending in -ung"
       },
       "text": {
         "fr": "De nombreux verbes donnent des noms féminins en -ung. Le pluriel est en -en : erklären → die Erklärung → die Erklärungen. La forme du radical peut varier et tous les verbes ne produisent pas un nom courant en -ung.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-46-b6",
       "title": {
-        "fr": "Substantivierte Infinitive",
+        "fr": "Infinitifs substantivés",
         "de": "Substantivierte Infinitive",
-        "ar": "Substantivierte Infinitive",
-        "en": "Substantivierte Infinitive"
+        "ar": "المصادر المحوّلة إلى أسماء",
+        "en": "Nominalized infinitives"
       },
       "text": {
         "fr": "L’infinitif substantivé prend une majuscule et le genre neutre : das Lesen. Il désigne l’activité en général et n’a normalement pas de pluriel. Après beim (= bei dem) et zum (= zu dem), il s’écrit aussi avec une majuscule.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-46-b7",
       "title": {
-        "fr": "Verb oder Nomen?",
+        "fr": "Verbe ou nom ?",
         "de": "Verb oder Nomen?",
-        "ar": "Verb oder Nomen?",
-        "en": "Verb oder Nomen?"
+        "ar": "فعل أم اسم؟",
+        "en": "Verb or noun?"
       },
       "text": {
         "fr": "Après un modal, on utilise l’infinitif verbal en minuscule : Ich kann lesen. Après un article ou une préposition contractée, le nom prend une majuscule : Beim Lesen. Un nom en -ung peut désigner un résultat ou un objet, pas seulement l’action.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-46-b8",
       "title": {
-        "fr": "Suffixe und Formen",
+        "fr": "Suffixes et formes",
         "de": "Suffixe und Formen",
-        "ar": "Suffixe und Formen",
-        "en": "Suffixe und Formen"
+        "ar": "اللواحق والصيغ",
+        "en": "Suffixes and forms"
       },
       "headers": [
         {

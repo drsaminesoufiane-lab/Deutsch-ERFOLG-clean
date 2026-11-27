@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-43-lesson",
   "title": {
-    "fr": "Ich bin da. Kommst du auch dahin?",
+    "fr": "Je suis là. Tu viens là-bas aussi ?",
     "de": "Ich bin da. Kommst du auch dahin?",
-    "ar": "Ich bin da. Kommst du auch dahin?",
-    "en": "Ich bin da. Kommst du auch dahin?"
+    "ar": "أنا هنا. هل ستأتي إلى هناك أيضًا؟",
+    "en": "I am here. Are you coming there too?"
   },
   "subtitle": {
     "fr": "Adverbes de position et de direction",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-43-b2",
       "title": {
-        "fr": "Wo?",
+        "fr": "Où ?",
         "de": "Wo?",
-        "ar": "Wo?",
-        "en": "Wo?"
+        "ar": "أين؟",
+        "en": "Where?"
       },
       "text": {
         "fr": "Wo? demande où se trouve quelqu’un ou quelque chose. Oben, unten, vorne, hinten, links et rechts expriment une position sans nom ni article. Un mouvement peut avoir lieu à cet endroit : Die Kinder spielen oben.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-43-b3",
       "title": {
-        "fr": "Wohin?",
+        "fr": "Vers où ?",
         "de": "Wohin?",
-        "ar": "Wohin?",
-        "en": "Wohin?"
+        "ar": "إلى أين؟",
+        "en": "Where to?"
       },
       "text": {
         "fr": "Nach oben, nach unten, nach vorne, nach hinten, nach links et nach rechts indiquent une direction. Avec un verbe de déplacement, certaines formes sans nach sont aussi possibles, notamment Komm runter ou geh hoch. Dans les exercices, choisissez la forme standard avec nach si une direction est explicitement demandée.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-43-b4",
       "title": {
-        "fr": "Da und dort",
+        "fr": "Là et là-bas (da, dort)",
         "de": "Da und dort",
-        "ar": "Da und dort",
-        "en": "Da und dort"
+        "ar": "هنا وهناك (da و dort)",
+        "en": "Here/there (da, dort)"
       },
       "text": {
         "fr": "Da et dort reprennent un lieu connu. Ils répondent à Wo? : Ich war schon dort. Da peut aussi désigner un lieu proche ou signaler la présence de quelqu’un. Dans de nombreux contextes da et dort sont interchangeables.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-43-b5",
       "title": {
-        "fr": "Dahin und dorthin",
+        "fr": "Vers là et vers là-bas (dahin, dorthin)",
         "de": "Dahin und dorthin",
-        "ar": "Dahin und dorthin",
-        "en": "Dahin und dorthin"
+        "ar": "إلى هناك (dahin و dorthin)",
+        "en": "To there (dahin, dorthin)"
       },
       "text": {
         "fr": "Dahin et dorthin reprennent une destination déjà mentionnée. Hin marque le déplacement vers ce lieu. Ne pas opposer dahin et dorthin comme si une seule forme était toujours correcte : les deux conviennent souvent.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-43-b6",
       "title": {
-        "fr": "Da als Zeitangabe",
+        "fr": "Da comme indication temporelle",
         "de": "Da als Zeitangabe",
-        "ar": "Da als Zeitangabe",
-        "en": "Da als Zeitangabe"
+        "ar": "Da للتعبير عن الزمن",
+        "en": "Da as a time expression"
       },
       "text": {
         "fr": "Da peut remplacer un moment déjà nommé : Am Montag habe ich frei. Da komme ich. Il signifie alors à ce moment-là, et non là-bas. Dans une principale, da occupe la première position et le verbe suit.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-43-b7",
       "title": {
-        "fr": "Wo? / Wohin?",
+        "fr": "Où ? / Vers où ?",
         "de": "Wo? / Wohin?",
-        "ar": "Wo? / Wohin?",
-        "en": "Wo? / Wohin?"
+        "ar": "أين؟ / إلى أين؟",
+        "en": "Where? / Where to?"
       },
       "headers": [
         {

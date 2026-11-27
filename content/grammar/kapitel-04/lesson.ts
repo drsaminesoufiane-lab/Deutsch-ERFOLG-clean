@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-04",
   "title": {
-    "fr": "Ich esse wenig, aber du isst viel!",
+    "fr": "Je mange peu, mais tu manges beaucoup !",
     "de": "Ich esse wenig, aber du isst viel!",
-    "ar": "Ich esse wenig, aber du isst viel!",
-    "en": "Ich esse wenig, aber du isst viel!"
+    "ar": "أنا آكل قليلاً، لكنك تأكل كثيرًا!",
+    "en": "I eat little, but you eat a lot!"
   },
   "subtitle": {
     "fr": "Verbes à changement de voyelle",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-intro",
       "title": {
-        "fr": "Vokalwechsel im Präsens",
+        "fr": "Changement de voyelle au présent",
         "de": "Vokalwechsel im Präsens",
-        "ar": "Vokalwechsel im Präsens",
-        "en": "Vokalwechsel im Präsens"
+        "ar": "تغيّر حرف العلة في المضارع",
+        "en": "Vowel changes in the present tense"
       },
       "text": {
         "fr": "Certains verbes changent la voyelle du radical uniquement avec du et er/sie/es au présent : essen → du isst, er isst ; schlafen → du schläfst, er schläft. Avec ich, wir, ihr et sie/Sie, on conserve la voyelle de l’infinitif.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-muster",
       "title": {
-        "fr": "Konjugationsmuster",
+        "fr": "Modèles de conjugaison",
         "de": "Konjugationsmuster",
-        "ar": "Konjugationsmuster",
-        "en": "Konjugationsmuster"
+        "ar": "أنماط التصريف",
+        "en": "Conjugation patterns"
       },
       "headers": [
         {
@@ -295,10 +295,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-liste",
       "title": {
-        "fr": "Wichtige Verben mit Vokalwechsel",
+        "fr": "Verbes importants à changement de voyelle",
         "de": "Wichtige Verben mit Vokalwechsel",
-        "ar": "Wichtige Verben mit Vokalwechsel",
-        "en": "Wichtige Verben mit Vokalwechsel"
+        "ar": "أفعال مهمة يتغيّر فيها حرف العلة",
+        "en": "Important verbs with vowel changes"
       },
       "headers": [
         {
@@ -833,10 +833,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-typen",
       "title": {
-        "fr": "e → i / ie und a → ä",
+        "fr": "Alternances vocaliques : e → i / ie et a → ä",
         "de": "e → i / ie und a → ä",
-        "ar": "e → i / ie und a → ä",
-        "en": "e → i / ie und a → ä"
+        "ar": "تبدّل حروف العلة: e → i / ie و a → ä",
+        "en": "Vowel alternations: e → i / ie and a → ä"
       },
       "text": {
         "fr": "Apprends les formes avec leur infinitif : geben → gibt, lesen → liest, fahren → fährt, laufen → läuft. nehmen change aussi des consonnes : nimmt. Tous les verbes contenant e ou a ne changent pas : du gehst, du lachst.",
@@ -849,10 +849,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-trennbar",
       "title": {
-        "fr": "Trennbare Verben mit Vokalwechsel",
+        "fr": "Verbes séparables à changement de voyelle",
         "de": "Trennbare Verben mit Vokalwechsel",
-        "ar": "Trennbare Verben mit Vokalwechsel",
-        "en": "Trennbare Verben mit Vokalwechsel"
+        "ar": "أفعال قابلة للفصل يتغيّر فيها حرف العلة",
+        "en": "Separable verbs with vowel changes"
       },
       "text": {
         "fr": "Dans une proposition principale, le préfixe séparable va en fin de phrase et le radical conjugué garde le changement : Der Zug fährt um acht ab. Avec wir, on dit Wir fahren um acht ab.",
@@ -865,10 +865,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Beispiele 1–10",
+        "fr": "Exemples 1–10",
         "de": "Beispiele 1–10",
-        "ar": "Beispiele 1–10",
-        "en": "Beispiele 1–10"
+        "ar": "أمثلة 1–10",
+        "en": "Examples 1–10"
       },
       "items": [
         {
@@ -1037,10 +1037,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Beispiele 11–20",
+        "fr": "Exemples 11–20",
         "de": "Beispiele 11–20",
-        "ar": "Beispiele 11–20",
-        "en": "Beispiele 11–20"
+        "ar": "أمثلة 11–20",
+        "en": "Examples 11–20"
       },
       "items": [
         {
@@ -1209,10 +1209,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Beispiele 21–30",
+        "fr": "Exemples 21–30",
         "de": "Beispiele 21–30",
-        "ar": "Beispiele 21–30",
-        "en": "Beispiele 21–30"
+        "ar": "أمثلة 21–30",
+        "en": "Examples 21–30"
       },
       "items": [
         {
@@ -1381,10 +1381,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog: Am Morgen",
+        "fr": "Mini-dialogue : le matin",
         "de": "Mini-Dialog: Am Morgen",
-        "ar": "Mini-Dialog: Am Morgen",
-        "en": "Mini-Dialog: Am Morgen"
+        "ar": "حوار قصير: في الصباح",
+        "en": "Mini-dialogue: in the morning"
       },
       "text": {
         "fr": "A: Wann fährst du zur Arbeit? (Quand vas-tu au travail ?)\nB: Um sieben. Ich nehme den Bus. (À sept heures. Je prends le bus.)\nA: Und dein Bruder? (Et ton frère ?)\nB: Er fährt mit dem Auto. (Il y va en voiture.)",
@@ -1397,10 +1397,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -1414,10 +1414,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

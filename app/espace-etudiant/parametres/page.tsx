@@ -122,9 +122,9 @@ export default function ParametresPage() {
           <div className="settings-input-wrap">
             <Globe size={18} />
             <select value={langue} onChange={e => setLangue(e.target.value)}>
-              <option value="fr">Français</option>
-              <option value="ar">العربية</option>
-              <option value="de">Deutsch</option>
+              <option value="fr">🇫🇷 FR</option>
+              <option value="ar">🇲🇦 AR</option>
+              <option value="de">🇩🇪 DE</option>
             </select>
           </div>
 

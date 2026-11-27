@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-74-lesson",
   "title": {
-    "fr": "Um ... zu und damit",
+    "fr": "Pour et afin que (um… zu, damit)",
     "de": "Um ... zu und damit",
-    "ar": "Um ... zu und damit",
-    "en": "Um ... zu und damit"
+    "ar": "لأجل أن ولكي (um… zu و damit)",
+    "en": "In order to and so that (um… zu, damit)"
   },
   "subtitle": {
     "fr": "Subordonnées finales",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-74-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Exprimer le but et distinguer une proposition finale d’une cause ou d’un infinitif complément.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-74-b2",
       "title": {
-        "fr": "Um ... zu",
+        "fr": "Um… zu : pour",
         "de": "Um ... zu",
-        "ar": "Um ... zu",
-        "en": "Um ... zu"
+        "ar": "Um… zu: لأجل أن",
+        "en": "Um… zu: in order to"
       },
       "text": {
         "fr": "Um ... zu exprime un but avec le même sujet implicite que dans la principale. L’infinitif se place en fin de groupe et la virgule est obligatoire. Avec kennenlernen, on écrit kennenzulernen.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-74-b3",
       "title": {
-        "fr": "Damit",
+        "fr": "Damit : afin que",
         "de": "Damit",
-        "ar": "Damit",
-        "en": "Damit"
+        "ar": "Damit: لكي",
+        "en": "Damit: so that"
       },
       "text": {
         "fr": "Damit introduit une proposition complète avec sujet et verbe conjugué en dernière position. Avec des sujets différents, c’est la construction à choisir ; avec le même sujet, damit et um ... zu sont souvent possibles.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-74-b4",
       "title": {
-        "fr": "Ziel oder Grund?",
+        "fr": "But ou cause ?",
         "de": "Ziel oder Grund?",
-        "ar": "Ziel oder Grund?",
-        "en": "Ziel oder Grund?"
+        "ar": "الهدف أم السبب؟",
+        "en": "Purpose or reason?"
       },
       "text": {
         "fr": "Wozu? demande le but (um ... zu, damit). Warum? demande une cause (weil). Un événement qui explique une décision déjà prise est une cause, pas nécessairement un objectif.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-74-b5",
       "title": {
-        "fr": "Infinitivergänzung",
+        "fr": "Complément infinitif",
         "de": "Infinitivergänzung",
-        "ar": "Infinitivergänzung",
-        "en": "Infinitivergänzung"
+        "ar": "المتمّم المصدري",
+        "en": "Infinitive complement"
       },
       "text": {
         "fr": "Après Lust haben, Angst haben ou vergessen, un infinitif complément s’emploie sans um. Um s’ajoute uniquement si le groupe exprime un but indépendant. Zu se place avant l’infinitif simple ou entre le préfixe séparable et le radical.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-74-b6",
       "title": {
-        "fr": "Modalverben und Negation",
+        "fr": "Verbes modaux et négation",
         "de": "Modalverben und Negation",
-        "ar": "Modalverben und Negation",
-        "en": "Modalverben und Negation"
+        "ar": "الأفعال الناقصة والنفي",
+        "en": "Modal verbs and negation"
       },
       "text": {
         "fr": "Wollen et möchten sont généralement superflus dans une finale car le but implique déjà une intention. Können peut rester : um besser sprechen zu können. Nicht se place avant le groupe verbal à nier.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-74-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

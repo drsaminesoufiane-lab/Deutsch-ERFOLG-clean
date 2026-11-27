@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-56-lesson",
   "title": {
-    "fr": "Wenn ich viel Geld hätte, ...",
+    "fr": "Si j’avais beaucoup d’argent…",
     "de": "Wenn ich viel Geld hätte, ...",
-    "ar": "Wenn ich viel Geld hätte, ...",
-    "en": "Wenn ich viel Geld hätte, ..."
+    "ar": "لو كان لديّ مال كثير…",
+    "en": "If I had a lot of money…"
   },
   "subtitle": {
     "fr": "Emplois du subjonctif II",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-56-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Reconnaître et formuler des souhaits, conditions irréelles, demandes polies, conseils et suggestions.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-56-b2",
       "title": {
-        "fr": "Wünsche",
+        "fr": "Souhaits",
         "de": "Wünsche",
-        "ar": "Wünsche",
-        "en": "Wünsche"
+        "ar": "الأمنيات",
+        "en": "Wishes"
       },
       "text": {
         "fr": "Pour exprimer un souhait, combinez souvent wäre, hätte ou würde + infinitif avec gern(e), lieber ou am liebsten. Le souhait n’est pas forcément irréalisable : il est présenté comme non réalisé au moment où l’on parle.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-56-b3",
       "title": {
-        "fr": "Irreale Bedingungen",
+        "fr": "Conditions irréelles",
         "de": "Irreale Bedingungen",
-        "ar": "Irreale Bedingungen",
-        "en": "Irreale Bedingungen"
+        "ar": "الشروط غير الواقعية",
+        "en": "Unreal conditions"
       },
       "text": {
         "fr": "Le Konjunktiv II dans les deux propositions indique une hypothèse contraire à la situation actuelle ou peu probable. Wenn introduit la condition avec verbe final, puis le verbe principal vient après la virgule; dann est facultatif.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-56-b4",
       "title": {
-        "fr": "Höfliche Bitten",
+        "fr": "Demandes polies",
         "de": "Höfliche Bitten",
-        "ar": "Höfliche Bitten",
-        "en": "Höfliche Bitten"
+        "ar": "الطلبات المهذبة",
+        "en": "Polite requests"
       },
       "text": {
         "fr": "Könnten Sie bitte …? et Würden Sie bitte …? rendent une demande plus polie que l’impératif. Le verbe principal reste à l’infinitif à la fin. Sie est la forme de politesse, du la forme familière.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-56-b5",
       "title": {
-        "fr": "Ratschläge",
+        "fr": "Conseils",
         "de": "Ratschläge",
-        "ar": "Ratschläge",
-        "en": "Ratschläge"
+        "ar": "النصائح",
+        "en": "Advice"
       },
       "text": {
         "fr": "Sollte + infinitif permet de conseiller sans imposer une obligation absolue. Du solltest früher schlafen gehen est moins impératif que du musst früher schlafen gehen. La terminaison de sollte dépend du sujet.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-56-b6",
       "title": {
-        "fr": "Vorschläge",
+        "fr": "Propositions",
         "de": "Vorschläge",
-        "ar": "Vorschläge",
-        "en": "Vorschläge"
+        "ar": "الاقتراحات",
+        "en": "Suggestions"
       },
       "text": {
         "fr": "Könnte + infinitif présente une possibilité à envisager ensemble : wir könnten ins Kino gehen. Contrairement au conseil, la suggestion propose une option et ne désigne pas nécessairement une action préférable.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-56-b7",
       "title": {
-        "fr": "Bedeutung im Kontext",
+        "fr": "Sens en contexte",
         "de": "Bedeutung im Kontext",
-        "ar": "Bedeutung im Kontext",
-        "en": "Bedeutung im Kontext"
+        "ar": "المعنى في السياق",
+        "en": "Meaning in context"
       },
       "text": {
         "fr": "Une même forme peut avoir plusieurs fonctions. Könnten Sie mir helfen? est une demande, Wir könnten helfen est une suggestion. Le sujet, le contexte, bitte et la forme interrogative aident à distinguer les usages.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-56-b8",
       "title": {
-        "fr": "Funktionen",
+        "fr": "Fonctions",
         "de": "Funktionen",
-        "ar": "Funktionen",
-        "en": "Funktionen"
+        "ar": "الوظائف",
+        "en": "Functions"
       },
       "headers": [
         {
@@ -247,10 +247,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-56-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

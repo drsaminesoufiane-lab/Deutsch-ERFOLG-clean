@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-18-lesson",
   "title": {
-    "fr": "Mein, dein, unser",
+    "fr": "Mon, ton, notre",
     "de": "Mein, dein, unser",
-    "ar": "Mein, dein, unser",
-    "en": "Mein, dein, unser"
+    "ar": "ملكي وملكك وملكنا",
+    "en": "My, your, our"
   },
   "subtitle": {
     "fr": "Articles possessifs",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-1",
       "title": {
-        "fr": "Besitzer und Nomen",
+        "fr": "Possesseur et nom",
         "de": "Besitzer und Nomen",
-        "ar": "Besitzer und Nomen",
-        "en": "Besitzer und Nomen"
+        "ar": "المالك والاسم",
+        "en": "Possessor and noun"
       },
       "text": {
         "fr": "Choisis le radical avec le possesseur (ich → mein, er → sein, sie → ihr). Puis regarde le nom possédé : mein Vater, meine Mutter. Le genre du possesseur ne détermine pas la terminaison. Thomas hat eine Schwester: seine Schwester. Anna hat einen Bruder: ihr Bruder.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-2",
       "title": {
-        "fr": "Possessivstämme",
+        "fr": "Radicaux des possessifs",
         "de": "Possessivstämme",
-        "ar": "Possessivstämme",
-        "en": "Possessivstämme"
+        "ar": "جذور أدوات الملكية",
+        "en": "Possessive stems"
       },
       "headers": [
         {
@@ -203,10 +203,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-3",
       "title": {
-        "fr": "Deklination mit mein-",
+        "fr": "Déclinaison avec mein-",
         "de": "Deklination mit mein-",
-        "ar": "Deklination mit mein-",
-        "en": "Deklination mit mein-"
+        "ar": "تصريف أداة الملكية mein-",
+        "en": "Declension with mein-"
       },
       "headers": [
         {
@@ -352,10 +352,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-4",
       "title": {
-        "fr": "Deklination und Besonderheiten",
+        "fr": "Déclinaison et particularités",
         "de": "Deklination und Besonderheiten",
-        "ar": "Deklination und Besonderheiten",
-        "en": "Deklination und Besonderheiten"
+        "ar": "التصريف والخصائص",
+        "en": "Declension and special features"
       },
       "text": {
         "fr": "Les possessifs se déclinent comme kein. Identifie le cas selon le verbe ou la préposition : Ich sehe meinen Vater; ich helfe meinem Vater. Euer perd souvent le deuxième e devant une terminaison : eure Mutter, euren Vater. Ihr avec majuscule est le possessif de politesse.",
@@ -368,10 +368,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Besitzer im Nominativ",
+        "fr": "Possessifs au nominatif",
         "de": "Besitzer im Nominativ",
-        "ar": "Besitzer im Nominativ",
-        "en": "Besitzer im Nominativ"
+        "ar": "أدوات الملكية في حالة الرفع",
+        "en": "Possessives in the nominative"
       },
       "items": [
         {
@@ -540,10 +540,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Possessivartikel im Akkusativ",
+        "fr": "Déterminants possessifs à l’accusatif",
         "de": "Possessivartikel im Akkusativ",
-        "ar": "Possessivartikel im Akkusativ",
-        "en": "Possessivartikel im Akkusativ"
+        "ar": "أدوات الملكية في حالة النصب",
+        "en": "Possessive determiners in the accusative"
       },
       "items": [
         {
@@ -712,10 +712,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Dativ und Sonderformen",
+        "fr": "Datif et formes particulières",
         "de": "Dativ und Sonderformen",
-        "ar": "Dativ und Sonderformen",
-        "en": "Dativ und Sonderformen"
+        "ar": "الداتيف والصيغ الخاصة",
+        "en": "Dative and special forms"
       },
       "items": [
         {
@@ -884,10 +884,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A : Ist das dein Fahrrad? (C’est ton vélo ?)\nB : Nein, das ist das Fahrrad meines Bruders. Sein Fahrrad ist rot. (Non, c’est celui de mon frère. Son vélo est rouge.)",
@@ -900,10 +900,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -917,10 +917,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-23-lesson",
   "title": {
-    "fr": "Ich war, ich hatte",
+    "fr": "J’étais, j’avais",
     "de": "Ich war, ich hatte",
-    "ar": "Ich war, ich hatte",
-    "en": "Ich war, ich hatte"
+    "ar": "كنت، كان لديّ",
+    "en": "I was, I had"
   },
   "subtitle": {
     "fr": "Präteritum: sein und haben",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "theory",
       "title": {
-        "fr": "Vergangenheit von sein und haben",
+        "fr": "Passé de sein et haben",
         "de": "Vergangenheit von sein und haben",
-        "ar": "Vergangenheit von sein und haben",
-        "en": "Vergangenheit von sein und haben"
+        "ar": "ماضي sein و haben",
+        "en": "Past tense of sein and haben"
       },
       "text": {
         "fr": "Le Präteritum exprime ici un état ou une possession dans le passé. Sein décrit un état ou un lieu ; haben exprime notamment la possession, une disponibilité ou un symptôme. Ces deux verbes sont très fréquents au Präteritum, même à l’oral.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-vertiefung",
       "title": {
-        "fr": "Präsens und Präteritum vergleichen",
+        "fr": "Comparaison du présent et du prétérit",
         "de": "Präsens und Präteritum vergleichen",
-        "ar": "Präsens und Präteritum vergleichen",
-        "en": "Präsens und Präteritum vergleichen"
+        "ar": "مقارنة المضارع والماضي البسيط",
+        "en": "Comparing present and simple past"
       },
       "text": {
         "fr": "Aujourd’hui : Ich bin müde und habe keine Zeit. Hier : Ich war müde und hatte keine Zeit. Sein et haben sont irréguliers : war, warst, war, waren, wart, waren ; hatte, hattest, hatte, hatten, hattet, hatten. Dans une question, Warst du müde? Le verbe passe devant le sujet.",
@@ -57,10 +57,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "syntax",
       "title": {
-        "fr": "Wortstellung",
+        "fr": "Ordre des mots",
         "de": "Wortstellung",
-        "ar": "Wortstellung",
-        "en": "Wortstellung"
+        "ar": "ترتيب الكلمات",
+        "en": "Word order"
       },
       "text": {
         "fr": "Dans une principale déclarative, le verbe conjugué occupe la deuxième position, même après Gestern. Dans une question oui/non, il vient en premier. Dans le Perfekt, le participe se place à la fin de la principale.",
@@ -73,10 +73,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "forms",
       "title": {
-        "fr": "Präteritum: sein und haben",
+        "fr": "Prétérit : sein et haben",
         "de": "Präteritum: sein und haben",
-        "ar": "Präteritum: sein und haben",
-        "en": "Präteritum: sein und haben"
+        "ar": "الماضي البسيط: sein و haben",
+        "en": "Simple past: sein and haben"
       },
       "headers": [
         {
@@ -327,10 +327,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "errors",
       "title": {
-        "fr": "Fehler",
+        "fr": "Erreurs",
         "de": "Fehler",
-        "ar": "Fehler",
-        "en": "Fehler"
+        "ar": "الأخطاء",
+        "en": "Mistakes"
       },
       "text": {
         "fr": "✗ Ich waren krank. → Ich war krank. Le singulier exige war. ✗ Du hatte Zeit. → Du hattest Zeit.",
@@ -343,10 +343,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Grundformen und Anwendung",
+        "fr": "Formes de base et application",
         "de": "Grundformen und Anwendung",
-        "ar": "Grundformen und Anwendung",
-        "en": "Grundformen und Anwendung"
+        "ar": "الصيغ الأساسية والتطبيق",
+        "en": "Basic forms and application"
       },
       "items": [
         {
@@ -515,10 +515,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Beispiele im Kontext",
+        "fr": "Exemples en contexte",
         "de": "Beispiele im Kontext",
-        "ar": "Beispiele im Kontext",
-        "en": "Beispiele im Kontext"
+        "ar": "أمثلة في السياق",
+        "en": "Examples in context"
       },
       "items": [
         {
@@ -687,10 +687,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Vertiefung und Kontraste",
+        "fr": "Approfondissement et contrastes",
         "de": "Vertiefung und Kontraste",
-        "ar": "Vertiefung und Kontraste",
-        "en": "Vertiefung und Kontraste"
+        "ar": "التعمّق والمقارنة",
+        "en": "Further practice and contrasts"
       },
       "items": [
         {
@@ -859,10 +859,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Wo warst du gestern? (Où étais-tu hier ?)\nB: Ich war zu Hause. Ich hatte Fieber. (J’étais chez moi. J’avais de la fièvre.)\nA: Hattest du einen Termin beim Arzt? (Avais-tu un rendez-vous chez le médecin ?)",
@@ -875,10 +875,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

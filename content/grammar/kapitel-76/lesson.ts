@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-76-lesson",
   "title": {
-    "fr": "Je größer, desto besser!",
+    "fr": "Plus c’est grand, mieux c’est !",
     "de": "Je größer, desto besser!",
-    "ar": "Je größer, desto besser!",
-    "en": "Je größer, desto besser!"
+    "ar": "كلّما كان أكبر، كان أفضل!",
+    "en": "The bigger, the better!"
   },
   "subtitle": {
     "fr": "Comparaisons corrélatives",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-76-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Construire des comparaisons évolutives avec je ... desto/umso et les comparatifs irréguliers.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-76-b2",
       "title": {
-        "fr": "Je ... desto/umso",
+        "fr": "Je… desto/umso : plus… plus",
         "de": "Je ... desto/umso",
-        "ar": "Je ... desto/umso",
-        "en": "Je ... desto/umso"
+        "ar": "Je… desto/umso: كلّما… زاد…",
+        "en": "Je… desto/umso: the more… the more"
       },
       "text": {
         "fr": "Cette construction exprime une relation entre deux degrés : plus A, plus B (ou moins A, plus B). Je ouvre la subordonnée, desto ou umso ouvre la principale. Ces deux derniers sont synonymes.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-76-b3",
       "title": {
-        "fr": "Komparativ",
+        "fr": "Comparatif",
         "de": "Komparativ",
-        "ar": "Komparativ",
-        "en": "Komparativ"
+        "ar": "صيغة المقارنة",
+        "en": "Comparative"
       },
       "text": {
         "fr": "En règle générale, ajoutez -er à l’adjectif ou à l’adverbe. Certains mots prennent un Umlaut (alt → älter, groß → größer, kalt → kälter). Le comparatif attributif porte aussi la terminaison de déclinaison : je größere Räume.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-76-b4",
       "title": {
-        "fr": "Unregelmäßige Komparative",
+        "fr": "Comparatifs irréguliers",
         "de": "Unregelmäßige Komparative",
-        "ar": "Unregelmäßige Komparative",
-        "en": "Unregelmäßige Komparative"
+        "ar": "صيغ المقارنة غير المنتظمة",
+        "en": "Irregular comparatives"
       },
       "text": {
         "fr": "Mémorisez gut → besser, viel → mehr, gern → lieber, hoch → höher, wenig → weniger. Pour le bien-être, wohl → wohler. Ces formes se placent après je ou desto/umso.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-76-b5",
       "title": {
-        "fr": "Verb am Ende / Verbzweitstellung",
+        "fr": "Verbe en fin de phrase / en deuxième position",
         "de": "Verb am Ende / Verbzweitstellung",
-        "ar": "Verb am Ende / Verbzweitstellung",
-        "en": "Verb am Ende / Verbzweitstellung"
+        "ar": "الفعل في نهاية الجملة / في الموضع الثاني",
+        "en": "Verb-final / verb-second position"
       },
       "text": {
         "fr": "Le verbe conjugué de la proposition en je est à la fin. Dans la principale, le groupe desto + comparatif occupe la première position et le verbe conjugué la deuxième : Je mehr du lernst, desto besser sprichst du.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-76-b6",
       "title": {
-        "fr": "Bedeutung und Grenzen",
+        "fr": "Sens et limites",
         "de": "Bedeutung und Grenzen",
-        "ar": "Bedeutung und Grenzen",
-        "en": "Bedeutung und Grenzen"
+        "ar": "المعنى والحدود",
+        "en": "Meaning and limitations"
       },
       "text": {
         "fr": "Une comparaison corrélative peut exprimer une observation, une hypothèse ou une opinion. Elle n’établit pas une loi universelle : plus on travaille, plus on gagne n’est pas toujours vrai.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-76-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

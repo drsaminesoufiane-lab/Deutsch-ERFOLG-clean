@@ -20,6 +20,7 @@ type Correction = {
   manualReview: boolean
   correctAnswer?: string | string[]
   explanation?: string
+  explanations?: Record<'fr' | 'de' | 'ar' | 'en', string>
 }
 
 type SubmitResult = {
@@ -226,6 +227,56 @@ function QuestionContent({
   )
 }
 
+// DE_PEDAGOGICAL_FEEDBACK_V1
+const feedbackLabels = {
+  fr: { your: 'Ta réponse', expected: 'Réponse attendue', why: 'Pourquoi cette erreur ?', rule: 'Explication', yes: 'Vrai', no: 'Faux' },
+  de: { your: 'Deine Antwort', expected: 'Richtige Antwort', why: 'Warum ist das falsch?', rule: 'Erklärung', yes: 'Wahr', no: 'Falsch' },
+  en: { your: 'Your answer', expected: 'Correct answer', why: 'Why is this wrong?', rule: 'Explanation', yes: 'True', no: 'False' },
+  ar: { your: 'إجابتك', expected: 'الإجابة الصحيحة', why: 'لماذا هذه الإجابة خاطئة؟', rule: 'الشرح', yes: 'صحيح', no: 'خطأ' },
+} as const
+
+function PedagogicalFeedback({ correction, question, answer, language }: {
+  correction: Correction
+  question: PublicQuestion
+  answer?: AnswerValue
+  language: keyof typeof feedbackLabels
+}) {
+  if (correction.manualReview) return null
+  const labels = feedbackLabels[language]
+  const renderAnswer = (value?: AnswerValue) => {
+    if (value === undefined) return '—'
+    if (question.type === 'true_false') return value === 'true' ? labels.yes : value === 'false' ? labels.no : '—'
+    if (Array.isArray(value)) return question.type === 'reorder' ? value.join(' ') : value.map((v, i) => `${i + 1}. ${v}`).join(' · ')
+    return value
+  }
+  const explanation = correction.explanations?.[language] ?? correction.explanation
+  const direction = question.type === 'true_false' ? 'auto' : 'ltr'
+  return (
+    <div className="mt-3 space-y-3 text-sm">
+      {correction.correct === false && (
+        <div className="space-y-2">
+          <div className="rounded-lg bg-white/70 p-3">
+            <p className="font-semibold text-slate-600">{labels.your}</p>
+            <p dir={direction} className="mt-1 break-words font-semibold text-rose-700">{renderAnswer(answer)}</p>
+          </div>
+          {correction.correctAnswer !== undefined && (
+            <div className="rounded-lg bg-white/70 p-3">
+              <p className="font-semibold text-slate-600">{labels.expected}</p>
+              <p dir={direction} className="mt-1 break-words font-semibold text-emerald-700">{renderAnswer(correction.correctAnswer)}</p>
+            </div>
+          )}
+        </div>
+      )}
+      {explanation && (
+        <div className="rounded-lg border border-amber-200 bg-white/70 p-3">
+          <p className="font-semibold text-slate-800">{correction.correct === false ? labels.why : labels.rule}</p>
+          <p className="mt-2 whitespace-pre-line break-words leading-6 text-slate-700">{explanation}</p>
+        </div>
+      )}
+    </div>
+  )
+}
+
 export default function ExerciseRenderer({
   chapterId,
   exerciseSet,
@@ -358,12 +409,7 @@ export default function ExerciseRenderer({
                   {correction.manualReview ? <CircleAlert size={18}/> : correction.correct ? <CheckCircle2 size={18}/> : <CircleAlert size={18}/>} 
                   {correction.manualReview ? labels.manual : correction.correct ? labels.correct : labels.incorrect}
                 </div>
-                {correction.correctAnswer !== undefined && !correction.correct && (
-                  <p className="mt-2 text-sm text-slate-800">
-                    <strong>{labels.correct} :</strong> {Array.isArray(correction.correctAnswer) ? correction.correctAnswer.join(' · ') : correction.correctAnswer}
-                  </p>
-                )}
-                {correction.explanation && <p className="mt-2 text-sm leading-6 text-slate-700">{correction.explanation}</p>}
+                <PedagogicalFeedback correction={correction} question={question} answer={answers[question.id]} language={language} />
               </div>
             )}
           </article>

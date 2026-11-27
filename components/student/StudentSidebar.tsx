@@ -1,6 +1,9 @@
 
 'use client'
 
+// DE_GRAMMAR_MODULE_TITLE_V1
+import { useGrammarModuleTitle } from '@/components/student/GrammarModuleTitle'
+
 import { useState } from 'react'
 import Link from 'next/link'
 import StudentXP from '@/components/student/StudentXP'
@@ -27,6 +30,7 @@ export default function StudentSidebar({ isAdmin = false }: { isAdmin?: boolean 
   const router = useRouter()
   const pathname = usePathname()
   const { t, language } = useLanguage()
+  const grammarModuleTitle = useGrammarModuleTitle()
 
   const [menuOpen, setMenuOpen] = useState(false)
 
@@ -44,12 +48,8 @@ export default function StudentSidebar({ isAdmin = false }: { isAdmin?: boolean 
     ar: 'قاموس B1',
   }
 
-  const currentLanguage =
-    typeof window !== 'undefined'
-      ? localStorage.getItem('deutsch_erfolg_language')
-      : 'de'
-
-  const administrationLabel = {
+  const currentLanguage = language // DE_SIDEBAR_REACTIVE_LANGUAGE_V1
+const administrationLabel = {
     fr: 'Administration',
     de: 'Verwaltung',
     en: 'Administration',
@@ -79,7 +79,7 @@ export default function StudentSidebar({ isAdmin = false }: { isAdmin?: boolean 
       href: '/espace-etudiant/apprentissage/allemand-debutant',
     },
     {
-      label: 'Deutsche Grammatik',
+      label: grammarModuleTitle,
       Icon: GraduationCap,
       href: '/espace-etudiant/apprentissage/grammaire',
     },

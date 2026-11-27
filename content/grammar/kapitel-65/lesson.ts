@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-65-lesson",
   "title": {
-    "fr": "Der Jugendliche – ein Jugendlicher",
+    "fr": "Le jeune – un jeune",
     "de": "Der Jugendliche – ein Jugendlicher",
-    "ar": "Der Jugendliche – ein Jugendlicher",
-    "en": "Der Jugendliche – ein Jugendlicher"
+    "ar": "الشابّ المعرّف والمنكّر",
+    "en": "The young person – a young person"
   },
   "subtitle": {
     "fr": "Adjectifs substantivés désignant des personnes",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-65-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Former les noms de personnes issus d’adjectifs et appliquer la déclinaison adjectivale.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-65-b2",
       "title": {
-        "fr": "Bestimmter Artikel",
+        "fr": "Article défini",
         "de": "Bestimmter Artikel",
-        "ar": "Bestimmter Artikel",
-        "en": "Bestimmter Artikel"
+        "ar": "أداة التعريف",
+        "en": "Definite article"
       },
       "text": {
         "fr": "Un adjectif substantivé prend une majuscule et conserve la déclinaison adjectivale. Après der/die au nominatif singulier, -e : der Jugendliche, die Jugendliche. Après den, dem, des, der au datif/génitif et au pluriel défini, -en : den Jugendlichen, die Jugendlichen.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-65-b3",
       "title": {
-        "fr": "Unbestimmter Artikel",
+        "fr": "Article indéfini",
         "de": "Unbestimmter Artikel",
-        "ar": "Unbestimmter Artikel",
-        "en": "Unbestimmter Artikel"
+        "ar": "أداة التنكير",
+        "en": "Indefinite article"
       },
       "text": {
         "fr": "Après ein au nominatif masculin, l’adjectif substantivé indique le genre par -er : ein Bekannter. Au féminin eine Bekannte, également à l’accusatif. Après einen, einem, eines, einer au datif/génitif, la terminaison est -en.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-65-b4",
       "title": {
-        "fr": "Plural ohne Artikel",
+        "fr": "Pluriel sans article",
         "de": "Plural ohne Artikel",
-        "ar": "Plural ohne Artikel",
-        "en": "Plural ohne Artikel"
+        "ar": "الجمع دون أداة",
+        "en": "Plural without an article"
       },
       "text": {
         "fr": "Sans article, on emploie les terminaisons fortes : Jugendliche au nominatif/accusatif pluriel, Jugendlichen au datif, Jugendlicher au génitif. Avec die/den/der ou un possessif pluriel, on utilise -en : meine Bekannten.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-65-b5",
       "title": {
-        "fr": "Normales Nomen oder Adjektiv?",
+        "fr": "Nom ordinaire ou adjectif ?",
         "de": "Normales Nomen oder Adjektiv?",
-        "ar": "Normales Nomen oder Adjektiv?",
-        "en": "Normales Nomen oder Adjektiv?"
+        "ar": "اسم عادي أم صفة؟",
+        "en": "Ordinary noun or adjective?"
       },
       "text": {
         "fr": "Les noms classiques ne varient pas comme des adjectifs : ein Freund, einem Freund; un adjectif substantivé se décline : ein Bekannter, einem Bekannten. Ne pas confondre der Deutsche, ein Deutscher avec der Schweizer, ein Schweizer, qui est un nom ordinaire.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-65-b6",
       "title": {
-        "fr": "Großschreibung",
+        "fr": "Majuscule",
         "de": "Großschreibung",
-        "ar": "Großschreibung",
-        "en": "Großschreibung"
+        "ar": "الكتابة بحرف كبير",
+        "en": "Capitalization"
       },
       "text": {
         "fr": "L’adjectif substantivé désigne ici une personne sans nom exprimé : die Kranke. S’il accompagne un nom, il reste en minuscule : die kranke Frau. Les formes masculines et féminines changent avec le déterminant et le cas.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-65-b7",
       "title": {
-        "fr": "Deklination",
+        "fr": "Déclinaison",
         "de": "Deklination",
-        "ar": "Deklination",
-        "en": "Deklination"
+        "ar": "التصريف الإعرابي",
+        "en": "Declension"
       },
       "headers": [
         {
@@ -274,10 +274,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-65-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

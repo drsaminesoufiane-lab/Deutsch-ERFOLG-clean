@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-60-lesson",
   "title": {
-    "fr": "Werden, werden, werden ...",
+    "fr": "Les différents emplois de werden",
     "de": "Werden, werden, werden ...",
-    "ar": "Werden, werden, werden ...",
-    "en": "Werden, werden, werden ..."
+    "ar": "استعمالات werden المختلفة",
+    "en": "The different uses of werden"
   },
   "subtitle": {
     "fr": "Les fonctions de werden",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-60-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Distinguer le changement d’état, le passif et le Futur I; maîtriser geworden, worden et werden.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-60-b2",
       "title": {
-        "fr": "Vollverb: Prozess",
+        "fr": "Verbe lexical : processus",
         "de": "Vollverb: Prozess",
-        "ar": "Vollverb: Prozess",
-        "en": "Vollverb: Prozess"
+        "ar": "فعل مستقل: التحوّل",
+        "en": "Main verb: process"
       },
       "text": {
         "fr": "Employé comme verbe lexical, werden signifie devenir et peut être suivi d’un nom ou d’un adjectif : Arzt werden, müde werden. Le nom de profession est normalement sans article; l’adjectif prédicatif ne se décline pas.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-60-b3",
       "title": {
-        "fr": "Hilfsverb: Passiv",
+        "fr": "Auxiliaire du passif",
         "de": "Hilfsverb: Passiv",
-        "ar": "Hilfsverb: Passiv",
-        "en": "Hilfsverb: Passiv"
+        "ar": "فعل مساعد للمبني للمجهول",
+        "en": "Auxiliary: passive voice"
       },
       "text": {
         "fr": "Avec un participe II, werden forme le passif de processus : Der Salat wird gewaschen. Le sujet subit l’action. Au Perfekt, on utilise sein + participe II du verbe lexical + worden.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-60-b4",
       "title": {
-        "fr": "Hilfsverb: Futur I",
+        "fr": "Auxiliaire du futur simple",
         "de": "Hilfsverb: Futur I",
-        "ar": "Hilfsverb: Futur I",
-        "en": "Hilfsverb: Futur I"
+        "ar": "فعل مساعد للمستقبل البسيط",
+        "en": "Auxiliary: simple future"
       },
       "text": {
         "fr": "Werden suivi d’un infinitif forme le Futur I, qui exprime l’avenir ou une supposition : Er wird morgen kommen, Er wird wohl schlafen. Le contexte précise la valeur.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-60-b5",
       "title": {
-        "fr": "Geworden oder worden?",
+        "fr": "Geworden ou worden ?",
         "de": "Geworden oder worden?",
-        "ar": "Geworden oder worden?",
-        "en": "Geworden oder worden?"
+        "ar": "الفرق بين geworden و worden",
+        "en": "Geworden or worden?"
       },
       "text": {
         "fr": "Le Perfekt du verbe lexical devenir est sein + geworden : Er ist Lehrer geworden. Le Perfekt du passif utilise worden, sans ge-, après le participe du verbe principal : Er ist gewählt worden. Repérez le complément de werden.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-60-b6",
       "title": {
-        "fr": "Werden mit Modalverben",
+        "fr": "Werden avec les verbes modaux",
         "de": "Werden mit Modalverben",
-        "ar": "Werden mit Modalverben",
-        "en": "Werden mit Modalverben"
+        "ar": "Werden مع الأفعال الناقصة",
+        "en": "Werden with modal verbs"
       },
       "text": {
         "fr": "Après un modal, werden reste à l’infinitif : Ich möchte Ärztin werden exprime un changement, tandis que Das Baby muss gefüttert werden est passif. La présence d’un participe II distingue le second cas.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-60-b7",
       "title": {
-        "fr": "Formen vergleichen",
+        "fr": "Comparer les formes",
         "de": "Formen vergleichen",
-        "ar": "Formen vergleichen",
-        "en": "Formen vergleichen"
+        "ar": "مقارنة الصيغ",
+        "en": "Comparing forms"
       },
       "text": {
         "fr": "La forme wird ne suffit pas pour identifier la fonction. Cherchez un adjectif ou un nom (devenir), un participe II (passif) ou un infinitif (futur). Le Futur I peut même contenir werden comme verbe lexical : Er wird Arzt werden.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-60-b8",
       "title": {
-        "fr": "Drei Funktionen",
+        "fr": "Trois fonctions",
         "de": "Drei Funktionen",
-        "ar": "Drei Funktionen",
-        "en": "Drei Funktionen"
+        "ar": "ثلاث وظائف",
+        "en": "Three functions"
       },
       "headers": [
         {
@@ -283,10 +283,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-60-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

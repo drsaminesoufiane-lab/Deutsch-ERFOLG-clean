@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-77-lesson",
   "title": {
-    "fr": "Während, wegen, trotz, innerhalb, außerhalb",
+    "fr": "Pendant, à cause de, malgré, à l’intérieur, à l’extérieur",
     "de": "Während, wegen, trotz, innerhalb, außerhalb",
-    "ar": "Während, wegen, trotz, innerhalb, außerhalb",
-    "en": "Während, wegen, trotz, innerhalb, außerhalb"
+    "ar": "أثناء، بسبب، رغم، داخل، خارج",
+    "en": "During, because of, despite, inside, outside"
   },
   "subtitle": {
     "fr": "Prépositions au génitif",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-77-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Employer les cinq prépositions avec le génitif et reconnaître leur sens.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-77-b2",
       "title": {
-        "fr": "Genitivformen",
+        "fr": "Formes du génitif",
         "de": "Genitivformen",
-        "ar": "Genitivformen",
-        "en": "Genitivformen"
+        "ar": "صيغ حالة الإضافة",
+        "en": "Genitive forms"
       },
       "text": {
         "fr": "Au génitif, les articles définis sont des (masculin/neutre) et der (féminin/pluriel). Les noms masculins et neutres prennent généralement -(e)s, sauf notamment les noms faibles : wegen des Studenten. Les possessifs suivent le modèle ein.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-77-b3",
       "title": {
-        "fr": "Während",
+        "fr": "Während : pendant que",
         "de": "Während",
-        "ar": "Während",
-        "en": "Während"
+        "ar": "Während: بينما",
+        "en": "Während: while"
       },
       "text": {
         "fr": "Während + groupe nominal désigne la durée pendant laquelle une action se produit. Dans ce chapitre, on utilise le génitif standard. Comparez während des Essens et während ich esse (conjonction).",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-77-b4",
       "title": {
-        "fr": "Wegen",
+        "fr": "Wegen : à cause de",
         "de": "Wegen",
-        "ar": "Wegen",
-        "en": "Wegen"
+        "ar": "Wegen: بسبب",
+        "en": "Wegen: because of"
       },
       "text": {
         "fr": "Wegen signifie à cause de, en raison de. Le groupe nominal exprime une cause : wegen des Lärms = weil es laut ist. Le datif est fréquent à l’oral, mais ce chapitre entraîne le génitif standard.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-77-b5",
       "title": {
-        "fr": "Trotz",
+        "fr": "Trotz : malgré",
         "de": "Trotz",
-        "ar": "Trotz",
-        "en": "Trotz"
+        "ar": "Trotz: رغم",
+        "en": "Trotz: despite"
       },
       "text": {
         "fr": "Trotz exprime une concession : un obstacle n’empêche pas l’action. Trotz des Regens gehen wir spazieren = obwohl es regnet. Dans les exercices, utilisez le génitif.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-77-b6",
       "title": {
-        "fr": "Innerhalb und außerhalb",
+        "fr": "À l’intérieur et à l’extérieur",
         "de": "Innerhalb und außerhalb",
-        "ar": "Innerhalb und außerhalb",
-        "en": "Innerhalb und außerhalb"
+        "ar": "داخل وخارج",
+        "en": "Inside and outside"
       },
       "text": {
         "fr": "Innerhalb et außerhalb situent un événement à l’intérieur ou à l’extérieur d’une limite spatiale ou temporelle : innerhalb eines Tages, außerhalb der Stadt. Avec un nom sans article, une construction avec von est aussi possible.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-77-b7",
       "title": {
-        "fr": "Dativ als Kontrast",
+        "fr": "Comparaison avec le datif",
         "de": "Dativ als Kontrast",
-        "ar": "Dativ als Kontrast",
-        "en": "Dativ als Kontrast"
+        "ar": "المقارنة مع الداتيف",
+        "en": "Dative as a contrast"
       },
       "text": {
         "fr": "Mit et vor au sens temporel prennent le datif. Les articles deviennent dem au masculin/neutre, der au féminin, den au pluriel.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-77-b8",
       "title": {
-        "fr": "Präpositionalgruppe und Satzbau",
+        "fr": "Groupe prépositionnel et structure de la phrase",
         "de": "Präpositionalgruppe und Satzbau",
-        "ar": "Präpositionalgruppe und Satzbau",
-        "en": "Präpositionalgruppe und Satzbau"
+        "ar": "شبه الجملة بحرف الجر وبنية الجملة",
+        "en": "Prepositional phrase and sentence structure"
       },
       "text": {
         "fr": "Un groupe prépositionnel placé au début occupe la première position de la principale, suivie du verbe conjugué. Il n’est pas séparé par une virgule : Wegen des Schnees bleiben wir zu Hause.",
@@ -152,10 +152,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-77-b9",
       "title": {
-        "fr": "Genitiv",
+        "fr": "Le génitif",
         "de": "Genitiv",
-        "ar": "Genitiv",
-        "en": "Genitiv"
+        "ar": "حالة الإضافة (Genitiv)",
+        "en": "Genitive"
       },
       "headers": [
         {
@@ -276,10 +276,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-77-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

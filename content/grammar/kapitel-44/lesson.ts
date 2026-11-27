@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-44-lesson",
   "title": {
-    "fr": "Was heißt das denn?",
+    "fr": "Qu’est-ce que cela veut donc dire ?",
     "de": "Was heißt das denn?",
-    "ar": "Was heißt das denn?",
-    "en": "Was heißt das denn?"
+    "ar": "ماذا يعني ذلك إذن؟",
+    "en": "What does that mean, then?"
   },
   "subtitle": {
     "fr": "Particules modales",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-44-b2",
       "title": {
-        "fr": "Denn in Fragen",
+        "fr": "Denn dans les questions",
         "de": "Denn in Fragen",
-        "ar": "Denn in Fragen",
-        "en": "Denn in Fragen"
+        "ar": "Denn في الأسئلة",
+        "en": "Denn in questions"
       },
       "text": {
         "fr": "Dans une question, denn manifeste souvent l’intérêt, la surprise ou la curiosité. Il ne signifie pas car dans cet emploi. La phrase reste une question normale : Wo wohnst du denn? Le ton détermine la nuance.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-44-b3",
       "title": {
-        "fr": "Doch in Aussagen",
+        "fr": "Doch dans les affirmations",
         "de": "Doch in Aussagen",
-        "ar": "Doch in Aussagen",
-        "en": "Doch in Aussagen"
+        "ar": "Doch في الجمل الخبرية",
+        "en": "Doch in statements"
       },
       "text": {
         "fr": "Doch rappelle une information que le locuteur considère connue ou évidente. Il peut exprimer une objection ou un reproche, mais aussi rassurer. Il ne faut pas le traduire mécaniquement par mais.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-44-b4",
       "title": {
-        "fr": "Doch im Imperativ",
+        "fr": "Doch à l’impératif",
         "de": "Doch im Imperativ",
-        "ar": "Doch im Imperativ",
-        "en": "Doch im Imperativ"
+        "ar": "Doch في صيغة الأمر",
+        "en": "Doch in the imperative"
       },
       "text": {
         "fr": "Dans une invitation ou une demande, doch peut rendre la proposition plus personnelle et chaleureuse. Doch mal associe cette invitation à une demande moins formelle. Avec un ton irrité, doch peut au contraire renforcer un ordre.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-44-b5",
       "title": {
-        "fr": "Mal im Gespräch",
+        "fr": "Mal dans la conversation",
         "de": "Mal im Gespräch",
-        "ar": "Mal im Gespräch",
-        "en": "Mal im Gespräch"
+        "ar": "Mal في المحادثة",
+        "en": "Mal in conversation"
       },
       "text": {
         "fr": "Mal rend souvent une demande plus décontractée ou une intention moins précise. Ich rufe dich mal an ne fixe pas de moment précis. Mal peut aussi désigner une fois, notamment dans einmal ; ce n’est alors pas exactement la même fonction.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-44-b6",
       "title": {
-        "fr": "Denn als Konjunktion",
+        "fr": "Denn comme conjonction",
         "de": "Denn als Konjunktion",
-        "ar": "Denn als Konjunktion",
-        "en": "Denn als Konjunktion"
+        "ar": "Denn بوصفها أداة ربط",
+        "en": "Denn as a conjunction"
       },
       "text": {
         "fr": "Denn peut également être une conjonction de cause qui relie deux principales : Ich bleibe hier, denn ich habe Zeit. Le verbe conjugué reste en deuxième position dans la seconde proposition, à la différence de weil.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-44-b7",
       "title": {
-        "fr": "Doch als Antwort",
+        "fr": "Doch comme réponse",
         "de": "Doch als Antwort",
-        "ar": "Doch als Antwort",
-        "en": "Doch als Antwort"
+        "ar": "Doch بوصفها إجابة",
+        "en": "Doch as an answer"
       },
       "text": {
         "fr": "Doch répond positivement à une question négative ou contredit une affirmation négative : Kommst du nicht? Doch! = Si, je viens. Ce doch autonome est différent de la particule intégrée à une phrase.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-44-b8",
       "title": {
-        "fr": "Betonung",
+        "fr": "Accentuation",
         "de": "Betonung",
-        "ar": "Betonung",
-        "en": "Betonung"
+        "ar": "النبر",
+        "en": "Stress"
       },
       "text": {
         "fr": "Les particules modales sont généralement non accentuées. Le mot porteur du sens principal reçoit l’accent. Une réponse Doch! peut au contraire être accentuée. En lecture, comparez une invitation calme et un reproche irrité.",
@@ -152,10 +152,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-44-b9",
       "title": {
-        "fr": "Funktionen im Vergleich",
+        "fr": "Comparaison des fonctions",
         "de": "Funktionen im Vergleich",
-        "ar": "Funktionen im Vergleich",
-        "en": "Funktionen im Vergleich"
+        "ar": "مقارنة الوظائف",
+        "en": "Comparing functions"
       },
       "headers": [
         {

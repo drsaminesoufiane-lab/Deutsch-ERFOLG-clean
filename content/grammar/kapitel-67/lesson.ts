@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-67-lesson",
   "title": {
-    "fr": "Wissen Sie, ob ...?",
+    "fr": "Savez-vous si… ?",
     "de": "Wissen Sie, ob ...?",
-    "ar": "Wissen Sie, ob ...?",
-    "en": "Wissen Sie, ob ...?"
+    "ar": "هل تعرف ما إذا…؟",
+    "en": "Do you know whether…?"
   },
   "subtitle": {
     "fr": "Questions indirectes",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-67-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Transformer les questions directes et distinguer ob, dass et wenn.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-67-b2",
       "title": {
-        "fr": "W-Fragen",
+        "fr": "Questions ouvertes (W-Fragen)",
         "de": "W-Fragen",
-        "ar": "W-Fragen",
-        "en": "W-Fragen"
+        "ar": "الأسئلة المفتوحة (W-Fragen)",
+        "en": "W-questions (open questions)"
       },
       "text": {
         "fr": "Une question ouverte garde son mot interrogatif (wo, wann, wie, warum, etc.). Après la virgule, le sujet précède généralement les compléments et le verbe conjugué se place à la fin : Wo wohnt er? → Ich weiß, wo er wohnt.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-67-b3",
       "title": {
-        "fr": "Ja/Nein-Fragen",
+        "fr": "Questions fermées (oui/non)",
         "de": "Ja/Nein-Fragen",
-        "ar": "Ja/Nein-Fragen",
-        "en": "Ja/Nein-Fragen"
+        "ar": "أسئلة نعم أو لا",
+        "en": "Yes/no questions"
       },
       "text": {
         "fr": "Sans mot interrogatif, on introduit la question indirecte avec ob (si). Ob ne pose pas une condition : il exprime une alternative oui/non. Ist er da? → Ich frage, ob er da ist.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-67-b4",
       "title": {
-        "fr": "Ob, dass oder wenn?",
+        "fr": "Ob, dass ou wenn ?",
         "de": "Ob, dass oder wenn?",
-        "ar": "Ob, dass oder wenn?",
-        "en": "Ob, dass oder wenn?"
+        "ar": "الفرق بين ob و dass و wenn",
+        "en": "Ob, dass or wenn?"
       },
       "text": {
         "fr": "Ob introduit une incertitude oui/non, dass une affirmation rapportée, wenn une condition ou un moment répété/futur. Ich weiß nicht, ob er kommt. Ich weiß, dass er kommt. Wenn er kommt, essen wir.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-67-b5",
       "title": {
-        "fr": "Verb am Ende",
+        "fr": "Verbe en fin de proposition",
         "de": "Verb am Ende",
-        "ar": "Verb am Ende",
-        "en": "Verb am Ende"
+        "ar": "الفعل في نهاية الجملة",
+        "en": "Verb at the end of the clause"
       },
       "text": {
         "fr": "Dans la subordonnée, le préfixe séparable rejoint le verbe (ankommt) ; le modal ou auxiliaire conjugué termine le groupe (kommen kann, gekommen ist). La ponctuation dépend de la principale : question ou déclaration.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-67-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

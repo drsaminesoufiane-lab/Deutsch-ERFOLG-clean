@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-57-lesson",
   "title": {
-    "fr": "Das Auto wird gebaut",
+    "fr": "La voiture est en cours de construction",
     "de": "Das Auto wird gebaut",
-    "ar": "Das Auto wird gebaut",
-    "en": "Das Auto wird gebaut"
+    "ar": "يجري تصنيع السيارة",
+    "en": "The car is being built"
   },
   "subtitle": {
     "fr": "Passif au présent",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-57-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Former le passif au présent, avec un agent éventuel et les verbes modaux.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-57-b2",
       "title": {
-        "fr": "Werden + Partizip II",
+        "fr": "Werden + participe passé",
         "de": "Werden + Partizip II",
-        "ar": "Werden + Partizip II",
-        "en": "Werden + Partizip II"
+        "ar": "Werden مع اسم المفعول الثاني",
+        "en": "Werden + past participle"
       },
       "text": {
         "fr": "Le passif de processus met l’action au premier plan. Il se forme avec werden conjugué au présent et le participe II en fin de proposition principale. Le sujet désigne ce qui subit l’action.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-57-b3",
       "title": {
-        "fr": "Vom Aktiv zum Passiv",
+        "fr": "De la voix active à la voix passive",
         "de": "Vom Aktiv zum Passiv",
-        "ar": "Vom Aktiv zum Passiv",
-        "en": "Vom Aktiv zum Passiv"
+        "ar": "من المبني للمعلوم إلى المبني للمجهول",
+        "en": "From active to passive voice"
       },
       "text": {
         "fr": "L’objet à l’accusatif de la phrase active devient sujet au nominatif du passif : den Motor → der Motor. Werden s’accorde avec ce nouveau sujet. Un objet au datif reste au datif.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-57-b4",
       "title": {
-        "fr": "Von + Dativ",
+        "fr": "Von + datif",
         "de": "Von + Dativ",
-        "ar": "Von + Dativ",
-        "en": "Von + Dativ"
+        "ar": "Von مع الداتيف",
+        "en": "Von + dative"
       },
       "text": {
         "fr": "On peut omettre l’agent, ou le préciser avec von + datif : vom Arzt, von der Mechanikerin. Le passif est utile quand l’agent est inconnu ou secondaire.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-57-b5",
       "title": {
-        "fr": "Passiv mit Modalverben",
+        "fr": "Passif avec verbes modaux",
         "de": "Passiv mit Modalverben",
-        "ar": "Passiv mit Modalverben",
-        "en": "Passiv mit Modalverben"
+        "ar": "المبني للمجهول مع الأفعال الناقصة",
+        "en": "Passive voice with modal verbs"
       },
       "text": {
         "fr": "Avec un modal, conjuguez le modal en deuxième position, placez le participe II et l’infinitif werden à la fin : Die Tür muss geschlossen werden. Werden ne se conjugue pas ici.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-57-b6",
       "title": {
-        "fr": "Passiv im Nebensatz",
+        "fr": "Passif dans la proposition subordonnée",
         "de": "Passiv im Nebensatz",
-        "ar": "Passiv im Nebensatz",
-        "en": "Passiv im Nebensatz"
+        "ar": "المبني للمجهول في الجمل التابعة",
+        "en": "Passive voice in subordinate clauses"
       },
       "text": {
         "fr": "Après dass, le verbe conjugué est final : dass die Tür geschlossen wird. Avec un modal, l’ordre final est participe II + werden + modal : dass die Tür geschlossen werden muss.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-57-b7",
       "title": {
-        "fr": "Passiv und man",
+        "fr": "Passif et pronom man",
         "de": "Passiv und man",
-        "ar": "Passiv und man",
-        "en": "Passiv und man"
+        "ar": "المبني للمجهول والضمير man",
+        "en": "Passive voice and pronoun man"
       },
       "text": {
         "fr": "Le pronom man permet souvent une reformulation active : Hier wird Kaffee getrunken → Hier trinkt man Kaffee. Au passif, le nom qui était objet devient sujet; avec plusieurs objets, vérifiez le cas et le nombre.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-57-b8",
       "title": {
-        "fr": "Werden im Präsens",
+        "fr": "Werden au présent",
         "de": "Werden im Präsens",
-        "ar": "Werden im Präsens",
-        "en": "Werden im Präsens"
+        "ar": "تصريف werden في المضارع",
+        "en": "Werden in the present tense"
       },
       "headers": [
         {
@@ -306,10 +306,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "kapitel-57-examples",
       "title": {
-        "fr": "Übersetzte und erklärte Beispiele",
+        "fr": "Exemples traduits et expliqués",
         "de": "Übersetzte und erklärte Beispiele",
-        "ar": "Übersetzte und erklärte Beispiele",
-        "en": "Übersetzte und erklärte Beispiele"
+        "ar": "أمثلة مترجمة ومشروحة",
+        "en": "Translated and explained examples"
       },
       "items": [
         {

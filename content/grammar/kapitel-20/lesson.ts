@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-20-lesson",
   "title": {
-    "fr": "Nur mit dir – nie ohne dich",
+    "fr": "Seulement avec toi – jamais sans toi",
     "de": "Nur mit dir – nie ohne dich",
-    "ar": "Nur mit dir – nie ohne dich",
-    "en": "Nur mit dir – nie ohne dich"
+    "ar": "معك فقط – لا أكون دونك أبدًا",
+    "en": "Only with you – never without you"
   },
   "subtitle": {
     "fr": "Pronoms personnels",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-1",
       "title": {
-        "fr": "Nomen durch Pronomen ersetzen",
+        "fr": "Remplacer les noms par des pronoms",
         "de": "Nomen durch Pronomen ersetzen",
-        "ar": "Nomen durch Pronomen ersetzen",
-        "en": "Nomen durch Pronomen ersetzen"
+        "ar": "استبدال الأسماء بالضمائر",
+        "en": "Replacing nouns with pronouns"
       },
       "text": {
         "fr": "Un pronom évite de répéter un nom déjà connu. Der Mann → er comme sujet, ihn comme complément à l’accusatif, ihm au datif. La fonction du pronom dans sa propre phrase détermine le cas. Le genre grammatical compte notamment pour les objets : das Buch → es.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-2",
       "title": {
-        "fr": "Personalpronomen",
+        "fr": "Pronoms personnels",
         "de": "Personalpronomen",
-        "ar": "Personalpronomen",
-        "en": "Personalpronomen"
+        "ar": "الضمائر الشخصية",
+        "en": "Personal pronouns"
       },
       "headers": [
         {
@@ -280,10 +280,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-3",
       "title": {
-        "fr": "Verben und Präpositionen",
+        "fr": "Verbes et prépositions",
         "de": "Verben und Präpositionen",
-        "ar": "Verben und Präpositionen",
-        "en": "Verben und Präpositionen"
+        "ar": "الأفعال وحروف الجر",
+        "en": "Verbs and prepositions"
       },
       "text": {
         "fr": "Apprends le cas avec chaque verbe. Sehen, lieben, fragen, besuchen demandent l’accusatif ; helfen, danken, antworten, gefallen demandent le datif. Mit impose le datif, ohne l’accusatif. Uns et euch ont la même forme aux deux cas, mais leur fonction diffère.",
@@ -296,10 +296,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-4",
       "title": {
-        "fr": "Zwei Objekte und Höflichkeit",
+        "fr": "Deux compléments et politesse",
         "de": "Zwei Objekte und Höflichkeit",
-        "ar": "Zwei Objekte und Höflichkeit",
-        "en": "Zwei Objekte und Höflichkeit"
+        "ar": "مفعولان واللباقة",
+        "en": "Two objects and politeness"
       },
       "text": {
         "fr": "Avec geben, le destinataire est au datif, la chose à l’accusatif : Ich gebe ihm das Buch. Si les deux sont des pronoms non accentués, on place normalement l’accusatif avant le datif : Ich gebe es ihm. Sie/Ihnen avec majuscule désignent la personne à qui l’on s’adresse poliment ; sie/ihnen en minuscules désignent des tiers.",
@@ -312,10 +312,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Singular",
+        "fr": "Singulier",
         "de": "Singular",
-        "ar": "Singular",
-        "en": "Singular"
+        "ar": "المفرد",
+        "en": "Singular forms"
       },
       "items": [
         {
@@ -484,10 +484,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Plural, Höflichkeit und erste Präpositionen",
+        "fr": "Pluriel, politesse et premières prépositions",
         "de": "Plural, Höflichkeit und erste Präpositionen",
-        "ar": "Plural, Höflichkeit und erste Präpositionen",
-        "en": "Plural, Höflichkeit und erste Präpositionen"
+        "ar": "الجمع والمخاطبة الرسمية وأولى حروف الجر",
+        "en": "Plural, formal address and initial prepositions"
       },
       "items": [
         {
@@ -656,10 +656,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Präpositionen und zwei Objekte",
+        "fr": "Prépositions et deux compléments",
         "de": "Präpositionen und zwei Objekte",
-        "ar": "Präpositionen und zwei Objekte",
-        "en": "Präpositionen und zwei Objekte"
+        "ar": "حروف الجر ومفعولان",
+        "en": "Prepositions and two objects"
       },
       "items": [
         {
@@ -828,10 +828,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A : Kommst du mit mir? (Viens-tu avec moi ?)\nB : Ja, ich komme mit dir. (Oui, je viens avec toi.)",
@@ -844,10 +844,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -861,10 +861,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

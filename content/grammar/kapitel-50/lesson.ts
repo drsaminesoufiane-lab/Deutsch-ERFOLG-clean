@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-50-lesson",
   "title": {
-    "fr": "Ich hatte zu lange geschlafen",
+    "fr": "J’avais dormi trop longtemps",
     "de": "Ich hatte zu lange geschlafen",
-    "ar": "Ich hatte zu lange geschlafen",
-    "en": "Ich hatte zu lange geschlafen"
+    "ar": "كنت قد نمت مدة طويلة جدًا",
+    "en": "I had slept too long"
   },
   "subtitle": {
     "fr": "Le plus-que-parfait",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-50-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Exprimer une action antérieure à un autre moment passé et construire des phrases avec nachdem.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-50-b2",
       "title": {
-        "fr": "Bildung des Plusquamperfekts",
+        "fr": "Formation du plus-que-parfait",
         "de": "Bildung des Plusquamperfekts",
-        "ar": "Bildung des Plusquamperfekts",
-        "en": "Bildung des Plusquamperfekts"
+        "ar": "تكوين الماضي الأسبق (Plusquamperfekt)",
+        "en": "Forming the past perfect"
       },
       "text": {
         "fr": "Le Plusquamperfekt se construit avec hatte ou war (Präteritum de haben/sein) et le Partizip II. Le participe ne change pas par rapport au Perfekt : ich habe geschlafen → ich hatte geschlafen ; der Zug ist abgefahren → der Zug war abgefahren.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-50-b3",
       "title": {
-        "fr": "Plusquamperfekt mit haben",
+        "fr": "Plus-que-parfait avec haben",
         "de": "Plusquamperfekt mit haben",
-        "ar": "Plusquamperfekt mit haben",
-        "en": "Plusquamperfekt mit haben"
+        "ar": "الماضي الأسبق مع haben",
+        "en": "Past perfect with haben"
       },
       "text": {
         "fr": "On conserve l’auxiliaire du Perfekt. Les verbes transitifs, beaucoup de verbes sans déplacement et les verbes réfléchis prennent haben : ich hatte den Brief geschrieben, sie hatte sich vorbereitet. On conjugue hatte selon le sujet : hatte, hattest, hatte, hatten, hattet, hatten.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-50-b4",
       "title": {
-        "fr": "Plusquamperfekt mit sein",
+        "fr": "Plus-que-parfait avec sein",
         "de": "Plusquamperfekt mit sein",
-        "ar": "Plusquamperfekt mit sein",
-        "en": "Plusquamperfekt mit sein"
+        "ar": "الماضي الأسبق مع sein",
+        "en": "Past perfect with sein"
       },
       "text": {
         "fr": "Les verbes qui prennent sein au Perfekt gardent sein au Plusquamperfekt : fahren (déplacement), gehen, ankommen, bleiben, werden. Conjugaison : war, warst, war, waren, wart, waren. Un verbe de mouvement transitif peut prendre haben selon son emploi.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-50-b5",
       "title": {
-        "fr": "Vorzeitigkeit",
+        "fr": "Antériorité",
         "de": "Vorzeitigkeit",
-        "ar": "Vorzeitigkeit",
-        "en": "Vorzeitigkeit"
+        "ar": "الأسبقية الزمنية",
+        "en": "Anteriority"
       },
       "text": {
         "fr": "Le Plusquamperfekt situe un événement avant un autre repère passé. Le repère peut être une phrase précédente, un événement au Perfekt/Präteritum ou une heure passée connue. Il ne signifie pas simplement un passé très lointain. Comparez : Der Zug war abgefahren, als ich ankam.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-50-b6",
       "title": {
-        "fr": "Nebensätze mit nachdem",
+        "fr": "Subordonnées avec nachdem",
         "de": "Nebensätze mit nachdem",
-        "ar": "Nebensätze mit nachdem",
-        "en": "Nebensätze mit nachdem"
+        "ar": "الجمل التابعة مع nachdem",
+        "en": "Subordinate clauses with nachdem"
       },
       "text": {
         "fr": "Nachdem introduit une subordonnée temporelle exprimant l’action antérieure. Le verbe conjugué se place à la fin de cette subordonnée : Nachdem wir gegessen hatten, gingen wir spazieren. Lorsque la subordonnée précède la principale, le verbe conjugué de la principale suit immédiatement la virgule.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-50-b7",
       "title": {
-        "fr": "Satzklammer",
+        "fr": "Cadre verbal",
         "de": "Satzklammer",
-        "ar": "Satzklammer",
-        "en": "Satzklammer"
+        "ar": "الإطار الفعلي",
+        "en": "Verb bracket"
       },
       "text": {
         "fr": "Dans une principale, hatte ou war conjugué est en deuxième position, le participe à la fin. Dans une subordonnée avec weil, als, nachdem ou dass, le participe précède normalement l’auxiliaire conjugué en fin de proposition : weil ich verschlafen hatte.",
@@ -136,10 +136,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-50-b8",
       "title": {
-        "fr": "Hilfsverben und Satzbau",
+        "fr": "Auxiliaires et structure de la phrase",
         "de": "Hilfsverben und Satzbau",
-        "ar": "Hilfsverben und Satzbau",
-        "en": "Hilfsverben und Satzbau"
+        "ar": "الأفعال المساعدة وبنية الجملة",
+        "en": "Auxiliaries and sentence structure"
       },
       "headers": [
         {

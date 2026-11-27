@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-45-lesson",
   "title": {
-    "fr": "Kinderarzt oder Arztkinder?",
+    "fr": "Pédiatre ou enfants de médecin ?",
     "de": "Kinderarzt oder Arztkinder?",
-    "ar": "Kinderarzt oder Arztkinder?",
-    "en": "Kinderarzt oder Arztkinder?"
+    "ar": "طبيب أطفال أم أبناء طبيب؟",
+    "en": "Pediatrician or doctor's children?"
   },
   "subtitle": {
     "fr": "Les mots composés",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-45-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Former et comprendre les noms composés, leur genre et leurs éléments de liaison.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-45-b2",
       "title": {
-        "fr": "Das Grundwort",
+        "fr": "Le mot principal du composé",
         "de": "Das Grundwort",
-        "ar": "Das Grundwort",
-        "en": "Das Grundwort"
+        "ar": "الكلمة الأساسية في المركّب",
+        "en": "The head word of a compound"
       },
       "text": {
         "fr": "Le dernier nom détermine le genre et le sens principal : die Kaffee+tasse est une tasse. Le premier élément précise le type ou l’usage. Les mots s’écrivent normalement ensemble.",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-45-b3",
       "title": {
-        "fr": "Fugen-n und -en",
+        "fr": "Éléments de liaison -n et -en",
         "de": "Fugen-n und -en",
-        "ar": "Fugen-n und -en",
-        "en": "Fugen-n und -en"
+        "ar": "عناصر الربط -n و -en",
+        "en": "Linking elements -n and -en"
       },
       "text": {
         "fr": "Certains composés utilisent -n ou -en, par exemple Straßenname, Toilettenbrille, Damenschuh. Le lien peut ressembler au pluriel, sans nécessairement exprimer plusieurs objets. Il faut apprendre la forme établie.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-45-b4",
       "title": {
-        "fr": "Fugen-s",
+        "fr": "Élément de liaison -s",
         "de": "Fugen-s",
-        "ar": "Fugen-s",
-        "en": "Fugen-s"
+        "ar": "عنصر الربط -s",
+        "en": "Linking element -s"
       },
       "text": {
         "fr": "Le s de liaison apparaît notamment après de nombreux noms en -ung, -heit ou -keit : Zeitungskiosk, Übernachtungspreis. Il ne correspond pas automatiquement au génitif. Vertragspartner possède aussi ce s.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-45-b5",
       "title": {
-        "fr": "Reihenfolge und Betonung",
+        "fr": "Ordre et accentuation",
         "de": "Reihenfolge und Betonung",
-        "ar": "Reihenfolge und Betonung",
-        "en": "Reihenfolge und Betonung"
+        "ar": "الترتيب والنبر",
+        "en": "Order and stress"
       },
       "text": {
         "fr": "Le composé porte généralement l’accent principal sur le premier élément. Kinderarzt est un médecin pour enfants, Arztkinder sont les enfants d’un médecin. Le pluriel se forme sur le dernier élément.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-45-b6",
       "title": {
-        "fr": "Mehrgliedrige Komposita",
+        "fr": "Mots composés de plusieurs éléments",
         "de": "Mehrgliedrige Komposita",
-        "ar": "Mehrgliedrige Komposita",
-        "en": "Mehrgliedrige Komposita"
+        "ar": "كلمات مركّبة من عدة عناصر",
+        "en": "Compounds with multiple elements"
       },
       "text": {
         "fr": "Plusieurs éléments peuvent être combinés : Kinder + Garten + Tasche. Identifiez le nom final avant d’analyser les autres éléments. Un Fußballplatz est un type de Platz, non un ballon.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-45-b7",
       "title": {
-        "fr": "Grundwort und Genus",
+        "fr": "Mot principal et genre",
         "de": "Grundwort und Genus",
-        "ar": "Grundwort und Genus",
-        "en": "Grundwort und Genus"
+        "ar": "الكلمة الأساسية والجنس النحوي",
+        "en": "Head word and gender"
       },
       "headers": [
         {

@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-41-lesson",
   "title": {
-    "fr": "Deshalb, sonst, dann, danach",
+    "fr": "Donc, sinon, puis, ensuite",
     "de": "Deshalb, sonst, dann, danach",
-    "ar": "Deshalb, sonst, dann, danach",
-    "en": "Deshalb, sonst, dann, danach"
+    "ar": "لذلك، وإلا، ثم، بعد ذلك",
+    "en": "Therefore, otherwise, then, afterwards"
   },
   "subtitle": {
     "fr": "Relier des propositions principales (position 1)",

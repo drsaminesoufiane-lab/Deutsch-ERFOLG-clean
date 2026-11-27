@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-19-lesson",
   "title": {
-    "fr": "Welcher? – Dieser",
+    "fr": "Lequel ? – Celui-ci",
     "de": "Welcher? – Dieser",
-    "ar": "Welcher? – Dieser",
-    "en": "Welcher? – Dieser"
+    "ar": "أيّ واحد؟ – هذا",
+    "en": "Which one? – This one"
   },
   "subtitle": {
     "fr": "Articles interrogatifs et démonstratifs",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-1",
       "title": {
-        "fr": "Fragen und Zeigen",
+        "fr": "Interroger et désigner",
         "de": "Fragen und Zeigen",
-        "ar": "Fragen und Zeigen",
-        "en": "Fragen und Zeigen"
+        "ar": "الاستفهام والإشارة",
+        "en": "Asking and pointing out"
       },
       "text": {
         "fr": "Welch- demande un choix : Welcher Mantel? Dies- montre un élément précis : dieser Mantel. Les deux suivent en général les terminaisons de l’article défini. Distingue Was kaufst du? (question ouverte sur la chose) et Welches Buch kaufst du? (choix parmi des livres).",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-2",
       "title": {
-        "fr": "Welch- und dies-",
+        "fr": "Radicaux welch- et dies-",
         "de": "Welch- und dies-",
-        "ar": "Welch- und dies-",
-        "en": "Welch- und dies-"
+        "ar": "جذرا الاستفهام والإشارة welch- و dies-",
+        "en": "Stems welch- and dies-"
       },
       "headers": [
         {
@@ -190,10 +190,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-3",
       "title": {
-        "fr": "Kasus erkennen",
+        "fr": "Identifier le cas grammatical",
         "de": "Kasus erkennen",
-        "ar": "Kasus erkennen",
-        "en": "Kasus erkennen"
+        "ar": "تحديد الحالة الإعرابية",
+        "en": "Identifying the grammatical case"
       },
       "text": {
         "fr": "Identifie la fonction du groupe : Welcher Bus fährt? Le bus est sujet, donc nominatif. Welchen Bus nimmst du? Le bus est complément direct, donc accusatif. Mit welchem Bus fährst du? Mit impose le datif. Les formes féminines au datif sont welcher/dieser ; ne les confonds pas avec le masculin nominatif.",
@@ -206,10 +206,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-4",
       "title": {
-        "fr": "Mit und ohne Nomen",
+        "fr": "Avec et sans nom",
         "de": "Mit und ohne Nomen",
-        "ar": "Mit und ohne Nomen",
-        "en": "Mit und ohne Nomen"
+        "ar": "مع الاسم وبدونه",
+        "en": "With and without a noun"
       },
       "text": {
         "fr": "Lorsque le nom est clair, on peut le remplacer : Welches Kleid gefällt dir? Dieses. Le genre et le cas restent identiques. Au datif pluriel, le nom reçoit souvent -n : mit diesen Schuhen.",
@@ -222,10 +222,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Nominativ und erste Akkusativformen",
+        "fr": "Nominatif et premières formes de l’accusatif",
         "de": "Nominativ und erste Akkusativformen",
-        "ar": "Nominativ und erste Akkusativformen",
-        "en": "Nominativ und erste Akkusativformen"
+        "ar": "حالة الرفع وأولى صيغ النصب",
+        "en": "Nominative and initial accusative forms"
       },
       "items": [
         {
@@ -394,10 +394,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Akkusativ und Dativ",
+        "fr": "Accusatif et datif",
         "de": "Akkusativ und Dativ",
-        "ar": "Akkusativ und Dativ",
-        "en": "Akkusativ und Dativ"
+        "ar": "حالتا النصب والداتيف",
+        "en": "Accusative and dative"
       },
       "items": [
         {
@@ -566,10 +566,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Dativ und Kurzantworten",
+        "fr": "Datif et réponses courtes",
         "de": "Dativ und Kurzantworten",
-        "ar": "Dativ und Kurzantworten",
-        "en": "Dativ und Kurzantworten"
+        "ar": "الداتيف والإجابات القصيرة",
+        "en": "Dative and short answers"
       },
       "items": [
         {
@@ -738,10 +738,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A : Welchen Mantel möchten Sie? (Quel manteau souhaitez-vous ?)\nB : Diesen, bitte. (Celui-ci, s’il vous plaît.)",
@@ -754,10 +754,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -771,10 +771,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

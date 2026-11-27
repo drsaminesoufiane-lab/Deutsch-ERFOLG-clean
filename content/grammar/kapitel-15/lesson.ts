@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-15-lesson",
   "title": {
-    "fr": "Kein, nicht, nie",
+    "fr": "Négation : kein, nicht, nie",
     "de": "Kein, nicht, nie",
-    "ar": "Kein, nicht, nie",
-    "en": "Kein, nicht, nie"
+    "ar": "النفي: kein و nicht و nie",
+    "en": "Negation: kein, nicht, nie"
   },
   "subtitle": {
     "fr": "Négation",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-1",
       "title": {
-        "fr": "Kein oder nicht?",
+        "fr": "Kein ou nicht ?",
         "de": "Kein oder nicht?",
-        "ar": "Kein oder nicht?",
-        "en": "Kein oder nicht?"
+        "ar": "الفرق بين kein و nicht",
+        "en": "Kein or nicht?"
       },
       "text": {
         "fr": "Observe l’affirmation de départ. Ich habe ein Auto → Ich habe kein Auto. Ich habe Zeit → Ich habe keine Zeit. Si tu nies un verbe, une qualité ou un groupe défini, utilise généralement nicht : Ich arbeite nicht. Das Auto ist nicht neu. Ich kaufe nicht das rote Auto, sondern das blaue.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-2",
       "title": {
-        "fr": "Kein: Formen",
+        "fr": "Formes de kein",
         "de": "Kein: Formen",
-        "ar": "Kein: Formen",
-        "en": "Kein: Formen"
+        "ar": "صيغ kein",
+        "en": "Forms of kein"
       },
       "headers": [
         {
@@ -190,10 +190,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-3",
       "title": {
-        "fr": "Wo steht nicht?",
+        "fr": "Où placer nicht ?",
         "de": "Wo steht nicht?",
-        "ar": "Wo steht nicht?",
-        "en": "Wo steht nicht?"
+        "ar": "أين يوضع nicht؟",
+        "en": "Where does nicht go?"
       },
       "text": {
         "fr": "La place dépend de la portée de la négation. Devant un adjectif : nicht müde. Devant l’élément contrasté : nicht heute, sondern morgen. À la fin de nombreuses principales simples : Ich kenne ihn nicht. Avant la partie finale du verbe : Ich kann nicht kommen ; Ich rufe dich nicht an.",
@@ -206,10 +206,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-4",
       "title": {
-        "fr": "Andere Negationswörter",
+        "fr": "Autres mots de négation",
         "de": "Andere Negationswörter",
-        "ar": "Andere Negationswörter",
-        "en": "Andere Negationswörter"
+        "ar": "أدوات نفي أخرى",
+        "en": "Other negative words"
       },
       "headers": [
         {
@@ -376,10 +376,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-5",
       "title": {
-        "fr": "Zeitliche Verneinung",
+        "fr": "Négation temporelle",
         "de": "Zeitliche Verneinung",
-        "ar": "Zeitliche Verneinung",
-        "en": "Zeitliche Verneinung"
+        "ar": "النفي الزمني",
+        "en": "Time-related negation"
       },
       "text": {
         "fr": "Noch nicht : pas encore (Ich habe noch nicht gegessen). Nicht mehr : ne plus (Ich rauche nicht mehr). Kein … mehr : ne plus avoir de (Ich habe kein Geld mehr). Noch nie : jamais jusqu’à maintenant (Ich war noch nie in Wien).",
@@ -392,10 +392,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Kein und nicht",
+        "fr": "Kein et nicht",
         "de": "Kein und nicht",
-        "ar": "Kein und nicht",
-        "en": "Kein und nicht"
+        "ar": "أداتا النفي kein و nicht",
+        "en": "Kein and nicht"
       },
       "items": [
         {
@@ -564,10 +564,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Satznegation und Kontrast",
+        "fr": "Négation de la phrase et opposition",
         "de": "Satznegation und Kontrast",
-        "ar": "Satznegation und Kontrast",
-        "en": "Satznegation und Kontrast"
+        "ar": "نفي الجملة والمقابلة",
+        "en": "Sentence negation and contrast"
       },
       "items": [
         {
@@ -736,10 +736,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Weitere Negationswörter",
+        "fr": "Autres mots de négation",
         "de": "Weitere Negationswörter",
-        "ar": "Weitere Negationswörter",
-        "en": "Weitere Negationswörter"
+        "ar": "أدوات نفي إضافية",
+        "en": "Additional negative words"
       },
       "items": [
         {
@@ -908,10 +908,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Hast du noch Hunger? (As-tu encore faim ?)\nB: Nein, ich habe keinen Hunger mehr. (Non, je n’ai plus faim.)\nA: Möchtest du Tee? (Voudrais-tu du thé ?)\nB: Ja, aber ohne Zucker. (Oui, mais sans sucre.)",
@@ -924,10 +924,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -941,10 +941,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

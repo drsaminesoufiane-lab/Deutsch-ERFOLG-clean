@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-16-lesson",
   "title": {
-    "fr": "Ich liebe meinen Mann",
+    "fr": "J’aime mon mari",
     "de": "Ich liebe meinen Mann",
-    "ar": "Ich liebe meinen Mann",
-    "en": "Ich liebe meinen Mann"
+    "ar": "أحب زوجي",
+    "en": "I love my husband"
   },
   "subtitle": {
     "fr": "accusatif",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-1",
       "title": {
-        "fr": "Subjekt und Objekt",
+        "fr": "Sujet et complément",
         "de": "Subjekt und Objekt",
-        "ar": "Subjekt und Objekt",
-        "en": "Subjekt und Objekt"
+        "ar": "الفاعل والمفعول",
+        "en": "Subject and object"
       },
       "text": {
         "fr": "Le sujet répond à wer? ou was? et commande la conjugaison. Avec des verbes comme sehen, kaufen, brauchen et lieben, le complément direct répond à wen? ou was? et se met à l’accusatif. Dans Der Kellner trinkt einen Saft, der Kellner est le sujet et einen Saft le complément.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "premium-tabelle-2",
       "title": {
-        "fr": "Artikel im Nominativ und Akkusativ",
+        "fr": "Articles au nominatif et à l’accusatif",
         "de": "Artikel im Nominativ und Akkusativ",
-        "ar": "Artikel im Nominativ und Akkusativ",
-        "en": "Artikel im Nominativ und Akkusativ"
+        "ar": "الأدوات في حالتي الرفع والنصب",
+        "en": "Articles in the nominative and accusative"
       },
       "headers": [
         {
@@ -155,10 +155,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-3",
       "title": {
-        "fr": "Der maskuline Artikel",
+        "fr": "Article masculin",
         "de": "Der maskuline Artikel",
-        "ar": "Der maskuline Artikel",
-        "en": "Der maskuline Artikel"
+        "ar": "أداة الاسم المذكر",
+        "en": "Masculine article"
       },
       "text": {
         "fr": "Seul le masculin singulier change de forme entre nominatif et accusatif dans ce tableau. Le déterminant possessif suit la même logique : mein Mann → meinen Mann. Certains noms masculins faibles changent également : der Junge → den Jungen.",
@@ -171,10 +171,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-theorie-4",
       "title": {
-        "fr": "Satzstellung und Negation",
+        "fr": "Ordre des mots et négation",
         "de": "Satzstellung und Negation",
-        "ar": "Satzstellung und Negation",
-        "en": "Satzstellung und Negation"
+        "ar": "ترتيب الكلمات والنفي",
+        "en": "Word order and negation"
       },
       "text": {
         "fr": "La fonction ne dépend pas uniquement de la position : Den Film mag ich. Ich est le sujet. Pour nier un nom non défini, utilise kein : Ich habe keinen Hund. Pour nier une action ou un élément défini, utilise souvent nicht : Ich kaufe den Mantel nicht.",
@@ -187,10 +187,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Maskuline Objekte",
+        "fr": "Compléments masculins",
         "de": "Maskuline Objekte",
-        "ar": "Maskuline Objekte",
-        "en": "Maskuline Objekte"
+        "ar": "المفاعيل المذكرة",
+        "en": "Masculine objects"
       },
       "items": [
         {
@@ -359,10 +359,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Neutrum, Femininum",
+        "fr": "Neutre et féminin",
         "de": "Neutrum, Femininum",
-        "ar": "Neutrum, Femininum",
-        "en": "Neutrum, Femininum"
+        "ar": "المحايد والمؤنث",
+        "en": "Neuter and feminine"
       },
       "items": [
         {
@@ -531,10 +531,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Plural und Besonderheiten",
+        "fr": "Pluriel et particularités",
         "de": "Plural und Besonderheiten",
-        "ar": "Plural und Besonderheiten",
-        "en": "Plural und Besonderheiten"
+        "ar": "الجمع والخصائص",
+        "en": "Plural and special features"
       },
       "items": [
         {
@@ -703,10 +703,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A : Was brauchst du für die Reise? (De quoi as-tu besoin pour le voyage ?)\nB : Ich brauche einen Koffer und die Fahrkarte. (J’ai besoin d’une valise et du billet.)",
@@ -719,10 +719,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-errors",
       "title": {
-        "fr": "Typische Fehler",
+        "fr": "Erreurs fréquentes",
         "de": "Typische Fehler",
-        "ar": "Typische Fehler",
-        "en": "Typische Fehler"
+        "ar": "أخطاء شائعة",
+        "en": "Common mistakes"
       },
       "tone": "warning",
       "text": {
@@ -736,10 +736,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

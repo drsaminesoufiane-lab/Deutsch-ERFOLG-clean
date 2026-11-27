@@ -3,10 +3,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-25-lesson",
   "title": {
-    "fr": "Ich bin gekommen, ich habe gelacht",
+    "fr": "Je suis venu, j’ai ri",
     "de": "Ich bin gekommen, ich habe gelacht",
-    "ar": "Ich bin gekommen, ich habe gelacht",
-    "en": "Ich bin gekommen, ich habe gelacht"
+    "ar": "أتيت، ضحكت",
+    "en": "I came, I laughed"
   },
   "subtitle": {
     "fr": "Perfekt mit sein",
@@ -25,10 +25,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "theory",
       "title": {
-        "fr": "Hilfsverb wählen",
+        "fr": "Choisir l’auxiliaire",
         "de": "Hilfsverb wählen",
-        "ar": "Hilfsverb wählen",
-        "en": "Hilfsverb wählen"
+        "ar": "اختيار الفعل المساعد",
+        "en": "Choosing the auxiliary"
       },
       "text": {
         "fr": "La plupart des verbes utilisent haben. Sein accompagne souvent les verbes intransitifs exprimant un déplacement orienté ou un changement d’état. Sein, bleiben et passieren prennent aussi sein. Un déplacement ne suffit pas toujours : Ich habe das Auto gefahren (emploi transitif), mais Ich bin nach Hause gefahren.",
@@ -41,10 +41,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-vertiefung",
       "title": {
-        "fr": "Haben oder sein?",
+        "fr": "Haben ou sein ?",
         "de": "Haben oder sein?",
-        "ar": "Haben oder sein?",
-        "en": "Haben oder sein?"
+        "ar": "الفعل المساعد haben أم sein؟",
+        "en": "Haben or sein?"
       },
       "text": {
         "fr": "Sein : ich bin, du bist, er/sie/es ist, wir sind, ihr seid, sie/Sie sind. Utilise-le notamment avec gehen, kommen, aufstehen, einschlafen, bleiben et passieren. Haben reste la règle pour la plupart des autres verbes. Compare : Ich bin nach Hause gefahren (trajet) / Ich habe das Auto gefahren (véhicule conduit). Certains usages de mouvement varient selon le contexte et la région.",
@@ -57,10 +57,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "syntax",
       "title": {
-        "fr": "Wortstellung",
+        "fr": "Ordre des mots",
         "de": "Wortstellung",
-        "ar": "Wortstellung",
-        "en": "Wortstellung"
+        "ar": "ترتيب الكلمات",
+        "en": "Word order"
       },
       "text": {
         "fr": "Dans une principale déclarative, le verbe conjugué occupe la deuxième position, même après Gestern. Dans une question oui/non, il vient en premier. Dans le Perfekt, le participe se place à la fin de la principale.",
@@ -73,10 +73,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "forms",
       "title": {
-        "fr": "Perfekt mit sein",
+        "fr": "Parfait avec sein",
         "de": "Perfekt mit sein",
-        "ar": "Perfekt mit sein",
-        "en": "Perfekt mit sein"
+        "ar": "الماضي المركب مع sein",
+        "en": "Perfect tense with sein"
       },
       "headers": [
         {
@@ -243,10 +243,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "errors",
       "title": {
-        "fr": "Fehler",
+        "fr": "Erreurs",
         "de": "Fehler",
-        "ar": "Fehler",
-        "en": "Fehler"
+        "ar": "الأخطاء",
+        "en": "Mistakes"
       },
       "text": {
         "fr": "✗ Ich habe angekommen. → Ich bin angekommen. ✗ Ich bin gearbeitet. → Ich habe gearbeitet.",
@@ -259,10 +259,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-1",
       "title": {
-        "fr": "Grundformen und Anwendung",
+        "fr": "Formes de base et application",
         "de": "Grundformen und Anwendung",
-        "ar": "Grundformen und Anwendung",
-        "en": "Grundformen und Anwendung"
+        "ar": "الصيغ الأساسية والتطبيق",
+        "en": "Basic forms and application"
       },
       "items": [
         {
@@ -431,10 +431,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-2",
       "title": {
-        "fr": "Beispiele im Kontext",
+        "fr": "Exemples en contexte",
         "de": "Beispiele im Kontext",
-        "ar": "Beispiele im Kontext",
-        "en": "Beispiele im Kontext"
+        "ar": "أمثلة في السياق",
+        "en": "Examples in context"
       },
       "items": [
         {
@@ -603,10 +603,10 @@ export const lesson: LessonDefinition = {
       "type": "examples",
       "id": "premium-beispiele-3",
       "title": {
-        "fr": "Vertiefung und Kontraste",
+        "fr": "Approfondissement et contrastes",
         "de": "Vertiefung und Kontraste",
-        "ar": "Vertiefung und Kontraste",
-        "en": "Vertiefung und Kontraste"
+        "ar": "التعمّق والمقارنة",
+        "en": "Further practice and contrasts"
       },
       "items": [
         {
@@ -775,10 +775,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "premium-dialog",
       "title": {
-        "fr": "Mini-Dialog",
+        "fr": "Mini-dialogue",
         "de": "Mini-Dialog",
-        "ar": "Mini-Dialog",
-        "en": "Mini-Dialog"
+        "ar": "حوار قصير",
+        "en": "Mini-dialogue"
       },
       "text": {
         "fr": "A: Wann bist du angekommen? (Quand es-tu arrivé ?)\nB: Um neun. Ich bin mit dem Zug gefahren. (À neuf heures. J’ai pris le train.)\nA: Hast du unterwegs geschlafen? (As-tu dormi en route ?)",
@@ -791,10 +791,10 @@ export const lesson: LessonDefinition = {
       "type": "callout",
       "id": "premium-merke",
       "title": {
-        "fr": "Merke dir!",
+        "fr": "À retenir !",
         "de": "Merke dir!",
-        "ar": "Merke dir!",
-        "en": "Merke dir!"
+        "ar": "تذكّر!",
+        "en": "Remember!"
       },
       "tone": "tip",
       "text": {

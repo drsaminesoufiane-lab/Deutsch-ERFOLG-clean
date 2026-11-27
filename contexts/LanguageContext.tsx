@@ -16,6 +16,31 @@ import ar from '@/translations/ar'
 
 export type Language = 'fr' | 'de' | 'en' | 'ar'
 
+const LANGUAGE_KEY = 'deutsch_erfolg_language'
+
+function isLanguage(value: unknown): value is Language {
+  return value === 'de' || value === 'fr' || value === 'en' || value === 'ar'
+}
+
+function readPreferredLanguage(): Language | null {
+  try {
+    const saved = localStorage.getItem(LANGUAGE_KEY)
+    if (isLanguage(saved)) return saved
+  } catch { /* storage can be disabled */ }
+  try {
+    const saved = document.cookie.split(';').map(part => part.trim()).find(part => part.startsWith(LANGUAGE_KEY + '='))?.split('=')[1]
+    if (isLanguage(saved)) return saved
+  } catch { /* optional fallback */ }
+  return null
+}
+
+function persistPreferredLanguage(value: Language) {
+  try { localStorage.setItem(LANGUAGE_KEY, value) } catch { /* optional preference */ }
+  try {
+    document.cookie = LANGUAGE_KEY + '=' + value + '; Path=/; Max-Age=31536000; SameSite=Lax' + (window.location.protocol === 'https:' ? '; Secure' : '')
+  } catch { /* optional fallback */ }
+}
+
 const translations = {
   fr,
   de,
@@ -44,38 +69,30 @@ export function LanguageProvider({
   const [language, setLanguageState] =
     useState<Language>('de')
 
-  const [ready, setReady] = useState(false)
-
+  // DE_LANGUAGE_PERSISTENCE_V2
   useEffect(() => {
-    const savedLanguage = localStorage.getItem(
-      'deutsch_erfolg_language'
-    ) as Language | null
-
-    if (
-      savedLanguage &&
-      ['fr', 'de', 'en', 'ar'].includes(savedLanguage)
-    ) {
-      setLanguageState(savedLanguage)
+    const stored = readPreferredLanguage()
+    if (stored) {
+      setLanguageState(stored)
+      persistPreferredLanguage(stored)
     }
-
-    setReady(true)
+    const sync = (event: StorageEvent) => {
+      if (event.key === LANGUAGE_KEY && isLanguage(event.newValue)) {
+        setLanguageState(event.newValue)
+      }
+    }
+    window.addEventListener('storage', sync)
+    return () => window.removeEventListener('storage', sync)
   }, [])
 
   useEffect(() => {
-    if (!ready) return
-
-    localStorage.setItem(
-      'deutsch_erfolg_language',
-      language
-    )
-
     document.documentElement.lang = language
-
-    document.documentElement.dir =
-      language === 'ar' ? 'rtl' : 'ltr'
-  }, [language, ready])
+    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr'
+  }, [language])
 
   const setLanguage = (newLanguage: Language) => {
+    // Persist synchronously, before a redirect or sign-out can interrupt React.
+    persistPreferredLanguage(newLanguage)
     setLanguageState(newLanguage)
   }
 

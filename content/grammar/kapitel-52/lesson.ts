@@ -2,10 +2,10 @@ import type { LessonDefinition } from '@/lib/grammar/types'
 export const lesson: LessonDefinition = {
   "id": "kapitel-52-lesson",
   "title": {
-    "fr": "Kaufe ich ein oder bestelle ich Pizza?",
+    "fr": "Est-ce que je fais les courses ou je commande une pizza ?",
     "de": "Kaufe ich ein oder bestelle ich Pizza?",
-    "ar": "Kaufe ich ein oder bestelle ich Pizza?",
-    "en": "Kaufe ich ein oder bestelle ich Pizza?"
+    "ar": "هل أتسوّق أم أطلب بيتزا؟",
+    "en": "Do I shop or order a pizza?"
   },
   "subtitle": {
     "fr": "Verbes séparables et inséparables",
@@ -24,10 +24,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-52-b1",
       "title": {
-        "fr": "Lernziel",
+        "fr": "Objectif pédagogique",
         "de": "Lernziel",
-        "ar": "Lernziel",
-        "en": "Lernziel"
+        "ar": "هدف التعلم",
+        "en": "Learning goal"
       },
       "text": {
         "fr": "Maîtriser les préfixes, les formes du participe et l’infinitif avec zu.",
@@ -40,10 +40,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-52-b2",
       "title": {
-        "fr": "Trennbare Verben im Hauptsatz",
+        "fr": "Verbes séparables dans la proposition principale",
         "de": "Trennbare Verben im Hauptsatz",
-        "ar": "Trennbare Verben im Hauptsatz",
-        "en": "Trennbare Verben im Hauptsatz"
+        "ar": "الأفعال القابلة للفصل في الجملة الرئيسية",
+        "en": "Separable verbs in main clauses"
       },
       "text": {
         "fr": "Un préfixe séparable porte généralement l’accent. Au Präsens, au Präteritum et à l’impératif, le préfixe se place en fin de proposition principale : ich kaufe ein, ich kaufte ein, kauf ein!",
@@ -56,10 +56,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-52-b3",
       "title": {
-        "fr": "Untrennbare Präfixe",
+        "fr": "Préfixes inséparables",
         "de": "Untrennbare Präfixe",
-        "ar": "Untrennbare Präfixe",
-        "en": "Untrennbare Präfixe"
+        "ar": "البادئات غير القابلة للفصل",
+        "en": "Inseparable prefixes"
       },
       "text": {
         "fr": "Les préfixes be-, emp-, ent-, er-, ge-, ver-, zer- ne se séparent pas. Ils ne prennent pas ge- au participe : bestellen → bestellt, empfehlen → empfohlen. Certains autres préfixes peuvent varier selon le sens et l’accent.",
@@ -72,10 +72,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-52-b4",
       "title": {
-        "fr": "Partizip II",
+        "fr": "Participe passé",
         "de": "Partizip II",
-        "ar": "Partizip II",
-        "en": "Partizip II"
+        "ar": "اسم المفعول الثاني",
+        "en": "Past participle"
       },
       "text": {
         "fr": "Pour les verbes séparables ordinaires, ge se place entre le préfixe et le radical : an-ge-rufen, auf-ge-räumt. Le radical peut être irrégulier. Attention aux exceptions telles que vorbereiten → vorbereitet, formé sur bereiten.",
@@ -88,10 +88,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-52-b5",
       "title": {
-        "fr": "Nebensatz und Modalverb",
+        "fr": "Proposition subordonnée et verbe modal",
         "de": "Nebensatz und Modalverb",
-        "ar": "Nebensatz und Modalverb",
-        "en": "Nebensatz und Modalverb"
+        "ar": "الجملة التابعة والفعل الناقص",
+        "en": "Subordinate clause and modal verb"
       },
       "text": {
         "fr": "Dans une subordonnée, le verbe conjugué séparable se réunit en fin de phrase : weil ich einkaufe. Avec un modal, l’infinitif reste entier : ich muss einkaufen. Le modal conjugué occupe la deuxième position dans la principale.",
@@ -104,10 +104,10 @@ export const lesson: LessonDefinition = {
       "type": "paragraph",
       "id": "kapitel-52-b6",
       "title": {
-        "fr": "Infinitiv mit zu",
+        "fr": "Infinitif avec zu",
         "de": "Infinitiv mit zu",
-        "ar": "Infinitiv mit zu",
-        "en": "Infinitiv mit zu"
+        "ar": "المصدر مع zu",
+        "en": "Infinitive with zu"
       },
       "text": {
         "fr": "Avec un verbe séparable, zu s’insère entre préfixe et radical et l’ensemble s’écrit en un mot : einzukaufen. Avec un verbe inséparable, zu précède l’infinitif : zu bestellen. Après un modal, pas de zu.",
@@ -120,10 +120,10 @@ export const lesson: LessonDefinition = {
       "type": "table",
       "id": "kapitel-52-b7",
       "title": {
-        "fr": "Satzformen",
+        "fr": "Formes de phrases",
         "de": "Satzformen",
-        "ar": "Satzformen",
-        "en": "Satzformen"
+        "ar": "صيغ الجمل",
+        "en": "Sentence forms"
       },
       "headers": [
         {

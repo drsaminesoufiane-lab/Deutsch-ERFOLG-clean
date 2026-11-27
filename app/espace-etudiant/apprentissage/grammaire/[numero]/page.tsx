@@ -1,4 +1,6 @@
 'use client'
+
+import DeutschErfolgLoader from '@/components/student/DeutschErfolgLoader'
 import { useCallback, useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useParams } from 'next/navigation'
@@ -6,6 +8,7 @@ import { useLanguage } from '@/contexts/LanguageContext'
 import { supabase } from '@/lib/supabase'
 import type { ChapterDefinition, LocalizedText } from '@/lib/grammar/types'
 import LessonRenderer from '@/components/grammar/LessonRenderer'
+import { BookOpen as JourneyBook, PencilLine as JourneyPen, Sparkles as JourneySparkles, Lock as JourneyLock } from 'lucide-react'
 import ExerciseRenderer from '@/components/grammar/ExerciseRenderer'
 
 type Attempt = { id: string; exercise_set_id: string; score: number | null; correct_answers: number; total_questions: number; created_at: string }
@@ -52,6 +55,8 @@ function PerformanceHistory({stats, language, chapterId, setId}: {stats: History
 }
 export default function ChapitreGrammairePage() {
   const { language, isRTL } = useLanguage()
+  // DE_GRAMMAR_JOURNEY_TEST_V1
+  const deJourney = ({"fr": ["Votre parcours d\u2019apprentissage", "Le\u00e7on et exercices", "Apprenez, entra\u00eenez-vous et progressez.", "\u00c9tape", "Le\u00e7on th\u00e9orique", "Exercices principaux", "Exercices bonus", "\u00c9tudier", "S\u2019entra\u00eener", "Aller plus loin", "\u00c0 d\u00e9bloquer", "Sommaire des exercices", "Meilleur score", "Non commenc\u00e9", "Verrouill\u00e9", "Sommaire de la le\u00e7on", "Objectifs p\u00e9dagogiques"], "de": ["Ihr Lernweg", "Lektion und \u00dcbungen", "Lernen, \u00fcben und Fortschritte machen.", "Schritt", "Theorie", "Haupt\u00fcbungen", "Zusatz\u00fcbungen", "Lernen", "\u00dcben", "Vertiefen", "Freischalten", "\u00dcbungs\u00fcbersicht", "Bestes Ergebnis", "Nicht begonnen", "Gesperrt", "Inhaltsverzeichnis", "Lernziele"], "en": ["Your learning path", "Lesson and exercises", "Learn, practise and make progress.", "Step", "Theory lesson", "Main exercises", "Bonus exercises", "Study", "Practise", "Go further", "To unlock", "Exercise contents", "Best score", "Not started", "Locked", "Lesson contents", "Learning objectives"], "ar": ["\u0645\u0633\u0627\u0631\u0643 \u0627\u0644\u062a\u0639\u0644\u064a\u0645\u064a", "\u0627\u0644\u062f\u0631\u0633 \u0648\u0627\u0644\u062a\u0645\u0627\u0631\u064a\u0646", "\u062a\u0639\u0644\u0645 \u0648\u062a\u062f\u0631\u0628 \u0648\u062a\u0642\u062f\u0645.", "\u0627\u0644\u062e\u0637\u0648\u0629", "\u0627\u0644\u062f\u0631\u0633 \u0627\u0644\u0646\u0638\u0631\u064a", "\u0627\u0644\u062a\u0645\u0627\u0631\u064a\u0646 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629", "\u062a\u0645\u0627\u0631\u064a\u0646 \u0625\u0636\u0627\u0641\u064a\u0629", "\u0627\u062f\u0631\u0633", "\u062a\u062f\u0631\u0628", "\u062a\u0642\u062f\u0645", "\u0628\u0627\u0646\u062a\u0638\u0627\u0631 \u0627\u0644\u0641\u062a\u062d", "\u0641\u0647\u0631\u0633 \u0627\u0644\u062a\u0645\u0627\u0631\u064a\u0646", "\u0623\u0641\u0636\u0644 \u0646\u062a\u064a\u062c\u0629", "\u0644\u0645 \u064a\u0628\u062f\u0623", "\u0645\u0642\u0641\u0644", "\u0641\u0647\u0631\u0633 \u0627\u0644\u062f\u0631\u0633", "\u0623\u0647\u062f\u0627\u0641 \u0627\u0644\u062a\u0639\u0644\u0645"]})[language]
   const params = useParams()
   const id = Array.isArray(params.numero) ? params.numero[0] : params.numero
   const backHref = `/espace-etudiant/apprentissage/grammaire${id ? `#${encodeURIComponent(id)}` : ''}`
@@ -72,7 +77,9 @@ export default function ChapitreGrammairePage() {
     } catch(e) { setPayload(null); setError(e instanceof Error ? e.message : 'Erreur de chargement.') }
   }, [id])
   useEffect(() => { setTab('lesson'); setExerciseIndex(0); setPayload(null); void refresh() }, [refresh])
-  if (!payload || payload.chapter.id !== id) return <main className="p-8"><p>{error || 'Chargement…'}</p><Link href={backHref} scroll={false}>Retour</Link>{error && <button onClick={()=>void refresh()}>Réessayer</button>}</main>
+
+  if ((!payload || payload.chapter.id !== id) && !error) return <DeutschErfolgLoader kind="chapter" />
+  if (!payload || payload.chapter.id !== id) return <main className="p-8"><p>{error || 'Chargement…'}</p><Link href={backHref} scroll={false}>{({ de: 'Zur\u00fcck zu den Kapiteln', fr: 'Retour aux chapitres', en: 'Back to chapters', ar: '\u0627\u0644\u0639\u0648\u062f\u0629 \u0625\u0644\u0649 \u0627\u0644\u0641\u0635\u0648\u0644' })[language]}</Link>{error && <button onClick={()=>void refresh()}>Réessayer</button>}</main>
   const {chapter,history,mandatory,unlocked,lockedSets} = payload
   const best = (id: string) => history[id]?.best ?? undefined
   const total = mandatory.reduce((n,s)=>n+s.total,0)
@@ -84,9 +91,31 @@ export default function ChapitreGrammairePage() {
   const active = entries[index]
   const labels = ({fr:{prev:'Précédent',next:'Suivant',empty:'Aucune Übung disponible'},de:{prev:'Zurück',next:'Weiter',empty:'Keine Übungen verfügbar'},ar:{prev:'السابق',next:'التالي',empty:'لا توجد تمارين'},en:{prev:'Previous',next:'Next',empty:'No exercises available'}})[language]
   return <main className="premium-page min-h-screen" dir={isRTL ? 'rtl' : 'ltr'}><div className="grammar-page-shell mx-auto px-4 py-8">
-    <Link className="premium-back" href={backHref} scroll={false}>← Retour aux chapitres</Link>
+    {/* DE_FLOATING_CHAPTER_BACK_RTL_V1: return link is in FloatingPageTools */}
     <header className="chapter-header my-8"><span className="studio-brand">DEUTSCH · ERFOLG / GRAMMATIK</span><span className="studio-chapter-number" aria-hidden="true">{String(chapter.number).padStart(2,'0')}.</span><span className="level-label">KAPITEL {String(chapter.number).padStart(2,'0')} · {chapter.level}</span><h1 className="chapter-title" lang="de" dir="ltr">{chapter.title.de}</h1><p className="chapter-description">{chapter.subtitle[language]}</p></header>
-    <section className="chapter-progress studio-progress-summary">
+    
+    {error && <p role="alert">{error} <button onClick={() => void refresh()}>Réessayer</button></p>}
+    <section className="de-journey-panel" aria-label={deJourney[1]}>
+      <span className="de-journey-eyebrow">{deJourney[0]}</span>
+      <h2>{deJourney[1]}</h2><p>{deJourney[2]}</p>
+      <nav className="chapter-tabs de-journey-tabs" aria-label={deJourney[1]}>
+        {([
+          { key:'lesson', title:'Lektion', detail:deJourney[4], action:deJourney[7], Icon:JourneyBook },
+          { key:'meistertraining', title:'Meistertraining', detail:deJourney[5], action:deJourney[8], Icon:JourneyPen },
+          { key:'extra_kick', title:'Extra-Kick', detail:deJourney[6], action:unlocked ? deJourney[9] : deJourney[10], Icon:unlocked ? JourneySparkles : JourneyLock },
+        ] as const).map(({key,title,detail,action,Icon},i) => <button type="button" key={key} aria-pressed={tab === key} className={`chapter-tab de-journey-tab ${tab === key ? 'chapter-tab-active' : ''}`} onClick={() => { if (tab !== key) { setTab(key); setExerciseIndex(0) } }}>
+          <Icon size={25} strokeWidth={1.65} aria-hidden="true" />
+          <span className="de-journey-step">{deJourney[3]} {String(i+1).padStart(2,'0')}</span>
+          <strong lang="de" dir="ltr">{title}</strong><span className="de-journey-detail">{detail}</span>
+          <span className="de-journey-action">{action} <span aria-hidden="true">{isRTL ? '\u2190' : '\u2192'}</span></span>
+        </button>)}
+      </nav>
+    </section>
+    
+
+    {tab !== 'lesson' && (
+    <section className="chapter-progress studio-progress-summary de-compact-progress">
+      <h2 className="de-compact-progress-title">{({fr:'Progression Meistertraining',de:'Meistertraining: Lernfortschritt',en:'Meistertraining progress',ar:'\u0627\u0644\u062a\u0642\u062f\u0645 \u0641\u064a \u0627\u0644\u062a\u0645\u0627\u0631\u064a\u0646 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629'})[language]}</h2>
       {(() => {
         const t = {fr:['Note globale','Übungen réussies','Meilleur score','Voir détails','Note pondérée par le nombre de questions corrigées.','Bonnes réponses','Aucune tentative','Meistertraining uniquement'],de:['Gesamtnote','Gemeisterte Übungen','Bestes Ergebnis','Details anzeigen','Nach Anzahl der bewerteten Fragen gewichtet.','Richtige Antworten','Keine Versuche','Nur Meistertraining'],ar:['النتيجة الإجمالية','التمارين المتقنة','أفضل نتيجة','عرض التفاصيل','النتيجة موزونة حسب عدد الأسئلة المصححة.','الإجابات الصحيحة','لا توجد محاولات','التدريب الأساسي فقط'],en:['Overall score','Mastered exercises','Best score','View details','Weighted by the number of graded questions.','Correct answers','No attempts','Meistertraining only']}[language]
         const ranked = mandatory.map(m=>({ ...m, attempt:best(m.id), title:chapter.exerciseSets.find(s=>s.id===m.id)?.title[language] ?? lockedSets.find(s=>s.id===m.id)?.title[language] ?? m.id }))
@@ -98,9 +127,8 @@ export default function ChapitreGrammairePage() {
         </>
       })()}
     </section>
-    {error && <p role="alert">{error} <button onClick={() => void refresh()}>Réessayer</button></p>}
-    <nav className="chapter-tabs">{[['lesson','Lektion'],['meistertraining','Meistertraining'],['extra_kick',unlocked ? 'Extra-Kick' : '🔒 Extra-Kick']].map(([key,label]) => <button key={key} className={`chapter-tab ${tab === key ? 'chapter-tab-active' : ''}`} onClick={() => { if (tab !== key) { setTab(key); setExerciseIndex(0) } }}>{label}</button>)}</nav>
-    {tab === 'lesson' ? <LessonRenderer lesson={chapter.lesson} onStart={() => { setTab('meistertraining'); setExerciseIndex(0); window.scrollTo({top:0,behavior:'smooth'}) }}/> : tab === 'extra_kick' && !unlocked ? <p className="locked-panel">Obtenez 80/100 dans chaque Übung Meistertraining.</p> : entries.length === 0 ? <p className="empty-state">{labels.empty}</p> : <div className="grammar-pager">
+    )}
+    {tab === 'lesson' ? <div className="de-trial-lesson-body"><LessonRenderer lesson={chapter.lesson} onStart={() => { setTab('meistertraining'); setExerciseIndex(0); window.scrollTo({top:0,behavior:'smooth'}) }}/></div> : tab === 'extra_kick' && !unlocked ? <p className="locked-panel">Obtenez 80/100 dans chaque Übung Meistertraining.</p> : entries.length === 0 ? <p className="empty-state">{labels.empty}</p> : <div className="grammar-pager">
       <div className="grammar-pager-heading"><strong>Übung {index + 1} / {entries.length}</strong><div className="grammar-step-list">{entries.map((entry,i)=><button type="button" key={entry.id} aria-current={i===index ? "step" : undefined} className={i===index ? "current" : ""} onClick={()=>setExerciseIndex(i)}>{i+1}{entry.locked ? " 🔒" : Number(best(entry.id)?.score)>=80 ? " ✓" : ""}</button>)}</div><div className="progress-track"><div className="progress-fill" style={{width: `${(index+1)/entries.length*100}%`}}/></div></div>
       {availableSets.map(s => <section key={s.id} className="exercise-card grammar-paged-card" hidden={active?.id !== s.id}><div className="grammar-exercise-layout"><div className="grammar-exercise-main"><ExerciseRenderer chapterId={chapter.id} exerciseSet={s} onAttempt={() => void refresh()}/></div><PerformanceHistory key={`${chapter.id}:${s.id}:${history[s.id]?.count ?? 0}:${history[s.id]?.recent[0]?.id ?? ""}`} stats={history[s.id] ?? emptyHistory} chapterId={chapter.id} setId={s.id} language={language}/></div></section>)}
       {active?.locked && <section className="locked-panel">🔒 {active.title[language]} — <Link href="/espace-etudiant/pro">PRO</Link></section>}
@@ -1727,6 +1755,56 @@ export default function ChapitreGrammairePage() {
         .studio-summary-row { display:flex; justify-content:space-between; gap:8px; padding:8px 0; border-bottom:1px solid #eeeae1; }
         .studio-summary-row b { white-space:nowrap; }
         @media(max-width:640px) { .studio-progress-summary { grid-template-columns:1fr; } }
-      `}</style>
+      
+
+/* DE_COMPACT_GRAMMAR_PROGRESS_V1 */
+.premium-page .studio-progress-summary.de-compact-progress {
+  display:grid; grid-template-columns:repeat(3,minmax(0,1fr));
+  align-items:start; gap:7px; padding:0; border:0;
+  background:transparent; margin:12px 0 18px; box-shadow:none;
+}
+.premium-page .de-compact-progress > .de-compact-progress-title {
+  grid-column:1/-1; margin:0 0 1px; font-size:11px; font-weight:650;
+  color:#687482; text-align:start; line-height:1.4;
+}
+.premium-page .de-compact-progress .studio-summary-item {
+  min-width:0; margin:0; border-radius:8px; border:1px solid #e4dfd4;
+  box-shadow:none; background:#fff;
+}
+.premium-page .de-compact-progress .studio-summary-item > summary {
+  display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center;
+  gap:3px 8px; padding:9px 11px; min-height:44px; box-sizing:border-box;
+}
+.premium-page .de-compact-progress .studio-summary-item > summary small {
+  font-size:11px; line-height:1.35; color:#647184; font-weight:600;
+  overflow-wrap:anywhere; margin:0;
+}
+.premium-page .de-compact-progress .studio-summary-item > summary strong {
+  font-size:17px; line-height:1.25; font-weight:700; color:#192b43;
+  font-variant-numeric:tabular-nums; white-space:nowrap; direction:ltr; margin:0;
+}
+.premium-page .de-compact-progress .studio-summary-item > summary > span {
+  grid-column:1/-1; font-size:10px; color:#876735; line-height:1.3;
+  display:flex; align-items:center; justify-content:space-between; margin:0;
+}
+.premium-page .de-compact-progress .studio-summary-detail {
+  padding:10px 11px; max-height:270px; overflow-y:auto;
+  overscroll-behavior:contain; font-size:12px;
+}
+@media(max-width:760px) {
+  .premium-page .studio-progress-summary.de-compact-progress {
+    grid-template-columns:minmax(0,1fr); gap:5px; margin:10px 0 15px;
+  }
+  .premium-page .de-compact-progress .studio-summary-item > summary {
+    grid-template-columns:minmax(0,1fr) auto 18px; gap:8px; padding:7px 10px;
+  }
+  .premium-page .de-compact-progress .studio-summary-item > summary strong {font-size:15px}
+  .premium-page .de-compact-progress .studio-summary-item > summary > span {
+    grid-column:auto; font-size:0; justify-content:center;
+  }
+  .premium-page .de-compact-progress .studio-summary-item > summary > span b {font-size:14px;line-height:1}
+}
+
+`}</style>
 </main>
 }
