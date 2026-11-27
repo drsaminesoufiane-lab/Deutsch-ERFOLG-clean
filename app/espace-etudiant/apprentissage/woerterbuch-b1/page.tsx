@@ -1,13 +1,10 @@
 
 'use client'
+import { LibraryBig } from 'lucide-react'
+
 
 import { useMemo, useState, useEffect } from 'react'
-import {
-  Search, BookOpen, Star, Volume2, X, ChevronRight,
-  ChevronLeft, Heart, GraduationCap, Languages,
-  Filter, RotateCcw, CheckCircle2, ArrowRight,
-  Bookmark, BookMarked, Brain, Sparkles
-} from 'lucide-react'
+import { Search, BookOpen, Star, Volume2, X, ChevronRight, ChevronLeft, Heart, Languages, Filter, RotateCcw, CheckCircle2, ArrowRight, Bookmark, Brain, Sparkles } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 
 import { vocabulary, type Word } from './vocabulary'
@@ -262,7 +259,7 @@ export default function WoerterbuchB1Page() {
           <div className="relative flex flex-col md:flex-row md:items-center md:justify-between gap-6">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full bg-[#D6B56D]/15 border border-[#D6B56D]/30 px-3 py-1.5 text-[#F2DDA9] text-xs font-bold mb-4">
-                <GraduationCap size={15}/> {t.level}
+                <LibraryBig size={15}/> {t.level}
               </div>
               <h1 className="wb-heading text-3xl sm:text-4xl" lang="de" dir="ltr">{t.title}</h1>
               <p className="mt-2 text-white/70 text-sm sm:text-base">{t.subtitle}</p>

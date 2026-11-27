@@ -1,625 +1,128 @@
-
 'use client'
 
-// DE_GRAMMAR_MODULE_TITLE_V1
-import GrammarModuleTitle from '@/components/student/GrammarModuleTitle'
-
-import { ProNameBadge } from '@/components/student/FloatingPageTools'
-
+// DE_DASHBOARD_COMPACT_V1
+// DE_LEAGUE_ADMIN_READ_V1
 import { useEffect, useState } from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/navigation'
-import { supabase } from '@/lib/supabase'
+import LeaguePodium, { type PodiumEntry } from '@/components/student/LeaguePodium'
+import { NotebookPen } from 'lucide-react'
+import { GraduationCap, BookOpen, LibraryBig, Trophy, BarChart3, Headphones, PenLine, Mic, ClipboardList, FileText, ChevronRight, Play, Zap, CheckCircle2, Medal, Construction, House, UserRound } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { supabase } from '@/lib/supabase'
 
-import {
-  BookOpen,
-  Headphones,
-  PenLine,
-  Mic,
-  ArrowRight,
-  Clock,
-  UserRound,
-  Sparkles,
-  GraduationCap,
-  Trophy,
-  FileText,
-  ChevronRight,
-  Star,
-  Languages,
-} from 'lucide-react'
-
-export default function StudentPage() {
-  const router = useRouter()
-  const { t, isRTL } = useLanguage()
-
-  const [nom, setNom] = useState('')
-  const [niveau, setNiveau] = useState('B1')
-
-  const nomAffiche = nom || t.dashboard.studentFallback
-
-  useEffect(() => {
-    let actif = true
-
-    async function chargerProfil() {
-      try {
-        const {
-          data: { user },
-        } = await supabase.auth.getUser()
-
-        if (!actif) return
-
-        if (!user) {
-          router.push('/connexion')
-          return
-        }
-
-        const { data } = await supabase
-          .from('profiles')
-          .select('full_name, level')
-          .eq('id', user.id)
-          .single()
-
-        if (!actif) return
-
-        setNom(
-          data?.full_name ||
-          user.user_metadata?.full_name ||
-          user.email?.split('@')[0] ||
-          ''
-        )
-
-        const niveauBrut = String(data?.level || user.user_metadata?.niveau || 'B1').trim().toUpperCase().replace(/^TELC\s*/, '')
-        setNiveau(['A1', 'A2', 'B1', 'B2'].includes(niveauBrut) ? niveauBrut : 'B1')
-      } catch (error) {
-        console.error('Erreur de chargement du profil :', error)
-      }
-    }
-
-    chargerProfil()
-
-    return () => {
-      actif = false
-    }
-  }, [router])
-
-  const niveauRoute =
-    niveau?.trim().toUpperCase() === 'B2' ? 'b2' : 'b1'
-
-  const modules = [
-    {
-      title: t.dashboard.readingShort,
-      slug: 'lesen',
-      subtitle: t.dashboard.reading,
-      description: t.dashboard.readingDescription,
-      Icon: BookOpen,
-      color: 'blue',
-    },
-    {
-      title: t.dashboard.listeningShort,
-      slug: 'hoeren',
-      subtitle: t.dashboard.listening,
-      description: t.dashboard.listeningDescription,
-      Icon: Headphones,
-      color: 'purple',
-    },
-    {
-      title: t.dashboard.writingShort,
-      slug: 'schreiben',
-      subtitle: t.dashboard.writing,
-      description: t.dashboard.writingDescription,
-      Icon: PenLine,
-      color: 'orange',
-    },
-    {
-      title: t.dashboard.speakingShort,
-      slug: 'sprechen',
-      subtitle: t.dashboard.speaking,
-      description: t.dashboard.speakingDescription,
-      Icon: Mic,
-      color: 'green',
-    },
-    {
-      title: t.dashboard.grammarVocabulary,
-      slug: 'sprachbausteine',
-      subtitle: t.dashboard.languageStructure,
-      description: t.dashboard.grammarVocabularyDescription,
-      Icon: BookOpen,
-      color: 'gold',
-    },
+const copy = {
+  fr: {hello:'Bonjour',student:'Étudiant',resume:'Reprendre',start:'Commencer',grammar:'Grammaire',dictionary:'Dictionnaire',beginner:'Allemand A1',league:'Deutsch Erfolg League',learn:'Apprentissage',exams:'Examens TELC',building:'En construction',results:'Résultats',documents:'Documents',account:'Compte',home:'Accueil',done:'Übungen réussies',rank:'Classement',chapter:'Chapitre',last:'Dernier chapitre travaillé',all:'Tous les examens',join:'Découvrir la ligue'},
+  de: {hello:'Hallo',student:'Lernende',resume:'Weiterlernen',start:'Loslegen',grammar:'Grammatik',dictionary:'Wörterbuch',beginner:'Deutsch A1',league:'Deutsch Erfolg League',learn:'Lernen',exams:'TELC-Prüfungen',building:'Im Aufbau',results:'Ergebnisse',documents:'Dokumente',account:'Konto',home:'Start',done:'Bestandene Übungen',rank:'Rang',chapter:'Kapitel',last:'Zuletzt bearbeitetes Kapitel',all:'Alle Prüfungen',join:'Liga entdecken'},
+  en: {hello:'Hello',student:'Student',resume:'Continue learning',start:'Get started',grammar:'Grammar',dictionary:'Dictionary',beginner:'German A1',league:'Deutsch Erfolg League',learn:'Learning',exams:'TELC exams',building:'Under construction',results:'Results',documents:'Documents',account:'Account',home:'Home',done:'Exercises passed',rank:'Rank',chapter:'Chapter',last:'Last chapter practised',all:'All exams',join:'Discover the league'},
+  ar: {hello:'مرحباً',student:'طالب',resume:'متابعة التعلم',start:'ابدأ التعلم',grammar:'قواعد اللغة الألمانية',dictionary:'القاموس',beginner:'الألمانية A1',league:'Deutsch Erfolg League',learn:'التعلم',exams:'امتحانات TELC',building:'قيد الإنشاء',results:'النتائج',documents:'المستندات',account:'الحساب',home:'الرئيسية',done:'التمارين المجتازة',rank:'الترتيب',chapter:'الفصل',last:'آخر فصل تدربت عليه',all:'جميع الامتحانات',join:'اكتشف الدوري'},
+} as const
+const dashboardVisualCopy = {"fr": {"title": "Allemand pour d\u00e9butants", "sub": "Alphabet \u00b7 Prononciation", "welcome": "ESPACE D\u2019APPRENTISSAGE", "level": "Mon niveau"}, "de": {"title": "Deutsch f\u00fcr Anf\u00e4nger", "sub": "Alphabet \u00b7 Aussprache", "welcome": "MEIN LERNBEREICH", "level": "Mein Niveau"}, "en": {"title": "German for beginners", "sub": "Alphabet \u00b7 Pronunciation", "welcome": "MY LEARNING SPACE", "level": "My level"}, "ar": {"title": "\u0627\u0644\u0623\u0644\u0645\u0627\u0646\u064a\u0629 \u0644\u0644\u0645\u0628\u062a\u062f\u0626\u064a\u0646", "sub": "\u0627\u0644\u0623\u0628\u062c\u062f\u064a\u0629 \u00b7 \u0627\u0644\u0646\u0637\u0642", "welcome": "\u0641\u0636\u0627\u0621 \u0627\u0644\u062a\u0639\u0644\u0645", "level": "\u0645\u0633\u062a\u0648\u0627\u064a"}} as const
+const premiumCopy = {"fr": {"results": "Mes r\u00e9sultats", "resultsSub": "Scores et progression", "league": "Classement g\u00e9n\u00e9ral", "allTime": "Depuis le d\u00e9but", "see": "Voir la League", "empty": "Le podium attend ses premiers champions !", "unavailable": "Classement indisponible", "loading": "Chargement\u2026", "retry": "R\u00e9essayer", "pending": "Donn\u00e9es indisponibles", "me": "Moi", "motivation": "Chaque exercice r\u00e9ussi compte."}, "de": {"results": "Meine Ergebnisse", "resultsSub": "Punkte und Fortschritt", "league": "Gesamtrangliste", "allTime": "Gesamt", "see": "Liga ansehen", "empty": "Das Podium wartet auf seine ersten Champions!", "unavailable": "Rangliste nicht verf\u00fcgbar", "loading": "Wird geladen\u2026", "retry": "Erneut versuchen", "pending": "Daten nicht verf\u00fcgbar", "me": "Ich", "motivation": "Jede bestandene \u00dcbung z\u00e4hlt."}, "en": {"results": "My results", "resultsSub": "Scores and progress", "league": "Overall leaderboard", "allTime": "All time", "see": "View the League", "empty": "The podium awaits its first champions!", "unavailable": "Leaderboard unavailable", "loading": "Loading\u2026", "retry": "Try again", "pending": "Data unavailable", "me": "Me", "motivation": "Every passed exercise counts."}, "ar": {"results": "\u0646\u062a\u0627\u0626\u062c\u064a", "resultsSub": "\u0627\u0644\u062f\u0631\u062c\u0627\u062a \u0648\u0627\u0644\u062a\u0642\u062f\u0645", "league": "\u0627\u0644\u062a\u0631\u062a\u064a\u0628 \u0627\u0644\u0639\u0627\u0645", "allTime": "\u0645\u0646\u0630 \u0627\u0644\u0628\u062f\u0627\u064a\u0629", "see": "\u0639\u0631\u0636 \u0627\u0644\u062f\u0648\u0631\u064a", "empty": "\u0645\u0646\u0635\u0629 \u0627\u0644\u062a\u062a\u0648\u064a\u062c \u062a\u0646\u062a\u0638\u0631 \u0623\u0648\u0644 \u0623\u0628\u0637\u0627\u0644\u0647\u0627!", "unavailable": "\u0627\u0644\u062a\u0631\u062a\u064a\u0628 \u063a\u064a\u0631 \u0645\u062a\u0627\u062d", "loading": "\u062c\u0627\u0631\u064d \u0627\u0644\u062a\u062d\u0645\u064a\u0644\u2026", "retry": "\u0625\u0639\u0627\u062f\u0629 \u0627\u0644\u0645\u062d\u0627\u0648\u0644\u0629", "pending": "\u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u063a\u064a\u0631 \u0645\u062a\u0627\u062d\u0629", "me": "\u0623\u0646\u0627", "motivation": "\u0643\u0644 \u062a\u0645\u0631\u064a\u0646 \u0646\u0627\u062c\u062d \u0644\u0647 \u0642\u064a\u0645\u0629."}} as const
+const base = '/espace-etudiant'
+const grammar = base+'/apprentissage/grammaire'
+const availableRoutes: string[] = ["/espace-etudiant/examens", "/espace-etudiant/examens/b1", "/espace-etudiant/examens/b1/hoeren", "/espace-etudiant/examens/b1/lesen", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-1", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-10", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-11", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-12", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-13", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-14", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-15", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-16", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-17", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-2", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-3", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-4", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-5", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-6", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-7", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-8", "/espace-etudiant/examens/b1/lesen/teil-1/exercice-9", "/espace-etudiant/examens/b1/lesen/teil-2/exercice-1", "/espace-etudiant/examens/b1/lesen/teil-2/exercice-2", "/espace-etudiant/examens/b1/lesen/teil-2/exercice-3", "/espace-etudiant/examens/b1/lesen/teil-3/exercice-1", "/espace-etudiant/examens/b1/lesen/teil-3/exercice-2", "/espace-etudiant/examens/b1/lesen/teil-3/exercice-3", "/espace-etudiant/examens/b1/sprachbausteine", "/espace-etudiant/examens/b1/sprachbausteine/teil-1/exercice-1", "/espace-etudiant/examens/b1/sprachbausteine/teil-2/exercice-1", "/espace-etudiant/examens/b2"]
+const skills = [{key:'lesen',name:'Lesen',Icon:BookOpen},{key:'hoeren',name:'Hören',Icon:Headphones},{key:'schreiben',name:'Schreiben',Icon:PenLine},{key:'sprechen',name:'Sprechen',Icon:Mic},{key:'sprachbausteine',name:'Sprachbausteine',Icon:ClipboardList}]
+type Stats = {xp:number|null;completed:number|null;rank:number|null}
+export default function StudentPage(){
+  const {language,isRTL}=useLanguage(); const t=copy[language]||copy.de
+  const [name,setName]=useState(''); const [level,setLevel]=useState(''); const [examLevel,setExamLevel]=useState<'b1'|'b2'>('b1')
+  const [stats,setStats]=useState<Stats>({xp:null,completed:null,rank:null}); const [leaders,setLeaders]=useState<PodiumEntry[]|null>(null); const [statsLoading,setStatsLoading]=useState(true); const [statsRevision,setStatsRevision]=useState(0); const [last,setLast]=useState<string|null>(null)
+  useEffect(()=>{let active=true; setStatsLoading(true); async function load(){
+    const {data:{user}}=await supabase.auth.getUser(); if(!active||!user)return
+    const {data:p}=await supabase.from('profiles').select('full_name,level').eq('id',user.id).maybeSingle(); if(!active)return
+    setName((p?.full_name||user.user_metadata?.full_name||'').trim()||'');setLevel(p?.level||'');setExamLevel(p?.level==='B2'?'b2':'b1')
+    const [xp,rank,recent]=await Promise.all([supabase.rpc('league_get_my_xp'),supabase.rpc('league_get_ranking',{p_period:'all',p_level:null}),supabase.from('grammar_exercise_attempts').select('chapter_id').eq('student_id',user.id).order('created_at',{ascending:false}).limit(1).maybeSingle()]);if(!active)return
+    const numeric=(value:unknown):number|null=>value!==null&&value!==undefined&&Number.isFinite(Number(value))?Number(value):null
+    const me=!rank.error?rank.data?.me:null
+    setStats({xp:(!xp.error?numeric(xp.data?.xp):null)??numeric(me?.xp),completed:(!xp.error?numeric(xp.data?.completed):null)??numeric(me?.completed),rank:numeric(me?.position)})
+    setLeaders(!rank.error&&Array.isArray(rank.data?.entries)?rank.data.entries as PodiumEntry[]:null)
+    if(!recent.error&&typeof recent.data?.chapter_id==='string')setLast(recent.data.chapter_id)
+  } void load().catch(()=>{}).finally(()=>{if(active)setStatsLoading(false)});return()=>{active=false}},[statsRevision])
+  const chapterNumber=last?.match(/kapitel-(\d+)$/i)?.[1]
+  const d=dashboardVisualCopy[language]||dashboardVisualCopy.de
+  const pc=premiumCopy[language]||premiumCopy.de
+  const tools=[
+    {href:base+'/apprentissage/allemand-debutant',title:d.title,sub:d.sub,level:'A1',kind:'beginner',Icon:BookOpen},
+    {href:grammar,title:t.grammar,sub:'',level:'A1 · A2 · B1',kind:'grammar',Icon:NotebookPen},
+    {href:base+'/apprentissage/woerterbuch-b1',title:t.dictionary,sub:'',level:'A1 · A2 · B1 · B2',kind:'dictionary',Icon:LibraryBig},
+    {href:base+'/resultats',title:pc.results,sub:pc.resultsSub,level:'',kind:'results',Icon:BarChart3}
   ]
-
-  return (
-    <div className="student-layout de-dashboard" dir={isRTL ? 'rtl' : 'ltr'}>
-      <main className="student-main">
-
-        {/* HEADER */}
-
-        <header className="student-header">
-          <div className="header-title">
-            <div className="header-brand-mark">
-              <GraduationCap size={19} />
-            </div>
-
-            <div>
-              <span className="header-small">DEUTSCH ERFOLG</span>
-              <h2>{t.header.dashboard}</h2>
-            </div>
-          </div>
-
-          <div className="student-header-profile de-profile-card">
-            <div className="profile-avatar">
-              <UserRound size={20} />
-            </div>
-
-            <div className="profile-infos">
-              <strong>{nomAffiche}</strong>
-              <div className="de-profile-meta">
-                <span className="de-profile-role">{t.header.student}</span>
-                <span className="de-current-level">{niveau}</span>
-              </div>
-              <ProNameBadge />
-            </div>
-          </div>
-        </header>
-
-        <div className="student-content">
-
-          {/* ACCUEIL */}
-
-          <section className="student-welcome">
-            <div className="welcome-background-decoration">
-              <div className="welcome-orbit orbit-one" />
-              <div className="welcome-orbit orbit-two" />
-              <div className="welcome-orbit orbit-three" />
-            </div>
-
-            <div className="welcome-content">
-              <span className="welcome-tag">
-                <Sparkles size={14} />
-                {t.dashboard.welcomeTag}
-              </span>
-
-              <h1>
-                {t.dashboard.hello}, <span>{nomAffiche}</span> !
-              </h1>
-
-              <p>{t.dashboard.welcomeDescription}</p>
-
-              <a href="#niveaux" className="welcome-button">
-                {t.dashboard.continue}
-                <ArrowRight size={17} />
-              </a>
-            </div>
-
-            <div className="welcome-visual">
-              <div className="welcome-icon-circle">
-                <GraduationCap size={76} strokeWidth={1.25} />
-              </div>
-
-              <div className="welcome-floating-star">
-                <Star size={18} />
-              </div>
-
-              <div className="welcome-floating-label">
-                <strong>{niveau}</strong>
-              </div>
-            </div>
-
-            <div className="welcome-bottom-line" />
-          </section>
-
-          {/* NIVEAUX TELC */}
-
-          <section className="student-section" id="niveaux">
-            <div className="section-heading">
-              <div>
-                <h2>{t.dashboard.myLevels}</h2>
-                <p>{t.dashboard.chooseLevelDescription}</p>
-              </div>
-
-              <div className="section-decoration">
-                <GraduationCap size={21} />
-              </div>
-            </div>
-
-            <div className="student-levels">
-
-              <Link
-                href="/espace-etudiant/examens/b1"
-                className={`student-level-card level-b1 ${niveau === 'B1' ? 'selected' : ''}`}
-              >
-                <div className="level-top">
-                  <span className="level-chip">
-                    {t.dashboard.intermediate}
-                  </span>
-
-                  {niveau === 'B1' && (
-                    <span className="current-chip">
-                      <span className="current-dot" />
-                      {t.dashboard.myLevel}
-                    </span>
-                  )}
-                </div>
-
-                <div className="level-main">
-                  <div className="level-info">
-                    <span className="level-kicker">
-                      {t.dashboard.telcCertificate}
-                    </span>
-                    <h3>B1</h3>
-                    <p>{t.dashboard.levelB1Description}</p>
-                  </div>
-
-                  <div className="level-watermark">B1</div>
-                </div>
-
-                <div className="level-footer">
-                  <span>{t.dashboard.comprehensionExpression}</span>
-                  <span className="level-arrow">
-                    <ArrowRight size={17} />
-                  </span>
-                </div>
-              </Link>
-
-              <Link
-                href="/espace-etudiant/examens/b2"
-                className={`student-level-card level-b2 ${niveau === 'B2' ? 'selected' : ''}`}
-              >
-                <div className="level-top">
-                  <span className="level-chip">
-                    {t.dashboard.advanced}
-                  </span>
-
-                  {niveau === 'B2' && (
-                    <span className="current-chip">
-                      <span className="current-dot" />
-                      {t.dashboard.myLevel}
-                    </span>
-                  )}
-                </div>
-
-                <div className="level-main">
-                  <div className="level-info">
-                    <span className="level-kicker">
-                      {t.dashboard.telcCertificate}
-                    </span>
-                    <h3>B2</h3>
-                    <p>{t.dashboard.levelB2Description}</p>
-                  </div>
-
-                  <div className="level-watermark">B2</div>
-                </div>
-
-                <div className="level-footer">
-                  <span>{t.dashboard.nextGoal}</span>
-                  <span className="level-arrow">
-                    <ArrowRight size={17} />
-                  </span>
-                </div>
-              </Link>
-
-            </div>
-          </section>
-
-          {/* CINQ COMPETENCES */}
-
-          <section className="student-section">
-            <div className="section-heading">
-              <div>
-                <h2>{t.dashboard.skills}</h2>
-                <p>{t.dashboard.skillsDescription}</p>
-              </div>
-
-              <span className="skills-level-badge">
-                <span className="skills-level-dot" />
-                TELC {niveauRoute.toUpperCase()}
-              </span>
-            </div>
-
-            <div className="student-skills">
-              {modules.map(
-                ({ title, slug, subtitle, description, Icon, color }, index) => (
-                  <Link
-                    href={`/espace-etudiant/examens/${niveauRoute}/${slug}`}
-                    className={`student-skill-card skill-${color}`}
-                    key={slug}
-                  >
-                    <div className="skill-card-top">
-                      <div className="skill-symbol">
-                        <Icon size={24} strokeWidth={1.8} />
-                      </div>
-
-                      <span className="skill-number">
-                        {String(index + 1).padStart(2, '0')}
-                      </span>
-                    </div>
-
-                    <span className="skill-detail">
-                      {t.dashboard.skillAreaLabel}
-                    </span>
-
-                    <span className="skill-level">
-                      <span className="skill-level-dot" />
-                      TELC {niveauRoute.toUpperCase()}
-                    </span>
-
-                    <h3>{title}</h3>
-
-                    <strong>{subtitle}</strong>
-
-                    <p>{description}</p>
-
-                    <div className="skill-card-footer">
-                      <span>{t.dashboard.startLearning}</span>
-                      <span className="skill-arrow">
-                        <ArrowRight size={15} />
-                      </span>
-                    </div>
-                  </Link>
-                )
-              )}
-            </div>
-
-            {/* GRAMMAIRE */}
-
-            <Link
-              href="/espace-etudiant/apprentissage/grammaire"
-              className="grammar-access-card"
-            >
-              <div className="grammar-access-icon">
-                <BookOpen size={27} />
-              </div>
-
-              <div className="grammar-access-content">
-                <span className="grammar-access-label">
-                  {t.grammar.library}
-                </span>
-                <h3><GrammarModuleTitle /></h3>
-                <p>{t.grammar.welcomeDescription}</p>
-              </div>
-
-              <div className="grammar-access-button">
-                <span>{t.dashboard.startLearning}</span>
-                <ArrowRight size={17} />
-              </div>
-            </Link>
-
-            {/* WÖRTERBUCH B1 */}
-
-            <Link
-              href="/espace-etudiant/apprentissage/woerterbuch-b1"
-              className="dictionary-access-card"
-            >
-              <div className="dictionary-access-icon">
-                <Languages size={27} />
-              </div>
-
-              <div className="dictionary-access-content">
-                <span className="dictionary-access-label">
-                  DEUTSCH · B1
-                </span>
-
-                <h3>Wörterbuch B1</h3>
-
-                <p>
-                  Découvre le vocabulaire B1 avec les traductions
-                  en français et en anglais, des exemples et des
-                  explications grammaticales.
-                </p>
-
-                <div className="dictionary-languages">
-                  <span>🇩🇪 Deutsch</span>
-                  <span>🇫🇷 Français</span>
-                  <span>🇬🇧 English</span>
-                </div>
-              </div>
-
-              <div className="dictionary-access-button">
-                <span>Explorer le dictionnaire</span>
-                <ArrowRight size={17} />
-              </div>
-            </Link>
-          </section>
-
-          {/* ESPACE DE TRAVAIL */}
-
-          <section className="student-section">
-            <div className="section-heading">
-              <div>
-                <h2>{t.dashboard.workspace}</h2>
-              </div>
-            </div>
-
-            <div className="student-tools">
-
-              <article className="tool-card">
-                <div className="tool-symbol tool-blue">
-                  <Clock size={22} />
-                </div>
-
-                <div className="tool-info">
-                  <strong>{t.dashboard.mockExams}</strong>
-                  <p>{t.dashboard.mockExamsDescription}</p>
-                </div>
-
-                <ArrowRight size={18} className="tool-arrow" />
-              </article>
-
-              <article className="tool-card">
-                <div className="tool-symbol tool-gold">
-                  <Trophy size={22} />
-                </div>
-
-                <div className="tool-info">
-                  <strong>{t.dashboard.myResults}</strong>
-                  <p>{t.dashboard.myResultsDescription}</p>
-                </div>
-
-                <ArrowRight size={18} className="tool-arrow" />
-              </article>
-
-              <article className="tool-card">
-                <div className="tool-symbol tool-purple">
-                  <FileText size={22} />
-                </div>
-
-                <div className="tool-info">
-                  <strong>{t.dashboard.myDocuments}</strong>
-                  <p>{t.dashboard.myDocumentsDescription}</p>
-                </div>
-
-                <ArrowRight size={18} className="tool-arrow" />
-              </article>
-
-            </div>
-          </section>
-
-          {/* FOOTER */}
-
-          <footer className="student-footer">
-            <span>
-              © 2026 Deutsch Erfolg. {t.dashboard.footer}
-            </span>
-
-            <Link href="/">
-              {t.dashboard.mainWebsite}
-              <ChevronRight size={13} />
-            </Link>
-          </footer>
-
-        </div>
-      </main>
-
-      <style jsx global>{`
-/* Deutsch-Erfolg / Dashboard premium V1 */
-.de-dashboard {
-  --navy: var(--de-navy, #192b43);
-  --gold: var(--de-gold, #b49760);
-  --gold-text: var(--de-gold-text, #806337);
-  --gold-light: var(--de-gold-light, #e3cb96);
-  --muted: var(--de-muted, #626a75);
-  --ivory: var(--de-ivory, #f7f5f0);
-  --line: var(--de-border, #e3ded3);
-  --tint: var(--de-tint, #f1ece2);
-  --serif: var(--de-serif, Georgia, serif);
-  min-height: 100vh; background: var(--ivory); color: var(--navy);
-  font-family: var(--de-sans, 'Plus Jakarta Sans', Arial, sans-serif);
-  text-align: start;
+  const examRoot=base+'/examens';const examHome=availableRoutes.includes(examRoot+'/'+examLevel)?examRoot+'/'+examLevel:examRoot
+  const fmt=(v:number)=>v.toLocaleString(language)
+  return <main className="de-compact-dashboard" dir={isRTL?'rtl':'ltr'}>
+    <section className="de-dash-greet de-dash-welcome-v2">
+      <div className="de-dash-welcome-copy"><span className="de-dash-welcome-kicker">{d.welcome}</span>
+        <h1>{t.hello}, <span>{name||t.student}</span> !</h1>
+        {level&&<div className="de-dash-welcome-level"><span>{d.level}</span><strong dir="ltr">{level}</strong></div>}
+      </div>
+      <div className="de-dash-welcome-art" aria-hidden="true"><span className="de-dash-welcome-ring"/><GraduationCap size={76} strokeWidth={1.45}/><span className="de-dash-welcome-spark">✦</span></div>
+    </section>
+    <section className="de-dash-stats"><Link href={base+'/classement'}><Zap/><strong>{stats.xp===null?'—':fmt(stats.xp)}</strong><small>XP</small></Link><Link href={base+'/resultats'}><CheckCircle2/><strong>{stats.completed===null?'—':fmt(stats.completed)}</strong><small>{t.done}</small></Link><Link href={base+'/classement'}><Medal/><strong>{stats.rank!==null?'#'+fmt(stats.rank):'—'}</strong><small>{t.rank}</small></Link></section>
+    {(statsLoading||stats.xp===null||stats.completed===null)&&<div className="de-dash-stats-status" role="status">{statsLoading?pc.loading:pc.pending}{!statsLoading&&<button type="button" onClick={()=>setStatsRevision(v=>v+1)}>{pc.retry}</button>}</div>}
+    <Link className="de-dash-resume" href={last?grammar+'/'+encodeURIComponent(last):grammar}><div><small>{last?t.last:t.start}</small><h2>{last&&chapterNumber?t.chapter+' '+chapterNumber:t.grammar}</h2><span>{last?t.resume:t.start}</span></div><span className="de-dash-play"><Play size={22}/></span></Link>
+    <h2 className="de-dash-section">{t.learn}</h2><div className="de-dash-tools de-dash-tools-v2">{tools.map(({href,title,sub,level,kind,Icon})=><Link href={href} key={href} className={'de-dash-tool-'+kind}><div className="de-dash-tool-top"><span className="de-dash-tool-icon"><Icon size={38} strokeWidth={1.8}/></span>{level&&<span className="de-dash-tool-level" dir="ltr">{level}</span>}<ChevronRight className="de-dash-tool-arrow" size={18} aria-hidden="true"/></div><strong>{title}</strong>{sub&&<small>{sub}</small>}</Link>)}</div>
+    <section className="de-dash-league-v3"><div className="de-dash-league-head"><div><h2>{t.league}</h2><small>{pc.league} · {pc.allTime}</small></div><Link href={base+'/classement'}>{pc.see}<ChevronRight size={16}/></Link></div>{leaders!==null?<LeaguePodium entries={leaders}/>:<div className="de-dash-league-status" role="status">{statsLoading?pc.loading:pc.unavailable}</div>}<p className="de-dash-motivation">{pc.motivation}</p></section>
+    <div className="de-dash-exam-heading"><h2 className="de-dash-section">{t.exams}</h2><div className="de-dash-switch">{(['b1','b2'] as const).map(l=><button key={l} type="button" aria-pressed={examLevel===l} onClick={()=>setExamLevel(l)}>{l.toUpperCase()}</button>)}</div></div>
+    <Link className="de-dash-building" href={examHome}><Construction size={15}/>{t.building}<ChevronRight size={15}/></Link>
+    <div className="de-dash-exams">{skills.map(({key,name,Icon})=>{const href=examRoot+'/'+examLevel+'/'+key;return <Link key={key} href={availableRoutes.includes(href)?href:examHome}><Icon size={22}/><strong>{name}</strong><ChevronRight size={15}/></Link>})}</div>
+    <div className="de-dash-secondary"><Link href={base+'/documents'}><FileText size={19}/>{t.documents}</Link><Link href={examRoot}><ClipboardList size={19}/>{t.all}</Link></div>
+    <nav className="de-dash-mobile-nav" aria-label={t.learn}>{[{href:base,Icon:House,label:t.home},{href:grammar,Icon:NotebookPen,label:t.grammar},{href:examRoot,Icon:ClipboardList,label:t.exams},{href:base+'/parametres',Icon:UserRound,label:t.account}].map(({href,Icon,label},i)=><Link key={href} href={href} aria-current={i===0?'page':undefined}><Icon size={20}/><span>{label}</span></Link>)}</nav>
+    <style jsx global>{`
+    .de-compact-dashboard{max-width:1250px;margin:auto;padding:24px clamp(14px,3vw,36px) 170px;color:#192b43;font-family:var(--de-sans,Arial,sans-serif);box-sizing:border-box}
+    .de-compact-dashboard a{text-decoration:none}.de-dash-greet{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 15px}.de-dash-greet h1{font-family:Georgia,serif;font-size:clamp(23px,3.4vw,34px);margin:0;overflow-wrap:anywhere}.de-dash-level{flex-shrink:0;padding:6px 12px;border-radius:8px;background:#eee6d5;color:#7c5b2a;font-weight:700}.de-dash-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:14px}.de-dash-stats a{display:grid;grid-template-columns:auto 1fr;align-items:center;gap:5px 9px;background:#fff;border:1px solid #e9e2d5;border-radius:12px;padding:12px;color:#192b43}.de-dash-stats svg{color:#98733b;width:19px}.de-dash-stats strong{font-size:20px}.de-dash-stats small{grid-column:1/-1;color:#647184;font-size:11px;overflow-wrap:anywhere}.de-dash-resume{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:20px;border-radius:14px;background:#192b43;color:#fff;margin-bottom:20px}.de-dash-resume h2{color:white;font-size:clamp(19px,3vw,26px);margin:5px 0}.de-dash-resume small,.de-dash-resume div>span{color:#e3cb96;font-size:12px}.de-dash-play{display:grid;place-items:center;width:44px;height:44px;flex-shrink:0;border-radius:50%;background:#d6b56d;color:#192b43}.de-dash-section{font-size:18px;font-weight:700;margin:15px 0 10px}.de-dash-tools{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.de-dash-tools a{display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:#fff;border:1px solid #e8e1d6;border-radius:12px;padding:14px;color:#192b43;min-width:0}.de-dash-tools svg{color:#98733b;background:#f2ebdf;box-sizing:content-box;padding:9px;border-radius:10px}.de-dash-tools strong{font-size:14px;overflow-wrap:anywhere}.de-dash-tools small{font-size:11px;color:#647184;overflow-wrap:anywhere}.de-dash-exam-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:12px}.de-dash-switch{display:flex;gap:3px;padding:3px;background:#eee7d9;border-radius:8px}.de-dash-switch button{padding:6px 12px;border:0;background:transparent;border-radius:6px;color:#192b43;font-weight:700;cursor:pointer}.de-dash-switch button[aria-pressed=true]{background:#192b43;color:#fff}.de-dash-building{display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:650;color:#8c6428;margin:0 0 10px}.de-dash-exams{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.de-dash-exams a{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:14px 10px;border:1px solid #e8e1d6;border-radius:10px;background:#fff;color:#192b43}.de-dash-exams strong{font-size:13px;overflow-wrap:anywhere}.de-dash-exams svg:first-child,.de-dash-secondary svg{color:#98733b}.de-dash-exams svg:last-child{margin-inline-start:auto;color:#8791a0}.de-dash-secondary{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.de-dash-secondary a{display:flex;align-items:center;gap:7px;padding:9px 12px;font-size:12px;color:#192b43;background:#fff;border:1px solid #e8e1d6;border-radius:8px}.de-dash-mobile-nav{display:none}.de-compact-dashboard a:focus-visible,.de-compact-dashboard button:focus-visible{outline:2px solid #967035;outline-offset:3px}[dir=rtl] .de-dash-exams svg:last-child,[dir=rtl] .de-dash-building svg:last-child{transform:rotate(180deg)}
+    @media(max-width:850px){.de-dash-tools,.de-dash-exams{grid-template-columns:repeat(2,minmax(0,1fr))}.de-dash-tools a{padding:12px}.de-dash-stats a{padding:9px;gap:3px 5px}.de-dash-stats strong{font-size:17px}.de-dash-resume{padding:15px}.de-dash-mobile-nav{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;background:#fff;border:1px solid #e8e1d6;border-radius:12px;margin-top:16px;padding:9px 4px}.de-dash-mobile-nav a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;color:#647184;text-align:center;font-size:10px;min-height:44px;overflow-wrap:anywhere}.de-dash-mobile-nav a[aria-current=page]{color:#967035}.de-dash-mobile-nav span{max-width:100%}.de-dash-exams a{padding:10px}.de-dash-section{font-size:16px}.de-dash-tools strong{font-size:13px}}
+    
+
+/* DE_DASHBOARD_WELCOME_ICONS_V2 */
+.de-compact-dashboard .de-dash-welcome-v2{isolation:isolate;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:195px;margin:0 0 16px;padding:clamp(22px,3.5vw,42px);background:linear-gradient(115deg,#142743,#254668 78%,#31577e);color:#fff;border:1px solid #304e70;border-radius:20px;box-shadow:0 8px 24px #192b431a}
+.de-dash-welcome-v2::after{content:'';position:absolute;z-index:-1;inset-inline-end:-95px;top:-95px;width:290px;height:290px;border:1px solid #ffffff16;border-radius:50%;box-shadow:0 0 0 32px #ffffff09,0 0 0 65px #ffffff05;pointer-events:none}
+.de-dash-welcome-copy{min-width:0;flex:1;position:relative;z-index:1}.de-dash-welcome-kicker{font-size:10px;letter-spacing:.1em;color:#e7ca8f;font-weight:750;display:block;margin:0 0 9px}
+.de-compact-dashboard .de-dash-welcome-v2 h1{color:#fff;font-size:clamp(24px,3.2vw,37px);line-height:1.22;margin:0 0 13px;overflow-wrap:anywhere}.de-dash-welcome-v2 h1 span{color:#f1d59b}
+.de-dash-welcome-level{display:inline-flex;align-items:center;flex-wrap:wrap;gap:7px 10px;border:1px solid #ffffff30;background:#ffffff13;padding:7px 11px;border-radius:8px}.de-dash-welcome-level span{font-size:11px;color:#e1e9f3}.de-dash-welcome-level strong{font-size:14px;color:#f1d59b;letter-spacing:.03em}
+.de-dash-welcome-art{position:relative;flex:0 0 134px;width:134px;height:134px;display:grid;place-items:center;color:#edcb82}.de-dash-welcome-ring{position:absolute;inset:0;border:1px solid #e8c77e65;border-radius:50%;background:#fff1d20b;box-shadow:0 0 0 12px #ffffff08}.de-dash-welcome-art>svg{position:relative;z-index:1}.de-dash-welcome-spark{position:absolute;top:0;inset-inline-end:4px;font-size:25px;color:#edcb82}
+.de-compact-dashboard .de-dash-tools-v2{gap:12px}.de-compact-dashboard .de-dash-tools-v2>a{min-height:153px;gap:7px;padding:16px;border-radius:15px;box-shadow:0 3px 10px #192b4308;border-top:3px solid var(--de-card-accent);background:#fff;transition:transform .18s,box-shadow .18s}.de-dash-tool-beginner{--de-card-accent:#35695b;--de-card-icon:#fff;--de-card-bg:#35695b}.de-dash-tool-grammar{--de-card-accent:#294e77;--de-card-icon:#fff;--de-card-bg:#294e77}.de-dash-tool-dictionary{--de-card-accent:#a47c37;--de-card-icon:#192b43;--de-card-bg:#e8c983}.de-dash-tool-league{--de-card-accent:#8d552e;--de-card-icon:#fff;--de-card-bg:#8d552e}
+.de-dash-tool-top{display:flex;width:100%;gap:6px;align-items:center;margin-bottom:2px}.de-dash-tool-icon{width:64px;height:64px;flex:0 0 64px;display:grid;place-items:center;border-radius:15px;background:var(--de-card-bg);color:var(--de-card-icon);box-shadow:0 4px 9px #192b4314}.de-compact-dashboard .de-dash-tools-v2 .de-dash-tool-icon svg{width:38px;height:38px;padding:0;background:none;color:inherit;border-radius:0;box-sizing:border-box}.de-compact-dashboard .de-dash-tools-v2 .de-dash-tool-arrow{width:18px;height:18px;margin-inline-start:auto;padding:0;background:none;color:var(--de-card-accent)}.de-dash-tool-level{align-self:flex-start;background:#e7f1ec;color:#285c4b;border-radius:6px;padding:4px 7px;font-size:11px;font-weight:800}.de-compact-dashboard .de-dash-tools-v2 strong{font-size:clamp(15px,1.5vw,18px);line-height:1.3;font-weight:750;color:#192b43}.de-compact-dashboard .de-dash-tools-v2 small{font-size:12px;line-height:1.4;color:#526174}.de-dash-tools-v2>a:hover{transform:translateY(-2px);box-shadow:0 7px 18px #192b4314}.de-compact-dashboard[dir=rtl] .de-dash-tool-arrow{transform:rotate(180deg)}
+@media(max-width:850px){.de-compact-dashboard .de-dash-welcome-v2{min-height:146px;padding:19px 16px;gap:10px;border-radius:15px}.de-dash-welcome-art{flex-basis:78px;width:78px;height:78px}.de-dash-welcome-art>svg{width:48px;height:48px}.de-dash-welcome-ring{box-shadow:0 0 0 6px #ffffff08}.de-dash-welcome-spark{font-size:18px}.de-compact-dashboard .de-dash-welcome-v2 h1{font-size:clamp(22px,5.5vw,29px);margin-bottom:10px}.de-dash-welcome-kicker{font-size:9px;margin-bottom:6px}.de-dash-welcome-level{padding:5px 8px}.de-dash-welcome-level strong{font-size:13px}.de-compact-dashboard .de-dash-tools-v2{gap:9px}.de-compact-dashboard .de-dash-tools-v2>a{padding:12px;min-height:139px;gap:5px;border-radius:12px}.de-dash-tool-icon{width:53px;height:53px;flex-basis:53px;border-radius:12px}.de-compact-dashboard .de-dash-tools-v2 .de-dash-tool-icon svg{width:32px;height:32px}.de-compact-dashboard .de-dash-tools-v2 strong{font-size:14px}.de-compact-dashboard .de-dash-tools-v2 small{font-size:11px}.de-dash-tool-level{padding:3px 5px;font-size:10px}}
+@media(max-width:350px){.de-dash-welcome-art{flex-basis:56px;width:56px;height:56px}.de-dash-welcome-art>svg{width:38px;height:38px}.de-compact-dashboard .de-dash-tools-v2>a{padding:9px}.de-compact-dashboard .de-dash-tools-v2 .de-dash-tool-arrow{display:none}}
+@media(prefers-reduced-motion:reduce){.de-compact-dashboard .de-dash-tools-v2>a{transition:none}.de-dash-tools-v2>a:hover{transform:none}}
+
+
+/* DE_DASHBOARD_PREMIUM_V3 */
+.de-compact-dashboard .de-dash-welcome-v2{min-height:250px;padding:38px 43px;margin-bottom:16px;border-radius:20px;background:linear-gradient(112deg,#142743 0%,#203b60 58%,#31577e 100%);box-shadow:0 14px 35px #172b4d24;position:relative;isolation:isolate;overflow:hidden}.de-compact-dashboard .de-dash-welcome-v2::after{inset-inline-end:1%;top:-170px;width:390px;height:390px;border-color:#e6c77f20;box-shadow:0 0 0 55px #e6c77f0b,0 0 0 110px #e6c77f06}.de-dash-welcome-v2::before{content:'';position:absolute;bottom:0;inset-inline-start:43px;width:155px;height:4px;border-radius:5px;background:#d6b56d}.de-compact-dashboard .de-dash-welcome-v2 h1{font-size:clamp(27px,3.7vw,42px);line-height:1.24;margin:17px 0 16px;font-weight:750}.de-dash-welcome-art{width:205px;height:190px;flex-basis:205px}.de-dash-welcome-ring{inset:22px 30px;border-color:#e6c77f5b;box-shadow:0 0 0 14px #e6c77f09,0 0 0 28px #e6c77f06}.de-dash-welcome-spark{top:13px;inset-inline-end:20px;background:#ffffff12;border:1px solid #e6c77f40;padding:5px 9px;border-radius:10px}.de-dash-welcome-level{padding:9px 14px}.de-dash-welcome-level strong{font-size:19px}.de-dash-tool-results{--de-card-accent:#76568d;--de-card-icon:#fff;--de-card-bg:#76568d}.de-dash-tool-top{flex-wrap:wrap;gap:5px}.de-dash-tool-level{background:#eef2f6;color:#294e77;white-space:nowrap}.de-dash-tool-beginner .de-dash-tool-level{background:#e7f1ec;color:#285c4b}.de-dash-tool-dictionary .de-dash-tool-level{background:#f5ead3;color:#75541f}.de-dash-tool-top .de-dash-tool-arrow{align-self:center}.de-compact-dashboard .de-dash-tools-v2 .de-dash-tool-level{font-size:10px;padding:4px 6px}.de-dash-stats{margin:0 0 16px}.de-dash-stats a{padding:13px;min-height:76px}.de-dash-stats a:first-child{background:#fff9e9;border-color:#e7d3a4}.de-dash-stats a:first-child svg{color:#a47724}.de-dash-stats strong{font-size:24px;color:#192b43}.de-dash-stats-status{display:flex;align-items:center;gap:8px;font-size:12px;color:#657184;margin:-6px 0 12px}.de-dash-stats-status button{border:1px solid #d7c9ad;background:#fff;border-radius:6px;padding:5px 9px;color:#775926;cursor:pointer}.de-dash-league-v3{margin-top:20px;border:1px solid #e5dece;border-radius:16px;background:white;padding:16px}.de-dash-league-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.de-dash-league-head h2{font-size:18px;line-height:1.25;margin:0;color:#192b43}.de-dash-league-head small{display:block;font-size:11px;color:#657184;margin-top:4px}.de-dash-league-head a{display:flex;align-items:center;gap:5px;font-size:12px;font-weight:750;color:#8a652c;text-align:end}.de-dash-league-status{padding:15px;text-align:center;color:#657184;font-size:13px}.de-dash-motivation{font-size:12px;text-align:center;color:#657184;margin:10px 0 0}.de-compact-dashboard[dir=rtl] .de-dash-league-head svg{transform:rotate(180deg)}
+@media(max-width:850px){.de-compact-dashboard .de-dash-welcome-v2{min-height:205px;padding:24px 18px;border-radius:16px;gap:10px}.de-compact-dashboard .de-dash-welcome-v2 h1{font-size:clamp(24px,6vw,32px);margin:12px 0 14px}.de-dash-welcome-v2::before{inset-inline-start:18px;width:105px}.de-dash-welcome-art{width:86px;height:108px;flex-basis:86px}.de-dash-welcome-ring{inset:11px 0;border-radius:50%;box-shadow:0 0 0 8px #e6c77f09}.de-dash-welcome-art>svg{width:48px;height:48px}.de-dash-welcome-spark{top:0;inset-inline-end:0;font-size:15px;padding:3px 6px}.de-dash-welcome-level{padding:7px 10px}.de-dash-welcome-level strong{font-size:16px}.de-dash-stats a{padding:9px 7px;min-height:65px}.de-dash-stats strong{font-size:18px}.de-dash-stats small{font-size:10px}.de-dash-tool-top .de-dash-tool-arrow{display:none}.de-compact-dashboard .de-dash-tools-v2 .de-dash-tool-level{font-size:9px;padding:3px 4px}.de-dash-league-v3{padding:11px}.de-dash-league-head h2{font-size:16px}.de-dash-league-head a{font-size:11px}}
+@media(max-width:350px){.de-dash-welcome-art{width:60px;flex-basis:60px}.de-dash-welcome-art>svg{width:38px}.de-dash-welcome-ring{inset:22px 0}.de-dash-tool-top{align-items:flex-start}.de-dash-tool-level{white-space:normal}}
+
+
+/* DE_LEAGUE_BLUE_CARDS_V1 */
+
+.de-compact-dashboard .de-dash-league-v3{background:linear-gradient(125deg,#142743 0%,#203b60 65%,#294e77 100%);border-color:#425b79;color:#fff;box-shadow:0 9px 25px #192b4320}
+.de-compact-dashboard .de-dash-league-head h2{color:#fff}
+.de-compact-dashboard .de-dash-league-head small{color:#d5dfed}
+.de-compact-dashboard .de-dash-league-head a{color:#f0d59b}
+.de-compact-dashboard .de-dash-league-head a:hover{text-decoration:underline}
+.de-compact-dashboard .de-dash-league-status,.de-compact-dashboard .de-dash-motivation{color:#d5dfed}
+.de-compact-dashboard .de-dash-league-v3 a:focus-visible{outline-color:#f0d59b}
+.de-compact-dashboard .de-dash-league-v3 .de-podium-v3{background:radial-gradient(ellipse at 50% 0,#d6b56d24,transparent 65%),#10243d75;border-color:#ffffff26;color:#fff}
+.de-compact-dashboard .de-dash-league-v3 .de-podium-person{color:#fff}
+.de-compact-dashboard .de-dash-league-v3 .de-podium-person small,.de-compact-dashboard .de-dash-league-v3 .de-podium-xp{color:#f0d59b}
+.de-compact-dashboard .de-dash-league-v3 .de-podium-empty{color:#f0d59b}
+.de-compact-dashboard .de-dash-league-v3 .de-podium-empty p{color:#d5dfed}
+.de-compact-dashboard .de-dash-tools-v2>a{transition:background .18s,border-color .18s,color .18s,transform .18s,box-shadow .18s;-webkit-tap-highlight-color:transparent}
+.de-compact-dashboard .de-dash-tools-v2>a:is(:active,:focus-visible){background:#192b43;border-color:#d6b56d;color:#fff;box-shadow:0 8px 20px #192b432b}
+.de-compact-dashboard .de-dash-tools-v2>a:is(:active,:focus-visible) strong{color:#fff}
+.de-compact-dashboard .de-dash-tools-v2>a:is(:active,:focus-visible) small{color:#d5dfed}
+.de-compact-dashboard .de-dash-tools-v2>a:is(:active,:focus-visible) .de-dash-tool-level{background:#d6b56d;color:#192b43}
+.de-compact-dashboard .de-dash-tools-v2>a:is(:active,:focus-visible) .de-dash-tool-arrow{color:#f0d59b}
+.de-compact-dashboard .de-dash-tools-v2>a:active{transform:scale(.98)}
+@media(hover:hover) and (pointer:fine){
+.de-compact-dashboard .de-dash-tools-v2>a:hover{background:#192b43;border-color:#d6b56d;color:#fff;box-shadow:0 8px 20px #192b432b}
+.de-compact-dashboard .de-dash-tools-v2>a:hover strong{color:#fff}
+.de-compact-dashboard .de-dash-tools-v2>a:hover small{color:#d5dfed}
+.de-compact-dashboard .de-dash-tools-v2>a:hover .de-dash-tool-level{background:#d6b56d;color:#192b43}
+.de-compact-dashboard .de-dash-tools-v2>a:hover .de-dash-tool-arrow{color:#f0d59b}
 }
-.de-dashboard[dir="rtl"] { --serif: 'Tajawal', Arial, sans-serif; font-family: 'Tajawal', Arial, sans-serif; }
-.de-dashboard *, .de-dashboard *::before, .de-dashboard *::after { box-sizing: border-box; }
-.de-dashboard .student-main { width: 100%; min-height: 100vh; min-width: 0; }
-.de-dashboard .student-header { min-height: 78px; padding: 12px clamp(20px, 4vw, 46px); background: #fff; border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 14px; position: relative; z-index: 15; }
-.de-dashboard .header-title, .de-dashboard .student-header-profile { display: flex; align-items: center; gap: 12px; min-width: 0; }
-.de-dashboard .header-brand-mark, .de-dashboard .profile-avatar { display: grid; place-items: center; flex-shrink: 0; width: 40px; height: 40px; background: var(--tint); color: var(--gold-text); border: 1px solid var(--line); border-radius: 8px; }
-.de-dashboard .profile-avatar { border-radius: 50%; }
-.de-dashboard .header-small { color: var(--gold-text); font-size: 10px; font-weight: 650; letter-spacing: .11em; }
-.de-dashboard .student-header h2 { font-family: var(--serif); font-size: 20px; font-weight: 400; line-height: 1.2; margin: 4px 0 0; color: var(--navy); }
-.de-dashboard .profile-infos { min-width: 0; }
-.de-dashboard .profile-infos strong, .de-dashboard .profile-infos span { display: block; }
-.de-dashboard .profile-infos strong { font-size: 13px; max-width: 170px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
-.de-dashboard .profile-infos span { font-size: 11px; color: var(--muted); margin-top: 3px; }
-.de-dashboard .profile-level-indicator { padding: 5px 8px; font-size: 11px; color: var(--gold-text); border: 1px solid var(--line); border-radius: 5px; font-weight: 650; }
-.de-dashboard .student-content { max-width: 1350px; padding: 30px clamp(20px, 4vw, 46px) 22px; margin-inline: auto; }
-.de-dashboard .student-welcome { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 30px; overflow: hidden; min-height: 220px; padding: clamp(26px, 4vw, 44px); border-radius: 12px; background: var(--navy); color: #fff; }
-.de-dashboard .welcome-content { flex: 1; min-width: 0; max-width: 680px; }
-.de-dashboard .welcome-tag { display: inline-flex; gap: 7px; align-items: center; color: var(--gold-light); font-size: 11px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
-.de-dashboard .welcome-tag svg, .de-dashboard .welcome-background-decoration, .de-dashboard .welcome-floating-star, .de-dashboard .welcome-bottom-line, .de-dashboard .welcome-icon-circle { display: none; }
-.de-dashboard .student-welcome h1 { margin: 14px 0 10px; font-family: var(--serif); font-size: clamp(30px, 3.5vw, 45px); line-height: 1.2; font-weight: 400; letter-spacing: -.025em; overflow-wrap: anywhere; color: #fff; }
-.de-dashboard .student-welcome h1 span { color: var(--gold-light); }
-.de-dashboard .student-welcome p { margin: 0; color: #d6dfe9; line-height: 1.75; font-size: 14px; max-width: 560px; }
-.de-dashboard .welcome-button { display: inline-flex; align-items: center; gap: 12px; padding: 11px 17px; min-height: 44px; margin-top: 22px; border-radius: 6px; border: 1px solid var(--gold-light); background: var(--gold-light); color: var(--navy); font-size: 12px; font-weight: 700; }
-.de-dashboard .welcome-button:hover { background: #f2e3bf; }
-.de-dashboard .welcome-visual { flex: 0 0 142px; display: grid; place-items: center; border-inline-start: 1px solid #ffffff30; min-height: 128px; }
-.de-dashboard .welcome-floating-label { display: flex; flex-direction: column; align-items: center; gap: 8px; }
-.de-dashboard .welcome-floating-label span { color: var(--gold-light); font-size: 11px; letter-spacing: .18em; }
-.de-dashboard .welcome-floating-label strong { font-family: var(--serif); color: #fff; font-size: 64px; font-weight: 400; line-height: 1; }
-.de-dashboard .student-section { margin-top: 36px; scroll-margin-top: 20px; }
-.de-dashboard .section-heading { display: flex; align-items: center; justify-content: space-between; gap: 14px; text-align: start; margin: 0 0 16px; }
-.de-dashboard .section-heading h2 { font-family: var(--serif); color: var(--navy); font-weight: 400; font-size: clamp(23px, 2.4vw, 29px); line-height: 1.25; letter-spacing: -.02em; margin: 0; text-align: start; }
-.de-dashboard .section-heading p { color: var(--muted); font-size: 13px; line-height: 1.6; margin: 5px 0 0; text-align: start; }
-.de-dashboard .section-decoration { display: none; }
-.de-dashboard .student-levels { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; }
-.de-dashboard :is(.student-level-card,.student-skill-card,.tool-card,.grammar-access-card,.dictionary-access-card) { background: #fff; color: var(--navy); border: 1px solid var(--line); border-radius: 10px; min-width: 0; text-decoration: none; box-shadow: none; transition: border-color .18s ease, background .18s ease; }
-.de-dashboard :is(a.student-level-card,a.student-skill-card,a.grammar-access-card,a.dictionary-access-card):hover { border-color: var(--gold); background: #fdfcf9; }
-.de-dashboard a:focus-visible { outline: 2px solid var(--gold-text); outline-offset: 3px; }
-.de-dashboard .student-welcome a:focus-visible { outline-color: var(--gold-light); }
-.de-dashboard .student-level-card { display: flex; flex-direction: column; padding: 20px; }
-.de-dashboard .student-level-card.selected { border-color: var(--gold); border-inline-start: 3px solid var(--gold); }
-.de-dashboard .level-top, .de-dashboard .level-footer, .de-dashboard .skill-card-top, .de-dashboard .skill-card-footer { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
-.de-dashboard .level-top { flex-wrap: wrap; }
-.de-dashboard :is(.level-chip,.current-chip,.skills-level-badge) { font-size: 11px; font-weight: 600; color: var(--muted); }
-.de-dashboard :is(.current-chip,.skills-level-badge) { display: inline-flex; gap: 6px; align-items: center; color: var(--gold-text); background: var(--tint); border-radius: 5px; padding: 5px 9px; }
-.de-dashboard .skills-level-badge { white-space: nowrap; }
-.de-dashboard :is(.current-dot,.skills-level-dot) { width: 6px; height: 6px; border-radius: 50%; background: var(--gold-text); flex-shrink: 0; }
-.de-dashboard .level-main { display: flex; flex: 1; align-items: center; margin-block: 18px 16px; }
-.de-dashboard .level-info { min-width: 0; }
-.de-dashboard .level-kicker { color: var(--gold-text); font-size: 10px; font-weight: 650; letter-spacing: .08em; }
-.de-dashboard .student-level-card h3 { font-family: var(--serif); font-size: 43px; font-weight: 400; line-height: 1.1; margin: 5px 0 8px; }
-.de-dashboard .student-level-card p { font-size: 13px; line-height: 1.65; color: var(--muted); margin: 0; }
-.de-dashboard .level-watermark { display: none; }
-.de-dashboard :is(.level-footer,.skill-card-footer) { border-top: 1px solid var(--line); padding-top: 12px; font-size: 12px; color: var(--gold-text); font-weight: 600; }
-.de-dashboard :is(.level-arrow,.skill-arrow) { display: grid; place-items: center; width: 27px; height: 27px; color: var(--gold-text); flex-shrink: 0; }
-.de-dashboard .student-skills { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%, 175px),1fr)); gap: 12px; }
-.de-dashboard .student-skill-card { display: flex; flex-direction: column; padding: 18px; min-height: 215px; }
-.de-dashboard :is(.skill-symbol,.tool-symbol,.grammar-access-icon,.dictionary-access-icon) { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 7px; color: var(--gold-text); background: var(--tint); flex-shrink: 0; }
-.de-dashboard .skill-number { font-family: var(--serif); font-size: 22px; font-weight: 400; color: var(--gold-text); }
-.de-dashboard .skill-detail, .de-dashboard .skill-level { display: none; }
-.de-dashboard .student-skill-card h3 { font-family: var(--serif); font-size: 21px; font-weight: 400; line-height: 1.2; margin: 17px 0 6px; overflow-wrap: anywhere; }
-.de-dashboard .student-skill-card strong { font-size: 12px; color: var(--navy); font-weight: 600; line-height: 1.5; }
-.de-dashboard .student-skill-card p { font-size: 12px; color: var(--muted); line-height: 1.65; margin: 8px 0 16px; flex: 1; }
-.de-dashboard :is(.grammar-access-card,.dictionary-access-card) { display: flex; gap: 16px; align-items: center; margin-top: 14px; padding: 20px; }
-.de-dashboard :is(.grammar-access-icon,.dictionary-access-icon) { width: 50px; height: 50px; }
-.de-dashboard :is(.grammar-access-content,.dictionary-access-content) { flex: 1; min-width: 0; }
-.de-dashboard :is(.grammar-access-label,.dictionary-access-label) { color: var(--gold-text); font-size: 10px; font-weight: 650; letter-spacing: .1em; }
-.de-dashboard :is(.grammar-access-content,.dictionary-access-content) h3 { font-family: var(--serif); font-size: 25px; font-weight: 400; line-height: 1.2; color: var(--navy); margin: 5px 0 7px; }
-.de-dashboard :is(.grammar-access-content,.dictionary-access-content) p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
-.de-dashboard :is(.grammar-access-button,.dictionary-access-button) { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: 42px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 6px; color: var(--gold-text); font-size: 12px; font-weight: 600; flex-shrink: 0; }
-.de-dashboard :is(.grammar-access-card,.dictionary-access-card):hover :is(.grammar-access-button,.dictionary-access-button) { border-color: var(--gold); }
-.de-dashboard .dictionary-languages { display: flex; flex-wrap: wrap; gap: 6px 12px; margin-top: 10px; }
-.de-dashboard .dictionary-languages span { color: var(--muted); font-size: 11px; }
-.de-dashboard .student-tools { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%, 225px),1fr)); gap: 12px; }
-.de-dashboard .tool-card { display: flex; align-items: center; gap: 12px; padding: 16px; }
-.de-dashboard .tool-info { flex: 1; min-width: 0; }
-.de-dashboard .tool-info strong { display: block; color: var(--navy); font-size: 13px; font-weight: 650; }
-.de-dashboard .tool-info p { font-size: 12px; line-height: 1.6; color: var(--muted); margin: 5px 0 0; }
-/* These source cards are informational, not links. */
-.de-dashboard .tool-arrow { display: none; }
-.de-dashboard .student-footer { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); margin-top: 36px; padding: 18px 0; font-size: 11px; background: transparent; color: var(--muted); }
-.de-dashboard .student-footer a { display: inline-flex; align-items: center; gap: 5px; color: var(--gold-text); }
-.de-dashboard[dir="rtl"] :is(.welcome-tag,.level-kicker,.grammar-access-label,.dictionary-access-label,.header-small) { letter-spacing: 0; }
-.de-dashboard[dir="rtl"] :is(.welcome-button,.level-arrow,.skill-arrow,.grammar-access-button,.dictionary-access-button,.student-footer a) svg { transform: scaleX(-1); }
-@media (max-width: 850px) {
-  .de-dashboard .welcome-visual { display: none; }
-  .de-dashboard :is(.grammar-access-card,.dictionary-access-card) { flex-wrap: wrap; }
-  .de-dashboard :is(.grammar-access-button,.dictionary-access-button) { margin-inline-start: auto; }
-}
-@media (max-width: 700px) {
-  .de-dashboard .student-header { min-height: 74px; padding: 12px 16px; padding-inline-start: 68px; gap: 8px; }
-  .de-dashboard .header-brand-mark, .de-dashboard .profile-infos, .de-dashboard .profile-avatar { display: none; }
-  .de-dashboard .student-header h2 { font-size: 17px; }
-  .de-dashboard .student-content { padding: 20px 15px; }
-  .de-dashboard .student-welcome { padding: 24px 20px; min-height: 0; }
-  .de-dashboard .student-welcome h1 { font-size: 30px; }
-  .de-dashboard .student-section { margin-top: 28px; }
-  .de-dashboard .student-levels { grid-template-columns: 1fr; gap: 12px; }
-  .de-dashboard .student-skills { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
-  .de-dashboard .student-skill-card { padding: 14px; min-height: 210px; }
-  .de-dashboard .student-skill-card h3 { font-size: 19px; }
-  .de-dashboard :is(.grammar-access-card,.dictionary-access-card) { padding: 16px; gap: 12px; }
-  .de-dashboard :is(.grammar-access-button,.dictionary-access-button) { width: 100%; }
-  .de-dashboard :is(.grammar-access-content,.dictionary-access-content) h3 { font-size: 22px; }
-}
-@media (max-width: 375px) {
-  .de-dashboard .student-skills { grid-template-columns: 1fr; }
-  .de-dashboard .student-skill-card { min-height: 0; }
-  .de-dashboard .section-heading { flex-wrap: wrap; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .de-dashboard * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
-}
-      `}</style>
-    </div>
-  )
+@media(prefers-reduced-motion:reduce){.de-compact-dashboard .de-dash-tools-v2>a{transition:none}.de-compact-dashboard .de-dash-tools-v2>a:is(:hover,:active){transform:none}}
+
+`}</style>
+  </main>
 }

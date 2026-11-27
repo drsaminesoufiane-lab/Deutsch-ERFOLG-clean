@@ -1,5 +1,10 @@
 
 'use client'
+import { NotebookPen } from 'lucide-react'
+import { BarChart3 } from 'lucide-react'
+
+import { LibraryBig } from 'lucide-react'
+
 
 // DE_GRAMMAR_MODULE_TITLE_V1
 import { useGrammarModuleTitle } from '@/components/student/GrammarModuleTitle'
@@ -8,20 +13,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 import StudentXP from '@/components/student/StudentXP'
 import { usePathname, useRouter } from 'next/navigation'
-import {
-  LayoutDashboard,
-  ClipboardList,
-  Trophy,
-  FileText,
-  Settings,
-  LogOut,
-  GraduationCap,
-  Menu,
-  X,
-  BookOpen,
-  Languages,
-  ShieldCheck,
-} from 'lucide-react'
+import { LayoutDashboard, ClipboardList, Trophy, FileText, Settings, LogOut, GraduationCap, Menu, X, BookOpen, ShieldCheck } from 'lucide-react'
 import { House } from 'lucide-react'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { supabase } from '@/lib/supabase'
@@ -80,12 +72,12 @@ const administrationLabel = {
     },
     {
       label: grammarModuleTitle,
-      Icon: GraduationCap,
+      Icon: NotebookPen,
       href: '/espace-etudiant/apprentissage/grammaire',
     },
     {
       label: dictionaryText,
-      Icon: Languages,
+      Icon: LibraryBig,
       href: '/espace-etudiant/apprentissage/woerterbuch-b1',
     },
     {
@@ -95,7 +87,7 @@ const administrationLabel = {
     },
     {
       label: t.sidebar.results,
-      Icon: Trophy,
+      Icon: BarChart3,
       href: '/espace-etudiant/resultats',
     },
 

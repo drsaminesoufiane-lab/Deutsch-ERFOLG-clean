@@ -1,4 +1,6 @@
 'use client'
+import { LibraryBig } from 'lucide-react'
+
 
 import FloatingPageTools from '@/components/student/FloatingPageTools'
 
@@ -380,7 +382,7 @@ export default function HomePageClient({ grammarStats }: { grammarStats: PublicG
       {/* DE_HOME_PREMIUM_V1 — bibliothèque */}
       <section className="home-library-section" id="woerterbuch">
         <div className="section-container home-library-inner">
-          <div className="home-library-symbol"><Languages size={42} strokeWidth={1.3} /></div>
+          <div className="home-library-symbol"><LibraryBig size={42} strokeWidth={1.3} /></div>
           <div className="home-library-copy">
             <span className="section-eyebrow">{premium.library}</span>
             <h2 lang="de" dir="ltr">{premium.dictionary}</h2>

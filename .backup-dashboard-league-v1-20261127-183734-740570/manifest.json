@@ -1,0 +1,86 @@
+{
+  "app/espace-etudiant/page.tsx": {
+    "existed": true,
+    "after": "9e3575425482cc881bdf38a080b3908d01eb99d9551babeef77c1363eae49b13"
+  },
+  "components/student/StudentSidebar.tsx": {
+    "existed": true,
+    "after": "81a5210d4b22b267786db0db8bfe547bc3c1fd9ce90e2d92d9f212ba5c3aa01b"
+  },
+  "app/HomePageClient.tsx": {
+    "existed": true,
+    "after": "688ffbf751456e1586d62120e661ba6a7d4e6b387e48130b0234b0c1e01b70c3"
+  },
+  "app/espace-etudiant/apprentissage/woerterbuch-b1/page.tsx": {
+    "existed": true,
+    "after": "d213b3af2e17126fb30d7637efae6b9b7d723880905b61d47378edf2dd85cfb5"
+  },
+  "app/espace-etudiant/classement/page.tsx": {
+    "existed": true,
+    "after": "0206b1785faba78b0c5f3775f65f0f6dfee537848fc60b15d1ce68505f43f92d"
+  },
+  "components/student/DeutschErfolgLoader.tsx": {
+    "existed": true,
+    "after": "46dc565514a68f756bcfc7d4a904d369c80a5126629cb1275d94ca9248858b7d"
+  },
+  "components/student/ExamConstructionBanner.tsx": {
+    "existed": false,
+    "after": "0170ae7a5d42dccd0415b2fd93c9deacb7fc57df04ed6eebcb97a633cbd49463"
+  },
+  "app/espace-etudiant/examens/layout.tsx": {
+    "existed": false,
+    "after": "866bfd7af7e6b93955a8bb50379163de4f2f37a0de997350a9e90d067d8e3f0a"
+  },
+  "app/administration/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/administrateurs/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/cours/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/etudiants/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/etudiants/[id]/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/journal/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/paiements/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/parametres/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/resultats/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/resultats/[id]/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/statistiques/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/taches/loading.tsx": {
+    "existed": false,
+    "after": "b81d82ba1fb6529b401fcec356ff4265720381ac2a3652f47ea7c70d311d8505"
+  },
+  "app/administration/layout.tsx": {
+    "existed": true,
+    "after": "21f2f2720b3892489470156e44c9e2fe202bedc96b473bc57837888c246a69f2"
+  }
+}

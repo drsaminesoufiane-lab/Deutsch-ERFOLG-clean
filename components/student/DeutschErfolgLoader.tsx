@@ -25,7 +25,7 @@ export default function DeutschErfolgLoader({ kind = 'page', inline = false }: {
         </div>
         <div className="de-bl-wordmark" lang="de" dir="ltr">Deutsch <strong>Erfolg</strong></div>
         <p className="de-bl-motto">{t.motto}</p>
-        {kind !== 'page' && <div className="de-bl-levels" aria-hidden="true" dir="ltr"><span>A1</span><span>A2</span><span>B1</span></div>}
+        {<div className="de-bl-levels" aria-hidden="true" dir="ltr"><span>A1</span><span>A2</span><span>B1</span><span>B2</span></div>}
         <div className="de-bl-track" aria-hidden="true"><span /></div>
         <p className="de-bl-message">{t[kind]}</p>
       </div>
@@ -43,6 +43,7 @@ export default function DeutschErfolgLoader({ kind = 'page', inline = false }: {
         .de-branded-loading .de-bl-levels span{display:grid;place-items:center;min-width:37px;padding:4px 7px;border:1px solid #ded4be;border-radius:5px;background:#f6f0e3;color:#745a2e;font-size:11px;font-weight:700;line-height:1.4;animation:de-bl-level 2.1s ease-in-out infinite}
         .de-branded-loading .de-bl-levels span:nth-child(2){animation-delay:.25s}
         .de-branded-loading .de-bl-levels span:nth-child(3){animation-delay:.5s}
+        .de-branded-loading .de-bl-levels span:nth-child(4){animation-delay:.75s}
         .de-branded-loading .de-bl-track{position:relative;width:min(210px,80%);height:3px;border-radius:10px;background:#e9e3d8;overflow:hidden;margin-top:9px;direction:ltr}
         .de-branded-loading .de-bl-track span{position:absolute;top:0;left:0;height:100%;width:42%;background:#b49760;border-radius:10px;animation:de-bl-sweep 1.65s ease-in-out infinite}
         .de-branded-loading .de-bl-message{margin:0;font-size:12px;line-height:1.5;color:#596679;font-weight:500}

@@ -1,0 +1,18 @@
+{
+  "app/espace-etudiant/page.tsx": {
+    "before": "87680119355df0dfa069fd6367dd0d84ca044f15c58c271e7745fe5022791b26",
+    "after": "888507da46f3ce5bdbf4ee47a08e785e9c7a22f3239a44e54a7d30d248eb6a39"
+  },
+  "app/espace-etudiant/classement/page.tsx": {
+    "before": "0206b1785faba78b0c5f3775f65f0f6dfee537848fc60b15d1ce68505f43f92d",
+    "after": "624853970f5c3175cf6ac069e53d30fc6f084126f519991047adabd9264595c2"
+  },
+  "components/student/StudentSidebar.tsx": {
+    "before": "81a5210d4b22b267786db0db8bfe547bc3c1fd9ce90e2d92d9f212ba5c3aa01b",
+    "after": "7a8976da72f12aaee86f1d783afdaafbd709f145175dd79ed5caf6697b39cacd"
+  },
+  "components/student/LeaguePodium.tsx": {
+    "before": null,
+    "after": "2a423fc8e9119e61ed9136eee608301516731c7b7b709fc80aafeab4df656b1e"
+  }
+}

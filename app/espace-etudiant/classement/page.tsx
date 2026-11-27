@@ -1,4 +1,6 @@
 'use client'
+import { Award as BronzeRankAward } from 'lucide-react'
+import LeaguePodium from '@/components/student/LeaguePodium'
 
 import { useEffect, useState } from 'react'
 import { Trophy, Medal, Crown, RefreshCw, Users, Target, ShieldCheck } from 'lucide-react'
@@ -8,7 +10,8 @@ import { supabase } from '@/lib/supabase'
 type Period = 'week' | 'month' | 'all'
 type Level = 'all' | 'A1' | 'A2' | 'B1' | 'B2'
 type Entry = { position: number; pseudonym: string; level: string | null; completed: number; xp: number; is_me: boolean }
-type Ranking = { my_pseudonym: string | null; participating: boolean; entries: Entry[]; me: Entry | null; total_participants: number }
+// DE_LEAGUE_ADMIN_READ_V1
+type Ranking = { can_participate?: boolean; my_pseudonym: string | null; participating: boolean; entries: Entry[]; me: Entry | null; total_participants: number }
 const translations = {
   fr: { title:'Classement des étudiants', intro:'Chaque réussite compte. Progressez à votre rythme.', week:'Semaine', month:'Mois', all:'Général', levels:'Tous les niveaux', level:'Niveau', rank:'Rang', student:'Pseudonyme', done:'Übungen réussies', points:'Points XP', participants:'Participants', myRank:'Ma position', myXP:'Mes points', join:'Participer au classement', leave:'Quitter le classement', privacy:'Participation facultative. Seul le pseudonyme que vous choisissez, votre niveau et vos points sont visibles. Vos anciennes réussites sont prises en compte.', empty:'Aucun participant pour ce filtre.', loading:'Chargement…', error:'Impossible de charger le classement.', retry:'Actualiser', you:'Vous', rules:'10 XP par Übung réussie à 80 % ou plus, une seule fois. Semaines et mois calculés à l’heure du Maroc.', noRank:'Non classé', scope:'Grammaire uniquement · Version 1', restricted:'Le classement est réservé aux comptes étudiants.', joinError:'Impossible de modifier la participation.' },
   de: { title:'Rangliste der Lernenden', intro:'Jeder Erfolg zählt. Lernen Sie in Ihrem Tempo.', week:'Woche', month:'Monat', all:'Gesamt', levels:'Alle Niveaus', level:'Niveau', rank:'Rang', student:'Pseudonym', done:'Bestandene Übungen', points:'XP-Punkte', participants:'Teilnehmende', myRank:'Mein Rang', myXP:'Meine Punkte', join:'An der Rangliste teilnehmen', leave:'Rangliste verlassen', privacy:'Die Teilnahme ist freiwillig. Nur Ihr gewähltes Pseudonym, Ihr Niveau und Ihre Punkte sind sichtbar. Frühere Erfolge werden berücksichtigt.', empty:'Keine Teilnehmenden für diesen Filter.', loading:'Wird geladen…', error:'Die Rangliste konnte nicht geladen werden.', retry:'Aktualisieren', you:'Sie', rules:'10 XP pro Übung ab 80 %, nur einmal. Wochen und Monate nach marokkanischer Zeit.', noRank:'Nicht platziert', scope:'Nur Grammatik · Version 1', restricted:'Nur Lernkonten können teilnehmen.', joinError:'Teilnahme konnte nicht geändert werden.' },
@@ -72,7 +75,7 @@ export default function LeaguePage() {
   }, [period, level, revision])
 
   async function reserveAlias() {
-    if (busy || !data) return
+    if (busy || !data || data.can_participate===false) return
     const name = (alias ?? data.my_pseudonym ?? '').trim()
     if (name === data.my_pseudonym) return
     setAliasError(''); setReserveError(false); setSavedAlias(false)
@@ -95,7 +98,7 @@ export default function LeaguePage() {
   }
 
   async function toggleParticipation() {
-    if (busy || !data || (!data.participating && !data.my_pseudonym)) return
+    if (busy || !data || data.can_participate===false || (!data.participating && !data.my_pseudonym)) return
     setBusy(true); setAliasError(''); setReserveError(false)
     try {
       const { error: err } = await supabase.rpc('league_set_participation', { p_join: !data.participating })
@@ -114,7 +117,7 @@ export default function LeaguePage() {
       {error && <p className="league-error" role="alert">{error==='restricted'?t.restricted:error==='joinError'?t.joinError:t.error}</p>}
       {data && !loading && <>
         <div className="league-stats"><article><Users size={22}/><span>{t.participants}</span><strong>{format(data.total_participants)}</strong></article><article><Medal size={22}/><span>{t.myRank}</span><strong>{data.me ? '#'+format(data.me.position) : '—'}</strong></article><article><Target size={22}/><span>{t.myXP}</span><strong>{data.me ? format(data.me.xp)+' XP' : '—'}</strong></article></div>
-        <section className="league-consent league-consent-v3">
+        {data.can_participate!==false ? <section className="league-consent league-consent-v3">
           <ShieldCheck size={24}/>
           <div className="league-alias-form">
             <p>{t.privacy}</p>
@@ -132,9 +135,11 @@ export default function LeaguePage() {
             {!data.my_pseudonym && <small>{r.required}</small>}
             <button type="button" className={data.participating?'secondary league-join-action':'league-join-action'} disabled={busy || (!data.participating && !data.my_pseudonym)} onClick={()=>void toggleParticipation()}>{data.participating?t.leave:t.join}</button>
           </div>
-        </section>
+        </section> : <p className="league-rules">{({"fr": "Mode administrateur : consultation uniquement.", "de": "Administratormodus: nur Ansicht.", "en": "Administrator mode: read only.", "ar": "\u0648\u0636\u0639 \u0627\u0644\u0625\u062f\u0627\u0631\u0629: \u0639\u0631\u0636 \u0641\u0642\u0637."})[language]}</p>}
+        {/* DE_LEAGUE_PODIUM_V3 */}<LeaguePodium entries={data.entries}/>
+
         <section className="league-table-wrap" aria-label={t.title}>
-          {data.entries.length===0 ? <p className="league-empty">{t.empty}</p> : <table><thead><tr><th>{t.rank}</th><th>{t.student}</th><th>{t.level}</th><th>{t.done}</th><th>{t.points}</th></tr></thead><tbody>{data.entries.map(row=><tr key={row.pseudonym} className={row.is_me?'league-me':''}><td><span className="league-position">{row.xp>0 && row.position===1?<Crown size={18}/>:row.xp>0 && row.position<=3?<Medal size={18}/>:null}{row.position}</span></td><td>{row.pseudonym} {row.is_me&&<small>({t.you})</small>}</td><td>{row.level||'—'}</td><td>{format(row.completed)}</td><td><strong>{format(row.xp)} XP</strong></td></tr>)}</tbody></table>}
+          {data.entries.length===0 ? <p className="league-empty">{t.empty}</p> : <table><thead><tr><th>{t.rank}</th><th>{t.student}</th><th>{t.level}</th><th>{t.done}</th><th>{t.points}</th></tr></thead><tbody>{data.entries.map(row=><tr key={row.pseudonym} className={row.is_me?'league-me':''}><td><span className="league-position">{row.xp>0 && row.position===1?<Crown size={18} className="de-rank-gold" aria-hidden="true"/>:row.xp>0 && row.position===2?<Medal size={18} className="de-rank-silver" aria-hidden="true"/>:row.xp>0 && row.position===3?<BronzeRankAward size={18} className="de-rank-bronze" aria-hidden="true"/>:null}{row.position}</span></td><td>{row.pseudonym} {row.is_me&&<small>({t.you})</small>}</td><td>{row.level||'—'}</td><td>{format(row.completed)}</td><td><strong>{format(row.xp)} XP</strong></td></tr>)}</tbody></table>}
         </section>
         <p className="league-rules">{t.rules}</p>
       </>}
@@ -149,8 +154,17 @@ export default function LeaguePage() {
         .league-pseudo-editor{display:flex;flex-direction:column;gap:8px;width:100%;max-width:620px;min-width:0}.league-pseudo-title{font-size:13px;font-weight:650;color:#192b43}.league-pseudo-row{display:flex;align-items:stretch;gap:10px;width:100%;min-width:0}.league-pseudo-row input{flex:1;min-width:0;width:0;box-sizing:border-box;padding:11px 14px;min-height:44px;border:1px solid #d6c7a7;border-radius:8px;background:#fff;color:#192b43;font:inherit}.league-pseudo-row input:focus{outline:2px solid #b49760;outline-offset:1px}.league-consent-v3 .league-pseudo-row .league-add-alias{flex:0 0 auto;align-self:stretch;width:auto;max-width:48%;min-height:44px;padding:10px 17px;margin:0;white-space:normal}.league-consent-v3 .league-pseudo-row .league-add-alias:disabled{opacity:.55}.league-pseudo-editor small{line-height:1.5}
         @media(max-width:480px){.league-pseudo-row{gap:6px}.league-consent-v3 .league-pseudo-row .league-add-alias{padding:8px 10px}.league-pseudo-row input{padding:9px 10px}}
         .league-table-wrap{overflow-x:auto;border:1px solid #e3ded3;border-radius:12px;background:#fff}.league-table-wrap table{width:100%;border-collapse:collapse;text-align:start;min-width:550px}.league-table-wrap th,.league-table-wrap td{text-align:start;padding:15px;border-bottom:1px solid #eeeae2;font-size:13px}.league-table-wrap th{background:#f6f4ef;color:#626a75}.league-table-wrap tr:last-child td{border-bottom:0}.league-me{background:#fff8e6}.league-position{display:flex;align-items:center;gap:7px;font-weight:600;color:#a18142}.league-table-wrap td:last-child{color:#967035;white-space:nowrap}.league-empty{padding:20px}.league-rules{color:#626a75;line-height:1.6;font-size:12px}.league-error{color:#a33b38;padding:12px;border:1px solid #efc9c7;border-radius:8px}
-        @media(max-width:700px){.de-league{padding:75px 14px 210px}.league-hero{padding:18px;gap:12px}.league-emblem{width:46px;height:46px}.league-emblem :global(svg){width:24px}.league-stats{gap:6px}.league-stats article{padding:12px;gap:6px}.league-stats strong{font-size:19px}.league-consent{flex-wrap:wrap}.league-consent p{min-width:180px}.league-consent button{width:100%}}
-      `}</style>
+        @media(max-width:700px){.de-league{padding:75px 14px 210px}.league-hero{padding:18px;gap:12px}.league-emblem{width:46px;height:46px}.league-emblem :global(svg){width:24px}.league-stats{gap:6px}.league-stats article{padding:12px;gap:6px}.league-stats strong{font-size:19px}.league-consent{flex-wrap:wrap}.league-consent p{min-width:180px}.league-consent button{width:100%}}        .de-league-podium{padding:16px;margin:18px 0;border-radius:14px;background:#f6f0e3;border:1px solid #e6d7b6}.de-league-podium h2{display:flex;gap:9px;align-items:center;color:#192b43;font-size:16px;margin:0 0 12px}.de-league-podium h2 :global(svg){color:#967035}.de-podium-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:stretch}.de-podium-card{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:5px;padding:14px 8px;border-radius:10px;border:1px solid #dfd5c0;background:#fff;color:#192b43;min-width:0}.de-podium-card strong{font-size:14px;overflow-wrap:anywhere}.de-podium-card small{color:#647184;font-weight:650}.de-podium-card>span:last-child{font-weight:750;color:#967035;font-size:13px}.de-podium-medal{display:grid;place-items:center;background:#e9eaf0;color:#637183;width:42px;height:42px;border-radius:50%}.de-podium-rank-1{background:#192b43;color:#fff;border-color:#d6b56d}.de-podium-rank-1 .de-podium-medal{background:#d6b56d;color:#192b43}.de-podium-rank-1 small,.de-podium-rank-1>span:last-child{color:#f0d599}.de-podium-rank-3 .de-podium-medal{background:#f0e0d1;color:#98613b}.de-league .league-hero{background:linear-gradient(115deg,#192b43,#354d6b);border:1px solid #b49760}.de-league .league-stats article{box-shadow:0 4px 15px #192b4308}.de-league .league-me{box-shadow:inset 4px 0 #d6b56d}.de-league .league-consent .league-join-action:not(.secondary){background:#d6b56d;border-color:#d6b56d;color:#192b43;font-weight:800}
+        @media(max-width:700px){.de-league{padding-inline:12px}.de-league-podium{padding:10px}.de-podium-grid{gap:5px}.de-podium-card{padding:10px 4px}.de-podium-card strong{font-size:11px}.de-podium-medal{width:34px;height:34px}.de-podium-card>span:last-child{font-size:11px}.de-league .league-table-wrap table{min-width:0;table-layout:fixed}.de-league .league-table-wrap th,.de-league .league-table-wrap td{padding:9px 5px;font-size:11px;overflow-wrap:anywhere}.de-league .league-table-wrap th:nth-child(4),.de-league .league-table-wrap td:nth-child(4){display:none}.de-league .league-table-wrap th:nth-child(1){width:19%}.de-league .league-table-wrap th:nth-child(2){width:37%}.de-league .league-table-wrap th:nth-child(3){width:17%}.de-league .league-table-wrap th:nth-child(5){width:27%}.de-league .league-position{gap:3px}.de-league .league-position :global(svg){width:13px;flex-shrink:0}.de-league .league-table-wrap td:last-child{white-space:normal}}
+
+      
+/* DE_LEAGUE_BLUE_CARDS_V1 */
+
+.league-position :global(.de-rank-gold){color:#a47724;flex-shrink:0}
+.league-position :global(.de-rank-silver){color:#65778b;flex-shrink:0}
+.league-position :global(.de-rank-bronze){color:#a15b30;flex-shrink:0}
+
+`}</style>
     </main>
   )
 }

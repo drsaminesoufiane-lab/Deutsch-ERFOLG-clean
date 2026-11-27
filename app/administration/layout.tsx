@@ -1,4 +1,6 @@
 'use client'
+import DeutschErfolgLoader from '@/components/student/DeutschErfolgLoader'
+
 
 import { useEffect, useState } from 'react'
 import type { ReactNode } from 'react'
@@ -115,7 +117,8 @@ export default function AdministrationLayout({ children }: { children: ReactNode
     document.addEventListener('visibilitychange',check)
     return ()=>{active=false;++version;subscription.unsubscribe();if(pendingCheck!==undefined)clearTimeout(pendingCheck);window.clearInterval(timer);document.removeEventListener('visibilitychange',check)}
   },[retry])
-  if(status!=='allowed') return <main className="de-admin-gate"><ShieldCheck size={35}/><h1>Administration</h1><p>{status==='loading'?'Vérification des droits…':status==='denied'?'Accès réservé aux administrateurs.':'Impossible de vérifier les droits. Réessayez.'}</p>{status==='error'&&<button type="button" onClick={()=>{setStatus('loading');setRetry(n=>n+1)}}>Réessayer</button>}<Link href="/">{t('Retour au site','Zur Website','العودة إلى الموقع')}</Link></main>
+  if(status==='loading') return <DeutschErfolgLoader />
+  if(status!=='allowed') return <main className="de-admin-gate"><ShieldCheck size={35}/><h1>Administration</h1><p>{status==='denied'?'Accès réservé aux administrateurs.':'Impossible de vérifier les droits. Réessayez.'}</p>{status==='error'&&<button type="button" onClick={()=>{setStatus('loading');setRetry(n=>n+1)}}>Réessayer</button>}<Link href="/">{t('Retour au site','Zur Website','العودة إلى الموقع')}</Link></main>
   const visible=links.filter(l=>allowedPath(access,l.url))
   const denied=!allowedPath(access,path)
   const classes=['de-admin-shell',...permissions.filter(p=>!has(access,p)).map(p=>`rbac-no-${p}`),...(!access?.owner?['rbac-delegated']:[])].join(' ')
