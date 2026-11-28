@@ -1,0 +1,30 @@
+{
+  "app/favicon.ico": {
+    "before": "f229fab1315976746c396b1b7ef110d7ee5dd756febf01db5bbf061140c6ad80",
+    "after": "11c9ef296cfe07a639ccb171e37609b25cc59476fc0db14f7c32e4fe2eac6710"
+  },
+  "app/icon.png": {
+    "before": null,
+    "after": "58e4bc3a434ea0bdb6c6560f9ac4deeabd9cba91f950cf22fa23a6313e31c7ef"
+  },
+  "app/apple-icon.png": {
+    "before": null,
+    "after": "49fc0e35383fd1fa4227927d1cd6a0ff3a388dfbcc95c38f43d765634aa5c20f"
+  },
+  "public/de-icons/icon-192.png": {
+    "before": null,
+    "after": "58e4bc3a434ea0bdb6c6560f9ac4deeabd9cba91f950cf22fa23a6313e31c7ef"
+  },
+  "public/de-icons/icon-512.png": {
+    "before": null,
+    "after": "7814916375b3a12fb8601353b00f427c2a3cfbde7d3111e9b45b61361dee25d8"
+  },
+  "public/de-icons/maskable-512.png": {
+    "before": null,
+    "after": "ef1e7b94f20cb69e811e5f9f520ef0ee44061ae54ed59fe482775dab51c639fa"
+  },
+  "app/manifest.webmanifest": {
+    "before": null,
+    "after": "fed218978f4eb3febf0d3986f5290c465230596480bbacaf0650f276733039a6"
+  }
+}
