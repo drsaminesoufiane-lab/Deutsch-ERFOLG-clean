@@ -1,0 +1,10 @@
+{
+  "app/favicon.ico": {
+    "before": "11c9ef296cfe07a639ccb171e37609b25cc59476fc0db14f7c32e4fe2eac6710",
+    "after": "85764e9052492306775cc87a5e9acff0091abbf6856dfdb9484baacd7f797fda"
+  },
+  "app/icon.png": {
+    "before": "58e4bc3a434ea0bdb6c6560f9ac4deeabd9cba91f950cf22fa23a6313e31c7ef",
+    "after": "b8c663ad2565624b79a05cdaf19784085b21b81bcbb7f7d24d274a42f44565dd"
+  }
+}
